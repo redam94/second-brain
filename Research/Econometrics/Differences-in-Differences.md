@@ -13,6 +13,7 @@ tags:
   - topic/panel-data
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
+folder: "Econometrics"
 ---
 
 # Differences-in-Differences
@@ -72,7 +73,11 @@ Advantages:
 
 ## See Also
 
-- [[The Experimental Ideal]]
-- [[Instrumental Variables]]
-- [[Standard Errors and Clustering]]
+- [[The Experimental Ideal]] — the benchmark DD approximates
+- [[Instrumental Variables]] — alternative quasi-experimental design
+- [[Regression Discontinuity Designs]] — another strategy when treatment follows a rule
+- [[Conditional Independence Assumption]] — what DD relaxes by using panel structure
+- [[Omitted Variables Bias]] — the confounder fixed effects absorb
+- [[Standard Errors and Clustering]] — clustering at the group level is essential for DD
+- [[Research Questions in Econometrics]] — FAQ #3: identification strategies
 - [[Mostly Harmless Econometrics - Overview]]

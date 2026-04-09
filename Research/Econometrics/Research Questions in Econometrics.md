@@ -9,6 +9,7 @@ tags:
   - topic/research-design
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
+folder: "Econometrics"
 ---
 
 # Research Questions in Econometrics
@@ -35,5 +36,11 @@ What population, sample, and assumptions underlie your standard errors? Covered 
 
 ## See Also
 
-- [[Mostly Harmless Econometrics - Overview]]
-- [[The Experimental Ideal]]
+- [[Mostly Harmless Econometrics - Overview]] — full book overview
+- [[The Experimental Ideal]] — the ideal benchmark for FAQ #2
+- [[The Selection Problem]] — the fundamental identification challenge
+- [[Conditional Independence Assumption]] — selection on observables strategy (FAQ #3)
+- [[Instrumental Variables]] — instrument-based identification (FAQ #3)
+- [[Differences-in-Differences]] — panel data identification (FAQ #3)
+- [[Regression Discontinuity Designs]] — threshold-based identification (FAQ #3)
+- [[Standard Errors and Clustering]] — mode of statistical inference (FAQ #4)

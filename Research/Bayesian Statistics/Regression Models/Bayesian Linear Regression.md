@@ -43,3 +43,7 @@ Informative priors on $\beta$ provide **regularization**:
 - [[Regression and the CEF]] — the frequentist perspective from Angrist & Pischke
 - [[Hierarchical Linear Models]] — varying coefficients across groups
 - [[Generalized Linear Models]] — extending beyond normality
+- [[Omitted Variables Bias]] — Bayesian regularization (shrinkage) partially mitigates OVB in high-$p$ settings
+- [[Conditional Independence Assumption]] — the assumption needed for causal interpretation of regression coefficients
+- [[Bayesian Workflow - Overview]] — iterative model building context for regression
+- [[MCMC Basics]] — computation for posterior inference when analytic forms are unavailable

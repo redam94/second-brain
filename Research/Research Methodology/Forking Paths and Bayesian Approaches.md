@@ -49,5 +49,8 @@ For example, Bem's ESP result (53.1% hit rate, $p = 0.01$) can be reanalyzed: wi
 
 - [[Garden of Forking Paths]] — the problem statement
 - [[Researcher Degrees of Freedom]] — the sources of analytic flexibility
-- [[Hierarchical Models]] — the Bayesian solution
+- [[Multiple Testing Corrections]] — the frequentist alternative (Bonferroni, FDR) for multiplicity
+- [[Hierarchical Models]] — the Bayesian structural solution via partial pooling
 - [[Model Checking]] — evaluating whether the model is adequate
+- [[The Experimental Ideal]] — pre-registration as a complementary (frequentist) safeguard
+- [[Asymptotics and Frequentist Connections]] — how Bayesian and frequentist inference relate formally

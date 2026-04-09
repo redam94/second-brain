@@ -57,3 +57,9 @@ aliases:
 ## Authors
 
 Andrew Gelman (Columbia), John Carlin (Melbourne), Hal Stern (UC Irvine), David Dunson (Duke), Aki Vehtari (Aalto), Donald Rubin (Harvard)
+
+## See Also (Cross-Domain)
+
+- [[Bayesian Workflow - Overview]] — the companion paper codifying applied workflow practice
+- [[Mostly Harmless Econometrics - Overview]] — the frequentist/econometric counterpart to BDA3
+- [[Forking Paths and Bayesian Approaches]] — Bayesian rationale for addressing multiple comparisons

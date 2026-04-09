@@ -52,3 +52,6 @@ aliases:
 - [[The Selection Problem]] — the fundamental challenge these experiments illustrate
 - [[The Experimental Ideal]] — why RCTs are essential here
 - [[Omitted Variables Bias]] — the formal framework for this bias
+- [[Regression and the CEF]] — why adding more control variables cannot fix a violated CIA
+- [[Standard Errors and Clustering]] — inference considerations in large-scale ad experiments
+- [[Conditional Independence Assumption]] — the assumption violated by activity bias

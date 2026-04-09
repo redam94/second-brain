@@ -10,6 +10,7 @@ tags:
   - topic/distributional-effects
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
+folder: "Econometrics"
 ---
 
 # Quantile Regression
@@ -47,5 +48,8 @@ Just as regression approximates the CEF, quantile regression approximates the co
 
 ## See Also
 
-- [[Regression and the CEF]]
+- [[Regression and the CEF]] — mean regression as the baseline to compare against
+- [[Local Average Treatment Effects]] — LATE vs QTE: both are local/distributional, not ATE
+- [[Bayesian Linear Regression]] — Bayesian quantile regression uses asymmetric Laplace likelihood
+- [[Discrete Choice Models]] — another approach to modeling non-mean outcomes
 - [[Mostly Harmless Econometrics - Overview]]

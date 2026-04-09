@@ -49,5 +49,8 @@ $$\min\!\left(1,\; \frac{p(\theta^* \mid y)\, J(\theta^{(t)} \mid \theta^*)}{p(\
 ## See Also
 
 - [[Introduction to Bayesian Computation]] — simpler methods for easier problems
-- [[Efficient MCMC]] — HMC and advanced methods
+- [[Efficient MCMC]] — HMC and NUTS, the modern standard
 - [[Computational Troubleshooting]] — when MCMC goes wrong
+- [[Fitting and Validating Computation]] — workflow context: how long to run, fake-data checks
+- [[Bayesian Workflow - Overview]] — MCMC as one step in the full iterative cycle
+- [[Hierarchical Models]] — the primary use case where MCMC is indispensable

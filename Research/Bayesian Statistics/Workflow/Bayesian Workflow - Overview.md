@@ -7,6 +7,9 @@ tags:
 source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Workflow"
+aliases:
+  - "Bayesian Workflow"
+  - "Gelman et al. 2020"
 ---
 
 > [!summary]
@@ -51,3 +54,10 @@ The paper frames methodology development as a progression: Example -> Case study
 - [[Iterative Model Improvement]]
 - [[Modeling as Software Development]]
 - [[Model Checking]] | [[Model Comparison]] | [[MCMC Basics]]
+
+## See Also (Cross-Domain)
+
+- [[BDA3 - Overview]] — the textbook that provides the theoretical foundation for this workflow
+- [[Forking Paths and Bayesian Approaches]] — workflow as a defense against multiple comparisons problems
+- [[The Experimental Ideal]] — how Bayesian workflow complements careful experimental design
+- [[Regression and the CEF]] — workflow applies equally to Bayesian regression for causal inference
