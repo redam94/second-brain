@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Bayesian Statistics/Advanced Models/Factor Analysis and PPCA.md",
+                "file": "Research/Econometrics/Identification Strategies/Differences-in-Differences.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Factor Analysis and PPCA"
+              "title": "Differences-in-Differences"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research/Bayesian Statistics/Advanced Models/Factor Analysis and PPCA.md",
+                "file": "Research/Econometrics/Identification Strategies/Differences-in-Differences.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Factor Analysis and PPCA"
+              "title": "Outline of Differences-in-Differences"
             }
           },
           {
@@ -183,32 +183,32 @@
   },
   "active": "79ff034845b28e12",
   "lastOpenFiles": [
-    "Research/Bayesian Statistics/Advanced Models/Copula Estimation.md",
-    "Research/Bayesian Statistics/Advanced Models/Confirmatory Factor Analysis and SEM.md",
+    "Research/Econometrics/Identification Strategies/Local Average Treatment Effects.md",
+    "Dream/_Index.md",
+    "Research/Research Methodology/Researcher Degrees of Freedom.md",
+    "Research/Research Methodology/Garden of Forking Paths.md",
+    "Research/Research Methodology/Observational vs Experimental Methods in Advertising.md",
+    "Research/Research Methodology/Experimental Design/Survival Analysis.md",
+    "Research/Research Methodology/Experimental Design/Power Analysis and Sample Size.md",
+    "Research/Research Methodology/Experimental Design/Multiple Testing Corrections.md",
+    "Research/Research Methodology/Activity Bias in Advertising.md",
+    "Research/Econometrics/Regression Foundations/Regression and the CEF.md",
+    "Research/Econometrics/Identification Strategies/Differences-in-Differences.md",
+    "Research/Econometrics/Identification Strategies/_Index.md",
     "Research/Econometrics/Identification Strategies/Bayesian Difference in Differences.md",
-    "Clippings/Discrete Choice and Random Utility Models.md",
-    "Research/raw/The Besag-York-Mollie Model for Spatial Data.md",
-    "Research/raw/Social Networks.md",
-    "Research/raw/Missing Data.md",
-    "Research/raw/Difference in differences.md",
-    "Research/raw/Counterfactual inference calculating excess deaths due to COVID-19.md",
-    "Research/raw/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics.md",
-    "Research/raw/Bayesian moderation analysis.md",
-    "Research/raw/Bayesian copula estimation Describing correlated joint distributions.md",
-    "Research/raw/Bayesian Non-parametric Causal Inference.md",
-    "Research/raw/Baby Births Modelling with HSGPs.md",
+    "Research/Econometrics/Foundations/The Selection Problem.md",
+    "Research/Econometrics/Foundations/The Experimental Ideal.md",
+    "Research/Econometrics/Foundations/Research Questions in Econometrics.md",
+    "Research/Econometrics/Extensions/Standard Errors and Clustering.md",
+    "Research/Econometrics/Extensions/Quantile Regression.md",
+    "Research/Econometrics/Extensions/Discrete Choice Models.md",
+    "Research/Bayesian Statistics/Regression Models/Hierarchical Linear Models.md",
     "Research/Bayesian Statistics/Regression Models/Moderation Analysis.md",
+    "Research/Bayesian Statistics/Regression Models/Missing Data Models.md",
     "Research/Bayesian Statistics/Regression Models/Missing Data - Statistical Rethinking.md",
-    "Research/Bayesian Statistics/Regression Models/Counterfactual Inference.md",
-    "Research/Bayesian Statistics/Advanced Models/Spatial Models - BYM.md",
-    "Research/Bayesian Statistics/Advanced Models/Social Network Models.md",
-    "Research/Bayesian Statistics/Advanced Models/Nonparametric Causal Inference.md",
-    "Research/Bayesian Statistics/Advanced Models/Hilbert Space Gaussian Processes.md",
-    "Clippings/Missing Data 1.md",
-    "Clippings/Social Networks.md",
-    "Clippings/Missing Data.md",
-    "Clippings/The Besag-York-Mollie Model for Spatial Data.md",
-    "Clippings/Difference in differences.md",
+    "Research/Bayesian Statistics/Workflow/Evaluating Fitted Models.md",
+    "Research/Bayesian Statistics/Inference Fundamentals/Posterior Sampling and Summarization.md",
+    "Research/Bayesian Statistics/Advanced Models/Factor Analysis and PPCA.md",
     "Research/raw/p_hacking.pdf",
     "Research/raw/StatRethink-Bayes.pdf",
     "Research/raw/Mostly Harmless Econometrics.pdf",
