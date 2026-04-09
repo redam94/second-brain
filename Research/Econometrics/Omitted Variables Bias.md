@@ -1,0 +1,60 @@
+---
+title: Omitted Variables Bias
+aliases:
+  - OVB
+  - OVB Formula
+tags:
+  - source/ingested
+  - topic/econometrics
+  - topic/regression
+  - topic/bias
+source: "[[raw/Mostly Harmless Econometrics.pdf]]"
+date_ingested: 2026-04-08
+---
+
+# Omitted Variables Bias
+
+> [!summary]
+> The OVB formula describes the mechanical relationship between regression coefficients in models with different sets of control variables. It shows how omitting relevant variables biases the coefficients on included variables.
+
+## The Formula
+
+If the "long" (correct) regression is:
+$$Y_i = \alpha^l + \rho^l s_i + A_i'\gamma^l + v_i^l$$
+
+and the "short" (omitted variable) regression is:
+$$Y_i = \alpha^s + \rho^s s_i + v_i^s$$
+
+Then:
+$$\rho^s = \rho^l + \gamma^l \cdot \delta_{As}$$
+
+where $\delta_{As}$ is the coefficient from regressing the omitted variable $A_i$ on $s_i$.
+
+## Interpreting the Bias
+
+The bias has two components:
+1. $\gamma^l$ — the effect of the omitted variable on the outcome
+2. $\delta_{As}$ — the correlation between the omitted variable and the included regressor
+
+| $\gamma^l$ | $\delta_{As}$ | Bias direction |
+|-----------|-------------|----------------|
+| Positive | Positive | Upward (overestimate) |
+| Positive | Negative | Downward (underestimate) |
+| Negative | Positive | Downward |
+| Negative | Negative | Upward |
+
+## Schooling Example
+
+For returns to schooling where "ability" ($A_i$) is omitted:
+- Ability likely has positive effect on wages ($\gamma > 0$)
+- Ability is positively correlated with schooling ($\delta > 0$)
+- Therefore OLS without ability controls likely **overestimates** the return to schooling
+
+> [!note] The OVB Formula is Mechanical
+> It describes the relationship between short and long regressions whether or not either has a causal interpretation. It applies to any pair of nested regression specifications.
+
+## See Also
+
+- [[Conditional Independence Assumption]]
+- [[Regression and the CEF]]
+- [[Instrumental Variables]]
