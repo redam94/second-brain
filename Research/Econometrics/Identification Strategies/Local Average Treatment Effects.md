@@ -1,5 +1,5 @@
 ---
-title: Local Average Treatment Effects
+title: "Local Average Treatment Effects"
 aliases:
   - LATE
   - Compliers
@@ -53,5 +53,7 @@ You can't identify individual compliers, but you can describe them statistically
 
 - [[Instrumental Variables]]
 - [[Regression Discontinuity Designs]] — fuzzy RD estimates LATE at the cutoff
+- [[Differences-in-Differences]] — parallel-trends DiD is also a complier-flavored estimand under heterogeneous effects
+- [[The Selection Problem]] — LATE is fundamentally a solution to the selection problem for non-compliant units
 - [[Mostly Harmless Econometrics - Overview]]
 - [[Hierarchical Models]] — Bayesian partial pooling as an alternative framework for treatment effect heterogeneity

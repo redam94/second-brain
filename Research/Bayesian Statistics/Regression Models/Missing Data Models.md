@@ -46,3 +46,5 @@ aliases:
 
 - [[Data Collection Models]] — ignorability conditions (Ch 8)
 - [[Hierarchical Models]] — hierarchical imputation models
+- [[Missing Data - Statistical Rethinking]] — DAG-based treatment of missing data mechanisms from Statistical Rethinking (companion note)
+- [[MCMC Basics]] — in a fully Bayesian analysis, missing values are sampled alongside model parameters in each MCMC iteration

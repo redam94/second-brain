@@ -7,6 +7,9 @@ tags:
 source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Workflow"
+aliases:
+  - "Bayesian software engineering"
+  - "Statistical reproducibility"
 ---
 
 > [!summary]
@@ -60,7 +63,10 @@ Principles for readable modeling code:
 
 When fitting a series of similar models, keep model code modular so that fixing an error in a shared module automatically propagates to all models that use it.
 
-## Related Notes
+## See Also
 
-- [[Bayesian Workflow - Overview]] | [[Iterative Model Improvement]]
-- [[Fitting and Validating Computation]] | [[Choosing and Building Models]]
+- [[Bayesian Workflow - Overview]] — the full workflow that software engineering practices support
+- [[Iterative Model Improvement]] — the iterative cycle that version control and testing enable
+- [[Fitting and Validating Computation]] — simulation-based calibration as a model-level unit test
+- [[Choosing and Building Models]] — modular model construction that maps to the modularity principles here
+- [[Evaluating Fitted Models]] — posterior predictive checks as integration tests

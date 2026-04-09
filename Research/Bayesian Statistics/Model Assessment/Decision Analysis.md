@@ -45,3 +45,6 @@ Common loss functions yield familiar estimators:
 
 - [[Probability and Bayesian Inference]] — the posterior that feeds into decisions
 - [[Hierarchical Models]] — partial pooling often improves decisions by reducing variance
+- [[Model Comparison]] — choosing between models before making decisions
+- [[Overfitting and Information Criteria]] — model selection criteria that inform which posterior to use
+- [[Counterfactual Inference]] — counterfactual thinking as a prerequisite for decision framing

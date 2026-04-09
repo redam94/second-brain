@@ -56,3 +56,6 @@ This paper provides a vivid illustration of concepts from [[Regression and the C
 - [[The Experimental Ideal]] — why randomization is the gold standard
 - [[Differences-in-Differences]] — another strategy that could potentially help
 - [[Data Collection Models]] — the ignorability conditions that are violated here
+- [[Omitted Variables Bias]] — the econometric framing of what goes wrong in the regression tables above
+- [[Nonparametric Causal Inference]] — Bayesian nonparametric (BART + propensity score) approaches to causal ATE/ATT estimation
+- [[Bayesian Difference in Differences]] — Bayesian counterfactual framing of DiD that could be applied to advertising holdout experiments

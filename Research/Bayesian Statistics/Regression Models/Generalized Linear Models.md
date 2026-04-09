@@ -52,3 +52,4 @@ A GLM has three components:
 - [[Nonparametric Models Overview]] — when GLM linearity is too restrictive
 - [[Discrete Choice Models]] — GLMs with categorical/multinomial likelihood for econometric choice data
 - [[Quantile Regression]] — Bayesian quantile regression uses the asymmetric Laplace, a GLM-family distribution
+- [[Monsters and Mixtures]] — zero-inflated and hurdle extensions of Poisson/binomial GLMs for over-dispersed count data

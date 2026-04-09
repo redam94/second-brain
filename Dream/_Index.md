@@ -60,6 +60,40 @@ date_updated: 2026-04-09
 
 ---
 
+---
+
+### 4. Causal Directed Acyclic Graphs (DAGs)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+DAG-based reasoning is implicitly present throughout the vault but has no dedicated note. [[Spurious Association and Confounds]] invokes fork/pipe/collider logic from Statistical Rethinking. [[Missing Data - Statistical Rethinking]] is described as "DAG-based missing data analysis" in the raw sources index. [[Nonparametric Causal Inference]] uses propensity scores that implicitly rely on a DAG's back-door criterion. [[Conditional Independence Assumption]] (econometrics) and [[Data Collection Models]] (BDA3) both describe conditions that are most clearly stated via DAG d-separation. A dedicated note covering the Pearl framework — nodes, edges, d-separation, back-door criterion, front-door criterion, and collider bias — would unify these threads.
+
+**Adjacent notes:** [[Spurious Association and Confounds]], [[Conditional Independence Assumption]], [[Counterfactual Inference]], [[Missing Data - Statistical Rethinking]], [[Nonparametric Causal Inference]], [[The Selection Problem]]
+
+**Suggested sources / search terms:**
+- Pearl, Glymour & Jewell (2016) — *Causal Inference in Statistics: A Primer*
+- McElreath (2020) — Statistical Rethinking Ch. 6 (collider bias) and Ch. 5 (DAG motivation)
+- Angrist & Pischke (2008) — MHE treatment of selection on observables via potential outcomes vs. DAGs
+- Search: "d-separation", "back-door criterion", "front-door criterion", "collider bias", "causal graph"
+
+---
+
+### 5. Heterogeneous Treatment Effects and CATE Estimation
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Local Average Treatment Effects]] explicitly discusses the policy-relevance problem: LATE ≠ ATE, and different instruments identify different complier subgroups. [[Nonparametric Causal Inference]] estimates aggregate ATE/ATT using BART but does not cover conditional ATE (CATE) — i.e., how treatment effects vary by subgroup or covariate values. [[Hierarchical Models]] mentions Bayesian partial pooling for treatment effect heterogeneity, but machine learning approaches (causal forests, X-learner, R-learner, doubly robust learners) are entirely absent. This is a major active research area connecting econometrics, Bayesian statistics, and ML.
+
+**Adjacent notes:** [[Local Average Treatment Effects]], [[Nonparametric Causal Inference]], [[Hierarchical Models]], [[Regression and the CEF]], [[Differences-in-Differences]]
+
+**Suggested sources / search terms:**
+- Wager & Athey (2018) — "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests" (*JASA*)
+- Künzel et al. (2019) — "Metalearners for estimating heterogeneous treatment effects" (*PNAS*)
+- Kennedy (2023) — "Towards optimal doubly robust estimation of heterogeneous causal effects"
+- Search: "causal forest", "X-learner", "R-learner", "CATE estimation", "heterogeneous treatment effects"
+
+---
+
 ## Covered Gaps
 
 *(None yet — update status to 🍂 covered when a Research note is created.)*
@@ -71,3 +105,4 @@ date_updated: 2026-04-09
 | Date | Action |
 |------|--------|
 | 2026-04-09 | Initial Dream index created. Three gaps identified from review of 9 Research notes. |
+| 2026-04-09 | Run 2: reviewed 9 notes (Decision Analysis, Observational vs Experimental, Missing Data Models, GLMs, LATE, Forking Paths, Spurious Association, Modeling as Software Development, Power Analysis). Added gaps 4 (Causal DAGs) and 5 (Heterogeneous Treatment Effects / CATE). All prior gaps remain 🌱 new. |

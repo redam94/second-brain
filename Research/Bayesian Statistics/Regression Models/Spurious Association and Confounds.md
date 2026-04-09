@@ -66,6 +66,8 @@ When two predictors are highly correlated, their individual effects become unide
 - [[Conditional Independence Assumption]] — the econometric parallel to controlling for confounds
 - [[Omitted Variables Bias]] — what happens when you *don't* control for confounds
 - [[The Selection Problem]] — the fundamental challenge these methods address
+- [[Moderation Analysis]] — Ch 6 of Statistical Rethinking, the natural next step: when interaction terms are needed alongside confound control
+- [[Counterfactual Inference]] — explicit counterfactual framing of what it means for a regression to "control for" a variable
 - [[Linear Models in Statistical Rethinking]] — Ch 4, the single-predictor foundation
 - [[Bayesian Linear Regression]] — BDA3's formal treatment
 - [[Statistical Rethinking - Overview]]

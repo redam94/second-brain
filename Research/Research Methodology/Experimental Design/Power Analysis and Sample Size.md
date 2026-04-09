@@ -79,3 +79,6 @@ In Bayesian analysis, the concept of "power" is less central — instead, one ca
 - [[The Experimental Ideal]] — the experimental framework that power analysis serves
 - [[Researcher Degrees of Freedom]] — how underpowered studies amplify forking paths
 - [[Activity Bias in Advertising]] — a case where more data doesn't help if identification fails
+- [[Multiple Testing Corrections]] — multiple outcomes or interim analyses require both power adjustments and multiplicity corrections
+- [[Forking Paths and Bayesian Approaches]] — under-powered studies interact with analytic flexibility to inflate false discovery rates
+- [[Fitting and Validating Computation]] — simulation-based calibration as a Bayesian alternative to classical power analysis

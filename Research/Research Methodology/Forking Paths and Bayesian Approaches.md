@@ -54,3 +54,4 @@ For example, Bem's ESP result (53.1% hit rate, $p = 0.01$) can be reanalyzed: wi
 - [[Model Checking]] — evaluating whether the model is adequate
 - [[The Experimental Ideal]] — pre-registration as a complementary (frequentist) safeguard
 - [[Asymptotics and Frequentist Connections]] — how Bayesian and frequentist inference relate formally
+- [[Power Analysis and Sample Size]] — under-powered studies amplify forking paths; Bayesian posterior simulation as an alternative to power calculations
