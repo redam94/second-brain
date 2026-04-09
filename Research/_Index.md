@@ -3,7 +3,7 @@ title: "Index: Research"
 tags:
   - type/index
   - source/ingested
-date_updated: 2026-04-08
+date_updated: 2026-04-09
 ---
 
 # Research
@@ -30,3 +30,5 @@ date_updated: 2026-04-08
 - [[raw/p_hacking.pdf]] — The Garden of Forking Paths (Gelman & Loken, 2013)
 - [[raw/ssrn-2080235.pdf]] — Here, There, and Everywhere (Lewis, Rao, & Reiley, 2011)
 - [[raw/Mostly Harmless Econometrics.pdf]] — Mostly Harmless Econometrics (Angrist & Pischke, 2008)
+- [[raw/Discrete Choice and Random Utility Models]] — PyMC tutorial: Bayesian discrete choice / random utility models (2026-04-08)
+- [[raw/Factor analysis]] — PyMC tutorial: factor analysis and probabilistic PCA (2026-04-08)

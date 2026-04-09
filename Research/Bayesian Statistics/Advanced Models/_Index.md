@@ -4,7 +4,7 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
-date_updated: 2026-04-08
+date_updated: 2026-04-09
 ---
 
 # Advanced Models
@@ -15,7 +15,9 @@ date_updated: 2026-04-08
 ## Notes
 
 - [[Nonparametric Models Overview]] — Splines, basis functions, GPs, finite mixtures, Dirichlet processes
+- [[Factor Analysis and PPCA]] — Probabilistic PCA and factor analysis: identifiability, constrained $W$, amortized inference, minibatch ADVI
 
 ## Sources
 
 - [[raw/BDA3.pdf]] — Bayesian Data Analysis, 3rd Edition (Gelman et al.), Part V (pp. 469-573)
+- [[raw/Factor analysis]] — PyMC tutorial: factor analysis and PPCA with identifiability fixes

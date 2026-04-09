@@ -4,7 +4,7 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-04-08
+date_updated: 2026-04-09
 ---
 
 # Econometrics
@@ -36,10 +36,12 @@ date_updated: 2026-04-08
 - [[Regression Discontinuity Designs]] — Sharp and fuzzy RD designs
 - [[Quantile Regression]] — Distributional effects beyond the mean
 - [[Standard Errors and Clustering]] — Getting inference right
+- [[Discrete Choice Models]] — Random utility theory, multinomial logit, and softmax likelihood for choice data
 
 ## Sources
 
 - [[raw/Mostly Harmless Econometrics.pdf]] — Full textbook PDF (Angrist & Pischke, 2008)
+- [[raw/Discrete Choice and Random Utility Models]] — PyMC tutorial: Bayesian discrete choice models (McFadden framework)
 
 ## See Also
 
