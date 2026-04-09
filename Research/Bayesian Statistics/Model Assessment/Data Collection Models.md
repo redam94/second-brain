@@ -42,3 +42,5 @@ The ignorability concept directly parallels the **unconfoundedness** assumption 
 - [[Missing Data Models]] — explicit treatment of missing data (Ch 18)
 - [[Omitted Variables Bias]] — what happens when ignorability fails
 - [[Observational vs Experimental Methods in Advertising]] — observational methods failing
+- [[Instrumental Variables]] — IV ensures ignorability through exogenous variation rather than conditioning
+- [[The Selection Problem]] — the frequentist framing of the same challenge ignorability addresses

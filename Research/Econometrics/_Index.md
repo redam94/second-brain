@@ -16,27 +16,12 @@ date_updated: 2026-04-09
 
 - [[Mostly Harmless Econometrics - Overview]] — Master index for the book's concepts and structure
 
-## Foundations
+## Sub-topics
 
-- [[Research Questions in Econometrics]] — The four FAQs that guide empirical projects
-- [[The Experimental Ideal]] — Why randomized experiments are the benchmark
-- [[The Selection Problem]] — The fundamental challenge of causal inference
-
-## Core Methods
-
-- [[Regression and the CEF]] — Regression as approximation to the conditional expectation function
-- [[Conditional Independence Assumption]] — When regression is causal (selection on observables)
-- [[Omitted Variables Bias]] — The OVB formula and its implications
-- [[Instrumental Variables]] — IV, 2SLS, and the Wald estimator
-- [[Local Average Treatment Effects]] — LATE and compliers in the IV framework
-- [[Differences-in-Differences]] — Fixed effects, DD, and panel data strategies
-
-## Extensions
-
-- [[Regression Discontinuity Designs]] — Sharp and fuzzy RD designs
-- [[Quantile Regression]] — Distributional effects beyond the mean
-- [[Standard Errors and Clustering]] — Getting inference right
-- [[Discrete Choice Models]] — Random utility theory, multinomial logit, and softmax likelihood for choice data
+- [[Foundations/_Index|Foundations]] — Research questions, the experimental ideal, selection bias (MHE Part I)
+- [[Regression Foundations/_Index|Regression Foundations]] — The CEF, CIA, omitted variables bias (MHE Ch 3)
+- [[Identification Strategies/_Index|Identification Strategies]] — IV, LATE, DD, RD — quasi-experimental methods (MHE Ch 4–6)
+- [[Extensions/_Index|Extensions]] — Quantile regression, discrete choice, standard errors (MHE Ch 7–8)
 
 ## Sources
 

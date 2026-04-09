@@ -4,7 +4,7 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
-date_updated: 2026-04-08
+date_updated: 2026-04-09
 ---
 
 # Regression Models
@@ -19,6 +19,11 @@ date_updated: 2026-04-08
 - [[Generalized Linear Models]] — Logistic, Poisson, weakly informative priors for GLMs
 - [[Missing Data Models]] — Multiple imputation, MCAR/MAR/MNAR, Rubin's rules
 
+### From Statistical Rethinking
+- [[Linear Models in Statistical Rethinking]] — Gaussian models, MAP estimation, prior predictive simulation, prediction intervals
+- [[Spurious Association and Confounds]] — Multivariate regression, Waffle House example, post-treatment bias, masked relationships
+
 ## Sources
 
 - [[raw/BDA3.pdf]] — Bayesian Data Analysis, 3rd Edition (Gelman et al.), Part IV (pp. 351-467)
+- [[raw/StatRethink-Bayes.pdf]] — Statistical Rethinking (McElreath, 2015), Chapters 4–5

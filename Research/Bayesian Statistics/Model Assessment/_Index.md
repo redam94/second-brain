@@ -4,7 +4,7 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
-date_updated: 2026-04-08
+date_updated: 2026-04-09
 ---
 
 # Model Assessment
@@ -19,6 +19,10 @@ date_updated: 2026-04-08
 - [[Data Collection Models]] — Ignorability, missing data mechanisms, surveys, experiments
 - [[Decision Analysis]] — Bayesian decision theory, loss functions, utility
 
+### From Statistical Rethinking
+- [[Overfitting and Information Criteria]] — Bias-variance tradeoff, KL divergence, AIC/DIC/WAIC, regularizing priors
+
 ## Sources
 
 - [[raw/BDA3.pdf]] — Bayesian Data Analysis, 3rd Edition (Gelman et al.), Part II (pp. 139-258)
+- [[raw/StatRethink-Bayes.pdf]] — Statistical Rethinking (McElreath, 2015), Chapter 6

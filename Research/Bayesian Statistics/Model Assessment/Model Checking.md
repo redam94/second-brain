@@ -52,3 +52,5 @@ Values near 0 or 1 indicate model misfit. Unlike classical p-values, this accoun
 - [[Model Comparison]] — quantitative model comparison using predictive accuracy
 - [[Evaluating Fitted Models]] — workflow perspective on model evaluation
 - [[Hierarchical Models]] — model checking for the eight schools example
+- [[Differences-in-Differences]] — posterior predictive checks can validate common trends assumptions
+- [[Regression Discontinuity Designs]] — Bayesian model checks for formalizing RD validity tests

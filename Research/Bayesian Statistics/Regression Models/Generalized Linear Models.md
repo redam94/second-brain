@@ -50,3 +50,5 @@ A GLM has three components:
 - [[Bayesian Linear Regression]] — the normal special case
 - [[Hierarchical Linear Models]] — adding group-level structure
 - [[Nonparametric Models Overview]] — when GLM linearity is too restrictive
+- [[Discrete Choice Models]] — GLMs with categorical/multinomial likelihood for econometric choice data
+- [[Quantile Regression]] — Bayesian quantile regression uses the asymmetric Laplace, a GLM-family distribution

@@ -59,3 +59,5 @@ Every empirical project should answer these questions:
 - [[The Selection Problem]] — the fundamental challenge of causal inference
 - [[Conditional Independence Assumption]] — the key assumption for causal regression
 - [[Omitted Variables Bias]] — what goes wrong without proper controls
+- [[BDA3 - Overview]] — Bayesian counterpart covering inference, regression, and model-based causal analysis
+- [[Bayesian Workflow - Overview]] — iterative Bayesian approach to the same empirical questions

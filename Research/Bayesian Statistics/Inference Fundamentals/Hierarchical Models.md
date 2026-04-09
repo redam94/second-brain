@@ -52,3 +52,5 @@ $$\phi \sim p(\phi) \quad \text{(hyperprior)}$$
 - [[Single-Parameter Models]] — building block for each group
 - [[Bayesian Workflow - Overview]] — iterative building of hierarchical models
 - [[Local Average Treatment Effects]] — treatment effect heterogeneity in econometrics
+- [[Differences-in-Differences]] — frequentist panel approach using similar exchangeability assumptions
+- [[Instrumental Variables]] — complier heterogeneity parallels hierarchical variation across groups

@@ -50,4 +50,5 @@ The normal approximation fails when:
 
 - [[Multiparameter Models]] — the setting where these asymptotics apply
 - [[Approximation Methods]] — computational use of these ideas (Laplace approximation)
-- [[Regression and the CEF]] — frequentist regression perspective
+- [[Regression and the CEF]] — frequentist regression; asymptotically equivalent to Bayesian under flat priors
+- [[Standard Errors and Clustering]] — frequentist inference machinery; Bayesian posteriors approximate robust SEs asymptotically

@@ -9,11 +9,11 @@ date_updated: 2026-04-09
 # Research
 
 > [!abstract] Summary
-> Applied statistics, econometrics, and causal inference notes from textbooks and research papers. Covers Bayesian statistics (BDA3, Bayesian Workflow), econometrics (Mostly Harmless Econometrics), and research methodology (multiple comparisons, advertising causal inference).
+> Applied statistics, econometrics, and causal inference notes from textbooks and research papers. Covers Bayesian statistics (BDA3, Statistical Rethinking, Bayesian Workflow), econometrics (Mostly Harmless Econometrics), and research methodology (multiple comparisons, advertising causal inference).
 
 ## Topics
 
-- [[Bayesian Statistics/_Index|Bayesian Statistics]] — BDA3 textbook + Bayesian Workflow paper: inference, computation, regression, nonparametric models, and applied workflow
+- [[Bayesian Statistics/_Index|Bayesian Statistics]] — BDA3 textbook + Statistical Rethinking + Bayesian Workflow paper: inference, computation, regression, nonparametric models, and applied workflow
 - [[Econometrics/_Index|Econometrics]] — Mostly Harmless Econometrics: regression, IV, DD, RD, causal inference toolkit
 - [[Research Methodology/_Index|Research Methodology]] — Garden of Forking Paths, activity bias in advertising, multiple comparisons
 
@@ -32,3 +32,4 @@ date_updated: 2026-04-09
 - [[raw/Mostly Harmless Econometrics.pdf]] — Mostly Harmless Econometrics (Angrist & Pischke, 2008)
 - [[raw/Discrete Choice and Random Utility Models]] — PyMC tutorial: Bayesian discrete choice / random utility models (2026-04-08)
 - [[raw/Factor analysis]] — PyMC tutorial: factor analysis and probabilistic PCA (2026-04-08)
+- [[raw/StatRethink-Bayes.pdf]] — Statistical Rethinking: A Bayesian Course with Examples in R and Stan (McElreath, 2015)

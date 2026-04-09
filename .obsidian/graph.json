@@ -1,5 +1,5 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
@@ -8,37 +8,23 @@
   "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "tag:#topic/causal-inference  ",
+      "query": "[\"source\":'raw/BDA3.pdf']",
       "color": {
         "a": 1,
-        "rgb": 14701138
-      }
-    },
-    {
-      "query": "tag:#topic/bias",
-      "color": {
-        "a": 1,
-        "rgb": 14725458
-      }
-    },
-    {
-      "query": "path:Research  ",
-      "color": {
-        "a": 1,
-        "rgb": 11657298
+        "rgb": 7426784
       }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
-  "collapse-forces": true,
+  "collapse-forces": false,
   "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.8304079652523888,
-  "close": true
+  "repelStrength": 11.8394097222222,
+  "linkStrength": 0.727300347222222,
+  "linkDistance": 128,
+  "scale": 0.8030296047713402,
+  "close": false
 }

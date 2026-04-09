@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Factor analysis.md",
+                "file": "Clippings/Discrete Choice and Random Utility Models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Factor analysis"
+              "title": "Discrete Choice and Random Utility Models"
             }
           }
         ]
@@ -150,13 +150,23 @@
               "icon": "lucide-list",
               "title": "Outline of I Refactored My Project Using Modern Python Libraries — 8 Lessons Learned"
             }
+          },
+          {
+            "id": "b125e52c5344907f",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,46 +176,47 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "79ff034845b28e12",
   "lastOpenFiles": [
+    "Clippings/Missing Data 1.md",
     "Clippings/Discrete Choice and Random Utility Models.md",
-    "Clippings/_Index.md",
-    "Clippings/I Refactored My Project Using Modern Python Libraries — 8 Lessons Learned.md",
-    "Clippings/Factor analysis.md",
-    "Research/Bayesian Statistics/Advanced Models/Nonparametric Models Overview.md",
-    "Research/Bayesian Statistics/Advanced Models/_Index.md",
-    "Research/Bayesian Statistics/Computation/Approximation Methods.md",
-    "Research/Bayesian Statistics/Computation/_Index.md",
-    "Research/Bayesian Statistics/Model Assessment/Data Collection Models.md",
-    "Research/Bayesian Statistics/Model Assessment/_Index.md",
-    "Research/Bayesian Statistics/Inference Fundamentals/Single-Parameter Models.md",
-    "Research/Bayesian Statistics/Inference Fundamentals/Probability and Bayesian Inference.md",
-    "Research/Bayesian Statistics/Inference Fundamentals/Multiparameter Models.md",
-    "Research/Bayesian Statistics/Inference Fundamentals/Hierarchical Models.md",
-    "Research/Bayesian Statistics/Inference Fundamentals/Asymptotics and Frequentist Connections.md",
-    "Research/Bayesian Statistics/Computation/MCMC Basics.md",
-    "Research/Bayesian Statistics/Computation/Introduction to Bayesian Computation.md",
-    "Research/Bayesian Statistics/Computation/Efficient MCMC.md",
-    "Research/Econometrics/Differences-in-Differences.md",
-    "Research/Econometrics/Conditional Independence Assumption.md",
-    "Research/Bayesian Statistics/Workflow/Fitting and Validating Computation.md",
-    "Research/Bayesian Statistics/Workflow/Choosing and Building Models.md",
-    "Research/Bayesian Statistics/Workflow/Bayesian Workflow - Overview.md",
-    "Research/_Index.md",
-    "Research/Econometrics/Mostly Harmless Econometrics - Overview.md",
-    "Research/Research Methodology/Experimental Design/Power Analysis and Sample Size.md",
-    "Research/Research Methodology/Experimental Design",
-    "Research/raw/BayesWorkflow.pdf",
-    "Research/Econometrics",
-    "Research/raw/ssrn-2080235.pdf",
+    "Clippings/Social Networks.md",
+    "Clippings/Missing Data.md",
+    "Clippings/The Besag-York-Mollie Model for Spatial Data.md",
+    "Clippings/Difference in differences.md",
+    "Clippings/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics.md",
+    "Clippings/Bayesian moderation analysis.md",
+    "Clippings/Bayesian Non-parametric Causal Inference.md",
+    "Clippings/Counterfactual inference calculating excess deaths due to COVID-19.md",
+    "Clippings/Baby Births Modelling with HSGPs.md",
+    "Clippings/Bayesian copula estimation Describing correlated joint distributions.md",
+    "Research/Econometrics/Extensions/Quantile Regression.md",
+    "Research/Econometrics/Extensions/Discrete Choice Models.md",
+    "Research/Econometrics/Extensions/Standard Errors and Clustering.md",
+    "Research/Econometrics/Extensions/_Index.md",
+    "Research/Econometrics/_Index.md",
+    "Research/Econometrics/Regression Foundations/_Index.md",
+    "Research/Econometrics/Identification Strategies/Regression Discontinuity Designs.md",
+    "Research/Econometrics/Identification Strategies/Local Average Treatment Effects.md",
+    "Research/Econometrics/Identification Strategies/Instrumental Variables.md",
+    "Research/Econometrics/Identification Strategies/Differences-in-Differences.md",
+    "Research/Econometrics/Identification Strategies/_Index.md",
     "Research/raw/p_hacking.pdf",
+    "Research/raw/StatRethink-Bayes.pdf",
     "Research/raw/Mostly Harmless Econometrics.pdf",
+    "Research/Econometrics/Regression Foundations/Conditional Independence Assumption.md",
+    "Research/Bayesian Statistics/Model Assessment/Data Collection Models.md",
+    "Research/Econometrics/Foundations/The Experimental Ideal.md",
+    "Research/Econometrics/Extensions",
+    "Research/Econometrics/Identification Strategies",
+    "Research/Econometrics/Regression Foundations",
+    "Research/Econometrics/Foundations",
+    "Untitled.base",
     "Research/raw/BDA3.pdf",
-    "Research/Research Methodology",
-    "Research/Bayesian Statistics/Workflow",
-    "Research/Bayesian Statistics/Regression Models"
+    "Dream"
   ]
 }
