@@ -19,6 +19,7 @@ depends_on:
 used_by:
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
   - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
 aliases:
   - "Type S error"
   - "Type M error"

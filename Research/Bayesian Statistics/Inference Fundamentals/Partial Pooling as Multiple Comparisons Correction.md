@@ -20,6 +20,7 @@ depends_on:
 used_by:
   - "[[Hierarchical Linear Models]]"
   - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
 aliases:
   - "Shrinkage as multiple comparisons correction"
   - "Partial pooling z-score reduction"

@@ -20,6 +20,7 @@ depends_on:
 used_by:
   - "[[Type S and Type M Errors]]"
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
+  - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
 aliases:
   - "Gelman Hill Yajima 2009"
   - "Why we don't have to worry about multiple comparisons"
