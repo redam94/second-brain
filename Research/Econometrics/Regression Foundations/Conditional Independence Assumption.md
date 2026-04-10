@@ -24,6 +24,7 @@ used_by:
   - "[[Instrumental Variables]]"
   - "[[Activity Bias in Advertising]]"
   - "[[Observational vs Experimental Methods in Advertising]]"
+  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 ---
 
 # Conditional Independence Assumption

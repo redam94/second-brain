@@ -2,8 +2,8 @@
 title: "Index: Questions and Answers"
 tags:
   - type/index
-date_updated: 2026-04-09
-question_count: 3
+date_updated: 2026-04-10
+question_count: 4
 ---
 
 # Questions and Answers
@@ -14,6 +14,9 @@ question_count: 3
 > Browse by topic below or search for keywords.
 
 ## By Topic
+
+### Causal Inference / Identification
+- [[Q - Uncovering Causal Estimates from Non-Experimental Data]] — Nine strategies (CIA, DAGs, IV, DiD, RD, Synthetic Control, metalearners, BSTS, sensitivity analysis) with assumptions and estimands
 
 ### Research Methodology / Multiple Comparisons
 - [[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]] -- Classical corrections vs. Bayesian alternatives (partial pooling, regularizing priors, projection predictive selection) for model search
@@ -28,12 +31,14 @@ question_count: 3
 
 | Question | Date | Key Sources |
 |----------|------|-------------|
+| [[Q - Uncovering Causal Estimates from Non-Experimental Data]] | 2026-04-10 | [[The Selection Problem]], [[Instrumental Variables]], [[Differences-in-Differences]], [[Synthetic Control]] |
 | [[Q - Differences Between Frequentist and Bayesian Statistics]] | 2026-04-09 | [[Probability and Bayesian Inference]], [[Asymptotics and Frequentist Connections]], [[Hierarchical Models]] |
 | [[Q - Common Pitfalls in Statistical Modeling]] | 2026-04-09 | [[Spurious Association and Confounds]], [[Garden of Forking Paths]], [[Overfitting and Information Criteria]], [[Model Checking]] |
 | [[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]] | 2026-04-09 | [[Multiple Comparisons - Bayesian Perspective]], [[Garden of Forking Paths]], [[Partial Pooling as Multiple Comparisons Correction]] |
 
 ## All Questions
 
+- [[Q - Uncovering Causal Estimates from Non-Experimental Data]] — Nine identification strategies: CIA/matching, DAGs, IV, DiD, RD, synthetic control, metalearners, BSTS, sensitivity analysis
 - [[Q - Differences Between Frequentist and Bayesian Statistics]] -- Probability as frequency vs. belief; confidence vs. credible intervals; priors; partial pooling; WAIC vs. AIC; when each framework excels
 - [[Q - Common Pitfalls in Statistical Modeling]] -- Eight pitfall categories with remedies: confounding, forking paths, overfitting, missing data, golem misuse, model checking, computational issues, Type S/M errors
 - [[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]] -- Stop selecting by significance; use regularizing priors, projection predictive selection, or multilevel models with partial pooling

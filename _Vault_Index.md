@@ -4,7 +4,7 @@ tags:
   - type/index
   - type/vault-root
 date_updated: 2026-04-10
-concept_count: 106
+concept_count: 118
 ---
 
 # Vault Index
@@ -27,13 +27,14 @@ concept_count: 106
 
 Cross-cutting topics that span multiple folders:
 - **Bayesian Statistics**: [[BDA3 - Overview|BDA3]], [[Bayesian Workflow - Overview|Workflow]], [[Hierarchical Models]], [[MCMC Basics|MCMC]], [[Model Checking]], [[Model Comparison]]
-- **Causal Inference**: [[The Selection Problem|Selection Problem]], [[The Experimental Ideal|Experiments]], [[Conditional Independence Assumption|CIA]], [[Instrumental Variables|IV]], [[Differences-in-Differences|DD]], [[Activity Bias in Advertising|Activity Bias]], [[Counterfactual Inference]], [[Nonparametric Causal Inference|BART Causal]], [[Potential Outcomes Framework]], [[Causal Estimands]], [[Propensity Score in Bayesian CI]], [[Synthetic Control]], [[Synthetic Control Bias Theory|SC Bias Theory]], [[Synthetic Control Requirements|SC Requirements]], [[Generalized Synthetic Control Method|GSC]], [[X-Learner|X-Learner/Metalearners]], [[Bayesian Structural Time-Series Model|CausalImpact BSTS]], [[LLM Expert Elicitation for Bayesian Networks|LLM-BN Elicitation]], [[Causal Model - Cause Precondition Effect|Cause-Precondition-Effect]]
+- **Causal Inference**: [[The Selection Problem|Selection Problem]], [[The Experimental Ideal|Experiments]], [[Conditional Independence Assumption|CIA]], [[Instrumental Variables|IV]], [[Differences-in-Differences|DD]], [[Activity Bias in Advertising|Activity Bias]], [[Counterfactual Inference]], [[Nonparametric Causal Inference|BART Causal]], [[Potential Outcomes Framework]], [[Causal Estimands]], [[Propensity Score in Bayesian CI]], [[Synthetic Control]], [[Synthetic Control Bias Theory|SC Bias Theory]], [[Synthetic Control Requirements|SC Requirements]], [[Generalized Synthetic Control Method|GSC]], [[X-Learner|X-Learner/Metalearners]], [[Bayesian Structural Time-Series Model|CausalImpact BSTS]], [[LLM Expert Elicitation for Bayesian Networks|LLM-BN Elicitation]], [[Causal Model - Cause Precondition Effect|Cause-Precondition-Effect]], [[Summary Causal DAGs|DAG Summarization]], [[CaGReS Algorithm|CaGReS]], [[s-Separation in Summary DAGs|s-Separation]], [[Code Prompts for Causal Structure|Code Causal Prompts]], [[LLM Causal Reasoning Tasks|LLM Causal Tasks]], [[Fine-tuning on Conditional Statements|Conditional Fine-tuning]]
 - **Econometrics**: [[Regression and the CEF|Regression/CEF]], [[Omitted Variables Bias|OVB]], [[Quantile Regression]], [[Standard Errors and Clustering|Standard Errors]]
 - **Research Methodology**: [[Garden of Forking Paths|Forking Paths]], [[Researcher Degrees of Freedom]], [[Multiple Testing Corrections|FDR/Bonferroni]], [[Power Analysis and Sample Size|Power Analysis]], [[Survival Analysis]]
 - **Advanced Models**: [[Nonparametric Models Overview|Nonparametric]], [[Hilbert Space Gaussian Processes|HSGP]], [[Spatial Models - BYM|Spatial]], [[Copula Estimation|Copulas]], [[Social Network Models|Networks]], [[Confirmatory Factor Analysis and SEM|CFA/SEM]]
 
 ## Recent Ingestions
 
+- 2026-04-10: Ingested 2 papers into [[Research/Bayesian Statistics/Causal Inference/_Index|Causal Inference]] — 12 notes: Liu 2025 (6 notes, Knowledge Elicitation — code prompts for LLM causal reasoning) + Zeng 2025 (6 notes, Foundations — causal DAG summarization, CaGReS algorithm, s-separation, do-calculus soundness)
 - 2026-04-10: Ingested 4 papers into [[Research/Bayesian Statistics/Causal Inference/_Index|Causal Inference]] — 24 notes across 3 new sub-folders: Knowledge Elicitation (Yamashita 2020 interactive NLP + Shaposhnyk 2025 LLM-for-BN), Treatment Effect Estimation (Künzel 2019 S/T/X-learner metalearners), Time Series Causal Inference (Brodersen 2015 CausalImpact BSTS)
 - 2026-04-10: Ingested Xu (2017) into [[Research/Econometrics/Identification Strategies/_Index|Identification Strategies]] — 2 notes: Overview + Generalized Synthetic Control Method (IFE model, 3-step estimator, LOO cross-validation, parametric bootstrap, EDR voter turnout application)
 - 2026-04-10: Ingested Abadie (2021) into [[Research/Econometrics/Identification Strategies/_Index|Identification Strategies]] — 5 notes: Overview, Bias Theory (linear factor model, bias bound, sparsity), Inference & Diagnostics (RMSPE ratio, permutation test, backdating), Requirements (5 contextual + 3 data conditions), Extensions (penalized SC, bias correction, elastic net, matrix completion)

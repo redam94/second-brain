@@ -21,6 +21,7 @@ used_by:
   - "[[Synthetic Control Inference and Diagnostics]]"
   - "[[Synthetic Control Requirements]]"
   - "[[Synthetic Control Extensions]]"
+  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 aliases:
   - synthetic controls
   - synthetic control method

@@ -26,6 +26,7 @@ used_by:
   - "[[Local Average Treatment Effects]]"
   - "[[Regression Discontinuity Designs]]"
   - "[[Discrete Choice Models]]"
+  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 ---
 
 # Instrumental Variables

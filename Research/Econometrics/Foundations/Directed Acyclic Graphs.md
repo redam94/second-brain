@@ -19,6 +19,7 @@ used_by:
   - "[[Instrumental Variables]]"
   - "[[Bayesian Propensity Scores and IPW]]"
   - "[[Nonparametric Causal Inference]]"
+  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 aliases:
   - DAG
   - causal diagram

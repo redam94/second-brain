@@ -28,6 +28,7 @@ used_by:
   - "[[Standard Errors and Clustering]]"
   - "[[Observational vs Experimental Methods in Advertising]]"
   - "[[Generalized Synthetic Control Method]]"
+  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 ---
 
 # Differences-in-Differences

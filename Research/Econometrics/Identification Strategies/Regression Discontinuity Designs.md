@@ -23,6 +23,7 @@ depends_on:
   - "[[The Selection Problem]]"
 used_by:
   - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 ---
 
 # Regression Discontinuity Designs

@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[General Structure of Bayesian CI]]"
   - "[[Propensity Score in Bayesian CI]]"
+  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 aliases:
   - IPW estimator
   - doubly robust estimator

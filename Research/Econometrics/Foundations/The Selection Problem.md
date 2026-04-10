@@ -22,6 +22,7 @@ used_by:
   - "[[Differences-in-Differences]]"
   - "[[Activity Bias in Advertising]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 ---
 
 # The Selection Problem

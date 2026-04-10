@@ -11,13 +11,14 @@
             "id": "4e026be74554a5cd",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Research/Concept Dependencies.base",
-                "viewName": "Concept Dependency Graph"
+                "file": "Research/Research Methodology/Activity Bias in Advertising.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "Concept Dependencies"
+              "icon": "lucide-file",
+              "title": "Activity Bias in Advertising"
             }
           }
         ]
@@ -165,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,41 +182,41 @@
   },
   "active": "4e026be74554a5cd",
   "lastOpenFiles": [
+    "Research/Research Methodology/_Index.md",
+    "Research/Econometrics/Identification Strategies/Bayesian Difference in Differences.md",
+    "Research/Econometrics/Identification Strategies/Abadie 2021 - Overview.md",
+    "Research/Econometrics/Identification Strategies/Generalized Synthetic Control Method.md",
+    "Research/Econometrics/Identification Strategies/Regression Discontinuity Designs.md",
+    "Research/Econometrics/Identification Strategies/Synthetic Control.md",
+    "Research/Econometrics/Identification Strategies/Synthetic Control Bias Theory.md",
+    "Research/Econometrics/Identification Strategies/Synthetic Control Inference and Diagnostics.md",
+    "Research/Econometrics/Identification Strategies/Synthetic Control Requirements.md",
+    "Research/Econometrics/Identification Strategies/Synthetic Control Extensions.md",
+    "Research/Econometrics/Identification Strategies/Xu 2016 - Overview.md",
+    "Research/Econometrics/_Index.md",
+    "Research/Econometrics/Regression Foundations/_Index.md",
+    "Research/Econometrics/Identification Strategies/_Index.md",
+    "Research/Econometrics/Foundations/_Index.md",
+    "Research/Econometrics/Extensions/_Index.md",
+    "Research/Bayesian Statistics/_Index.md",
+    "Research/Bayesian Statistics/Regression Models/_Index.md",
+    "Research/Bayesian Statistics/Workflow/_Index.md",
+    "Research/Bayesian Statistics/Model Assessment/_Index.md",
+    "Research/Bayesian Statistics/Inference Fundamentals/_Index.md",
+    "Research/Bayesian Statistics/Computation/_Index.md",
+    "Research/Bayesian Statistics/Causal Inference/_Index.md",
+    "Research/Bayesian Statistics/Advanced Models/_Index.md",
+    "Research/Bayesian Statistics/Causal Inference/Foundations/Do-Calculus in Summary Causal DAGs.md",
+    "Research/Bayesian Statistics/Causal Inference/Foundations/s-Separation in Summary DAGs.md",
+    "Research/Bayesian Statistics/Causal Inference/raw/Zeng et al. - 2025 - Causal DAG Summarization (Full Version).pdf",
+    "Research/Bayesian Statistics/Causal Inference/raw/Liu et al. - 2025 - Eliciting and Improving the Causal Reasoning Abilities of Large Language Models with Conditional Sta.pdf",
+    "Research/Concept Dependencies.base",
     "Research/Theorems and Definitions.base",
     "Research/Ingested Notes.base",
-    "Research/Concept Dependencies.base",
     "Research/Bayesian Statistics/Causal Inference/Concept Dependencies.base",
     "Research/Bayesian Statistics/Causal Inference/Ingested Notes.base",
-    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/LLM-BN Decision Support Application.md",
-    "Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/_Index.md",
-    "Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/CausalImpact Empirical Application.md",
-    "Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/Counterfactual Impact Estimation.md",
-    "Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/MCMC Inference for CausalImpact.md",
-    "Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/Spike-and-Slab Prior for Covariate Selection.md",
-    "Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/Local Linear Trend and Seasonality.md",
-    "Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/Bayesian Structural Time-Series Model.md",
-    "Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/Brodersen 2015 - Overview.md",
     "Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference",
-    "Research/Bayesian Statistics/Causal Inference/Treatment Effect Estimation/_Index.md",
-    "Research/Bayesian Statistics/Causal Inference/Treatment Effect Estimation/Metalearner Simulation Results.md",
-    "Research/Bayesian Statistics/Causal Inference/Treatment Effect Estimation/X-Learner.md",
-    "Research/Bayesian Statistics/Causal Inference/Treatment Effect Estimation/T-Learner and Minimax Rate.md",
-    "Research/Bayesian Statistics/Causal Inference/Treatment Effect Estimation/S-Learner.md",
-    "Research/Bayesian Statistics/Causal Inference/Treatment Effect Estimation/Metalearners for CATE.md",
-    "Research/Bayesian Statistics/Causal Inference/Treatment Effect Estimation/Künzel 2019 - Overview.md",
     "Research/Bayesian Statistics/Causal Inference/Treatment Effect Estimation",
-    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/_Index.md",
-    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/Entropy-Based BN Evaluation.md",
-    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/BN Construction Methods Comparison.md",
-    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/LLM Expert Elicitation for Bayesian Networks.md",
-    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/Shaposhnyk 2025 - Overview.md",
-    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/NLP Causal Extraction Methods.md",
-    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/Interactive Knowledge Elicitation Method.md",
-    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/Causal Model - Cause Precondition Effect.md",
-    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/Yamashita 2020 - Overview.md",
-    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation",
-    "Research/Bayesian Statistics/Causal Inference/raw/Brodersen - 2015 - Inferring causal impact using Bayesian structural time-series models.pdf",
-    "Research/Bayesian Statistics/Causal Inference/raw/Künzel et al. - 2017 - Metalearners for estimating heterogeneous treatment effects using machine learning.pdf",
-    "Research/Bayesian Statistics/Causal Inference/raw/Shaposhnyk et al. - 2025 - Can LLMs Assist Expert Elicitation for Probabilistic Causal Modeling.pdf"
+    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation"
   ]
 }
