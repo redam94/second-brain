@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Questions-and-Answers/Q - Differences Between Frequentist and Bayesian Statistics.md",
+                "file": "Dream/_Index.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Q - Differences Between Frequentist and Bayesian Statistics"
+              "title": "_Index"
             }
           }
         ]
@@ -162,12 +162,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,10 +180,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aebec5300f0ffcb5",
+  "active": "374618560912beae",
   "lastOpenFiles": [
-    "Questions-and-Answers/Q - Common Pitfalls in Statistical Modeling.md",
+    "Clippings/15 - Synthetic Control — Causal Inference for the Brave and True.md",
+    "Clippings/How to use Bayesian propensity scores and inverse probability weights.md",
+    "Clippings/Missing Data.md",
+    "Clippings/Social Networks.md",
+    "Clippings/The Besag-York-Mollie Model for Spatial Data.md",
+    "Clippings/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs.md",
+    "Dream/_Index.md",
     "Questions-and-Answers/Q - Differences Between Frequentist and Bayesian Statistics.md",
+    "Questions-and-Answers/Q - Common Pitfalls in Statistical Modeling.md",
     "Questions-and-Answers/Q - Handling Multiple Comparisons When Selecting From Hundreds of Models.md",
     "Questions-and-Answers/_Index.md",
     "Research/Bayesian Statistics/Workflow/Iterative Model Improvement.md",
@@ -208,15 +214,8 @@
     "Research/Bayesian Statistics/Advanced Models/Hilbert Space Gaussian Processes.md",
     "Clippings/_Index.md",
     "Clippings/Bayesian copula estimation Describing correlated joint distributions.md",
-    "Clippings/Missing Data.md",
     "Research/Bayesian Statistics/Inference Fundamentals/Partial Pooling as Multiple Comparisons Correction.md",
-    "Research/Research Methodology/Multiple Comparisons - Bayesian Perspective.md",
     "Research/raw/multiple2f.pdf",
-    "Research/Bayesian Statistics/Workflow/Bayesian Workflow - Overview.md",
-    "Research/Bayesian Statistics/Regression Models/Counterfactual Inference.md",
-    "Research/Bayesian Statistics/Advanced Models/Social Network Models.md",
-    "Research/Bayesian Statistics/Advanced Models/Nonparametric Causal Inference.md",
-    "Research/Bayesian Statistics/Advanced Models/Monsters and Mixtures.md",
     "Research/raw/p_hacking.pdf",
     "Research/raw/StatRethink-Bayes.pdf"
   ]
