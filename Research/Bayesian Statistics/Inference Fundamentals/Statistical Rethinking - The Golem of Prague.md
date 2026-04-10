@@ -53,8 +53,8 @@ Three problems with naive falsification:
 ## Three Tools for Golem Engineering
 
 1. **Bayesian data analysis** — treating "randomness" as a property of information, not of the world; the golem is random, not the coin
-2. **Multilevel models** — parameters all the way down; four reasons to use them: (a) adjust for repeat sampling, (b) adjust for imbalance, (c) study variation, (d) avoid averaging
-3. **Model comparison using information criteria** — AIC, DIC, WAIC; navigating between overfitting (Scylla) and underfitting (Charybdis)
+2. **[[Hierarchical Models|Multilevel models]]** — parameters all the way down; four reasons to use them: (a) adjust for repeat sampling, (b) adjust for imbalance, (c) study variation, (d) avoid averaging
+3. **[[Overfitting and Information Criteria|Model comparison using information criteria]]** — AIC, DIC, WAIC; navigating between overfitting (Scylla) and underfitting (Charybdis)
 
 ## See Also
 
@@ -62,4 +62,6 @@ Three problems with naive falsification:
 - [[Garden of Forking Data]] — the next chapter, building the first Bayesian model
 - [[Garden of Forking Paths]] — Gelman's related concept about researcher degrees of freedom
 - [[Researcher Degrees of Freedom]] — the multiplicity problem that golem engineering aims to address
+- [[Hierarchical Models]] — BDA3's treatment of multilevel models (tool #2)
+- [[Overfitting and Information Criteria]] — formal coverage of AIC, DIC, WAIC (tool #3)
 - [[Statistical Rethinking - Overview]] — full book overview

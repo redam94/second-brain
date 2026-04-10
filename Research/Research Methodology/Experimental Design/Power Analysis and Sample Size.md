@@ -40,6 +40,9 @@ used_by:
 | **Power ($1-\beta$)** | Probability of detecting a real effect | 0.80 or 0.90 |
 | **Effect size** | Magnitude of the difference you want to detect | From prior studies or pilot data |
 
+> [!note] Beyond Type I and Type II
+> In under-powered studies the more practically dangerous errors are [[Type S and Type M Errors|Type S (sign) and Type M (magnitude) errors]] — getting the direction of an effect wrong, or dramatically over-estimating its size. These are not controlled by conventional power analysis and are exacerbated when sample sizes are small.
+
 ## Key Normal Deviates
 
 | $\alpha$ (two-tailed) | $Z_{\alpha/2}$ | Power | $Z_{1-\beta}$ |

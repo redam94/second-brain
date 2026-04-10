@@ -88,7 +88,11 @@ where weights $w_k$ are chosen to minimize cross-validation error. Stacking can 
 
 For large model spaces, projection predictive selection (Piironen and Vehtari, 2017) finds smaller submodels with comparable predictive performance to the full expanded model, avoiding the overfitting that comes from searching through many models independently.
 
-## Related Notes
+## See Also
 
-- [[Evaluating Fitted Models]] | [[Modeling as Software Development]]
-- [[Model Comparison]] | [[Hierarchical Models]] | [[Choosing and Building Models]]
+- [[Evaluating Fitted Models]] — posterior predictive checks that trigger model modification
+- [[Modeling as Software Development]] — the software engineering analogy for workflow
+- [[Model Comparison]] — LOO-CV, WAIC, Bayes factors, and stacking for choosing between models
+- [[Hierarchical Models]] — the go-to expansion when group structure is present
+- [[Choosing and Building Models]] — the prior model-building step before iteration
+- [[Overfitting and Information Criteria]] — the bias-variance tradeoff underlying model selection

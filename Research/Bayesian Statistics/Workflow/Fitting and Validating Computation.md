@@ -44,7 +44,7 @@ Run until $\hat{R} < 1.01$ for all parameters and effective sample sizes are suf
 
 ### Approximate Algorithms and Approximate Models
 
-There is a tradeoff between speed and accuracy. Early in the workflow, approximate methods (variational inference, Laplace approximation, INLA, penalized ML) can help explore model space quickly. Near the end, accurate MCMC is needed for fine-scale posterior features.
+There is a tradeoff between speed and accuracy. Early in the workflow, approximate methods ([[Approximation Methods|variational inference, Laplace approximation]], INLA, penalized ML) can help explore model space quickly. Near the end, accurate MCMC is needed for fine-scale posterior features.
 
 ### Fit Fast, Fail Fast
 
@@ -78,7 +78,11 @@ Repeating this many times, if the algorithm is correct, the rank statistics of t
 
 Fitting models to data simulated under *different* assumptions (e.g., $t$-distributed errors when the model assumes normal) lets us study robustness and understand bias under misspecification.
 
-## Related Notes
+## See Also
 
-- [[Choosing and Building Models]] | [[Computational Troubleshooting]]
-- [[MCMC Basics]] | [[Efficient MCMC]] | [[Model Checking]]
+- [[Choosing and Building Models]] — prior predictive checks and model specification before fitting
+- [[Computational Troubleshooting]] — diagnosing and fixing sampler failures
+- [[MCMC Basics]] — theory behind warmup, chains, and convergence
+- [[Efficient MCMC]] — HMC, NUTS, and tuning strategies
+- [[Model Checking]] — posterior predictive checks after fitting
+- [[Approximation Methods]] — variational inference and Laplace approximation as fast alternatives

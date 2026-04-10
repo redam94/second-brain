@@ -12,7 +12,9 @@ aliases:
   - BYM2
   - ICAR
   - Intrinsic Conditional Autoregressive
+source: "[[raw/The Besag-York-Mollie Model for Spatial Data]]"
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Advanced Models"
 doc_type: concept
 source_location: "raw/The Besag-York-Mollie Model for Spatial Data"
 depends_on:
@@ -113,6 +115,14 @@ Spatial smoothing is useful for **forecasting**: low-accident tracts surrounded 
 - ICAR relates to the [[Hilbert Space Gaussian Processes|HSGP]] (graph Laplacian eigenfunctions ~ Laplace operator eigenfunctions)
 - Random effects structure: compare [[Hierarchical Linear Models]] (pooling across groups)
 - Poisson GLM: see [[Generalized Linear Models]]
+
+## See Also
+
+- [[Hilbert Space Gaussian Processes]] — HSGP for continuous spatial/temporal data; BYM is the areal-data counterpart
+- [[Hierarchical Linear Models]] — BYM's spatial random effects are a structured form of hierarchical pooling
+- [[Generalized Linear Models]] — Poisson GLM that the BYM model wraps
+- [[Nonparametric Models Overview]] — broader context of non-parametric Bayesian approaches to which BYM belongs
+- [[Social Network Models]] — a related graph-structured model where nodes are agents rather than areas
 
 ## Source
 

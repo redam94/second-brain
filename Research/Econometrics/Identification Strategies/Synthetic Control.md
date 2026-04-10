@@ -174,8 +174,11 @@ p_value = np.mean(np.array(effects_2000) < calif_effect)
 - **[[Bayesian Difference in Differences]]**: Bayesian DiD provides a full posterior over the treatment effect; synthetic control uses permutation inference. For aggregate time-series, [[Counterfactual Inference]] via BART offers a related Bayesian approach.
 
 ## See Also
+
 - [[Differences-in-Differences]] — the classical panel DiD estimator
+- [[Bayesian Difference in Differences]] — Bayesian DiD with posterior over treatment effect
 - [[Instrumental Variables]] — alternative identification when parallel trends fails
 - [[Regression Discontinuity Designs]] — threshold-based identification
 - [[Counterfactual Inference]] — Bayesian counterfactual prediction (COVID excess deaths)
-- [[Bayesian Difference in Differences]] — Bayesian DiD with posterior over treatment effect
+- [[Nonparametric Causal Inference]] — BART-based Bayesian approach to counterfactual estimation; comparable goal but cross-sectional rather than aggregate time-series
+- [[Directed Acyclic Graphs]] — the parallel trends assumption can be stated as a DAG restriction on the time-by-treatment interaction

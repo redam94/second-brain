@@ -64,6 +64,9 @@ $$\text{BF}_{12} = \frac{p(y \mid M_1)}{p(y \mid M_2)} = \frac{\int p(y \mid \th
 
 ## See Also
 
-- [[Model Checking]] — qualitative model assessment
-- [[Iterative Model Improvement]] — using comparisons to guide model building
-- [[Evaluating Fitted Models]] — workflow perspective
+- [[Model Checking]] — qualitative model assessment via posterior predictive checks
+- [[Overfitting and Information Criteria]] — the bias-variance tradeoff that information criteria are designed to manage
+- [[Iterative Model Improvement]] — multiverse analysis and stacking as workflow tools (Section 8 of Bayesian Workflow)
+- [[Evaluating Fitted Models]] — workflow perspective on diagnosing model fit
+- [[Decision Analysis]] — using predictive distributions to make decisions, not just compare models
+- [[Nonparametric Models Overview]] — flexible model classes where comparison tools are especially important

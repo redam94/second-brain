@@ -93,7 +93,7 @@ NYC school system data (Kane, Rockoff & Staiger, 2007). Thousands of teachers ma
 
 ### Fishing for Significance (Sec. 4.4)
 
-Kanazawa (2007) claimed "beautiful parents have more daughters" ($p = 0.015$). But with 5 attractiveness categories $\times$ 4 time summaries = 20 possible comparisons, this is unsurprising. A Bayesian analysis with a reasonable prior finds the probability of a positive effect is only 58%.
+Kanazawa (2007) claimed "beautiful parents have more daughters" ($p = 0.015$). But with 5 attractiveness categories $\times$ 4 time summaries = 20 possible comparisons, this is unsurprising — a textbook case of [[Researcher Degrees of Freedom]] inflating false positive risk. A Bayesian analysis with a reasonable prior finds the probability of a positive effect is only 58%.
 
 ### Subgroup Effects and Multiple Outcomes (Sec. 4.5, 5)
 
