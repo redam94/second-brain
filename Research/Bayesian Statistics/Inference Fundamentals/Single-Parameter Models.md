@@ -21,6 +21,7 @@ used_by:
   - "[[Multiparameter Models]]"
   - "[[Hierarchical Models]]"
   - "[[BDA3 - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Single-Parameter Models

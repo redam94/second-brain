@@ -23,6 +23,8 @@ used_by:
   - "[[Power Analysis and Sample Size]]"
   - "[[Multiple Comparisons - Bayesian Perspective]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Forking Paths and Bayesian Approaches

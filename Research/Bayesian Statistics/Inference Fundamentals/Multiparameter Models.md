@@ -21,6 +21,7 @@ depends_on:
 used_by:
   - "[[Asymptotics and Frequentist Connections]]"
   - "[[BDA3 - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Multiparameter Models

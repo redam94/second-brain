@@ -20,6 +20,7 @@ depends_on:
 used_by:
   - "[[Garden of Forking Data]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # The Golem of Prague

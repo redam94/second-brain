@@ -28,6 +28,7 @@ used_by:
   - "[[Choosing and Building Models]]"
   - "[[Iterative Model Improvement]]"
   - "[[Evaluating Fitted Models]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Hierarchical Models

@@ -21,6 +21,7 @@ used_by:
   - "[[Type S and Type M Errors]]"
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 aliases:
   - "Gelman Hill Yajima 2009"
   - "Why we don't have to worry about multiple comparisons"

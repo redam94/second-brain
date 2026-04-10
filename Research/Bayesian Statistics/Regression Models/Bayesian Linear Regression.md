@@ -25,6 +25,7 @@ used_by:
   - "[[Nonparametric Models Overview]]"
   - "[[Factor Analysis and PPCA]]"
   - "[[Overfitting and Information Criteria]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Bayesian Linear Regression

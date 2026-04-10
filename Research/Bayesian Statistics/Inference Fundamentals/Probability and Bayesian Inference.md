@@ -22,6 +22,7 @@ used_by:
   - "[[Statistical Rethinking - The Golem of Prague]]"
   - "[[Decision Analysis]]"
   - "[[BDA3 - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Probability and Bayesian Inference

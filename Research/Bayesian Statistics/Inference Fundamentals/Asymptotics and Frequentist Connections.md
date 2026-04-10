@@ -24,6 +24,7 @@ used_by:
   - "[[Regression and the CEF]]"
   - "[[Forking Paths and Bayesian Approaches]]"
   - "[[BDA3 - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Asymptotics and Frequentist Connections

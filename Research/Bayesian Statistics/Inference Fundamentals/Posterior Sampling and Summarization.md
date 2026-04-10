@@ -23,6 +23,7 @@ depends_on:
   - "[[raw/StatRethink-Bayes.pdf]]"
 used_by:
   - "[[Bayesian Workflow - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Posterior Sampling and Summarization

@@ -3,7 +3,7 @@ title: "Index: Questions and Answers"
 tags:
   - type/index
 date_updated: 2026-04-09
-question_count: 2
+question_count: 3
 ---
 
 # Questions and Answers
@@ -21,14 +21,19 @@ question_count: 2
 ### Statistical Modeling / General
 - [[Q - Common Pitfalls in Statistical Modeling]] -- Eight major pitfall categories: confounding, forking paths, overfitting, missing data, golem misuse, neglecting model checks, computational issues, Type S/M errors
 
+### Bayesian vs. Frequentist Statistics
+- [[Q - Differences Between Frequentist and Bayesian Statistics]] -- Core philosophical divide (probability as frequency vs. belief), confidence vs. credible intervals, priors, hierarchical models, model comparison
+
 ## Recent Questions
 
 | Question | Date | Key Sources |
 |----------|------|-------------|
+| [[Q - Differences Between Frequentist and Bayesian Statistics]] | 2026-04-09 | [[Probability and Bayesian Inference]], [[Asymptotics and Frequentist Connections]], [[Hierarchical Models]] |
 | [[Q - Common Pitfalls in Statistical Modeling]] | 2026-04-09 | [[Spurious Association and Confounds]], [[Garden of Forking Paths]], [[Overfitting and Information Criteria]], [[Model Checking]] |
 | [[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]] | 2026-04-09 | [[Multiple Comparisons - Bayesian Perspective]], [[Garden of Forking Paths]], [[Partial Pooling as Multiple Comparisons Correction]] |
 
 ## All Questions
 
+- [[Q - Differences Between Frequentist and Bayesian Statistics]] -- Probability as frequency vs. belief; confidence vs. credible intervals; priors; partial pooling; WAIC vs. AIC; when each framework excels
 - [[Q - Common Pitfalls in Statistical Modeling]] -- Eight pitfall categories with remedies: confounding, forking paths, overfitting, missing data, golem misuse, model checking, computational issues, Type S/M errors
 - [[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]] -- Stop selecting by significance; use regularizing priors, projection predictive selection, or multilevel models with partial pooling
