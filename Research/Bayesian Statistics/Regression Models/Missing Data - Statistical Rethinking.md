@@ -21,6 +21,7 @@ depends_on:
   - "[[Counterfactual Inference]]"
 used_by:
   - "[[Social Network Models]]"
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
 ---
 
 # Missing Data — Statistical Rethinking (Lecture 18)

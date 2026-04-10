@@ -22,6 +22,7 @@ used_by:
   - "[[Modeling as Software Development]]"
   - "[[Model Checking]]"
   - "[[Model Comparison]]"
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
 ---
 
 > [!summary]

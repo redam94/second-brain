@@ -21,6 +21,7 @@ used_by:
   - "[[Instrumental Variables]]"
   - "[[Differences-in-Differences]]"
   - "[[Activity Bias in Advertising]]"
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
 ---
 
 # The Selection Problem

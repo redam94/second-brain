@@ -24,6 +24,7 @@ depends_on:
 used_by:
   - "[[Observational vs Experimental Methods in Advertising]]"
   - "[[Power Analysis and Sample Size]]"
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
 ---
 
 # Activity Bias in Advertising

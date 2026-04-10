@@ -19,6 +19,7 @@ depends_on:
   - "[[raw/StatRethink-Bayes.pdf]]"
 used_by:
   - "[[Garden of Forking Data]]"
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
 ---
 
 # The Golem of Prague

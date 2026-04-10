@@ -20,6 +20,7 @@ depends_on:
 used_by:
   - "[[Evaluating Fitted Models]]"
   - "[[HMC and Stan in Practice]]"
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
 ---
 
 > [!summary]

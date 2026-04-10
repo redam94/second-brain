@@ -27,6 +27,7 @@ used_by:
   - "[[Counterfactual Inference]]"
   - "[[Missing Data - Statistical Rethinking]]"
   - "[[Confirmatory Factor Analysis and SEM]]"
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
 ---
 
 # Spurious Association and Confounds

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Questions-and-Answers/Q - Handling Multiple Comparisons When Selecting From Hundreds of Models.md",
+                "file": "Questions-and-Answers/Q - Common Pitfalls in Statistical Modeling.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Q - Handling Multiple Comparisons When Selecting From Hundreds of Models"
+              "title": "Q - Common Pitfalls in Statistical Modeling"
             }
           }
         ]
@@ -183,10 +183,11 @@
   },
   "active": "aebec5300f0ffcb5",
   "lastOpenFiles": [
-    "Research/Bayesian Statistics/Workflow/Iterative Model Improvement.md",
     "Questions-and-Answers/Q - Handling Multiple Comparisons When Selecting From Hundreds of Models.md",
-    "Research/Bayesian Statistics/Inference Fundamentals/Hierarchical Models.md",
+    "Questions-and-Answers/Q - Common Pitfalls in Statistical Modeling.md",
     "Questions-and-Answers/_Index.md",
+    "Research/Bayesian Statistics/Workflow/Iterative Model Improvement.md",
+    "Research/Bayesian Statistics/Inference Fundamentals/Hierarchical Models.md",
     "Questions-and-Answers",
     "Research/Bayesian Statistics/Inference Fundamentals/Asymptotics and Frequentist Connections.md",
     "Research/Bayesian Statistics/Advanced Models/Copula Estimation.md",
@@ -216,7 +217,6 @@
     "Research/Bayesian Statistics/Advanced Models/Nonparametric Causal Inference.md",
     "Research/Bayesian Statistics/Advanced Models/Monsters and Mixtures.md",
     "Research/Bayesian Statistics/Advanced Models/Confirmatory Factor Analysis and SEM.md",
-    "Research/Research Methodology/Observational vs Experimental Methods in Advertising.md",
     "Research/raw/p_hacking.pdf",
     "Research/raw/StatRethink-Bayes.pdf"
   ]

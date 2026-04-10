@@ -23,6 +23,7 @@ used_by:
   - "[[Model Comparison]]"
   - "[[Bayesian Workflow - Overview]]"
   - "[[Confirmatory Factor Analysis and SEM]]"
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
 ---
 
 # Model Checking
