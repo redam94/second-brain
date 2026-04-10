@@ -70,3 +70,4 @@ This mechanism explains why:
 - [[Garden of Forking Paths]] — the full paper and theoretical framework
 - [[Forking Paths and Bayesian Approaches]] — alternatives to p-value-based inference
 - [[Omitted Variables Bias]] — a related source of analytical error
+- [[Hierarchical Models]] — partial pooling provides a structural solution by shrinking estimates across researcher-chosen subgroups

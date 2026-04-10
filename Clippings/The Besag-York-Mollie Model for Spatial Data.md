@@ -660,3 +660,7 @@ Here is an citation template in bibtex:
 ```
 
 which once rendered could look like:
+
+## Vault Notes
+
+- [[Spatial Models - BYM]] — BYM model for areal spatial data in PyMC

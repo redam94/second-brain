@@ -70,3 +70,5 @@ $$Y_i = \alpha + \rho D_i + \eta_i$$
 - [[Regression and the CEF]]
 - [[Data Collection Models]] — randomized experiments ensure Bayesian ignorability by design
 - [[Forking Paths and Bayesian Approaches]] — how randomization complements Bayesian approaches to inference
+- [[Omitted Variables Bias]] — the confounding mechanism that randomization eliminates by design
+- [[Multiple Testing Corrections]] — multiple comparisons inflate false positives even in well-designed experiments

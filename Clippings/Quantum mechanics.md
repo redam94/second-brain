@@ -569,3 +569,7 @@ By 1930, quantum mechanics had been further unified and formalized by [David Hil
 [^104]: [Feynman, Richard](https://en.wikipedia.org/wiki/Richard_Feynman "Richard Feynman"). ["The Feynman Lectures on Physics Vol. III Ch. 21: The Schrödinger Equation in a Classical Context: A Seminar on Superconductivity, 21-4"](https://feynmanlectures.caltech.edu/III_21.html#Ch21-S5). [California Institute of Technology](https://en.wikipedia.org/wiki/California_Institute_of_Technology "California Institute of Technology"). Retrieved 24 November 2015. ...it was long believed that the wave function of the Schrödinger equation would never have a macroscopic representation analogous to the macroscopic representation of the amplitude for photons. On the other hand, it is now realized that the phenomena of superconductivity presents us with just this situation.
 
 [^105]: Packard, Richard (2006). ["Berkeley Experiments on Superfluid Macroscopic Quantum Effects"](https://web.archive.org/web/20151125112132/http://research.physics.berkeley.edu/packard/publications/Articles/LT24_Berk_expts_on_macro_sup_effects.pdf) (PDF). Physics Department, University of California, Berkeley. Archived from [the original](http://physics.berkeley.edu/sites/default/files/_/lt24_berk_expts_on_macro_sup_effects.pdf) (PDF) on 25 November 2015. Retrieved 24 November 2015.
+
+## Vault Notes
+
+- [[Quantum Mechanics Overview]] — Quantum mechanics foundations

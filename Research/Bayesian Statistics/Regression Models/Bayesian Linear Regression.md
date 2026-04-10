@@ -57,6 +57,7 @@ Informative priors on $\beta$ provide **regularization**:
 
 - [[Regression and the CEF]] — the frequentist perspective from Angrist & Pischke
 - [[Hierarchical Linear Models]] — varying coefficients across groups
+- [[Hierarchical Models]] — partial pooling as the multilevel generalization of this model
 - [[Generalized Linear Models]] — extending beyond normality
 - [[Omitted Variables Bias]] — Bayesian regularization (shrinkage) partially mitigates OVB in high-$p$ settings
 - [[Conditional Independence Assumption]] — the assumption needed for causal interpretation of regression coefficients

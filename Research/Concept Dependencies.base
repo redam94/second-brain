@@ -2,7 +2,6 @@ filters:
   and:
     - file.hasTag("source/ingested")
     - '!file.hasTag("type/index")'
-
 properties:
   depends_on:
     displayName: Depends On
@@ -10,7 +9,6 @@ properties:
     displayName: Used By
   tags:
     displayName: Tags
-
 views:
   - type: table
     name: Concept Dependency Graph

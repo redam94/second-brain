@@ -629,3 +629,7 @@ Compared to ordinary QFT, [topological quantum field theory](https://en.wikipedi
 [^62]: Sati, Hisham; [Schreiber, Urs](https://en.wikipedia.org/wiki/Urs_Schreiber "Urs Schreiber") (2012-01-06). "Survey of mathematical foundations of QFT and perturbative string theory". [arXiv](https://en.wikipedia.org/wiki/ArXiv_\(identifier\) "ArXiv (identifier)"):[1109.0955v2](https://arxiv.org/abs/1109.0955v2) \[[math-ph](https://arxiv.org/archive/math-ph)\].
 
 [^63]: [Jaffe, Arthur](https://en.wikipedia.org/wiki/Arthur_Jaffe "Arthur Jaffe"); [Witten, Edward](https://en.wikipedia.org/wiki/Edward_Witten "Edward Witten"). ["Quantum Yang–Mills Theory"](https://web.archive.org/web/20150330003812/http://www.claymath.org/sites/default/files/yangmills.pdf) (PDF). [Clay Mathematics Institute](https://en.wikipedia.org/wiki/Clay_Mathematics_Institute "Clay Mathematics Institute"). Archived from [the original](http://www.claymath.org/sites/default/files/yangmills.pdf) (PDF) on 2015-03-30. Retrieved 2018-07-18.
+
+## Vault Notes
+
+- [[Quantum Field Theory Overview]] — QFT fundamentals

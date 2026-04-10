@@ -27,6 +27,7 @@ used_by:
   - "[[Bayesian Difference in Differences]]"
   - "[[Standard Errors and Clustering]]"
   - "[[Observational vs Experimental Methods in Advertising]]"
+  - "[[Generalized Synthetic Control Method]]"
 ---
 
 # Differences-in-Differences

@@ -576,3 +576,7 @@ Here is an citation template in bibtex:
 ```
 
 which once rendered could look like:
+
+## Vault Notes
+
+- [[Counterfactual Inference]] — Bayesian counterfactual prediction (COVID-19 excess deaths)

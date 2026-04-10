@@ -1387,3 +1387,7 @@ Here is an citation template in bibtex:
 ```
 
 which once rendered could look like:
+
+## Vault Notes
+
+- [[Discrete Choice Models]] — Bayesian discrete choice / random utility models

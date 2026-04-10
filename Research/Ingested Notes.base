@@ -1,5 +1,4 @@
 filters: file.hasTag("source/ingested")
-
 properties:
   doc_type:
     displayName: Doc Type
@@ -9,7 +8,6 @@ properties:
     displayName: Location
   date_ingested:
     displayName: Ingested
-
 views:
   - type: table
     name: All Ingested Notes

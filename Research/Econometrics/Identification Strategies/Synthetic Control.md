@@ -17,6 +17,10 @@ depends_on:
   - "[[The Experimental Ideal]]"
 used_by:
   - "[[Instrumental Variables]]"
+  - "[[Synthetic Control Bias Theory]]"
+  - "[[Synthetic Control Inference and Diagnostics]]"
+  - "[[Synthetic Control Requirements]]"
+  - "[[Synthetic Control Extensions]]"
 aliases:
   - synthetic controls
   - synthetic control method
@@ -182,3 +186,11 @@ p_value = np.mean(np.array(effects_2000) < calif_effect)
 - [[Counterfactual Inference]] — Bayesian counterfactual prediction (COVID excess deaths)
 - [[Nonparametric Causal Inference]] — BART-based Bayesian approach to counterfactual estimation; comparable goal but cross-sectional rather than aggregate time-series
 - [[Directed Acyclic Graphs]] — the parallel trends assumption can be stated as a DAG restriction on the time-by-treatment interaction
+
+## From Abadie (2021) — Deeper Theory
+
+- [[Abadie 2021 - Overview]] — authoritative methodological guide to synthetic controls (JEL 2021)
+- [[Synthetic Control Bias Theory]] — linear factor model, bias bound, sparsity geometry, V matrix selection
+- [[Synthetic Control Inference and Diagnostics]] — RMSPE ratio, permutation inference, backdating, leave-one-out
+- [[Synthetic Control Requirements]] — 5 contextual conditions, data requirements, when not to use
+- [[Synthetic Control Extensions]] — multiple treated units, bias correction, elastic net, matrix completion

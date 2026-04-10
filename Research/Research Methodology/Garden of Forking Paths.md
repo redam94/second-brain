@@ -66,3 +66,4 @@ Conditional on the observed data, each analytic choice seems like the *only* rea
 - [[Researcher Degrees of Freedom]] — deeper dive into analytic flexibility
 - [[Forking Paths and Bayesian Approaches]] — how Bayesian methods address this
 - [[The Experimental Ideal]] — why randomized experiments mitigate these issues
+- [[Hierarchical Models]] — partial pooling provides a structural Bayesian solution to the multiplicity problem

@@ -411,3 +411,7 @@ Dawn Iacobucci, Matthew J Schneider, Deidre L Popovich, and Georgios A Bakamitso
 [^5]: \[[7](#id16)\]
 
 Daniel J Bauer and Patrick J Curran. Probing interactions in fixed and multilevel regression: inferential and graphical techniques. *Multivariate behavioral research*, 40(3):373–400, 2005.
+
+## Vault Notes
+
+- [[Moderation Analysis]] — Bayesian moderation analysis with PyMC

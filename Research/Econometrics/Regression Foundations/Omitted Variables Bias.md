@@ -74,3 +74,4 @@ For returns to schooling where "ability" ($A_i$) is omitted:
 - [[Regression and the CEF]]
 - [[Instrumental Variables]]
 - [[Bayesian Linear Regression]] — Bayesian shrinkage as regularization that partially mitigates OVB in high-dimensional settings
+- [[The Experimental Ideal]] — randomization eliminates OVB by construction; the gold-standard contrast to observational confounding

@@ -532,3 +532,7 @@ David Card and Alan B Krueger. Minimum wages and employment: a case study of the
 [^2]: \[[4](#id6)\]
 
 Marianne Bertrand, Esther Duflo, and Sendhil Mullainathan. How much should we trust differences-in-differences estimates? *The Quarterly journal of economics*, 119(1):249–275, 2004.
+
+## Vault Notes
+
+- [[Bayesian Difference in Differences]] — Bayesian DiD with counterfactual inference in PyMC

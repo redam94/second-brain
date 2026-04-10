@@ -3,7 +3,6 @@ filters:
     - file.hasTag("source/ingested")
     - file.inFolder("Research/Bayesian Statistics/Causal Inference")
     - '!file.hasTag("type/index")'
-
 properties:
   doc_type:
     displayName: Doc Type
@@ -11,7 +10,6 @@ properties:
     displayName: Location
   date_ingested:
     displayName: Ingested
-
 views:
   - type: table
     name: All Ingested Notes

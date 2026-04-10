@@ -4276,3 +4276,7 @@ Matheus Facure. *Causal Inference in Python*. O'Reilly, 2023.
 [^6]: \[[6](#id8)\]
 
 Chernozhukov Victor, Chetverikov Denis, Demirer Mert, Duflo Esther, Hansen Christian, Newey Whitney, and Robins James. Double/debiased machine learning for treatment and structural parameters. *The Econometrics Journal*, 21(1):1 – 68, 2018. [doi:https://doi.org/10.1111/ectj.12097](https://doi.org/https://doi.org/10.1111/ectj.12097).
+
+## Vault Notes
+
+- [[Nonparametric Causal Inference]] — BART and non-parametric causal methods

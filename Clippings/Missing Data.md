@@ -1532,3 +1532,7 @@ Here is an citation template in bibtex:
 ```
 
 which once rendered could look like:
+
+## Vault Notes
+
+- [[Missing Data Models]] — Missing data mechanisms and Bayesian imputation

@@ -118,3 +118,4 @@ The **q-value** of a test is the minimum FDR at which that test would be called 
 - [[Type S and Type M Errors]] — reframing statistical error beyond Type 1/Type 2
 - [[Partial Pooling as Multiple Comparisons Correction]] — formal algebra of how shrinkage reduces z-scores
 - [[Power Analysis and Sample Size]] — designing studies with adequate power
+- [[The Experimental Ideal]] — even randomized experiments require multiple comparisons correction when testing many outcomes

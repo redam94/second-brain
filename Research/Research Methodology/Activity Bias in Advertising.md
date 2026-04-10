@@ -68,3 +68,4 @@ used_by:
 - [[Regression and the CEF]] — why adding more control variables cannot fix a violated CIA
 - [[Standard Errors and Clustering]] — inference considerations in large-scale ad experiments
 - [[Conditional Independence Assumption]] — the assumption violated by activity bias
+- [[Instrumental Variables]] — exogenous variation approach when CIA fails, as it does here

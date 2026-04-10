@@ -222,6 +222,9 @@ The posterior for each $\theta_j$ borrows strength from all groups. The degree o
 - [[Hierarchical Linear Models]] — Bayesian regression with partial pooling
 - [[MCMC Basics]] — computational machinery enabling Bayesian inference
 - [[Approximation Methods]] — Laplace approximation, variational Bayes (fast alternatives to MCMC)
+- [[BDA3 - Overview]] — the primary reference for the Bayesian framework described here
+- [[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]] — related Q&A on a key frequentist vs. Bayesian divergence point
+- [[Q - Common Pitfalls in Statistical Modeling]] — related Q&A covering pitfalls that differ across paradigms
 
 ## Gaps
 

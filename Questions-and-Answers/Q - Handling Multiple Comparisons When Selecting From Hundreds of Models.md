@@ -182,6 +182,7 @@ For your workflow of running hundreds of models:
 - [[Power Analysis and Sample Size]] -- underpowered studies amplify all these problems
 - [[Choosing and Building Models]] -- principled model building workflow
 - [[Evaluating Fitted Models]] -- posterior predictive checks
+- [[Q - Differences Between Frequentist and Bayesian Statistics]] — the paradigm-level context for why these approaches differ
 
 ## Gaps
 

@@ -469,3 +469,7 @@ Heiss, Andrew. 2021. “How to Use Bayesian Propensity Scores and Inverse Probab
 [^4]: Saarela, Olli, David A. Stephens, Erica E. M. Moodie, and Marina B. Klein. 2015. “On Bayesian Estimation of Marginal Structural Models.” *Biometrics* 71 (2): 279–88. [https://doi.org/10.1111/biom.12269](https://doi.org/10.1111/biom.12269)
 
 [^5]: Zigler, Corwin Matthew. 2016. “The Central Role of Bayes’ Theorem for Joint Estimation of Causal Effects and Propensity Scores.” *The American Statistician* 70 (1): 47–54. [https://doi.org/10.1080/00031305.2015.1111260](https://doi.org/10.1080/00031305.2015.1111260)
+
+## Vault Notes
+
+- [[Bayesian Propensity Scores and IPW]] — Liao-Zigler two-stage Bayesian IPW method

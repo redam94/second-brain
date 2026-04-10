@@ -1327,3 +1327,7 @@ Here is an citation template in bibtex:
 ```
 
 which once rendered could look like:
+
+## Vault Notes
+
+- [[Social Network Models]] — Bayesian social network analysis in PyMC

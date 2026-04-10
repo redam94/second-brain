@@ -87,3 +87,4 @@ WAIC is the most general: it uses the full posterior, makes no Gaussian approxim
 - [[Bayesian Linear Regression]] — regularizing priors in regression context
 - [[Linear Models in Statistical Rethinking]] — the models this chapter evaluates
 - [[Statistical Rethinking - Overview]]
+- [[Hierarchical Models]] — partial pooling is a form of regularization that directly reduces effective model complexity

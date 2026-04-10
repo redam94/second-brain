@@ -228,6 +228,7 @@ A checklist for avoiding these pitfalls:
 - [[Bayesian Linear Regression]] -- regularizing priors in regression
 - [[Counterfactual Inference]] -- explicit counterfactual framing
 - [[Data Collection Models]] -- Bayesian treatment of ignorability and selection mechanisms
+- [[Q - Differences Between Frequentist and Bayesian Statistics]] -- paradigm differences that shape which pitfalls are most salient
 - [[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]] -- deep dive on pitfall #2
 
 ## Gaps

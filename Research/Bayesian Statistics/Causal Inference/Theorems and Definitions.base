@@ -1,14 +1,12 @@
 filters:
   and:
     - file.inFolder("Research/Bayesian Statistics/Causal Inference")
-    - 'file.hasTag("type/theorem") || file.hasTag("type/definition")'
-
+    - file.hasTag("type/theorem") || file.hasTag("type/definition")
 properties:
   source_location:
     displayName: Location
   doc_type:
     displayName: Doc Type
-
 views:
   - type: table
     name: Theorems and Definitions

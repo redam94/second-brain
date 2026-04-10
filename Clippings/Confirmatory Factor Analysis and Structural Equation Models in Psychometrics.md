@@ -1444,3 +1444,7 @@ pymc      : 5.10.3
 
 Watermark: 2.4.3
 ```
+
+## Vault Notes
+
+- [[Confirmatory Factor Analysis and SEM]] — CFA and SEM in PyMC

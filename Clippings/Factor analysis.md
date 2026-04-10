@@ -465,3 +465,7 @@ Here is an citation template in bibtex:
 ```
 
 which once rendered could look like:
+
+## Vault Notes
+
+- [[Factor Analysis and PPCA]] — Factor analysis and probabilistic PCA in PyMC

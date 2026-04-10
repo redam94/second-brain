@@ -878,3 +878,7 @@ And this book provides a deeper and more detailed exploration of some of the key
 > [**Causal Inference in Statistics: A Primer**](https://amzn.to/3WblFp1)
 
 Note: These are affiliate links so if you decide to purchase via these links, I will receive a small proportion at no extra cost to you.
+
+## Vault Notes
+
+- [[Directed Acyclic Graphs]] — DAGs for causal identification

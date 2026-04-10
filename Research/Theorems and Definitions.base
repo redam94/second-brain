@@ -1,11 +1,9 @@
-filters: 'file.hasTag("type/theorem") || file.hasTag("type/definition")'
-
+filters: file.hasTag("type/theorem") || file.hasTag("type/definition")
 properties:
   source:
     displayName: Source
   source_location:
     displayName: Location
-
 views:
   - type: table
     name: Theorems and Definitions

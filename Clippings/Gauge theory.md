@@ -330,3 +330,7 @@ Thus, in the abelian case, where ${\displaystyle A_{\mu }(x)\rightarrow A'_{\mu 
 [^11]: Pickering, A. (1984). *Constructing Quarks*. [University of Chicago Press](https://en.wikipedia.org/wiki/University_of_Chicago_Press "University of Chicago Press"). [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-226-66799-5](https://en.wikipedia.org/wiki/Special:BookSources/0-226-66799-5 "Special:BookSources/0-226-66799-5").
 
 [^12]: J. J. Sakurai, *Advanced Quantum Mechanics*, Addison-Wesley, 1967, sect. 1–4.
+
+## Vault Notes
+
+- [[Gauge Theory Overview]] — Gauge theory and the Standard Model

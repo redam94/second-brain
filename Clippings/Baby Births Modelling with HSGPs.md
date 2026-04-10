@@ -856,3 +856,7 @@ Here is an citation template in bibtex:
 ```
 
 which once rendered could look like:
+
+## Vault Notes
+
+- [[Hilbert Space Gaussian Processes]] — HSGP approximation for scalable GP inference
