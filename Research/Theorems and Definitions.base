@@ -1,39 +1,15 @@
-{
-  "headings": [
-    {
-      "heading": "file.name",
-      "width": 280
-    },
-    {
-      "heading": "source",
-      "width": 180
-    },
-    {
-      "heading": "source_location",
-      "width": 180
-    }
-  ],
-  "filters": [
-    {
-      "or": [
-        {
-          "column": "file.tags",
-          "type": "contains",
-          "value": "type/theorem"
-        },
-        {
-          "column": "file.tags",
-          "type": "contains",
-          "value": "type/definition"
-        }
-      ]
-    }
-  ],
-  "sort": [
-    {
-      "column": "file.name",
-      "direction": "asc"
-    }
-  ],
-  "view_type": "table"
-}
+filters: 'file.hasTag("type/theorem") || file.hasTag("type/definition")'
+
+properties:
+  source:
+    displayName: Source
+  source_location:
+    displayName: Location
+
+views:
+  - type: table
+    name: Theorems and Definitions
+    order:
+      - file.name
+      - source
+      - source_location

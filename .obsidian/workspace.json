@@ -11,14 +11,13 @@
             "id": "aebec5300f0ffcb5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "Research/Econometrics/Identification Strategies/Bayesian Difference in Differences.md",
-                "mode": "source",
-                "source": false
+                "file": "Research/Theorems and Definitions.base",
+                "viewName": "Theorems and Definitions"
               },
-              "icon": "lucide-file",
-              "title": "Bayesian Difference in Differences"
+              "icon": "lucide-table",
+              "title": "Theorems and Definitions"
             }
           }
         ]
@@ -166,7 +165,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,40 +182,40 @@
   },
   "active": "aebec5300f0ffcb5",
   "lastOpenFiles": [
-    "Research/Theoretical Physics/Quantum Mechanics Overview.md",
-    "Research/Theoretical Physics/Quantum Field Theory Overview.md",
-    "Research/Theoretical Physics/Gauge Theory Overview.md",
     "Research/Concept Dependencies.base",
-    "Research/Econometrics/Mostly Harmless Econometrics - Overview.md",
-    "Research/Econometrics/Identification Strategies/_Index.md",
-    "Research/Bayesian Statistics/BDA3 - Overview.md",
-    "Research/Bayesian Statistics/Statistical Rethinking - Overview.md",
-    "Research/Econometrics/Extensions/Discrete Choice Models.md",
-    "Research/Econometrics/Foundations/Research Questions in Econometrics.md",
-    "Research/Econometrics/Identification Strategies/Differences-in-Differences.md",
-    "Research/Econometrics/Regression Foundations/Conditional Independence Assumption.md",
-    "Research/Bayesian Statistics/Regression Models/Hierarchical Linear Models.md",
-    "Research/Econometrics/Extensions/Quantile Regression.md",
-    "Research/Econometrics/Extensions/Standard Errors and Clustering.md",
-    "Research/Bayesian Statistics/Regression Models/Spurious Association and Confounds.md",
-    "Research/Bayesian Statistics/Regression Models/Linear Models in Statistical Rethinking.md",
-    "Research/Bayesian Statistics/Workflow/Computational Troubleshooting.md",
-    "Research/Bayesian Statistics/Workflow/Bayesian Workflow - Overview.md",
-    "Research/Bayesian Statistics/Regression Models/Moderation Analysis.md",
-    "Research/Bayesian Statistics/Regression Models/Counterfactual Inference.md",
-    "Research/Bayesian Statistics/Regression Models/Bayesian Linear Regression.md",
-    "Research/Bayesian Statistics/Regression Models/Missing Data Models.md",
-    "Research/Bayesian Statistics/Regression Models/Missing Data - Statistical Rethinking.md",
-    "Research/Bayesian Statistics/Regression Models/Generalized Linear Models.md",
-    "Research/Bayesian Statistics/Workflow/Evaluating Fitted Models.md",
     "Research/Ingested Notes.base",
-    "Research/Theoretical Physics",
+    "Research/Bayesian Statistics/Causal Inference/Foundations/Potential Outcomes Framework.md",
+    "Research/Bayesian Statistics/Causal Inference/Foundations/Frequentist Causal Estimation.md",
+    "Research/Bayesian Statistics/Causal Inference/Bayesian Inference/Propensity Score in Bayesian CI.md",
+    "Research/Bayesian Statistics/Causal Inference/Concept Dependencies.base",
     "Research/Theorems and Definitions.base",
-    "Research/Physics",
-    "Questions-and-Answers",
-    "Untitled 2.base",
-    "Untitled.base",
-    "Untitled 1.base",
-    "Research/raw/multiple2f.pdf"
+    "Research/_Index.md",
+    "Research/Bayesian Statistics/Causal Inference/Ingested Notes.base",
+    "Research/Bayesian Statistics/Causal Inference/Theorems and Definitions.base",
+    "Research/Bayesian Statistics/Causal Inference/Li et al 2022 - Overview.md",
+    "Research/Bayesian Statistics/Causal Inference/Foundations/Causal Estimands.md",
+    "Research/Bayesian Statistics/Causal Inference/Bayesian Inference/General Structure of Bayesian CI.md",
+    "Research/Bayesian Statistics/Causal Inference/Bayesian Inference/Bayesian Outcome Models.md",
+    "Research/Econometrics/Extensions/Standard Errors and Clustering.md",
+    "Research/Bayesian Statistics/Causal Inference/_Index.md",
+    "Research/Bayesian Statistics/Causal Inference/Sensitivity and Complex Mechanisms/_Index.md",
+    "Research/Bayesian Statistics/Causal Inference/Bayesian Inference/_Index.md",
+    "Research/Bayesian Statistics/Causal Inference/Foundations/_Index.md",
+    "Research/Bayesian Statistics/Causal Inference/Sensitivity and Complex Mechanisms/Time-Varying Treatments and G-computation.md",
+    "Research/Bayesian Statistics/Causal Inference/Sensitivity and Complex Mechanisms/Instrumental Variables and Principal Stratification.md",
+    "Research/Bayesian Statistics/Causal Inference/Sensitivity and Complex Mechanisms/Sensitivity Analysis in Observational Studies.md",
+    "Research/Bayesian Statistics/Causal Inference/raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf",
+    "Research/Bayesian Statistics/Causal Inference/raw",
+    "Research/Bayesian Statistics/Causal Inference/Sensitivity and Complex Mechanisms",
+    "Research/Bayesian Statistics/Causal Inference/Foundations",
+    "Research/Econometrics/Extensions/Quantile Regression.md",
+    "Research/Econometrics/Extensions/Discrete Choice Models.md",
+    "Research/Bayesian Statistics/Statistical Rethinking - Overview.md",
+    "Research/Bayesian Statistics/BDA3 - Overview.md",
+    "Questions-and-Answers/_Index.md",
+    "Dream/_Index.md",
+    "Clippings/_Index.md",
+    "Research/Econometrics/Identification Strategies/Bayesian Difference in Differences.md",
+    "Research/Theoretical Physics/Quantum Mechanics Overview.md"
   ]
 }

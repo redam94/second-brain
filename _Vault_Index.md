@@ -3,8 +3,8 @@ title: "Vault Index"
 tags:
   - type/index
   - type/vault-root
-date_updated: 2026-04-09
-concept_count: 65
+date_updated: 2026-04-10
+concept_count: 75
 ---
 
 # Vault Index
@@ -27,13 +27,14 @@ concept_count: 65
 
 Cross-cutting topics that span multiple folders:
 - **Bayesian Statistics**: [[BDA3 - Overview|BDA3]], [[Bayesian Workflow - Overview|Workflow]], [[Hierarchical Models]], [[MCMC Basics|MCMC]], [[Model Checking]], [[Model Comparison]]
-- **Causal Inference**: [[The Selection Problem|Selection Problem]], [[The Experimental Ideal|Experiments]], [[Conditional Independence Assumption|CIA]], [[Instrumental Variables|IV]], [[Differences-in-Differences|DD]], [[Activity Bias in Advertising|Activity Bias]], [[Counterfactual Inference]], [[Nonparametric Causal Inference|BART Causal]]
+- **Causal Inference**: [[The Selection Problem|Selection Problem]], [[The Experimental Ideal|Experiments]], [[Conditional Independence Assumption|CIA]], [[Instrumental Variables|IV]], [[Differences-in-Differences|DD]], [[Activity Bias in Advertising|Activity Bias]], [[Counterfactual Inference]], [[Nonparametric Causal Inference|BART Causal]], [[Potential Outcomes Framework]], [[Causal Estimands]], [[Propensity Score in Bayesian CI]]
 - **Econometrics**: [[Regression and the CEF|Regression/CEF]], [[Omitted Variables Bias|OVB]], [[Quantile Regression]], [[Standard Errors and Clustering|Standard Errors]]
 - **Research Methodology**: [[Garden of Forking Paths|Forking Paths]], [[Researcher Degrees of Freedom]], [[Multiple Testing Corrections|FDR/Bonferroni]], [[Power Analysis and Sample Size|Power Analysis]], [[Survival Analysis]]
 - **Advanced Models**: [[Nonparametric Models Overview|Nonparametric]], [[Hilbert Space Gaussian Processes|HSGP]], [[Spatial Models - BYM|Spatial]], [[Copula Estimation|Copulas]], [[Social Network Models|Networks]], [[Confirmatory Factor Analysis and SEM|CFA/SEM]]
 
 ## Recent Ingestions
 
+- 2026-04-10: Ingested Li, Ding & Mealli (2022) into [[Research/Bayesian Statistics/Causal Inference/_Index|Causal Inference]] — 10 notes covering potential outcomes, Bayesian CI structure, BART/BCF/GP outcome models, propensity score strategies, E-value sensitivity analysis, IV/principal stratification, g-computation
 - 2026-04-09: Ingested 9 PyMC tutorials into [[Research/_Index|Research]] — HSGP, copulas, CFA/SEM, spatial BYM, social networks, causal BART, missing data, counterfactual inference, moderation, Bayesian DiD
 - 2026-04-08: Ingested 2 PyMC tutorials — discrete choice models, factor analysis
 - 2026-04-08: Ingested 5 textbooks/papers — BDA3, Bayesian Workflow, Statistical Rethinking, Garden of Forking Paths, Activity Bias, Mostly Harmless Econometrics

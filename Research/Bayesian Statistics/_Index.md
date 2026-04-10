@@ -5,7 +5,7 @@ tags:
   - source/ingested
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-04-10
-concept_count: 44
+concept_count: 54
 ---
 
 # Bayesian Statistics
@@ -17,6 +17,7 @@ concept_count: 44
 > - Need MCMC, HMC, or variational inference? -> [[Computation/_Index|Computation]]
 > - Need regression, GLMs, or missing data? -> [[Regression Models/_Index|Regression Models]]
 > - Need GPs, mixtures, spatial, or causal BART? -> [[Advanced Models/_Index|Advanced Models]]
+> - Need Bayesian causal inference (potential outcomes, BART/BCF, IV, g-computation)? -> [[Causal Inference/_Index|Causal Inference]]
 
 ## Book Overviews
 
@@ -33,6 +34,7 @@ concept_count: 44
 | [[Regression Models/_Index\|Regression Models]] | 9 | Bayesian regression, multilevel models, GLMs, missing data (BDA3 Part IV) |
 | [[Advanced Models/_Index\|Advanced Models]] | 10 | GPs, mixtures, Dirichlet processes, spatial, copulas, BART, Bayesian IPW (BDA3 Part V + PyMC) |
 | [[Workflow/_Index\|Bayesian Workflow]] | 7 | The iterative modeling cycle (Gelman et al. 2020) |
+| [[Causal Inference/_Index\|Causal Inference]] | 10 | Potential outcomes, BART/BCF outcome models, propensity score, IV, g-formula (Li et al. 2022) |
 
 ## Sources
 
@@ -40,6 +42,7 @@ concept_count: 44
 - [[raw/BayesWorkflow.pdf]] — Bayesian Workflow (Gelman, Vehtari, Simpson et al., 2020)
 - [[raw/StatRethink-Bayes.pdf]] — Statistical Rethinking (McElreath, 2015)
 - [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss blog (2021): Bayesian IPW via Liao-Zigler two-stage method
+- [[Causal Inference/raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]] — Li, Ding & Mealli (2022): Bayesian causal inference critical review, *Phil. Trans. R. Soc. A* 381
 
 ## See Also
 

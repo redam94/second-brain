@@ -1,10 +1,12 @@
-filters: file.hasTag("source/ingested")
+filters:
+  and:
+    - file.hasTag("source/ingested")
+    - file.inFolder("Research/Bayesian Statistics/Causal Inference")
+    - '!file.hasTag("type/index")'
 
 properties:
   doc_type:
     displayName: Doc Type
-  source:
-    displayName: Source
   source_location:
     displayName: Location
   date_ingested:
@@ -16,6 +18,6 @@ views:
     order:
       - file.name
       - doc_type
-      - source
       - source_location
       - date_ingested
+      - file.folder
