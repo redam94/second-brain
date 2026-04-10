@@ -6,6 +6,8 @@ tags:
   - topic/causal-inference
   - topic/confounding
   - topic/regression
+  - type/concept
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Regression Models"
@@ -14,6 +16,17 @@ aliases:
   - "Multivariate regression"
   - "Post-treatment bias"
   - "Masked relationship"
+doc_type: concept
+source_location: "Statistical Rethinking Ch.9:267-290"
+depends_on:
+  - "[[Linear Models in Statistical Rethinking]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Probability and Bayesian Inference]]"
+used_by:
+  - "[[Moderation Analysis]]"
+  - "[[Counterfactual Inference]]"
+  - "[[Missing Data - Statistical Rethinking]]"
+  - "[[Confirmatory Factor Analysis and SEM]]"
 ---
 
 # Spurious Association and Confounds

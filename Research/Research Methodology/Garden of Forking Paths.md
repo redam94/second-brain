@@ -5,6 +5,8 @@ tags:
   - topic/research-methodology
   - topic/multiple-comparisons
   - topic/p-values
+  - type/concept
+  - doc/paper
 source: "[[raw/p_hacking.pdf]]"
 date_ingested: 2026-04-08
 folder: "Research Methodology"
@@ -12,6 +14,16 @@ aliases:
   - "Forking paths"
   - "Researcher degrees of freedom"
   - "p-hacking"
+doc_type: concept
+source_location: "p_hacking.pdf pp. 1-14"
+depends_on:
+  - "[[The Experimental Ideal]]"
+  - "[[Research Questions in Econometrics]]"
+used_by:
+  - "[[Researcher Degrees of Freedom]]"
+  - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Multiple Testing Corrections]]"
+  - "[[Power Analysis and Sample Size]]"
 ---
 
 # The Garden of Forking Paths

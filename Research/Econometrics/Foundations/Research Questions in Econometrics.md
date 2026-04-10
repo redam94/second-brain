@@ -7,9 +7,22 @@ tags:
   - source/ingested
   - topic/econometrics
   - topic/research-design
+  - type/concept
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 folder: "Econometrics/Foundations"
+doc_type: concept
+source_location: "MHE Ch. 1, pp. 3-7"
+depends_on:
+  - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[The Experimental Ideal]]"
+  - "[[The Selection Problem]]"
+used_by:
+  - "[[Conditional Independence Assumption]]"
+  - "[[Instrumental Variables]]"
+  - "[[Differences-in-Differences]]"
+  - "[[Standard Errors and Clustering]]"
 ---
 
 # Research Questions in Econometrics

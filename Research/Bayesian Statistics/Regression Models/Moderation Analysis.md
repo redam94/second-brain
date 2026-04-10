@@ -6,10 +6,20 @@ tags:
   - topic/interaction-effects
   - topic/moderation
   - method/pymc
+  - type/concept
+  - doc/tutorial
 aliases:
   - Moderation Analysis
   - Interaction Effects Bayesian
 date_ingested: 2026-04-09
+doc_type: concept
+source_location: "raw/Bayesian moderation analysis"
+depends_on:
+  - "[[Spurious Association and Confounds]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Generalized Linear Models]]"
+used_by:
+  - "[[Nonparametric Causal Inference]]"
 ---
 
 # Bayesian Moderation Analysis

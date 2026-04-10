@@ -10,9 +10,20 @@ tags:
   - topic/econometrics
   - topic/inference
   - topic/standard-errors
+  - type/concept
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 folder: "Econometrics/Extensions"
+doc_type: concept
+source_location: "MHE Ch. 8, pp. 221-243"
+depends_on:
+  - "[[Regression and the CEF]]"
+  - "[[Differences-in-Differences]]"
+  - "[[Research Questions in Econometrics]]"
+used_by:
+  - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[Activity Bias in Advertising]]"
 ---
 
 # Standard Errors and Clustering

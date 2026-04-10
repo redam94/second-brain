@@ -134,24 +134,45 @@ Classify each note based on its content and tags:
 
 ### Adding `source_location`
 
-If the note's `source` field references a raw PDF and the note content mentions specific chapters, sections, or page numbers, extract those into `source_location`. For example:
+This field should be as specific as possible — always include page numbers when they can be determined. The goal is to let an LLM jump directly to the right pages in the raw source for verification.
 
-- Note mentions "Chapter 5" and "Section 5.2" → `source_location: "Ch. 5, Sec. 5.2"`
-- Note mentions "pages 117-137" → `source_location: "pp. 117-137"`
-- If no location can be inferred, leave `source_location` empty rather than guessing
+**How to determine page numbers:**
+
+1. If the note content explicitly mentions pages, chapters, or sections, use those directly
+2. If the note references a specific chapter but no pages, read the source PDF's table of contents (first 5-10 pages) to find the page range for that chapter
+3. For textbooks, most chapters have clear page boundaries in the TOC — look them up rather than omitting
+
+**Format examples (always include page numbers when possible):**
+- `source_location: "Ch. 2, pp. 31-52"` (preferred — chapter + pages)
+- `source_location: "Ch. 5, Sec. 5.2, pp. 117-125"` (chapter + section + pages)
+- `source_location: "pp. 45-67"` (pages only, when chapter is unclear)
+- `source_location: "Sec. 3-4"` (last resort — only when page numbers truly can't be determined)
+
+Do not leave `source_location` empty if the note has a `source` field pointing to a PDF — read the PDF's TOC to find the page range.
 
 ### Adding `depends_on` and `used_by`
 
-This is the most important repair. For each note:
+This is the most important repair — and the `used_by` side is easy to miss, so handle it carefully.
 
-1. **Scan outgoing wikilinks** — every `[[Other Note]]` in the body is a candidate for `depends_on` if "Other Note" is a prerequisite concept
-2. **Scan content for prerequisite language** — phrases like "building on", "requires", "assumes familiarity with", "as shown in" indicate dependencies
-3. **Determine directionality**:
-   - If Note A says "using the result from [[Note B]]" → A depends_on B, B used_by A
-   - If Note A says "this extends to [[Note C]]" → C depends_on A, A used_by C
-4. **Update both sides** — when adding `depends_on: [[B]]` to A, also add `used_by: [[A]]` to B
+**Phase 1: Build the full dependency graph first.**
 
-Be conservative — only add dependencies where there's a clear conceptual prerequisite relationship, not every mention. A "See Also" link is not a dependency.
+Before writing any frontmatter, scan ALL notes and build a complete graph in memory:
+
+1. For each note, scan outgoing wikilinks and content for prerequisite language ("building on", "requires", "assumes familiarity with", "as shown in", "using the result from")
+2. Determine directionality:
+   - If Note A says "using the result from [[Note B]]" → A depends_on B
+   - If Note A says "this extends to [[Note C]]" → C depends_on A
+3. Be conservative — only add dependencies where there's a clear conceptual prerequisite relationship, not every mention. A "See Also" link is not a dependency.
+
+**Phase 2: Compute the reverse graph.**
+
+For every `A depends_on B` relationship, derive `B used_by A`. This is a mechanical inversion — every depends_on edge must produce a used_by edge on the other side.
+
+**Phase 3: Write both sides.**
+
+For each note, write both its `depends_on` list AND its `used_by` list. Then verify: for every entry in `depends_on`, check that the target note's `used_by` includes this note. Fix any asymmetries.
+
+The reason for doing this in three phases rather than note-by-note is that updating notes one at a time tends to miss the `used_by` side — you update Note A's frontmatter but forget to go back and update Note B. Building the full graph first prevents this.
 
 ### Standardizing tags
 

@@ -5,6 +5,8 @@ tags:
   - topic/bayesian-statistics
   - topic/posterior-inference
   - topic/prediction
+  - type/concept
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Inference Fundamentals"
@@ -13,6 +15,14 @@ aliases:
   - "HPDI"
   - "Posterior predictive distribution"
   - "Loss functions"
+doc_type: concept
+source_location: "Statistical Rethinking Ch.3, pp. 49-69"
+depends_on:
+  - "[[Garden of Forking Data]]"
+  - "[[Probability and Bayesian Inference]]"
+  - "[[raw/StatRethink-Bayes.pdf]]"
+used_by:
+  - "[[Bayesian Workflow - Overview]]"
 ---
 
 # Posterior Sampling and Summarization

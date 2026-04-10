@@ -7,8 +7,20 @@ tags:
   - topic/dimensionality-reduction
   - method/factor-analysis
   - method/ppca
+  - type/concept
+  - doc/tutorial
 date_ingested: 2026-04-09
 raw: "[[raw/Factor analysis]]"
+doc_type: concept
+source_location: "raw/Factor analysis"
+depends_on:
+  - "[[Bayesian Linear Regression]]"
+  - "[[Nonparametric Models Overview]]"
+  - "[[Approximation Methods]]"
+  - "[[Generalized Linear Models]]"
+used_by:
+  - "[[Confirmatory Factor Analysis and SEM]]"
+  - "[[Copula Estimation]]"
 ---
 
 # Factor Analysis and Probabilistic PCA (PPCA)

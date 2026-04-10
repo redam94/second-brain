@@ -6,6 +6,8 @@ tags:
   - topic/survival-analysis
   - topic/time-to-event
   - topic/cox-model
+  - type/concept
+  - doc/paper
 source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6110618/"
 date_ingested: 2026-04-08
 folder: "Research Methodology/Experimental Design"
@@ -15,6 +17,14 @@ aliases:
   - "Cox proportional hazards"
   - "Hazard ratio"
   - "Censoring"
+doc_type: overview
+source_location: "PMC6110618 (review article)"
+depends_on:
+  - "[[The Experimental Ideal]]"
+  - "[[Regression and the CEF]]"
+  - "[[Power Analysis and Sample Size]]"
+used_by:
+  - "[[Multiple Testing Corrections]]"
 ---
 
 # Survival Analysis

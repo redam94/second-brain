@@ -10,9 +10,23 @@ tags:
   - topic/econometrics
   - topic/regression
   - topic/statistics
+  - type/concept
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 folder: "Econometrics/Regression Foundations"
+doc_type: concept
+source_location: "MHE Ch. 3, pp. 21-82"
+depends_on:
+  - "[[The Selection Problem]]"
+  - "[[The Experimental Ideal]]"
+  - "[[Research Questions in Econometrics]]"
+used_by:
+  - "[[Conditional Independence Assumption]]"
+  - "[[Omitted Variables Bias]]"
+  - "[[Instrumental Variables]]"
+  - "[[Quantile Regression]]"
+  - "[[Standard Errors and Clustering]]"
 ---
 
 # Regression and the CEF

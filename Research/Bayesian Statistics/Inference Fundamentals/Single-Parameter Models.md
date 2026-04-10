@@ -4,12 +4,23 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/conjugate-priors
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Inference Fundamentals"
 aliases:
   - "Conjugate priors"
   - "Beta-binomial"
+doc_type: concept
+source_location: "BDA3 Ch.2, pp. 29-62"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[raw/BDA3.pdf]]"
+used_by:
+  - "[[Multiparameter Models]]"
+  - "[[Hierarchical Models]]"
+  - "[[BDA3 - Overview]]"
 ---
 
 # Single-Parameter Models

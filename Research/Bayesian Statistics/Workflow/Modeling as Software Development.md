@@ -4,12 +4,24 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/bayesian-workflow
+  - type/concept
+  - doc/textbook
 source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Workflow"
 aliases:
   - "Bayesian software engineering"
   - "Statistical reproducibility"
+doc_type: concept
+source_location: "Bayesian Workflow paper"
+depends_on:
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Fitting and Validating Computation]]"
+  - "[[Choosing and Building Models]]"
+  - "[[Evaluating Fitted Models]]"
+  - "[[raw/BayesWorkflow.pdf]]"
+used_by:
+  - "[[Iterative Model Improvement]]"
 ---
 
 > [!summary]

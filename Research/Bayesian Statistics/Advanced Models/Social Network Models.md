@@ -6,10 +6,21 @@ tags:
   - topic/dyadic-data
   - source/statistical-rethinking
   - method/pymc
+  - type/concept
+  - doc/tutorial
 aliases:
   - Social Networks SR
   - Dyadic Models
 date_ingested: 2026-04-09
+doc_type: concept
+source_location: "raw/Social Networks"
+depends_on:
+  - "[[Copula Estimation]]"
+  - "[[Hierarchical Linear Models]]"
+  - "[[Spatial Models - BYM]]"
+  - "[[Generalized Linear Models]]"
+used_by:
+  - "[[Missing Data - Statistical Rethinking]]"
 ---
 
 # Social Network Models

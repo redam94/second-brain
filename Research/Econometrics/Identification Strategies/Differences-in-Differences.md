@@ -11,9 +11,22 @@ tags:
   - topic/econometrics
   - topic/causal-inference
   - topic/panel-data
+  - type/concept
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 folder: "Econometrics/Identification Strategies"
+doc_type: concept
+source_location: "MHE Ch. 5, pp. 165-186"
+depends_on:
+  - "[[The Selection Problem]]"
+  - "[[Regression and the CEF]]"
+  - "[[Conditional Independence Assumption]]"
+  - "[[Omitted Variables Bias]]"
+used_by:
+  - "[[Bayesian Difference in Differences]]"
+  - "[[Standard Errors and Clustering]]"
+  - "[[Observational vs Experimental Methods in Advertising]]"
 ---
 
 # Differences-in-Differences

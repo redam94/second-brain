@@ -5,9 +5,23 @@ tags:
   - topic/econometrics
   - topic/causal-inference
   - topic/experiments
+  - type/concept
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 folder: "Econometrics/Foundations"
+doc_type: concept
+source_location: "MHE Ch. 2, pp. 9-17"
+depends_on:
+  - "[[The Selection Problem]]"
+  - "[[Research Questions in Econometrics]]"
+  - "[[Regression and the CEF]]"
+used_by:
+  - "[[Conditional Independence Assumption]]"
+  - "[[Instrumental Variables]]"
+  - "[[Differences-in-Differences]]"
+  - "[[Activity Bias in Advertising]]"
+  - "[[Power Analysis and Sample Size]]"
 ---
 
 # The Experimental Ideal

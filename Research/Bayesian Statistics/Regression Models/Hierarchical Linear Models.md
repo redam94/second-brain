@@ -5,6 +5,8 @@ tags:
   - topic/bayesian-statistics
   - topic/hierarchical-models
   - topic/multilevel-models
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Regression Models"
@@ -12,6 +14,17 @@ aliases:
   - "Multilevel regression"
   - "Varying intercepts and slopes"
   - "Mixed effects models"
+doc_type: concept
+source_location: "BDA3 Ch.15:381-402"
+depends_on:
+  - "[[Bayesian Linear Regression]]"
+  - "[[Hierarchical Models]]"
+  - "[[Generalized Linear Models]]"
+  - "[[Efficient MCMC]]"
+used_by:
+  - "[[Social Network Models]]"
+  - "[[Spatial Models - BYM]]"
+  - "[[Copula Estimation]]"
 ---
 
 # Hierarchical Linear Models

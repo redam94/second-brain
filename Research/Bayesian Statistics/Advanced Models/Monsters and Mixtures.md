@@ -6,6 +6,8 @@ tags:
   - topic/glm
   - topic/maximum-entropy
   - topic/zero-inflation
+  - type/concept
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Advanced Models"
@@ -14,6 +16,16 @@ aliases:
   - "GLM in Statistical Rethinking"
   - "Zero-inflated models"
   - "Overdispersion"
+doc_type: concept
+source_location: "Statistical Rethinking Ch.9:267-290, Ch.10:291-329, Ch.11:331-353"
+depends_on:
+  - "[[Generalized Linear Models]]"
+  - "[[Linear Models in Statistical Rethinking]]"
+  - "[[Hierarchical Models]]"
+  - "[[Overfitting and Information Criteria]]"
+used_by:
+  - "[[Nonparametric Models Overview]]"
+  - "[[Generalized Linear Models]]"
 ---
 
 # Monsters and Mixtures

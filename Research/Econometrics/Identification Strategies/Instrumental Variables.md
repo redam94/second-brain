@@ -10,9 +10,22 @@ tags:
   - topic/econometrics
   - topic/causal-inference
   - topic/instrumental-variables
+  - type/concept
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 folder: "Econometrics/Identification Strategies"
+doc_type: concept
+source_location: "MHE Ch. 4, pp. 83-163"
+depends_on:
+  - "[[Omitted Variables Bias]]"
+  - "[[Regression and the CEF]]"
+  - "[[The Selection Problem]]"
+  - "[[Conditional Independence Assumption]]"
+used_by:
+  - "[[Local Average Treatment Effects]]"
+  - "[[Regression Discontinuity Designs]]"
+  - "[[Discrete Choice Models]]"
 ---
 
 # Instrumental Variables

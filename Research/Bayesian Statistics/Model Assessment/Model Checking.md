@@ -5,12 +5,24 @@ tags:
   - topic/bayesian-statistics
   - topic/model-checking
   - topic/posterior-predictive
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Model Assessment"
 aliases:
   - "Posterior predictive checks"
   - "Bayesian p-value"
+doc_type: concept
+source_location: "BDA3 Ch.6:141-164"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Hierarchical Models]]"
+used_by:
+  - "[[Model Comparison]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Confirmatory Factor Analysis and SEM]]"
 ---
 
 # Model Checking

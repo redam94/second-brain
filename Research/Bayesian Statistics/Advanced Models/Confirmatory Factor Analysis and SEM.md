@@ -6,11 +6,22 @@ tags:
   - topic/psychometrics
   - topic/latent-variables
   - method/pymc
+  - type/concept
+  - doc/tutorial
 aliases:
   - CFA
   - SEM
   - Structural Equation Model
 date_ingested: 2026-04-09
+doc_type: concept
+source_location: "raw/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics"
+depends_on:
+  - "[[Factor Analysis and PPCA]]"
+  - "[[Hierarchical Models]]"
+  - "[[Spurious Association and Confounds]]"
+  - "[[Nonparametric Models Overview]]"
+used_by:
+  - "[[Social Network Models]]"
 ---
 
 # Confirmatory Factor Analysis and Structural Equation Models

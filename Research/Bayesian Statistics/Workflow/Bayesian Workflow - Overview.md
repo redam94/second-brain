@@ -4,12 +4,27 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/bayesian-workflow
+  - type/overview
+  - doc/textbook
 source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Workflow"
 aliases:
   - "Bayesian Workflow"
   - "Gelman et al. 2020"
+doc_type: overview
+source_location: "Bayesian Workflow paper"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[MCMC Basics]]"
+  - "[[Hierarchical Models]]"
+  - "[[raw/BayesWorkflow.pdf]]"
+used_by:
+  - "[[Posterior Sampling and Summarization]]"
+  - "[[Model Checking]]"
+  - "[[BDA3 - Overview]]"
+  - "[[Statistical Rethinking - Overview]]"
+  - "[[Bayesian Linear Regression]]"
 ---
 
 > [!summary]

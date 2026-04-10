@@ -7,6 +7,8 @@ tags:
   - topic/gaussian-processes
   - topic/mixture-models
   - topic/dirichlet-process
+  - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Advanced Models"
@@ -16,6 +18,18 @@ aliases:
   - "Dirichlet process"
   - "Splines"
   - "Basis functions"
+doc_type: overview
+source_location: "BDA3 Ch.19:471-486, Ch.20:487-498, Ch.21:501-516, Ch.22:519-543, Ch.23:545-573"
+depends_on:
+  - "[[Bayesian Linear Regression]]"
+  - "[[Model Comparison]]"
+  - "[[Efficient MCMC]]"
+  - "[[Hierarchical Models]]"
+used_by:
+  - "[[Hilbert Space Gaussian Processes]]"
+  - "[[Nonparametric Causal Inference]]"
+  - "[[Factor Analysis and PPCA]]"
+  - "[[Spatial Models - BYM]]"
 ---
 
 # Nonparametric Models Overview

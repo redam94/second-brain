@@ -4,9 +4,24 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/bayesian-workflow
+  - type/concept
+  - doc/textbook
 source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Workflow"
+doc_type: concept
+source_location: "Bayesian Workflow paper"
+depends_on:
+  - "[[Choosing and Building Models]]"
+  - "[[MCMC Basics]]"
+  - "[[Efficient MCMC]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[raw/BayesWorkflow.pdf]]"
+used_by:
+  - "[[Computational Troubleshooting]]"
+  - "[[Evaluating Fitted Models]]"
+  - "[[Modeling as Software Development]]"
+  - "[[Power Analysis and Sample Size]]"
 ---
 
 > [!summary]

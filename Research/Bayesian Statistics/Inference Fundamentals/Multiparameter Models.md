@@ -4,12 +4,23 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/multiparameter
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Inference Fundamentals"
 aliases:
   - "Nuisance parameters"
   - "Marginal posterior"
+doc_type: concept
+source_location: "BDA3 Ch.3, pp. 63-82"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Single-Parameter Models]]"
+  - "[[raw/BDA3.pdf]]"
+used_by:
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[BDA3 - Overview]]"
 ---
 
 # Multiparameter Models

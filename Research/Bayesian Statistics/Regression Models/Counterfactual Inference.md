@@ -6,10 +6,22 @@ tags:
   - topic/counterfactual
   - topic/time-series
   - method/pymc
+  - type/concept
+  - doc/tutorial
 aliases:
   - Excess Deaths
   - Bayesian Counterfactual
 date_ingested: 2026-04-09
+doc_type: concept
+source_location: "raw/Counterfactual inference calculating excess deaths due to COVID-19"
+depends_on:
+  - "[[Bayesian Linear Regression]]"
+  - "[[Generalized Linear Models]]"
+  - "[[Model Checking]]"
+  - "[[Spurious Association and Confounds]]"
+used_by:
+  - "[[Nonparametric Causal Inference]]"
+  - "[[Decision Analysis]]"
 ---
 
 # Counterfactual Inference

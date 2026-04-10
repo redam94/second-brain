@@ -5,12 +5,24 @@ tags:
   - topic/bayesian-statistics
   - topic/computation
   - topic/importance-sampling
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Computation"
 aliases:
   - "Importance sampling"
   - "Rejection sampling"
+doc_type: concept
+source_location: "BDA3 Ch.10, pp. 261-274"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Multiparameter Models]]"
+  - "[[raw/BDA3.pdf]]"
+used_by:
+  - "[[MCMC Basics]]"
+  - "[[Efficient MCMC]]"
+  - "[[BDA3 - Overview]]"
 ---
 
 # Introduction to Bayesian Computation

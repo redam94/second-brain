@@ -6,10 +6,21 @@ tags:
   - topic/nonparametric
   - method/pymc
   - method/bart
+  - type/concept
+  - doc/tutorial
 aliases:
   - Bayesian BART Causal
   - Propensity Score Bayesian
 date_ingested: 2026-04-09
+doc_type: concept
+source_location: "raw/Bayesian Non-parametric Causal Inference"
+depends_on:
+  - "[[Nonparametric Models Overview]]"
+  - "[[Counterfactual Inference]]"
+  - "[[Data Collection Models]]"
+  - "[[Bayesian Linear Regression]]"
+used_by:
+  - "[[Moderation Analysis]]"
 ---
 
 # Bayesian Non-parametric Causal Inference

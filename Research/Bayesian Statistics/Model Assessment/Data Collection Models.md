@@ -5,12 +5,24 @@ tags:
   - topic/bayesian-statistics
   - topic/ignorability
   - topic/missing-data
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Model Assessment"
 aliases:
   - "Ignorability"
   - "Missing data mechanism"
+doc_type: concept
+source_location: "BDA3 Ch.8:197-232"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Model Checking]]"
+  - "[[Bayesian Linear Regression]]"
+used_by:
+  - "[[Missing Data Models]]"
+  - "[[Missing Data - Statistical Rethinking]]"
+  - "[[Nonparametric Causal Inference]]"
 ---
 
 # Data Collection Models

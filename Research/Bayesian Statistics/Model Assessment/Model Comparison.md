@@ -6,6 +6,8 @@ tags:
   - topic/model-comparison
   - topic/cross-validation
   - topic/information-criteria
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Model Assessment"
@@ -14,6 +16,16 @@ aliases:
   - "LOO-CV"
   - "Bayes factors"
   - "ELPD"
+doc_type: concept
+source_location: "BDA3 Ch.7:165-196"
+depends_on:
+  - "[[Model Checking]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Hierarchical Models]]"
+used_by:
+  - "[[Overfitting and Information Criteria]]"
+  - "[[Decision Analysis]]"
+  - "[[Nonparametric Models Overview]]"
 ---
 
 # Model Comparison

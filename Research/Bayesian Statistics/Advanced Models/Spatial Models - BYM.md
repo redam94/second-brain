@@ -5,12 +5,23 @@ tags:
   - topic/spatial-statistics
   - topic/areal-data
   - method/pymc
+  - type/concept
+  - doc/tutorial
 aliases:
   - BYM
   - BYM2
   - ICAR
   - Intrinsic Conditional Autoregressive
 date_ingested: 2026-04-09
+doc_type: concept
+source_location: "raw/The Besag-York-Mollie Model for Spatial Data"
+depends_on:
+  - "[[Nonparametric Models Overview]]"
+  - "[[Hierarchical Linear Models]]"
+  - "[[Generalized Linear Models]]"
+  - "[[Hilbert Space Gaussian Processes]]"
+used_by:
+  - "[[Social Network Models]]"
 ---
 
 # Spatial Models — Besag-York-Mollie (BYM)

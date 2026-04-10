@@ -5,12 +5,20 @@ tags:
   - topic/bayesian-statistics
   - topic/philosophy-of-science
   - topic/statistical-modeling
+  - type/overview
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Inference Fundamentals"
 aliases:
   - "Golem of Prague"
   - "Statistical golems"
+doc_type: overview
+source_location: "Statistical Rethinking Ch.1, pp. 1-17"
+depends_on:
+  - "[[raw/StatRethink-Bayes.pdf]]"
+used_by:
+  - "[[Garden of Forking Data]]"
 ---
 
 # The Golem of Prague

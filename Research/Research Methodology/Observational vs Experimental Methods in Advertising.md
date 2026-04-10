@@ -6,11 +6,23 @@ tags:
   - topic/causal-inference
   - topic/advertising
   - topic/selection-bias
+  - type/concept
+  - doc/paper
 source: "[[raw/ssrn-2080235.pdf]]"
 date_ingested: 2026-04-08
 folder: "Research Methodology"
 aliases:
   - "Advertising causal inference"
+doc_type: concept
+source_location: "ssrn-2080235.pdf pp. 1-30"
+depends_on:
+  - "[[Activity Bias in Advertising]]"
+  - "[[The Selection Problem]]"
+  - "[[Conditional Independence Assumption]]"
+  - "[[Regression and the CEF]]"
+  - "[[Instrumental Variables]]"
+used_by:
+  - "[[Bayesian Difference in Differences]]"
 ---
 
 # Observational vs Experimental Methods in Advertising

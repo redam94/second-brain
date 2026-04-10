@@ -8,9 +8,22 @@ tags:
   - topic/econometrics
   - topic/causal-inference
   - topic/identification
+  - type/concept
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 folder: "Econometrics/Regression Foundations"
+doc_type: concept
+source_location: "MHE Ch. 3, pp. 21-82"
+depends_on:
+  - "[[Regression and the CEF]]"
+  - "[[The Selection Problem]]"
+  - "[[The Experimental Ideal]]"
+used_by:
+  - "[[Omitted Variables Bias]]"
+  - "[[Instrumental Variables]]"
+  - "[[Activity Bias in Advertising]]"
+  - "[[Observational vs Experimental Methods in Advertising]]"
 ---
 
 # Conditional Independence Assumption

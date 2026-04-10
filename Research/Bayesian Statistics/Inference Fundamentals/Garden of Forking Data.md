@@ -5,6 +5,8 @@ tags:
   - topic/bayesian-statistics
   - topic/bayesian-updating
   - topic/probability
+  - type/concept
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Inference Fundamentals"
@@ -12,6 +14,14 @@ aliases:
   - "Bayesian updating"
   - "Grid approximation"
   - "Small world vs large world"
+doc_type: concept
+source_location: "Statistical Rethinking Ch.2, pp. 19-47"
+depends_on:
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Probability and Bayesian Inference]]"
+  - "[[raw/StatRethink-Bayes.pdf]]"
+used_by:
+  - "[[Posterior Sampling and Summarization]]"
 ---
 
 # Garden of Forking Data

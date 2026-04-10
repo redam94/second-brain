@@ -5,11 +5,22 @@ tags:
   - topic/research-methodology
   - topic/bayesian-statistics
   - topic/multiple-comparisons
+  - type/concept
+  - doc/paper
 source: "[[raw/p_hacking.pdf]]"
 date_ingested: 2026-04-08
 folder: "Research Methodology"
 aliases:
   - "Bayesian approach to multiple comparisons"
+doc_type: concept
+source_location: "p_hacking.pdf pp. 1-14"
+depends_on:
+  - "[[Garden of Forking Paths]]"
+  - "[[Researcher Degrees of Freedom]]"
+  - "[[Multiple Testing Corrections]]"
+used_by:
+  - "[[The Experimental Ideal]]"
+  - "[[Power Analysis and Sample Size]]"
 ---
 
 # Forking Paths and Bayesian Approaches

@@ -5,12 +5,17 @@ tags:
   - source/ingested
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-04-09
+concept_count: 15
 ---
 
 # Econometrics
 
-> [!abstract] Summary
-> Applied econometrics and causal inference notes from *Mostly Harmless Econometrics* by Angrist and Pischke (2008). Covers the core toolkit for empirical research: regression, instrumental variables, differences-in-differences, regression discontinuity, quantile regression, and inference.
+> [!abstract] Routing Summary
+> This folder covers applied econometrics and causal inference from Mostly Harmless Econometrics plus a Bayesian DiD tutorial. Contains 15 notes across 4 sub-topics.
+> - Need research design fundamentals or selection bias? -> [[Foundations/_Index|Foundations]]
+> - Need regression interpretation or OVB? -> [[Regression Foundations/_Index|Regression Foundations]]
+> - Need IV, DiD, or RD designs? -> [[Identification Strategies/_Index|Identification Strategies]]
+> - Need quantile regression, discrete choice, or SEs? -> [[Extensions/_Index|Extensions]]
 
 ## Book Overview
 
@@ -18,15 +23,18 @@ date_updated: 2026-04-09
 
 ## Sub-topics
 
-- [[Foundations/_Index|Foundations]] — Research questions, the experimental ideal, selection bias (MHE Part I)
-- [[Regression Foundations/_Index|Regression Foundations]] — The CEF, CIA, omitted variables bias (MHE Ch 3)
-- [[Identification Strategies/_Index|Identification Strategies]] — IV, LATE, DD, RD — quasi-experimental methods (MHE Ch 4–6)
-- [[Extensions/_Index|Extensions]] — Quantile regression, discrete choice, standard errors (MHE Ch 7–8)
+| Sub-topic | Notes | Domain |
+|-----------|-------|--------|
+| [[Foundations/_Index\|Foundations]] | 3 | Research questions, experimental ideal, selection bias (MHE Part I) |
+| [[Regression Foundations/_Index\|Regression Foundations]] | 3 | CEF, CIA, omitted variables bias (MHE Ch 3) |
+| [[Identification Strategies/_Index\|Identification Strategies]] | 5 | IV, LATE, DD, RD — quasi-experimental methods (MHE Ch 4-6) |
+| [[Extensions/_Index\|Extensions]] | 3 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8) |
 
 ## Sources
 
 - [[raw/Mostly Harmless Econometrics.pdf]] — Full textbook PDF (Angrist & Pischke, 2008)
 - [[raw/Discrete Choice and Random Utility Models]] — PyMC tutorial: Bayesian discrete choice models (McFadden framework)
+- [[raw/Difference in differences]] — PyMC tutorial: Bayesian DiD with counterfactual prediction
 
 ## See Also
 

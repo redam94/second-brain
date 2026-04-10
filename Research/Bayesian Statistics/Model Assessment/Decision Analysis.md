@@ -4,6 +4,8 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/decision-theory
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Model Assessment"
@@ -11,6 +13,15 @@ aliases:
   - "Bayesian decision theory"
   - "Loss function"
   - "Utility"
+doc_type: concept
+source_location: "BDA3 Ch.9:237-258"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Hierarchical Models]]"
+  - "[[Model Comparison]]"
+  - "[[Overfitting and Information Criteria]]"
+used_by:
+  - "[[Counterfactual Inference]]"
 ---
 
 # Decision Analysis

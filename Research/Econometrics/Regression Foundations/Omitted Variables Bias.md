@@ -8,9 +8,22 @@ tags:
   - topic/econometrics
   - topic/regression
   - topic/bias
+  - type/concept
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 folder: "Econometrics/Regression Foundations"
+doc_type: concept
+source_location: "MHE Ch. 3, pp. 21-82"
+depends_on:
+  - "[[Regression and the CEF]]"
+  - "[[Conditional Independence Assumption]]"
+  - "[[The Selection Problem]]"
+used_by:
+  - "[[Instrumental Variables]]"
+  - "[[Differences-in-Differences]]"
+  - "[[Activity Bias in Advertising]]"
+  - "[[Researcher Degrees of Freedom]]"
 ---
 
 # Omitted Variables Bias

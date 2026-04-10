@@ -6,6 +6,8 @@ tags:
   - topic/model-comparison
   - topic/information-theory
   - topic/overfitting
+  - type/concept
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Model Assessment"
@@ -16,6 +18,15 @@ aliases:
   - "Information criteria"
   - "Regularization"
   - "KL divergence"
+doc_type: concept
+source_location: "Statistical Rethinking Ch.9:267-290"
+depends_on:
+  - "[[Linear Models in Statistical Rethinking]]"
+  - "[[Model Comparison]]"
+  - "[[Bayesian Linear Regression]]"
+used_by:
+  - "[[Monsters and Mixtures]]"
+  - "[[Decision Analysis]]"
 ---
 
 # Overfitting and Information Criteria

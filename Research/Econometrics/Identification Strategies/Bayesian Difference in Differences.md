@@ -6,9 +6,20 @@ tags:
   - topic/difference-in-differences
   - method/pymc
   - method/bayesian
+  - type/concept
+  - doc/textbook
 aliases:
   - Bayesian DiD
 date_ingested: 2026-04-09
+doc_type: tutorial
+source_location: "PyMC Difference in Differences example (Benjamin T. Vincent, 2022)"
+depends_on:
+  - "[[Differences-in-Differences]]"
+  - "[[The Selection Problem]]"
+  - "[[The Experimental Ideal]]"
+  - "[[Regression and the CEF]]"
+used_by:
+  - "[[Observational vs Experimental Methods in Advertising]]"
 ---
 
 # Bayesian Difference in Differences

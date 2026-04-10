@@ -9,9 +9,20 @@ tags:
   - topic/econometrics
   - topic/causal-inference
   - topic/regression-discontinuity
+  - type/concept
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 folder: "Econometrics/Identification Strategies"
+doc_type: concept
+source_location: "MHE Ch. 6, pp. 189-202"
+depends_on:
+  - "[[Instrumental Variables]]"
+  - "[[Local Average Treatment Effects]]"
+  - "[[Regression and the CEF]]"
+  - "[[The Selection Problem]]"
+used_by:
+  - "[[Mostly Harmless Econometrics - Overview]]"
 ---
 
 # Regression Discontinuity Designs

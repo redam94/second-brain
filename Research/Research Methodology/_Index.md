@@ -4,31 +4,40 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-04-08
+date_updated: 2026-04-09
+concept_count: 7
 ---
 
 # Research Methodology
 
-> [!abstract] Summary
-> Notes on statistical methodology, the replication crisis, causal inference challenges, and experimental design tools. Covers forking paths / multiple comparisons, activity bias in advertising, power analysis, multiple testing corrections, and survival analysis.
+> [!abstract] Routing Summary
+> This folder covers statistical methodology, the replication crisis, causal inference challenges, and experimental design. Contains 7 notes plus an Experimental Design subfolder (3 notes).
+> - Need the forking paths / p-hacking argument? -> [[Garden of Forking Paths]]
+> - Need sources of analytic flexibility? -> [[Researcher Degrees of Freedom]]
+> - Need Bayesian solutions to multiplicity? -> [[Forking Paths and Bayesian Approaches]]
+> - Need why observational ad measurement fails? -> [[Activity Bias in Advertising]]
+> - Need power analysis, multiple testing, or survival? -> [[Experimental Design/_Index|Experimental Design]]
 
-## Experimental Design
+## Concept Map
 
-- [[Experimental Design/_Index|Experimental Design]] — Power analysis, multiple testing corrections, and survival analysis
-  - [[Power Analysis and Sample Size]] — Sample size formulas and practical guidelines
-  - [[Multiple Testing Corrections]] — Bonferroni (FWER), Benjamini-Hochberg (FDR), q-values
-  - [[Survival Analysis]] — Kaplan-Meier, log-rank test, Cox proportional hazards
+| Concept | Note | Type | Depends On | Key Result |
+|---------|------|------|-----------|------------|
+| Multiple comparisons without explicit p-hacking | [[Garden of Forking Paths]] | concept | [[The Experimental Ideal]], [[Research Questions in Econometrics]] | Data-contingent analysis invalidates p-values even without p-hacking |
+| Sources of analytic flexibility inflating false positives | [[Researcher Degrees of Freedom]] | concept | [[Garden of Forking Paths]], [[The Experimental Ideal]], [[Omitted Variables Bias]] | Every analytic choice is a hidden comparison |
+| Bayesian/hierarchical solutions to multiplicity | [[Forking Paths and Bayesian Approaches]] | concept | [[Garden of Forking Paths]], [[Researcher Degrees of Freedom]], [[Multiple Testing Corrections]] | Hierarchical models naturally regularize multiple comparisons |
+| Observational methods overestimate ad effects | [[Activity Bias in Advertising]] | concept | [[Conditional Independence Assumption]], [[The Selection Problem]], [[The Experimental Ideal]], [[Omitted Variables Bias]] | Activity bias causes 10-1000x overestimation |
+| Why regression and matching fail for ads | [[Observational vs Experimental Methods in Advertising]] | concept | [[Activity Bias in Advertising]], [[The Selection Problem]], [[Conditional Independence Assumption]], [[Regression and the CEF]], [[Instrumental Variables]] | No observational method recovers true ad effect |
 
-## Multiple Comparisons and P-values
+## Sub-topics
 
-- [[Garden of Forking Paths]] — Why multiple comparisons are a problem even without explicit p-hacking (Gelman & Loken, 2013)
-- [[Researcher Degrees of Freedom]] — Sources of analytic flexibility that inflate false positives
-- [[Forking Paths and Bayesian Approaches]] — How Bayesian/hierarchical methods address multiplicity
+- [[Experimental Design/_Index|Experimental Design]] — Power analysis, multiple testing corrections, survival analysis (3 notes)
 
-## Causal Inference in Advertising
-
-- [[Activity Bias in Advertising]] — Observational methods massively overestimate ad effects (Lewis, Rao, & Reiley, 2011)
-- [[Observational vs Experimental Methods in Advertising]] — Why regression controls and matching fail
+## Notes
+- [[Garden of Forking Paths]] — CONTAINS: Multiple comparisons as implicit forking, data-contingent analysis, why p-values are invalid when analysis is flexible
+- [[Researcher Degrees of Freedom]] — CONTAINS: Sources of analytic flexibility, exclusion criteria, variable transformations, model specification choices
+- [[Forking Paths and Bayesian Approaches]] — CONTAINS: Bayesian solutions to multiplicity, hierarchical regularization, partial pooling as natural correction
+- [[Activity Bias in Advertising]] — CONTAINS: Three experiments showing observational methods fail, 10-1000x overestimation, selection bias in ad measurement
+- [[Observational vs Experimental Methods in Advertising]] — CONTAINS: Regression controls and matching failing, case studies from Lewis/Rao/Reiley experiments
 
 ## Sources
 

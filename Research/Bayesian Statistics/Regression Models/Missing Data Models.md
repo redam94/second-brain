@@ -5,6 +5,8 @@ tags:
   - topic/bayesian-statistics
   - topic/missing-data
   - topic/multiple-imputation
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Regression Models"
@@ -13,6 +15,14 @@ aliases:
   - "MCAR"
   - "MAR"
   - "MNAR"
+doc_type: concept
+source_location: "BDA3 Ch.18:449-468"
+depends_on:
+  - "[[Data Collection Models]]"
+  - "[[Hierarchical Models]]"
+  - "[[MCMC Basics]]"
+used_by:
+  - "[[Missing Data - Statistical Rethinking]]"
 ---
 
 # Missing Data Models

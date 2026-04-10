@@ -5,10 +5,20 @@ tags:
   - topic/gaussian-processes
   - topic/time-series
   - method/pymc
+  - type/concept
+  - doc/tutorial
 aliases:
   - HSGP
   - Hilbert Space GP
 date_ingested: 2026-04-09
+doc_type: concept
+source_location: "raw/Baby Births Modelling with HSGPs"
+depends_on:
+  - "[[Nonparametric Models Overview]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Spatial Models - BYM]]"
+used_by:
+  - "[[Spatial Models - BYM]]"
 ---
 
 # Hilbert Space Gaussian Processes (HSGPs)

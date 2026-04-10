@@ -5,12 +5,25 @@ tags:
   - topic/bayesian-statistics
   - topic/asymptotics
   - topic/frequentist
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Inference Fundamentals"
 aliases:
   - "Bayesian central limit theorem"
   - "Bernstein-von Mises"
+doc_type: concept
+source_location: "BDA3 Ch.4, pp. 83-100"
+depends_on:
+  - "[[Multiparameter Models]]"
+  - "[[Probability and Bayesian Inference]]"
+  - "[[raw/BDA3.pdf]]"
+used_by:
+  - "[[Approximation Methods]]"
+  - "[[Regression and the CEF]]"
+  - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[BDA3 - Overview]]"
 ---
 
 # Asymptotics and Frequentist Connections

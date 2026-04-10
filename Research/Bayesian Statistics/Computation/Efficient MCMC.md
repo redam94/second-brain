@@ -5,6 +5,8 @@ tags:
   - topic/bayesian-statistics
   - topic/hmc
   - topic/stan
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Computation"
@@ -13,6 +15,18 @@ aliases:
   - "HMC"
   - "Stan"
   - "NUTS"
+doc_type: concept
+source_location: "BDA3 Ch.12, pp. 293-310"
+depends_on:
+  - "[[MCMC Basics]]"
+  - "[[Introduction to Bayesian Computation]]"
+  - "[[raw/BDA3.pdf]]"
+used_by:
+  - "[[HMC and Stan in Practice]]"
+  - "[[Approximation Methods]]"
+  - "[[Computational Troubleshooting]]"
+  - "[[Fitting and Validating Computation]]"
+  - "[[Nonparametric Models Overview]]"
 ---
 
 # Efficient MCMC

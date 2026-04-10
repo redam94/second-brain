@@ -5,12 +5,26 @@ tags:
   - topic/bayesian-statistics
   - topic/regression
   - topic/regularization
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Regression Models"
 aliases:
   - "Bayesian regression"
   - "Bayesian lasso"
+doc_type: concept
+source_location: "BDA3 Ch.14:353-380"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[MCMC Basics]]"
+  - "[[Bayesian Workflow - Overview]]"
+used_by:
+  - "[[Hierarchical Linear Models]]"
+  - "[[Generalized Linear Models]]"
+  - "[[Nonparametric Models Overview]]"
+  - "[[Factor Analysis and PPCA]]"
+  - "[[Overfitting and Information Criteria]]"
 ---
 
 # Bayesian Linear Regression

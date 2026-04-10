@@ -5,12 +5,18 @@ tags:
   - source/ingested
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-04-09
+concept_count: 43
 ---
 
 # Bayesian Statistics
 
-> [!abstract] Summary
-> Comprehensive notes on Bayesian statistics, primarily from *Bayesian Data Analysis* (3rd ed.) by Gelman et al. and the *Bayesian Workflow* paper by Gelman, Vehtari, Simpson et al. Covers inference foundations, model assessment, computation, regression, nonparametric methods, and applied workflow.
+> [!abstract] Routing Summary
+> This folder covers comprehensive Bayesian statistics from BDA3, Statistical Rethinking, the Bayesian Workflow paper, and PyMC tutorials. Contains 43 notes across 6 sub-topics.
+> - Need inference basics (Bayes' theorem, conjugate priors, hierarchical)? -> [[Inference Fundamentals/_Index|Inference Fundamentals]]
+> - Need model evaluation (PPC, WAIC, LOO)? -> [[Model Assessment/_Index|Model Assessment]]
+> - Need MCMC, HMC, or variational inference? -> [[Computation/_Index|Computation]]
+> - Need regression, GLMs, or missing data? -> [[Regression Models/_Index|Regression Models]]
+> - Need GPs, mixtures, spatial, or causal BART? -> [[Advanced Models/_Index|Advanced Models]]
 
 ## Book Overviews
 
@@ -19,12 +25,14 @@ date_updated: 2026-04-09
 
 ## Sub-topics
 
-- [[Inference Fundamentals/_Index|Inference Fundamentals]] — Bayes' theorem, conjugate models, hierarchical models (BDA3 Part I)
-- [[Model Assessment/_Index|Model Assessment]] — Posterior predictive checks, model comparison, decision analysis (BDA3 Part II)
-- [[Computation/_Index|Computation]] — MCMC, HMC, variational inference, Stan (BDA3 Part III)
-- [[Regression Models/_Index|Regression Models]] — Bayesian regression, multilevel models, GLMs, missing data (BDA3 Part IV)
-- [[Advanced Models/_Index|Advanced Models]] — GPs, mixtures, Dirichlet processes (BDA3 Part V)
-- [[Workflow/_Index|Bayesian Workflow]] — The iterative modeling cycle (Gelman et al. 2020)
+| Sub-topic | Notes | Domain |
+|-----------|-------|--------|
+| [[Inference Fundamentals/_Index\|Inference Fundamentals]] | 8 | Bayes' theorem, conjugate models, hierarchical models (BDA3 Part I) |
+| [[Model Assessment/_Index\|Model Assessment]] | 5 | Posterior predictive checks, model comparison, decision analysis (BDA3 Part II) |
+| [[Computation/_Index\|Computation]] | 5 | MCMC, HMC, variational inference, Stan (BDA3 Part III) |
+| [[Regression Models/_Index\|Regression Models]] | 9 | Bayesian regression, multilevel models, GLMs, missing data (BDA3 Part IV) |
+| [[Advanced Models/_Index\|Advanced Models]] | 9 | GPs, mixtures, Dirichlet processes, spatial, copulas, BART (BDA3 Part V + PyMC) |
+| [[Workflow/_Index\|Bayesian Workflow]] | 7 | The iterative modeling cycle (Gelman et al. 2020) |
 
 ## Sources
 
@@ -35,4 +43,5 @@ date_updated: 2026-04-09
 ## See Also
 
 - [[Research Methodology/_Index|Research Methodology]] — Multiple comparisons, causal inference in advertising
+- [[Econometrics/_Index|Econometrics]] — Frequentist/econometric perspective on causal inference
 - [[Mostly Harmless Econometrics - Overview]] — Frequentist/econometric perspective on related topics

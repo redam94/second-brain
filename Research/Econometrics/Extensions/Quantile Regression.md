@@ -8,9 +8,20 @@ tags:
   - topic/econometrics
   - topic/regression
   - topic/distributional-effects
+  - type/concept
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 folder: "Econometrics/Extensions"
+doc_type: concept
+source_location: "MHE Ch. 7, pp. 203-219"
+depends_on:
+  - "[[Regression and the CEF]]"
+  - "[[Local Average Treatment Effects]]"
+  - "[[The Selection Problem]]"
+used_by:
+  - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[Discrete Choice Models]]"
 ---
 
 # Quantile Regression

@@ -5,9 +5,22 @@ tags:
   - topic/econometrics
   - topic/causal-inference
   - topic/selection-bias
+  - type/concept
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 folder: "Econometrics/Foundations"
+doc_type: concept
+source_location: "MHE Ch. 2, pp. 9-17"
+depends_on:
+  - "[[Research Questions in Econometrics]]"
+  - "[[Mostly Harmless Econometrics - Overview]]"
+used_by:
+  - "[[The Experimental Ideal]]"
+  - "[[Conditional Independence Assumption]]"
+  - "[[Instrumental Variables]]"
+  - "[[Differences-in-Differences]]"
+  - "[[Activity Bias in Advertising]]"
 ---
 
 # The Selection Problem

@@ -6,6 +6,8 @@ tags:
   - topic/variational-inference
   - topic/laplace-approximation
   - topic/expectation-propagation
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Computation"
@@ -14,6 +16,17 @@ aliases:
   - "Laplace approximation"
   - "Expectation propagation"
   - "VI"
+doc_type: concept
+source_location: "BDA3 Ch.13, pp. 311-349"
+depends_on:
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[Efficient MCMC]]"
+  - "[[Probability and Bayesian Inference]]"
+  - "[[raw/BDA3.pdf]]"
+used_by:
+  - "[[HMC and Stan in Practice]]"
+  - "[[Factor Analysis and PPCA]]"
+  - "[[BDA3 - Overview]]"
 ---
 
 # Approximation Methods

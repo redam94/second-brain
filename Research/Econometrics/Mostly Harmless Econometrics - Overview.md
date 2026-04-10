@@ -8,6 +8,8 @@ tags:
   - topic/econometrics
   - topic/causal-inference
   - type/book-overview
+  - type/overview
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 authors:
@@ -15,6 +17,18 @@ authors:
   - Jörn-Steffen Pischke
 year: 2008
 publisher: Princeton University Press
+doc_type: overview
+source_location: "MHE pp. 3-243 (full book)"
+depends_on:
+  - "[[Regression and the CEF]]"
+  - "[[Instrumental Variables]]"
+  - "[[Differences-in-Differences]]"
+  - "[[The Selection Problem]]"
+used_by:
+  - "[[Research Questions in Econometrics]]"
+  - "[[The Experimental Ideal]]"
+  - "[[Standard Errors and Clustering]]"
+  - "[[Quantile Regression]]"
 ---
 
 # Mostly Harmless Econometrics

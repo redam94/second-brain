@@ -5,10 +5,20 @@ tags:
   - topic/multivariate
   - topic/joint-distributions
   - method/pymc
+  - type/concept
+  - doc/tutorial
 aliases:
   - Gaussian Copula
   - Joint Distribution Modelling
 date_ingested: 2026-04-09
+doc_type: concept
+source_location: "raw/Bayesian copula estimation Describing correlated joint distributions"
+depends_on:
+  - "[[Nonparametric Models Overview]]"
+  - "[[Factor Analysis and PPCA]]"
+  - "[[Hierarchical Linear Models]]"
+used_by:
+  - "[[Social Network Models]]"
 ---
 
 # Bayesian Copula Estimation

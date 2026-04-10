@@ -4,12 +4,24 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/probability
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Inference Fundamentals"
 aliases:
   - "Bayes' theorem"
   - "Bayesian inference"
+doc_type: concept
+source_location: "BDA3 Ch.1, pp. 3-28"
+depends_on:
+  - "[[raw/BDA3.pdf]]"
+used_by:
+  - "[[Single-Parameter Models]]"
+  - "[[Garden of Forking Data]]"
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Decision Analysis]]"
+  - "[[BDA3 - Overview]]"
 ---
 
 # Probability and Bayesian Inference

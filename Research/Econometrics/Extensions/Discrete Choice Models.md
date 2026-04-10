@@ -7,9 +7,19 @@ tags:
   - topic/bayesian
   - method/discrete-choice
   - method/random-utility
+  - type/concept
+  - doc/textbook
 date_ingested: 2026-04-09
 raw: "[[raw/Discrete Choice and Random Utility Models]]"
 folder: "Econometrics/Extensions"
+doc_type: tutorial
+source_location: "PyMC Discrete Choice and Random Utility Models tutorial"
+depends_on:
+  - "[[Regression and the CEF]]"
+  - "[[Instrumental Variables]]"
+  - "[[Quantile Regression]]"
+used_by:
+  - "[[Mostly Harmless Econometrics - Overview]]"
 ---
 
 # Discrete Choice Models

@@ -8,9 +8,20 @@ tags:
   - topic/econometrics
   - topic/causal-inference
   - topic/instrumental-variables
+  - type/concept
+  - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
 folder: "Econometrics/Identification Strategies"
+doc_type: theorem
+source_location: "MHE Ch. 4, pp. 83-163"
+depends_on:
+  - "[[Instrumental Variables]]"
+  - "[[The Selection Problem]]"
+  - "[[The Experimental Ideal]]"
+used_by:
+  - "[[Regression Discontinuity Designs]]"
+  - "[[Quantile Regression]]"
 ---
 
 # Local Average Treatment Effects

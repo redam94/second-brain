@@ -5,6 +5,8 @@ tags:
   - topic/bayesian-statistics
   - topic/regression
   - topic/linear-models
+  - type/concept
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Regression Models"
@@ -12,6 +14,15 @@ aliases:
   - "Gaussian model"
   - "MAP estimation"
   - "rethinking linear model"
+doc_type: concept
+source_location: "Statistical Rethinking Ch.9:267-290"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Bayesian Workflow - Overview]]"
+used_by:
+  - "[[Spurious Association and Confounds]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[Monsters and Mixtures]]"
 ---
 
 # Linear Models in Statistical Rethinking

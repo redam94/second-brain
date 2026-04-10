@@ -5,6 +5,8 @@ tags:
   - topic/research-methodology
   - topic/experimental-design
   - topic/power-analysis
+  - type/concept
+  - doc/paper
 source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3409926/"
 date_ingested: 2026-04-08
 folder: "Research Methodology/Experimental Design"
@@ -12,6 +14,16 @@ aliases:
   - "Sample size calculation"
   - "Statistical power"
   - "Type II error"
+doc_type: concept
+source_location: "PMC3409926 (review article)"
+depends_on:
+  - "[[The Experimental Ideal]]"
+  - "[[Garden of Forking Paths]]"
+  - "[[Researcher Degrees of Freedom]]"
+used_by:
+  - "[[Multiple Testing Corrections]]"
+  - "[[Survival Analysis]]"
+  - "[[Activity Bias in Advertising]]"
 ---
 
 # Power Analysis and Sample Size

@@ -6,12 +6,24 @@ tags:
   - topic/causal-inference
   - topic/advertising
   - topic/activity-bias
+  - type/concept
+  - doc/paper
 source: "[[raw/ssrn-2080235.pdf]]"
 date_ingested: 2026-04-08
 folder: "Research Methodology"
 aliases:
   - "Activity bias"
   - "Lewis Rao Reiley"
+doc_type: concept
+source_location: "ssrn-2080235.pdf pp. 1-30"
+depends_on:
+  - "[[Conditional Independence Assumption]]"
+  - "[[The Selection Problem]]"
+  - "[[The Experimental Ideal]]"
+  - "[[Omitted Variables Bias]]"
+used_by:
+  - "[[Observational vs Experimental Methods in Advertising]]"
+  - "[[Power Analysis and Sample Size]]"
 ---
 
 # Activity Bias in Advertising

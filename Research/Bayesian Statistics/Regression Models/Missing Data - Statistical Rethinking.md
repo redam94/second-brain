@@ -6,10 +6,21 @@ tags:
   - topic/imputation
   - method/pymc
   - source/statistical-rethinking
+  - type/concept
+  - doc/tutorial
 aliases:
   - Missing Data SR
   - Bayesian Imputation SR
 date_ingested: 2026-04-09
+doc_type: concept
+source_location: "raw/Missing Data"
+depends_on:
+  - "[[Missing Data Models]]"
+  - "[[Spurious Association and Confounds]]"
+  - "[[Data Collection Models]]"
+  - "[[Counterfactual Inference]]"
+used_by:
+  - "[[Social Network Models]]"
 ---
 
 # Missing Data — Statistical Rethinking (Lecture 18)

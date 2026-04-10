@@ -6,6 +6,8 @@ tags:
   - topic/mcmc
   - topic/hmc
   - topic/stan
+  - type/tutorial
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Computation"
@@ -14,6 +16,14 @@ aliases:
   - "Stan"
   - "map2stan"
   - "NUTS"
+doc_type: tutorial
+source_location: "Statistical Rethinking Ch.8, pp. 241-265"
+depends_on:
+  - "[[MCMC Basics]]"
+  - "[[Efficient MCMC]]"
+  - "[[Garden of Forking Data]]"
+  - "[[raw/StatRethink-Bayes.pdf]]"
+used_by: []
 ---
 
 # HMC and Stan in Practice

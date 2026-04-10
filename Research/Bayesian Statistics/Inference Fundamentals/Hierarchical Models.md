@@ -5,6 +5,8 @@ tags:
   - topic/bayesian-statistics
   - topic/hierarchical-models
   - topic/partial-pooling
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Inference Fundamentals"
@@ -12,6 +14,20 @@ aliases:
   - "Multilevel models"
   - "Partial pooling"
   - "Eight schools"
+doc_type: concept
+source_location: "BDA3 Ch.5, pp. 101-138"
+depends_on:
+  - "[[Single-Parameter Models]]"
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Multiparameter Models]]"
+  - "[[raw/BDA3.pdf]]"
+used_by:
+  - "[[Hierarchical Linear Models]]"
+  - "[[MCMC Basics]]"
+  - "[[Computational Troubleshooting]]"
+  - "[[Choosing and Building Models]]"
+  - "[[Iterative Model Improvement]]"
+  - "[[Evaluating Fitted Models]]"
 ---
 
 # Hierarchical Models

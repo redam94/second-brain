@@ -6,6 +6,8 @@ tags:
   - topic/glm
   - topic/logistic-regression
   - topic/poisson-regression
+  - type/concept
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Regression Models"
@@ -13,6 +15,17 @@ aliases:
   - "Bayesian GLM"
   - "Logistic regression"
   - "Poisson regression"
+doc_type: concept
+source_location: "BDA3 Ch.16:405-432"
+depends_on:
+  - "[[Bayesian Linear Regression]]"
+  - "[[Hierarchical Linear Models]]"
+  - "[[Nonparametric Models Overview]]"
+used_by:
+  - "[[Monsters and Mixtures]]"
+  - "[[Spatial Models - BYM]]"
+  - "[[Counterfactual Inference]]"
+  - "[[Moderation Analysis]]"
 ---
 
 # Generalized Linear Models

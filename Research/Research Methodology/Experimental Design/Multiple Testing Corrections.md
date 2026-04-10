@@ -6,6 +6,8 @@ tags:
   - topic/multiple-comparisons
   - topic/fdr
   - topic/bonferroni
+  - type/concept
+  - doc/paper
 source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2907892/"
 date_ingested: 2026-04-08
 folder: "Research Methodology/Experimental Design"
@@ -16,6 +18,14 @@ aliases:
   - "Benjamini-Hochberg"
   - "FWER"
   - "q-value"
+doc_type: concept
+source_location: "PMC2907892 (review article)"
+depends_on:
+  - "[[Garden of Forking Paths]]"
+  - "[[Researcher Degrees of Freedom]]"
+  - "[[Power Analysis and Sample Size]]"
+used_by:
+  - "[[Forking Paths and Bayesian Approaches]]"
 ---
 
 # Multiple Testing Corrections
