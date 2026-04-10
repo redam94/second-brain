@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Theoretical Physics/Quantum Field Theory Overview.md",
+                "file": "Research/Econometrics/Identification Strategies/Bayesian Difference in Differences.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quantum Field Theory Overview"
+              "title": "Bayesian Difference in Differences"
             }
           }
         ]
@@ -182,6 +182,9 @@
   },
   "active": "aebec5300f0ffcb5",
   "lastOpenFiles": [
+    "Research/Theoretical Physics/Quantum Mechanics Overview.md",
+    "Research/Theoretical Physics/Quantum Field Theory Overview.md",
+    "Research/Theoretical Physics/Gauge Theory Overview.md",
     "Research/Concept Dependencies.base",
     "Research/Econometrics/Mostly Harmless Econometrics - Overview.md",
     "Research/Econometrics/Identification Strategies/_Index.md",
@@ -205,9 +208,6 @@
     "Research/Bayesian Statistics/Regression Models/Missing Data - Statistical Rethinking.md",
     "Research/Bayesian Statistics/Regression Models/Generalized Linear Models.md",
     "Research/Bayesian Statistics/Workflow/Evaluating Fitted Models.md",
-    "Research/Theoretical Physics/Quantum Mechanics Overview.md",
-    "Research/Theoretical Physics/Quantum Field Theory Overview.md",
-    "Research/Theoretical Physics/Gauge Theory Overview.md",
     "Research/Ingested Notes.base",
     "Research/Theoretical Physics",
     "Research/Theorems and Definitions.base",
