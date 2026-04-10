@@ -67,6 +67,9 @@ $$\phi \sim p(\phi) \quad \text{(hyperprior)}$$
 
 - [[Single-Parameter Models]] — building block for each group
 - [[Bayesian Workflow - Overview]] — iterative building of hierarchical models
+- [[Partial Pooling as Multiple Comparisons Correction]] — how partial pooling formally serves as a multiple comparisons correction (z-score shrinkage algebra)
+- [[Multiple Comparisons - Bayesian Perspective]] — Gelman et al. (2009) on multilevel models replacing classical corrections
+- [[Type S and Type M Errors]] — the error framework that motivates hierarchical modeling over classical corrections
 - [[Local Average Treatment Effects]] — treatment effect heterogeneity in econometrics
 - [[Differences-in-Differences]] — frequentist panel approach using similar exchangeability assumptions
 - [[Instrumental Variables]] — complier heterogeneity parallels hierarchical variation across groups

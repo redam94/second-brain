@@ -183,6 +183,10 @@
   },
   "active": "79ff034845b28e12",
   "lastOpenFiles": [
+    "Research/Bayesian Statistics/Inference Fundamentals/Partial Pooling as Multiple Comparisons Correction.md",
+    "Research/Research Methodology/Experimental Design/Type S and Type M Errors.md",
+    "Research/Research Methodology/Multiple Comparisons - Bayesian Perspective.md",
+    "Research/raw/multiple2f.pdf",
     "Research/Theorems and Definitions.base",
     "Research/Concept Dependencies.base",
     "Research/Bayesian Statistics/Workflow/Bayesian Workflow - Overview.md",
@@ -209,15 +213,11 @@
     "Research/Econometrics/Regression Foundations/Conditional Independence Assumption.md",
     "Research/Econometrics/Identification Strategies/Bayesian Difference in Differences.md",
     "Research/Econometrics/Identification Strategies/Differences-in-Differences.md",
-    "Research/Econometrics/Identification Strategies/Instrumental Variables.md",
-    "Research/Econometrics/Identification Strategies/Local Average Treatment Effects.md",
     "Research/raw/p_hacking.pdf",
     "Research/raw/StatRethink-Bayes.pdf",
     "Research/raw/Mostly Harmless Econometrics.pdf",
     "Research/Econometrics/Extensions",
     "Research/Econometrics/Identification Strategies",
-    "Research/Econometrics/Regression Foundations",
-    "Research/Econometrics/Foundations",
-    "Untitled.base"
+    "Research/Econometrics/Regression Foundations"
   ]
 }

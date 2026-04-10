@@ -112,4 +112,7 @@ The **q-value** of a test is the minimum FDR at which that test would be called 
 - [[Garden of Forking Paths]] — why multiple comparisons are a problem even without explicit testing
 - [[Researcher Degrees of Freedom]] — sources of implicit multiplicity
 - [[Hierarchical Models]] — the Bayesian structural alternative
+- [[Multiple Comparisons - Bayesian Perspective]] — Gelman et al. (2009) argue multilevel models replace classical corrections entirely
+- [[Type S and Type M Errors]] — reframing statistical error beyond Type 1/Type 2
+- [[Partial Pooling as Multiple Comparisons Correction]] — formal algebra of how shrinkage reduces z-scores
 - [[Power Analysis and Sample Size]] — designing studies with adequate power

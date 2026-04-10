@@ -21,6 +21,7 @@ depends_on:
 used_by:
   - "[[The Experimental Ideal]]"
   - "[[Power Analysis and Sample Size]]"
+  - "[[Multiple Comparisons - Bayesian Perspective]]"
 ---
 
 # Forking Paths and Bayesian Approaches

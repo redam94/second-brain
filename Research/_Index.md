@@ -4,7 +4,7 @@ tags:
   - type/index
   - source/ingested
 date_updated: 2026-04-09
-concept_count: 65
+concept_count: 68
 ---
 
 # Research
@@ -22,13 +22,14 @@ concept_count: 65
 |-------|-------|-------------|
 | [[Bayesian Statistics/_Index\|Bayesian Statistics]] | 43 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART |
 | [[Econometrics/_Index\|Econometrics]] | 15 | Selection bias, CEF, IV, LATE, DiD, RD, quantile regression, discrete choice |
-| [[Research Methodology/_Index\|Research Methodology]] | 7+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis |
+| [[Research Methodology/_Index\|Research Methodology]] | 8+4 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons |
 
 ## Cross-Cutting Themes
 
 - **Bayesian vs. Frequentist**: [[Asymptotics and Frequentist Connections]], [[Forking Paths and Bayesian Approaches]]
 - **Causal Inference**: [[The Experimental Ideal]], [[Activity Bias in Advertising]], [[Data Collection Models]], [[Counterfactual Inference]], [[Nonparametric Causal Inference]]
 - **Model Building**: [[Bayesian Workflow - Overview]], [[Model Checking]], [[Model Comparison]], [[Overfitting and Information Criteria]]
+- **Multiple Comparisons**: [[Multiple Comparisons - Bayesian Perspective]], [[Multiple Testing Corrections]], [[Type S and Type M Errors]], [[Partial Pooling as Multiple Comparisons Correction]]
 - **Missing Data**: [[Missing Data Models]], [[Missing Data - Statistical Rethinking]], [[Data Collection Models]]
 - **Regression**: [[Bayesian Linear Regression]], [[Regression and the CEF]], [[Hierarchical Linear Models]], [[Generalized Linear Models]]
 
@@ -52,6 +53,7 @@ concept_count: 65
 - [[raw/Difference in differences]] — PyMC tutorial: Bayesian DiD with counterfactual prediction (2026-04-09)
 - [[raw/Social Networks]] — PyMC / Statistical Rethinking Lecture 15: dyadic social network models (2026-04-09)
 - [[raw/Bayesian moderation analysis]] — PyMC tutorial: moderation analysis with interaction terms (2026-04-09)
+- [[raw/multiple2f.pdf]] — "Why we (usually) don't have to worry about multiple comparisons" (Gelman, Hill & Yajima, 2009)
 
 ## See Also
 
