@@ -4,8 +4,8 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
-date_updated: 2026-04-09
-concept_count: 9
+date_updated: 2026-04-10
+concept_count: 10
 ---
 
 # Advanced Models
@@ -17,6 +17,7 @@ concept_count: 9
 > - Need fast GP approximation (HSGP)? -> [[Hilbert Space Gaussian Processes]]
 > - Need spatial areal models (ICAR)? -> [[Spatial Models - BYM]]
 > - Need BART-based causal inference? -> [[Nonparametric Causal Inference]]
+> - Need Bayesian propensity scores and IPW (Liao-Zigler method)? -> [[Bayesian Propensity Scores and IPW]]
 
 ## Concept Map
 
@@ -30,6 +31,7 @@ concept_count: 9
 | Dyadic models for social networks | [[Social Network Models]] | concept | [[Copula Estimation]], [[Hierarchical Linear Models]], [[Spatial Models - BYM]], [[Generalized Linear Models]] | Reciprocity and generalised giving in networks |
 | CFA and SEM for psychometric latent variables | [[Confirmatory Factor Analysis and SEM]] | concept | [[Factor Analysis and PPCA]], [[Hierarchical Models]], [[Spurious Association and Confounds]], [[Nonparametric Models Overview]] | Latent variable measurement models with structural paths |
 | BART-based ATE/ATT with propensity scores | [[Nonparametric Causal Inference]] | concept | [[Nonparametric Models Overview]], [[Counterfactual Inference]], [[Data Collection Models]], [[Bayesian Linear Regression]] | Flexible causal effect estimation without parametric assumptions |
+| Bayesian IPW, Liao-Zigler two-stage propensity score analysis | [[Bayesian Propensity Scores and IPW]] | concept | [[Directed Acyclic Graphs]], [[The Selection Problem]], [[Bayesian Workflow - Overview]] | Marginalise over posterior propensity scores via K outcome models + Rubin's rules |
 | Maximum entropy GLMs, zero-inflated Poisson, ordered categorical | [[Monsters and Mixtures]] | concept | [[Generalized Linear Models]], [[Linear Models in Statistical Rethinking]], [[Hierarchical Models]], [[Overfitting and Information Criteria]] | Entropy-based justification for link functions |
 
 ## Notes
@@ -41,6 +43,7 @@ concept_count: 9
 - [[Social Network Models]] — CONTAINS: Dyadic network models, reciprocity parameters, generalised giving, social ties analysis
 - [[Confirmatory Factor Analysis and SEM]] — CONTAINS: CFA measurement models, SEM structural paths, latent variables, psychometric applications
 - [[Nonparametric Causal Inference]] — CONTAINS: BART for causal inference, ATE/ATT estimation, propensity score weighting, treatment heterogeneity
+- [[Bayesian Propensity Scores and IPW]] — CONTAINS: IPTW definition, pseudo-populations, why Bayesian IPW is incompatible with standard Bayes, Liao-Zigler two-stage method, K posterior propensity score draws, Rubin's rules, mosquito net/malaria example
 - [[Monsters and Mixtures]] — CONTAINS: Maximum entropy GLMs, zero-inflated Poisson, beta-binomial, overdispersion, ordered categorical regression
 
 ## Sources
@@ -54,3 +57,4 @@ concept_count: 9
 - [[raw/Social Networks]] — PyMC port of Statistical Rethinking Lecture 15: dyadic network models
 - [[raw/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics]] — PyMC CFA/SEM case study
 - [[raw/Bayesian Non-parametric Causal Inference]] — PyMC BART tutorial: non-parametric causal inference
+- [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss blog (2021): Bayesian propensity scores and IPW via Liao-Zigler two-stage method

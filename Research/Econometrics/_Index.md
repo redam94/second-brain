@@ -4,8 +4,8 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-04-09
-concept_count: 15
+date_updated: 2026-04-10
+concept_count: 17
 ---
 
 # Econometrics
@@ -25,9 +25,9 @@ concept_count: 15
 
 | Sub-topic | Notes | Domain |
 |-----------|-------|--------|
-| [[Foundations/_Index\|Foundations]] | 3 | Research questions, experimental ideal, selection bias (MHE Part I) |
+| [[Foundations/_Index\|Foundations]] | 4 | Research questions, experimental ideal, selection bias, DAGs (MHE Part I + Pearl) |
 | [[Regression Foundations/_Index\|Regression Foundations]] | 3 | CEF, CIA, omitted variables bias (MHE Ch 3) |
-| [[Identification Strategies/_Index\|Identification Strategies]] | 5 | IV, LATE, DD, RD — quasi-experimental methods (MHE Ch 4-6) |
+| [[Identification Strategies/_Index\|Identification Strategies]] | 6 | IV, LATE, DD, RD, synthetic control — quasi-experimental methods (MHE Ch 4-6) |
 | [[Extensions/_Index\|Extensions]] | 3 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8) |
 
 ## Sources
@@ -35,6 +35,8 @@ concept_count: 15
 - [[raw/Mostly Harmless Econometrics.pdf]] — Full textbook PDF (Angrist & Pischke, 2008)
 - [[raw/Discrete Choice and Random Utility Models]] — PyMC tutorial: Bayesian discrete choice models (McFadden framework)
 - [[raw/Difference in differences]] — PyMC tutorial: Bayesian DiD with counterfactual prediction
+- [[raw/15 - Synthetic Control — Causal Inference for the Brave and True]] — Causal Inference for the Brave and True, Ch. 15: synthetic control with Python
+- [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Towards Data Science (Harrison, 2023): comprehensive DAG tutorial
 
 ## See Also
 

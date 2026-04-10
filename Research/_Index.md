@@ -3,8 +3,8 @@ title: "Index: Research"
 tags:
   - type/index
   - source/ingested
-date_updated: 2026-04-09
-concept_count: 68
+date_updated: 2026-04-10
+concept_count: 78
 ---
 
 # Research
@@ -14,20 +14,22 @@ concept_count: 68
 > - Need Bayesian inference, computation, or regression? -> [[Bayesian Statistics/_Index|Bayesian Statistics]]
 > - Need causal inference toolkit (IV, DiD, RD)? -> [[Econometrics/_Index|Econometrics]]
 > - Need forking paths, power analysis, or ad measurement? -> [[Research Methodology/_Index|Research Methodology]]
+> - Need quantum mechanics, QFT, or gauge theory? -> [[Theoretical Physics/_Index|Theoretical Physics]]
 > - Need a specific concept? Check the Concept Map below or use the .base files for database views
 
 ## Concept Map
 
 | Topic | Notes | Key Concepts |
 |-------|-------|-------------|
-| [[Bayesian Statistics/_Index\|Bayesian Statistics]] | 43 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART |
-| [[Econometrics/_Index\|Econometrics]] | 15 | Selection bias, CEF, IV, LATE, DiD, RD, quantile regression, discrete choice |
+| [[Bayesian Statistics/_Index\|Bayesian Statistics]] | 44 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW |
+| [[Econometrics/_Index\|Econometrics]] | 17 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, quantile regression, discrete choice, DAGs |
 | [[Research Methodology/_Index\|Research Methodology]] | 8+4 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons |
+| [[Theoretical Physics/_Index\|Theoretical Physics]] | 3 | Quantum mechanics, quantum field theory, gauge theory, Standard Model, renormalization |
 
 ## Cross-Cutting Themes
 
 - **Bayesian vs. Frequentist**: [[Asymptotics and Frequentist Connections]], [[Forking Paths and Bayesian Approaches]]
-- **Causal Inference**: [[The Experimental Ideal]], [[Activity Bias in Advertising]], [[Data Collection Models]], [[Counterfactual Inference]], [[Nonparametric Causal Inference]]
+- **Causal Inference**: [[The Experimental Ideal]], [[Activity Bias in Advertising]], [[Data Collection Models]], [[Counterfactual Inference]], [[Nonparametric Causal Inference]], [[Directed Acyclic Graphs]], [[Synthetic Control]], [[Bayesian Propensity Scores and IPW]]
 - **Model Building**: [[Bayesian Workflow - Overview]], [[Model Checking]], [[Model Comparison]], [[Overfitting and Information Criteria]]
 - **Multiple Comparisons**: [[Multiple Comparisons - Bayesian Perspective]], [[Multiple Testing Corrections]], [[Type S and Type M Errors]], [[Partial Pooling as Multiple Comparisons Correction]]
 - **Missing Data**: [[Missing Data Models]], [[Missing Data - Statistical Rethinking]], [[Data Collection Models]]
@@ -54,6 +56,12 @@ concept_count: 68
 - [[raw/Social Networks]] — PyMC / Statistical Rethinking Lecture 15: dyadic social network models (2026-04-09)
 - [[raw/Bayesian moderation analysis]] — PyMC tutorial: moderation analysis with interaction terms (2026-04-09)
 - [[raw/multiple2f.pdf]] — "Why we (usually) don't have to worry about multiple comparisons" (Gelman, Hill & Yajima, 2009)
+- [[raw/15 - Synthetic Control — Causal Inference for the Brave and True]] — Causal Inference for the Brave and True, Ch. 15: synthetic control (2026-04-10)
+- [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Towards Data Science: DAG master class (Harrison, 2023) (2026-04-10)
+- [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss blog: Bayesian IPW via Liao-Zigler (2026-04-10)
+- [[raw/Quantum mechanics]] — Wikipedia: Quantum mechanics (2026-04-10)
+- [[raw/Quantum field theory]] — Wikipedia: Quantum field theory (2026-04-10)
+- [[raw/Gauge theory]] — Wikipedia: Gauge theory (2026-04-10)
 
 ## See Also
 

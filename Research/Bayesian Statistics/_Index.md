@@ -4,8 +4,8 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-04-09
-concept_count: 43
+date_updated: 2026-04-10
+concept_count: 44
 ---
 
 # Bayesian Statistics
@@ -31,7 +31,7 @@ concept_count: 43
 | [[Model Assessment/_Index\|Model Assessment]] | 5 | Posterior predictive checks, model comparison, decision analysis (BDA3 Part II) |
 | [[Computation/_Index\|Computation]] | 5 | MCMC, HMC, variational inference, Stan (BDA3 Part III) |
 | [[Regression Models/_Index\|Regression Models]] | 9 | Bayesian regression, multilevel models, GLMs, missing data (BDA3 Part IV) |
-| [[Advanced Models/_Index\|Advanced Models]] | 9 | GPs, mixtures, Dirichlet processes, spatial, copulas, BART (BDA3 Part V + PyMC) |
+| [[Advanced Models/_Index\|Advanced Models]] | 10 | GPs, mixtures, Dirichlet processes, spatial, copulas, BART, Bayesian IPW (BDA3 Part V + PyMC) |
 | [[Workflow/_Index\|Bayesian Workflow]] | 7 | The iterative modeling cycle (Gelman et al. 2020) |
 
 ## Sources
@@ -39,6 +39,7 @@ concept_count: 43
 - [[raw/BDA3.pdf]] — Bayesian Data Analysis, 3rd Edition (Gelman, Carlin, Stern, Dunson, Vehtari, Rubin)
 - [[raw/BayesWorkflow.pdf]] — Bayesian Workflow (Gelman, Vehtari, Simpson et al., 2020)
 - [[raw/StatRethink-Bayes.pdf]] — Statistical Rethinking (McElreath, 2015)
+- [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss blog (2021): Bayesian IPW via Liao-Zigler two-stage method
 
 ## See Also
 
