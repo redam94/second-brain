@@ -13,8 +13,9 @@ aliases:
   - SEM
   - Structural Equation Model
 date_ingested: 2026-04-09
+source: "[[raw/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics]]"
 doc_type: concept
-source_location: "raw/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics"
+source_location: "PyMC tutorial — full article"
 depends_on:
   - "[[Factor Analysis and PPCA]]"
   - "[[Hierarchical Models]]"

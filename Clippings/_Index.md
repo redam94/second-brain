@@ -6,6 +6,7 @@ tags:
 parent: "[[_Vault_Index|Vault]]"
 date_updated: 2026-04-09
 concept_count: 13
+doc_type: index
 ---
 
 # Clippings

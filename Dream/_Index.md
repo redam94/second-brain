@@ -4,6 +4,7 @@ tags:
   - type/index
   - type/dream
 date_updated: 2026-04-10
+doc_type: index
 ---
 
 # Dream: Research Gaps

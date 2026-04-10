@@ -11,8 +11,9 @@ aliases:
   - Gaussian Copula
   - Joint Distribution Modelling
 date_ingested: 2026-04-09
+source: "[[raw/Bayesian copula estimation Describing correlated joint distributions]]"
 doc_type: concept
-source_location: "raw/Bayesian copula estimation Describing correlated joint distributions"
+source_location: "PyMC tutorial — full article"
 depends_on:
   - "[[Nonparametric Models Overview]]"
   - "[[Factor Analysis and PPCA]]"
@@ -92,7 +93,7 @@ with pm.Model() as copula_model:
 ```
 
 > [!note] LKJCholeskyCov
-> The [[LKJ distribution]] is the standard prior for correlation matrices in PyMC. `eta=2.0` gives a weakly informative prior that mildly favours lower correlations.
+> The LKJ distribution is the standard prior for correlation matrices in PyMC. `eta=2.0` gives a weakly informative prior that mildly favours lower correlations.
 
 ## Limitations
 

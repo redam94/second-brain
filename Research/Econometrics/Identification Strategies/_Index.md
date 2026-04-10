@@ -6,6 +6,7 @@ tags:
 parent: "[[Econometrics/_Index|Econometrics]]"
 date_updated: 2026-04-10
 concept_count: 6
+doc_type: index
 ---
 
 # Identification Strategies

@@ -12,8 +12,9 @@ aliases:
   - Moderation Analysis
   - Interaction Effects Bayesian
 date_ingested: 2026-04-09
+source: "[[raw/Bayesian moderation analysis]]"
 doc_type: concept
-source_location: "raw/Bayesian moderation analysis"
+source_location: "PyMC tutorial — full article"
 depends_on:
   - "[[Spurious Association and Confounds]]"
   - "[[Bayesian Linear Regression]]"

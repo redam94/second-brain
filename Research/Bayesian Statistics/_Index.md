@@ -6,6 +6,7 @@ tags:
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-04-10
 concept_count: 44
+doc_type: index
 ---
 
 # Bayesian Statistics

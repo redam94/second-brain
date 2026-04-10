@@ -12,8 +12,9 @@ aliases:
   - Excess Deaths
   - Bayesian Counterfactual
 date_ingested: 2026-04-09
+source: "[[raw/Counterfactual inference calculating excess deaths due to COVID-19]]"
 doc_type: concept
-source_location: "raw/Counterfactual inference calculating excess deaths due to COVID-19"
+source_location: "PyMC tutorial — full article"
 depends_on:
   - "[[Bayesian Linear Regression]]"
   - "[[Generalized Linear Models]]"

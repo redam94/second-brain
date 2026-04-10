@@ -6,6 +6,7 @@ tags:
 parent: "[[Research Methodology/_Index|Research Methodology]]"
 date_updated: 2026-04-09
 concept_count: 4
+doc_type: index
 ---
 
 # Experimental Design

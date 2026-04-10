@@ -6,6 +6,7 @@ tags:
 parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
 date_updated: 2026-04-09
 concept_count: 5
+doc_type: index
 ---
 
 # Computation

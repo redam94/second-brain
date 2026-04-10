@@ -5,6 +5,7 @@ tags:
   - source/ingested
 date_updated: 2026-04-10
 concept_count: 78
+doc_type: index
 ---
 
 # Research

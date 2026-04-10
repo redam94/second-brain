@@ -5,6 +5,7 @@ tags:
   - type/vault-root
 date_updated: 2026-04-09
 concept_count: 65
+doc_type: index
 ---
 
 # Vault Index

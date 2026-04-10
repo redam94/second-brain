@@ -4,6 +4,7 @@ tags:
   - type/index
 date_updated: 2026-04-09
 question_count: 3
+doc_type: index
 ---
 
 # Questions and Answers
