@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Quantum field theory.md",
+                "file": "Research/_Index.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quantum field theory"
+              "title": "_Index"
             }
           }
         ]
@@ -182,8 +182,23 @@
   },
   "active": "aebec5300f0ffcb5",
   "lastOpenFiles": [
-    "Clippings/Gauge theory.md",
+    "Research/raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs.md",
+    "Research/raw/Quantum mechanics.md",
+    "Research/raw/Quantum field theory.md",
+    "Research/raw/How to use Bayesian propensity scores and inverse probability weights.md",
+    "Research/raw/Gauge theory.md",
+    "Research/raw/15 - Synthetic Control — Causal Inference for the Brave and True.md",
+    "Research/Physics/_Index.md",
+    "Research/Physics/Quantum Mechanics.md",
+    "Research/Physics/Quantum Field Theory.md",
+    "Research/Physics/Gauge Theory.md",
+    "Research/Econometrics/Identification Strategies/Synthetic Control.md",
+    "Research/Econometrics/Identification Strategies/Directed Acyclic Graphs.md",
+    "Research/Econometrics/Identification Strategies/Bayesian Propensity Scores and IPW.md",
+    "_Vault_Index.md",
     "Clippings/Quantum field theory.md",
+    "Research/Physics",
+    "Clippings/Gauge theory.md",
     "Clippings/Quantum mechanics.md",
     "Questions-and-Answers/Q - Handling Multiple Comparisons When Selecting From Hundreds of Models.md",
     "Dream/_Index.md",
@@ -194,29 +209,14 @@
     "Clippings/The Besag-York-Mollie Model for Spatial Data.md",
     "Clippings/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs.md",
     "Questions-and-Answers/Q - Differences Between Frequentist and Bayesian Statistics.md",
-    "Questions-and-Answers/Q - Common Pitfalls in Statistical Modeling.md",
-    "Questions-and-Answers/_Index.md",
-    "Research/Bayesian Statistics/Workflow/Iterative Model Improvement.md",
-    "Research/Bayesian Statistics/Inference Fundamentals/Hierarchical Models.md",
     "Questions-and-Answers",
-    "Research/Bayesian Statistics/Inference Fundamentals/Asymptotics and Frequentist Connections.md",
-    "Research/Bayesian Statistics/Advanced Models/Copula Estimation.md",
     "Research/Concept Dependencies.base",
-    "Research/Research Methodology/Researcher Degrees of Freedom.md",
-    "_Vault_Index.md",
     "Untitled 2.base",
     "Research/Theorems and Definitions.base",
     "Research/Ingested Notes.base",
     "Untitled.base",
     "Untitled 1.base",
-    "Research/Research Methodology/Experimental Design/Survival Analysis.md",
-    "Research/Econometrics/Regression Foundations/Conditional Independence Assumption.md",
-    "Research/Research Methodology/Activity Bias in Advertising.md",
-    "Research/Research Methodology/Experimental Design/Type S and Type M Errors.md",
-    "Research/Research Methodology/Experimental Design/Multiple Testing Corrections.md",
-    "Research/Bayesian Statistics/Advanced Models/Hilbert Space Gaussian Processes.md",
     "Research/raw/multiple2f.pdf",
-    "Research/raw/p_hacking.pdf",
-    "Research/raw/StatRethink-Bayes.pdf"
+    "Research/raw/p_hacking.pdf"
   ]
 }
