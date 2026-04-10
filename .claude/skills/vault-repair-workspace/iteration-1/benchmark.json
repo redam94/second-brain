@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "skill_name": "vault-repair",
+    "skill_path": "/Users/redam94/Documents/second-brain/.claude/skills/vault-repair/SKILL.md",
+    "executor_model": "claude-opus-4-6",
+    "timestamp": "2026-04-10T01:15:00Z",
+    "evals_run": ["eval-0-frontmatter-repair", "eval-1-orphan-processing", "eval-2-full-audit"],
+    "runs_per_configuration": 3
+  },
+  "configurations": [
+    {
+      "name": "with_skill",
+      "label": "With Vault-Repair Skill",
+      "pass_rate": { "mean": 0.92, "stddev": 0.08 },
+      "time_seconds": { "mean": 295.6, "stddev": 82.7 },
+      "tokens": { "mean": 79326, "stddev": 18.2 }
+    },
+    {
+      "name": "without_skill",
+      "label": "Baseline (No Skill)",
+      "pass_rate": { "mean": 0.85, "stddev": 0.10 },
+      "time_seconds": { "mean": 278.7, "stddev": 55.4 },
+      "tokens": { "mean": 75587, "stddev": 22.8 }
+    }
+  ],
+  "per_eval": [
+    {
+      "eval_name": "frontmatter-repair",
+      "eval_id": 0,
+      "results": {
+        "with_skill": { "pass_rate": 1.0, "passed": 6, "total": 6, "time_seconds": 219.0, "tokens": 62100 },
+        "without_skill": { "pass_rate": 1.0, "passed": 6, "total": 6, "time_seconds": 221.1, "tokens": 58706 }
+      }
+    },
+    {
+      "eval_name": "orphan-processing",
+      "eval_id": 1,
+      "results": {
+        "with_skill": { "pass_rate": 0.75, "passed": 3, "total": 4, "time_seconds": 283.9, "tokens": 77532 },
+        "without_skill": { "pass_rate": 0.50, "passed": 2, "total": 4, "time_seconds": 283.5, "tokens": 65476 }
+      }
+    },
+    {
+      "eval_name": "full-audit-report",
+      "eval_id": 2,
+      "results": {
+        "with_skill": { "pass_rate": 1.0, "passed": 3, "total": 3, "time_seconds": 383.0, "tokens": 98346 },
+        "without_skill": { "pass_rate": 1.0, "passed": 3, "total": 3, "time_seconds": 331.6, "tokens": 102578 }
+      }
+    }
+  ],
+  "run_summary": {
+    "delta": { "pass_rate": "+7%", "time_seconds": "+16.9", "tokens": "+3739" }
+  },
+  "analyst_observations": [
+    "Frontmatter repair (eval 0) is a tie — both achieve 6/6. However the skill uses standard taxonomy (doc_type: concept, type/concept) while baseline invents non-standard values (doc_type: chapter-notes, type/chapter-notes).",
+    "Orphan processing (eval 1) is the biggest differentiator: skill produces formal callouts and full enhanced frontmatter, baseline does not. The skill's one failure (links_to_existing_vault) is borderline — found 1 of 2 required vault links.",
+    "Audit report (eval 2) is a tie at 3/3 for both. The baseline was actually more thorough (124 headings vs 64, found 200+ broken links vs skill's focused 4), but both met all assertions.",
+    "Timing is nearly identical across all evals (~280-380s). The skill doesn't add overhead.",
+    "The qualitative difference is in taxonomy compliance — the skill produces output matching the vault-ingest standard, while the baseline improvises its own schema."
+  ]
+}

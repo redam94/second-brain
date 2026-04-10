@@ -1,0 +1,11 @@
+{
+  "eval_id": 1,
+  "eval_name": "orphan-processing",
+  "prompt": "Process the orphaned raw file Research/raw/Factor analysis.md into proper vault notes",
+  "assertions": [
+    {"name": "creates_multiple_notes", "description": "Produces 3+ atomic notes from the tutorial", "type": "count_check"},
+    {"name": "has_formal_callouts", "description": "Notes contain > [!definition] or > [!theorem] or > [!example] callouts", "type": "content_check"},
+    {"name": "has_full_frontmatter", "description": "New notes have depends_on, used_by, doc_type, source_location", "type": "content_check"},
+    {"name": "links_to_existing_vault", "description": "Notes contain wikilinks to concepts already in the vault", "type": "content_check"}
+  ]
+}

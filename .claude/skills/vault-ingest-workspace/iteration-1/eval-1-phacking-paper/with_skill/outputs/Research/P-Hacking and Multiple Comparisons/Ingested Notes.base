@@ -1,0 +1,42 @@
+{
+  "name": "Ingested Notes",
+  "filter": {
+    "conjunction": "and",
+    "conditions": [
+      {
+        "field": "tags",
+        "operator": "contains",
+        "value": "source/ingested"
+      }
+    ]
+  },
+  "formulaEnabled": true,
+  "order": [
+    {
+      "field": "date_ingested",
+      "direction": "desc"
+    }
+  ],
+  "columns": [
+    {
+      "field": "file.name",
+      "width": 250
+    },
+    {
+      "field": "doc_type",
+      "width": 100
+    },
+    {
+      "field": "source",
+      "width": 200
+    },
+    {
+      "field": "source_location",
+      "width": 150
+    },
+    {
+      "field": "date_ingested",
+      "width": 120
+    }
+  ]
+}

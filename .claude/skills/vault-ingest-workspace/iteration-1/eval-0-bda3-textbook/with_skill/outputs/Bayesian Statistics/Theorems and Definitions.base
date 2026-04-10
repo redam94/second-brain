@@ -1,0 +1,39 @@
+{
+  "headings": [
+    {
+      "heading": "file.name",
+      "width": 280
+    },
+    {
+      "heading": "source",
+      "width": 180
+    },
+    {
+      "heading": "source_location",
+      "width": 180
+    }
+  ],
+  "filters": [
+    {
+      "or": [
+        {
+          "column": "file.tags",
+          "type": "contains",
+          "value": "type/theorem"
+        },
+        {
+          "column": "file.tags",
+          "type": "contains",
+          "value": "type/definition"
+        }
+      ]
+    }
+  ],
+  "sort": [
+    {
+      "column": "file.name",
+      "direction": "asc"
+    }
+  ],
+  "view_type": "table"
+}

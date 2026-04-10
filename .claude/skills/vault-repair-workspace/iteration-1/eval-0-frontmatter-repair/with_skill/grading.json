@@ -1,0 +1,34 @@
+{
+  "expectations": [
+    {
+      "text": "has_depends_on",
+      "passed": true,
+      "evidence": "depends_on found in content: True"
+    },
+    {
+      "text": "has_used_by",
+      "passed": true,
+      "evidence": "used_by found in content: True"
+    },
+    {
+      "text": "has_doc_type",
+      "passed": true,
+      "evidence": "doc_type found in content: True"
+    },
+    {
+      "text": "has_source_location",
+      "passed": true,
+      "evidence": "source_location found in content: True"
+    },
+    {
+      "text": "preserves_content",
+      "passed": true,
+      "evidence": "8 notes found. Short files: none"
+    },
+    {
+      "text": "has_audit_report",
+      "passed": true,
+      "evidence": "Audit report files: ['audit_report.md']"
+    }
+  ]
+}

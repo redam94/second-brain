@@ -1,0 +1,39 @@
+{
+  "name": "Theorems and Definitions",
+  "filter": {
+    "conjunction": "or",
+    "conditions": [
+      {
+        "field": "tags",
+        "operator": "contains",
+        "value": "type/theorem"
+      },
+      {
+        "field": "tags",
+        "operator": "contains",
+        "value": "type/definition"
+      }
+    ]
+  },
+  "formulaEnabled": true,
+  "order": [
+    {
+      "field": "file.name",
+      "direction": "asc"
+    }
+  ],
+  "columns": [
+    {
+      "field": "file.name",
+      "width": 250
+    },
+    {
+      "field": "source",
+      "width": 200
+    },
+    {
+      "field": "source_location",
+      "width": 150
+    }
+  ]
+}

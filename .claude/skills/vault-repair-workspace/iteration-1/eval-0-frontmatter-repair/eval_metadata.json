@@ -1,0 +1,13 @@
+{
+  "eval_id": 0,
+  "eval_name": "frontmatter-repair",
+  "prompt": "Repair the frontmatter on all notes in Research/Bayesian Statistics/Inference Fundamentals/",
+  "assertions": [
+    {"name": "has_depends_on", "description": "Repaired notes include depends_on in frontmatter", "type": "content_check"},
+    {"name": "has_used_by", "description": "Repaired notes include used_by in frontmatter", "type": "content_check"},
+    {"name": "has_doc_type", "description": "Repaired notes include doc_type field", "type": "content_check"},
+    {"name": "has_source_location", "description": "Repaired notes include source_location field", "type": "content_check"},
+    {"name": "preserves_content", "description": "Repaired notes preserve original content (not truncated)", "type": "content_check"},
+    {"name": "has_audit_report", "description": "An audit_report.md summarizes what was changed", "type": "file_check"}
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "eval_id": 0,
+  "eval_name": "bda3-textbook-ingest",
+  "prompt": "Ingest pages 1-20 of the BDA3.pdf textbook into Research/Bayesian Statistics folder. Focus on extracting all theorems, definitions, and examples with full formal statements.",
+  "assertions": [
+    {
+      "name": "has_theorem_callouts",
+      "description": "Notes contain > [!theorem] callouts with full formal mathematical statements",
+      "type": "content_check"
+    },
+    {
+      "name": "has_definition_callouts",
+      "description": "Notes contain > [!definition] callouts with formal definitions",
+      "type": "content_check"
+    },
+    {
+      "name": "has_worked_examples",
+      "description": "Notes contain > [!example] callouts with complete setup, solution, and interpretation",
+      "type": "content_check"
+    },
+    {
+      "name": "enhanced_frontmatter",
+      "description": "Notes have depends_on, used_by, source_location, and doc_type fields in frontmatter",
+      "type": "content_check"
+    },
+    {
+      "name": "index_routing_summary",
+      "description": "Index files contain routing summaries with conditional navigation (If you need X, go to [[Y]])",
+      "type": "content_check"
+    },
+    {
+      "name": "concept_map_table",
+      "description": "Index files contain a concept map table with columns for Concept, Note, Depends On, Key Result",
+      "type": "content_check"
+    },
+    {
+      "name": "multiple_atomic_notes",
+      "description": "Produces 3+ separate note files rather than one monolithic note",
+      "type": "count_check"
+    }
+  ]
+}

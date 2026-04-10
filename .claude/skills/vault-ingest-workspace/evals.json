@@ -1,0 +1,23 @@
+{
+  "skill_name": "vault-ingest",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Ingest pages 1-20 of the BDA3.pdf textbook (located at /Users/redam94/Documents/second-brain/Research/raw/BDA3.pdf) into my Research/Bayesian Statistics folder. This is a textbook. Focus on extracting all theorems, definitions, and examples with full formal statements.",
+      "expected_output": "Multiple atomic notes with formal theorem/definition callouts, enhanced frontmatter with depends_on/used_by, concept map indexes, and .base files",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "Ingest the paper at /Users/redam94/Documents/second-brain/Research/raw/p_hacking.pdf into my Research folder. This is an academic paper about p-hacking.",
+      "expected_output": "Notes preserving the paper's argument structure (motivation, methods, results, discussion) with full formal statements of key results and proper frontmatter",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "What theorems and formal results about exchangeability or hierarchical models are documented in my vault?",
+      "expected_output": "A structured answer citing specific notes and raw sources, using concept graph traversal and routing through indexes",
+      "files": []
+    }
+  ]
+}

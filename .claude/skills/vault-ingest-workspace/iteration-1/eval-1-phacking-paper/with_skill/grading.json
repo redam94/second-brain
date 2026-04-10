@@ -1,0 +1,29 @@
+{
+  "expectations": [
+    {
+      "text": "preserves_argument_structure",
+      "passed": true,
+      "evidence": "Motivation: True, Methods: True, Results: True, Notes: 6"
+    },
+    {
+      "text": "has_overview_note",
+      "passed": true,
+      "evidence": "Overview note found: True. Files: ['Garden of Forking Paths - Overview.md']"
+    },
+    {
+      "text": "enhanced_frontmatter",
+      "passed": true,
+      "evidence": "doc_type/paper: True, source_location: True, depends_on: True"
+    },
+    {
+      "text": "formal_results_stated",
+      "passed": true,
+      "evidence": "Found formal statements: True"
+    },
+    {
+      "text": "index_with_routing",
+      "passed": true,
+      "evidence": "Found routing pattern in indexes: True"
+    }
+  ]
+}

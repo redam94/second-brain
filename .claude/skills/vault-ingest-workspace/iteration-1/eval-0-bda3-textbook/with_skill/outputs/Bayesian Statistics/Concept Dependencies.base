@@ -1,0 +1,34 @@
+{
+  "headings": [
+    {
+      "heading": "file.name",
+      "width": 250
+    },
+    {
+      "heading": "depends_on",
+      "width": 250
+    },
+    {
+      "heading": "used_by",
+      "width": 250
+    },
+    {
+      "heading": "tags",
+      "width": 200
+    }
+  ],
+  "filters": [
+    {
+      "column": "file.tags",
+      "type": "contains",
+      "value": "source/ingested"
+    },
+    {
+      "column": "file.tags",
+      "type": "not_contains",
+      "value": "type/index"
+    }
+  ],
+  "group_by": "file.folder",
+  "view_type": "table"
+}

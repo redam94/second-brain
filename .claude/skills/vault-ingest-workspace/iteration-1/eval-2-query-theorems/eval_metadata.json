@@ -1,0 +1,22 @@
+{
+  "eval_id": 2,
+  "eval_name": "query-exchangeability-theorems",
+  "prompt": "What theorems and formal results about exchangeability or hierarchical models are documented in my vault?",
+  "assertions": [
+    {
+      "name": "cites_specific_sources",
+      "description": "Answer references specific vault notes and/or raw PDF files with page numbers or section references",
+      "type": "content_check"
+    },
+    {
+      "name": "structured_answer_format",
+      "description": "Answer uses structured format with Summary, Details, Sources table, and Related Notes sections",
+      "type": "content_check"
+    },
+    {
+      "name": "identifies_gaps",
+      "description": "Answer mentions what information is missing or could be improved in the vault",
+      "type": "content_check"
+    }
+  ]
+}

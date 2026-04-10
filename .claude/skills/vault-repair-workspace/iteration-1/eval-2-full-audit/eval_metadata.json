@@ -1,0 +1,10 @@
+{
+  "eval_id": 2,
+  "eval_name": "full-audit-report",
+  "prompt": "Run a vault audit and show what needs fixing",
+  "assertions": [
+    {"name": "identifies_orphaned_raws", "description": "Report lists raw files that have no corresponding processed notes", "type": "content_check"},
+    {"name": "identifies_missing_frontmatter", "description": "Report identifies notes missing enhanced frontmatter fields", "type": "content_check"},
+    {"name": "structured_report", "description": "Report has clear sections with counts and statistics", "type": "content_check"}
+  ]
+}

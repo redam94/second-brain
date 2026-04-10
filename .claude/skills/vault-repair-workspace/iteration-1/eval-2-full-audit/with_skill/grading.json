@@ -1,0 +1,19 @@
+{
+  "expectations": [
+    {
+      "text": "identifies_orphaned_raws",
+      "passed": true,
+      "evidence": "Mentions orphaned/unprocessed raw files: True"
+    },
+    {
+      "text": "identifies_missing_frontmatter",
+      "passed": true,
+      "evidence": "Identifies missing enhanced frontmatter: True"
+    },
+    {
+      "text": "structured_report",
+      "passed": true,
+      "evidence": "Has sections: True (count: 64), has counts: True"
+    }
+  ]
+}

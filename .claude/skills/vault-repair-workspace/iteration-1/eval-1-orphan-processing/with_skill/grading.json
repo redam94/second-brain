@@ -1,0 +1,24 @@
+{
+  "expectations": [
+    {
+      "text": "creates_multiple_notes",
+      "passed": true,
+      "evidence": "Created 5 notes: ['PyMC Factor Analysis Tutorial.md', 'Factor Analysis Model.md', 'Identifiability in Factor Models.md', 'Post-hoc Factor Score Recovery.md', 'Amortized Inference for Factor Analysis.md']"
+    },
+    {
+      "text": "has_formal_callouts",
+      "passed": true,
+      "evidence": "Found formal callouts (definition/theorem/example): True"
+    },
+    {
+      "text": "has_full_frontmatter",
+      "passed": true,
+      "evidence": "depends_on: True, used_by: True, doc_type: True, source_location: True"
+    },
+    {
+      "text": "links_to_existing_vault",
+      "passed": false,
+      "evidence": "Found wikilinks referencing: ['Bayesian']"
+    }
+  ]
+}

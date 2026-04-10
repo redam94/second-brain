@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "skill_name": "vault-ingest",
+    "skill_path": "/Users/redam94/Documents/second-brain/.claude/skills/vault-ingest/SKILL.md",
+    "executor_model": "claude-opus-4-6",
+    "analyzer_model": "claude-opus-4-6",
+    "timestamp": "2026-04-10T00:39:00Z",
+    "evals_run": ["eval-0-bda3-textbook", "eval-1-phacking-paper", "eval-2-query-theorems"],
+    "runs_per_configuration": 3
+  },
+  "configurations": [
+    {
+      "name": "with_skill",
+      "label": "With Improved Skill",
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0
+      },
+      "time_seconds": {
+        "mean": 333.4,
+        "stddev": 177.0
+      },
+      "tokens": {
+        "mean": 85417,
+        "stddev": 19418
+      }
+    },
+    {
+      "name": "without_skill",
+      "label": "Baseline (No Skill)",
+      "pass_rate": {
+        "mean": 0.47,
+        "stddev": 0.12
+      },
+      "time_seconds": {
+        "mean": 271.9,
+        "stddev": 110.2
+      },
+      "tokens": {
+        "mean": 84898,
+        "stddev": 8419
+      }
+    }
+  ],
+  "per_eval": [
+    {
+      "eval_name": "bda3-textbook-ingest",
+      "eval_id": 0,
+      "results": {
+        "with_skill": {
+          "pass_rate": 1.0,
+          "passed": 7,
+          "total": 7,
+          "time_seconds": 451.8,
+          "tokens": 105330
+        },
+        "without_skill": {
+          "pass_rate": 0.43,
+          "passed": 3,
+          "total": 7,
+          "time_seconds": 365.6,
+          "tokens": 89767
+        }
+      }
+    },
+    {
+      "eval_name": "phacking-paper-ingest",
+      "eval_id": 1,
+      "results": {
+        "with_skill": {
+          "pass_rate": 1.0,
+          "passed": 5,
+          "total": 5,
+          "time_seconds": 430.1,
+          "tokens": 84405
+        },
+        "without_skill": {
+          "pass_rate": 0.6,
+          "passed": 3,
+          "total": 5,
+          "time_seconds": 302.7,
+          "tokens": 74530
+        }
+      }
+    },
+    {
+      "eval_name": "query-exchangeability-theorems",
+      "eval_id": 2,
+      "results": {
+        "with_skill": {
+          "pass_rate": 1.0,
+          "passed": 3,
+          "total": 3,
+          "time_seconds": 118.4,
+          "tokens": 66515
+        },
+        "without_skill": {
+          "pass_rate": 0.33,
+          "passed": 1,
+          "total": 3,
+          "time_seconds": 147.5,
+          "tokens": 90398
+        }
+      }
+    }
+  ],
+  "run_summary": {
+    "delta": {
+      "pass_rate": "+53%",
+      "time_seconds": "+61.5",
+      "tokens": "+519"
+    }
+  },
+  "analyst_observations": [
+    "The skill achieves 100% pass rate on all assertions vs 47% baseline — a +53% improvement.",
+    "The biggest skill advantage is in structural features: enhanced frontmatter (depends_on, used_by, source_location), routing indexes with concept maps, and definition callouts. These never appear in baseline outputs.",
+    "The baseline already produces theorem callouts, worked examples, and atomic notes — these assertions are non-discriminating between skill and baseline.",
+    "The skill uses ~23% more time on average (333s vs 272s) for the ingest tasks, likely due to multi-pass reading and .base file creation. However the query task was actually faster with skill (118s vs 148s).",
+    "Token usage is nearly identical between skill and baseline (~85k avg), suggesting the skill doesn't waste context on unproductive steps.",
+    "The baseline produced more files in some cases (19 vs 6 for p-hacking, 17 vs 9 for BDA3) but lacked the enhanced metadata and routing structure that enables LLM retrieval."
+  ]
+}

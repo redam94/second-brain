@@ -1,0 +1,32 @@
+{
+  "eval_id": 1,
+  "eval_name": "phacking-paper-ingest",
+  "prompt": "Ingest the p_hacking.pdf paper into Research folder. Academic paper about p-hacking.",
+  "assertions": [
+    {
+      "name": "preserves_argument_structure",
+      "description": "Has separate notes covering motivation, methods, and results (not everything in one note)",
+      "type": "content_check"
+    },
+    {
+      "name": "has_overview_note",
+      "description": "Contains an overview note with research question, contribution, and key finding",
+      "type": "content_check"
+    },
+    {
+      "name": "enhanced_frontmatter",
+      "description": "Notes have doc_type: paper, source_location, and depends_on in frontmatter",
+      "type": "content_check"
+    },
+    {
+      "name": "formal_results_stated",
+      "description": "Key statistical results and findings are formally stated with numbers/equations, not just mentioned in passing",
+      "type": "content_check"
+    },
+    {
+      "name": "index_with_routing",
+      "description": "Index file has routing summary directing readers to specific notes for specific concepts",
+      "type": "content_check"
+    }
+  ]
+}

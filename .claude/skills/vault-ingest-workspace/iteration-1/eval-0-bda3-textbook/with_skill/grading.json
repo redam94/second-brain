@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "has_theorem_callouts",
+      "passed": true,
+      "evidence": "Found > [!theorem] callouts: True. Searched 12 files."
+    },
+    {
+      "text": "has_definition_callouts",
+      "passed": true,
+      "evidence": "Found > [!definition] callouts: True."
+    },
+    {
+      "text": "has_worked_examples",
+      "passed": true,
+      "evidence": "Found > [!example] callouts: True."
+    },
+    {
+      "text": "enhanced_frontmatter",
+      "passed": true,
+      "evidence": "depends_on: True, used_by: True, source_location: True, doc_type: True"
+    },
+    {
+      "text": "index_routing_summary",
+      "passed": true,
+      "evidence": "Found routing summary pattern: True"
+    },
+    {
+      "text": "concept_map_table",
+      "passed": true,
+      "evidence": "Found concept map table: True"
+    },
+    {
+      "text": "multiple_atomic_notes",
+      "passed": true,
+      "evidence": "Found 9 note files (excluding indexes): ['BDA3 - Overview.md', 'Statistical Notation and Framework.md', 'Bayes Theorem.md', 'Exchangeability.md', 'Probability as Measure of Uncertainty.md', 'Predictive Distributions.md', 'Three Steps of Bayesian Data Analysis.md', 'Discrete Bayesian Examples.md', 'Likelihood and Odds Ratios.md']"
+    }
+  ]
+}

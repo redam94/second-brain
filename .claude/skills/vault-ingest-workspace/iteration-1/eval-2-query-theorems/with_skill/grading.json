@@ -1,0 +1,19 @@
+{
+  "expectations": [
+    {
+      "text": "cites_specific_sources",
+      "passed": true,
+      "evidence": "Wikilinks: True, Page/chapter refs: True"
+    },
+    {
+      "text": "structured_answer_format",
+      "passed": true,
+      "evidence": "Summary: True, Details: False, Sources table: True"
+    },
+    {
+      "text": "identifies_gaps",
+      "passed": true,
+      "evidence": "Identifies gaps: True"
+    }
+  ]
+}

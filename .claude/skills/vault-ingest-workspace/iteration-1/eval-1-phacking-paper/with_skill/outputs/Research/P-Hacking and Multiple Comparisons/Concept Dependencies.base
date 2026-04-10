@@ -1,0 +1,44 @@
+{
+  "name": "Concept Dependencies",
+  "filter": {
+    "conjunction": "and",
+    "conditions": [
+      {
+        "field": "tags",
+        "operator": "contains",
+        "value": "source/ingested"
+      },
+      {
+        "field": "tags",
+        "operator": "doesNotContain",
+        "value": "type/index"
+      }
+    ]
+  },
+  "formulaEnabled": true,
+  "order": [
+    {
+      "field": "file.name",
+      "direction": "asc"
+    }
+  ],
+  "groupBy": "folder",
+  "columns": [
+    {
+      "field": "file.name",
+      "width": 250
+    },
+    {
+      "field": "depends_on",
+      "width": 200
+    },
+    {
+      "field": "used_by",
+      "width": 200
+    },
+    {
+      "field": "tags",
+      "width": 200
+    }
+  ]
+}

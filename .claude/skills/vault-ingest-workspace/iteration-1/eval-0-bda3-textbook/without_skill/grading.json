@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "has_theorem_callouts",
+      "passed": true,
+      "evidence": "Found > [!theorem] callouts: True. Searched 17 files."
+    },
+    {
+      "text": "has_definition_callouts",
+      "passed": false,
+      "evidence": "Found > [!definition] callouts: False."
+    },
+    {
+      "text": "has_worked_examples",
+      "passed": true,
+      "evidence": "Found > [!example] callouts: True."
+    },
+    {
+      "text": "enhanced_frontmatter",
+      "passed": false,
+      "evidence": "depends_on: False, used_by: False, source_location: False, doc_type: False"
+    },
+    {
+      "text": "index_routing_summary",
+      "passed": false,
+      "evidence": "Found routing summary pattern: False"
+    },
+    {
+      "text": "concept_map_table",
+      "passed": false,
+      "evidence": "Found concept map table: False"
+    },
+    {
+      "text": "multiple_atomic_notes",
+      "passed": true,
+      "evidence": "Found 17 note files (excluding indexes): ['BDA3 - S1.4 - Discrete Examples Genetics and Spell Checking.md', 'BDA3 - Bayesian Data Analysis.md', 'Prior Distribution.md', 'BDA3 - S1.5 - Probability as a Measure of Uncertainty.md', 'Likelihood Principle.md', 'BDA3 - S1.2 - General Notation for Statistical Inference.md', 'Prior Predictive Distribution.md', 'Posterior Predictive Distribution.md', \"Bayes' Theorem.md\", 'BDA3 - Ch01 - Probability and Inference.md', 'Exchangeability.md', 'BDA3 - S1.1 - Three Steps of Bayesian Data Analysis.md', 'BDA3 - S1.3 - Bayesian Inference.md', 'BDA3 - S1.6 - Example Football Point Spreads.md', 'Posterior Distribution.md', 'Likelihood Function.md', 'Three Steps of Bayesian Data Analysis.md']"
+    }
+  ]
+}

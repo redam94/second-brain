@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Econometrics/Identification Strategies/Differences-in-Differences.md",
+                "file": "Research/Research Methodology/Researcher Degrees of Freedom.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Differences-in-Differences"
+              "title": "Researcher Degrees of Freedom"
             }
           }
         ]
@@ -183,23 +183,24 @@
   },
   "active": "79ff034845b28e12",
   "lastOpenFiles": [
+    "Research/Research Methodology/Observational vs Experimental Methods in Advertising.md",
+    "Research/Research Methodology/Garden of Forking Paths.md",
+    "Research/Research Methodology/Experimental Design/Multiple Testing Corrections.md",
+    "Research/Econometrics/Extensions/Standard Errors and Clustering.md",
+    "Clippings/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs.md",
+    "Research/Econometrics/Identification Strategies/Differences-in-Differences.md",
     "Research/Econometrics/Identification Strategies/Local Average Treatment Effects.md",
     "Dream/_Index.md",
     "Research/Research Methodology/Researcher Degrees of Freedom.md",
-    "Research/Research Methodology/Garden of Forking Paths.md",
-    "Research/Research Methodology/Observational vs Experimental Methods in Advertising.md",
     "Research/Research Methodology/Experimental Design/Survival Analysis.md",
     "Research/Research Methodology/Experimental Design/Power Analysis and Sample Size.md",
-    "Research/Research Methodology/Experimental Design/Multiple Testing Corrections.md",
     "Research/Research Methodology/Activity Bias in Advertising.md",
     "Research/Econometrics/Regression Foundations/Regression and the CEF.md",
-    "Research/Econometrics/Identification Strategies/Differences-in-Differences.md",
     "Research/Econometrics/Identification Strategies/_Index.md",
     "Research/Econometrics/Identification Strategies/Bayesian Difference in Differences.md",
     "Research/Econometrics/Foundations/The Selection Problem.md",
     "Research/Econometrics/Foundations/The Experimental Ideal.md",
     "Research/Econometrics/Foundations/Research Questions in Econometrics.md",
-    "Research/Econometrics/Extensions/Standard Errors and Clustering.md",
     "Research/Econometrics/Extensions/Quantile Regression.md",
     "Research/Econometrics/Extensions/Discrete Choice Models.md",
     "Research/Bayesian Statistics/Regression Models/Hierarchical Linear Models.md",
@@ -208,7 +209,6 @@
     "Research/Bayesian Statistics/Regression Models/Missing Data - Statistical Rethinking.md",
     "Research/Bayesian Statistics/Workflow/Evaluating Fitted Models.md",
     "Research/Bayesian Statistics/Inference Fundamentals/Posterior Sampling and Summarization.md",
-    "Research/Bayesian Statistics/Advanced Models/Factor Analysis and PPCA.md",
     "Research/raw/p_hacking.pdf",
     "Research/raw/StatRethink-Bayes.pdf",
     "Research/raw/Mostly Harmless Econometrics.pdf",

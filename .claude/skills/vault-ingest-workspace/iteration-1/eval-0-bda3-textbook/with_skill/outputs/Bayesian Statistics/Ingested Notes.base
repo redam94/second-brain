@@ -1,0 +1,43 @@
+{
+  "headings": [
+    {
+      "heading": "file.name",
+      "width": 250
+    },
+    {
+      "heading": "doc_type",
+      "width": 120
+    },
+    {
+      "heading": "source",
+      "width": 180
+    },
+    {
+      "heading": "source_location",
+      "width": 180
+    },
+    {
+      "heading": "date_ingested",
+      "width": 120
+    }
+  ],
+  "filters": [
+    {
+      "column": "file.tags",
+      "type": "contains",
+      "value": "source/ingested"
+    },
+    {
+      "column": "file.folder",
+      "type": "contains",
+      "value": "Bayesian Statistics"
+    }
+  ],
+  "sort": [
+    {
+      "column": "date_ingested",
+      "direction": "desc"
+    }
+  ],
+  "view_type": "table"
+}

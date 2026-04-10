@@ -1,0 +1,24 @@
+{
+  "expectations": [
+    {
+      "text": "creates_multiple_notes",
+      "passed": true,
+      "evidence": "Created 4 notes: ['Identifiability in Latent Variable Models.md', 'Factor Analysis and PPCA.md', 'Post-hoc Factor Score Recovery.md', 'Amortized Inference.md']"
+    },
+    {
+      "text": "has_formal_callouts",
+      "passed": false,
+      "evidence": "Found formal callouts (definition/theorem/example): False"
+    },
+    {
+      "text": "has_full_frontmatter",
+      "passed": false,
+      "evidence": "depends_on: False, used_by: False, doc_type: False, source_location: False"
+    },
+    {
+      "text": "links_to_existing_vault",
+      "passed": true,
+      "evidence": "Found wikilinks referencing: ['Bayesian', 'MCMC', 'latent']"
+    }
+  ]
+}
