@@ -24,8 +24,8 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 QA_DIR = REPO_ROOT / "content" / "Questions-and-Answers"
 INDEX_FILE = REPO_ROOT / "content" / "index.md"
 
-SECTION_START = "## Recent Q&A"
-SECTION_END = "## Research Notes"
+SECTION_START = "## Selected Analyses"
+SECTION_END = "## Knowledge Base"
 
 
 # ---------------------------------------------------------------------------

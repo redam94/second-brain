@@ -7,13 +7,12 @@ tags:
 
 # Second Brain
 
-A public notebook where I work through ideas in statistics, econometrics, causal inference, and agent-based modeling. Think of it as a thinking-out-loud space — research notes, answered questions, and the occasional deep dive.
-
-The [[Questions-and-Answers/_Index|Q&A section]] is the most blog-like part: specific questions I've been working through, written up with the reasoning made explicit and cross-linked to the underlying research notes.
+> [!abstract] About
+> A structured knowledge base covering Bayesian statistics, econometrics, causal inference, and agent-based modeling. Notes are cross-linked by topic — use the graph view or search bar to explore connections across the collection.
 
 ---
 
-## Recent Q&A
+## Selected Analyses
 
 ### [[Q - Using SMM to Calibrate Agent Based Models|How can SMM be used to calibrate agent based models?]]
 *April 11, 2026 · Agent Based Modeling · Calibration · Simulation Estimation · Econometrics*
@@ -51,12 +50,13 @@ The core divide is philosophical: frequentists treat probability as long-run fre
 ---
 
 
-## Research Notes
+## Knowledge Base
 
-The [[Research/_Index|Research]] section holds the underlying material — textbook summaries, method overviews, and topic explorations:
+| Domain | Core Topics |
+|--------|-------------|
+| [[Research/Bayesian Statistics/_Index\|Bayesian Statistics]] | Inference fundamentals, hierarchical models, MCMC, model checking |
+| [[Research/Econometrics/_Index\|Econometrics]] | Identification strategies, regression foundations, simulation-based estimation |
+| [[Research/Agent-Based Modeling/_Index\|Agent-Based Modeling]] | Calibration methods, social dynamics, consumer behavior |
+| [[Research/Research Methodology/_Index\|Research Methodology]] | Experimental design, multiple comparisons, causal reasoning |
 
-- **Bayesian Statistics** — [[BDA3 - Overview|BDA3]], [[Bayesian Workflow - Overview|Workflow]], [[Hierarchical Models]], [[MCMC Basics|MCMC]]
-- **Causal Inference** — [[MHE - Overview|Mostly Harmless Econometrics]], [[Instrumental Variables]], [[Regression Discontinuity]]
-- **Agent-Based Modeling** — [[Consumer Behavior ABM - Overview|Consumer Behavior]], [[Word-of-Mouth Dynamics]]
-
-Use the **search bar** or **graph view** to explore connections between notes.
+Browse the full collection via the **search bar** or explore topic connections in the **graph view**.
