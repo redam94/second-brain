@@ -1,12 +1,10 @@
 filters:
   and:
     - file.hasTag("source/ingested")
-    - file.inFolder("Research/Econometrics/Extensions")
+    - file.hasTag("topic/econometrics")
     - 'file.ext == "md"'
-
-filters:
-  not:
-    - file.hasTag("type/index")
+    - not:
+        file.hasTag("type/index")
 
 properties:
   depends_on:

@@ -10,7 +10,7 @@ tags:
 source: "[[raw/tdb136.pdf]]"
 source_location: "Liesenfeld & Breitung (1998), Section 4, pp. 8-11"
 date_ingested: 2026-04-11
-folder: "Econometrics/Extensions"
+folder: "Econometrics/Extensions/Simulation-Based Estimation"
 doc_type: paper
 depends_on:
   - "[[Simulation-Based Estimation - Overview]]"
