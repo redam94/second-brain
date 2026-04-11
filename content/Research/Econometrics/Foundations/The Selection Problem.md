@@ -63,3 +63,4 @@ $$E[Y_i|D_i=1] - E[Y_i|D_i=0] = \underbrace{E[Y_{1i}-Y_{0i}|D_i=1]}_{\text{ATT}}
 - [[Omitted Variables Bias]]
 - [[Mostly Harmless Econometrics - Overview]]
 - [[Data Collection Models]] — Bayesian treatment of ignorability and selection mechanisms
+- [[Synthetic Control Extensions]] — penalized and matrix completion methods that address selection when pre-treatment fit is imperfect

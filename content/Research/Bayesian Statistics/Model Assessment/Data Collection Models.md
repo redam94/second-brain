@@ -56,3 +56,4 @@ The ignorability concept directly parallels the **unconfoundedness** assumption 
 - [[Observational vs Experimental Methods in Advertising]] — observational methods failing
 - [[Instrumental Variables]] — IV ensures ignorability through exogenous variation rather than conditioning
 - [[The Selection Problem]] — the frequentist framing of the same challenge ignorability addresses
+- [[Regression and the CEF]] — regression as an estimator when the data collection mechanism is ignorable

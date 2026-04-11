@@ -59,3 +59,4 @@ $$\begin{pmatrix} \alpha_j \\ \beta_j \end{pmatrix} \sim N\!\left(\begin{pmatrix
 - [[Generalized Linear Models]] — hierarchical GLMs
 - [[Differences-in-Differences]] — frequentist fixed effects approach; HLM is the Bayesian alternative for panel data
 - [[Standard Errors and Clustering]] — clustering as a frequentist approach to the same grouped-data structure
+- [[Nonparametric Models Overview]] — GP and mixture model extensions when parametric hierarchical structure is insufficient

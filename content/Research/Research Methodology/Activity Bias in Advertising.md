@@ -69,3 +69,4 @@ used_by:
 - [[Standard Errors and Clustering]] — inference considerations in large-scale ad experiments
 - [[Conditional Independence Assumption]] — the assumption violated by activity bias
 - [[Instrumental Variables]] — exogenous variation approach when CIA fails, as it does here
+- [[Research Questions in Econometrics]] — this paper is a worked answer to all four FAQs applied to online advertising measurement

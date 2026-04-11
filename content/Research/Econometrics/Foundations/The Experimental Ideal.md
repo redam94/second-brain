@@ -72,3 +72,4 @@ $$Y_i = \alpha + \rho D_i + \eta_i$$
 - [[Forking Paths and Bayesian Approaches]] — how randomization complements Bayesian approaches to inference
 - [[Omitted Variables Bias]] — the confounding mechanism that randomization eliminates by design
 - [[Multiple Testing Corrections]] — multiple comparisons inflate false positives even in well-designed experiments
+- [[Regression Discontinuity Designs]] — the local experiment analogue: credible quasi-experimental identification near a threshold

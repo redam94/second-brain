@@ -82,3 +82,4 @@ Fuzzy RD = **IV with $T_i = 1(x_i \geq x_0)$ as the instrument** for $D_i$.
 - [[Local Average Treatment Effects]] — fuzzy RD estimates LATE on compliers at the cutoff
 - [[Mostly Harmless Econometrics - Overview]]
 - [[Model Checking]] — posterior predictive checks for formalizing RD validity tests
+- [[The Experimental Ideal]] — RD approximates a local experiment at the cutoff; the ideal benchmark it approximates

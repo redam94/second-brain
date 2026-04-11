@@ -1,0 +1,30 @@
+filters:
+  and:
+    - file.hasTag("topic/simulation-estimation")
+    - file.ext == "md"
+properties:
+  doc_type:
+    displayName: Doc Type
+  source_location:
+    displayName: Source Location
+  date_ingested:
+    displayName: Ingested
+views:
+  - type: table
+    name: All Simulation Estimation Notes
+    order:
+      - file.name
+      - doc_type
+      - source_location
+      - date_ingested
+      - file.folder
+  - type: table
+    name: Theorems and Definitions
+    filters:
+      or:
+        - file.hasTag("type/theorem")
+        - file.hasTag("type/definition")
+    order:
+      - file.name
+      - source_location
+      - date_ingested
