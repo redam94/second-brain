@@ -4,17 +4,17 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-04-10
+date_updated: 2026-04-11
 concept_count: 24
 ---
 
 # Econometrics
 
 > [!abstract] Routing Summary
-> This folder covers applied econometrics and causal inference from Mostly Harmless Econometrics plus a Bayesian DiD tutorial. Contains 15 notes across 4 sub-topics.
-> - Need research design fundamentals or selection bias? -> [[Foundations/_Index|Foundations]]
+> This folder covers applied econometrics and causal inference from Mostly Harmless Econometrics plus Bayesian DiD, synthetic control, and DAG tutorials. Contains 17 notes across 4 sub-topics.
+> - Need research design fundamentals, selection bias, or DAGs? -> [[Foundations/_Index|Foundations]]
 > - Need regression interpretation or OVB? -> [[Regression Foundations/_Index|Regression Foundations]]
-> - Need IV, DiD, or RD designs? -> [[Identification Strategies/_Index|Identification Strategies]]
+> - Need IV, DiD, RD, or synthetic control designs? -> [[Identification Strategies/_Index|Identification Strategies]]
 > - Need quantile regression, discrete choice, or SEs? -> [[Extensions/_Index|Extensions]]
 
 ## Book Overview
@@ -35,10 +35,10 @@ concept_count: 24
 - [[raw/Mostly Harmless Econometrics.pdf]] — Full textbook PDF (Angrist & Pischke, 2008)
 - [[raw/Discrete Choice and Random Utility Models]] — PyMC tutorial: Bayesian discrete choice models (McFadden framework)
 - [[raw/Difference in differences]] — PyMC tutorial: Bayesian DiD with counterfactual prediction
-- [[raw/15 - Synthetic Control — Causal Inference for the Brave and True]] — Causal Inference for the Brave and True, Ch. 15: synthetic control with Python
+- [[raw/15 - Synthetic Control — Causal Inference for the Brave and True]] — Causal Inference for the Brave and True, Ch. 15: synthetic control with Python (scipy, sklearn)
 - [[raw/Abadie 2021 - Using Synthetic Controls.pdf]] — Abadie (2021) JEL: authoritative guide to synthetic controls, bias theory, requirements, extensions
 - [[raw/Xu 2016 - Generalized Synthetic Control Method.pdf]] — Xu (2017) Political Analysis: GSC method unifying DID and SC via IFE model
-- [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Towards Data Science (Harrison, 2023): comprehensive DAG tutorial
+- [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Graham Harrison, Towards Data Science (2023): comprehensive DAG tutorial
 
 ## See Also
 

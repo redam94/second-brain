@@ -3,16 +3,16 @@ title: "Index: Research"
 tags:
   - type/index
   - source/ingested
-date_updated: 2026-04-10
-concept_count: 107
+date_updated: 2026-04-11
+concept_count: 111
 ---
 
 # Research
 
 > [!abstract] Routing Summary
-> This folder covers applied statistics, econometrics, causal inference, theoretical physics, and agent-based modeling from textbooks and research papers. Contains 94+ notes across 5 major topics.
+> This folder covers applied statistics, econometrics, causal inference, theoretical physics, and agent-based modeling from textbooks and research papers. Contains 111 notes across 5 major topics.
 > - Need Bayesian inference, computation, or regression? -> [[Bayesian Statistics/_Index|Bayesian Statistics]]
-> - Need causal inference toolkit (IV, DiD, RD)? -> [[Econometrics/_Index|Econometrics]]
+> - Need causal inference toolkit (IV, DiD, RD, synthetic control, DAGs)? -> [[Econometrics/_Index|Econometrics]]
 > - Need forking paths, power analysis, or ad measurement? -> [[Research Methodology/_Index|Research Methodology]]
 > - Need quantum mechanics, QFT, or gauge theory? -> [[Theoretical Physics/_Index|Theoretical Physics]]
 > - Need ABM methodology, consumer behavior simulation, or WOM modeling? -> [[Agent-Based Modeling/_Index|Agent-Based Modeling]]
@@ -22,20 +22,21 @@ concept_count: 107
 
 | Topic | Notes | Key Concepts |
 |-------|-------|-------------|
-| [[Bayesian Statistics/_Index\|Bayesian Statistics]] | 44 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW |
-| [[Econometrics/_Index\|Econometrics]] | 17 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, quantile regression, discrete choice, DAGs |
+| [[Bayesian Statistics/_Index\|Bayesian Statistics]] | 54 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference |
+| [[Econometrics/_Index\|Econometrics]] | 24 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, quantile regression, discrete choice, DAGs |
 | [[Research Methodology/_Index\|Research Methodology]] | 8+4 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons |
-| [[Theoretical Physics/_Index\|Theoretical Physics]] | 3 | Quantum mechanics, quantum field theory, gauge theory, Standard Model, renormalization |
+| [[Theoretical Physics/_Index\|Theoretical Physics]] | 7 | Quantum mechanics, Hilbert space, Schrödinger equation, QFT, second quantization, QED, renormalization, gauge theory, Standard Model |
 | [[Agent-Based Modeling/_Index\|Agent-Based Modeling]] | 29 | ABM methodology, emergence, heterogeneity, consumer utility models, CUBES behavioral simulator, WOM, opinion leaders, network diffusion, GA calibration, validation |
 
 ## Cross-Cutting Themes
 
 - **Bayesian vs. Frequentist**: [[Asymptotics and Frequentist Connections]], [[Forking Paths and Bayesian Approaches]]
-- **Causal Inference**: [[The Experimental Ideal]], [[Activity Bias in Advertising]], [[Data Collection Models]], [[Counterfactual Inference]], [[Nonparametric Causal Inference]], [[Directed Acyclic Graphs]], [[Synthetic Control]], [[Bayesian Propensity Scores and IPW]]
+- **Causal Inference**: [[The Experimental Ideal]], [[Activity Bias in Advertising]], [[Data Collection Models]], [[Counterfactual Inference]], [[Nonparametric Causal Inference]], [[Directed Acyclic Graphs]], [[Synthetic Control]], [[Bayesian Inverse Probability Weighting]]
 - **Model Building**: [[Bayesian Workflow - Overview]], [[Model Checking]], [[Model Comparison]], [[Overfitting and Information Criteria]]
 - **Multiple Comparisons**: [[Multiple Comparisons - Bayesian Perspective]], [[Multiple Testing Corrections]], [[Type S and Type M Errors]], [[Partial Pooling as Multiple Comparisons Correction]]
 - **Missing Data**: [[Missing Data Models]], [[Missing Data - Statistical Rethinking]], [[Data Collection Models]]
 - **Regression**: [[Bayesian Linear Regression]], [[Regression and the CEF]], [[Hierarchical Linear Models]], [[Generalized Linear Models]]
+- **Theoretical Physics Chain**: [[Quantum Mechanics - Overview]] → [[Quantum Mechanics - Mathematical Formalism]] → [[Quantum Field Theory - Overview]] → [[QED and Renormalization]] → [[Gauge Theory - Overview]] → [[Standard Model and Gauge Groups]]
 
 ## Sources
 
@@ -58,12 +59,12 @@ concept_count: 107
 - [[raw/Social Networks]] — PyMC / Statistical Rethinking Lecture 15: dyadic social network models (2026-04-09)
 - [[raw/Bayesian moderation analysis]] — PyMC tutorial: moderation analysis with interaction terms (2026-04-09)
 - [[raw/multiple2f.pdf]] — "Why we (usually) don't have to worry about multiple comparisons" (Gelman, Hill & Yajima, 2009)
-- [[raw/15 - Synthetic Control — Causal Inference for the Brave and True]] — Causal Inference for the Brave and True, Ch. 15: synthetic control (2026-04-10)
-- [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Towards Data Science: DAG master class (Harrison, 2023) (2026-04-10)
-- [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss blog: Bayesian IPW via Liao-Zigler (2026-04-10)
-- [[raw/Quantum mechanics]] — Wikipedia: Quantum mechanics (2026-04-10)
-- [[raw/Quantum field theory]] — Wikipedia: Quantum field theory (2026-04-10)
-- [[raw/Gauge theory]] — Wikipedia: Gauge theory (2026-04-10)
+- [[raw/15 - Synthetic Control — Causal Inference for the Brave and True]] — Causal Inference for the Brave and True, Ch. 15: synthetic control with Python (Matheu Facure, 2023)
+- [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Graham Harrison, Towards Data Science (2023-04-06): DAGs, confounders, backdoor adjustment, d-separation
+- [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW in R/brms
+- [[raw/Quantum mechanics]] — Wikipedia: quantum mechanics, Hilbert space formalism, Schrödinger equation, entanglement, Bell's theorem (2026-04-11)
+- [[raw/Quantum field theory]] — Wikipedia: quantum field theory, canonical quantization, Fock space, path integrals, Feynman diagrams (2026-04-11)
+- [[raw/Gauge theory]] — Wikipedia: gauge theory, local symmetry, Yang-Mills, Standard Model gauge groups (2026-04-11)
 - [[Agent-Based Modeling/raw/abm_word_of_mouth.pdf]] — Bonabeau (2002), ABM methods and techniques for simulating human systems (PNAS)
 - [[Agent-Based Modeling/raw/abm_consumer.pdf]] — Karakaya, Badur & Aytekin (2011), marketing strategies with WOM using ABM
 - [[Agent-Based Modeling/raw/abm_human_behaviour.pdf]] — Ben Said, Bouron & Drogoul (2002), CUBES consumer behavior simulator

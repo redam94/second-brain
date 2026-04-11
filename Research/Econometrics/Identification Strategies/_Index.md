@@ -4,7 +4,7 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Econometrics/_Index|Econometrics]]"
-date_updated: 2026-04-10
+date_updated: 2026-04-11
 concept_count: 14
 ---
 

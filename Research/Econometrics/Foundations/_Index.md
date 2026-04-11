@@ -4,14 +4,14 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Econometrics/_Index|Econometrics]]"
-date_updated: 2026-04-10
+date_updated: 2026-04-11
 concept_count: 4
 ---
 
 # Foundations
 
 > [!abstract] Routing Summary
-> This folder covers the conceptual foundations of applied econometrics from MHE Part I (Chapters 1-2). Contains 3 notes.
+> This folder covers the conceptual foundations of applied econometrics and causal inference. Contains 4 notes.
 > - Need the four FAQs framework for empirical research? -> [[Research Questions in Econometrics]]
 > - Need why randomization is the gold standard? -> [[The Experimental Ideal]]
 > - Need potential outcomes and selection bias? -> [[The Selection Problem]]
@@ -35,7 +35,7 @@ concept_count: 4
 ## Sources
 
 - [[raw/Mostly Harmless Econometrics.pdf]] — Mostly Harmless Econometrics (Angrist & Pischke, 2008), Chapters 1-2
-- [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Towards Data Science (Graham Harrison, 2023): DAGs from basics to backdoor adjustment
+- [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Graham Harrison, Towards Data Science (2023-04-06): DAGs from basics to backdoor adjustment
 
 ## See Also
 

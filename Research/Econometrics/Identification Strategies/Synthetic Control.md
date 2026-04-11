@@ -5,10 +5,13 @@ tags:
   - topic/causal-inference
   - topic/econometrics
   - type/concept
+  - method/python
+  - method/scipy
+  - method/sklearn
   - doc/tutorial
 source: "[[raw/15 - Synthetic Control — Causal Inference for the Brave and True]]"
-source_location: "Causal Inference for the Brave and True, Chapter 15"
-date_ingested: 2026-04-10
+source_location: "Full tutorial — Synthetic Control chapter of Python Causality Handbook"
+date_ingested: 2026-04-11
 folder: "Econometrics/Identification Strategies"
 doc_type: tutorial
 depends_on:
@@ -16,182 +19,196 @@ depends_on:
   - "[[The Selection Problem]]"
   - "[[The Experimental Ideal]]"
 used_by:
-  - "[[Instrumental Variables]]"
-  - "[[Synthetic Control Bias Theory]]"
-  - "[[Synthetic Control Inference and Diagnostics]]"
-  - "[[Synthetic Control Requirements]]"
-  - "[[Synthetic Control Extensions]]"
-  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
+  - "[[Counterfactual Inference]]"
 aliases:
   - synthetic controls
-  - synthetic control method
+  - Abadie-Diamond-Hainmueller
 ---
 
 # Synthetic Control
 
 > [!summary]
-> Synthetic control constructs a weighted combination of untreated units ("donor pool") that mimics the pre-treatment trajectory of the treated unit, then estimates the treatment effect as the divergence between treated and synthetic paths post-treatment. It is especially powerful when only a single treated unit (an aggregate like a state or country) is available, making standard DiD inference infeasible.
+> Synthetic control is a causal inference method for single-treated-unit settings with aggregated panel data. Instead of finding one control unit, it builds a "synthetic" counterfactual as a convex combination (weighted average) of multiple untreated units, chosen to match the treated unit in the pre-treatment period. Called "the most important innovation in the policy evaluation literature in the last few years." Inference uses Fisher's Exact Test (permutation over placebo treatments).
 
 ## Overview
 
-[[Differences-in-Differences|Difference-in-differences]] requires multiple observations and a plausible control group. When data is aggregated to a single treated unit—a state, country, or city—the sample size collapses to 4 (2 groups × 2 periods), making standard errors undefined. Moreover, there may be no single untreated unit that is convincingly comparable to the treated one.
+**The problem**: [[Differences-in-Differences]] requires disaggregated data and needs the parallel trends assumption. When we only have aggregated (city-level, state-level) panel data on a single treated unit, DiD has undefined standard errors (degrees of freedom issue) and may have no appropriate control unit.
 
-Synthetic control solves this by constructing a **synthetic** (fake) control unit as a convex combination of untreated units. It was described as *"the most important innovation in the policy evaluation literature in the last few years"* (Athey & Imbens, 2017). The method is intuitive enough that its application to California's Proposition 99 (1988 cigarette tax) appeared in the *Washington Post*.
+**The solution**: Construct a *synthetic control* — a weighted combination of untreated units calibrated to match the treated unit's pre-treatment trajectory. Then compare the treated unit's post-treatment outcome to the synthetic control's.
 
 ## Formal Setup
 
-> [!definition] Synthetic Control Setup
-> Let $J+1$ units be observed over $T$ periods, with $T_0 < T$ pre-treatment periods. Unit $j=1$ is treated; units $j=2,\ldots,J+1$ are the **donor pool**. For each unit $j$ and period $t$, define:
-> - $Y_{jt}^N$ = potential outcome without treatment
-> - $Y_{jt}^I$ = potential outcome with treatment
->
-> The treatment effect for unit 1 at time $t > T_0$ is:
-> $$\tau_{1t} = Y_{1t}^I - Y_{1t}^N$$
-> Since $Y_{1t}^I$ is observed but $Y_{1t}^N$ is counterfactual, we estimate $Y_{1t}^N$ from the donor pool.
-^def-synth-setup
-
 > [!definition] Synthetic Control Estimator
-> A **synthetic control** is a weighted average of donor pool outcomes:
+> Suppose we have $J+1$ units. Unit 1 is treated; units $j = 2, \ldots, J+1$ form the **donor pool**. We observe outcomes $Y_{jt}$ for $T$ time periods, with $T_0$ periods before treatment.
+>
+> The **treatment effect** at time $t > T_0$ for the treated unit is:
+> $$\tau_{1t} = Y_{1t}^I - Y_{1t}^N$$
+>
+> Since $Y_{1t}^I$ is observed but $Y_{1t}^N$ is not, we estimate:
 > $$\hat{Y}_{1t}^N = \sum_{j=2}^{J+1} w_j Y_{jt}$$
-> where weights $W = (w_2,\ldots,w_{J+1})$ are chosen to minimise pre-treatment distance between treated unit and synthetic control.
-^def-synth-estimator
+>
+> The weights $W = (w_2, \ldots, w_{J+1})$ are chosen so the synthetic control matches the treated unit in the pre-treatment period.
+^def-synthetic-control
 
-## Two Approaches to Finding Weights
+## Method 1: OLS / Unconstrained Regression
 
-### 1. OLS (Unconstrained) — Overfits
+Treat the problem as an "upside-down" linear regression: instead of predicting an outcome from variables, we predict the treated unit from other units.
 
-When weights are found by ordinary least squares (no constraints), the synthetic control can match the pre-treatment period **perfectly** but typically overfits. With $J=38$ donor states, there are 38 free parameters, giving far too much flexibility. Post-treatment the synthetic control becomes erratic (high variance).
+**Setup**: Pivot the data so each unit is a column and each time-period+feature combination is a row. Let $y$ = treated unit's values, $X$ = donor pool matrix.
 
+Fit OLS to get weights:
 ```python
 from sklearn.linear_model import LinearRegression
-
-# inverted: rows = time-feature pairs, columns = states
-y = inverted[3].values          # California
-X = inverted.drop(columns=3).values  # donor pool
 
 weights_lr = LinearRegression(fit_intercept=False).fit(X, y).coef_
 ```
 
-The OLS solution can assign negative weights and weights greater than 1—extrapolating outside the support of the data.
+**Problem**: With 38 states in the donor pool, OLS has 38 free parameters, leading to **overfitting** in the pre-treatment period (perfect fit) and wild extrapolation post-treatment. Negative and large positive weights create implausible "synthetic" units outside the data range.
 
-### 2. Constrained Optimisation (Convex Combination) — Preferred
-
-To prevent extrapolation, restrict weights to be **non-negative and sum to one** (a convex combination). This forces the synthetic control to interpolate within the convex hull of the donor pool.
+## Method 2: Constrained Optimization (Convex Combination)
 
 > [!definition] Constrained Synthetic Control
-> Choose $W = (w_2,\ldots,w_{J+1})$ to minimise:
-> $$\left\|X_1 - X_0 W\right\| = \left(\sum_{h=1}^{k} v_h \left(X_{h1} - \sum_{j=2}^{J+1} w_j X_{hj}\right)^2\right)^{1/2}$$
-> subject to: $w_j \geq 0$ for all $j$, and $\sum_j w_j = 1$.
+> The canonical synthetic control restricts weights to be a **convex combination**:
+> $$w_j \geq 0, \quad \sum_{j=2}^{J+1} w_j = 1$$
 >
-> Here $v_h$ weights the importance of each feature $h$. Setting all $v_h$ equal is common when features are on similar scales.
+> The optimal weights minimize:
+> $$\|X_1 - X_0 W\| = \left(\sum_{h=1}^k v_h \left(X_{h1} - \sum_{j=2}^{J+1} w_j X_{hj}\right)^2\right)^{1/2}$$
+>
+> subject to $w_j \geq 0$, $\sum_j w_j = 1$, where $v_h$ reflect the importance of each predictor variable.
+>
+> **Why convex?** This restricts the synthetic control to **interpolation** (within the convex hull of control units) rather than extrapolation, producing more credible counterfactuals.
 ^def-constrained-synth
 
-```python
-from scipy.optimize import fmin_slsqp
-from toolz import partial
-import numpy as np
-
-def loss_w(W, X, y) -> float:
-    return np.sqrt(np.mean((y - X.dot(W))**2))
-
-def get_w(X, y):
-    w_start = [1/X.shape[1]] * X.shape[1]
-    weights = fmin_slsqp(
-        partial(loss_w, X=X, y=y),
-        np.array(w_start),
-        f_eqcons=lambda x: np.sum(x) - 1,
-        bounds=[(0.0, 1.0)] * len(w_start),
-        disp=False
-    )
-    return weights
-```
-
-Key properties of the constrained solution:
-- **Sparse**: most weights are exactly 0; a few donor units carry all the weight.
-- **Imperfect pre-treatment fit**: doesn't overfit, leaving a non-zero pre-treatment residual.
-- **Smooth post-treatment trajectory**: synthetic control follows plausible counterfactual paths.
-
-## Estimating the Treatment Effect
-
-Once weights are found, the point estimate of the treatment effect at each post-treatment period is:
-
-$$\hat{\tau}_{1t} = Y_{1t}^I - \hat{Y}_{1t}^N = Y_{1t}^I - \sum_{j=2}^{J+1} w_j Y_{jt}$$
-
-For California's Proposition 99, by 2000 the estimated effect is approximately **−25 packs per capita**, meaning the tax reduced cigarette consumption by ~25 packs.
-
-```python
-calif_weights = get_w(X, y)
-# california = state 3
-calif_synth = (cigar.query("~california")
-               .pivot(index='year', columns="state")["cigsale"]
-               .values.dot(calif_weights))
-
-# Treatment effect
-effect = cigar.query("california")["cigsale"].values - calif_synth
-```
-
-## Inference via Placebo Tests (Fisher's Exact Test)
-
-With small $J$ (~39 states), asymptotic inference is unavailable. **Placebo/permutation testing** provides a nonparametric alternative:
-
-1. For each unit $j$ in the donor pool, pretend unit $j$ was treated and estimate a synthetic control.
-2. Compute the "placebo effect" for each unit.
-3. Compute the p-value as the fraction of placebo effects more extreme than the true effect:
-
-$$PV = \frac{1}{N} \sum_j \mathbf{1}\{\hat{\tau}_{j,t^*} \leq \hat{\tau}_{\text{Calif},t^*}\}$$
-
-**Quality filter**: units with high pre-treatment MSE are excluded before computing the p-value, since a poorly-fitted synthetic control tells us little. A typical threshold is $\text{MSE} < 80$.
-
-```python
-def pre_treatment_error(state):
-    pre = state.query("~after_treatment")
-    return ((pre["cigsale"] - pre["synthetic"])**2).mean()
-
-# p-value (one-sided, lower tail)
-effects_2000 = [
-    state.query("year==2000").iloc[0]["cigsale"] 
-    - state.query("year==2000").iloc[0]["synthetic"]
-    for state in synthetic_states
-    if pre_treatment_error(state) < 80
-]
-p_value = np.mean(np.array(effects_2000) < calif_effect)
-# p_value ≈ 0.029 (1 of 35 placebo effects more extreme)
-```
-
-## Worked Example: California Proposition 99
-
-> [!example] California Proposition 99 (1988 Cigarette Tax)
-> **Setup**: California passed a 25-cent per pack cigarette tax in 1988. Data: 39 US states, 1970–2000. Features: `cigsale` (per-capita packs sold) and `retprice` (retail price). State 3 = California.
+> [!example] California Cigarette Taxation (Proposition 99)
+> **Setup**: California passed Proposition 99 in 1988 (25 cent/pack cigarette tax). We want to estimate the effect on cigarette sales. Data: 1970–2000, 39 US states. California is treated; 38 others form the donor pool.
 >
-> **Synthetic control composition**: Only 5 of 38 donor states receive nonzero weight (sparse). States: 4 (8.5%), 19 (11.3%), 20 (10.5%), 21 (45.7%), 33 (24.0%).
+> **Features**: `cigsale` (per-capita cigarette sales in packs) and `retprice` (retail price).
 >
-> **Result**: The synthetic control closely tracks California pre-1988, then diverges post-1988. By 2000, California's consumption is ~25 packs/capita below the synthetic control.
+> ```python
+> from scipy.optimize import fmin_slsqp
+> from functools import partial
 >
-> **Inference**: Placebo test p-value ≈ 0.029. Only 1 of 35 placebo states achieves an effect as large as California's, suggesting the result is statistically significant.
+> def loss_w(W, X, y) -> float:
+>     return np.sqrt(np.mean((y - X.dot(W))**2))
 >
-> **Interpretation**: Proposition 99 causally reduced cigarette consumption. The effect grew over time, consistent with a demand response to persistent higher prices.
+> def get_w(X, y):
+>     w_start = [1/X.shape[1]] * X.shape[1]
+>     weights = fmin_slsqp(
+>         partial(loss_w, X=X, y=y),
+>         np.array(w_start),
+>         f_eqcons=lambda x: np.sum(x) - 1,  # sum to 1
+>         bounds=[(0.0, 1.0)] * len(w_start),  # non-negative
+>         disp=False
+>     )
+>     return weights
+>
+> # Pivot data: columns = states, rows = (feature × year)
+> inverted = (cigar.query("~after_treatment")
+>             .pivot(index='state', columns="year")[features]
+>             .T)
+>
+> y = inverted[3].values      # California = state 3
+> X = inverted.drop(columns=3).values  # donor pool
+> calif_weights = get_w(X, y)
+> ```
+>
+> **Result**: Only 5 states get non-zero weight (sparse solution). Synthetic control closely tracks California pre-1988 without overfitting. Post-1988: the synthetic control is ~25 packs/year higher than actual California by 2000.
+>
+> **Interpretation**: Proposition 99 reduced cigarette consumption by approximately 25 packs per capita per year by 2000, and the effect grew over time.
+^ex-california-prop99
+
+### Why the Convex Constraint Helps
+
+The convex constraint prevents extrapolation. The synthetic control is projected onto the **convex hull** of control units. This:
+- Produces smoother, more credible post-treatment trajectories
+- Creates **sparse** weights (many zeros) — only a few states matter
+- Does NOT achieve perfect pre-treatment fit (by design — not overfitting)
+
+## Inference: Fisher's Exact Test
+
+Standard errors are not well-defined for $n=1$ treated unit. Instead, use **permutation inference**:
+
+> [!definition] Fisher's Exact Test for Synthetic Control
+> 1. For each control state $j \in \{2, \ldots, J+1\}$, pretend it is the treated unit and compute its synthetic control using the remaining states as the donor pool.
+> 2. Compute the **placebo treatment effect** for each state: $\hat{\tau}_{jt} = Y_{jt} - \hat{Y}_{jt}^N$
+> 3. Compute the P-value:
+> $$\text{PV} = \frac{1}{N}\sum_{j} \mathbf{1}\{\hat{\tau}_\text{Calif} > \hat{\tau}_j\}$$
+>
+> **Intuition**: If no state was actually treated, the estimated effect should be near zero for all states. If the California effect is extreme relative to these "placebo" effects, it is statistically significant.
+^def-fishers-exact-synth
+
+> [!example] Inference for Proposition 99
+> ```python
+> from joblib import Parallel, delayed
+>
+> def synthetic_control(state: int, data: pd.DataFrame) -> pd.DataFrame:
+>     """Compute synthetic control for a given state and return outcome + synthetic."""
+>     inverted = (data.query("~after_treatment")
+>                 .pivot(index='state', columns="year")[features].T)
+>     y = inverted[state].values
+>     X = inverted.drop(columns=state).values
+>     weights = get_w(X, y)
+>     synthetic = (data.query(f"~(state=={state})")
+>                  .pivot(index='year', columns="state")["cigsale"]
+>                  .values.dot(weights))
+>     return (data.query(f"state=={state}")[["state","year","cigsale","after_treatment"]]
+>             .assign(synthetic=synthetic))
+>
+> # Parallel computation for all 39 states
+> control_pool = cigar["state"].unique()
+> synthetic_states = Parallel(n_jobs=8)(
+>     delayed(partial(synthetic_control, data=cigar))(state)
+>     for state in control_pool
+> )
+>
+> # Pre-treatment MSE filter (remove poorly fitted states)
+> def pre_treatment_error(state):
+>     pre = state.query("~after_treatment")
+>     return ((pre["cigsale"] - pre["synthetic"]) ** 2).mean()
+>
+> # P-value: proportion of placebo effects more extreme than California's
+> effects = [state.query("year==2000").iloc[0]["cigsale"]
+>            - state.query("year==2000").iloc[0]["synthetic"]
+>            for state in synthetic_states
+>            if pre_treatment_error(state) < 80]
+>
+> calif_effect = cigar.query("california & year==2000").iloc[0]["cigsale"] - calif_synth[-1]
+> # calif_effect ≈ -24.83
+>
+> p_value = np.mean(np.array(effects) < calif_effect)
+> # p_value ≈ 0.029 (1 in 35 placebos more extreme)
+> ```
+>
+> **Conclusion**: California's treatment effect of −24.83 packs is more extreme than 34 of 35 placebo effects. P-value ≈ 0.029 — statistically significant at 5%.
+
+## Comparison: Synthetic Control vs. DiD
+
+| Aspect | Difference-in-Differences | Synthetic Control |
+|--------|--------------------------|-------------------|
+| Number of treated units | Multiple (or few) | Ideally one |
+| Data level | Disaggregated OK | Often aggregated |
+| Control selection | Pre-specified | Data-driven weighted combination |
+| Key assumption | Parallel trends | Pre-treatment fit |
+| Inference | Standard errors | Fisher's Exact Test (permutation) |
+| Overfitting concern | Lower | High (use convex constraint) |
+
+## Key Ideas
+
+1. **Single-unit treatment** with aggregated panel data → standard DiD fails
+2. **Synthetic control** = weighted average of donor pool, weights chosen to match pre-treatment trajectory
+3. **OLS** → overfits; **constrained optimization** (convex combination) → sparser, more credible weights
+4. **Inference via permutation**: pretend each control unit was treated, build its synthetic control, see how extreme the true effect is relative to placebo effects
+5. **Pre-treatment fit quality**: remove units with high pre-treatment error before the permutation test
 
 ## Connections
 
-- **[[Differences-in-Differences]]**: Synthetic control is a generalization of DiD for aggregate data with a single treated unit. DiD assumes parallel trends; synthetic control explicitly constructs a comparison unit.
-- **[[The Selection Problem]]**: Synthetic control addresses selection into treatment by constructing a unit with similar pre-treatment characteristics, analogous to matching.
-- **Regression as synthetic control**: The OLS formulation shows that synthetic control is literally a regression of the treated unit on donor pool units, with the time dimension as observations. Constraining to non-negative weights summing to 1 prevents extrapolation.
-- **[[Bayesian Difference in Differences]]**: Bayesian DiD provides a full posterior over the treatment effect; synthetic control uses permutation inference. For aggregate time-series, [[Counterfactual Inference]] via BART offers a related Bayesian approach.
+- [[Differences-in-Differences]] — The predecessor method; synthetic control extends DiD to aggregated data settings
+- [[The Selection Problem]] — Synthetic control is another solution to the problem of unobservable counterfactuals
+- [[Counterfactual Inference]] — Bayesian perspective on estimating counterfactual trajectories
+- [[Bayesian Difference in Differences]] — Bayesian approach to similar problem; posterior over treatment effect
 
 ## See Also
 
-- [[Differences-in-Differences]] — the classical panel DiD estimator
-- [[Bayesian Difference in Differences]] — Bayesian DiD with posterior over treatment effect
-- [[Instrumental Variables]] — alternative identification when parallel trends fails
-- [[Regression Discontinuity Designs]] — threshold-based identification
-- [[Counterfactual Inference]] — Bayesian counterfactual prediction (COVID excess deaths)
-- [[Nonparametric Causal Inference]] — BART-based Bayesian approach to counterfactual estimation; comparable goal but cross-sectional rather than aggregate time-series
-- [[Directed Acyclic Graphs]] — the parallel trends assumption can be stated as a DAG restriction on the time-by-treatment interaction
-
-## From Abadie (2021) — Deeper Theory
-
-- [[Abadie 2021 - Overview]] — authoritative methodological guide to synthetic controls (JEL 2021)
-- [[Synthetic Control Bias Theory]] — linear factor model, bias bound, sparsity geometry, V matrix selection
-- [[Synthetic Control Inference and Diagnostics]] — RMSPE ratio, permutation inference, backdating, leave-one-out
-- [[Synthetic Control Requirements]] — 5 contextual conditions, data requirements, when not to use
-- [[Synthetic Control Extensions]] — multiple treated units, bias correction, elastic net, matrix completion
+- [[Differences-in-Differences]] — DiD for panel data with multiple units
+- [[Bayesian Difference in Differences]] — PyMC-based Bayesian DiD with explicit counterfactual
+- [[The Experimental Ideal]] — Why causal inference requires explicitly modeling the counterfactual

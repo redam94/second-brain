@@ -1,5 +1,5 @@
 ---
-title: "Directed Acyclic Graphs (DAGs)"
+title: "Directed Acyclic Graphs"
 tags:
   - source/ingested
   - topic/causal-inference
@@ -7,168 +7,230 @@ tags:
   - type/concept
   - doc/article
 source: "[[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]]"
-source_location: "Towards Data Science, Graham Harrison, 2023-04-06"
-date_ingested: 2026-04-10
+source_location: "Full article — Graham Harrison, Towards Data Science, 2023-04-06"
+date_ingested: 2026-04-11
 folder: "Econometrics/Foundations"
 doc_type: article
 depends_on:
   - "[[The Selection Problem]]"
   - "[[The Experimental Ideal]]"
 used_by:
+  - "[[Bayesian Inverse Probability Weighting]]"
+  - "[[Nonparametric Causal Inference]]"
   - "[[Differences-in-Differences]]"
   - "[[Instrumental Variables]]"
-  - "[[Bayesian Propensity Scores and IPW]]"
-  - "[[Nonparametric Causal Inference]]"
-  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 aliases:
-  - DAG
-  - causal diagram
+  - DAGs
   - directed acyclic graph
+  - causal graph
+  - do-calculus
+  - backdoor adjustment
 ---
 
-# Directed Acyclic Graphs (DAGs)
+# Directed Acyclic Graphs
 
 > [!summary]
-> A Directed Acyclic Graph (DAG) is a causal diagram encoding cause-and-effect relationships between variables using directed edges, with no cycles. DAGs identify which variables must be conditioned on (the **adjustment set**) to isolate a treatment's causal effect from confounding—providing the graphical foundation for *do*-calculus and the backdoor adjustment formula.
+> A Directed Acyclic Graph (DAG) is a causal diagram representing proposed cause-and-effect relationships between variables. DAGs make confounding explicit and provide algorithmic tools (backdoor adjustment, d-separation) to identify valid adjustment sets — the minimum set of variables to condition on to isolate the causal effect of a treatment on an outcome.
 
 ## Overview
 
-Data alone cannot establish causation. A DAG supplements data with **domain knowledge** about causal structure, enabling rigorous identification of causal effects from observational data. Developed by Judea Pearl (*The Book of Why*, *Causal Inference in Statistics*), DAG-based reasoning has become central to causal inference.
+Causal inference requires more than data — it requires a model of the causal structure. A DAG supplements data with encoded assumptions about which variables cause which, enabling us to:
+1. Identify confounding sources (backdoor paths)
+2. Determine the optimal adjustment set (which variables to control for)
+3. Derive the do-calculus formula for the intervention distribution $P(Y \mid do(X))$
 
-> [!definition] Directed Acyclic Graph
-> A **DAG** is a set of nodes (variables) and directed edges (arrows $A \to B$ meaning "$A$ causally affects $B$") with no directed cycles. The **treatment** is the variable whose effect we seek; the **outcome** is the measured response.
+> [!definition] Causal Inference
+> **Causal inference** is the process of reasoning and drawing conclusions about cause-and-effect relationships between variables while accounting for potential confounding factors and biases. It asks: "What is the effect of $X$ on $Y$, independent of other variables that affect both?"
+^def-causal-inference
+
+## DAG Structure
+
+> [!definition] Directed Acyclic Graph (DAG)
+> A DAG consists of:
+> - **Nodes**: variables (treatments, outcomes, confounders, mediators)
+> - **Directed edges** (arrows): causal relationships $A \to B$ means "$A$ causes $B$"
+> - **Acyclic**: no variable can cause itself (no cycles)
+>
+> Key roles:
+> - **Treatment** (exposure): the intervention or variable whose causal effect we want to measure
+> - **Outcome**: the variable we measure the effect on
+> - **Confounder**: a variable that causes both treatment and outcome, creating spurious association
 ^def-dag
 
-Key terminology:
-- **Treatment** ($X$, $D$, or $T$): the intervention being studied.
-- **Outcome** ($Y$): the response variable of interest.
-- **Confounder**: a variable that causally affects both treatment and outcome, mixing their association.
-- **Path**: any sequence of edges connecting treatment and outcome (ignoring arrow direction).
+## Confounders and the Identification Problem
 
-## Junctions: Forks, Chains, and Colliders
+> [!definition] Confounder
+> A **confounder** is a variable $C$ that causes both the treatment $T$ and the outcome $Y$ (i.e., $T \leftarrow C \rightarrow Y$). Its presence creates a spurious association between $T$ and $Y$ that does not reflect a direct causal effect.
+>
+> Example: Gender (G) affects both whether someone takes a drug (D) and their natural recovery (R). Simply observing D and R gives a biased estimate of the drug's effect.
+^def-confounder
 
-Every node in a path that has two connecting arrows is a **junction**. There are exactly three junction patterns:
+**Approaches to de-confounding**:
+
+| Method | Applicable | Mechanism |
+|--------|-----------|-----------|
+| Randomized Controlled Trial (RCT) | Future studies | Breaks $C \to T$ by random assignment |
+| Stratification | Observed data | Compute effects separately per stratum of $C$; weight-average |
+| Conditioning/Backdoor Adjustment | Observed data (DAG-based) | Mathematical formula using observational data |
+| Inverse Probability Weighting | Observed data | See [[Bayesian Inverse Probability Weighting]] |
+| Instrumental Variables | Observed data | See [[Instrumental Variables]] |
+| Difference-in-Differences | Panel data | See [[Differences-in-Differences]] |
+
+## Paths and Junctions
+
+> [!definition] Path
+> A **path** is a sequence of edges connecting treatment $X$ and outcome $Y$ in a DAG, regardless of the direction of the arrows. Example in a DAG $X \leftarrow Z_1 \rightarrow Z_3 \rightarrow Y$: one path is $X \leftarrow Z_1 \rightarrow Z_3 \rightarrow Y$.
+^def-path
+
+### Three Junction Patterns
 
 > [!definition] Fork
-> Pattern: $A \leftarrow B \rightarrow C$. Node $B$ is a **common cause** of $A$ and $C$, creating a spurious association between $A$ and $C$ (confounding).
-> - **Unconditioned**: path is **open** (information flows $A \leftrightarrow C$).
-> - **Conditioned on $B$**: path is **blocked** ($A \perp C \mid B$).
+> A **fork** at node $B$: $A \leftarrow B \rightarrow C$
+>
+> $B$ is a common cause of $A$ and $C$. Without conditioning on $B$, there is a spurious correlation between $A$ and $C$ (e.g., age → shoe size AND age → reading ability → shoe size correlates with reading ability).
+>
+> **Rule**: Conditioning on $B$ **blocks** the path. Not conditioning leaves it **open**.
 ^def-fork
 
 > [!definition] Chain
-> Pattern: $A \rightarrow B \rightarrow C$. Node $B$ **mediates** the effect of $A$ on $C$.
-> - **Unconditioned**: path is **open**.
-> - **Conditioned on $B$** (the mediator): path is **blocked**. This removes the indirect effect—usually undesirable when estimating total causal effect of $A$ on $C$.
+> A **chain** at node $B$: $A \rightarrow B \rightarrow C$
+>
+> $B$ mediates the effect of $A$ on $C$. If we condition on the intermediate variable $B$, we "freeze" it, blocking the flow of information from $A$ to $C$.
+>
+> **Rule**: Conditioning on $B$ **blocks** the path. Not conditioning leaves it **open**.
+> (Same rule as forks — counterintuitive but true)
 ^def-chain
 
 > [!definition] Collider
-> Pattern: $A \rightarrow B \leftarrow C$. Node $B$ is a **common effect** of $A$ and $C$.
-> - **Unconditioned**: path is **blocked** (no spurious association between $A$ and $C$).
-> - **Conditioned on $B$** (or any descendant of $B$): path is **opened** (collider bias / selection bias).
+> A **collider** at node $B$: $A \rightarrow B \leftarrow C$
+>
+> $B$ is jointly caused by $A$ and $C$. A collider is naturally **blocked** (no spurious association between $A$ and $C$). BUT conditioning on $B$ **opens** the path and creates a spurious association.
+>
+> **Rule**: Conditioning on $B$ **unblocks** the path. Not conditioning leaves it **blocked**.
+> (Opposite of forks and chains!)
 ^def-collider
 
-### Conditioning Rules Summary
+> [!example] Collider in Action: Sports College
+> - Sporting ability (S) → Bursary (B) ← Academic ability (A)
+> - $B$ is a collider: without conditioning, S and A are uncorrelated (athletes are not necessarily more/less academic)
+> - After conditioning on $B$ (studying only bursary recipients): S and A become negatively correlated! Students with low sports ability must have high academic ability to receive the bursary, and vice versa.
+> - This is **Berkson's bias** (selection bias from conditioning on a collider).
+^ex-collider
 
-| Junction | Unconditioned | Conditioned on middle node |
-|----------|--------------|---------------------------|
-| Fork $A \leftarrow B \rightarrow C$ | Open (biased) | **Blocked** (desired) |
-| Chain $A \rightarrow B \rightarrow C$ | Open | **Blocked** (removes mediation) |
-| Collider $A \rightarrow B \leftarrow C$ | **Blocked** (desired) | **Opened** (creates bias!) |
+## Three Rules for Paths
 
-> [!example] Simpson's Paradox via Fork
-> **Setup**: Age $A$ → Shoe-size $S$ and Age $A$ → Reading ability $R$ (fork: $S \leftarrow A \rightarrow R$). There is no causal link $S \to R$.
+> [!theorem] Path Blocking Rules
+> 1. **Fork** ($A \leftarrow B \rightarrow C$): conditioning on $B$ **blocks** the path; leaving unconditioned leaves it **open**
+> 2. **Chain** ($A \rightarrow B \rightarrow C$): conditioning on $B$ **blocks** the path; leaving unconditioned leaves it **open**
+> 3. **Collider** ($A \rightarrow B \leftarrow C$): conditioning on $B$ **opens** the path; leaving unconditioned leaves it **blocked**
 >
-> **Unconditioned**: Shoe size and reading ability are spuriously correlated (because both increase with age).
->
-> **Conditioned on age** (fixing to 8-year-olds): correlation vanishes — the path is blocked.
->
-> **Implication**: Naive regression of $R$ on $S$ would find a positive coefficient, but this is entirely due to the confounding fork through $A$.
+> Additionally: if a **descendant** of a collider $B$ is conditioned on, the same effect occurs (the path is opened).
+^thm-path-rules
 
-## Paths and Backdoor Paths
+### Simpson's Paradox
+
+When a confounder creates a spurious correlation, we see an aggregate correlation that reverses or changes within subgroups. Fork structures generate Simpson's paradox: an association that exists "overall" disappears when you condition on the fork node.
+
+## Backdoor Criterion and Adjustment Sets
 
 > [!definition] Backdoor Path
-> A **back-door path** is any path from treatment $X$ to outcome $Y$ that begins with an arrow **pointing into** $X$ (i.e., a fork with $X$ at the tip). Back-door paths transmit confounding.
+> A **backdoor path** from treatment $X$ to outcome $Y$ is any path that starts with an arrow **pointing into $X$** (i.e., a path that goes "backwards" from $X$). Equivalently, any path containing a fork with the fork pointing into $X$.
 >
-> A **front-door path** is any path from $X$ to $Y$ that begins with an arrow **pointing out of** $X$ — this is the causal pathway of interest.
-^def-backdoor
-
-A path $p$ is **d-separated** (blocked) by conditioning set $Z$ if and only if:
-1. $p$ contains a chain or fork with the middle node in $Z$, **or**
-2. $p$ contains a collider whose collision node (and all its descendants) is **not** in $Z$.
-
-**d-connection** is the converse: a path is open given $Z$.
-
-## Backdoor Adjustment
-
-> [!theorem] Backdoor Adjustment Formula
-> If a set of variables $Z$ **blocks all backdoor paths** from $X$ to $Y$ and **does not block any front-door path**, then the interventional distribution satisfies:
+> More precisely (Pearl): *A back-door path is any path from X to Y that starts with an arrow pointing into X.* (The Book of Why, p158)
 >
-> $$P(Y \mid \text{do}(X=x)) = \sum_z P(Y \mid X=x, Z=z)\, P(Z=z)$$
->
-> This converts an interventional (causal) quantity into observational probabilities—the foundation of stratification and regression adjustment for confounding.
-^thm-backdoor
-
-The key insight is that conditioning on $Z$ (the valid adjustment set) **simulates a randomized trial** on observational data, removing confounding without requiring an RCT.
-
-## Valid Adjustment Sets
+> **Front-door paths** start with an arrow **pointing out of $X$**.
+^def-backdoor-path
 
 > [!definition] Valid Adjustment Set
-> A set of nodes $Z$ is a **valid adjustment set** if, when conditioned upon, it:
-> 1. **Blocks all back-door paths** between $X$ and $Y$.
-> 2. **Leaves at least one front-door path open** (unperturbed or unblocked).
-> 3. **Creates no new spurious paths** (avoids opening colliders).
+> A **valid adjustment set** $Z$ is any set of nodes such that, when conditioned on:
+> 1. All **backdoor paths** from $X$ to $Y$ are **blocked**
+> 2. At least one **front-door path** from $X$ to $Y$ remains **open**
+> 3. No new spurious paths are created
 >
-> The **optimal adjustment set** is the valid adjustment set with fewest nodes.
-^def-adjustment-set
+> Pearl's official rules:
+> 1. Block all spurious paths between $X$ and $Y$
+> 2. Leave all directed paths from $X$ to $Y$ unperturbed (or open them if needed)
+> 3. Create no new spurious paths
+>
+> There can be zero, one, or multiple valid adjustment sets. The **optimal adjustment set** minimizes the number of variables conditioned on.
+^def-valid-adjustment-set
 
-### Worked Example: Finding Valid Adjustment Sets
+> [!example] Finding Adjustment Sets in a Complex DAG
+> Given paths:
+> 1. $X \leftarrow Z_1 \rightarrow Z_3 \rightarrow Y$ (backdoor, via fork at $Z_1$)
+> 2. $X \leftarrow Z_1 \rightarrow Z_3 \leftarrow Z_2 \rightarrow Y$ (complex — $Z_3$ is collider here!)
+> 3. $X \leftarrow Z_3 \rightarrow Y$ (backdoor, via fork at $Z_3$)
+> 4. $X \leftarrow Z_3 \leftarrow Z_2 \rightarrow Y$ (backdoor)
+> 5. $X \rightarrow W \leftarrow Y$ (front-door, but $W$ is a collider — naturally blocked)
+>
+> Analysis:
+> - Condition on $Z_3$: blocks paths 1, 3, 4. BUT opens path 2 (since $Z_3$ is a collider in path 2).
+> - Add conditioning on $Z_1$ or $Z_2$: closes path 2.
+> - Path 5 ($X \rightarrow W \leftarrow Y$): $W$ is a collider. Must condition on $W$ to open this front-door path!
+>
+> **Valid adjustment sets**: $\{Z_1, Z_3, W\}$ and $\{Z_2, Z_3, W\}$ and $\{Z_1, Z_2, Z_3, W\}$
+> **Optimal**: $\{Z_1, Z_3, W\}$ or $\{Z_2, Z_3, W\}$ (minimum size)
+^ex-adjustment-set
 
-Consider the DAG with paths:
-1. $X \leftarrow Z_1 \rightarrow Z_3 \rightarrow Y$ (back-door via fork at $Z_1$)
-2. $X \leftarrow Z_1 \rightarrow Z_3 \leftarrow Z_2 \rightarrow Y$ (M-shaped; $Z_3$ is a collider here)
-3. $X \leftarrow Z_3 \rightarrow Y$ (back-door via fork at $Z_3$)
-4. $X \leftarrow Z_3 \leftarrow Z_2 \rightarrow Y$ (back-door via fork at $Z_2$)
-5. $X \rightarrow W \leftarrow Y$ (front-door; $W$ is a collider)
+## Backdoor Adjustment Formula
 
-**Analysis**:
-- Path 3 can be blocked by conditioning on $Z_3$ (it's a fork there).
-- But conditioning on $Z_3$ **opens** path 2 (where $Z_3$ is a collider!).
-- Path 2 is then re-blocked by conditioning on $Z_1$ or $Z_2$.
-- Path 5 (front-door) is naturally blocked by the collider $W$, but we need it **open**. We must condition on $W$ to open it.
+> [!theorem] Backdoor Adjustment (do-Calculus)
+> If $Z$ is a valid adjustment set, the causal effect of intervention $do(X=x)$ on $Y$ is:
+> $$P(Y \mid do(X = x)) = \sum_z P(Y \mid X = x, Z = z) P(Z = z)$$
+>
+> The left side is an **interventional** distribution (what would happen if we set $X=x$). The right side is expressed entirely in terms of **observational** distributions (what we can measure from data).
+>
+> This is what makes conditioning on a valid adjustment set equivalent to (simulating) a randomized controlled trial on historical observational data.
+^thm-backdoor-adjustment
 
-Valid adjustment sets: $\{Z_1, Z_3, W\}$ or $\{Z_2, Z_3, W\}$ or $\{Z_1, Z_2, Z_3, W\}$.
-Optimal: $\{Z_1, Z_3, W\}$ or $\{Z_2, Z_3, W\}$.
+## d-Separation and d-Connection
 
-## Additional Jargon
+> [!definition] d-Separation
+> A path $p$ is **d-separated** by a set of conditioning nodes $Z$ if and only if:
+> 1. $p$ contains a fork $A \leftarrow B \rightarrow C$ or chain $A \rightarrow B \rightarrow C$ such that middle node $B \in Z$, OR
+> 2. $p$ contains a collider $A \rightarrow B \leftarrow C$ such that $B \notin Z$ and no descendant of $B$ is in $Z$
+>
+> **d-separation = the path is blocked by the conditioning set $Z$**
+^def-d-separation
 
-**d-separation**: A set $Z$ d-separates nodes $X$ and $Y$ if every path between them is blocked by $Z$. This corresponds to conditional independence: $X \perp Y \mid Z$.
+> [!definition] d-Connection
+> A path is **d-connected** by $Z$ (i.e., *unblocked*) when:
+> 1. It contains a chain/fork and the middle node is NOT in $Z$, OR
+> 2. It contains a collider and the collider OR a descendant is in $Z$
+>
+> Note: the empty conditioning set $Z = \emptyset$ is valid — a path with only chains/forks and no colliders is naturally d-connected without conditioning.
+^def-d-connection
 
-**Covariate vs. Confounder**: A **covariate** affects the outcome but does not necessarily affect the treatment. A **confounder** affects both. Per Pearl's view, only variables that are confounders (and certain mediators) need to be included in the adjustment set—adding irrelevant covariates is unnecessary and can introduce bias if a collider is inadvertently conditioned on.
+## Glossary of Additional Terms
 
-**Controlling vs. Conditioning**: "Controlling" (in a real-world trial) holds a variable fixed experimentally. "Conditioning" achieves the same effect mathematically on observational data via the backdoor adjustment formula.
+| Term | Definition |
+|------|-----------|
+| **Exogenous variable** | A node with no incoming arrows; its causes are outside the model. Denoted $U$ in structural causal models |
+| **Endogenous variable** | A node with incoming arrows; its causes are inside the model. Denoted $V$ |
+| **Unobserved confounder** | A confounder not measured or included; shown as a dashed U-node with bidirected arrows to both treatment and outcome |
+| **Unconditional dependence** | A path is naturally open with no conditioning |
+| **Unconditional independence** | A path is naturally blocked (collider) with no conditioning |
+| **Conditional dependence** | A path that has been opened by conditioning (on a collider) |
+| **Conditional independence** | A path that has been closed by conditioning (on a fork/chain middle node) |
 
-## Approaches to Removing Confounding
+## Key Insights from DAG Analysis
 
-| Method | Applicable to | Mechanism |
-|--------|-------------|-----------|
-| **RCT** | Prospective study | Randomization breaks $G \to T$ arrows |
-| **Stratification** | Observational data | Compute effect within strata of $Z$, then aggregate |
-| **Backdoor adjustment** | Observational data | Regress/weight controlling for valid adjustment set $Z$ |
-| **Instrumental variables** | Observational + instrument | Exploit exogenous variation uncorrelated with confounders |
-| **IPW / propensity scores** | Observational data | Re-weight observations to create pseudo-populations |
+1. **More conditioning is not always better**: conditioning on a collider opens a spurious path; conditioning on a mediator blocks the causal pathway you want to measure
+2. **The optimal adjustment set is minimal**: condition on just enough to block all backdoors, no more
+3. **DAGs make assumptions explicit**: writing down a DAG requires committing to a causal story, making the assumptions falsifiable
+4. **Data alone cannot reveal causality**: DAGs must supplement the data with domain knowledge
 
 ## Connections
 
-- **[[The Selection Problem]]**: Selection bias is formally a confounding fork. Potential outcomes framework and DAG notation both capture the same problem.
-- **[[The Experimental Ideal]]**: RCTs graphically correspond to deleting all arrows into the treatment node — equivalent to the interventional *do*-operator.
-- **[[Bayesian Propensity Scores and IPW]]**: Propensity score methods use DAGs to identify the minimal adjustment set, then re-weight observations.
-- **[[Nonparametric Causal Inference]]**: BART-based methods use propensity scores derived from DAG-identified confounders.
-- **[[Missing Data Models]]**: DAG-based analysis of missingness mechanisms (MCAR, MAR, MNAR) follows the same fork/collider logic.
-- **[[Differences-in-Differences]]**: The common trends assumption can be stated as a DAG condition on time-invariant unobserved confounders.
+- [[The Selection Problem]] — DAGs formalize the problem of selection bias
+- [[The Experimental Ideal]] — RCTs break all backdoor paths; DAGs show why
+- [[Bayesian Inverse Probability Weighting]] — IPW uses the adjustment set from a DAG
+- [[Nonparametric Causal Inference]] — BART + propensity scores also uses DAGs to identify confounders
+- [[Instrumental Variables]] — IVs are variables that affect treatment but have no direct arrow to the outcome
+- [[Differences-in-Differences]] — DiD adjusts for time-invariant confounders not in the DAG
 
 ## See Also
-- [[The Selection Problem]] — potential outcomes framework for selection bias
-- [[The Experimental Ideal]] — why RCTs are the gold standard
-- [[Bayesian Propensity Scores and IPW]] — using DAG-identified confounders with IPW
-- [[Nonparametric Causal Inference]] — BART + propensity scores
-- [[Instrumental Variables]] — identification without DAG-closing all backdoors
+
+- [[The Selection Problem]] — Potential outcomes framework for the same problem
+- [[Bayesian Inverse Probability Weighting]] — Practical application of DAG adjustment sets
+- [[Instrumental Variables]] — When backdoor adjustment is insufficient (unobserved confounders)

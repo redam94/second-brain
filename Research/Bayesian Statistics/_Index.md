@@ -4,7 +4,7 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-04-10
+date_updated: 2026-04-11
 concept_count: 54
 ---
 
@@ -41,7 +41,7 @@ concept_count: 54
 - [[raw/BDA3.pdf]] — Bayesian Data Analysis, 3rd Edition (Gelman, Carlin, Stern, Dunson, Vehtari, Rubin)
 - [[raw/BayesWorkflow.pdf]] — Bayesian Workflow (Gelman, Vehtari, Simpson et al., 2020)
 - [[raw/StatRethink-Bayes.pdf]] — Statistical Rethinking (McElreath, 2015)
-- [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss blog (2021): Bayesian IPW via Liao-Zigler two-stage method
+- [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW in R/brms
 - [[Causal Inference/raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]] — Li, Ding & Mealli (2022): Bayesian causal inference critical review, *Phil. Trans. R. Soc. A* 381
 
 ## See Also
