@@ -106,6 +106,12 @@ with pm.Model() as copula_model:
 - Related to [[Factor Analysis and PPCA]] (latent linear projection of multivariate data)
 - LKJCholeskyCov is also used in [[Hierarchical Linear Models]] for correlation among random effects
 
+## See Also
+
+- [[Dependence Measures for Copulas]] — Spearman's rank correlation, quantile dependence, tail dependence — pure copula functionals used in SMM estimation
+- [[SMM Estimator for Copulas]] — Simulation-based estimation for copulas with intractable likelihoods (Oh & Patton, 2011)
+- [[Simulation-Based Estimation - Overview]] — Broader context: MSM, indirect inference, EMM
+
 ## Source
 
 - [[raw/Bayesian copula estimation Describing correlated joint distributions]] — PyMC example: Gaussian copula with Normal × Exponential marginals, Gates Foundation project

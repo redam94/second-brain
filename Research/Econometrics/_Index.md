@@ -5,7 +5,7 @@ tags:
   - source/ingested
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-04-11
-concept_count: 24
+concept_count: 33
 ---
 
 # Econometrics
@@ -16,6 +16,7 @@ concept_count: 24
 > - Need regression interpretation or OVB? -> [[Regression Foundations/_Index|Regression Foundations]]
 > - Need IV, DiD, RD, or synthetic control designs? -> [[Identification Strategies/_Index|Identification Strategies]]
 > - Need quantile regression, discrete choice, or SEs? -> [[Extensions/_Index|Extensions]]
+> - Need simulation-based estimation (MSM, indirect inference, EMM, copula SMM)? -> [[Extensions/_Index|Extensions]]
 
 ## Book Overview
 
@@ -28,7 +29,7 @@ concept_count: 24
 | [[Foundations/_Index\|Foundations]] | 4 | Research questions, experimental ideal, selection bias, DAGs (MHE Part I + Pearl) |
 | [[Regression Foundations/_Index\|Regression Foundations]] | 3 | CEF, CIA, omitted variables bias (MHE Ch 3) |
 | [[Identification Strategies/_Index\|Identification Strategies]] | 14 | IV, LATE, DD, RD, synthetic control, GSC — quasi-experimental methods (MHE Ch 4-6 + Abadie 2021 + Xu 2017) |
-| [[Extensions/_Index\|Extensions]] | 3 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8) |
+| [[Extensions/_Index\|Extensions]] | 12 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8), simulation-based estimation: MSM, indirect inference, EMM, SMM for copulas (Liesenfeld & Breitung 1998, Oh & Patton 2011) |
 
 ## Sources
 
@@ -39,6 +40,8 @@ concept_count: 24
 - [[raw/Abadie 2021 - Using Synthetic Controls.pdf]] — Abadie (2021) JEL: authoritative guide to synthetic controls, bias theory, requirements, extensions
 - [[raw/Xu 2016 - Generalized Synthetic Control Method.pdf]] — Xu (2017) Political Analysis: GSC method unifying DID and SC via IFE model
 - [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Graham Harrison, Towards Data Science (2023): comprehensive DAG tutorial
+- [[raw/tdb136.pdf]] — Liesenfeld & Breitung (1998), "Simulation Based Methods of Moments in Empirical Finance"
+- [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), "Simulated Method of Moments Estimation for Copula-Based Multivariate Models"
 
 ## See Also
 

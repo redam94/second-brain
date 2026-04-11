@@ -11,10 +11,14 @@
             "id": "4e026be74554a5cd",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Research/Econometrics/Identification Strategies/Synthetic Control.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Synthetic Control"
             }
           }
         ]
@@ -162,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,7 +183,36 @@
   },
   "active": "4e026be74554a5cd",
   "lastOpenFiles": [
-    "Research/Bayesian Statistics/Computation/Efficient MCMC.md",
+    "Research/Econometrics/Identification Strategies/Synthetic Control Bias Theory.md",
+    "Research/Econometrics/Identification Strategies/Synthetic Control Extensions.md",
+    "Research/Econometrics/Identification Strategies/Synthetic Control.md",
+    "Research/Econometrics/Identification Strategies/Synthetic Control Requirements.md",
+    "Research/Econometrics/Identification Strategies/Xu 2016 - Overview.md",
+    "Research/Econometrics/Identification Strategies/Bayesian Difference in Differences.md",
+    "Research/Econometrics/Foundations/The Experimental Ideal.md",
+    "Research/Econometrics/Foundations/Directed Acyclic Graphs.md",
+    "Research/Econometrics/Extensions/SMM Copula Asymptotic Theory.md",
+    "Research/Econometrics/Extensions/Simulation-Based Estimation - Overview.md",
+    "Research/Econometrics/Extensions/Simulation Estimation Notes.base",
+    "Research/Econometrics/Extensions/Standard Errors and Clustering.md",
+    "Research/Econometrics/Extensions/Concept Dependencies.base",
+    "Research/Econometrics/Extensions/Indirect Inference.md",
+    "Research/Econometrics/Extensions/Practical Issues in Simulation Estimation.md",
+    "Research/Econometrics/Extensions/Method of Simulated Moments.md",
+    "Research/Econometrics/Extensions/SMM Copula Simulation and Application.md",
+    "Research/Econometrics/Extensions/SMM Copula Specification Testing.md",
+    "Research/Research Methodology/Activity Bias in Advertising.md",
+    "Research/Bayesian Statistics/Advanced Models/Dependence Measures for Copulas.md",
+    "Research/Theoretical Physics/Quantum Mechanics - Mathematical Formalism.md",
+    "Research/Theoretical Physics/Quantum Field Theory - Overview.md",
+    "Research/Theoretical Physics/QED and Renormalization.md",
+    "Research/Theoretical Physics/Gauge Theory - Overview.md",
+    "Clippings/Baby Births Modelling with HSGPs.md",
+    "Clippings/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python.md",
+    "Research/Econometrics/Extensions/SMM Estimator for Copulas.md",
+    "Research/Econometrics/Extensions/Efficient Method of Moments.md",
+    "Research/raw/tdb136.pdf",
+    "Research/raw/Oh_Patton_SMM_copulas_nov11.pdf",
     "Untitled 3.base",
     "public/index-og-image.webp",
     "public/_Vault_Index-og-image.webp",
@@ -194,35 +228,6 @@
     "public/SU(3)-SU(2)-U(1).html",
     "public/Standard-Model.html",
     "public/quantum-theory.html",
-    "public/QM-overview.html",
-    "public/quantum-operators.html",
-    "public/Hilbert-space-formalism.html",
-    "public/Bell-theorem.html",
-    "public/quantum-entanglement-phenomena.html",
-    "content/_Vault_Index.md",
-    "content/Questions-and-Answers/_Index.md",
-    "content/Questions-and-Answers/Q - Uncovering Causal Estimates from Non-Experimental Data.md",
-    "content/Questions-and-Answers/Q - Handling Multiple Comparisons When Selecting From Hundreds of Models.md",
-    "content/Questions-and-Answers/Q - Differences Between Frequentist and Bayesian Statistics.md",
-    "content/Questions-and-Answers/Q - Common Pitfalls in Statistical Modeling.md",
-    "content/Clippings/_Index.md",
-    "content/Clippings/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs.md",
-    "content/Clippings/The Besag-York-Mollie Model for Spatial Data.md",
-    "content/Clippings/Social Networks.md",
-    "content/Clippings/Quantum mechanics.md",
-    "content/Clippings/Quantum field theory.md",
-    "content/Clippings/Missing Data.md",
-    "content/Clippings/How to use Bayesian propensity scores and inverse probability weights.md",
-    "content/Clippings/Gauge theory.md",
-    "content/Clippings/Factor analysis.md",
-    "content/Clippings/Discrete Choice and Random Utility Models.md",
-    "content/Clippings/Difference in differences.md",
-    "content/Clippings/Counterfactual inference calculating excess deaths due to COVID-19.md",
-    "content/Clippings/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics.md",
-    "content/Clippings/Bayesian moderation analysis.md",
-    "content/Clippings/Bayesian copula estimation Describing correlated joint distributions.md",
-    "content/Clippings/Bayesian Non-parametric Causal Inference.md",
-    "content/Clippings/Baby Births Modelling with HSGPs.md",
-    "content/Clippings/15 - Synthetic Control — Causal Inference for the Brave and True.md"
+    "public/QM-overview.html"
   ]
 }
