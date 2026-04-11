@@ -92,4 +92,7 @@ Agent population characteristics are calibrated using GA to match real market da
 - [[CUBES Simulator Architecture]] — system design details
 - [[Behavioral Attitudes in CUBES]] — the five behavioral attitudes
 - [[Behavioral Primitives and Thresholds]] — the BP activation mechanism
+- [[Imitation and Conditioning Processes]] — the two social processes driving attitude dynamics
 - [[Genetic Algorithm Calibration for ABM]] — population calibration
+- [[GA Fitness Evaluation and the RAM]] — Result-Analysis Module used to score GA fitness against market data
+- [[Market Share Equilibrium and Lock-In]] — emergent brand lock-in and cyclic competition results

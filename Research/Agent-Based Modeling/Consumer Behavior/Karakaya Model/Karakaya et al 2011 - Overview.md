@@ -79,4 +79,7 @@ Each experiment varies one parameter while holding others constant, and is run w
 - [[Consumer Utility Function Components]] — the 4-component utility model
 - [[Logit Purchase Decision Model]] — the stochastic purchase decision
 - [[Word of Mouth Mechanisms]] — how WOM spreads through the network
+- [[Social Network Formation in Consumer Markets]] — preference-similarity network construction
+- [[Opinion Leaders and Social Influence]] — amplified WOM from targeted opinion leaders
+- [[Population Initialization and Parameter Sensitivity]] — experimental calibration design with parameter tables
 - [[ABM in Marketing Strategy]] — broader context of ABM in marketing

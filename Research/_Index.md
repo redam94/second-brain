@@ -13,9 +13,9 @@ concept_count: 136
 > This folder covers applied statistics, econometrics, causal inference, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 136 notes across 6 major topics.
 > - Need Bayesian inference, computation, or regression? -> [[Bayesian Statistics/_Index|Bayesian Statistics]]
 > - Need causal inference toolkit (IV, DiD, RD, synthetic control, DAGs)? -> [[Econometrics/_Index|Econometrics]]
-> - Need forking paths, power analysis, or ad measurement? -> [[Research Methodology/_Index|Research Methodology]]
+> - Need forking paths, power analysis, ad measurement, or longitudinal causal inference? -> [[Research Methodology/_Index|Research Methodology]]
 > - Need quantum mechanics, QFT, or gauge theory? -> [[Theoretical Physics/_Index|Theoretical Physics]]
-> - Need ABM methodology, consumer behavior simulation, or WOM modeling? -> [[Agent-Based Modeling/_Index|Agent-Based Modeling]]
+> - Need ABM methodology, consumer behavior simulation, WOM modeling, or ABM calibration (GA, HM+ABC, uncertainty quantification)? -> [[Agent-Based Modeling/_Index|Agent-Based Modeling]]
 > - Need market response models (functional forms, carryover, VAR, empirical elasticities)? -> [[Market Response Models/_Index|Market Response Models]]
 > - Need a specific concept? Check the Concept Map below or use the .base files for database views
 
