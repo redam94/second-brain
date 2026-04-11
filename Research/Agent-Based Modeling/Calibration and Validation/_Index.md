@@ -16,7 +16,7 @@ date_updated: 2026-04-10
 > - For validation challenges and standards -> [[Validation/_Index|Validation]]
 
 ## Sub-topics
-- [[Calibration Methods/_Index|Calibration Methods]] — COVERS: ABM calibration overview (3 approaches), genetic algorithm calibration (chromosome encoding, GA operators, convergence), Result-Analysis Module (dual macro/micro fitness evaluation)
+- [[Calibration Methods/_Index|Calibration Methods]] — COVERS: ABM calibration overview (3 approaches), GA calibration (chromosome encoding, GA operators, convergence), Result-Analysis Module (macro/micro fitness), HM+ABC framework (implausibility score, wave-based pruning, ABC rejection sampling), uncertainty quantification (model discrepancy, ensemble variance, observation uncertainty), case studies (SugarScape, territorial birds, RISC Scottish farms)
 - [[Experimental Design/_Index|Experimental Design]] — COVERS: parameter initialization distributions, one-at-a-time experimental design, 100-replication strategy, WOM toggle, benchmark configuration, sensitivity findings
 - [[Validation/_Index|Validation]] — COVERS: Merson's plausibility criterion, Troitzsch's systematic validation difficulty, input-output mismatch, stochastic variation, the plausibility standard
 
