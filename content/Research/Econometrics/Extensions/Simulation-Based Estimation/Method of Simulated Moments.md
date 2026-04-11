@@ -10,7 +10,7 @@ tags:
 source: "[[raw/tdb136.pdf]]"
 source_location: "Liesenfeld & Breitung (1998), Sections 1-3, pp. 1-8"
 date_ingested: 2026-04-11
-folder: "Econometrics/Extensions"
+folder: "Econometrics/Extensions/Simulation-Based Estimation"
 doc_type: paper
 depends_on:
   - "[[Simulation-Based Estimation - Overview]]"
@@ -19,6 +19,8 @@ used_by:
   - "[[SMM Estimator for Copulas]]"
   - "[[Indirect Inference]]"
   - "[[Practical Issues in Simulation Estimation]]"
+  - "[[SMM Weighting Matrix and Inference]]"
+  - "[[SMM Python Implementation]]"
 aliases:
   - MSM
   - SMM

@@ -9,14 +9,16 @@ tags:
 source: "[[raw/tdb136.pdf]], [[raw/Oh_Patton_SMM_copulas_nov11.pdf]]"
 source_location: "Liesenfeld & Breitung (1998), Section 6, pp. 13-16; Oh & Patton (2011), Sections 2.4, 3"
 date_ingested: 2026-04-11
-folder: "Econometrics/Extensions"
+folder: "Econometrics/Extensions/Simulation-Based Estimation"
 doc_type: paper
 depends_on:
   - "[[Method of Simulated Moments]]"
   - "[[Indirect Inference]]"
   - "[[Efficient Method of Moments]]"
   - "[[SMM Copula Asymptotic Theory]]"
-used_by: []
+used_by:
+  - "[[SMM Weighting Matrix and Inference]]"
+  - "[[SMM Python Implementation]]"
 aliases:
   - Variance Reduction in Simulation
   - Common Random Numbers
@@ -175,6 +177,8 @@ For practitioners implementing simulation-based estimation:
 - [[Method of Simulated Moments]] — core MSM theory
 - [[SMM Copula Asymptotic Theory]] — where step-size requirements arise formally
 - [[SMM Copula Simulation and Application]] — empirical validation
+- [[SMM Weighting Matrix and Inference]] — step-size guidance for numerical Jacobians in the parameter Σ̂ computation
+- [[SMM Python Implementation]] — Python code illustrating the eps step-size issue in scipy L-BFGS-B and the common random numbers pattern
 
 ## Sources
 

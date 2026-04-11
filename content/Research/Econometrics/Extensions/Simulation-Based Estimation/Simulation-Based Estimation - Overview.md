@@ -9,7 +9,7 @@ tags:
 source: "[[raw/tdb136.pdf]], [[raw/Oh_Patton_SMM_copulas_nov11.pdf]]"
 source_location: "Liesenfeld & Breitung (1998), full paper; Oh & Patton (2011), full paper"
 date_ingested: 2026-04-11
-folder: "Econometrics/Extensions"
+folder: "Econometrics/Extensions/Simulation-Based Estimation"
 doc_type: paper
 depends_on:
   - "[[Standard Errors and Clustering]]"
