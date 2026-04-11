@@ -151,3 +151,4 @@ See [[Generalized Synthetic Control Method]] for the full treatment.
 - [[Synthetic Control Inference and Diagnostics]] — permutation inference, generalized to multiple units
 - [[Differences-in-Differences]] — panel regression methods that matrix completion bridges to
 - [[Abadie 2021 - Overview]] — full paper overview
+- [[The Selection Problem]] — the fundamental challenge that synthetic control (and these extensions) addresses by constructing a credible counterfactual

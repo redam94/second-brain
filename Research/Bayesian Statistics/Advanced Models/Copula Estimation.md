@@ -11,7 +11,9 @@ aliases:
   - Gaussian Copula
   - Joint Distribution Modelling
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Advanced Models"
 doc_type: concept
+source: "[[raw/Bayesian copula estimation Describing correlated joint distributions]]"
 source_location: "raw/Bayesian copula estimation Describing correlated joint distributions"
 depends_on:
   - "[[Nonparametric Models Overview]]"

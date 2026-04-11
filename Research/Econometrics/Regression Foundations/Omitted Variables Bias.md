@@ -75,3 +75,4 @@ For returns to schooling where "ability" ($A_i$) is omitted:
 - [[Instrumental Variables]]
 - [[Bayesian Linear Regression]] — Bayesian shrinkage as regularization that partially mitigates OVB in high-dimensional settings
 - [[The Experimental Ideal]] — randomization eliminates OVB by construction; the gold-standard contrast to observational confounding
+- [[Research Questions in Econometrics]] — FAQ #3 (identification strategy) is directly aimed at the OVB threat

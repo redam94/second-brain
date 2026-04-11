@@ -5,13 +5,13 @@ tags:
   - source/ingested
 parent: "[[Econometrics/_Index|Econometrics]]"
 date_updated: 2026-04-11
-concept_count: 12
+concept_count: 13
 ---
 
 # Extensions
 
 > [!abstract] Routing Summary
-> This folder covers extensions to the core econometric toolkit from MHE Chapters 7-8, PyMC tutorials, and simulation-based estimation papers. Contains 12 notes.
+> This folder covers extensions to the core econometric toolkit from MHE Chapters 7-8, PyMC tutorials, and simulation-based estimation papers. Contains 13 notes.
 > - Need distributional effects or QTE? -> [[Quantile Regression]]
 > - Need multinomial logit/probit or random utility? -> [[Discrete Choice Models]]
 > - Need robust SEs, clustering, or Moulton factor? -> [[Standard Errors and Clustering]]
@@ -24,6 +24,7 @@ concept_count: 12
 > - Need J-test for copula specification? -> [[SMM Copula Specification Testing]]
 > - Need Monte Carlo and financial application results? -> [[SMM Copula Simulation and Application]]
 > - Need implementation guidance (variance reduction, step sizes)? -> [[Practical Issues in Simulation Estimation]]
+> - Need rank dependence measures (Spearman's ρ, quantile/tail dependence) for copula SMM? -> [[Dependence Measures for Copulas]]
 
 ## Concept Map
 
@@ -41,6 +42,7 @@ concept_count: 12
 | J-test, over-identifying restrictions, simulated critical values | [[SMM Copula Specification Testing]] | theorem | [[SMM Copula Asymptotic Theory]] | $\chi^2_{m-p}$ with efficient weight; simulated CVs otherwise |
 | Monte Carlo study + 7-firm financial dependence | [[SMM Copula Simulation and Application]] | example | [[SMM Copula Asymptotic Theory]], [[SMM Copula Specification Testing]] | ~20-40% efficiency loss vs MLE; significant tail dependence in financials |
 | Common RNGs, antithetic/control variates, step sizes | [[Practical Issues in Simulation Estimation]] | concept | [[Method of Simulated Moments]], [[Indirect Inference]] | Step size for numerical derivatives must be $\gg 1/\sqrt{T}$ |
+| Spearman's ρ, quantile dependence, tail dependence — pure copula functionals | [[Dependence Measures for Copulas]] | definition | [[Copula Estimation]] | Invariant to marginals; used as SMM moments in Oh & Patton |
 
 ## Notes
 - [[Quantile Regression]] -- CONTAINS: Conditional quantile functions, quantile treatment effects (QTE), approximation property, distributional effects
@@ -55,6 +57,7 @@ concept_count: 12
 - [[SMM Copula Specification Testing]] -- CONTAINS: Proposition 4 (J-test), chi-squared with efficient weight, simulated critical values for general weight, simulation procedure
 - [[SMM Copula Simulation and Application]] -- CONTAINS: Monte Carlo for Clayton/Normal/factor copulas, iid and AR-GARCH data, step-size sensitivity, 7 financial firms (2001-2010), tail dependence and asymmetry findings
 - [[Practical Issues in Simulation Estimation]] -- CONTAINS: Common random numbers, antithetic variates, control variates, auxiliary model selection strategies, step-size guidelines, simulation size trade-offs, implementation checklist
+- [[Dependence Measures for Copulas]] -- CONTAINS: Spearman's rank correlation, quantile dependence, tail dependence coefficients, asymmetry measures, pure copula functionals invariant to marginals
 
 ## Sources
 
@@ -68,4 +71,3 @@ concept_count: 12
 - [[Generalized Linear Models]] -- Bayesian approach to logistic/Poisson regression
 - [[Monsters and Mixtures]] -- Maximum entropy justification for categorical models
 - [[Copula Estimation]] -- Bayesian copula estimation (complementary approach)
-- [[Dependence Measures for Copulas]] -- rank correlation, quantile dependence used in SMM for copulas

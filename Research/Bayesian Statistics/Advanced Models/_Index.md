@@ -5,13 +5,13 @@ tags:
   - source/ingested
 parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
 date_updated: 2026-04-11
-concept_count: 11
+concept_count: 10
 ---
 
 # Advanced Models
 
 > [!abstract] Routing Summary
-> This folder covers nonlinear and nonparametric Bayesian models from BDA3 Part V plus PyMC tutorials. Contains 10 notes.
+> This folder covers nonlinear and nonparametric Bayesian models from BDA3 Part V plus PyMC tutorials. Contains 10 notes. (Rank dependence measures moved to [[Extensions/_Index|Econometrics/Extensions]].)
 > - Need GPs, splines, or Dirichlet processes? -> [[Nonparametric Models Overview]]
 > - Need factor analysis or probabilistic PCA? -> [[Factor Analysis and PPCA]]
 > - Need fast GP approximation (HSGP)? -> [[Hilbert Space Gaussian Processes]]
@@ -27,7 +27,6 @@ concept_count: 11
 | Probabilistic PCA, factor analysis, identifiability, ADVI | [[Factor Analysis and PPCA]] | concept | [[Bayesian Linear Regression]], [[Nonparametric Models Overview]], [[Approximation Methods]], [[Generalized Linear Models]] | Constrained W matrix resolves rotational invariance |
 | HSGP basis function expansion for fast GP inference | [[Hilbert Space Gaussian Processes]] | concept | [[Nonparametric Models Overview]], [[Bayesian Linear Regression]], [[Spatial Models - BYM]] | Basis expansion makes GPs O(nm^2) instead of O(n^3) |
 | Gaussian copula for joint distributions | [[Copula Estimation]] | concept | [[Nonparametric Models Overview]], [[Factor Analysis and PPCA]], [[Hierarchical Linear Models]] | Model marginals and dependence separately |
-| Spearman's rank correlation, quantile dependence, tail dependence | [[Dependence Measures for Copulas]] | definition | [[Copula Estimation]] | Pure copula functionals invariant to marginals |
 | BYM model: ICAR prior + unstructured RE | [[Spatial Models - BYM]] | concept | [[Nonparametric Models Overview]], [[Hierarchical Linear Models]], [[Generalized Linear Models]], [[Hilbert Space Gaussian Processes]] | Spatial smoothing via neighborhood structure |
 | Dyadic models for social networks | [[Social Network Models]] | concept | [[Copula Estimation]], [[Hierarchical Linear Models]], [[Spatial Models - BYM]], [[Generalized Linear Models]] | Reciprocity and generalised giving in networks |
 | CFA and SEM for psychometric latent variables | [[Confirmatory Factor Analysis and SEM]] | concept | [[Factor Analysis and PPCA]], [[Hierarchical Models]], [[Spurious Association and Confounds]], [[Nonparametric Models Overview]] | Latent variable measurement models with structural paths |
@@ -40,7 +39,6 @@ concept_count: 11
 - [[Factor Analysis and PPCA]] — CONTAINS: Probabilistic PCA, factor analysis, identifiability constraints, amortized inference, minibatch ADVI
 - [[Hilbert Space Gaussian Processes]] — CONTAINS: HSGP approximation, basis function expansion, time series decomposition, trend + seasonality
 - [[Copula Estimation]] — CONTAINS: Gaussian copula, marginal-copula separation, two-stage Bayesian estimation, correlation matrices
-- [[Dependence Measures for Copulas]] — CONTAINS: Spearman's rank correlation, quantile dependence, tail dependence coefficients, asymmetry measures, pure copula functionals
 - [[Spatial Models - BYM]] — CONTAINS: Besag-York-Mollie model, ICAR prior, unstructured random effects, NYC traffic data example
 - [[Social Network Models]] — CONTAINS: Dyadic network models, reciprocity parameters, generalised giving, social ties analysis
 - [[Confirmatory Factor Analysis and SEM]] — CONTAINS: CFA measurement models, SEM structural paths, latent variables, psychometric applications

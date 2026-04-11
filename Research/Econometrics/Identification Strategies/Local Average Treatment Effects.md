@@ -68,3 +68,4 @@ You can't identify individual compliers, but you can describe them statistically
 - [[The Selection Problem]] — LATE is fundamentally a solution to the selection problem for non-compliant units
 - [[Mostly Harmless Econometrics - Overview]]
 - [[Hierarchical Models]] — Bayesian partial pooling as an alternative framework for treatment effect heterogeneity
+- [[Regression and the CEF]] — the CEF provides the population target that LATE identifies in the complier subpopulation

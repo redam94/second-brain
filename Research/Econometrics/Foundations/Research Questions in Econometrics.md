@@ -58,3 +58,5 @@ What population, sample, and assumptions underlie your standard errors? Covered 
 - [[Regression Discontinuity Designs]] — threshold-based identification (FAQ #3)
 - [[Standard Errors and Clustering]] — mode of statistical inference (FAQ #4)
 - [[Bayesian Workflow - Overview]] — iterative Bayesian research design paralleling the FAQ framework
+- [[Omitted Variables Bias]] — the specific failure mode that FAQ #3 (identification strategy) aims to rule out
+- [[Activity Bias in Advertising]] — a worked example showing all four FAQs applied to an advertising measurement problem

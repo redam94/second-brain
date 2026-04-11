@@ -63,3 +63,4 @@ Informative priors on $\beta$ provide **regularization**:
 - [[Conditional Independence Assumption]] — the assumption needed for causal interpretation of regression coefficients
 - [[Bayesian Workflow - Overview]] — iterative model building context for regression
 - [[MCMC Basics]] — computation for posterior inference when analytic forms are unavailable
+- [[Statistical Rethinking - Overview]] — McElreath's pedagogical introduction to the same regression models from a code-first perspective
