@@ -1,0 +1,38 @@
+filters:
+  and:
+    - file.hasTag("source/ingested")
+    - file.inFolder("Research/Agent-Based Modeling")
+    - '!file.hasTag("type/index")'
+
+formulas:
+  doc: 'if(doc_type, doc_type, "")'
+  src: 'if(source_location, source_location, "")'
+  ingested: 'if(date_ingested, date_ingested, "")'
+
+properties:
+  file.name:
+    displayName: "Note"
+  formula.doc:
+    displayName: "Doc Type"
+  source:
+    displayName: "Source"
+  formula.src:
+    displayName: "Location"
+  formula.ingested:
+    displayName: "Date Ingested"
+  file.folder:
+    displayName: "Folder"
+
+views:
+  - type: table
+    name: "All Ingested Notes"
+    order:
+      - file.name
+      - formula.doc
+      - source
+      - formula.src
+      - formula.ingested
+      - file.folder
+    groupBy:
+      property: file.folder
+      direction: ASC

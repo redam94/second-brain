@@ -1,0 +1,28 @@
+filters:
+  and:
+    - file.inFolder("Research/Agent-Based Modeling")
+    - or:
+        - file.hasTag("type/theorem")
+        - file.hasTag("type/definition")
+        - file.hasTag("type/concept")
+
+properties:
+  file.name:
+    displayName: "Concept"
+  source:
+    displayName: "Source"
+  source_location:
+    displayName: "Location"
+  doc_type:
+    displayName: "Doc Type"
+
+views:
+  - type: table
+    name: "Formal Concepts"
+    order:
+      - file.name
+      - source
+      - source_location
+    groupBy:
+      property: doc_type
+      direction: ASC
