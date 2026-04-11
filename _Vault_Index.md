@@ -4,23 +4,24 @@ tags:
   - type/index
   - type/vault-root
 date_updated: 2026-04-10
-concept_count: 118
+concept_count: 147
 ---
 
 # Vault Index
 
 > [!abstract] Routing Summary
-> A second brain for research, clippings, and knowledge management. Contains 65+ ingested notes organized by topic.
+> A second brain for research, clippings, and knowledge management. Contains 94+ ingested notes organized by topic.
 > - Need Bayesian statistics (BDA3, Statistical Rethinking, Workflow)? -> [[Research/Bayesian Statistics/_Index|Bayesian Statistics]]
 > - Need econometrics and causal inference (MHE)? -> [[Research/Econometrics/_Index|Econometrics]]
 > - Need research methodology (forking paths, power analysis)? -> [[Research/Research Methodology/_Index|Research Methodology]]
+> - Need agent-based modeling (consumer behavior, WOM, diffusion)? -> [[Research/Agent-Based Modeling/_Index|Agent-Based Modeling]]
 > - Need web clippings and saved articles? -> [[Clippings/_Index|Clippings]]
 
 ## Areas
 
 | Area | Notes | Domain |
 |------|-------|--------|
-| [[Research/_Index\|Research]] | 65 | Applied statistics, econometrics, causal inference from textbooks and papers |
+| [[Research/_Index\|Research]] | 94 | Applied statistics, econometrics, causal inference, agent-based modeling from textbooks and papers |
 | [[Clippings/_Index\|Clippings]] | 13 | Web articles and saved content (raw source material) |
 
 ## Topic Map
@@ -31,9 +32,11 @@ Cross-cutting topics that span multiple folders:
 - **Econometrics**: [[Regression and the CEF|Regression/CEF]], [[Omitted Variables Bias|OVB]], [[Quantile Regression]], [[Standard Errors and Clustering|Standard Errors]]
 - **Research Methodology**: [[Garden of Forking Paths|Forking Paths]], [[Researcher Degrees of Freedom]], [[Multiple Testing Corrections|FDR/Bonferroni]], [[Power Analysis and Sample Size|Power Analysis]], [[Survival Analysis]]
 - **Advanced Models**: [[Nonparametric Models Overview|Nonparametric]], [[Hilbert Space Gaussian Processes|HSGP]], [[Spatial Models - BYM|Spatial]], [[Copula Estimation|Copulas]], [[Social Network Models|Networks]], [[Confirmatory Factor Analysis and SEM|CFA/SEM]]
+- **Agent-Based Modeling**: [[ABM Methodology and Principles|ABM Foundations]], [[Consumer Utility Function Components|Consumer Utility]], [[Behavioral Attitudes in CUBES|CUBES Behavioral Model]], [[Word of Mouth Mechanisms|WOM]], [[Product Adoption and Diffusion Models|Diffusion]], [[Genetic Algorithm Calibration for ABM|GA Calibration]]
 
 ## Recent Ingestions
 
+- 2026-04-10: Ingested 3 ABM papers into [[Research/Agent-Based Modeling/_Index|Agent-Based Modeling]] — 29 notes across 5 sub-topics: Foundations (5), Consumer Behavior (8), Social Dynamics (6), Calibration and Validation (5), Applications (5). Sources: Bonabeau 2002 (PNAS), Karakaya et al. 2011, Ben Said et al. 2002
 - 2026-04-10: Ingested 2 papers into [[Research/Bayesian Statistics/Causal Inference/_Index|Causal Inference]] — 12 notes: Liu 2025 (6 notes, Knowledge Elicitation — code prompts for LLM causal reasoning) + Zeng 2025 (6 notes, Foundations — causal DAG summarization, CaGReS algorithm, s-separation, do-calculus soundness)
 - 2026-04-10: Ingested 4 papers into [[Research/Bayesian Statistics/Causal Inference/_Index|Causal Inference]] — 24 notes across 3 new sub-folders: Knowledge Elicitation (Yamashita 2020 interactive NLP + Shaposhnyk 2025 LLM-for-BN), Treatment Effect Estimation (Künzel 2019 S/T/X-learner metalearners), Time Series Causal Inference (Brodersen 2015 CausalImpact BSTS)
 - 2026-04-10: Ingested Xu (2017) into [[Research/Econometrics/Identification Strategies/_Index|Identification Strategies]] — 2 notes: Overview + Generalized Synthetic Control Method (IFE model, 3-step estimator, LOO cross-validation, parametric bootstrap, EDR voter turnout application)

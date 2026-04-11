@@ -4,17 +4,18 @@ tags:
   - type/index
   - source/ingested
 date_updated: 2026-04-10
-concept_count: 78
+concept_count: 107
 ---
 
 # Research
 
 > [!abstract] Routing Summary
-> This folder covers applied statistics, econometrics, and causal inference from textbooks and research papers. Contains 65 notes across 3 major topics.
+> This folder covers applied statistics, econometrics, causal inference, theoretical physics, and agent-based modeling from textbooks and research papers. Contains 94+ notes across 5 major topics.
 > - Need Bayesian inference, computation, or regression? -> [[Bayesian Statistics/_Index|Bayesian Statistics]]
 > - Need causal inference toolkit (IV, DiD, RD)? -> [[Econometrics/_Index|Econometrics]]
 > - Need forking paths, power analysis, or ad measurement? -> [[Research Methodology/_Index|Research Methodology]]
 > - Need quantum mechanics, QFT, or gauge theory? -> [[Theoretical Physics/_Index|Theoretical Physics]]
+> - Need ABM methodology, consumer behavior simulation, or WOM modeling? -> [[Agent-Based Modeling/_Index|Agent-Based Modeling]]
 > - Need a specific concept? Check the Concept Map below or use the .base files for database views
 
 ## Concept Map
@@ -25,6 +26,7 @@ concept_count: 78
 | [[Econometrics/_Index\|Econometrics]] | 17 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, quantile regression, discrete choice, DAGs |
 | [[Research Methodology/_Index\|Research Methodology]] | 8+4 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons |
 | [[Theoretical Physics/_Index\|Theoretical Physics]] | 3 | Quantum mechanics, quantum field theory, gauge theory, Standard Model, renormalization |
+| [[Agent-Based Modeling/_Index\|Agent-Based Modeling]] | 29 | ABM methodology, emergence, heterogeneity, consumer utility models, CUBES behavioral simulator, WOM, opinion leaders, network diffusion, GA calibration, validation |
 
 ## Cross-Cutting Themes
 
@@ -62,6 +64,9 @@ concept_count: 78
 - [[raw/Quantum mechanics]] — Wikipedia: Quantum mechanics (2026-04-10)
 - [[raw/Quantum field theory]] — Wikipedia: Quantum field theory (2026-04-10)
 - [[raw/Gauge theory]] — Wikipedia: Gauge theory (2026-04-10)
+- [[Agent-Based Modeling/raw/abm_word_of_mouth.pdf]] — Bonabeau (2002), ABM methods and techniques for simulating human systems (PNAS)
+- [[Agent-Based Modeling/raw/abm_consumer.pdf]] — Karakaya, Badur & Aytekin (2011), marketing strategies with WOM using ABM
+- [[Agent-Based Modeling/raw/abm_human_behaviour.pdf]] — Ben Said, Bouron & Drogoul (2002), CUBES consumer behavior simulator
 
 ## See Also
 
