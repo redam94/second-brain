@@ -2,8 +2,8 @@
 title: "Index: Questions and Answers"
 tags:
   - type/index
-date_updated: 2026-04-10
-question_count: 4
+date_updated: 2026-04-11
+question_count: 5
 ---
 
 # Questions and Answers
@@ -14,6 +14,9 @@ question_count: 4
 > Browse by topic below or search for keywords.
 
 ## By Topic
+
+### Econometrics / Simulation-Based Estimation
+- [[Q - Using SMM to Calibrate Agent Based Models]] — How to apply SMM to ABM calibration: moment selection, common random numbers, two-step W, standard errors, and comparison to genetic algorithm approaches
 
 ### Causal Inference / Identification
 - [[Q - Uncovering Causal Estimates from Non-Experimental Data]] — Nine strategies (CIA, DAGs, IV, DiD, RD, Synthetic Control, metalearners, BSTS, sensitivity analysis) with assumptions and estimands
@@ -31,6 +34,7 @@ question_count: 4
 
 | Question | Date | Key Sources |
 |----------|------|-------------|
+| [[Q - Using SMM to Calibrate Agent Based Models]] | 2026-04-11 | [[Method of Simulated Moments]], [[ABM Calibration Overview]], [[Genetic Algorithm Calibration for ABM]], [[SMM Weighting Matrix and Inference]] |
 | [[Q - Uncovering Causal Estimates from Non-Experimental Data]] | 2026-04-10 | [[The Selection Problem]], [[Instrumental Variables]], [[Differences-in-Differences]], [[Synthetic Control]] |
 | [[Q - Differences Between Frequentist and Bayesian Statistics]] | 2026-04-09 | [[Probability and Bayesian Inference]], [[Asymptotics and Frequentist Connections]], [[Hierarchical Models]] |
 | [[Q - Common Pitfalls in Statistical Modeling]] | 2026-04-09 | [[Spurious Association and Confounds]], [[Garden of Forking Paths]], [[Overfitting and Information Criteria]], [[Model Checking]] |
@@ -38,6 +42,7 @@ question_count: 4
 
 ## All Questions
 
+- [[Q - Using SMM to Calibrate Agent Based Models]] — Choose ABM parameters to minimize weighted distance between observed and simulated macro moments; enables formal standard errors and specification testing via J-test
 - [[Q - Uncovering Causal Estimates from Non-Experimental Data]] — Nine identification strategies: CIA/matching, DAGs, IV, DiD, RD, synthetic control, metalearners, BSTS, sensitivity analysis
 - [[Q - Differences Between Frequentist and Bayesian Statistics]] -- Probability as frequency vs. belief; confidence vs. credible intervals; priors; partial pooling; WAIC vs. AIC; when each framework excels
 - [[Q - Common Pitfalls in Statistical Modeling]] -- Eight pitfall categories with remedies: confounding, forking paths, overfitting, missing data, golem misuse, model checking, computational issues, Type S/M errors

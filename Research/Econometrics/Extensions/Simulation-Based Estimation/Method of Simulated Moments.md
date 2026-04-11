@@ -21,6 +21,7 @@ used_by:
   - "[[Practical Issues in Simulation Estimation]]"
   - "[[SMM Weighting Matrix and Inference]]"
   - "[[SMM Python Implementation]]"
+  - "[[Q - Using SMM to Calibrate Agent Based Models]]"
 aliases:
   - MSM
   - SMM
