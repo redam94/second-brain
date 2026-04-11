@@ -4,18 +4,19 @@ tags:
   - type/index
   - source/ingested
 date_updated: 2026-04-11
-concept_count: 111
+concept_count: 136
 ---
 
 # Research
 
 > [!abstract] Routing Summary
-> This folder covers applied statistics, econometrics, causal inference, theoretical physics, and agent-based modeling from textbooks and research papers. Contains 111 notes across 5 major topics.
+> This folder covers applied statistics, econometrics, causal inference, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 136 notes across 6 major topics.
 > - Need Bayesian inference, computation, or regression? -> [[Bayesian Statistics/_Index|Bayesian Statistics]]
 > - Need causal inference toolkit (IV, DiD, RD, synthetic control, DAGs)? -> [[Econometrics/_Index|Econometrics]]
 > - Need forking paths, power analysis, or ad measurement? -> [[Research Methodology/_Index|Research Methodology]]
 > - Need quantum mechanics, QFT, or gauge theory? -> [[Theoretical Physics/_Index|Theoretical Physics]]
 > - Need ABM methodology, consumer behavior simulation, or WOM modeling? -> [[Agent-Based Modeling/_Index|Agent-Based Modeling]]
+> - Need market response models (functional forms, carryover, VAR, empirical elasticities)? -> [[Market Response Models/_Index|Market Response Models]]
 > - Need a specific concept? Check the Concept Map below or use the .base files for database views
 
 ## Concept Map
@@ -27,6 +28,7 @@ concept_count: 111
 | [[Research Methodology/_Index\|Research Methodology]] | 8+4 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons |
 | [[Theoretical Physics/_Index\|Theoretical Physics]] | 7 | Quantum mechanics, Hilbert space, Schrödinger equation, QFT, second quantization, QED, renormalization, gauge theory, Standard Model |
 | [[Agent-Based Modeling/_Index\|Agent-Based Modeling]] | 29 | ABM methodology, emergence, heterogeneity, consumer utility models, CUBES behavioral simulator, WOM, opinion leaders, network diffusion, GA calibration, validation |
+| [[Market Response Models/_Index\|Market Response Models]] | 25 | Functional forms (10), Koyck/ADL carryover, reaction functions, OLS/2SLS/Bayes estimation, ARIMA, transfer functions, VAR, cointegration, ECM, empirical generalizations (advertising ≈ 0.10, price ≈ −2.5) |
 
 ## Cross-Cutting Themes
 
@@ -65,6 +67,7 @@ concept_count: 111
 - [[raw/Quantum mechanics]] — Wikipedia: quantum mechanics, Hilbert space formalism, Schrödinger equation, entanglement, Bell's theorem (2026-04-11)
 - [[raw/Quantum field theory]] — Wikipedia: quantum field theory, canonical quantization, Fock space, path integrals, Feynman diagrams (2026-04-11)
 - [[raw/Gauge theory]] — Wikipedia: gauge theory, local symmetry, Yang-Mills, Standard Model gauge groups (2026-04-11)
+- [[Market Response Models/raw/Market Response Models Econometric and Time Series Analysis.pdf|Market Response Models Econometric and Time Series Analysis]] — Hanssens, Parsons & Schultz (2001), 2nd Ed.: functional forms, Koyck/ADL lags, OLS/2SLS/Bayes, ARIMA, transfer functions, VAR/cointegration/ECM, advertising/price empirical generalizations
 - [[Agent-Based Modeling/raw/abm_word_of_mouth.pdf]] — Bonabeau (2002), ABM methods and techniques for simulating human systems (PNAS)
 - [[Agent-Based Modeling/raw/abm_consumer.pdf]] — Karakaya, Badur & Aytekin (2011), marketing strategies with WOM using ABM
 - [[Agent-Based Modeling/raw/abm_human_behaviour.pdf]] — Ben Said, Bouron & Drogoul (2002), CUBES consumer behavior simulator
