@@ -9,7 +9,7 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 CONTENT_DIR="$REPO_ROOT/content"
 
 # Folders to sync from the vault
-VAULT_FOLDERS=("Research" "Clippings" "Questions-and-Answers")
+VAULT_FOLDERS=("Research" "Questions-and-Answers")
 
 # Clean existing synced content (but keep index.md)
 for folder in "${VAULT_FOLDERS[@]}"; do
@@ -31,3 +31,7 @@ if [ -f "$REPO_ROOT/_Vault_Index.md" ]; then
 fi
 
 echo "Content sync complete."
+
+# Regenerate the Recent Q&A section in index.md
+echo "Updating index.md Q&A section..."
+python3 "$SCRIPT_DIR/update-index.py"

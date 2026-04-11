@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "en-US",
     baseUrl: "redam94.github.io/second-brain",
-    ignorePatterns: ["private", "templates", ".obsidian", "Dream", ".claude", "node_modules", "quartz"],
+    ignorePatterns: ["private", "templates", ".obsidian", "Dream", ".claude", "node_modules", "quartz", "Clippings"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
