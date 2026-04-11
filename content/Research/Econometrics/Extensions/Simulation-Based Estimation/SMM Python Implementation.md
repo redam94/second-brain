@@ -18,6 +18,7 @@ depends_on:
   - "[[Practical Issues in Simulation Estimation]]"
 used_by:
   - "[[SMM Copula Simulation and Application]]"
+  - "[[Q - Using SMM to Calibrate Agent Based Models]]"
 aliases:
   - SMM code
   - SMM scipy
