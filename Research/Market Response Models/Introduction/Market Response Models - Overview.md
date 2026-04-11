@@ -74,13 +74,43 @@ The **model-based planning cycle** iterates: Set objectives → Specify model �
 > The book's distinguishing commitment is to **Econometric and Time Series (ETS)** analysis — formal statistical methods using observed market data, as opposed to managerial judgment or laboratory experiments. All models are estimated from data; all parameters have statistical uncertainty.
 > ^thm-ets
 
-## Cross-Links
+## Cross-Links by Chapter
 
-- Specific functional forms: [[Functional Forms in Marketing]]
-- Dynamic carryover and lag structures: [[Carryover Effects and Distributed Lags]]
-- Estimation methods: [[Parameter Estimation in Market Response]]
-- ARIMA for single series: [[Single Marketing Time Series]]
-- VAR and cointegration: [[Multivariate Persistence and Cointegration]]
-- Empirical generalizations: [[Marketing Generalizations Overview]]
-- Related causal inference: [[The Experimental Ideal]], [[Differences-in-Differences]]
-- Bayesian estimation: [[Bayesian Workflow - Overview]]
+### Introduction (Ch. 1–2)
+- [[Response Models for Marketing Management]] — management tasks, planning cycle, model framework (Ch. 1)
+- [[Markets Data and Sales Drivers]] — data sources, variable types, measurement issues (Ch. 2)
+
+### Static Response Models (Ch. 3)
+- [[Functional Forms in Marketing]] — 10 functional forms with full LaTeX + elasticities (Ch. 3)
+- [[Market Share Models]] — MCI and MNL market share models (Ch. 3)
+- [[Aggregation of Relations]] — temporal and cross-sectional aggregation bias (Ch. 3)
+- [[Design of Static Response Models]] — variable specification, lagged effects, competitive structure (Ch. 3)
+
+### Dynamic Response Models (Ch. 4)
+- [[Carryover Effects and Distributed Lags]] — Koyck, ADL, PDL, geometric lag structures (Ch. 4)
+- [[Reaction Functions and Competitive Dynamics]] — competitive response, Nash equilibria (Ch. 4)
+- [[Shape of the Marketing Response Function]] — S-shape, hysteresis, supersaturation (Ch. 4)
+- [[Design of Dynamic Response Models]] — lag selection, partial adjustment, error correction (Ch. 4)
+
+### Estimation and Testing (Ch. 5)
+- [[Parameter Estimation in Market Response]] — OLS, GLS, SUR, 2SLS, Bayes HB estimation (Ch. 5)
+- [[Model Testing and Specification]] — RESET, specification errors, multicollinearity (Ch. 5)
+- [[Flexible Functional Forms]] — translog, Box-Cox, AIDs flexible forms (Ch. 5)
+- [[Model Selection and Exploratory Analysis]] — information criteria, cross-validation, exploratory tools (Ch. 5)
+
+### Time Series Analysis (Ch. 6–7)
+- [[Single Marketing Time Series]] — ARIMA identification, estimation, and diagnostics (Ch. 6)
+- [[Transfer Function Model]] — transfer function models for input-output time series (Ch. 7)
+- [[Multivariate Persistence and Cointegration]] — VAR, cointegration, ECM, Granger causality (Ch. 7)
+- [[Empirical Causal Ordering]] — Granger causality in marketing systems (Ch. 7)
+
+### Empirical Findings and Applications (Ch. 8–10)
+- [[Marketing Generalizations Overview]] — meta-analysis criteria, null hypothesis values (Ch. 8)
+- [[Advertising and Promotion Effects]] — advertising elasticity ≈ 0.10, duration 6–9 months (Ch. 8)
+- [[Price and Distribution Effects]] — price elasticity ≈ −2.5, distribution effects (Ch. 8)
+- [[Optimal Marketing Decisions and Forecasting]] — Dorfman-Steiner theorem, budget allocation (Ch. 9)
+- [[Implementation of Market Response Models]] — organizational adoption, software, reporting (Ch. 10)
+
+### Related Methods (Cross-Domain)
+- [[The Experimental Ideal]], [[Differences-in-Differences]] — causal inference counterparts
+- [[Bayesian Workflow - Overview]] — Bayesian estimation approach to the same models
