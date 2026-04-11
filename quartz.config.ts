@@ -27,26 +27,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#f6f5ee",       // warm off-white with slight green tint
+          lightgray: "#e4e3d8",   // warm light gray
+          gray: "#9a9a80",        // warm mid gray
+          darkgray: "#3a3a28",    // warm near-black
+          dark: "#1e1e14",        // rich warm dark
+          secondary: "#5c6b22",   // olive green (links, interactive)
+          tertiary: "#8a9e4a",    // lighter olive / sage (hover, visited)
+          highlight: "rgba(92, 107, 34, 0.1)",   // olive-tinted code bg
+          textHighlight: "#c8d46688",             // soft yellow-olive selection
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#1a1c12",       // deep olive-dark background
+          lightgray: "#2e3120",   // dark olive border
+          gray: "#6a6a50",        // muted olive gray
+          darkgray: "#c8c8a8",    // warm light text
+          dark: "#e8e8cc",        // near-white warm
+          secondary: "#a8b850",   // bright olive (links in dark)
+          tertiary: "#7a9e60",    // sage green (hover, visited in dark)
+          highlight: "rgba(140, 160, 60, 0.15)",  // olive-tinted code bg
+          textHighlight: "#8b9a3a88",             // muted olive selection
         },
       },
     },
