@@ -4,7 +4,7 @@ tags:
   - type/index
   - type/vault-root
 date_updated: 2026-04-11
-concept_count: 183
+concept_count: 193
 ---
 
 # Vault Index
