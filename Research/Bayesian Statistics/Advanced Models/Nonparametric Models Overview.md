@@ -81,3 +81,4 @@ $$G \sim \text{DP}(\alpha, G_0)$$
 - [[Bayesian Linear Regression]] — the parametric starting point
 - [[Model Comparison]] — comparing parametric vs. nonparametric fits
 - [[Efficient MCMC]] — computation for these complex models
+- [[Hierarchical Linear Models]] — hierarchical regression as the parametric precursor before moving to GP/nonparametric models

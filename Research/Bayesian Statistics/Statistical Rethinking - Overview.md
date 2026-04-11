@@ -63,3 +63,4 @@ McElreath frames statistics through the **Golem of Prague** metaphor: statistica
 - [[Bayesian Workflow - Overview]] — the Gelman et al. paper that formalizes the iterative workflow McElreath teaches
 - [[Forking Paths and Bayesian Approaches]] — McElreath's "garden of forking data" is related to Gelman's "garden of forking paths"
 - [[Mostly Harmless Econometrics - Overview]] — frequentist causal inference toolkit; McElreath covers some of the same causal reasoning from a Bayesian angle
+- [[Bayesian Linear Regression]] — BDA3's treatment of the same regression models McElreath introduces in Chapters 4-7

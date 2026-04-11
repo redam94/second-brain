@@ -11,7 +11,9 @@ aliases:
   - Gaussian Copula
   - Joint Distribution Modelling
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Advanced Models"
 doc_type: concept
+source: "[[raw/Bayesian copula estimation Describing correlated joint distributions]]"
 source_location: "raw/Bayesian copula estimation Describing correlated joint distributions"
 depends_on:
   - "[[Nonparametric Models Overview]]"
@@ -105,6 +107,12 @@ with pm.Model() as copula_model:
 - Uses [[Nonparametric Models Overview|multivariate Bayesian models]] for joint distributions
 - Related to [[Factor Analysis and PPCA]] (latent linear projection of multivariate data)
 - LKJCholeskyCov is also used in [[Hierarchical Linear Models]] for correlation among random effects
+
+## See Also
+
+- [[Dependence Measures for Copulas]] — Spearman's rank correlation, quantile dependence, tail dependence — pure copula functionals used in SMM estimation
+- [[SMM Estimator for Copulas]] — Simulation-based estimation for copulas with intractable likelihoods (Oh & Patton, 2011)
+- [[Simulation-Based Estimation - Overview]] — Broader context: MSM, indirect inference, EMM
 
 ## Source
 
