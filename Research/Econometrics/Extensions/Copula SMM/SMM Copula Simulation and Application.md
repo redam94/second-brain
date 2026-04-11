@@ -10,7 +10,7 @@ tags:
 source: "[[raw/Oh_Patton_SMM_copulas_nov11.pdf]]"
 source_location: "Oh & Patton (2011), Sections 3-4, pp. 14-21"
 date_ingested: 2026-04-11
-folder: "Econometrics/Extensions"
+folder: "Econometrics/Extensions/Copula SMM"
 doc_type: paper
 depends_on:
   - "[[SMM Estimator for Copulas]]"
