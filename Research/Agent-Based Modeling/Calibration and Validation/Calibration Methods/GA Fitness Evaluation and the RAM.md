@@ -16,6 +16,7 @@ depends_on:
   - "[[Genetic Algorithm Calibration for ABM]]"
 used_by:
   - "[[ABM Validation Challenges]]"
+  - "[[Q - Using SMM to Calibrate Agent Based Models]]"
 aliases:
   - Result-Analysis Module
   - RAM

@@ -18,6 +18,7 @@ depends_on:
   - "[[Behavioral Attitudes in CUBES]]"
 used_by:
   - "[[GA Fitness Evaluation and the RAM]]"
+  - "[[Q - Using SMM to Calibrate Agent Based Models]]"
 aliases:
   - GA calibration
   - Genetic algorithm for ABM

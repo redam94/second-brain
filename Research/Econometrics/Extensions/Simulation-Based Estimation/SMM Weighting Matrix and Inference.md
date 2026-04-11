@@ -18,6 +18,7 @@ depends_on:
 used_by:
   - "[[SMM Python Implementation]]"
   - "[[Practical Issues in Simulation Estimation]]"
+  - "[[Q - Using SMM to Calibrate Agent Based Models]]"
 aliases:
   - SMM optimal weighting matrix
   - two-step SMM
