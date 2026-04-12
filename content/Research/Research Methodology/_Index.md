@@ -66,7 +66,7 @@ concept_count: 13
 
 ## See Also
 
-- [[Bayesian Statistics/_Index|Bayesian Statistics]] — Bayesian alternatives to p-value-based inference
+- [[Research/Bayesian Statistics/_Index|Bayesian Statistics]] — Bayesian alternatives to p-value-based inference
 - [[The Experimental Ideal]] — Why randomized experiments are the benchmark
 - [[The Selection Problem]] — The fundamental challenge of causal inference
-- [[Econometrics/_Index|Econometrics]] — Panel data and identification strategies
+- [[Research/Econometrics/_Index|Econometrics]] — Panel data and identification strategies

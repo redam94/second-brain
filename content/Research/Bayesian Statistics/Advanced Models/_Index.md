@@ -3,7 +3,7 @@ title: "Index: Advanced Models"
 tags:
   - type/index
   - source/ingested
-parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
+parent: "[[Research/Bayesian Statistics/_Index|Bayesian Statistics]]"
 date_updated: 2026-04-11
 concept_count: 10
 ---
@@ -11,7 +11,7 @@ concept_count: 10
 # Advanced Models
 
 > [!abstract] Routing Summary
-> This folder covers nonlinear and nonparametric Bayesian models from BDA3 Part V plus PyMC tutorials. Contains 10 notes. (Rank dependence measures moved to [[Extensions/_Index|Econometrics/Extensions]].)
+> This folder covers nonlinear and nonparametric Bayesian models from BDA3 Part V plus PyMC tutorials. Contains 10 notes. (Rank dependence measures moved to [[Research/Econometrics/Extensions/_Index|Econometrics/Extensions]].)
 > - Need GPs, splines, or Dirichlet processes? -> [[Nonparametric Models Overview]]
 > - Need factor analysis or probabilistic PCA? -> [[Factor Analysis and PPCA]]
 > - Need fast GP approximation (HSGP)? -> [[Hilbert Space Gaussian Processes]]

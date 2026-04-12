@@ -58,6 +58,6 @@ concept_count: 9
 - [[raw/Zeng et al. - 2025 - Causal DAG Summarization (Full Version).pdf]] — Zeng, Cafarella, Kenig, Markakis, Youngmann & Salimi. arXiv 2504.14937v1. Causal DAG summarization via node contraction; CaGReS algorithm.
 
 ## See Also
-- [[Bayesian Inference/_Index|Bayesian Inference]] — how Bayesian CI builds on these foundations
+- [[Research/Bayesian Statistics/Causal Inference/Bayesian Inference/_Index|Bayesian Inference]] — how Bayesian CI builds on these foundations
 - [[Directed Acyclic Graphs]] — prerequisite DAG theory (d-separation, do-calculus, RB)
 - [[Code Prompts for Causal Structure]] — how DAG structure maps to code `if` statements for LLM reasoning

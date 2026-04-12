@@ -12,23 +12,23 @@ concept_count: 25
 
 > [!abstract] Routing Summary
 > Empirical response models for marketing management using econometric and time series (ETS) analysis. Source: Hanssens, Parsons & Schultz (2001) "Market Response Models: Econometric and Time Series Analysis," 2nd Ed. Contains 25 notes organized across 5 subfolders.
-> - Need overview and management framework? → [[Introduction/_Index|Introduction]]
-> - Need functional forms (linear, power, ADBUDG, MCI/MNL) with LaTeX + elasticities? → [[Static Response Models/_Index|Static Response Models]]
-> - Need Koyck/ADL carryover, reaction functions, hysteresis? → [[Dynamic Response Models/_Index|Dynamic Response Models]]
-> - Need OLS/GLS/2SLS/Bayesian estimation, specification tests? → [[Estimation and Testing/_Index|Estimation and Testing]]
-> - Need ARIMA, transfer functions, VAR, cointegration, ECM? → [[Time Series Analysis/_Index|Time Series Analysis]]
-> - Need advertising/price/promotion empirical elasticities and optimal decisions? → [[Empirical Findings and Applications/_Index|Empirical Findings and Applications]]
+> - Need overview and management framework? → [[Research/Market Response Models/Introduction/_Index|Introduction]]
+> - Need functional forms (linear, power, ADBUDG, MCI/MNL) with LaTeX + elasticities? → [[Research/Market Response Models/Static Response Models/_Index|Static Response Models]]
+> - Need Koyck/ADL carryover, reaction functions, hysteresis? → [[Research/Market Response Models/Dynamic Response Models/_Index|Dynamic Response Models]]
+> - Need OLS/GLS/2SLS/Bayesian estimation, specification tests? → [[Research/Market Response Models/Estimation and Testing/_Index|Estimation and Testing]]
+> - Need ARIMA, transfer functions, VAR, cointegration, ECM? → [[Research/Market Response Models/Time Series Analysis/_Index|Time Series Analysis]]
+> - Need advertising/price/promotion empirical elasticities and optimal decisions? → [[Research/Market Response Models/Empirical Findings and Applications/_Index|Empirical Findings and Applications]]
 
 ## Concept Map
 
 | Subfolder | Notes | Key Concepts |
 |-----------|-------|-------------|
-| [[Introduction/_Index\|Introduction]] | 3 | MRM framework, simultaneous system, management tasks, scanner data, GRPs |
-| [[Static Response Models/_Index\|Static Response Models]] | 4 | 10 functional forms, MCI/MNL market share, aggregation bias, SCAN*PRO |
-| [[Dynamic Response Models/_Index\|Dynamic Response Models]] | 4 | Koyck, PDL, ADL, ratchet/hysteresis, reaction functions, S-shape, pulsing |
-| [[Estimation and Testing/_Index\|Estimation and Testing]] | 4 | OLS, GLS, SUR, 2SLS, Bayes HB/EB, RESET, specification errors, AIC/BIC |
-| [[Time Series Analysis/_Index\|Time Series Analysis]] | 4 | ARIMA, transfer functions, VAR, cointegration, ECM, Granger causality |
-| [[Empirical Findings and Applications/_Index\|Empirical Findings]] | 5 | Advertising elasticity ≈ 0.10, price ≈ −2.5, Dorfman-Steiner, DSS |
+| [[Research/Market Response Models/Introduction/_Index\|Introduction]] | 3 | MRM framework, simultaneous system, management tasks, scanner data, GRPs |
+| [[Research/Market Response Models/Static Response Models/_Index\|Static Response Models]] | 4 | 10 functional forms, MCI/MNL market share, aggregation bias, SCAN*PRO |
+| [[Research/Market Response Models/Dynamic Response Models/_Index\|Dynamic Response Models]] | 4 | Koyck, PDL, ADL, ratchet/hysteresis, reaction functions, S-shape, pulsing |
+| [[Research/Market Response Models/Estimation and Testing/_Index\|Estimation and Testing]] | 4 | OLS, GLS, SUR, 2SLS, Bayes HB/EB, RESET, specification errors, AIC/BIC |
+| [[Research/Market Response Models/Time Series Analysis/_Index\|Time Series Analysis]] | 4 | ARIMA, transfer functions, VAR, cointegration, ECM, Granger causality |
+| [[Research/Market Response Models/Empirical Findings and Applications/_Index\|Empirical Findings]] | 5 | Advertising elasticity ≈ 0.10, price ≈ −2.5, Dorfman-Steiner, DSS |
 
 ## Key Equations Quick Reference
 

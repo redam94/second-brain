@@ -264,7 +264,7 @@ Other approaches: Rosenbaum & Rubin (1983) hidden binary confounder model, copul
 - **Regression Kink Designs (RKD)**: The vault covers RD designs but not the related RKD strategy (where the *slope* of the treatment function jumps at a threshold). No vault coverage — consider ingesting Card et al. (2015) or Nielsen et al. (2010).
 - **Front-Door Criterion**: DAGs note covers backdoor adjustment but the vault has limited coverage of Pearl's front-door criterion for settings where all backdoor paths cannot be blocked. Consider ingesting Pearl (2009) *Causality* Ch. 3.
 - **Staggered DiD / Callaway-Sant'Anna**: The vault's DiD note covers classical two-period DiD. Recent literature on heterogeneous-timing DiD (Callaway & Sant'Anna 2021, Goodman-Bacon 2021) is not yet ingested.
-- **Causal Discovery / Structure Learning**: The vault covers eliciting expert knowledge for DAGs ([[Knowledge Elicitation/_Index|Knowledge Elicitation]]) but has limited coverage of automated causal discovery algorithms (PC, FCI, NOTEARS).
+- **Causal Discovery / Structure Learning**: The vault covers eliciting expert knowledge for DAGs ([[Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/_Index|Knowledge Elicitation]]) but has limited coverage of automated causal discovery algorithms (PC, FCI, NOTEARS).
 
 ## Follow-Up Questions
 

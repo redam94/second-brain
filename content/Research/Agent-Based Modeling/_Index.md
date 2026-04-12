@@ -12,17 +12,17 @@ date_updated: 2026-04-11
 > [!abstract] Routing Summary
 > This topic covers agent-based modeling theory, consumer behavior models, social dynamics, calibration/validation methods, and applications. Contains 5 sub-topics and 34 total concept notes derived from 4 papers.
 > - For ABM theory (definitions, emergence, heterogeneity, decision rules) -> [[Foundations/_Index|Foundations]]
-> - For consumer ABM models (Karakaya utility model, CUBES behavioral model) -> [[Consumer Behavior/_Index|Consumer Behavior]]
-> - For social interaction mechanisms (WOM, networks, diffusion, market dynamics) -> [[Social Dynamics/_Index|Social Dynamics]]
-> - For calibration and validation (GA, HM+ABC, uncertainty quantification, case studies) -> [[Calibration and Validation/_Index|Calibration and Validation]]
-> - For ABM application domains (marketing, flows, finance, organizations, risk) -> [[Applications/_Index|Applications]]
+> - For consumer ABM models (Karakaya utility model, CUBES behavioral model) -> [[Research/Agent-Based Modeling/Consumer Behavior/_Index|Consumer Behavior]]
+> - For social interaction mechanisms (WOM, networks, diffusion, market dynamics) -> [[Research/Agent-Based Modeling/Social Dynamics/_Index|Social Dynamics]]
+> - For calibration and validation (GA, HM+ABC, uncertainty quantification, case studies) -> [[Research/Agent-Based Modeling/Calibration and Validation/_Index|Calibration and Validation]]
+> - For ABM application domains (marketing, flows, finance, organizations, risk) -> [[Research/Agent-Based Modeling/Applications/_Index|Applications]]
 
 ## Sub-topics
 - [[Foundations/_Index|Foundations]] — COVERS: ABM methodology and principles, emergent phenomena, heterogeneity, ABM vs equation-based modeling, agent decision rules and bounded rationality
-- [[Consumer Behavior/_Index|Consumer Behavior]] — COVERS: Karakaya 4-component utility model, logit purchase decisions, CUBES behavioral attitudes (mistrust, opportunism, conditioning, innovativeness, imitation), behavioral primitives with threshold activation
-- [[Social Dynamics/_Index|Social Dynamics]] — COVERS: WOM mechanisms (positive/negative), opinion leaders (exogenous vs emergent), social network formation, product adoption/diffusion models, network topology effects, market share equilibrium and lock-in
-- [[Calibration and Validation/_Index|Calibration and Validation]] — COVERS: ABM calibration overview (3 approaches), GA calibration (chromosome encoding, GA operators, convergence), RAM fitness evaluation (macro/micro), HM+ABC framework (implausibility score, wave-based pruning, rejection sampling ABC), uncertainty quantification (model discrepancy $V^r_m$, ensemble variance $V^r_s$, observation uncertainty $V_o$), case studies (SugarScape, territorial birds vs GA/SA/EA, RISC Scottish farms POM), experimental design (LHS, parameter sensitivity), validation (plausibility standard)
-- [[Applications/_Index|Applications]] — COVERS: marketing strategy (4Ps under WOM), flow simulation (evacuation, traffic), financial market simulation, organizational simulation, operational risk modeling
+- [[Research/Agent-Based Modeling/Consumer Behavior/_Index|Consumer Behavior]] — COVERS: Karakaya 4-component utility model, logit purchase decisions, CUBES behavioral attitudes (mistrust, opportunism, conditioning, innovativeness, imitation), behavioral primitives with threshold activation
+- [[Research/Agent-Based Modeling/Social Dynamics/_Index|Social Dynamics]] — COVERS: WOM mechanisms (positive/negative), opinion leaders (exogenous vs emergent), social network formation, product adoption/diffusion models, network topology effects, market share equilibrium and lock-in
+- [[Research/Agent-Based Modeling/Calibration and Validation/_Index|Calibration and Validation]] — COVERS: ABM calibration overview (3 approaches), GA calibration (chromosome encoding, GA operators, convergence), RAM fitness evaluation (macro/micro), HM+ABC framework (implausibility score, wave-based pruning, rejection sampling ABC), uncertainty quantification (model discrepancy $V^r_m$, ensemble variance $V^r_s$, observation uncertainty $V_o$), case studies (SugarScape, territorial birds vs GA/SA/EA, RISC Scottish farms POM), experimental design (LHS, parameter sensitivity), validation (plausibility standard)
+- [[Research/Agent-Based Modeling/Applications/_Index|Applications]] — COVERS: marketing strategy (4Ps under WOM), flow simulation (evacuation, traffic), financial market simulation, organizational simulation, operational risk modeling
 
 ## Key Concept Dependencies
 

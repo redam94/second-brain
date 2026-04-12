@@ -3,7 +3,7 @@ title: "Index: Identification Strategies"
 tags:
   - type/index
   - source/ingested
-parent: "[[Econometrics/_Index|Econometrics]]"
+parent: "[[Research/Econometrics/_Index|Econometrics]]"
 date_updated: 2026-04-11
 concept_count: 14
 ---

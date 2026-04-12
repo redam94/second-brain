@@ -11,13 +11,13 @@ date_updated: 2026-04-10
 
 > [!abstract] Routing Summary
 > This topic covers the theoretical foundations of agent-based modeling. Contains 2 sub-topics and 5 total notes.
-> - For core definitions (what is ABM, emergence, heterogeneity) -> [[Core Concepts/_Index|Core Concepts]]
-> - For comparisons with other paradigms and decision architectures -> [[Modeling Approaches/_Index|Modeling Approaches]]
+> - For core definitions (what is ABM, emergence, heterogeneity) -> [[Research/Agent-Based Modeling/Foundations/Core Concepts/_Index|Core Concepts]]
+> - For comparisons with other paradigms and decision architectures -> [[Research/Agent-Based Modeling/Foundations/Modeling Approaches/_Index|Modeling Approaches]]
 > - For overview of the ABM paradigm -> [[Core Concepts/ABM Methodology and Principles]]
 
 ## Sub-topics
-- [[Core Concepts/_Index|Core Concepts]] — COVERS: ABM definition, agent properties, emergent phenomena, heterogeneity modeling
-- [[Modeling Approaches/_Index|Modeling Approaches]] — COVERS: ABM vs differential equations, agent decision rules, bounded rationality, stochasticity
+- [[Research/Agent-Based Modeling/Foundations/Core Concepts/_Index|Core Concepts]] — COVERS: ABM definition, agent properties, emergent phenomena, heterogeneity modeling
+- [[Research/Agent-Based Modeling/Foundations/Modeling Approaches/_Index|Modeling Approaches]] — COVERS: ABM vs differential equations, agent decision rules, bounded rationality, stochasticity
 
 ## Cross-Cutting Concepts
 Concepts that span both sub-topics:

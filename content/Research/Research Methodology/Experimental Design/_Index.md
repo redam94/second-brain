@@ -3,7 +3,7 @@ title: "Index: Experimental Design"
 tags:
   - type/index
   - source/ingested
-parent: "[[Research Methodology/_Index|Research Methodology]]"
+parent: "[[Research/Research Methodology/_Index|Research Methodology]]"
 date_updated: 2026-04-09
 concept_count: 4
 ---

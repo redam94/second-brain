@@ -36,6 +36,10 @@ echo "Content sync complete."
 echo "Fixing blockquote math..."
 python3 "$SCRIPT_DIR/fix-blockquote-math.py"
 
+# Fix partial-path wikilinks to _Index files (ensures correct Quartz hrefs)
+echo "Fixing _Index link paths..."
+python3 "$SCRIPT_DIR/fix-index-links.py"
+
 # Regenerate the Selected Analyses section in index.md
 echo "Updating index.md Q&A section..."
 python3 "$SCRIPT_DIR/update-index.py"

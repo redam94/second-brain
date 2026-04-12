@@ -49,6 +49,6 @@ concept_count: 7
 
 ## See Also
 
-- [[Copula SMM/_Index|Copula SMM]] — application of these methods to copula models (Oh & Patton 2011)
+- [[Research/Econometrics/Extensions/Copula SMM/_Index|Copula SMM]] — application of these methods to copula models (Oh & Patton 2011)
 - [[Standard Errors and Clustering]] — analogous HAC inference in GMM/OLS
 - [[Copula Estimation]] — Bayesian alternative for copula models

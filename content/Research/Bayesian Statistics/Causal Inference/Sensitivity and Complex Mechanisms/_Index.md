@@ -42,5 +42,5 @@ concept_count: 3
 - [[raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]] — §6–7, pp. 12–18
 
 ## See Also
-- [[Bayesian Inference/_Index|Bayesian Inference]] — core Bayesian CI structure that these methods extend
+- [[Research/Bayesian Statistics/Causal Inference/Bayesian Inference/_Index|Bayesian Inference]] — core Bayesian CI structure that these methods extend
 - [[Copula Estimation]] — vault note on copulas used in sensitivity analysis

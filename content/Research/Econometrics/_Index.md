@@ -13,10 +13,10 @@ concept_count: 33
 > [!abstract] Routing Summary
 > This folder covers applied econometrics and causal inference from Mostly Harmless Econometrics plus Bayesian DiD, synthetic control, and DAG tutorials. Contains 17 notes across 4 sub-topics.
 > - Need research design fundamentals, selection bias, or DAGs? -> [[Foundations/_Index|Foundations]]
-> - Need regression interpretation or OVB? -> [[Regression Foundations/_Index|Regression Foundations]]
-> - Need IV, DiD, RD, or synthetic control designs? -> [[Identification Strategies/_Index|Identification Strategies]]
-> - Need quantile regression, discrete choice, or SEs? -> [[Extensions/_Index|Extensions]]
-> - Need simulation-based estimation (MSM, indirect inference, EMM, copula SMM)? -> [[Extensions/_Index|Extensions]]
+> - Need regression interpretation or OVB? -> [[Research/Econometrics/Regression Foundations/_Index|Regression Foundations]]
+> - Need IV, DiD, RD, or synthetic control designs? -> [[Research/Econometrics/Identification Strategies/_Index|Identification Strategies]]
+> - Need quantile regression, discrete choice, or SEs? -> [[Research/Econometrics/Extensions/_Index|Extensions]]
+> - Need simulation-based estimation (MSM, indirect inference, EMM, copula SMM)? -> [[Research/Econometrics/Extensions/_Index|Extensions]]
 
 ## Book Overview
 
@@ -27,9 +27,9 @@ concept_count: 33
 | Sub-topic | Notes | Domain |
 |-----------|-------|--------|
 | [[Foundations/_Index\|Foundations]] | 4 | Research questions, experimental ideal, selection bias, DAGs (MHE Part I + Pearl) |
-| [[Regression Foundations/_Index\|Regression Foundations]] | 3 | CEF, CIA, omitted variables bias (MHE Ch 3) |
-| [[Identification Strategies/_Index\|Identification Strategies]] | 14 | IV, LATE, DD, RD, synthetic control, GSC — quasi-experimental methods (MHE Ch 4-6 + Abadie 2021 + Xu 2017) |
-| [[Extensions/_Index\|Extensions]] | 12 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8), simulation-based estimation: MSM, indirect inference, EMM, SMM for copulas (Liesenfeld & Breitung 1998, Oh & Patton 2011) |
+| [[Research/Econometrics/Regression Foundations/_Index\|Regression Foundations]] | 3 | CEF, CIA, omitted variables bias (MHE Ch 3) |
+| [[Research/Econometrics/Identification Strategies/_Index\|Identification Strategies]] | 14 | IV, LATE, DD, RD, synthetic control, GSC — quasi-experimental methods (MHE Ch 4-6 + Abadie 2021 + Xu 2017) |
+| [[Research/Econometrics/Extensions/_Index\|Extensions]] | 12 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8), simulation-based estimation: MSM, indirect inference, EMM, SMM for copulas (Liesenfeld & Breitung 1998, Oh & Patton 2011) |
 
 ## Sources
 
@@ -45,5 +45,5 @@ concept_count: 33
 
 ## See Also
 
-- [[Bayesian Statistics/_Index|Bayesian Statistics]] — Bayesian perspective on regression and inference
-- [[Research Methodology/_Index|Research Methodology]] — Multiple comparisons and causal inference challenges
+- [[Research/Bayesian Statistics/_Index|Bayesian Statistics]] — Bayesian perspective on regression and inference
+- [[Research/Research Methodology/_Index|Research Methodology]] — Multiple comparisons and causal inference challenges

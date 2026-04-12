@@ -42,6 +42,6 @@ concept_count: 5
 
 ## See Also
 
-- [[Simulation-Based Estimation/_Index|Simulation-Based Estimation]] — the general MSM/SMM theory these notes apply
+- [[Research/Econometrics/Extensions/Simulation-Based Estimation/_Index|Simulation-Based Estimation]] — the general MSM/SMM theory these notes apply
 - [[Copula Estimation]] — Bayesian approach to copula estimation (complementary)
 - [[SMM Weighting Matrix and Inference]] — weighting matrix strategies used in the copula SMM context

@@ -3,7 +3,7 @@ title: "Index: Foundations"
 tags:
   - type/index
   - source/ingested
-parent: "[[Econometrics/_Index|Econometrics]]"
+parent: "[[Research/Econometrics/_Index|Econometrics]]"
 date_updated: 2026-04-11
 concept_count: 4
 ---
@@ -39,5 +39,5 @@ concept_count: 4
 
 ## See Also
 
-- [[Regression Foundations/_Index|Regression Foundations]] — Regression as the next tool after understanding selection
+- [[Research/Econometrics/Regression Foundations/_Index|Regression Foundations]] — Regression as the next tool after understanding selection
 - [[Activity Bias in Advertising]] — Selection bias in action: observational ad measurement

@@ -3,7 +3,7 @@ title: "Index: Model Assessment"
 tags:
   - type/index
   - source/ingested
-parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
+parent: "[[Research/Bayesian Statistics/_Index|Bayesian Statistics]]"
 date_updated: 2026-04-09
 concept_count: 5
 ---

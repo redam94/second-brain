@@ -11,24 +11,24 @@ concept_count: 136
 
 > [!abstract] Routing Summary
 > This folder covers applied statistics, econometrics, causal inference, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 136 notes across 6 major topics.
-> - Need Bayesian inference, computation, or regression? -> [[Bayesian Statistics/_Index|Bayesian Statistics]]
-> - Need causal inference toolkit (IV, DiD, RD, synthetic control, DAGs)? -> [[Econometrics/_Index|Econometrics]]
-> - Need forking paths, power analysis, ad measurement, or longitudinal causal inference? -> [[Research Methodology/_Index|Research Methodology]]
-> - Need quantum mechanics, QFT, or gauge theory? -> [[Theoretical Physics/_Index|Theoretical Physics]]
-> - Need ABM methodology, consumer behavior simulation, WOM modeling, or ABM calibration (GA, HM+ABC, uncertainty quantification)? -> [[Agent-Based Modeling/_Index|Agent-Based Modeling]]
-> - Need market response models (functional forms, carryover, VAR, empirical elasticities)? -> [[Market Response Models/_Index|Market Response Models]]
+> - Need Bayesian inference, computation, or regression? -> [[Research/Bayesian Statistics/_Index|Bayesian Statistics]]
+> - Need causal inference toolkit (IV, DiD, RD, synthetic control, DAGs)? -> [[Research/Econometrics/_Index|Econometrics]]
+> - Need forking paths, power analysis, ad measurement, or longitudinal causal inference? -> [[Research/Research Methodology/_Index|Research Methodology]]
+> - Need quantum mechanics, QFT, or gauge theory? -> [[Research/Theoretical Physics/_Index|Theoretical Physics]]
+> - Need ABM methodology, consumer behavior simulation, WOM modeling, or ABM calibration (GA, HM+ABC, uncertainty quantification)? -> [[Research/Agent-Based Modeling/_Index|Agent-Based Modeling]]
+> - Need market response models (functional forms, carryover, VAR, empirical elasticities)? -> [[Research/Market Response Models/_Index|Market Response Models]]
 > - Need a specific concept? Check the Concept Map below or use the .base files for database views
 
 ## Concept Map
 
 | Topic | Notes | Key Concepts |
 |-------|-------|-------------|
-| [[Bayesian Statistics/_Index\|Bayesian Statistics]] | 54 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference |
-| [[Econometrics/_Index\|Econometrics]] | 24 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, quantile regression, discrete choice, DAGs |
-| [[Research Methodology/_Index\|Research Methodology]] | 13+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons, within/between-persons distinction (Rohrer & Murayama 2023), fixed-effects model, CLPM, dynamic panel model, estimands in longitudinal research |
-| [[Theoretical Physics/_Index\|Theoretical Physics]] | 7 | Quantum mechanics, Hilbert space, Schrödinger equation, QFT, second quantization, QED, renormalization, gauge theory, Standard Model |
-| [[Agent-Based Modeling/_Index\|Agent-Based Modeling]] | 34 | ABM methodology, emergence, heterogeneity, consumer utility models, CUBES behavioral simulator, WOM, opinion leaders, network diffusion, GA calibration, validation, HM+ABC calibration (McCulloch et al. 2022), history matching, ABC, uncertainty quantification |
-| [[Market Response Models/_Index\|Market Response Models]] | 25 | Functional forms (10), Koyck/ADL carryover, reaction functions, OLS/2SLS/Bayes estimation, ARIMA, transfer functions, VAR, cointegration, ECM, empirical generalizations (advertising ≈ 0.10, price ≈ −2.5) |
+| [[Research/Bayesian Statistics/_Index\|Bayesian Statistics]] | 54 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference |
+| [[Research/Econometrics/_Index\|Econometrics]] | 24 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, quantile regression, discrete choice, DAGs |
+| [[Research/Research Methodology/_Index\|Research Methodology]] | 13+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons, within/between-persons distinction (Rohrer & Murayama 2023), fixed-effects model, CLPM, dynamic panel model, estimands in longitudinal research |
+| [[Research/Theoretical Physics/_Index\|Theoretical Physics]] | 7 | Quantum mechanics, Hilbert space, Schrödinger equation, QFT, second quantization, QED, renormalization, gauge theory, Standard Model |
+| [[Research/Agent-Based Modeling/_Index\|Agent-Based Modeling]] | 34 | ABM methodology, emergence, heterogeneity, consumer utility models, CUBES behavioral simulator, WOM, opinion leaders, network diffusion, GA calibration, validation, HM+ABC calibration (McCulloch et al. 2022), history matching, ABC, uncertainty quantification |
+| [[Research/Market Response Models/_Index\|Market Response Models]] | 25 | Functional forms (10), Koyck/ADL carryover, reaction functions, OLS/2SLS/Bayes estimation, ARIMA, transfer functions, VAR, cointegration, ECM, empirical generalizations (advertising ≈ 0.10, price ≈ −2.5) |
 
 ## Cross-Cutting Themes
 

@@ -13,11 +13,11 @@ concept_count: 34
 > [!abstract] Routing Summary
 > This folder covers Bayesian and ML-based causal inference. Contains 34 notes across 6 sub-topics.
 > - For potential outcomes setup, SUTVA, ignorability, propensity score? → [[Foundations/_Index|Foundations]]
-> - For Bayesian CI likelihood factorization, BART/GP/BCF outcome models, propensity score strategies? → [[Bayesian Inference/_Index|Bayesian Inference]]
-> - For sensitivity analysis (E-value, copula), IV/principal stratification, time-varying treatments? → [[Sensitivity and Complex Mechanisms/_Index|Sensitivity and Complex Mechanisms]]
-> - For interactive and LLM-based methods to elicit causal structure? → [[Knowledge Elicitation/_Index|Knowledge Elicitation]]
-> - For S/T/X-learners and CATE estimation with ML? → [[Treatment Effect Estimation/_Index|Treatment Effect Estimation]]
-> - For Bayesian structural time-series and CausalImpact? → [[Time Series Causal Inference/_Index|Time Series Causal Inference]]
+> - For Bayesian CI likelihood factorization, BART/GP/BCF outcome models, propensity score strategies? → [[Research/Bayesian Statistics/Causal Inference/Bayesian Inference/_Index|Bayesian Inference]]
+> - For sensitivity analysis (E-value, copula), IV/principal stratification, time-varying treatments? → [[Research/Bayesian Statistics/Causal Inference/Sensitivity and Complex Mechanisms/_Index|Sensitivity and Complex Mechanisms]]
+> - For interactive and LLM-based methods to elicit causal structure? → [[Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/_Index|Knowledge Elicitation]]
+> - For S/T/X-learners and CATE estimation with ML? → [[Research/Bayesian Statistics/Causal Inference/Treatment Effect Estimation/_Index|Treatment Effect Estimation]]
+> - For Bayesian structural time-series and CausalImpact? → [[Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/_Index|Time Series Causal Inference]]
 > - For paper overview of Li et al. 2022? → [[Li et al 2022 - Overview]]
 
 ## Sub-topics
@@ -25,11 +25,11 @@ concept_count: 34
 | Sub-topic | Notes | Domain |
 |-----------|-------|--------|
 | [[Foundations/_Index\|Foundations]] | 3 | Potential outcomes, SUTVA, ignorability, causal estimands, frequentist methods |
-| [[Bayesian Inference/_Index\|Bayesian Inference]] | 3 | Bayesian CI structure, outcome models (BART/GP/BCF), propensity score strategies |
-| [[Sensitivity and Complex Mechanisms/_Index\|Sensitivity and Complex Mechanisms]] | 3 | E-value, copula sensitivity, IV/principal stratification, g-formula, time-varying treatments |
-| [[Knowledge Elicitation/_Index\|Knowledge Elicitation]] | 9 | Interactive (Yamashita 2020) and LLM-based (Shaposhnyk 2025) causal structure elicitation |
-| [[Treatment Effect Estimation/_Index\|Treatment Effect Estimation]] | 6 | S/T/X-learner metalearners for CATE; minimax rates; voter turnout & transphobia applications |
-| [[Time Series Causal Inference/_Index\|Time Series Causal Inference]] | 7 | BSTS model; spike-and-slab; Gibbs sampler; CausalImpact; advertising application |
+| [[Research/Bayesian Statistics/Causal Inference/Bayesian Inference/_Index\|Bayesian Inference]] | 3 | Bayesian CI structure, outcome models (BART/GP/BCF), propensity score strategies |
+| [[Research/Bayesian Statistics/Causal Inference/Sensitivity and Complex Mechanisms/_Index\|Sensitivity and Complex Mechanisms]] | 3 | E-value, copula sensitivity, IV/principal stratification, g-formula, time-varying treatments |
+| [[Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/_Index\|Knowledge Elicitation]] | 9 | Interactive (Yamashita 2020) and LLM-based (Shaposhnyk 2025) causal structure elicitation |
+| [[Research/Bayesian Statistics/Causal Inference/Treatment Effect Estimation/_Index\|Treatment Effect Estimation]] | 6 | S/T/X-learner metalearners for CATE; minimax rates; voter turnout & transphobia applications |
+| [[Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/_Index\|Time Series Causal Inference]] | 7 | BSTS model; spike-and-slab; Gibbs sampler; CausalImpact; advertising application |
 
 ## Paper Overview
 
