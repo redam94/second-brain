@@ -1,8 +1,9 @@
 filters:
   and:
-    - file.inFolder("Research")
+    - file.inFolder("Research/Bayesian Statistics")
     - '!file.hasTag("type/index")'
-    - file.ext == "md"
+    - 'file.ext == "md"'
+
 properties:
   depends_on:
     displayName: Depends On
@@ -11,15 +12,16 @@ properties:
   doc_type:
     displayName: Type
   file.folder:
-    displayName: Folder
+    displayName: Subfolder
+
 views:
   - type: table
     name: Concept Dependency Graph
-    groupBy:
-      property: file.folder
-      direction: ASC
     order:
       - file.name
       - depends_on
       - used_by
       - doc_type
+    groupBy:
+      property: file.folder
+      direction: ASC

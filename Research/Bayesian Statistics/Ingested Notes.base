@@ -1,8 +1,9 @@
 filters:
   and:
-    - file.inFolder("Research/Agent-Based Modeling")
+    - file.inFolder("Research/Bayesian Statistics")
     - '!file.hasTag("type/index")'
-    - file.ext == "md"
+    - 'file.ext == "md"'
+
 properties:
   doc_type:
     displayName: Type
@@ -16,12 +17,10 @@ properties:
     displayName: Status
   file.folder:
     displayName: Subfolder
+
 views:
   - type: table
-    name: All ABM Notes
-    groupBy:
-      property: file.folder
-      direction: ASC
+    name: All Bayesian Statistics Notes
     order:
       - file.name
       - doc_type
@@ -29,3 +28,6 @@ views:
       - source_location
       - date_created
       - status
+    groupBy:
+      property: file.folder
+      direction: ASC

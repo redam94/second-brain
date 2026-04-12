@@ -65,3 +65,5 @@ Three problems with naive falsification:
 - [[Hierarchical Models]] — BDA3's treatment of multilevel models (tool #2)
 - [[Overfitting and Information Criteria]] — formal coverage of AIC, DIC, WAIC (tool #3)
 - [[Statistical Rethinking - Overview]] — full book overview
+- [[Choosing and Building Models]] — Bayesian Workflow's operationalization of "golem engineering": how to actually build custom models step by step
+- [[Bayesian Workflow - Overview]] — the full principled workflow that golem engineering motivates: prior predictive checks, SBC, PPC, model comparison

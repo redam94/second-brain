@@ -1,23 +1,31 @@
 filters:
   and:
-    - file.hasTag("topic/simulation-estimation")
+    - file.inFolder("Research/Econometrics/Extensions")
+    - '!file.hasTag("type/index")'
     - file.ext == "md"
 properties:
   doc_type:
-    displayName: Doc Type
+    displayName: Type
   source_location:
     displayName: Source Location
-  date_ingested:
-    displayName: Ingested
+  date_created:
+    displayName: Created
+  status:
+    displayName: Status
+  file.folder:
+    displayName: Subfolder
 views:
   - type: table
     name: All Simulation Estimation Notes
+    groupBy:
+      property: file.folder
+      direction: ASC
     order:
       - file.name
       - doc_type
       - source_location
-      - date_ingested
-      - file.folder
+      - date_created
+      - status
   - type: table
     name: Theorems and Definitions
     filters:
@@ -27,4 +35,4 @@ views:
     order:
       - file.name
       - source_location
-      - date_ingested
+      - date_created

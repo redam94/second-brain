@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("Research")
+    - file.inFolder("Research/Market Response Models")
     - '!file.hasTag("type/index")'
     - file.ext == "md"
 properties:
@@ -10,8 +10,10 @@ properties:
     displayName: Used By
   doc_type:
     displayName: Type
+  chapter:
+    displayName: Chapter
   file.folder:
-    displayName: Folder
+    displayName: Subfolder
 views:
   - type: table
     name: Concept Dependency Graph
@@ -23,3 +25,4 @@ views:
       - depends_on
       - used_by
       - doc_type
+      - chapter
