@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Econometrics/Extensions/Simulation-Based Estimation/Efficient Method of Moments.md",
+                "file": "Questions-and-Answers/Q - Using SMM to Calibrate Agent Based Models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Efficient Method of Moments"
+              "title": "Q - Using SMM to Calibrate Agent Based Models"
             }
           }
         ]
@@ -183,6 +183,10 @@
   },
   "active": "4e026be74554a5cd",
   "lastOpenFiles": [
+    "Dream/_Index.md",
+    "Research/Econometrics/Extensions/Simulation-Based Estimation/Efficient Method of Moments.md",
+    "scripts/sync-website.sh",
+    "scripts",
     "Research/Concept Dependencies.base",
     "Research/Ingested Notes.base",
     "Research/Theorems and Definitions.base",
@@ -196,9 +200,6 @@
     "Research/Market Response Models/Theorems and Definitions.base",
     "Research/Econometrics/Theorems and Definitions.base",
     "Research/Econometrics/Ingested Notes.base",
-    "Research/Econometrics/Concept Dependencies.base",
-    "Research/Econometrics/Extensions/Simulation Estimation Notes.base",
-    "Research/Econometrics/Extensions/Concept Dependencies.base",
     "Research/raw/Gauge theory.md",
     "Research/_Index.md",
     "Research/Bayesian Statistics/Causal Inference/_Index.md",
@@ -218,7 +219,6 @@
     "Research/Agent-Based Modeling/Calibration and Validation/Calibration Methods/HM-ABC Calibration Framework.md",
     "Research/Market Response Models/_Index.md",
     "Research/Market Response Models/Empirical Findings and Applications/_Index.md",
-    "Research/Market Response Models/Estimation and Testing/_Index.md",
     "public/index-og-image.webp",
     "public/_Vault_Index-og-image.webp",
     "public/Research/raw/Unlock-the-Secrets-of-Causal-Inference-with-a-Master-Class-in-Directed-Acyclic-Graphs-og-image.webp",
