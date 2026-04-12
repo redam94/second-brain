@@ -40,7 +40,9 @@ used_by:
 
 Bayes' theorem is the foundation:
 
-$$p(\theta \mid y) = \frac{p(y \mid \theta)\, p(\theta)}{p(y)} \propto p(y \mid \theta)\, p(\theta)$$
+$$
+p(\theta \mid y) = \frac{p(y \mid \theta)\, p(\theta)}{p(y)} \propto p(y \mid \theta)\, p(\theta)
+$$
 
 where $p(\theta)$ is the **prior**, $p(y \mid \theta)$ is the **likelihood**, and $p(\theta \mid y)$ is the **posterior**.
 

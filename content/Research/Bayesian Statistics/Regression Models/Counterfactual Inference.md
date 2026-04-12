@@ -31,7 +31,9 @@ used_by:
 
 ## The Core Formula
 
-$$\text{Excess deaths} = \underbrace{\text{Reported Deaths}}_{\text{observable}} - \underbrace{\text{Expected Deaths}}_{\text{counterfactual (unobservable)}}$$
+$$
+\text{Excess deaths} = \underbrace{\text{Reported Deaths}}_{\text{observable}} - \underbrace{\text{Expected Deaths}}_{\text{counterfactual (unobservable)}}
+$$
 
 Expected deaths is a **counterfactual**: deaths that would have occurred *if nothing had changed*. It can never be observed because we cannot simultaneously experience both the actual and counterfactual timeline.
 

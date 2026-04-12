@@ -77,13 +77,17 @@ Moments like means and variances are functions of the marginals $G_i$ alone and 
 
 For the pair $(\eta_i, \eta_j)$:
 
-$$\rho^{ij} = 12 E[F_i(\eta_i) F_j(\eta_j)] - 3 = 12 \int \int uv \, dC_{ij}(u,v) - 3$$
+$$
+\rho^{ij} = 12 E[F_i(\eta_i) F_j(\eta_j)] - 3 = 12 \int \int uv \, dC_{ij}(u,v) - 3
+$$
 
 This is purely a function of the copula $C_{ij}$ and invariant to the marginals. See [[Dependence Measures for Copulas#^def-spearman-rank|Spearman's rank correlation]].
 
 ### Quantile Dependence
 
-$$\tau_q^{ij} = \begin{cases} P[F_i(\eta_i) \leq q | F_j(\eta_j) \leq q] = \frac{C_{ij}(q,q)}{q}, & q \in (0, 0.5] \\ P[F_i(\eta_i) > q | F_j(\eta_j) > q] = \frac{1 - 2q + C_{ij}(q,q)}{1-q}, & q \in (0.5, 1) \end{cases}$$
+$$
+\tau_q^{ij} = \begin{cases} P[F_i(\eta_i) \leq q | F_j(\eta_j) \leq q] = \frac{C_{ij}(q,q)}{q}, & q \in (0, 0.5] \\ P[F_i(\eta_i) > q | F_j(\eta_j) > q] = \frac{1 - 2q + C_{ij}(q,q)}{1-q}, & q \in (0.5, 1) \end{cases}
+$$
 
 This captures tail dependence at various quantile levels. See [[Dependence Measures for Copulas#^def-quantile-dependence|quantile dependence]].
 
@@ -91,9 +95,13 @@ This captures tail dependence at various quantile levels. See [[Dependence Measu
 
 Based on the estimated standardized residuals:
 
-$$\hat{\rho}^{ij} = \frac{12}{T} \sum_{t=1}^T \hat{F}_i(\hat{\eta}_{it}) \hat{F}_j(\hat{\eta}_{jt}) - 3$$
+$$
+\hat{\rho}^{ij} = \frac{12}{T} \sum_{t=1}^T \hat{F}_i(\hat{\eta}_{it}) \hat{F}_j(\hat{\eta}_{jt}) - 3
+$$
 
-$$\hat{\tau}_q^{ij} = \begin{cases} \frac{1}{Tq} \sum_{t=1}^T \mathbf{1}\{\hat{F}_i(\hat{\eta}_{it}) \leq q, \hat{F}_j(\hat{\eta}_{jt}) \leq q\}, & q \in (0, 0.5] \\ \frac{1}{T(1-q)} \sum_{t=1}^T \mathbf{1}\{\hat{F}_i(\hat{\eta}_{it}) > q, \hat{F}_j(\hat{\eta}_{jt}) > q\}, & q \in (0.5, 1) \end{cases}$$
+$$
+\hat{\tau}_q^{ij} = \begin{cases} \frac{1}{Tq} \sum_{t=1}^T \mathbf{1}\{\hat{F}_i(\hat{\eta}_{it}) \leq q, \hat{F}_j(\hat{\eta}_{jt}) \leq q\}, & q \in (0, 0.5] \\ \frac{1}{T(1-q)} \sum_{t=1}^T \mathbf{1}\{\hat{F}_i(\hat{\eta}_{it}) > q, \hat{F}_j(\hat{\eta}_{jt}) > q\}, & q \in (0.5, 1) \end{cases}
+$$
 
 ## The SMM Estimator
 

@@ -40,7 +40,9 @@ The posterior $p(\theta, \alpha \mid \mathbf{y})$ is not available in closed for
 
 Sample the full state sequence $\alpha = (\alpha_1, \ldots, \alpha_m)$ given parameters $\theta$ and data $\mathbf{y}_{1:n}$:
 
-$$(\alpha \mid \mathbf{y}_{1:n}, \theta)$$
+$$
+(\alpha \mid \mathbf{y}_{1:n}, \theta)
+$$
 
 **Algorithm:** Uses the simulation smoother of Durbin & Koopman (2002), which improves on the earlier forward-filtering, backward-sampling algorithms (Carter & Kohn 1994, Frühwirth-Schnatter 1994).
 
@@ -63,7 +65,9 @@ Sample $\theta = (\sigma^2_\mu, \sigma^2_\delta, \ldots, \varrho, \beta, \sigma^
 
 After fitting the model on pre-intervention data $\mathbf{y}_{1:n}$, the key quantity is the **posterior predictive distribution over counterfactuals**:
 
-$$p(\tilde{\mathbf{y}}_{n+1:m} \mid \mathbf{y}_{1:n}, \mathbf{x}_{1:m}) \tag{2.14}$$
+$$
+p(\tilde{\mathbf{y}}_{n+1:m} \mid \mathbf{y}_{1:n}, \mathbf{x}_{1:m}) \tag{2.14}
+$$
 
 This is the distribution of what would have happened had no intervention occurred. It:
 - Is conditioned only on pre-intervention outcomes and all control series (not on parameter estimates)

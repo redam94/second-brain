@@ -54,25 +54,33 @@ used_by:
 
 ### Comparing Two Means (t-test)
 
-$$N_{\text{per group}} = \frac{2(Z_{\alpha/2} + Z_{1-\beta})^2 \sigma^2}{d^2}$$
+$$
+N_{\text{per group}} = \frac{2(Z_{\alpha/2} + Z_{1-\beta})^2 \sigma^2}{d^2}
+$$
 
 where $\sigma$ is the pooled SD and $d$ is the minimum detectable difference.
 
 ### Comparing Two Proportions
 
-$$N = \frac{(Z_{\alpha/2} + Z_{1-\beta})^2 \cdot \bar{p}(1-\bar{p}) \cdot (1+r)}{r \cdot d^2}$$
+$$
+N = \frac{(Z_{\alpha/2} + Z_{1-\beta})^2 \cdot \bar{p}(1-\bar{p}) \cdot (1+r)}{r \cdot d^2}
+$$
 
 where $\bar{p}$ is the average proportion, $d$ is the difference, and $r = n_1/n_2$.
 
 ### Survey / Single Proportion
 
-$$N = \frac{Z_{\alpha/2}^2 \cdot P(1-P)}{E^2}$$
+$$
+N = \frac{Z_{\alpha/2}^2 \cdot P(1-P)}{E^2}
+$$
 
 where $P$ is expected prevalence and $E$ is margin of error.
 
 ### Correlation
 
-$$N = \left(\frac{Z_{\alpha/2} + Z_{1-\beta}}{0.5 \ln\frac{1+r}{1-r}}\right)^2$$
+$$
+N = \left(\frac{Z_{\alpha/2} + Z_{1-\beta}}{0.5 \ln\frac{1+r}{1-r}}\right)^2
+$$
 
 ## Practical Adjustments
 

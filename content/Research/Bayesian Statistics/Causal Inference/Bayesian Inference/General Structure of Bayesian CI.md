@@ -74,7 +74,9 @@ This assumption is:
 ## Ignorability of the Propensity Score
 
 Under Assumptions 2.1 (ignorability) and 3.2 (prior independence), the observed-data likelihood based on the factorization becomes:
-$$\prod_{i: Z_i=1} \Pr(Y_i(1) \mid X_i; \theta_Y) \cdot \prod_{i: Z_i=0} \Pr(Y_i(0) \mid X_i; \theta_Y)$$
+$$
+\prod_{i: Z_i=1} \Pr(Y_i(1) \mid X_i; \theta_Y) \cdot \prod_{i: Z_i=0} \Pr(Y_i(0) \mid X_i; \theta_Y)
+$$
 
 **Key result**: the propensity score model $\Pr(Z_i \mid X_i; \theta_Z)$ is **ignorable** — it does not appear in the likelihood for causal estimands $\tau^S$, $\tau^P$, or $\tau(x)$.
 

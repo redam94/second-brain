@@ -95,7 +95,9 @@ Based on meta-analytic findings, recommended null hypothesis starting values (pr
 
 Because all elasticity estimates contain sampling error, the search for generalizations must account for the $O = T + E$ framework (Eq 8.11-8.12):
 
-$$\text{Measured Elasticity} = \text{True Elasticity} + \text{Error}$$
+$$
+\text{Measured Elasticity} = \text{True Elasticity} + \text{Error}
+$$
 
 Meta-analytic means are biased if studies systematically use the same misspecified model. Good practice: weight studies by sample size and correct for known biases (temporal aggregation, endogeneity).
 

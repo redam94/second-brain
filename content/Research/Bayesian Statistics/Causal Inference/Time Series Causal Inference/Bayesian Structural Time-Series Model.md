@@ -77,7 +77,9 @@ The full state vector is a concatenation of:
 
 A static linear regression on control series $\mathbf{x}_t$:
 
-$$Z_t = \beta^\top \mathbf{x}_t, \quad \alpha_t = 1$$
+$$
+Z_t = \beta^\top \mathbf{x}_t, \quad \alpha_t = 1
+$$
 
 This writes the regression contribution in state-space form with $Z_t = \beta^\top \mathbf{x}_t$ and zero variance.
 
@@ -87,7 +89,9 @@ This writes the regression contribution in state-space form with $Z_t = \beta^\t
 
 Time-varying coefficients $\beta_{j,t}$ evolve as independent random walks:
 
-$$\mathbf{x}_t^\top \beta_t = \sum_{j=1}^J x_{j,t} \beta_{j,t}, \quad \beta_{j,t+1} = \beta_{j,t} + \eta_{\beta,j,t} \tag{2.6}$$
+$$
+\mathbf{x}_t^\top \beta_t = \sum_{j=1}^J x_{j,t} \beta_{j,t}, \quad \beta_{j,t+1} = \beta_{j,t} + \eta_{\beta,j,t} \tag{2.6}
+$$
 
 where $\eta_{\beta,j,t} \sim \mathcal{N}(0, \sigma_{\beta_j}^2)$. Written in state-space form: $Z_t = \mathbf{x}_t$ and $\alpha_t = \beta_t$.
 
@@ -97,7 +101,9 @@ where $\eta_{\beta,j,t} \sim \mathcal{N}(0, \sigma_{\beta_j}^2)$. Written in sta
 
 Most state components depend on a small set of diffusion variance parameters. The default prior:
 
-$$\frac{1}{\sigma^2} \sim \mathcal{G}\left(\frac{\nu}{2}, \frac{s}{2}\right) \tag{2.7}$$
+$$
+\frac{1}{\sigma^2} \sim \mathcal{G}\left(\frac{\nu}{2}, \frac{s}{2}\right) \tag{2.7}
+$$
 
 where $\mathcal{G}(a, b)$ is Gamma with expectation $a/b$. Thus $s/\nu$ is a prior estimate of $\sigma^2$, and $\nu$ is the prior weight in units of sample size.
 

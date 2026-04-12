@@ -42,12 +42,18 @@ Standard regression ignores this dyadic dependence. Social network models treat 
 
 Based on McElreath's Koster & Leckie-style household food sharing model:
 
-$$y_{AB} \sim \text{Poisson}(\lambda_{AB})$$
-$$\log \lambda_{AB} = \alpha + \underbrace{g_{AB}}_{\text{giving: A→B}} + \underbrace{r_A}_{\text{A's general giving}} + \underbrace{r_B}_{\text{B's general receiving}}$$
+$$
+y_{AB} \sim \text{Poisson}(\lambda_{AB})
+$$
+$$
+\log \lambda_{AB} = \alpha + \underbrace{g_{AB}}_{\text{giving: A→B}} + \underbrace{r_A}_{\text{A's general giving}} + \underbrace{r_B}_{\text{B's general receiving}}
+$$
 
 Where the key latent structure is the **dyadic** giving term $g_{AB}$:
 
-$$\begin{pmatrix} g_{AB} \\ g_{BA} \end{pmatrix} \sim \text{MVN}\!\left(\mathbf{0},\ \begin{pmatrix} \sigma^2 & \rho\sigma^2 \\ \rho\sigma^2 & \sigma^2 \end{pmatrix}\right)$$
+$$
+\begin{pmatrix} g_{AB} \\ g_{BA} \end{pmatrix} \sim \text{MVN}\!\left(\mathbf{0},\ \begin{pmatrix} \sigma^2 & \rho\sigma^2 \\ \rho\sigma^2 & \sigma^2 \end{pmatrix}\right)
+$$
 
 - $\rho$: **reciprocity** — how strongly giving in one direction predicts giving in return
 - $\sigma^2$: variance of dyadic effects (heterogeneity in relationship strength)

@@ -95,7 +95,9 @@ Baseline decomposition is essential for ROI calculation of trade promotions (whi
 
 ## Market Share
 
-$$MS_t = \frac{Q_t}{Q_{T,t}}$$
+$$
+MS_t = \frac{Q_t}{Q_{T,t}}
+$$
 
 where $Q_{T,t}$ = total category sales. Market share is bounded in $[0,1]$, motivating the logit/MCI share models in [[Market Share Models]].
 

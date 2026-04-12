@@ -35,13 +35,19 @@ used_by:
 ## The Formula
 
 If the "long" (correct) regression is:
-$$Y_i = \alpha^l + \rho^l s_i + A_i'\gamma^l + v_i^l$$
+$$
+Y_i = \alpha^l + \rho^l s_i + A_i'\gamma^l + v_i^l
+$$
 
 and the "short" (omitted variable) regression is:
-$$Y_i = \alpha^s + \rho^s s_i + v_i^s$$
+$$
+Y_i = \alpha^s + \rho^s s_i + v_i^s
+$$
 
 Then:
-$$\rho^s = \rho^l + \gamma^l \cdot \delta_{As}$$
+$$
+\rho^s = \rho^l + \gamma^l \cdot \delta_{As}
+$$
 
 where $\delta_{As}$ is the coefficient from regressing the omitted variable $A_i$ on $s_i$.
 

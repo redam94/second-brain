@@ -39,7 +39,9 @@ used_by:
 
 With $m$ independent tests at $\alpha = 0.05$:
 
-$$P(\text{at least one false positive}) = 1 - (1-\alpha)^m$$
+$$
+P(\text{at least one false positive}) = 1 - (1-\alpha)^m
+$$
 
 | Tests ($m$) | P(at least one FP) |
 |-------------|-------------------|
@@ -56,7 +58,9 @@ This is why the [[Garden of Forking Paths]] is so dangerous — even without exp
 
 The simplest approach: reject $H_i$ only if $p_i \leq \alpha / m$.
 
-$$\alpha_{\text{adjusted}} = \frac{\alpha}{m}$$
+$$
+\alpha_{\text{adjusted}} = \frac{\alpha}{m}
+$$
 
 - **Controls**: probability that *any* false positive occurs
 - **Pro**: simple, conservative, valid under any dependency structure
@@ -80,7 +84,9 @@ Uniformly more powerful than Bonferroni while still controlling FWER.
 
 Instead of preventing *all* false positives, FDR controls the *expected proportion* of false discoveries among rejected hypotheses:
 
-$$\text{FDR} = E\!\left[\frac{\text{false positives}}{\text{total rejections}}\right]$$
+$$
+\text{FDR} = E\!\left[\frac{\text{false positives}}{\text{total rejections}}\right]
+$$
 
 ### Benjamini-Hochberg (BH) Procedure
 

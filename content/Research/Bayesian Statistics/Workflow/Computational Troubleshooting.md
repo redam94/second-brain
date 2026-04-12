@@ -79,7 +79,9 @@ HMC works best when the posterior geometry is smooth and well-conditioned. [[Hie
 
 When difficult geometry arises from parameter interactions (e.g., the funnel between group-level scale $\phi$ and individual means $\theta$), we can marginalize:
 
-$$p(\phi|y) = \int_\theta p(\phi, \theta|y)\,d\theta$$
+$$
+p(\phi|y) = \int_\theta p(\phi, \theta|y)\,d\theta
+$$
 
 This is especially effective for Gaussian process models and latent Gaussian models.
 

@@ -46,11 +46,15 @@ Let:
 
 The SMM estimator chooses $\theta$ to minimize:
 
-$$\hat{\theta}_{SMM} = \arg\min_\theta \; e(\theta)^T \, W \, e(\theta)$$
+$$
+\hat{\theta}_{SMM} = \arg\min_\theta \; e(\theta)^T \, W \, e(\theta)
+$$
 
 where $e(\theta)$ is the $R \times 1$ vector of **percent-deviation moment errors**:
 
-$$e_r(\theta) = \frac{\hat{m}_r(\theta) - m_r(x)}{m_r(x)}$$
+$$
+e_r(\theta) = \frac{\hat{m}_r(\theta) - m_r(x)}{m_r(x)}
+$$
 
 and $W$ is an $R \times R$ positive-definite weighting matrix ([[SMM Weighting Matrix and Inference]]).
 
@@ -103,7 +107,9 @@ def smm_criterion(theta, data_moments, seeds, W):
 
 Minimize with a gradient-free or numerical-gradient optimizer (see [[SMM Python Implementation]] for the `eps` step-size issue with L-BFGS-B):
 
-$$\hat{\theta}_{1,SMM} = \arg\min_\theta \; e(\theta)^T I \; e(\theta)$$
+$$
+\hat{\theta}_{1,SMM} = \arg\min_\theta \; e(\theta)^T I \; e(\theta)
+$$
 
 > [!warning] Step Size for ABM SMM
 > The L-BFGS-B default `eps=1e-8` will fail when ABM output moments are in large units (market shares ≈ 0.3 or diffusion counts ≈ thousands). Set `options={'eps': 0.01}` or use a gradient-free method like Nelder-Mead for ABM calibration. See [[SMM Python Implementation#^warn-eps-stepsize]].
@@ -112,17 +118,23 @@ $$\hat{\theta}_{1,SMM} = \arg\min_\theta \; e(\theta)^T I \; e(\theta)$$
 
 Use the Step 1 estimates to build the optimal weighting matrix that downweights noisy moments ([[SMM Weighting Matrix and Inference#^def-two-step-smm]]):
 
-$$\hat{\Omega}_2 = \frac{1}{S} E(\hat{\theta}_{1,SMM}) \, E(\hat{\theta}_{1,SMM})^T$$
+$$
+\hat{\Omega}_2 = \frac{1}{S} E(\hat{\theta}_{1,SMM}) \, E(\hat{\theta}_{1,SMM})^T
+$$
 
 where $E$ is the $R \times S$ matrix of per-simulation moment errors. Re-estimate:
 
-$$\hat{\theta}_{2,SMM} = \arg\min_\theta \; e(\theta)^T \hat{\Omega}_2^{-1} \; e(\theta)$$
+$$
+\hat{\theta}_{2,SMM} = \arg\min_\theta \; e(\theta)^T \hat{\Omega}_2^{-1} \; e(\theta)
+$$
 
 #### Step 6: Compute Standard Errors
 
 The parameter estimates are asymptotically normal ([[SMM Weighting Matrix and Inference#^thm-smm-varcov]]):
 
-$$\hat{\Sigma}_{SMM} = \frac{1}{S}\left[d(\hat{\theta})^T W \, d(\hat{\theta})\right]^{-1}$$
+$$
+\hat{\Sigma}_{SMM} = \frac{1}{S}\left[d(\hat{\theta})^T W \, d(\hat{\theta})\right]^{-1}
+$$
 
 where $d(\hat{\theta})$ is the $R \times K$ Jacobian of the moment error vector with respect to $\theta$, estimated by centered finite differences. The standard error of $\hat{\theta}_k$ is $\sqrt{[\hat{\Sigma}_{SMM}]_{kk}}$.
 

@@ -71,7 +71,9 @@ See [[Logit Purchase Decision Model]] for full details.
 
 In the product adoption model, each agent $k$ adopts with a probability given by the rate of the master equation — the probability of becoming one is equal to $V(\hat{\rho}_k)$ per time unit:
 
-$$P(\text{adopt}_k) = V(\hat{\rho}_k) = \frac{(1 + \theta^d)\hat{\rho}_k^d}{\hat{\rho}_k^d + \theta^d}$$
+$$
+P(\text{adopt}_k) = V(\hat{\rho}_k) = \frac{(1 + \theta^d)\hat{\rho}_k^d}{\hat{\rho}_k^d + \theta^d}
+$$
 
 This is the simplest architecture: a direct mapping from local information (fraction of adopting neighbors) to adoption probability.
 

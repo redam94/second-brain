@@ -56,7 +56,9 @@ In the frequentist view, asking "what is the probability that $\theta = 0.4$?" i
 
 **Bayesian**: combine the prior $p(\theta)$ with the likelihood $p(y \mid \theta)$ to obtain the posterior $p(\theta \mid y)$ via Bayes' theorem ([[Probability and Bayesian Inference]], [[raw/BDA3.pdf|BDA3 Ch. 1]]):
 
-$$p(\theta \mid y) = \frac{p(y \mid \theta)\, p(\theta)}{p(y)} \propto p(y \mid \theta)\, p(\theta)$$
+$$
+p(\theta \mid y) = \frac{p(y \mid \theta)\, p(\theta)}{p(y)} \propto p(y \mid \theta)\, p(\theta)
+$$
 
 The **posterior** is the complete Bayesian answer — not a point estimate but a full distribution over plausible values of $\theta$.
 
@@ -94,7 +96,9 @@ Frequentist methods have no formal mechanism for incorporating prior knowledge (
 
 The posterior mean in the Normal-Normal model illustrates the prior-data compromise:
 
-$$E[\mu \mid y] = \frac{\frac{1}{\tau_0^2}\mu_0 + \frac{n}{\sigma^2}\bar{y}}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}$$
+$$
+E[\mu \mid y] = \frac{\frac{1}{\tau_0^2}\mu_0 + \frac{n}{\sigma^2}\bar{y}}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}
+$$
 
 This is a precision-weighted average of the prior mean $\mu_0$ and the sample mean $\bar{y}$ — with the prior's influence shrinking as $n$ grows ([[Single-Parameter Models#^thm-posterior-pooling|Gelman et al., BDA3 Ch. 2]]).
 
@@ -116,7 +120,9 @@ McElreath's insight: "you rarely *need* a point estimate. The entire posterior d
 
 The **posterior predictive distribution** propagates full uncertainty into predictions:
 
-$$p(y^{\text{new}} \mid y) = \int p(y^{\text{new}} \mid \theta)\, p(\theta \mid y)\, d\theta$$
+$$
+p(y^{\text{new}} \mid y) = \int p(y^{\text{new}} \mid \theta)\, p(\theta \mid y)\, d\theta
+$$
 
 Frequentist prediction intervals account for parameter uncertainty only approximately (via plug-in or delta method).
 
@@ -128,7 +134,9 @@ Frequentist prediction intervals account for parameter uncertainty only approxim
 
 **Bayesian**: marginalize over nuisance parameters by integration ([[Multiparameter Models]], [[raw/BDA3.pdf|BDA3 Ch. 3]]):
 
-$$p(\theta_1 \mid y) = \int p(\theta_1, \theta_2 \mid y)\, d\theta_2$$
+$$
+p(\theta_1 \mid y) = \int p(\theta_1, \theta_2 \mid y)\, d\theta_2
+$$
 
 This is conceptually clean but computationally demanding — motivating MCMC and variational methods. The practical payoff: uncertainty about nuisance parameters flows into uncertainty about parameters of interest automatically. With simulation, this reduces to examining marginals of the joint posterior draws.
 
@@ -142,7 +150,9 @@ This is where Bayesian methods most clearly dominate frequentist alternatives ([
 
 **Bayesian**: partial pooling arises naturally from the hierarchical model:
 
-$$y_j \mid \theta_j \sim p(y_j \mid \theta_j), \quad \theta_j \mid \mu, \tau \sim N(\mu, \tau^2), \quad (\mu, \tau) \sim p(\mu, \tau)$$
+$$
+y_j \mid \theta_j \sim p(y_j \mid \theta_j), \quad \theta_j \mid \mu, \tau \sim N(\mu, \tau^2), \quad (\mu, \tau) \sim p(\mu, \tau)
+$$
 
 The posterior for each $\theta_j$ borrows strength from all groups. The degree of pooling is determined by the variance ratio $\tau^2 / \sigma^2$ — inferred from the data, not pre-specified ([[Partial Pooling as Multiple Comparisons Correction]]).
 

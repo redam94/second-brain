@@ -43,7 +43,9 @@ Adding dynamics means asking:
 
 Any linear dynamic model can be expressed as an ADL (Autoregressive Distributed Lag):
 
-$$Q_t = \alpha + \sum_{i=1}^r \gamma_i Q_{t-i} + \sum_{k=0}^s \beta_k X_{t-k} + w_t$$
+$$
+Q_t = \alpha + \sum_{i=1}^r \gamma_i Q_{t-i} + \sum_{k=0}^s \beta_k X_{t-k} + w_t
+$$
 
 Key design choices:
 - **$r$ (AR order)**: test using AIC, BIC, or Ljung-Box test on residuals

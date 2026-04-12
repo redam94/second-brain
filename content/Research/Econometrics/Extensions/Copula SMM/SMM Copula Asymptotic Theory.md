@@ -155,7 +155,9 @@ The proof of Proposition 2 for the case $S/T \to k \in (0, \infty)$ proceeds as 
 
 **Step 1:** Establish the asymptotic normality of the moment function at the true parameter:
 
-$$\sqrt{T} \mathbf{g}_{T,S}(\boldsymbol{\theta}_0) = \underbrace{\sqrt{T}(\hat{\mathbf{m}}_T - \mathbf{m}_0(\boldsymbol{\theta}_0))}_{\xrightarrow{d} N(\mathbf{0}, \boldsymbol{\Sigma}_0)} - \underbrace{\sqrt{T/S}}_{\to 1/\sqrt{k}} \cdot \underbrace{\sqrt{S}(\tilde{\mathbf{m}}_S(\boldsymbol{\theta}_0) - \mathbf{m}_0(\boldsymbol{\theta}_0))}_{\xrightarrow{d} N(\mathbf{0}, \boldsymbol{\Sigma}_0)}$$
+$$
+\sqrt{T} \mathbf{g}_{T,S}(\boldsymbol{\theta}_0) = \underbrace{\sqrt{T}(\hat{\mathbf{m}}_T - \mathbf{m}_0(\boldsymbol{\theta}_0))}_{\xrightarrow{d} N(\mathbf{0}, \boldsymbol{\Sigma}_0)} - \underbrace{\sqrt{T/S}}_{\to 1/\sqrt{k}} \cdot \underbrace{\sqrt{S}(\tilde{\mathbf{m}}_S(\boldsymbol{\theta}_0) - \mathbf{m}_0(\boldsymbol{\theta}_0))}_{\xrightarrow{d} N(\mathbf{0}, \boldsymbol{\Sigma}_0)}
+$$
 
 Since $\hat{\mathbf{m}}_T$ and $\tilde{\mathbf{m}}_S$ are independent, $\sqrt{T} \mathbf{g}_{T,S}(\boldsymbol{\theta}_0) \xrightarrow{d} N(\mathbf{0}, (1 + 1/k) \boldsymbol{\Sigma}_0)$.
 
@@ -163,7 +165,9 @@ Since $\hat{\mathbf{m}}_T$ and $\tilde{\mathbf{m}}_S$ are independent, $\sqrt{T}
 
 **Step 3:** Apply Theorem 7.2 of Newey and McFadden (1994) to obtain the standard GMM expansion:
 
-$$\sqrt{T} \mathbf{g}_{T,S}(\hat{\boldsymbol{\theta}}_{T,S}) = \sqrt{T} \mathbf{g}_{T,S}(\boldsymbol{\theta}_0) + \hat{\mathbf{G}}_{T,S} \cdot \sqrt{T}(\hat{\boldsymbol{\theta}}_{T,S} - \boldsymbol{\theta}_0) + \mathbf{R}_{T,S}(\hat{\boldsymbol{\theta}}_{T,S})$$
+$$
+\sqrt{T} \mathbf{g}_{T,S}(\hat{\boldsymbol{\theta}}_{T,S}) = \sqrt{T} \mathbf{g}_{T,S}(\boldsymbol{\theta}_0) + \hat{\mathbf{G}}_{T,S} \cdot \sqrt{T}(\hat{\boldsymbol{\theta}}_{T,S} - \boldsymbol{\theta}_0) + \mathbf{R}_{T,S}(\hat{\boldsymbol{\theta}}_{T,S})
+$$
 
 where the remainder $\mathbf{R}_{T,S} = o_p(1)$.
 

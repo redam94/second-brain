@@ -67,9 +67,13 @@ X_ctrl  = X.copy(); X_ctrl["T"]  = 0
 
 ### Treatment Effect Estimation
 
-$$\widehat{\text{ATE}} = \frac{1}{n}\sum_{i=1}^n \left[\hat{Y}(X_i, T=1) - \hat{Y}(X_i, T=0)\right]$$
+$$
+\widehat{\text{ATE}} = \frac{1}{n}\sum_{i=1}^n \left[\hat{Y}(X_i, T=1) - \hat{Y}(X_i, T=0)\right]
+$$
 
-$$\widehat{\text{ATT}} = \frac{1}{\sum T_i}\sum_{i: T_i=1} \left[\hat{Y}(X_i, T=1) - \hat{Y}(X_i, T=0)\right]$$
+$$
+\widehat{\text{ATT}} = \frac{1}{\sum T_i}\sum_{i: T_i=1} \left[\hat{Y}(X_i, T=1) - \hat{Y}(X_i, T=0)\right]
+$$
 
 Because BART is Bayesian, these estimates come with full posterior distributions.
 

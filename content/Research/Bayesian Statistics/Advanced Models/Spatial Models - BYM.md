@@ -42,7 +42,9 @@ used_by:
 
 **Intrinsic Conditional Autoregressive (ICAR)** is the engine of BYM. Given adjacency matrix $W$ (1 if areas share a border, 0 otherwise), ICAR encodes:
 
-$$f(\phi \mid W) \propto \exp\!\left(-\frac{1}{2} \sum_{i \sim j}(\phi_i - \phi_j)^2\right)$$
+$$
+f(\phi \mid W) \propto \exp\!\left(-\frac{1}{2} \sum_{i \sim j}(\phi_i - \phi_j)^2\right)
+$$
 
 Key properties:
 - Penalises differences between **neighbouring** areas (Tobler's first law of geography: nearby things are more similar)
@@ -63,7 +65,9 @@ Key properties:
 
 The modern BYM formulation (Riebler et al., 2016) uses a **scaled, identified mixture**:
 
-$$\text{BYM component} = \beta + \sigma\!\left(\sqrt{1-\rho}\;\theta + \sqrt{\rho/s}\;\phi\right)$$
+$$
+\text{BYM component} = \beta + \sigma\!\left(\sqrt{1-\rho}\;\theta + \sqrt{\rho/s}\;\phi\right)
+$$
 
 | Parameter | Meaning |
 |-----------|---------|

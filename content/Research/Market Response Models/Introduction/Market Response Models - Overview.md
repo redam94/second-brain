@@ -41,12 +41,18 @@ used_by:
 
 The decision (spending) rule is modeled symmetrically:
 
-$$A_t = f(P_{t-1}, Q_{t-1})$$
+$$
+A_t = f(P_{t-1}, Q_{t-1})
+$$
 
 Together these form a **simultaneous system**. The full structural model (Eq 1.1/1.2 in the book) is:
 
-$$Q_t = \gamma_{12} A_t + \beta_{11} Y_t + \beta_{12} N_t + \beta_{13} + u_{1t}$$
-$$A_t = \beta_{21} R_{t-1} + u_{2t}$$
+$$
+Q_t = \gamma_{12} A_t + \beta_{11} Y_t + \beta_{12} N_t + \beta_{13} + u_{1t}
+$$
+$$
+A_t = \beta_{21} R_{t-1} + u_{2t}
+$$
 
 where $Y_t$ = income, $N_t$ = competitor advertising, $R_{t-1}$ = lagged sales revenue.
 

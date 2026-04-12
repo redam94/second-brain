@@ -40,7 +40,9 @@ used_by:
 
 Iteratively sample each parameter from its **full conditional** distribution:
 
-$$\theta_j^{(t+1)} \sim p(\theta_j \mid \theta_{-j}^{(t)}, y)$$
+$$
+\theta_j^{(t+1)} \sim p(\theta_j \mid \theta_{-j}^{(t)}, y)
+$$
 
 - Requires known conditional distributions (often available for conjugate models)
 - Each step updates one parameter block, cycling through all blocks
@@ -50,7 +52,9 @@ $$\theta_j^{(t+1)} \sim p(\theta_j \mid \theta_{-j}^{(t)}, y)$$
 
 More general: propose a move $\theta^* \sim J(\theta^* \mid \theta^{(t)})$ and accept with probability:
 
-$$\min\!\left(1,\; \frac{p(\theta^* \mid y)\, J(\theta^{(t)} \mid \theta^*)}{p(\theta^{(t)} \mid y)\, J(\theta^* \mid \theta^{(t)})}\right)$$
+$$
+\min\!\left(1,\; \frac{p(\theta^* \mid y)\, J(\theta^{(t)} \mid \theta^*)}{p(\theta^{(t)} \mid y)\, J(\theta^* \mid \theta^{(t)})}\right)
+$$
 
 - **Random walk Metropolis**: $J(\theta^* \mid \theta) = N(\theta, c^2 \Sigma)$ — simple but can be slow in high dimensions
 - Optimal acceptance rate: ~0.44 in 1D, ~0.23 in high dimensions

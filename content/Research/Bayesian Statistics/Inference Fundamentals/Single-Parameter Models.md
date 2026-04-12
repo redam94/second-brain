@@ -41,7 +41,9 @@ The canonical example: estimating a probability $\theta$ from binomial data $y \
 
 For data $y_1, \ldots, y_n \sim N(\mu, \sigma^2)$ with $\sigma^2$ known and prior $\mu \sim N(\mu_0, \tau_0^2)$:
 
-$$\mu \mid y \sim N\!\left(\frac{\frac{1}{\tau_0^2}\mu_0 + \frac{n}{\sigma^2}\bar{y}}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}},\; \frac{1}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}\right)$$
+$$
+\mu \mid y \sim N\!\left(\frac{\frac{1}{\tau_0^2}\mu_0 + \frac{n}{\sigma^2}\bar{y}}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}},\; \frac{1}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}\right)
+$$
 
 The posterior precision equals the sum of prior and data precisions.
 

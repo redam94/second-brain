@@ -42,7 +42,9 @@ When the causal model $Y_i = \alpha + \rho s_i + \eta_i$ suffers from $Cov(s_i, 
 2. **Exclusion restriction**: $Cov(\eta_i, z_i) = 0$ — the instrument only affects outcomes *through* treatment
 
 The IV estimand:
-$$\rho = \frac{Cov(Y_i, z_i)}{Cov(s_i, z_i)} = \frac{\text{reduced form}}{\text{first stage}}$$
+$$
+\rho = \frac{Cov(Y_i, z_i)}{Cov(s_i, z_i)} = \frac{\text{reduced form}}{\text{first stage}}
+$$
 
 ## Two-Stage Least Squares
 
@@ -56,7 +58,9 @@ $$\rho = \frac{Cov(Y_i, z_i)}{Cov(s_i, z_i)} = \frac{\text{reduced form}}{\text{
 ## The Wald Estimator
 
 With a binary instrument:
-$$\rho = \frac{E[Y_i|z_i=1] - E[Y_i|z_i=0]}{E[s_i|z_i=1] - E[s_i|z_i=0]}$$
+$$
+\rho = \frac{E[Y_i|z_i=1] - E[Y_i|z_i=0]}{E[s_i|z_i=1] - E[s_i|z_i=0]}
+$$
 
 The reduced-form difference in means, rescaled by the first-stage difference.
 

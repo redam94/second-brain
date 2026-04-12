@@ -40,11 +40,15 @@ aliases:
 
 All non-experimental causal identification confronts the same fundamental obstacle. For each individual $i$, we observe only one potential outcome:
 
-$$Y_i = Y_{0i} + (Y_{1i} - Y_{0i})D_i$$
+$$
+Y_i = Y_{0i} + (Y_{1i} - Y_{0i})D_i
+$$
 
 A naive comparison of treated vs. untreated groups conflates the average treatment effect on the treated (ATT) with **selection bias** — the systematic difference in baseline outcomes between groups:
 
-$$E[Y_i|D_i=1] - E[Y_i|D_i=0] = \underbrace{E[Y_{1i}-Y_{0i}|D_i=1]}_{\text{ATT}} + \underbrace{E[Y_{0i}|D_i=1] - E[Y_{0i}|D_i=0]}_{\text{selection bias}}$$
+$$
+E[Y_i|D_i=1] - E[Y_i|D_i=0] = \underbrace{E[Y_{1i}-Y_{0i}|D_i=1]}_{\text{ATT}} + \underbrace{E[Y_{0i}|D_i=1] - E[Y_{0i}|D_i=0]}_{\text{selection bias}}
+$$
 
 Each strategy below eliminates or neutralizes this selection bias term through a different mechanism ([[The Selection Problem]], MHE Ch. 2).
 
@@ -102,7 +106,9 @@ When unobserved confounders make the CIA implausible, an instrument $z_i$ provid
 2. **Exclusion restriction**: $\text{Cov}(\eta_i, z_i) = 0$ — instrument affects outcome *only* through treatment
 
 **The IV estimand (Wald estimator):**
-$$\hat\rho = \frac{E[Y_i|z_i=1] - E[Y_i|z_i=0]}{E[s_i|z_i=1] - E[s_i|z_i=0]} = \frac{\text{reduced form}}{\text{first stage}}$$
+$$
+\hat\rho = \frac{E[Y_i|z_i=1] - E[Y_i|z_i=0]}{E[s_i|z_i=1] - E[s_i|z_i=0]} = \frac{\text{reduced form}}{\text{first stage}}
+$$
 
 **2SLS** — the standard implementation: regress treatment on the instrument to get $\hat{s}_i$, then regress outcome on $\hat{s}_i$.
 
@@ -118,10 +124,14 @@ $$\hat\rho = \frac{E[Y_i|z_i=1] - E[Y_i|z_i=0]}{E[s_i|z_i=1] - E[s_i|z_i=0]} = \
 DiD uses panel data (units observed before and after treatment) to difference out time-invariant unobserved confounders ([[Differences-in-Differences]], MHE Ch. 5).
 
 **The DiD estimator:**
-$$\hat\beta_{DD} = (\bar Y_{\text{treat,after}} - \bar Y_{\text{treat,before}}) - (\bar Y_{\text{control,after}} - \bar Y_{\text{control,before}})$$
+$$
+\hat\beta_{DD} = (\bar Y_{\text{treat,after}} - \bar Y_{\text{treat,before}}) - (\bar Y_{\text{control,after}} - \bar Y_{\text{control,before}})
+$$
 
 **Underlying regression:**
-$$Y_{ist} = \gamma_s + \lambda_t + \beta D_{st} + \varepsilon_{ist}$$
+$$
+Y_{ist} = \gamma_s + \lambda_t + \beta D_{st} + \varepsilon_{ist}
+$$
 
 where $\gamma_s$ are group fixed effects and $\lambda_t$ are time effects.
 
@@ -139,7 +149,9 @@ A **Bayesian DiD** formulation ([[Bayesian Difference in Differences]]) encodes 
 When treatment is assigned by a rule based on a running variable crossing a threshold, comparing units just above and below the cutoff provides local causal estimates ([[Regression Discontinuity Designs]], MHE Ch. 6).
 
 **Sharp RD** — deterministic jump at cutoff $x_0$:
-$$\lim_{\delta\to0} E[Y_i | x_0 < x_i < x_0+\delta] - E[Y_i | x_0-\delta < x_i < x_0] = E[Y_{1i}-Y_{0i}|x_i=x_0]$$
+$$
+\lim_{\delta\to0} E[Y_i | x_0 < x_i < x_0+\delta] - E[Y_i | x_0-\delta < x_i < x_0] = E[Y_{1i}-Y_{0i}|x_i=x_0]
+$$
 
 **Fuzzy RD** — probabilistic jump at cutoff. Estimated as **IV** with $\mathbf{1}(x_i \geq x_0)$ as the instrument for $D_i$, yielding LATE at the cutoff ([[Local Average Treatment Effects]]).
 
@@ -160,7 +172,9 @@ For aggregate units (states, countries) where DiD has too few observations, synt
 > Weights $w_j \geq 0$, $\sum w_j = 1$ are chosen to minimize pre-treatment divergence between the treated unit and its synthetic version.
 
 Treatment effect:
-$$\hat\tau_{1t} = Y_{1t}^I - \hat Y_{1t}^N$$
+$$
+\hat\tau_{1t} = Y_{1t}^I - \hat Y_{1t}^N
+$$
 
 **Inference** uses permutation (placebo) tests — apply the same procedure to each donor unit and compare the resulting "effects" to the actual treated unit's effect ([[Synthetic Control#^def-constrained-synth]]).
 

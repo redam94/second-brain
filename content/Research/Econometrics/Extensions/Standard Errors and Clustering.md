@@ -45,7 +45,9 @@ When errors are correlated within groups (states, schools, firms), ignoring clus
 ### The Moulton Factor
 
 For a group-level regressor with $n$ observations per group:
-$$\text{Moulton factor} \approx \sqrt{1 + (n-1)\rho}$$
+$$
+\text{Moulton factor} \approx \sqrt{1 + (n-1)\rho}
+$$
 
 where $\rho$ is the intraclass correlation. With $n=100$ and $\rho=0.1$, standard errors are understated by a factor of ~3.3.
 

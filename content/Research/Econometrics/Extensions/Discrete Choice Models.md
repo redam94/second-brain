@@ -31,11 +31,15 @@ used_by:
 
 Each alternative $j \in \text{Alt}$ is assigned a latent utility $U_j$. A decision-maker chooses the alternative with the highest utility. Utility is decomposed into a deterministic component (a linear function of observable attributes) plus an unobserved stochastic component:
 
-$$U_j = \mathbf{x}_j^\top \boldsymbol{\beta} + \varepsilon_j$$
+$$
+U_j = \mathbf{x}_j^\top \boldsymbol{\beta} + \varepsilon_j
+$$
 
 Assuming $\varepsilon_j \sim \text{Gumbel}$, the probability of choosing alternative $j$ is given by the **softmax** (multinomial logit) transform:
 
-$$P(\text{choose } j) = \text{softmax}(u)_j = \frac{\exp(u_j)}{\sum_{q=1}^{J} \exp(u_q)}$$
+$$
+P(\text{choose } j) = \text{softmax}(u)_j = \frac{\exp(u_j)}{\sum_{q=1}^{J} \exp(u_q)}
+$$
 
 This arises because differences of Gumbel random variables follow a logistic distribution.
 
@@ -48,7 +52,9 @@ This arises because differences of Gumbel random variables follow a logistic dis
 
 Utility driven entirely by alternative-specific attributes (e.g. installation cost, operating cost) with globally shared coefficients:
 
-$$u_j = \beta_{ic} \cdot \text{ic}_j + \beta_{oc} \cdot \text{oc}_j$$
+$$
+u_j = \beta_{ic} \cdot \text{ic}_j + \beta_{oc} \cdot \text{oc}_j
+$$
 
 ```python
 with pm.Model(coords=coords) as model_1:
@@ -65,7 +71,9 @@ with pm.Model(coords=coords) as model_1:
 
 Adding an intercept per alternative (except the pivot) absorbs systematic preference heterogeneity:
 
-$$u_j = \alpha_j + \beta_{ic} \cdot \text{ic}_j + \beta_{oc} \cdot \text{oc}_j \quad (u_{\text{hp}} = \beta_{ic} \cdot \text{ic}_{\text{hp}} + \beta_{oc} \cdot \text{oc}_{\text{hp}})$$
+$$
+u_j = \alpha_j + \beta_{ic} \cdot \text{ic}_j + \beta_{oc} \cdot \text{oc}_j \quad (u_{\text{hp}} = \beta_{ic} \cdot \text{ic}_{\text{hp}} + \beta_{oc} \cdot \text{oc}_{\text{hp}})
+$$
 
 This is the standard **multinomial logit** and substantially improves PPC performance.
 
@@ -82,7 +90,9 @@ alphas = pm.MvNormal("alpha", mu=0, chol=chol, dims="alts_probs")
 
 The ratio of coefficients in the utility function is economically interpretable even though utility itself is latent. For a utility of the form $U = \beta_{oc} \cdot oc + \beta_{ic} \cdot ic$:
 
-$$-\frac{dic}{doc}\bigg|_{dU=0} = \frac{\beta_{oc}}{\beta_{ic}}$$
+$$
+-\frac{dic}{doc}\bigg|_{dU=0} = \frac{\beta_{oc}}{\beta_{ic}}
+$$
 
 This gives the rate at which one-time installation costs substitute for recurring operating costs at constant utility. In Bayesian analysis, we obtain a full posterior over this quantity.
 

@@ -39,11 +39,15 @@ used_by:
 ### Importance Sampling
 Draw from an approximating distribution $g(\theta)$ and reweight:
 
-$$\text{E}[h(\theta) \mid y] \approx \frac{\sum_{s=1}^S h(\theta^s) w(\theta^s)}{\sum_{s=1}^S w(\theta^s)}, \quad w(\theta^s) = \frac{q(\theta^s \mid y)}{g(\theta^s)}$$
+$$
+\text{E}[h(\theta) \mid y] \approx \frac{\sum_{s=1}^S h(\theta^s) w(\theta^s)}{\sum_{s=1}^S w(\theta^s)}, \quad w(\theta^s) = \frac{q(\theta^s \mid y)}{g(\theta^s)}
+$$
 
 **Effective sample size** measures the quality of the approximation:
 
-$$S_{\text{eff}} = \frac{1}{\sum_{s=1}^S (\tilde{w}(\theta^s))^2}$$
+$$
+S_{\text{eff}} = \frac{1}{\sum_{s=1}^S (\tilde{w}(\theta^s))^2}
+$$
 
 > [!warning]
 > Importance sampling fails when $g$ has thinner tails than the target — a few extreme weights dominate. Pareto-smoothed IS (PSIS) addresses this.

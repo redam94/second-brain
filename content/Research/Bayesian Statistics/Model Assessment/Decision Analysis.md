@@ -33,7 +33,9 @@ used_by:
 
 Given a decision $d$, unknown parameters $\theta$, and a loss function $L(d, \theta)$:
 
-$$d^* = \arg\min_d \; \text{E}[L(d, \theta) \mid y] = \arg\min_d \int L(d, \theta)\, p(\theta \mid y)\, d\theta$$
+$$
+d^* = \arg\min_d \; \text{E}[L(d, \theta) \mid y] = \arg\min_d \int L(d, \theta)\, p(\theta \mid y)\, d\theta
+$$
 
 Common loss functions yield familiar estimators:
 - **Squared error loss** → posterior mean

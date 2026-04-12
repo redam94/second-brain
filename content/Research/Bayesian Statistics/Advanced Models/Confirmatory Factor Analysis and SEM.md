@@ -43,7 +43,9 @@ Psychological constructs (intelligence, anxiety, political attitudes) are not di
 ## CFA: The Measurement Model
 
 For a single factor:
-$$y_i = \mu_i + \lambda_i \eta + \varepsilon_i, \quad \varepsilon_i \sim N(0, \psi_i^2)$$
+$$
+y_i = \mu_i + \lambda_i \eta + \varepsilon_i, \quad \varepsilon_i \sim N(0, \psi_i^2)
+$$
 
 - $\mu_i$: item intercept (mean when $\eta = 0$)
 - $\lambda_i$: **factor loading** (sensitivity of item $i$ to the latent factor)
@@ -75,7 +77,9 @@ with pm.Model() as cfa_model:
 
 SEM extends CFA by allowing **regression among latent variables**:
 
-$$\eta_2 = \gamma \eta_1 + \zeta, \quad \zeta \sim N(0, \sigma_\zeta^2)$$
+$$
+\eta_2 = \gamma \eta_1 + \zeta, \quad \zeta \sim N(0, \sigma_\zeta^2)
+$$
 
 This enables testing hypotheses about causal relationships between latent constructs (e.g., "latent anxiety predicts latent avoidance"), not just their measurement.
 

@@ -36,7 +36,9 @@ aliases:
 **The problem**: We want to use both Bayesian inference (posterior distributions, no null hypotheses) and inverse probability weighting (to close DAG backdoor paths). These seem incompatible.
 
 **Why IPW doesn't fit Bayes**: The ATE estimand is:
-$$\Delta_\text{ATE} = E\left[E(Y_i \mid T_i = 1, X_i) - E(Y_i \mid T_i = 0, X_i)\right]$$
+$$
+\Delta_\text{ATE} = E\left[E(Y_i \mid T_i = 1, X_i) - E(Y_i \mid T_i = 0, X_i)\right]
+$$
 
 To estimate this Bayesianly, we compute $P[\Delta \mid (T, X, Y)] \propto P[(T, X, Y) \mid \Delta] \times P[\Delta]$. IPTWs have no place in this equation — weights are not part of the data-generating likelihood.
 

@@ -38,7 +38,9 @@ used_by:
 
 The probability of surviving (no event) past time $t$:
 
-$$S(t) = P(T > t)$$
+$$
+S(t) = P(T > t)
+$$
 
 Displayed as a step-function that declines at each event time.
 
@@ -46,7 +48,9 @@ Displayed as a step-function that declines at each event time.
 
 The instantaneous rate of event occurrence at time $t$, given survival to $t$:
 
-$$h(t) = \lim_{\Delta t \to 0} \frac{P(t \leq T < t + \Delta t \mid T \geq t)}{\Delta t}$$
+$$
+h(t) = \lim_{\Delta t \to 0} \frac{P(t \leq T < t + \Delta t \mid T \geq t)}{\Delta t}
+$$
 
 The **hazard ratio (HR)** compares hazard rates between groups — HR > 1 means higher event rate.
 
@@ -67,7 +71,9 @@ The **hazard ratio (HR)** compares hazard rates between groups — HR > 1 means 
 
 Nonparametric estimate of $S(t)$:
 
-$$\hat{S}(t) = \prod_{t_i \leq t} \left(1 - \frac{d_i}{n_i}\right)$$
+$$
+\hat{S}(t) = \prod_{t_i \leq t} \left(1 - \frac{d_i}{n_i}\right)
+$$
 
 where $d_i$ = events at time $t_i$ and $n_i$ = subjects at risk just before $t_i$.
 
@@ -88,7 +94,9 @@ Tests $H_0$: no difference in survival between groups.
 
 The workhorse for multivariable survival analysis:
 
-$$h(t \mid X) = h_0(t) \exp(\beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_p X_p)$$
+$$
+h(t \mid X) = h_0(t) \exp(\beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_p X_p)
+$$
 
 - $h_0(t)$: baseline hazard (left unspecified — semiparametric)
 - $\exp(\beta_j)$: hazard ratio for covariate $X_j$

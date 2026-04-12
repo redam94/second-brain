@@ -37,7 +37,9 @@ In Bayesian causal inference, the outcome model $\mu_z(x) = \mathbb{E}[Y_i \mid 
 ## Linear Outcome Model
 
 The simplest outcome model: linear regression with a treatment-covariate interaction term:
-$$\mu(z, x) = x + z + xz$$
+$$
+\mu(z, x) = x + z + xz
+$$
 where the $xz$ interaction captures treatment effect heterogeneity. Equivalent to fitting a linear regression in each group.
 
 **Limitations**: linear models are easy to implement but often too restrictive. They do not adapt to the true data-generating mechanism in regions of poor covariate overlap.
@@ -77,7 +79,9 @@ The recent focus on heterogeneous treatment effects has driven adoption of flexi
 A Gaussian Process prior on $\mu_z(\cdot)$ provides:
 - Potential **bias reduction** by widening credible intervals as overlap decreases (adaptively)
 - Flexible covariance function: e.g., Gaussian kernel with signal-to-noise ratio $\rho$ and inverse-bandwidth $\lambda$
-  $$\Sigma_{ij} = \delta^2 \rho^2 \exp\{-\lambda^2 \|x_i - x_j\|^2\}$$
+  $$
+  \Sigma_{ij} = \delta^2 \rho^2 \exp\{-\lambda^2 \|x_i - x_j\|^2\}
+  $$
 
 However, the GP prior's uncertainty does not automatically adapt to overlap — see Example 4.1.
 

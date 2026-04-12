@@ -55,7 +55,9 @@ Product adoption and diffusion is a classic application of ABM. The fundamental 
 
 The adoption rate follows the master equation:
 
-$$\partial_t \rho = V(\rho)(1 - \rho)$$
+$$
+\partial_t \rho = V(\rho)(1 - \rho)
+$$
 
 This produces the characteristic **S-curve**:
 1. **Slow start**: Few adopters -> low value -> low adoption rate
@@ -67,7 +69,9 @@ This produces the characteristic **S-curve**:
 
 Each individual agent has a transition probability:
 
-$$P(\text{adopt}_k) = V(\hat{\rho}_k) \text{ per time unit}$$
+$$
+P(\text{adopt}_k) = V(\hat{\rho}_k) \text{ per time unit}
+$$
 
 where $\hat{\rho}_k = n_k/n$ is person $k$'s local estimate of the adoption fraction based on their $n$ neighbors.
 

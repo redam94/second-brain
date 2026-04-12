@@ -42,7 +42,9 @@ A major debate in Bayesian causal inference concerns the role of the propensity 
 The propensity score was first proposed by Zigler (2016) as the *only* covariate in a Bayesian outcome model: $\mu(Y \mid e(X)) = \Pr(Y(z) \mid e(X))$.
 
 The more common approach: include $\hat{e}(X)$ as an **additional covariate** in the outcome model alongside $X$:
-$$\mu(z, x, e(x))$$
+$$
+\mu(z, x, e(x))
+$$
 This effectively conducts outcome regression on propensity score strata.
 
 **Bayesian double robustness** (Wang et al. 2012; Saarela et al. 2016):
@@ -72,7 +74,9 @@ Rather than modifying the likelihood, one imposes **dependent priors** that link
 **Example 2** (Zigler & Dominici 2014):
 - $Y_i(1) \mid X_i \sim \mathcal{N}(\mu_1, \sigma_1^2(e(X_i)))$ and $Y_i(0) \mid X_i \sim \mathcal{N}(\mu_0, \sigma_0^2(1-e(X_i)))$, with flat priors on $\mu_1$ and $\mu_0$
 - The **posterior mean of the PATE** $\approx$ the Hájek IPW estimator:
-$$\hat{\tau}^{\text{Hájek}} = \frac{\sum_i Z_i Y_i / e(X_i)}{\sum_i Z_i / e(X_i)} - \frac{\sum_i (1-Z_i)Y_i / (1-e(X_i))}{\sum_i (1-Z_i) / (1-e(X_i))}$$
+$$
+\hat{\tau}^{\text{Hájek}} = \frac{\sum_i Z_i Y_i / e(X_i)}{\sum_i Z_i / e(X_i)} - \frac{\sum_i (1-Z_i)Y_i / (1-e(X_i))}{\sum_i (1-Z_i) / (1-e(X_i))}
+$$
 when propensity scores are known. This provides a Bayesian justification for the Hájek IPW estimator.
 
 Dependent priors achieve desirable finite-sample results and are more reasonable in real-world studies. However, specification is case-dependent and there is no general solution.

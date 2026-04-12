@@ -63,7 +63,9 @@ In QED, higher-order perturbative calculations produce infinite quantities. For 
 - **Vertex correction**: an electron interacting with an external field can emit and reabsorb virtual photons; infinite
 
 These arise from loop integrals that diverge at high momenta (ultraviolet divergences):
-$$\int_0^\Lambda \frac{d^4k}{k^2} \sim \Lambda^2 \to \infty \text{ as } \Lambda \to \infty$$
+$$
+\int_0^\Lambda \frac{d^4k}{k^2} \sim \Lambda^2 \to \infty \text{ as } \Lambda \to \infty
+$$
 
 ## Renormalization
 

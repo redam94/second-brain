@@ -45,7 +45,9 @@ used_by:
 
 Treats sampling as simulating Hamiltonian dynamics with position $\theta$ and momentum $\phi$:
 
-$$H(\theta, \phi) = -\log p(\theta \mid y) + \frac{1}{2}\phi^T M^{-1} \phi$$
+$$
+H(\theta, \phi) = -\log p(\theta \mid y) + \frac{1}{2}\phi^T M^{-1} \phi
+$$
 
 Key properties:
 - Uses **gradient** $\nabla \log p(\theta \mid y)$ to guide proposals — far more efficient than random walks

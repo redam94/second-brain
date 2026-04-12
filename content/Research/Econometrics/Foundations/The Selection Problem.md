@@ -38,11 +38,15 @@ For individual $i$ with treatment $D_i \in \{0, 1\}$:
 - Causal effect: $Y_{1i} - Y_{0i}$ (never directly observed for any individual)
 
 The observed outcome:
-$$Y_i = Y_{0i} + (Y_{1i} - Y_{0i})D_i$$
+$$
+Y_i = Y_{0i} + (Y_{1i} - Y_{0i})D_i
+$$
 
 ## The Decomposition
 
-$$E[Y_i|D_i=1] - E[Y_i|D_i=0] = \underbrace{E[Y_{1i}-Y_{0i}|D_i=1]}_{\text{ATT}} + \underbrace{E[Y_{0i}|D_i=1] - E[Y_{0i}|D_i=0]}_{\text{selection bias}}$$
+$$
+E[Y_i|D_i=1] - E[Y_i|D_i=0] = \underbrace{E[Y_{1i}-Y_{0i}|D_i=1]}_{\text{ATT}} + \underbrace{E[Y_{0i}|D_i=1] - E[Y_{0i}|D_i=0]}_{\text{selection bias}}
+$$
 
 > [!warning] Selection Bias Can Be Large
 > In the hospital example, selection bias is *negative* (sick people seek hospitals) and large enough to completely mask a positive treatment effect — making hospitals appear harmful.

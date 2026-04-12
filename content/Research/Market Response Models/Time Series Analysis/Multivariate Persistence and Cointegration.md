@@ -61,7 +61,9 @@ used_by:
 
 ### Bivariate Sales-Advertising VAR
 
-$$\begin{bmatrix} Q_t \\ ADV_t \end{bmatrix} = \begin{bmatrix} \pi^1_{11} & \pi^1_{12} \\ \pi^1_{21} & \pi^1_{22} \end{bmatrix} \begin{bmatrix} Q_{t-1} \\ ADV_{t-1} \end{bmatrix} + \cdots + \begin{bmatrix} \pi^I_{11} & \pi^I_{12} \\ \pi^I_{21} & \pi^I_{22} \end{bmatrix} \begin{bmatrix} Q_{t-I} \\ ADV_{t-I} \end{bmatrix} + \begin{bmatrix} w_{Q,t} \\ w_{ADV,t} \end{bmatrix} \tag{Eq 7.23}$$
+$$
+\begin{bmatrix} Q_t \\ ADV_t \end{bmatrix} = \begin{bmatrix} \pi^1_{11} & \pi^1_{12} \\ \pi^1_{21} & \pi^1_{22} \end{bmatrix} \begin{bmatrix} Q_{t-1} \\ ADV_{t-1} \end{bmatrix} + \cdots + \begin{bmatrix} \pi^I_{11} & \pi^I_{12} \\ \pi^I_{21} & \pi^I_{22} \end{bmatrix} \begin{bmatrix} Q_{t-I} \\ ADV_{t-I} \end{bmatrix} + \begin{bmatrix} w_{Q,t} \\ w_{ADV,t} \end{bmatrix} \tag{Eq 7.23}
+$$
 
 Order $I$ determined by AIC/BIC. Off-diagonal elements $\pi_{12}^i$ (advertising's effect on sales at lag $i$) and $\pi_{21}^i$ (sales feedback to advertising) capture the full dynamic structure.
 

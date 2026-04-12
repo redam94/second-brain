@@ -48,7 +48,9 @@ The estimation of unknown parameters in econometric models generally involves op
 
 The MSM replaces analytical moment conditions with simulated counterparts. The estimator minimizes the distance between sample moments and their simulated analogues:
 
-$$\hat{\theta}_{MSM}^R = \arg\min_\theta \left[\frac{1}{T}\sum_{t=1}^T f_R(y_t, z_t; \theta)\right]' A \left[\frac{1}{T}\sum_{t=1}^T f_R(y_t, z_t; \theta)\right]$$
+$$
+\hat{\theta}_{MSM}^R = \arg\min_\theta \left[\frac{1}{T}\sum_{t=1}^T f_R(y_t, z_t; \theta)\right]' A \left[\frac{1}{T}\sum_{t=1}^T f_R(y_t, z_t; \theta)\right]
+$$
 
 where $f_R$ incorporates simulated estimates of the theoretical moments. Introduced by McFadden (1989) and Pakes and Pollard (1989).
 
@@ -96,7 +98,9 @@ See [[Efficient Method of Moments]] for full treatment.
 
 All three estimators share a common asymptotic variance structure:
 
-$$\text{avar}(\hat{\theta}) = \left(1 + \frac{1}{R}\right) V_{\text{GMM}}$$
+$$
+\text{avar}(\hat{\theta}) = \left(1 + \frac{1}{R}\right) V_{\text{GMM}}
+$$
 
 where $V_{\text{GMM}}$ is the asymptotic variance of the corresponding (infeasible) GMM estimator and $R$ is the number of simulation replications. The factor $(1 + 1/R)$ reflects the additional Monte Carlo sampling variance. As $R \to \infty$, the simulation-based estimator attains the same efficiency as the analytical counterpart.
 
@@ -104,13 +108,17 @@ where $V_{\text{GMM}}$ is the asymptotic variance of the corresponding (infeasib
 
 ### Discrete-Time Stochastic Volatility (SV) Model
 
-$$y_t = \exp(w_t^*/2) u_t, \qquad w_t^* = \gamma + \delta w_{t-1}^* + \nu \eta_t$$
+$$
+y_t = \exp(w_t^*/2) u_t, \qquad w_t^* = \gamma + \delta w_{t-1}^* + \nu \eta_t
+$$
 
 The latent log-volatility $w_t^*$ makes the marginal likelihood a $T$-dimensional integral — analytically and numerically intractable. However, simulating paths from the model is straightforward via path simulations.
 
 ### Continuous-Time Diffusion Models
 
-$$dv_t = a(v_t, \theta) dt + b(v_t, \theta) dW_t$$
+$$
+dv_t = a(v_t, \theta) dt + b(v_t, \theta) dW_t
+$$
 
 Observed at discrete intervals $\Delta$, the transition density generally has no closed form. The Cox-Ingersoll-Ross model $dv_t = (\alpha_0 + \alpha_1 v_t)dt + \beta_0 \sqrt{v_t} dW_t$ is a special case where $h(y_t | y_{t-1}; \theta)$ is non-central $\chi^2$, but more general specifications require simulation.
 

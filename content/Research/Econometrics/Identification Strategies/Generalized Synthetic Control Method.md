@@ -206,7 +206,9 @@ Unlike the permutation inference of canonical SC (see [[Synthetic Control Infere
 ## Monte Carlo Performance
 
 Simulation DGP (Xu 2017, Eq. 3):
-$$Y_{it} = \delta_{it} D_{it} + x_{it,1} \cdot 1 + x_{it,2} \cdot 3 + \lambda_i' f_t + \alpha_i + \xi_t + 5 + \varepsilon_{it}$$
+$$
+Y_{it} = \delta_{it} D_{it} + x_{it,1} \cdot 1 + x_{it,2} \cdot 3 + \lambda_i' f_t + \alpha_i + \xi_t + 5 + \varepsilon_{it}
+$$
 
 with $r = 2$ factors; treated factor loadings shifted from control range by parameter $w \in [0,1]$ (at $w = 0$: common support; at $w \to 1$: no overlap).
 

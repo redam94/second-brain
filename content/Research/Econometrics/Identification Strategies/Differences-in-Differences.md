@@ -40,7 +40,9 @@ used_by:
 
 For panel data with individual $i$ observed at time $t$:
 
-$$Y_{it} = \alpha_i + \lambda_t + \rho D_{it} + X_{it}\delta + \varepsilon_{it}$$
+$$
+Y_{it} = \alpha_i + \lambda_t + \rho D_{it} + X_{it}\delta + \varepsilon_{it}
+$$
 
 - $\alpha_i$: individual fixed effect (absorbs all time-invariant unobservables)
 - $\lambda_t$: year effect (common time trend)
@@ -53,10 +55,14 @@ $$Y_{it} = \alpha_i + \lambda_t + \rho D_{it} + X_{it}\delta + \varepsilon_{it}$
 
 When treatment varies at a group level (e.g., state policy changes):
 
-$$Y_{ist} = \gamma_s + \lambda_t + \beta D_{st} + \varepsilon_{ist}$$
+$$
+Y_{ist} = \gamma_s + \lambda_t + \beta D_{st} + \varepsilon_{ist}
+$$
 
 The DD estimator:
-$$\hat{\beta}_{DD} = (\bar{Y}_{treat,after} - \bar{Y}_{treat,before}) - (\bar{Y}_{control,after} - \bar{Y}_{control,before})$$
+$$
+\hat{\beta}_{DD} = (\bar{Y}_{treat,after} - \bar{Y}_{treat,before}) - (\bar{Y}_{control,after} - \bar{Y}_{control,before})
+$$
 
 ### Key Example: Minimum Wage (Card & Krueger, 1994)
 - NJ raised minimum wage from $4.25 to $5.05; PA did not
@@ -73,7 +79,9 @@ The identifying assumption: $E(Y_{0ist}|s,t) = \gamma_s + \lambda_t$
 
 ## Regression DD
 
-$$Y_{ist} = \alpha + \gamma \cdot NJ_s + \lambda \cdot d_t + \beta(NJ_s \cdot d_t) + \varepsilon_{ist}$$
+$$
+Y_{ist} = \alpha + \gamma \cdot NJ_s + \lambda \cdot d_t + \beta(NJ_s \cdot d_t) + \varepsilon_{ist}
+$$
 
 Advantages:
 - Easy to add covariates, additional states, and time periods

@@ -51,7 +51,9 @@ The most fundamental pitfall. The vault covers this from two complementary persp
 
 **Selection bias** ([[The Selection Problem]], [[raw/Mostly Harmless Econometrics.pdf|MHE Ch. 2]]): Individuals who receive treatment differ systematically from those who don't. The observed difference decomposes as:
 
-$$E[Y_i|D_i=1] - E[Y_i|D_i=0] = \underbrace{E[Y_{1i}-Y_{0i}|D_i=1]}_{\text{ATT}} + \underbrace{E[Y_{0i}|D_i=1] - E[Y_{0i}|D_i=0]}_{\text{selection bias}}$$
+$$
+E[Y_i|D_i=1] - E[Y_i|D_i=0] = \underbrace{E[Y_{1i}-Y_{0i}|D_i=1]}_{\text{ATT}} + \underbrace{E[Y_{0i}|D_i=1] - E[Y_{0i}|D_i=0]}_{\text{selection bias}}
+$$
 
 Selection bias can be so large it reverses the sign of the true effect -- hospitals appear harmful because sick people seek them out.
 
@@ -132,7 +134,9 @@ With just 5 binary analytic choices, there are $2^5 = 32$ possible analysis path
 
 **Posterior predictive checking:** simulate replicated data $y^{\text{rep}}$ from the fitted model and compare to observed data:
 
-$$p(y^{\text{rep}} \mid y) = \int p(y^{\text{rep}} \mid \theta)\, p(\theta \mid y)\, d\theta$$
+$$
+p(y^{\text{rep}} \mid y) = \int p(y^{\text{rep}} \mid \theta)\, p(\theta \mid y)\, d\theta
+$$
 
 If $y^{\text{rep}}$ doesn't "look like" the observed data, the model is missing something.
 

@@ -56,7 +56,9 @@ used_by:
 
 ## Two-Input TF Model
 
-$$y_t = \alpha_0 + \frac{\omega_1(L)}{\delta_1(L)} L^{b_1} x_{1t} + \frac{\omega_2(L)}{\delta_2(L)} L^{b_2} x_{2t} + \frac{\Theta(L)}{\Phi(L)} w_t \tag{Eq 7.14}$$
+$$
+y_t = \alpha_0 + \frac{\omega_1(L)}{\delta_1(L)} L^{b_1} x_{1t} + \frac{\omega_2(L)}{\delta_2(L)} L^{b_2} x_{2t} + \frac{\Theta(L)}{\Phi(L)} w_t \tag{Eq 7.14}
+$$
 
 Impulse response form: $y_t = \alpha_0 + V_1(L) x_{1t} + V_2(L) x_{2t} + n_t$ (Eq 7.15)
 
@@ -102,7 +104,9 @@ Figure 7-1 patterns (from the book):
 The prewhitening approach becomes cumbersome with many inputs (each requires separate prewhitening). The **Liu-Hanssens (1982) direct-lag regression** approach:
 
 1. Estimate a long-lag OLS regression (Eq 7.16):
-$$y_t = \alpha_0 + \sum_{k=0}^{K_1} v_{1k} x_{1,t-k} + \sum_{k=0}^{K_2} v_{2k} x_{2,t-k} + u_t$$
+$$
+y_t = \alpha_0 + \sum_{k=0}^{K_1} v_{1k} x_{1,t-k} + \sum_{k=0}^{K_2} v_{2k} x_{2,t-k} + u_t
+$$
 
 2. Examine pattern of OLS coefficients $\hat v_{jk}$ to identify cutoffs vs. dying-out patterns
 

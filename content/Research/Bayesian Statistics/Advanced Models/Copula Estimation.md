@@ -42,7 +42,9 @@ When modelling $P(a, b)$ for real data, the joint distribution often has:
 
 Any joint distribution $P(a, b)$ can be decomposed as:
 
-$$P(a, b) = C(F_a(a),\ F_b(b))$$
+$$
+P(a, b) = C(F_a(a),\ F_b(b))
+$$
 
 where $C$ is the **copula** (a joint distribution on $[0,1]^2$) and $F_a, F_b$ are the marginal CDFs. The **Gaussian copula** uses a bivariate normal as $C$.
 

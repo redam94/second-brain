@@ -47,8 +47,12 @@ Why use exponential family distributions? Because they are the **maximum entropy
 > Exponential family distributions arise naturally because there are more ways to produce them than any other distribution with the same constraints. Using them is not an assumption about mechanism — it's the least informative choice.
 
 The GLM framework:
-$$y_i \sim \text{Distribution}(\theta_i)$$
-$$f(\theta_i) = \alpha + \beta x_i$$
+$$
+y_i \sim \text{Distribution}(\theta_i)
+$$
+$$
+f(\theta_i) = \alpha + \beta x_i
+$$
 
 where $f$ is the **link function** that maps the linear model to the natural parameter.
 
@@ -73,8 +77,12 @@ where $f$ is the **link function** that maps the linear model to the natural par
 ### Zero-Inflated Poisson
 A mixture: with probability $p$ the outcome is always 0 (never even attempts); with probability $1-p$ it follows a Poisson process.
 
-$$\Pr(y=0) = p + (1-p) e^{-\lambda}$$
-$$\Pr(y=k, k>0) = (1-p) \frac{\lambda^k e^{-\lambda}}{k!}$$
+$$
+\Pr(y=0) = p + (1-p) e^{-\lambda}
+$$
+$$
+\Pr(y=k, k>0) = (1-p) \frac{\lambda^k e^{-\lambda}}{k!}
+$$
 
 ### Over-Dispersed Models
 When variance exceeds what the simple model predicts:

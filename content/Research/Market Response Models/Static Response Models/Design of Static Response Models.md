@@ -67,11 +67,15 @@ The market-share approach ensures logical consistency (shares sum to 1) — see 
 
 Static models can capture **moderation** via interaction terms:
 
-$$Q = \beta_0 + \beta_1 A + \beta_2 P + \beta_3 (A \times P) + \epsilon$$
+$$
+Q = \beta_0 + \beta_1 A + \beta_2 P + \beta_3 (A \times P) + \epsilon
+$$
 
 where $\beta_3$ captures how advertising modifies price sensitivity (or vice versa). This is equivalent to letting $\partial Q / \partial P$ be a function of $A$:
 
-$$\frac{\partial Q}{\partial P} = \beta_2 + \beta_3 A$$
+$$
+\frac{\partial Q}{\partial P} = \beta_2 + \beta_3 A
+$$
 
 Related to [[Bayesian moderation analysis]] in the Bayesian statistics module.
 
@@ -83,7 +87,9 @@ Feature advertising and display are typically binary:
 
 In multiplicative models, dummies enter as:
 
-$$Q = \beta_0 \cdot e^{\gamma_F F + \gamma_D D} \cdot (\text{other terms})$$
+$$
+Q = \beta_0 \cdot e^{\gamma_F F + \gamma_D D} \cdot (\text{other terms})
+$$
 
 so $e^{\gamma_F}$ is the **feature multiplier** (ratio of sales with feature to sales without feature).
 

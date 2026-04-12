@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
 """
-Convert single-line blockquote display math to multi-line format.
+Convert single-line display math to multi-line format.
 
-remark-math treats  > $$equation$$  on a single line as an inline token,
+remark-math can treat a single-line  $$equation$$  as an inline token,
 causing KaTeX to render it in inline mode where \\tag{} is not allowed.
+This affects both plain paragraphs and blockquote lines.
 
 Transforms:
+    $$equation \tag{label}$$
+to:
+    $$
+    equation \tag{label}
+    $$
+
+And similarly for blockquote-prefixed lines:
     > $$equation \tag{label}$$
 to:
     > $$
@@ -23,20 +31,29 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 # Matches:  > [optional spaces] $$ <content> $$ [optional trailing space]
-# on a single line. The content group is non-greedy and single-line only
-# (no re.DOTALL), so multi-line equations are never matched.
-_SINGLE_LINE = re.compile(r'^(>\s*)\$\$(.+?)\$\$[ \t]*$', re.MULTILINE)
+# on a single blockquote line. Non-greedy, no re.DOTALL.
+_BLOCKQUOTE_SINGLE_LINE = re.compile(r'^(>\s*)\$\$(.+?)\$\$[ \t]*$', re.MULTILINE)
+
+# Matches a plain (non-blockquote) single-line display math block.
+# The line must start with $$ (after optional leading whitespace) and end with $$.
+_PLAIN_SINGLE_LINE = re.compile(r'^([ \t]*)\$\$([^>].+?)\$\$[ \t]*$', re.MULTILINE)
 
 
 def fix_file(path: Path) -> bool:
     text = path.read_text(encoding="utf-8")
 
-    def expand(m: re.Match) -> str:
+    def expand_blockquote(m: re.Match) -> str:
         prefix = m.group(1)          # e.g. "> " or ">  "
         content = m.group(2).strip()
         return f"{prefix}$$\n{prefix}{content}\n{prefix}$$"
 
-    new_text = _SINGLE_LINE.sub(expand, text)
+    def expand_plain(m: re.Match) -> str:
+        indent = m.group(1)          # leading whitespace, usually empty
+        content = m.group(2).strip()
+        return f"{indent}$$\n{indent}{content}\n{indent}$$"
+
+    new_text = _BLOCKQUOTE_SINGLE_LINE.sub(expand_blockquote, text)
+    new_text = _PLAIN_SINGLE_LINE.sub(expand_plain, new_text)
     if new_text == text:
         return False
     path.write_text(new_text, encoding="utf-8")

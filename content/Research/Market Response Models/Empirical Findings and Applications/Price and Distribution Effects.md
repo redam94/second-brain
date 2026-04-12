@@ -122,7 +122,9 @@ Distribution is consistently found to be a **strong driver of long-run market pe
 
 The **Latent Symmetric Elasticity Structure (LSES)** model decomposes cross-price elasticity as:
 
-$$\eta_{ij} = \text{clout}_j \times \text{substitution index}_{ij}$$
+$$
+\eta_{ij} = \text{clout}_j \times \text{substitution index}_{ij}
+$$
 
 Powdered detergents example (Table 8-7, Russell & Kamakura 1994):
 - Tide: highest momentum (0.294), highest vulnerability

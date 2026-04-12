@@ -124,9 +124,13 @@ When a closed form exists, GMM can be used directly. When it does not, [[SMM Est
 
 The classical **tail dependence coefficients** are the limits:
 
-$$\lambda_L = \lim_{q \to 0^+} \tau_q^{ij} = \lim_{q \to 0^+} \frac{C(q,q)}{q}$$
+$$
+\lambda_L = \lim_{q \to 0^+} \tau_q^{ij} = \lim_{q \to 0^+} \frac{C(q,q)}{q}
+$$
 
-$$\lambda_U = \lim_{q \to 1^-} \frac{1 - 2q + C(q,q)}{1-q}$$
+$$
+\lambda_U = \lim_{q \to 1^-} \frac{1 - 2q + C(q,q)}{1-q}
+$$
 
 Quantile dependence at finite $q$ (e.g., $q = 0.05$ or $q = 0.95$) is preferred for estimation because:
 1. It can be estimated directly from data (no extrapolation to the limit)

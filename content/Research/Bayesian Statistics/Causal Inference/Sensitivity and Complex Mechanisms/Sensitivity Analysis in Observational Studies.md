@@ -39,7 +39,9 @@ Two broad classes of sensitivity analysis methods differ in how they parametrize
 Let $U$ be an **unmeasured binary confounder** such that conditional on $(X, U)$, unconfoundedness holds: $Z \perp\!\!\!\perp \{Y(0), Y(1)\} \mid X, U$.
 
 The joint distribution of all variables factorizes as:
-$$\Pr(Y(1), Y(0), Z, X, U) = \Pr(Y(1), Y(0) \mid X, U) \cdot \Pr(Z \mid X, U) \cdot \Pr(U \mid X) \cdot \Pr(X)$$
+$$
+\Pr(Y(1), Y(0), Z, X, U) = \Pr(Y(1), Y(0) \mid X, U) \cdot \Pr(Z \mid X, U) \cdot \Pr(U \mid X) \cdot \Pr(X)
+$$
 
 Sensitivity parameters: the association between $U$ and treatment ($Z$), and between $U$ and outcome ($Y$). The observed-data distribution is identified; the sensitivity parameters are not.
 
@@ -81,7 +83,9 @@ For a binary $Z$ and binary $U$ with binary $X$ (as a stratification variable):
 ### Motivation
 
 An alternative parametrization, motivated by an alternative mathematical expression of unconfoundedness:
-$$\Pr(Y(z) \mid Z=1, X) = \Pr(Y(z) \mid Z=0, X), \quad z=0,1$$
+$$
+\Pr(Y(z) \mid Z=1, X) = \Pr(Y(z) \mid Z=0, X), \quad z=0,1
+$$
 
 This says the distributions of potential outcomes in the two treatment arms are comparable (for the same $X$). Sensitivity analysis in this class models the **difference** between $\Pr(Y(z) \mid Z=1, X)$ and $\Pr(Y(z) \mid Z=0, X)$, rather than modeling an unobserved $U$.
 

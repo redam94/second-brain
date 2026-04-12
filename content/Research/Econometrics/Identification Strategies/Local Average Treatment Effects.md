@@ -44,7 +44,9 @@ With binary instrument $z_i$ and binary treatment $D_i$:
 
 Under **monotonicity** (no defiers) and **exclusion restriction**:
 
-$$\frac{E[Y_i|z_i=1] - E[Y_i|z_i=0]}{E[D_i|z_i=1] - E[D_i|z_i=0]} = E[Y_{1i} - Y_{0i} | \text{complier}]$$
+$$
+\frac{E[Y_i|z_i=1] - E[Y_i|z_i=0]}{E[D_i|z_i=1] - E[D_i|z_i=0]} = E[Y_{1i} - Y_{0i} | \text{complier}]
+$$
 
 The Wald/IV estimand is the average treatment effect on compliers.
 

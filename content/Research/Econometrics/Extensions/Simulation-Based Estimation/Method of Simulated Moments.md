@@ -44,7 +44,9 @@ The central insight is that even when we cannot *evaluate* $\sigma(z_t; \theta)$
 
 Let $y_t \in \mathbb{R}^n$ ($t = 1, \ldots, T$) be observable dependent variables and $z_t = [y_{t-1}', \ldots, y_1', y_0, x_t', \ldots, x_1']'$ be the vector of conditioning variables. The model is characterized by:
 
-$$h_0(y_t | z_t) = h(y_t | z_t; \theta_0)$$
+$$
+h_0(y_t | z_t) = h(y_t | z_t; \theta_0)
+$$
 
 where $\theta_0$ is the true $p$-dimensional parameter vector.
 
@@ -172,13 +174,17 @@ The MSM estimator's efficiency relative to MLE and GMM depends on two factors:
 
 The standard discrete-time SV model:
 
-$$y_t = \exp(w_t^*/2) u_t, \qquad w_t^* = \gamma + \delta w_{t-1}^* + \nu \eta_t$$
+$$
+y_t = \exp(w_t^*/2) u_t, \qquad w_t^* = \gamma + \delta w_{t-1}^* + \nu \eta_t
+$$
 
 where $u_t$ and $\eta_t$ are mutually and serially independent with known distributions, and $w_t^*$ is the unobservable log volatility.
 
 **Why MSM is needed:** The marginal likelihood integrates over the entire latent volatility path:
 
-$$L_T(\theta) = \int \cdots \int \prod_{t=1}^T h(y_t | w_t^*; \theta) h(w_t^* | w_{t-1}^*; \theta) \, dw_1^* \cdots dw_T^*$$
+$$
+L_T(\theta) = \int \cdots \int \prod_{t=1}^T h(y_t | w_t^*; \theta) h(w_t^* | w_{t-1}^*; \theta) \, dw_1^* \cdots dw_T^*
+$$
 
 This $T$-dimensional integral has no closed-form solution. Standard GMM using unconditional moments like $E[|y_t|]$, $E[y_t^2]$, or $E[y_t^2 y_{t-1}^2]$ is feasible but relatively inefficient, especially when $\delta$ is close to one.
 

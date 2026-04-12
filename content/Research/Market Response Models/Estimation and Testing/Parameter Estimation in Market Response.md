@@ -74,7 +74,9 @@ used_by:
 
 When errors are autocorrelated or heteroscedastic ($E(\mathbf{u}\mathbf{u}') = \sigma^2 \mathbf{\Omega}$, $\mathbf{\Omega} \neq \mathbf{I}$):
 
-$$\hat{\boldsymbol{\beta}}_{\text{GLS}} = (\mathbf{X}'\mathbf{\Omega}^{-1}\mathbf{X})^{-1}\mathbf{X}'\mathbf{\Omega}^{-1}\mathbf{q}$$
+$$
+\hat{\boldsymbol{\beta}}_{\text{GLS}} = (\mathbf{X}'\mathbf{\Omega}^{-1}\mathbf{X})^{-1}\mathbf{X}'\mathbf{\Omega}^{-1}\mathbf{q}
+$$
 
 When $\mathbf{\Omega}$ is unknown, **Feasible GLS (FGLS)** substitutes a consistent estimate $\hat{\mathbf{\Omega}}$. In practice: estimate the error ARMA structure from OLS residuals, then transform data by the estimated filter.
 
@@ -82,8 +84,12 @@ When $\mathbf{\Omega}$ is unknown, **Feasible GLS (FGLS)** substitutes a consist
 
 For a system of $M$ equations (e.g., sales equations for multiple brands) with correlated errors across equations:
 
-$$\mathbf{q}_m = \mathbf{X}_m \boldsymbol{\beta}_m + \mathbf{u}_m, \quad m = 1, \ldots, M$$
-$$E(u_{mt} u_{m't}) = \sigma_{mm'}$$
+$$
+\mathbf{q}_m = \mathbf{X}_m \boldsymbol{\beta}_m + \mathbf{u}_m, \quad m = 1, \ldots, M
+$$
+$$
+E(u_{mt} u_{m't}) = \sigma_{mm'}
+$$
 
 **SUR** (Zellner 1962) is more efficient than OLS equation-by-equation when:
 1. Errors are correlated across equations

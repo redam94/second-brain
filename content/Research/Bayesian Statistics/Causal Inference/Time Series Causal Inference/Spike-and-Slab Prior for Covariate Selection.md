@@ -62,7 +62,9 @@ When constructing a synthetic control, there may be many candidate predictor ser
 
 Rather than setting $\pi_j$ individually, the recommended approach is to elicit an **expected model size** $M$ and set:
 
-$$\pi_j = \frac{M}{J}$$
+$$
+\pi_j = \frac{M}{J}
+$$
 
 This scales naturally with $J$ (total number of predictors) and avoids having to specify a hierarchical prior.
 
@@ -74,7 +76,9 @@ This scales naturally with $J$ (total number of predictors) and avoids having to
 
 The precision matrix $\Sigma^{-1}$ in equation (2.10) uses a **g-prior** (Zellner 1986):
 
-$$\Sigma^{-1} = \frac{g}{n} \left\{ w X^\top X + (1 - w) \text{diag}(X^\top X) \right\} \tag{2.12}$$
+$$
+\Sigma^{-1} = \frac{g}{n} \left\{ w X^\top X + (1 - w) \text{diag}(X^\top X) \right\} \tag{2.12}
+$$
 
 - $g$: number of observations worth of prior weight; default $g = 1$
 - $w$: mixing weight between $X^\top X$ (full correlation structure) and diagonal (independent); default $w = 0.5$
@@ -86,9 +90,13 @@ $$\Sigma^{-1} = \frac{g}{n} \left\{ w X^\top X + (1 - w) \text{diag}(X^\top X) \
 
 Given the spike-and-slab structure, the posterior sufficient statistics for $(\varrho, \beta, \sigma_\varepsilon^2)$ are:
 
-$$V_\varrho^{-1} = (X^\top X)_\varrho + \Sigma_\varrho^{-1}, \quad \tilde{\beta}_\varrho = (V_\varrho^{-1})^{-1}(X_\varrho^\top \dot{y}_{1:n} + \Sigma_\varrho^{-1} b_\varrho) \tag{2.13}$$
+$$
+V_\varrho^{-1} = (X^\top X)_\varrho + \Sigma_\varrho^{-1}, \quad \tilde{\beta}_\varrho = (V_\varrho^{-1})^{-1}(X_\varrho^\top \dot{y}_{1:n} + \Sigma_\varrho^{-1} b_\varrho) \tag{2.13}
+$$
 
-$$N = \nu_\varepsilon + n, \quad S_\varrho = s_\varepsilon + \dot{y}_{1:n}^\top \dot{y}_{1:n} + b_\varrho^\top \Sigma_\varrho^{-1} b_\varrho - \tilde{\beta}_\varrho^\top V_\varrho^{-1} \tilde{\beta}_\varrho$$
+$$
+N = \nu_\varepsilon + n, \quad S_\varrho = s_\varepsilon + \dot{y}_{1:n}^\top \dot{y}_{1:n} + b_\varrho^\top \Sigma_\varrho^{-1} b_\varrho - \tilde{\beta}_\varrho^\top V_\varrho^{-1} \tilde{\beta}_\varrho
+$$
 
 These are updated efficiently in the Gibbs sampler by drawing each $\varrho_j$ given $\varrho_{-j}$ (all others fixed).
 

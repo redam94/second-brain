@@ -96,7 +96,9 @@ Sparsity is a feature, not a bug:
 
 The synthetic control optimization (Eq. 7 in Abadie 2021) requires choosing a $k \times k$ positive definite matrix $\mathbf{V} = \text{diag}(v_1, \ldots, v_k)$ that weights the relative importance of each predictor:
 
-$$\min_{\mathbf{W}} \|\mathbf{X}_1 - \mathbf{X}_0 \mathbf{W}\| = \left(\sum_{h=1}^k v_h \left(X_{h1} - \sum_{j=2}^{J+1} w_j X_{hj}\right)^2\right)^{1/2}$$
+$$
+\min_{\mathbf{W}} \|\mathbf{X}_1 - \mathbf{X}_0 \mathbf{W}\| = \left(\sum_{h=1}^k v_h \left(X_{h1} - \sum_{j=2}^{J+1} w_j X_{hj}\right)^2\right)^{1/2}
+$$
 
 > [!definition] Definition: Cross-Validation for V Matrix Selection
 > Split the pre-intervention periods $t = 1, \ldots, T_0$ into a **training period** $t = 1, \ldots, t_0$ and a **validation period** $t = t_0+1, \ldots, T_0$ (with $t_0 = T_0/2$ as a default). Then:

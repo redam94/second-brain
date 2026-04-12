@@ -83,7 +83,9 @@ Each HM wave:
 ## Multiple Outputs
 
 When the model produces multiple observed outputs ($R > 1$, e.g., small/medium/large farm counts in RISC), a separate implausibility measure is computed for each output and the maximum is used:
-$$I(x) = \max_r I^r(x)$$
+$$
+I(x) = \max_r I^r(x)
+$$
 
 ## Key Differences from Other Methods
 

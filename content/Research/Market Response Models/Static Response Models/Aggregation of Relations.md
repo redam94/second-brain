@@ -52,7 +52,9 @@ For **nonlinear** forms (log-log, logistic, etc.), exact aggregation fails excep
 
 For a nonlinear function $f(X)$, a second-order Taylor expansion around the mean $\bar{X}$ gives:
 
-$$E[f(X)] \approx f(\bar{X}) + \frac{1}{2} f''(\bar{X}) \cdot \text{Var}(X)$$
+$$
+E[f(X)] \approx f(\bar{X}) + \frac{1}{2} f''(\bar{X}) \cdot \text{Var}(X)
+$$
 
 The **correction term** $\frac{1}{2} f''(\bar{X}) \cdot \text{Var}(X)$ is:
 - Zero for linear $f$ (exact aggregation)
@@ -71,7 +73,9 @@ The **correction term** $\frac{1}{2} f''(\bar{X}) \cdot \text{Var}(X)$ is:
 
 When $\beta_i$ varies across individuals (heterogeneous response), the aggregate model picks up an average effect. The **random coefficients model** (see [[Functional Forms in Marketing]]) explicitly models this heterogeneity:
 
-$$Q_{it} = \beta_{0i} + \beta_{1i} X_{it} + \epsilon_{it}$$
+$$
+Q_{it} = \beta_{0i} + \beta_{1i} X_{it} + \epsilon_{it}
+$$
 
 where $\beta_{ji} \sim (\bar\beta_j, \sigma^2_\beta)$. The aggregate-level regression recovers $\bar\beta_j$ but conceals the distribution of individual effects, which matters for targeted marketing decisions.
 

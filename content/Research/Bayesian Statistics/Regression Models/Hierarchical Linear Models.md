@@ -36,8 +36,12 @@ used_by:
 
 For group $j = 1, \ldots, J$:
 
-$$y_{ij} \mid \alpha_j, \beta_j, \sigma^2 \sim N(\alpha_j + x_{ij} \beta_j, \sigma^2)$$
-$$\begin{pmatrix} \alpha_j \\ \beta_j \end{pmatrix} \sim N\!\left(\begin{pmatrix} \mu_\alpha \\ \mu_\beta \end{pmatrix}, \Sigma_{\alpha\beta}\right)$$
+$$
+y_{ij} \mid \alpha_j, \beta_j, \sigma^2 \sim N(\alpha_j + x_{ij} \beta_j, \sigma^2)
+$$
+$$
+\begin{pmatrix} \alpha_j \\ \beta_j \end{pmatrix} \sim N\!\left(\begin{pmatrix} \mu_\alpha \\ \mu_\beta \end{pmatrix}, \Sigma_{\alpha\beta}\right)
+$$
 
 ## Key Concepts
 

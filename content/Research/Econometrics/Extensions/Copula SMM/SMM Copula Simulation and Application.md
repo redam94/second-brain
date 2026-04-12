@@ -48,8 +48,12 @@ aliases:
 **Scenario 1 — *iid* data:** Marginal distributions are standard Normal. Only copula parameters need estimation.
 
 **Scenario 2 — AR(1)-GARCH(1,1) data:** Each variable follows:
-$$Y_{it} = \phi_0 + \phi_1 Y_{i,t-1} + \sigma_{it} \eta_{it}$$
-$$\sigma_{it}^2 = \omega + \beta \sigma_{i,t-1}^2 + \alpha \sigma_{i,t-1}^2 \eta_{i,t-1}^2$$
+$$
+Y_{it} = \phi_0 + \phi_1 Y_{i,t-1} + \sigma_{it} \eta_{it}
+$$
+$$
+\sigma_{it}^2 = \omega + \beta \sigma_{i,t-1}^2 + \alpha \sigma_{i,t-1}^2 \eta_{i,t-1}^2
+$$
 
 with $[\phi_0, \phi_1, \omega, \beta, \alpha] = [0.01, 0.05, 0.05, 0.85, 0.10]$ (matching daily equity return dynamics). Marginal parameters are estimated in a first stage; standardized residuals are used for copula estimation.
 
@@ -146,9 +150,13 @@ The J-test rejection rates at the 5% nominal level are close to 95% acceptance f
 
 Each stock's return is modeled as:
 
-$$r_{it} = \phi_{0i} + \phi_{1i} r_{i,t-1} + \phi_{2i} r_{m,t-1} + \varepsilon_{it}, \quad \varepsilon_{it} = \sigma_{it} \eta_{it}$$
+$$
+r_{it} = \phi_{0i} + \phi_{1i} r_{i,t-1} + \phi_{2i} r_{m,t-1} + \varepsilon_{it}, \quad \varepsilon_{it} = \sigma_{it} \eta_{it}
+$$
 
-$$\sigma_{it}^2 = \omega_i + \beta_i \sigma_{i,t-1}^2 + \alpha_{1i} \varepsilon_{i,t-1}^2 + \gamma_{1i} \varepsilon_{i,t-1}^2 \cdot \mathbf{1}_{[\varepsilon_{i,t-1} \leq 0]} + \alpha_{2i} \varepsilon_{m,t-1}^2 + \gamma_{2i} \varepsilon_{m,t-1}^2 \cdot \mathbf{1}_{[\varepsilon_{m,t-1} \leq 0]}$$
+$$
+\sigma_{it}^2 = \omega_i + \beta_i \sigma_{i,t-1}^2 + \alpha_{1i} \varepsilon_{i,t-1}^2 + \gamma_{1i} \varepsilon_{i,t-1}^2 \cdot \mathbf{1}_{[\varepsilon_{i,t-1} \leq 0]} + \alpha_{2i} \varepsilon_{m,t-1}^2 + \gamma_{2i} \varepsilon_{m,t-1}^2 \cdot \mathbf{1}_{[\varepsilon_{m,t-1} \leq 0]}
+$$
 
 where $r_{mt}$ is the S&P 500 index return. This is a GJR-GARCH model with asymmetric responses to market shocks.
 

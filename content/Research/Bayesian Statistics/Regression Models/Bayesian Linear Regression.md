@@ -35,7 +35,9 @@ used_by:
 
 ## The Model
 
-$$y \mid X, \beta, \sigma^2 \sim N(X\beta, \sigma^2 I)$$
+$$
+y \mid X, \beta, \sigma^2 \sim N(X\beta, \sigma^2 I)
+$$
 
 With a noninformative prior $p(\beta, \sigma^2) \propto \sigma^{-2}$, the posterior for $\beta$ is a multivariate $t$ distribution centered at the OLS estimate $\hat{\beta}$ — the Bayesian and frequentist answers coincide.
 

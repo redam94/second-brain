@@ -107,7 +107,9 @@ The utility function is based on Zhang and Zhang (2007) and captures the four ke
 
 Product cost is linearly related to quality:
 
-$$Cost = A_1 \cdot 0.1 + A_2 \cdot 0.2$$
+$$
+Cost = A_1 \cdot 0.1 + A_2 \cdot 0.2
+$$
 
 Higher quality attributes increase production costs, creating the fundamental trade-off the firm must navigate.
 

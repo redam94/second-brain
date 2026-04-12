@@ -68,7 +68,9 @@ SUTVA rules out spillover effects and treatment heterogeneity due to dose or ver
 - **Overlap** (also called *positivity*): every unit has a non-zero probability of receiving either treatment. Ensures the conditional distribution of potential outcomes is identifiable from observed data.
 
 Together, these ensure that:
-$$\mu_z(x) \equiv \mathbb{E}[Y_i(z) \mid X_i = x] = \mathbb{E}[Y_i \mid Z_i = z, X_i = x]$$
+$$
+\mu_z(x) \equiv \mathbb{E}[Y_i(z) \mid X_i = x] = \mathbb{E}[Y_i \mid Z_i = z, X_i = x]
+$$
 
 for all $z, x$ — i.e., the potential outcome mean equals the observed conditional mean. ^eq-identification
 

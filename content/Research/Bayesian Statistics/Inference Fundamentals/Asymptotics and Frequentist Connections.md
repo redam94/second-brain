@@ -36,7 +36,9 @@ used_by:
 
 For large $n$, the posterior is approximately:
 
-$$p(\theta \mid y) \approx N\!\left(\hat{\theta}, [I(\hat{\theta})]^{-1}\right)$$
+$$
+p(\theta \mid y) \approx N\!\left(\hat{\theta}, [I(\hat{\theta})]^{-1}\right)
+$$
 
 where $\hat{\theta}$ is the posterior mode (asymptotically equal to the MLE) and $I(\hat{\theta})$ is the observed Fisher information matrix. This is related to the **Bernstein-von Mises theorem**.
 

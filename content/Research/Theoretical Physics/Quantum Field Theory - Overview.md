@@ -38,13 +38,19 @@ QFT resolves a fundamental tension: quantum mechanics handles discrete particles
 ### Classical Scalar Field
 
 A classical real scalar field $\phi(\mathbf{x}, t)$ with Lagrangian density:
-$$\mathcal{L} = \frac{1}{2}(\partial_\mu \phi)(\partial^\mu \phi) - \frac{1}{2}m^2\phi^2$$
+$$
+\mathcal{L} = \frac{1}{2}(\partial_\mu \phi)(\partial^\mu \phi) - \frac{1}{2}m^2\phi^2
+$$
 
 The Euler-Lagrange equations give the **Klein-Gordon equation**:
-$$\left(\frac{\partial^2}{\partial t^2} - \nabla^2 + m^2\right)\phi = 0$$
+$$
+\left(\frac{\partial^2}{\partial t^2} - \nabla^2 + m^2\right)\phi = 0
+$$
 
 The field can be decomposed into normal modes (Fourier expansion):
-$$\phi(\mathbf{x},t) = \int \frac{d^3p}{(2\pi)^3} \frac{1}{\sqrt{2\omega_\mathbf{p}}} \left(a_\mathbf{p} e^{-i\omega_\mathbf{p} t + i\mathbf{p}\cdot\mathbf{x}} + a_\mathbf{p}^* e^{i\omega_\mathbf{p} t - i\mathbf{p}\cdot\mathbf{x}}\right)$$
+$$
+\phi(\mathbf{x},t) = \int \frac{d^3p}{(2\pi)^3} \frac{1}{\sqrt{2\omega_\mathbf{p}}} \left(a_\mathbf{p} e^{-i\omega_\mathbf{p} t + i\mathbf{p}\cdot\mathbf{x}} + a_\mathbf{p}^* e^{i\omega_\mathbf{p} t - i\mathbf{p}\cdot\mathbf{x}}\right)
+$$
 where $\omega_\mathbf{p} = \sqrt{|\mathbf{p}|^2 + m^2}$. Each mode is a classical harmonic oscillator.
 
 ### Canonical Quantization
@@ -96,7 +102,9 @@ where $\omega_\mathbf{p} = \sqrt{|\mathbf{p}|^2 + m^2}$. Each mode is a classica
 ## Dirac Equation and Antimatter
 
 Dirac's 1928 equation for relativistic spin-1/2 particles:
-$$\left(i\gamma^\mu \partial_\mu - m\right)\psi = 0$$
+$$
+\left(i\gamma^\mu \partial_\mu - m\right)\psi = 0
+$$
 
 Key consequences:
 - Predicts electron spin = 1/2 naturally
@@ -107,7 +115,9 @@ Key consequences:
 ## Interactions in QFT
 
 Interactions are added to the Lagrangian. For example, a quartic self-interaction for a scalar field:
-$$\mathcal{L} = \frac{1}{2}(\partial_\mu\phi)(\partial^\mu\phi) - \frac{1}{2}m^2\phi^2 - \frac{\lambda}{4!}\phi^4$$
+$$
+\mathcal{L} = \frac{1}{2}(\partial_\mu\phi)(\partial^\mu\phi) - \frac{1}{2}m^2\phi^2 - \frac{\lambda}{4!}\phi^4
+$$
 
 For small $\lambda$, the interacting theory is treated as a **perturbation** of the free theory. Each order in perturbation theory corresponds to [[QED and Renormalization|Feynman diagrams]].
 

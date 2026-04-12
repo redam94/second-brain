@@ -100,7 +100,9 @@ These methods return a posterior distribution over the parameter space and expli
 The current state-of-the-art approach for ABM calibration with full uncertainty quantification. A two-stage pipeline:
 
 **Stage 1 — History Matching (HM)**: Iteratively eliminate implausible parameter regions using an implausibility score:
-$$I^r(x) = \frac{d^2(z^r, f^r(x))}{V^r_s + V^r_o + V^r_m}$$
+$$
+I^r(x) = \frac{d^2(z^r, f^r(x))}{V^r_s + V^r_o + V^r_m}
+$$
 where $V^r_s$ = ensemble variance, $V^r_o$ = observation uncertainty, $V^r_m$ = model discrepancy. Parameters with $I^r(x) \geq 3$ are discarded. Waves continue until the non-implausible space stops shrinking.
 
 **Stage 2 — Approximate Bayesian Computation (ABC)**: Sample from the HM non-implausible region as a uniform prior; accept samples where model error $\leq \varepsilon = 3(V_o + V^r_s + V^r_m)$. Returns a full posterior distribution.

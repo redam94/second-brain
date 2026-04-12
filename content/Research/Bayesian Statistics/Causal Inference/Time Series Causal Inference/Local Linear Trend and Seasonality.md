@@ -54,8 +54,12 @@ aliases:
 
 A more stable variant allows the slope to exhibit AR(1) variation around a long-term slope $D$:
 
-$$\mu_{t+1} = \mu_t + \delta_t + \eta_{\mu,t}$$
-$$\delta_{t+1} = D + \rho(\delta_t - D) + \eta_{\delta,t} \tag{2.4}$$
+$$
+\mu_{t+1} = \mu_t + \delta_t + \eta_{\mu,t}
+$$
+$$
+\delta_{t+1} = D + \rho(\delta_t - D) + \eta_{\delta,t} \tag{2.4}
+$$
 
 where $|\rho| < 1$ is the learning rate. This model balances short-term local variation with a long-term slope $D$, preventing the slope from drifting without bound.
 
@@ -82,7 +86,9 @@ where $|\rho| < 1$ is the learning rate. This model balances short-term local va
 ## Combining Components
 
 The full state vector $\alpha_t$ concatenates all components:
-$$\alpha_t = (\mu_t, \delta_t, \gamma_t, \gamma_{t-1}, \ldots, \beta_t, \ldots)^\top$$
+$$
+\alpha_t = (\mu_t, \delta_t, \gamma_t, \gamma_{t-1}, \ldots, \beta_t, \ldots)^\top
+$$
 
 The overall matrices $T_t$, $R_t$, $Q_t$ become **block-diagonal** with one block per component (assuming independent component errors).
 

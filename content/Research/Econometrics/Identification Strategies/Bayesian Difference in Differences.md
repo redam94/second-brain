@@ -38,7 +38,9 @@ See the frequentist treatment at [[Differences-in-Differences]]. DiD is appropri
 ## The Model
 
 Expected outcome for observation $i$:
-$$\mu_i = \beta_c + (\beta_\Delta \cdot \text{group}_i) + (\text{trend} \cdot t_i) + (\Delta \cdot \text{treated}_i \cdot \text{group}_i)$$
+$$
+\mu_i = \beta_c + (\beta_\Delta \cdot \text{group}_i) + (\text{trend} \cdot t_i) + (\Delta \cdot \text{treated}_i \cdot \text{group}_i)
+$$
 
 | Parameter | Meaning |
 |-----------|---------|
@@ -103,7 +105,9 @@ Unlike the frequentist approach (which gives only a point estimate + CI), the Ba
 
 New Jersey raised minimum wage; Pennsylvania did not. DiD estimates:
 
-$$\hat{\Delta}_\text{DiD} = (\bar{y}_\text{NJ,post} - \bar{y}_\text{NJ,pre}) - (\bar{y}_\text{PA,post} - \bar{y}_\text{PA,pre})$$
+$$
+\hat{\Delta}_\text{DiD} = (\bar{y}_\text{NJ,post} - \bar{y}_\text{NJ,pre}) - (\bar{y}_\text{PA,post} - \bar{y}_\text{PA,pre})
+$$
 
 The Bayesian version gives a posterior over the employment effect, propagating uncertainty from both pre/post estimates.
 

@@ -70,7 +70,9 @@ Two tools for understanding system dynamics in estimated VAR:
 
 The **forecast error variance decomposition** (FEVD) decomposes the $h$-period-ahead forecast error variance of $Y$ into shares attributable to shocks in each variable:
 
-$$\text{FEVD}_{Y|X}(h) = \frac{\sum_{k=0}^{h-1} (\alpha^k_{YX})^2}{\sum_{j} \sum_{k=0}^{h-1} (\alpha^k_{Yj})^2}$$
+$$
+\text{FEVD}_{Y|X}(h) = \frac{\sum_{k=0}^{h-1} (\alpha^k_{YX})^2}{\sum_{j} \sum_{k=0}^{h-1} (\alpha^k_{Yj})^2}
+$$
 
 At short horizons: $Y$'s own shocks dominate. At long horizons: $X$ may explain a larger share if Granger causality is strong.
 

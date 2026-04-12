@@ -188,7 +188,9 @@ Four types that must be removed before modeling the stochastic component:
 
 ## Box-Cox Variance Stabilization
 
-$$Z'_t = \frac{(Z_t + c)^\lambda - 1}{\lambda} \tag{Eq 6.74}$$
+$$
+Z'_t = \frac{(Z_t + c)^\lambda - 1}{\lambda} \tag{Eq 6.74}
+$$
 
 Common choices: $\lambda = 0.5$ (square root), $\lambda \to 0$ (log), $\lambda = 1$ (no transform). Choose $\lambda$ by profile MLE or visual inspection of the variance-mean plot.
 

@@ -67,7 +67,9 @@ Two sources of uncertainty in predictions:
 
 The **posterior predictive distribution** integrates over both:
 
-$$p(y^{\text{new}} | y) = \int p(y^{\text{new}} | \theta) \, p(\theta | y) \, d\theta$$
+$$
+p(y^{\text{new}} | y) = \int p(y^{\text{new}} | \theta) \, p(\theta | y) \, d\theta
+$$
 
 In practice: for each posterior sample of $\theta$, simulate an observation → the collection of simulated observations *is* the posterior predictive distribution.
 

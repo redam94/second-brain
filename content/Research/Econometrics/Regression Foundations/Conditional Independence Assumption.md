@@ -36,7 +36,9 @@ used_by:
 
 For multi-valued treatment $s_i$ with potential outcomes $Y_{si} \equiv f_i(s)$:
 
-$$Y_{si} \perp\!\!\!\perp S_i | X_i$$
+$$
+Y_{si} \perp\!\!\!\perp S_i | X_i
+$$
 
 This means that conditional on $X_i$, treatment is "as good as randomly assigned."
 

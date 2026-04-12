@@ -54,17 +54,23 @@ The central limitation of [[Indirect Inference]] is that efficiency depends on t
 
 **Location function** (vector autoregression):
 
-$$\mu_t = b_0 + \sum_{i=1}^{l_\mu} B_i y_{t-i}$$
+$$
+\mu_t = b_0 + \sum_{i=1}^{l_\mu} B_i y_{t-i}
+$$
 
 **Scale function** (ARCH-type):
 
-$$\text{vech}(S_t) = c_0 + \sum_{i=1}^{l_s} C_i |y_{t-i} - \mu_{t-i}|$$
+$$
+\text{vech}(S_t) = c_0 + \sum_{i=1}^{l_s} C_i |y_{t-i} - \mu_{t-i}|
+$$
 
 where $\text{vech}(S_t)$ is the vector containing the $n(n+1)/2$ distinct elements of the scale matrix.
 
 **Polynomial expansion** (Hermite-type):
 
-$$\mathcal{P}(u_t, z_t) = \sum_{|\alpha|=0}^{k_u} a_\alpha(z_t) u_t^\alpha$$
+$$
+\mathcal{P}(u_t, z_t) = \sum_{|\alpha|=0}^{k_u} a_\alpha(z_t) u_t^\alpha
+$$
 
 where $u^\alpha = \prod_{i=1}^n u_i^{\alpha_i}$, $|\alpha| = \sum_{i=1}^n |\alpha_i|$, and $k_u$ controls the degree of the polynomial. The coefficients $a_\alpha(z_t)$ are themselves polynomials in $z_t$ of degree $k_z$.
 

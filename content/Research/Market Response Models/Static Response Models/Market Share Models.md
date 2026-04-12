@@ -114,7 +114,9 @@ For correlated errors across brands, SUR (Seemingly Unrelated Regressions) is mo
 
 A brand's total sales elasticity decomposes as:
 
-$$\eta_{\text{total},k} = \eta_{\text{primary},k} + \eta_{\text{share},k} \cdot MS_i$$
+$$
+\eta_{\text{total},k} = \eta_{\text{primary},k} + \eta_{\text{share},k} \cdot MS_i
+$$
 
 The **Schultz-Wittink framework** uses brand-level, category-level, and cross-brand equations jointly to identify how much of a brand's sales effect is primary demand expansion vs. share-stealing — see [[Marketing Generalizations Overview]].
 

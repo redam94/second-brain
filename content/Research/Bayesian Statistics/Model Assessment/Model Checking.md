@@ -35,7 +35,9 @@ used_by:
 
 Generate replicated datasets $y^{\text{rep}}$ from the posterior predictive distribution:
 
-$$p(y^{\text{rep}} \mid y) = \int p(y^{\text{rep}} \mid \theta)\, p(\theta \mid y)\, d\theta$$
+$$
+p(y^{\text{rep}} \mid y) = \int p(y^{\text{rep}} \mid \theta)\, p(\theta \mid y)\, d\theta
+$$
 
 If the model fits well, $y^{\text{rep}}$ should "look like" the observed data $y$.
 
@@ -43,7 +45,9 @@ If the model fits well, $y^{\text{rep}}$ should "look like" the observed data $y
 
 Define a test quantity $T(y, \theta)$ — any scalar summary of data and parameters. The **posterior predictive p-value** is:
 
-$$p_B = \Pr(T(y^{\text{rep}}, \theta) \geq T(y, \theta) \mid y)$$
+$$
+p_B = \Pr(T(y^{\text{rep}}, \theta) \geq T(y, \theta) \mid y)
+$$
 
 Values near 0 or 1 indicate model misfit. Unlike classical p-values, this accounts for parameter uncertainty.
 

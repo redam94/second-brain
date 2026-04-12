@@ -61,11 +61,15 @@ Score models on **out-of-sample predictive accuracy** estimated from in-sample f
 
 **Kullback-Leibler divergence** measures the distance from a model $q$ to the true distribution $p$:
 
-$$D_{KL}(p, q) = \sum_i p_i \log\frac{p_i}{q_i}$$
+$$
+D_{KL}(p, q) = \sum_i p_i \log\frac{p_i}{q_i}
+$$
 
 We can't compute $D_{KL}$ directly (don't know $p$), but we can estimate *differences* in $D_{KL}$ between models using **deviance**:
 
-$$D = -2 \sum_i \log q(y_i)$$
+$$
+D = -2 \sum_i \log q(y_i)
+$$
 
 ## The Criteria Zoo
 

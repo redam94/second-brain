@@ -48,7 +48,9 @@ The model has four key components:
 
 The total utility for consumer $i$ is:
 
-$$U_i = U_{i1} + U_{i2} + U_{i3} + U_{i4}$$
+$$
+U_i = U_{i1} + U_{i2} + U_{i3} + U_{i4}
+$$
 
 where the four components cover quality, promotion, WOM, and price respectively. See [[Consumer Utility Function Components]] for full formal specification.
 

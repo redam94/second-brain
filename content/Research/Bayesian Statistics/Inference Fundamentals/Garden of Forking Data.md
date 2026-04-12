@@ -42,7 +42,9 @@ For each possible parameter value $p$, count the number of paths through the dat
 
 This is Bayes' theorem in counting form:
 
-$$\text{Posterior} \propto \text{Likelihood} \times \text{Prior}$$
+$$
+\text{Posterior} \propto \text{Likelihood} \times \text{Prior}
+$$
 
 The globe-tossing example: estimating the proportion of water on Earth by tossing a globe and recording "water" or "land."
 

@@ -37,7 +37,9 @@ Once the BN structure is established (via LLM expert elicitation), it is operati
 
 The BN propagates evidence using Bayes' formula:
 
-$$P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}$$
+$$
+P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}
+$$
 
 where $P(A \mid B)$ is the posterior probability, $P(B \mid A)$ is the likelihood, $P(A)$ is the prior, and $P(B)$ is the marginal probability of the evidence.
 

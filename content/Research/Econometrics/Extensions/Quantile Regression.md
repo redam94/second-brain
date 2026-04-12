@@ -38,17 +38,23 @@ used_by:
 ## The Quantile Regression Model
 
 The $\tau$-th conditional quantile:
-$$Q_\tau(Y_i|X_i) = X_i'\beta(\tau)$$
+$$
+Q_\tau(Y_i|X_i) = X_i'\beta(\tau)
+$$
 
 Estimated by minimizing:
-$$\min_b \sum_i \rho_\tau(Y_i - X_i'b)$$
+$$
+\min_b \sum_i \rho_\tau(Y_i - X_i'b)
+$$
 
 where $\rho_\tau(u) = u(\tau - 1(u < 0))$ is the check function.
 
 ## Quantile Treatment Effects (QTE)
 
 For binary treatment $D_i$:
-$$QTE(\tau) = Q_\tau(Y_{1i}) - Q_\tau(Y_{0i})$$
+$$
+QTE(\tau) = Q_\tau(Y_{1i}) - Q_\tau(Y_{0i})
+$$
 
 > [!warning] QTE ≠ Effect on Individuals at Quantile τ
 > The QTE compares the τ-th quantile of the treated distribution with the τ-th quantile of the untreated distribution. The people at quantile τ may be *different individuals* in each group.

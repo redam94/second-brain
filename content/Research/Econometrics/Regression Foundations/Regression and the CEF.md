@@ -51,19 +51,25 @@ The regression function $X_i'\beta$ is the **best linear predictor** of $Y_i$ gi
 
 ### 3. Regression-CEF Theorem (the key one)
 Even when the CEF is nonlinear, regression provides the **MMSE linear approximation** to it:
-$$\beta = \arg\min_b E\{(E[Y_i|X_i] - X_i'b)^2\}$$
+$$
+\beta = \arg\min_b E\{(E[Y_i|X_i] - X_i'b)^2\}
+$$
 
 ## Regression Anatomy
 
 The coefficient on regressor $k$ in a multivariate regression:
-$$\beta_k = \frac{Cov(Y_i, \tilde{x}_{ki})}{V(\tilde{x}_{ki})}$$
+$$
+\beta_k = \frac{Cov(Y_i, \tilde{x}_{ki})}{V(\tilde{x}_{ki})}
+$$
 
 where $\tilde{x}_{ki}$ is the residual from regressing $x_{ki}$ on all other covariates. This is the **Frisch-Waugh** result: each multivariate coefficient equals the bivariate coefficient after "partialling out" other variables.
 
 ## Robust Standard Errors
 
 The heteroskedasticity-consistent (robust) covariance matrix:
-$$E[X_iX_i']^{-1} E[X_iX_i'e_i^2] E[X_iX_i']^{-1}$$
+$$
+E[X_iX_i']^{-1} E[X_iX_i'e_i^2] E[X_iX_i']^{-1}
+$$
 
 > [!tip] Always Use Robust Standard Errors
 > Since regression approximates a possibly nonlinear CEF, heteroskedasticity is the natural state of affairs. Robust and conventional standard errors that differ by more than 30% may indicate a problem.

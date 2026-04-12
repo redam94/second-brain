@@ -80,7 +80,9 @@ Instead of selecting one model, perform a **multiverse analysis**: fit all plaus
 
 When comparing models via LOO-CV, do not simply pick the model with the best score if there is non-negligible uncertainty in the comparison. Instead, use **stacking** to combine predictive distributions:
 
-$$p_{\text{stack}}(y|\text{data}) = \sum_{k=1}^{K} w_k \, p_k(y|\text{data})$$
+$$
+p_{\text{stack}}(y|\text{data}) = \sum_{k=1}^{K} w_k \, p_k(y|\text{data})
+$$
 
 where weights $w_k$ are chosen to minimize cross-validation error. Stacking can be viewed as pointwise model selection and fills the gap between independent-error ML validation and grouped/structured data. It outperforms traditional Bayesian model averaging, which is sensitive to prior specification on parameters that do not affect predictions.
 

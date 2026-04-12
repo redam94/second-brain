@@ -52,7 +52,9 @@ used_by:
 
 A **Gaussian process** defines a distribution over functions:
 
-$$f \sim \mathcal{GP}(m(x), k(x, x'))$$
+$$
+f \sim \mathcal{GP}(m(x), k(x, x'))
+$$
 
 - Kernel function $k(x, x')$ encodes assumptions about smoothness and correlation
 - Naturally provides uncertainty bands over the entire function
@@ -60,7 +62,9 @@ $$f \sim \mathcal{GP}(m(x), k(x, x'))$$
 
 ## Finite Mixture Models (Ch 22)
 
-$$p(y \mid \theta) = \sum_{k=1}^K \lambda_k \, f(y \mid \phi_k)$$
+$$
+p(y \mid \theta) = \sum_{k=1}^K \lambda_k \, f(y \mid \phi_k)
+$$
 
 - **Label switching**: posterior is invariant to permutation of component labels — requires care in interpretation
 - Applications: clustering, density estimation, robust regression
@@ -70,7 +74,9 @@ $$p(y \mid \theta) = \sum_{k=1}^K \lambda_k \, f(y \mid \phi_k)$$
 
 The **Dirichlet process** extends finite mixtures to an infinite number of components:
 
-$$G \sim \text{DP}(\alpha, G_0)$$
+$$
+G \sim \text{DP}(\alpha, G_0)
+$$
 
 - Concentration parameter $\alpha$ controls the number of clusters
 - DP mixtures: nonparametric density estimation with automatic complexity selection

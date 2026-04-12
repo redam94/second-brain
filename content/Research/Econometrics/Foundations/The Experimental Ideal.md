@@ -35,7 +35,9 @@ The core challenge: comparing outcomes between treated and untreated groups conf
 
 Observed difference = Average treatment effect on the treated + Selection bias
 
-$$E[Y_i|D_i=1] - E[Y_i|D_i=0] = \underbrace{E[Y_{1i}-Y_{0i}|D_i=1]}_{\text{ATT}} + \underbrace{E[Y_{0i}|D_i=1] - E[Y_{0i}|D_i=0]}_{\text{selection bias}}$$
+$$
+E[Y_i|D_i=1] - E[Y_i|D_i=0] = \underbrace{E[Y_{1i}-Y_{0i}|D_i=1]}_{\text{ATT}} + \underbrace{E[Y_{0i}|D_i=1] - E[Y_{0i}|D_i=0]}_{\text{selection bias}}
+$$
 
 The hospital example illustrates: people who go to hospitals are sicker to begin with, making hospitals *appear* harmful in naive comparisons.
 
@@ -43,7 +45,9 @@ The hospital example illustrates: people who go to hospitals are sicker to begin
 
 When treatment $D_i$ is randomly assigned, potential outcomes are independent of treatment status:
 
-$$E[Y_i|D_i=1] - E[Y_i|D_i=0] = E[Y_{1i} - Y_{0i}]$$
+$$
+E[Y_i|D_i=1] - E[Y_i|D_i=0] = E[Y_{1i} - Y_{0i}]
+$$
 
 This gives us the **average treatment effect (ATE)** — the effect on a randomly chosen person.
 
@@ -58,7 +62,9 @@ This gives us the **average treatment effect (ATE)** — the effect on a randoml
 
 With constant treatment effects $\rho$:
 
-$$Y_i = \alpha + \rho D_i + \eta_i$$
+$$
+Y_i = \alpha + \rho D_i + \eta_i
+$$
 
 - Random assignment makes $E[\eta_i|D_i] = 0$, so OLS estimates $\rho$
 - Adding covariates $X_i$ doesn't change the estimate but **reduces standard errors**

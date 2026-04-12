@@ -34,7 +34,9 @@ aliases:
 
 The [[Method of Simulated Moments]] estimator minimizes:
 
-$$\hat{\theta}_{SMM} = \theta : \min_\theta \; e(\tilde{x}, x | \theta)^T W \, e(\tilde{x}, x | \theta)$$
+$$
+\hat{\theta}_{SMM} = \theta : \min_\theta \; e(\tilde{x}, x | \theta)^T W \, e(\tilde{x}, x | \theta)
+$$
 
 where $e(\tilde{x}, x | \theta)$ is the $R \times 1$ vector of moment errors (simulated minus data moments, typically as percent deviations). The $R \times R$ weighting matrix $W$ controls how each moment is weighted in the minimization. Different choices of $W$ produce estimators with different asymptotic variances.
 
@@ -45,7 +47,9 @@ where $e(\tilde{x}, x | \theta)$ is the $R \times 1$ vector of moment errors (si
 
 ### 1. Identity Matrix ($W = I$)
 
-$$\hat{\theta}_{SMM} = \theta : \min_\theta \; e(\tilde{x}, x | \theta)^T e(\tilde{x}, x | \theta)$$
+$$
+\hat{\theta}_{SMM} = \theta : \min_\theta \; e(\tilde{x}, x | \theta)^T e(\tilde{x}, x | \theta)
+$$
 
 Gives each moment equal weight. Simple and sufficient when:
 - The problem is well-conditioned
@@ -88,11 +92,17 @@ Gives each moment equal weight. Simple and sufficient when:
 
 The truly optimal $W^{opt}$ is the fixed point of the two-step procedure. Iterate:
 
-$$\hat{\theta}_{i,SMM} = \theta : \min_\theta \; e^T \hat{W}_i \, e$$
-$$\hat{W}_{i+1} = \hat{\Omega}_{i+1}^{-1}, \quad \hat{\Omega}_{i+1} = \frac{1}{S} E(\tilde{x}, x | \hat{\theta}_{i,SMM}) E(\tilde{x}, x | \hat{\theta}_{i,SMM})^T$$
+$$
+\hat{\theta}_{i,SMM} = \theta : \min_\theta \; e^T \hat{W}_i \, e
+$$
+$$
+\hat{W}_{i+1} = \hat{\Omega}_{i+1}^{-1}, \quad \hat{\Omega}_{i+1} = \frac{1}{S} E(\tilde{x}, x | \hat{\theta}_{i,SMM}) E(\tilde{x}, x | \hat{\theta}_{i,SMM})^T
+$$
 
 The iterated SMM estimator $\hat{\theta}_{it,SMM}$ is the $\hat{\theta}_{i,SMM}$ such that:
-$$\|\hat{W}_{i+1} - \hat{W}_i\| < \epsilon$$
+$$
+\|\hat{W}_{i+1} - \hat{W}_i\| < \epsilon
+$$
 
 In practice, the two-step estimator usually suffices — the gain from additional iterations is typically small.
 
@@ -115,7 +125,9 @@ When simulated data are autocorrelated (time series models), the variance-covari
 ^def-nw-estimator
 
 The optimal weighting matrix $\hat{W}^{opt}$ in the autocorrelated case:
-$$\hat{W}^{opt} = \lim_{S\to\infty} \frac{1}{S}\sum_{i=1}^S \sum_{l=-\infty}^{\infty} E(\tilde{x}_i, x|\theta) E(\tilde{x}_{i-l}, x|\theta)^T$$
+$$
+\hat{W}^{opt} = \lim_{S\to\infty} \frac{1}{S}\sum_{i=1}^S \sum_{l=-\infty}^{\infty} E(\tilde{x}_i, x|\theta) E(\tilde{x}_{i-l}, x|\theta)^T
+$$
 
 The Newey-West estimator approximates this via the weighted sum of autocovariance matrices.
 
@@ -143,7 +155,9 @@ The parameter estimates $\hat{\theta}_{SMM}$ are asymptotically normal. The esti
 ^thm-smm-varcov
 
 **Computing the Jacobian numerically:** Use centered finite differences:
-$$\frac{\partial e_r}{\partial \theta_k} \approx \frac{e_r(\theta + h e_k) - e_r(\theta - h e_k)}{2h}$$
+$$
+\frac{\partial e_r}{\partial \theta_k} \approx \frac{e_r(\theta + h e_k) - e_r(\theta - h e_k)}{2h}
+$$
 
 where $e_k$ is the $k$-th unit vector and $h$ is the step size. The step size $h$ must be large enough that the criterion function changes detectably — see [[Practical Issues in Simulation Estimation]] for step-size guidelines.
 

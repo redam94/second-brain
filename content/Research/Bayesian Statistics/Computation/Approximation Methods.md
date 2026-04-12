@@ -38,7 +38,9 @@ used_by:
 
 Approximate the posterior with a Gaussian centered at the mode:
 
-$$p(\theta \mid y) \approx N\!\left(\hat{\theta},\; \left[-\nabla^2 \log p(\theta \mid y)\big|_{\hat{\theta}}\right]^{-1}\right)$$
+$$
+p(\theta \mid y) \approx N\!\left(\hat{\theta},\; \left[-\nabla^2 \log p(\theta \mid y)\big|_{\hat{\theta}}\right]^{-1}\right)
+$$
 
 - Fast: only requires optimization + Hessian computation
 - Exact in the limit as $n \to \infty$ (see [[Asymptotics and Frequentist Connections]])
@@ -49,7 +51,9 @@ $$p(\theta \mid y) \approx N\!\left(\hat{\theta},\; \left[-\nabla^2 \log p(\thet
 
 Approximate $p(\theta \mid y)$ with a simpler distribution $q(\theta)$ by minimizing KL divergence:
 
-$$q^* = \arg\min_{q \in \mathcal{Q}} \; \text{KL}(q \| p(\theta \mid y))$$
+$$
+q^* = \arg\min_{q \in \mathcal{Q}} \; \text{KL}(q \| p(\theta \mid y))
+$$
 
 - **Mean-field VI**: factorizes $q(\theta) = \prod_j q_j(\theta_j)$ — fast but ignores posterior correlations
 - **ADVI** (Automatic Differentiation VI): transforms to unconstrained space and uses gradient-based optimization

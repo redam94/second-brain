@@ -70,10 +70,14 @@ Standard calibration methods (GA, simulated annealing) minimize error without ac
 All three variance components feed into both HM and ABC:
 
 **HM implausibility denominator** (Eq. 1):
-$$I^r(x) = \frac{d^2(z^r, f^r(x))}{V^r_s + V^r_o + V^r_m}$$
+$$
+I^r(x) = \frac{d^2(z^r, f^r(x))}{V^r_s + V^r_o + V^r_m}
+$$
 
 **ABC threshold** (Eq. 5):
-$$\varepsilon = 3(V_o + V^r_s + V^r_m)$$
+$$
+\varepsilon = 3(V_o + V^r_s + V^r_m)
+$$
 
 These ensure that the calibration criteria are scaled to the actual uncertainty in the system, preventing both over-rejection (if uncertainties are underestimated) and under-rejection (if uncertainties are overestimated).
 

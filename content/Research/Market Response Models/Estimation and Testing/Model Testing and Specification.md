@@ -78,7 +78,9 @@ Errors 1, 4, and 7 cause **inconsistency**; errors 2, 5, 6 cause **inefficiency*
 
 When theory imposes restrictions (e.g., homogeneity, adding-up conditions in share models), **restricted OLS** imposes these as linear constraints $\mathbf{R}\boldsymbol{\beta} = \mathbf{r}$:
 
-$$\hat{\boldsymbol{\beta}}_{\text{RLS}} = \hat{\boldsymbol{\beta}}_{\text{OLS}} - (\mathbf{X}'\mathbf{X})^{-1}\mathbf{R}'[\mathbf{R}(\mathbf{X}'\mathbf{X})^{-1}\mathbf{R}']^{-1}(\mathbf{R}\hat{\boldsymbol{\beta}}_{\text{OLS}} - \mathbf{r})$$
+$$
+\hat{\boldsymbol{\beta}}_{\text{RLS}} = \hat{\boldsymbol{\beta}}_{\text{OLS}} - (\mathbf{X}'\mathbf{X})^{-1}\mathbf{R}'[\mathbf{R}(\mathbf{X}'\mathbf{X})^{-1}\mathbf{R}']^{-1}(\mathbf{R}\hat{\boldsymbol{\beta}}_{\text{OLS}} - \mathbf{r})
+$$
 
 The restrictions can be tested via an **F-test** on the incremental RSS from imposing them.
 
@@ -91,7 +93,9 @@ The restrictions can be tested via an **F-test** on the incremental RSS from imp
 
 The **Durbin-Watson (DW)** statistic tests AR(1) residual autocorrelation:
 
-$$d = \frac{\sum_{t=2}^T (\hat u_t - \hat u_{t-1})^2}{\sum_{t=1}^T \hat u_t^2} \approx 2(1 - \hat\rho)$$
+$$
+d = \frac{\sum_{t=2}^T (\hat u_t - \hat u_{t-1})^2}{\sum_{t=1}^T \hat u_t^2} \approx 2(1 - \hat\rho)
+$$
 
 $d \approx 2$: no autocorrelation; $d < 2$: positive AR; $d > 2$: negative AR.
 
@@ -101,7 +105,9 @@ For higher-order autocorrelation or models with lagged dependent variables: use 
 
 To test linear vs. log-linear form, the **Box-Cox transformation** (Eq 5 in Ch.5 context):
 
-$$Q^{(\lambda)} = \frac{Q^\lambda - 1}{\lambda}$$
+$$
+Q^{(\lambda)} = \frac{Q^\lambda - 1}{\lambda}
+$$
 
 MLE over $\lambda$ with $\lambda = 1$ (linear) or $\lambda \to 0$ (log-linear). Confidence interval on $\hat\lambda$ indicates whether the data prefer linear or log transformation.
 

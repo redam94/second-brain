@@ -43,8 +43,12 @@ m ──→ [x → y]   (m moderates the x-y relationship)
 
 ## The Model
 
-$$y_i \sim \mathcal{N}(\mu_i, \sigma^2)$$
-$$\mu_i = \beta_0 + \beta_1 x_i + \beta_2 (x_i \cdot m_i) + \beta_3 m_i$$
+$$
+y_i \sim \mathcal{N}(\mu_i, \sigma^2)
+$$
+$$
+\mu_i = \beta_0 + \beta_1 x_i + \beta_2 (x_i \cdot m_i) + \beta_3 m_i
+$$
 
 **Interpretation of parameters:**
 
@@ -57,7 +61,9 @@ $$\mu_i = \beta_0 + \beta_1 x_i + \beta_2 (x_i \cdot m_i) + \beta_3 m_i$$
 | $\sigma$ | Residual SD |
 
 The total effect of $x$ on $y$ at a given level of moderator $m$ is:
-$$f(m) = \beta_1 + \beta_2 \cdot m$$
+$$
+f(m) = \beta_1 + \beta_2 \cdot m
+$$
 
 ## PyMC Implementation
 

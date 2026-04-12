@@ -52,7 +52,9 @@ The central idea of gauge theory: **local symmetry generates interactions**. Sta
 ^def-local-symmetry
 
 **The problem with making symmetry local**: When $G$ depends on $x$, ordinary derivatives fail to transform covariantly:
-$$\partial_\mu(G\Phi) \neq G(\partial_\mu\Phi) \quad \text{if } G = G(x)$$
+$$
+\partial_\mu(G\Phi) \neq G(\partial_\mu\Phi) \quad \text{if } G = G(x)
+$$
 
 This spoils the invariance of the Lagrangian. The solution is to introduce a gauge field.
 

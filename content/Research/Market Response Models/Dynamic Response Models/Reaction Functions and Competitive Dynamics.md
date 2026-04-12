@@ -99,7 +99,9 @@ A firm's sales response to its own advertising is a partial equilibrium result. 
 
 For $K$ firms and $M$ marketing instruments, the full reaction matrix (Eq 4.56) is:
 
-$$\mathbf{X}_t = \mathbf{B}_0 + \mathbf{B}_1 \mathbf{X}_{t-1} + \mathbf{u}_t$$
+$$
+\mathbf{X}_t = \mathbf{B}_0 + \mathbf{B}_1 \mathbf{X}_{t-1} + \mathbf{u}_t
+$$
 
 where $\mathbf{X}_t$ is a $KM \times 1$ vector of all firms' marketing decisions and $\mathbf{B}_1$ captures cross-firm reactions. This is the system estimated as a VAR — see [[Multivariate Persistence and Cointegration]].
 
@@ -107,8 +109,12 @@ where $\mathbf{X}_t$ is a $KM \times 1$ vector of all firms' marketing decisions
 
 Marketing spending is **bounded below at zero** (a firm cannot have negative advertising). If the latent reaction would imply negative spending, the observed reaction is censored at zero:
 
-$$X^*_t = \beta_0 + \beta_1 X^{\text{rival}}_t + u_t \quad (\text{latent})$$
-$$X_t = \max(0, X^*_t) \quad (\text{observed})$$
+$$
+X^*_t = \beta_0 + \beta_1 X^{\text{rival}}_t + u_t \quad (\text{latent})
+$$
+$$
+X_t = \max(0, X^*_t) \quad (\text{observed})
+$$
 
 OLS on the observed reaction function understates $\beta_1$. Tobit MLE corrects for this censoring. Related to [[Regression and the CEF]] (truncated regression).
 

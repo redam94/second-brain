@@ -311,7 +311,9 @@ Indirect inference is SMM where the moments are parameters of an **auxiliary mod
 - **Model moments**: $\hat{\phi}(\tilde{x}_t, \tilde{z}_t | \theta) = \frac{1}{S}\sum_{s=1}^S \hat{\phi}_s(\tilde{x}_{s,t}, \tilde{z}_{s,t} | \theta)$ — averaged auxiliary parameters from simulations
 
 **Estimator:**
-$$\hat{\theta}_{II} = \theta : \min_\theta \|\hat{\phi}(\tilde{x}_t | \theta) - \hat{\phi}(x_t)\|$$
+$$
+\hat{\theta}_{II} = \theta : \min_\theta \|\hat{\phi}(\tilde{x}_t | \theta) - \hat{\phi}(x_t)\|
+$$
 
 **Common auxiliary models:** OLS regression coefficients, VAR parameters, probit/logit coefficients, IV regression estimates.
 

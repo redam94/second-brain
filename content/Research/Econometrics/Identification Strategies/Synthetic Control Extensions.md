@@ -57,10 +57,14 @@ When $I > 1$ units are treated simultaneously, fitting a separate synthetic cont
 ^thm-penalized-uniqueness
 
 The treatment effect for each treated unit $i$ at $t > T_0$ is:
-$$\hat{\tau}_{it} = Y_{it} - \sum_{j=I+1}^{I+J} w_{ij}^* Y_{jt}$$
+$$
+\hat{\tau}_{it} = Y_{it} - \sum_{j=I+1}^{I+J} w_{ij}^* Y_{jt}
+$$
 
 And the average treatment effect across treated units:
-$$\hat{\tau}_t = \frac{1}{I}\sum_{i=1}^I \hat{\tau}_{it}$$
+$$
+\hat{\tau}_t = \frac{1}{I}\sum_{i=1}^I \hat{\tau}_{it}
+$$
 
 **Cross-validation** techniques in Abadie and L'Hour (2019) select the penalty parameter $\lambda$.
 

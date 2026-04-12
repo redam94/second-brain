@@ -98,7 +98,9 @@ For each unit $i$, six quantities are now associated: $\{Y_i^{\text{obs}}, W_i^{
 - $W_i^{\text{mis}} = W_i(1-Z_i)$ — missing treatment
 
 The full-data joint distribution is:
-$$\Pr(\theta) \prod_{i=1}^{N} \Pr(Y_i(0), Y_i(1) \mid U_i, X_i; \theta_Y) \cdot \Pr(U_i \mid X_i; \theta_U) \cdot \Pr(Z_i = 1 \mid X_i; \theta_Z)$$
+$$
+\Pr(\theta) \prod_{i=1}^{N} \Pr(Y_i(0), Y_i(1) \mid U_i, X_i; \theta_Y) \cdot \Pr(U_i \mid X_i; \theta_U) \cdot \Pr(Z_i = 1 \mid X_i; \theta_Z)
+$$
 
 Under unconfoundedness, $\theta_Z$ is ignorable.
 

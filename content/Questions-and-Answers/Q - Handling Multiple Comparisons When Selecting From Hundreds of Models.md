@@ -37,7 +37,9 @@ aliases:
 
 Running hundreds of models and picking variables based on $p < 0.05$ creates a massive multiplicity problem. With $m$ independent tests at $\alpha = 0.05$ ([[Multiple Testing Corrections]]):
 
-$$P(\text{at least one false positive}) = 1 - (1 - \alpha)^m$$
+$$
+P(\text{at least one false positive}) = 1 - (1 - \alpha)^m
+$$
 
 With 100 models this probability is 99.4%; with 1000 it is essentially 100%.
 
@@ -90,7 +92,9 @@ Rather than asking "is this significant?", ask ([[Type S and Type M Errors]]):
 
 For a normal-normal hierarchical model, the posterior z-score for any comparison is ([[Partial Pooling as Multiple Comparisons Correction#^thm-zscore-shrinkage]]):
 
-$$z_{\text{Bayes}} = z_{\text{classical}} \cdot \frac{1}{\sqrt{1 + \sigma_{\bar{y}}^2 / \sigma_\theta^2}}$$
+$$
+z_{\text{Bayes}} = z_{\text{classical}} \cdot \frac{1}{\sqrt{1 + \sigma_{\bar{y}}^2 / \sigma_\theta^2}}
+$$
 
 The shrinkage factor is always $< 1$, and it **adapts to the data**:
 - When groups are similar ($\sigma_\theta^2$ small): strong shrinkage, aggressive correction
@@ -124,7 +128,9 @@ Rather than selecting the "best" model by significance, evaluate models on **out
 - **WAIC**: fully Bayesian information criterion, no Gaussian approximation needed
 - **Stacking**: when model comparison is uncertain, *combine* models rather than selecting one ([[Iterative Model Improvement]]):
 
-$$p_{\text{stack}}(\tilde{y} \mid \text{data}) = \sum_k w_k \, p_k(\tilde{y} \mid \text{data})$$
+$$
+p_{\text{stack}}(\tilde{y} \mid \text{data}) = \sum_k w_k \, p_k(\tilde{y} \mid \text{data})
+$$
 
 Weights $w_k$ are chosen to minimize cross-validation error. This outperforms both single-model selection and traditional Bayesian model averaging.
 

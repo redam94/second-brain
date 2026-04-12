@@ -30,7 +30,9 @@ used_by:
 
 A standard [[Nonparametric Models Overview|Gaussian Process]] uses a kernel $k(x, x')$ that must be evaluated at all pairs of points — $O(n^3)$ cost. The HSGP approximation decomposes the kernel as a sum of orthonormal basis functions on a bounded domain $[-L, L]$:
 
-$$\text{GP} \approx \sum_{j=1}^{m} \beta_j \phi_j(x)$$
+$$
+\text{GP} \approx \sum_{j=1}^{m} \beta_j \phi_j(x)
+$$
 
 where $\phi_j$ are eigenfunctions of the Laplace operator on $L^2([-L, L])$ (analogous to Fourier basis functions on a circle). Crucially, **the basis functions $\phi_j$ do not depend on the kernel hyperparameters**, so they can be precomputed once and a linear model fitted in the $\beta_j$ coefficients. This reduces cost to $O(nm^2)$.
 
@@ -75,7 +77,9 @@ The *birthdays* dataset (USA, 1969–1988) uses three additive HSGP components:
 2. **Yearly seasonal trend** — annual cycle (periodic kernel, period = 365.25 days)
 3. **Day-of-week effect** — categorical deflection per weekday
 
-$$\mu_t = \alpha + f_\text{trend}(t) + f_\text{season}(t) + \beta_\text{dow}[\text{dow}(t)]$$
+$$
+\mu_t = \alpha + f_\text{trend}(t) + f_\text{season}(t) + \beta_\text{dow}[\text{dow}(t)]
+$$
 
 The HSGP decomposition makes sampling feasible on daily data over 20 years.
 

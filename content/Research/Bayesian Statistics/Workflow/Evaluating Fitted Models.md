@@ -34,7 +34,9 @@ used_by:
 
 Posterior predictive checking (Box, 1980; Gelman et al., 1996) generates replicated datasets $y^{\text{rep}}$ from the posterior predictive distribution:
 
-$$y^{\text{rep}} \sim p(y^{\text{rep}}|y) = \int p(y^{\text{rep}}|\theta)\,p(\theta|y)\,d\theta$$
+$$
+y^{\text{rep}} \sim p(y^{\text{rep}}|y) = \int p(y^{\text{rep}}|\theta)\,p(\theta|y)\,d\theta
+$$
 
 Compare $y^{\text{rep}}$ to observed data $y$ using summary statistics or visual checks. If the observed data look unrepresentative of the posterior predictive distribution, the model fails to capture some aspect of the data. See [[Model Checking]] for foundational discussion.
 

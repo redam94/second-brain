@@ -40,7 +40,9 @@ Let $\mathcal{M}^* = \{h^*(y_t | z_t; \lambda), \lambda \in \Lambda\}$ denote th
 
 The auxiliary model is generally **misspecified**: there is no $\lambda^*$ such that $h^*(y_t | z_t; \lambda^*) = h(y_t | z_t; \theta_0)$ exactly. However, the quasi-MLE of $\lambda$ is well-defined:
 
-$$\tilde{\lambda}_T = \arg\max_\lambda Q(Y, X; \lambda) = \arg\max_\lambda T^{-1} \sum_{t=1}^T \log h^*(y_t | z_t; \lambda)$$
+$$
+\tilde{\lambda}_T = \arg\max_\lambda Q(Y, X; \lambda) = \arg\max_\lambda T^{-1} \sum_{t=1}^T \log h^*(y_t | z_t; \lambda)
+$$
 
 > [!definition] Definition: Binding Function
 > The **binding function** $b(\theta)$ links the structural parameters $\theta$ to the auxiliary parameters $\lambda$. It is defined as the solution to:

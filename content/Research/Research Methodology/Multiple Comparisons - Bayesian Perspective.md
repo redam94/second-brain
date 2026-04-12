@@ -54,8 +54,12 @@ These errors are more practically relevant and are *exacerbated* by classical co
 
 Rather than correcting for a perceived problem, multilevel models **build the multiplicity into the model** from the start:
 
-$$y_i \sim \text{N}(\gamma_{j[i]} + \delta_{j[i]} P_i, \sigma_y^2)$$
-$$\delta_j \sim \text{N}(\mu, \sigma_\delta^2)$$
+$$
+y_i \sim \text{N}(\gamma_{j[i]} + \delta_{j[i]} P_i, \sigma_y^2)
+$$
+$$
+\delta_j \sim \text{N}(\mu, \sigma_\delta^2)
+$$
 
 The group-level distribution $\delta_j \sim \text{N}(\mu, \sigma_\delta^2)$ is the key — it connects the parameters being compared, enabling information sharing across groups.
 
@@ -65,7 +69,9 @@ The paper uses data from a multi-site randomized experiment (8 sites) evaluating
 
 ### Classical Analysis
 
-$$y_i = \sum_{j=1}^{8} (\gamma_j S_i^j + \delta_j S_i^j P_i) + \epsilon_i$$
+$$
+y_i = \sum_{j=1}^{8} (\gamma_j S_i^j + \delta_j S_i^j P_i) + \epsilon_i
+$$
 
 Testing $H_0^j: \delta_j = 0$ for each site at $\alpha = 0.05$: with 8 tests, there is a 34% chance of at least one false rejection. Standard intervals reject the null for 7 of 8 sites.
 

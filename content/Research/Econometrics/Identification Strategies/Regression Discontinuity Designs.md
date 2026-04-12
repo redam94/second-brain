@@ -35,19 +35,27 @@ used_by:
 
 Treatment is a **deterministic, discontinuous** function of a covariate:
 
-$$D_i = \begin{cases} 1 & \text{if } x_i \geq x_0 \\ 0 & \text{if } x_i < x_0 \end{cases}$$
+$$
+D_i = \begin{cases} 1 & \text{if } x_i \geq x_0 \\ 0 & \text{if } x_i < x_0 \end{cases}
+$$
 
 The regression model:
-$$Y_i = f(x_i) + \rho D_i + \eta_i$$
+$$
+Y_i = f(x_i) + \rho D_i + \eta_i
+$$
 
 where $f(x_i)$ is a smooth function (often modeled with polynomials).
 
 ### Parametric approach
-$$Y_i = \alpha + \beta_1 x_i + \beta_2 x_i^2 + ... + \beta_p x_i^p + \rho D_i + \eta_i$$
+$$
+Y_i = \alpha + \beta_1 x_i + \beta_2 x_i^2 + ... + \beta_p x_i^p + \rho D_i + \eta_i
+$$
 
 ### Nonparametric approach
 Compare means in a small neighborhood $[x_0 - \delta, x_0 + \delta]$:
-$$\lim_{\delta \to 0} E[Y_i | x_0 < x_i < x_0+\delta] - E[Y_i | x_0-\delta < x_i < x_0] = E[Y_{1i} - Y_{0i} | x_i = x_0]$$
+$$
+\lim_{\delta \to 0} E[Y_i | x_0 < x_i < x_0+\delta] - E[Y_i | x_0-\delta < x_i < x_0] = E[Y_{1i} - Y_{0i} | x_i = x_0]
+$$
 
 ### Key Example: Incumbency advantage (Lee, 2008)
 - Running variable: vote share margin of victory
@@ -58,7 +66,9 @@ $$\lim_{\delta \to 0} E[Y_i | x_0 < x_i < x_0+\delta] - E[Y_i | x_0-\delta < x_i
 
 Treatment probability **jumps** at the threshold but doesn't go from 0 to 1:
 
-$$P[D_i = 1 | x_i] = \begin{cases} g_0(x_i) & \text{if } x_i \geq x_0 \\ g_1(x_i) & \text{if } x_i < x_0 \end{cases}$$
+$$
+P[D_i = 1 | x_i] = \begin{cases} g_0(x_i) & \text{if } x_i \geq x_0 \\ g_1(x_i) & \text{if } x_i < x_0 \end{cases}
+$$
 
 Fuzzy RD = **IV with $T_i = 1(x_i \geq x_0)$ as the instrument** for $D_i$.
 

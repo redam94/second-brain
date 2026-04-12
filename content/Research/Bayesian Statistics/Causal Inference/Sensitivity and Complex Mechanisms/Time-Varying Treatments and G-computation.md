@@ -50,7 +50,9 @@ Consider $T$ time points. For unit $i$ ($i=1,\ldots,N$; $t=1,\ldots,T$):
 Treatment sequence: $\bar{Z}_t = (Z_1, \ldots, Z_t)$ and $\bar{z}_t = (z_1, \ldots, z_t)$.
 
 **Causal estimand**: the marginal effect comparing two pre-specified treatment sequences $\bar{z}, \bar{z}' \in \{0,1\}^T$:
-$$\tau_{\bar{z}, \bar{z}'} \equiv \mathbb{E}[Y_i(\bar{z}_T)] - \mathbb{E}[Y_i(\bar{z}_T')]$$
+$$
+\tau_{\bar{z}, \bar{z}'} \equiv \mathbb{E}[Y_i(\bar{z}_T)] - \mathbb{E}[Y_i(\bar{z}_T')]
+$$
 
 ## Sequential Ignorability
 

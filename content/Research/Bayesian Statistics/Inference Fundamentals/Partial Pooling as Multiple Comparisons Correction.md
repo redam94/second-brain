@@ -40,8 +40,12 @@ Classical multiple comparisons corrections (Bonferroni, FDR) adjust the *thresho
 
 Consider a simple normal-normal hierarchical model for group effects:
 
-$$y_j \mid \theta_j \sim \text{N}(\theta_j, \sigma_{\bar{y}}^2), \quad j = 1, \ldots, J$$
-$$\theta_j \sim \text{N}(\mu, \sigma_\theta^2)$$
+$$
+y_j \mid \theta_j \sim \text{N}(\theta_j, \sigma_{\bar{y}}^2), \quad j = 1, \ldots, J
+$$
+$$
+\theta_j \sim \text{N}(\mu, \sigma_\theta^2)
+$$
 
 where $y_j$ is the group mean, $\sigma_{\bar{y}}^2$ is the within-group sampling variance, and $\sigma_\theta^2$ is the between-group variance.
 

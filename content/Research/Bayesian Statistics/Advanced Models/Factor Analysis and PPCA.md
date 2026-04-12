@@ -30,7 +30,9 @@ used_by:
 
 ## Model Formulation
 
-$$X_{(d,n)} \mid W_{(d,k)}, F_{(k,n)} \sim \mathcal{N}(WF, \Psi)$$
+$$
+X_{(d,n)} \mid W_{(d,k)}, F_{(k,n)} \sim \mathcal{N}(WF, \Psi)
+$$
 
 where:
 - $d$ = number of observed dimensions, $n$ = number of observations, $k$ = number of latent factors ($k \ll d$)
@@ -81,7 +83,9 @@ With this parametrisation, chains agree on posterior means and $\hat{R}$ improve
 
 Explicitly sampling the $k \times n$ matrix $F$ is expensive for large $n$ and prevents minibatch streaming. Instead, integrate $F$ out analytically:
 
-$$X \mid W \sim \mathcal{N}(0,\ WW^\top + \sigma^2 I)$$
+$$
+X \mid W \sim \mathcal{N}(0,\ WW^\top + \sigma^2 I)
+$$
 
 This reduces the parameter space to $W$ and $\sigma$ only, enabling:
 - Faster per-iteration computation (fewer parameters)
@@ -101,11 +105,17 @@ with pm.Model(coords=coords) as PPCA_amortized:
 
 After fitting the amortized model (where $F$ was marginalized away), recover individual factor scores using the conjugate posterior:
 
-$$F \mid X, W \sim \mathcal{N}(\mu_F, \Sigma_F)$$
+$$
+F \mid X, W \sim \mathcal{N}(\mu_F, \Sigma_F)
+$$
 
-$$\mu_F = \left(I + \sigma^{-2}W^\top W\right)^{-1} \sigma^{-2} W^\top X$$
+$$
+\mu_F = \left(I + \sigma^{-2}W^\top W\right)^{-1} \sigma^{-2} W^\top X
+$$
 
-$$\Sigma_F = \left(I + \sigma^{-2}W^\top W\right)^{-1}$$
+$$
+\Sigma_F = \left(I + \sigma^{-2}W^\top W\right)^{-1}
+$$
 
 This is *amortized inference*: we postpone computing individual $F_i$ until after model fitting, then recover them analytically from the posterior samples of $W$ and $\sigma$.
 

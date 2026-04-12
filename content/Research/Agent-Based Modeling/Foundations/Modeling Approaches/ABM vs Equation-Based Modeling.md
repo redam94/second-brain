@@ -48,15 +48,21 @@ Bonabeau constructs a product adoption model that can be analyzed both ways:
 
 If every person is connected to everyone else, person $k$'s estimate of the adoption fraction equals the true global fraction:
 
-$$\hat{\rho}_k = \rho = N/N_T$$
+$$
+\hat{\rho}_k = \rho = N/N_T
+$$
 
 The resulting differential equation is:
 
-$$\partial_t N = V(\rho)(N_T - N)$$
+$$
+\partial_t N = V(\rho)(N_T - N)
+$$
 
 or equivalently:
 
-$$\partial_t \rho = V(\rho)(1 - \rho)$$
+$$
+\partial_t \rho = V(\rho)(1 - \rho)
+$$
 
 This produces a smooth S-curve adoption pattern.
 
@@ -64,11 +70,15 @@ This produces a smooth S-curve adoption pattern.
 
 In the ABM version, each person $k$ is connected to $n$ other people and estimates the adoption fraction locally:
 
-$$\hat{\rho}_k = n_k / n$$
+$$
+\hat{\rho}_k = n_k / n
+$$
 
 where $n_k$ is the number of $k$'s neighbors who have adopted. The perceived value is then:
 
-$$\hat{V}_k = V(\hat{\rho}_k) = \frac{(1 + \theta^d)\hat{\rho}_k^d}{\hat{\rho}_k^d + \theta^d}$$
+$$
+\hat{V}_k = V(\hat{\rho}_k) = \frac{(1 + \theta^d)\hat{\rho}_k^d}{\hat{\rho}_k^d + \theta^d}
+$$
 
 ### When They Agree
 

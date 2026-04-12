@@ -33,7 +33,9 @@ used_by:
 
 For parameters $(\theta_1, \theta_2)$ where $\theta_2$ is a nuisance parameter:
 
-$$p(\theta_1 \mid y) = \int p(\theta_1, \theta_2 \mid y)\, d\theta_2$$
+$$
+p(\theta_1 \mid y) = \int p(\theta_1, \theta_2 \mid y)\, d\theta_2
+$$
 
 This is conceptually clean but often analytically intractable — motivating computational methods in [[Introduction to Bayesian Computation|Part III]].
 

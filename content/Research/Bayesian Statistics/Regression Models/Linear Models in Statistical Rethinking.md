@@ -42,11 +42,21 @@ Two justifications for using Gaussian likelihoods:
 
 A complete Bayesian model specifies likelihood and priors:
 
-$$h_i \sim \text{Normal}(\mu_i, \sigma)$$
-$$\mu_i = \alpha + \beta x_i$$
-$$\alpha \sim \text{Normal}(178, 100)$$
-$$\beta \sim \text{Normal}(0, 10)$$
-$$\sigma \sim \text{Uniform}(0, 50)$$
+$$
+h_i \sim \text{Normal}(\mu_i, \sigma)
+$$
+$$
+\mu_i = \alpha + \beta x_i
+$$
+$$
+\alpha \sim \text{Normal}(178, 100)
+$$
+$$
+\beta \sim \text{Normal}(0, 10)
+$$
+$$
+\sigma \sim \text{Uniform}(0, 50)
+$$
 
 The R `map` function fits this by finding the **maximum a posteriori** (MAP) estimate and approximating the posterior as multivariate Gaussian.
 

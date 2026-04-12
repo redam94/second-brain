@@ -182,12 +182,18 @@ Six cases for the lead/lag relationship between advertising $X_t$ and sales $Q_t
 
 For reference, the lag operator notation used in the book:
 
-$$L X_t \equiv X_{t-1} \tag{Eq 4.64}$$
-$$L^k X_t = X_{t-k}$$
+$$
+L X_t \equiv X_{t-1} \tag{Eq 4.64}
+$$
+$$
+L^k X_t = X_{t-k}
+$$
 
 The Koyck model in lag polynomial form:
 
-$$(1 - \lambda L) Q_t = (1-\lambda)\beta_0 + \beta_1(1-\lambda) X_t + w_t - \lambda w_{t-1}$$
+$$
+(1 - \lambda L) Q_t = (1-\lambda)\beta_0 + \beta_1(1-\lambda) X_t + w_t - \lambda w_{t-1}
+$$
 
 A general rational lag is $B(L)/C(L)$ (Eq 4.72), which nests ADL models.
 

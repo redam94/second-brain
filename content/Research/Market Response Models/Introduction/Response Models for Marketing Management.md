@@ -44,14 +44,20 @@ used_by:
 
 Marketing management operates in a feedback loop: observed $Q_{t-1}$ and revenue $R_{t-1}$ inform future spending decisions, captured by the **decision rule**:
 
-$$A_t = g(P_{t-1}, Q_{t-1})$$
+$$
+A_t = g(P_{t-1}, Q_{t-1})
+$$
 
 ## The Simultaneous System
 
 When both equations are modeled together, the result is a simultaneous structural system:
 
-$$Q_t = \gamma_{12} A_t + \beta_{11} Y_t + \beta_{12} N_t + \beta_{13} + u_{1t} \tag{sales equation}$$
-$$A_t = \beta_{21} R_{t-1} + u_{2t} \tag{spending rule}$$
+$$
+Q_t = \gamma_{12} A_t + \beta_{11} Y_t + \beta_{12} N_t + \beta_{13} + u_{1t} \tag{sales equation}
+$$
+$$
+A_t = \beta_{21} R_{t-1} + u_{2t} \tag{spending rule}
+$$
 
 where $Y_t$ = consumer income, $N_t$ = competitor advertising, $R_{t-1}$ = lagged revenue. Simultaneity means OLS on the sales equation alone is biased — see [[Parameter Estimation in Market Response]] for 2SLS/3SLS remedies.
 

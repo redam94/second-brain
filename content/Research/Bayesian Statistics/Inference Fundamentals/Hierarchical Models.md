@@ -40,7 +40,9 @@ used_by:
 
 Parameters $\theta_1, \ldots, \theta_J$ are **exchangeable** if their joint distribution is invariant to permutations of the indices — we have no prior reason to treat any group differently. By **de Finetti's theorem**, exchangeable parameters can be written as conditionally i.i.d. given hyperparameters:
 
-$$\theta_j \mid \mu, \tau \sim \mathcal{N}(\mu, \tau^2), \quad j = 1, \ldots, J$$
+$$
+\theta_j \mid \mu, \tau \sim \mathcal{N}(\mu, \tau^2), \quad j = 1, \ldots, J
+$$
 
 This is the probabilistic justification for the hierarchical model structure: exchangeability implies a prior, not the other way around.
 
@@ -63,7 +65,9 @@ The canonical example (Rubin 1981): estimating coaching effects from 8 independe
 | **Partial pooling** | Hierarchical posterior | Optimal bias-variance tradeoff |
 
 The Bayes estimate under the normal hierarchical model:
-$$\hat{\theta}_j^{\text{Bayes}} \approx \frac{\frac{1}{\sigma_j^2}\, y_j + \frac{1}{\tau^2}\, \mu}{\frac{1}{\sigma_j^2} + \frac{1}{\tau^2}}$$
+$$
+\hat{\theta}_j^{\text{Bayes}} \approx \frac{\frac{1}{\sigma_j^2}\, y_j + \frac{1}{\tau^2}\, \mu}{\frac{1}{\sigma_j^2} + \frac{1}{\tau^2}}
+$$
 
 This is a **precision-weighted average** of the group observation $y_j$ and the grand mean $\mu$. The weight on the group observation increases as $\sigma_j$ decreases (more data) or $\tau$ increases (more between-group variation). ^partial-pooling-formula
 
@@ -85,7 +89,9 @@ This is a **precision-weighted average** of the group observation $y_j$ and the 
 ^def-hierarchical-structure
 
 The posterior factorizes as:
-$$p(\theta_1, \ldots, \theta_J, \phi \mid y) \propto p(\phi) \prod_{j=1}^{J} p(\theta_j \mid \phi)\, p(y_j \mid \theta_j)$$
+$$
+p(\theta_1, \ldots, \theta_J, \phi \mid y) \propto p(\phi) \prod_{j=1}^{J} p(\theta_j \mid \phi)\, p(y_j \mid \theta_j)
+$$
 
 Inference proceeds by first marginalizing over $\phi$, then drawing $\theta_j \mid \phi$ given the posterior for $\phi$. In practice this requires MCMC (see [[MCMC Basics]]).
 

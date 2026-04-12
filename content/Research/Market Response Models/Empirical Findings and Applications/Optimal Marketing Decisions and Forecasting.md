@@ -59,9 +59,13 @@ For the ADBUDG response function $Q = \beta_0 + (\beta_1 - \beta_0) A^{\beta_2}/
 
 Set marginal profit = marginal cost of advertising:
 
-$$m \cdot \frac{\partial Q}{\partial A} = 1$$
+$$
+m \cdot \frac{\partial Q}{\partial A} = 1
+$$
 
-$$m(\beta_1 - \beta_0) \frac{\beta_2 \beta_3^{\beta_2} A^{\beta_2-1}}{(\beta_3^{\beta_2} + A^{\beta_2})^2} = 1$$
+$$
+m(\beta_1 - \beta_0) \frac{\beta_2 \beta_3^{\beta_2} A^{\beta_2-1}}{(\beta_3^{\beta_2} + A^{\beta_2})^2} = 1
+$$
 
 Solved numerically. The ADBUDG parameters are calibrated from managerial judgments (current sales, saturation, zero-advertising baseline, midpoint advertising) making the optimization directly actionable.
 
@@ -69,11 +73,15 @@ Solved numerically. The ADBUDG parameters are calibrated from managerial judgmen
 
 For dynamic systems, optimal advertising over time solves:
 
-$$\max_{A_t} \sum_{t=0}^T \rho^t [(P-c)Q_t - A_t]$$
+$$
+\max_{A_t} \sum_{t=0}^T \rho^t [(P-c)Q_t - A_t]
+$$
 
 subject to the state equation (goodwill dynamics):
 
-$$G_t = A_t + \lambda G_{t-1}$$
+$$
+G_t = A_t + \lambda G_{t-1}
+$$
 
 and $Q_t = f(G_t)$.
 
@@ -83,7 +91,9 @@ and $Q_t = f(G_t)$.
 
 For Nash equilibrium in price competition (Bertrand-Nash):
 
-$$P^*_i = \frac{c_i \eta_{ii}}{\eta_{ii} + 1} + \frac{\text{competitive adjustments}}{\eta_{ii} + 1}$$
+$$
+P^*_i = \frac{c_i \eta_{ii}}{\eta_{ii} + 1} + \frac{\text{competitive adjustments}}{\eta_{ii} + 1}
+$$
 
 Cross-price effects shift the Nash equilibrium prices. Markets with higher cross-price elasticities equilibrate at lower prices (more competitive).
 
@@ -91,7 +101,9 @@ Cross-price effects shift the Nash equilibrium prices. Markets with higher cross
 
 With multiplicative response $Q = K \cdot A^{\alpha} P^{-\beta} D^{\gamma}$, optimal conditions yield:
 
-$$\frac{A^*}{S^*} = \frac{\alpha}{m}, \quad \frac{d^*}{S^*} = \frac{\gamma}{m}, \quad P^* = \frac{c\beta}{\beta - 1}$$
+$$
+\frac{A^*}{S^*} = \frac{\alpha}{m}, \quad \frac{d^*}{S^*} = \frac{\gamma}{m}, \quad P^* = \frac{c\beta}{\beta - 1}
+$$
 
 where $d$ is distribution spending and $m = (P-c)/P$ is the margin.
 

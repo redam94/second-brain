@@ -33,7 +33,9 @@ aliases:
 Under the [[Potential Outcomes Framework#^def-ignorability|ignorability assumption]], the CATE and PATE are identified from observed data. Frequentist causal estimation operationalizes this identification through three estimator families, reviewed here as context for the Bayesian approach in [[General Structure of Bayesian CI]].
 
 The key identification result: under ignorability,
-$$\mu_z(x) = \mathbb{E}[Y_i(z) \mid X_i = x] = \mathbb{E}[Y_i \mid Z_i = z, X_i = x]$$
+$$
+\mu_z(x) = \mathbb{E}[Y_i(z) \mid X_i = x] = \mathbb{E}[Y_i \mid Z_i = z, X_i = x]
+$$
 
 so causal means equal observable conditional means. See [[Potential Outcomes Framework#^eq-identification]].
 
@@ -42,7 +44,9 @@ so causal means equal observable conditional means. See [[Potential Outcomes Fra
 The simplest approach: specify an outcome model $\mu_z(x) = \mathbb{E}[Y \mid Z=z, X=x]$, estimate it from data, then impute missing potential outcomes.
 
 The outcome-model PATE estimator:
-$$\hat{\tau}^{\text{reg}} = N^{-1} \sum_{i=1}^{N} [\hat{\mu}_1(X_i) - \hat{\mu}_0(X_i)]$$
+$$
+\hat{\tau}^{\text{reg}} = N^{-1} \sum_{i=1}^{N} [\hat{\mu}_1(X_i) - \hat{\mu}_0(X_i)]
+$$
 
 - Consistent for $\tau^P$ if the outcome model is correctly specified.
 - In poor overlap regions, estimates rely on extrapolation — sensitive to model misspecification.
@@ -63,7 +67,9 @@ Uses the **propensity score** $e(x) = \Pr(Z_i = 1 \mid X_i = x)$ to reweight uni
 - When $e(X_i)$ is unknown (observational data), it must be estimated, e.g. via logistic regression.
 
 **Hájek (normalized) IPW**:
-$$\hat{\tau}^{\text{Hájek}} = \frac{\sum_{i=1}^{N} Z_i Y_i / e(X_i)}{\sum_{i=1}^{N} Z_i / e(X_i)} - \frac{\sum_{i=1}^{N} (1-Z_i) Y_i / (1-e(X_i))}{\sum_{i=1}^{N} (1-Z_i) / (1-e(X_i))}$$
+$$
+\hat{\tau}^{\text{Hájek}} = \frac{\sum_{i=1}^{N} Z_i Y_i / e(X_i)}{\sum_{i=1}^{N} Z_i / e(X_i)} - \frac{\sum_{i=1}^{N} (1-Z_i) Y_i / (1-e(X_i))}{\sum_{i=1}^{N} (1-Z_i) / (1-e(X_i))}
+$$
 
 The Hájek estimator normalizes weights to sum to 1, reducing variance.
 

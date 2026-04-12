@@ -40,7 +40,9 @@ WOM represents consumer-to-consumer (C2C) information transfer about products an
 
 In Karakaya et al. (2011), WOM enters the consumer utility function as the third component:
 
-$$U_{i3} = WOM_i \cdot S_i \cdot C_{WOM}$$
+$$
+U_{i3} = WOM_i \cdot S_i \cdot C_{WOM}
+$$
 
 where $WOM_i$ is the total WOM received by consumer $i$, $S_i$ is their social sensitivity, and $C_{WOM}$ is a global constant.
 

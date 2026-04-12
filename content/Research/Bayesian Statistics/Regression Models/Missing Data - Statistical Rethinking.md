@@ -46,7 +46,9 @@ The taxonomy (from Rubin 1976) determines what analyses are valid:
 
 Treat missing values as **latent variables** and place a prior on them, jointly with the model parameters. The likelihood marginalises over the missing values:
 
-$$P(Y_\text{obs}, \theta) = \int P(Y_\text{obs}, Y_\text{miss}, \theta)\, dY_\text{miss}$$
+$$
+P(Y_\text{obs}, \theta) = \int P(Y_\text{obs}, Y_\text{miss}, \theta)\, dY_\text{miss}
+$$
 
 In PyMC, missing values in a pandas array are automatically handled via `pm.MutableData` with `NaN` entries or explicit `pm.Normal.dist()` imputation priors.
 

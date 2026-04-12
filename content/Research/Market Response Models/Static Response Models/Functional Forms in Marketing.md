@@ -256,7 +256,9 @@ used_by:
 
 Parameters can be made functions of other variables (e.g., competitive context, season):
 
-$$\beta_1 = \alpha_0 + \alpha_1 Z_t$$
+$$
+\beta_1 = \alpha_0 + \alpha_1 Z_t
+$$
 
 substituting into the model yields an **interaction term** $\alpha_1 Z_t X_t$. This generalizes the constant-coefficient model and allows heterogeneous response across subgroups or time periods. See also [[Shape of the Marketing Response Function]].
 
@@ -264,7 +266,9 @@ substituting into the model yields an **interaction term** $\alpha_1 Z_t X_t$. T
 
 When the functional form itself is unknown a priori, a **switching regression** tests whether the data support different response regimes (e.g., pre/post competitive entry):
 
-$$Q_t = \begin{cases} f_1(X_t; \beta_1) + \epsilon_t & \text{if regime 1} \\ f_2(X_t; \beta_2) + \epsilon_t & \text{if regime 2} \end{cases}$$
+$$
+Q_t = \begin{cases} f_1(X_t; \beta_1) + \epsilon_t & \text{if regime 1} \\ f_2(X_t; \beta_2) + \epsilon_t & \text{if regime 2} \end{cases}
+$$
 
 Regime assignment can be endogenous (Goldfeld-Quandt, Maddala-Nelson) or triggered by an observable event.
 
