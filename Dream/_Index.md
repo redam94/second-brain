@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-04-10
+date_updated: 2026-04-12
 ---
 
 # Dream: Research Gaps
@@ -19,9 +19,9 @@ date_updated: 2026-04-10
 **Status:** 🌿 still relevant
 
 **Why it's a gap:**
-[[Activity Bias in Advertising]] explicitly states that "propensity score matching and regression with controls cannot fix" activity bias, but there is no note explaining what propensity score methods are, when they succeed, and why they fail here. The [[Conditional Independence Assumption]] note covers the theoretical requirement for selection-on-observables identification, and [[The Selection Problem]] motivates the challenge — but the frequentist methodological toolkit (propensity score matching, IPW, doubly robust estimators, AIPW) is missing. The Bayesian side is now partially covered by [[Bayesian Propensity Scores and IPW]], but the classical Rosenbaum & Rubin framework and diagnostics (covariate balance, overlap plots) are still absent.
+[[Activity Bias in Advertising]] explicitly states that "propensity score matching and regression with controls cannot fix" activity bias, but there is no note explaining what propensity score methods are, when they succeed, and why they fail here. The [[Conditional Independence Assumption]] note covers the theoretical requirement for selection-on-observables identification, and [[The Selection Problem]] motivates the challenge — but the frequentist methodological toolkit (propensity score matching, IPW, doubly robust estimators, AIPW) is missing. The Bayesian side is covered by [[Bayesian Propensity Scores and IPW]]. The frequentist IPW and DR estimators are now in [[Frequentist Causal Estimation]] (added 2026-04-10) — but the classical Rosenbaum & Rubin matching framework and diagnostics (covariate balance, overlap plots, caliper matching) remain absent.
 
-**Adjacent notes:** [[Bayesian Propensity Scores and IPW]], [[Conditional Independence Assumption]], [[The Selection Problem]], [[Omitted Variables Bias]], [[Activity Bias in Advertising]]
+**Adjacent notes:** [[Bayesian Propensity Scores and IPW]], [[Frequentist Causal Estimation]], [[Conditional Independence Assumption]], [[The Selection Problem]], [[Omitted Variables Bias]], [[Activity Bias in Advertising]]
 
 **Suggested sources / search terms:**
 - Rosenbaum & Rubin (1983) — "The central role of the propensity score"
@@ -66,18 +66,12 @@ DAG-based reasoning was implicitly present throughout the vault but had no dedic
 ---
 
 ### 5. Heterogeneous Treatment Effects and CATE Estimation
-**Status:** 🌱 new
+**Status:** 🍂 covered
 
-**Why it's a gap:**
-[[Local Average Treatment Effects]] explicitly discusses the policy-relevance problem: LATE ≠ ATE, and different instruments identify different complier subgroups. [[Nonparametric Causal Inference]] estimates aggregate ATE/ATT using BART but does not cover conditional ATE (CATE) — i.e., how treatment effects vary by subgroup or covariate values. [[Hierarchical Models]] mentions Bayesian partial pooling for treatment effect heterogeneity, but machine learning approaches (causal forests, X-learner, R-learner, doubly robust learners) are entirely absent. This is a major active research area connecting econometrics, Bayesian statistics, and ML.
+**Why it was a gap:**
+[[Local Average Treatment Effects]] explicitly discusses the policy-relevance problem: LATE ≠ ATE, and different instruments identify different complier subgroups. [[Nonparametric Causal Inference]] estimates aggregate ATE/ATT using BART but does not cover conditional ATE (CATE). Machine learning metalearners were absent.
 
-**Adjacent notes:** [[Local Average Treatment Effects]], [[Nonparametric Causal Inference]], [[Hierarchical Models]], [[Regression and the CEF]], [[Differences-in-Differences]]
-
-**Suggested sources / search terms:**
-- Wager & Athey (2018) — "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests" (*JASA*)
-- Künzel et al. (2019) — "Metalearners for estimating heterogeneous treatment effects" (*PNAS*)
-- Kennedy (2023) — "Towards optimal doubly robust estimation of heterogeneous causal effects"
-- Search: "causal forest", "X-learner", "R-learner", "CATE estimation", "heterogeneous treatment effects"
+**Covered by:** [[Metalearners for CATE]], [[X-Learner]], [[T-Learner and Minimax Rate]], [[S-Learner]], [[Künzel 2019 - Overview]] (all in `Bayesian Statistics/Causal Inference/Treatment Effect Estimation/`, discovered 2026-04-12)
 
 ---
 
@@ -113,12 +107,61 @@ DAG-based reasoning was implicitly present throughout the vault but had no dedic
 
 ---
 
+### 8. Factor Copulas and High-Dimensional Copula Architectures
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Dependence Measures for Copulas]] includes a tail dependence table listing "Factor copula (Oh & Patton)" alongside Normal, Clayton, Gumbel, and Student-t copulas — but no note explains what a factor copula *is* architecturally, or how it solves the curse of dimensionality for high-dimensional dependence modeling. [[Copula Estimation]] covers Bayesian Gaussian copula estimation (bivariate). [[SMM Estimator for Copulas]] covers estimation of the factor copula model without explaining the model structure itself. Vine (pair) copulas — a flexible alternative for high-dimensional settings — are entirely absent. This gap leaves practitioners unable to choose between copula architectures for their specific application.
+
+**Adjacent notes:** [[Dependence Measures for Copulas]], [[Copula Estimation]], [[SMM Estimator for Copulas]], [[SMM Copula Simulation and Application]], [[Factor Analysis and PPCA]]
+
+**Suggested sources / search terms:**
+- Oh & Patton (2017) — "Modelling dependence in high dimensions with factor copulas" (*JBES*)
+- Aas et al. (2009) — "Pair-copula constructions of multiple dependence" (*Insurance: Mathematics and Economics*)
+- Czado (2019) — *Analyzing Dependent Data with Vine Copulas*, Springer
+- Search: "factor copula model", "vine copula", "pair copula construction", "high-dimensional dependence", "C-vine D-vine"
+
+---
+
+### 9. Causal Structure Learning from Data
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The vault has extensive coverage of DAG *reasoning* (d-separation, back-door criterion, do-calculus — [[Directed Acyclic Graphs]], [[Canonical Causal DAGs]], [[Summary Causal DAGs]]) and DAG *construction* from expert knowledge ([[LLM Expert Elicitation for Bayesian Networks]], [[BN Construction Methods Comparison]], [[Interactive Knowledge Elicitation Method]]). But there is no note on how to *learn* a causal DAG from observational data. The PC algorithm (constraint-based, uses conditional independence tests), GES (Greedy Equivalence Search, score-based), and NOTEARS (continuous optimization, differentiable structure learning) are all absent. This gap is especially salient given the vault's ABM work: ABM outputs can be used as observational data for structure learning, and the Zeng 2025 DAG summarization work (§4 of [[Summary Causal DAGs]]) assumes the DAG is given — structure learning is what precedes summarization.
+
+**Adjacent notes:** [[Directed Acyclic Graphs]], [[Summary Causal DAGs]], [[LLM Expert Elicitation for Bayesian Networks]], [[BN Construction Methods Comparison]], [[Approximate Bayesian Computation for ABMs]]
+
+**Suggested sources / search terms:**
+- Spirtes, Glymour & Scheines (2000) — *Causation, Prediction, and Search* (PC algorithm)
+- Chickering (2002) — "Optimal structure identification with greedy search" (*JMLR*) — GES
+- Zheng et al. (2018) — "DAGs with NO TEARS: Continuous optimization for structure learning" (*NeurIPS*)
+- Search: "PC algorithm structure learning", "GES causal discovery", "NOTEARS", "constraint-based causal discovery"
+
+---
+
+### 10. Global Sensitivity Analysis
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[ABM Validation Challenges]] identifies "sensitivity analysis to distinguish robust from fragile results" as one of three core validation strategies, and [[Population Initialization and Parameter Sensitivity]] covers local sensitivity (one-at-a-time parameter variation). [[Uncertainty Quantification for ABM Calibration]] applies UQ ensembles that implicitly capture parameter uncertainty. But *global* sensitivity analysis (GSA) — which quantifies how much of the model output variance is attributable to each input parameter across the full parameter space — is entirely absent. Sobol variance-based indices, Morris elementary effects screening, and the Saltelli-Tarantola FAST method are standard tools for this. GSA connects ABM calibration/validation to the broader uncertainty quantification and experimental design literature, and is especially relevant when the parameter space is high-dimensional (as in the CUBES or Karakaya models with 10+ parameters per agent type).
+
+**Adjacent notes:** [[ABM Validation Challenges]], [[Population Initialization and Parameter Sensitivity]], [[Uncertainty Quantification for ABM Calibration]], [[Approximate Bayesian Computation for ABMs]], [[History Matching for ABMs]]
+
+**Suggested sources / search terms:**
+- Saltelli et al. (2008) — *Global Sensitivity Analysis: The Primer*, Wiley
+- Morris (1991) — "Factorial sampling plans for preliminary computational experiments" (*Technometrics*)
+- Sobol (1993) — "Sensitivity estimates for non-linear mathematical models" (*Mathematical Modelling*)
+- Search: "Sobol sensitivity indices", "Morris screening method", "global sensitivity analysis ABM", "variance-based sensitivity", "SALib Python"
+
+---
+
 ## Covered Gaps
 
 | Gap | Covered By | Date Covered |
 |-----|-----------|--------------|
 | Synthetic Control Methods (#2) | [[Synthetic Control]] | 2026-04-10 |
 | Causal DAGs (#4) | [[Directed Acyclic Graphs]] | 2026-04-10 |
+| Heterogeneous Treatment Effects / CATE (#5) | [[Metalearners for CATE]], [[X-Learner]], [[T-Learner and Minimax Rate]], [[S-Learner]] | 2026-04-12 |
 
 ---
 
@@ -129,3 +172,4 @@ DAG-based reasoning was implicitly present throughout the vault but had no dedic
 | 2026-04-09 | Initial Dream index created. Three gaps identified from review of 9 Research notes. |
 | 2026-04-09 | Run 2: reviewed 9 notes (Decision Analysis, Observational vs Experimental, Missing Data Models, GLMs, LATE, Forking Paths, Spurious Association, Modeling as Software Development, Power Analysis). Added gaps 4 (Causal DAGs) and 5 (Heterogeneous Treatment Effects / CATE). All prior gaps remain 🌱 new. |
 | 2026-04-10 | Run 3: reviewed 9 notes (Synthetic Control, Fitting and Validating Computation, Iterative Model Improvement, Power Analysis, Golem of Prague, Model Comparison, Garden of Forking Data, Multiple Comparisons Bayesian, Spatial BYM). Gaps #2 and #4 marked 🍂 covered (notes now exist). Gap #1 updated to 🌿 still relevant (Bayesian IPW note exists but frequentist propensity score matching not yet covered). Added gaps #6 (Simulation-Based Calibration) and #7 (Permutation/Randomization Inference). |
+| 2026-04-12 | Run 4: reviewed 9 notes (ABM Validation Challenges, Heterogeneity in Agent Models, Golem of Prague, Canonical Causal DAGs, Dependence Measures for Copulas, SMM Python Implementation, Evaluating Fitted Models, Summary Causal DAGs, Transfer Function Model). Gap #5 marked 🍂 covered (Treatment Effect Estimation subfolder exists with Metalearners for CATE, X-Learner, T-Learner, S-Learner). Gap #1 updated: Frequentist Causal Estimation note now covers IPW/DR estimators, but PSM matching diagnostics still absent. Added gaps #8 (Factor/Vine Copulas), #9 (Causal Structure Learning from Data), #10 (Global Sensitivity Analysis). |

@@ -95,3 +95,6 @@ Given the difficulty of formal validation, the papers converge on a **plausibili
 - [[ABM Calibration Overview]] — calibration as a prerequisite for validation
 - [[GA Fitness Evaluation and the RAM]] — one approach to measuring model fit
 - [[Population Initialization and Parameter Sensitivity]] — sensitivity analysis as partial validation
+- [[HM-ABC Calibration Framework]] — modern probabilistic calibration that addresses the input-output mismatch via history matching + ABC
+- [[Uncertainty Quantification for ABM Calibration]] — UQ methods that handle stochastic variation through ensembles of runs
+- [[ABM vs Equation-Based Modeling]] — why micro-level validation is harder for ABM than for equation-based models

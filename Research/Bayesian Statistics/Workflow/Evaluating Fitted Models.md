@@ -25,6 +25,8 @@ used_by:
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
 ---
 
+# Evaluating Fitted Models
+
 > [!summary]
 > Section 6 of Gelman et al. (2020) covers how to evaluate a fitted Bayesian model through posterior predictive checks, cross validation, sensitivity analysis of priors, and graphical exploration. The goal is not just to assess fit but to understand what the model captures and misses, guiding the next iteration of [[Iterative Model Improvement]].
 
@@ -71,7 +73,12 @@ Bayesian inference naturally handles **uncertainty propagation** through [[Hiera
 
 Gabry et al. (2019) advocate for graphics in Bayesian workflow, implemented in tools like `bayesplot` and `ArviZ`.
 
-## Related Notes
+## See Also
 
-- [[Fitting and Validating Computation]] | [[Iterative Model Improvement]]
-- [[Model Checking]] | [[Model Comparison]] | [[Hierarchical Models]]
+- [[Fitting and Validating Computation]] — upstream step: ensures the sampler is working before evaluating fit
+- [[Iterative Model Improvement]] — downstream step: use evaluation failures to guide the next model iteration
+- [[Model Checking]] — foundational posterior predictive check methodology
+- [[Model Comparison]] — LOO-CV as a model selection criterion (extends evaluation to cross-model comparison)
+- [[Hierarchical Models]] — uncertainty propagation across levels is a key focus of evaluation
+- [[Overfitting and Information Criteria]] — WAIC and LOO as information-theoretic alternatives to LOO-CV
+- [[Bayesian Workflow - Overview]] — situates evaluation in the full iterative workflow
