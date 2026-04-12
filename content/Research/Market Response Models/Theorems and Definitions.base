@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("Research")
+    - file.inFolder("Research/Market Response Models")
     - or:
         - file.hasTag("type/theorem")
         - file.hasTag("type/definition")
@@ -11,8 +11,10 @@ properties:
     displayName: Location
   doc_type:
     displayName: Type
+  chapter:
+    displayName: Chapter
   file.folder:
-    displayName: Topic
+    displayName: Subfolder
 views:
   - type: table
     name: Theorems and Definitions
@@ -23,4 +25,5 @@ views:
       - file.name
       - source
       - source_location
+      - chapter
       - doc_type

@@ -1,27 +1,31 @@
 filters:
   and:
-    - file.inFolder("Research/Agent-Based Modeling")
-    - or:
-        - file.hasTag("type/theorem")
-        - file.hasTag("type/definition")
-        - file.hasTag("type/concept")
+    - file.inFolder("Research/Econometrics")
+    - '!file.hasTag("type/index")'
+    - file.ext == "md"
 properties:
+  doc_type:
+    displayName: Type
   source:
     displayName: Source
   source_location:
     displayName: Location
-  doc_type:
-    displayName: Type
+  date_created:
+    displayName: Created
+  status:
+    displayName: Status
   file.folder:
     displayName: Subfolder
 views:
   - type: table
-    name: Formal Concepts
+    name: All Econometrics Notes
     groupBy:
       property: file.folder
       direction: ASC
     order:
       - file.name
+      - doc_type
       - source
       - source_location
-      - doc_type
+      - date_created
+      - status

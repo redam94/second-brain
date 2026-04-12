@@ -1,29 +1,25 @@
 filters:
   and:
-    - file.hasTag("source/ingested")
     - file.inFolder("Research/Agent-Based Modeling")
     - '!file.hasTag("type/index")'
-
+    - file.ext == "md"
 properties:
-  file.name:
-    displayName: "Concept"
   depends_on:
-    displayName: "Depends On"
+    displayName: Depends On
   used_by:
-    displayName: "Used By"
-  file.tags:
-    displayName: "Tags"
+    displayName: Used By
+  doc_type:
+    displayName: Type
   file.folder:
-    displayName: "Folder"
-
+    displayName: Subfolder
 views:
   - type: table
-    name: "Concept Graph"
+    name: Concept Dependency Graph
+    groupBy:
+      property: file.folder
+      direction: ASC
     order:
       - file.name
       - depends_on
       - used_by
-      - file.tags
-    groupBy:
-      property: file.folder
-      direction: ASC
+      - doc_type

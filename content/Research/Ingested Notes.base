@@ -1,19 +1,41 @@
-filters: file.hasTag("source/ingested")
+filters:
+  and:
+    - file.inFolder("Research")
+    - '!file.hasTag("type/index")'
+    - file.ext == "md"
 properties:
   doc_type:
-    displayName: Doc Type
+    displayName: Type
   source:
     displayName: Source
   source_location:
     displayName: Location
-  date_ingested:
-    displayName: Ingested
+  date_created:
+    displayName: Created
+  status:
+    displayName: Status
+  file.folder:
+    displayName: Folder
 views:
   - type: table
-    name: All Ingested Notes
+    name: All Research Notes
+    groupBy:
+      property: file.folder
+      direction: ASC
     order:
       - file.name
       - doc_type
       - source
       - source_location
-      - date_ingested
+      - date_created
+      - status
+  - type: table
+    name: By Type
+    groupBy:
+      property: doc_type
+      direction: ASC
+    order:
+      - file.name
+      - source
+      - source_location
+      - file.folder

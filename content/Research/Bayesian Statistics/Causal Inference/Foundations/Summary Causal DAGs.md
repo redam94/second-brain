@@ -131,4 +131,7 @@ This NP-hardness motivates the greedy approximation in [[CaGReS Algorithm]].
 - [[Canonical Causal DAGs]] — the canonical DAG and node-contraction-as-edge-addition
 - [[CaGReS Algorithm]] — greedy solution to the NP-hard problem
 - [[s-Separation in Summary DAGs]] — CI identification in summary DAGs
+- [[Do-Calculus in Summary Causal DAGs]] — do-calculus identifiability in the summarized graph
 - [[Zeng 2025 - Overview]] — paper overview
+- [[Frequentist Causal Estimation]] — the adjustment set framework that CI preservation in summary DAGs must protect
+- [[Bayesian Outcome Models]] — Bayesian causal estimation that relies on DAG structure for confounding adjustment

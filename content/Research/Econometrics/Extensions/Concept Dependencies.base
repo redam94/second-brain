@@ -1,25 +1,25 @@
 filters:
   and:
-    - file.hasTag("source/ingested")
-    - file.hasTag("topic/econometrics")
-    - 'file.ext == "md"'
-    - not:
-        file.hasTag("type/index")
-
+    - file.inFolder("Research/Econometrics")
+    - '!file.hasTag("type/index")'
+    - file.ext == "md"
 properties:
   depends_on:
-    displayName: "Depends On"
+    displayName: Depends On
   used_by:
-    displayName: "Used By"
-
+    displayName: Used By
+  doc_type:
+    displayName: Type
+  file.folder:
+    displayName: Subfolder
 views:
   - type: table
-    name: "Concept Dependencies"
+    name: Concept Dependencies
+    groupBy:
+      property: file.folder
+      direction: ASC
     order:
       - file.name
       - depends_on
       - used_by
-      - file.tags
-    groupBy:
-      property: doc_type
-      direction: ASC
+      - doc_type

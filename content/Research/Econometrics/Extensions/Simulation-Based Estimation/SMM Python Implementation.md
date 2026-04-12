@@ -326,6 +326,8 @@ See [[Indirect Inference]] for the theoretical framework and [[SMM Estimator for
 - [[Practical Issues in Simulation Estimation]] — common random numbers, step-size selection, ill-conditioning
 - [[Indirect Inference]] — auxiliary model moments as an alternative to direct simulation moments
 - [[SMM Estimator for Copulas]] — copula-specific implementation using Spearman's ρ and tail dependence
+- [[Efficient Method of Moments]] — related estimator that uses optimal auxiliary score functions as moments
+- [[Simulation-Based Estimation - Overview]] — umbrella note situating SMM, II, and EMM in the simulation-based estimation family
 
 ## Sources
 

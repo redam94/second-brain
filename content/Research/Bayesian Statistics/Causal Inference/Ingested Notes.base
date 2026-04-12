@@ -1,21 +1,33 @@
 filters:
   and:
-    - file.hasTag("source/ingested")
     - file.inFolder("Research/Bayesian Statistics/Causal Inference")
     - '!file.hasTag("type/index")'
+    - 'file.ext == "md"'
+
 properties:
   doc_type:
-    displayName: Doc Type
+    displayName: Type
+  source:
+    displayName: Source
   source_location:
     displayName: Location
-  date_ingested:
-    displayName: Ingested
+  date_created:
+    displayName: Created
+  status:
+    displayName: Status
+  file.folder:
+    displayName: Subfolder
+
 views:
   - type: table
-    name: All Ingested Notes
+    name: All Causal Inference Notes
     order:
       - file.name
       - doc_type
+      - source
       - source_location
-      - date_ingested
-      - file.folder
+      - date_created
+      - status
+    groupBy:
+      property: file.folder
+      direction: ASC

@@ -104,3 +104,5 @@ Therefore, the canonical DAG $\mathcal{G}_\mathcal{H}$ (a supergraph of $\mathca
 - [[Summary Causal DAGs]] — the summary DAG definition and constraints
 - [[CaGReS Algorithm]] — exploits Theorem 4.1 for efficient greedy search
 - [[s-Separation in Summary DAGs]] — builds on the canonical DAG for CI identification
+- [[Do-Calculus in Summary Causal DAGs]] — interventional identification in summary DAGs; relies on canonical DAG validity
+- [[Directed Acyclic Graphs]] — foundational d-separation and back-door criterion that canonical DAGs must preserve

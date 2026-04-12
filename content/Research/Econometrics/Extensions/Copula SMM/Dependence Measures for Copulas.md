@@ -172,6 +172,8 @@ The Normal copula's zero tail dependence is a significant limitation for financi
 - [[Copula Estimation]] — Bayesian estimation of Gaussian copulas (complementary approach)
 - [[SMM Estimator for Copulas]] — SMM estimation using these dependence measures
 - [[SMM Copula Simulation and Application]] — empirical dependence patterns in financial data
+- [[SMM Copula Specification Testing]] — tests whether a fitted copula matches observed quantile dependence patterns
+- [[SMM Copula Asymptotic Theory]] — asymptotic properties of sample Spearman's ρ and quantile dependence estimators
 
 ## Sources
 

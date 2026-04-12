@@ -1,22 +1,27 @@
 filters:
   and:
-    - file.hasTag("source/ingested")
     - file.inFolder("Research/Bayesian Statistics/Causal Inference")
     - '!file.hasTag("type/index")'
-    - '!file.hasTag("type/overview")'
+    - 'file.ext == "md"'
+
 properties:
   depends_on:
     displayName: Depends On
   used_by:
     displayName: Used By
+  doc_type:
+    displayName: Type
+  file.folder:
+    displayName: Subfolder
+
 views:
   - type: table
     name: Concept Dependency Graph
-    groupBy:
-      property: file.folder
-      direction: ASC
     order:
       - file.name
       - depends_on
       - used_by
-      - file.folder
+      - doc_type
+    groupBy:
+      property: file.folder
+      direction: ASC

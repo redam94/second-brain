@@ -72,7 +72,7 @@ Bonabeau (2002) argues that ABM should be used when "the population is heterogen
 
 2. **Segmentation emerges naturally**: Rather than pre-defining market segments, heterogeneous agents self-sort into behavioral clusters through their interactions.
 
-3. **Tail effects matter**: A small number of highly connected or highly influential agents (opinion leaders) can disproportionately drive market outcomes — an effect invisible in aggregate models.
+3. **Tail effects matter**: A small number of highly connected or highly influential agents ([[Opinion Leaders and Social Influence|opinion leaders]]) can disproportionately drive market outcomes — an effect invisible in aggregate models.
 
 ## Examples
 
@@ -93,3 +93,6 @@ Bonabeau (2002) argues that ABM should be used when "the population is heterogen
 - [[ABM Methodology and Principles]] — heterogeneity as a core ABM property
 - [[Consumer Utility Function Components]] — how heterogeneity enters the Karakaya utility model
 - [[Population Initialization and Parameter Sensitivity]] — practical strategies for assigning heterogeneous parameters
+- [[Opinion Leaders and Social Influence]] — the extreme end of behavioral heterogeneity: highly influential agents with outsized market impact
+- [[Network Topology Effects on Diffusion]] — network position heterogeneity amplifies behavioral heterogeneity in diffusion dynamics
+- [[ABM vs Equation-Based Modeling]] — heterogeneity is the primary reason to choose ABM over aggregate equation-based models

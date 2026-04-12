@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("Research")
+    - file.inFolder("Research/Econometrics")
     - '!file.hasTag("type/index")'
     - file.ext == "md"
 properties:
@@ -11,7 +11,7 @@ properties:
   doc_type:
     displayName: Type
   file.folder:
-    displayName: Folder
+    displayName: Subfolder
 views:
   - type: table
     name: Concept Dependency Graph

@@ -10,8 +10,10 @@ tags:
   - topic/time-series
   - topic/transfer-function
   - source/hanssens-parsons-schultz-2001
+date_ingested: 2026-04-11
 date_created: 2026-04-11
 date_updated: 2026-04-11
+folder: "Market Response Models/Time Series Analysis"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 7"
 chapter: "7"
 status: complete
@@ -156,3 +158,4 @@ Two residual checks:
 - Multi-input extension: [[Multivariate Persistence and Cointegration]]
 - Intervention analysis in causal inference context: [[Bayesian Structural Time-Series Model]]
 - ADL model: [[Design of Dynamic Response Models]]
+- Causal ordering of inputs: [[Empirical Causal Ordering]] — determining whether $x_t$ leads or lags $y_t$ before specifying the TF delay $b$
