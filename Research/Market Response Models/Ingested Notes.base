@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("Research/Agent-Based Modeling")
+    - file.inFolder("Research/Market Response Models")
     - '!file.hasTag("type/index")'
     - file.ext == "md"
 properties:
@@ -14,18 +14,19 @@ properties:
     displayName: Created
   status:
     displayName: Status
+  chapter:
+    displayName: Chapter
   file.folder:
     displayName: Subfolder
 views:
   - type: table
-    name: All ABM Notes
+    name: All Market Response Notes
     groupBy:
       property: file.folder
       direction: ASC
     order:
       - file.name
       - doc_type
-      - source
+      - chapter
       - source_location
-      - date_created
       - status
