@@ -4,8 +4,8 @@ tags:
   - type/index
   - source/ingested
 parent: "[[../Extensions/_Index|Extensions]]"
-date_updated: 2026-04-11
-concept_count: 7
+date_updated: 2026-04-12
+concept_count: 8
 ---
 
 # Simulation-Based Estimation
@@ -19,6 +19,7 @@ concept_count: 7
 > - Need variance reduction, step sizes, common random numbers? → [[Practical Issues in Simulation Estimation]]
 > - Need weighting matrix strategies (identity, two-step, Newey-West) and Σ̂? → [[SMM Weighting Matrix and Inference]]
 > - Need Python code (scipy workflow, eps fix, Jacobian)? → [[SMM Python Implementation]]
+> - Need the Brock-Mirman (1972) structural macro exercise (latent TFP, policy function, 6 moments, 4 params)? → [[Brock-Mirman Model - SMM Estimation Exercise]]
 
 ## Concept Map
 
@@ -31,6 +32,7 @@ concept_count: 7
 | Common RNGs, variance reduction, step sizes | [[Practical Issues in Simulation Estimation]] | concept | [[Method of Simulated Moments]], [[Indirect Inference]] | Step size must be $\gg 1/\sqrt{T}$; never use software defaults |
 | Identity W, two-step W, Newey-West W, Σ̂_SMM via Jacobian | [[SMM Weighting Matrix and Inference]] | concept/theorem | [[Method of Simulated Moments]], [[Standard Errors and Clustering]] | Optimal W = Ω̂⁻¹; Σ̂ = (1/S)[dᵀWd]⁻¹ |
 | Python workflow: scipy, eps stepsize fix, numerical Jacobian | [[SMM Python Implementation]] | tutorial | [[SMM Weighting Matrix and Inference]], [[Method of Simulated Moments]], [[Practical Issues in Simulation Estimation]] | L-BFGS-B needs `options={'eps': 1.0}` when moments are in the 100s |
+| Brock-Mirman (1972) model: system, policy function, 6-moment SMM exercise | [[Brock-Mirman Model - SMM Estimation Exercise]] | example | [[SMM Python Implementation]], [[SMM Weighting Matrix and Inference]] | Latent TFP motivates SMM; policy function $k_{t+1} = \alpha\beta e^{z_t}k_t^\alpha$ enables efficient simulation |
 
 ## Notes
 
@@ -41,11 +43,12 @@ concept_count: 7
 - [[Practical Issues in Simulation Estimation]] — CONTAINS: Common random numbers, antithetic variates, control variates, auxiliary model selection strategies, step-size guidelines, simulation size trade-offs, implementation checklist
 - [[SMM Weighting Matrix and Inference]] — CONTAINS: Identity W, two-step W procedure (R×S error matrix, Ω̂₂ = (1/S)EEᵀ, W̃ = Ω̂₂⁻¹), iterated W, Newey-West HAC W, Σ̂_SMM via Jacobian, identification (exact/over/under)
 - [[SMM Python Implementation]] — CONTAINS: General Python SMM workflow, fixed random draws, trunc_norm_draws (inverse CDF), err_vec/criterion functions, L-BFGS-B eps stepsize fix, numerical Jacobian, two-step W code, indirect inference pattern, results comparison table
+- [[Brock-Mirman Model - SMM Estimation Exercise]] — CONTAINS: BM1972 six-equation system, latent TFP AR(1), closed-form policy function, simulation algorithm, 6-moment estimation setup (mean c, mean k, mean c/y, var y, corr(c,c-1), corr(c,k)), two-part exercise (identity W + two-step W)
 
 ## Sources
 
 - [[raw/tdb136.pdf]] — Liesenfeld & Breitung (1998), "Simulation Based Methods of Moments in Empirical Finance"
-- [Computational Methods for Economists — Ch. 19](https://opensourceecon.github.io/CompMethods/struct_est/SMM.html) — Evans (2024)
+- [[raw/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — Evans (2024), Computational Methods for Economists, Ch. 19: full SMM tutorial with Python code, truncated normal example, Brock-Mirman exercise
 
 ## See Also
 

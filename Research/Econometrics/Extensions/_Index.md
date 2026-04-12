@@ -5,7 +5,7 @@ tags:
   - source/ingested
 parent: "[[Econometrics/_Index|Econometrics]]"
 date_updated: 2026-04-11
-concept_count: 15
+concept_count: 16
 ---
 
 # Extensions
@@ -22,7 +22,7 @@ concept_count: 15
 
 | Sub-topic | Notes | Covers |
 |-----------|-------|--------|
-| [[Simulation-Based Estimation/_Index\|Simulation-Based Estimation]] | 7 | General MSM/SMM/indirect inference/EMM theory and implementation — Liesenfeld & Breitung (1998) + Evans (2024) |
+| [[Simulation-Based Estimation/_Index\|Simulation-Based Estimation]] | 8 | General MSM/SMM/indirect inference/EMM theory and implementation — Liesenfeld & Breitung (1998) + Evans (2024) |
 | [[Copula SMM/_Index\|Copula SMM]] | 5 | SMM for copula models: dependence measures, estimator, asymptotic theory, J-test, Monte Carlo — Oh & Patton (2011) |
 
 ## Standalone Notes

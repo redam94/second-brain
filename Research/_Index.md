@@ -3,8 +3,8 @@ title: "Index: Research"
 tags:
   - type/index
   - source/ingested
-date_updated: 2026-04-11
-concept_count: 136
+date_updated: 2026-04-12
+concept_count: 137
 ---
 
 # Research
@@ -24,7 +24,7 @@ concept_count: 136
 | Topic | Notes | Key Concepts |
 |-------|-------|-------------|
 | [[Bayesian Statistics/_Index\|Bayesian Statistics]] | 54 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference |
-| [[Econometrics/_Index\|Econometrics]] | 24 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, quantile regression, discrete choice, DAGs |
+| [[Econometrics/_Index\|Econometrics]] | 25 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, quantile regression, discrete choice, DAGs, SMM, Brock-Mirman structural estimation |
 | [[Research Methodology/_Index\|Research Methodology]] | 13+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons, within/between-persons distinction (Rohrer & Murayama 2023), fixed-effects model, CLPM, dynamic panel model, estimands in longitudinal research |
 | [[Theoretical Physics/_Index\|Theoretical Physics]] | 7 | Quantum mechanics, Hilbert space, Schrödinger equation, QFT, second quantization, QED, renormalization, gauge theory, Standard Model |
 | [[Agent-Based Modeling/_Index\|Agent-Based Modeling]] | 34 | ABM methodology, emergence, heterogeneity, consumer utility models, CUBES behavioral simulator, WOM, opinion leaders, network diffusion, GA calibration, validation, HM+ABC calibration (McCulloch et al. 2022), history matching, ABC, uncertainty quantification |
@@ -75,6 +75,7 @@ concept_count: 136
 - [[Agent-Based Modeling/raw/abm_human_behaviour.pdf]] — Ben Said, Bouron & Drogoul (2002), CUBES consumer behavior simulator
 - [[Agent-Based Modeling/raw/calibration_ABM.pdf]] — McCulloch et al. (2022), Calibrating ABMs using Uncertainty Quantification Methods (JASSS 25(2))
 - [[Research Methodology/raw/rohrer-murayama-2023.pdf]] — Rohrer & Murayama (2023), These Are Not the Effects You Are Looking For: Causality and the Within/Between-Persons Distinction (AMPPS 6(1))
+- [[raw/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — Evans (2024), Computational Methods for Economists, Ch. 19: SMM theory, Python implementation, Brock-Mirman structural macro exercise (2026-04-12)
 
 ## See Also
 

@@ -5,7 +5,7 @@ tags:
   - source/ingested
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-04-11
-concept_count: 33
+concept_count: 34
 ---
 
 # Econometrics
@@ -42,6 +42,7 @@ concept_count: 33
 - [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Graham Harrison, Towards Data Science (2023): comprehensive DAG tutorial
 - [[raw/tdb136.pdf]] — Liesenfeld & Breitung (1998), "Simulation Based Methods of Moments in Empirical Finance"
 - [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), "Simulated Method of Moments Estimation for Copula-Based Multivariate Models"
+- [[raw/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — Evans (2024), CompMethods Ch. 19: full Python SMM tutorial + Brock-Mirman structural macro exercise
 
 ## See Also
 
