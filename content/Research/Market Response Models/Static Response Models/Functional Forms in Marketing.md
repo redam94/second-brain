@@ -36,10 +36,14 @@ status: complete
 ## 1. Linear Form
 
 > [!definition] Linear
-> $$Q = \beta_0 + \beta_1 X$$
+> $$
+> Q = \beta_0 + \beta_1 X
+> $$
 >
 > **Elasticity:**
-> $$\eta = \beta_1 \frac{X}{Q} = \frac{\beta_1 X}{\beta_0 + \beta_1 X}$$
+> $$
+> \eta = \beta_1 \frac{X}{Q} = \frac{\beta_1 X}{\beta_0 + \beta_1 X}
+> $$
 >
 > **Shape:** Constant slope; no saturation. Increasing, decreasing, or flat depending on sign of $\beta_1$.
 >
@@ -51,10 +55,14 @@ status: complete
 ## 2. Semilogarithmic Form
 
 > [!definition] Semilogarithmic
-> $$Q = \beta_0 + \beta_1 \ln X$$
+> $$
+> Q = \beta_0 + \beta_1 \ln X
+> $$
 >
 > **Elasticity:**
-> $$\eta = \frac{\beta_1}{Q} = \frac{\beta_1}{\beta_0 + \beta_1 \ln X}$$
+> $$
+> \eta = \frac{\beta_1}{Q} = \frac{\beta_1}{\beta_0 + \beta_1 \ln X}
+> $$
 >
 > **Shape:** Concave (diminishing returns) when $\beta_1 > 0$. Useful when a large range of $X$ is observed.
 > ^def-semilog
@@ -64,12 +72,16 @@ status: complete
 ## 3. Power / Log-Log Form (Constant Elasticity)
 
 > [!definition] Power Form
-> $$Q = e^{\beta_0} X^{\beta_1}$$
+> $$
+> Q = e^{\beta_0} X^{\beta_1}
+> $$
 >
 > Taking logs: $\ln Q = \beta_0 + \beta_1 \ln X$
 >
 > **Elasticity:**
-> $$\eta = \beta_1 \quad \text{(constant)}$$
+> $$
+> \eta = \beta_1 \quad \text{(constant)}
+> $$
 >
 > **Shape:** Concave for $0 < \beta_1 < 1$; convex (increasing returns) for $\beta_1 > 1$; linear for $\beta_1 = 1$.
 >
@@ -81,12 +93,16 @@ status: complete
 ## 4. Multiplicative Form
 
 > [!definition] Multiplicative (Multi-instrument)
-> $$Q = e^{\beta_0} X_1^{\beta_1} X_2^{\beta_2} \cdots X_J^{\beta_J} \tag{Eq 3.16}$$
+> $$
+> Q = e^{\beta_0} X_1^{\beta_1} X_2^{\beta_2} \cdots X_J^{\beta_J} \tag{Eq 3.16}
+> $$
 >
 > Taking logs: $\ln Q = \beta_0 + \beta_1 \ln X_1 + \cdots + \beta_J \ln X_J$
 >
 > **Elasticity of instrument $j$:**
-> $$\eta_j = \beta_j \quad \text{(constant, independent of other instruments)}$$
+> $$
+> \eta_j = \beta_j \quad \text{(constant, independent of other instruments)}
+> $$
 >
 > **Properties:** Cross-elasticities are zero (no interaction). Easily estimated by OLS on log-transformed data. The workhorse model for scanner data analysis (see SCAN*PRO below).
 > ^def-multiplicative
@@ -96,12 +112,16 @@ status: complete
 ## 5. Exponential Form (Increasing Returns)
 
 > [!definition] Exponential
-> $$Q = e^{\beta_0} e^{\beta_1 X} = e^{\beta_0 + \beta_1 X}$$
+> $$
+> Q = e^{\beta_0} e^{\beta_1 X} = e^{\beta_0 + \beta_1 X}
+> $$
 >
 > For pricing applications: $Q = Q^0 e^{-\beta_1 P}$, $\beta_1 > 0$
 >
 > **Elasticity:**
-> $$\eta = \beta_1 X$$
+> $$
+> \eta = \beta_1 X
+> $$
 >
 > **Shape:** Convex — increasing marginal returns. Appropriate for threshold phenomena or situations where heavy spending compounds.
 > ^def-exponential
@@ -111,10 +131,14 @@ status: complete
 ## 6. Log-Reciprocal / Inverse Form (S-Shaped Saturation)
 
 > [!definition] Log-Reciprocal
-> $$Q = \exp\!\left(\beta_0 - \frac{\beta_1}{X}\right)$$
+> $$
+> Q = \exp\!\left(\beta_0 - \frac{\beta_1}{X}\right)
+> $$
 >
 > **Elasticity:**
-> $$\eta = \frac{\beta_1}{X}$$
+> $$
+> \eta = \frac{\beta_1}{X}
+> $$
 >
 > **Shape:** S-shaped with saturation at $e^{\beta_0}$; inflection point at $X = \beta_1/2$. Increasing marginal returns at low $X$, diminishing returns at high $X$.
 > ^def-log-reciprocal
@@ -124,7 +148,9 @@ status: complete
 ## 7. Gompertz Form
 
 > [!definition] Gompertz
-> $$Q = \beta_0 \beta_1^{\beta_2^{-\beta_3 X}}, \quad 0 < \beta_1 < 1, \; 0 < \beta_2 < 1, \; \beta_3 > 0$$
+> $$
+> Q = \beta_0 \beta_1^{\beta_2^{-\beta_3 X}}, \quad 0 < \beta_1 < 1, \; 0 < \beta_2 < 1, \; \beta_3 > 0
+> $$
 >
 > **Shape:** Asymmetric S-curve with faster initial growth than logistic; upper asymptote $\beta_0$. Used for product adoption and life-cycle modeling. Related to [[Product Adoption and Diffusion Models]].
 > ^def-gompertz
@@ -134,10 +160,14 @@ status: complete
 ## 8. Modified Exponential (Saturation without S-Shape)
 
 > [!definition] Modified Exponential
-> $$Q = Q^0 (1 - e^{-\beta_1 X})$$
+> $$
+> Q = Q^0 (1 - e^{-\beta_1 X})
+> $$
 >
 > **Elasticity:**
-> $$\eta = \frac{\beta_1 X e^{-\beta_1 X}}{1 - e^{-\beta_1 X}}$$
+> $$
+> \eta = \frac{\beta_1 X e^{-\beta_1 X}}{1 - e^{-\beta_1 X}}
+> $$
 >
 > **Shape:** Concave with upper asymptote $Q^0$. No inflection point. Appropriate when saturation is observed but there is no initial convex phase.
 > ^def-mod-exponential
@@ -147,7 +177,9 @@ status: complete
 ## 9. Logistic Form
 
 > [!definition] Logistic
-> $$Q = \frac{Q^0}{1 + \exp\!\left(-(\beta_0 + \sum_j \beta_j X_j)\right)}$$
+> $$
+> Q = \frac{Q^0}{1 + \exp\!\left(-(\beta_0 + \sum_j \beta_j X_j)\right)}
+> $$
 >
 > **Shape:** Symmetric S-curve, bounded in $(0, Q^0)$. Standard form for binary choice when $Q$ is market share (bounded in [0,1]). Related to [[Logit Purchase Decision Model]].
 > ^def-logistic
@@ -157,7 +189,9 @@ status: complete
 ## 10. ADBUDG Form (Little 1970)
 
 > [!definition] ADBUDG
-> $$Q = \beta_0 + (\beta_1 - \beta_0) \frac{X^{\beta_2}}{\beta_3^{\beta_2} + X^{\beta_2}}$$
+> $$
+> Q = \beta_0 + (\beta_1 - \beta_0) \frac{X^{\beta_2}}{\beta_3^{\beta_2} + X^{\beta_2}}
+> $$
 >
 > Parameters:
 > - $\beta_0$: sales at zero advertising (minimum)
@@ -166,7 +200,9 @@ status: complete
 > - $\beta_3$: advertising level at midpoint $(\beta_0 + \beta_1)/2$
 >
 > **Elasticity at midpoint:**
-> $$\eta = \frac{\beta_2}{2}(\beta_1 - \beta_0) / Q(\beta_3)$$
+> $$
+> \eta = \frac{\beta_2}{2}(\beta_1 - \beta_0) / Q(\beta_3)
+> $$
 >
 > **Properties:** Highly flexible; nests concave and S-shaped responses; parameterized by managerially interpretable quantities. Widely used in budget optimization (see [[Optimal Marketing Decisions and Forecasting]]).
 > ^def-adbudg
@@ -178,7 +214,9 @@ status: complete
 > [!definition] SCAN*PRO
 > The SCAN*PRO model (Wittink et al.) applies the multiplicative form to weekly scanner data:
 >
-> $$Q_{bst} = \exp(\mu_{bs}) \cdot \left(\frac{P_{bst}}{P^*_{bs}}\right)^{\beta_1} \cdot \prod_k F_{kbst}^{\gamma_k} \cdot \prod_k D_{kbst}^{\delta_k} \cdot \epsilon_{bst}$$
+> $$
+> Q_{bst} = \exp(\mu_{bs}) \cdot \left(\frac{P_{bst}}{P^*_{bs}}\right)^{\beta_1} \cdot \prod_k F_{kbst}^{\gamma_k} \cdot \prod_k D_{kbst}^{\delta_k} \cdot \epsilon_{bst}
+> $$
 >
 > where $P^*_{bs}$ is a reference price, $F_k$ are feature advertising dummies, $D_k$ are display dummies. Estimated in log form by OLS or GLS at the store-brand-week level.
 >
@@ -192,7 +230,9 @@ status: complete
 > [!definition] Random Coefficients
 > When response varies across brands, markets, or time, parameters are treated as random:
 >
-> $$Q_{it} = \beta_{0i} + \beta_{1i} X_{it} + \epsilon_{it}$$
+> $$
+> Q_{it} = \beta_{0i} + \beta_{1i} X_{it} + \epsilon_{it}
+> $$
 >
 > where $\beta_{ji} = \bar{\beta}_j + u_{ji}$, and $u_{ji} \sim (0, \Sigma_\beta)$. Estimation via GLS (Swamy 1970) or hierarchical Bayes. Connects to [[Hierarchical Linear Models]] and the HB shrinkage estimator in [[Parameter Estimation in Market Response]]. (Eq 3.44 in book)
 > ^def-random-coeff

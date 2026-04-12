@@ -43,7 +43,9 @@ Bayesian inference views all these quantities as random variables and specifies 
 
 > [!definition] Definition: Full-Data Likelihood Factorization
 > The joint distribution of the full data (observed and missing) for each unit $i$ factorizes as:
-> $$\Pr(Z_i \mid Y_i(0), Y_i(1), X_i; \theta) = \Pr(Y_i(0), Y_i(1) \mid X_i; \theta_Y) \cdot \Pr(Z_i \mid X_i; \theta_Z)$$
+> $$
+> \Pr(Z_i \mid Y_i(0), Y_i(1), X_i; \theta) = \Pr(Y_i(0), Y_i(1) \mid X_i; \theta_Y) \cdot \Pr(Z_i \mid X_i; \theta_Z)
+> $$
 > (under ignorability, the assignment mechanism further reduces to $\Pr(Z_i \mid X_i; \theta_Z)$, the propensity score model)
 ^def-factorization
 
@@ -56,7 +58,9 @@ The three terms represent:
 
 > [!definition] Assumption 3.2 — Prior Independence
 > The parameters for the assignment mechanism $\theta_Z$, outcome $\theta_Y$, and covariates $\theta_X$ are **a priori distinct and independent**:
-> $$p(\theta_Z, \theta_Y, \theta_X) = p(\theta_Z) \cdot p(\theta_Y) \cdot p(\theta_X)$$
+> $$
+> p(\theta_Z, \theta_Y, \theta_X) = p(\theta_Z) \cdot p(\theta_Y) \cdot p(\theta_X)
+> $$
 ^def-prior-independence
 
 This assumption is:
@@ -84,7 +88,9 @@ The same ignorability argument applies to:
 
 > [!example] Example 3.1 — Covariate Adjustment in a Randomized Experiment
 > Model potential outcomes as bivariate normal for each unit:
-> $$\begin{pmatrix} Y_i(1) \\ Y_i(0) \end{pmatrix} \Bigg| (X_i, \mu_1, \beta_0, \sigma_0^2, \sigma_1^2) \sim \mathcal{N}\left( \begin{pmatrix} \beta_1' X_i \\ \beta_0' X_i \end{pmatrix}, \begin{pmatrix} \sigma_1^2 & \rho\sigma_1\sigma_0 \\ \rho\sigma_1\sigma_0 & \sigma_0^2 \end{pmatrix} \right)$$
+> $$
+> \begin{pmatrix} Y_i(1) \\ Y_i(0) \end{pmatrix} \Bigg| (X_i, \mu_1, \beta_0, \sigma_0^2, \sigma_1^2) \sim \mathcal{N}\left( \begin{pmatrix} \beta_1' X_i \\ \beta_0' X_i \end{pmatrix}, \begin{pmatrix} \sigma_1^2 & \rho\sigma_1\sigma_0 \\ \rho\sigma_1\sigma_0 & \sigma_0^2 \end{pmatrix} \right)
+> $$
 >
 > - **PATE**: $\tau^P = (\beta_1 - \beta_0)'\mathbb{E}(X_i)$ — depends only on $\theta_X$ and $\theta_Y$ (not on $\rho$)
 > - **SATE**: $\tau^S = (\beta_1 - \beta_0)'\bar{X}$ — also independent of $\rho$

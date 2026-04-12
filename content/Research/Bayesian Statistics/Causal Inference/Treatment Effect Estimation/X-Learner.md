@@ -40,24 +40,36 @@ The X-learner *crosses* the group information in Stage 2: it uses the well-estim
 > [!definition] Definition: X-Learner (Three Steps)
 >
 > **Stage 1 — Estimate response functions (same as T-learner):**
-> $$\hat{\mu}_0(x) \text{ estimated on control units}; \quad \hat{\mu}_1(x) \text{ estimated on treated units}$$
+> $$
+> \hat{\mu}_0(x) \text{ estimated on control units}; \quad \hat{\mu}_1(x) \text{ estimated on treated units}
+> $$
 >
 > **Stage 2 — Impute individual treatment effects:**
 >
 > For treated units $i \in \{W_i = 1\}$:
-> $$\tilde{D}_i^1 := Y_i^1 - \hat{\mu}_0(X_i^1)$$
+> $$
+> \tilde{D}_i^1 := Y_i^1 - \hat{\mu}_0(X_i^1)
+> $$
 > (observed treated outcome minus *imputed* control outcome using $\hat{\mu}_0$)
 >
 > For control units $i \in \{W_i = 0\}$:
-> $$\tilde{D}_i^0 := \hat{\mu}_1(X_i^0) - Y_i^0$$
+> $$
+> \tilde{D}_i^0 := \hat{\mu}_1(X_i^0) - Y_i^0
+> $$
 > (imputed treatment outcome using $\hat{\mu}_1$ minus observed control outcome)
 >
 > **Stage 2 — Regress imputed ITEs:**
-> $$\hat{\tau}_1(x) = \mathbb{E}[\tilde{D}^1 \mid X = x] \quad \text{(regress on treated units)}$$
-> $$\hat{\tau}_0(x) = \mathbb{E}[\tilde{D}^0 \mid X = x] \quad \text{(regress on control units)}$$
+> $$
+> \hat{\tau}_1(x) = \mathbb{E}[\tilde{D}^1 \mid X = x] \quad \text{(regress on treated units)}
+> $$
+> $$
+> \hat{\tau}_0(x) = \mathbb{E}[\tilde{D}^0 \mid X = x] \quad \text{(regress on control units)}
+> $$
 >
 > **Stage 3 — Combine with propensity score weights:**
-> $$\hat{\tau}^X(x) = g(x)\hat{\tau}_0(x) + (1 - g(x))\hat{\tau}_1(x)$$
+> $$
+> \hat{\tau}^X(x) = g(x)\hat{\tau}_0(x) + (1 - g(x))\hat{\tau}_1(x)
+> $$
 >
 > where $g(x) \in [0,1]$ is a weighting function, often set to the propensity score $g(x) = e(x) = P(W=1 \mid X=x)$.
 ^def-x-learner
@@ -76,7 +88,9 @@ In the second stage, $\hat{\tau}_1$ is estimated from treated units with imputed
 > [!theorem] Theorem 2: Minimax Optimality of X-Learner
 > Assume we observe $n_0$ control and $n_1$ treated units, with $n_0 \gg n_1$ (unbalanced design). For families $\mathcal{P} \in S(a_0, a_\tau)$ satisfying Conditions 1-6 (Lipschitz continuity, bounded propensity score, bounded moments):
 >
-> $$\sup_{\mathcal{P} \in \mathcal{F}} \text{EMSE}(\mathcal{P}, \hat{\tau}^X) \leq C_\tau \left(m^{-a_\tau} + n^{-a_0}\right)$$
+> $$
+> \sup_{\mathcal{P} \in \mathcal{F}} \text{EMSE}(\mathcal{P}, \hat{\tau}^X) \leq C_\tau \left(m^{-a_\tau} + n^{-a_0}\right)
+> $$
 >
 > where $m$ is the total sample size and $n = \min(n_0, n_1)$ is the smaller group size.
 >

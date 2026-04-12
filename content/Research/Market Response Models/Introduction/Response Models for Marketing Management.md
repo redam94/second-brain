@@ -25,7 +25,9 @@ status: complete
 > [!definition] Sales Response Function
 > The **sales response function** expresses unit sales as a function of marketing instruments and environment:
 >
-> $$Q_t = f(A_t, E_t)$$
+> $$
+> Q_t = f(A_t, E_t)
+> $$
 >
 > - $Q_t$: unit sales in period $t$
 > - $A_t$: vector of marketing effort (advertising spend, price, distribution, promotion)
@@ -54,7 +56,9 @@ where $Y_t$ = consumer income, $N_t$ = competitor advertising, $R_{t-1}$ = lagge
 > [!example] Task 2: Budgeting
 > Determine the total marketing budget. The model-based optimum sets marginal response equal to marginal cost:
 >
-> $$\frac{\partial Q}{\partial A} \cdot m = 1$$
+> $$
+> \frac{\partial Q}{\partial A} \cdot m = 1
+> $$
 >
 > where $m$ is the contribution margin per unit. Budget rules derived from concave response functions (e.g., ADBUDG, logistic) differ from those under convex forms.
 > ^ex-budgeting

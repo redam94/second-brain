@@ -26,7 +26,9 @@ status: complete
 > [!definition] Market Response Model
 > A **market response model** is a mathematical function that maps marketing inputs (advertising, price, distribution, promotion) to market outputs (sales, market share). The canonical form is:
 >
-> $$Q_t = f(A_t, E_t)$$
+> $$
+> Q_t = f(A_t, E_t)
+> $$
 >
 > where $Q_t$ = unit sales, $A_t$ = marketing effort (advertising, price, promotion, distribution), $E_t$ = environmental factors (competition, macro economy, season).
 > ^def-mrm

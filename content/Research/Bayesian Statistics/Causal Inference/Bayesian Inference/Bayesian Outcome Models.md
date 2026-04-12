@@ -61,7 +61,9 @@ The recent focus on heterogeneous treatment effects has driven adoption of flexi
 
 > [!definition] Definition: Bayesian Causal Forest (BCF)
 > Hahn et al. (2020) proposed BCF: separate the outcome model as
-> $$\mu(z, x) = g_1(x) + g_2(x) \cdot z$$
+> $$
+> \mu(z, x) = g_1(x) + g_2(x) \cdot z
+> $$
 > where $g_1(x)$ models the distribution of $Y(0)$ and $g_2(x)$ represents the heterogeneous treatment effect, with a **separate BART prior** for $g_1(\cdot)$ and $g_2(\cdot)$.
 ^def-bcf
 

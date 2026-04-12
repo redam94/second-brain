@@ -56,7 +56,9 @@ The mathematical formalism of QM requires tools from functional analysis, linear
 
 > [!definition] Time Evolution Postulate
 > Between measurements, the state evolves unitarily:
-> $$i\hbar \frac{d}{dt}|\psi(t)\rangle = H|\psi(t)\rangle$$
+> $$
+> i\hbar \frac{d}{dt}|\psi(t)\rangle = H|\psi(t)\rangle
+> $$
 > with solution $|\psi(t)\rangle = U(t)|\psi(0)\rangle$ where $U(t) = e^{-iHt/\hbar}$ is unitary.
 > - **Unitarity** preserves normalization and probability
 > - Any observable $A$ that commutes with $H$ is conserved: $[A, H] = 0 \Rightarrow \langle A \rangle$ constant
@@ -66,13 +68,19 @@ The mathematical formalism of QM requires tools from functional analysis, linear
 
 > [!theorem] Heisenberg Uncertainty Principle
 > For position $\hat{X}$ and momentum $\hat{P}$ satisfying the **canonical commutation relation**:
-> $$[\hat{X}, \hat{P}] = \hat{X}\hat{P} - \hat{P}\hat{X} = i\hbar$$
+> $$
+> [\hat{X}, \hat{P}] = \hat{X}\hat{P} - \hat{P}\hat{X} = i\hbar
+> $$
 > it follows that:
-> $$\sigma_X \sigma_P \geq \frac{\hbar}{2}$$
+> $$
+> \sigma_X \sigma_P \geq \frac{\hbar}{2}
+> $$
 > where $\sigma_X = \sqrt{\langle X^2 \rangle - \langle X \rangle^2}$ is the standard deviation of $X$.
 >
 > **General form**: For any two observables $A$, $B$:
-> $$\sigma_A \sigma_B \geq \frac{1}{2}|\langle [A, B] \rangle|$$
+> $$
+> \sigma_A \sigma_B \geq \frac{1}{2}|\langle [A, B] \rangle|
+> $$
 >
 > **Fourier duality**: Position and momentum operators are Fourier transforms of each other. In position space, $\hat{P} = -i\hbar \frac{\partial}{\partial x}$. This is why the uncertainty principle follows from the mathematical properties of Fourier pairs.
 ^thm-uncertainty
@@ -81,14 +89,18 @@ The mathematical formalism of QM requires tools from functional analysis, linear
 
 > [!definition] Composite System
 > For two quantum systems $A$ and $B$ with Hilbert spaces $\mathcal{H}_A$ and $\mathcal{H}_B$, the combined system has:
-> $$\mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B$$
+> $$
+> \mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B
+> $$
 > A **separable (product) state** has the form $\psi_A \otimes \psi_B$.
 ^def-composite
 
 > [!definition] Quantum Entanglement
 > A state in $\mathcal{H}_{AB}$ is **entangled** if it cannot be written as a product state $\psi_A \otimes \psi_B$.
 > Example of an entangled state:
-> $$\frac{1}{\sqrt{2}}(\psi_A \otimes \psi_B + \phi_A \otimes \phi_B)$$
+> $$
+> \frac{1}{\sqrt{2}}(\psi_A \otimes \psi_B + \phi_A \otimes \phi_B)
+> $$
 > Properties of entangled states:
 > - Cannot describe component systems individually by state vectors
 > - Described by **reduced density matrices**: $\rho_A = \text{Tr}_B(\rho_{AB})$
@@ -100,7 +112,9 @@ The mathematical formalism of QM requires tools from functional analysis, linear
 
 > [!theorem] Quantum Noether Theorem
 > If observable $A$ commutes with the Hamiltonian $H$, then $\langle A \rangle$ is conserved under time evolution:
-> $$[A, H] = 0 \implies \frac{d}{dt}\langle A \rangle = 0$$
+> $$
+> [A, H] = 0 \implies \frac{d}{dt}\langle A \rangle = 0
+> $$
 > This is the quantum analog of Noether's theorem: every differentiable symmetry of the Hamiltonian corresponds to a conservation law.
 ^thm-noether-qm
 

@@ -35,7 +35,9 @@ HM originated in climate and physical modeling (Craig et al. 1997) and has been 
 
 > [!definition] Definition: Implausibility Score
 > For a parameter set $x$ and observation $z^r$, the implausibility is:
-> $$I^r(x) = \frac{d^2(z^r, f^r(x))}{V^r_s + V^r_o + V^r_m}$$
+> $$
+> I^r(x) = \frac{d^2(z^r, f^r(x))}{V^r_s + V^r_o + V^r_m}
+> $$
 > where:
 > - $d^2(z^r, f^r(x))$ = squared error between simulation output and expected output
 > - $V^r_s$ = ensemble variance (stochastic variability across runs with same parameters)
@@ -59,7 +61,9 @@ Each HM wave:
 ## Model Discrepancy
 
 > [!definition] Definition: Model Discrepancy Variance ($V^r_m$)
-> $$V^r_m = \frac{1}{N-1}\sum_{n=1}^N \left(d(z^r, f^r(x_n)) - E^r(X)\right)^2$$
+> $$
+> V^r_m = \frac{1}{N-1}\sum_{n=1}^N \left(d(z^r, f^r(x_n)) - E^r(X)\right)^2
+> $$
 > where $E^r(X)$ is the average model error across all $N$ parameter sets tested. This estimates how much variation in model output arises from imperfect model specification — the gap between the best model and reality.
 >
 > **Key implication**: Model discrepancy cannot be reduced by better calibration — it reflects fundamental model imperfection and must be explicitly acknowledged.
@@ -68,7 +72,9 @@ Each HM wave:
 ## Ensemble Variance
 
 > [!definition] Definition: Ensemble Variance ($V^r_s$)
-> $$V^r_s = \frac{1}{N}\sum_{n=1}^N\left[\frac{1}{K-1}\sum_{k=1}^K\left(d(z^r, f^r_k(x_n)) - E^r_K(x_n)\right)^2\right]$$
+> $$
+> V^r_s = \frac{1}{N}\sum_{n=1}^N\left[\frac{1}{K-1}\sum_{k=1}^K\left(d(z^r, f^r_k(x_n)) - E^r_K(x_n)\right)^2\right]
+> $$
 > where $K$ is the ensemble size and $E^r_K(x_n) = \frac{1}{K}\sum_{k=1}^K d(z^r, f^r_k(x_n))$.
 >
 > Choose $K$ by running models across a range of ensemble sizes and selecting the smallest $K$ at which variance stabilises. In the SugarScape example, $K = 200$; in the birds model, $K = 30$.

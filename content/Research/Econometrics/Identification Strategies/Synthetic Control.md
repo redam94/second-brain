@@ -42,10 +42,14 @@ aliases:
 > Suppose we have $J+1$ units. Unit 1 is treated; units $j = 2, \ldots, J+1$ form the **donor pool**. We observe outcomes $Y_{jt}$ for $T$ time periods, with $T_0$ periods before treatment.
 >
 > The **treatment effect** at time $t > T_0$ for the treated unit is:
-> $$\tau_{1t} = Y_{1t}^I - Y_{1t}^N$$
+> $$
+> \tau_{1t} = Y_{1t}^I - Y_{1t}^N
+> $$
 >
 > Since $Y_{1t}^I$ is observed but $Y_{1t}^N$ is not, we estimate:
-> $$\hat{Y}_{1t}^N = \sum_{j=2}^{J+1} w_j Y_{jt}$$
+> $$
+> \hat{Y}_{1t}^N = \sum_{j=2}^{J+1} w_j Y_{jt}
+> $$
 >
 > The weights $W = (w_2, \ldots, w_{J+1})$ are chosen so the synthetic control matches the treated unit in the pre-treatment period.
 ^def-synthetic-control
@@ -69,10 +73,14 @@ weights_lr = LinearRegression(fit_intercept=False).fit(X, y).coef_
 
 > [!definition] Constrained Synthetic Control
 > The canonical synthetic control restricts weights to be a **convex combination**:
-> $$w_j \geq 0, \quad \sum_{j=2}^{J+1} w_j = 1$$
+> $$
+> w_j \geq 0, \quad \sum_{j=2}^{J+1} w_j = 1
+> $$
 >
 > The optimal weights minimize:
-> $$\|X_1 - X_0 W\| = \left(\sum_{h=1}^k v_h \left(X_{h1} - \sum_{j=2}^{J+1} w_j X_{hj}\right)^2\right)^{1/2}$$
+> $$
+> \|X_1 - X_0 W\| = \left(\sum_{h=1}^k v_h \left(X_{h1} - \sum_{j=2}^{J+1} w_j X_{hj}\right)^2\right)^{1/2}
+> $$
 >
 > subject to $w_j \geq 0$, $\sum_j w_j = 1$, where $v_h$ reflect the importance of each predictor variable.
 >
@@ -132,7 +140,9 @@ Standard errors are not well-defined for $n=1$ treated unit. Instead, use **perm
 > 1. For each control state $j \in \{2, \ldots, J+1\}$, pretend it is the treated unit and compute its synthetic control using the remaining states as the donor pool.
 > 2. Compute the **placebo treatment effect** for each state: $\hat{\tau}_{jt} = Y_{jt} - \hat{Y}_{jt}^N$
 > 3. Compute the P-value:
-> $$\text{PV} = \frac{1}{N}\sum_{j} \mathbf{1}\{\hat{\tau}_\text{Calif} > \hat{\tau}_j\}$$
+> $$
+> \text{PV} = \frac{1}{N}\sum_{j} \mathbf{1}\{\hat{\tau}_\text{Calif} > \hat{\tau}_j\}
+> $$
 >
 > **Intuition**: If no state was actually treated, the estimated effect should be near zero for all states. If the California effect is extreme relative to these "placebo" effects, it is statistically significant.
 ^def-fishers-exact-synth

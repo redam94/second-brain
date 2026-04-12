@@ -43,7 +43,9 @@ status: complete
 > *The 90% duration interval for advertising of mature, frequently purchased, low-priced packaged goods is brief, averaging between six and nine months.* [C]
 >
 > Derivation: 90% of cumulative effect dissipates when:
-> $$T \geq \frac{\log(1 - 0.9)}{\log(\lambda)} = \frac{-1}{\log(0.7)} = 6.5 \text{ months} \tag{Eq 8.13}$$
+> $$
+> T \geq \frac{\log(1 - 0.9)}{\log(\lambda)} = \frac{-1}{\log(0.7)} = 6.5 \text{ months} \tag{Eq 8.13}
+> $$
 >
 > This is a short duration — contradicting common managerial beliefs that advertising effects persist for years. The finding implies advertising must be maintained continuously to sustain sales levels.
 > ^thm-duration

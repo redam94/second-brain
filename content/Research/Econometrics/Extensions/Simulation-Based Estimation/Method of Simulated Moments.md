@@ -50,11 +50,15 @@ where $\theta_0$ is the true $p$-dimensional parameter vector.
 
 > [!definition] Definition: Moment Function
 > The $m$-dimensional moment function of the MSM is:
-> $$\varphi(y_t, z_t; \theta) = s(y_t, z_t) - \sigma(z_t; \theta)$$
+> $$
+> \varphi(y_t, z_t; \theta) = s(y_t, z_t) - \sigma(z_t; \theta)
+> $$
 > where $s(y_t, z_t)$ is a function of the data and $\sigma(z_t; \theta) = E_\theta[s(y_t, z_t) | z_t]$ is the theoretical counterpart. We require $m \geq p$ for identification.
 >
 > The population moment condition is:
-> $$E[\varphi(y_t, z_t; \theta_0) | z_t] = 0 \quad \text{for all } t$$
+> $$
+> E[\varphi(y_t, z_t; \theta_0) | z_t] = 0 \quad \text{for all } t
+> $$
 ^def-moment-function
 
 ## Conditional vs. Unconditional Moments
@@ -81,17 +85,23 @@ These include moments like $E[|y_t|]$, $E[y_t^2]$, and cross-order moments $E[y_
 
 > [!definition] Definition: MSM Estimator (Conditional Moments)
 > Given $R$ simulation replications, the **natural unbiased estimator** of $\sigma(z_t; \theta)$ is:
-> $$\hat{\sigma}_R(z_t; \theta) = \frac{1}{R} \sum_{r=1}^{R} s[y_t^{(r)}(\theta), z_t]$$
+> $$
+> \hat{\sigma}_R(z_t; \theta) = \frac{1}{R} \sum_{r=1}^{R} s[y_t^{(r)}(\theta), z_t]
+> $$
 > where $y_t^{(r)}(\theta)$ are drawn from $h(y_t | z_t; \theta)$.
 >
 > The MSM estimator based on conditional moments is:
-> $$\hat{\theta}_{MSM}^R = \arg\min_\theta \left[\sum_{t=1}^T f_R(y_t, z_t; \theta)\right]' A \left[\sum_{t=1}^T f_R(y_t, z_t; \theta)\right]$$
+> $$
+> \hat{\theta}_{MSM}^R = \arg\min_\theta \left[\sum_{t=1}^T f_R(y_t, z_t; \theta)\right]' A \left[\sum_{t=1}^T f_R(y_t, z_t; \theta)\right]
+> $$
 > where $f_R(y_t, z_t; \theta) = B(z_t)'\left[s(y_t, z_t) - \hat{\sigma}_R(z_t; \theta)\right]$, $B(z_t)$ is a nonlinear matrix function, and $A$ is a positive definite weight matrix.
 ^def-msm-estimator
 
 > [!definition] Definition: MSM Estimator (Unconditional Moments)
 > For models estimated using unconditional moments via path simulations, the estimator uses the *mean* of $\hat{\sigma}_R(z_t; \theta)$ across $t$:
-> $$\hat{\theta}_{MSM}^R = \arg\min_\theta \left[\frac{1}{T}\sum_{t=1}^T s(y_t, \ldots, y_{t-l}) - \frac{1}{R}\sum_{r=1}^R \frac{1}{T}\sum_{t=1}^T s(y_t^{(r)}(\theta), \ldots, y_{t-l}^{(r)}(\theta))\right]' A [\cdots]$$
+> $$
+> \hat{\theta}_{MSM}^R = \arg\min_\theta \left[\frac{1}{T}\sum_{t=1}^T s(y_t, \ldots, y_{t-l}) - \frac{1}{R}\sum_{r=1}^R \frac{1}{T}\sum_{t=1}^T s(y_t^{(r)}(\theta), \ldots, y_{t-l}^{(r)}(\theta))\right]' A [\cdots]
+> $$
 > where different random draws are used across $t$ (i.e., each simulated path uses an independent set of random numbers).
 ^def-msm-unconditional
 
@@ -99,7 +109,9 @@ These include moments like $E[|y_t|]$, $E[y_t^2]$, and cross-order moments $E[y_
 
 > [!theorem] Theorem: Consistency of the MSM Estimator (McFadden, 1989)
 > As the sample size $T \to \infty$, the MSM estimator $\hat{\theta}_{MSM}^R$ is **consistent for any fixed** $R \geq 1$:
-> $$\hat{\theta}_{MSM}^R \xrightarrow{p} \theta_0 \quad \text{as } T \to \infty$$
+> $$
+> \hat{\theta}_{MSM}^R \xrightarrow{p} \theta_0 \quad \text{as } T \to \infty
+> $$
 >
 > **Key insight:** Consistency holds because the simulation error is "averaged out" by using the *mean* of $\hat{\sigma}_R(z_t; \theta)$ across $t = 1, \ldots, T$, with different random draws used for each $t$. The fact that the MSM estimator is consistent for any $R \geq 1$ should not be taken as an indication that $R$ is irrelevant for the asymptotic properties — it affects the asymptotic variance.
 ^thm-msm-consistency
@@ -108,10 +120,14 @@ These include moments like $E[|y_t|]$, $E[y_t^2]$, and cross-order moments $E[y_
 
 > [!theorem] Theorem: Asymptotic Distribution of the MSM Estimator
 > Under standard regularity conditions, the MSM estimator is asymptotically normal:
-> $$T^{1/2}(\hat{\theta}_{MSM}^R - \theta_0) \xrightarrow{d} N(0, \text{avar}(\hat{\theta}_{MSM}^R))$$
+> $$
+> T^{1/2}(\hat{\theta}_{MSM}^R - \theta_0) \xrightarrow{d} N(0, \text{avar}(\hat{\theta}_{MSM}^R))
+> $$
 >
 > The asymptotic covariance matrix is:
-> $$\text{avar}(\hat{\theta}_{MSM}^R) = \Sigma_1^{-1} \Sigma_2 \Sigma_1^{-1} + \frac{1}{R} \Sigma_1^{-1} D' A \, \text{var}[f(y_t^{(r)}(\theta_0), z_t; \theta_0)] \, A D \Sigma_1^{-1}$$
+> $$
+> \text{avar}(\hat{\theta}_{MSM}^R) = \Sigma_1^{-1} \Sigma_2 \Sigma_1^{-1} + \frac{1}{R} \Sigma_1^{-1} D' A \, \text{var}[f(y_t^{(r)}(\theta_0), z_t; \theta_0)] \, A D \Sigma_1^{-1}
+> $$
 >
 > where:
 > - $D = E\left[B(z_t) \frac{\partial \sigma(z_t; \theta_0)}{\partial \theta'}\right]$
@@ -125,10 +141,14 @@ These include moments like $E[|y_t|]$, $E[y_t^2]$, and cross-order moments $E[y_
 
 > [!theorem] Theorem: Optimal Weight Matrix for MSM
 > The asymptotic optimal weight matrix that minimizes the asymptotic covariance is:
-> $$A_0 = \left(\text{var}[f(y_t, z_t; \theta_0)] + \frac{1}{R} \text{var}[f(y_t^{(r)}(\theta_0), z_t; \theta_0)]\right)^{-1}$$
+> $$
+> A_0 = \left(\text{var}[f(y_t, z_t; \theta_0)] + \frac{1}{R} \text{var}[f(y_t^{(r)}(\theta_0), z_t; \theta_0)]\right)^{-1}
+> $$
 >
 > For this optimal choice, the asymptotic covariance simplifies to:
-> $$\text{avar}(\hat{\theta}_{MSM}^R) = [D' A_0 D]^{-1}$$
+> $$
+> \text{avar}(\hat{\theta}_{MSM}^R) = [D' A_0 D]^{-1}
+> $$
 >
 > In practice, $A_0$ can be estimated by its sample analogue using preliminary consistent estimates.
 ^thm-msm-optimal-weight

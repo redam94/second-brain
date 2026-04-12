@@ -35,11 +35,15 @@ The S-learner is the most straightforward metalearner. It treats treatment statu
 
 > [!definition] Definition: S-Learner
 > **Step 1:** Fit a single response function $\hat{\mu}$ using all observed data:
-> $$\hat{\mu}(x, w) = \mathbb{E}[Y \mid X = x, W = w]$$
+> $$
+> \hat{\mu}(x, w) = \mathbb{E}[Y \mid X = x, W = w]
+> $$
 > using any supervised learning method that estimates the conditional mean.
 >
 > **Step 2:** Estimate the CATE as the difference in predictions:
-> $$\hat{\tau}^S(x) = \hat{\mu}(x, 1) - \hat{\mu}(x, 0)$$
+> $$
+> \hat{\tau}^S(x) = \hat{\mu}(x, 1) - \hat{\mu}(x, 0)
+> $$
 ^def-s-learner
 
 ## Properties and Performance

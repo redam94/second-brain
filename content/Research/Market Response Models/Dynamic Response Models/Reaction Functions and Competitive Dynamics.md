@@ -29,19 +29,25 @@ A firm's sales response to its own advertising is a partial equilibrium result. 
 
 > [!definition] Cournot Reaction
 > Firm $j$ treats firm $i$'s quantity (or marketing level) as fixed and optimizes own quantity. Reaction function:
-> $$X^j_t = r^j(X^i_{t-1})$$
+> $$
+> X^j_t = r^j(X^i_{t-1})
+> $$
 > At equilibrium, both firms are on their reaction functions simultaneously (Cournot-Nash).
 > ^def-cournot
 
 > [!definition] Bertrand Reaction
 > Firms compete on price rather than quantity. Reaction function:
-> $$P^j_t = r^j(P^i_{t-1})$$
+> $$
+> P^j_t = r^j(P^i_{t-1})
+> $$
 > For differentiated products, Bertrand equilibrium prices exceed marginal cost (unlike Bertrand with homogeneous products).
 > ^def-bertrand
 
 > [!definition] Stackelberg Reaction
 > One firm (leader) moves first, the other (follower) observes and reacts. The leader anticipates the follower's reaction function and incorporates it into its optimization:
-> $$X^{\text{leader}}_t = \arg\max_X \Pi(X, r^{\text{follower}}(X))$$
+> $$
+> X^{\text{leader}}_t = \arg\max_X \Pi(X, r^{\text{follower}}(X))
+> $$
 > Results in leader advantage and higher market share.
 > ^def-stackelberg
 
@@ -58,7 +64,9 @@ A firm's sales response to its own advertising is a partial equilibrium result. 
 ### Absolute Change Model
 
 > [!definition] Absolute Reaction
-> $$X^{\text{them}}_t = \beta_0 + \beta_1 X^{\text{us}}_t + u_t \tag{Eq 4.50}$$
+> $$
+> X^{\text{them}}_t = \beta_0 + \beta_1 X^{\text{us}}_t + u_t \tag{Eq 4.50}
+> $$
 >
 > where $X^{\text{them}}$ is competitor's advertising and $X^{\text{us}}$ is focal firm's advertising.
 > $\beta_1 > 0$: competitors increase spending when we do (escalation)
@@ -68,7 +76,9 @@ A firm's sales response to its own advertising is a partial equilibrium result. 
 ### Relative (Log-Log) Reaction
 
 > [!definition] Relative Reaction
-> $$\ln(X^{\text{them}}_t) = \beta_0 + \beta_1 \ln(X^{\text{us}}_t) + u_t \tag{Eq 4.53}$$
+> $$
+> \ln(X^{\text{them}}_t) = \beta_0 + \beta_1 \ln(X^{\text{us}}_t) + u_t \tag{Eq 4.53}
+> $$
 >
 > $\beta_1 = 1$: proportional matching (parity strategy)
 > $\beta_1 > 1$: over-reaction
@@ -97,7 +107,9 @@ OLS on the observed reaction function understates $\beta_1$. Tobit MLE corrects 
 > [!example] Reaction Lags
 > Competitive reactions are rarely instantaneous. A distributed lag on rivals' actions captures delayed reactions:
 >
-> $$X^j_t = \alpha + \sum_{k=0}^{K} \beta_k X^i_{t-k} + u_t$$
+> $$
+> X^j_t = \alpha + \sum_{k=0}^{K} \beta_k X^i_{t-k} + u_t
+> $$
 >
 > The sum $\sum_k \beta_k$ is the **total competitive reaction elasticity**. If competitors are faster reactors, $\beta_0$ dominates; if slower, higher-order lags dominate. This has direct implications for whether first-mover advertising advantages are sustainable.
 > ^ex-reaction-lags

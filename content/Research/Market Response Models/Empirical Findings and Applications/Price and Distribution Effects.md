@@ -61,9 +61,13 @@ status: complete
 >
 > This phenomenon is captured by competitive clout and vulnerability measures (Cooper 1988):
 >
-> $$\text{competitive clout}_i = \sum_{j \neq i} \eta_{ji}^2 \tag{Eq 8.14}$$
+> $$
+> \text{competitive clout}_i = \sum_{j \neq i} \eta_{ji}^2 \tag{Eq 8.14}
+> $$
 >
-> $$\text{vulnerability}_i = \sum_{j \neq i} \eta_{ij}^2 \tag{Eq 8.15}$$
+> $$
+> \text{vulnerability}_i = \sum_{j \neq i} \eta_{ij}^2 \tag{Eq 8.15}
+> $$
 >
 > where $\eta_{ji}$ = cross-price elasticity of brand $j$ with respect to brand $i$'s price.
 > ^thm-cross-asymmetry
@@ -74,7 +78,9 @@ status: complete
 > *A brand is affected the most by discounts of its closest higher-priced brand, followed closely by discounts of its closest lower-priced brand.* [SSK]
 >
 > The category-adjusted cross-effects response sensitivity (Eq 8.16):
-> $$\gamma_{ij} = \frac{\partial MS_i}{\partial P_j} \times (0.01 P_C) = \eta_{MS,ij} \times \frac{MS_i}{P_j} \times (0.01 P_C)$$
+> $$
+> \gamma_{ij} = \frac{\partial MS_i}{\partial P_j} \times (0.01 P_C) = \eta_{MS,ij} \times \frac{MS_i}{P_j} \times (0.01 P_C)
+> $$
 >
 > where $P_C$ is the category-weighted average price. Using this measure eliminates the "scaling bias" that makes national brand cross-effects appear larger.
 > ^thm-neighborhood

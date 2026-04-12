@@ -38,12 +38,16 @@ Pearl's do-calculus consists of three rules for manipulating interventional dist
 
 > [!definition] ATE via Do-Calculus
 > The **Average Treatment Effect** (ATE) of treatment $T$ on outcome $O$ is:
-> $$\text{ATE}(T, O) = \mathbb{E}[O \mid \text{do}(T=1)] - \mathbb{E}[O \mid \text{do}(T=0)]$$
+> $$
+> \text{ATE}(T, O) = \mathbb{E}[O \mid \text{do}(T=1)] - \mathbb{E}[O \mid \text{do}(T=0)]
+> $$
 >
 > To estimate ATE from observational data, one must control for **confounding variables** — variables that affect both $T$ and $O$ — using the backdoor criterion or do-calculus.
 >
 > The backdoor criterion requires finding a set $Z$ of variables that blocks all backdoor paths from $T$ to $O$ (paths that start with an edge into $T$). If such $Z$ exists:
-> $$P(O \mid \text{do}(T)) = \sum_Z P(O \mid T, Z) P(Z)$$
+> $$
+> P(O \mid \text{do}(T)) = \sum_Z P(O \mid T, Z) P(Z)
+> $$
 ^def-ate-do-calculus
 
 ### 6.1 Do-Calculus Soundness in Summary Causal DAGs
@@ -62,7 +66,9 @@ Pearl's do-calculus consists of three rules for manipulating interventional dist
 > Let $(\mathcal{H}, f)$ be a summary causal DAG for $\mathcal{G}$, and let $X, Y \subseteq \mathcal{V}(\mathcal{H})$ be disjoint sets. Let $Z(W)$ be the set of nodes that are not ancestors of any node in $W$.
 >
 > If $Y$ is d-connected to $Z$ in $(\mathcal{H}, f)$ given $f^{-1}(Z)$ in $\mathcal{G}_\mathcal{H}^{\overline{f(X)}}$ (the manipulated graph with edges into $f(X)$ removed), then there exists a causal DAG $\mathcal{G}^* \in \{\mathcal{G}_i\}_\mathcal{H}$ compatible with $(\mathcal{H}, f)$, such that $f(Y)$ is d-connected to $f(Z)$ in $\mathcal{G}^{*\overline{X}}$. More formally:
-> $$P(Y \mid \text{do}(X)) \text{ is identifiable from } (\mathcal{H}, f) \iff P(f(Y) \mid \text{do}(f(X))) \text{ is identifiable from } \mathcal{G}_\mathcal{H}$$
+> $$
+> P(Y \mid \text{do}(X)) \text{ is identifiable from } (\mathcal{H}, f) \iff P(f(Y) \mid \text{do}(f(X))) \text{ is identifiable from } \mathcal{G}_\mathcal{H}
+> $$
 >
 > **Significance**: Do-calculus is also complete for summary DAGs — any identifiable causal effect in the summary DAG is also identifiable in the canonical causal DAG (and vice versa). This means the summary DAG does not lose identifiability relative to the canonical representation.
 >

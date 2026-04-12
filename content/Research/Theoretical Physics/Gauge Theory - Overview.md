@@ -60,17 +60,23 @@ This spoils the invariance of the Lagrangian. The solution is to introduce a gau
 
 > [!definition] Gauge Field and Covariant Derivative
 > To restore local gauge invariance, replace ordinary derivatives with **gauge covariant derivatives**:
-> $$D_\mu = \partial_\mu - igA_\mu$$
+> $$
+> D_\mu = \partial_\mu - igA_\mu
+> $$
 > where:
 > - $g$ = coupling constant (interaction strength)
 > - $A_\mu(x)$ = **gauge field** (Lie algebra-valued connection)
 >
 > The gauge field must transform as:
-> $$A'_\mu = GA_\mu G^{-1} - \frac{i}{g}(\partial_\mu G)G^{-1}$$
+> $$
+> A'_\mu = GA_\mu G^{-1} - \frac{i}{g}(\partial_\mu G)G^{-1}
+> $$
 > to ensure $(D_\mu\Phi)' = G(D_\mu\Phi)$.
 >
 > The gauge field $A_\mu$ can be expanded in terms of Lie algebra generators $T^a$:
-> $$A_\mu = \sum_a A_\mu^a T^a$$
+> $$
+> A_\mu = \sum_a A_\mu^a T^a
+> $$
 > There is **one gauge field component per generator** of the Lie algebra.
 ^def-gauge-field
 
@@ -85,9 +91,13 @@ This spoils the invariance of the Lagrangian. The solution is to introduce a gau
 
 > [!definition] Yang-Mills Action
 > The Lagrangian for the gauge field itself (which gives gauge bosons kinetic energy and allows them to propagate) is:
-> $$\mathcal{L}_\text{gf} = -\frac{1}{4}F^{a\mu\nu}F_{\mu\nu}^a$$
+> $$
+> \mathcal{L}_\text{gf} = -\frac{1}{4}F^{a\mu\nu}F_{\mu\nu}^a
+> $$
 > where the **field strength tensor** $F_{\mu\nu}^a$ is:
-> $$F_{\mu\nu}^a = \partial_\mu A_\nu^a - \partial_\nu A_\mu^a + g\sum_{b,c}f^{abc}A_\mu^b A_\nu^c$$
+> $$
+> F_{\mu\nu}^a = \partial_\mu A_\nu^a - \partial_\nu A_\mu^a + g\sum_{b,c}f^{abc}A_\mu^b A_\nu^c
+> $$
 > and $f^{abc}$ are the **structure constants** of the Lie algebra.
 >
 > For abelian (U(1)) gauge theory, the $f^{abc}$ terms vanish and this reduces to the familiar electromagnetic field strength $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$.
@@ -99,18 +109,26 @@ This spoils the invariance of the Lagrangian. The solution is to introduce a gau
 
 > [!example] Deriving QED from U(1) Gauge Symmetry
 > Start with the free Dirac Lagrangian for an electron:
-> $$\mathcal{S} = \int \bar{\psi}(i\hbar c\,\gamma^\mu\partial_\mu - mc^2)\psi\, d^4x$$
+> $$
+> \mathcal{S} = \int \bar{\psi}(i\hbar c\,\gamma^\mu\partial_\mu - mc^2)\psi\, d^4x
+> $$
 >
 > This has the **global U(1) symmetry**: $\psi \mapsto e^{i\theta}\psi$ for constant $\theta$.
 >
 > Demanding **local U(1) symmetry**: $\psi(x) \mapsto e^{i\theta(x)}\psi(x)$ requires the covariant derivative:
-> $$D_\mu = \partial_\mu - i\frac{e}{\hbar}A_\mu$$
+> $$
+> D_\mu = \partial_\mu - i\frac{e}{\hbar}A_\mu
+> $$
 >
 > The resulting interaction term is:
-> $$\mathcal{L}_\text{int} = \frac{e}{\hbar}\bar{\psi}(x)\gamma^\mu\psi(x)A_\mu(x) = J^\mu(x)A_\mu(x)$$
+> $$
+> \mathcal{L}_\text{int} = \frac{e}{\hbar}\bar{\psi}(x)\gamma^\mu\psi(x)A_\mu(x) = J^\mu(x)A_\mu(x)
+> $$
 >
 > This is exactly the **minimal coupling** of electromagnetism! The electromagnetic field $A_\mu$ is forced into existence by demanding local phase invariance. The full QED Lagrangian is:
-> $$\mathcal{L}_\text{QED} = \bar{\psi}(i\hbar c\,\gamma^\mu D_\mu - mc^2)\psi - \frac{1}{4\mu_0}F_{\mu\nu}F^{\mu\nu}$$
+> $$
+> \mathcal{L}_\text{QED} = \bar{\psi}(i\hbar c\,\gamma^\mu D_\mu - mc^2)\psi - \frac{1}{4\mu_0}F_{\mu\nu}F^{\mu\nu}
+> $$
 ^ex-qed-from-gauge
 
 ## Historical Development
@@ -142,7 +160,9 @@ The physical electromagnetic field is the curvature of a U(1) connection. The co
 
 > [!theorem] Gauge Symmetry → Conserved Currents
 > By Noether's theorem, every continuous global symmetry of a Lagrangian gives rise to a conserved current. For O(n) global symmetry:
-> $$J_\mu^a = i\partial_\mu\Phi^\mathsf{T} T^a \Phi$$
+> $$
+> J_\mu^a = i\partial_\mu\Phi^\mathsf{T} T^a \Phi
+> $$
 > with one conserved current per generator.
 >
 > For U(1): the single conserved current is the **electric current** $J^\mu = \bar{\psi}\gamma^\mu\psi$, and the conserved charge is the **electric charge**.

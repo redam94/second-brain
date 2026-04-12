@@ -53,7 +53,9 @@ $$\hat{\tau}^{\text{reg}} = N^{-1} \sum_{i=1}^{N} [\hat{\mu}_1(X_i) - \hat{\mu}_
 Uses the **propensity score** $e(x) = \Pr(Z_i = 1 \mid X_i = x)$ to reweight units.
 
 > [!definition] Definition: IPW Estimator
-> $$\hat{\tau}^{\text{IPW}} = N^{-1} \sum_{i=1}^{N} \left[ \frac{Z_i Y_i}{e(X_i)} - \frac{(1-Z_i)Y_i}{1 - e(X_i)} \right]$$
+> $$
+> \hat{\tau}^{\text{IPW}} = N^{-1} \sum_{i=1}^{N} \left[ \frac{Z_i Y_i}{e(X_i)} - \frac{(1-Z_i)Y_i}{1 - e(X_i)} \right]
+> $$
 ^def-ipw
 
 - Consistent if the propensity score model is correctly specified.
@@ -70,7 +72,9 @@ The Hájek estimator normalizes weights to sum to 1, reducing variance.
 Combines outcome modeling and IPW for robustness.
 
 > [!definition] Definition: Doubly-Robust (DR) Estimator
-> $$\hat{\tau}^{\text{DR}} = \hat{\tau}^{\text{reg}} + N^{-1} \sum_{i=1}^{N} \left[ \frac{Z_i R_i}{e(X_i)} - \frac{(1-Z_i) R_i}{1 - e(X_i)} \right]$$
+> $$
+> \hat{\tau}^{\text{DR}} = \hat{\tau}^{\text{reg}} + N^{-1} \sum_{i=1}^{N} \left[ \frac{Z_i R_i}{e(X_i)} - \frac{(1-Z_i) R_i}{1 - e(X_i)} \right]
+> $$
 > where $R_i = Y_i - \hat{\mu}_{Z_i}(X_i)$ is the residual from the outcome model.
 ^def-dr
 

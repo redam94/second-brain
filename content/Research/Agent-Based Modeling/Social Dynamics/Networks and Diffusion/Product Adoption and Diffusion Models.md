@@ -37,7 +37,9 @@ Product adoption and diffusion is a classic application of ABM. The fundamental 
 ### The Value Function
 
 > [!definition] Definition: Product Value Function (Bonabeau 2002)
-> $$V(N) = V(\rho) = \frac{(1 + \theta^d)\rho^d}{\rho^d + \theta^d}$$
+> $$
+> V(N) = V(\rho) = \frac{(1 + \theta^d)\rho^d}{\rho^d + \theta^d}
+> $$
 > where:
 > - $\rho = N/N_T$ is the fraction of adopters in a population of $N_T$ potential adopters
 > - $\theta = 0.4$ is a characteristic value (adoption threshold)

@@ -176,7 +176,9 @@ When a confounder creates a spurious correlation, we see an aggregate correlatio
 
 > [!theorem] Backdoor Adjustment (do-Calculus)
 > If $Z$ is a valid adjustment set, the causal effect of intervention $do(X=x)$ on $Y$ is:
-> $$P(Y \mid do(X = x)) = \sum_z P(Y \mid X = x, Z = z) P(Z = z)$$
+> $$
+> P(Y \mid do(X = x)) = \sum_z P(Y \mid X = x, Z = z) P(Z = z)
+> $$
 >
 > The left side is an **interventional** distribution (what would happen if we set $X=x$). The right side is expressed entirely in terms of **observational** distributions (what we can measure from data).
 >

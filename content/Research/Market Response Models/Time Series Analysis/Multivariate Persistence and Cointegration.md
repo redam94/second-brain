@@ -29,7 +29,9 @@ status: complete
 > [!definition] VARMA Model
 > The **Vector ARMA** model for a $k \times 1$ vector of stationary observations $\mathbf{z}_t$ (Eq 7.21):
 >
-> $$\boldsymbol\Phi(L)\mathbf{z}_t = \boldsymbol\alpha_0 + \boldsymbol\Theta(L)\mathbf{w}_t$$
+> $$
+> \boldsymbol\Phi(L)\mathbf{z}_t = \boldsymbol\alpha_0 + \boldsymbol\Theta(L)\mathbf{w}_t
+> $$
 >
 > where:
 > - $\boldsymbol\Phi(L) = \mathbf{I} - \boldsymbol\phi_1 L - \cdots - \boldsymbol\phi_p L^p$ ($k \times k$ AR matrix polynomial)
@@ -40,7 +42,9 @@ status: complete
 > [!definition] VAR Model
 > The **Vector Autoregressive** model — VARMA with $\boldsymbol\Theta(L) = \mathbf{I}$ (Eq 7.22):
 >
-> $$\boldsymbol\Phi(L)\mathbf{z}_t = \boldsymbol\alpha_0 + \mathbf{w}_t$$
+> $$
+> \boldsymbol\Phi(L)\mathbf{z}_t = \boldsymbol\alpha_0 + \mathbf{w}_t
+> $$
 >
 > Advantages over VARMA: (1) straightforward OLS estimation equation-by-equation, (2) no nonlinear MA terms, (3) easily extends to cointegrated systems.
 > ^def-var
@@ -71,7 +75,9 @@ The VAR captures all six simultaneously without imposing causal structure a prio
 > [!definition] Impulse Response and Persistence
 > Writing the VAR as an infinite-order VMA:
 >
-> $$\begin{bmatrix} Q_t \\ ADV_t \end{bmatrix} = \mathbf{I}\begin{bmatrix} w_{Q,t} \\ w_{ADV,t} \end{bmatrix} + \boldsymbol\alpha^1 \begin{bmatrix} w_{Q,t-1} \\ w_{ADV,t-1} \end{bmatrix} + \boldsymbol\alpha^2 \begin{bmatrix} w_{Q,t-2} \\ w_{ADV,t-2} \end{bmatrix} + \cdots \tag{Eq 7.24}$$
+> $$
+> \begin{bmatrix} Q_t \\ ADV_t \end{bmatrix} = \mathbf{I}\begin{bmatrix} w_{Q,t} \\ w_{ADV,t} \end{bmatrix} + \boldsymbol\alpha^1 \begin{bmatrix} w_{Q,t-1} \\ w_{ADV,t-1} \end{bmatrix} + \boldsymbol\alpha^2 \begin{bmatrix} w_{Q,t-2} \\ w_{ADV,t-2} \end{bmatrix} + \cdots \tag{Eq 7.24}
+> $$
 >
 > $\alpha^k_{12}$: impact on $Q_t$ of a one-unit advertising shock $k$ periods ago.
 >
@@ -95,14 +101,18 @@ The VAR captures all six simultaneously without imposing causal structure a prio
 > [!definition] Cointegration (Engle-Granger 1987)
 > Two I(1) series $Y_t$ and $X_t$ are **cointegrated** if there exists $\beta_1$ such that:
 >
-> $$e_t = Y_t - \beta_0 - \beta_1 X_t \tag{Eq 7.26}$$
+> $$
+> e_t = Y_t - \beta_0 - \beta_1 X_t \tag{Eq 7.26}
+> $$
 >
 > is stationary I(0). Cointegration means a long-run equilibrium relationship exists between the two evolving series — they cannot drift arbitrarily far apart.
 >
 > **Engle-Granger test**: (1) OLS of $Y_t$ on $X_t$; (2) ADF unit root test on residuals $\hat e_t$ (with different critical values)
 >
 > **Johansen FIML test** (Eq 7.27-7.28): full-information maximum likelihood; handles multiple cointegrating vectors. Starting from VAR($k$):
-> $$\tilde{\mathbf{X}}_t = \mathbf{c} + \mathbf{\Pi}_1 \tilde{\mathbf{X}}_{t-1} + \cdots + \mathbf{\Pi}_k \tilde{\mathbf{X}}_{t-k} + \mathbf{w}_t$$
+> $$
+> \tilde{\mathbf{X}}_t = \mathbf{c} + \mathbf{\Pi}_1 \tilde{\mathbf{X}}_{t-1} + \cdots + \mathbf{\Pi}_k \tilde{\mathbf{X}}_{t-k} + \mathbf{w}_t
+> $$
 > The number of cointegrating vectors = rank of $\mathbf{\Gamma}_k = -\mathbf{I}_N + \mathbf{\Pi}_1 + \cdots + \mathbf{\Pi}_k$ ($= \mathbf{w}\boldsymbol\beta'$).
 > ^def-cointegration
 
@@ -111,7 +121,9 @@ The VAR captures all six simultaneously without imposing causal structure a prio
 > [!definition] Error-Correction Model
 > If $Y_t$ and $X_t$ are cointegrated with equilibrium error $e_t = Y_t - \beta_0 - \beta_1 X_t$, the Engle-Granger ECM is (Eq 7.29):
 >
-> $$\Delta Y_t = \alpha_0 + \alpha_1 \Delta Y_{t-1} + \alpha_2 \Delta X_{t-1} + \alpha_3 e_{t-1} + u_t$$
+> $$
+> \Delta Y_t = \alpha_0 + \alpha_1 \Delta Y_{t-1} + \alpha_2 \Delta X_{t-1} + \alpha_3 e_{t-1} + u_t
+> $$
 >
 > where $\alpha_3 < 0$ is the **speed of adjustment** parameter. When $Y_{t-1}$ is too high relative to the equilibrium, $\alpha_3 e_{t-1}$ pulls it back down in period $t$.
 >

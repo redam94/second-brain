@@ -38,7 +38,9 @@ Causal effects are defined as **contrasts of potential outcomes** under differen
 
 > [!definition] Definition: Individual Treatment Effect (ITE)
 > For unit $i$, the individual treatment effect is:
-> $$\tau_i \equiv Y_i(1) - Y_i(0)$$
+> $$
+> \tau_i \equiv Y_i(1) - Y_i(0)
+> $$
 > the difference in potential outcomes under treatment vs. control for the *same* unit.
 ^def-ite
 
@@ -48,7 +50,9 @@ The ITE is never directly observable (fundamental problem of causal inference). 
 
 > [!definition] Definition: Sample Average Treatment Effect (SATE)
 > The average ITE over the observed sample of $N$ units:
-> $$\tau^S \equiv N^{-1} \sum_{i=1}^{N} \tau_i = N^{-1} \sum_{i=1}^{N} [Y_i(1) - Y_i(0)]$$
+> $$
+> \tau^S \equiv N^{-1} \sum_{i=1}^{N} \tau_i = N^{-1} \sum_{i=1}^{N} [Y_i(1) - Y_i(0)]
+> $$
 ^def-sate
 
 The SATE is a function of potential outcomes of the *specific sample*. It is non-random given the sample, though it involves missing potential outcomes.
@@ -57,7 +61,9 @@ The SATE is a function of potential outcomes of the *specific sample*. It is non
 
 > [!definition] Definition: Conditional Average Treatment Effect (CATE)
 > The average treatment effect for all units with covariate value $X_i = x$:
-> $$\tau(x) \equiv \mathbb{E}[Y_i(1) - Y_i(0) \mid X_i = x] = \mu_1(x) - \mu_0(x)$$
+> $$
+> \tau(x) \equiv \mathbb{E}[Y_i(1) - Y_i(0) \mid X_i = x] = \mu_1(x) - \mu_0(x)
+> $$
 > where $\mu_z(x) \equiv \mathbb{E}[Y_i(z) \mid X_i = x]$ for $z = 0, 1$.
 ^def-cate
 
@@ -67,7 +73,9 @@ The CATE captures **treatment effect heterogeneity** — how the average effect 
 
 > [!definition] Definition: Population Average Treatment Effect (PATE)
 > Averaging the CATE (or ITE) over a target population $F(x; \theta_X)$:
-> $$\tau^P \equiv \mathbb{E}[Y_i(1) - Y_i(0)] = \mathbb{E}[\tau(X_i)]$$
+> $$
+> \tau^P \equiv \mathbb{E}[Y_i(1) - Y_i(0)] = \mathbb{E}[\tau(X_i)]
+> $$
 ^def-pate
 
 - The PATE is a function of the **distribution** of potential outcomes in a population.
@@ -84,7 +92,9 @@ The CATE captures **treatment effect heterogeneity** — how the average effect 
 
 > [!definition] Definition: Mixed Average Treatment Effect (MATE)
 > Replace the population distribution $F(x; \theta_X)$ in the PATE with the *empirical distribution* $\hat{F}_X$ of covariates in the sample:
-> $$\tau^M \equiv (\beta_1 - \beta_0)'\bar{X} = N^{-1} \sum_{i=1}^{N} \tau(X_i; \theta_Y)$$
+> $$
+> \tau^M \equiv (\beta_1 - \beta_0)'\bar{X} = N^{-1} \sum_{i=1}^{N} \tau(X_i; \theta_Y)
+> $$
 > where $\tau(x; \theta_Y) = \tau(x)$ evaluated at parameter $\theta_Y$.
 ^def-mate
 
@@ -108,7 +118,9 @@ In complex assignment mechanisms (e.g., instrumental variables), one may define 
 
 > [!definition] Definition: Principal Causal Effects
 > For compliance stratum $U_i \in \{\text{co, at, nt, df}\}$ (compliers, always-takers, never-takers, defiers), the stratum-specific effect is:
-> $$\tau_u \equiv \mathbb{E}[Y_i(1) - Y_i(0) \mid U_i = u]$$
+> $$
+> \tau_u \equiv \mathbb{E}[Y_i(1) - Y_i(0) \mid U_i = u]
+> $$
 > These are called *principal causal effects*.
 ^def-principal-effects
 

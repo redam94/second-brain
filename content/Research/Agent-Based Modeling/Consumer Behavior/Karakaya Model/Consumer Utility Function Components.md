@@ -39,16 +39,22 @@ The utility function is based on Zhang and Zhang (2007) and captures the four ke
 
 > [!definition] Definition: Consumer Utility Function (Karakaya et al. 2011, Eq. 1)
 > The total utility for consumer $i$ is the sum of four components:
-> $$U_i = U_{i1} + U_{i2} + U_{i3} + U_{i4}$$
+> $$
+> U_i = U_{i1} + U_{i2} + U_{i3} + U_{i4}
+> $$
 > where $U_{i1}$ = quality utility, $U_{i2}$ = promotion utility, $U_{i3}$ = WOM utility, $U_{i4}$ = price utility.
 ^def-total-utility
 
 ### Component 1: Quality Utility ($U_{i1}$)
 
 > [!definition] Definition: Quality Utility Component (Karakaya et al. 2011, Eq. 2-3)
-> $$U_{i1} = \frac{G_{i1} + G_{i2}}{2} \cdot K_i$$
+> $$
+> U_{i1} = \frac{G_{i1} + G_{i2}}{2} \cdot K_i
+> $$
 > where $K_i$ is the quality sensitivity of consumer $i$, and the goodness-of-fit $G_{ij}$ for product attribute $j$ is:
-> $$G_{ij} = \begin{cases} 1 + |P_{ij} - A_j| & \text{if } A_j > P_{ij} \\ 1 - |P_{ij} - A_j| & \text{if } A_j < P_{ij} \end{cases}$$
+> $$
+> G_{ij} = \begin{cases} 1 + |P_{ij} - A_j| & \text{if } A_j > P_{ij} \\ 1 - |P_{ij} - A_j| & \text{if } A_j < P_{ij} \end{cases}
+> $$
 > - $A_j$: product characteristic value for attribute $j$
 > - $P_{ij}$: preference value of consumer $i$ for attribute $j$, $j \in \{1, 2\}$
 ^def-quality-utility
@@ -60,7 +66,9 @@ The utility function is based on Zhang and Zhang (2007) and captures the four ke
 ### Component 2: Promotion Utility ($U_{i2}$)
 
 > [!definition] Definition: Promotion Utility Component (Karakaya et al. 2011, Eq. 4)
-> $$U_{i2} = Pr_i \cdot C_{pr} \cdot (Pro_t + \beta \cdot Pro_{t-1})$$
+> $$
+> U_{i2} = Pr_i \cdot C_{pr} \cdot (Pro_t + \beta \cdot Pro_{t-1})
+> $$
 > - $Pr_i$: promotion sensitivity of consumer $i$
 > - $C_{pr}$: constant promotion sensitivity factor (independent of consumer)
 > - $Pro_t$: promotion intensity at time $t$
@@ -72,7 +80,9 @@ The utility function is based on Zhang and Zhang (2007) and captures the four ke
 ### Component 3: WOM Utility ($U_{i3}$)
 
 > [!definition] Definition: WOM Utility Component (Karakaya et al. 2011, Eq. 5)
-> $$U_{i3} = WOM_i \cdot S_i \cdot C_{WOM}$$
+> $$
+> U_{i3} = WOM_i \cdot S_i \cdot C_{WOM}
+> $$
 > - $WOM_i$: amount of WOM consumer $i$ receives (can be positive or negative)
 > - $S_i$: social sensitivity of consumer $i$
 > - $C_{WOM}$: constant WOM sensitivity factor
@@ -83,7 +93,9 @@ The utility function is based on Zhang and Zhang (2007) and captures the four ke
 ### Component 4: Price Utility ($U_{i4}$)
 
 > [!definition] Definition: Price Utility Component (Karakaya et al. 2011, Eq. 6)
-> $$U_{i4} = -(PrSen_i \cdot price \cdot C_{price})$$
+> $$
+> U_{i4} = -(PrSen_i \cdot price \cdot C_{price})
+> $$
 > - $PrSen_i$: price sensitivity of consumer $i$, drawn from $U(0.5, 1)$
 > - $price$: price of the product (set by company each time step)
 > - $C_{price}$: constant price sensitivity factor

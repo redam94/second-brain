@@ -41,7 +41,9 @@ Standard calibration methods (GA, simulated annealing) minimize error without ac
 > [!definition] Definition: Model Discrepancy ($V^r_m$)
 > The difference between the best possible model output and the true data-generating mechanism. Even with perfect parameters, an ABM is an abstraction — it omits real-world processes, simplifies behaviour, and cannot perfectly replicate the target system.
 >
-> $$V^r_m = \frac{1}{N-1}\sum_{n=1}^N\left(d(z^r, f^r(x_n)) - E^r(X)\right)^2$$
+> $$
+> V^r_m = \frac{1}{N-1}\sum_{n=1}^N\left(d(z^r, f^r(x_n)) - E^r(X)\right)^2
+> $$
 >
 > **Key implication**: Model discrepancy cannot be reduced by better calibration. It must be acknowledged honestly — ignoring it inflates the implausibility score and causes the HM procedure to retain too few parameter sets.
 ^model-discrepancy
@@ -49,7 +51,9 @@ Standard calibration methods (GA, simulated annealing) minimize error without ac
 > [!definition] Definition: Ensemble Variance ($V^r_s$)
 > Arises from stochastic variation across runs with identical parameters. ABMs use random number generators, so each run produces a different output trajectory.
 >
-> $$V^r_s = \frac{1}{N}\sum_{n=1}^N\left[\frac{1}{K-1}\sum_{k=1}^K\left(d(z^r, f^r_k(x_n)) - E^r_K(x_n)\right)^2\right]$$
+> $$
+> V^r_s = \frac{1}{N}\sum_{n=1}^N\left[\frac{1}{K-1}\sum_{k=1}^K\left(d(z^r, f^r_k(x_n)) - E^r_K(x_n)\right)^2\right]
+> $$
 >
 > Choose the ensemble size $K$ by plotting variance vs. $K$ and selecting the smallest $K$ at which variance stabilises (e.g., $K = 200$ for SugarScape, $K = 30$ for birds).
 ^ensemble-variance

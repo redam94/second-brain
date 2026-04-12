@@ -57,7 +57,9 @@ Agents compute a utility $U_i$ from four components (quality, promotion, WOM, pr
 2. **Stochastic decision**: $\text{logit}(U_i) \geq \tau_i$ where $\tau_i$ is a random draw
 
 > [!definition] Definition: Logit Purchase Rule (Karakaya et al. 2011)
-> $$\text{if } U_i > \alpha \text{ and } \text{logit}(U_i) \geq \tau_i, \text{ consumer } i \text{ purchases the product}$$
+> $$
+> \text{if } U_i > \alpha \text{ and } \text{logit}(U_i) \geq \tau_i, \text{ consumer } i \text{ purchases the product}
+> $$
 > where $\text{logit}(u) = \frac{1}{1 + e^{k(\alpha - u)}}$, $k$ is a smoothing constant, and $\alpha$ is the buying threshold.
 ^def-logit-purchase
 

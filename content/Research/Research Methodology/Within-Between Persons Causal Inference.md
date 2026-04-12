@@ -40,9 +40,13 @@ These can be statistically independent and can even have opposite signs — a cl
 > [!theorem] Theorem: Between-Persons Data Under Randomization (pp. 2–3)
 > Individual causal effect: $Y_i^{a=1} - Y_i^{a=0}$.
 > Average treatment effect (ATE):
-> $$E[Y^{a=1} - Y^{a=0}] = E[Y^{a=1}] - E[Y^{a=0}]$$
+> $$
+> E[Y^{a=1} - Y^{a=0}] = E[Y^{a=1}] - E[Y^{a=0}]
+> $$
 > Under randomization (exchangeability: $Y^a \perp\!\!\!\perp A$):
-> $$= E[Y \mid A=1] - E[Y \mid A=0]$$
+> $$
+> = E[Y \mid A=1] - E[Y \mid A=0]
+> $$
 > **Between-persons comparisons from randomized experiments recover the ATE without requiring longitudinal data.** The consistency assumption ($Y_i^{a=A_i} = Y_i$) and the exchangeability induced by randomization are sufficient.
 ^between-persons-ATE
 

@@ -30,7 +30,9 @@ Standard functional forms (linear, log-log, ADBUDG) impose strong a priori shape
 > [!definition] Translog
 > A second-order Taylor expansion in logs around the sample mean:
 >
-> $$\ln Q = \alpha_0 + \sum_j \beta_j \ln X_j + \frac{1}{2}\sum_j \sum_k \gamma_{jk} \ln X_j \cdot \ln X_k + \epsilon$$
+> $$
+> \ln Q = \alpha_0 + \sum_j \beta_j \ln X_j + \frac{1}{2}\sum_j \sum_k \gamma_{jk} \ln X_j \cdot \ln X_k + \epsilon
+> $$
 >
 > The translog nests:
 > - Log-log (power): when all $\gamma_{jk} = 0$
@@ -46,10 +48,14 @@ Standard functional forms (linear, log-log, ADBUDG) impose strong a priori shape
 > [!definition] Box-Cox Power Transformation
 > The Box-Cox transformation:
 >
-> $$Q^{(\lambda)} = \frac{Q^\lambda - 1}{\lambda}, \quad \lambda \to 0 \Rightarrow \ln Q$$
+> $$
+> Q^{(\lambda)} = \frac{Q^\lambda - 1}{\lambda}, \quad \lambda \to 0 \Rightarrow \ln Q
+> $$
 >
 > Applied to both the dependent and independent variables with potentially different $\lambda$:
-> $$Q^{(\lambda_0)} = \alpha + \sum_j \beta_j X_j^{(\lambda_j)} + \epsilon$$
+> $$
+> Q^{(\lambda_0)} = \alpha + \sum_j \beta_j X_j^{(\lambda_j)} + \epsilon
+> $$
 >
 > MLE over the $\lambda$ parameters yields a data-driven choice of transformation. If $\hat\lambda_0 \approx 0$, log transformation of $Q$ is appropriate. If $\hat\lambda_j \approx 0$, log transformation of $X_j$ is appropriate.
 >
@@ -71,7 +77,9 @@ Tradeoff: high flexibility but low interpretability and poor out-of-sample perfo
 > [!definition] Regression Spline
 > Splines fit piecewise polynomials with continuity constraints at **knots** $\tau_1, \ldots, \tau_K$:
 >
-> $$Q = \sum_{j=0}^p \beta_j X^j + \sum_{k=1}^K \delta_k (X - \tau_k)_+^p + \epsilon$$
+> $$
+> Q = \sum_{j=0}^p \beta_j X^j + \sum_{k=1}^K \delta_k (X - \tau_k)_+^p + \epsilon
+> $$
 >
 > where $(X - \tau_k)_+ = \max(0, X - \tau_k)$. The knot positions can be pre-specified or estimated.
 >

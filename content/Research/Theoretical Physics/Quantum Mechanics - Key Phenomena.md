@@ -30,7 +30,9 @@ aliases:
 
 > [!definition] Wave-Particle Duality
 > Quantum objects (electrons, photons, even molecules) exhibit both particle-like and wave-like properties depending on what is measured. A single particle can produce an interference pattern when not observed, but registers as a discrete hit on a screen. The de Broglie relation connects wavelength to momentum:
-> $$\lambda = \frac{h}{p}$$
+> $$
+> \lambda = \frac{h}{p}
+> $$
 ^def-wave-particle
 
 ### Double-Slit Experiment
@@ -95,7 +97,9 @@ In 1964, Bell showed EPR's locality + determinism → Bell inequalities on measu
 
 > [!example] CHSH Inequality
 > The CHSH (Clauser-Horne-Shimony-Holt) version of Bell's inequality states that for any local hidden-variable theory:
-> $$|S| = |E(a,b) - E(a,b') + E(a',b) + E(a',b')| \leq 2$$
+> $$
+> |S| = |E(a,b) - E(a,b') + E(a',b) + E(a',b')| \leq 2
+> $$
 > Quantum mechanics predicts $|S|_{\text{max}} = 2\sqrt{2} \approx 2.83$ for appropriate measurement settings on maximally entangled states. Experiments consistently find violations, $|S| > 2$.
 ^ex-chsh
 

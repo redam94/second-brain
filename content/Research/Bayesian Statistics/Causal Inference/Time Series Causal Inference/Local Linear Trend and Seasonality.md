@@ -31,8 +31,12 @@ aliases:
 > [!definition] Definition: Local Linear Trend
 > The level $\mu_t$ and slope $\delta_t$ evolve as:
 >
-> $$\mu_{t+1} = \mu_t + \delta_t + \eta_{\mu,t}, \quad \eta_{\mu,t} \sim \mathcal{N}(0, \sigma_\mu^2) \tag{2.3}$$
-> $$\delta_{t+1} = \delta_t + \eta_{\delta,t}, \quad \eta_{\delta,t} \sim \mathcal{N}(0, \sigma_\delta^2)$$
+> $$
+> \mu_{t+1} = \mu_t + \delta_t + \eta_{\mu,t}, \quad \eta_{\mu,t} \sim \mathcal{N}(0, \sigma_\mu^2) \tag{2.3}
+> $$
+> $$
+> \delta_{t+1} = \delta_t + \eta_{\delta,t}, \quad \eta_{\delta,t} \sim \mathcal{N}(0, \sigma_\delta^2)
+> $$
 >
 > - $\mu_t$: current level (value of trend at time $t$)
 > - $\delta_t$: slope (expected increment in $\mu$ per time step)
@@ -60,7 +64,9 @@ where $|\rho| < 1$ is the learning rate. This model balances short-term local va
 > [!definition] Definition: Seasonal State Component
 > For $S$ seasons, the seasonal effect $\gamma_t$ evolves as:
 >
-> $$\gamma_{t+1} = -\sum_{s=0}^{S-2} \gamma_{t-s} + \eta_{\gamma,t} \tag{2.5}$$
+> $$
+> \gamma_{t+1} = -\sum_{s=0}^{S-2} \gamma_{t-s} + \eta_{\gamma,t} \tag{2.5}
+> $$
 >
 > where $S$ is the number of seasons per period and $\gamma_t$ denotes their joint contribution to the observed response.
 >

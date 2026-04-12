@@ -35,7 +35,9 @@ The central limitation of [[Indirect Inference]] is that efficiency depends on t
 
 > [!definition] Definition: Semi-Nonparametric (SNP) Conditional Density
 > The SNP model represents any conditional density as:
-> $$h_q^*(y_t | z_t; \lambda_q) = \frac{[\mathcal{P}(u_t, z_t)]^2 \, \phi(u_t) / |\det(S_t)|}{\int [\mathcal{P}(v, z_t)]^2 \, \phi(v) \, dv}$$
+> $$
+> h_q^*(y_t | z_t; \lambda_q) = \frac{[\mathcal{P}(u_t, z_t)]^2 \, \phi(u_t) / |\det(S_t)|}{\int [\mathcal{P}(v, z_t)]^2 \, \phi(v) \, dv}
+> $$
 >
 > where:
 > - $z_t = [y_{t-1}', \ldots, y_{t-l}']'$ is the conditioning vector
@@ -79,13 +81,19 @@ The EMM estimator is a special case of [[Indirect Inference#^def-score-estimator
 
 > [!definition] Definition: EMM Estimator
 > 1. Estimate the SNP auxiliary model on the observed data:
->    $$\tilde{\lambda}_T = \arg\max_\lambda T^{-1} \sum_{t=1}^T \log h_q^*(y_t | z_t; \lambda)$$
+>    $$
+>    \tilde{\lambda}_T = \arg\max_\lambda T^{-1} \sum_{t=1}^T \log h_q^*(y_t | z_t; \lambda)
+>    $$
 >
 > 2. The EMM estimator minimizes:
->    $$\hat{\theta}_{GT}^R = \arg\min_\theta \hat{g}_R(\theta, \tilde{\lambda}_T)' A \, \hat{g}_R(\theta, \tilde{\lambda}_T)$$
+>    $$
+>    \hat{\theta}_{GT}^R = \arg\min_\theta \hat{g}_R(\theta, \tilde{\lambda}_T)' A \, \hat{g}_R(\theta, \tilde{\lambda}_T)
+>    $$
 >
 >    where the simulated scores are:
->    $$\hat{g}_R(\theta, \tilde{\lambda}_T) = \frac{1}{R} \sum_{r=1}^R \frac{1}{T} \sum_{t=1}^T \frac{\partial \log h_q^*[y_t^{(r)}(\theta) | z_t^{(r)}(\theta); \tilde{\lambda}_T]}{\partial \lambda}$$
+>    $$
+>    \hat{g}_R(\theta, \tilde{\lambda}_T) = \frac{1}{R} \sum_{r=1}^R \frac{1}{T} \sum_{t=1}^T \frac{\partial \log h_q^*[y_t^{(r)}(\theta) | z_t^{(r)}(\theta); \tilde{\lambda}_T]}{\partial \lambda}
+>    $$
 >
 > The EMM estimator searches for $\theta$ such that the SNP scores, evaluated at $\tilde{\lambda}_T$, are close to zero when applied to simulated data from the structural model.
 ^def-emm-estimator

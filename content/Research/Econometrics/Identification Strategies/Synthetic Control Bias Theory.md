@@ -41,7 +41,9 @@ The key insight: a synthetic control that reproduces the treated unit's pre-trea
 
 > [!definition] Definition: Linear Factor Model (Abadie et al. 2010, Eq. 10)
 > The potential outcome without treatment for unit $j$ at time $t$ follows:
-> $$Y_{jt}^N = \delta_t + \boldsymbol{\theta}_t \mathbf{Z}_j + \boldsymbol{\lambda}_t \boldsymbol{\mu}_j + \varepsilon_{jt}$$
+> $$
+> Y_{jt}^N = \delta_t + \boldsymbol{\theta}_t \mathbf{Z}_j + \boldsymbol{\lambda}_t \boldsymbol{\mu}_j + \varepsilon_{jt}
+> $$
 > where:
 > - $\delta_t$ = common time trend (constant factor loading)
 > - $\mathbf{Z}_j$ = observed covariates (time-invariant or unaffected by treatment), with time-varying coefficients $\boldsymbol{\theta}_t$
@@ -59,7 +61,9 @@ This model generalizes the standard panel data fixed-effects model. The differen
 
 > [!theorem] Theorem: Bias Bound for Synthetic Controls (Abadie, Diamond, and Hainmueller 2010)
 > Under the linear factor model, suppose a synthetic control with weights $W^* = (w_2^*, \ldots, w_{J+1}^*)'$ reproduces the characteristics of the treated unit:
-> $$\mathbf{X}_1 \approx \mathbf{X}_0 \mathbf{W}^*$$
+> $$
+> \mathbf{X}_1 \approx \mathbf{X}_0 \mathbf{W}^*
+> $$
 > where $\mathbf{X}_1$ and $\mathbf{X}_0$ include pre-intervention outcomes and predictors. Then for $t > T_0$, the bias of $\hat{\tau}_{1t}$ is bounded by a function that is:
 > - **Inversely proportional to $T_0$** (the number of pre-treatment periods)
 > - **Increasing in $J$** (the size of the donor pool)
@@ -98,7 +102,9 @@ $$\min_{\mathbf{W}} \|\mathbf{X}_1 - \mathbf{X}_0 \mathbf{W}\| = \left(\sum_{h=1
 > Split the pre-intervention periods $t = 1, \ldots, T_0$ into a **training period** $t = 1, \ldots, t_0$ and a **validation period** $t = t_0+1, \ldots, T_0$ (with $t_0 = T_0/2$ as a default). Then:
 > 1. For each candidate $\mathbf{V}$, compute weights $\tilde{\mathbf{W}}(\mathbf{V})$ using training period data only
 > 2. Evaluate the MSPE of the resulting synthetic control on the **validation period**:
-> $$\sum_{t=t_0+1}^{T_0}\left(Y_{1t} - w_2(\mathbf{V})Y_{2t} - \cdots - w_{J+1}(\mathbf{V})Y_{J+1,t}\right)^2$$
+> $$
+> \sum_{t=t_0+1}^{T_0}\left(Y_{1t} - w_2(\mathbf{V})Y_{2t} - \cdots - w_{J+1}(\mathbf{V})Y_{J+1,t}\right)^2
+> $$
 > 3. Select $\mathbf{V}^*$ that minimizes the validation-period MSPE
 > 4. Use $\mathbf{W}^* = \mathbf{W}(\mathbf{V}^*)$ for estimation
 ^def-v-selection

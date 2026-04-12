@@ -31,9 +31,15 @@ Every marketing time series $Z_t$ can be decomposed:
 > [!definition] Stationarity
 > A time series $\{z_t\}$ is **weakly stationary** (covariance-stationary) if:
 >
-> $$E(z_t) = \mu \quad \forall t \tag{Eq 6.5}$$
-> $$\text{Var}(z_t) = \sigma^2_z \quad \forall t \tag{Eq 6.6}$$
-> $$\text{Cov}(z_t, z_{t+k}) = \gamma_k \quad \text{depends only on lag } k$$
+> $$
+> E(z_t) = \mu \quad \forall t \tag{Eq 6.5}
+> $$
+> $$
+> \text{Var}(z_t) = \sigma^2_z \quad \forall t \tag{Eq 6.6}
+> $$
+> $$
+> \text{Cov}(z_t, z_{t+k}) = \gamma_k \quad \text{depends only on lag } k
+> $$
 >
 > Non-stationarity (unit root) requires differencing before ARMA modeling.
 > ^def-stationarity
@@ -54,24 +60,36 @@ Four types that must be removed before modeling the stochastic component:
 > [!theorem] Linear Filter
 > Any stationary ARMA process is a linear filter of white noise:
 >
-> $$z_t = \Psi(L) w_t = \sum_{j=0}^{\infty} \psi_j w_{t-j} \tag{Eq 6.10}$$
+> $$
+> z_t = \Psi(L) w_t = \sum_{j=0}^{\infty} \psi_j w_{t-j} \tag{Eq 6.10}
+> $$
 >
 > where $w_t \sim \text{WN}(0, \sigma^2_w)$ and $\Psi(L) = 1 + \psi_1 L + \psi_2 L^2 + \cdots$ is a (possibly infinite) lag polynomial.
 >
 > The general ARMA form (Eq 6.11):
-> $$\Phi(L) z_t = \Theta(L) w_t$$
-> $$\Phi(L) = 1 - \phi_1 L - \cdots - \phi_p L^p \quad \text{(AR polynomial)}$$
-> $$\Theta(L) = 1 - \theta_1 L - \cdots - \theta_q L^q \quad \text{(MA polynomial)}$$
+> $$
+> \Phi(L) z_t = \Theta(L) w_t
+> $$
+> $$
+> \Phi(L) = 1 - \phi_1 L - \cdots - \phi_p L^p \quad \text{(AR polynomial)}
+> $$
+> $$
+> \Theta(L) = 1 - \theta_1 L - \cdots - \theta_q L^q \quad \text{(MA polynomial)}
+> $$
 > ^thm-linear-filter
 
 ## ACF and PACF
 
 > [!definition] Sample ACF and PACF
 > **Autocorrelation function (ACF)**:
-> $$r_k = \frac{\sum_{t=k+1}^T (z_t - \bar{z})(z_{t-k} - \bar{z})}{\sum_{t=1}^T (z_t - \bar{z})^2} \tag{Eq 6.27}$$
+> $$
+> r_k = \frac{\sum_{t=k+1}^T (z_t - \bar{z})(z_{t-k} - \bar{z})}{\sum_{t=1}^T (z_t - \bar{z})^2} \tag{Eq 6.27}
+> $$
 >
 > **Approximate variance of $r_k$** (Bartlett):
-> $$\text{Var}(r_k) \approx \frac{1}{T}\left(1 + 2\sum_{v=1}^{k-1} \rho_v^2\right) \tag{Eq 6.28}$$
+> $$
+> \text{Var}(r_k) \approx \frac{1}{T}\left(1 + 2\sum_{v=1}^{k-1} \rho_v^2\right) \tag{Eq 6.28}
+> $$
 >
 > **Partial autocorrelation function (PACF)**: $\phi_{kk}$ = the coefficient on $z_{t-k}$ in an AR($k$) regression on $z_t, z_{t-1}, \ldots, z_{t-k}$. Captures the direct effect at lag $k$, removing effects of intermediate lags.
 > ^def-acf-pacf
@@ -79,7 +97,9 @@ Four types that must be removed before modeling the stochastic component:
 ## AR(p) Models
 
 > [!definition] AR(1) Model
-> $$z_t = \alpha_0 + \phi z_{t-1} + w_t$$
+> $$
+> z_t = \alpha_0 + \phi z_{t-1} + w_t
+> $$
 >
 > **Stationarity:** $|\phi| < 1$ (root of $1 - \phi L = 0$ must exceed 1 in absolute value)
 >
@@ -93,12 +113,16 @@ Four types that must be removed before modeling the stochastic component:
 ## MA(q) Models
 
 > [!definition] MA(1) Model
-> $$z_t = \mu + w_t - \theta_1 w_{t-1}$$
+> $$
+> z_t = \mu + w_t - \theta_1 w_{t-1}
+> $$
 >
 > **Invertibility:** $|\theta_1| < 1$ (root of $1 - \theta_1 L = 0$ outside unit circle)
 >
 > **ACF:** Single spike at lag 1 only:
-> $$\rho_1 = \frac{-\theta_1}{1 + \theta_1^2}, \quad \rho_k = 0 \text{ for } k > 1$$
+> $$
+> \rho_1 = \frac{-\theta_1}{1 + \theta_1^2}, \quad \rho_k = 0 \text{ for } k > 1
+> $$
 >
 > **PACF:** Dies out geometrically (infinite AR representation)
 > ^def-ma1
@@ -136,15 +160,21 @@ Four types that must be removed before modeling the stochastic component:
 > [!definition] ARIMA
 > Regular differencing to achieve stationarity (order $d$):
 >
-> $$z_t = (1 - L)^d Z_t \tag{Eq 6.76}$$
+> $$
+> z_t = (1 - L)^d Z_t \tag{Eq 6.76}
+> $$
 >
 > For $d = 1$ (most common): $z_t = Z_t - Z_{t-1}$ (first difference = period-over-period change)
 >
 > **Seasonal ARIMA** (Box-Jenkins seasonal model) adds seasonal differencing:
-> $$z_t = (1 - L^s)^{d_s} Z_t \tag{Eq 6.79}$$
+> $$
+> z_t = (1 - L^s)^{d_s} Z_t \tag{Eq 6.79}
+> $$
 >
 > where $s$ is the seasonal period (12 for monthly, 52 for weekly). Full model:
-> $$\Phi(L)\Phi_s(L^s)(1-L)^d(1-L^s)^{d_s} Z_t = \Theta(L)\Theta_s(L^s) w_t$$
+> $$
+> \Phi(L)\Phi_s(L^s)(1-L)^d(1-L^s)^{d_s} Z_t = \Theta(L)\Theta_s(L^s) w_t
+> $$
 > ^def-arima
 
 ## Box-Cox Variance Stabilization

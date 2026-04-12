@@ -73,9 +73,13 @@ Under monotonicity, only compliers, always-takers, and never-takers exist ($U_i 
 
 > [!definition] Definition: Complier Average Causal Effect (CACE)
 > The average treatment effect for **compliers** only:
-> $$\tau_{\text{co}} \equiv \mathbb{E}[Y_i(1) - Y_i(0) \mid U_i = \text{co}]$$
+> $$
+> \tau_{\text{co}} \equiv \mathbb{E}[Y_i(1) - Y_i(0) \mid U_i = \text{co}]
+> $$
 > Under monotonicity, this equals:
-> $$\tau_{\text{co}} = \frac{\mathbb{E}[Y_i \mid Z_i = 1] - \mathbb{E}[Y_i \mid Z_i = 0]}{\mathbb{E}[W_i \mid Z_i = 1] - \mathbb{E}[W_i \mid Z_i = 0]}$$
+> $$
+> \tau_{\text{co}} = \frac{\mathbb{E}[Y_i \mid Z_i = 1] - \mathbb{E}[Y_i \mid Z_i = 0]}{\mathbb{E}[W_i \mid Z_i = 1] - \mathbb{E}[W_i \mid Z_i = 0]}
+> $$
 > which is exactly the probability limit of the two-stage least squares (2SLS) estimator.
 ^def-cace
 

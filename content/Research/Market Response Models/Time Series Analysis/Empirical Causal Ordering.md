@@ -26,11 +26,15 @@ status: complete
 > [!definition] Granger Causality
 > Variable $X$ **Granger-causes** $Y$ if past values of $X$ contain information about $Y$ beyond what is already contained in past values of $Y$ itself:
 >
-> $$E[Y_{t+1} | Y_t, Y_{t-1}, \ldots, X_t, X_{t-1}, \ldots] \neq E[Y_{t+1} | Y_t, Y_{t-1}, \ldots]$$
+> $$
+> E[Y_{t+1} | Y_t, Y_{t-1}, \ldots, X_t, X_{t-1}, \ldots] \neq E[Y_{t+1} | Y_t, Y_{t-1}, \ldots]
+> $$
 >
 > **Test**: In a bivariate VAR, test whether the block of lagged $X$ coefficients in the $Y$ equation is jointly zero:
 >
-> $$Y_t = \sum_{i=1}^I a_i Y_{t-i} + \sum_{i=1}^I b_i X_{t-i} + w_{Y,t}$$
+> $$
+> Y_t = \sum_{i=1}^I a_i Y_{t-i} + \sum_{i=1}^I b_i X_{t-i} + w_{Y,t}
+> $$
 >
 > $H_0: b_1 = \cdots = b_I = 0$ (X does not Granger-cause Y). Test via F-test or likelihood ratio.
 >
@@ -46,7 +50,9 @@ Two tools for understanding system dynamics in estimated VAR:
 > [!definition] Impulse Response Function
 > The IRF traces the dynamic response of variable $Y$ to a one-time shock (innovation) in variable $X$:
 >
-> $$\text{IRF}(k) = \frac{\partial Y_{t+k}}{\partial w_{X,t}}$$
+> $$
+> \text{IRF}(k) = \frac{\partial Y_{t+k}}{\partial w_{X,t}}
+> $$
 >
 > For stationary systems: IRF → 0 as $k \to \infty$ (temporary effect)
 > For I(1) systems: IRF → non-zero constant as $k \to \infty$ (multivariate persistence)

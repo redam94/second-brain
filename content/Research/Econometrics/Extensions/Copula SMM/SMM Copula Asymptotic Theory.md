@@ -85,7 +85,9 @@ The estimation problem differs from standard GMM or M-estimation in two importan
 
 > [!theorem] Theorem: Consistency of the SMM Copula Estimator (Oh & Patton, Proposition 1)
 > **Suppose that Assumptions 1, 2, and 3 hold.** Then:
-> $$\hat{\boldsymbol{\theta}}_{T,S} \xrightarrow{p} \boldsymbol{\theta}_0 \quad \text{as } T, S \to \infty$$
+> $$
+> \hat{\boldsymbol{\theta}}_{T,S} \xrightarrow{p} \boldsymbol{\theta}_0 \quad \text{as } T, S \to \infty
+> $$
 >
 > **Key features of this result:**
 > 1. Consistency holds at **any relative rate** of $T$ and $S$ diverging — unlike standard SMM results (Pakes and Pollard, 1989; McFadden, 1989) which require $T$ and $S$ to diverge at the same rate
@@ -115,16 +117,24 @@ The estimation problem differs from standard GMM or M-estimation in two importan
 > **Suppose that Assumptions 1, 2, 3, and 4 hold.** Then the asymptotic distribution depends on the relative rate at which $T$ and $S$ diverge:
 >
 > **(i)** If $S/T \to \infty$ as $T, S \to \infty$:
-> $$\sqrt{T}\left(\hat{\boldsymbol{\theta}}_{T,S} - \boldsymbol{\theta}_0\right) \xrightarrow{d} N(\mathbf{0}, \boldsymbol{\Omega}_0) \quad \text{as } T, S \to \infty$$
+> $$
+> \sqrt{T}\left(\hat{\boldsymbol{\theta}}_{T,S} - \boldsymbol{\theta}_0\right) \xrightarrow{d} N(\mathbf{0}, \boldsymbol{\Omega}_0) \quad \text{as } T, S \to \infty
+> $$
 >
 > **(ii)** If $S/T \to k \in (0, \infty)$ as $T, S \to \infty$:
-> $$\sqrt{T}\left(\hat{\boldsymbol{\theta}}_{T,S} - \boldsymbol{\theta}_0\right) \xrightarrow{d} N\left(\mathbf{0}, \left(1 + \frac{1}{k}\right) \boldsymbol{\Omega}_0\right) \quad \text{as } T, S \to \infty$$
+> $$
+> \sqrt{T}\left(\hat{\boldsymbol{\theta}}_{T,S} - \boldsymbol{\theta}_0\right) \xrightarrow{d} N\left(\mathbf{0}, \left(1 + \frac{1}{k}\right) \boldsymbol{\Omega}_0\right) \quad \text{as } T, S \to \infty
+> $$
 >
 > **(iii)** If $S/T \to 0$ as $T, S \to \infty$:
-> $$\sqrt{S}\left(\hat{\boldsymbol{\theta}}_{T,S} - \boldsymbol{\theta}_0\right) \xrightarrow{d} N(\mathbf{0}, \boldsymbol{\Omega}_0) \quad \text{as } T, S \to \infty$$
+> $$
+> \sqrt{S}\left(\hat{\boldsymbol{\theta}}_{T,S} - \boldsymbol{\theta}_0\right) \xrightarrow{d} N(\mathbf{0}, \boldsymbol{\Omega}_0) \quad \text{as } T, S \to \infty
+> $$
 >
 > where:
-> $$\boldsymbol{\Omega}_0 = (\mathbf{G}_0' \mathbf{W}_0 \mathbf{G}_0)^{-1} \mathbf{G}_0' \mathbf{W}_0 \boldsymbol{\Sigma}_0 \mathbf{W}_0 \mathbf{G}_0 (\mathbf{G}_0' \mathbf{W}_0 \mathbf{G}_0)^{-1}$$
+> $$
+> \boldsymbol{\Omega}_0 = (\mathbf{G}_0' \mathbf{W}_0 \mathbf{G}_0)^{-1} \mathbf{G}_0' \mathbf{W}_0 \boldsymbol{\Sigma}_0 \mathbf{W}_0 \mathbf{G}_0 (\mathbf{G}_0' \mathbf{W}_0 \mathbf{G}_0)^{-1}
+> $$
 >
 > and $\boldsymbol{\Sigma}_0 \equiv \text{avar}[\hat{\mathbf{m}}_T]$ is the asymptotic variance of the sample dependence measures.
 >
@@ -166,21 +176,29 @@ where the remainder $\mathbf{R}_{T,S} = o_p(1)$.
 > - $B \to \infty$ (number of bootstrap replications)
 >
 > Then:
-> $$\hat{\boldsymbol{\Sigma}}_{T,B} \xrightarrow{p} \boldsymbol{\Sigma}_0, \qquad \hat{\mathbf{G}}_{T,S} \xrightarrow{p} \mathbf{G}_0, \qquad \hat{\boldsymbol{\Omega}}_{T,S,B} \xrightarrow{p} \boldsymbol{\Omega}_0$$
+> $$
+> \hat{\boldsymbol{\Sigma}}_{T,B} \xrightarrow{p} \boldsymbol{\Sigma}_0, \qquad \hat{\mathbf{G}}_{T,S} \xrightarrow{p} \mathbf{G}_0, \qquad \hat{\boldsymbol{\Omega}}_{T,S,B} \xrightarrow{p} \boldsymbol{\Omega}_0
+> $$
 >
 > **Bootstrap estimation of $\boldsymbol{\Sigma}_0$:**
 > 1. Sample with replacement from $\{\hat{\boldsymbol{\eta}}_t\}_{t=1}^T$ to obtain $\{\hat{\boldsymbol{\eta}}_t^{(b)}\}_{t=1}^T$. Repeat $B$ times.
 > 2. For each bootstrap sample $b$, compute the sample moments $\hat{\mathbf{m}}_T^{(b)}$
 > 3. Estimate:
->    $$\hat{\boldsymbol{\Sigma}}_{T,B} = \frac{T}{B} \sum_{b=1}^B \left(\hat{\mathbf{m}}_T^{(b)} - \hat{\mathbf{m}}_T\right)\left(\hat{\mathbf{m}}_T^{(b)} - \hat{\mathbf{m}}_T\right)'$$
+>    $$
+>    \hat{\boldsymbol{\Sigma}}_{T,B} = \frac{T}{B} \sum_{b=1}^B \left(\hat{\mathbf{m}}_T^{(b)} - \hat{\mathbf{m}}_T\right)\left(\hat{\mathbf{m}}_T^{(b)} - \hat{\mathbf{m}}_T\right)'
+>    $$
 >
 > **Numerical derivative estimation of $\mathbf{G}_0$:**
 > The $k$-th column of $\hat{\mathbf{G}}_{T,S}$ is:
-> $$\hat{\mathbf{G}}_{T,S,k} = \frac{\mathbf{g}_{T,S}(\hat{\boldsymbol{\theta}}_{T,S} + \mathbf{e}_k \varepsilon_{T,S}) - \mathbf{g}_{T,S}(\hat{\boldsymbol{\theta}}_{T,S} - \mathbf{e}_k \varepsilon_{T,S})}{2 \varepsilon_{T,S}}$$
+> $$
+> \hat{\mathbf{G}}_{T,S,k} = \frac{\mathbf{g}_{T,S}(\hat{\boldsymbol{\theta}}_{T,S} + \mathbf{e}_k \varepsilon_{T,S}) - \mathbf{g}_{T,S}(\hat{\boldsymbol{\theta}}_{T,S} - \mathbf{e}_k \varepsilon_{T,S})}{2 \varepsilon_{T,S}}
+> $$
 > where $\mathbf{e}_k$ is the $k$-th unit vector.
 >
 > **Full covariance estimator:**
-> $$\hat{\boldsymbol{\Omega}}_{T,S,B} = \left(\hat{\mathbf{G}}_{T,S}' \hat{\mathbf{W}}_T \hat{\mathbf{G}}_{T,S}\right)^{-1} \hat{\mathbf{G}}_{T,S}' \hat{\mathbf{W}}_T \hat{\boldsymbol{\Sigma}}_{T,B} \hat{\mathbf{W}}_T \hat{\mathbf{G}}_{T,S} \left(\hat{\mathbf{G}}_{T,S}' \hat{\mathbf{W}}_T \hat{\mathbf{G}}_{T,S}\right)^{-1}$$
+> $$
+> \hat{\boldsymbol{\Omega}}_{T,S,B} = \left(\hat{\mathbf{G}}_{T,S}' \hat{\mathbf{W}}_T \hat{\mathbf{G}}_{T,S}\right)^{-1} \hat{\mathbf{G}}_{T,S}' \hat{\mathbf{W}}_T \hat{\boldsymbol{\Sigma}}_{T,B} \hat{\mathbf{W}}_T \hat{\mathbf{G}}_{T,S} \left(\hat{\mathbf{G}}_{T,S}' \hat{\mathbf{W}}_T \hat{\mathbf{G}}_{T,S}\right)^{-1}
+> $$
 ^prop-3-variance
 
 > [!warning] Critical Step-Size Requirement

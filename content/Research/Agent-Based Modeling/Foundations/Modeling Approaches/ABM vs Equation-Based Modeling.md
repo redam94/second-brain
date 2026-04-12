@@ -38,7 +38,9 @@ Bonabeau constructs a product adoption model that can be analyzed both ways:
 
 > [!definition] Definition: Value Function for Product Adoption (Bonabeau 2002)
 > A new product's value $V$ depends on the number of its users $N$, in a total population of $N_T$ potential adopters:
-> $$V(N) = V(\rho) = \frac{(1 + \theta^d)\rho^d}{\rho^d + \theta^d}$$
+> $$
+> V(N) = V(\rho) = \frac{(1 + \theta^d)\rho^d}{\rho^d + \theta^d}
+> $$
 > where $\rho = N/N_T$ is the fraction of adopters, $\theta = 0.4$ is a characteristic value (threshold at ~40% adoption), and $d = 4$ controls steepness.
 ^def-value-function
 

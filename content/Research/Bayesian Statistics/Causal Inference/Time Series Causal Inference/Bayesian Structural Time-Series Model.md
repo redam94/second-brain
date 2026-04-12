@@ -41,10 +41,14 @@ The model is defined by two equations: an **observation equation** linking obser
 > The model is defined by:
 >
 > **Observation equation:**
-> $$y_t = Z_t^\top \alpha_t + \varepsilon_t, \quad \varepsilon_t \sim \mathcal{N}(0, \sigma_\varepsilon^2) \tag{2.1}$$
+> $$
+> y_t = Z_t^\top \alpha_t + \varepsilon_t, \quad \varepsilon_t \sim \mathcal{N}(0, \sigma_\varepsilon^2) \tag{2.1}
+> $$
 >
 > **State equation:**
-> $$\alpha_{t+1} = T_t \alpha_t + R_t \eta_t, \quad \eta_t \sim \mathcal{N}(0, Q_t) \tag{2.2}$$
+> $$
+> \alpha_{t+1} = T_t \alpha_t + R_t \eta_t, \quad \eta_t \sim \mathcal{N}(0, Q_t) \tag{2.2}
+> $$
 >
 > **Dimensions:**
 > - $y_t$: scalar observed outcome at time $t$

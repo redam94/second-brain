@@ -71,7 +71,9 @@ Section 4 establishes the key theoretical connection between summary DAGs and ed
 > Let $(\mathcal{H}, f)$ be a summary DAG for causal DAG $\mathcal{G}$, and let $\mathcal{G}_\mathcal{H}$ be its corresponding canonical causal DAG.
 >
 > The Recursive Basis of $\mathcal{H}$ equals the Recursive Basis of $\mathcal{G}_\mathcal{H}$:
-> $$\text{RB}_{\text{XRB}}(\mathcal{H}) = \text{RB}_{\mathcal{G}_\mathcal{H}}(\mathcal{G})$$
+> $$
+> \text{RB}_{\text{XRB}}(\mathcal{H}) = \text{RB}_{\mathcal{G}_\mathcal{H}}(\mathcal{G})
+> $$
 >
 > Equivalently, the set of CIs encoded by $\mathcal{H}$ is equivalent to the set of CIs encoded by $\mathcal{G}_\mathcal{H}$.
 >

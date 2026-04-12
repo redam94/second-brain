@@ -32,6 +32,10 @@ fi
 
 echo "Content sync complete."
 
-# Regenerate the Recent Q&A section in index.md
+# Fix single-line blockquote display math (prevents KaTeX \tag parse errors)
+echo "Fixing blockquote math..."
+python3 "$SCRIPT_DIR/fix-blockquote-math.py"
+
+# Regenerate the Selected Analyses section in index.md
 echo "Updating index.md Q&A section..."
 python3 "$SCRIPT_DIR/update-index.py"

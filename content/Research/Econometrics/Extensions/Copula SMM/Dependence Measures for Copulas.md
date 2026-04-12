@@ -50,7 +50,9 @@ Measures like linear correlation contain copula information but are also affecte
 
 > [!definition] Definition: Spearman's Rank Correlation (Population)
 > For a pair of random variables $(\eta_i, \eta_j)$ with marginal CDFs $F_i, F_j$ and copula $C_{ij}$:
-> $$\rho^{ij} = 12 E[F_i(\eta_i) F_j(\eta_j)] - 3 = 12 \int \int uv \, dC_{ij}(u,v) - 3$$
+> $$
+> \rho^{ij} = 12 E[F_i(\eta_i) F_j(\eta_j)] - 3 = 12 \int \int uv \, dC_{ij}(u,v) - 3
+> $$
 >
 > **Properties:**
 > - $\rho^{ij} \in [-1, 1]$
@@ -63,7 +65,9 @@ Measures like linear correlation contain copula information but are also affecte
 
 > [!definition] Definition: Spearman's Rank Correlation (Sample)
 > Based on estimated standardized residuals $\{\hat{\eta}_{it}, \hat{\eta}_{jt}\}_{t=1}^T$ with empirical CDFs $\hat{F}_i, \hat{F}_j$:
-> $$\hat{\rho}^{ij} = \frac{12}{T} \sum_{t=1}^T \hat{F}_i(\hat{\eta}_{it}) \hat{F}_j(\hat{\eta}_{jt}) - 3$$
+> $$
+> \hat{\rho}^{ij} = \frac{12}{T} \sum_{t=1}^T \hat{F}_i(\hat{\eta}_{it}) \hat{F}_j(\hat{\eta}_{jt}) - 3
+> $$
 >
 > where $\hat{F}_i(y) = (T+1)^{-1} \sum_{t=1}^T \mathbf{1}\{\hat{\eta}_{it} \leq y\}$.
 >
@@ -85,10 +89,14 @@ When a closed form exists, GMM can be used directly. When it does not, [[SMM Est
 > For a pair $(\eta_i, \eta_j)$ with copula $C_{ij}$, the quantile dependence at level $q$ is:
 >
 > **Lower quantile dependence** ($q \in (0, 0.5]$):
-> $$\tau_q^{ij} = P[F_i(\eta_i) \leq q \mid F_j(\eta_j) \leq q] = \frac{C_{ij}(q, q)}{q}$$
+> $$
+> \tau_q^{ij} = P[F_i(\eta_i) \leq q \mid F_j(\eta_j) \leq q] = \frac{C_{ij}(q, q)}{q}
+> $$
 >
 > **Upper quantile dependence** ($q \in (0.5, 1)$):
-> $$\tau_q^{ij} = P[F_i(\eta_i) > q \mid F_j(\eta_j) > q] = \frac{1 - 2q + C_{ij}(q, q)}{1-q}$$
+> $$
+> \tau_q^{ij} = P[F_i(\eta_i) > q \mid F_j(\eta_j) > q] = \frac{1 - 2q + C_{ij}(q, q)}{1-q}
+> $$
 >
 > **Interpretation:**
 > - $\tau_q^{ij}$ measures the probability that both variables are simultaneously in the same tail
@@ -102,10 +110,14 @@ When a closed form exists, GMM can be used directly. When it does not, [[SMM Est
 > Based on estimated standardized residuals:
 >
 > **Lower** ($q \in (0, 0.5]$):
-> $$\hat{\tau}_q^{ij} = \frac{1}{Tq} \sum_{t=1}^T \mathbf{1}\{\hat{F}_i(\hat{\eta}_{it}) \leq q, \, \hat{F}_j(\hat{\eta}_{jt}) \leq q\}$$
+> $$
+> \hat{\tau}_q^{ij} = \frac{1}{Tq} \sum_{t=1}^T \mathbf{1}\{\hat{F}_i(\hat{\eta}_{it}) \leq q, \, \hat{F}_j(\hat{\eta}_{jt}) \leq q\}
+> $$
 >
 > **Upper** ($q \in (0.5, 1)$):
-> $$\hat{\tau}_q^{ij} = \frac{1}{T(1-q)} \sum_{t=1}^T \mathbf{1}\{\hat{F}_i(\hat{\eta}_{it}) > q, \, \hat{F}_j(\hat{\eta}_{jt}) > q\}$$
+> $$
+> \hat{\tau}_q^{ij} = \frac{1}{T(1-q)} \sum_{t=1}^T \mathbf{1}\{\hat{F}_i(\hat{\eta}_{it}) > q, \, \hat{F}_j(\hat{\eta}_{jt}) > q\}
+> $$
 ^def-quantile-dependence-sample
 
 ### Quantile Dependence vs. Tail Dependence Coefficients
@@ -125,7 +137,9 @@ Quantile dependence at finite $q$ (e.g., $q = 0.05$ or $q = 0.95$) is preferred 
 
 > [!definition] Definition: Asymmetry Measure
 > The difference between upper and lower quantile dependence at symmetric quantile levels:
-> $$\Delta_q^{ij} = \tau_{1-q}^{ij} - \tau_q^{ij}, \quad q \in (0, 0.5)$$
+> $$
+> \Delta_q^{ij} = \tau_{1-q}^{ij} - \tau_q^{ij}, \quad q \in (0, 0.5)
+> $$
 >
 > - $\Delta_q^{ij} > 0$: stronger dependence in booms (upper tail) than crashes (lower tail)
 > - $\Delta_q^{ij} < 0$: stronger dependence in crashes than booms

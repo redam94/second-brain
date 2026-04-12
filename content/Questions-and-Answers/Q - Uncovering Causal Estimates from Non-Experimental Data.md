@@ -53,7 +53,9 @@ Each strategy below eliminates or neutralizes this selection bias term through a
 ### Strategy 1: Conditional Independence Assumption (CIA) — Selection on Observables
 
 > [!definition] CIA / Unconfoundedness
-> $$Y_{si} \perp\!\!\!\perp S_i \mid X_i$$
+> $$
+> Y_{si} \perp\!\!\!\perp S_i \mid X_i
+> $$
 > Conditional on observed covariates $X_i$, treatment is as good as randomly assigned. Also called **ignorability** ([[Potential Outcomes Framework]]) or **unconfoundedness**.
 
 **When it works**: All confounders are observed and controlled for. Treatment selection is entirely driven by observable characteristics.
@@ -78,7 +80,9 @@ DAGs formalize which variables to condition on using graphical rules ([[Directed
 
 > [!theorem] Backdoor Adjustment Formula ([[Directed Acyclic Graphs#^thm-backdoor]])
 > If a set $Z$ blocks all backdoor paths from treatment $X$ to outcome $Y$ without opening collider paths or blocking front-door paths:
-> $$P(Y \mid \text{do}(X=x)) = \sum_z P(Y \mid X=x, Z=z)\, P(Z=z)$$
+> $$
+> P(Y \mid \text{do}(X=x)) = \sum_z P(Y \mid X=x, Z=z)\, P(Z=z)
+> $$
 
 **The three junction types** determine what to condition on:
 - **Fork** $A \leftarrow B \rightarrow C$: condition on $B$ to block confounding
@@ -150,7 +154,9 @@ $$\lim_{\delta\to0} E[Y_i | x_0 < x_i < x_0+\delta] - E[Y_i | x_0-\delta < x_i <
 For aggregate units (states, countries) where DiD has too few observations, synthetic control constructs a weighted combination of untreated units that mimics the treated unit's pre-treatment trajectory ([[Synthetic Control]]).
 
 > [!definition] Synthetic Control Estimator ([[Synthetic Control#^def-synth-estimator]])
-> $$\hat Y_{1t}^N = \sum_{j=2}^{J+1} w_j Y_{jt}$$
+> $$
+> \hat Y_{1t}^N = \sum_{j=2}^{J+1} w_j Y_{jt}
+> $$
 > Weights $w_j \geq 0$, $\sum w_j = 1$ are chosen to minimize pre-treatment divergence between the treated unit and its synthetic version.
 
 Treatment effect:

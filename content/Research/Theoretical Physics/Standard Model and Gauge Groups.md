@@ -33,7 +33,9 @@ The Standard Model unifies three of the four fundamental forces of nature in a s
 ## Gauge Group Structure
 
 > [!definition] Standard Model Gauge Group
-> $$G_\text{SM} = \text{SU}(3)_c \times \text{SU}(2)_L \times \text{U}(1)_Y$$
+> $$
+> G_\text{SM} = \text{SU}(3)_c \times \text{SU}(2)_L \times \text{U}(1)_Y
+> $$
 > where:
 > - $\text{SU}(3)_c$ — color symmetry → quantum chromodynamics (QCD)
 > - $\text{SU}(2)_L$ — weak isospin (acts only on left-handed particles) → weak force
@@ -55,7 +57,9 @@ The Standard Model unifies three of the four fundamental forces of nature in a s
 
 > [!definition] Spontaneous Symmetry Breaking (Higgs Mechanism)
 > The electroweak symmetry SU(2)×U(1) is **spontaneously broken** by the Higgs field $\phi$ acquiring a non-zero vacuum expectation value:
-> $$\langle \phi \rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}0 \\ v\end{pmatrix}, \quad v \approx 246 \text{ GeV}$$
+> $$
+> \langle \phi \rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}0 \\ v\end{pmatrix}, \quad v \approx 246 \text{ GeV}
+> $$
 >
 > This breaks SU(2)×U(1) → U(1)$_\text{em}$, giving mass to $W^\pm$ and $Z^0$ while keeping the photon massless. The longitudinal degrees of freedom of the massive gauge bosons are "eaten" Goldstone bosons.
 >

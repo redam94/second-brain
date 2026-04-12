@@ -27,13 +27,17 @@ status: complete
 > [!theorem] F-Test for Model Significance
 > Tests whether all slope coefficients are jointly zero:
 >
-> $$F = \frac{(\text{TSS} - \text{RSS})/k}{\text{RSS}/(T - k - 1)} \sim F(k,\ T-k-1) \tag{Eq 5.35}$$
+> $$
+> F = \frac{(\text{TSS} - \text{RSS})/k}{\text{RSS}/(T - k - 1)} \sim F(k,\ T-k-1) \tag{Eq 5.35}
+> $$
 >
 > Reject $H_0: \beta_1 = \cdots = \beta_k = 0$ when $F > F_{\alpha}(k, T-k-1)$.
 > ^thm-f-test
 
 > [!theorem] t-Test for Individual Coefficients
-> $$t = \frac{\hat\beta_j}{\text{se}(\hat\beta_j)} \sim t(T - k - 1) \tag{Eq 5.37}$$
+> $$
+> t = \frac{\hat\beta_j}{\text{se}(\hat\beta_j)} \sim t(T - k - 1) \tag{Eq 5.37}
+> $$
 >
 > Under $H_0: \beta_j = 0$. Two-sided $|t| > t_{\alpha/2}$ implies rejection. For advertising elasticities, use one-sided test ($H_1: \beta_j > 0$).
 > ^thm-t-test

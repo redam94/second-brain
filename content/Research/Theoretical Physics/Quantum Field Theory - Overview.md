@@ -51,7 +51,9 @@ where $\omega_\mathbf{p} = \sqrt{|\mathbf{p}|^2 + m^2}$. Each mode is a classica
 
 > [!definition] Canonical Quantization
 > Promote the classical field $\phi$ to a quantum field operator $\hat{\phi}$ by replacing the mode amplitudes $a_\mathbf{p}$, $a_\mathbf{p}^*$ with **annihilation and creation operators** $\hat{a}_\mathbf{p}$, $\hat{a}_\mathbf{p}^\dagger$:
-> $$\hat{\phi}(\mathbf{x},t) = \int \frac{d^3p}{(2\pi)^3} \frac{1}{\sqrt{2\omega_\mathbf{p}}} \left(\hat{a}_\mathbf{p} e^{-i\omega_\mathbf{p} t + i\mathbf{p}\cdot\mathbf{x}} + \hat{a}_\mathbf{p}^\dagger e^{i\omega_\mathbf{p} t - i\mathbf{p}\cdot\mathbf{x}}\right)$$
+> $$
+> \hat{\phi}(\mathbf{x},t) = \int \frac{d^3p}{(2\pi)^3} \frac{1}{\sqrt{2\omega_\mathbf{p}}} \left(\hat{a}_\mathbf{p} e^{-i\omega_\mathbf{p} t + i\mathbf{p}\cdot\mathbf{x}} + \hat{a}_\mathbf{p}^\dagger e^{i\omega_\mathbf{p} t - i\mathbf{p}\cdot\mathbf{x}}\right)
+> $$
 > The operators satisfy: $[\hat{a}_\mathbf{p}, \hat{a}_\mathbf{q}^\dagger] = (2\pi)^3 \delta(\mathbf{p} - \mathbf{q})$
 >
 > The **vacuum state** $|0\rangle$ satisfies $\hat{a}_\mathbf{p}|0\rangle = 0$ for all $\mathbf{p}$.
@@ -61,7 +63,9 @@ where $\omega_\mathbf{p} = \sqrt{|\mathbf{p}|^2 + m^2}$. Each mode is a classica
 
 > [!definition] Fock Space
 > The state space of a quantum field is the **Fock space**, which contains states with arbitrary particle numbers:
-> $$|n_1, n_2, \ldots\rangle \propto (\hat{a}_{\mathbf{p}_1}^\dagger)^{n_1}(\hat{a}_{\mathbf{p}_2}^\dagger)^{n_2}\cdots|0\rangle$$
+> $$
+> |n_1, n_2, \ldots\rangle \propto (\hat{a}_{\mathbf{p}_1}^\dagger)^{n_1}(\hat{a}_{\mathbf{p}_2}^\dagger)^{n_2}\cdots|0\rangle
+> $$
 > This is **second quantization**: the field itself is quantized, allowing particle creation and annihilation.
 ^def-fock-space
 
@@ -69,7 +73,9 @@ where $\omega_\mathbf{p} = \sqrt{|\mathbf{p}|^2 + m^2}$. Each mode is a classica
 
 > [!definition] Feynman Path Integral
 > The amplitude for a field to evolve from initial state $|\phi_I\rangle$ to final state $|\phi_F\rangle$ over time $T$ is:
-> $$\langle \phi_F|e^{-iHT}|\phi_I\rangle = \int \mathcal{D}\phi(t)\, \exp\!\left\{i\int_0^T dt\, L\right\}$$
+> $$
+> \langle \phi_F|e^{-iHT}|\phi_I\rangle = \int \mathcal{D}\phi(t)\, \exp\!\left\{i\int_0^T dt\, L\right\}
+> $$
 > where the integral is over all field configurations (all "paths" in field space). This is the **sum-over-histories** interpretation: the amplitude is the sum of $e^{iS}$ over every possible classical and non-classical field history.
 ^def-path-integral
 

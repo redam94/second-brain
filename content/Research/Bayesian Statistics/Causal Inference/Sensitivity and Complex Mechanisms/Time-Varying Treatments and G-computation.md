@@ -56,7 +56,9 @@ $$\tau_{\bar{z}, \bar{z}'} \equiv \mathbb{E}[Y_i(\bar{z}_T)] - \mathbb{E}[Y_i(\b
 
 > [!definition] Assumption 7.2 — Sequential Ignorability
 > For all $t = 1, \ldots, T$:
-> $$Z_t \perp\!\!\!\perp Y(\bar{z}) \mid \bar{Z}_{t-1}, \bar{L}_{t-1}$$
+> $$
+> Z_t \perp\!\!\!\perp Y(\bar{z}) \mid \bar{Z}_{t-1}, \bar{L}_{t-1}
+> $$
 > for all $\bar{z}_t$. That is, given all past treatment and covariate history, the current treatment assignment is independent of future potential outcomes.
 ^def-sequential-ignorability
 
@@ -66,7 +68,9 @@ Sequential ignorability is the time-varying analogue of the standard ignorabilit
 
 > [!theorem] Theorem: G-Formula (Robins 1986)
 > Under sequential ignorability, the marginal mean potential outcome for treatment sequence $\bar{z}_T$ is identified from observed data as:
-> $$\mathbb{E}[Y_i(\bar{z}_T)] = \sum_{L_0, L_1, \ldots, L_{T-1}} \mathbb{E}[Y \mid \bar{Z}_T = \bar{z}_T, \bar{L}_{T-1}] \cdot \prod_{t=1}^{T} \Pr(L_t \mid \bar{Z}_t = \bar{z}_t, \bar{L}_{t-1}) \cdot \Pr(L_0)$$
+> $$
+> \mathbb{E}[Y_i(\bar{z}_T)] = \sum_{L_0, L_1, \ldots, L_{T-1}} \mathbb{E}[Y \mid \bar{Z}_T = \bar{z}_T, \bar{L}_{T-1}] \cdot \prod_{t=1}^{T} \Pr(L_t \mid \bar{Z}_t = \bar{z}_t, \bar{L}_{t-1}) \cdot \Pr(L_0)
+> $$
 ^thm-g-formula
 
 The g-formula is an extension of the outcome regression identification formula to sequential treatments. It requires:
@@ -87,8 +91,12 @@ The Bayesian approach applies **g-computation**: fit Bayesian models for each co
 > **Setup**: $T=2$ time periods. $L_0$: binary baseline covariate. $Z_1$: binary treatment at $t=1$. $L_1$: binary time-varying covariate. $Z_2$: binary treatment at $t=2$. $Y$: binary outcome.
 >
 > **Estimand**: $\mathbb{E}[Y(z_1, z_2)]$ for any $(z_1, z_2) \in \{0,1\}^2$, via:
-> $$\mathbb{E}[Y(z_1,z_2)] = \sum_{l_0, l_1} \Pr(Y=1 \mid Z_2=z_2, Z_1=z_1, L_1=l_1, L_0=l_0)$$
-> $$\quad \cdot \Pr(L_1=l_1 \mid Z_1=z_1, L_0=l_0) \cdot \Pr(L_0=l_0)$$
+> $$
+> \mathbb{E}[Y(z_1,z_2)] = \sum_{l_0, l_1} \Pr(Y=1 \mid Z_2=z_2, Z_1=z_1, L_1=l_1, L_0=l_0)
+> $$
+> $$
+> \quad \cdot \Pr(L_1=l_1 \mid Z_1=z_1, L_0=l_0) \cdot \Pr(L_0=l_0)
+> $$
 >
 > **Posterior computation** (with Beta conjugate priors):
 > - Sample $\Pr(Y=1 \mid Z_2, Z_1, L_1, L_0)$ from $\text{Beta}(1/2 + \sum \mathbf{1}(\ldots), \ldots)$ (8 Bernoulli cells)

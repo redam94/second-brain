@@ -44,7 +44,9 @@ $$\tilde{\lambda}_T = \arg\max_\lambda Q(Y, X; \lambda) = \arg\max_\lambda T^{-1
 
 > [!definition] Definition: Binding Function
 > The **binding function** $b(\theta)$ links the structural parameters $\theta$ to the auxiliary parameters $\lambda$. It is defined as the solution to:
-> $$E_\theta[g(Y, X; b(\theta))] = 0$$
+> $$
+> E_\theta[g(Y, X; b(\theta))] = 0
+> $$
 > where $g(Y, X; \lambda) = \frac{\partial Q(Y, X; \lambda)}{\partial \lambda}$ is the score vector of the auxiliary model and the expectation is taken with respect to the joint distribution $h(Y, X | \theta)$ implied by the structural model.
 >
 > The QML estimate $\tilde{\lambda}_T$ converges in probability to the **pseudo-true value** $\lambda_0 = b(\theta_0)$.
@@ -56,15 +58,21 @@ Since the binding function $b(\theta)$ is generally unknown, it must be approxim
 
 > [!definition] Definition: Simulated Binding Function
 > Generate $R$ simulated paths $y_1^{(r)}(\theta), \ldots, y_T^{(r)}(\theta)$ from the structural model. For each path, estimate the auxiliary model parameters:
-> $$\tilde{\lambda}_T^{(r)}(\theta) = \arg\max_\lambda T^{-1} \sum_{t=1}^T \log h^*[y_t^{(r)}(\theta) | z_t^{(r)}(\theta); \lambda]$$
+> $$
+> \tilde{\lambda}_T^{(r)}(\theta) = \arg\max_\lambda T^{-1} \sum_{t=1}^T \log h^*[y_t^{(r)}(\theta) | z_t^{(r)}(\theta); \lambda]
+> $$
 >
 > The simulated binding function is the average:
-> $$\hat{b}_R(\theta) = \frac{1}{R} \sum_{r=1}^R \tilde{\lambda}_T^{(r)}(\theta)$$
+> $$
+> \hat{b}_R(\theta) = \frac{1}{R} \sum_{r=1}^R \tilde{\lambda}_T^{(r)}(\theta)
+> $$
 ^def-simulated-binding
 
 > [!definition] Definition: Minimum Distance Indirect Inference Estimator
 > The **minimum distance** indirect inference estimator is:
-> $$\hat{\theta}_{MD}^R = \arg\min_\theta \left[\tilde{\lambda}_T - \hat{b}_R(\theta)\right]' A \left[\tilde{\lambda}_T - \hat{b}_R(\theta)\right]$$
+> $$
+> \hat{\theta}_{MD}^R = \arg\min_\theta \left[\tilde{\lambda}_T - \hat{b}_R(\theta)\right]' A \left[\tilde{\lambda}_T - \hat{b}_R(\theta)\right]
+> $$
 >
 > where $A$ is a positive definite weight matrix. The estimator finds the structural parameter $\theta$ for which the simulated auxiliary estimates $\hat{b}_R(\theta)$ are as close as possible to the real-data estimates $\tilde{\lambda}_T$.
 ^def-md-estimator
@@ -73,13 +81,19 @@ Since the binding function $b(\theta)$ is generally unknown, it must be approxim
 
 > [!definition] Definition: Score-Based Indirect Inference Estimator
 > The **score-based** formulation, suggested by Gallant and Tauchen (1996a), uses the moment conditions implied by the scores of the auxiliary model:
-> $$E\, g[Y, X; b(\theta_0)] = 0$$
+> $$
+> E\, g[Y, X; b(\theta_0)] = 0
+> $$
 >
 > Using path simulations to approximate $E_\theta g$, the estimator is:
-> $$\hat{\theta}_{GT}^R = \arg\min_\theta \hat{g}_R(\theta, \tilde{\lambda}_T)' A \, \hat{g}_R(\theta, \tilde{\lambda}_T)$$
+> $$
+> \hat{\theta}_{GT}^R = \arg\min_\theta \hat{g}_R(\theta, \tilde{\lambda}_T)' A \, \hat{g}_R(\theta, \tilde{\lambda}_T)
+> $$
 >
 > where:
-> $$\hat{g}_R(\theta, \tilde{\lambda}_T) = \frac{1}{R} \sum_{r=1}^R \frac{1}{T} \sum_{t=1}^T \frac{\partial \log h^*[y_t^{(r)}(\theta) | z_t^{(r)}(\theta); \tilde{\lambda}_T]}{\partial \lambda}$$
+> $$
+> \hat{g}_R(\theta, \tilde{\lambda}_T) = \frac{1}{R} \sum_{r=1}^R \frac{1}{T} \sum_{t=1}^T \frac{\partial \log h^*[y_t^{(r)}(\theta) | z_t^{(r)}(\theta); \tilde{\lambda}_T]}{\partial \lambda}
+> $$
 >
 > The estimator searches for $\theta$ such that the simulated scores, evaluated at the real-data QML estimate $\tilde{\lambda}_T$, are close to zero.
 ^def-score-estimator
@@ -88,28 +102,40 @@ Since the binding function $b(\theta)$ is generally unknown, it must be approxim
 
 > [!theorem] Theorem: Consistency and Asymptotic Normality of Indirect Inference
 > Both the minimum distance and score-based indirect inference estimators are **consistent** as $T \to \infty$ for any fixed $R \geq 1$, and **asymptotically normal**:
-> $$T^{1/2}(\hat{\theta}^R - \theta_0) \xrightarrow{d} N(0, \text{avar}(\hat{\theta}^R))$$
+> $$
+> T^{1/2}(\hat{\theta}^R - \theta_0) \xrightarrow{d} N(0, \text{avar}(\hat{\theta}^R))
+> $$
 >
 > Both approaches yield **asymptotically equivalent** estimators (Gouriéroux, Monfort, and Renault, 1993).
 ^thm-ii-normality
 
 > [!theorem] Theorem: Optimal Weight Matrix for Minimum Distance
 > For the minimum distance estimator $\hat{\theta}_{MD}^R$, the asymptotic optimal weight matrix is:
-> $$A_0 = J_0 I_0^{-1} J_0$$
+> $$
+> A_0 = J_0 I_0^{-1} J_0
+> $$
 > where:
-> $$J_0 = \lim_{T \to \infty} E\left\{\frac{\partial^2 Q(Y, X; \lambda_0)}{\partial \lambda \partial \lambda'}\right\}, \qquad I_0 = \lim_{T \to \infty} \text{var}\left\{\sqrt{T} g(Y, X; \lambda_0) - E[\sqrt{T} g(Y, X; \lambda_0) | X]\right\}$$
+> $$
+> J_0 = \lim_{T \to \infty} E\left\{\frac{\partial^2 Q(Y, X; \lambda_0)}{\partial \lambda \partial \lambda'}\right\}, \qquad I_0 = \lim_{T \to \infty} \text{var}\left\{\sqrt{T} g(Y, X; \lambda_0) - E[\sqrt{T} g(Y, X; \lambda_0) | X]\right\}
+> $$
 >
 > The asymptotic variance is:
-> $$\text{avar}(\hat{\theta}_{MD}^R) = \left(1 + \frac{1}{R}\right)[B' A_0 B]^{-1}$$
+> $$
+> \text{avar}(\hat{\theta}_{MD}^R) = \left(1 + \frac{1}{R}\right)[B' A_0 B]^{-1}
+> $$
 > where $B = \partial b(\theta_0) / \partial \theta'$.
 ^thm-ii-optimal-weight
 
 > [!theorem] Theorem: Optimal Weight Matrix for Score-Based Estimator
 > For the score-based estimator $\hat{\theta}_{GT}^R$, the asymptotic optimal weight matrix is:
-> $$A_0 = I_0^{-1}$$
+> $$
+> A_0 = I_0^{-1}
+> $$
 >
 > The asymptotic variance is:
-> $$\text{avar}(\hat{\theta}_{GT}^R) = \left(1 + \frac{1}{R}\right)[B' A_0 B]^{-1}$$
+> $$
+> \text{avar}(\hat{\theta}_{GT}^R) = \left(1 + \frac{1}{R}\right)[B' A_0 B]^{-1}
+> $$
 ^thm-gt-optimal-weight
 
 ## Computational Comparison

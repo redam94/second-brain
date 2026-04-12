@@ -46,7 +46,9 @@ To estimate this Bayesianly, we compute $P[\Delta \mid (T, X, Y)] \propto P[(T, 
 
 > [!definition] Inverse Probability of Treatment Weights (IPTW)
 > For a binary treatment $T \in \{0, 1\}$, given propensity score $\hat{e}(X) = P(T=1 \mid X)$:
-> $$\text{IPTW}_i = \frac{T_i}{\hat{e}(X_i)} + \frac{1 - T_i}{1 - \hat{e}(X_i)}$$
+> $$
+> \text{IPTW}_i = \frac{T_i}{\hat{e}(X_i)} + \frac{1 - T_i}{1 - \hat{e}(X_i)}
+> $$
 >
 > Using these weights in an outcome model creates **pseudo-populations**: treat and control groups with matched covariate distributions, as if randomized.
 ^def-iptw
@@ -101,7 +103,9 @@ Visualizing the weighted propensity score distributions shows that IPTW makes th
 > [!definition] Liao-Zigler Two-Stage Method
 > Instead of using a single set of weights, treat propensity scores as a parameter $\nu$ and marginalize over them:
 >
-> $$\underbrace{f(\Delta \mid T, X, Y)}_\text{ATE without $\nu$} = \int_\nu \underbrace{f(\Delta \mid T, X, Y, \nu)}_\text{outcome model with $\nu$} \; \underbrace{f(\nu \mid T, X)}_\text{treatment model} \; d\nu$$
+> $$
+> \underbrace{f(\Delta \mid T, X, Y)}_\text{ATE without $\nu$} = \int_\nu \underbrace{f(\Delta \mid T, X, Y, \nu)}_\text{outcome model with $\nu$} \; \underbrace{f(\nu \mid T, X)}_\text{treatment model} \; d\nu
+> $$
 >
 > **Practical algorithm**:
 > 1. Fit a Bayesian treatment model $\nu \mid T, X$ to get posterior propensity scores
@@ -162,8 +166,12 @@ Visualizing the weighted propensity score distributions shows that IPTW makes th
 
 > [!definition] Rubin's Rules
 > When combining results from $K$ models fitted to slightly different datasets (or draws), the combined ATE and standard error are:
-> $$\bar{\Delta} = \frac{1}{K}\sum_{k=1}^K \hat{\Delta}_k$$
-> $$\text{SE}_\text{combined} = \sqrt{\underbrace{\frac{1}{K}\sum_{k=1}^K \hat{\sigma}_k^2}_\text{avg within-draw variance} + \underbrace{\text{Var}(\hat{\Delta}_k)}_\text{between-draw variance}}$$
+> $$
+> \bar{\Delta} = \frac{1}{K}\sum_{k=1}^K \hat{\Delta}_k
+> $$
+> $$
+> \text{SE}_\text{combined} = \sqrt{\underbrace{\frac{1}{K}\sum_{k=1}^K \hat{\sigma}_k^2}_\text{avg within-draw variance} + \underbrace{\text{Var}(\hat{\Delta}_k)}_\text{between-draw variance}}
+> $$
 >
 > The between-draw variance captures the uncertainty from the treatment model. Simply averaging SEs is incorrect; Rubin's rules give the proper pooled SE.
 ^def-rubin-rules

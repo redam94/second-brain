@@ -70,7 +70,9 @@ The first component is irreducible; the second can be reduced by increasing $R$ 
 > 2. An estimate $\bar{\omega}$ created from the same set of simulated random numbers as $\hat{\omega}^*$, with **known expectation** and positive correlation with $\hat{\omega}^*$
 >
 > The control variate estimate is:
-> $$\tilde{\omega} = (\hat{\omega}^* - \bar{\omega}) + E(\bar{\omega})$$
+> $$
+> \tilde{\omega} = (\hat{\omega}^* - \bar{\omega}) + E(\bar{\omega})
+> $$
 >
 > Under suitable conditions, $\text{var}(\tilde{\omega}) \ll \text{var}(\hat{\omega}^*)$.
 >
@@ -119,7 +121,9 @@ When estimating the asymptotic covariance matrix of the SMM estimator, the Jacob
 > 2. $\varepsilon_{T,S} \times \min(\sqrt{T}, \sqrt{S}) \to \infty$ (convergence rate requirement)
 >
 > **Practical rule:** For sample size $T$:
-> $$\varepsilon_{T,S} \gg \frac{1}{\sqrt{T}}$$
+> $$
+> \varepsilon_{T,S} \gg \frac{1}{\sqrt{T}}
+> $$
 >
 > | $T$ | Lower bound ($1/\sqrt{T}$) | Recommended $\varepsilon_{T,S}$ |
 > |-----|--------------------------|---------------------------|

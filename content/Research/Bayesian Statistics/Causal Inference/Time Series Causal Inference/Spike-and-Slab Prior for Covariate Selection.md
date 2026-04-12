@@ -37,17 +37,25 @@ When constructing a synthetic control, there may be many candidate predictor ser
 > [!definition] Definition: Spike-and-Slab Prior
 > Let $\varrho = (\varrho_1, \ldots, \varrho_J)$ be binary inclusion indicators, where $\varrho_j = 1$ if $\beta_j \neq 0$ and $\varrho_j = 0$ otherwise. The full prior factorizes as:
 >
-> $$p(\varrho, \beta, 1/\sigma_\varepsilon^2) = p(\varrho) \cdot p(\sigma_\varepsilon^2 \mid \varrho) \cdot p(\beta_\varrho \mid \varrho, \sigma_\varepsilon^2) \tag{2.8}$$
+> $$
+> p(\varrho, \beta, 1/\sigma_\varepsilon^2) = p(\varrho) \cdot p(\sigma_\varepsilon^2 \mid \varrho) \cdot p(\beta_\varrho \mid \varrho, \sigma_\varepsilon^2) \tag{2.8}
+> $$
 >
 > **Spike (inclusion probability):**
-> $$p(\varrho) = \prod_{j=1}^J \pi_j^{\varrho_j} (1 - \pi_j)^{1-\varrho_j} \tag{2.9}$$
+> $$
+> p(\varrho) = \prod_{j=1}^J \pi_j^{\varrho_j} (1 - \pi_j)^{1-\varrho_j} \tag{2.9}
+> $$
 > where $\pi_j$ is the prior probability of including predictor $j$.
 >
 > **Slab (Gaussian prior for included coefficients):**
-> $$\beta_\varrho \mid \varrho, \sigma_\varepsilon^2 \sim \mathcal{N}(\mathbf{b}_\varrho, \sigma_\varepsilon^2 (\Sigma_\varrho^{-1})^{-1}) \tag{2.10}$$
+> $$
+> \beta_\varrho \mid \varrho, \sigma_\varepsilon^2 \sim \mathcal{N}(\mathbf{b}_\varrho, \sigma_\varepsilon^2 (\Sigma_\varrho^{-1})^{-1}) \tag{2.10}
+> $$
 >
 > **Inverse-Gamma prior on error variance:**
-> $$\frac{1}{\sigma_\varepsilon^2} \sim \mathcal{G}\left(\frac{\nu_\varepsilon}{2}, \frac{s_\varepsilon}{2}\right) \tag{2.11}$$
+> $$
+> \frac{1}{\sigma_\varepsilon^2} \sim \mathcal{G}\left(\frac{\nu_\varepsilon}{2}, \frac{s_\varepsilon}{2}\right) \tag{2.11}
+> $$
 ^def-spike-slab
 
 ## Setting the Inclusion Prior $\pi_j$

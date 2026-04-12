@@ -48,7 +48,9 @@ aliases:
 
 > [!theorem] CLPM Bias (Box 2, Fig. 2b)
 > If individuals have stable traits $U_X$ and $U_Y$ that persistently influence $X$ and $Y$ respectively (e.g., extroverts are habitually talkative and habitually happier), these create a confounding path:
-> $$U_X \to X_{t-1} \to Y_t \leftarrow U_Y$$
+> $$
+> U_X \to X_{t-1} \to Y_t \leftarrow U_Y
+> $$
 > The CLPM does not control for $U_X$ or $U_Y$. Their influence inflates or deflates estimated cross-lagged paths. The CLPM conflates trait-level between-person associations with genuine lagged within-person causal effects.
 ^clpm-bias
 

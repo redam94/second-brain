@@ -50,9 +50,13 @@ where $y_j$ is the group mean, $\sigma_{\bar{y}}^2$ is the within-group sampling
 > [!theorem] Theorem: Posterior Mean and Variance Under Partial Pooling (Gelman et al., 2009, Sec. 3.2)
 > For the normal-normal hierarchical model, the posterior mean and standard deviation for group $j$ are:
 >
-> $$\text{posterior } \text{E}(\theta_j) = \left(\frac{1}{\sigma_\theta^2}\mu + \frac{1}{\sigma_{\bar{y}}^2}\bar{y}_j\right) \bigg/ \left(\frac{1}{\sigma_\theta^2} + \frac{1}{\sigma_{\bar{y}}^2}\right)$$
+> $$
+> \text{posterior } \text{E}(\theta_j) = \left(\frac{1}{\sigma_\theta^2}\mu + \frac{1}{\sigma_{\bar{y}}^2}\bar{y}_j\right) \bigg/ \left(\frac{1}{\sigma_\theta^2} + \frac{1}{\sigma_{\bar{y}}^2}\right)
+> $$
 >
-> $$\text{posterior } \text{sd}(\theta_j) = \frac{1}{\sqrt{\frac{1}{\sigma_\theta^2} + \frac{1}{\sigma_{\bar{y}}^2}}}$$
+> $$
+> \text{posterior } \text{sd}(\theta_j) = \frac{1}{\sqrt{\frac{1}{\sigma_\theta^2} + \frac{1}{\sigma_{\bar{y}}^2}}}
+> $$
 >
 > The posterior mean is a precision-weighted average of the prior mean $\mu$ and the data $\bar{y}_j$. The smaller $\sigma_\theta^2$ (more similar groups), the more the estimate is pulled toward $\mu$.
 ^thm-posterior-pooling
@@ -64,13 +68,19 @@ The key result for multiple comparisons: what happens to the z-score when compar
 > [!theorem] Theorem: Z-Score Shrinkage Factor (Gelman et al., 2009, Sec. 3.2)
 > For a comparison $\theta_j - \theta_k$ between two groups:
 >
-> $$\text{posterior } \text{E}(\theta_j - \theta_k) = \frac{\sigma_\theta^2}{\sigma_{\bar{y}}^2 + \sigma_\theta^2}(\bar{y}_j - \bar{y}_k)$$
+> $$
+> \text{posterior } \text{E}(\theta_j - \theta_k) = \frac{\sigma_\theta^2}{\sigma_{\bar{y}}^2 + \sigma_\theta^2}(\bar{y}_j - \bar{y}_k)
+> $$
 >
-> $$\text{posterior } \text{sd}(\theta_j - \theta_k) = \sqrt{2}\,\sigma_{\bar{y}}\,\sigma_\theta \bigg/ \sqrt{\sigma_{\bar{y}}^2 + \sigma_\theta^2}$$
+> $$
+> \text{posterior } \text{sd}(\theta_j - \theta_k) = \sqrt{2}\,\sigma_{\bar{y}}\,\sigma_\theta \bigg/ \sqrt{\sigma_{\bar{y}}^2 + \sigma_\theta^2}
+> $$
 >
 > The posterior z-score for the comparison is:
 >
-> $$z_{\text{Bayes}} = \underbrace{\frac{\bar{y}_j - \bar{y}_k}{\sqrt{2}\,\sigma_{\bar{y}}}}_{\text{classical z-score}} \cdot \underbrace{\frac{1}{\sqrt{1 + \sigma_{\bar{y}}^2 / \sigma_\theta^2}}}_{\text{shrinkage factor}}$$
+> $$
+> z_{\text{Bayes}} = \underbrace{\frac{\bar{y}_j - \bar{y}_k}{\sqrt{2}\,\sigma_{\bar{y}}}}_{\text{classical z-score}} \cdot \underbrace{\frac{1}{\sqrt{1 + \sigma_{\bar{y}}^2 / \sigma_\theta^2}}}_{\text{shrinkage factor}}
+> $$
 >
 > The shrinkage factor is always $< 1$ and approaches 0 as $\sigma_\theta^2 \to 0$ (groups are identical). It approaches 1 as $\sigma_\theta^2 \to \infty$ (groups are unrelated, no pooling).
 ^thm-zscore-shrinkage

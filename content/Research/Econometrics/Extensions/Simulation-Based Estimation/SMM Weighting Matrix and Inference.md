@@ -56,20 +56,28 @@ Gives each moment equal weight. Simple and sufficient when:
 
 > [!definition] Definition: Two-Step SMM Estimator
 > **Step 1.** Estimate with identity matrix:
-> $$\hat{\theta}_{1,SMM} = \theta : \min_\theta \; e(\tilde{x}, x | \theta)^T I \, e(\tilde{x}, x | \theta)$$
+> $$
+> \hat{\theta}_{1,SMM} = \theta : \min_\theta \; e(\tilde{x}, x | \theta)^T I \, e(\tilde{x}, x | \theta)
+> $$
 >
 > **Step 2.** Compute the $R \times S$ error matrix at the Step 1 estimates, where each column is the moment error vector from one simulation:
-> $$E(\tilde{x}, x | \hat{\theta}_{1,SMM}) = \begin{bmatrix} m_1(\tilde{x}_1|\hat{\theta}) - m_1(x) & \cdots & m_1(\tilde{x}_S|\hat{\theta}) - m_1(x) \\ \vdots & \ddots & \vdots \\ m_R(\tilde{x}_1|\hat{\theta}) - m_R(x) & \cdots & m_R(\tilde{x}_S|\hat{\theta}) - m_R(x) \end{bmatrix}$$
+> $$
+> E(\tilde{x}, x | \hat{\theta}_{1,SMM}) = \begin{bmatrix} m_1(\tilde{x}_1|\hat{\theta}) - m_1(x) & \cdots & m_1(\tilde{x}_S|\hat{\theta}) - m_1(x) \\ \vdots & \ddots & \vdots \\ m_R(\tilde{x}_1|\hat{\theta}) - m_R(x) & \cdots & m_R(\tilde{x}_S|\hat{\theta}) - m_R(x) \end{bmatrix}
+> $$
 >
 > (Or in percent-deviation form: divide each row by the corresponding data moment $m_r(x)$.)
 >
 > **Step 3.** Estimate the variance-covariance matrix of the moment errors:
-> $$\hat{\Omega}_2 = \frac{1}{S} E(\tilde{x}, x | \hat{\theta}_{1,SMM}) \, E(\tilde{x}, x | \hat{\theta}_{1,SMM})^T$$
+> $$
+> \hat{\Omega}_2 = \frac{1}{S} E(\tilde{x}, x | \hat{\theta}_{1,SMM}) \, E(\tilde{x}, x | \hat{\theta}_{1,SMM})^T
+> $$
 >
 > The $(r,s)$ element is $\hat{\Omega}_{2,r,s} = \frac{1}{S}\sum_{i=1}^S [m_r(\tilde{x}_i|\hat{\theta}) - m_r(x)][m_s(\tilde{x}_i|\hat{\theta}) - m_s(x)]$.
 >
 > **Step 4.** Set the optimal weighting matrix $\hat{W}^{two-step} = \hat{\Omega}_2^{-1}$ and re-estimate:
-> $$\hat{\theta}_{2,SMM} = \theta : \min_\theta \; e(\tilde{x}, x | \theta)^T \hat{W}^{two-step} \, e(\tilde{x}, x | \theta)$$
+> $$
+> \hat{\theta}_{2,SMM} = \theta : \min_\theta \; e(\tilde{x}, x | \theta)^T \hat{W}^{two-step} \, e(\tilde{x}, x | \theta)
+> $$
 ^def-two-step-smm
 
 **Intuition:** Downweight moments with high simulation variance; upweight moments that are estimated precisely across simulations.
@@ -94,10 +102,14 @@ When simulated data are autocorrelated (time series models), the variance-covari
 
 > [!definition] Definition: Newey-West Weighting Matrix
 > The asymptotically optimal weighting matrix in the presence of autocorrelation:
-> $$\hat{W}_{nw} = \Gamma_{0,S} + \sum_{v=1}^{q} \left(1 - \frac{v}{q+1}\right)(\Gamma_{v,S} + \Gamma_{v,S}^T)$$
+> $$
+> \hat{W}_{nw} = \Gamma_{0,S} + \sum_{v=1}^{q} \left(1 - \frac{v}{q+1}\right)(\Gamma_{v,S} + \Gamma_{v,S}^T)
+> $$
 >
 > where:
-> $$\Gamma_{v,S} = \frac{1}{S} \sum_{i=v+1}^{S} E(\tilde{x}_i, x | \theta) \, E(\tilde{x}_{i-v}, x | \theta)^T$$
+> $$
+> \Gamma_{v,S} = \frac{1}{S} \sum_{i=v+1}^{S} E(\tilde{x}_i, x | \theta) \, E(\tilde{x}_{i-v}, x | \theta)^T
+> $$
 >
 > The bandwidth parameter $q$ controls how many lags are included.
 ^def-nw-estimator
@@ -115,13 +127,19 @@ The parameter estimates $\hat{\theta}_{SMM}$ are asymptotically normal. The esti
 
 > [!theorem] Theorem: SMM Parameter Variance-Covariance
 > Define the $R \times K$ Jacobian matrix $d(\tilde{x}, x | \theta)$ of derivatives of the moment error vector with respect to each parameter:
-> $$d(\tilde{x}, x | \theta) \equiv \begin{bmatrix} \frac{\partial e_1}{\partial \theta_1} & \cdots & \frac{\partial e_1}{\partial \theta_K} \\ \vdots & \ddots & \vdots \\ \frac{\partial e_R}{\partial \theta_1} & \cdots & \frac{\partial e_R}{\partial \theta_K} \end{bmatrix}$$
+> $$
+> d(\tilde{x}, x | \theta) \equiv \begin{bmatrix} \frac{\partial e_1}{\partial \theta_1} & \cdots & \frac{\partial e_1}{\partial \theta_K} \\ \vdots & \ddots & \vdots \\ \frac{\partial e_R}{\partial \theta_1} & \cdots & \frac{\partial e_R}{\partial \theta_K} \end{bmatrix}
+> $$
 >
 > The SMM estimates are asymptotically normal as $S \to \infty$:
-> $$\text{plim}_{S\to\infty} \sqrt{S}(\hat{\theta}_{SMM} - \theta_0) \sim N(0, [d^T W d]^{-1})$$
+> $$
+> \text{plim}_{S\to\infty} \sqrt{S}(\hat{\theta}_{SMM} - \theta_0) \sim N(0, [d^T W d]^{-1})
+> $$
 >
 > The estimated variance-covariance matrix is:
-> $$\hat{\Sigma}_{SMM} = \frac{1}{S}[d(\tilde{x}, x | \hat{\theta}_{SMM})^T W \, d(\tilde{x}, x | \hat{\theta}_{SMM})]^{-1}$$
+> $$
+> \hat{\Sigma}_{SMM} = \frac{1}{S}[d(\tilde{x}, x | \hat{\theta}_{SMM})^T W \, d(\tilde{x}, x | \hat{\theta}_{SMM})]^{-1}
+> $$
 ^thm-smm-varcov
 
 **Computing the Jacobian numerically:** Use centered finite differences:

@@ -56,23 +56,33 @@ QM is applicable to molecules, atoms, and subatomic particles. Its predictions h
 
 > [!definition] Born Rule
 > The probability of obtaining measurement outcome associated with eigenvalue $\lambda$ of observable $A$ is:
-> $$P(\lambda) = |\langle \vec{\lambda}, \psi \rangle|^2$$
+> $$
+> P(\lambda) = |\langle \vec{\lambda}, \psi \rangle|^2
+> $$
 > for non-degenerate $\lambda$, where $\vec{\lambda}$ is the unit eigenvector. For degenerate eigenvalues, $P(\lambda) = \langle \psi, P_\lambda \psi \rangle$ where $P_\lambda$ is the projector onto the eigenspace.
 ^def-born-rule
 
 > [!definition] Schrödinger Equation
 > The time evolution of a quantum state is governed by:
-> $$i\hbar \frac{\partial}{\partial t}\psi(t) = H\psi(t)$$
+> $$
+> i\hbar \frac{\partial}{\partial t}\psi(t) = H\psi(t)
+> $$
 > where $H$ is the **Hamiltonian** (the observable for total energy) and $\hbar$ is the reduced Planck constant. The formal solution is:
-> $$\psi(t) = e^{-iHt/\hbar}\psi(0)$$
+> $$
+> \psi(t) = e^{-iHt/\hbar}\psi(0)
+> $$
 > The time-evolution operator $U(t) = e^{-iHt/\hbar}$ is **unitary**, preserving the norm of the state.
 ^def-schrodinger
 
 > [!definition] Heisenberg Uncertainty Principle
 > For position $\hat{X}$ and momentum $\hat{P}$, which satisfy the canonical commutation relation $[\hat{X}, \hat{P}] = i\hbar$:
-> $$\sigma_X \sigma_P \geq \frac{\hbar}{2}$$
+> $$
+> \sigma_X \sigma_P \geq \frac{\hbar}{2}
+> $$
 > where $\sigma_X = \sqrt{\langle X^2 \rangle - \langle X \rangle^2}$ and similarly for $\sigma_P$. More generally, for any two observables $A$ and $B$:
-> $$\sigma_A \sigma_B \geq \frac{1}{2}|\langle [A,B] \rangle|$$
+> $$
+> \sigma_A \sigma_B \geq \frac{1}{2}|\langle [A,B] \rangle|
+> $$
 ^def-uncertainty
 
 > [!definition] Superposition
@@ -84,9 +94,13 @@ QM is applicable to molecules, atoms, and subatomic particles. Its predictions h
 > [!example] Free Particle
 > A free particle has Hamiltonian $H = \frac{P^2}{2m} = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}$.
 > The general solution to the Schrödinger equation is a superposition of plane waves:
-> $$\psi(x,t) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\hat{\psi}(k,0)e^{i(kx - \frac{\hbar k^2}{2m}t)}\,dk$$
+> $$
+> \psi(x,t) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\hat{\psi}(k,0)e^{i(kx - \frac{\hbar k^2}{2m}t)}\,dk
+> $$
 > A Gaussian wave packet $\psi(x,0) = \frac{1}{\sqrt[4]{\pi a}}e^{-x^2/(2a)}$ has momentum distribution:
-> $$\hat{\psi}(k,0) = \sqrt[4]{\frac{a}{\pi}}e^{-ak^2/2}$$
+> $$
+> \hat{\psi}(k,0) = \sqrt[4]{\frac{a}{\pi}}e^{-ak^2/2}
+> $$
 > Smaller $a$ (narrower position) → wider momentum spread, and vice versa — illustrating the uncertainty principle. The packet's center moves at constant velocity (like a classical particle) but spreads over time.
 
 > [!example] Particle in a Box (Infinite Potential Well)
@@ -98,9 +112,13 @@ QM is applicable to molecules, atoms, and subatomic particles. Its predictions h
 
 > [!example] Quantum Harmonic Oscillator
 > For potential $V(x) = \frac{1}{2}m\omega^2 x^2$, the eigenstates are:
-> $$\psi_n(x) = \sqrt{\frac{1}{2^n n!}}\left(\frac{m\omega}{\pi\hbar}\right)^{1/4} e^{-\frac{m\omega x^2}{2\hbar}} H_n\!\left(\sqrt{\frac{m\omega}{\hbar}}x\right), \quad n = 0, 1, 2, \ldots$$
+> $$
+> \psi_n(x) = \sqrt{\frac{1}{2^n n!}}\left(\frac{m\omega}{\pi\hbar}\right)^{1/4} e^{-\frac{m\omega x^2}{2\hbar}} H_n\!\left(\sqrt{\frac{m\omega}{\hbar}}x\right), \quad n = 0, 1, 2, \ldots
+> $$
 > where $H_n$ are Hermite polynomials. The **energy levels** are:
-> $$E_n = \hbar\omega\left(n + \frac{1}{2}\right)$$
+> $$
+> E_n = \hbar\omega\left(n + \frac{1}{2}\right)
+> $$
 > The ground state ($n=0$) has non-zero energy $E_0 = \frac{\hbar\omega}{2}$ — the **zero-point energy**, a consequence of the uncertainty principle.
 ^ex-harmonic-oscillator
 

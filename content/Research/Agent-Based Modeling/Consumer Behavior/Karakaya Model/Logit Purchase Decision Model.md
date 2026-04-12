@@ -36,7 +36,9 @@ The purchase decision model addresses the empirical observation that consumers d
 ### The Logit Function
 
 > [!definition] Definition: Logit Function for Purchase Decisions (Karakaya et al. 2011, Eq. 7)
-> $$\text{Logit}(u) = \frac{1}{1 + e^{k(\alpha - u)}}$$
+> $$
+> \text{Logit}(u) = \frac{1}{1 + e^{k(\alpha - u)}}
+> $$
 > where:
 > - $u$: utility of the consumer
 > - $k$: smoothing constant ($k = 5$ in experiments)
@@ -49,7 +51,9 @@ The purchase decision model addresses the empirical observation that consumers d
 
 > [!definition] Definition: Purchase Decision Rule (Karakaya et al. 2011, Eq. 8)
 > Consumer $i$ purchases the product if and only if:
-> $$U_i > \alpha \quad \text{and} \quad \text{Logit}(U_i) \geq \tau_i$$
+> $$
+> U_i > \alpha \quad \text{and} \quad \text{Logit}(U_i) \geq \tau_i
+> $$
 > where:
 > - $\alpha = 0.7$: buying threshold (minimum utility for consideration)
 > - $\tau_i \sim U(0, 1)$: random number generated for consumer $i$

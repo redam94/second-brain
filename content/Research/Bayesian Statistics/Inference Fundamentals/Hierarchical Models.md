@@ -46,7 +46,9 @@ This is the probabilistic justification for the hierarchical model structure: ex
 
 > [!definition] Definition: Exchangeability
 > A sequence $\theta_1, \ldots, \theta_J$ is exchangeable if for any permutation $\pi$:
-> $$p(\theta_1, \ldots, \theta_J) = p(\theta_{\pi(1)}, \ldots, \theta_{\pi(J)})$$
+> $$
+> p(\theta_1, \ldots, \theta_J) = p(\theta_{\pi(1)}, \ldots, \theta_{\pi(J)})
+> $$
 > Finite exchangeability implies a hierarchical model with hyperparameter $\phi$.
 ^def-exchangeability
 
@@ -70,9 +72,15 @@ This is a **precision-weighted average** of the group observation $y_j$ and the 
 ## Structure of a Hierarchical Model
 
 > [!definition] Definition: Three-Level Hierarchical Model
-> $$y_j \mid \theta_j \sim p(y_j \mid \theta_j) \quad \text{(data model)}$$
-> $$\theta_j \mid \phi \sim p(\theta_j \mid \phi) \quad \text{(group-level model / prior)}$$
-> $$\phi \sim p(\phi) \quad \text{(hyperprior)}$$
+> $$
+> y_j \mid \theta_j \sim p(y_j \mid \theta_j) \quad \text{(data model)}
+> $$
+> $$
+> \theta_j \mid \phi \sim p(\theta_j \mid \phi) \quad \text{(group-level model / prior)}
+> $$
+> $$
+> \phi \sim p(\phi) \quad \text{(hyperprior)}
+> $$
 > where $\phi = (\mu, \tau)$ are the hyperparameters governing the group-level distribution.
 ^def-hierarchical-structure
 

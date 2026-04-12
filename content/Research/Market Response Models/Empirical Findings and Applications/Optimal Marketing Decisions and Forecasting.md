@@ -26,14 +26,18 @@ status: complete
 > [!theorem] Dorfman-Steiner Optimality Condition
 > For a profit-maximizing firm with margin $m$ and sales response $Q(A)$:
 >
-> $$\max_A \Pi = (P - c) Q(A) - A$$
+> $$
+> \max_A \Pi = (P - c) Q(A) - A
+> $$
 >
 > First-order condition: $(P-c) \frac{\partial Q}{\partial A} = 1$
 >
 > Rearranging: $\frac{A}{(P-c)Q} = \frac{A}{S} = \eta_{QA} \cdot \frac{A/S}{A/S} = \eta_{QA}$
 >
 > So the **optimal advertising-to-sales ratio**:
-> $$\frac{A^*}{S^*} = \eta_{QA} \cdot \frac{1}{m/P} = \frac{\eta_{QA}}{\eta_{QP}}$$
+> $$
+> \frac{A^*}{S^*} = \eta_{QA} \cdot \frac{1}{m/P} = \frac{\eta_{QA}}{\eta_{QP}}
+> $$
 >
 > where $\eta_{QP}$ is the absolute price elasticity. The optimal advertising-to-sales ratio equals the ratio of advertising elasticity to price elasticity. With $\eta_{QA} = 0.10$ and $\eta_{QP} = 2.5$: optimal A/S = 4%.
 > ^thm-dorfman-steiner

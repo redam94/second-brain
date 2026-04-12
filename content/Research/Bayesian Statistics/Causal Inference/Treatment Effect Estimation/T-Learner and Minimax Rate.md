@@ -33,11 +33,17 @@ aliases:
 
 > [!definition] Definition: T-Learner
 > **Step 1 (first stage):** Fit separate response functions on each arm:
-> $$\hat{\mu}_0(x) = \mathbb{E}[Y(0) \mid X = x] \quad \text{estimated on control units } \{i: W_i = 0\}$$
-> $$\hat{\mu}_1(x) = \mathbb{E}[Y(1) \mid X = x] \quad \text{estimated on treated units } \{i: W_i = 1\}$$
+> $$
+> \hat{\mu}_0(x) = \mathbb{E}[Y(0) \mid X = x] \quad \text{estimated on control units } \{i: W_i = 0\}
+> $$
+> $$
+> \hat{\mu}_1(x) = \mathbb{E}[Y(1) \mid X = x] \quad \text{estimated on treated units } \{i: W_i = 1\}
+> $$
 >
 > **Step 2:** Estimate CATE as:
-> $$\hat{\tau}^T(x) = \hat{\mu}_1(x) - \hat{\mu}_0(x)$$
+> $$
+> \hat{\tau}^T(x) = \hat{\mu}_1(x) - \hat{\mu}_0(x)
+> $$
 ^def-t-learner
 
 ## Minimax Rate Theorem
@@ -45,7 +51,9 @@ aliases:
 > [!theorem] Theorem 1: Minimax Rate of T-Learner (Künzel et al. 2019)
 > For a family of superpopulations $\mathcal{P}$ from $S(a_0, a_\tau)$ (where $a_0$ controls base function smoothness and $a_\tau$ controls CATE smoothness), there exist base learners for the T-learner such that:
 >
-> $$\sup_{\mathcal{P} \in S(a_0, a_\tau)} \text{EMSE}(\mathcal{P}, \hat{\tau}^T) \leq C(m^{-a_0} + n^{-a_0})$$
+> $$
+> \sup_{\mathcal{P} \in S(a_0, a_\tau)} \text{EMSE}(\mathcal{P}, \hat{\tau}^T) \leq C(m^{-a_0} + n^{-a_0})
+> $$
 >
 > where $m$ is the total number of units, $n$ is the number of treated units, and $C$ is a constant.
 >

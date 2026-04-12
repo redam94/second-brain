@@ -39,7 +39,9 @@ The core idea: after fitting the BSTS model on pre-intervention data, the model 
 > [!definition] Definition: Pointwise Causal Impact
 > For each posterior draw $\tau$ and each post-intervention time point $t = n+1, \ldots, m$:
 >
-> $$\phi_t^{(\tau)} := y_t - \tilde{y}_t^{(\tau)} \tag{2.15}$$
+> $$
+> \phi_t^{(\tau)} := y_t - \tilde{y}_t^{(\tau)} \tag{2.15}
+> $$
 >
 > where $y_t$ is the observed outcome and $\tilde{y}_t^{(\tau)}$ is the $\tau$-th draw from the posterior predictive counterfactual distribution.
 >
@@ -49,7 +51,9 @@ The core idea: after fitting the BSTS model on pre-intervention data, the model 
 > [!definition] Definition: Cumulative Causal Impact
 > The cumulative effect of the intervention from $t = n+1$ through $t$:
 >
-> $$\sum_{t'=n+1}^{t} \phi_{t'}^{(\tau)} \quad \forall t = n+1, \ldots, m \tag{2.16}$$
+> $$
+> \sum_{t'=n+1}^{t} \phi_{t'}^{(\tau)} \quad \forall t = n+1, \ldots, m \tag{2.16}
+> $$
 >
 > **When to use:** Appropriate when $y_t$ is a **flow** variable — measured over an interval (e.g., number of searches per day, sales per week).
 >
@@ -59,7 +63,9 @@ The core idea: after fitting the BSTS model on pre-intervention data, the model 
 > [!definition] Definition: Running Average Causal Impact
 > The average causal effect per time period from $t = n+1$ through $t$:
 >
-> $$\frac{1}{t-n} \sum_{t'=n+1}^{t} \phi_{t'}^{(\tau)} \quad \forall t = n+1, \ldots, m \tag{2.17}$$
+> $$
+> \frac{1}{t-n} \sum_{t'=n+1}^{t} \phi_{t'}^{(\tau)} \quad \forall t = n+1, \ldots, m \tag{2.17}
+> $$
 >
 > **Always interpretable** regardless of whether $y_t$ is a flow or stock.
 >

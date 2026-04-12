@@ -94,7 +94,9 @@ aliases:
 > → **16 model variants** (all binary combinations). Goal: identify which variants are plausible.
 >
 > **Error metric — MASE** (Mean Absolute Scaled Error, Eq. 8):
-> $$d^2(z^r, f^{rj}(x)) = \frac{\frac{1}{n}\sum_{t=2}^{T}|f_t^{rj}(x) - z_t^r|}{\frac{1}{n-2}\sum_{t=2}^{T}|z_{t-1}^r - z_{t-2}^r|}$$
+> $$
+> d^2(z^r, f^{rj}(x)) = \frac{\frac{1}{n}\sum_{t=2}^{T}|f_t^{rj}(x) - z_t^r|}{\frac{1}{n-2}\sum_{t=2}^{T}|z_{t-1}^r - z_{t-2}^r|}
+> $$
 > where $n = 13$ (years), $j \in \{1,\ldots,16\}$ model variants. MASE normalises error by naive forecast variability.
 >
 > **UQ**:

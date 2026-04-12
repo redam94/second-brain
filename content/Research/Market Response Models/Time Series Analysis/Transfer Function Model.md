@@ -27,10 +27,14 @@ status: complete
 > [!definition] Transfer Function Model (Single Input)
 > The general single-input TF model (impulse response form):
 >
-> $$y_t = \alpha_0 + (v_0 + v_1 L + v_2 L^2 + \cdots) x_t + n_t \tag{Eq 7.7}$$
+> $$
+> y_t = \alpha_0 + (v_0 + v_1 L + v_2 L^2 + \cdots) x_t + n_t \tag{Eq 7.7}
+> $$
 >
 > or compactly:
-> $$y_t = \alpha_0 + V(L) x_t + n_t \tag{Eq 7.8}$$
+> $$
+> y_t = \alpha_0 + V(L) x_t + n_t \tag{Eq 7.8}
+> $$
 >
 > where:
 > - $v_j$: **impulse response weights** (effect of $x$ on $y$ at lag $j$)
@@ -51,16 +55,24 @@ Impulse response form: $y_t = \alpha_0 + V_1(L) x_{1t} + V_2(L) x_{2t} + n_t$ (E
 > [!example] Three-Step Prewhitening
 > **Step 1**: Find the ARMA model for input $x_t$ (prewhiten):
 >
-> $$\hat\Phi(L) x_t = \hat\Theta(L) \hat w_t \tag{Eq 7.9}$$
-> $$\hat w_t = \hat\Theta(L)^{-1} \hat\Phi(L) x_t \tag{Eq 7.10}$$
+> $$
+> \hat\Phi(L) x_t = \hat\Theta(L) \hat w_t \tag{Eq 7.9}
+> $$
+> $$
+> \hat w_t = \hat\Theta(L)^{-1} \hat\Phi(L) x_t \tag{Eq 7.10}
+> $$
 >
 > **Step 2**: Apply the same filter to output $y_t$:
 >
-> $$\hat\beta_t = \hat\Theta(L)^{-1} \hat\Phi(L) y_t \tag{Eq 7.11}$$
+> $$
+> \hat\beta_t = \hat\Theta(L)^{-1} \hat\Phi(L) y_t \tag{Eq 7.11}
+> $$
 >
 > **Step 3**: Compute CCF (cross-correlation function) between $\hat w_t$ and $\hat\beta_t$:
 >
-> $$\hat v_j = \frac{s_{\hat\beta}}{s_{\hat w}} r_{\hat w \hat\beta}(j) \tag{Eq 7.12}$$
+> $$
+> \hat v_j = \frac{s_{\hat\beta}}{s_{\hat w}} r_{\hat w \hat\beta}(j) \tag{Eq 7.12}
+> $$
 >
 > The CCF pattern directly reveals the impulse response weights $v_j$ and identifies the TF order $(r, s, b)$.
 > ^ex-prewhitening
@@ -95,15 +107,21 @@ Problem 2 (non-white residuals): use GLS — estimate ARMA structure from OLS re
 > Qualitative events (advertising copy changes, competitor entry, regulation) that cannot be quantified as continuous variables are modeled as **dummy variable inputs**.
 >
 > **Pulse intervention** (temporary):
-> $$D_{\text{pulse},t} = \begin{cases} 0 & t < k \\ 1 & k \leq t \leq k+l \\ 0 & t > k+l \end{cases}$$
+> $$
+> D_{\text{pulse},t} = \begin{cases} 0 & t < k \\ 1 & k \leq t \leq k+l \\ 0 & t > k+l \end{cases}
+> $$
 >
 > **Step intervention** (permanent):
-> $$D_{\text{step},t} = \begin{cases} 0 & t < k \\ 1 & t \geq k \end{cases}$$
+> $$
+> D_{\text{step},t} = \begin{cases} 0 & t < k \\ 1 & t \geq k \end{cases}
+> $$
 >
 > Note: $(1-L) D_{\text{step},t} = D_{\text{pulse},t}$ (Eq 7.20) — the first difference of a step is a pulse.
 >
 > General pulse intervention TF model (Eq 7.19):
-> $$Y_t = \alpha_0 + \frac{\omega(L)}{\delta(L)} L^b D_{\text{pulse},t} + \frac{\Theta(L)}{\Phi(L)} w_t$$
+> $$
+> Y_t = \alpha_0 + \frac{\omega(L)}{\delta(L)} L^b D_{\text{pulse},t} + \frac{\Theta(L)}{\Phi(L)} w_t
+> $$
 > ^def-intervention
 
 ### Intervention Scenarios (Figure 7-2)

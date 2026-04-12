@@ -37,9 +37,13 @@ status: complete
 > [!theorem] OLS Estimator
 > For the linear model $\mathbf{q} = \mathbf{X}\boldsymbol{\beta} + \mathbf{u}$:
 >
-> $$\hat{\boldsymbol{\beta}}_{\text{OLS}} = (\mathbf{X}'\mathbf{X})^{-1}\mathbf{X}'\mathbf{q} \tag{Eq 5.5}$$
+> $$
+> \hat{\boldsymbol{\beta}}_{\text{OLS}} = (\mathbf{X}'\mathbf{X})^{-1}\mathbf{X}'\mathbf{q} \tag{Eq 5.5}
+> $$
 >
-> $$\text{Var}(\hat{\boldsymbol{\beta}}) = \sigma^2(\mathbf{X}'\mathbf{X})^{-1} \tag{Eq 5.6}$$
+> $$
+> \text{Var}(\hat{\boldsymbol{\beta}}) = \sigma^2(\mathbf{X}'\mathbf{X})^{-1} \tag{Eq 5.6}
+> $$
 >
 > BLUE (Best Linear Unbiased Estimator) under all 8 Gauss-Markov assumptions (Table 5-1):
 > 1. Linearity
@@ -78,7 +82,9 @@ SUR is the standard estimator for **MCI/MNL market share systems** (see [[Market
 > [!definition] Structural System
 > The full simultaneous system in matrix form:
 >
-> $$\mathbf{Y}\mathbf{\Gamma} + \mathbf{X}\mathbf{B} = \mathbf{U} \tag{Eq 5.4}$$
+> $$
+> \mathbf{Y}\mathbf{\Gamma} + \mathbf{X}\mathbf{B} = \mathbf{U} \tag{Eq 5.4}
+> $$
 >
 > where $\mathbf{Y}$ = current endogenous variables, $\mathbf{X}$ = predetermined variables, $\mathbf{\Gamma}$ and $\mathbf{B}$ = structural coefficient matrices.
 >
@@ -96,11 +102,15 @@ See [[Instrumental Variables]] for the IV estimator in a causal inference contex
 > [!definition] Bayesian Posterior
 > The Bayesian approach updates a **prior** distribution $p(\boldsymbol{\beta}, \sigma)$ with the **likelihood** $p(\mathbf{q}|\boldsymbol{\beta}, \sigma)$:
 >
-> $$p(\boldsymbol{\beta}, \sigma | \mathbf{q}) \propto p(\mathbf{q} | \boldsymbol{\beta}, \sigma) \cdot p(\boldsymbol{\beta}, \sigma) \tag{Eq 5.14}$$
+> $$
+> p(\boldsymbol{\beta}, \sigma | \mathbf{q}) \propto p(\mathbf{q} | \boldsymbol{\beta}, \sigma) \cdot p(\boldsymbol{\beta}, \sigma) \tag{Eq 5.14}
+> $$
 >
 > With a **noninformative prior** $p(\boldsymbol{\beta}, \sigma) \propto 1/\sigma$ (Eq 5.15):
 >
-> $$[\boldsymbol{\beta} | \mathbf{q}] \sim N(\hat{\boldsymbol{\beta}}_{\text{OLS}},\ \sigma^2 (\mathbf{X}'\mathbf{X})^{-1}) \tag{Eq 5.27}$$
+> $$
+> [\boldsymbol{\beta} | \mathbf{q}] \sim N(\hat{\boldsymbol{\beta}}_{\text{OLS}},\ \sigma^2 (\mathbf{X}'\mathbf{X})^{-1}) \tag{Eq 5.27}
+> $$
 >
 > The posterior mean equals the OLS estimate; Bayesian and frequentist results coincide under diffuse priors.
 > ^def-bayes-posterior
@@ -110,7 +120,9 @@ See [[Instrumental Variables]] for the IV estimator in a causal inference contex
 > [!definition] HB Shrinkage Estimator
 > When parameters vary across brands/markets (random coefficients), the HB estimator (Eq 5.30) shrinks individual estimates toward the grand mean:
 >
-> $$\hat{\boldsymbol{\beta}}^{\text{HB}}_i = \mathbf{W}_i \hat{\boldsymbol{\beta}}_i + (\mathbf{I} - \mathbf{W}_i) \bar{\boldsymbol{\beta}}$$
+> $$
+> \hat{\boldsymbol{\beta}}^{\text{HB}}_i = \mathbf{W}_i \hat{\boldsymbol{\beta}}_i + (\mathbf{I} - \mathbf{W}_i) \bar{\boldsymbol{\beta}}
+> $$
 >
 > where $\mathbf{W}_i$ is a matrix that downweights individual estimates with high sampling variance and upweights the pooled mean. This is a **Stein-like shrinkage** rule that dominates OLS in mean squared error when there are $\geq 3$ parameters.
 >

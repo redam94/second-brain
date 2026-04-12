@@ -46,7 +46,9 @@ This is stricter than d-separation in $\mathcal{H}$ alone, because $\mathcal{H}$
 
 > [!definition] s-Separation (Definition 7)
 > Given a summary causal DAG $(\mathcal{H}, f)$ and disjoint sets $X, Y, Z \subseteq \mathcal{V}(\mathcal{H})$, nodes $X$ and $Y$ are **s-separated** given $Z$ in $(\mathcal{H}, f)$, denoted:
-> $$X \perp\!\!\!\perp_s Y \mid Z_{(\mathcal{H}, f)}$$
+> $$
+> X \perp\!\!\!\perp_s Y \mid Z_{(\mathcal{H}, f)}
+> $$
 > if and only if $f^{-1}(X)$ and $f^{-1}(Y)$ are **d-separated** given $f^{-1}(Z)$ in the **canonical causal DAG** $\mathcal{G}_\mathcal{H}$.
 >
 > That is: expand the summary DAG nodes back to their original variable sets, then apply standard d-separation in the canonical DAG.
@@ -85,7 +87,9 @@ This is stricter than d-separation in $\mathcal{H}$ alone, because $\mathcal{H}$
 > $X$ and $Y$ are **s-separated** given $Z$ in $(\mathcal{H}, f)$ **if and only if** $X$ and $Y$ are **d-separated** given $Z$ in every causal DAG $\mathcal{G} \in \{\mathcal{G}_i\}_\mathcal{H}$ compatible with $\mathcal{H}$.
 >
 > Formally:
-> $$(X \perp\!\!\!\perp_s Y \mid Z)_{(\mathcal{H},f)} \iff \forall \mathcal{G} \in \{\mathcal{G}_i\}_\mathcal{H}: (f^{-1}(X) \perp\!\!\!\perp_d f^{-1}(Y) \mid f^{-1}(Z))_\mathcal{G}$$
+> $$
+> (X \perp\!\!\!\perp_s Y \mid Z)_{(\mathcal{H},f)} \iff \forall \mathcal{G} \in \{\mathcal{G}_i\}_\mathcal{H}: (f^{-1}(X) \perp\!\!\!\perp_d f^{-1}(Y) \mid f^{-1}(Z))_\mathcal{G}
+> $$
 >
 > **Soundness**: If s-separation says $X \perp\!\!\!\perp Y \mid Z$, then this CI holds in all compatible DAGs (no false claims of independence).
 >

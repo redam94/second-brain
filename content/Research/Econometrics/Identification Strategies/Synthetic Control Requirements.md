@@ -89,7 +89,9 @@ Contaminating the donor pool with units affected by spillovers from the treatmen
 
 > [!definition] Definition: No Interference (SUTVA)
 > Unit $j$'s outcome $Y_{jt}$ depends only on unit $j$'s own treatment status, not on the treatment status of other units:
-> $$Y_{jt} = (1-D_{jt}) Y_{jt}^N + D_{jt} Y_{jt}^I$$
+> $$
+> Y_{jt} = (1-D_{jt}) Y_{jt}^N + D_{jt} Y_{jt}^I
+> $$
 > where $D_{jt} \in \{0,1\}$ is unit $j$'s treatment indicator. Equivalently, there are no **spillover effects** from treated to untreated units.
 ^def-no-interference
 

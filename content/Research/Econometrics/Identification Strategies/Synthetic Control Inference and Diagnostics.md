@@ -42,13 +42,17 @@ The raw treatment effect $\hat{\tau}_{1t}$ is a poor test statistic for permutat
 
 > [!definition] Definition: RMSPE (Root Mean Squared Prediction Error)
 > For unit $j$ and time interval $[t_1, t_2]$:
-> $$R_j(t_1, t_2) = \left(\frac{1}{t_2 - t_1 + 1}\sum_{t=t_1}^{t_2}\left(Y_{jt} - \hat{Y}_{jt}^N\right)^2\right)^{1/2}$$
+> $$
+> R_j(t_1, t_2) = \left(\frac{1}{t_2 - t_1 + 1}\sum_{t=t_1}^{t_2}\left(Y_{jt} - \hat{Y}_{jt}^N\right)^2\right)^{1/2}
+> $$
 > where $\hat{Y}_{jt}^N = \sum_{k \neq j} w_{jk} Y_{kt}$ is the synthetic control estimate for unit $j$.
 ^def-rmspe
 
 > [!definition] Definition: RMSPE Ratio (Abadie 2021, Eq. 12)
 > For unit $j$, the **RMSPE ratio** is:
-> $$r_j = \frac{R_j(T_0+1, T)}{R_j(1, T_0)}$$
+> $$
+> r_j = \frac{R_j(T_0+1, T)}{R_j(1, T_0)}
+> $$
 > That is, the ratio of the **post-intervention RMSPE** to the **pre-intervention RMSPE**. This measures the fit of the synthetic control in the posttreatment period *relative to* its fit in the pretreatment period.
 ^def-rmspe-ratio
 
@@ -64,7 +68,9 @@ The raw treatment effect $\hat{\tau}_{1t}$ is a poor test statistic for permutat
 > 1. For each unit $j = 1, \ldots, J+1$ (treated unit + all donor units), estimate a synthetic control as if $j$ were the treated unit, using all other units as the donor pool
 > 2. Compute $r_j$ for each unit
 > 3. The **p-value** for the two-sided test is:
-> $$p = \frac{1}{J+1}\sum_{j=1}^{J+1} \mathbf{1}_+(r_j - r_1)$$
+> $$
+> p = \frac{1}{J+1}\sum_{j=1}^{J+1} \mathbf{1}_+(r_j - r_1)
+> $$
 > where $\mathbf{1}_+(\cdot)$ returns 1 for nonnegative arguments and 0 otherwise; $r_1$ is the RMSPE ratio for the actual treated unit
 >
 > **Interpretation**: $p$ is the fraction of units (including the treated unit) that have an RMSPE ratio at least as large as the treated unit's. Under the null of no treatment effect, the treated unit's $r_1$ should be typical among the $J+1$ units.

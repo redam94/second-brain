@@ -37,7 +37,9 @@ QED combines quantum mechanics with special relativity to describe how light and
 
 > [!definition] QED
 > QED is the quantum field theory of electrons, positrons, and photons. Its Lagrangian (in natural units $\hbar = c = 1$) is:
-> $$\mathcal{L}_{\text{QED}} = \bar{\psi}(i\gamma^\mu D_\mu - m)\psi - \frac{1}{4}F_{\mu\nu}F^{\mu\nu}$$
+> $$
+> \mathcal{L}_{\text{QED}} = \bar{\psi}(i\gamma^\mu D_\mu - m)\psi - \frac{1}{4}F_{\mu\nu}F^{\mu\nu}
+> $$
 > where:
 > - $\psi$ = electron/positron Dirac spinor field
 > - $D_\mu = \partial_\mu + ieA_\mu$ = covariant derivative (couples matter to EM field)
@@ -69,7 +71,9 @@ $$\int_0^\Lambda \frac{d^4k}{k^2} \sim \Lambda^2 \to \infty \text{ as } \Lambda 
 > Renormalization is the systematic procedure for removing ultraviolet divergences from perturbative QFT calculations. The key insight (Schwinger, Feynman, Dyson, Tomonaga ~1950):
 >
 > **The infinite bare parameters (mass $m_0$, charge $e_0$) are not physical observables.** What we measure are the renormalized (physical) mass $m$ and charge $e$. We can absorb the infinities into the unobservable bare parameters:
-> $$m_0 = m + \delta m, \quad e_0 = e + \delta e$$
+> $$
+> m_0 = m + \delta m, \quad e_0 = e + \delta e
+> $$
 > where $\delta m$ and $\delta e$ are (infinite) counterterms. After subtraction, all observable quantities are finite.
 >
 > Tomonaga (Nobel lecture): "The mass and charge observed in experiments are not the original mass and charge but the mass and charge as modified by field reactions, and they are finite... This procedure is called the renormalization of mass and charge."

@@ -66,7 +66,9 @@ Units are drawn i.i.d. from a superpopulation $\mathcal{P}$ over $(X, W, Y(0), Y
 > [!definition] Definition: Family with Bounded Minimax Rate
 > For $a \in (0,1]$, the family $S(a)$ is the set of families $\mathcal{F}$ with a minimax rate $CN^{-a}$:
 >
-> $$\sup_{\mathcal{P} \in \mathcal{F}} \text{EMSE}(\hat{\mu}, \hat{\mu}_N) \leq CN^{-a}$$
+> $$
+> \sup_{\mathcal{P} \in \mathcal{F}} \text{EMSE}(\hat{\mu}, \hat{\mu}_N) \leq CN^{-a}
+> $$
 >
 > for some constant $C$, where $\hat{\mu}_N$ is the best estimator using $N$ samples.
 >
@@ -81,7 +83,9 @@ Units are drawn i.i.d. from a superpopulation $\mathcal{P}$ over $(X, W, Y(0), Y
 > [!definition] Definition: EMSE for CATE Estimator
 > The **Expected Mean Squared Error** for a CATE estimator $\hat{\tau}$ over $N$ observations with $n$ treated units:
 >
-> $$\text{EMSE}(\mathcal{P}, \hat{\tau}^{\text{mn}}) = \mathbb{E}\left[\left(\tau(X) - \hat{\tau}(X)\right)^2 \cdot \sum_{i=1}^{N} w_i\right]$$
+> $$
+> \text{EMSE}(\mathcal{P}, \hat{\tau}^{\text{mn}}) = \mathbb{E}\left[\left(\tau(X) - \hat{\tau}(X)\right)^2 \cdot \sum_{i=1}^{N} w_i\right]
+> $$
 >
 > where the $w_i$ are importance weights ensuring the loss is meaningful when treatment groups are unequal.
 ^def-emse

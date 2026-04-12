@@ -36,17 +36,27 @@ In the [[SMM Estimator for Copulas|Oh-Patton framework]], the researcher typical
 
 > [!theorem] Theorem: Over-Identifying Restrictions Test (Oh & Patton, Proposition 4)
 > **Suppose that all assumptions of Proposition 2 are satisfied** and that the number of moments $m$ is greater than the number of copula parameters $p$. Then the test statistic:
-> $$J_{T,S} \equiv \min(T,S) \, \mathbf{g}_{T,S}(\hat{\boldsymbol{\theta}}_{T,S})' \hat{\mathbf{W}}_T \mathbf{g}_{T,S}(\hat{\boldsymbol{\theta}}_{T,S})$$
+> $$
+> J_{T,S} \equiv \min(T,S) \, \mathbf{g}_{T,S}(\hat{\boldsymbol{\theta}}_{T,S})' \hat{\mathbf{W}}_T \mathbf{g}_{T,S}(\hat{\boldsymbol{\theta}}_{T,S})
+> $$
 >
 > has the limiting distribution:
-> $$J_{T,S} \xrightarrow{d} \mathbf{u}' \mathbf{A}_0' \mathbf{A}_0 \mathbf{u} \quad \text{as } T, S \to \infty$$
+> $$
+> J_{T,S} \xrightarrow{d} \mathbf{u}' \mathbf{A}_0' \mathbf{A}_0 \mathbf{u} \quad \text{as } T, S \to \infty
+> $$
 >
 > where $\mathbf{u} \sim N(\mathbf{0}, \mathbf{I})$ and:
-> $$\mathbf{A}_0 = \mathbf{W}_0^{1/2} \boldsymbol{\Sigma}_0^{1/2} \mathbf{R}_0$$
-> $$\mathbf{R}_0 = \mathbf{I} - \boldsymbol{\Sigma}_0^{-1/2} \mathbf{G}_0 (\mathbf{G}_0' \mathbf{W}_0 \mathbf{G}_0)^{-1} \mathbf{G}_0' \mathbf{W}_0 \boldsymbol{\Sigma}_0^{1/2}$$
+> $$
+> \mathbf{A}_0 = \mathbf{W}_0^{1/2} \boldsymbol{\Sigma}_0^{1/2} \mathbf{R}_0
+> $$
+> $$
+> \mathbf{R}_0 = \mathbf{I} - \boldsymbol{\Sigma}_0^{-1/2} \mathbf{G}_0 (\mathbf{G}_0' \mathbf{W}_0 \mathbf{G}_0)^{-1} \mathbf{G}_0' \mathbf{W}_0 \boldsymbol{\Sigma}_0^{1/2}
+> $$
 >
 > **Special case — efficient weight matrix:** If $\hat{\mathbf{W}}_T = \hat{\boldsymbol{\Sigma}}_{T,B}^{-1}$, then:
-> $$J_{T,S} \xrightarrow{d} \chi^2_{m-p} \quad \text{as usual}$$
+> $$
+> J_{T,S} \xrightarrow{d} \chi^2_{m-p} \quad \text{as usual}
+> $$
 >
 > **General case — identity or other weight matrix:** If $\hat{\mathbf{W}}_T \neq \hat{\boldsymbol{\Sigma}}_{T,B}^{-1}$, the test statistic has a **non-standard** limiting distribution that depends on the sample-specific matrix $\hat{\mathbf{R}}$.
 ^prop-4-j-test

@@ -31,7 +31,9 @@ status: complete
 > [!theorem] Exact Aggregation (Linear Case)
 > For the linear model $Q_i = \beta_0 + \beta_1 X_i + \epsilon_i$, summing over $N$ individuals:
 >
-> $$Q = N\beta_0 + \beta_1 \sum_i X_i + \sum_i \epsilon_i = N\beta_0 + \beta_1 N\bar{X} + N\bar{\epsilon}$$
+> $$
+> Q = N\beta_0 + \beta_1 \sum_i X_i + \sum_i \epsilon_i = N\beta_0 + \beta_1 N\bar{X} + N\bar{\epsilon}
+> $$
 >
 > The aggregate OLS on $\bar{Q}$ and $\bar{X}$ recovers the same $\beta_1$. **Exact aggregation holds for linear models.**
 > ^thm-exact-agg

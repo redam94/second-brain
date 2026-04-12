@@ -34,8 +34,12 @@ These cannot be tested simultaneously within a single classical framework withou
 > [!definition] AIC and BIC
 > For a model with $k$ free parameters and log-likelihood $\ln\hat{L}$:
 >
-> $$\text{AIC} = -2\ln\hat{L} + 2k$$
-> $$\text{BIC} = -2\ln\hat{L} + k\ln T$$
+> $$
+> \text{AIC} = -2\ln\hat{L} + 2k
+> $$
+> $$
+> \text{BIC} = -2\ln\hat{L} + k\ln T
+> $$
 >
 > Select the model with **lowest** AIC or BIC. BIC penalizes complexity more heavily and tends toward parsimony. For large $T$, BIC is consistent (selects the true model if it is in the candidate set); AIC selects the best approximating model.
 >

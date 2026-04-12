@@ -42,7 +42,9 @@ The Oh-Patton SMM estimator addresses this by using only "pure" dependence measu
 The DGP allows each variable to have time-varying conditional mean and variance, governed by parametric models:
 
 > [!definition] Definition: Data Generating Process (Oh & Patton DGP)
-> $$[Y_{1t}, \ldots, Y_{Nt}]' \equiv \mathbf{Y}_t = \boldsymbol{\mu}_t(\phi_0) + \boldsymbol{\sigma}_t(\phi_0) \boldsymbol{\eta}_t$$
+> $$
+> [Y_{1t}, \ldots, Y_{Nt}]' \equiv \mathbf{Y}_t = \boldsymbol{\mu}_t(\phi_0) + \boldsymbol{\sigma}_t(\phi_0) \boldsymbol{\eta}_t
+> $$
 >
 > where:
 > - $\boldsymbol{\mu}_t(\phi) = [\mu_{1t}(\phi), \ldots, \mu_{Nt}(\phi)]'$ — conditional means ($\mathcal{F}_{t-1}$-measurable)
@@ -60,7 +62,9 @@ The DGP allows each variable to have time-varying conditional mean and variance,
 
 > [!important] Marginal Distributions Are Unknown
 > The marginal distributions $F_1, \ldots, F_N$ are estimated nonparametrically using the **empirical distribution function** (EDF):
-> $$\hat{F}_i(y) = (T+1)^{-1} \sum_{t=1}^T \mathbf{1}\{\hat{\eta}_{it} \leq y\}$$
+> $$
+> \hat{F}_i(y) = (T+1)^{-1} \sum_{t=1}^T \mathbf{1}\{\hat{\eta}_{it} \leq y\}
+> $$
 > The $(T+1)$ denominator (rather than $T$) ensures that the pseudo-observations lie strictly in $(0,1)$.
 
 ## Choice of Moments: Pure Dependence Measures
@@ -99,12 +103,18 @@ $$\hat{\tau}_q^{ij} = \begin{cases} \frac{1}{Tq} \sum_{t=1}^T \mathbf{1}\{\hat{F
 > Let $\tilde{\mathbf{m}}_S(\boldsymbol{\theta})$ be the corresponding vector computed from $S$ simulations drawn from $\mathbf{F}_x(\boldsymbol{\theta})$, $\{\mathbf{X}_s\}_{s=1}^S$.
 >
 > Define the moment difference:
-> $$\mathbf{g}_{T,S}(\boldsymbol{\theta}) \equiv \hat{\mathbf{m}}_T - \tilde{\mathbf{m}}_S(\boldsymbol{\theta})$$
+> $$
+> \mathbf{g}_{T,S}(\boldsymbol{\theta}) \equiv \hat{\mathbf{m}}_T - \tilde{\mathbf{m}}_S(\boldsymbol{\theta})
+> $$
 >
 > The SMM estimator is:
-> $$\hat{\boldsymbol{\theta}}_{T,S} = \arg\min_{\boldsymbol{\theta} \in \Theta} Q_{T,S}(\boldsymbol{\theta})$$
+> $$
+> \hat{\boldsymbol{\theta}}_{T,S} = \arg\min_{\boldsymbol{\theta} \in \Theta} Q_{T,S}(\boldsymbol{\theta})
+> $$
 > where:
-> $$Q_{T,S}(\boldsymbol{\theta}) = \mathbf{g}_{T,S}'(\boldsymbol{\theta}) \, \hat{\mathbf{W}}_T \, \mathbf{g}_{T,S}(\boldsymbol{\theta})$$
+> $$
+> Q_{T,S}(\boldsymbol{\theta}) = \mathbf{g}_{T,S}'(\boldsymbol{\theta}) \, \hat{\mathbf{W}}_T \, \mathbf{g}_{T,S}(\boldsymbol{\theta})
+> $$
 >
 > and $\hat{\mathbf{W}}_T$ is a positive definite weight matrix. For identification, $m \geq p$ (at least as many moment conditions as parameters).
 ^def-smm-copula
@@ -137,7 +147,9 @@ For the **factor copula**, neither the likelihood nor any dependence measures ar
 Oh and Patton (2011) introduce a factor copula as a key application:
 
 > [!definition] Definition: Factor Copula (Oh & Patton, 2011)
-> $$X_i = Z + \varepsilon_i, \quad i = 1, 2, \ldots, N$$
+> $$
+> X_i = Z + \varepsilon_i, \quad i = 1, 2, \ldots, N
+> $$
 > where:
 > - $Z \sim \text{Skew-}t(0, \sigma^2, \nu^{-1}, \lambda)$ — skewed $t$ distribution of Hansen (1994)
 > - $\varepsilon_i \sim iid \; t(\nu^{-1})$ — Student's $t$ with $\nu^{-1}$ degrees of freedom

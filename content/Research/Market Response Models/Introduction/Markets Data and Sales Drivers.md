@@ -45,7 +45,9 @@ status: complete
 > [!definition] Stock Variable (Advertising Goodwill)
 > An **advertising goodwill stock** $G_t$ accumulates past advertising with geometric decay:
 >
-> $$G_t = A_t + \lambda G_{t-1}, \quad 0 < \lambda < 1$$
+> $$
+> G_t = A_t + \lambda G_{t-1}, \quad 0 < \lambda < 1
+> $$
 >
 > where $\lambda$ is the **retention rate** (carryover parameter) and $A_t$ is current advertising spend. The stock formulation is equivalent to the Koyck distributed lag — see [[Carryover Effects and Distributed Lags]].
 > ^def-stock
@@ -67,7 +69,9 @@ status: complete
 > [!definition] GRPs
 > **Gross Rating Points** = reach × frequency. One GRP = 1% of the target audience exposed once. GRPs are the standard currency for advertising media planning and are used as the advertising input $A_t$ in many response models.
 >
-> $$\text{GRP} = \text{Reach} \times \text{Average Frequency}$$
+> $$
+> \text{GRP} = \text{Reach} \times \text{Average Frequency}
+> $$
 > ^def-grp
 
 ## Baseline Volume

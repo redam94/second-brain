@@ -37,11 +37,15 @@ The **retention rate** $\lambda \in (0,1)$ governs how quickly these effects dec
 
 > [!definition] Koyck / Geometric Lag
 > Starting from an infinite distributed lag:
-> $$Q_t = \beta_0 + \sum_{k=0}^{\infty} \beta_{1,k} X_{t-k} + w_t$$
+> $$
+> Q_t = \beta_0 + \sum_{k=0}^{\infty} \beta_{1,k} X_{t-k} + w_t
+> $$
 >
 > Imposing geometric decay $\beta_{1,k} = \beta_1 \lambda^k$ and applying the Koyck transformation yields:
 >
-> $$Q_t = (1-\lambda)\beta_0 + \beta_1(1-\lambda)X_t + \lambda Q_{t-1} + (w_t - \lambda w_{t-1}) \tag{Eq 4.10}$$
+> $$
+> Q_t = (1-\lambda)\beta_0 + \beta_1(1-\lambda)X_t + \lambda Q_{t-1} + (w_t - \lambda w_{t-1}) \tag{Eq 4.10}
+> $$
 >
 > - $\lambda$: **carryover** (retention rate); $0 < \lambda < 1$
 > - $\beta_1(1-\lambda)$: short-run effect
@@ -52,7 +56,9 @@ The **retention rate** $\lambda \in (0,1)$ governs how quickly these effects dec
 > [!theorem] Long-Run Multiplier
 > For the Koyck model, the long-run effect of a permanent unit increase in $X$ is:
 >
-> $$\text{LRM} = \frac{\beta_1(1-\lambda)}{1-\lambda} = \beta_1$$
+> $$
+> \text{LRM} = \frac{\beta_1(1-\lambda)}{1-\lambda} = \beta_1
+> $$
 >
 > The **mean lag** (average delay before the effect materializes) is $\lambda/(1-\lambda)$ periods.
 > ^thm-lrm
@@ -62,7 +68,9 @@ The **retention rate** $\lambda \in (0,1)$ governs how quickly these effects dec
 > [!definition] GLPF Model
 > Augments the Koyck model with **purchase feedback**: a new customer created by advertising in period $t$ generates repeat purchases in future periods. The model (Eq 4.21):
 >
-> $$Q_t = \alpha + \beta_1 X_t + \phi Q_{t-1} + \text{Purchase feedback term} + u_t$$
+> $$
+> Q_t = \alpha + \beta_1 X_t + \phi Q_{t-1} + \text{Purchase feedback term} + u_t
+> $$
 >
 > where $\phi$ captures both advertising carryover and the repeat-purchase rate. Identification requires separating $\lambda$ (advertising decay) from the repurchase probability.
 > ^def-glpf
@@ -72,7 +80,9 @@ The **retention rate** $\lambda \in (0,1)$ governs how quickly these effects dec
 > [!definition] Almon PDL
 > Instead of geometric decay, the PDL places polynomial restrictions on the lag coefficients:
 >
-> $$\beta_k = \alpha_0 + \alpha_1 k + \alpha_2 k^2 + \cdots + \alpha_p k^p, \quad k = 0, 1, \ldots, K$$
+> $$
+> \beta_k = \alpha_0 + \alpha_1 k + \alpha_2 k^2 + \cdots + \alpha_p k^p, \quad k = 0, 1, \ldots, K
+> $$
 >
 > This smoothness restriction reduces the number of free parameters from $K+1$ to $p+1$ while allowing flexible lag shapes (inverted-U, hump-shaped, etc.).
 >
@@ -84,7 +94,9 @@ The **retention rate** $\lambda \in (0,1)$ governs how quickly these effects dec
 > [!definition] ADL Model
 > The general **ADL(r, s)** model combines lagged dependent variable (autoregression) with distributed lags of the input:
 >
-> $$Q_t = \alpha + \sum_{i=1}^{r} \gamma_i Q_{t-i} + \sum_{k=0}^{s} \beta_k X_{t-k} + w_t \tag{Eq 4.24}$$
+> $$
+> Q_t = \alpha + \sum_{i=1}^{r} \gamma_i Q_{t-i} + \sum_{k=0}^{s} \beta_k X_{t-k} + w_t \tag{Eq 4.24}
+> $$
 >
 > - $r$: autoregressive order (number of lagged sales terms)
 > - $s$: distributed lag order (number of lagged advertising terms)
@@ -111,7 +123,9 @@ Six cases for the lead/lag relationship between advertising $X_t$ and sales $Q_t
 > [!definition] Return-to-Normality Model
 > Parameters can evolve stochastically. The **return-to-normality** model (Eq 4.36):
 >
-> $$\beta_t = (1-\phi)\bar{\beta} + \phi \beta_{t-1} + \nu_t$$
+> $$
+> \beta_t = (1-\phi)\bar{\beta} + \phi \beta_{t-1} + \nu_t
+> $$
 >
 > where $\bar{\beta}$ is the long-run mean and $\phi$ governs persistence. When $\phi = 0$, $\beta_t = \bar{\beta} + \nu_t$ (IID noise around mean). Estimated via Kalman filter.
 >
@@ -123,12 +137,16 @@ Six cases for the lead/lag relationship between advertising $X_t$ and sales $Q_t
 > [!definition] Ratchet Model
 > **Asymmetric response**: sales react differently to increasing vs. decreasing advertising:
 >
-> $$Q_t = \beta_0 + \beta_1 X^I_t + \beta_2 X^D_t, \quad \beta_1 > \beta_2 \tag{Eq 4.45}$$
+> $$
+> Q_t = \beta_0 + \beta_1 X^I_t + \beta_2 X^D_t, \quad \beta_1 > \beta_2 \tag{Eq 4.45}
+> $$
 >
 > where $X^I_t = X_t - X_{t-1}$ when $X_t > X_{t-1}$ (else 0) and $X^D_t = X_t - X_{t-1}$ when $X_t < X_{t-1}$ (else 0).
 >
 > Alternative: **historical maximum** model
-> $$Q_t = \beta_0 + \beta_1 X_t + \beta_2 \max_{i \leq t}(X_i) \tag{Eq 4.47}$$
+> $$
+> Q_t = \beta_0 + \beta_1 X_t + \beta_2 \max_{i \leq t}(X_i) \tag{Eq 4.47}
+> $$
 >
 > capturing **hysteresis**: once a high advertising level has been achieved, a reduction does not fully undo the brand-building effect (fast learning/slow forgetting, Figure 4-2 in book).
 > ^def-ratchet

@@ -27,7 +27,9 @@ status: complete
 > [!definition] Attraction-Based Market Share
 > Brand $i$'s market share is the ratio of its attraction $A_i$ to total category attraction:
 >
-> $$MS_i = \frac{A_i}{\sum_{j=1}^{B} A_j}$$
+> $$
+> MS_i = \frac{A_i}{\sum_{j=1}^{B} A_j}
+> $$
 >
 > Attraction $A_i$ is a function of brand $i$'s marketing mix. This formulation guarantees $\sum_i MS_i = 1$ and $0 < MS_i < 1$.
 > ^def-attraction
@@ -37,12 +39,16 @@ status: complete
 > [!definition] MCI
 > The **MCI model** specifies attraction multiplicatively:
 >
-> $$MS_i = \frac{\prod_k X_{ik}^{\beta_k}}{\sum_{j=1}^{B} \prod_k X_{jk}^{\beta_k}}$$
+> $$
+> MS_i = \frac{\prod_k X_{ik}^{\beta_k}}{\sum_{j=1}^{B} \prod_k X_{jk}^{\beta_k}}
+> $$
 >
 > where $X_{ik}$ is brand $i$'s level of marketing variable $k$, and $\beta_k$ is the common response parameter for variable $k$.
 >
 > **Log-centering transformation** makes MCI linear:
-> $$\ln\!\left(\frac{MS_i}{\bar{MS}}\right) = \sum_k \beta_k \ln\!\left(\frac{X_{ik}}{\bar{X}_k}\right) + \epsilon_i$$
+> $$
+> \ln\!\left(\frac{MS_i}{\bar{MS}}\right) = \sum_k \beta_k \ln\!\left(\frac{X_{ik}}{\bar{X}_k}\right) + \epsilon_i
+> $$
 >
 > where bars denote geometric means. This can be estimated by OLS.
 >
@@ -55,7 +61,9 @@ status: complete
 > [!definition] MNL Market Share
 > The **MNL model** uses additive utility (log-attraction = linear in marketing variables):
 >
-> $$MS_i = \frac{\exp\!\left(\sum_k \beta_k X_{ik}\right)}{\sum_{j=1}^{B} \exp\!\left(\sum_k \beta_k X_{jk}\right)}$$
+> $$
+> MS_i = \frac{\exp\!\left(\sum_k \beta_k X_{ik}\right)}{\sum_{j=1}^{B} \exp\!\left(\sum_k \beta_k X_{jk}\right)}
+> $$
 >
 > This is equivalent to assuming consumers choose brands by utility maximization with logistically distributed errors (McFadden 1974). Related to [[Logit Purchase Decision Model]].
 >
@@ -68,7 +76,9 @@ status: complete
 > [!theorem] Independence of Irrelevant Alternatives (IIA)
 > Both MCI and MNL satisfy the **IIA property**: the ratio $MS_i / MS_j$ depends only on brands $i$ and $j$'s attributes, not on any other brand $k$. Formally:
 >
-> $$\frac{MS_i}{MS_j} = \frac{A_i}{A_j}$$
+> $$
+> \frac{MS_i}{MS_j} = \frac{A_i}{A_j}
+> $$
 >
 > **Implication:** Proportional draw — a new brand takes share from all existing brands proportionally to their current shares. This is violated in practice when new brands compete more closely with some brands than others (e.g., a private label competes mainly with lower-priced national brands).
 >
