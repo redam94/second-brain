@@ -67,3 +67,5 @@ Values near 0 or 1 indicate model misfit. Unlike classical p-values, this accoun
 - [[Hierarchical Models]] — model checking for the eight schools example
 - [[Differences-in-Differences]] — posterior predictive checks can validate common trends assumptions
 - [[Regression Discontinuity Designs]] — Bayesian model checks for formalizing RD validity tests
+- [[Statistical Rethinking - Overview]] — McElreath's iterative golem-building approach centers on posterior predictive checks (Ch. 6)
+- [[Decision Analysis]] — decisions downstream of a model require the model to pass posterior predictive checks first

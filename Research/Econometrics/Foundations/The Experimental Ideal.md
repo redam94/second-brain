@@ -73,3 +73,4 @@ $$Y_i = \alpha + \rho D_i + \eta_i$$
 - [[Omitted Variables Bias]] — the confounding mechanism that randomization eliminates by design
 - [[Multiple Testing Corrections]] — multiple comparisons inflate false positives even in well-designed experiments
 - [[Regression Discontinuity Designs]] — the local experiment analogue: credible quasi-experimental identification near a threshold
+- [[Multiple Comparisons - Bayesian Perspective]] — even well-designed experiments face multiplicity; Bayesian multilevel models handle it structurally

@@ -119,3 +119,4 @@ The IHDP model is extended to include birth-weight subgroups (lighter vs. heavie
 - [[Forking Paths and Bayesian Approaches]] — complementary discussion of Bayesian solutions to multiplicity
 - [[Hierarchical Linear Models]] — regression extensions of multilevel models
 - [[Power Analysis and Sample Size]] — underpowered studies amplify Type S and Type M errors
+- [[The Experimental Ideal]] — well-designed experiments with pre-registration reduce the multiplicity that motivates this paper's argument

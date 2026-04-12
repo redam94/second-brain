@@ -64,3 +64,5 @@ $$E[Y_i|D_i=1] - E[Y_i|D_i=0] = \underbrace{E[Y_{1i}-Y_{0i}|D_i=1]}_{\text{ATT}}
 - [[Mostly Harmless Econometrics - Overview]]
 - [[Data Collection Models]] — Bayesian treatment of ignorability and selection mechanisms
 - [[Synthetic Control Extensions]] — penalized and matrix completion methods that address selection when pre-treatment fit is imperfect
+- [[Xu 2016 - Overview]] — GSC as a general solution to the selection problem under time-varying confounding
+- [[Synthetic Control Inference and Diagnostics]] — permutation inference for the synthetic control estimator that addresses selection

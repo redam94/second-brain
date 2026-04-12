@@ -66,3 +66,4 @@ A GLM has three components:
 - [[Discrete Choice Models]] — GLMs with categorical/multinomial likelihood for econometric choice data
 - [[Quantile Regression]] — Bayesian quantile regression uses the asymmetric Laplace, a GLM-family distribution
 - [[Monsters and Mixtures]] — zero-inflated and hurdle extensions of Poisson/binomial GLMs for over-dispersed count data
+- [[Hierarchical Models]] — the natural next step: add group-level structure to any GLM via partial pooling

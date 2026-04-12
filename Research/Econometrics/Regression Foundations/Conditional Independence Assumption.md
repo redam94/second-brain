@@ -74,3 +74,4 @@ The coefficient $\rho$ has a causal interpretation as the average causal effect.
 - [[Omitted Variables Bias]]
 - [[The Selection Problem]]
 - [[Data Collection Models]] — Bayesian treatment of ignorability, the direct parallel to CIA
+- [[Directed Acyclic Graphs]] — DAGs provide the algorithmic tool for finding the adjustment set that satisfies the CIA

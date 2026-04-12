@@ -15,6 +15,15 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 6"
 chapter: "6"
 status: complete
+doc_type: concept
+source_location: "Ch. 6, pp. 251-284"
+depends_on:
+  - "[[Markets Data and Sales Drivers]]"
+  - "[[Carryover Effects and Distributed Lags]]"
+  - "[[Design of Dynamic Response Models]]"
+used_by:
+  - "[[Transfer Function Model]]"
+  - "[[Multivariate Persistence and Cointegration]]"
 ---
 
 # Single Marketing Time Series

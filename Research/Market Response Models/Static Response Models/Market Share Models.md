@@ -15,6 +15,17 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 3"
 chapter: "3"
 status: complete
+doc_type: concept
+source_location: "Ch. 3, pp. 94-128"
+depends_on:
+  - "[[Functional Forms in Marketing]]"
+  - "[[Markets Data and Sales Drivers]]"
+used_by:
+  - "[[Design of Static Response Models]]"
+  - "[[Parameter Estimation in Market Response]]"
+  - "[[Reaction Functions and Competitive Dynamics]]"
+  - "[[Price and Distribution Effects]]"
+  - "[[Optimal Marketing Decisions and Forecasting]]"
 ---
 
 # Market Share Models

@@ -14,6 +14,21 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 3"
 chapter: "3"
 status: complete
+doc_type: concept
+source_location: "Ch. 3, Sec. 3.2, pp. 94-128"
+depends_on:
+  - "[[Markets Data and Sales Drivers]]"
+  - "[[Response Models for Marketing Management]]"
+used_by:
+  - "[[Market Share Models]]"
+  - "[[Aggregation of Relations]]"
+  - "[[Design of Static Response Models]]"
+  - "[[Shape of the Marketing Response Function]]"
+  - "[[Parameter Estimation in Market Response]]"
+  - "[[Flexible Functional Forms]]"
+  - "[[Advertising and Promotion Effects]]"
+  - "[[Price and Distribution Effects]]"
+  - "[[Optimal Marketing Decisions and Forecasting]]"
 ---
 
 # Functional Forms in Marketing

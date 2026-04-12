@@ -89,7 +89,8 @@ The result is a **posterior distribution over excess deaths** — not just a poi
 ## Connections
 
 - Compare with [[Bayesian Non-parametric Causal Inference]] (non-parametric approach to causal estimation)
-- [[Difference in differences]] — related quasi-experimental strategy (compare treated vs. control across time)
+- [[Differences-in-Differences]] — quasi-experimental strategy (compare treated vs. control across time); DiD is the parametric version of the same counterfactual logic
+- [[Data Collection Models]] — both approaches rely on ignorability: the pre-intervention model must capture all confounders
 - ZeroSumNormal constraint: related to sum-to-zero constraints in [[Generalized Linear Models]]
 - Related to Google's **CausalImpact** framework (Bayesian structural time-series for intervention analysis)
 

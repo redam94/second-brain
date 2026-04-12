@@ -16,6 +16,20 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 4"
 chapter: "4"
 status: complete
+doc_type: concept
+source_location: "Ch. 4, Sec. 4.2, pp. 142-155"
+depends_on:
+  - "[[Functional Forms in Marketing]]"
+  - "[[Markets Data and Sales Drivers]]"
+  - "[[Design of Static Response Models]]"
+used_by:
+  - "[[Design of Dynamic Response Models]]"
+  - "[[Shape of the Marketing Response Function]]"
+  - "[[Transfer Function Model]]"
+  - "[[Single Marketing Time Series]]"
+  - "[[Advertising and Promotion Effects]]"
+  - "[[Optimal Marketing Decisions and Forecasting]]"
+  - "[[Implementation of Market Response Models]]"
 ---
 
 # Carryover Effects and Distributed Lags

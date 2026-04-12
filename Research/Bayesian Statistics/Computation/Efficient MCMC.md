@@ -66,3 +66,4 @@ Stan is the modern platform for Bayesian inference:
 - [[MCMC Basics]] — the foundational algorithms
 - [[Approximation Methods]] — alternatives when MCMC is too slow
 - [[Computational Troubleshooting]] — diagnosing and fixing HMC issues
+- [[Hierarchical Models]] — non-centered parameterization (BDA3 Ch. 13) is the key reparameterization trick for efficient HMC on hierarchical posteriors

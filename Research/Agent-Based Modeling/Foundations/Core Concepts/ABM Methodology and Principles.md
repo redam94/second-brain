@@ -83,3 +83,4 @@ According to Bonabeau (2002), ABM is most useful when:
 - [[ABM vs Equation-Based Modeling]] — formal comparison of ABM and differential equation models
 - [[Heterogeneity in Agent Models]] — how individual differences are represented
 - [[Agent Decision Rules and Bounded Rationality]] — how agents make decisions
+- [[Genetic Algorithm Calibration for ABM]] — how GA is used to calibrate agent populations to match observed market data

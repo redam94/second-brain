@@ -114,6 +114,13 @@ The Bayesian version gives a posterior over the employment effect, propagating u
 - [[Bayesian Non-parametric Causal Inference]] — non-parametric alternative when parallel trends is implausible
 - [[The Experimental Ideal]] and [[The Selection Problem]] — why we need quasi-experimental designs
 
+## See Also
+
+- [[Differences-in-Differences]] — frequentist DiD, fixed effects, and the parallel trends assumption
+- [[Synthetic Control Bias Theory]] — the linear factor model that generalizes DiD by allowing time-varying factor loadings
+- [[Local Average Treatment Effects]] — when DiD treatment effects are heterogeneous across complier subgroups
+- [[Counterfactual Inference]] — related counterfactual framework (pre/post, same group, no control)
+
 ## Source
 
 - [[raw/Difference in differences]] — PyMC example by Benjamin T. Vincent (2022); Card & Krueger minimum wage example

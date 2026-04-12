@@ -13,6 +13,14 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 10"
 chapter: "10"
 status: complete
+doc_type: concept
+source_location: "Ch. 10, pp. 407-425"
+depends_on:
+  - "[[Design of Static Response Models]]"
+  - "[[Design of Dynamic Response Models]]"
+  - "[[Parameter Estimation in Market Response]]"
+  - "[[Optimal Marketing Decisions and Forecasting]]"
+used_by: []
 ---
 
 # Implementation of Market Response Models

@@ -234,3 +234,5 @@ When a confounder creates a spurious correlation, we see an aggregate correlatio
 - [[The Selection Problem]] — Potential outcomes framework for the same problem
 - [[Bayesian Inverse Probability Weighting]] — Practical application of DAG adjustment sets
 - [[Instrumental Variables]] — When backdoor adjustment is insufficient (unobserved confounders)
+- [[Regression and the CEF]] — regression is the estimator applied once a valid adjustment set is identified from the DAG
+- [[Conditional Independence Assumption]] — CIA is the statistical assumption that a valid DAG adjustment set justifies

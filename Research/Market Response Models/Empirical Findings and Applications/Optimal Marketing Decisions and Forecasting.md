@@ -14,6 +14,17 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Chs. 9-10"
 chapter: "9-10"
 status: complete
+doc_type: concept
+source_location: "Ch. 9, pp. 357-403"
+depends_on:
+  - "[[Advertising and Promotion Effects]]"
+  - "[[Price and Distribution Effects]]"
+  - "[[Shape of the Marketing Response Function]]"
+  - "[[Multivariate Persistence and Cointegration]]"
+  - "[[Functional Forms in Marketing]]"
+  - "[[Response Models for Marketing Management]]"
+used_by:
+  - "[[Implementation of Market Response Models]]"
 ---
 
 # Optimal Marketing Decisions and Forecasting

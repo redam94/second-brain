@@ -95,3 +95,4 @@ The key insight: by estimating the IFE model on the control group only, then pro
 - [[Synthetic Control Extensions]] — survey of extensions including GSC, elastic net, matrix completion
 - [[Differences-in-Differences]] — the special case when parallel trends holds
 - [[Abadie 2021 - Overview]] — complementary methodological guide on canonical SC feasibility
+- [[The Selection Problem]] — GSC addresses the selection problem when parallel trends (DiD) or convex hull (SC) conditions fail
