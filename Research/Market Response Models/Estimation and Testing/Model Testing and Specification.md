@@ -5,6 +5,7 @@ aliases:
   - "RESET Test Marketing"
   - "Specification Errors"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/hypothesis-testing

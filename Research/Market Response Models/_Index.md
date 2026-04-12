@@ -2,8 +2,10 @@
 title: "Index: Market Response Models"
 tags:
   - type/index
+  - source/ingested
   - topic/market-response
   - source/hanssens-parsons-schultz-2001
+parent: "[[Research/_Index|Research]]"
 date_updated: 2026-04-11
 concept_count: 25
 ---

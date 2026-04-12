@@ -2,7 +2,9 @@
 title: "Index: Empirical Findings and Applications"
 tags:
   - type/index
+  - source/ingested
   - topic/market-response
+parent: "[[../_Index|Market Response Models]]"
 date_updated: 2026-04-11
 ---
 
@@ -16,10 +18,12 @@ date_updated: 2026-04-11
 > - Dorfman-Steiner; ADBUDG optimization; VAR forecasting → [[Optimal Marketing Decisions and Forecasting]]
 > - Barriers to adoption, DSS, Kalman filter updating → [[Implementation of Market Response Models]]
 
-| Note | Topic |
-|------|-------|
-| [[Marketing Generalizations Overview]] | Meta-analysis, primary/selective demand, measurement error |
-| [[Advertising and Promotion Effects]] | Advertising elasticity, duration, coupon elasticity, TPR, display, Frito-Lay |
-| [[Price and Distribution Effects]] | Own-price −2.5, cross-price 0.5, asymmetry, clout/vulnerability, distribution |
-| [[Optimal Marketing Decisions and Forecasting]] | Dorfman-Steiner, ADBUDG optimization, forecasting methods, HP case |
-| [[Implementation of Market Response Models]] | DSS, calibration vs estimation, adaptive updating, organizational conditions |
+## Concept Map
+
+| Concept | Note | Type | Depends On | Key Result |
+|---------|------|------|-----------|------------|
+| Generalizations | [[Marketing Generalizations Overview]] | concept | [[Parameter Estimation in Market Response]], [[Markets Data and Sales Drivers]] | Meta-analysis methodology; primary vs selective demand; measurement error adjustments |
+| Advertising & Promotion | [[Advertising and Promotion Effects]] | concept | [[Marketing Generalizations Overview]], [[Carryover Effects and Distributed Lags]] | Advertising elasticity ≈ 0.10; duration 6–9 months; coupon 0.07; display/feature multipliers |
+| Price & Distribution | [[Price and Distribution Effects]] | concept | [[Marketing Generalizations Overview]], [[Market Share Models]] | Own-price ≈ −2.5; cross-price ≈ +0.5; price asymmetry; clout/vulnerability matrix |
+| Optimal Decisions | [[Optimal Marketing Decisions and Forecasting]] | concept | [[Advertising and Promotion Effects]], [[Price and Distribution Effects]] | Dorfman-Steiner ($A^*/S^* = \eta_{QA}/|\eta_{QP}|$); ADBUDG optimization; Holt-Winters forecasting |
+| Implementation | [[Implementation of Market Response Models]] | concept | [[Design of Static Response Models]], [[Design of Dynamic Response Models]], [[Parameter Estimation in Market Response]] | DSS architecture; calibration vs estimation; Kalman adaptive updating; organizational barriers |

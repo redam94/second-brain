@@ -4,6 +4,7 @@ aliases:
   - "Optimal Marketing Budget"
   - "Marketing Mix Optimization"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/optimization

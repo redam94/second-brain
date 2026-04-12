@@ -2,7 +2,9 @@
 title: "Index: Time Series Analysis"
 tags:
   - type/index
+  - source/ingested
   - topic/market-response
+parent: "[[../_Index|Market Response Models]]"
 date_updated: 2026-04-11
 ---
 
@@ -15,9 +17,11 @@ date_updated: 2026-04-11
 > - VAR, impulse response, cointegration, ECM, 4 strategic scenarios → [[Multivariate Persistence and Cointegration]]
 > - Granger causality, IRF, FEVD, Cholesky ordering → [[Empirical Causal Ordering]]
 
-| Note | Topic |
-|------|-------|
-| [[Single Marketing Time Series]] | Stationarity Eqs 6.5-6.6, AR/MA/ARMA/ARIMA, ACF/PACF diagnostics, Box-Jenkins |
-| [[Transfer Function Model]] | TF model Eqs 7.7-7.8, prewhitening Eqs 7.9-7.12, CCF patterns, intervention analysis |
-| [[Multivariate Persistence and Cointegration]] | VAR Eq 7.22, 6 channels, persistence, cointegration Eq 7.26, ECM Eq 7.29, 4 strategic scenarios |
-| [[Empirical Causal Ordering]] | Granger causality, IRF, FEVD, Cholesky decomposition, causal ordering in marketing |
+## Concept Map
+
+| Concept | Note | Type | Depends On | Key Result |
+|---------|------|------|-----------|------------|
+| Single Time Series | [[Single Marketing Time Series]] | concept | [[Markets Data and Sales Drivers]], [[Carryover Effects and Distributed Lags]] | Stationarity (Eqs 6.5-6.6); AR/MA/ARMA/ARIMA; ACF/PACF; Box-Jenkins 4 stages |
+| Transfer Functions | [[Transfer Function Model]] | concept | [[Single Marketing Time Series]], [[Carryover Effects and Distributed Lags]] | TF model (Eqs 7.7-7.8); prewhitening (Eqs 7.9-7.12); CCF patterns; intervention analysis |
+| VAR & Cointegration | [[Multivariate Persistence and Cointegration]] | concept | [[Transfer Function Model]], [[Single Marketing Time Series]] | VAR (Eq 7.22); 6 persistence channels; cointegration (Eq 7.26); ECM (Eq 7.29); 4 strategic scenarios |
+| Causal Ordering | [[Empirical Causal Ordering]] | concept | [[Multivariate Persistence and Cointegration]], [[Reaction Functions and Competitive Dynamics]] | Granger causality; IRF; FEVD; Cholesky decomposition; reverse causality tests |

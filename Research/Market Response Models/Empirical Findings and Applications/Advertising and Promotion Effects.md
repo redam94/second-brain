@@ -4,6 +4,7 @@ aliases:
   - "Advertising Elasticity Generalizations"
   - "Promotion Effects Marketing"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/advertising
