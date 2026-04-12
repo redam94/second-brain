@@ -136,3 +136,4 @@ The regression estimator forces a perfect fit of the covariates ($\bar{\mathbf{X
 - [[Synthetic Control Requirements]] — the convex hull condition and contextual requirements derived from this theory
 - [[Differences-in-Differences]] — the linear factor model nests DiD as a special case ($\lambda_t = $ constant)
 - [[Abadie 2021 - Overview]] — full paper overview
+- [[Bayesian Difference in Differences]] — Bayesian DiD is the parallel-trends special case ($\lambda_t = $ constant) of this linear factor model

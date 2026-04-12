@@ -15,6 +15,15 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 8"
 chapter: "8"
 status: complete
+doc_type: concept
+source_location: "Ch. 8, pp. 328-355"
+depends_on:
+  - "[[Marketing Generalizations Overview]]"
+  - "[[Market Share Models]]"
+  - "[[Reaction Functions and Competitive Dynamics]]"
+  - "[[Multivariate Persistence and Cointegration]]"
+used_by:
+  - "[[Optimal Marketing Decisions and Forecasting]]"
 ---
 
 # Price and Distribution Effects

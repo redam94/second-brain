@@ -13,6 +13,13 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 5"
 chapter: "5"
 status: complete
+doc_type: concept
+source_location: "Ch. 5, Sec. 5.4, pp. 229-247"
+depends_on:
+  - "[[Model Testing and Specification]]"
+  - "[[Flexible Functional Forms]]"
+  - "[[Parameter Estimation in Market Response]]"
+used_by: []
 ---
 
 # Model Selection and Exploratory Analysis

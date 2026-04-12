@@ -13,6 +13,14 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 1"
 chapter: "1"
 status: complete
+doc_type: concept
+source_location: "Ch. 1, pp. 3-21"
+depends_on:
+  - "[[Market Response Models - Overview]]"
+used_by:
+  - "[[Markets Data and Sales Drivers]]"
+  - "[[Optimal Marketing Decisions and Forecasting]]"
+  - "[[Implementation of Market Response Models]]"
 ---
 
 # Response Models for Marketing Management

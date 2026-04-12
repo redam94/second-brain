@@ -137,3 +137,7 @@ Hierarchical models appear naturally in causal inference:
 - [[Overfitting and Information Criteria]] — model comparison and regularization connect directly to partial pooling
 - [[Garden of Forking Paths]] — hierarchical models address multiple comparisons that forking paths create
 - [[Researcher Degrees of Freedom]] — partial pooling regularizes the researcher-flexibility problem structurally
+- [[Linear Models in Statistical Rethinking]] — the single-level Gaussian model that hierarchical models extend (McElreath Ch. 4 → Ch. 12)
+- [[Generalized Linear Models]] — hierarchical GLMs add group-level random effects to non-Gaussian likelihoods
+- [[Efficient MCMC]] — HMC with non-centered parameterization is required for efficient sampling from hierarchical posteriors
+- [[Power Analysis and Sample Size]] — multilevel models improve effective power by pooling information across groups

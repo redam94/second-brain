@@ -59,3 +59,4 @@ Common loss functions yield familiar estimators:
 - [[Model Comparison]] — choosing between models before making decisions
 - [[Overfitting and Information Criteria]] — model selection criteria that inform which posterior to use
 - [[Counterfactual Inference]] — counterfactual thinking as a prerequisite for decision framing
+- [[Model Checking]] — a model must pass posterior predictive checks before its posterior can be trusted in a decision analysis

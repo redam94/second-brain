@@ -130,3 +130,4 @@ Cattaneo, Feng, and Titiunik (2021) propose predictive intervals for $\hat{\tau}
 - [[Synthetic Control Bias Theory]] — the linear factor model that motivates this inference approach
 - [[Synthetic Control Requirements]] — conditions under which inference is valid
 - [[Abadie 2021 - Overview]] — full paper overview
+- [[The Selection Problem]] — permutation inference validates that the pre-treatment matching solved the selection problem

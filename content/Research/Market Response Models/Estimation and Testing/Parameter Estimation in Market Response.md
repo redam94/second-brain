@@ -15,6 +15,20 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 5"
 chapter: "5"
 status: complete
+doc_type: concept
+source_location: "Ch. 5, Sec. 5.1, pp. 185-200"
+depends_on:
+  - "[[Design of Static Response Models]]"
+  - "[[Design of Dynamic Response Models]]"
+  - "[[Functional Forms in Marketing]]"
+  - "[[Market Share Models]]"
+used_by:
+  - "[[Model Testing and Specification]]"
+  - "[[Flexible Functional Forms]]"
+  - "[[Model Selection and Exploratory Analysis]]"
+  - "[[Marketing Generalizations Overview]]"
+  - "[[Optimal Marketing Decisions and Forecasting]]"
+  - "[[Implementation of Market Response Models]]"
 ---
 
 # Parameter Estimation in Market Response

@@ -14,6 +14,16 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 4"
 chapter: "4"
 status: complete
+doc_type: concept
+source_location: "Ch. 4, Sec. 4.4, pp. 166-172"
+depends_on:
+  - "[[Carryover Effects and Distributed Lags]]"
+  - "[[Market Share Models]]"
+used_by:
+  - "[[Design of Dynamic Response Models]]"
+  - "[[Multivariate Persistence and Cointegration]]"
+  - "[[Empirical Causal Ordering]]"
+  - "[[Price and Distribution Effects]]"
 ---
 
 # Reaction Functions and Competitive Dynamics

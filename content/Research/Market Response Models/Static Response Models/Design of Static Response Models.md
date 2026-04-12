@@ -13,6 +13,16 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 3"
 chapter: "3"
 status: complete
+doc_type: concept
+source_location: "Ch. 3, pp. 89-137"
+depends_on:
+  - "[[Functional Forms in Marketing]]"
+  - "[[Market Share Models]]"
+  - "[[Aggregation of Relations]]"
+used_by:
+  - "[[Design of Dynamic Response Models]]"
+  - "[[Parameter Estimation in Market Response]]"
+  - "[[Implementation of Market Response Models]]"
 ---
 
 # Design of Static Response Models

@@ -13,6 +13,14 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 3"
 chapter: "3"
 status: complete
+doc_type: concept
+source_location: "Ch. 3, Sec. 3.3, pp. 129-137"
+depends_on:
+  - "[[Functional Forms in Marketing]]"
+  - "[[Markets Data and Sales Drivers]]"
+used_by:
+  - "[[Design of Static Response Models]]"
+  - "[[Carryover Effects and Distributed Lags]]"
 ---
 
 # Aggregation of Relations

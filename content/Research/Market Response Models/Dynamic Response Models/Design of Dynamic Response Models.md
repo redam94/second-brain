@@ -13,6 +13,16 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 4"
 chapter: "4"
 status: complete
+doc_type: concept
+source_location: "Ch. 4, pp. 139-181"
+depends_on:
+  - "[[Design of Static Response Models]]"
+  - "[[Carryover Effects and Distributed Lags]]"
+  - "[[Reaction Functions and Competitive Dynamics]]"
+used_by:
+  - "[[Transfer Function Model]]"
+  - "[[Parameter Estimation in Market Response]]"
+  - "[[Implementation of Market Response Models]]"
 ---
 
 # Design of Dynamic Response Models

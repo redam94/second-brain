@@ -13,6 +13,14 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 8"
 chapter: "8"
 status: complete
+doc_type: concept
+source_location: "Ch. 8, pp. 319-327"
+depends_on:
+  - "[[Parameter Estimation in Market Response]]"
+  - "[[Markets Data and Sales Drivers]]"
+used_by:
+  - "[[Advertising and Promotion Effects]]"
+  - "[[Price and Distribution Effects]]"
 ---
 
 # Marketing Generalizations Overview

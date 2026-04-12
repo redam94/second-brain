@@ -17,6 +17,16 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 7"
 chapter: "7"
 status: complete
+doc_type: concept
+source_location: "Ch. 7, Sec. 7.2, pp. 298-308"
+depends_on:
+  - "[[Transfer Function Model]]"
+  - "[[Single Marketing Time Series]]"
+  - "[[Reaction Functions and Competitive Dynamics]]"
+used_by:
+  - "[[Empirical Causal Ordering]]"
+  - "[[Price and Distribution Effects]]"
+  - "[[Optimal Marketing Decisions and Forecasting]]"
 ---
 
 # Multivariate Persistence and Cointegration

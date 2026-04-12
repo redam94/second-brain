@@ -14,6 +14,17 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 2"
 chapter: "2"
 status: complete
+doc_type: concept
+source_location: "Ch. 2, pp. 23-85"
+depends_on:
+  - "[[Market Response Models - Overview]]"
+  - "[[Response Models for Marketing Management]]"
+used_by:
+  - "[[Functional Forms in Marketing]]"
+  - "[[Market Share Models]]"
+  - "[[Carryover Effects and Distributed Lags]]"
+  - "[[Single Marketing Time Series]]"
+  - "[[Marketing Generalizations Overview]]"
 ---
 
 # Markets Data and Sales Drivers

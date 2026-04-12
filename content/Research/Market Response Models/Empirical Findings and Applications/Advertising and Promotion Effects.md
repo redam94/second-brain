@@ -14,6 +14,14 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 8"
 chapter: "8"
 status: complete
+doc_type: concept
+source_location: "Ch. 8, pp. 328-355"
+depends_on:
+  - "[[Marketing Generalizations Overview]]"
+  - "[[Carryover Effects and Distributed Lags]]"
+  - "[[Functional Forms in Marketing]]"
+used_by:
+  - "[[Optimal Marketing Decisions and Forecasting]]"
 ---
 
 # Advertising and Promotion Effects

@@ -13,6 +13,13 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 4"
 chapter: "4"
 status: complete
+doc_type: concept
+source_location: "Ch. 4, Sec. 4.3, pp. 156-165"
+depends_on:
+  - "[[Functional Forms in Marketing]]"
+  - "[[Carryover Effects and Distributed Lags]]"
+used_by:
+  - "[[Optimal Marketing Decisions and Forecasting]]"
 ---
 
 # Shape of the Marketing Response Function

@@ -98,3 +98,5 @@ Advantages:
 - [[Mostly Harmless Econometrics - Overview]]
 - [[Hierarchical Linear Models]] — Bayesian multilevel approach to varying intercepts and panel data
 - [[Model Checking]] — posterior predictive checks for validating common trends assumptions
+- [[Data Collection Models]] — Bayesian ignorability framework: DiD is the fix when standard ignorability fails
+- [[Counterfactual Inference]] — explicit counterfactual framing of the treatment effect DiD estimates

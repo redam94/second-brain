@@ -15,6 +15,14 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 7"
 chapter: "7"
 status: complete
+doc_type: concept
+source_location: "Ch. 7, Sec. 7.1, pp. 286-297"
+depends_on:
+  - "[[Single Marketing Time Series]]"
+  - "[[Carryover Effects and Distributed Lags]]"
+  - "[[Design of Dynamic Response Models]]"
+used_by:
+  - "[[Multivariate Persistence and Cointegration]]"
 ---
 
 # Transfer Function Model

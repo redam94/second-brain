@@ -69,3 +69,4 @@ You can't identify individual compliers, but you can describe them statistically
 - [[Mostly Harmless Econometrics - Overview]]
 - [[Hierarchical Models]] — Bayesian partial pooling as an alternative framework for treatment effect heterogeneity
 - [[Regression and the CEF]] — the CEF provides the population target that LATE identifies in the complier subpopulation
+- [[Bayesian Difference in Differences]] — DiD treatment effects under heterogeneous compliance connect to the LATE framework
