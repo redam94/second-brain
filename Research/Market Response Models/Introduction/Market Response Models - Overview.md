@@ -14,6 +14,12 @@ date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Market Response Models: Econometric and Time Series Analysis, 2nd Ed."
 chapter: "1-10 (full book)"
 status: complete
+doc_type: overview
+source_location: "full book, pp. 3-425"
+depends_on: []
+used_by:
+  - "[[Response Models for Marketing Management]]"
+  - "[[Markets Data and Sales Drivers]]"
 ---
 
 # Market Response Models — Overview
