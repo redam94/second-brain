@@ -57,3 +57,4 @@ where $p(\theta)$ is the **prior**, $p(y \mid \theta)$ is the **likelihood**, an
 - [[Single-Parameter Models]] — first concrete applications of Bayes' theorem
 - [[Hierarchical Models]] — modeling with multiple levels of uncertainty
 - [[Bayesian Workflow - Overview]] — the full iterative workflow beyond these three steps
+- [[Overfitting and Information Criteria]] — KL divergence and the information-theoretic score criteria are built on the probability framework here

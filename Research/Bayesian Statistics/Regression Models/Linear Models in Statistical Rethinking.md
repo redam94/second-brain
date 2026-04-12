@@ -80,3 +80,4 @@ Polynomial models $\mu_i = \alpha + \beta_1 x_i + \beta_2 x_i^2$ can capture cur
 - [[Spurious Association and Confounds]] — Ch 5, extending to multiple predictors
 - [[Overfitting and Information Criteria]] — Ch 6, when polynomial models go wrong
 - [[Statistical Rethinking - Overview]]
+- [[Hierarchical Models]] — the multilevel extension of the Gaussian model introduced here; McElreath's "parameters all the way down" (Ch. 12–13)

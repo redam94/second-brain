@@ -85,3 +85,4 @@ When two predictors are highly correlated, their individual effects become unide
 - [[Linear Models in Statistical Rethinking]] — Ch 4, the single-predictor foundation
 - [[Bayesian Linear Regression]] — BDA3's formal treatment
 - [[Statistical Rethinking - Overview]]
+- [[Data Collection Models]] — ignorability is the formal condition under which controlling for confounds gives a causal interpretation

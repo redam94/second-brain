@@ -81,3 +81,4 @@ A saturated model has a separate parameter for every possible covariate combinat
 - [[Asymptotics and Frequentist Connections]] — Bayesian posteriors converge to OLS estimates under flat priors
 - [[Data Collection Models]] — Bayesian ignorability as the prerequisite for regression's causal interpretation
 - [[Local Average Treatment Effects]] — IV/LATE as the estimand when regression cannot recover the full ATE due to non-compliance
+- [[Directed Acyclic Graphs]] — DAGs identify the adjustment set that gives regression a causal interpretation

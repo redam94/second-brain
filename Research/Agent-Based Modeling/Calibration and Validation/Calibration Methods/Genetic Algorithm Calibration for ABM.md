@@ -123,3 +123,4 @@ The average population fitness over 45 generations (Figure 5 in paper) shows:
 - [[GA Fitness Evaluation and the RAM]] — how fitness is computed
 - [[ABM Calibration Overview]] — broader context of ABM calibration
 - [[Behavioral Attitudes in CUBES]] — the attitudes encoded in chromosomes
+- [[ABM Methodology and Principles]] — the foundational ABM framework that defines why calibration is needed

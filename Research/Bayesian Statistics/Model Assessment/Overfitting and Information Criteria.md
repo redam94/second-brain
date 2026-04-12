@@ -88,3 +88,5 @@ WAIC is the most general: it uses the full posterior, makes no Gaussian approxim
 - [[Linear Models in Statistical Rethinking]] — the models this chapter evaluates
 - [[Statistical Rethinking - Overview]]
 - [[Hierarchical Models]] — partial pooling is a form of regularization that directly reduces effective model complexity
+- [[Bayesian Workflow - Overview]] — information criteria (WAIC/LOO) are the quantitative tools in the iterative model comparison step
+- [[Probability and Bayesian Inference]] — KL divergence and the log score are grounded in the probability theory introduced there

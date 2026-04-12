@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Market Response Models/Time Series Analysis/Multivariate Persistence and Cointegration.md",
+                "file": "Research/Bayesian Statistics/Causal Inference/_Index.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Multivariate Persistence and Cointegration"
+              "title": "_Index"
             }
           }
         ]
@@ -183,9 +183,11 @@
   },
   "active": "4e026be74554a5cd",
   "lastOpenFiles": [
+    "Research/Bayesian Statistics/_Index.md",
+    "Research/_Index.md",
+    "Research/Market Response Models/Time Series Analysis/Multivariate Persistence and Cointegration.md",
     "Research/Market Response Models/Time Series Analysis/Empirical Causal Ordering.md",
     "Research/Market Response Models/Time Series Analysis/_Index.md",
-    "Research/Market Response Models/Time Series Analysis/Multivariate Persistence and Cointegration.md",
     "Research/Agent-Based Modeling/Foundations/Modeling Approaches/Agent Decision Rules and Bounded Rationality.md",
     "Research/Agent-Based Modeling/Calibration and Validation/Calibration Methods/Approximate Bayesian Computation for ABMs.md",
     "Research/Agent-Based Modeling/Calibration and Validation/Calibration Methods/ABM Calibration Overview.md",
@@ -210,8 +212,6 @@
     "Research/Market Response Models/Static Response Models/_Index.md",
     "Research/Market Response Models/Introduction/_Index.md",
     "Research/Market Response Models/Empirical Findings and Applications/Implementation of Market Response Models.md",
-    "Research/Market Response Models/Empirical Findings and Applications/Optimal Marketing Decisions and Forecasting.md",
-    "Research/Market Response Models/Empirical Findings and Applications/Price and Distribution Effects.md",
     "Research/Market Response Models/Implementation",
     "Research/Market Response Models/Empirical Findings and Applications",
     "Research/Market Response Models/Time Series Analysis",

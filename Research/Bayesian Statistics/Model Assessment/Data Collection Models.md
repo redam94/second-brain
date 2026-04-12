@@ -57,3 +57,6 @@ The ignorability concept directly parallels the **unconfoundedness** assumption 
 - [[Instrumental Variables]] — IV ensures ignorability through exogenous variation rather than conditioning
 - [[The Selection Problem]] — the frequentist framing of the same challenge ignorability addresses
 - [[Regression and the CEF]] — regression as an estimator when the data collection mechanism is ignorable
+- [[Differences-in-Differences]] — panel fixed effects as an alternative when ignorability fails for observational studies
+- [[Counterfactual Inference]] — counterfactual prediction relies on the same ignorability assumption (pre-COVID model applied forward)
+- [[Spurious Association and Confounds]] — confounds are precisely the case where the data collection mechanism is not ignorable

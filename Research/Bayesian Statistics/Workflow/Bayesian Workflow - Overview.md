@@ -76,3 +76,4 @@ The paper frames methodology development as a progression: Example -> Case study
 - [[Forking Paths and Bayesian Approaches]] — workflow as a defense against multiple comparisons problems
 - [[The Experimental Ideal]] — how Bayesian workflow complements careful experimental design
 - [[Regression and the CEF]] — workflow applies equally to Bayesian regression for causal inference
+- [[Overfitting and Information Criteria]] — WAIC and LOO-CV are the quantitative tools for the model comparison step in the workflow
