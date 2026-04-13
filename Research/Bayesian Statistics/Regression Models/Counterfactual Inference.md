@@ -1,5 +1,9 @@
 ---
 title: "Counterfactual Inference"
+aliases:
+  - Excess Deaths
+  - Bayesian Counterfactual
+  - COVID excess mortality
 tags:
   - source/ingested
   - topic/causal-inference
@@ -8,20 +12,22 @@ tags:
   - method/pymc
   - type/concept
   - doc/tutorial
-aliases:
-  - Excess Deaths
-  - Bayesian Counterfactual
+source: "[[raw/Counterfactual inference calculating excess deaths due to COVID-19]]"
+source_location: "PyMC example — Benjamin T. Vincent (2022)"
 date_ingested: 2026-04-09
+date_updated: 2026-04-13
+folder: "Bayesian Statistics/Regression Models"
 doc_type: concept
-source_location: "raw/Counterfactual inference calculating excess deaths due to COVID-19"
 depends_on:
   - "[[Bayesian Linear Regression]]"
   - "[[Generalized Linear Models]]"
   - "[[Model Checking]]"
   - "[[Spurious Association and Confounds]]"
+  - "[[Potential Outcomes Framework]]"
 used_by:
   - "[[Nonparametric Causal Inference]]"
   - "[[Decision Analysis]]"
+  - "[[Brodersen 2015 - Overview]]"
 ---
 
 # Counterfactual Inference
@@ -88,11 +94,12 @@ The result is a **posterior distribution over excess deaths** — not just a poi
 
 ## Connections
 
-- Compare with [[Bayesian Non-parametric Causal Inference]] (non-parametric approach to causal estimation)
+- Compare with [[Nonparametric Causal Inference]] (non-parametric approach to causal estimation using BART + propensity scores)
 - [[Differences-in-Differences]] — quasi-experimental strategy (compare treated vs. control across time); DiD is the parametric version of the same counterfactual logic
 - [[Data Collection Models]] — both approaches rely on ignorability: the pre-intervention model must capture all confounders
 - ZeroSumNormal constraint: related to sum-to-zero constraints in [[Generalized Linear Models]]
-- Related to Google's **CausalImpact** framework (Bayesian structural time-series for intervention analysis)
+- [[Potential Outcomes Framework]] — the formal framework underlying the "what would have happened" question
+- Related to Google's **[[Brodersen 2015 - Overview|CausalImpact]]** framework ([[Bayesian Structural Time-Series Model]]) — a more sophisticated state-space approach to the same counterfactual problem
 
 ## Source
 
