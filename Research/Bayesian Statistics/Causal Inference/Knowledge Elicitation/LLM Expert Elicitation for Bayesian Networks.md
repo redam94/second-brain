@@ -11,10 +11,14 @@ tags:
 source: "[[raw/Shaposhnyk et al. - 2025 - Can LLMs Assist Expert Elicitation for Probabilistic Causal Modeling.pdf]]"
 source_location: "§4.3, §5.3, pp. 4-8"
 date_ingested: 2026-04-10
+date_updated: 2026-04-13
 folder: "Bayesian Statistics/Causal Inference/Knowledge Elicitation"
 doc_type: paper
 depends_on:
   - "[[BN Construction Methods Comparison]]"
+  - "[[LLM Causal Reasoning Tasks]]"
+  - "[[Interactive Knowledge Elicitation Method]]"
+  - "[[Directed Acyclic Graphs]]"
 used_by:
   - "[[LLM-BN Decision Support Application]]"
 aliases:
@@ -99,9 +103,18 @@ See [[BN Construction Methods Comparison]] for full three-way comparison.
 - Compare to [[NLP Causal Extraction Methods]] — earlier rule-based approach to automated causal extraction (Yamashita 2020)
 - Builds on [[BN Construction Methods Comparison]] for evaluation context
 - Applied in [[LLM-BN Decision Support Application]]
+- BNs are DAGs — the graph structure produced is a [[Directed Acyclic Graphs|directed acyclic graph]]; d-separation and the back-door criterion apply to these structures
+- Bidirectional dependency resolution (Sleep Duration ↔ Stress) uses the same reasoning as [[Canonical Causal DAGs]] (fork vs. pipe identification)
+- SEM validation step connects to [[Confirmatory Factor Analysis and SEM]]
+- Alternative prompting approach for causal structure: [[Code Prompts for Causal Structure]]
 
 ## See Also
 
 - [[Shaposhnyk 2025 - Overview]] — paper context
 - [[BN Construction Methods Comparison]] — methodology comparison
 - [[Entropy-Based BN Evaluation]] — how BN quality is measured
+- [[Directed Acyclic Graphs]] — the mathematical structure underlying all Bayesian networks
+- [[Canonical Causal DAGs]] — fork/pipe/collider patterns relevant to edge orientation
+- [[LLM Causal Reasoning Tasks]] — evaluation of LLM causal reasoning capabilities
+- [[Code Prompts for Causal Structure]] — alternative code-based prompting strategy for BN elicitation
+- [[Interactive Knowledge Elicitation Method]] — human-in-the-loop alternative to LLM elicitation

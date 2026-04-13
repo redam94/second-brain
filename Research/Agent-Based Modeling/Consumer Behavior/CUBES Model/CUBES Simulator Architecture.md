@@ -9,6 +9,7 @@ tags:
 source: "[[raw/abm_human_behaviour.pdf]]"
 source_location: "pp. 186-187"
 date_ingested: 2026-04-10
+date_updated: 2026-04-13
 folder: "Agent-Based Modeling/Consumer Behavior/CUBES Model"
 doc_type: paper
 depends_on:
@@ -56,6 +57,7 @@ The system follows a two-layer architecture:
 **Social Dynamics Layer:**
 - **Conditioning process**: Repeated exposure to stimuli reinforces attitudes
 - **Imitation process**: Agents copy behaviors of connected agents
+(See [[Imitation and Conditioning Processes]] for the formal mechanics.)
 
 **Reactive Modulators Layer (Personality Traits):**
 - **Mistrust personality trait**: Filters incoming stimuli with skepticism
@@ -78,7 +80,7 @@ These two layers interact to produce:
 
 ### Agent Communication
 
-Each consumer agent has a **perception field** — a spatial radius limiting communication with other agents. This field is a function of the agent's socio-demographic profile and behavioral attitudes (particularly innovativeness). The communication gradient models the fact that WOM influence weakens with social distance.
+Each consumer agent has a **perception field** — a spatial radius limiting communication with other agents. This field is a function of the agent's socio-demographic profile and behavioral attitudes (particularly innovativeness). The communication gradient models the fact that WOM influence weakens with social distance. This spatial radius acts as a local network topology; see [[Network Topology Effects on Diffusion]] and [[Social Network Formation in Consumer Markets]] for how network structure shapes diffusion outcomes.
 
 ### Population Scale
 
@@ -98,3 +100,7 @@ Simulations typically include:
 - [[Ben Said et al 2002 - Overview]] — paper context
 - [[Behavioral Attitudes in CUBES]] — the five BA types
 - [[Behavioral Primitives and Thresholds]] — the core decision mechanism
+- [[Imitation and Conditioning Processes]] — the two social dynamics implemented in CUBES
+- [[Emergent Phenomena in ABM]] — market share equilibria emerge from individual agent interactions
+- [[Network Topology Effects on Diffusion]] — how perception field radius shapes information diffusion
+- [[Social Network Formation in Consumer Markets]] — social distance and WOM propagation
