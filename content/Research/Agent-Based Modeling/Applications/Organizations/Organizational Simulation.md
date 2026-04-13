@@ -1,5 +1,9 @@
 ---
 title: Organizational Simulation
+aliases:
+  - Business process simulation
+  - Organizational ABM
+  - Store layout ABM
 tags:
   - source/ingested
   - topic/agent-based-modeling
@@ -9,14 +13,15 @@ tags:
 source: "[[raw/abm_word_of_mouth.pdf]]"
 source_location: "pp. 7284-7285"
 date_ingested: 2026-04-10
+date_updated: 2026-04-13
 folder: "Agent-Based Modeling/Applications/Organizations"
 doc_type: paper
 depends_on:
   - "[[ABM Methodology and Principles]]"
-used_by: []
-aliases:
-  - Business process simulation
-  - Organizational ABM
+  - "[[Emergent Phenomena in ABM]]"
+  - "[[Heterogeneity in Agent Models]]"
+used_by:
+  - "[[ABM in Marketing Strategy]]"
 ---
 
 # Organizational Simulation
@@ -68,8 +73,13 @@ Macy's and other retailers developed ABM models for:
 
 - Organizational simulation uses [[ABM Methodology and Principles]] in a business context
 - Employee and customer agents use [[Agent Decision Rules and Bounded Rationality|bounded rationality]]
+- Complex aggregate outcomes from simple individual rules are an instance of [[Emergent Phenomena in ABM]]
+- Modeling employees, managers, and customers as distinct types is an instance of [[Heterogeneity in Agent Models]]
 - This is one of four application areas alongside [[Flow Simulation Applications]], [[Market and Financial Simulation]], and [[Operational Risk Modeling with ABM]]
 
 ## See Also
 - [[ABM Methodology and Principles]] — the paradigm underlying organizational simulation
+- [[Emergent Phenomena in ABM]] — throughput and bottlenecks emerge from agent-level rules
+- [[Heterogeneity in Agent Models]] — distinct agent roles (employee, manager, customer)
 - [[ABM in Marketing Strategy]] — overlapping application in business contexts
+- [[ABM Validation Challenges]] — visualization as a validation tool (mentioned in Macy's example)

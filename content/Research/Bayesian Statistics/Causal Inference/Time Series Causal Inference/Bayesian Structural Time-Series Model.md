@@ -11,6 +11,7 @@ tags:
 source: "[[raw/Brodersen - 2015 - Inferring causal impact using Bayesian structural time-series models.pdf]]"
 source_location: "§2, pp. 251-258"
 date_ingested: 2026-04-10
+date_updated: 2026-04-13
 folder: "Bayesian Statistics/Causal Inference/Time Series Causal Inference"
 doc_type: paper
 depends_on:
@@ -127,3 +128,7 @@ The model shows:
 
 - [[Brodersen 2015 - Overview]] — paper context
 - [[Local Linear Trend and Seasonality]] — trend and seasonal components
+- [[Counterfactual Inference]] — PyMC implementation of the same counterfactual logic with a simpler regression model
+- [[Single Marketing Time Series]] — ARIMA-based univariate approach that BSTS generalises
+- [[Carryover Effects and Distributed Lags]] — marketing carryover through a different (ADL) lens
+- [[Fitting and Validating Computation]] — MCMC validation for the BSTS sampler

@@ -9,6 +9,7 @@ tags:
   - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-04-13
 folder: "Bayesian Statistics/Inference Fundamentals"
 aliases:
   - "Bayesian updating"
@@ -69,6 +70,7 @@ Every Bayesian model has three components:
 ## See Also
 
 - [[Probability and Bayesian Inference]] — BDA3's formal treatment (Ch 1)
+- [[Single-Parameter Models]] — the first worked examples extending the globe-tossing logic (BDA3 Ch 2)
 - [[Posterior Sampling and Summarization]] — Ch 3, working with samples from the posterior
 - [[Statistical Rethinking - The Golem of Prague]] — the philosophical setup
 - [[Garden of Forking Paths]] — Gelman's related concept about researcher flexibility (different "garden")

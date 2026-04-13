@@ -11,6 +11,7 @@ tags:
 source: "[[raw/multiple2f.pdf]]"
 source_location: "Sec. 3.2, pp. 8-12"
 date_ingested: 2026-04-09
+date_updated: 2026-04-13
 folder: "Bayesian Statistics/Inference Fundamentals"
 doc_type: concept
 depends_on:

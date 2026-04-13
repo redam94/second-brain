@@ -1,5 +1,8 @@
 ---
 title: "Computational Troubleshooting"
+aliases:
+  - "MCMC Troubleshooting"
+  - "Folk Theorem of Statistical Computing"
 tags:
   - source/ingested
   - topic/bayesian-statistics
@@ -8,6 +11,7 @@ tags:
   - doc/textbook
 source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-04-13
 folder: "Bayesian Statistics/Workflow"
 doc_type: concept
 source_location: "Bayesian Workflow paper"
@@ -62,7 +66,7 @@ When chains are slow to mix but remain in generally reasonable ranges, **stackin
 
 ## Multimodality and Difficult Geometry
 
-Four common types of posterior geometry problems:
+Four common types of posterior geometry problems (see [[Monsters and Mixtures]] for mixture model construction that commonly exhibits these pathologies):
 
 | Type | Example | Solution |
 |------|---------|----------|
@@ -73,7 +77,7 @@ Four common types of posterior geometry problems:
 
 ## Reparameterization
 
-HMC works best when the posterior geometry is smooth and well-conditioned. [[Hierarchical Models]] often exhibit **funnel pathologies** when group-level variance approaches zero. Reparameterization following the non-centered parameterization (Meng and van Dyk, 2001; Betancourt and Girolami, 2015) can resolve this. See [[Efficient MCMC]].
+HMC works best when the posterior geometry is smooth and well-conditioned. [[Hierarchical Models]] often exhibit **funnel pathologies** when group-level variance approaches zero. Reparameterization following the non-centered parameterization (Meng and van Dyk, 2001; Betancourt and Girolami, 2015) can resolve this. See [[Efficient MCMC]] and [[HMC and Stan in Practice]] for Stan-specific implementation guidance.
 
 ## Marginalization
 
@@ -98,5 +102,7 @@ Adding reasonable priors increases log-concavity of the posterior, leading to fa
 
 ## Related Notes
 
+- [[Bayesian Workflow - Overview]] — the overall workflow this step fits within
 - [[Fitting and Validating Computation]] | [[Evaluating Fitted Models]]
-- [[MCMC Basics]] | [[Efficient MCMC]] | [[Hierarchical Models]]
+- [[MCMC Basics]] | [[Efficient MCMC]] | [[HMC and Stan in Practice]] | [[Hierarchical Models]]
+- [[Choosing and Building Models]] — model simplification is the first response to computational failures

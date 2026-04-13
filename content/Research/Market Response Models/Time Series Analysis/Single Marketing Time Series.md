@@ -206,4 +206,7 @@ Common choices: $\lambda = 0.5$ (square root), $\lambda \to 0$ (log), $\lambda =
 - Transfer function extension: [[Transfer Function Model]]
 - VAR and cointegration: [[Multivariate Persistence and Cointegration]]
 - Carryover and ADL: [[Carryover Effects and Distributed Lags]]
-- Statistical Rethinking ARIMA context: [[Bayesian Structural Time-Series Model]]
+- Causal ordering from prewhitened series: [[Empirical Causal Ordering]]
+- Parameter estimation methods for ARIMA models: [[Parameter Estimation in Market Response]]
+- Bayesian state-space alternative to ARIMA: [[Bayesian Structural Time-Series Model]]
+- Model selection (AIC/BIC for order selection): [[Model Selection and Exploratory Analysis]]
