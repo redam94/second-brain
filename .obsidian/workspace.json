@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Econometrics/_Index.md",
+                "file": "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/LLM Expert Elicitation for Bayesian Networks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_Index"
+              "title": "LLM Expert Elicitation for Bayesian Networks"
             }
           }
         ]
@@ -182,6 +182,11 @@
   },
   "active": "4e026be74554a5cd",
   "lastOpenFiles": [
+    "Research/Agent-Based Modeling/Consumer Behavior/CUBES Model/CUBES Simulator Architecture.md",
+    "Research/Agent-Based Modeling/Applications/Organizations/Organizational Simulation.md",
+    "Dream/_Index.md",
+    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/LLM Expert Elicitation for Bayesian Networks.md",
+    "Research/Econometrics/_Index.md",
     "Research/Agent-Based Modeling/_Index.md",
     "Research/Agent-Based Modeling/Concept Dependencies.base",
     "Research/Econometrics/Concept Dependencies.base",
@@ -189,7 +194,6 @@
     "Research/Agent-Based Modeling/Foundations/Core Concepts/Emergent Phenomena in ABM.md",
     "Research/Agent-Based Modeling/Applications/_Index.md",
     "Research/Agent-Based Modeling/Applications/Risk/Operational Risk Modeling with ABM.md",
-    "Research/Agent-Based Modeling/Applications/Organizations/Organizational Simulation.md",
     "Research/Agent-Based Modeling/Applications/Markets and Finance/Market and Financial Simulation.md",
     "Research/Agent-Based Modeling/Applications/Flows and Crowds/Flow Simulation Applications.md",
     "Research/Agent-Based Modeling/Applications/Marketing/ABM in Marketing Strategy.md",
@@ -198,7 +202,6 @@
     "Research/raw/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python.md",
     "Research/Econometrics/Extensions/Simulation-Based Estimation/Brock-Mirman Model - SMM Estimation Exercise.md",
     "Questions-and-Answers/Q - Using SMM to Calibrate Agent Based Models.md",
-    "Dream/_Index.md",
     "Research/Econometrics/Extensions/Simulation-Based Estimation/Efficient Method of Moments.md",
     "scripts/sync-website.sh",
     "scripts",
@@ -215,9 +218,6 @@
     "Research/raw/Gauge theory.md",
     "Research/_Index.md",
     "Research/Bayesian Statistics/Causal Inference/_Index.md",
-    "Research/Bayesian Statistics/_Index.md",
-    "Research/Market Response Models/Time Series Analysis/Multivariate Persistence and Cointegration.md",
-    "Research/Market Response Models/Time Series Analysis/Empirical Causal Ordering.md",
     "public/index-og-image.webp",
     "public/_Vault_Index-og-image.webp",
     "public/Research/raw/Unlock-the-Secrets-of-Causal-Inference-with-a-Master-Class-in-Directed-Acyclic-Graphs-og-image.webp",
