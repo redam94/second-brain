@@ -3,14 +3,14 @@ title: "Index: Research"
 tags:
   - type/index
   - source/ingested
-date_updated: 2026-04-12
-concept_count: 137
+date_updated: 2026-04-15
+concept_count: 139
 ---
 
 # Research
 
 > [!abstract] Routing Summary
-> This folder covers applied statistics, econometrics, causal inference, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 136 notes across 6 major topics.
+> This folder covers applied statistics, econometrics, causal inference, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 138 notes across 6 major topics.
 > - Need Bayesian inference, computation, or regression? -> [[Bayesian Statistics/_Index|Bayesian Statistics]]
 > - Need causal inference toolkit (IV, DiD, RD, synthetic control, DAGs)? -> [[Econometrics/_Index|Econometrics]]
 > - Need forking paths, power analysis, ad measurement, or longitudinal causal inference? -> [[Research Methodology/_Index|Research Methodology]]
@@ -24,7 +24,7 @@ concept_count: 137
 | Topic | Notes | Key Concepts |
 |-------|-------|-------------|
 | [[Bayesian Statistics/_Index\|Bayesian Statistics]] | 54 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference |
-| [[Econometrics/_Index\|Econometrics]] | 25 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, quantile regression, discrete choice, DAGs, SMM, Brock-Mirman structural estimation |
+| [[Econometrics/_Index\|Econometrics]] | 27 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, quantile regression, discrete choice, DAGs, SMM, Brock-Mirman structural estimation |
 | [[Research Methodology/_Index\|Research Methodology]] | 13+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons, within/between-persons distinction (Rohrer & Murayama 2023), fixed-effects model, CLPM, dynamic panel model, estimands in longitudinal research |
 | [[Theoretical Physics/_Index\|Theoretical Physics]] | 7 | Quantum mechanics, Hilbert space, Schrödinger equation, QFT, second quantization, QED, renormalization, gauge theory, Standard Model |
 | [[Agent-Based Modeling/_Index\|Agent-Based Modeling]] | 34 | ABM methodology, emergence, heterogeneity, consumer utility models, CUBES behavioral simulator, WOM, opinion leaders, network diffusion, GA calibration, validation, HM+ABC calibration (McCulloch et al. 2022), history matching, ABC, uncertainty quantification |
@@ -33,7 +33,7 @@ concept_count: 137
 ## Cross-Cutting Themes
 
 - **Bayesian vs. Frequentist**: [[Asymptotics and Frequentist Connections]], [[Forking Paths and Bayesian Approaches]]
-- **Causal Inference**: [[The Experimental Ideal]], [[Activity Bias in Advertising]], [[Data Collection Models]], [[Counterfactual Inference]], [[Nonparametric Causal Inference]], [[Directed Acyclic Graphs]], [[Synthetic Control]], [[Bayesian Inverse Probability Weighting]]
+- **Causal Inference**: [[The Experimental Ideal]], [[Activity Bias in Advertising]], [[Data Collection Models]], [[Counterfactual Inference]], [[Nonparametric Causal Inference]], [[Directed Acyclic Graphs]], [[Synthetic Control]], [[Bayesian Inverse Probability Weighting]], [[DAGs and Causal Identification]], [[Bayesian Propensity Score Weighting]]
 - **Model Building**: [[Bayesian Workflow - Overview]], [[Model Checking]], [[Model Comparison]], [[Overfitting and Information Criteria]]
 - **Multiple Comparisons**: [[Multiple Comparisons - Bayesian Perspective]], [[Multiple Testing Corrections]], [[Type S and Type M Errors]], [[Partial Pooling as Multiple Comparisons Correction]]
 - **Missing Data**: [[Missing Data Models]], [[Missing Data - Statistical Rethinking]], [[Data Collection Models]]
