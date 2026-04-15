@@ -4,12 +4,25 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
+authors:
+  - Andrew Gelman
+  - John Carlin
+  - Hal Stern
+  - David Dunson
+  - Aki Vehtari
+  - Donald Rubin
+year: 2013
+doc_type: overview
+source_location: "Full book (3rd ed., 2013). Part I Ch. 1–5 (pp. 1–134), Part II Ch. 6–9 (pp. 137–215), Part III Ch. 10–13 (pp. 275–313), Part IV Ch. 14–18 (pp. 353–445), Part V Ch. 19–23 (pp. 473–551)"
+depends_on: []
+used_by: []
 ---
 
 # Bayesian Data Analysis, 3rd Edition

@@ -8,12 +8,18 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/statistical-modeling
-  - type/book-overview
+  - type/overview
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
+folder: "Bayesian Statistics"
 authors:
   - Richard McElreath
 year: 2015
+doc_type: overview
+source_location: "Full book (McElreath, 2015). Foundations Ch. 1–3 (pp. 1–72), Linear Models Ch. 4–7 (pp. 73–208), MCMC & GLMs Ch. 8–11 (pp. 209–325), Multilevel Ch. 12–13 (pp. 355–416), Missing Data Ch. 14–15 (pp. 417–469)"
+depends_on: []
+used_by: []
 ---
 
 # Statistical Rethinking
