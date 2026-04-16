@@ -3,18 +3,19 @@ title: "Index: Research"
 tags:
   - type/index
   - source/ingested
-date_updated: 2026-04-15
-concept_count: 139
+date_updated: 2026-04-16
+concept_count: 148
 ---
 
 # Research
 
 > [!abstract] Routing Summary
-> This folder covers applied statistics, econometrics, causal inference, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 138 notes across 6 major topics.
+> This folder covers applied statistics, econometrics, causal inference, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 147 notes across 7 major topics.
 > - Need Bayesian inference, computation, or regression? -> [[Bayesian Statistics/_Index|Bayesian Statistics]]
-> - Need causal inference toolkit (IV, DiD, RD, synthetic control, DAGs)? -> [[Econometrics/_Index|Econometrics]]
+> - Need causal inference toolkit (IV, DiD, RD, synthetic control, GSC, DAGs)? -> [[Econometrics/_Index|Econometrics]]
 > - Need forking paths, power analysis, ad measurement, or longitudinal causal inference? -> [[Research Methodology/_Index|Research Methodology]]
-> - Need quantum mechanics, QFT, or gauge theory? -> [[Theoretical Physics/_Index|Theoretical Physics]]
+> - Need quantum mechanics, QFT, or gauge theory (flat notes)? -> [[Theoretical Physics/_Index|Theoretical Physics]]
+> - Need quantum mechanics, QFT, or gauge theory (structured sub-folder notes)? -> [[Physics/_Index|Physics]]
 > - Need ABM methodology, consumer behavior simulation, WOM modeling, or ABM calibration (GA, HM+ABC, uncertainty quantification)? -> [[Agent-Based Modeling/_Index|Agent-Based Modeling]]
 > - Need market response models (functional forms, carryover, VAR, empirical elasticities)? -> [[Market Response Models/_Index|Market Response Models]]
 > - Need a specific concept? Check the Concept Map below or use the .base files for database views
@@ -27,6 +28,7 @@ concept_count: 139
 | [[Econometrics/_Index\|Econometrics]] | 27 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, quantile regression, discrete choice, DAGs, SMM, Brock-Mirman structural estimation |
 | [[Research Methodology/_Index\|Research Methodology]] | 13+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons, within/between-persons distinction (Rohrer & Murayama 2023), fixed-effects model, CLPM, dynamic panel model, estimands in longitudinal research |
 | [[Theoretical Physics/_Index\|Theoretical Physics]] | 7 | Quantum mechanics, Hilbert space, Schrödinger equation, QFT, second quantization, QED, renormalization, gauge theory, Standard Model |
+| [[Physics/_Index\|Physics]] | 9 | Wave functions, Hilbert space, Schrödinger equation, entanglement, QFT, canonical quantization, renormalization, gauge theory, Yang–Mills (structured sub-folder organization) |
 | [[Agent-Based Modeling/_Index\|Agent-Based Modeling]] | 34 | ABM methodology, emergence, heterogeneity, consumer utility models, CUBES behavioral simulator, WOM, opinion leaders, network diffusion, GA calibration, validation, HM+ABC calibration (McCulloch et al. 2022), history matching, ABC, uncertainty quantification |
 | [[Market Response Models/_Index\|Market Response Models]] | 25 | Functional forms (10), Koyck/ADL carryover, reaction functions, OLS/2SLS/Bayes estimation, ARIMA, transfer functions, VAR, cointegration, ECM, empirical generalizations (advertising ≈ 0.10, price ≈ −2.5) |
 
@@ -39,6 +41,7 @@ concept_count: 139
 - **Missing Data**: [[Missing Data Models]], [[Missing Data - Statistical Rethinking]], [[Data Collection Models]]
 - **Regression**: [[Bayesian Linear Regression]], [[Regression and the CEF]], [[Hierarchical Linear Models]], [[Generalized Linear Models]]
 - **Theoretical Physics Chain**: [[Quantum Mechanics - Overview]] → [[Quantum Mechanics - Mathematical Formalism]] → [[Quantum Field Theory - Overview]] → [[QED and Renormalization]] → [[Gauge Theory - Overview]] → [[Standard Model and Gauge Groups]]
+- **Physics Chain (structured)**: [[Physics/Foundations/Wave Function and Hilbert Space|Wave Function & Hilbert Space]] → [[Physics/Foundations/Schrödinger Equation and Time Evolution|Schrödinger Equation]] → [[Physics/Quantum Field Theory/QFT Overview|QFT Overview]] → [[Physics/Quantum Field Theory/Gauge Theory Overview|Gauge Theory]] → [[Physics/Quantum Field Theory/Yang-Mills Theory and Gauge Fields|Yang–Mills Theory]]
 - **ABM Calibration Chain**: [[ABM Calibration Overview]] → [[Genetic Algorithm Calibration for ABM]] → [[HM-ABC Calibration Framework]] → [[History Matching for ABMs]] → [[Approximate Bayesian Computation for ABMs]] (with [[Uncertainty Quantification for ABM Calibration]] feeding both HM and ABC)
 - **Longitudinal Causal Inference**: [[Within-Between Persons Distinction - Overview]] → [[Within-Between Persons Causal Inference]] → [[Fixed-Effects Model]] / [[Cross-Lagged and Dynamic Panel Models]] (guided by [[Estimands in Longitudinal Research]])
 
