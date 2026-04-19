@@ -8,7 +8,7 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/statistical-modeling
-  - type/book-overview
+  - type/overview
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 authors:

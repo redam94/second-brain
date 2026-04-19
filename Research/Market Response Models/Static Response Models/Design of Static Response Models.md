@@ -4,6 +4,7 @@ aliases:
   - "Static Marketing Models"
   - "Cross-Sectional Response Models"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/model-design
