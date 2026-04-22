@@ -7,6 +7,15 @@ tags:
   - topic/simulation-estimation
   - topic/econometrics
 date_asked: 2026-04-11
+doc_type: qa
+source_location: "Synthesized from vault notes"
+depends_on:
+  - "[[Method of Simulated Moments]]"
+  - "[[SMM Weighting Matrix and Inference]]"
+  - "[[ABM Calibration Overview]]"
+  - "[[Genetic Algorithm Calibration for ABM]]"
+  - "[[GA Fitness Evaluation and the RAM]]"
+used_by: []
 answered_from:
   - "[[Method of Simulated Moments]]"
   - "[[SMM Weighting Matrix and Inference]]"

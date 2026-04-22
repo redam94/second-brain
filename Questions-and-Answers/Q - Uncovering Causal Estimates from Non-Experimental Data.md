@@ -7,6 +7,19 @@ tags:
   - topic/identification
   - topic/observational-studies
 date_asked: 2026-04-10
+doc_type: qa
+source_location: "Synthesized from vault notes"
+depends_on:
+  - "[[The Selection Problem]]"
+  - "[[Conditional Independence Assumption]]"
+  - "[[Directed Acyclic Graphs]]"
+  - "[[Instrumental Variables]]"
+  - "[[Differences-in-Differences]]"
+  - "[[Regression Discontinuity Designs]]"
+  - "[[Synthetic Control]]"
+  - "[[Frequentist Causal Estimation]]"
+  - "[[Sensitivity Analysis in Observational Studies]]"
+used_by: []
 answered_from:
   - "[[The Selection Problem]]"
   - "[[Conditional Independence Assumption]]"

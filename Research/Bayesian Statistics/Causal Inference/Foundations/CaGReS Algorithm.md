@@ -117,7 +117,7 @@ Since optimal causal DAG summarization is NP-hard (Theorem 3.2 in [[Summary Caus
 ## Connections
 
 - CaGReS implements the optimization problem defined in [[Summary Causal DAGs]] using the cost function derived from [[Canonical Causal DAGs]].
-- The semantic constraint makes CaGReS appropriate for high-dimensional data where domain knowledge is available — analogous to informative priors in [[Bayesian Inference]].
+- The semantic constraint makes CaGReS appropriate for high-dimensional data where domain knowledge is available — analogous to informative priors in [[General Structure of Bayesian CI|Bayesian inference]].
 - The $O((n-k) \cdot n^2)$ complexity makes CaGReS the only algorithm (besides k-Snap) that handles DAGs with $>20$ nodes in practice.
 
 ## See Also

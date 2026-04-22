@@ -4,8 +4,12 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-04-11
-concept_count: 54
+date_updated: 2026-04-22
+concept_count: 91
+doc_type: index
+depends_on: []
+used_by: []
+source_location: "N/A — navigational index"
 ---
 
 # Bayesian Statistics

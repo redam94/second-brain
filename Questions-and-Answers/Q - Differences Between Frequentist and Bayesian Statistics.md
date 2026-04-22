@@ -7,6 +7,16 @@ tags:
   - topic/probability
   - topic/research-methodology
 date_asked: 2026-04-09
+doc_type: qa
+source_location: "Synthesized from vault notes"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[BDA3 - Overview]]"
+  - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Multiple Comparisons - Bayesian Perspective]]"
+used_by: []
 answered_from:
   - "[[Probability and Bayesian Inference]]"
   - "[[Asymptotics and Frequentist Connections]]"

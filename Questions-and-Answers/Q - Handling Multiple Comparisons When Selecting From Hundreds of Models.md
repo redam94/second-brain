@@ -7,6 +7,18 @@ tags:
   - topic/bayesian-statistics
   - topic/model-comparison
 date_asked: 2026-04-09
+doc_type: qa
+source_location: "Synthesized from vault notes"
+depends_on:
+  - "[[Multiple Testing Corrections]]"
+  - "[[Garden of Forking Paths]]"
+  - "[[Researcher Degrees of Freedom]]"
+  - "[[Multiple Comparisons - Bayesian Perspective]]"
+  - "[[Partial Pooling as Multiple Comparisons Correction]]"
+  - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[Model Comparison]]"
+used_by: []
 answered_from:
   - "[[Multiple Testing Corrections]]"
   - "[[Garden of Forking Paths]]"

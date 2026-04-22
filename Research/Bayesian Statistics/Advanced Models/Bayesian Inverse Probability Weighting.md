@@ -22,6 +22,7 @@ used_by: []
 aliases:
   - Bayesian IPW
   - Bayesian propensity scores
+  - Bayesian Propensity Scores and IPW
   - Liao-Zigler method
   - IPTW Bayesian
 ---

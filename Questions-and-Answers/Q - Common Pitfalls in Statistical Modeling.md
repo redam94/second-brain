@@ -8,6 +8,18 @@ tags:
   - topic/model-comparison
   - topic/statistical-modeling
 date_asked: 2026-04-09
+doc_type: qa
+source_location: "Synthesized from vault notes"
+depends_on:
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Garden of Forking Paths]]"
+  - "[[Researcher Degrees of Freedom]]"
+  - "[[Type S and Type M Errors]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[Model Checking]]"
+  - "[[Omitted Variables Bias]]"
+  - "[[The Selection Problem]]"
+used_by: []
 answered_from:
   - "[[Statistical Rethinking - The Golem of Prague]]"
   - "[[Spurious Association and Confounds]]"
