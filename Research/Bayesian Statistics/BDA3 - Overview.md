@@ -4,9 +4,20 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
+source_location: "BDA3 full book, pp. 1-667"
+depends_on:
+  - "[[raw/BDA3.pdf]]"
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Hierarchical Models]]"
+  - "[[Bayesian Workflow - Overview]]"
+used_by:
+  - "[[Statistical Rethinking - Overview]]"
+  - "[[Mostly Harmless Econometrics - Overview]]"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"

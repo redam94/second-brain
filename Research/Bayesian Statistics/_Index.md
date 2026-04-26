@@ -21,20 +21,20 @@ concept_count: 54
 
 ## Book Overviews
 
-- [[BDA3 - Overview]] — Master index for the textbook's structure and key themes
-- [[Statistical Rethinking - Overview]] — McElreath's pedagogical Bayesian course with R and Stan
+- [[BDA3 - Overview]] — CONTAINS: Full BDA3 chapter structure, key themes (hierarchical modeling, computation, iterative workflow)
+- [[Statistical Rethinking - Overview]] — CONTAINS: SR chapter structure, golem metaphor, model comparison philosophy, comparison table vs BDA3
 
-## Sub-topics
+## Concept Map
 
 | Sub-topic | Notes | Domain |
 |-----------|-------|--------|
-| [[Inference Fundamentals/_Index\|Inference Fundamentals]] | 8 | Bayes' theorem, conjugate models, hierarchical models (BDA3 Part I) |
-| [[Model Assessment/_Index\|Model Assessment]] | 5 | Posterior predictive checks, model comparison, decision analysis (BDA3 Part II) |
-| [[Computation/_Index\|Computation]] | 5 | MCMC, HMC, variational inference, Stan (BDA3 Part III) |
-| [[Regression Models/_Index\|Regression Models]] | 9 | Bayesian regression, multilevel models, GLMs, missing data (BDA3 Part IV) |
+| [[Inference Fundamentals/_Index\|Inference Fundamentals]] | 8 | Bayes' theorem, conjugate models, hierarchical models (BDA3 Part I + SR Ch 1-4) |
+| [[Model Assessment/_Index\|Model Assessment]] | 5 | Posterior predictive checks, model comparison, decision analysis (BDA3 Part II + SR Ch 6-7) |
+| [[Computation/_Index\|Computation]] | 5 | MCMC, HMC, variational inference, Stan (BDA3 Part III + SR Ch 8-9) |
+| [[Regression Models/_Index\|Regression Models]] | 9 | Bayesian regression, multilevel models, GLMs, missing data (BDA3 Part IV + SR Ch 4-15) |
 | [[Advanced Models/_Index\|Advanced Models]] | 10 | GPs, mixtures, Dirichlet processes, spatial, copulas, BART, Bayesian IPW (BDA3 Part V + PyMC) |
 | [[Workflow/_Index\|Bayesian Workflow]] | 7 | The iterative modeling cycle (Gelman et al. 2020) |
-| [[Causal Inference/_Index\|Causal Inference]] | 10 | Potential outcomes, BART/BCF outcome models, propensity score, IV, g-formula (Li et al. 2022) |
+| [[Causal Inference/_Index\|Causal Inference]] | 34 | Potential outcomes, BART/BCF outcome models, propensity score, IV, g-formula (Li et al. 2022) |
 
 ## Sources
 
