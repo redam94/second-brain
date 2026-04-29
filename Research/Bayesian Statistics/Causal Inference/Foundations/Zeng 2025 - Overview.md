@@ -73,7 +73,7 @@ Evaluated on 6 datasets: REDSHIFT (cloud performance monitoring, 12 nodes), FLIG
 - Extends the foundational framework in [[Directed Acyclic Graphs]] — builds directly on d-separation, do-calculus, and the Recursive Basis (RB).
 - Summary DAGs preserve ATE estimation validity — connects to [[Frequentist Causal Estimation]] (adjustment for confounders) and [[Potential Outcomes Framework]] (confounder control).
 - The robustness result (summary DAGs filter extraneous edges) is relevant to [[Frequentist Causal Estimation]] — misspecified confounders lead to biased ATE estimates.
-- The NP-hardness motivates CaGReS as a practical solution — analogous to how MCMC methods address intractable posteriors in [[Bayesian Inference]].
+- The NP-hardness motivates CaGReS as a practical solution — analogous to how MCMC methods address intractable posteriors in Bayesian inference.
 
 ## See Also
 - [[Summary Causal DAGs]] — formal definition and NP-hardness

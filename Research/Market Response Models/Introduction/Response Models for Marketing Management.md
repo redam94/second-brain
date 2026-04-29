@@ -4,6 +4,7 @@ aliases:
   - "MRM Management Applications"
   - "Marketing Planning Cycle"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/marketing-management

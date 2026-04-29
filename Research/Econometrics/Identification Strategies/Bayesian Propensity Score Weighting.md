@@ -27,6 +27,7 @@ aliases:
   - inverse probability treatment weights
   - propensity score Bayesian
   - Liao-Zigler method
+  - Bayesian Propensity Scores and IPW
 ---
 
 # Bayesian Propensity Score Weighting

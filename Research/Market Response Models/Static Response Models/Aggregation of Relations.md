@@ -4,6 +4,7 @@ aliases:
   - "Aggregation Bias in Marketing"
   - "Individual to Aggregate Response"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/aggregation

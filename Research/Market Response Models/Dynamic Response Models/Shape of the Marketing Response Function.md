@@ -4,6 +4,7 @@ aliases:
   - "Marketing Response Shape"
   - "Concave vs S-shaped Response"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/functional-forms

@@ -5,6 +5,7 @@ aliases:
   - "MNL Market Share"
   - "Multinomial Logit Share"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/market-share

@@ -8,9 +8,26 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/statistical-modeling
-  - type/book-overview
+  - type/overview
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
+folder: "Bayesian Statistics"
+doc_type: overview
+source_location: "full textbook, pp. 1-593"
+depends_on: []
+used_by:
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Garden of Forking Data]]"
+  - "[[Posterior Sampling and Summarization]]"
+  - "[[Linear Models in Statistical Rethinking]]"
+  - "[[Spurious Association and Confounds]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[HMC and Stan in Practice]]"
+  - "[[Monsters and Mixtures]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Model Checking]]"
+  - "[[Bayesian Linear Regression]]"
 authors:
   - Richard McElreath
 year: 2015

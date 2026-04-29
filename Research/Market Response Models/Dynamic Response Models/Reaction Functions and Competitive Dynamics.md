@@ -4,6 +4,7 @@ aliases:
   - "Competitive Reaction Marketing"
   - "Cournot Reaction Function"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/competitive-dynamics
