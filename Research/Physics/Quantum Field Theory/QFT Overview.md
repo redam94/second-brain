@@ -12,8 +12,8 @@ date_ingested: 2026-04-16
 folder: "Physics/Quantum Field Theory"
 doc_type: article
 depends_on:
-  - "[[../Foundations/Wave Function and Hilbert Space]]"
-  - "[[../Foundations/Schrödinger Equation and Time Evolution]]"
+  - "[[Wave Function and Hilbert Space]]"
+  - "[[Schrödinger Equation and Time Evolution]]"
 used_by:
   - "[[Canonical Quantization of Fields]]"
   - "[[Renormalization]]"
@@ -101,7 +101,7 @@ Both are equivalent and give the same physical predictions.
 
 ## Connections
 
-- **[[../Foundations/Schrödinger Equation and Time Evolution]]**: The quantum harmonic oscillator is the prototype; QFT applies it to each field mode.
+- **[[Schrödinger Equation and Time Evolution]]**: The quantum harmonic oscillator is the prototype; QFT applies it to each field mode.
 - **[[Canonical Quantization of Fields]]**: Detailed procedure for quantizing a scalar field.
 - **[[Renormalization]]**: The procedure for dealing with UV divergences that arise in perturbative calculations.
 - **[[Gauge Theory Overview]]**: QED, QCD, and the electroweak theory are all gauge theories.
