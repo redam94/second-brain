@@ -5,8 +5,14 @@ tags:
   - topic/bayesian-statistics
   - type/overview
 source: "[[raw/BDA3.pdf]]"
+source_location: "Full textbook (Gelman et al., 2013)"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
+depends_on: []
+used_by:
+  - "[[Statistical Rethinking - Overview]]"
+  - "[[Bayesian Workflow - Overview]]"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"

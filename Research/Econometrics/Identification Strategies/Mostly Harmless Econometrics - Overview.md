@@ -7,7 +7,6 @@ tags:
   - source/ingested
   - topic/econometrics
   - topic/causal-inference
-  - type/book-overview
   - type/overview
   - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
@@ -17,6 +16,7 @@ authors:
   - Jörn-Steffen Pischke
 year: 2008
 publisher: Princeton University Press
+folder: "Econometrics/Identification Strategies"
 doc_type: overview
 source_location: "MHE pp. 3-243 (full book)"
 depends_on:
