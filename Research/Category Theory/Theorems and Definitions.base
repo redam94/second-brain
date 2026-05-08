@@ -1,0 +1,25 @@
+{
+  "filters": [
+    {
+      "type": "or",
+      "filters": [
+        { "type": "tag", "value": "type/theorem" },
+        { "type": "tag", "value": "type/definition" }
+      ]
+    },
+    {
+      "type": "folder",
+      "value": "Research/Category Theory"
+    }
+  ],
+  "order": {
+    "field": "file.name",
+    "direction": "asc"
+  },
+  "columns": [
+    { "id": "file.name", "width": 200 },
+    { "id": "source", "width": 200 },
+    { "id": "source_location", "width": 200 }
+  ],
+  "name": "Theorems and Definitions"
+}

@@ -3,26 +3,27 @@ title: "Vault Index"
 tags:
   - type/index
   - type/vault-root
-date_updated: 2026-04-11
-concept_count: 193
+date_updated: 2026-05-08
+concept_count: 236
 ---
 
 # Vault Index
 
 > [!abstract] Routing Summary
-> A second brain for research, clippings, and knowledge management. Contains 94+ ingested notes organized by topic.
+> A second brain for research, clippings, and knowledge management. Contains 130+ ingested notes organized by topic.
 > - Need Bayesian statistics (BDA3, Statistical Rethinking, Workflow)? -> [[Research/Bayesian Statistics/_Index|Bayesian Statistics]]
 > - Need econometrics and causal inference (MHE)? -> [[Research/Econometrics/_Index|Econometrics]]
 > - Need research methodology (forking paths, power analysis, longitudinal causal inference)? -> [[Research/Research Methodology/_Index|Research Methodology]]
 > - Need agent-based modeling (consumer behavior, WOM, diffusion)? -> [[Research/Agent-Based Modeling/_Index|Agent-Based Modeling]]
 > - Need web clippings and saved articles? -> [[Clippings/_Index|Clippings]]
 > - Need market response models (functional forms, carryover, VAR, advertising/price elasticities)? -> [[Research/Market Response Models/_Index|Market Response Models]]
+> - Need category theory (functors, Yoneda lemma, limits, adjoint functor theorems)? -> [[Research/Category Theory/_Index|Category Theory]]
 
 ## Areas
 
 | Area | Notes | Domain |
 |------|-------|--------|
-| [[Research/_Index\|Research]] | 136 | Applied statistics, econometrics, causal inference, agent-based modeling, market response models from textbooks and papers |
+| [[Research/_Index\|Research]] | 173 | Applied statistics, econometrics, causal inference, agent-based modeling, market response models, category theory from textbooks and papers |
 | [[Clippings/_Index\|Clippings]] | 13 | Web articles and saved content (raw source material) |
 
 ## Topic Map
@@ -36,9 +37,11 @@ Cross-cutting topics that span multiple folders:
 - **Agent-Based Modeling**: [[ABM Methodology and Principles|ABM Foundations]], [[Consumer Utility Function Components|Consumer Utility]], [[Behavioral Attitudes in CUBES|CUBES Behavioral Model]], [[Word of Mouth Mechanisms|WOM]], [[Product Adoption and Diffusion Models|Diffusion]], [[Genetic Algorithm Calibration for ABM|GA Calibration]], [[HM-ABC Calibration Framework|HM+ABC]], [[History Matching for ABMs|History Matching]], [[Approximate Bayesian Computation for ABMs|ABC for ABMs]]
 - **Longitudinal Methods**: [[Within-Between Persons Distinction - Overview|Within/Between Overview]], [[Fixed-Effects Model|FE Model]], [[Cross-Lagged and Dynamic Panel Models|CLPM/DPM]], [[Estimands in Longitudinal Research|Longitudinal Estimands]]
 - **Market Response Models**: [[Market Response Models - Overview|MRM Overview]], [[Functional Forms in Marketing|Functional Forms]], [[Market Share Models|MCI/MNL]], [[Carryover Effects and Distributed Lags|Koyck/ADL]], [[Reaction Functions and Competitive Dynamics|Reaction Functions]], [[Parameter Estimation in Market Response|Estimation]], [[Single Marketing Time Series|ARIMA]], [[Transfer Function Model|Transfer Function]], [[Multivariate Persistence and Cointegration|VAR/Cointegration]], [[Advertising and Promotion Effects|Advertising Generalizations]], [[Price and Distribution Effects|Price Generalizations]]
+- **Category Theory**: [[Research/Category Theory/Basic Category Theory - Overview|BCT Overview]], [[Research/Category Theory/Foundations/Categories|Categories]], [[Research/Category Theory/Foundations/Functors|Functors]], [[Research/Category Theory/Foundations/Natural Transformations|Natural Transformations]], [[Research/Category Theory/Adjunctions/Adjoint Functors|Adjoint Functors]], [[Research/Category Theory/Representables/Yoneda Lemma|Yoneda Lemma]], [[Research/Category Theory/Limits and Colimits/General Limits|Limits]], [[Research/Category Theory/Synthesis/Adjoints and Limits|RAPL Theorem]], [[Research/Category Theory/Synthesis/Adjoint Functor Theorems|GAFT/SAFT]]
 
 ## Recent Ingestions
 
+- 2026-05-08: Ingested *Basic Category Theory* (Leinster, Cambridge 2014; arXiv 1612.09375v2, 191 pp.) into [[Research/Category Theory/_Index|Category Theory]] — 21 content notes across 6 sub-folders: [[Research/Category Theory/Foundations/_Index|Foundations]] (4: categories, functors, natural transformations, functor categories), [[Research/Category Theory/Adjunctions/_Index|Adjunctions]] (3: adjoint functors, units/counits, initial objects), [[Research/Category Theory/Representables/_Index|Representables]] (3: representable functors, Yoneda lemma, Yoneda embedding), [[Research/Category Theory/Limits and Colimits/_Index|Limits and Colimits]] (5: products/equalizers, pullbacks, general limits, colimits, functors and limits), [[Research/Category Theory/Synthesis/_Index|Synthesis]] (5: limits via representables, presheaf categories, adjoints and limits, GAFT/SAFT, CCC), [[Research/Category Theory/Universal Properties/_Index|Universal Properties]] (1: introduction). Also: 1 overview note, 7 index files, 3 .base dynamic views.
 - 2026-04-11: Ingested 2 papers: (1) McCulloch et al. (2022) into [[Research/Agent-Based Modeling/Calibration and Validation/Calibration Methods/_Index|Calibration Methods]] — 5 notes: HM-ABC Framework overview, History Matching (implausibility score, waves, LHS), Approximate Bayesian Computation (rejection sampling, HM-informed prior, epsilon threshold), Uncertainty Quantification (4 sources: parameter/model discrepancy/ensemble variance/observation), Case Studies (SugarScape, territorial birds, RISC Scottish farms). (2) Rohrer & Murayama (2023) into [[Research/Research Methodology/_Index|Research Methodology]] — 5 notes: Within/Between Persons overview (3 main claims), Within/Between Causal Inference (ATE proof, time-varying confounders), Fixed-Effects Model (Box 1 DAG, assumptions, limitations), Cross-Lagged and Dynamic Panel Models (CLPM, DPM/RI-CLPM, comparison table), Estimands in Longitudinal Research (theoretical estimand definition, 5-step workflow, consistency in psychology).
 - 2026-04-11: Ingested Hanssens, Parsons & Schultz (2001) into [[Research/Market Response Models/_Index|Market Response Models]] — 25 notes across 5 subfolders: Introduction (3 notes: MRM overview, management tasks, data/variables), Static Response Models (4 notes: 10 functional forms with full LaTeX + elasticities, MCI/MNL share models, aggregation bias), Dynamic Response Models (4 notes: Koyck/ADL/PDL carryover, reaction functions, S-shape/hysteresis), Estimation and Testing (4 notes: OLS/GLS/SUR/2SLS/Bayes HB, RESET/specification errors, flexible forms, model selection), Time Series Analysis (4 notes: ARIMA, transfer functions, VAR/cointegration/ECM, Granger causality), Empirical Findings (5 notes: generalizations framework, advertising elasticity ≈ 0.10 / duration 6-9 months, price elasticity ≈ −2.5, Dorfman-Steiner optimization, implementation). Also: 8 index files created + Research/_Index.md and _Vault_Index.md updated.
 - 2026-04-11: Ingested Evans (2024) Ch. 19 SMM tutorial into [[Research/Econometrics/Extensions/_Index|Extensions]] — 2 new notes: [[SMM Weighting Matrix and Inference]] (weighting strategies, two-step Ω̂, Newey-West, Σ̂ via Jacobian) + [[SMM Python Implementation]] (scipy workflow, L-BFGS-B eps fix, indirect inference pattern). Also: graph analysis moved [[Dependence Measures for Copulas]] from Advanced Models to Extensions, and added 14 missing wikilinks across vault.

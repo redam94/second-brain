@@ -1,0 +1,24 @@
+{
+  "filters": [
+    {
+      "type": "tag",
+      "value": "source/ingested"
+    },
+    {
+      "type": "folder",
+      "value": "Research/Category Theory"
+    }
+  ],
+  "order": {
+    "field": "date_ingested",
+    "direction": "desc"
+  },
+  "columns": [
+    { "id": "file.name", "width": 200 },
+    { "id": "doc_type", "width": 100 },
+    { "id": "source", "width": 200 },
+    { "id": "source_location", "width": 200 },
+    { "id": "date_ingested", "width": 120 }
+  ],
+  "name": "Ingested Notes"
+}
