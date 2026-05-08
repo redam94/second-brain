@@ -11,10 +11,14 @@
             "id": "4e026be74554a5cd",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Research/Category Theory/Synthesis/Cartesian Closed Categories.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cartesian Closed Categories"
             }
           }
         ]
@@ -138,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Research/Category Theory/Synthesis/Cartesian Closed Categories.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Cartesian Closed Categories"
             }
           },
           {
@@ -177,6 +182,11 @@
   },
   "active": "4e026be74554a5cd",
   "lastOpenFiles": [
+    "Research/Category Theory/Synthesis/Adjoint Functor Theorems.md",
+    "Research/Category Theory/Representables/Yoneda Lemma.md",
+    "Research/Category Theory/Representables/Yoneda Embedding and Consequences.md",
+    "Research/Category Theory/Representables/Representable Functors.md",
+    "Research/Category Theory/Universal Properties/Universal Properties - Introduction.md",
     "Research/Category Theory/Theorems and Definitions.base",
     "Research/Category Theory/Concept Dependencies.base",
     "Research/Category Theory/Ingested Notes.base",
@@ -187,10 +197,8 @@
     "Research/Category Theory/Representables/_Index.md",
     "Research/Category Theory/Adjunctions/_Index.md",
     "Research/Category Theory/Foundations/_Index.md",
-    "Research/Category Theory/Universal Properties/Universal Properties - Introduction.md",
     "Research/Category Theory/Universal Properties",
     "Research/Category Theory/Synthesis/Cartesian Closed Categories.md",
-    "Research/Category Theory/Synthesis/Adjoint Functor Theorems.md",
     "Research/Category Theory/Synthesis/Adjoints and Limits.md",
     "Research/Category Theory/Synthesis/Limits in Presheaf Categories.md",
     "Research/Category Theory/Synthesis/Limits via Representables.md",
@@ -202,9 +210,6 @@
     "Research/Category Theory/Limits and Colimits/Pullbacks.md",
     "Research/Category Theory/Limits and Colimits/Products and Equalizers.md",
     "Research/Category Theory/Limits and Colimits",
-    "Research/Category Theory/Representables/Yoneda Embedding and Consequences.md",
-    "Research/Category Theory/Representables/Yoneda Lemma.md",
-    "Research/Category Theory/Representables/Representable Functors.md",
     "Research/Category Theory/Representables",
     "Research/Category Theory/Adjunctions/Adjunctions via Initial Objects.md",
     "Research/Category Theory/Adjunctions/Units and Counits.md",
@@ -212,7 +217,6 @@
     "Research/Category Theory/Adjunctions",
     "Research/Category Theory/Foundations/Functor Categories.md",
     "Research/Category Theory/Foundations",
-    "Research/Econometrics/Ingested Notes.base",
     "public/index-og-image.webp",
     "public/_Vault_Index-og-image.webp",
     "public/Research/raw/Unlock-the-Secrets-of-Causal-Inference-with-a-Master-Class-in-Directed-Acyclic-Graphs-og-image.webp",
