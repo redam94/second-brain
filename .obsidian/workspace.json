@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/LLM Expert Elicitation for Bayesian Networks.md",
+                "file": "Research/Research Methodology/Cross-Lagged and Dynamic Panel Models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LLM Expert Elicitation for Bayesian Networks"
+              "title": "Cross-Lagged and Dynamic Panel Models"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research/Econometrics/Identification Strategies/Differences-in-Differences.md",
+                "file": "Research/Research Methodology/Cross-Lagged and Dynamic Panel Models.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Differences-in-Differences"
+              "title": "Outline of Cross-Lagged and Dynamic Panel Models"
             }
           },
           {
@@ -180,12 +180,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4e026be74554a5cd",
+  "active": "b125e52c5344907f",
   "lastOpenFiles": [
+    "Research/Ingested Notes.base",
+    "Research/Theorems and Definitions.base",
+    "Research/Agent-Based Modeling/Ingested Notes.base",
+    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/LLM Expert Elicitation for Bayesian Networks.md",
     "Research/Agent-Based Modeling/Consumer Behavior/CUBES Model/CUBES Simulator Architecture.md",
     "Research/Agent-Based Modeling/Applications/Organizations/Organizational Simulation.md",
     "Dream/_Index.md",
-    "Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/LLM Expert Elicitation for Bayesian Networks.md",
     "Research/Econometrics/_Index.md",
     "Research/Agent-Based Modeling/_Index.md",
     "Research/Agent-Based Modeling/Concept Dependencies.base",
@@ -206,8 +209,6 @@
     "scripts/sync-website.sh",
     "scripts",
     "Research/Concept Dependencies.base",
-    "Research/Ingested Notes.base",
-    "Research/Theorems and Definitions.base",
     "Research/Research Methodology/Fixed-Effects Model.md",
     "Research/Research Methodology/Observational vs Experimental Methods in Advertising.md",
     "Research/Research Methodology/Forking Paths and Bayesian Approaches.md",
@@ -217,7 +218,6 @@
     "Research/Market Response Models/Concept Dependencies.base",
     "Research/raw/Gauge theory.md",
     "Research/_Index.md",
-    "Research/Bayesian Statistics/Causal Inference/_Index.md",
     "public/index-og-image.webp",
     "public/_Vault_Index-og-image.webp",
     "public/Research/raw/Unlock-the-Secrets-of-Causal-Inference-with-a-Master-Class-in-Directed-Acyclic-Graphs-og-image.webp",
