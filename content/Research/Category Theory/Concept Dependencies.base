@@ -1,0 +1,25 @@
+{
+  "filters": [
+    {
+      "type": "tag",
+      "value": "source/ingested"
+    },
+    {
+      "type": "folder",
+      "value": "Research/Category Theory"
+    },
+    {
+      "type": "tag",
+      "value": "type/index",
+      "negate": true
+    }
+  ],
+  "groupBy": "folder",
+  "columns": [
+    { "id": "file.name", "width": 200 },
+    { "id": "depends_on", "width": 300 },
+    { "id": "used_by", "width": 300 },
+    { "id": "tags", "width": 200 }
+  ],
+  "name": "Concept Dependencies"
+}
