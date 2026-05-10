@@ -7,6 +7,26 @@ tags:
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
+source_location: "Full text, pp. 1–519"
+depends_on: []
+used_by:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Single-Parameter Models]]"
+  - "[[Multiparameter Models]]"
+  - "[[Hierarchical Models]]"
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[Model Checking]]"
+  - "[[Model Comparison]]"
+  - "[[Introduction to Bayesian Computation]]"
+  - "[[MCMC Basics]]"
+  - "[[Efficient MCMC]]"
+  - "[[Approximation Methods]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Hierarchical Linear Models]]"
+  - "[[Generalized Linear Models]]"
+  - "[[Nonparametric Models Overview]]"
+  - "[[Bayesian Workflow - Overview]]"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"

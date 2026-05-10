@@ -8,7 +8,7 @@ tags:
   - method/brms
   - method/stan
   - doc/tutorial
-source: "[[raw/How to use Bayesian propensity scores and inverse probability weights]]"
+source: "[[raw/How to use Bayesian propensity scores and inverse probability weights.md]]"
 source_location: "Full post — Andrew Heiss blog (2021-12-18)"
 date_ingested: 2026-04-11
 folder: "Bayesian Statistics/Advanced Models"
@@ -18,7 +18,13 @@ depends_on:
   - "[[Directed Acyclic Graphs]]"
   - "[[The Selection Problem]]"
   - "[[Hierarchical Models]]"
-used_by: []
+used_by:
+  - "[[Li et al 2022 - Overview]]"
+  - "[[Frequentist Causal Estimation]]"
+  - "[[Propensity Score in Bayesian CI]]"
+  - "[[Bayesian Outcome Models]]"
+  - "[[General Structure of Bayesian CI]]"
+  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 aliases:
   - Bayesian IPW
   - Bayesian propensity scores

@@ -12,8 +12,10 @@ aliases:
   - Missing Data SR
   - Bayesian Imputation SR
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Regression Models"
 doc_type: concept
-source_location: "raw/Missing Data"
+source: "[[raw/Missing Data.md]]"
+source_location: "PyMC tutorial: Missing Data (Statistical Rethinking Lecture 18)"
 depends_on:
   - "[[Missing Data Models]]"
   - "[[Spurious Association and Confounds]]"

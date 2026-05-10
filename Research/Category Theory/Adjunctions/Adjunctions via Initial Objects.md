@@ -8,6 +8,7 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 2.3, pp. 68–74"
 date_ingested: 2026-05-08
+folder: "Category Theory/Adjunctions"
 doc_type: textbook
 depends_on:
   - "[[Adjoint Functors]]"

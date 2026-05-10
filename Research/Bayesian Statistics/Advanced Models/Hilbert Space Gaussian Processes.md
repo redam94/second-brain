@@ -11,8 +11,10 @@ aliases:
   - HSGP
   - Hilbert Space GP
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Advanced Models"
 doc_type: concept
-source_location: "raw/Baby Births Modelling with HSGPs"
+source: "[[raw/Baby Births Modelling with HSGPs.md]]"
+source_location: "PyMC tutorial: Baby Births Modelling with HSGPs"
 depends_on:
   - "[[Nonparametric Models Overview]]"
   - "[[Bayesian Linear Regression]]"
