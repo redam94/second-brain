@@ -94,7 +94,7 @@ with pm.Model() as copula_model:
 ```
 
 > [!note] LKJCholeskyCov
-> The [[LKJ distribution]] is the standard prior for correlation matrices in PyMC. `eta=2.0` gives a weakly informative prior that mildly favours lower correlations.
+> The LKJ distribution is the standard prior for correlation matrices in PyMC. `eta=2.0` gives a weakly informative prior that mildly favours lower correlations.
 
 ## Limitations
 

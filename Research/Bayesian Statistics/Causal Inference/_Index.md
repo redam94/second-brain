@@ -88,6 +88,6 @@ Causal Structure Learning
 
 ## Cross-Links to Existing Vault Notes
 
-- [[Bayesian Propensity Scores and IPW]] — Bayesian IPW via Liao-Zigler two-stage method (Heiss blog) — related to [[Propensity Score in Bayesian CI]] Strategy 3
+- [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]] — Bayesian IPW via Liao-Zigler two-stage method (Heiss blog) — related to [[Propensity Score in Bayesian CI]] Strategy 3
 - [[Nonparametric Causal Inference]] — BART and non-parametric Bayesian causal methods — related to [[Bayesian Outcome Models]]
 - [[Copula Estimation]] — copula methods used in sensitivity analysis — related to [[Sensitivity Analysis in Observational Studies]]
