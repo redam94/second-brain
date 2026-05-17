@@ -4,9 +4,19 @@ source: "https://www.pymc.io/projects/examples/en/latest/causal_inference/bayesi
 author:
 published:
 created: 2026-04-09
+date_ingested: 2026-04-09
+folder: "Clippings"
+doc_type: tutorial
 description: "Causal Inference and Propensity Scores: There are few claims stronger than the assertion of a causal relationship and few claims more contestable. A naive world model - rich with tenuous connection..."
 tags:
-  - "clippings"
+  - clippings
+  - source/clipping
+  - topic/bayesian-statistics
+  - topic/causal-inference
+  - type/tutorial
+  - method/pymc
+depends_on: []
+used_by: []
 ---
 ## Bayesian Non-parametric Causal Inference
 

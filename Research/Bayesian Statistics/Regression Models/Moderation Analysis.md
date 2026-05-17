@@ -110,7 +110,7 @@ Finding: $\beta_2 < 0$ (credibly), meaning training becomes less effective at bu
 - [[Spurious Association and Confounds]] — interaction effects and multivariate regression
 - [[Bayesian Linear Regression]] — priors as regularization for correlated predictors
 - [[Generalized Linear Models]] — moderation extends naturally to logistic/Poisson regression
-- [[Bayesian Non-parametric Causal Inference]] — non-parametric alternative when the interaction form is unknown
+- [[Nonparametric Causal Inference]] — non-parametric alternative when the interaction form is unknown
 
 ## Source
 

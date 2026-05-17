@@ -4,9 +4,20 @@ source: "https://www.pymc.io/projects/examples/en/latest/statistical_rethinking_
 author:
 published:
 created: 2026-04-09
+date_ingested: 2026-04-09
+folder: "Clippings"
+doc_type: tutorial
 description: "This notebook is part of the PyMC port of the Statistical Rethinking 2023 lecture series by Richard McElreath. Video - Lecture 18 - Missing Data# Lecture 18 - Missing Data Missing Data, Found: Obse..."
 tags:
-  - "clippings"
+  - clippings
+  - source/clipping
+  - topic/bayesian-statistics
+  - topic/missing-data
+  - topic/statistical-rethinking
+  - type/tutorial
+  - method/pymc
+depends_on: []
+used_by: []
 ---
 ## Missing Data
 

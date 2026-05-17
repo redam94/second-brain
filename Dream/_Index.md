@@ -3,6 +3,8 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
+doc_type: index
+folder: "Dream"
 date_updated: 2026-04-13
 ---
 

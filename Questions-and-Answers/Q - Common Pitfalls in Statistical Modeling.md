@@ -8,6 +8,8 @@ tags:
   - topic/model-comparison
   - topic/statistical-modeling
 date_asked: 2026-04-09
+doc_type: qa
+folder: "Questions-and-Answers"
 answered_from:
   - "[[Statistical Rethinking - The Golem of Prague]]"
   - "[[Spurious Association and Confounds]]"

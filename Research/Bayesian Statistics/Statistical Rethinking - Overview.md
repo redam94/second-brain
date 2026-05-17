@@ -8,12 +8,20 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/statistical-modeling
-  - type/book-overview
+  - type/overview
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
+folder: "Bayesian Statistics"
+doc_type: overview
+source_location: "Full text, pp. 1–593"
 authors:
   - Richard McElreath
 year: 2015
+depends_on:
+  - "[[raw/StatRethink-Bayes.pdf]]"
+  - "[[Bayesian Workflow - Overview]]"
+used_by: []
 ---
 
 # Statistical Rethinking

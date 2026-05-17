@@ -11,6 +11,7 @@ tags:
 aliases:
   - Bayesian BART Causal
   - Propensity Score Bayesian
+  - Nonparametric Causal Inference
 date_ingested: 2026-04-09
 doc_type: concept
 source_location: "raw/Bayesian Non-parametric Causal Inference"
@@ -21,6 +22,7 @@ depends_on:
   - "[[Bayesian Linear Regression]]"
 used_by:
   - "[[Moderation Analysis]]"
+  - "[[Bayesian Difference in Differences]]"
 ---
 
 # Bayesian Non-parametric Causal Inference
