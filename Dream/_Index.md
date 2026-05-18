@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-04-13
+date_updated: 2026-05-18
 ---
 
 # Dream: Research Gaps
@@ -205,6 +205,55 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 
 ---
 
+### 14. Bayesian Marketing Mix Modeling (MMM)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Advertising and Promotion Effects]] gives the canonical empirical generalizations (short-run ad elasticity ≈ 0.10, duration interval 6–9 months), and [[Functional Forms in Marketing]] covers the ADBUDG saturation curve and multiplicative forms used in media response. [[Activity Bias in Advertising]] explains *why* passive observational data fails to measure advertising effects, and [[Observational vs Experimental Methods in Advertising]] documents the scale of the problem. But no note covers the end-to-end Bayesian MMM workflow as practiced in industry: hierarchical media response priors (geometric adstock, Hill saturation curves), the Robyn/Meridian/pymc-marketing frameworks, budget optimization under posterior uncertainty, or the model comparison step for selecting carryover vs saturation specifications. This gap sits precisely at the intersection of the vault's Market Response Models and Bayesian Statistics sections, and is the applied synthesis that practitioners reaching for these notes actually need.
+
+**Adjacent notes:** [[Advertising and Promotion Effects]], [[Functional Forms in Marketing]], [[Carryover Effects and Distributed Lags]], [[Shape of the Marketing Response Function]], [[Optimal Marketing Decisions and Forecasting]], [[Activity Bias in Advertising]], [[Bayesian Workflow - Overview]], [[Hierarchical Models]]
+
+**Suggested sources / search terms:**
+- Jin et al. (2017) — "Bayesian Methods for Media Mix Modeling with Carryover and Shape Effects" (Google Research)
+- Lightweight MMM (Google), Meridian (Google, 2024), Robyn (Meta), pymc-marketing
+- Search: "Bayesian marketing mix model", "media mix modeling adstock", "Hill saturation curve MMM", "Robyn MMM", "Meridian Google MMM"
+
+---
+
+### 15. Panel Data Econometrics (Random Effects, Hausman Test, Arellano-Bond GMM)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Within-Between Persons Distinction - Overview]] contrasts fixed-effects and random-effects designs conceptually, and [[Fixed-Effects Model]] covers the within-person FE estimator. [[Cross-Lagged and Dynamic Panel Models]] covers the dynamic panel from a research methods perspective. But the *econometric estimation* toolkit for panel data is absent: the random-effects GLS estimator, the Hausman specification test (FE vs RE; tests whether individual effects are correlated with regressors), the Mundlak–Chamberlain device for RE with correlated effects, and Arellano-Bond GMM for dynamic panels (instrumented with lagged levels to address the "dynamic panel bias" from lagged dependent variables). This gap means a reader of [[Within-Between Persons Distinction - Overview]] cannot move to estimation without leaving the vault.
+
+**Adjacent notes:** [[Fixed-Effects Model]], [[Within-Between Persons Distinction - Overview]], [[Cross-Lagged and Dynamic Panel Models]], [[Differences-in-Differences]], [[Standard Errors and Clustering]], [[Instrumental Variables]], [[Method of Simulated Moments]]
+
+**Suggested sources / search terms:**
+- Wooldridge (2010) — *Econometric Analysis of Cross Section and Panel Data*, Chs. 10–11
+- Arellano & Bond (1991) — "Some Tests of Specification for Panel Data" (*Review of Economic Studies*)
+- Mundlak (1978) — "On the Pooling of Time Series and Cross Section Data" (*Econometrica*)
+- Search: "Hausman test fixed effects random effects", "Arellano Bond GMM", "Mundlak device", "dynamic panel bias", "within estimator"
+
+---
+
+### 16. Latent Class Models and Market Segmentation
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Heterogeneity in Agent Models]] motivates the core idea: real populations consist of diverse individuals with different preference profiles, and ABM encodes this diversity explicitly. [[Monsters and Mixtures]] covers finite mixture models (Gaussian mixtures, zero-inflated models) in the Bayesian Statistics context. [[Factor Analysis and PPCA]] covers continuous latent structure. But the bridge between these — *discrete* latent class models for market segmentation — is missing. Latent class analysis (LCA), finite mixture regression (where segment membership governs response coefficients), and their connection to the random-coefficients market response models in [[Functional Forms in Marketing]] (Eq 3.44) are absent. Nor does any note cover the choice between continuous (factor analysis, PPCA) and discrete (LCA, mixture regression) latent structures, or the Bayesian estimation approaches (collapsed Gibbs sampler, variational EM). This gap is especially salient for the vault's marketing focus: customer segmentation is the most common application of these methods in the Market Response Models domain.
+
+**Adjacent notes:** [[Heterogeneity in Agent Models]], [[Monsters and Mixtures]], [[Factor Analysis and PPCA]], [[Functional Forms in Marketing]], [[Parameter Estimation in Market Response]], [[Hierarchical Models]], [[Generalized Linear Models]]
+
+**Suggested sources / search terms:**
+- Wedel & Kamakura (2000) — *Market Segmentation: Conceptual and Methodological Foundations*, 2nd Ed., Kluwer
+- Goodman (1974) — "Exploratory Latent Structure Analysis Using Both Identifiable and Unidentifiable Models" (*Biometrika*)
+- Collins & Lanza (2010) — *Latent Class and Latent Transition Analysis*
+- Search: "latent class analysis", "finite mixture regression market segmentation", "Bayesian latent class", "discrete choice latent segments", "mixture of regressions"
+
+---
+
+---
+
 ## Covered Gaps
 
 | Gap | Covered By | Date Covered |
@@ -224,3 +273,4 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 | 2026-04-10 | Run 3: reviewed 9 notes (Synthetic Control, Fitting and Validating Computation, Iterative Model Improvement, Power Analysis, Golem of Prague, Model Comparison, Garden of Forking Data, Multiple Comparisons Bayesian, Spatial BYM). Gaps #2 and #4 marked 🍂 covered (notes now exist). Gap #1 updated to 🌿 still relevant (Bayesian IPW note exists but frequentist propensity score matching not yet covered). Added gaps #6 (Simulation-Based Calibration) and #7 (Permutation/Randomization Inference). |
 | 2026-04-12 | Run 4: reviewed 9 notes (ABM Validation Challenges, Heterogeneity in Agent Models, Golem of Prague, Canonical Causal DAGs, Dependence Measures for Copulas, SMM Python Implementation, Evaluating Fitted Models, Summary Causal DAGs, Transfer Function Model). Gap #5 marked 🍂 covered (Treatment Effect Estimation subfolder exists with Metalearners for CATE, X-Learner, T-Learner, S-Learner). Gap #1 updated: Frequentist Causal Estimation note now covers IPW/DR estimators, but PSM matching diagnostics still absent. Added gaps #8 (Factor/Vine Copulas), #9 (Causal Structure Learning from Data), #10 (Global Sensitivity Analysis). |
 | 2026-04-13 | Run 5: reviewed 9 notes (Computational Troubleshooting, Single Marketing Time Series, Garden of Forking Data, Organizational Simulation, Counterfactual Inference, Bayesian Structural Time-Series Model, Partial Pooling as Multiple Comparisons Correction, CUBES Simulator Architecture, LLM Expert Elicitation for Bayesian Networks). No existing gaps covered this run. Fixed frontmatter in all 9 notes (added date_updated, folder, source, aliases as needed). Fixed broken wikilink [[Bayesian Non-parametric Causal Inference]] → [[Nonparametric Causal Inference]] in Counterfactual Inference. Added cross-links: BSTS ↔ Counterfactual Inference ↔ Single Marketing Time Series cluster; CUBES ↔ Imitation/Conditioning ↔ Network Topology ↔ Social Network Formation; LLM Elicitation ↔ Directed Acyclic Graphs ↔ Canonical Causal DAGs ↔ Code Prompts; Computational Troubleshooting ↔ HMC and Stan in Practice ↔ Monsters and Mixtures. Added gaps #11 (ABM Software Platforms), #12 (Empirical Bayes Methods), #13 (State-Space Models and Kalman Filter). |
+| 2026-05-18 | Run 6: reviewed 10 notes (Brock-Mirman SMM Exercise, Within-Between Persons Distinction Overview, Single-Parameter Models, Type S and Type M Errors, Heterogeneity in Agent Models, Observational vs Experimental Methods in Advertising, Functional Forms in Marketing, Advertising and Promotion Effects, Dependence Measures for Copulas, Bayesian Workflow Overview). No existing gaps covered this run. No frontmatter issues found. Added cross-links across all 10 notes: Brock-Mirman ↔ Efficient Method of Moments; Within-Between Persons ↔ Differences-in-Differences ↔ Omitted Variables Bias; Single-Parameter Models ↔ Posterior Sampling ↔ Model Checking ↔ BDA3 Overview ↔ Golem of Prague; Type S/M Errors ↔ Activity Bias in Advertising ↔ Observational vs Experimental Methods (exaggeration ratio ≈220×); Heterogeneity in Agent Models ↔ Emergent Phenomena in ABM ↔ ABM Calibration Overview; Functional Forms ↔ Discrete Choice Models (logistic section); Advertising and Promotion Effects ↔ Observational vs Experimental Methods ↔ The Experimental Ideal; Dependence Measures ↔ Factor Analysis and PPCA; Bayesian Workflow ↔ ABM Calibration Overview. Added gaps #14 (Bayesian MMM), #15 (Panel Data Econometrics), #16 (Latent Class Models / Market Segmentation). |
