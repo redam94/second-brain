@@ -4,12 +4,27 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
+doc_type: overview
+source_location: "Full text — Gelman, Carlin, Stern, Dunson, Vehtari, Rubin (2013/2025)"
+depends_on:
+  - "[[raw/BDA3.pdf]]"
+used_by:
+  - "[[Introduction to Bayesian Computation]]"
+  - "[[Approximation Methods]]"
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[Single-Parameter Models]]"
+  - "[[Multiparameter Models]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Bayesian Data Analysis, 3rd Edition

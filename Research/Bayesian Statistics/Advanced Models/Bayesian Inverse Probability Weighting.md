@@ -18,7 +18,14 @@ depends_on:
   - "[[Directed Acyclic Graphs]]"
   - "[[The Selection Problem]]"
   - "[[Hierarchical Models]]"
-used_by: []
+used_by:
+  - "[[Li et al 2022 - Overview]]"
+  - "[[Frequentist Causal Estimation]]"
+  - "[[Propensity Score in Bayesian CI]]"
+  - "[[Bayesian Outcome Models]]"
+  - "[[General Structure of Bayesian CI]]"
+  - "[[How to use Bayesian propensity scores and inverse probability weights]]"
+  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 aliases:
   - Bayesian IPW
   - Bayesian propensity scores
