@@ -4,14 +4,18 @@ aliases:
   - "Sales Response Functional Forms"
   - "Marketing Response Functions"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/functional-forms
   - topic/econometrics
   - source/hanssens-parsons-schultz-2001
+  - doc/textbook
 date_created: 2026-04-11
+date_ingested: 2026-04-11
 date_updated: 2026-04-11
-source: "Hanssens, Parsons & Schultz (2001) Ch. 3"
+folder: "Market Response Models/Static Response Models"
+source: "[[Research/Market Response Models/raw/Market Response Models Econometric and Time Series Analysis.pdf]]"
 chapter: "3"
 status: complete
 doc_type: concept
