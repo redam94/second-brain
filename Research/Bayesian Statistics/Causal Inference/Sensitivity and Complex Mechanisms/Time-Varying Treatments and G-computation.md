@@ -127,3 +127,6 @@ The Bayesian approach applies **g-computation**: fit Bayesian models for each co
 
 ## See Also
 - [[Sensitivity Analysis in Observational Studies]] — sensitivity to unmeasured confounders in longitudinal settings
+- [[Instrumental Variables and Principal Stratification]] — principal stratification as an alternative framework for complex treatment assignments
+- [[Estimands in Longitudinal Research]] — the theoretical estimand that sequential treatments must target
+- [[Cross-Lagged and Dynamic Panel Models]] — frequentist/structural alternatives for dynamic panel estimation

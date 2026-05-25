@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-05-18
+date_updated: 2026-05-25
 ---
 
 # Dream: Research Gaps
@@ -252,6 +252,38 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 
 ---
 
+### 17. LKJ Distribution and Correlation Structure Priors
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Copula Estimation]] uses `LKJCholeskyCov` in its PyMC code and contains an explanatory callout referencing the LKJ distribution — but the wikilink `[[LKJ distribution]]` points to a note that does not exist. [[Hierarchical Linear Models]] also uses `LKJCholeskyCov` for correlation among random effects. The LKJ distribution (Lewandowski, Kurowicka & Joe 2009) is the standard prior for correlation matrices in Stan and PyMC, controlled by the concentration parameter `eta`: `eta=1` is uniform over valid correlations, `eta>1` concentrates mass near the identity (independence), `eta<1` pushes toward stronger correlations. No note in the vault explains what LKJ is, why it is preferred over the inverse-Wishart prior for correlation matrices, the Cholesky parameterization for computational stability, or the separation strategy (fitting standard deviations and correlations separately). This gap blocks understanding of any multivariate Bayesian model using correlated random effects or copula structures.
+
+**Adjacent notes:** [[Copula Estimation]], [[Hierarchical Linear Models]], [[Factor Analysis and PPCA]], [[Social Network Models]], [[Bayesian Linear Regression]]
+
+**Suggested sources / search terms:**
+- Lewandowski, Kurowicka & Joe (2009) — "Generating random correlation matrices based on vines and extended onion method" (*Journal of Multivariate Analysis*)
+- Stan Development Team — *Stan Reference Manual*, § Correlation Matrix Priors
+- Barnard, McCulloch & Meng (2000) — "Modeling covariance matrices in terms of standard deviations and correlations" (*Statistica Sinica*)
+- Search: "LKJ distribution Stan", "LKJCholeskyCov PyMC", "correlation matrix prior Bayesian", "separation strategy covariance prior"
+
+---
+
+### 18. Dynamic Treatment Regimes and Optimal Policy
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Time-Varying Treatments and G-computation]] explicitly flags this boundary: "Optimal dynamic treatment regimes require combining causal inference + decision theory + reinforcement learning" — but the vault has no notes that go there. Dynamic treatment regimes (DTRs) are sequences of decision rules that individualize treatment at each time point based on the patient/subject's evolving history. The `Q-learning` algorithm (backwards induction using regression on potential outcomes) and `A-learning` (advantage function learning) are the canonical estimation approaches. These connect causal inference (the g-formula identifies the value of a regime) to decision theory (maximizing expected potential outcomes) to reinforcement learning (MDPs and policy optimization). The vault covers the observational causal identification problem (g-formula in Time-Varying Treatments) and the decision analysis context ([[Decision Analysis]]) but the synthesis — how to estimate and optimize DTRs — is absent. This is increasingly relevant in personalized medicine, digital marketing (adaptive ad sequencing), and A/B testing with adaptive stopping.
+
+**Adjacent notes:** [[Time-Varying Treatments and G-computation]], [[Potential Outcomes Framework]], [[Decision Analysis]], [[Causal Estimands]], [[Bayesian Outcome Models]], [[Metalearners for CATE]]
+
+**Suggested sources / search terms:**
+- Murphy (2003) — "Optimal dynamic treatment regimes" (*JRSS-B*)
+- Schulte et al. (2014) — "Q- and A-learning methods for estimating optimal dynamic treatment regimes" (*Statistical Science*)
+- Laber & Murphy (2011) — "Adaptive confidence intervals for the test error in classification" (*JASA*)
+- Search: "dynamic treatment regime Q-learning", "A-learning optimal DTR", "adaptive treatment strategy", "reinforcement learning causal inference"
+
+---
+
 ---
 
 ## Covered Gaps
@@ -274,3 +306,4 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 | 2026-04-12 | Run 4: reviewed 9 notes (ABM Validation Challenges, Heterogeneity in Agent Models, Golem of Prague, Canonical Causal DAGs, Dependence Measures for Copulas, SMM Python Implementation, Evaluating Fitted Models, Summary Causal DAGs, Transfer Function Model). Gap #5 marked 🍂 covered (Treatment Effect Estimation subfolder exists with Metalearners for CATE, X-Learner, T-Learner, S-Learner). Gap #1 updated: Frequentist Causal Estimation note now covers IPW/DR estimators, but PSM matching diagnostics still absent. Added gaps #8 (Factor/Vine Copulas), #9 (Causal Structure Learning from Data), #10 (Global Sensitivity Analysis). |
 | 2026-04-13 | Run 5: reviewed 9 notes (Computational Troubleshooting, Single Marketing Time Series, Garden of Forking Data, Organizational Simulation, Counterfactual Inference, Bayesian Structural Time-Series Model, Partial Pooling as Multiple Comparisons Correction, CUBES Simulator Architecture, LLM Expert Elicitation for Bayesian Networks). No existing gaps covered this run. Fixed frontmatter in all 9 notes (added date_updated, folder, source, aliases as needed). Fixed broken wikilink [[Bayesian Non-parametric Causal Inference]] → [[Nonparametric Causal Inference]] in Counterfactual Inference. Added cross-links: BSTS ↔ Counterfactual Inference ↔ Single Marketing Time Series cluster; CUBES ↔ Imitation/Conditioning ↔ Network Topology ↔ Social Network Formation; LLM Elicitation ↔ Directed Acyclic Graphs ↔ Canonical Causal DAGs ↔ Code Prompts; Computational Troubleshooting ↔ HMC and Stan in Practice ↔ Monsters and Mixtures. Added gaps #11 (ABM Software Platforms), #12 (Empirical Bayes Methods), #13 (State-Space Models and Kalman Filter). |
 | 2026-05-18 | Run 6: reviewed 10 notes (Brock-Mirman SMM Exercise, Within-Between Persons Distinction Overview, Single-Parameter Models, Type S and Type M Errors, Heterogeneity in Agent Models, Observational vs Experimental Methods in Advertising, Functional Forms in Marketing, Advertising and Promotion Effects, Dependence Measures for Copulas, Bayesian Workflow Overview). No existing gaps covered this run. No frontmatter issues found. Added cross-links across all 10 notes: Brock-Mirman ↔ Efficient Method of Moments; Within-Between Persons ↔ Differences-in-Differences ↔ Omitted Variables Bias; Single-Parameter Models ↔ Posterior Sampling ↔ Model Checking ↔ BDA3 Overview ↔ Golem of Prague; Type S/M Errors ↔ Activity Bias in Advertising ↔ Observational vs Experimental Methods (exaggeration ratio ≈220×); Heterogeneity in Agent Models ↔ Emergent Phenomena in ABM ↔ ABM Calibration Overview; Functional Forms ↔ Discrete Choice Models (logistic section); Advertising and Promotion Effects ↔ Observational vs Experimental Methods ↔ The Experimental Ideal; Dependence Measures ↔ Factor Analysis and PPCA; Bayesian Workflow ↔ ABM Calibration Overview. Added gaps #14 (Bayesian MMM), #15 (Panel Data Econometrics), #16 (Latent Class Models / Market Segmentation). |
+| 2026-05-25 | Run 7: reviewed 9 notes (Copula Estimation, Time-Varying Treatments and G-computation, Introduction to Bayesian Computation, Missing Data Models, Functors and Limits, Universal Properties Introduction, Dependence Measures for Copulas, Instrumental Variables, Quantum Entanglement). No existing gaps newly covered this run. Fixed broken wikilink `[[LKJ distribution]]` → plain text in Copula Estimation; fixed misleading alias `[[Nonparametric Models Overview\|multivariate Bayesian models]]` → `[[Nonparametric Models Overview]]`; removed raw file from `depends_on` in Introduction to Bayesian Computation. Added cross-links: Introduction to Bayesian Computation ↔ Approximation Methods; Time-Varying Treatments ↔ Estimands in Longitudinal Research ↔ Cross-Lagged and Dynamic Panel Models ↔ Instrumental Variables and Principal Stratification; Instrumental Variables ↔ Differences-in-Differences ↔ Instrumental Variables and Principal Stratification; Quantum Entanglement ↔ Schrödinger Equation and Time Evolution ↔ Uncertainty Principle. Added gaps #17 (LKJ Distribution and Correlation Priors), #18 (Dynamic Treatment Regimes and Optimal Policy). |

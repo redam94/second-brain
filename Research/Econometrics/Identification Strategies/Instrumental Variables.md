@@ -85,6 +85,8 @@ With heterogeneous effects, IV estimates the causal effect on **compliers** — 
 - [[Local Average Treatment Effects]]
 - [[Omitted Variables Bias]]
 - [[Regression Discontinuity Designs]] — fuzzy RD is IV
+- [[Differences-in-Differences]] — the main competing strategy for panel settings where IV instruments are unavailable
+- [[Instrumental Variables and Principal Stratification]] — extends IV via principal stratification for non-compliance and censoring
 - [[Mostly Harmless Econometrics - Overview]]
 - [[Hierarchical Models]] — Bayesian partial pooling as an alternative approach to treatment effect heterogeneity
 - [[Data Collection Models]] — ignorability through instrumental design vs. conditioning on observables
