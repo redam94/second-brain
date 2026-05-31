@@ -1,5 +1,8 @@
 ---
 title: "How to use Bayesian propensity scores and inverse probability weights"
+aliases:
+  - "Bayesian Propensity Scores and IPW"
+  - "Bayesian IPW Liao-Zigler"
 source: "https://www.andrewheiss.com/blog/2021/12/18/bayesian-propensity-scores-weights/"
 author:
   - "[[Andrew Heiss]]"

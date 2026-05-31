@@ -31,6 +31,8 @@ aliases:
   - "Statistical modeling mistakes"
   - "Modeling pitfalls for data scientists"
   - "Common statistical errors"
+doc_type: qa
+folder: "Questions-and-Answers"
 ---
 
 # What are some common pitfalls in statistical modeling a data scientist should be aware of?

@@ -572,4 +572,4 @@ By 1930, quantum mechanics had been further unified and formalized by [David Hil
 
 ## Vault Notes
 
-- [[Quantum Mechanics Overview]] — Quantum mechanics foundations
+- [[Quantum Mechanics - Overview]] — Quantum mechanics foundations

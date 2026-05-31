@@ -13,6 +13,16 @@ question_count: 5
 > to its source notes and related concepts.
 > Browse by topic below or search for keywords.
 
+## Concept Map
+
+| Question | Note | Topic | Key Sources | Answer Summary |
+|----------|------|-------|------------|----------------|
+| How to calibrate ABM with SMM? | [[Q - Using SMM to Calibrate Agent Based Models]] | qa | [[Method of Simulated Moments]], [[ABM Calibration Overview]] | Minimize weighted distance between observed and simulated moments; formal standard errors via two-step W |
+| How to uncover causal estimates from observational data? | [[Q - Uncovering Causal Estimates from Non-Experimental Data]] | qa | [[The Selection Problem]], [[Instrumental Variables]], [[Differences-in-Differences]] | Nine strategies: CIA, DAGs, IV, DiD, RD, synthetic control, metalearners, BSTS, sensitivity |
+| How to handle multiple comparisons in model selection? | [[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]] | qa | [[Garden of Forking Paths]], [[Multiple Comparisons - Bayesian Perspective]] | Regularizing priors, projection predictive selection, partial pooling instead of significance filtering |
+| What are common pitfalls in statistical modeling? | [[Q - Common Pitfalls in Statistical Modeling]] | qa | [[Spurious Association and Confounds]], [[Garden of Forking Paths]] | Eight pitfall categories: confounding, forking paths, overfitting, missing data, golem misuse, checking, computation, Type S/M |
+| Frequentist vs Bayesian statistics: key differences? | [[Q - Differences Between Frequentist and Bayesian Statistics]] | qa | [[Probability and Bayesian Inference]], [[Asymptotics and Frequentist Connections]] | Probability as frequency vs. belief; confidence vs. credible intervals; priors; partial pooling; WAIC vs AIC |
+
 ## By Topic
 
 ### Econometrics / Simulation-Based Estimation

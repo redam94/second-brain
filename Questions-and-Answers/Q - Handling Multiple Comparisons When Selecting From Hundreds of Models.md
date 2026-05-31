@@ -24,6 +24,8 @@ aliases:
   - "Multiple comparisons with many models"
   - "Model selection and p-hacking"
   - "Variable selection multiple testing"
+doc_type: qa
+folder: "Questions-and-Answers"
 ---
 
 # How should I handle multiple comparisons when selecting from hundreds of models?

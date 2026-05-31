@@ -27,6 +27,8 @@ aliases:
   - quasi-experimental methods
   - identification strategies observational data
   - causal identification non-experimental
+doc_type: qa
+folder: "Questions-and-Answers"
 ---
 
 # What are some ways to uncover causal estimates from non-experimental data?

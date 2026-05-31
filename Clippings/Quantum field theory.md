@@ -632,4 +632,4 @@ Compared to ordinary QFT, [topological quantum field theory](https://en.wikipedi
 
 ## Vault Notes
 
-- [[Quantum Field Theory Overview]] — QFT fundamentals
+- [[QFT Overview]] — QFT fundamentals

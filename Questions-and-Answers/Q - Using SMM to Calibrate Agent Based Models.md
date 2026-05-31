@@ -21,6 +21,8 @@ aliases:
   - SMM ABM calibration
   - Simulated Method of Moments for ABM
   - How to calibrate ABM with SMM
+doc_type: qa
+folder: "Questions-and-Answers"
 ---
 
 # How can SMM be used to calibrate agent based models?
