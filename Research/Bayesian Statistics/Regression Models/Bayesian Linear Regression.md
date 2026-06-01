@@ -13,7 +13,7 @@ folder: "Bayesian Statistics/Regression Models"
 aliases:
   - "Bayesian regression"
   - "Bayesian lasso"
-doc_type: concept
+doc_type: textbook
 source_location: "BDA3 Ch.14:353-380"
 depends_on:
   - "[[Probability and Bayesian Inference]]"
@@ -64,3 +64,6 @@ Informative priors on $\beta$ provide **regularization**:
 - [[Bayesian Workflow - Overview]] — iterative model building context for regression
 - [[MCMC Basics]] — computation for posterior inference when analytic forms are unavailable
 - [[Statistical Rethinking - Overview]] — McElreath's pedagogical introduction to the same regression models from a code-first perspective
+- [[Linear Models in Statistical Rethinking]] — McElreath's code-first treatment of the full linear model framework including priors and prediction
+- [[Moderation Analysis]] — interaction terms as an extension of Bayesian linear regression
+- [[Missing Data Models]] — Bayesian regression handles missing data naturally through the generative model

@@ -210,6 +210,8 @@ where $r_{mt}$ is the S&P 500 index return. This is a GJR-GARCH model with asymm
 - [[SMM Copula Asymptotic Theory]] — theoretical justification
 - [[SMM Copula Specification Testing]] — the J-test used for model comparison
 - [[Dependence Measures for Copulas]] — the moments matched
+- [[Method of Simulated Moments]] — the general SMM framework of which this is a copula application
+- [[Brock-Mirman Model - SMM Estimation Exercise]] — another structural SMM application (macroeconomic growth model), useful for cross-domain comparison
 
 ## Sources
 

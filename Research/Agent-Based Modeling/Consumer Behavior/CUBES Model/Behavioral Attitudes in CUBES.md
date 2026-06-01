@@ -110,3 +110,7 @@ From the simulation results (Ben Said et al. 2002):
 - [[Behavioral Primitives and Thresholds]] — how BAs translate to behavior
 - [[Imitation and Conditioning Processes]] — how BAs evolve over time
 - [[Ben Said et al 2002 - Overview]] — paper context
+- [[Word of Mouth Mechanisms]] — imitation BA is the primary channel through which WOM spreads in CUBES
+- [[Opinion Leaders and Social Influence]] — opinion leaders drive the imitation and conditioning processes
+- [[Product Adoption and Diffusion Models]] — innovativeness BA governs the timing of early adoption
+- [[Network Topology Effects on Diffusion]] — social network structure determines how imitation propagates across agents

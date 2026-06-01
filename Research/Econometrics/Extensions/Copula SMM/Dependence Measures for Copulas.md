@@ -161,6 +161,7 @@ The Normal copula's zero tail dependence is a significant limitation for financi
 - [[SMM Copula Specification Testing]] — tests whether a fitted copula matches observed quantile dependence patterns
 - [[SMM Copula Asymptotic Theory]] — asymptotic properties of sample Spearman's ρ and quantile dependence estimators
 - [[Factor Analysis and PPCA]] — factor structure in multivariate data is related to the factor copula architecture that extends these dependence measures to high-dimensional settings
+- [[Quantile Regression]] — quantile regression models the conditional quantile of an outcome; quantile dependence measures the conditional joint quantile behavior of a copula
 
 ## Sources
 
