@@ -20,7 +20,7 @@ concept_count: 36
 
 ## Book Overview
 
-- [[Identification Strategies/Mostly Harmless Econometrics - Overview|Mostly Harmless Econometrics - Overview]] — Master index for the book's concepts and structure (moved to Identification Strategies/)
+- [[Identification Strategies/Mostly Harmless Econometrics - Overview|Mostly Harmless Econometrics - Overview]] — CONTAINS: chapter-by-chapter structure (Ch. 1-8), key estimands (ATE, LATE, ATT, RD), all four quasi-experimental identification strategies (IV, DiD, RD, SC), regression and CEF, standard errors and clustering; master index for the full MHE curriculum
 
 ## Sub-topics
 

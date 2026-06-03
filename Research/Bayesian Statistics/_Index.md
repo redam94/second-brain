@@ -21,8 +21,8 @@ concept_count: 54
 
 ## Book Overviews
 
-- [[BDA3 - Overview]] — Master index for the textbook's structure and key themes
-- [[Statistical Rethinking - Overview]] — McElreath's pedagogical Bayesian course with R and Stan
+- [[BDA3 - Overview]] — CONTAINS: structure of all 5 BDA3 parts (Ch. 1-23), key themes (iterative model building, hierarchical modeling, Stan computation, practical focus); master index for the full BDA3 curriculum
+- [[Statistical Rethinking - Overview]] — CONTAINS: book structure (Ch. 1-15), Golem metaphor for statistical modeling, comparison table BDA3 vs SR, key principles (hypotheses ≠ models, multilevel as default, code-first learning)
 
 ## Sub-topics
 
