@@ -7,7 +7,8 @@ published: 2001-11-14
 created: 2026-04-10
 description:
 tags:
-  - "clippings"
+  - "type/clipping"
+  - "source/web"
 ---
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Hydrogen_Density_Plots.png/500px-Hydrogen_Density_Plots.png)
 

@@ -6,7 +6,8 @@ published:
 created: 2026-04-09
 description: "Causal Inference and Propensity Scores: There are few claims stronger than the assertion of a causal relationship and few claims more contestable. A naive world model - rich with tenuous connection..."
 tags:
-  - "clippings"
+  - "type/clipping"
+  - "source/web"
 ---
 ## Bayesian Non-parametric Causal Inference
 

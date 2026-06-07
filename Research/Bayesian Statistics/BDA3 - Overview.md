@@ -4,12 +4,31 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
+source_location: "BDA3 (Gelman et al., 2013) — full book, Ch. 1-23, pp. 1-675"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Single-Parameter Models]]"
+  - "[[Multiparameter Models]]"
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[Hierarchical Models]]"
+  - "[[Introduction to Bayesian Computation]]"
+  - "[[Approximation Methods]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Mostly Harmless Econometrics - Overview]]"
+used_by:
+  - "[[Statistical Rethinking - Overview]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Bayesian Data Analysis, 3rd Edition

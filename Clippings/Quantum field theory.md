@@ -7,7 +7,8 @@ published: 2001-09-26
 created: 2026-04-10
 description:
 tags:
-  - "clippings"
+  - "type/clipping"
+  - "source/web"
 ---
 In [theoretical physics](https://en.wikipedia.org/wiki/Theoretical_physics "Theoretical physics"), **quantum field theory** (**QFT**) is a theoretical framework that combines [field theory](https://en.wikipedia.org/wiki/Field_theory_\(physics\) "Field theory (physics)"), [special relativity](https://en.wikipedia.org/wiki/Special_relativity "Special relativity") and [quantum mechanics](https://en.wikipedia.org/wiki/Quantum_mechanics "Quantum mechanics").[^1]<sup><span title="Page / location: xi">: xi</span> </sup> QFT is used in [particle physics](https://en.wikipedia.org/wiki/Particle_physics "Particle physics") to construct [physical models](https://en.wikipedia.org/wiki/Physical_model "Physical model") of [subatomic particles](https://en.wikipedia.org/wiki/Subatomic_particle "Subatomic particle") and in [condensed matter physics](https://en.wikipedia.org/wiki/Condensed_matter_physics "Condensed matter physics") to construct models of [quasiparticles](https://en.wikipedia.org/wiki/Quasiparticle "Quasiparticle"). The current [Standard Model of particle physics](https://en.wikipedia.org/wiki/Standard_Model_of_particle_physics "Standard Model of particle physics") is based on QFT.
 

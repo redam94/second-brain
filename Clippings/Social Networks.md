@@ -6,7 +6,8 @@ published:
 created: 2026-04-09
 description: "This notebook is part of the PyMC port of the Statistical Rethinking 2023 lecture series by Richard McElreath. Video - Lecture 15 - Social Networks# Lecture 15 - Social Networks What Motivates Shar..."
 tags:
-  - "clippings"
+  - "type/clipping"
+  - "source/web"
 ---
 ## Social Networks
 

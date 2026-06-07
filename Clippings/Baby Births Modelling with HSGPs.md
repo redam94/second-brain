@@ -6,7 +6,8 @@ published:
 created: 2026-04-09
 description: "This notebook provides an example of using the Hilbert Space Gaussian Process (HSGP) technique, introduced in[], in the context of time series modeling. This technique has proven successful in spee..."
 tags:
-  - "clippings"
+  - "type/clipping"
+  - "source/web"
 ---
 ## Baby Births Modelling with HSGPs
 

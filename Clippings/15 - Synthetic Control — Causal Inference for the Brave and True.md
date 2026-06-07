@@ -6,7 +6,8 @@ published:
 created: 2026-04-10
 description:
 tags:
-  - "clippings"
+  - "type/clipping"
+  - "source/web"
 ---
 ## 15 - Synthetic Control
 

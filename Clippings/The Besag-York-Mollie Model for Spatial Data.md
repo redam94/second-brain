@@ -6,7 +6,8 @@ published:
 created: 2026-04-09
 description: "Extra dependencies install instructions In order to run this notebook (either locally or on binder) you won’t only need a working PyMC installation with all optional dependencies, but also to insta..."
 tags:
-  - "clippings"
+  - "type/clipping"
+  - "source/web"
 ---
 ## The Besag-York-Mollie Model for Spatial Data
 
