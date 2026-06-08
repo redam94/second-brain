@@ -76,3 +76,5 @@ aliases:
 - [[Counterfactual Impact Estimation]] — how causal effects are computed
 - [[CausalImpact Empirical Application]] — advertising campaign case study
 - [[Differences-in-Differences]] — classical approach that CausalImpact generalizes
+- [[Synthetic Control]] — Abadie-style synthetic control that CausalImpact extends with trend, seasonality, and Bayesian inference
+- [[Advertising and Promotion Effects]] — the primary empirical application domain for CausalImpact in marketing

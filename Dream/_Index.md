@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-06-01
+date_updated: 2026-06-08
 ---
 
 # Dream: Research Gaps
@@ -320,6 +320,36 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 
 ---
 
+### 21. Bayesian Networks: Foundational Methodology
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[LLM-BN Decision Support Application]] and [[LLM Expert Elicitation for Bayesian Networks]] treat BN *application* and *structure elicitation* in detail, but no note explains the foundational BN machinery: the graph separation criterion (d-separation), the factorisation theorem (joint = product of conditionals), conditional probability table (CPT) parameterisation, and exact inference algorithms (variable elimination, belief propagation) vs. approximate inference (loopy BP, MCMC over BN). [[Directed Acyclic Graphs]] covers DAG causal reasoning (do-calculus, back-door criterion) from the econometric/causal inference angle — but BN inference and the distinction between causal BNs and purely probabilistic BNs is not covered. Without this foundation, readers of the LLM-BN application notes cannot understand what the PyAgrum library is doing, why d-separation determines conditional independence, or how CPTs relate to the joint likelihood.
+
+**Adjacent notes:** [[LLM-BN Decision Support Application]], [[LLM Expert Elicitation for Bayesian Networks]], [[BN Construction Methods Comparison]], [[Directed Acyclic Graphs]], [[Entropy-Based BN Evaluation]], [[Bayesian Outcome Models]]
+
+**Suggested sources / search terms:**
+- Pearl (1988) — *Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference*
+- Koller & Friedman (2009) — *Probabilistic Graphical Models: Principles and Techniques* (MIT Press)
+- Darwiche (2009) — *Modeling and Reasoning with Bayesian Networks* (Cambridge)
+- Search: "Bayesian network d-separation", "CPT estimation Bayesian network", "variable elimination belief propagation BN", "PyAgrum tutorial", "probabilistic graphical model"
+
+---
+
+### 22. Bass Diffusion Model and Innovation Adoption Curves
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Product Adoption and Diffusion Models]] covers ABM-based diffusion driven by social network topology and WOM. [[Opinion Leaders and Social Influence]] models opinion leaders as diffusion accelerators. [[Carryover Effects and Distributed Lags]] covers advertising carryover/persistence in MRM. But no note covers the Bass (1969) diffusion model — arguably the most influential model in marketing science — which decomposes new-product adoption into innovation effects (external influence, mass media, analogous to [[Word of Mouth Mechanisms#Broadcast]] channels) and imitation effects (internal WOM influence proportional to current adopter base). The Bass model produces the S-curve adoption pattern that both the ABM social dynamics notes and the MRM dynamic response notes reference implicitly. The connection between Bass-model imitation coefficient and ABM WOM amplification, between the Bass diffusion curve and the Koyck/ADL carryover models, and between Bass curve fitting and the more general state-space/BSTS framework, is uncharted. This gap is the missing theoretical bridge between the ABM and MRM sections.
+
+**Adjacent notes:** [[Product Adoption and Diffusion Models]], [[Opinion Leaders and Social Influence]], [[Carryover Effects and Distributed Lags]], [[Shape of the Marketing Response Function]], [[Word of Mouth Mechanisms]], [[ABM in Marketing Strategy]], [[Market Response Models - Overview]]
+
+**Suggested sources / search terms:**
+- Bass (1969) — "A new product growth for model consumer durables" (*Management Science*)
+- Mahajan, Muller & Bass (1990) — "New product diffusion models in marketing: A review and directions for research" (*Journal of Marketing*)
+- Bemmaor & Lee (2002) — "The impact of heterogeneity and ill-conditioning on diffusion model parameter estimates" (*Marketing Science*)
+- Search: "Bass diffusion model", "innovation imitation coefficients Bass", "S-curve new product adoption", "generalised Bass model", "Bass model estimation"
+
 ---
 
 ## Covered Gaps
@@ -344,3 +374,4 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 | 2026-05-18 | Run 6: reviewed 10 notes (Brock-Mirman SMM Exercise, Within-Between Persons Distinction Overview, Single-Parameter Models, Type S and Type M Errors, Heterogeneity in Agent Models, Observational vs Experimental Methods in Advertising, Functional Forms in Marketing, Advertising and Promotion Effects, Dependence Measures for Copulas, Bayesian Workflow Overview). No existing gaps covered this run. No frontmatter issues found. Added cross-links across all 10 notes: Brock-Mirman ↔ Efficient Method of Moments; Within-Between Persons ↔ Differences-in-Differences ↔ Omitted Variables Bias; Single-Parameter Models ↔ Posterior Sampling ↔ Model Checking ↔ BDA3 Overview ↔ Golem of Prague; Type S/M Errors ↔ Activity Bias in Advertising ↔ Observational vs Experimental Methods (exaggeration ratio ≈220×); Heterogeneity in Agent Models ↔ Emergent Phenomena in ABM ↔ ABM Calibration Overview; Functional Forms ↔ Discrete Choice Models (logistic section); Advertising and Promotion Effects ↔ Observational vs Experimental Methods ↔ The Experimental Ideal; Dependence Measures ↔ Factor Analysis and PPCA; Bayesian Workflow ↔ ABM Calibration Overview. Added gaps #14 (Bayesian MMM), #15 (Panel Data Econometrics), #16 (Latent Class Models / Market Segmentation). |
 | 2026-05-25 | Run 7: reviewed 9 notes (Copula Estimation, Time-Varying Treatments and G-computation, Introduction to Bayesian Computation, Missing Data Models, Functors and Limits, Universal Properties Introduction, Dependence Measures for Copulas, Instrumental Variables, Quantum Entanglement). No existing gaps newly covered this run. Fixed broken wikilink `[[LKJ distribution]]` → plain text in Copula Estimation; fixed misleading alias `[[Nonparametric Models Overview\|multivariate Bayesian models]]` → `[[Nonparametric Models Overview]]`; removed raw file from `depends_on` in Introduction to Bayesian Computation. Added cross-links: Introduction to Bayesian Computation ↔ Approximation Methods; Time-Varying Treatments ↔ Estimands in Longitudinal Research ↔ Cross-Lagged and Dynamic Panel Models ↔ Instrumental Variables and Principal Stratification; Instrumental Variables ↔ Differences-in-Differences ↔ Instrumental Variables and Principal Stratification; Quantum Entanglement ↔ Schrödinger Equation and Time Evolution ↔ Uncertainty Principle. Added gaps #17 (LKJ Distribution and Correlation Priors), #18 (Dynamic Treatment Regimes and Optimal Policy). |
 | 2026-06-01 | Run 8: reviewed 9 notes (Behavioral Attitudes in CUBES, Products and Equalizers, SMM Copula Simulation and Application, Dependence Measures for Copulas, Bayesian Inverse Probability Weighting, Causal Model - Cause Precondition Effect, Bayesian Linear Regression, GA Fitness Evaluation and the RAM, Synthetic Control). No existing gaps newly covered this run. Fixed frontmatter: added `folder` to Products and Equalizers; corrected `doc_type: concept` → `doc_type: textbook` in Bayesian Linear Regression. Fixed Connections section in Causal Model - Cause Precondition Effect to wikilink DAG reference. Added cross-links: Behavioral Attitudes ↔ Word of Mouth Mechanisms ↔ Opinion Leaders ↔ Product Adoption Diffusion Models ↔ Network Topology Effects; Products and Equalizers ↔ Functors and Limits; SMM Copula Simulation ↔ Method of Simulated Moments ↔ Brock-Mirman SMM; Dependence Measures ↔ Quantile Regression; Bayesian IPW ↔ Frequentist Causal Estimation ↔ Bayesian Propensity Score Weighting ↔ Propensity Score in Bayesian CI; Causal Model - CPE ↔ Directed Acyclic Graphs ↔ LLM Expert Elicitation ↔ BN Construction Methods Comparison; Bayesian Linear Regression ↔ Linear Models in StatRethink ↔ Moderation Analysis ↔ Missing Data Models; GA Fitness RAM ↔ ABC for ABMs ↔ UQ for ABM Calibration ↔ ABM Calibration Case Studies; Synthetic Control ↔ Requirements/Bias/Extensions/Inference sub-notes ↔ GSC ↔ Abadie 2021. Added gaps #19 (Staggered/Heterogeneous DiD), #20 (Horseshoe and Regularized Horseshoe Priors). |
+| 2026-06-08 | Run 9: reviewed 10 notes (Opinion Leaders and Social Influence, LLM-BN Decision Support Application, Discrete Choice Models, Practical Issues in Simulation Estimation, Instrumental Variables, Bayesian Linear Regression, Copula Estimation, ABM in Marketing Strategy, Brodersen 2015 - Overview, ABM Validation Challenges). No existing gaps newly covered this run. No frontmatter errors found. Cross-links added: Opinion Leaders ↔ Carryover Effects and Distributed Lags ↔ Advertising and Promotion Effects (WOM→MRM bridge); LLM-BN ↔ Directed Acyclic Graphs ↔ Model Checking; Discrete Choice Models ↔ Market Share Models (logit bridge Econometrics↔MRM); Instrumental Variables ↔ Bayesian Propensity Score Weighting ↔ Parameter Estimation in Market Response (2SLS for price endogeneity); Bayesian Linear Regression — added wikilink for Horseshoe prior + See Also entry [[Horseshoe and Regularized Horseshoe Priors]]; Copula Estimation ↔ Discrete Choice Models (LKJ) ↔ Market Share Models; ABM in Marketing Strategy ↔ Market Response Models - Overview ↔ Advertising and Promotion Effects ↔ Marketing Generalizations Overview; Brodersen 2015 ↔ Synthetic Control ↔ Advertising and Promotion Effects; ABM Validation Challenges ↔ Model Checking ↔ Garden of Forking Paths. Added gaps #21 (Bayesian Networks Fundamentals), #22 (Bass Diffusion Model). Gaps #6 (SBC), #19 (Staggered DiD), #20 (Horseshoe priors) reinforced by this run's notes. |
