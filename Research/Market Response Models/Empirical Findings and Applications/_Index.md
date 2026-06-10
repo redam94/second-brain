@@ -2,8 +2,11 @@
 title: "Index: Empirical Findings and Applications"
 tags:
   - type/index
+  - source/ingested
   - topic/market-response
+parent: "[[Market Response Models/_Index|Market Response Models]]"
 date_updated: 2026-04-11
+concept_count: 5
 ---
 
 # Empirical Findings and Applications
@@ -16,10 +19,12 @@ date_updated: 2026-04-11
 > - Dorfman-Steiner; ADBUDG optimization; VAR forecasting → [[Optimal Marketing Decisions and Forecasting]]
 > - Barriers to adoption, DSS, Kalman filter updating → [[Implementation of Market Response Models]]
 
-| Note | Topic |
-|------|-------|
-| [[Marketing Generalizations Overview]] | Meta-analysis, primary/selective demand, measurement error |
-| [[Advertising and Promotion Effects]] | Advertising elasticity, duration, coupon elasticity, TPR, display, Frito-Lay |
-| [[Price and Distribution Effects]] | Own-price −2.5, cross-price 0.5, asymmetry, clout/vulnerability, distribution |
-| [[Optimal Marketing Decisions and Forecasting]] | Dorfman-Steiner, ADBUDG optimization, forecasting methods, HP case |
-| [[Implementation of Market Response Models]] | DSS, calibration vs estimation, adaptive updating, organizational conditions |
+## Notes
+- [[Marketing Generalizations Overview]] — CONTAINS: Meta-analysis methodology, primary vs selective demand distinction, measurement error correction, criteria for empirical generalizations
+- [[Advertising and Promotion Effects]] — CONTAINS: Advertising elasticity ≈ 0.10 (meta-analysis), carryover duration 6–9 months, coupon elasticity, TPR effects, display/feature multipliers, Frito-Lay case
+- [[Price and Distribution Effects]] — CONTAINS: Own-price elasticity ≈ −2.5, cross-price elasticity ≈ +0.52, price asymmetry, clout/vulnerability framework, distribution effects on long-run share
+- [[Optimal Marketing Decisions and Forecasting]] — CONTAINS: Dorfman-Steiner condition (A*/S* = η_QA/|η_QP|), ADBUDG budget optimization, VAR-based forecasting, HP/Compaq case study
+- [[Implementation of Market Response Models]] — CONTAINS: Decision support systems (DSS), calibration vs estimation, Kalman filter adaptive updating, organizational conditions for model adoption
+
+## Sources
+- [[raw/Market Response Models Econometric and Time Series Analysis.pdf]] — Hanssens, Parsons & Schultz (2001), Ch. 8–9

@@ -2,7 +2,7 @@
 title: "Quantum field theory"
 source: "https://en.wikipedia.org/wiki/Quantum_field_theory"
 author:
-  - "[[Contributors to Wikimedia projects]]"
+  - "Contributors to Wikimedia projects"
 published: 2001-09-26
 created: 2026-04-10
 description:

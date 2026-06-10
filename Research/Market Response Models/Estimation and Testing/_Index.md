@@ -2,8 +2,11 @@
 title: "Index: Estimation and Testing"
 tags:
   - type/index
+  - source/ingested
   - topic/market-response
+parent: "[[Market Response Models/_Index|Market Response Models]]"
 date_updated: 2026-04-11
+concept_count: 4
 ---
 
 # Estimation and Testing
@@ -15,9 +18,11 @@ date_updated: 2026-04-11
 > - Translog, Box-Cox transformation, LOESS, splines → [[Flexible Functional Forms]]
 > - AIC, BIC, cross-validation, managerial calibration, pre-registration → [[Model Selection and Exploratory Analysis]]
 
-| Note | Topic |
-|------|-------|
-| [[Parameter Estimation in Market Response]] | OLS Eqs 5.5-5.6, GLS, SUR, 2SLS/3SLS, Bayesian posterior Eq 5.27, HB shrinkage Eq 5.30 |
-| [[Model Testing and Specification]] | F-test Eq 5.35, t-test Eq 5.37, RESET Eq 5.40, 7 specification errors |
-| [[Flexible Functional Forms]] | Translog, Box-Cox, LOESS, splines |
-| [[Model Selection and Exploratory Analysis]] | AIC/BIC, cross-validation, EDA, multiple testing, pre-registration |
+## Notes
+- [[Parameter Estimation in Market Response]] — CONTAINS: OLS Eqs 5.5–5.6, GLS, SUR, 2SLS/3SLS, Bayesian posterior Eq 5.27, HB hierarchical shrinkage Eq 5.30, Hausman endogeneity test
+- [[Model Testing and Specification]] — CONTAINS: F-test Eq 5.35, t-test Eq 5.37, RESET Eq 5.40, 7 types of specification errors, autocorrelation diagnostics, Box-Cox linearity test
+- [[Flexible Functional Forms]] — CONTAINS: Translog specification, Box-Cox power transformation, LOESS nonparametric regression, splines for flexible response curves
+- [[Model Selection and Exploratory Analysis]] — CONTAINS: AIC/BIC model comparison, cross-validation approach, exploratory data analysis, multiple testing corrections, pre-registration for replicability
+
+## Sources
+- [[raw/Market Response Models Econometric and Time Series Analysis.pdf]] — Hanssens, Parsons & Schultz (2001), Ch. 5

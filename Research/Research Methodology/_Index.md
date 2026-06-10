@@ -5,13 +5,13 @@ tags:
   - source/ingested
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-04-11
-concept_count: 13
+concept_count: 15
 ---
 
 # Research Methodology
 
 > [!abstract] Routing Summary
-> This folder covers statistical methodology, the replication crisis, causal inference challenges, experimental design, and longitudinal methods. Contains 11 notes plus an Experimental Design subfolder (3 notes).
+> This folder covers statistical methodology, the replication crisis, causal inference challenges, experimental design, and longitudinal methods. Contains 11 notes plus an Experimental Design subfolder (4 notes).
 > - Need the forking paths / p-hacking argument? -> [[Garden of Forking Paths]]
 > - Need sources of analytic flexibility? -> [[Researcher Degrees of Freedom]]
 > - Need Bayesian solutions to multiplicity? -> [[Forking Paths and Bayesian Approaches]]

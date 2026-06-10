@@ -11,7 +11,7 @@ concept_count: 4
 # Experimental Design
 
 > [!abstract] Routing Summary
-> This folder covers tools for designing, powering, and analyzing experiments. Contains 3 notes.
+> This folder covers tools for designing, powering, and analyzing experiments. Contains 4 notes.
 > - Need sample size formulas? -> [[Power Analysis and Sample Size]]
 > - Need Bonferroni, FDR, or q-values? -> [[Multiple Testing Corrections]]
 > - Need Kaplan-Meier or Cox regression? -> [[Survival Analysis]]

@@ -11,7 +11,7 @@ concept_count: 16
 # Extensions
 
 > [!abstract] Routing Summary
-> This folder covers extensions to the core econometric toolkit: three standalone method notes (MHE Ch. 7–8 + PyMC) plus two sub-topics on simulation-based estimation. Contains 15 notes across 3 areas.
+> This folder covers extensions to the core econometric toolkit: three standalone method notes (MHE Ch. 7–8 + PyMC) plus two sub-topics on simulation-based estimation. Contains 16 notes across 3 areas.
 > - Need distributional effects or QTE? → [[Quantile Regression]]
 > - Need multinomial logit/probit or random utility? → [[Discrete Choice Models]]
 > - Need robust SEs, clustering, or Moulton factor? → [[Standard Errors and Clustering]]

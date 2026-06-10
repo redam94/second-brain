@@ -2,7 +2,7 @@
 title: "Gauge theory"
 source: "https://en.wikipedia.org/wiki/Gauge_theory"
 author:
-  - "[[Contributors to Wikimedia projects]]"
+  - "Contributors to Wikimedia projects"
 published: 2009-08-08
 created: 2026-04-10
 description:

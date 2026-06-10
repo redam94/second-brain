@@ -2,7 +2,7 @@
 title: "Quantum mechanics"
 source: "https://en.wikipedia.org/wiki/Quantum_mechanics"
 author:
-  - "[[Contributors to Wikimedia projects]]"
+  - "Contributors to Wikimedia projects"
 published: 2001-11-14
 created: 2026-04-10
 description:
