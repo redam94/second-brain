@@ -21,6 +21,10 @@ used_by:
   - "[[Modeling as Software Development]]"
   - "[[Model Comparison]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
+aliases:
+  - "Model expansion"
+  - "Model refinement"
+  - "Bayesian workflow iteration"
 ---
 
 > [!summary]

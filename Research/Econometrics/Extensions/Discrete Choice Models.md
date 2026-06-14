@@ -20,6 +20,10 @@ depends_on:
   - "[[Quantile Regression]]"
 used_by:
   - "[[Mostly Harmless Econometrics - Overview]]"
+aliases:
+  - "Random utility model"
+  - "Multinomial logit"
+  - "RUM"
 ---
 
 # Discrete Choice Models

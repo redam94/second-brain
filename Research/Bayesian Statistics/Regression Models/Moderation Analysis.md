@@ -12,6 +12,7 @@ aliases:
   - Moderation Analysis
   - Interaction Effects Bayesian
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Regression Models"
 doc_type: concept
 source_location: "raw/Bayesian moderation analysis"
 depends_on:

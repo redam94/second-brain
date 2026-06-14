@@ -23,6 +23,9 @@ used_by:
   - "[[Activity Bias in Advertising]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
+aliases:
+  - "Selection bias"
+  - "Fundamental problem of causal inference"
 ---
 
 # The Selection Problem

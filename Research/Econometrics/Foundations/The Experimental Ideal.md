@@ -22,6 +22,10 @@ used_by:
   - "[[Differences-in-Differences]]"
   - "[[Activity Bias in Advertising]]"
   - "[[Power Analysis and Sample Size]]"
+aliases:
+  - "Randomized experiment"
+  - "RCT"
+  - "ATE identification"
 ---
 
 # The Experimental Ideal

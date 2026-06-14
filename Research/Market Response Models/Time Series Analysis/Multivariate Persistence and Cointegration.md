@@ -6,6 +6,7 @@ aliases:
   - "Error Correction Marketing"
   - "Multivariate Persistence"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/time-series
@@ -13,6 +14,7 @@ tags:
   - topic/cointegration
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
+folder: "Market Response Models/Time Series Analysis"
 date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 7"
 chapter: "7"

@@ -4,9 +4,17 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
+source_location: "Full textbook — Gelman et al. (2013, updated 2025), 23 chapters"
+depends_on: []
+used_by:
+  - "[[Bayesian Statistics/_Index]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Introduction to Bayesian Computation]]"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
