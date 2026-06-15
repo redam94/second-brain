@@ -8,6 +8,7 @@ tags:
   - doc/textbook
 source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-06-15
 folder: "Bayesian Statistics/Workflow"
 aliases:
   - "Bayesian software engineering"
@@ -23,6 +24,8 @@ depends_on:
 used_by:
   - "[[Iterative Model Improvement]]"
 ---
+
+# Modeling as Software Development
 
 > [!summary]
 > Section 9 of Gelman et al. (2020) argues that developing a statistical model in a probabilistic programming language is a form of software development, and practitioners should adopt software engineering best practices: version control, testing, reproducibility, and readable/maintainable code. These practices complement and reinforce the statistical workflow.
@@ -82,3 +85,4 @@ When fitting a series of similar models, keep model code modular so that fixing 
 - [[Fitting and Validating Computation]] — simulation-based calibration as a model-level unit test
 - [[Choosing and Building Models]] — modular model construction that maps to the modularity principles here
 - [[Evaluating Fitted Models]] — posterior predictive checks as integration tests
+- [[Garden of Forking Paths]] — version control and pre-registration are the practical defenses against forking paths

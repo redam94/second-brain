@@ -9,6 +9,7 @@ tags:
 source: "[[raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]]"
 source_location: "§7b, pp. 16–18"
 date_ingested: 2026-04-10
+date_updated: 2026-06-15
 folder: "Bayesian Statistics/Causal Inference/Sensitivity and Complex Mechanisms"
 doc_type: paper
 depends_on:
@@ -130,3 +131,4 @@ The Bayesian approach applies **g-computation**: fit Bayesian models for each co
 - [[Instrumental Variables and Principal Stratification]] — principal stratification as an alternative framework for complex treatment assignments
 - [[Estimands in Longitudinal Research]] — the theoretical estimand that sequential treatments must target
 - [[Cross-Lagged and Dynamic Panel Models]] — frequentist/structural alternatives for dynamic panel estimation
+- [[Bayesian Propensity Score Weighting]] — IPW-based marginal structural models use propensity score weighting at each time step

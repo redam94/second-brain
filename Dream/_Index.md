@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-06-08
+date_updated: 2026-06-15
 ---
 
 # Dream: Research Gaps
@@ -336,6 +336,38 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 
 ---
 
+### 23. Marginal Structural Models (MSMs) and the Bayesian Bootstrap
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Time-Varying Treatments and G-computation]] explicitly presents MSMs as a "popular alternative" to the g-formula for longitudinal causal inference: instead of modeling the full conditional history, an MSM models the *marginal* potential outcome distribution directly. The IPW-based frequentist MSM (Robins et al. 2000) is contrasted with the Bayesian bootstrap version (Saarela et al. 2016). The *g-null paradox* (Robins & Wasserman 2015) — that unsaturated MSMs can rule out the zero-effect null *a priori* — is introduced without further elaboration. No note covers: what an MSM actually specifies, why IPW is the right estimation strategy, how the Bayesian bootstrap achieves valid posterior inference without a full likelihood, or how to diagnose extreme weights. This gap sits at the intersection of [[Time-Varying Treatments and G-computation]] and [[Bayesian Propensity Score Weighting]], and is distinct from gap #18 (DTRs), which is about *optimizing* treatment sequences.
+
+**Adjacent notes:** [[Time-Varying Treatments and G-computation]], [[Bayesian Propensity Score Weighting]], [[Frequentist Causal Estimation]], [[Potential Outcomes Framework]], [[Bayesian Outcome Models]]
+
+**Suggested sources / search terms:**
+- Robins, Hernán & Brumback (2000) — "Marginal structural models and causal inference in epidemiology" (*Epidemiology*)
+- Saarela et al. (2016) — "A Bayesian view of doubly robust causal inference" (*Biometrika*)
+- Robins & Wasserman (1997/2015) — g-null paradox discussion
+- Search: "marginal structural model MSM", "IPW longitudinal causal inference", "Bayesian bootstrap MSM", "g-null paradox", "extreme propensity weights"
+
+---
+
+### 24. Random Coefficients Logit and BLP Demand Estimation
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Market Share Models]] explicitly lists "random coefficients logit (BLP)" as the key relaxation of the IIA property — alongside nested logit and probit — but neither a wikilink nor any note explains what the BLP model *is*. Berry, Levinsohn & Pakes (1995) is one of the most cited papers in economics: it specifies a logit demand model with consumer-level random coefficients on product attributes (relaxing IIA), and estimates it via GMM using product characteristics as instruments for price. The model bridges [[Market Share Models]] (MCI/MNL, MRM section) and [[Discrete Choice Models]] (econometrics section) with [[Instrumental Variables]] (price endogeneity) and [[Method of Simulated Moments]] (BLP requires simulated moments for the random coefficients). The vault covers each component individually but never the synthesis that is BLP demand estimation — the standard model for market-level discrete choice in IO and marketing.
+
+**Adjacent notes:** [[Market Share Models]], [[Discrete Choice Models]], [[Instrumental Variables]], [[Method of Simulated Moments]], [[Functional Forms in Marketing]], [[Parameter Estimation in Market Response]]
+
+**Suggested sources / search terms:**
+- Berry, Levinsohn & Pakes (1995) — "Automobile Prices in Market Equilibrium" (*Econometrica*) — the original BLP paper
+- Berry (1994) — "Estimating discrete-choice models of product differentiation" (*RAND Journal of Economics*)
+- Nevo (2000) — "A practitioner's guide to estimation of random-coefficients logit models of demand" (*Journal of Economics & Management Strategy*)
+- Search: "BLP demand estimation", "random coefficients logit", "market-level discrete choice", "pyblp Python", "RCNL model"
+
+---
+
 ### 22. Bass Diffusion Model and Innovation Adoption Curves
 **Status:** 🌱 new
 
@@ -375,3 +407,4 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 | 2026-05-25 | Run 7: reviewed 9 notes (Copula Estimation, Time-Varying Treatments and G-computation, Introduction to Bayesian Computation, Missing Data Models, Functors and Limits, Universal Properties Introduction, Dependence Measures for Copulas, Instrumental Variables, Quantum Entanglement). No existing gaps newly covered this run. Fixed broken wikilink `[[LKJ distribution]]` → plain text in Copula Estimation; fixed misleading alias `[[Nonparametric Models Overview\|multivariate Bayesian models]]` → `[[Nonparametric Models Overview]]`; removed raw file from `depends_on` in Introduction to Bayesian Computation. Added cross-links: Introduction to Bayesian Computation ↔ Approximation Methods; Time-Varying Treatments ↔ Estimands in Longitudinal Research ↔ Cross-Lagged and Dynamic Panel Models ↔ Instrumental Variables and Principal Stratification; Instrumental Variables ↔ Differences-in-Differences ↔ Instrumental Variables and Principal Stratification; Quantum Entanglement ↔ Schrödinger Equation and Time Evolution ↔ Uncertainty Principle. Added gaps #17 (LKJ Distribution and Correlation Priors), #18 (Dynamic Treatment Regimes and Optimal Policy). |
 | 2026-06-01 | Run 8: reviewed 9 notes (Behavioral Attitudes in CUBES, Products and Equalizers, SMM Copula Simulation and Application, Dependence Measures for Copulas, Bayesian Inverse Probability Weighting, Causal Model - Cause Precondition Effect, Bayesian Linear Regression, GA Fitness Evaluation and the RAM, Synthetic Control). No existing gaps newly covered this run. Fixed frontmatter: added `folder` to Products and Equalizers; corrected `doc_type: concept` → `doc_type: textbook` in Bayesian Linear Regression. Fixed Connections section in Causal Model - Cause Precondition Effect to wikilink DAG reference. Added cross-links: Behavioral Attitudes ↔ Word of Mouth Mechanisms ↔ Opinion Leaders ↔ Product Adoption Diffusion Models ↔ Network Topology Effects; Products and Equalizers ↔ Functors and Limits; SMM Copula Simulation ↔ Method of Simulated Moments ↔ Brock-Mirman SMM; Dependence Measures ↔ Quantile Regression; Bayesian IPW ↔ Frequentist Causal Estimation ↔ Bayesian Propensity Score Weighting ↔ Propensity Score in Bayesian CI; Causal Model - CPE ↔ Directed Acyclic Graphs ↔ LLM Expert Elicitation ↔ BN Construction Methods Comparison; Bayesian Linear Regression ↔ Linear Models in StatRethink ↔ Moderation Analysis ↔ Missing Data Models; GA Fitness RAM ↔ ABC for ABMs ↔ UQ for ABM Calibration ↔ ABM Calibration Case Studies; Synthetic Control ↔ Requirements/Bias/Extensions/Inference sub-notes ↔ GSC ↔ Abadie 2021. Added gaps #19 (Staggered/Heterogeneous DiD), #20 (Horseshoe and Regularized Horseshoe Priors). |
 | 2026-06-08 | Run 9: reviewed 10 notes (Opinion Leaders and Social Influence, LLM-BN Decision Support Application, Discrete Choice Models, Practical Issues in Simulation Estimation, Instrumental Variables, Bayesian Linear Regression, Copula Estimation, ABM in Marketing Strategy, Brodersen 2015 - Overview, ABM Validation Challenges). No existing gaps newly covered this run. No frontmatter errors found. Cross-links added: Opinion Leaders ↔ Carryover Effects and Distributed Lags ↔ Advertising and Promotion Effects (WOM→MRM bridge); LLM-BN ↔ Directed Acyclic Graphs ↔ Model Checking; Discrete Choice Models ↔ Market Share Models (logit bridge Econometrics↔MRM); Instrumental Variables ↔ Bayesian Propensity Score Weighting ↔ Parameter Estimation in Market Response (2SLS for price endogeneity); Bayesian Linear Regression — added wikilink for Horseshoe prior + See Also entry [[Horseshoe and Regularized Horseshoe Priors]]; Copula Estimation ↔ Discrete Choice Models (LKJ) ↔ Market Share Models; ABM in Marketing Strategy ↔ Market Response Models - Overview ↔ Advertising and Promotion Effects ↔ Marketing Generalizations Overview; Brodersen 2015 ↔ Synthetic Control ↔ Advertising and Promotion Effects; ABM Validation Challenges ↔ Model Checking ↔ Garden of Forking Paths. Added gaps #21 (Bayesian Networks Fundamentals), #22 (Bass Diffusion Model). Gaps #6 (SBC), #19 (Staggered DiD), #20 (Horseshoe priors) reinforced by this run's notes. |
+| 2026-06-15 | Run 10: reviewed 10 notes (s-Separation in Summary DAGs, Uncertainty Principle, BN Construction Methods Comparison, Local Linear Trend and Seasonality, Hilbert Space Gaussian Processes, Spurious Association and Confounds, Modeling as Software Development, Market Share Models, Functors and Limits, Time-Varying Treatments and G-computation). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-06-15` to all 10 notes; added `folder` to HSGP, Market Share Models, Functors and Limits; added `source:` field (wikilink) to HSGP; fixed `source_location` in Spurious Association and Confounds (Ch.9 → Ch.5); added missing H1 title header to Modeling as Software Development. Cross-links added: s-Separation ↔ Directed Acyclic Graphs; BN Construction Methods ↔ Directed Acyclic Graphs ↔ LLM Expert Elicitation (completing the BN trilogy); Local Linear Trend ↔ Single Marketing Time Series (state-space↔ARIMA bridge); HSGP — added full See Also section linking to Local Linear Trend and Seasonality ↔ Bayesian Structural Time-Series Model; Spurious Association ↔ Directed Acyclic Graphs (fork/pipe/collider → DAG formalization); Modeling as Software Development ↔ Garden of Forking Paths (version control as forking path defense); Market Share Models ↔ Discrete Choice Models (MNL/logit bridge MRM↔Econometrics) ↔ Monsters and Mixtures (heterogeneous MCI→latent segments); Functors and Limits ↔ Products and Equalizers; Time-Varying Treatments ↔ Bayesian Propensity Score Weighting (IPW-MSM connection). Added gaps #23 (Marginal Structural Models / Bayesian Bootstrap), #24 (Random Coefficients Logit / BLP Demand Estimation). Gaps #13 (State-Space/Kalman), #18 (DTRs), #21 (BN Foundations) reinforced by this run's notes. |

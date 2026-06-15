@@ -10,6 +10,7 @@ tags:
   - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-06-15
 folder: "Bayesian Statistics/Regression Models"
 aliases:
   - "Waffle House divorce"
@@ -17,7 +18,7 @@ aliases:
   - "Post-treatment bias"
   - "Masked relationship"
 doc_type: concept
-source_location: "Statistical Rethinking Ch.9:267-290"
+source_location: "Statistical Rethinking Ch. 5"
 depends_on:
   - "[[Linear Models in Statistical Rethinking]]"
   - "[[Bayesian Linear Regression]]"
@@ -86,3 +87,4 @@ When two predictors are highly correlated, their individual effects become unide
 - [[Bayesian Linear Regression]] — BDA3's formal treatment
 - [[Statistical Rethinking - Overview]]
 - [[Data Collection Models]] — ignorability is the formal condition under which controlling for confounds gives a causal interpretation
+- [[Directed Acyclic Graphs]] — DAG framework for identifying forks, pipes, and colliders that this chapter reasons about informally

@@ -9,6 +9,7 @@ tags:
 source: "[[raw/Zeng et al. - 2025 - Causal DAG Summarization (Full Version).pdf]]"
 source_location: "§4.2, pp. 8–9"
 date_ingested: 2026-04-10
+date_updated: 2026-06-15
 folder: "Bayesian Statistics/Causal Inference/Foundations"
 doc_type: paper
 depends_on:
@@ -111,3 +112,4 @@ s-Separation provides a **conservative** but **correct** inference tool:
 - [[Canonical Causal DAGs]] — provides the mathematical basis for s-separation
 - [[Summary Causal DAGs]] — the object s-separation operates on
 - [[Do-Calculus in Summary Causal DAGs]] — uses s-separation for causal effect identification
+- [[Directed Acyclic Graphs]] — foundational d-separation from which s-separation is built

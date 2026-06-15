@@ -11,7 +11,10 @@ aliases:
   - HSGP
   - Hilbert Space GP
 date_ingested: 2026-04-09
+date_updated: 2026-06-15
+folder: "Bayesian Statistics/Advanced Models"
 doc_type: concept
+source: "[[raw/Baby Births Modelling with HSGPs]]"
 source_location: "raw/Baby Births Modelling with HSGPs"
 depends_on:
   - "[[Nonparametric Models Overview]]"
@@ -89,3 +92,10 @@ The HSGP decomposition makes sampling feasible on daily data over 20 years.
 
 - [[raw/Baby Births Modelling with HSGPs]] — PyMC example: HSGP for time series, birthdays dataset
 - Original case study by Aki Vehtari (Stan): iterative GP components for birth rate modelling
+
+## See Also
+
+- [[Nonparametric Models Overview]] — Gaussian process priors in general
+- [[Spatial Models - BYM]] — graph Laplacian ICAR model, conceptually related via spectral decomposition
+- [[Local Linear Trend and Seasonality]] — state-space counterpart for trend + seasonal decomposition
+- [[Bayesian Structural Time-Series Model]] — classical modular decomposition that HSGP can replace or augment
