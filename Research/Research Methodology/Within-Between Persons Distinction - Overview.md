@@ -73,9 +73,13 @@ Researchers should not choose a "sophisticated" longitudinal model (CLPM, dynami
 - [[Garden of Forking Paths]] — choosing a longitudinal model post-hoc without pre-specified estimand is a form of researcher degrees of freedom
 - [[Researcher Degrees of Freedom]] — the menu of longitudinal models (FE, CLPM, DPM, RI-CLPM) creates analytic flexibility
 - [[Causal Estimands]] — the general framework for defining causal targets
+- [[Differences-in-Differences]] — DiD exploits the same within-vs-between logic: within-unit variation over time differences out time-invariant confounders, making it the natural econometric complement to the FE model
+- [[Omitted Variables Bias]] — between-persons confounding in observational panel data is an instance of OVB from stable unobserved traits
 
 ## See Also
 - [[Within-Between Persons Causal Inference]] — detailed treatment of when each approach helps
 - [[Fixed-Effects Model]] — Box 1 content
 - [[Cross-Lagged and Dynamic Panel Models]] — Box 2 and Box 3
 - [[Estimands in Longitudinal Research]] — how to define the right causal target
+- [[Differences-in-Differences]] — econometric panel estimator that controls for time-invariant confounders via the within-unit design logic
+- [[Omitted Variables Bias]] — econometric framing of between-persons confounding

@@ -108,3 +108,5 @@ Classical multiple comparisons corrections (Bonferroni, FDR) address Type 1 erro
 - [[Power Analysis and Sample Size]] — underpowered studies amplify Type S and Type M errors
 - [[Garden of Forking Paths]] — implicit multiplicity that compounds these errors
 - [[Hierarchical Models]] — the modeling framework that addresses all error types
+- [[Activity Bias in Advertising]] — the most dramatic Type M error in the vault: the 1198% observational estimate vs 5.4% RCT result yields an exaggeration ratio of ≈220×
+- [[Observational vs Experimental Methods in Advertising]] — documents the full magnitude of observational bias in advertising as a concrete illustration of Type M error

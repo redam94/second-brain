@@ -100,3 +100,5 @@ Rogers (1983) further classified adopter categories that relate to opinion leade
 - [[Word of Mouth Mechanisms]] — the WOM that opinion leaders amplify
 - [[Social Network Formation in Consumer Markets]] — the networks leaders occupy
 - [[ABM in Marketing Strategy]] — strategic implications of leader targeting
+- [[Carryover Effects and Distributed Lags]] — WOM persistence in market response models: the same social amplification creates advertising carryover captured by Koyck/ADL models
+- [[Advertising and Promotion Effects]] — empirical generalizations on advertising elasticity; ABM quality-WOM interaction vs. traditional MRM promotion effects

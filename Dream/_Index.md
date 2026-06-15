@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-04-13
+date_updated: 2026-06-15
 ---
 
 # Dream: Research Gaps
@@ -205,6 +205,185 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 
 ---
 
+### 14. Bayesian Marketing Mix Modeling (MMM)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Advertising and Promotion Effects]] gives the canonical empirical generalizations (short-run ad elasticity ≈ 0.10, duration interval 6–9 months), and [[Functional Forms in Marketing]] covers the ADBUDG saturation curve and multiplicative forms used in media response. [[Activity Bias in Advertising]] explains *why* passive observational data fails to measure advertising effects, and [[Observational vs Experimental Methods in Advertising]] documents the scale of the problem. But no note covers the end-to-end Bayesian MMM workflow as practiced in industry: hierarchical media response priors (geometric adstock, Hill saturation curves), the Robyn/Meridian/pymc-marketing frameworks, budget optimization under posterior uncertainty, or the model comparison step for selecting carryover vs saturation specifications. This gap sits precisely at the intersection of the vault's Market Response Models and Bayesian Statistics sections, and is the applied synthesis that practitioners reaching for these notes actually need.
+
+**Adjacent notes:** [[Advertising and Promotion Effects]], [[Functional Forms in Marketing]], [[Carryover Effects and Distributed Lags]], [[Shape of the Marketing Response Function]], [[Optimal Marketing Decisions and Forecasting]], [[Activity Bias in Advertising]], [[Bayesian Workflow - Overview]], [[Hierarchical Models]]
+
+**Suggested sources / search terms:**
+- Jin et al. (2017) — "Bayesian Methods for Media Mix Modeling with Carryover and Shape Effects" (Google Research)
+- Lightweight MMM (Google), Meridian (Google, 2024), Robyn (Meta), pymc-marketing
+- Search: "Bayesian marketing mix model", "media mix modeling adstock", "Hill saturation curve MMM", "Robyn MMM", "Meridian Google MMM"
+
+---
+
+### 15. Panel Data Econometrics (Random Effects, Hausman Test, Arellano-Bond GMM)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Within-Between Persons Distinction - Overview]] contrasts fixed-effects and random-effects designs conceptually, and [[Fixed-Effects Model]] covers the within-person FE estimator. [[Cross-Lagged and Dynamic Panel Models]] covers the dynamic panel from a research methods perspective. But the *econometric estimation* toolkit for panel data is absent: the random-effects GLS estimator, the Hausman specification test (FE vs RE; tests whether individual effects are correlated with regressors), the Mundlak–Chamberlain device for RE with correlated effects, and Arellano-Bond GMM for dynamic panels (instrumented with lagged levels to address the "dynamic panel bias" from lagged dependent variables). This gap means a reader of [[Within-Between Persons Distinction - Overview]] cannot move to estimation without leaving the vault.
+
+**Adjacent notes:** [[Fixed-Effects Model]], [[Within-Between Persons Distinction - Overview]], [[Cross-Lagged and Dynamic Panel Models]], [[Differences-in-Differences]], [[Standard Errors and Clustering]], [[Instrumental Variables]], [[Method of Simulated Moments]]
+
+**Suggested sources / search terms:**
+- Wooldridge (2010) — *Econometric Analysis of Cross Section and Panel Data*, Chs. 10–11
+- Arellano & Bond (1991) — "Some Tests of Specification for Panel Data" (*Review of Economic Studies*)
+- Mundlak (1978) — "On the Pooling of Time Series and Cross Section Data" (*Econometrica*)
+- Search: "Hausman test fixed effects random effects", "Arellano Bond GMM", "Mundlak device", "dynamic panel bias", "within estimator"
+
+---
+
+### 16. Latent Class Models and Market Segmentation
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Heterogeneity in Agent Models]] motivates the core idea: real populations consist of diverse individuals with different preference profiles, and ABM encodes this diversity explicitly. [[Monsters and Mixtures]] covers finite mixture models (Gaussian mixtures, zero-inflated models) in the Bayesian Statistics context. [[Factor Analysis and PPCA]] covers continuous latent structure. But the bridge between these — *discrete* latent class models for market segmentation — is missing. Latent class analysis (LCA), finite mixture regression (where segment membership governs response coefficients), and their connection to the random-coefficients market response models in [[Functional Forms in Marketing]] (Eq 3.44) are absent. Nor does any note cover the choice between continuous (factor analysis, PPCA) and discrete (LCA, mixture regression) latent structures, or the Bayesian estimation approaches (collapsed Gibbs sampler, variational EM). This gap is especially salient for the vault's marketing focus: customer segmentation is the most common application of these methods in the Market Response Models domain.
+
+**Adjacent notes:** [[Heterogeneity in Agent Models]], [[Monsters and Mixtures]], [[Factor Analysis and PPCA]], [[Functional Forms in Marketing]], [[Parameter Estimation in Market Response]], [[Hierarchical Models]], [[Generalized Linear Models]]
+
+**Suggested sources / search terms:**
+- Wedel & Kamakura (2000) — *Market Segmentation: Conceptual and Methodological Foundations*, 2nd Ed., Kluwer
+- Goodman (1974) — "Exploratory Latent Structure Analysis Using Both Identifiable and Unidentifiable Models" (*Biometrika*)
+- Collins & Lanza (2010) — *Latent Class and Latent Transition Analysis*
+- Search: "latent class analysis", "finite mixture regression market segmentation", "Bayesian latent class", "discrete choice latent segments", "mixture of regressions"
+
+---
+
+### 17. LKJ Distribution and Correlation Structure Priors
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Copula Estimation]] uses `LKJCholeskyCov` in its PyMC code and contains an explanatory callout referencing the LKJ distribution — but the wikilink `[[LKJ distribution]]` points to a note that does not exist. [[Hierarchical Linear Models]] also uses `LKJCholeskyCov` for correlation among random effects. The LKJ distribution (Lewandowski, Kurowicka & Joe 2009) is the standard prior for correlation matrices in Stan and PyMC, controlled by the concentration parameter `eta`: `eta=1` is uniform over valid correlations, `eta>1` concentrates mass near the identity (independence), `eta<1` pushes toward stronger correlations. No note in the vault explains what LKJ is, why it is preferred over the inverse-Wishart prior for correlation matrices, the Cholesky parameterization for computational stability, or the separation strategy (fitting standard deviations and correlations separately). This gap blocks understanding of any multivariate Bayesian model using correlated random effects or copula structures.
+
+**Adjacent notes:** [[Copula Estimation]], [[Hierarchical Linear Models]], [[Factor Analysis and PPCA]], [[Social Network Models]], [[Bayesian Linear Regression]]
+
+**Suggested sources / search terms:**
+- Lewandowski, Kurowicka & Joe (2009) — "Generating random correlation matrices based on vines and extended onion method" (*Journal of Multivariate Analysis*)
+- Stan Development Team — *Stan Reference Manual*, § Correlation Matrix Priors
+- Barnard, McCulloch & Meng (2000) — "Modeling covariance matrices in terms of standard deviations and correlations" (*Statistica Sinica*)
+- Search: "LKJ distribution Stan", "LKJCholeskyCov PyMC", "correlation matrix prior Bayesian", "separation strategy covariance prior"
+
+---
+
+### 18. Dynamic Treatment Regimes and Optimal Policy
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Time-Varying Treatments and G-computation]] explicitly flags this boundary: "Optimal dynamic treatment regimes require combining causal inference + decision theory + reinforcement learning" — but the vault has no notes that go there. Dynamic treatment regimes (DTRs) are sequences of decision rules that individualize treatment at each time point based on the patient/subject's evolving history. The `Q-learning` algorithm (backwards induction using regression on potential outcomes) and `A-learning` (advantage function learning) are the canonical estimation approaches. These connect causal inference (the g-formula identifies the value of a regime) to decision theory (maximizing expected potential outcomes) to reinforcement learning (MDPs and policy optimization). The vault covers the observational causal identification problem (g-formula in Time-Varying Treatments) and the decision analysis context ([[Decision Analysis]]) but the synthesis — how to estimate and optimize DTRs — is absent. This is increasingly relevant in personalized medicine, digital marketing (adaptive ad sequencing), and A/B testing with adaptive stopping.
+
+**Adjacent notes:** [[Time-Varying Treatments and G-computation]], [[Potential Outcomes Framework]], [[Decision Analysis]], [[Causal Estimands]], [[Bayesian Outcome Models]], [[Metalearners for CATE]]
+
+**Suggested sources / search terms:**
+- Murphy (2003) — "Optimal dynamic treatment regimes" (*JRSS-B*)
+- Schulte et al. (2014) — "Q- and A-learning methods for estimating optimal dynamic treatment regimes" (*Statistical Science*)
+- Laber & Murphy (2011) — "Adaptive confidence intervals for the test error in classification" (*JASA*)
+- Search: "dynamic treatment regime Q-learning", "A-learning optimal DTR", "adaptive treatment strategy", "reinforcement learning causal inference"
+
+---
+
+---
+
+### 19. Staggered Treatment and Heterogeneous DiD (Callaway-Sant'Anna, Goodman-Bacon)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Synthetic Control]] explicitly compares DiD and synthetic control for different data structures, and [[Differences-in-Differences]] covers the basic 2×2 DiD design. But neither note addresses the major 2018–2022 econometric literature showing that the canonical two-way fixed effects (TWFE) DiD estimator is **biased under staggered treatment timing** when treatment effects are heterogeneous. In a staggered adoption setting (different units treated at different calendar times), OLS TWFE uses already-treated units as implicit controls for later-treated units — contaminating the estimate when effects grow over time or vary across cohorts. Callaway & Sant'Anna (2021) propose cohort-time ATT aggregation; Goodman-Bacon (2021) decomposes the TWFE estimate into all 2×2 DiD comparisons; Sun & Abraham (2021) propose an interaction-weighted estimator. The vault's DiD note is unaware of these developments, leaving readers who adopt staggered panels without guidance.
+
+**Adjacent notes:** [[Differences-in-Differences]], [[Bayesian Difference in Differences]], [[Synthetic Control]], [[Fixed-Effects Model]], [[Generalized Synthetic Control Method]], [[Local Average Treatment Effects]]
+
+**Suggested sources / search terms:**
+- Callaway & Sant'Anna (2021) — "Difference-in-Differences with multiple time periods" (*Journal of Econometrics*)
+- Goodman-Bacon (2021) — "Difference-in-differences with variation in treatment timing" (*Journal of Econometrics*)
+- Sun & Abraham (2021) — "Estimating dynamic treatment effects in event studies with heterogeneous treatment effects" (*Journal of Econometrics*)
+- Baker, Larcker & Wang (2022) — "How much should we trust staggered difference-in-differences estimates?" (*Journal of Financial Economics*)
+- Search: "staggered DiD", "heterogeneous treatment effects TWFE", "Callaway Sant'Anna DiD", "event study staggered adoption", "did R package"
+
+---
+
+### 20. Shrinkage Priors: Horseshoe and Regularized Horseshoe
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Bayesian Linear Regression]] explicitly names the **horseshoe prior** as "heavy-tailed, allows large signals while shrinking noise — state of the art for sparse problems" — but provides no explanation of what it is, why it outperforms the Gaussian (ridge) or Laplace (lasso) priors, or how to set it in practice. The note also mentions the lasso prior as "Laplace(0, λ)," but the connection between this and empirical Bayes regularisation remains implicit. [[Spike-and-Slab Prior for Covariate Selection]] exists but only in the context of BSTS covariate selection ([[Bayesian Structural Time-Series Model]]), not as a general methodology. The global-local shrinkage prior family — horseshoe (Carvalho et al. 2010), regularized horseshoe (Piironen & Vehtari 2017), R2-D2 (Zhang et al. 2022) — is the standard toolkit for Bayesian variable selection and sparse regression, and it is absent from the vault. This gap blocks understanding of high-dimensional Bayesian regression, shrinkage estimation (connecting to Empirical Bayes, gap #12), and Stan/PyMC implementations of sparse models.
+
+**Adjacent notes:** [[Bayesian Linear Regression]], [[Spike-and-Slab Prior for Covariate Selection]], [[Hierarchical Linear Models]], [[Overfitting and Information Criteria]], [[Partial Pooling as Multiple Comparisons Correction]], [[Fitting and Validating Computation]]
+
+**Suggested sources / search terms:**
+- Carvalho, Polson & Scott (2010) — "The horseshoe estimator for sparse signals" (*Biometrika*)
+- Piironen & Vehtari (2017) — "Sparsity information and regularization in the horseshoe and other shrinkage priors" (*Electronic Journal of Statistics*)
+- Bhadra et al. (2019) — "Lasso meets horseshoe: A survey" (*Statistical Science*)
+- Stan Development Team — *Stan Reference Manual*, §Hierarchical Priors; PyMC docs on `pm.HalfStudentT` horseshoe parameterization
+- Search: "horseshoe prior Stan", "regularized horseshoe PyMC", "global-local shrinkage prior", "sparse Bayesian regression", "R2-D2 prior"
+
+---
+
+### 21. Bayesian Networks: Foundational Methodology
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[LLM-BN Decision Support Application]] and [[LLM Expert Elicitation for Bayesian Networks]] treat BN *application* and *structure elicitation* in detail, but no note explains the foundational BN machinery: the graph separation criterion (d-separation), the factorisation theorem (joint = product of conditionals), conditional probability table (CPT) parameterisation, and exact inference algorithms (variable elimination, belief propagation) vs. approximate inference (loopy BP, MCMC over BN). [[Directed Acyclic Graphs]] covers DAG causal reasoning (do-calculus, back-door criterion) from the econometric/causal inference angle — but BN inference and the distinction between causal BNs and purely probabilistic BNs is not covered. Without this foundation, readers of the LLM-BN application notes cannot understand what the PyAgrum library is doing, why d-separation determines conditional independence, or how CPTs relate to the joint likelihood.
+
+**Adjacent notes:** [[LLM-BN Decision Support Application]], [[LLM Expert Elicitation for Bayesian Networks]], [[BN Construction Methods Comparison]], [[Directed Acyclic Graphs]], [[Entropy-Based BN Evaluation]], [[Bayesian Outcome Models]]
+
+**Suggested sources / search terms:**
+- Pearl (1988) — *Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference*
+- Koller & Friedman (2009) — *Probabilistic Graphical Models: Principles and Techniques* (MIT Press)
+- Darwiche (2009) — *Modeling and Reasoning with Bayesian Networks* (Cambridge)
+- Search: "Bayesian network d-separation", "CPT estimation Bayesian network", "variable elimination belief propagation BN", "PyAgrum tutorial", "probabilistic graphical model"
+
+---
+
+### 23. Marginal Structural Models (MSMs) and the Bayesian Bootstrap
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Time-Varying Treatments and G-computation]] explicitly presents MSMs as a "popular alternative" to the g-formula for longitudinal causal inference: instead of modeling the full conditional history, an MSM models the *marginal* potential outcome distribution directly. The IPW-based frequentist MSM (Robins et al. 2000) is contrasted with the Bayesian bootstrap version (Saarela et al. 2016). The *g-null paradox* (Robins & Wasserman 2015) — that unsaturated MSMs can rule out the zero-effect null *a priori* — is introduced without further elaboration. No note covers: what an MSM actually specifies, why IPW is the right estimation strategy, how the Bayesian bootstrap achieves valid posterior inference without a full likelihood, or how to diagnose extreme weights. This gap sits at the intersection of [[Time-Varying Treatments and G-computation]] and [[Bayesian Propensity Score Weighting]], and is distinct from gap #18 (DTRs), which is about *optimizing* treatment sequences.
+
+**Adjacent notes:** [[Time-Varying Treatments and G-computation]], [[Bayesian Propensity Score Weighting]], [[Frequentist Causal Estimation]], [[Potential Outcomes Framework]], [[Bayesian Outcome Models]]
+
+**Suggested sources / search terms:**
+- Robins, Hernán & Brumback (2000) — "Marginal structural models and causal inference in epidemiology" (*Epidemiology*)
+- Saarela et al. (2016) — "A Bayesian view of doubly robust causal inference" (*Biometrika*)
+- Robins & Wasserman (1997/2015) — g-null paradox discussion
+- Search: "marginal structural model MSM", "IPW longitudinal causal inference", "Bayesian bootstrap MSM", "g-null paradox", "extreme propensity weights"
+
+---
+
+### 24. Random Coefficients Logit and BLP Demand Estimation
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Market Share Models]] explicitly lists "random coefficients logit (BLP)" as the key relaxation of the IIA property — alongside nested logit and probit — but neither a wikilink nor any note explains what the BLP model *is*. Berry, Levinsohn & Pakes (1995) is one of the most cited papers in economics: it specifies a logit demand model with consumer-level random coefficients on product attributes (relaxing IIA), and estimates it via GMM using product characteristics as instruments for price. The model bridges [[Market Share Models]] (MCI/MNL, MRM section) and [[Discrete Choice Models]] (econometrics section) with [[Instrumental Variables]] (price endogeneity) and [[Method of Simulated Moments]] (BLP requires simulated moments for the random coefficients). The vault covers each component individually but never the synthesis that is BLP demand estimation — the standard model for market-level discrete choice in IO and marketing.
+
+**Adjacent notes:** [[Market Share Models]], [[Discrete Choice Models]], [[Instrumental Variables]], [[Method of Simulated Moments]], [[Functional Forms in Marketing]], [[Parameter Estimation in Market Response]]
+
+**Suggested sources / search terms:**
+- Berry, Levinsohn & Pakes (1995) — "Automobile Prices in Market Equilibrium" (*Econometrica*) — the original BLP paper
+- Berry (1994) — "Estimating discrete-choice models of product differentiation" (*RAND Journal of Economics*)
+- Nevo (2000) — "A practitioner's guide to estimation of random-coefficients logit models of demand" (*Journal of Economics & Management Strategy*)
+- Search: "BLP demand estimation", "random coefficients logit", "market-level discrete choice", "pyblp Python", "RCNL model"
+
+---
+
+### 22. Bass Diffusion Model and Innovation Adoption Curves
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Product Adoption and Diffusion Models]] covers ABM-based diffusion driven by social network topology and WOM. [[Opinion Leaders and Social Influence]] models opinion leaders as diffusion accelerators. [[Carryover Effects and Distributed Lags]] covers advertising carryover/persistence in MRM. But no note covers the Bass (1969) diffusion model — arguably the most influential model in marketing science — which decomposes new-product adoption into innovation effects (external influence, mass media, analogous to [[Word of Mouth Mechanisms#Broadcast]] channels) and imitation effects (internal WOM influence proportional to current adopter base). The Bass model produces the S-curve adoption pattern that both the ABM social dynamics notes and the MRM dynamic response notes reference implicitly. The connection between Bass-model imitation coefficient and ABM WOM amplification, between the Bass diffusion curve and the Koyck/ADL carryover models, and between Bass curve fitting and the more general state-space/BSTS framework, is uncharted. This gap is the missing theoretical bridge between the ABM and MRM sections.
+
+**Adjacent notes:** [[Product Adoption and Diffusion Models]], [[Opinion Leaders and Social Influence]], [[Carryover Effects and Distributed Lags]], [[Shape of the Marketing Response Function]], [[Word of Mouth Mechanisms]], [[ABM in Marketing Strategy]], [[Market Response Models - Overview]]
+
+**Suggested sources / search terms:**
+- Bass (1969) — "A new product growth for model consumer durables" (*Management Science*)
+- Mahajan, Muller & Bass (1990) — "New product diffusion models in marketing: A review and directions for research" (*Journal of Marketing*)
+- Bemmaor & Lee (2002) — "The impact of heterogeneity and ill-conditioning on diffusion model parameter estimates" (*Marketing Science*)
+- Search: "Bass diffusion model", "innovation imitation coefficients Bass", "S-curve new product adoption", "generalised Bass model", "Bass model estimation"
+
+---
+
 ## Covered Gaps
 
 | Gap | Covered By | Date Covered |
@@ -224,3 +403,8 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 | 2026-04-10 | Run 3: reviewed 9 notes (Synthetic Control, Fitting and Validating Computation, Iterative Model Improvement, Power Analysis, Golem of Prague, Model Comparison, Garden of Forking Data, Multiple Comparisons Bayesian, Spatial BYM). Gaps #2 and #4 marked 🍂 covered (notes now exist). Gap #1 updated to 🌿 still relevant (Bayesian IPW note exists but frequentist propensity score matching not yet covered). Added gaps #6 (Simulation-Based Calibration) and #7 (Permutation/Randomization Inference). |
 | 2026-04-12 | Run 4: reviewed 9 notes (ABM Validation Challenges, Heterogeneity in Agent Models, Golem of Prague, Canonical Causal DAGs, Dependence Measures for Copulas, SMM Python Implementation, Evaluating Fitted Models, Summary Causal DAGs, Transfer Function Model). Gap #5 marked 🍂 covered (Treatment Effect Estimation subfolder exists with Metalearners for CATE, X-Learner, T-Learner, S-Learner). Gap #1 updated: Frequentist Causal Estimation note now covers IPW/DR estimators, but PSM matching diagnostics still absent. Added gaps #8 (Factor/Vine Copulas), #9 (Causal Structure Learning from Data), #10 (Global Sensitivity Analysis). |
 | 2026-04-13 | Run 5: reviewed 9 notes (Computational Troubleshooting, Single Marketing Time Series, Garden of Forking Data, Organizational Simulation, Counterfactual Inference, Bayesian Structural Time-Series Model, Partial Pooling as Multiple Comparisons Correction, CUBES Simulator Architecture, LLM Expert Elicitation for Bayesian Networks). No existing gaps covered this run. Fixed frontmatter in all 9 notes (added date_updated, folder, source, aliases as needed). Fixed broken wikilink [[Bayesian Non-parametric Causal Inference]] → [[Nonparametric Causal Inference]] in Counterfactual Inference. Added cross-links: BSTS ↔ Counterfactual Inference ↔ Single Marketing Time Series cluster; CUBES ↔ Imitation/Conditioning ↔ Network Topology ↔ Social Network Formation; LLM Elicitation ↔ Directed Acyclic Graphs ↔ Canonical Causal DAGs ↔ Code Prompts; Computational Troubleshooting ↔ HMC and Stan in Practice ↔ Monsters and Mixtures. Added gaps #11 (ABM Software Platforms), #12 (Empirical Bayes Methods), #13 (State-Space Models and Kalman Filter). |
+| 2026-05-18 | Run 6: reviewed 10 notes (Brock-Mirman SMM Exercise, Within-Between Persons Distinction Overview, Single-Parameter Models, Type S and Type M Errors, Heterogeneity in Agent Models, Observational vs Experimental Methods in Advertising, Functional Forms in Marketing, Advertising and Promotion Effects, Dependence Measures for Copulas, Bayesian Workflow Overview). No existing gaps covered this run. No frontmatter issues found. Added cross-links across all 10 notes: Brock-Mirman ↔ Efficient Method of Moments; Within-Between Persons ↔ Differences-in-Differences ↔ Omitted Variables Bias; Single-Parameter Models ↔ Posterior Sampling ↔ Model Checking ↔ BDA3 Overview ↔ Golem of Prague; Type S/M Errors ↔ Activity Bias in Advertising ↔ Observational vs Experimental Methods (exaggeration ratio ≈220×); Heterogeneity in Agent Models ↔ Emergent Phenomena in ABM ↔ ABM Calibration Overview; Functional Forms ↔ Discrete Choice Models (logistic section); Advertising and Promotion Effects ↔ Observational vs Experimental Methods ↔ The Experimental Ideal; Dependence Measures ↔ Factor Analysis and PPCA; Bayesian Workflow ↔ ABM Calibration Overview. Added gaps #14 (Bayesian MMM), #15 (Panel Data Econometrics), #16 (Latent Class Models / Market Segmentation). |
+| 2026-05-25 | Run 7: reviewed 9 notes (Copula Estimation, Time-Varying Treatments and G-computation, Introduction to Bayesian Computation, Missing Data Models, Functors and Limits, Universal Properties Introduction, Dependence Measures for Copulas, Instrumental Variables, Quantum Entanglement). No existing gaps newly covered this run. Fixed broken wikilink `[[LKJ distribution]]` → plain text in Copula Estimation; fixed misleading alias `[[Nonparametric Models Overview\|multivariate Bayesian models]]` → `[[Nonparametric Models Overview]]`; removed raw file from `depends_on` in Introduction to Bayesian Computation. Added cross-links: Introduction to Bayesian Computation ↔ Approximation Methods; Time-Varying Treatments ↔ Estimands in Longitudinal Research ↔ Cross-Lagged and Dynamic Panel Models ↔ Instrumental Variables and Principal Stratification; Instrumental Variables ↔ Differences-in-Differences ↔ Instrumental Variables and Principal Stratification; Quantum Entanglement ↔ Schrödinger Equation and Time Evolution ↔ Uncertainty Principle. Added gaps #17 (LKJ Distribution and Correlation Priors), #18 (Dynamic Treatment Regimes and Optimal Policy). |
+| 2026-06-01 | Run 8: reviewed 9 notes (Behavioral Attitudes in CUBES, Products and Equalizers, SMM Copula Simulation and Application, Dependence Measures for Copulas, Bayesian Inverse Probability Weighting, Causal Model - Cause Precondition Effect, Bayesian Linear Regression, GA Fitness Evaluation and the RAM, Synthetic Control). No existing gaps newly covered this run. Fixed frontmatter: added `folder` to Products and Equalizers; corrected `doc_type: concept` → `doc_type: textbook` in Bayesian Linear Regression. Fixed Connections section in Causal Model - Cause Precondition Effect to wikilink DAG reference. Added cross-links: Behavioral Attitudes ↔ Word of Mouth Mechanisms ↔ Opinion Leaders ↔ Product Adoption Diffusion Models ↔ Network Topology Effects; Products and Equalizers ↔ Functors and Limits; SMM Copula Simulation ↔ Method of Simulated Moments ↔ Brock-Mirman SMM; Dependence Measures ↔ Quantile Regression; Bayesian IPW ↔ Frequentist Causal Estimation ↔ Bayesian Propensity Score Weighting ↔ Propensity Score in Bayesian CI; Causal Model - CPE ↔ Directed Acyclic Graphs ↔ LLM Expert Elicitation ↔ BN Construction Methods Comparison; Bayesian Linear Regression ↔ Linear Models in StatRethink ↔ Moderation Analysis ↔ Missing Data Models; GA Fitness RAM ↔ ABC for ABMs ↔ UQ for ABM Calibration ↔ ABM Calibration Case Studies; Synthetic Control ↔ Requirements/Bias/Extensions/Inference sub-notes ↔ GSC ↔ Abadie 2021. Added gaps #19 (Staggered/Heterogeneous DiD), #20 (Horseshoe and Regularized Horseshoe Priors). |
+| 2026-06-08 | Run 9: reviewed 10 notes (Opinion Leaders and Social Influence, LLM-BN Decision Support Application, Discrete Choice Models, Practical Issues in Simulation Estimation, Instrumental Variables, Bayesian Linear Regression, Copula Estimation, ABM in Marketing Strategy, Brodersen 2015 - Overview, ABM Validation Challenges). No existing gaps newly covered this run. No frontmatter errors found. Cross-links added: Opinion Leaders ↔ Carryover Effects and Distributed Lags ↔ Advertising and Promotion Effects (WOM→MRM bridge); LLM-BN ↔ Directed Acyclic Graphs ↔ Model Checking; Discrete Choice Models ↔ Market Share Models (logit bridge Econometrics↔MRM); Instrumental Variables ↔ Bayesian Propensity Score Weighting ↔ Parameter Estimation in Market Response (2SLS for price endogeneity); Bayesian Linear Regression — added wikilink for Horseshoe prior + See Also entry [[Horseshoe and Regularized Horseshoe Priors]]; Copula Estimation ↔ Discrete Choice Models (LKJ) ↔ Market Share Models; ABM in Marketing Strategy ↔ Market Response Models - Overview ↔ Advertising and Promotion Effects ↔ Marketing Generalizations Overview; Brodersen 2015 ↔ Synthetic Control ↔ Advertising and Promotion Effects; ABM Validation Challenges ↔ Model Checking ↔ Garden of Forking Paths. Added gaps #21 (Bayesian Networks Fundamentals), #22 (Bass Diffusion Model). Gaps #6 (SBC), #19 (Staggered DiD), #20 (Horseshoe priors) reinforced by this run's notes. |
+| 2026-06-15 | Run 10: reviewed 10 notes (s-Separation in Summary DAGs, Uncertainty Principle, BN Construction Methods Comparison, Local Linear Trend and Seasonality, Hilbert Space Gaussian Processes, Spurious Association and Confounds, Modeling as Software Development, Market Share Models, Functors and Limits, Time-Varying Treatments and G-computation). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-06-15` to all 10 notes; added `folder` to HSGP, Market Share Models, Functors and Limits; added `source:` field (wikilink) to HSGP; fixed `source_location` in Spurious Association and Confounds (Ch.9 → Ch.5); added missing H1 title header to Modeling as Software Development. Cross-links added: s-Separation ↔ Directed Acyclic Graphs; BN Construction Methods ↔ Directed Acyclic Graphs ↔ LLM Expert Elicitation (completing the BN trilogy); Local Linear Trend ↔ Single Marketing Time Series (state-space↔ARIMA bridge); HSGP — added full See Also section linking to Local Linear Trend and Seasonality ↔ Bayesian Structural Time-Series Model; Spurious Association ↔ Directed Acyclic Graphs (fork/pipe/collider → DAG formalization); Modeling as Software Development ↔ Garden of Forking Paths (version control as forking path defense); Market Share Models ↔ Discrete Choice Models (MNL/logit bridge MRM↔Econometrics) ↔ Monsters and Mixtures (heterogeneous MCI→latent segments); Functors and Limits ↔ Products and Equalizers; Time-Varying Treatments ↔ Bayesian Propensity Score Weighting (IPW-MSM connection). Added gaps #23 (Marginal Structural Models / Bayesian Bootstrap), #24 (Random Coefficients Logit / BLP Demand Estimation). Gaps #13 (State-Space/Kalman), #18 (DTRs), #21 (BN Foundations) reinforced by this run's notes. |

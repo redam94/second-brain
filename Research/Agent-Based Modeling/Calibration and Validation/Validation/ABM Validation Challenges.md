@@ -98,3 +98,5 @@ Given the difficulty of formal validation, the papers converge on a **plausibili
 - [[HM-ABC Calibration Framework]] — modern probabilistic calibration that addresses the input-output mismatch via history matching + ABC
 - [[Uncertainty Quantification for ABM Calibration]] — UQ methods that handle stochastic variation through ensembles of runs
 - [[ABM vs Equation-Based Modeling]] — why micro-level validation is harder for ABM than for equation-based models
+- [[Model Checking]] — Bayesian posterior predictive checks as analog to macro-level ABM validation; same logic of checking emergent/simulated output against observations
+- [[Garden of Forking Paths]] — researcher degrees of freedom in ABM specification choices (agent rules, network topology, parameter ranges) mirror the forking paths problem in statistical analysis

@@ -71,3 +71,4 @@ This paper provides a vivid illustration of concepts from [[Regression and the C
 - [[Omitted Variables Bias]] — the econometric framing of what goes wrong in the regression tables above
 - [[Nonparametric Causal Inference]] — Bayesian nonparametric (BART + propensity score) approaches to causal ATE/ATT estimation
 - [[Bayesian Difference in Differences]] — Bayesian counterfactual framing of DiD that could be applied to advertising holdout experiments
+- [[Type S and Type M Errors]] — the 1198% observational estimate vs 5.4% RCT is a textbook Type M error; the exaggeration ratio of ≈220× illustrates the scale of bias that can arise from violated identification assumptions
