@@ -3,16 +3,17 @@ title: "Index: Research"
 tags:
   - type/index
   - source/ingested
-date_updated: 2026-04-16
-concept_count: 148
+date_updated: 2026-06-17
+concept_count: 153
 ---
 
 # Research
 
 > [!abstract] Routing Summary
-> This folder covers applied statistics, econometrics, causal inference, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 147 notes across 7 major topics.
+> This folder covers applied statistics, econometrics, causal inference, causal discovery, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 153 notes across 8 major topics.
 > - Need Bayesian inference, computation, or regression? -> [[Bayesian Statistics/_Index|Bayesian Statistics]]
 > - Need causal inference toolkit (IV, DiD, RD, synthetic control, GSC, DAGs)? -> [[Econometrics/_Index|Econometrics]]
+> - Need causal *structure learning* / DAG discovery from data (NOTEARS, continuous optimization)? -> [[Causal Discovery/_Index|Causal Discovery]]
 > - Need forking paths, power analysis, ad measurement, or longitudinal causal inference? -> [[Research Methodology/_Index|Research Methodology]]
 > - Need quantum mechanics, QFT, or gauge theory (flat notes)? -> [[Theoretical Physics/_Index|Theoretical Physics]]
 > - Need quantum mechanics, QFT, or gauge theory (structured sub-folder notes)? -> [[Physics/_Index|Physics]]
@@ -26,6 +27,7 @@ concept_count: 148
 |-------|-------|-------------|
 | [[Bayesian Statistics/_Index\|Bayesian Statistics]] | 54 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference |
 | [[Econometrics/_Index\|Econometrics]] | 27 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, quantile regression, discrete choice, DAGs, SMM, Brock-Mirman structural estimation |
+| [[Causal Discovery/_Index\|Causal Discovery]] | 5 | DAG / Bayesian-network structure learning, linear SEM, score-based learning, **NOTEARS** continuous optimization, smooth acyclicity $h(W)=\mathrm{tr}\,e^{W\circ W}-d$, augmented Lagrangian, vs FGS/GES/PC |
 | [[Research Methodology/_Index\|Research Methodology]] | 13+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons, within/between-persons distinction (Rohrer & Murayama 2023), fixed-effects model, CLPM, dynamic panel model, estimands in longitudinal research |
 | [[Theoretical Physics/_Index\|Theoretical Physics]] | 7 | Quantum mechanics, Hilbert space, Schrödinger equation, QFT, second quantization, QED, renormalization, gauge theory, Standard Model |
 | [[Physics/_Index\|Physics]] | 9 | Wave functions, Hilbert space, Schrödinger equation, entanglement, QFT, canonical quantization, renormalization, gauge theory, Yang–Mills (structured sub-folder organization) |
@@ -36,6 +38,7 @@ concept_count: 148
 
 - **Bayesian vs. Frequentist**: [[Asymptotics and Frequentist Connections]], [[Forking Paths and Bayesian Approaches]]
 - **Causal Inference**: [[The Experimental Ideal]], [[Activity Bias in Advertising]], [[Data Collection Models]], [[Counterfactual Inference]], [[Nonparametric Causal Inference]], [[Directed Acyclic Graphs]], [[Synthetic Control]], [[Bayesian Inverse Probability Weighting]], [[DAGs and Causal Identification]], [[Bayesian Propensity Score Weighting]]
+- **Causal Discovery (structure learning)**: [[NOTEARS - Overview]], [[DAG Structure Learning Problem]], [[Smooth Characterization of Acyclicity]], [[NOTEARS Algorithm]], [[NOTEARS Experiments]]
 - **Model Building**: [[Bayesian Workflow - Overview]], [[Model Checking]], [[Model Comparison]], [[Overfitting and Information Criteria]]
 - **Multiple Comparisons**: [[Multiple Comparisons - Bayesian Perspective]], [[Multiple Testing Corrections]], [[Type S and Type M Errors]], [[Partial Pooling as Multiple Comparisons Correction]]
 - **Missing Data**: [[Missing Data Models]], [[Missing Data - Statistical Rethinking]], [[Data Collection Models]]
@@ -79,6 +82,7 @@ concept_count: 148
 - [[Agent-Based Modeling/raw/calibration_ABM.pdf]] — McCulloch et al. (2022), Calibrating ABMs using Uncertainty Quantification Methods (JASSS 25(2))
 - [[Research Methodology/raw/rohrer-murayama-2023.pdf]] — Rohrer & Murayama (2023), These Are Not the Effects You Are Looking For: Causality and the Within/Between-Persons Distinction (AMPPS 6(1))
 - [[raw/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — Evans (2024), Computational Methods for Economists, Ch. 19: SMM theory, Python implementation, Brock-Mirman structural macro exercise (2026-04-12)
+- [[Causal Discovery/raw/1803.01422-NOTEARS.pdf|NOTEARS]] — Zheng, Aragam, Ravikumar & Xing (2018), *DAGs with NO TEARS: Continuous Optimization for Structure Learning* (NeurIPS), arXiv:1803.01422 (2026-06-17)
 
 ## See Also
 

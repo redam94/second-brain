@@ -1,0 +1,24 @@
+filters:
+  and:
+    - file.hasTag("source/ingested")
+    - '!file.hasTag("type/index")'
+    - file.inFolder("Research/Causal Discovery")
+    - file.ext == "md"
+properties:
+  depends_on:
+    displayName: Depends On
+  used_by:
+    displayName: Used By
+  doc_type:
+    displayName: Type
+views:
+  - type: table
+    name: Concept Dependency Graph
+    order:
+      - file.name
+      - depends_on
+      - used_by
+      - doc_type
+    sort:
+      - property: file.name
+        direction: ASC
