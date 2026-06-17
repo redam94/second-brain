@@ -88,11 +88,15 @@ Bonabeau (2002) argues that ABM should be used when "the population is heterogen
 - Heterogeneity drives the need for careful [[Population Initialization and Parameter Sensitivity|parameter initialization strategies]]
 - It interacts with [[Social Network Formation in Consumer Markets|network structure]] — heterogeneous agents in heterogeneous networks produce richer dynamics than either alone
 - [[Behavioral Attitudes in CUBES]] provides a concrete implementation of multi-dimensional behavioral heterogeneity
+- [[Emergent Phenomena in ABM]] — heterogeneity is a primary driver of emergence; homogeneous populations tend to produce trivial or mean-field dynamics, while heterogeneous populations self-organize into complex macro-patterns
+- [[ABM Calibration Overview]] — estimating heterogeneous parameter distributions from data is the core calibration challenge created by agent-level heterogeneity
 
 ## See Also
 - [[ABM Methodology and Principles]] — heterogeneity as a core ABM property
+- [[Emergent Phenomena in ABM]] — heterogeneous populations produce emergent macro-patterns that homogeneous populations cannot
 - [[Consumer Utility Function Components]] — how heterogeneity enters the Karakaya utility model
 - [[Population Initialization and Parameter Sensitivity]] — practical strategies for assigning heterogeneous parameters
+- [[ABM Calibration Overview]] — estimating the distribution of heterogeneous agent parameters from observed data
 - [[Opinion Leaders and Social Influence]] — the extreme end of behavioral heterogeneity: highly influential agents with outsized market impact
 - [[Network Topology Effects on Diffusion]] — network position heterogeneity amplifies behavioral heterogeneity in diffusion dynamics
 - [[ABM vs Equation-Based Modeling]] — heterogeneity is the primary reason to choose ABM over aggregate equation-based models

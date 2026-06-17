@@ -9,6 +9,7 @@ tags:
 source: "[[raw/Brodersen - 2015 - Inferring causal impact using Bayesian structural time-series models.pdf]]"
 source_location: "§2.1, pp. 252-254"
 date_ingested: 2026-04-10
+date_updated: 2026-06-15
 folder: "Bayesian Statistics/Causal Inference/Time Series Causal Inference"
 doc_type: paper
 depends_on:
@@ -97,3 +98,4 @@ The overall matrices $T_t$, $R_t$, $Q_t$ become **block-diagonal** with one bloc
 
 - [[Bayesian Structural Time-Series Model]] — full state-space setup
 - [[MCMC Inference for CausalImpact]] — how these components are estimated
+- [[Single Marketing Time Series]] — ARIMA and classical time series models that these state-space components complement

@@ -8,6 +8,8 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 5.3, pp. 138–140"
 date_ingested: 2026-05-08
+date_updated: 2026-06-15
+folder: "Category Theory/Limits and Colimits"
 doc_type: textbook
 depends_on:
   - "[[General Limits]]"
@@ -94,3 +96,4 @@ This is proved in [[Synthesis/Adjoints and Limits]]. It is one of the most usefu
 - [[General Limits]] — What is being preserved/reflected/created
 - [[Colimits]] — Dual notions
 - [[Synthesis/Adjoints and Limits]] — Key theorem: right adjoints preserve limits
+- [[Products and Equalizers]] — concrete limit shapes that functors commonly preserve or create

@@ -10,6 +10,7 @@ tags:
 source: "[[raw/Shaposhnyk et al. - 2025 - Can LLMs Assist Expert Elicitation for Probabilistic Causal Modeling.pdf]]"
 source_location: "§5.1–5.3, pp. 4-8"
 date_ingested: 2026-04-10
+date_updated: 2026-06-15
 folder: "Bayesian Statistics/Causal Inference/Knowledge Elicitation"
 doc_type: paper
 depends_on: []
@@ -99,3 +100,5 @@ Lower entropy = more structured, clearer dependencies. LLM wins on mean and min 
 
 - [[Shaposhnyk 2025 - Overview]] — paper context
 - [[Entropy-Based BN Evaluation]] — quantitative comparison
+- [[LLM Expert Elicitation for Bayesian Networks]] — full BN III methodology
+- [[Directed Acyclic Graphs]] — the causal DAG theory that underpins BN structure and d-separation

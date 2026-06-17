@@ -152,6 +152,7 @@ SMM resolves this by simulating the TFP path $\{z_{s,t}\}$ directly, making any 
 
 - [[Simulation-Based Estimation - Overview]] — situates SMM within the family of simulation-based methods
 - [[Indirect Inference]] — alternative that uses AR(1) or VAR regression coefficients as moments (natural choice for BM model)
+- [[Efficient Method of Moments]] — simulation-based approach that matches auxiliary-model coefficients rather than raw moments; applicable to the BM model via VAR auxiliary regression
 - [[SMM Estimator for Copulas]] — another application of the same SMM framework
 
 ## Sources

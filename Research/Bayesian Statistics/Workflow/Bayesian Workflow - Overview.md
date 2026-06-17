@@ -77,3 +77,4 @@ The paper frames methodology development as a progression: Example -> Case study
 - [[The Experimental Ideal]] — how Bayesian workflow complements careful experimental design
 - [[Regression and the CEF]] — workflow applies equally to Bayesian regression for causal inference
 - [[Overfitting and Information Criteria]] — WAIC and LOO-CV are the quantitative tools for the model comparison step in the workflow
+- [[ABM Calibration Overview]] — ABM calibration/validation follows an analogous iterative cycle (simulate → calibrate → validate → improve), with history matching and ABC playing roles parallel to prior predictive checking and model assessment

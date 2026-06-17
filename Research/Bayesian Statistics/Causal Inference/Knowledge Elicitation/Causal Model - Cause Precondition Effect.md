@@ -80,9 +80,12 @@ This design choice makes the model tractable for non-experts: it is easier to th
 
 - Used by: [[Interactive Knowledge Elicitation Method]] (GUI asks for causes, effects, and countermeasures using this model)
 - Contrast with [[Potential Outcomes Framework]] — a different approach to formalizing causality (statistical, not structural/descriptive)
-- Related to structural causal models / DAGs, though at a conceptual rather than formal probabilistic level
+- Related to [[Directed Acyclic Graphs]] — DAGs formalize the same cause-effect structure as a probabilistic graphical model; this three-element model operates at the conceptual/descriptive level
 
 ## See Also
 
 - [[Yamashita 2020 - Overview]] — paper context
 - [[Interactive Knowledge Elicitation Method]] — how this model is operationalized in a workshop
+- [[Directed Acyclic Graphs]] — the formal probabilistic counterpart: DAGs encode the same cause-effect relationships as conditional independence structure
+- [[LLM Expert Elicitation for Bayesian Networks]] — LLM-based knowledge elicitation also extracts causal structure from domain knowledge
+- [[BN Construction Methods Comparison]] — compares manual elicitation approaches including structured three-element models with data-driven and hybrid methods
