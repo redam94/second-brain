@@ -208,3 +208,6 @@ Visualizing the weighted propensity score distributions shows that IPTW makes th
 - [[Nonparametric Causal Inference]] — BART-based fully Bayesian causal inference
 - [[Directed Acyclic Graphs]] — How to identify the correct adjustment set for IPW
 - [[The Selection Problem]] — The fundamental problem that IPW addresses
+- [[Frequentist Causal Estimation]] — the frequentist side: classical IPW, doubly robust estimators, and AIPW
+- [[Bayesian Propensity Score Weighting]] — Bayesian propensity score weighting in the econometrics identification strategies framework
+- [[Propensity Score in Bayesian CI]] — the role of the propensity score within the full Bayesian causal inference pipeline

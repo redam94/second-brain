@@ -107,3 +107,6 @@ In the paper's experiments, the CUBES model was calibrated against **cellular ph
 - [[Genetic Algorithm Calibration for ABM]] — the GA that uses the RAM
 - [[ABM Calibration Overview]] — broader calibration context
 - [[ABM Validation Challenges]] — validation beyond calibration fitness
+- [[Approximate Bayesian Computation for ABMs]] — ABC generalizes the RAM's comparison function to a full probabilistic calibration framework
+- [[Uncertainty Quantification for ABM Calibration]] — ensemble-based UQ approach that subsumes the RAM's dual macro/micro evaluation
+- [[ABM Calibration Case Studies]] — includes the cellular phone market calibration that used this fitness function

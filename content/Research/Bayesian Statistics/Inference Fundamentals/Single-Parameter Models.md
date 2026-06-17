@@ -59,3 +59,7 @@ The posterior precision equals the sum of prior and data precisions.
 - [[Probability and Bayesian Inference]] — foundations
 - [[Multiparameter Models]] — extending to multiple unknowns
 - [[Hierarchical Models]] — priors informed by data from related groups
+- [[Posterior Sampling and Summarization]] — how to summarize and use the posterior once computed
+- [[Model Checking]] — prior predictive checks begin with single-parameter models
+- [[BDA3 - Overview]] — Chapter 2 in context of the full BDA3 curriculum
+- [[Statistical Rethinking - The Golem of Prague]] — Statistical Rethinking's introduction uses the same globe-tossing beta-binomial as the motivating example

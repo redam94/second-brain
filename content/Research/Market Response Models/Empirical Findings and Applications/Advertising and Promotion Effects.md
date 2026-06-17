@@ -143,3 +143,5 @@ A large-scale set of 23 split-panel experiments over four years found:
 - Price findings: [[Price and Distribution Effects]]
 - Optimal advertising budget: [[Optimal Marketing Decisions and Forecasting]]
 - Activity bias in advertising measurement: [[Activity Bias in Advertising]]
+- Why RCTs (BehaviorScan, holdout experiments) are essential for measuring elasticities: [[Observational vs Experimental Methods in Advertising]]
+- Experimental design principles behind BehaviorScan weight tests: [[The Experimental Ideal]]

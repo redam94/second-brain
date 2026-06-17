@@ -8,6 +8,7 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 5.1, pp. 107–121"
 date_ingested: 2026-05-08
+folder: "Category Theory/Limits and Colimits"
 doc_type: textbook
 depends_on:
   - "[[Foundations/Categories]]"
@@ -115,3 +116,4 @@ This generalises to arbitrary (not just finite) limits when we allow arbitrary p
 - [[General Limits]] — The general notion that subsumes these
 - [[Colimits]] — Dual constructions: coproducts and coequalizers
 - [[Synthesis/Limits via Representables]] — Limits as representable functors
+- [[Functors and Limits]] — limit-preservation properties of functors; connects this concrete limit theory to functorial constructions

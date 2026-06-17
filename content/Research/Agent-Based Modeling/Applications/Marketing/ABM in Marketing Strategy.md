@@ -107,3 +107,6 @@ Karakaya et al. (2011) model three of the 4Ps explicitly (excluding Place):
 - [[Consumer Utility Function Components]] — the underlying utility model
 - [[Word of Mouth Mechanisms]] — the WOM that amplifies marketing effects
 - [[Karakaya et al 2011 - Overview]] — paper context
+- [[Market Response Models - Overview]] — traditional (non-ABM) marketing mix modeling; same 4Ps decisions without agent heterogeneity or WOM endogeneity
+- [[Advertising and Promotion Effects]] — empirical advertising elasticity (≈0.10 short-run); compare with ABM finding that WOM substitutes for promotion
+- [[Marketing Generalizations Overview]] — empirical meta-analysis that ABM findings should be benchmarked against

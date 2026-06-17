@@ -216,9 +216,17 @@ Standard errors are not well-defined for $n=1$ treated unit. Instead, use **perm
 - [[The Selection Problem]] — Synthetic control is another solution to the problem of unobservable counterfactuals
 - [[Counterfactual Inference]] — Bayesian perspective on estimating counterfactual trajectories
 - [[Bayesian Difference in Differences]] — Bayesian approach to similar problem; posterior over treatment effect
+- [[Abadie 2021 - Overview]] — methodological overview and guidance on when synthetic control is appropriate
+- [[Generalized Synthetic Control Method]] — extends synthetic control to multiple treated units via interactive fixed effects
 
 ## See Also
 
 - [[Differences-in-Differences]] — DiD for panel data with multiple units
 - [[Bayesian Difference in Differences]] — PyMC-based Bayesian DiD with explicit counterfactual
 - [[The Experimental Ideal]] — Why causal inference requires explicitly modeling the counterfactual
+- [[Synthetic Control Requirements]] — formal conditions a valid synthetic control application must satisfy
+- [[Synthetic Control Bias Theory]] — bias sources and formal properties of the synthetic control estimator
+- [[Synthetic Control Extensions]] — extensions including penalized synthetic control and matrix completion
+- [[Synthetic Control Inference and Diagnostics]] — inference methods and diagnostic plots beyond the basic Fisher test
+- [[Generalized Synthetic Control Method]] — interactive fixed effects generalization for multiple treated units
+- [[Abadie 2021 - Overview]] — Abadie's methodological overview and best-practices guidance

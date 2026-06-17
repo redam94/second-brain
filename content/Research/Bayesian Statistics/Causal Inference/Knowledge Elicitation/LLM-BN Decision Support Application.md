@@ -91,3 +91,5 @@ The BN consists of 10 nodes. Key CPTs (from Fig. 5 in paper):
 
 - [[Shaposhnyk 2025 - Overview]] — paper context
 - [[LLM Expert Elicitation for Bayesian Networks]] — how the BN was built
+- [[Directed Acyclic Graphs]] — BNs are DAGs; d-separation and causal identification concepts transfer directly
+- [[Model Checking]] — validating BN conditional probability tables via posterior-predictive-style checks

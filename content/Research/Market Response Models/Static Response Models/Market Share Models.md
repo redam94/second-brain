@@ -11,7 +11,8 @@ tags:
   - topic/discrete-choice
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-06-15
+folder: "Market Response Models/Static Response Models"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 3"
 chapter: "3"
 status: complete
@@ -126,3 +127,5 @@ The **Schultz-Wittink framework** uses brand-level, category-level, and cross-br
 - Estimation: [[Parameter Estimation in Market Response]]
 - Discrete choice foundation: [[Logit Purchase Decision Model]]
 - Empirical share elasticities: [[Price and Distribution Effects]]
+- Econometric discrete choice parallel: [[Discrete Choice Models]] (MNL in market share = logit in discrete choice)
+- IIA relaxation with heterogeneous preferences: heterogeneous MCI connects to latent segment models covered in [[Monsters and Mixtures]] and [[Hierarchical Models]]

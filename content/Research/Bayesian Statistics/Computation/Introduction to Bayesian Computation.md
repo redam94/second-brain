@@ -18,7 +18,6 @@ source_location: "BDA3 Ch.10, pp. 261-274"
 depends_on:
   - "[[Probability and Bayesian Inference]]"
   - "[[Multiparameter Models]]"
-  - "[[raw/BDA3.pdf]]"
 used_by:
   - "[[MCMC Basics]]"
   - "[[Efficient MCMC]]"
@@ -68,4 +67,5 @@ $$
 
 - [[MCMC Basics]] — iterative simulation for complex posteriors
 - [[Efficient MCMC]] — HMC and Stan
+- [[Approximation Methods]] — deterministic alternatives (Laplace, VI, EP) when MCMC is too slow
 - [[Fitting and Validating Computation]] — workflow for validating computation

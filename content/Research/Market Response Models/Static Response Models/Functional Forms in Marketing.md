@@ -196,7 +196,7 @@ used_by:
 > Q = \frac{Q^0}{1 + \exp\!\left(-(\beta_0 + \sum_j \beta_j X_j)\right)}
 > $$
 >
-> **Shape:** Symmetric S-curve, bounded in $(0, Q^0)$. Standard form for binary choice when $Q$ is market share (bounded in [0,1]). Related to [[Logit Purchase Decision Model]].
+> **Shape:** Symmetric S-curve, bounded in $(0, Q^0)$. Standard form for binary choice when $Q$ is market share (bounded in [0,1]). Related to [[Logit Purchase Decision Model]] (ABM consumer choice) and [[Discrete Choice Models]] (econometric random utility framework).
 > ^def-logistic
 
 ---

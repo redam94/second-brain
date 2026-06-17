@@ -124,3 +124,4 @@ Discrete choice data can be structured in either **wide format** (one row per de
 - [[Instrumental Variables]] — Handling endogeneity in choice attribute prices
 - [[Hierarchical Linear Models]] — Mixed logit / random-coefficient extensions
 - [[raw/Discrete Choice and Random Utility Models]] — Full PyMC tutorial with code
+- [[Market Share Models]] — MCI and MNL choice models applied in marketing science; same logit foundation used for brand-level market share estimation
