@@ -7,6 +7,15 @@ created: 2026-04-10
 description:
 tags:
   - "clippings"
+  - source/ingested
+  - type/tutorial
+  - doc/tutorial
+  - topic/causal-inference
+doc_type: tutorial
+folder: "Clippings"
+date_ingested: "2026-04-10"
+aliases:
+  - "15 - Synthetic Control — Causal Inference for the Brave and True"
 ---
 ## 15 - Synthetic Control
 

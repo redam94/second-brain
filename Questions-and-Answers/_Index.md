@@ -47,3 +47,13 @@ question_count: 5
 - [[Q - Differences Between Frequentist and Bayesian Statistics]] -- Probability as frequency vs. belief; confidence vs. credible intervals; priors; partial pooling; WAIC vs. AIC; when each framework excels
 - [[Q - Common Pitfalls in Statistical Modeling]] -- Eight pitfall categories with remedies: confounding, forking paths, overfitting, missing data, golem misuse, model checking, computational issues, Type S/M errors
 - [[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]] -- Stop selecting by significance; use regularizing priors, projection predictive selection, or multilevel models with partial pooling
+
+## Concept Map
+
+| Question | Key Concepts | Answered From |
+|----------|-------------|---------------|
+| [[Q - Common Pitfalls in Statistical Modeling]] | confounding, forking paths, overfitting, missing data, Type S/M errors, model checking | [[Spurious Association and Confounds]], [[Garden of Forking Paths]], [[Overfitting and Information Criteria]], [[Model Checking]] |
+| [[Q - Differences Between Frequentist and Bayesian Statistics]] | probability as frequency vs. belief, confidence vs. credible intervals, priors, partial pooling, WAIC | [[Probability and Bayesian Inference]], [[Hierarchical Models]], [[Overfitting and Information Criteria]], [[Forking Paths and Bayesian Approaches]] |
+| [[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]] | classical corrections, regularizing priors, projection predictive selection, partial pooling | [[Multiple Testing Corrections]], [[Garden of Forking Paths]], [[Partial Pooling as Multiple Comparisons Correction]], [[Overfitting and Information Criteria]] |
+| [[Q - Using SMM to Calibrate Agent Based Models]] | SMM estimator, moment selection, common random numbers, weighting matrix, J-test | [[Method of Simulated Moments]], [[SMM Weighting Matrix and Inference]], [[ABM Calibration Overview]], [[Genetic Algorithm Calibration for ABM]] |
+| [[Q - Uncovering Causal Estimates from Non-Experimental Data]] | CIA, DAGs, instrumental variables, DiD, regression discontinuity, synthetic control, metalearners | [[The Selection Problem]], [[Instrumental Variables]], [[Differences-in-Differences]], [[Synthetic Control]], [[Directed Acyclic Graphs]] |

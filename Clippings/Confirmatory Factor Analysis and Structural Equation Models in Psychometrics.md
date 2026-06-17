@@ -7,6 +7,15 @@ created: 2026-04-09
 description: "“Evidently, the notions of relevance and dependence are far more basic to human reasoning than the numerical values attached to probability judgments…the language used for representing probabilisti..."
 tags:
   - "clippings"
+  - source/ingested
+  - type/tutorial
+  - doc/tutorial
+  - topic/bayesian-statistics
+doc_type: tutorial
+folder: "Clippings"
+date_ingested: "2026-04-09"
+aliases:
+  - "Confirmatory Factor Analysis and Structural Equation Models in Psychometrics"
 ---
 ## Confirmatory Factor Analysis and Structural Equation Models in Psychometrics
 

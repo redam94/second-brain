@@ -8,6 +8,15 @@ created: 2026-04-10
 description: "For mathematical and philosophical reasons, propensity scores and inverse probability weights don’t work in Bayesian inference. But never fear! There’s still a way to do it!"
 tags:
   - "clippings"
+  - source/ingested
+  - type/article
+  - doc/article
+  - topic/causal-inference
+doc_type: article
+folder: "Clippings"
+date_ingested: "2026-04-10"
+aliases:
+  - "How to use Bayesian propensity scores and inverse probability weights"
 ---
 This post combines two of my long-standing interests: causal inference and Bayesian statistics. I’ve been teaching [a course on program evaluation and causal inference](https://evalf21.classes.andrewheiss.com/) for a couple years now and it has become one of my favorite classes ever. It has reshaped how I do my research, and I’ve been trying to carefully incorporate causal approaches in my different project—as evidenced by an ever-growing series of blog posts here about different issues I run into and figure out (like [this](https://www.andrewheiss.com/blog/2020/12/01/ipw-binary-continuous/) and [this](https://www.andrewheiss.com/blog/2020/12/03/ipw-tscs-msm/) and [this](https://www.andrewheiss.com/blog/2021/01/15/msm-gee-multilevel/) and [this](https://www.andrewheiss.com/blog/2021/09/07/do-calculus-backdoors/).)
 

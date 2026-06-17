@@ -8,6 +8,15 @@ created: 2026-04-09
 description: "A step-by-step explanation of Directed Acyclic Graphs from the basics through to more advanced aspects"
 tags:
   - "clippings"
+  - source/ingested
+  - type/article
+  - doc/article
+  - topic/causal-inference
+doc_type: article
+folder: "Clippings"
+date_ingested: "2026-04-09"
+aliases:
+  - "Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs"
 ---
 ![Photo by Caleb Jones on Unsplash](https://towardsdatascience.com/wp-content/uploads/2023/04/1Ui01e0ixX0-QTNR2C8mUAg-scaled.jpeg)
 
