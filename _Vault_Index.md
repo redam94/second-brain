@@ -4,7 +4,7 @@ tags:
   - type/index
   - type/vault-root
 date_updated: 2026-06-17
-concept_count: 241
+concept_count: 265
 ---
 
 # Vault Index
@@ -24,7 +24,7 @@ concept_count: 241
 
 | Area | Notes | Domain |
 |------|-------|--------|
-| [[Research/_Index\|Research]] | 178 | Applied statistics, econometrics, causal inference, causal discovery, agent-based modeling, market response models, category theory from textbooks and papers |
+| [[Research/_Index\|Research]] | 202 | Applied statistics, econometrics, causal inference, causal discovery, agent-based modeling, market response models, category theory from textbooks and papers |
 | [[Clippings/_Index\|Clippings]] | 13 | Web articles and saved content (raw source material) |
 
 ## Topic Map
@@ -43,6 +43,12 @@ Cross-cutting topics that span multiple folders:
 
 ## Recent Ingestions
 
+- 2026-06-17: Ingested 4 research papers (24 notes total) across four topics:
+    - **DiD** → [[Research/Econometrics/Difference-in-Differences/_Index|Difference-in-Differences]]: Callaway & Sant'Anna (2020), *Difference-in-Differences with Multiple Time Periods* — 6 notes ([[Difference-in-Differences with Multiple Time Periods - Overview|Overview]], [[Group-Time Average Treatment Effects]], [[Identifying Assumptions for Staggered DiD]], [[Doubly-Robust Estimands for ATT(g,t)]] (Theorem 1), [[Aggregating Group-Time Effects]], [[Simultaneous Inference via Multiplier Bootstrap]] (Theorems 2–3) + minimum-wage application).
+    - **Factor copulas** → new [[Research/Econometrics/Dependence Modeling/_Index|Dependence Modeling]]: Oh & Patton (2012), *Modelling Dependence in High Dimensions with Factor Copulas* — 6 notes ([[Factor Copulas - Overview|Overview]], [[Factor Copula Construction]], [[Tail Dependence in Factor Copulas]] (Props 1–3, EVT), [[Multi-Factor and Block Dependence Structures]], [[SMM Estimation of Factor Copulas]], [[Factor Copula Application - S&P 100 and Systemic Risk]]).
+    - **SBC** → [[Research/Bayesian Statistics/Workflow/_Index|Bayesian Workflow]]: Talts et al. (2018), *Validating Bayesian Inference Algorithms with Simulation-Based Calibration* — 6 notes ([[Simulation-Based Calibration - Overview|Overview]], [[Data-Averaged Posterior Self-Consistency]], [[Rank Statistics and Uniformity]] (Theorem 1), [[The SBC Algorithm]], [[Interpreting SBC Histograms]], [[SBC Case Studies]]).
+    - **Bayesian MMM** → new [[Research/Market Response Models/Bayesian Media Mix Modeling/_Index|Bayesian Media Mix Modeling]]: Jin et al. (Google, 2017), *Bayesian Methods for Media Mix Modeling with Carryover and Shape Effects* — 6 notes ([[Bayesian Media Mix Modeling - Overview|Overview]], [[Carryover (Adstock) Functional Forms]], [[Shape (Saturation) Effects]], [[Bayesian Estimation and Priors for MMM]], [[ROAS, mROAS, and Optimal Media Mix]], [[MMM Model Selection and Application]]).
+    - Also: 3 new leaf indexes + 1 merged (Workflow), 2 new parent sub-topics, parent/root indexes updated, 3 .base dynamic views.
 - 2026-06-17: Ingested *DAGs with NO TEARS: Continuous Optimization for Structure Learning* (Zheng, Aragam, Ravikumar & Xing, NeurIPS 2018; arXiv:1803.01422) into new topic [[Research/Causal Discovery/_Index|Causal Discovery]] — 5 content notes: [[Research/Causal Discovery/NOTEARS - Overview|Overview]] (4 contributions, undirected-GM analogy), [[Research/Causal Discovery/DAG Structure Learning Problem|DAG Structure Learning Problem]] (linear SEM, LS score, Programs 3 & 4, NP-hardness, prior-methods landscape), [[Research/Causal Discovery/Smooth Characterization of Acyclicity|Smooth Acyclicity]] (Props 1–2, **Theorem 1** $h(W)=\mathrm{tr}\,e^{W\circ W}-d$ + gradient, sign-cancellation example), [[Research/Causal Discovery/NOTEARS Algorithm|NOTEARS Algorithm]] (ECP, augmented Lagrangian, L-BFGS/PQN, thresholding, Algorithm 1), [[Research/Causal Discovery/NOTEARS Experiments|Experiments]] (vs FGS, SHD/FDR, GOBNILP global-optimum, Sachs data). Also: 1 index file + 3 .base dynamic views.
 - 2026-05-08: Ingested *Basic Category Theory* (Leinster, Cambridge 2014; arXiv 1612.09375v2, 191 pp.) into [[Research/Category Theory/_Index|Category Theory]] — 21 content notes across 6 sub-folders: [[Research/Category Theory/Foundations/_Index|Foundations]] (4: categories, functors, natural transformations, functor categories), [[Research/Category Theory/Adjunctions/_Index|Adjunctions]] (3: adjoint functors, units/counits, initial objects), [[Research/Category Theory/Representables/_Index|Representables]] (3: representable functors, Yoneda lemma, Yoneda embedding), [[Research/Category Theory/Limits and Colimits/_Index|Limits and Colimits]] (5: products/equalizers, pullbacks, general limits, colimits, functors and limits), [[Research/Category Theory/Synthesis/_Index|Synthesis]] (5: limits via representables, presheaf categories, adjoints and limits, GAFT/SAFT, CCC), [[Research/Category Theory/Universal Properties/_Index|Universal Properties]] (1: introduction). Also: 1 overview note, 7 index files, 3 .base dynamic views.
 - 2026-04-11: Ingested 2 papers: (1) McCulloch et al. (2022) into [[Research/Agent-Based Modeling/Calibration and Validation/Calibration Methods/_Index|Calibration Methods]] — 5 notes: HM-ABC Framework overview, History Matching (implausibility score, waves, LHS), Approximate Bayesian Computation (rejection sampling, HM-informed prior, epsilon threshold), Uncertainty Quantification (4 sources: parameter/model discrepancy/ensemble variance/observation), Case Studies (SugarScape, territorial birds, RISC Scottish farms). (2) Rohrer & Murayama (2023) into [[Research/Research Methodology/_Index|Research Methodology]] — 5 notes: Within/Between Persons overview (3 main claims), Within/Between Causal Inference (ATE proof, time-varying confounders), Fixed-Effects Model (Box 1 DAG, assumptions, limitations), Cross-Lagged and Dynamic Panel Models (CLPM, DPM/RI-CLPM, comparison table), Estimands in Longitudinal Research (theoretical estimand definition, 5-step workflow, consistency in psychology).

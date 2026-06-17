@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dream/_Index.md",
+                "file": "Research/Econometrics/Extensions/Copula SMM/Dependence Measures for Copulas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_Index"
+              "title": "Dependence Measures for Copulas"
             }
           }
         ]
@@ -181,6 +181,17 @@
   },
   "active": "4e026be74554a5cd",
   "lastOpenFiles": [
+    "Research/Econometrics/Foundations/Directed Acyclic Graphs.md",
+    "Research/Econometrics/Foundations/Research Questions in Econometrics.md",
+    "Research/Econometrics/Foundations/The Experimental Ideal.md",
+    "Research/Econometrics/Identification Strategies/Synthetic Control.md",
+    "Research/Econometrics/Identification Strategies/Bayesian Difference in Differences.md",
+    "Research/Econometrics/Identification Strategies/Bayesian Propensity Score Weighting.md",
+    "Research/Econometrics/Identification Strategies/Abadie 2021 - Overview.md",
+    "Research/Econometrics/Regression Foundations/Regression and the CEF.md",
+    "Research/Econometrics/Ingested Notes.base",
+    "Dream/_Index.md",
+    "Research/Econometrics/Dependence Modeling/_Index.md",
     "Research/Econometrics/Dependence Modeling/Factor Copula Application - S&P 100 and Systemic Risk.md",
     "Research/Econometrics/Difference-in-Differences/_Index.md",
     "Research/Econometrics/Dependence Modeling/SMM Estimation of Factor Copulas.md",
@@ -197,17 +208,7 @@
     "Research/Bayesian Statistics/Workflow/Interpreting SBC Histograms.md",
     "Research/Market Response Models/Bayesian Media Mix Modeling/Shape (Saturation) Effects.md",
     "Research/Econometrics/Dependence Modeling/Factor Copula Construction.md",
-    "Research/Econometrics/Difference-in-Differences/Identifying Assumptions for Staggered DiD.md",
-    "Research/Bayesian Statistics/Workflow/The SBC Algorithm.md",
-    "Research/Market Response Models/Bayesian Media Mix Modeling/Carryover (Adstock) Functional Forms.md",
-    "Research/Bayesian Statistics/Workflow/Rank Statistics and Uniformity.md",
-    "Research/Market Response Models/Bayesian Media Mix Modeling/Bayesian Media Mix Modeling - Overview.md",
-    "Research/Econometrics/Dependence Modeling/Factor Copulas - Overview.md",
-    "Research/Econometrics/Difference-in-Differences/Group-Time Average Treatment Effects.md",
-    "Research/Bayesian Statistics/Workflow/Data-Averaged Posterior Self-Consistency.md",
     "Research/Econometrics/Dependence Modeling",
-    "Research/Bayesian Statistics/Workflow/Simulation-Based Calibration - Overview.md",
-    "Research/Econometrics/Difference-in-Differences/Difference-in-Differences with Multiple Time Periods - Overview.md",
     "Research/Market Response Models/Bayesian Media Mix Modeling",
     "Research/Econometrics/Difference-in-Differences",
     "Research/Market Response Models/raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf",
@@ -216,7 +217,6 @@
     "Research/Econometrics/raw/Oh-Patton-2012-Factor-Copulas.pdf",
     "Research/Econometrics/raw/1803.09015-Callaway-SantAnna-DiD-Multiple-Periods.pdf",
     "Research/Econometrics/raw",
-    "Research/Causal Discovery/Concept Dependencies.base",
     "public/index-og-image.webp",
     "public/_Vault_Index-og-image.webp",
     "public/Research/raw/Unlock-the-Secrets-of-Causal-Inference-with-a-Master-Class-in-Directed-Acyclic-Graphs-og-image.webp",
