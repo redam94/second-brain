@@ -1,0 +1,22 @@
+filters:
+  and:
+    - file.inFolder("Research/Causal Discovery")
+    - file.ext == "md"
+    - or:
+        - file.hasTag("type/theorem")
+        - file.hasTag("type/definition")
+properties:
+  source:
+    displayName: Source
+  source_location:
+    displayName: Location
+views:
+  - type: table
+    name: Theorems and Definitions
+    order:
+      - file.name
+      - source
+      - source_location
+    sort:
+      - property: file.name
+        direction: ASC

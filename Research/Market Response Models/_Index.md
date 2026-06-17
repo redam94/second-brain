@@ -4,20 +4,21 @@ tags:
   - type/index
   - topic/market-response
   - source/hanssens-parsons-schultz-2001
-date_updated: 2026-04-11
-concept_count: 25
+date_updated: 2026-06-17
+concept_count: 31
 ---
 
 # Market Response Models
 
 > [!abstract] Routing Summary
-> Empirical response models for marketing management using econometric and time series (ETS) analysis. Source: Hanssens, Parsons & Schultz (2001) "Market Response Models: Econometric and Time Series Analysis," 2nd Ed. Contains 25 notes organized across 5 subfolders.
+> Empirical response models for marketing management using econometric and time series (ETS) analysis, plus modern Bayesian media mix modeling. Sources: Hanssens, Parsons & Schultz (2001) "Market Response Models," 2nd Ed., and Jin et al. (Google, 2017) Bayesian MMM. Contains 31 notes organized across 6 subfolders.
 > - Need overview and management framework? → [[Introduction/_Index|Introduction]]
 > - Need functional forms (linear, power, ADBUDG, MCI/MNL) with LaTeX + elasticities? → [[Static Response Models/_Index|Static Response Models]]
 > - Need Koyck/ADL carryover, reaction functions, hysteresis? → [[Dynamic Response Models/_Index|Dynamic Response Models]]
 > - Need OLS/GLS/2SLS/Bayesian estimation, specification tests? → [[Estimation and Testing/_Index|Estimation and Testing]]
 > - Need ARIMA, transfer functions, VAR, cointegration, ECM? → [[Time Series Analysis/_Index|Time Series Analysis]]
 > - Need advertising/price/promotion empirical elasticities and optimal decisions? → [[Empirical Findings and Applications/_Index|Empirical Findings and Applications]]
+> - Need **Bayesian MMM** (adstock/carryover, Hill saturation, MCMC priors, ROAS/mROAS, optimal media mix, BIC selection)? → [[Bayesian Media Mix Modeling/_Index|Bayesian Media Mix Modeling]]
 
 ## Concept Map
 
@@ -29,6 +30,7 @@ concept_count: 25
 | [[Estimation and Testing/_Index\|Estimation and Testing]] | 4 | OLS, GLS, SUR, 2SLS, Bayes HB/EB, RESET, specification errors, AIC/BIC |
 | [[Time Series Analysis/_Index\|Time Series Analysis]] | 4 | ARIMA, transfer functions, VAR, cointegration, ECM, Granger causality |
 | [[Empirical Findings and Applications/_Index\|Empirical Findings]] | 5 | Advertising elasticity ≈ 0.10, price ≈ −2.5, Dorfman-Steiner, DSS |
+| [[Bayesian Media Mix Modeling/_Index\|Bayesian Media Mix Modeling]] | 6 | Adstock (geometric/delayed) carryover, Hill/logistic saturation, Bayesian MCMC + priors, ROAS/mROAS, optimal media mix, BIC model selection (Jin et al., Google 2017) |
 
 ## Key Equations Quick Reference
 
@@ -66,3 +68,4 @@ concept_count: 25
 ## Source
 
 - [[raw/Market Response Models Econometric and Time Series Analysis.pdf|Market Response Models Econometric and Time Series Analysis]] — Hanssens, Parsons & Schultz (2001), Kluwer Academic Publishers, 2nd Edition, 455 pp.
+- [[raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf]] — Jin, Wang, Sun, Chan & Koehler (Google, 2017), "Bayesian Methods for Media Mix Modeling with Carryover and Shape Effects": adstock, Hill saturation, MCMC estimation, ROAS/mROAS, optimal media mix, BIC selection, shampoo case study
