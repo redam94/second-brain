@@ -4,15 +4,14 @@ aliases:
   - "MRM Management Applications"
   - "Marketing Planning Cycle"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/marketing-management
-  - source/hanssens-parsons-schultz-2001
-date_created: 2026-04-11
-date_updated: 2026-04-11
-source: "Hanssens, Parsons & Schultz (2001) Ch. 1"
-chapter: "1"
-status: complete
+  - doc/textbook
+date_ingested: 2026-04-11
+source: "[[raw/Market Response Models Econometric and Time Series Analysis.pdf]]"
+folder: "Market Response Models/Introduction"
 doc_type: concept
 source_location: "Ch. 1, pp. 3-21"
 depends_on:

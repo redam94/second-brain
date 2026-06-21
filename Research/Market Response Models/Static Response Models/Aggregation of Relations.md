@@ -4,15 +4,14 @@ aliases:
   - "Aggregation Bias in Marketing"
   - "Individual to Aggregate Response"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/aggregation
-  - source/hanssens-parsons-schultz-2001
-date_created: 2026-04-11
-date_updated: 2026-04-11
-source: "Hanssens, Parsons & Schultz (2001) Ch. 3"
-chapter: "3"
-status: complete
+  - doc/textbook
+date_ingested: 2026-04-11
+source: "[[raw/Market Response Models Econometric and Time Series Analysis.pdf]]"
+folder: "Market Response Models/Static Response Models"
 doc_type: concept
 source_location: "Ch. 3, Sec. 3.3, pp. 129-137"
 depends_on:

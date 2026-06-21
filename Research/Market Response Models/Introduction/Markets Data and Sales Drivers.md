@@ -5,15 +5,14 @@ aliases:
   - "Scanner Data Marketing"
   - "Marketing Mix Variables"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/data
-  - source/hanssens-parsons-schultz-2001
-date_created: 2026-04-11
-date_updated: 2026-04-11
-source: "Hanssens, Parsons & Schultz (2001) Ch. 2"
-chapter: "2"
-status: complete
+  - doc/textbook
+date_ingested: 2026-04-11
+source: "[[raw/Market Response Models Econometric and Time Series Analysis.pdf]]"
+folder: "Market Response Models/Introduction"
 doc_type: concept
 source_location: "Ch. 2, pp. 23-85"
 depends_on:

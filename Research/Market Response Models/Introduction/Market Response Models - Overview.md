@@ -4,16 +4,15 @@ aliases:
   - "MRM Overview"
   - "Hanssens Parsons Schultz"
 tags:
+  - source/ingested
   - type/overview
   - topic/market-response
   - topic/econometrics
   - topic/marketing-science
-  - source/hanssens-parsons-schultz-2001
-date_created: 2026-04-11
-date_updated: 2026-04-11
-source: "Hanssens, Parsons & Schultz (2001) Market Response Models: Econometric and Time Series Analysis, 2nd Ed."
-chapter: "1-10 (full book)"
-status: complete
+  - doc/textbook
+date_ingested: 2026-04-11
+source: "[[raw/Market Response Models Econometric and Time Series Analysis.pdf]]"
+folder: "Market Response Models/Introduction"
 doc_type: overview
 source_location: "full book, pp. 3-425"
 depends_on: []
