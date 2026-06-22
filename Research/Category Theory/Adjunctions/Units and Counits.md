@@ -8,6 +8,8 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 2.1–2.2, pp. 58–68"
 date_ingested: 2026-05-08
+date_updated: 2026-06-22
+folder: "Category Theory/Adjunctions"
 doc_type: textbook
 depends_on:
   - "[[Foundations/Natural Transformations]]"
@@ -89,3 +91,4 @@ One checks that these are mutual inverses using the triangle identities.
 - [[Adjoint Functors]] — The hom-set definition
 - [[Adjunctions via Initial Objects]] — Universal maps and the unit's universal property
 - [[Synthesis/Adjoints and Limits]] — How units/counits are used in preservation proofs
+- [[Cartesian Closed Categories]] — the Product/Hom adjunction example (unit = currying, counit = evaluation) is the canonical CCC instance

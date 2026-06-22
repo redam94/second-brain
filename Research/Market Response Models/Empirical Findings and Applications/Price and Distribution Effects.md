@@ -11,7 +11,9 @@ tags:
   - topic/empirical-findings
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-06-22
+date_ingested: 2026-04-11
+folder: "Market Response Models/Empirical Findings and Applications"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 8"
 chapter: "8"
 status: complete
@@ -123,10 +125,12 @@ Powdered detergents example (Table 8-7, Russell & Kamakura 1994):
 - Private label: lowest momentum (0.029), extreme vulnerability
 - Cross-elasticities: Tide vs. Surf (0.396), Tide vs. Oxydol (0.13), reflecting price-tier proximity
 
-## Cross-Links
+## See Also
 
 - Advertising effects: [[Advertising and Promotion Effects]]
 - Market share model foundations: [[Market Share Models]]
 - Reaction functions and competitive structure: [[Reaction Functions and Competitive Dynamics]]
 - Long-run distribution effects in VAR: [[Multivariate Persistence and Cointegration]]
 - Optimal pricing decisions: [[Optimal Marketing Decisions and Forecasting]]
+- Discrete choice econometrics for cross-price modeling: [[Discrete Choice Models]] — random-coefficients logit (BLP) is the structural model underlying cross-price elasticity estimation
+- Estimation methods for price response models: [[Parameter Estimation in Market Response]]
