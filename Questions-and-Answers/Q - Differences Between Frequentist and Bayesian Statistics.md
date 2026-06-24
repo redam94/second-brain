@@ -7,6 +7,7 @@ tags:
   - topic/probability
   - topic/research-methodology
 date_asked: 2026-04-09
+doc_type: qa
 answered_from:
   - "[[Probability and Bayesian Inference]]"
   - "[[Asymptotics and Frequentist Connections]]"

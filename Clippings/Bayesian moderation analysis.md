@@ -7,6 +7,11 @@ created: 2026-04-09
 description: "This notebook covers Bayesian moderation analysis. This is appropriate when we believe that one predictor variable (the moderator) may influence the linear relationship between another predictor va..."
 tags:
   - "clippings"
+  - "source/ingested"
+  - "topic/bayesian-statistics"
+  - "topic/causal-inference"
+  - "type/tutorial"
+doc_type: tutorial
 ---
 ## Bayesian moderation analysis
 
