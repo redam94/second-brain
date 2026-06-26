@@ -9,6 +9,7 @@ tags:
 source: "[[raw/Quantum field theory]]"
 source_location: "Introduction; History"
 date_ingested: 2026-04-16
+date_updated: 2026-06-22
 folder: "Physics/Quantum Field Theory"
 doc_type: article
 depends_on:
@@ -105,6 +106,9 @@ Both are equivalent and give the same physical predictions.
 - **[[Canonical Quantization of Fields]]**: Detailed procedure for quantizing a scalar field.
 - **[[Renormalization]]**: The procedure for dealing with UV divergences that arise in perturbative calculations.
 - **[[Gauge Theory Overview]]**: QED, QCD, and the electroweak theory are all gauge theories.
+- **[[Wave Function and Hilbert Space]]**: Hilbert space and state vectors are the quantum formalism QFT extends to fields; Fock space is built from the single-particle Hilbert space.
+- **[[Uncertainty Principle]]**: The energy–time uncertainty relation underlies vacuum fluctuations and virtual particle creation in QFT.
+- **[[Quantum Entanglement]]**: Entanglement arises naturally in QFT through multi-particle states in Fock space and the vacuum.
 
 ## See Also
 
@@ -112,3 +116,5 @@ Both are equivalent and give the same physical predictions.
 - [[Renormalization]] — handling UV infinities
 - [[Gauge Theory Overview]] — local symmetry as the organizing principle of QFT
 - [[Yang-Mills Theory and Gauge Fields]] — non-abelian gauge theories and the Standard Model
+- [[Standard Model and Gauge Groups]] — Standard Model as the culmination of QFT (parallel flat-note coverage in Theoretical Physics)
+- [[Quantum Field Theory - Overview]] — parallel flat-note treatment of QFT in the Theoretical Physics folder
