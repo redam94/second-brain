@@ -4,14 +4,14 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-04-11
-concept_count: 13
+date_updated: 2026-06-26
+concept_count: 16
 ---
 
 # Research Methodology
 
 > [!abstract] Routing Summary
-> This folder covers statistical methodology, the replication crisis, causal inference challenges, experimental design, and longitudinal methods. Contains 11 notes plus an Experimental Design subfolder (3 notes).
+> This folder covers statistical methodology, the replication crisis, causal inference challenges, experimental design, and longitudinal methods. Contains 14 notes plus an Experimental Design subfolder (3 notes).
 > - Need the forking paths / p-hacking argument? -> [[Garden of Forking Paths]]
 > - Need sources of analytic flexibility? -> [[Researcher Degrees of Freedom]]
 > - Need Bayesian solutions to multiplicity? -> [[Forking Paths and Bayesian Approaches]]
@@ -23,6 +23,9 @@ concept_count: 13
 > - Need the fixed-effects model (assumptions, DAG, limitations)? -> [[Fixed-Effects Model]]
 > - Need cross-lagged panel model or dynamic panel model? -> [[Cross-Lagged and Dynamic Panel Models]]
 > - Need how to define estimands in longitudinal research? -> [[Estimands in Longitudinal Research]]
+> - Need the Table 2 Fallacy (misinterpreting nuisance parameter coefficients as causal)? -> [[Table 2 Fallacy]]
+> - Need the logic of what regression adjustment actually identifies (vs. does not identify)? -> [[Logic of Regression Adjustment]]
+> - Need the simulation proof that confounder coefficients are almost never recoverable? -> [[Nuisance Parameter Bias Simulation]]
 
 ## Concept Map
 
@@ -39,6 +42,9 @@ concept_count: 13
 | Fixed-effects model | [[Fixed-Effects Model]] | concept | [[Directed Acyclic Graphs]], [[Within-Between Persons Causal Inference]] | Controls time-invariant confounders; assumes no lagged dynamics, no time-varying confounders |
 | Cross-lagged and dynamic panel models | [[Cross-Lagged and Dynamic Panel Models]] | concept | [[Fixed-Effects Model]], [[Directed Acyclic Graphs]] | CLPM targets lagged reciprocal effects; DPM adds time-invariant confounding control; both assume no contemporaneous effects |
 | Estimands in longitudinal research | [[Estimands in Longitudinal Research]] | concept | [[Potential Outcomes Framework]], [[Causal Estimands]] | Define estimand before model; psychological constructs are "fat-handed"; consistency violations common |
+| Table 2 Fallacy | [[Table 2 Fallacy]] | concept | [[DAGs and Causal Identification]], [[Potential Outcomes Framework]] | Adjustment set identifies one causal path only; confounder coefficients are almost always biased |
+| Logic of regression adjustment | [[Logic of Regression Adjustment]] | concept | [[Potential Outcomes Framework]], [[DAGs and Causal Identification]] | Regression adjustment recovers PATE for treatment only; adjustment set is a sacrifice, not a co-effect estimator |
+| Nuisance parameter bias (simulation) | [[Nuisance Parameter Bias Simulation]] | example | [[Table 2 Fallacy]], [[Logic of Regression Adjustment]] | 90% CI coverage 0–29% for confounders; bias does not shrink as $n \to \infty$ |
 
 ## Sub-topics
 
@@ -56,6 +62,9 @@ concept_count: 13
 - [[Fixed-Effects Model]] — CONTAINS: FE causal DAG (Box 1), what FE controls/doesn't control table, 3 causal assumptions for identification, 5 limitations (lagged dynamics, time-varying confounders, heterogeneous slopes, reciprocal dynamics, consistency)
 - [[Cross-Lagged and Dynamic Panel Models]] — CONTAINS: CLPM definition + Granger causality, CLPM bias from stable traits (Box 2), DPM/RI-CLPM definition (Box 3), comparison table (FE vs CLPM vs DPM), shared assumption of no contemporaneous effects, time lag misspecification
 - [[Estimands in Longitudinal Research]] — CONTAINS: theoretical estimand definition, recommended 5-step workflow (estimand → assumptions → plausibility → model → interpretation), consistency challenge for psychological constructs (Box 4), fat-handed treatments, causal web problem
+- [[Table 2 Fallacy]] — CONTAINS: definition (Westreich & Greenland 2013), core argument for non-joint identification, theorem on single-path identification, downstream scientific consequences, conditions under which multiple paths can be jointly identified
+- [[Logic of Regression Adjustment]] — CONTAINS: potential outcomes setup, PATE definition, what adjustment identifies vs. doesn't, single-path theorem, "adjustment set as sacrifice" framing, strategies for identifying multiple paths
+- [[Nuisance Parameter Bias Simulation]] — CONTAINS: DAG DGP with 4 measured confounders + 2 unobserved confounders, R/Python data simulation code, full Stan model, 90% CI coverage table (5 parameters × 2 conditions × 3 sample sizes), error-of-magnitude results, "big data is not a substitute" finding
 
 ## Sources
 
@@ -63,6 +72,7 @@ concept_count: 13
 - [[raw/ssrn-2080235.pdf]] — "Here, There, and Everywhere" (Lewis, Rao, & Reiley, 2011)
 - [[raw/multiple2f.pdf]] — "Why we (usually) don't have to worry about multiple comparisons" (Gelman, Hill & Yajima, 2009)
 - [[raw/rohrer-murayama-2023.pdf]] — "These Are Not the Effects You Are Looking For" (Rohrer & Murayama, 2023, AMPPS 6(1))
+- [[raw/These Are Not the Effects You Are Looking For]] — A. Jordan Nafa (2022), blog post: Table 2 Fallacy, logic of statistical control, mutual adjustment, simulation study with R/Python/Stan demonstrating nuisance parameter bias (2026-06-26)
 
 ## See Also
 

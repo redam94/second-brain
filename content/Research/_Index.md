@@ -3,8 +3,8 @@ title: "Index: Research"
 tags:
   - type/index
   - source/ingested
-date_updated: 2026-06-17
-concept_count: 177
+date_updated: 2026-06-26
+concept_count: 180
 ---
 
 # Research
@@ -28,7 +28,7 @@ concept_count: 177
 | [[Research/Bayesian Statistics/_Index\|Bayesian Statistics]] | 60 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference, **simulation-based calibration (SBC)** |
 | [[Research/Econometrics/_Index\|Econometrics]] | 48 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, quantile regression, discrete choice, SMM, Brock-Mirman structural estimation, **staggered/multi-period DiD (group-time ATT, doubly-robust)**, **factor copulas / high-dimensional tail dependence** |
 | [[Research/Causal Discovery/_Index\|Causal Discovery]] | 5 | DAG / Bayesian-network structure learning, linear SEM, score-based learning, **NOTEARS** continuous optimization, smooth acyclicity $h(W)=\mathrm{tr}\,e^{W\circ W}-d$, augmented Lagrangian, vs FGS/GES/PC |
-| [[Research/Research Methodology/_Index\|Research Methodology]] | 13+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons, within/between-persons distinction (Rohrer & Murayama 2023), fixed-effects model, CLPM, dynamic panel model, estimands in longitudinal research |
+| [[Research/Research Methodology/_Index\|Research Methodology]] | 16+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons, within/between-persons distinction (Rohrer & Murayama 2023), fixed-effects model, CLPM, dynamic panel model, estimands in longitudinal research, **Table 2 Fallacy**, regression adjustment logic, nuisance parameter bias simulation |
 | [[Research/Theoretical Physics/_Index\|Theoretical Physics]] | 7 | Quantum mechanics, Hilbert space, Schrödinger equation, QFT, second quantization, QED, renormalization, gauge theory, Standard Model |
 | [[Research/Physics/_Index\|Physics]] | 9 | Wave functions, Hilbert space, Schrödinger equation, entanglement, QFT, canonical quantization, renormalization, gauge theory, Yang–Mills (structured sub-folder organization) |
 | [[Research/Agent-Based Modeling/_Index\|Agent-Based Modeling]] | 34 | ABM methodology, emergence, heterogeneity, consumer utility models, CUBES behavioral simulator, WOM, opinion leaders, network diffusion, GA calibration, validation, HM+ABC calibration (McCulloch et al. 2022), history matching, ABC, uncertainty quantification |
@@ -37,7 +37,7 @@ concept_count: 177
 ## Cross-Cutting Themes
 
 - **Bayesian vs. Frequentist**: [[Asymptotics and Frequentist Connections]], [[Forking Paths and Bayesian Approaches]]
-- **Causal Inference**: [[The Experimental Ideal]], [[Activity Bias in Advertising]], [[Data Collection Models]], [[Counterfactual Inference]], [[Nonparametric Causal Inference]], [[Directed Acyclic Graphs]], [[Synthetic Control]], [[Bayesian Inverse Probability Weighting]], [[DAGs and Causal Identification]], [[Bayesian Propensity Score Weighting]]
+- **Causal Inference**: [[The Experimental Ideal]], [[Activity Bias in Advertising]], [[Data Collection Models]], [[Counterfactual Inference]], [[Nonparametric Causal Inference]], [[Directed Acyclic Graphs]], [[Synthetic Control]], [[Bayesian Inverse Probability Weighting]], [[DAGs and Causal Identification]], [[Bayesian Propensity Score Weighting]], [[Table 2 Fallacy]], [[Logic of Regression Adjustment]]
 - **Staggered Difference-in-Differences (Callaway & Sant'Anna)**: [[Difference-in-Differences with Multiple Time Periods - Overview]] → [[Group-Time Average Treatment Effects]] → [[Identifying Assumptions for Staggered DiD]] → [[Doubly-Robust Estimands for ATT(g,t)]] → [[Aggregating Group-Time Effects]] → [[Simultaneous Inference via Multiplier Bootstrap]]
 - **High-Dimensional Dependence (Factor Copulas)**: [[Factor Copulas - Overview]] → [[Factor Copula Construction]] → [[Tail Dependence in Factor Copulas]] / [[Multi-Factor and Block Dependence Structures]] → [[SMM Estimation of Factor Copulas]] → [[Factor Copula Application - S&P 100 and Systemic Risk]]
 - **Simulation-Based Calibration (SBC)**: [[Simulation-Based Calibration - Overview]] → [[Data-Averaged Posterior Self-Consistency]] → [[Rank Statistics and Uniformity]] → [[The SBC Algorithm]] → [[Interpreting SBC Histograms]] → [[SBC Case Studies]]
@@ -85,6 +85,7 @@ concept_count: 177
 - [[Agent-Based Modeling/raw/abm_human_behaviour.pdf]] — Ben Said, Bouron & Drogoul (2002), CUBES consumer behavior simulator
 - [[Agent-Based Modeling/raw/calibration_ABM.pdf]] — McCulloch et al. (2022), Calibrating ABMs using Uncertainty Quantification Methods (JASSS 25(2))
 - [[Research Methodology/raw/rohrer-murayama-2023.pdf]] — Rohrer & Murayama (2023), These Are Not the Effects You Are Looking For: Causality and the Within/Between-Persons Distinction (AMPPS 6(1))
+- [[raw/These Are Not the Effects You Are Looking For]] — A. Jordan Nafa (2022), Table 2 Fallacy, logic of statistical control/mutual adjustment, simulation (R/Python/Stan) demonstrating nuisance parameter bias (2026-06-26)
 - [[raw/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — Evans (2024), Computational Methods for Economists, Ch. 19: SMM theory, Python implementation, Brock-Mirman structural macro exercise (2026-04-12)
 - [[Causal Discovery/raw/1803.01422-NOTEARS.pdf|NOTEARS]] — Zheng, Aragam, Ravikumar & Xing (2018), *DAGs with NO TEARS: Continuous Optimization for Structure Learning* (NeurIPS), arXiv:1803.01422 (2026-06-17)
 - [[Econometrics/raw/1803.09015-Callaway-SantAnna-DiD-Multiple-Periods.pdf|Callaway & Sant'Anna - DiD with Multiple Time Periods]] — Callaway & Sant'Anna (2020), staggered difference-in-differences: group-time ATT, doubly-robust estimands, aggregation, multiplier-bootstrap inference (2026-06-17)

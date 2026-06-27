@@ -10,7 +10,9 @@ tags:
   - topic/data
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-06-22
+date_ingested: 2026-04-11
+folder: "Market Response Models/Introduction"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 2"
 chapter: "2"
 status: complete
@@ -128,3 +130,4 @@ MRMs can be estimated at brand level (selective demand) or category level (prima
 - Market share models: [[Market Share Models]]
 - Empirical advertising findings: [[Advertising and Promotion Effects]]
 - Aggregation bias: [[Carryover Effects and Distributed Lags]]
+- Bayesian MMM workflow (GRPs + adstock transform are the primary data inputs): [[Bayesian Media Mix Modeling - Overview]]

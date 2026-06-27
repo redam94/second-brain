@@ -10,6 +10,7 @@ tags:
 source: "[[raw/tdb136.pdf]]"
 source_location: "Liesenfeld & Breitung (1998), Sections 1-3, pp. 1-8"
 date_ingested: 2026-04-11
+date_updated: 2026-06-22
 folder: "Econometrics/Extensions/Simulation-Based Estimation"
 doc_type: paper
 depends_on:
@@ -204,6 +205,8 @@ This $T$-dimensional integral has no closed-form solution. Standard GMM using un
 - [[SMM Estimator for Copulas]] — application to copula estimation (Oh & Patton, 2011)
 - [[Indirect Inference]] — auxiliary model approach
 - [[Practical Issues in Simulation Estimation]] — implementation details
+- [[Brock-Mirman Model - SMM Estimation Exercise]] — full worked structural estimation example using MSM in Python
+- [[SMM Estimation of Factor Copulas]] — high-dimensional application of rank-based SMM to a 100-asset factor copula model
 
 ## Sources
 

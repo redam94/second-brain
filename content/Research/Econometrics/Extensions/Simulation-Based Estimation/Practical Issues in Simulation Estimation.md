@@ -9,6 +9,7 @@ tags:
 source: "[[raw/tdb136.pdf]], [[raw/Oh_Patton_SMM_copulas_nov11.pdf]]"
 source_location: "Liesenfeld & Breitung (1998), Section 6, pp. 13-16; Oh & Patton (2011), Sections 2.4, 3"
 date_ingested: 2026-04-11
+date_updated: 2026-06-22
 folder: "Econometrics/Extensions/Simulation-Based Estimation"
 doc_type: paper
 depends_on:
@@ -183,6 +184,8 @@ For practitioners implementing simulation-based estimation:
 - [[SMM Copula Simulation and Application]] — empirical validation
 - [[SMM Weighting Matrix and Inference]] — step-size guidance for numerical Jacobians in the parameter Σ̂ computation
 - [[SMM Python Implementation]] — Python code illustrating the eps step-size issue in scipy L-BFGS-B and the common random numbers pattern
+- [[Brock-Mirman Model - SMM Estimation Exercise]] — structural macro estimation example illustrating common random numbers and R-choice in practice
+- [[SMM Estimation of Factor Copulas]] — high-dimensional application where R=25T and the step-size guidance is directly applied
 
 ## Sources
 

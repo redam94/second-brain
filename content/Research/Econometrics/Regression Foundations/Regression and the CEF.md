@@ -14,6 +14,7 @@ tags:
   - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-06-22
 folder: "Econometrics/Regression Foundations"
 doc_type: concept
 source_location: "MHE Ch. 3, pp. 21-82"
@@ -88,3 +89,4 @@ A saturated model has a separate parameter for every possible covariate combinat
 - [[Data Collection Models]] — Bayesian ignorability as the prerequisite for regression's causal interpretation
 - [[Local Average Treatment Effects]] — IV/LATE as the estimand when regression cannot recover the full ATE due to non-compliance
 - [[Directed Acyclic Graphs]] — DAGs identify the adjustment set that gives regression a causal interpretation
+- [[Spurious Association and Confounds]] — Statistical Rethinking's treatment of multivariate regression and confounds, the Bayesian parallel to MHE's CEF analysis

@@ -8,6 +8,7 @@ tags:
 source: "[[raw/Oh-Patton-2012-Factor-Copulas.pdf]]"
 source_location: "Sec. 2.2, pp. 5-6; Sec. 4.2, pp. 21-23; App. B, pp. 31-33"
 date_ingested: 2026-06-17
+date_updated: 2026-06-22
 folder: "Econometrics/Dependence Modeling"
 doc_type: paper
 depends_on:
@@ -96,4 +97,7 @@ The simple model $X_i = Z + \varepsilon_i$ forces every pair to share one bivari
 ## See Also
 
 - [[Factor Copulas - Overview]]
+- [[Dependence Measures for Copulas]] — the five pairwise moments (rank correlation, quantile dependence) used for block-averaged SMM estimation
+- [[Factor Analysis and PPCA]] — parallel factor structure in the Bayesian latent-variable setting; compare continuous vs. copula factor models
+- [[Copula Estimation]] — Bayesian Gaussian copula for comparison with the frequentist SMM factor copula approach
 - [[../_Index|Econometrics]]
