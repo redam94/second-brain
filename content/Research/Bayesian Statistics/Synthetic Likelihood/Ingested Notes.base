@@ -1,0 +1,22 @@
+filters:
+  and:
+    - file.inFolder("Research/Bayesian Statistics/Synthetic Likelihood")
+    - file.hasTag("source/ingested")
+    - '!file.hasTag("type/index")'
+    - file.ext == "md"
+properties:
+  doc_type:
+    displayName: Type
+  source:
+    displayName: Source
+  source_location:
+    displayName: Location
+  date_ingested:
+    displayName: Ingested
+views:
+  - type: table
+    name: Synthetic Likelihood Notes
+    order:
+      - file.name
+      - doc_type
+      - source_location

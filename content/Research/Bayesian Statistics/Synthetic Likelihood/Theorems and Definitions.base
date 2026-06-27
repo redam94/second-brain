@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.inFolder("Research/Bayesian Statistics/Synthetic Likelihood")
+    - or:
+        - file.hasTag("type/theorem")
+        - file.hasTag("type/definition")
+properties:
+  source:
+    displayName: Source
+  source_location:
+    displayName: Location
+  doc_type:
+    displayName: Type
+views:
+  - type: table
+    name: Theorems and Definitions
+    order:
+      - file.name
+      - source_location
