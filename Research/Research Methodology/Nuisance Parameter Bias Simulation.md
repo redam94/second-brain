@@ -71,11 +71,11 @@ X_i &\sim \text{Bernoulli}(\theta_i) \\
 \end{aligned}$$
 
 Outcome DGP:
-$$Y_i \sim \alpha + \beta_1 X_i + \beta_2 Z_i + \beta_3 L_i + \beta_4 W_i + \beta_5 J_i + V + U + \sigma$$
+$$Y_i \sim \alpha + \beta_1 X_i + \beta_2 Z_i + \beta_3 L_i + \beta_4 J_i + \beta_5 W_i + V + U + \sigma$$
 
 where $\alpha = 0.50$, $\sigma \sim \mathcal{N}(0, 0.5)$, true coefficients: $\beta_X = -0.5$, $\beta_Z = 0.0$, $\beta_L = 0.5$, $\beta_J = 0.0$, $\beta_W = 0.5$.
 
-**Scale**: 3,000 datasets (500 repetitions × 3 sample sizes: 2,500, 5,000, 10,000).
+**Scale**: 3,000 datasets (500 repetitions × 3 sample sizes [2,500, 5,000, 10,000] × 2 conditions [Z confounded, Z unconfounded]).
 
 ### Code: Data Simulation (R)
 
