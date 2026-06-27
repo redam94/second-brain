@@ -1,0 +1,23 @@
+filters:
+  and:
+    - file.inFolder("Research/Bayesian Experimental Design")
+    - '!file.hasTag("type/index")'
+    - file.ext == "md"
+properties:
+  depends_on:
+    displayName: Depends On
+  used_by:
+    displayName: Used By
+  doc_type:
+    displayName: Type
+views:
+  - type: table
+    name: Concept Graph
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - depends_on
+      - used_by
+      - tags

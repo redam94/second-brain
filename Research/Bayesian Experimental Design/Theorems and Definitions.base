@@ -1,0 +1,24 @@
+filters:
+  and:
+    - file.inFolder("Research/Bayesian Experimental Design")
+    - or:
+        - file.hasTag("type/theorem")
+        - file.hasTag("type/definition")
+    - file.ext == "md"
+properties:
+  source:
+    displayName: Source
+  source_location:
+    displayName: Location
+  doc_type:
+    displayName: Type
+views:
+  - type: table
+    name: Formal Results
+    order:
+      - file.name
+      - source
+      - source_location
+    sort:
+      - property: file.name
+        direction: ASC
