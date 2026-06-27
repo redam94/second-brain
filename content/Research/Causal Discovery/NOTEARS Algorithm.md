@@ -95,8 +95,10 @@ derivative is simply $\nabla D(\alpha) = h(W_\alpha^\star)$. Hence dual **gradie
 Each subproblem $\min_W L^\rho(W,\alpha)$ is, writing $w = \mathrm{vec}(W)\in\mathbb{R}^p$ with $p=d^2$:
 
 > [!definition] Subproblem (NOTEARS §4.2, Eqs. 15-16)
-> $$\min_{w\in\mathbb{R}^p} f(w) + \lambda\lVert w \rVert_1, \qquad
-> f(w) = \ell(W;\mathbf{X}) + \frac{\rho}{2}|h(W)|^2 + \alpha\, h(W),$$
+> $$
+> \min_{w\in\mathbb{R}^p} f(w) + \lambda\lVert w \rVert_1, \qquad
+> f(w) = \ell(W;\mathbf{X}) + \frac{\rho}{2}|h(W)|^2 + \alpha\, h(W),
+> $$
 > where $f$ is the **smooth** part of the objective.
 ^def-subproblem
 
