@@ -57,20 +57,26 @@ The path $U \to Z$ is toggled by a binary condition `cond`:
 
 ### Data Generation Equations
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 W_i &\sim \gamma_1 U + \sigma_W \\
 J_i &\sim \gamma_2 V + \sigma_J \\
 L_i &\sim \gamma_3 U + \gamma_4 V + \sigma_L \\
 Z_i &\sim \gamma_5 W_i + \delta U + \gamma_6 L_i + \sigma_Z
-\end{aligned}$$
+\end{aligned}
+$$
 
 Treatment propensity:
-$$\begin{aligned}
+
+$$
+\begin{aligned}
 X_i &\sim \text{Bernoulli}(\theta_i) \\
 \theta_i &= \text{logit}^{-1}(\gamma_7 Z_i + \gamma_8 W_i + \gamma_9 J_i + \gamma_{10} L_i + \sigma_X)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Outcome DGP:
+
 $$
 Y_i \sim \alpha + \beta_1 X_i + \beta_2 Z_i + \beta_3 L_i + \beta_4 J_i + \beta_5 W_i + V + U + \sigma
 $$
@@ -122,13 +128,15 @@ def sim_dag_data(N, a, b, cond, conf):
 
 A Bayesian linear regression with weakly informative priors scaled to the data (Gelman, Hill & Vehtari 2021):
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 y_i &\sim \mathcal{N}(\mu, \sigma) \\
 \mu &= \alpha + \mathbf{X}_n \boldsymbol{\beta}_k \\
 \alpha &\sim \mathcal{N}(\bar{y},\; 2\sigma_y) \\
 \beta_k &\sim \mathcal{N}\!\left(0,\; 2\frac{\sigma_y}{\sigma_{x_k}}\right) \\
 \sigma &\sim \text{Exponential}\!\left(\frac{1}{\sigma_y}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Code: Stan Model
 
