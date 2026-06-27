@@ -29,6 +29,7 @@ used_by:
   - "[[Iterative Model Improvement]]"
   - "[[Evaluating Fitted Models]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Horseshoe and Regularized Horseshoe Priors]]"
 ---
 
 # Hierarchical Models

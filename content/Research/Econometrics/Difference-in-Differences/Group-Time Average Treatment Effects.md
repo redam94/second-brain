@@ -76,4 +76,4 @@ In the canonical two-period setup the target is $ATT = \mathbb{E}[Y_2(2) - Y_2(0
 
 - [[Estimands in Longitudinal Research]] — potential-outcome estimands across periods
 - [[Difference in differences]] — the canonical 2x2 ATT this generalizes
-- [[Mostly Harmless Econometrics]] — DiD chapter
+- [[Mostly Harmless Econometrics - Overview|Mostly Harmless Econometrics]] — DiD chapter

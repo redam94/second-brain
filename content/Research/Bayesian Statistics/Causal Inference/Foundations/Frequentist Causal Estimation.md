@@ -112,5 +112,5 @@ The propensity score — central to Frequentist approaches — has a nuanced rol
 
 ## See Also
 - [[Propensity Score in Bayesian CI]] — Bayesian strategies using the propensity score
-- [[Bayesian Propensity Scores and IPW]] — existing vault note on Bayesian IPW (Heiss blog)
+- [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]] — existing vault note on Bayesian IPW (Heiss blog)
 - [[Sensitivity Analysis in Observational Studies]] — what happens when unconfoundedness fails

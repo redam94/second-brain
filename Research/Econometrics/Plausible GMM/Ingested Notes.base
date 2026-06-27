@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.inFolder("Research/Econometrics/Plausible GMM")
+    - file.hasTag("source/ingested")
+    - '!file.hasTag("type/index")'
+    - file.ext == "md"
+properties:
+  doc_type:
+    displayName: Type
+  source:
+    displayName: Source
+  source_location:
+    displayName: Location
+  date_ingested:
+    displayName: Ingested
+  file.folder:
+    displayName: Folder
+views:
+  - type: table
+    name: Plausible GMM Notes
+    order:
+      - file.name
+      - doc_type
+      - source_location
+      - date_ingested

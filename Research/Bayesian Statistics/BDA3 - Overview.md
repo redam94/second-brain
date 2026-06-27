@@ -4,9 +4,12 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
+source_location: "Full text (Parts I–V), pp. 1-590"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"

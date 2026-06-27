@@ -268,7 +268,7 @@ Other approaches: Rosenbaum & Rubin (1983) hidden binary confounder model, copul
 - [[Causal Estimands]] — ITE, SATE, CATE, PATE, MATE — what we're estimating
 - [[Omitted Variables Bias]] — what happens when CIA fails without a remedy
 - [[Activity Bias in Advertising]] — real-world failure of CIA; motivates IV
-- [[Bayesian Propensity Scores and IPW]] — Bayesian take on IPW/matching
+- [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]] — Bayesian take on IPW/matching
 - [[Nonparametric Causal Inference]] — BART-based Bayesian causal estimation
 - [[Counterfactual Inference]] — Bayesian counterfactual prediction (COVID deaths example)
 - [[Q - Common Pitfalls in Statistical Modeling]] — confounding as a top pitfall

@@ -4,8 +4,8 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-06-17
-concept_count: 60
+date_updated: 2026-06-27
+concept_count: 66
 ---
 
 # Bayesian Statistics
@@ -35,7 +35,7 @@ concept_count: 60
 | [[Research/Bayesian Statistics/Regression Models/_Index\|Regression Models]] | 9 | Bayesian regression, multilevel models, GLMs, missing data (BDA3 Part IV) |
 | [[Research/Bayesian Statistics/Advanced Models/_Index\|Advanced Models]] | 10 | GPs, mixtures, Dirichlet processes, spatial, copulas, BART, Bayesian IPW (BDA3 Part V + PyMC) |
 | [[Research/Bayesian Statistics/Workflow/_Index\|Bayesian Workflow]] | 13 | The iterative modeling cycle (Gelman et al. 2020) + simulation-based calibration: data-averaged posterior self-consistency, rank uniformity, the SBC algorithm, histogram diagnostics, case studies (Talts et al. 2018) |
-| [[Research/Bayesian Statistics/Causal Inference/_Index\|Causal Inference]] | 10 | Potential outcomes, BART/BCF outcome models, propensity score, IV, g-formula (Li et al. 2022) |
+| [[Research/Bayesian Statistics/Causal Inference/_Index\|Causal Inference]] | 39 | Potential outcomes, BART/BCF outcome models, propensity score, IV, g-formula, metalearners, BSTS/CausalImpact, knowledge elicitation, and dynamic treatment regimes (Q-/A-learning) |
 
 ## Sources
 

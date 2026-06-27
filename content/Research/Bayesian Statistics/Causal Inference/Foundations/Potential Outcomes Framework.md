@@ -15,6 +15,8 @@ used_by:
   - "[[Causal Estimands]]"
   - "[[Frequentist Causal Estimation]]"
   - "[[General Structure of Bayesian CI]]"
+  - "[[Dynamic Treatment Regimes Framework]]"
+  - "[[Q- and A-learning - Overview]]"
 aliases:
   - Rubin causal model
   - potential outcomes

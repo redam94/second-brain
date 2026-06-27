@@ -142,4 +142,4 @@ These achieve regularization via sparsity-inducing priors but must be used caref
 
 ## See Also
 - [[Causal Estimands#^def-cate]] — CATE is the primary target of outcome modeling
-- [[Bayesian Propensity Scores and IPW]] — Bayesian IPW as alternative to outcome modeling
+- [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]] — Bayesian IPW as alternative to outcome modeling

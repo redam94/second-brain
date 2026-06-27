@@ -44,5 +44,5 @@ concept_count: 3
 ## See Also
 - [[Foundations/_Index|Foundations]] — prerequisite potential outcomes framework
 - [[Sensitivity and Complex Mechanisms/_Index|Sensitivity and Complex Mechanisms]] — extensions to non-ideal settings
-- [[Bayesian Propensity Scores and IPW]] — existing vault note on Bayesian IPW (Heiss blog)
+- [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]] — existing vault note on Bayesian IPW (Heiss blog)
 - [[Nonparametric Causal Inference]] — existing vault note on BART/non-parametric causal methods

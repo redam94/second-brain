@@ -91,7 +91,7 @@ Three Frequentist inferential approaches exist within the potential outcomes fra
 
 - [[Potential Outcomes Framework]] — foundational setup reviewed in §2
 - [[General Structure of Bayesian CI]] — core inference architecture (§3)
-- [[Bayesian Propensity Scores and IPW]] — existing vault note on Bayesian IPW (Heiss blog), extended here
+- [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]] — existing vault note on Bayesian IPW (Heiss blog), extended here
 - [[Nonparametric Causal Inference]] — existing vault note; BART and GP models discussed in §4
 - [[Copula Estimation]] — copula-based sensitivity analysis in §6
 

@@ -4,14 +4,14 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-06-17
-concept_count: 48
+date_updated: 2026-06-27
+concept_count: 60
 ---
 
 # Econometrics
 
 > [!abstract] Routing Summary
-> This folder covers applied econometrics and causal inference from Mostly Harmless Econometrics plus Bayesian DiD, synthetic control, DAG tutorials, Bayesian propensity weighting, simulation-based estimation, staggered difference-in-differences, and high-dimensional dependence (copula) modelling. Contains 48 notes across 6 sub-topics.
+> This folder covers applied econometrics and causal inference from Mostly Harmless Econometrics plus Bayesian DiD, synthetic control, DAG tutorials, Bayesian propensity weighting, simulation-based estimation, staggered difference-in-differences, high-dimensional dependence (copula) modelling, and quasi-Bayesian GMM under plausible (non-exact) moment conditions. Contains 53 notes across 7 sub-topics.
 > - Need research design fundamentals, selection bias, or DAGs? -> [[Foundations/_Index|Foundations]]
 > - Need regression interpretation or OVB? -> [[Regression Foundations/_Index|Regression Foundations]]
 > - Need IV, DiD (canonical), RD, synthetic control, GSC, DAGs, or propensity weighting? -> [[Identification Strategies/_Index|Identification Strategies]]
@@ -19,6 +19,7 @@ concept_count: 48
 > - Need quantile regression, discrete choice, or SEs? -> [[Extensions/_Index|Extensions]]
 > - Need simulation-based estimation (MSM, indirect inference, EMM, copula SMM)? -> [[Extensions/_Index|Extensions]]
 > - Need high-dimensional dependence / copulas, tail dependence, or factor copulas? -> [[Dependence Modeling/_Index|Dependence Modeling]]
+> - Need **quasi-Bayesian GMM with plausible (non-exact) moment conditions**, priors over misspecification, or the "no free lunch" weighting trade-off? -> [[Plausible GMM/_Index|Plausible GMM]]
 
 ## Book Overview
 
@@ -32,8 +33,9 @@ concept_count: 48
 | [[Regression Foundations/_Index\|Regression Foundations]] | 3 | CEF, CIA, omitted variables bias (MHE Ch 3) |
 | [[Identification Strategies/_Index\|Identification Strategies]] | 16 | IV, LATE, DD, RD, synthetic control, GSC, DAGs, Bayesian IPTW — quasi-experimental methods (MHE Ch 4-6 + Abadie 2021 + Xu 2017 + extras) |
 | [[Difference-in-Differences/_Index\|Difference-in-Differences]] | 6 | Staggered/multi-period DiD: group-time ATT(g,t), parallel-trends/no-anticipation/overlap assumptions, OR/IPW/doubly-robust estimands, event-study/group/calendar aggregation, multiplier-bootstrap uniform inference, TWFE critique (Callaway & Sant'Anna 2020) |
-| [[Extensions/_Index\|Extensions]] | 12 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8), simulation-based estimation: MSM, indirect inference, EMM, SMM for copulas (Liesenfeld & Breitung 1998, Oh & Patton 2011) |
+| [[Extensions/_Index\|Extensions]] | 23 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8), simulation-based estimation: MSM, indirect inference, EMM, SMM for copulas, and foundational time-series SME theory (Liesenfeld & Breitung 1998, Evans 2024, Oh & Patton 2011, Duffie & Singleton 1993) |
 | [[Dependence Modeling/_Index\|Dependence Modeling]] | 6 | High-dimensional copulas, factor-copula construction, tail dependence via EVT, multi-factor/block structures, rank-based SMM, S&P 100 & systemic risk (Oh & Patton 2012) |
+| [[Plausible GMM/_Index\|Plausible GMM]] | 5 | Quasi-Bayesian inference when moment conditions are plausible but not exact: plausibility characteristic $\mu_*$, proper prior over misspecification, CU-GMM quasi-posterior, local Gaussian prior approximation & "no free lunch", institutions-and-GDP IV application (Chernozhukov, Hansen, Kong & Wang 2026) |
 
 ## Sources
 
@@ -50,6 +52,8 @@ concept_count: 48
 - [[raw/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — Evans (2024), CompMethods Ch. 19: full Python SMM tutorial + Brock-Mirman structural macro exercise
 - [[raw/Oh-Patton-2012-Factor-Copulas.pdf]] — Oh & Patton (2012), "Modelling Dependence in High Dimensions with Factor Copulas" (Duke): factor copulas, EVT tail dependence, rank-based SMM, S&P 100 systemic risk
 - [[raw/1803.09015-Callaway-SantAnna-DiD-Multiple-Periods.pdf]] — Callaway & Sant'Anna (2020), "Difference-in-Differences with Multiple Time Periods" (J. Econometrics): group-time ATT, doubly-robust estimands, aggregation schemes, multiplier-bootstrap inference, minimum-wage application
+- [[raw/Plausible GMM - A Quasi-Bayesian Approach]] — Chernozhukov, Hansen, Kong & Wang (2026), arXiv:2507.00555 (econ.EM): quasi-Bayesian GMM under plausible (non-exact) moment conditions, priors over misspecification, Bernstein–von Mises concentration, institutions-and-GDP IV application
+- [[raw/Duffie Singleton 1993 - Simulated Moments Estimation of Markov Models of Asset Prices]] — Duffie & Singleton (1993), Econometrica 61(4):929–952: foundational Simulated Moments Estimator (SME) theory for time-series Markov asset-pricing models — geometric ergodicity, AUC condition, consistency, asymptotic normality
 
 ## See Also
 

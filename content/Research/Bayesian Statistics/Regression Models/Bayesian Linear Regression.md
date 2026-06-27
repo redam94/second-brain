@@ -26,6 +26,7 @@ used_by:
   - "[[Factor Analysis and PPCA]]"
   - "[[Overfitting and Information Criteria]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Horseshoe and Regularized Horseshoe Priors]]"
 ---
 
 # Bayesian Linear Regression

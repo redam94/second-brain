@@ -4,20 +4,21 @@ tags:
   - type/index
   - source/ingested
 parent: "[[../Bayesian Statistics/_Index|Bayesian Statistics]]"
-date_updated: 2026-04-10
-concept_count: 34
+date_updated: 2026-06-27
+concept_count: 39
 ---
 
 # Bayesian Causal Inference
 
 > [!abstract] Routing Summary
-> This folder covers Bayesian and ML-based causal inference. Contains 34 notes across 6 sub-topics.
+> This folder covers Bayesian and ML-based causal inference. Contains 39 notes across 7 sub-topics.
 > - For potential outcomes setup, SUTVA, ignorability, propensity score? → [[Foundations/_Index|Foundations]]
 > - For Bayesian CI likelihood factorization, BART/GP/BCF outcome models, propensity score strategies? → [[Research/Bayesian Statistics/Causal Inference/Bayesian Inference/_Index|Bayesian Inference]]
 > - For sensitivity analysis (E-value, copula), IV/principal stratification, time-varying treatments? → [[Research/Bayesian Statistics/Causal Inference/Sensitivity and Complex Mechanisms/_Index|Sensitivity and Complex Mechanisms]]
 > - For interactive and LLM-based methods to elicit causal structure? → [[Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/_Index|Knowledge Elicitation]]
 > - For S/T/X-learners and CATE estimation with ML? → [[Research/Bayesian Statistics/Causal Inference/Treatment Effect Estimation/_Index|Treatment Effect Estimation]]
 > - For Bayesian structural time-series and CausalImpact? → [[Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/_Index|Time Series Causal Inference]]
+> - For **optimal dynamic treatment regimes** (sequential decisions, Q-learning, A-learning)? → [[Research/Bayesian Statistics/Causal Inference/Dynamic Treatment Regimes/_Index|Dynamic Treatment Regimes]]
 > - For paper overview of Li et al. 2022? → [[Li et al 2022 - Overview]]
 
 ## Sub-topics
@@ -30,6 +31,7 @@ concept_count: 34
 | [[Research/Bayesian Statistics/Causal Inference/Knowledge Elicitation/_Index\|Knowledge Elicitation]] | 9 | Interactive (Yamashita 2020) and LLM-based (Shaposhnyk 2025) causal structure elicitation |
 | [[Research/Bayesian Statistics/Causal Inference/Treatment Effect Estimation/_Index\|Treatment Effect Estimation]] | 6 | S/T/X-learner metalearners for CATE; minimax rates; voter turnout & transphobia applications |
 | [[Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/_Index\|Time Series Causal Inference]] | 7 | BSTS model; spike-and-slab; Gibbs sampler; CausalImpact; advertising application |
+| [[Research/Bayesian Statistics/Causal Inference/Dynamic Treatment Regimes/_Index\|Dynamic Treatment Regimes]] | 5 | Optimal multi-stage treatment rules; potential-outcomes framework; backward induction (Q/value functions); Q-learning; A-learning, g-estimation & double robustness (Schulte, Tsiatis, Laber & Davidian 2014) |
 
 ## Paper Overview
 
@@ -85,9 +87,10 @@ Causal Structure Learning
 - [[raw/Shaposhnyk et al. - 2025 - Can LLMs Assist Expert Elicitation for Probabilistic Causal Modeling.pdf]] — Shaposhnyk O, Zahorska D, Yanushkevich S. 2025. arXiv:2504.10397
 - [[raw/Künzel et al. - 2017 - Metalearners for estimating heterogeneous treatment effects using machine learning.pdf]] — Künzel SR, Sekhon JS, Bickel PJ, Yu B. 2019. *PNAS* 116(10): 4156-4165
 - [[raw/Brodersen - 2015 - Inferring causal impact using Bayesian structural time-series models.pdf]] — Brodersen KH, Gallusser F, Koehler J, Remy N, Scott SL. 2015. *Ann. Appl. Stat.* 9(1): 247-274
+- [[raw/q- and a- learning.pdf]] — Schulte PJ, Tsiatis AA, Laber EB, Davidian M. 2014. "Q- and A-learning Methods for Estimating Optimal Dynamic Treatment Regimes", *Statistical Science* 29(4): 640-661
 
 ## Cross-Links to Existing Vault Notes
 
-- [[Bayesian Propensity Scores and IPW]] — Bayesian IPW via Liao-Zigler two-stage method (Heiss blog) — related to [[Propensity Score in Bayesian CI]] Strategy 3
+- [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]] — Bayesian IPW via Liao-Zigler two-stage method (Heiss blog) — related to [[Propensity Score in Bayesian CI]] Strategy 3
 - [[Nonparametric Causal Inference]] — BART and non-parametric Bayesian causal methods — related to [[Bayesian Outcome Models]]
 - [[Copula Estimation]] — copula methods used in sensitivity analysis — related to [[Sensitivity Analysis in Observational Studies]]

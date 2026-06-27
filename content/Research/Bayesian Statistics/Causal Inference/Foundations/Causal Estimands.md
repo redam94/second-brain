@@ -15,6 +15,7 @@ depends_on:
 used_by:
   - "[[Frequentist Causal Estimation]]"
   - "[[General Structure of Bayesian CI]]"
+  - "[[Dynamic Treatment Regimes Framework]]"
 aliases:
   - treatment effect
   - ATE
