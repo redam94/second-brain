@@ -43,6 +43,6 @@ concept_count: 5
 - [[../raw/Rainforth et al 2023 - Modern Bayesian Experimental Design.pdf]] — Rainforth, T., Foster, A., Ivanova, D.R., Bickford Smith, F. (2023), *Modern Bayesian Experimental Design*, **Statistical Science** (accepted). arXiv:2302.14545.
 
 ## See Also
-- [[Foundations/_Index|Foundations]] — the EIG, nested estimation, and adaptive-design core
+- [[Research/Bayesian Experimental Design/Foundations/_Index|Foundations]] — the EIG, nested estimation, and adaptive-design core
 - [[Research/Bayesian Experimental Design/Variational EIG Estimators/_Index|Variational EIG Estimators]] — the §3.3.1 variational bounds in detail
 - [[Research/Bayesian Experimental Design/Gradient-Based Unified BOED/_Index|Gradient-Based Unified BOED]] — the §3.4 unified gradient approach in detail

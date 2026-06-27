@@ -13,14 +13,14 @@ concept_count: 21
 > [!abstract] Routing Summary
 > Information-theoretic design of experiments: choose designs $\xi$ to maximize the **expected information gain (EIG)** about latents $\theta$. This topic ingests four papers tracing the field's full arc — its **foundation** (Lindley 1956), fast EIG **estimation** (Foster 2019), **unified gradient** design optimization (Foster 2020), and a **review** through policy-based adaptive design (Rainforth 2023). Contains 21 notes across 4 sub-topics.
 > - The big picture across all papers / where to start? → [[Bayesian Experimental Design - Overview]]
-> - Core concepts (EIG, nested estimation, adaptive design)? → [[Foundations/_Index|Foundations]]
+> - Core concepts (EIG, nested estimation, adaptive design)? → [[Research/Bayesian Experimental Design/Foundations/_Index|Foundations]]
 > - Fast EIG estimators (posterior, marginal, VNMC, implicit)? → [[Research/Bayesian Experimental Design/Variational EIG Estimators/_Index|Variational EIG Estimators]]
 > - One-stage gradient design (ACE, PCE, high-D applications)? → [[Research/Bayesian Experimental Design/Gradient-Based Unified BOED/_Index|Gradient-Based Unified BOED]]
 > - The state of the field (objectives, computation, policies, challenges)? → [[Research/Bayesian Experimental Design/Modern BED Review/_Index|Modern BED Review]]
 
 ## Sub-topics
 
-- [[Foundations/_Index|Foundations]] — COVERS: Lindley's (1956) founding average-information measure (Defs 1–2, Theorems 1–9, the design rule); the EIG objective & its four equivalent (mutual-information) forms; double intractability and the NMC estimator ($\mathcal{O}(C^{-1/3})$); sequential/adaptive design and the incremental/total EIG. *(4 notes.)*
+- [[Research/Bayesian Experimental Design/Foundations/_Index|Foundations]] — COVERS: Lindley's (1956) founding average-information measure (Defs 1–2, Theorems 1–9, the design rule); the EIG objective & its four equivalent (mutual-information) forms; double intractability and the NMC estimator ($\mathcal{O}(C^{-1/3})$); sequential/adaptive design and the incremental/total EIG. *(4 notes.)*
 - [[Research/Bayesian Experimental Design/Variational EIG Estimators/_Index|Variational EIG Estimators]] — COVERS (Foster 2019): four amortized variational EIG estimators — posterior/Barber–Agakov (lower), marginal (upper), VNMC (upper, consistent), implicit-likelihood — with $\mathcal{O}(T^{-1/2})$ convergence and selection rules. *(6 notes.)*
 - [[Research/Bayesian Experimental Design/Gradient-Based Unified BOED/_Index|Gradient-Based Unified BOED]] — COVERS (Foster 2020): single SGA loop jointly optimizing a variational lower bound and the design; the ACE & PCE contrastive bounds; likelihood-free ACE and gradient estimators; high-dimensional applications (400-D regression, 100-D docking). *(5 notes.)*
 - [[Research/Bayesian Experimental Design/Modern BED Review/_Index|Modern BED Review]] — COVERS (Rainforth 2023): EIG vs Fisher-information objectives; the computational revolution (MLMC debiasing, variational, implicit); stochastic-gradient design; deep adaptive design (policies); open challenges. *(6 notes.)*

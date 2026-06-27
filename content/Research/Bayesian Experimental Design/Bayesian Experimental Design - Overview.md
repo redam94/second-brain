@@ -54,7 +54,7 @@ The EIG ([[Expected Information Gain]]) cannot be evaluated directly because bot
 
 ### Folder map
 
-- **[[Foundations/_Index|Foundations]]** — the shared conceptual core: [[Lindley's Information Measure]], [[Expected Information Gain]], [[Nested Estimation and Nested Monte Carlo]], [[Sequential and Adaptive BED]].
+- **[[Research/Bayesian Experimental Design/Foundations/_Index|Foundations]]** — the shared conceptual core: [[Lindley's Information Measure]], [[Expected Information Gain]], [[Nested Estimation and Nested Monte Carlo]], [[Sequential and Adaptive BED]].
 - **[[Research/Bayesian Experimental Design/Variational EIG Estimators/_Index|Variational EIG Estimators]]** — Foster 2019: the posterior, marginal, VNMC, and implicit-likelihood estimators.
 - **[[Research/Bayesian Experimental Design/Gradient-Based Unified BOED/_Index|Gradient-Based Unified BOED]]** — Foster 2020: BA, ACE, PCE, likelihood-free ACE, and high-dimensional applications.
 - **[[Research/Bayesian Experimental Design/Modern BED Review/_Index|Modern BED Review]]** — Rainforth 2023: objectives, the computational revolution, optimization, policies, and open challenges.
