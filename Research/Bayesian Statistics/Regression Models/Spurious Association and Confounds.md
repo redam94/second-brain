@@ -88,3 +88,4 @@ When two predictors are highly correlated, their individual effects become unide
 - [[Statistical Rethinking - Overview]]
 - [[Data Collection Models]] — ignorability is the formal condition under which controlling for confounds gives a causal interpretation
 - [[Directed Acyclic Graphs]] — DAG framework for identifying forks, pipes, and colliders that this chapter reasons about informally
+- [[Regression and the CEF]] — MHE's econometric treatment of multivariate regression as CEF approximation, the frequentist parallel to Statistical Rethinking's confound analysis

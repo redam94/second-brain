@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-06-15
+date_updated: 2026-06-22
 ---
 
 # Dream: Research Gaps
@@ -76,9 +76,9 @@ DAG-based reasoning was implicitly present throughout the vault but had no dedic
 ---
 
 ### 6. Simulation-Based Calibration (SBC)
-**Status:** 🌱 new
+**Status:** 🍂 covered
 
-**Why it's a gap:**
+**Why it was a gap:**
 [[Fitting and Validating Computation]] explicitly covers SBC (Cook et al., 2006; Talts et al., 2020) as a key computational validation tool: draw $\theta$ from the prior, simulate data, fit the model, and check that the rank statistic of the true $\theta$ within posterior samples is uniform. This is described as "more comprehensive than single-point fake-data checks" and detects both computational errors and model specification issues. However, there is no dedicated note that covers the procedure, its software implementations (SBC R package, `arviz`), and the failure modes it can detect (miscalibration, label-switching, non-identifiability). The procedure sits at the junction of Bayesian workflow, MCMC diagnostics, and prior predictive checking.
 
 **Adjacent notes:** [[Fitting and Validating Computation]], [[Computational Troubleshooting]], [[MCMC Basics]], [[Choosing and Building Models]], [[Bayesian Workflow - Overview]]
@@ -88,6 +88,8 @@ DAG-based reasoning was implicitly present throughout the vault but had no dedic
 - Cook, Gelman & Rubin (2006) — "Validation of Software for Bayesian Models Using Posterior Quantiles"
 - Säilynoja, Bürkner & Vehtari (2022) — "Graphical test for discrete uniformity and its applications" (ECDF-based SBC)
 - Search: "simulation-based calibration", "SBC R package", "rank statistic", "Bayesian validation"
+
+**Covered by:** [[Simulation-Based Calibration - Overview]], [[Data-Averaged Posterior Self-Consistency]], [[Rank Statistics and Uniformity]], [[The SBC Algorithm]], [[Interpreting SBC Histograms]], [[SBC Case Studies]] (all in `Bayesian Statistics/Workflow/`, discovered 2026-06-22)
 
 ---
 
@@ -108,9 +110,11 @@ DAG-based reasoning was implicitly present throughout the vault but had no dedic
 ---
 
 ### 8. Factor Copulas and High-Dimensional Copula Architectures
-**Status:** 🌱 new
+**Status:** 🌿 still relevant
 
-**Why it's a gap:**
+**Partially addressed (2026-06-22):** The `Econometrics/Dependence Modeling/` subfolder now has 6 notes covering factor copulas comprehensively: [[Factor Copulas - Overview]], [[Factor Copula Construction]], [[Multi-Factor and Block Dependence Structures]], [[Tail Dependence in Factor Copulas]], [[SMM Estimation of Factor Copulas]], [[Factor Copula Application - S&P 100 and Systemic Risk]]. The "what is a factor copula architecturally" part of the gap is now covered. Vine/pair copulas (C-vine, D-vine) and the comparison between copula architectures remain absent.
+
+**Why it was a gap:**
 [[Dependence Measures for Copulas]] includes a tail dependence table listing "Factor copula (Oh & Patton)" alongside Normal, Clayton, Gumbel, and Student-t copulas — but no note explains what a factor copula *is* architecturally, or how it solves the curse of dimensionality for high-dimensional dependence modeling. [[Copula Estimation]] covers Bayesian Gaussian copula estimation (bivariate). [[SMM Estimator for Copulas]] covers estimation of the factor copula model without explaining the model structure itself. Vine (pair) copulas — a flexible alternative for high-dimensional settings — are entirely absent. This gap leaves practitioners unable to choose between copula architectures for their specific application.
 
 **Adjacent notes:** [[Dependence Measures for Copulas]], [[Copula Estimation]], [[SMM Estimator for Copulas]], [[SMM Copula Simulation and Application]], [[Factor Analysis and PPCA]]
@@ -124,9 +128,11 @@ DAG-based reasoning was implicitly present throughout the vault but had no dedic
 ---
 
 ### 9. Causal Structure Learning from Data
-**Status:** 🌱 new
+**Status:** 🌿 still relevant
 
-**Why it's a gap:**
+**Partially addressed (2026-06-22):** The `Causal Discovery/` subfolder now covers NOTEARS comprehensively: [[NOTEARS - Overview]], [[DAG Structure Learning Problem]], [[Smooth Characterization of Acyclicity]], [[NOTEARS Algorithm]], [[NOTEARS Experiments]]. The score-based continuous-optimization approach is well-documented. Constraint-based methods (PC algorithm, conditional independence testing) and score-based search (GES / Greedy Equivalence Search) remain entirely absent.
+
+**Why it was a gap:**
 The vault has extensive coverage of DAG *reasoning* (d-separation, back-door criterion, do-calculus — [[Directed Acyclic Graphs]], [[Canonical Causal DAGs]], [[Summary Causal DAGs]]) and DAG *construction* from expert knowledge ([[LLM Expert Elicitation for Bayesian Networks]], [[BN Construction Methods Comparison]], [[Interactive Knowledge Elicitation Method]]). But there is no note on how to *learn* a causal DAG from observational data. The PC algorithm (constraint-based, uses conditional independence tests), GES (Greedy Equivalence Search, score-based), and NOTEARS (continuous optimization, differentiable structure learning) are all absent. This gap is especially salient given the vault's ABM work: ABM outputs can be used as observational data for structure learning, and the Zeng 2025 DAG summarization work (§4 of [[Summary Causal DAGs]]) assumes the DAG is given — structure learning is what precedes summarization.
 
 **Adjacent notes:** [[Directed Acyclic Graphs]], [[Summary Causal DAGs]], [[LLM Expert Elicitation for Bayesian Networks]], [[BN Construction Methods Comparison]], [[Approximate Bayesian Computation for ABMs]]
@@ -206,9 +212,9 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 ---
 
 ### 14. Bayesian Marketing Mix Modeling (MMM)
-**Status:** 🌱 new
+**Status:** 🍂 covered
 
-**Why it's a gap:**
+**Why it was a gap:**
 [[Advertising and Promotion Effects]] gives the canonical empirical generalizations (short-run ad elasticity ≈ 0.10, duration interval 6–9 months), and [[Functional Forms in Marketing]] covers the ADBUDG saturation curve and multiplicative forms used in media response. [[Activity Bias in Advertising]] explains *why* passive observational data fails to measure advertising effects, and [[Observational vs Experimental Methods in Advertising]] documents the scale of the problem. But no note covers the end-to-end Bayesian MMM workflow as practiced in industry: hierarchical media response priors (geometric adstock, Hill saturation curves), the Robyn/Meridian/pymc-marketing frameworks, budget optimization under posterior uncertainty, or the model comparison step for selecting carryover vs saturation specifications. This gap sits precisely at the intersection of the vault's Market Response Models and Bayesian Statistics sections, and is the applied synthesis that practitioners reaching for these notes actually need.
 
 **Adjacent notes:** [[Advertising and Promotion Effects]], [[Functional Forms in Marketing]], [[Carryover Effects and Distributed Lags]], [[Shape of the Marketing Response Function]], [[Optimal Marketing Decisions and Forecasting]], [[Activity Bias in Advertising]], [[Bayesian Workflow - Overview]], [[Hierarchical Models]]
@@ -217,6 +223,8 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 - Jin et al. (2017) — "Bayesian Methods for Media Mix Modeling with Carryover and Shape Effects" (Google Research)
 - Lightweight MMM (Google), Meridian (Google, 2024), Robyn (Meta), pymc-marketing
 - Search: "Bayesian marketing mix model", "media mix modeling adstock", "Hill saturation curve MMM", "Robyn MMM", "Meridian Google MMM"
+
+**Covered by:** [[Bayesian Media Mix Modeling - Overview]], [[Carryover (Adstock) Functional Forms]], [[Shape (Saturation) Effects]], [[Bayesian Estimation and Priors for MMM]], [[ROAS, mROAS, and Optimal Media Mix]], [[MMM Model Selection and Application]] (all in `Market Response Models/Bayesian Media Mix Modeling/`, discovered 2026-06-22)
 
 ---
 
@@ -287,9 +295,9 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 ---
 
 ### 19. Staggered Treatment and Heterogeneous DiD (Callaway-Sant'Anna, Goodman-Bacon)
-**Status:** 🌱 new
+**Status:** 🍂 covered
 
-**Why it's a gap:**
+**Why it was a gap:**
 [[Synthetic Control]] explicitly compares DiD and synthetic control for different data structures, and [[Differences-in-Differences]] covers the basic 2×2 DiD design. But neither note addresses the major 2018–2022 econometric literature showing that the canonical two-way fixed effects (TWFE) DiD estimator is **biased under staggered treatment timing** when treatment effects are heterogeneous. In a staggered adoption setting (different units treated at different calendar times), OLS TWFE uses already-treated units as implicit controls for later-treated units — contaminating the estimate when effects grow over time or vary across cohorts. Callaway & Sant'Anna (2021) propose cohort-time ATT aggregation; Goodman-Bacon (2021) decomposes the TWFE estimate into all 2×2 DiD comparisons; Sun & Abraham (2021) propose an interaction-weighted estimator. The vault's DiD note is unaware of these developments, leaving readers who adopt staggered panels without guidance.
 
 **Adjacent notes:** [[Differences-in-Differences]], [[Bayesian Difference in Differences]], [[Synthetic Control]], [[Fixed-Effects Model]], [[Generalized Synthetic Control Method]], [[Local Average Treatment Effects]]
@@ -300,6 +308,8 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 - Sun & Abraham (2021) — "Estimating dynamic treatment effects in event studies with heterogeneous treatment effects" (*Journal of Econometrics*)
 - Baker, Larcker & Wang (2022) — "How much should we trust staggered difference-in-differences estimates?" (*Journal of Financial Economics*)
 - Search: "staggered DiD", "heterogeneous treatment effects TWFE", "Callaway Sant'Anna DiD", "event study staggered adoption", "did R package"
+
+**Covered by:** [[Difference-in-Differences with Multiple Time Periods - Overview]], [[Group-Time Average Treatment Effects]], [[Identifying Assumptions for Staggered DiD]], [[Doubly-Robust Estimands for ATT(g,t)]], [[Aggregating Group-Time Effects]], [[Simultaneous Inference via Multiplier Bootstrap]] (all in `Econometrics/Difference-in-Differences/`, discovered 2026-06-22)
 
 ---
 
@@ -384,6 +394,53 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 
 ---
 
+### 25. Structural Estimation of ABMs via SMM / Indirect Inference
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The vault has two complementary sections that are not yet connected: `Econometrics/Extensions/Simulation-Based Estimation` covers [[Method of Simulated Moments]], [[Indirect Inference]], [[Efficient Method of Moments]], and the [[Brock-Mirman Model - SMM Estimation Exercise]] worked example; and `Agent-Based Modeling/Calibration and Validation` covers [[Genetic Algorithm Calibration for ABM]], [[HM-ABC Calibration Framework]], [[Approximate Bayesian Computation for ABMs]], and [[Uncertainty Quantification for ABM Calibration]]. But no note bridges these: the econometric simulation-based estimation methods (SMM, II) are precisely suited for ABM calibration — matching observed moments to simulated ABM output — yet the ABM calibration notes use GA/HM+ABC and never reference SMM or II. [[Method of Simulated Moments]] lists `Q - Using SMM to Calibrate Agent Based Models` in its `used_by` field, suggesting this connection was recognised but never elaborated. A synthesis note would make both sections more useful together and document the growing literature on moment-based ABM calibration.
+
+**Adjacent notes:** [[Method of Simulated Moments]], [[Indirect Inference]], [[Efficient Method of Moments]], [[ABM Calibration Overview]], [[Approximate Bayesian Computation for ABMs]], [[HM-ABC Calibration Framework]], [[Genetic Algorithm Calibration for ABM]], [[Brock-Mirman Model - SMM Estimation Exercise]]
+
+**Suggested sources / search terms:**
+- Grazzini & Richiardi (2015) — "Estimation of ergodic agent-based models by simulated minimum distance" (*Journal of Economic Dynamics and Control*)
+- Fabretti (2013) — "On the problem of calibrating an agent-based model for financial markets" (*Journal of Economic Interaction and Coordination*)
+- Search: "ABM calibration SMM", "agent-based model indirect inference", "simulated minimum distance ABM", "moment-based ABM calibration"
+
+---
+
+### 26. Quantile Treatment Effects and Distributional Impact Analysis
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Metalearners for CATE]], [[X-Learner]], [[T-Learner and Minimax Rate]], and [[S-Learner]] all estimate the conditional *average* treatment effect — but no note covers treatment effects on the *distribution* of outcomes. [[Quantile Regression]] covers the Koenker-Bassett estimator for conditional quantiles but not its causal interpretation. The vault's causal inference section repeatedly estimates ATE, ATT, and LATE — but when the policy question is "does treatment reduce the variance of outcomes?" or "are effects concentrated at the bottom of the distribution?", the existing toolkit is insufficient. Quantile treatment effects (QTE, Firpo 2007), the changes-in-changes model (Athey & Imbens 2006, a nonlinear DiD generalisation), and distributional difference-in-differences connect the Econometrics and Bayesian Causal Inference sections but are entirely absent. This gap is especially relevant for advertising effectiveness research (does treatment shift the whole sales distribution or just the mean?) and inequality analysis.
+
+**Adjacent notes:** [[Quantile Regression]], [[Metalearners for CATE]], [[Potential Outcomes Framework]], [[Causal Estimands]], [[T-Learner and Minimax Rate]], [[Differences-in-Differences]], [[Group-Time Average Treatment Effects]], [[Aggregating Group-Time Effects]]
+
+**Suggested sources / search terms:**
+- Firpo (2007) — "Efficient semiparametric estimation of quantile treatment effects" (*Econometrica*)
+- Athey & Imbens (2006) — "Identification and inference in nonlinear difference-in-differences models" (*Econometrica*) — changes-in-changes
+- Chernozhukov & Hansen (2005) — "An IV model of quantile treatment effects" (*Econometrica*)
+- Search: "quantile treatment effects", "distributional difference-in-differences", "changes-in-changes model", "distributional synthetic control", "QTE estimation"
+
+---
+
+### 27. Monads and Monadicity in Category Theory
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Units and Counits]] explicitly states: "from an adjunction $F \dashv G$, the composite $T = GF: \mathcal{A} \to \mathcal{A}$ with multiplication $\mu = G\varepsilon F$ and unit $\eta$ forms a **monad** (not covered in Leinster but a direct extension)." [[Adjoint Functors]] and [[Adjunctions via Initial Objects]] complete the adjunction picture, but the adjunction-monad correspondence — the central result linking adjunctions, algebras, and Beck's monadicity theorem — is absent. Monads appear in: functional programming (Haskell's `>>=`/`return` as the Kleisli triple), algebraic theories (monads as "monoids in the category of endofunctors," Mac Lane Ch. VII), categorical logic (Lawvere theories), and effects/computational semantics (Moggi 1991). Leinster's *Basic Category Theory* does cover monads in Chapter 5 — the source material exists but was not ingested. This is the natural next chapter after the vault's coverage of adjunctions.
+
+**Adjacent notes:** [[Units and Counits]], [[Adjoint Functors]], [[Adjunctions via Initial Objects]], [[Synthesis/Adjoints and Limits]], [[Adjoint Functor Theorems]], [[Cartesian Closed Categories]]
+
+**Suggested sources / search terms:**
+- Leinster (2014) — *Basic Category Theory*, Ch. 5: Monads — the direct continuation of the vault's source text
+- Mac Lane (1971) — *Categories for the Working Mathematician*, Ch. VI: Monads and Algebras
+- Moggi (1991) — "Notions of computation and monads" (*Information and Computation*) — monads in CS/PL
+- Search: "monad category theory adjunction", "Beck monadicity theorem", "Kleisli category monad", "algebras over a monad", "Eilenberg-Moore category"
+
+---
+
 ## Covered Gaps
 
 | Gap | Covered By | Date Covered |
@@ -391,6 +448,9 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 | Synthetic Control Methods (#2) | [[Synthetic Control]] | 2026-04-10 |
 | Causal DAGs (#4) | [[Directed Acyclic Graphs]] | 2026-04-10 |
 | Heterogeneous Treatment Effects / CATE (#5) | [[Metalearners for CATE]], [[X-Learner]], [[T-Learner and Minimax Rate]], [[S-Learner]] | 2026-04-12 |
+| Simulation-Based Calibration (#6) | [[Simulation-Based Calibration - Overview]], [[The SBC Algorithm]], [[Interpreting SBC Histograms]], [[SBC Case Studies]] + 2 more | 2026-06-22 |
+| Bayesian Marketing Mix Modeling (#14) | [[Bayesian Media Mix Modeling - Overview]], [[Carryover (Adstock) Functional Forms]], [[Shape (Saturation) Effects]], [[ROAS, mROAS, and Optimal Media Mix]] + 2 more | 2026-06-22 |
+| Staggered DiD / Callaway-Sant'Anna (#19) | [[Difference-in-Differences with Multiple Time Periods - Overview]], [[Group-Time Average Treatment Effects]], [[Doubly-Robust Estimands for ATT(g,t)]] + 3 more | 2026-06-22 |
 
 ---
 
@@ -407,4 +467,5 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 | 2026-05-25 | Run 7: reviewed 9 notes (Copula Estimation, Time-Varying Treatments and G-computation, Introduction to Bayesian Computation, Missing Data Models, Functors and Limits, Universal Properties Introduction, Dependence Measures for Copulas, Instrumental Variables, Quantum Entanglement). No existing gaps newly covered this run. Fixed broken wikilink `[[LKJ distribution]]` → plain text in Copula Estimation; fixed misleading alias `[[Nonparametric Models Overview\|multivariate Bayesian models]]` → `[[Nonparametric Models Overview]]`; removed raw file from `depends_on` in Introduction to Bayesian Computation. Added cross-links: Introduction to Bayesian Computation ↔ Approximation Methods; Time-Varying Treatments ↔ Estimands in Longitudinal Research ↔ Cross-Lagged and Dynamic Panel Models ↔ Instrumental Variables and Principal Stratification; Instrumental Variables ↔ Differences-in-Differences ↔ Instrumental Variables and Principal Stratification; Quantum Entanglement ↔ Schrödinger Equation and Time Evolution ↔ Uncertainty Principle. Added gaps #17 (LKJ Distribution and Correlation Priors), #18 (Dynamic Treatment Regimes and Optimal Policy). |
 | 2026-06-01 | Run 8: reviewed 9 notes (Behavioral Attitudes in CUBES, Products and Equalizers, SMM Copula Simulation and Application, Dependence Measures for Copulas, Bayesian Inverse Probability Weighting, Causal Model - Cause Precondition Effect, Bayesian Linear Regression, GA Fitness Evaluation and the RAM, Synthetic Control). No existing gaps newly covered this run. Fixed frontmatter: added `folder` to Products and Equalizers; corrected `doc_type: concept` → `doc_type: textbook` in Bayesian Linear Regression. Fixed Connections section in Causal Model - Cause Precondition Effect to wikilink DAG reference. Added cross-links: Behavioral Attitudes ↔ Word of Mouth Mechanisms ↔ Opinion Leaders ↔ Product Adoption Diffusion Models ↔ Network Topology Effects; Products and Equalizers ↔ Functors and Limits; SMM Copula Simulation ↔ Method of Simulated Moments ↔ Brock-Mirman SMM; Dependence Measures ↔ Quantile Regression; Bayesian IPW ↔ Frequentist Causal Estimation ↔ Bayesian Propensity Score Weighting ↔ Propensity Score in Bayesian CI; Causal Model - CPE ↔ Directed Acyclic Graphs ↔ LLM Expert Elicitation ↔ BN Construction Methods Comparison; Bayesian Linear Regression ↔ Linear Models in StatRethink ↔ Moderation Analysis ↔ Missing Data Models; GA Fitness RAM ↔ ABC for ABMs ↔ UQ for ABM Calibration ↔ ABM Calibration Case Studies; Synthetic Control ↔ Requirements/Bias/Extensions/Inference sub-notes ↔ GSC ↔ Abadie 2021. Added gaps #19 (Staggered/Heterogeneous DiD), #20 (Horseshoe and Regularized Horseshoe Priors). |
 | 2026-06-08 | Run 9: reviewed 10 notes (Opinion Leaders and Social Influence, LLM-BN Decision Support Application, Discrete Choice Models, Practical Issues in Simulation Estimation, Instrumental Variables, Bayesian Linear Regression, Copula Estimation, ABM in Marketing Strategy, Brodersen 2015 - Overview, ABM Validation Challenges). No existing gaps newly covered this run. No frontmatter errors found. Cross-links added: Opinion Leaders ↔ Carryover Effects and Distributed Lags ↔ Advertising and Promotion Effects (WOM→MRM bridge); LLM-BN ↔ Directed Acyclic Graphs ↔ Model Checking; Discrete Choice Models ↔ Market Share Models (logit bridge Econometrics↔MRM); Instrumental Variables ↔ Bayesian Propensity Score Weighting ↔ Parameter Estimation in Market Response (2SLS for price endogeneity); Bayesian Linear Regression — added wikilink for Horseshoe prior + See Also entry [[Horseshoe and Regularized Horseshoe Priors]]; Copula Estimation ↔ Discrete Choice Models (LKJ) ↔ Market Share Models; ABM in Marketing Strategy ↔ Market Response Models - Overview ↔ Advertising and Promotion Effects ↔ Marketing Generalizations Overview; Brodersen 2015 ↔ Synthetic Control ↔ Advertising and Promotion Effects; ABM Validation Challenges ↔ Model Checking ↔ Garden of Forking Paths. Added gaps #21 (Bayesian Networks Fundamentals), #22 (Bass Diffusion Model). Gaps #6 (SBC), #19 (Staggered DiD), #20 (Horseshoe priors) reinforced by this run's notes. |
+| 2026-06-22 | Run 11: reviewed 9 notes (Practical Issues in Simulation Estimation, QFT Overview, Units and Counits, Multi-Factor and Block Dependence Structures, Price and Distribution Effects, Method of Simulated Moments, Markets Data and Sales Drivers, Spurious Association and Confounds, Regression and the CEF). Gaps #6 (SBC), #14 (Bayesian MMM), #19 (Staggered DiD) marked 🍂 covered — all now have dedicated note clusters. Gaps #8 (Factor Copulas) and #9 (Causal Structure Learning) updated to 🌿 still relevant: factor copulas now well-covered, vine copulas absent; NOTEARS covered, PC/GES absent. Frontmatter fixes: added `date_updated: 2026-06-22` to all 9 notes; added `folder` to Units and Counits, Price and Distribution Effects, Markets Data and Sales Drivers; added `date_ingested` to Price and Distribution Effects and Markets Data. Cross-links added: Practical Issues ↔ Brock-Mirman SMM ↔ SMM Estimation of Factor Copulas; QFT Overview ↔ Wave Function and Hilbert Space ↔ Uncertainty Principle ↔ Quantum Entanglement (within Physics folder) + cross-links to Theoretical Physics parallel notes (Standard Model and Gauge Groups, QFT Overview flat); Units and Counits ↔ Cartesian Closed Categories; Multi-Factor ↔ Dependence Measures for Copulas ↔ Factor Analysis and PPCA ↔ Copula Estimation; Price and Distribution ↔ Discrete Choice Models ↔ Parameter Estimation in Market Response; Method of MSM ↔ Brock-Mirman SMM ↔ SMM Estimation of Factor Copulas; Markets Data ↔ Bayesian Media Mix Modeling Overview; Spurious Association ↔ Regression and the CEF (bidirectional). Added gaps #25 (ABM Calibration via SMM/II), #26 (Quantile Treatment Effects), #27 (Monads and Monadicity). |
 | 2026-06-15 | Run 10: reviewed 10 notes (s-Separation in Summary DAGs, Uncertainty Principle, BN Construction Methods Comparison, Local Linear Trend and Seasonality, Hilbert Space Gaussian Processes, Spurious Association and Confounds, Modeling as Software Development, Market Share Models, Functors and Limits, Time-Varying Treatments and G-computation). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-06-15` to all 10 notes; added `folder` to HSGP, Market Share Models, Functors and Limits; added `source:` field (wikilink) to HSGP; fixed `source_location` in Spurious Association and Confounds (Ch.9 → Ch.5); added missing H1 title header to Modeling as Software Development. Cross-links added: s-Separation ↔ Directed Acyclic Graphs; BN Construction Methods ↔ Directed Acyclic Graphs ↔ LLM Expert Elicitation (completing the BN trilogy); Local Linear Trend ↔ Single Marketing Time Series (state-space↔ARIMA bridge); HSGP — added full See Also section linking to Local Linear Trend and Seasonality ↔ Bayesian Structural Time-Series Model; Spurious Association ↔ Directed Acyclic Graphs (fork/pipe/collider → DAG formalization); Modeling as Software Development ↔ Garden of Forking Paths (version control as forking path defense); Market Share Models ↔ Discrete Choice Models (MNL/logit bridge MRM↔Econometrics) ↔ Monsters and Mixtures (heterogeneous MCI→latent segments); Functors and Limits ↔ Products and Equalizers; Time-Varying Treatments ↔ Bayesian Propensity Score Weighting (IPW-MSM connection). Added gaps #23 (Marginal Structural Models / Bayesian Bootstrap), #24 (Random Coefficients Logit / BLP Demand Estimation). Gaps #13 (State-Space/Kalman), #18 (DTRs), #21 (BN Foundations) reinforced by this run's notes. |
