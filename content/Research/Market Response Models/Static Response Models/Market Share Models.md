@@ -27,6 +27,7 @@ used_by:
   - "[[Reaction Functions and Competitive Dynamics]]"
   - "[[Price and Distribution Effects]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
+  - "[[BLP Demand Estimation - Overview]]"
 ---
 
 # Market Share Models
@@ -129,3 +130,7 @@ The **Schultz-Wittink framework** uses brand-level, category-level, and cross-br
 - Empirical share elasticities: [[Price and Distribution Effects]]
 - Econometric discrete choice parallel: [[Discrete Choice Models]] (MNL in market share = logit in discrete choice)
 - IIA relaxation with heterogeneous preferences: heterogeneous MCI connects to latent segment models covered in [[Monsters and Mixtures]] and [[Hierarchical Models]]
+
+## See Also
+
+- [[BLP Demand Estimation - Overview]] — the random-coefficients-logit (BLP) model this note names

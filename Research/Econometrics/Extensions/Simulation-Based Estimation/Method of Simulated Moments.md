@@ -23,6 +23,7 @@ used_by:
   - "[[SMM Weighting Matrix and Inference]]"
   - "[[SMM Python Implementation]]"
   - "[[Q - Using SMM to Calibrate Agent Based Models]]"
+  - "[[BLP Demand Estimation - Overview]]"
 aliases:
   - MSM
   - SMM
@@ -181,6 +182,7 @@ This $T$-dimensional integral has no closed-form solution. Standard GMM using un
 - [[Practical Issues in Simulation Estimation]] — implementation details
 - [[Brock-Mirman Model - SMM Estimation Exercise]] — full worked structural estimation example using MSM in Python
 - [[SMM Estimation of Factor Copulas]] — high-dimensional application of rank-based SMM to a 100-asset factor copula model
+- [[BLP Demand Estimation - Overview]] — BLP estimation via integrated/simulated moments over random coefficients
 
 ## Sources
 

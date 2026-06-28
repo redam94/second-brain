@@ -4,20 +4,27 @@ tags:
   - type/index
   - source/ingested
 parent: "[[../Causal Inference/_Index|Bayesian Causal Inference]]"
-date_updated: 2026-04-10
+date_updated: 2026-06-28
 concept_count: 7
 ---
 
 # Time Series Causal Inference
 
 > [!abstract] Routing Summary
-> This folder covers Bayesian structural time-series models (BSTS) for inferring causal impact of interventions on time-series outcomes — the CausalImpact framework (Brodersen et al., Ann. Applied Stats. 2015). Contains 7 notes.
+> This folder covers Bayesian structural time-series models (BSTS) for inferring causal impact of interventions on time-series outcomes — the CausalImpact framework (Brodersen et al., Ann. Applied Stats. 2015). Contains 7 notes plus a State-Space and Kalman Filter sub-topic (the general filtering/smoothing machinery underlying BSTS).
 > - Need the core state-space model specification? → [[Bayesian Structural Time-Series Model]]
+> - Need the general Kalman filter / RTS smoother machinery (predict-update, smoothing, likelihood)? → [[Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/State-Space and Kalman Filter/_Index|State-Space and Kalman Filter]]
 > - Need trend and seasonality components? → [[Local Linear Trend and Seasonality]]
 > - Need automatic covariate selection (spike-and-slab)? → [[Spike-and-Slab Prior for Covariate Selection]]
 > - Need the MCMC / Gibbs sampler details? → [[MCMC Inference for CausalImpact]]
 > - Need pointwise / cumulative / running average impact formulas? → [[Counterfactual Impact Estimation]]
 > - Need the advertising application with placebo test? → [[CausalImpact Empirical Application]]
+
+## Sub-topics
+
+| Sub-topic | Notes | Covers |
+|-----------|-------|--------|
+| [[Research/Bayesian Statistics/Causal Inference/Time Series Causal Inference/State-Space and Kalman Filter/_Index\|State-Space and Kalman Filter]] | 5 | Linear-Gaussian state-space models, the Kalman filter (predict-update recursion), the RTS smoother, and the marginal likelihood via the prediction-error decomposition — Särkkä (2013). The general machinery underlying BSTS. |
 
 ## Concept Map
 

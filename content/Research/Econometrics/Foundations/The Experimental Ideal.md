@@ -22,6 +22,7 @@ used_by:
   - "[[Differences-in-Differences]]"
   - "[[Activity Bias in Advertising]]"
   - "[[Power Analysis and Sample Size]]"
+  - "[[Randomization Inference - Overview]]"
 ---
 
 # The Experimental Ideal
@@ -80,3 +81,4 @@ $$
 - [[Multiple Testing Corrections]] — multiple comparisons inflate false positives even in well-designed experiments
 - [[Regression Discontinuity Designs]] — the local experiment analogue: credible quasi-experimental identification near a threshold
 - [[Multiple Comparisons - Bayesian Perspective]] — even well-designed experiments face multiplicity; Bayesian multilevel models handle it structurally
+- [[Randomization Inference - Overview]] — inference that follows directly from the randomization this note motivates

@@ -13,7 +13,8 @@ depends_on:
   - "[[Adjunctions/Adjoint Functors]]"
   - "[[Adjoints and Limits]]"
   - "[[Limits and Colimits/General Limits]]"
-used_by: []
+used_by:
+  - "[[Algebras for a Monad - Eilenberg-Moore and Kleisli]]"
 aliases:
   - GAFT
   - SAFT
@@ -104,3 +105,4 @@ The SAFT applies when $\mathcal{B}$ has nice properties (well-powered + cogenera
 - [[Adjunctions/Adjoint Functors]] — Adjunction definition
 - [[Adjoints and Limits]] — Right adjoints preserve limits (necessity in GAFT)
 - [[Adjunctions/Adjunctions via Initial Objects]] — The proof constructs initial objects
+- [[Algebras for a Monad - Eilenberg-Moore and Kleisli]] — limits/colimits of algebras & adjoint construction

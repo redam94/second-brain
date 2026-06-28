@@ -16,6 +16,7 @@ used_by:
   - "[[Smooth Characterization of Acyclicity]]"
   - "[[NOTEARS Algorithm]]"
   - "[[NOTEARS Experiments]]"
+  - "[[Causal Discovery - Overview]]"
 aliases:
   - "DAGs with NO TEARS"
   - "NOTEARS"
@@ -106,4 +107,5 @@ case — though unlike the undirected case the resulting program is **nonconvex*
 - [[Smooth Characterization of Acyclicity]] — the central theorem ($h(W)=\mathrm{tr}\,e^{W\circ W}-d$)
 - [[NOTEARS Algorithm]] — how the continuous program is actually solved
 - [[NOTEARS Experiments]] — empirical results and benchmarks
+- [[Causal Discovery - Overview]] — the broader constraint-/score-based discovery landscape
 - [[Research/Causal Discovery/_Index|Causal Discovery Index]]

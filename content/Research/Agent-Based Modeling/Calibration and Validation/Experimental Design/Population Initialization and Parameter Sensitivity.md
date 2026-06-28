@@ -17,6 +17,7 @@ depends_on:
   - "[[Heterogeneity in Agent Models]]"
 used_by:
   - "[[ABM in Marketing Strategy]]"
+  - "[[Local vs Global Sensitivity Analysis]]"
 aliases:
   - Parameter initialization
   - Sensitivity analysis in ABM
@@ -113,3 +114,4 @@ From the experimental results:
 - [[ABM Calibration Overview]] — broader calibration context
 - [[Consumer Utility Function Components]] — what these parameters parameterize
 - [[Karakaya et al 2011 - Overview]] — paper context
+- [[Local vs Global Sensitivity Analysis]] — global complement to this note's one-at-a-time local SA

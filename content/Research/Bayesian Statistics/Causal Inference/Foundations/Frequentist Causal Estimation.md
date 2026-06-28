@@ -17,6 +17,7 @@ used_by:
   - "[[General Structure of Bayesian CI]]"
   - "[[Propensity Score in Bayesian CI]]"
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
+  - "[[Propensity Score Matching - Overview]]"
 aliases:
   - IPW estimator
   - doubly robust estimator
@@ -114,3 +115,4 @@ The propensity score — central to Frequentist approaches — has a nuanced rol
 - [[Propensity Score in Bayesian CI]] — Bayesian strategies using the propensity score
 - [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]] — existing vault note on Bayesian IPW (Heiss blog)
 - [[Sensitivity Analysis in Observational Studies]] — what happens when unconfoundedness fails
+- [[Propensity Score Matching - Overview]] — the matching counterpart to the IPW/DR estimators here

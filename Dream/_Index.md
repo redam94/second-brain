@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-06-22
+date_updated: 2026-06-28
 ---
 
 # Dream: Research Gaps
@@ -16,17 +16,14 @@ date_updated: 2026-06-22
 ## Suggested Topics
 
 ### 1. Propensity Score Methods and Inverse Probability Weighting
-**Status:** 🌿 still relevant
+**Status:** 🍂 covered
 
-**Why it's a gap:**
-[[Activity Bias in Advertising]] explicitly states that "propensity score matching and regression with controls cannot fix" activity bias, but there is no note explaining what propensity score methods are, when they succeed, and why they fail here. The [[Conditional Independence Assumption]] note covers the theoretical requirement for selection-on-observables identification, and [[The Selection Problem]] motivates the challenge — but the frequentist methodological toolkit (propensity score matching, IPW, doubly robust estimators, AIPW) is missing. The Bayesian side is covered by [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]]. The frequentist IPW and DR estimators are now in [[Frequentist Causal Estimation]] (added 2026-04-10) — but the classical Rosenbaum & Rubin matching framework and diagnostics (covariate balance, overlap plots, caliper matching) remain absent.
+**Why it was a gap:**
+[[Activity Bias in Advertising]] explicitly states that "propensity score matching and regression with controls cannot fix" activity bias, but there was no note explaining what propensity score methods are, when they succeed, and why they fail here. The [[Conditional Independence Assumption]] note covers the theoretical requirement for selection-on-observables identification, and [[The Selection Problem]] motivates the challenge. The Bayesian side is covered by [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]]; the frequentist IPW and DR estimators are in [[Frequentist Causal Estimation]] (added 2026-04-10). The remaining hole — the classical Rosenbaum & Rubin matching framework and its diagnostics (covariate balance, overlap/common support, caliper matching) — is now filled.
 
 **Adjacent notes:** [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]], [[Frequentist Causal Estimation]], [[Conditional Independence Assumption]], [[The Selection Problem]], [[Omitted Variables Bias]], [[Activity Bias in Advertising]]
 
-**Suggested sources / search terms:**
-- Rosenbaum & Rubin (1983) — "The central role of the propensity score"
-- Imbens (2004) — "Nonparametric estimation of average treatment effects under exogeneity: A review"
-- Search: "propensity score matching", "inverse probability weighting", "doubly robust estimation", "AIPW", "covariate balance"
+**Covered by:** [[Propensity Score Matching - Overview]], [[Propensity Score and the Balancing Property]], [[Matching Methods and Distance Measures]], [[Covariate Balance Diagnostics]], [[Common Support and Overlap]] (all in `Econometrics/Identification Strategies/Propensity Score Matching/`, ingested 2026-06-28 from Stuart 2010)
 
 ---
 
@@ -41,17 +38,14 @@ date_updated: 2026-06-22
 ---
 
 ### 3. Pre-registration and Open Science Practices
-**Status:** 🌱 new
+**Status:** 🍂 covered
 
-**Why it's a gap:**
-[[Forking Paths and Bayesian Approaches]] explicitly recommends "Pre-register analyses to reduce (but not eliminate) forking paths" and [[Garden of Forking Paths]] motivates why pre-registration matters — but neither note explains *how* to pre-register or the ecosystem around it (OSF, AEA RCT Registry, registered reports, pre-analysis plans in economics). [[Researcher Degrees of Freedom]] catalogs what pre-registration is meant to constrain, but the practical implementation layer is missing. This is especially relevant given the advertising causal inference work in the vault.
+**Why it was a gap:**
+[[Forking Paths and Bayesian Approaches]] explicitly recommends "Pre-register analyses to reduce (but not eliminate) forking paths" and [[Garden of Forking Paths]] motivates why pre-registration matters — but neither note explained *how* to pre-register or the ecosystem around it (OSF, AEA RCT Registry, registered reports, pre-analysis plans). [[Researcher Degrees of Freedom]] catalogs what pre-registration is meant to constrain. The practical implementation layer — the prediction/postdiction distinction, pre-registration vs registered reports, pre-analysis plans, and the registry ecosystem — is now covered.
 
 **Adjacent notes:** [[Forking Paths and Bayesian Approaches]], [[Garden of Forking Paths]], [[Researcher Degrees of Freedom]], [[The Experimental Ideal]]
 
-**Suggested sources / search terms:**
-- Nosek et al. (2018) — "The preregistration revolution" (*PNAS*)
-- Casey, Glennerster & Miguel (2012) — "Reshaping institutions: Evidence on aid impacts using a pre-analysis plan"
-- Search: "pre-analysis plan", "OSF preregistration", "registered reports", "pre-registration econometrics"
+**Covered by:** [[Pre-registration and Open Science - Overview]], [[Prediction vs Postdiction]], [[Pre-registration vs Registered Reports]], [[Pre-analysis Plans and the Open Science Ecosystem]], [[Limits and Objections to Pre-registration]] (all in `Research Methodology/Pre-registration and Open Science/`, ingested 2026-06-28 from Nosek et al. 2018)
 
 ---
 
@@ -94,25 +88,23 @@ DAG-based reasoning was implicitly present throughout the vault but had no dedic
 ---
 
 ### 7. Permutation and Randomization Inference
-**Status:** 🌱 new
+**Status:** 🍂 covered
 
-**Why it's a gap:**
-[[Synthetic Control]] uses Fisher's exact test / placebo tests as its primary inference method when asymptotic inference is unavailable (small $J$). The p-value is the fraction of placebo effects more extreme than the treated-unit effect. This is introduced in the context of synthetic control but is a general principle: randomization inference assumes that treatment assignment was random and asks how extreme the observed statistic is under permutations of the treatment label. It connects to [[The Experimental Ideal]] (randomisation as the gold standard), [[Power Analysis and Sample Size]] (power under permutation tests differs from parametric power), and provides a non-parametric alternative to asymptotic frequentist inference. No note covers the general theory.
+**Why it was a gap:**
+[[Synthetic Control]] uses Fisher's exact test / placebo tests as its primary inference method when asymptotic inference is unavailable (small $J$). The p-value is the fraction of placebo effects more extreme than the treated-unit effect. This is introduced in the context of synthetic control but is a general principle: randomization inference assumes that treatment assignment was random and asks how extreme the observed statistic is under permutations of the treatment label. It connects to [[The Experimental Ideal]] (randomisation as the gold standard) and [[Power Analysis and Sample Size]], and provides a non-parametric alternative to asymptotic frequentist inference. The general theory — Fisher's sharp null, the distinction from Neyman's weak null, and studentized tests valid for both — is now covered.
 
 **Adjacent notes:** [[Synthetic Control]], [[The Experimental Ideal]], [[Power Analysis and Sample Size]], [[Differences-in-Differences]], [[Multiple Testing Corrections]]
 
-**Suggested sources / search terms:**
-- Fisher (1935) — *The Design of Experiments* (original randomization test)
-- Imbens & Rubin (2015) — *Causal Inference for Statistics, Social, and Biomedical Sciences*, Ch. 5
-- Abadie et al. (2010) — placebo test section in the synthetic control paper
-- Search: "randomization inference", "permutation test causal inference", "Fisher sharp null", "Ri2 R package"
+**Covered by:** [[Randomization Inference - Overview]], [[Fisher Randomization Test and the Sharp Null]], [[Sharp vs Weak Null Hypotheses]], [[Studentized Randomization Tests]], [[Permutation Tests and Exact Inference]] (all in `Econometrics/Foundations/Randomization Inference/`, ingested 2026-06-28 from Wu & Ding 2021)
 
 ---
 
 ### 8. Factor Copulas and High-Dimensional Copula Architectures
-**Status:** 🌿 still relevant
+**Status:** 🍂 covered
 
-**Partially addressed (2026-06-22):** The `Econometrics/Dependence Modeling/` subfolder now has 6 notes covering factor copulas comprehensively: [[Factor Copulas - Overview]], [[Factor Copula Construction]], [[Multi-Factor and Block Dependence Structures]], [[Tail Dependence in Factor Copulas]], [[SMM Estimation of Factor Copulas]], [[Factor Copula Application - S&P 100 and Systemic Risk]]. The "what is a factor copula architecturally" part of the gap is now covered. Vine/pair copulas (C-vine, D-vine) and the comparison between copula architectures remain absent.
+**Covered by:** Factor copulas — [[Factor Copulas - Overview]] + cluster (2026-06-22). Vine/pair copulas — [[Vine Copulas - Overview]], [[Pair-Copula Constructions]], [[C-vines, D-vines, and Regular Vines]], [[The Simplifying Assumption]], [[Estimation and Structure Selection for Vines]] (all in `Econometrics/Dependence Modeling/Vine Copulas/`, ingested 2026-06-28 from Aas 2016). Both major high-dimensional copula architectures are now documented.
+
+**Earlier note (2026-06-22):** The `Econometrics/Dependence Modeling/` subfolder has 6 notes covering factor copulas comprehensively: [[Factor Copulas - Overview]], [[Factor Copula Construction]], [[Multi-Factor and Block Dependence Structures]], [[Tail Dependence in Factor Copulas]], [[SMM Estimation of Factor Copulas]], [[Factor Copula Application - S&P 100 and Systemic Risk]]. Vine/pair copulas (C-vine, D-vine) were the remaining hole — now filled.
 
 **Why it was a gap:**
 [[Dependence Measures for Copulas]] includes a tail dependence table listing "Factor copula (Oh & Patton)" alongside Normal, Clayton, Gumbel, and Student-t copulas — but no note explains what a factor copula *is* architecturally, or how it solves the curse of dimensionality for high-dimensional dependence modeling. [[Copula Estimation]] covers Bayesian Gaussian copula estimation (bivariate). [[SMM Estimator for Copulas]] covers estimation of the factor copula model without explaining the model structure itself. Vine (pair) copulas — a flexible alternative for high-dimensional settings — are entirely absent. This gap leaves practitioners unable to choose between copula architectures for their specific application.
@@ -128,9 +120,11 @@ DAG-based reasoning was implicitly present throughout the vault but had no dedic
 ---
 
 ### 9. Causal Structure Learning from Data
-**Status:** 🌿 still relevant
+**Status:** 🍂 covered
 
-**Partially addressed (2026-06-22):** The `Causal Discovery/` subfolder now covers NOTEARS comprehensively: [[NOTEARS - Overview]], [[DAG Structure Learning Problem]], [[Smooth Characterization of Acyclicity]], [[NOTEARS Algorithm]], [[NOTEARS Experiments]]. The score-based continuous-optimization approach is well-documented. Constraint-based methods (PC algorithm, conditional independence testing) and score-based search (GES / Greedy Equivalence Search) remain entirely absent.
+**Covered by:** NOTEARS (continuous optimization) — [[NOTEARS - Overview]] + cluster. Constraint-/score-based/FCM methods — [[Causal Discovery - Overview]], [[Markov and Faithfulness Assumptions]], [[PC Algorithm and Constraint-Based Discovery]], [[GES and Score-Based Discovery]], [[Functional Causal Models (LiNGAM, ANM)]] (all in `Causal Discovery/Constraint and Score-Based Discovery/`, ingested 2026-06-28 from Glymour, Zhang & Spirtes 2019). The PC/FCI, GES, and FCM families that were absent are now covered alongside NOTEARS.
+
+**Earlier note (2026-06-22):** The `Causal Discovery/` subfolder covered NOTEARS comprehensively ([[NOTEARS - Overview]], [[DAG Structure Learning Problem]], [[Smooth Characterization of Acyclicity]], [[NOTEARS Algorithm]], [[NOTEARS Experiments]]); the constraint-based (PC) and score-based (GES) families were the remaining hole — now filled.
 
 **Why it was a gap:**
 The vault has extensive coverage of DAG *reasoning* (d-separation, back-door criterion, do-calculus — [[Directed Acyclic Graphs]], [[Canonical Causal DAGs]], [[Summary Causal DAGs]]) and DAG *construction* from expert knowledge ([[LLM Expert Elicitation for Bayesian Networks]], [[BN Construction Methods Comparison]], [[Interactive Knowledge Elicitation Method]]). But there is no note on how to *learn* a causal DAG from observational data. The PC algorithm (constraint-based, uses conditional independence tests), GES (Greedy Equivalence Search, score-based), and NOTEARS (continuous optimization, differentiable structure learning) are all absent. This gap is especially salient given the vault's ABM work: ABM outputs can be used as observational data for structure learning, and the Zeng 2025 DAG summarization work (§4 of [[Summary Causal DAGs]]) assumes the DAG is given — structure learning is what precedes summarization.
@@ -146,18 +140,14 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 ---
 
 ### 10. Global Sensitivity Analysis
-**Status:** 🌱 new
+**Status:** 🍂 covered
 
-**Why it's a gap:**
-[[ABM Validation Challenges]] identifies "sensitivity analysis to distinguish robust from fragile results" as one of three core validation strategies, and [[Population Initialization and Parameter Sensitivity]] covers local sensitivity (one-at-a-time parameter variation). [[Uncertainty Quantification for ABM Calibration]] applies UQ ensembles that implicitly capture parameter uncertainty. But *global* sensitivity analysis (GSA) — which quantifies how much of the model output variance is attributable to each input parameter across the full parameter space — is entirely absent. Sobol variance-based indices, Morris elementary effects screening, and the Saltelli-Tarantola FAST method are standard tools for this. GSA connects ABM calibration/validation to the broader uncertainty quantification and experimental design literature, and is especially relevant when the parameter space is high-dimensional (as in the CUBES or Karakaya models with 10+ parameters per agent type).
+**Why it was a gap:**
+[[ABM Validation Challenges]] identifies "sensitivity analysis to distinguish robust from fragile results" as one of three core validation strategies, and [[Population Initialization and Parameter Sensitivity]] covers local sensitivity (one-at-a-time parameter variation). [[Uncertainty Quantification for ABM Calibration]] applies UQ ensembles. But *global* sensitivity analysis (GSA) — quantifying how much of the model output variance is attributable to each input across the full parameter space (Sobol indices, Morris screening, FAST) — was absent. It is now covered.
 
 **Adjacent notes:** [[ABM Validation Challenges]], [[Population Initialization and Parameter Sensitivity]], [[Uncertainty Quantification for ABM Calibration]], [[Approximate Bayesian Computation for ABMs]], [[History Matching for ABMs]]
 
-**Suggested sources / search terms:**
-- Saltelli et al. (2008) — *Global Sensitivity Analysis: The Primer*, Wiley
-- Morris (1991) — "Factorial sampling plans for preliminary computational experiments" (*Technometrics*)
-- Sobol (1993) — "Sensitivity estimates for non-linear mathematical models" (*Mathematical Modelling*)
-- Search: "Sobol sensitivity indices", "Morris screening method", "global sensitivity analysis ABM", "variance-based sensitivity", "SALib Python"
+**Covered by:** [[Global Sensitivity Analysis - Overview]], [[Variance-Based Sensitivity and Sobol Indices]], [[Morris Elementary Effects Screening]], [[Sampling and Estimation for Sobol Indices]], [[Local vs Global Sensitivity Analysis]] (all in `Agent-Based Modeling/Calibration and Validation/Sensitivity Analysis/`, ingested 2026-06-28 from the GSA Methods Review 2024)
 
 ---
 
@@ -180,34 +170,26 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 ---
 
 ### 12. Empirical Bayes Methods and Shrinkage Estimation
-**Status:** 🌱 new
+**Status:** 🍂 covered
 
-**Why it's a gap:**
-[[Partial Pooling as Multiple Comparisons Correction]] explicitly cites two foundational empirical Bayes results: (1) the James-Stein estimator (Efron & Morris, 1975) as a frequentist analogue of Bayesian shrinkage — pooled estimates dominate unpooled ones in ≥3 dimensions; (2) Efron (2006), which draws connections between empirical Bayes, hierarchical Bayes, and FDR. [[Hierarchical Models]] covers the Bayesian hierarchical model as the principled solution, and [[Multiple Comparisons - Bayesian Perspective]] covers the applied multiple-testing context. But the empirical Bayes *methodology* — estimating the prior from marginal likelihood (parametric EB), or non-parametrically via Robbins' formula, or using Efron's local FDR — is entirely absent. Empirical Bayes is an important intermediate between fully Bayesian inference and frequentist methods, and its connection to regularisation methods (ridge regression, LASSO as EB with Laplace prior) bridges Bayesian Statistics and econometric regularisation.
+**Why it was a gap:**
+[[Partial Pooling as Multiple Comparisons Correction]] explicitly cites two foundational empirical Bayes results: (1) the James-Stein estimator (Efron & Morris, 1975) as a frequentist analogue of Bayesian shrinkage — pooled estimates dominate unpooled ones in ≥3 dimensions; (2) Efron (2006), which draws connections between empirical Bayes, hierarchical Bayes, and FDR. [[Hierarchical Models]] covers the Bayesian hierarchical model as the principled solution, and [[Multiple Comparisons - Bayesian Perspective]] covers the applied multiple-testing context. But the empirical Bayes *methodology* — estimating the prior from marginal likelihood (parametric EB), or non-parametrically via Robbins' formula — was absent. The Robbins formula, the James-Stein estimator, Stein's paradox / risk dominance, and the empirical-Bayes view of shrinkage (with the bridge to regularization) are now covered.
 
 **Adjacent notes:** [[Partial Pooling as Multiple Comparisons Correction]], [[Hierarchical Models]], [[Multiple Comparisons - Bayesian Perspective]], [[Asymptotics and Frequentist Connections]], [[Multiple Testing Corrections]], [[Overfitting and Information Criteria]]
 
-**Suggested sources / search terms:**
-- Efron & Morris (1975) — "Data analysis using Stein's estimator and its generalizations" (*JASA*)
-- Efron & Hastie (2016) — *Computer Age Statistical Inference*, Ch. 6 (EB), Ch. 15 (large-scale EB)
-- Robbins (1956) — "An empirical Bayes approach to statistics" (*Berkeley Symposium*)
-- Search: "empirical Bayes", "James-Stein estimator", "local FDR empirical Bayes", "Efron large-scale inference", "parametric empirical Bayes"
+**Covered by:** [[Empirical Bayes - Overview]], [[Robbins Formula and Poisson Empirical Bayes]], [[James-Stein Estimator]], [[Stein's Paradox and Risk Dominance]], [[Empirical Bayes Interpretation of Shrinkage]] (all in `Bayesian Statistics/Inference Fundamentals/Empirical Bayes/`, ingested 2026-06-28 from Efron, *Large-Scale Inference* Ch. 1)
 
 ---
 
 ### 13. State-Space Models and the Kalman Filter
-**Status:** 🌱 new
+**Status:** 🍂 covered
 
-**Why it's a gap:**
-[[Bayesian Structural Time-Series Model]] uses a general state-space representation — the observation equation and state transition equation (Eqs. 2.1–2.2) — as its foundation, and MCMC inference exploits the Kalman filter/smoother for the forward pass. But the Kalman filter itself is never explained in the vault. [[Single Marketing Time Series]] covers ARIMA (which can be written as a special-case state-space model). [[Carryover Effects and Distributed Lags]] covers ADL dynamic response models. [[Local Linear Trend and Seasonality]] describes specific state-space components. Yet no note covers the general machinery: the Kalman filter recursion (predict-update), the Kalman smoother (backward pass), the connection between state-space and ARMA representations (innovation form), or extensions to non-linear/non-Gaussian settings (particle filters, unscented KF). This gap leaves readers unable to understand *how* BSTS inference works, why the modular state-space form enables tractable MCMC, or how to extend the framework to new applications.
+**Why it was a gap:**
+[[Bayesian Structural Time-Series Model]] uses a general state-space representation as its foundation, and MCMC inference exploits the Kalman filter/smoother for the forward pass — but the Kalman filter itself was never explained in the vault. [[Single Marketing Time Series]] covers ARIMA, [[Carryover Effects and Distributed Lags]] covers ADL models, and [[Local Linear Trend and Seasonality]] describes specific state-space components. The general machinery — the Kalman filter recursion (predict-update), the RTS smoother (backward pass), and the marginal likelihood via the prediction-error decomposition — is now covered. (Non-linear/non-Gaussian extensions such as particle filters remain a possible future addition.)
 
 **Adjacent notes:** [[Bayesian Structural Time-Series Model]], [[Local Linear Trend and Seasonality]], [[MCMC Inference for CausalImpact]], [[Single Marketing Time Series]], [[Carryover Effects and Distributed Lags]], [[Hilbert Space Gaussian Processes]]
 
-**Suggested sources / search terms:**
-- Durbin & Koopman (2012) — *Time Series Analysis by State Space Methods*, 2nd Ed. (Oxford)
-- Harvey (1989) — *Forecasting, Structural Time Series Models and the Kalman Filter*
-- Petris, Petrone & Campagnoli (2009) — *Dynamic Linear Models with R*
-- Search: "Kalman filter state-space model", "Kalman smoother forward-backward", "dynamic linear model", "innovation form ARMA state-space", "particle filter non-linear"
+**Covered by:** [[State-Space Models and the Kalman Filter - Overview]], [[Linear-Gaussian State-Space Models]], [[The Kalman Filter]], [[The RTS Smoother]], [[Marginal Likelihood via the Kalman Filter]] (all in `Bayesian Statistics/Causal Inference/Time Series Causal Inference/State-Space and Kalman Filter/`, ingested 2026-06-28 from Särkkä 2013)
 
 ---
 
@@ -314,19 +296,14 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 ---
 
 ### 20. Shrinkage Priors: Horseshoe and Regularized Horseshoe
-**Status:** 🌱 new
+**Status:** 🍂 covered
 
-**Why it's a gap:**
-[[Bayesian Linear Regression]] explicitly names the **horseshoe prior** as "heavy-tailed, allows large signals while shrinking noise — state of the art for sparse problems" — but provides no explanation of what it is, why it outperforms the Gaussian (ridge) or Laplace (lasso) priors, or how to set it in practice. The note also mentions the lasso prior as "Laplace(0, λ)," but the connection between this and empirical Bayes regularisation remains implicit. [[Spike-and-Slab Prior for Covariate Selection]] exists but only in the context of BSTS covariate selection ([[Bayesian Structural Time-Series Model]]), not as a general methodology. The global-local shrinkage prior family — horseshoe (Carvalho et al. 2010), regularized horseshoe (Piironen & Vehtari 2017), R2-D2 (Zhang et al. 2022) — is the standard toolkit for Bayesian variable selection and sparse regression, and it is absent from the vault. This gap blocks understanding of high-dimensional Bayesian regression, shrinkage estimation (connecting to Empirical Bayes, gap #12), and Stan/PyMC implementations of sparse models.
+**Why it was a gap:**
+[[Bayesian Linear Regression]] explicitly names the **horseshoe prior** as "heavy-tailed, allows large signals while shrinking noise — state of the art for sparse problems" — but provided no explanation of what it is, why it outperforms the Gaussian (ridge) or Laplace (lasso) priors, or how to set it in practice. [[Spike-and-Slab Prior for Covariate Selection]] exists but only in the context of BSTS covariate selection ([[Bayesian Structural Time-Series Model]]), not as a general methodology. The global-local shrinkage prior family — horseshoe (Carvalho et al. 2010), regularized horseshoe (Piironen & Vehtari 2017) — is now covered, including the shrinkage-factor view, the effective number of nonzeros, choosing the global scale, and the Stan/PyMC parameterization. (R2-D2 priors remain a possible future extension.)
 
 **Adjacent notes:** [[Bayesian Linear Regression]], [[Spike-and-Slab Prior for Covariate Selection]], [[Hierarchical Linear Models]], [[Overfitting and Information Criteria]], [[Partial Pooling as Multiple Comparisons Correction]], [[Fitting and Validating Computation]]
 
-**Suggested sources / search terms:**
-- Carvalho, Polson & Scott (2010) — "The horseshoe estimator for sparse signals" (*Biometrika*)
-- Piironen & Vehtari (2017) — "Sparsity information and regularization in the horseshoe and other shrinkage priors" (*Electronic Journal of Statistics*)
-- Bhadra et al. (2019) — "Lasso meets horseshoe: A survey" (*Statistical Science*)
-- Stan Development Team — *Stan Reference Manual*, §Hierarchical Priors; PyMC docs on `pm.HalfStudentT` horseshoe parameterization
-- Search: "horseshoe prior Stan", "regularized horseshoe PyMC", "global-local shrinkage prior", "sparse Bayesian regression", "R2-D2 prior"
+**Covered by:** [[Horseshoe and Regularized Horseshoe Priors]], [[Global-Local Shrinkage Priors]], [[The Horseshoe Prior]], [[Choosing the Global Scale and Effective Nonzeros]], [[Regularized Horseshoe (Finnish Horseshoe)]] (all in `Bayesian Statistics/Regression Models/Shrinkage Priors/`, ingested 2026-06-28 from Piironen & Vehtari 2017)
 
 ---
 
@@ -363,18 +340,14 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 ---
 
 ### 24. Random Coefficients Logit and BLP Demand Estimation
-**Status:** 🌱 new
+**Status:** 🍂 covered
 
-**Why it's a gap:**
-[[Market Share Models]] explicitly lists "random coefficients logit (BLP)" as the key relaxation of the IIA property — alongside nested logit and probit — but neither a wikilink nor any note explains what the BLP model *is*. Berry, Levinsohn & Pakes (1995) is one of the most cited papers in economics: it specifies a logit demand model with consumer-level random coefficients on product attributes (relaxing IIA), and estimates it via GMM using product characteristics as instruments for price. The model bridges [[Market Share Models]] (MCI/MNL, MRM section) and [[Discrete Choice Models]] (econometrics section) with [[Instrumental Variables]] (price endogeneity) and [[Method of Simulated Moments]] (BLP requires simulated moments for the random coefficients). The vault covers each component individually but never the synthesis that is BLP demand estimation — the standard model for market-level discrete choice in IO and marketing.
+**Why it was a gap:**
+[[Market Share Models]] explicitly lists "random coefficients logit (BLP)" as the key relaxation of the IIA property — alongside nested logit and probit — but neither a wikilink nor any note explained what the BLP model *is*. Berry, Levinsohn & Pakes (1995) specifies a logit demand model with consumer-level random coefficients on product attributes (relaxing IIA), estimated via GMM using product characteristics as instruments for price. The model bridges [[Market Share Models]] and [[Discrete Choice Models]] with [[Instrumental Variables]] (price endogeneity) and [[Method of Simulated Moments]] (simulated/integrated moments for the random coefficients). The synthesis — the RCL model, the Berry contraction mapping, GMM estimation with instruments, and the PyBLP best-practices — is now covered.
 
 **Adjacent notes:** [[Market Share Models]], [[Discrete Choice Models]], [[Instrumental Variables]], [[Method of Simulated Moments]], [[Functional Forms in Marketing]], [[Parameter Estimation in Market Response]]
 
-**Suggested sources / search terms:**
-- Berry, Levinsohn & Pakes (1995) — "Automobile Prices in Market Equilibrium" (*Econometrica*) — the original BLP paper
-- Berry (1994) — "Estimating discrete-choice models of product differentiation" (*RAND Journal of Economics*)
-- Nevo (2000) — "A practitioner's guide to estimation of random-coefficients logit models of demand" (*Journal of Economics & Management Strategy*)
-- Search: "BLP demand estimation", "random coefficients logit", "market-level discrete choice", "pyblp Python", "RCNL model"
+**Covered by:** [[BLP Demand Estimation - Overview]], [[Random Coefficients Logit Model]], [[The BLP Contraction Mapping]], [[GMM Estimation and Instruments for Price Endogeneity]], [[Numerical Integration and Optimization in PyBLP]], [[Supply Side and Markups]] (all in `Econometrics/Extensions/BLP Demand Estimation/`, ingested 2026-06-28 from Conlon & Gortmaker 2020)
 
 ---
 
@@ -426,18 +399,16 @@ The vault has two complementary sections that are not yet connected: `Econometri
 ---
 
 ### 27. Monads and Monadicity in Category Theory
-**Status:** 🌱 new
+**Status:** 🍂 covered
 
-**Why it's a gap:**
-[[Units and Counits]] explicitly states: "from an adjunction $F \dashv G$, the composite $T = GF: \mathcal{A} \to \mathcal{A}$ with multiplication $\mu = G\varepsilon F$ and unit $\eta$ forms a **monad** (not covered in Leinster but a direct extension)." [[Adjoint Functors]] and [[Adjunctions via Initial Objects]] complete the adjunction picture, but the adjunction-monad correspondence — the central result linking adjunctions, algebras, and Beck's monadicity theorem — is absent. Monads appear in: functional programming (Haskell's `>>=`/`return` as the Kleisli triple), algebraic theories (monads as "monoids in the category of endofunctors," Mac Lane Ch. VII), categorical logic (Lawvere theories), and effects/computational semantics (Moggi 1991). Leinster's *Basic Category Theory* does cover monads in Chapter 5 — the source material exists but was not ingested. This is the natural next chapter after the vault's coverage of adjunctions.
+**Why it was a gap:**
+[[Units and Counits]] explicitly states: "from an adjunction $F \dashv G$, the composite $T = GF: \mathcal{A} \to \mathcal{A}$ with multiplication $\mu = G\varepsilon F$ and unit $\eta$ forms a **monad** (not covered in Leinster but a direct extension)." [[Adjoint Functors]] and [[Adjunctions via Initial Objects]] complete the adjunction picture, but the adjunction-monad correspondence — the central result linking adjunctions, algebras, and Beck's monadicity theorem — was absent. The monad definition & laws, the adjunction→monad construction, algebras (Eilenberg-Moore and Kleisli categories), and Beck's monadicity theorem are now covered.
+
+**Note on source:** Leinster's *Basic Category Theory* (the vault's existing CT source) does **not** in fact contain a monads chapter (Ch. 5 is Limits). This gap was filled instead from **Riehl, *Category Theory in Context*, Ch. 5 "Monads and their Algebras"** (freely available), the standard graduate treatment.
 
 **Adjacent notes:** [[Units and Counits]], [[Adjoint Functors]], [[Adjunctions via Initial Objects]], [[Synthesis/Adjoints and Limits]], [[Adjoint Functor Theorems]], [[Cartesian Closed Categories]]
 
-**Suggested sources / search terms:**
-- Leinster (2014) — *Basic Category Theory*, Ch. 5: Monads — the direct continuation of the vault's source text
-- Mac Lane (1971) — *Categories for the Working Mathematician*, Ch. VI: Monads and Algebras
-- Moggi (1991) — "Notions of computation and monads" (*Information and Computation*) — monads in CS/PL
-- Search: "monad category theory adjunction", "Beck monadicity theorem", "Kleisli category monad", "algebras over a monad", "Eilenberg-Moore category"
+**Covered by:** [[Monads - Overview]], [[Monads and the Monad Laws]], [[Adjunctions Induce Monads]], [[Algebras for a Monad - Eilenberg-Moore and Kleisli]], [[Beck's Monadicity Theorem]] (all in `Category Theory/Monads/`, ingested 2026-06-28 from Riehl, *Category Theory in Context* Ch. 5)
 
 ---
 
@@ -451,6 +422,17 @@ The vault has two complementary sections that are not yet connected: `Econometri
 | Simulation-Based Calibration (#6) | [[Simulation-Based Calibration - Overview]], [[The SBC Algorithm]], [[Interpreting SBC Histograms]], [[SBC Case Studies]] + 2 more | 2026-06-22 |
 | Bayesian Marketing Mix Modeling (#14) | [[Bayesian Media Mix Modeling - Overview]], [[Carryover (Adstock) Functional Forms]], [[Shape (Saturation) Effects]], [[ROAS, mROAS, and Optimal Media Mix]] + 2 more | 2026-06-22 |
 | Staggered DiD / Callaway-Sant'Anna (#19) | [[Difference-in-Differences with Multiple Time Periods - Overview]], [[Group-Time Average Treatment Effects]], [[Doubly-Robust Estimands for ATT(g,t)]] + 3 more | 2026-06-22 |
+| Propensity Score Methods / Matching (#1) | [[Propensity Score Matching - Overview]], [[Propensity Score and the Balancing Property]], [[Covariate Balance Diagnostics]], [[Common Support and Overlap]] + 1 more | 2026-06-28 |
+| Permutation & Randomization Inference (#7) | [[Randomization Inference - Overview]], [[Fisher Randomization Test and the Sharp Null]], [[Studentized Randomization Tests]], [[Sharp vs Weak Null Hypotheses]] + 1 more | 2026-06-28 |
+| Empirical Bayes & Shrinkage Estimation (#12) | [[Empirical Bayes - Overview]], [[James-Stein Estimator]], [[Stein's Paradox and Risk Dominance]], [[Robbins Formula and Poisson Empirical Bayes]] + 1 more | 2026-06-28 |
+| Horseshoe / Regularized Horseshoe Priors (#20) | [[Horseshoe and Regularized Horseshoe Priors]], [[Global-Local Shrinkage Priors]], [[The Horseshoe Prior]], [[Regularized Horseshoe (Finnish Horseshoe)]] + 1 more | 2026-06-28 |
+| Random Coefficients Logit / BLP Demand (#24) | [[BLP Demand Estimation - Overview]], [[Random Coefficients Logit Model]], [[The BLP Contraction Mapping]], [[GMM Estimation and Instruments for Price Endogeneity]] + 2 more | 2026-06-28 |
+| Pre-registration & Open Science (#3) | [[Pre-registration and Open Science - Overview]], [[Prediction vs Postdiction]], [[Pre-registration vs Registered Reports]], [[Pre-analysis Plans and the Open Science Ecosystem]] + 1 more | 2026-06-28 |
+| Factor & Vine Copulas (#8) | [[Vine Copulas - Overview]], [[Pair-Copula Constructions]], [[C-vines, D-vines, and Regular Vines]], [[Estimation and Structure Selection for Vines]] + factor-copula cluster | 2026-06-28 |
+| Causal Structure Learning / PC & GES (#9) | [[Causal Discovery - Overview]], [[PC Algorithm and Constraint-Based Discovery]], [[GES and Score-Based Discovery]], [[Functional Causal Models (LiNGAM, ANM)]] + 1 more | 2026-06-28 |
+| Global Sensitivity Analysis (#10) | [[Global Sensitivity Analysis - Overview]], [[Variance-Based Sensitivity and Sobol Indices]], [[Morris Elementary Effects Screening]], [[Sampling and Estimation for Sobol Indices]] + 1 more | 2026-06-28 |
+| State-Space Models & Kalman Filter (#13) | [[State-Space Models and the Kalman Filter - Overview]], [[The Kalman Filter]], [[The RTS Smoother]], [[Linear-Gaussian State-Space Models]] + 1 more | 2026-06-28 |
+| Monads and Monadicity (#27) | [[Monads - Overview]], [[Monads and the Monad Laws]], [[Adjunctions Induce Monads]], [[Beck's Monadicity Theorem]] + 1 more | 2026-06-28 |
 
 ---
 
@@ -469,3 +451,5 @@ The vault has two complementary sections that are not yet connected: `Econometri
 | 2026-06-08 | Run 9: reviewed 10 notes (Opinion Leaders and Social Influence, LLM-BN Decision Support Application, Discrete Choice Models, Practical Issues in Simulation Estimation, Instrumental Variables, Bayesian Linear Regression, Copula Estimation, ABM in Marketing Strategy, Brodersen 2015 - Overview, ABM Validation Challenges). No existing gaps newly covered this run. No frontmatter errors found. Cross-links added: Opinion Leaders ↔ Carryover Effects and Distributed Lags ↔ Advertising and Promotion Effects (WOM→MRM bridge); LLM-BN ↔ Directed Acyclic Graphs ↔ Model Checking; Discrete Choice Models ↔ Market Share Models (logit bridge Econometrics↔MRM); Instrumental Variables ↔ Bayesian Propensity Score Weighting ↔ Parameter Estimation in Market Response (2SLS for price endogeneity); Bayesian Linear Regression — added wikilink for Horseshoe prior + See Also entry [[Horseshoe and Regularized Horseshoe Priors]]; Copula Estimation ↔ Discrete Choice Models (LKJ) ↔ Market Share Models; ABM in Marketing Strategy ↔ Market Response Models - Overview ↔ Advertising and Promotion Effects ↔ Marketing Generalizations Overview; Brodersen 2015 ↔ Synthetic Control ↔ Advertising and Promotion Effects; ABM Validation Challenges ↔ Model Checking ↔ Garden of Forking Paths. Added gaps #21 (Bayesian Networks Fundamentals), #22 (Bass Diffusion Model). Gaps #6 (SBC), #19 (Staggered DiD), #20 (Horseshoe priors) reinforced by this run's notes. |
 | 2026-06-22 | Run 11: reviewed 9 notes (Practical Issues in Simulation Estimation, QFT Overview, Units and Counits, Multi-Factor and Block Dependence Structures, Price and Distribution Effects, Method of Simulated Moments, Markets Data and Sales Drivers, Spurious Association and Confounds, Regression and the CEF). Gaps #6 (SBC), #14 (Bayesian MMM), #19 (Staggered DiD) marked 🍂 covered — all now have dedicated note clusters. Gaps #8 (Factor Copulas) and #9 (Causal Structure Learning) updated to 🌿 still relevant: factor copulas now well-covered, vine copulas absent; NOTEARS covered, PC/GES absent. Frontmatter fixes: added `date_updated: 2026-06-22` to all 9 notes; added `folder` to Units and Counits, Price and Distribution Effects, Markets Data and Sales Drivers; added `date_ingested` to Price and Distribution Effects and Markets Data. Cross-links added: Practical Issues ↔ Brock-Mirman SMM ↔ SMM Estimation of Factor Copulas; QFT Overview ↔ Wave Function and Hilbert Space ↔ Uncertainty Principle ↔ Quantum Entanglement (within Physics folder) + cross-links to Theoretical Physics parallel notes (Standard Model and Gauge Groups, QFT Overview flat); Units and Counits ↔ Cartesian Closed Categories; Multi-Factor ↔ Dependence Measures for Copulas ↔ Factor Analysis and PPCA ↔ Copula Estimation; Price and Distribution ↔ Discrete Choice Models ↔ Parameter Estimation in Market Response; Method of MSM ↔ Brock-Mirman SMM ↔ SMM Estimation of Factor Copulas; Markets Data ↔ Bayesian Media Mix Modeling Overview; Spurious Association ↔ Regression and the CEF (bidirectional). Added gaps #25 (ABM Calibration via SMM/II), #26 (Quantile Treatment Effects), #27 (Monads and Monadicity). |
 | 2026-06-15 | Run 10: reviewed 10 notes (s-Separation in Summary DAGs, Uncertainty Principle, BN Construction Methods Comparison, Local Linear Trend and Seasonality, Hilbert Space Gaussian Processes, Spurious Association and Confounds, Modeling as Software Development, Market Share Models, Functors and Limits, Time-Varying Treatments and G-computation). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-06-15` to all 10 notes; added `folder` to HSGP, Market Share Models, Functors and Limits; added `source:` field (wikilink) to HSGP; fixed `source_location` in Spurious Association and Confounds (Ch.9 → Ch.5); added missing H1 title header to Modeling as Software Development. Cross-links added: s-Separation ↔ Directed Acyclic Graphs; BN Construction Methods ↔ Directed Acyclic Graphs ↔ LLM Expert Elicitation (completing the BN trilogy); Local Linear Trend ↔ Single Marketing Time Series (state-space↔ARIMA bridge); HSGP — added full See Also section linking to Local Linear Trend and Seasonality ↔ Bayesian Structural Time-Series Model; Spurious Association ↔ Directed Acyclic Graphs (fork/pipe/collider → DAG formalization); Modeling as Software Development ↔ Garden of Forking Paths (version control as forking path defense); Market Share Models ↔ Discrete Choice Models (MNL/logit bridge MRM↔Econometrics) ↔ Monsters and Mixtures (heterogeneous MCI→latent segments); Functors and Limits ↔ Products and Equalizers; Time-Varying Treatments ↔ Bayesian Propensity Score Weighting (IPW-MSM connection). Added gaps #23 (Marginal Structural Models / Bayesian Bootstrap), #24 (Random Coefficients Logit / BLP Demand Estimation). Gaps #13 (State-Space/Kalman), #18 (DTRs), #21 (BN Foundations) reinforced by this run's notes. |
+| 2026-06-28 | Run 12 (gap-filling ingest): researched, downloaded, and ingested 5 papers covering open gaps across the user-prioritised Causal / Bayesian / Econometrics-marketing themes. **Gaps #1, #7, #12, #20, #24 marked 🍂 covered.** New note clusters (26 notes + 5 leaf indexes): #20 Horseshoe → `Bayesian Statistics/Regression Models/Shrinkage Priors/` (Piironen & Vehtari 2017); #12 Empirical Bayes → `Bayesian Statistics/Inference Fundamentals/Empirical Bayes/` (Efron, *Large-Scale Inference* Ch. 1); #1 Propensity Score Matching → `Econometrics/Identification Strategies/Propensity Score Matching/` (Stuart 2010); #7 Randomization Inference → `Econometrics/Foundations/Randomization Inference/` (Wu & Ding 2021); #24 BLP Demand → `Econometrics/Extensions/BLP Demand Estimation/` (Conlon & Gortmaker 2020, PyBLP). Updated parent indexes (Regression Models, Inference Fundamentals, Identification Strategies, Foundations, Extensions) with sub-topic routing entries. NOTE: gap #22 (Bass Diffusion) was targeted but no legal open-access PDF could be obtained (Management Science / Journal of Marketing paywalled, author site offline) — left open for a future run. Ran vault-repair afterward to verify links and frontmatter. |
+| 2026-06-28 | Run 13 (gap-filling ingest): researched, downloaded, and ingested 6 papers spanning new themes (Category Theory, Research Methodology, Causal Discovery, Time Series, ABM/UQ, Dependence Modeling). **Gaps #3, #8, #9, #10, #13, #27 marked 🍂 covered** (#8 and #9 were 🌿 still relevant — vine copulas and PC/GES were the remaining holes, now filled). New note clusters (30 notes + 6 leaf indexes): #27 Monads → `Category Theory/Monads/` (Riehl, *Category Theory in Context* Ch. 5 — note: Leinster's book has no monads chapter, so Riehl was used instead); #3 Pre-registration → `Research Methodology/Pre-registration and Open Science/` (Nosek et al. 2018); #9 Causal discovery PC/GES → `Causal Discovery/Constraint and Score-Based Discovery/` (Glymour, Zhang & Spirtes 2019); #13 State-space/Kalman → `Bayesian Statistics/Causal Inference/Time Series Causal Inference/State-Space and Kalman Filter/` (Särkkä 2013); #10 Global sensitivity → `Agent-Based Modeling/Calibration and Validation/Sensitivity Analysis/` (GSA Methods Review 2024); #8 Vine copulas → `Econometrics/Dependence Modeling/Vine Copulas/` (Aas 2016). Updated 6 parent indexes with sub-topic routing. Fixed non-standard `[[../...]]` relative wikilinks in the new clusters to vault-root-relative paths. Ran vault-repair afterward (no broken links; added reciprocal backlinks from anchor notes). Remaining open gaps: #11, #15, #16, #17, #18, #21, #22, #23, #25, #26. |

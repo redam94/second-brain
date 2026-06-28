@@ -16,6 +16,7 @@ depends_on:
   - "[[Bayesian Structural Time-Series Model]]"
 used_by:
   - "[[MCMC Inference for CausalImpact]]"
+  - "[[Linear-Gaussian State-Space Models]]"
 aliases:
   - local linear trend model
   - state-space trend
@@ -111,3 +112,4 @@ The overall matrices $T_t$, $R_t$, $Q_t$ become **block-diagonal** with one bloc
 - [[Bayesian Structural Time-Series Model]] — full state-space setup
 - [[MCMC Inference for CausalImpact]] — how these components are estimated
 - [[Single Marketing Time Series]] — ARIMA and classical time series models that these state-space components complement
+- [[Linear-Gaussian State-Space Models]] — these are state components of the general state-space form

@@ -19,6 +19,7 @@ used_by:
   - "[[Nonparametric Causal Inference]]"
   - "[[Differences-in-Differences]]"
   - "[[Instrumental Variables]]"
+  - "[[PC Algorithm and Constraint-Based Discovery]]"
 aliases:
   - DAGs
   - directed acyclic graph
@@ -236,3 +237,4 @@ When a confounder creates a spurious correlation, we see an aggregate correlatio
 - [[Instrumental Variables]] — When backdoor adjustment is insufficient (unobserved confounders)
 - [[Regression and the CEF]] — regression is the estimator applied once a valid adjustment set is identified from the DAG
 - [[Conditional Independence Assumption]] — CIA is the statistical assumption that a valid DAG adjustment set justifies
+- [[PC Algorithm and Constraint-Based Discovery]] — learning the DAG from data (vs reasoning about a given DAG)

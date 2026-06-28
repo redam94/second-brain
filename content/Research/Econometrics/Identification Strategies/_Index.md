@@ -4,14 +4,15 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/Econometrics/_Index|Econometrics]]"
-date_updated: 2026-04-16
+date_updated: 2026-06-28
 concept_count: 16
 ---
 
 # Identification Strategies
 
 > [!abstract] Routing Summary
-> This folder covers quasi-experimental methods from MHE Chapters 4-6, plus Bayesian and advanced synthetic control methods, DAG-based causal identification, and Bayesian propensity score weighting. Contains 16 notes.
+> This folder covers quasi-experimental methods from MHE Chapters 4-6, plus Bayesian and advanced synthetic control methods, DAG-based causal identification, and Bayesian propensity score weighting. Contains 16 notes plus the Propensity Score Matching sub-topic.
+> - Need the classical Rosenbaum-Rubin propensity-score matching framework, caliper matching, covariate-balance and overlap diagnostics? → [[Research/Econometrics/Identification Strategies/Propensity Score Matching/_Index|Propensity Score Matching]]
 > - Need instrumental variables or 2SLS? → [[Instrumental Variables]]
 > - Need LATE theorem or complier characterization? → [[Local Average Treatment Effects]]
 > - Need difference-in-differences or fixed effects? → [[Differences-in-Differences]]
@@ -25,6 +26,12 @@ concept_count: 16
 > - Need GSC for multiple treated units with IFE model and bootstrap inference? → [[Generalized Synthetic Control Method]]
 > - Need DAG concepts, forks/chains/colliders, backdoor adjustment, d-separation? → [[DAGs and Causal Identification]]
 > - Need Bayesian inverse probability weighting / Liao-Zigler marginalization method? → [[Bayesian Propensity Score Weighting]]
+
+## Sub-topics
+
+| Sub-topic | Notes | Covers |
+|-----------|-------|--------|
+| [[Research/Econometrics/Identification Strategies/Propensity Score Matching/_Index\|Propensity Score Matching]] | 5 | Propensity score & the balancing property (Rosenbaum-Rubin), matching methods & distance measures (nearest-neighbor, caliper, Mahalanobis, full/optimal), covariate balance diagnostics, common support / overlap — Stuart (2010) |
 
 ## Concept Map
 

@@ -2,20 +2,27 @@
 title: "Index: Dependence Modeling"
 tags: [type/index, source/ingested]
 parent: "[[../_Index|Econometrics]]"
-date_updated: 2026-06-17
+date_updated: 2026-06-28
 concept_count: 6
 ---
 
 # Dependence Modeling
 
 > [!abstract] Routing Summary
-> High-dimensional dependence (copula) modelling for economic/financial variables, from Oh & Patton (2012) "Modelling Dependence in High Dimensions with Factor Copulas". Covers the factor-copula construction, its tail-dependence theory via EVT, multi-factor/block extensions, SMM estimation, and the S&P 100 / systemic-risk application.
+> High-dimensional dependence (copula) modelling for economic/financial variables. The factor-copula notes come from Oh & Patton (2012); the **Vine Copulas** sub-topic (Aas 2016) covers the pair-copula-construction / R-vine architecture.
 > - Need the motivation, contribution, and big picture? -> [[Factor Copulas - Overview]]
 > - Need the latent factor model defining the copula? -> [[Factor Copula Construction]]
 > - Need analytical tail-dependence coefficients (correlated crashes/booms)? -> [[Tail Dependence in Factor Copulas]]
 > - Need multiple factors, heterogeneous or industry-block dependence? -> [[Multi-Factor and Block Dependence Structures]]
 > - Need the estimation method (no closed-form likelihood, rank-based SMM)? -> [[SMM Estimation of Factor Copulas]]
 > - Need the empirical results, asymmetric dependence, or systemic risk? -> [[Factor Copula Application - S&P 100 and Systemic Risk]]
+> - Need vine / pair-copula constructions (C-vine, D-vine, R-vine, simplifying assumption, Dißmann)? -> [[Econometrics/Dependence Modeling/Vine Copulas/_Index|Vine Copulas]]
+
+## Sub-topics
+
+| Sub-topic | Notes | Covers |
+|-----------|-------|--------|
+| [[Econometrics/Dependence Modeling/Vine Copulas/_Index\|Vine Copulas]] | 5 | Pair-copula constructions, C-vines / D-vines / regular vines, the simplifying assumption, sequential estimation & Dißmann's structure-selection algorithm — Aas (2016) |
 
 ## Concept Map
 

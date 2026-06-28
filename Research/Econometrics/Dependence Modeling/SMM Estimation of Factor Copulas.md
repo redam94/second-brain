@@ -15,6 +15,7 @@ depends_on:
   - "[[Multi-Factor and Block Dependence Structures]]"
 used_by:
   - "[[Factor Copula Application - S&P 100 and Systemic Risk]]"
+  - "[[Estimation and Structure Selection for Vines]]"
 aliases:
   - SMM factor copula estimation
   - simulated method of moments copula
@@ -88,4 +89,5 @@ The "moments" are functions of **rank statistics** — strictly, this is not cla
 - [[Method of Simulated Moments]] — the underlying MSM/GMM framework.
 - [[SMM Weighting Matrix and Inference]] — weight-matrix choice and inference in SMM generally.
 - [[Bayesian copula estimation Describing correlated joint distributions]] — contrast: a **Bayesian** (PyMC) Gaussian-copula estimation, vs the **frequentist** simulation-based moment-matching used here.
+- [[Estimation and Structure Selection for Vines]] — alternative estimation/selection approach
 - [[../_Index|Econometrics]]

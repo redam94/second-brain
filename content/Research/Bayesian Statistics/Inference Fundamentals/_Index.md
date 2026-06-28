@@ -4,20 +4,27 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/Bayesian Statistics/_Index|Bayesian Statistics]]"
-date_updated: 2026-04-09
+date_updated: 2026-06-28
 concept_count: 9
 ---
 
 # Inference Fundamentals
 
 > [!abstract] Routing Summary
-> This folder covers the foundations of Bayesian inference from BDA3 Part I and Statistical Rethinking Chapters 1-3. Contains 8 notes.
+> This folder covers the foundations of Bayesian inference from BDA3 Part I and Statistical Rethinking Chapters 1-3. Contains 8 notes plus the Empirical Bayes sub-topic.
 > - Need Bayes' theorem and notation? -> [[Probability and Bayesian Inference]]
 > - Need conjugate priors (beta-binomial, normal)? -> [[Single-Parameter Models]]
 > - Need hierarchical/partial pooling? -> [[Hierarchical Models]]
 > - Need how partial pooling replaces multiple comparisons corrections? -> [[Partial Pooling as Multiple Comparisons Correction]]
+> - Need empirical Bayes, the James-Stein estimator, or shrinkage/risk-dominance theory? -> [[Research/Bayesian Statistics/Inference Fundamentals/Empirical Bayes/_Index|Empirical Bayes]]
 > - Need posterior samples, HPDI, loss functions? -> [[Posterior Sampling and Summarization]]
 > - Need Bayesian updating intuition? -> [[Garden of Forking Data]]
+
+## Sub-topics
+
+| Sub-topic | Notes | Covers |
+|-----------|-------|--------|
+| [[Research/Bayesian Statistics/Inference Fundamentals/Empirical Bayes/_Index\|Empirical Bayes]] | 5 | Robbins' formula, the James-Stein estimator, Stein's paradox / risk dominance, parametric EB and the empirical-Bayes view of shrinkage — Efron, *Large-Scale Inference* Ch. 1 |
 
 ## Concept Map
 

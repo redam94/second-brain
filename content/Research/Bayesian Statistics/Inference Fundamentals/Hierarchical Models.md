@@ -30,6 +30,7 @@ used_by:
   - "[[Evaluating Fitted Models]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
   - "[[Horseshoe and Regularized Horseshoe Priors]]"
+  - "[[Empirical Bayes - Overview]]"
 ---
 
 # Hierarchical Models
@@ -148,3 +149,4 @@ Hierarchical models appear naturally in causal inference:
 - [[Generalized Linear Models]] — hierarchical GLMs add group-level random effects to non-Gaussian likelihoods
 - [[Efficient MCMC]] — HMC with non-centered parameterization is required for efficient sampling from hierarchical posteriors
 - [[Power Analysis and Sample Size]] — multilevel models improve effective power by pooling information across groups
+- [[Empirical Bayes - Overview]] — empirical-Bayes estimation of the prior, the frequentist analogue of hierarchical pooling

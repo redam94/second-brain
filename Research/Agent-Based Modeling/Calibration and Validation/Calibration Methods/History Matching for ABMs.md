@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[Approximate Bayesian Computation for ABMs]]"
   - "[[ABM Calibration Case Studies]]"
+  - "[[Global Sensitivity Analysis - Overview]]"
 aliases:
   - HM calibration
   - History matching ABM
@@ -105,3 +106,4 @@ In the SugarScape toy model (2 parameters: metabolism $\in [1,4]$, vision $\in [
 - [[HM-ABC Calibration Framework]] — the combined pipeline
 - [[Approximate Bayesian Computation for ABMs]] — the next step after HM
 - [[ABM Calibration Case Studies]] — worked HM examples on three models
+- [[Global Sensitivity Analysis - Overview]] — active-variable identification relates to sensitivity

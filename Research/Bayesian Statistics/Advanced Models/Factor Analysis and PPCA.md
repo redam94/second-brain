@@ -21,6 +21,7 @@ depends_on:
 used_by:
   - "[[Confirmatory Factor Analysis and SEM]]"
   - "[[Copula Estimation]]"
+  - "[[Vine Copulas - Overview]]"
 ---
 
 # Factor Analysis and Probabilistic PCA (PPCA)
@@ -127,3 +128,4 @@ Model quality can be assessed by comparing the reconstruction $\hat{X} = WF$ aga
 - [[Generalized Linear Models]] — Linear Gaussian models in the GLM framework
 - [[Approximation Methods]] — ADVI and variational inference methods used here
 - [[raw/Factor analysis]] — Full PyMC tutorial with code and plots
+- [[Vine Copulas - Overview]] — latent-structure vs pairwise dependence modeling

@@ -17,6 +17,7 @@ depends_on:
   - "[[Uncertainty Quantification for ABM Calibration]]"
 used_by:
   - "[[ABM Calibration Case Studies]]"
+  - "[[Global Sensitivity Analysis - Overview]]"
 aliases:
   - ABC calibration
   - rejection sampling ABC
@@ -118,3 +119,4 @@ From 100-parameter accuracy tests (Section 5.16–5.17):
 - [[HM-ABC Calibration Framework]] — the combined pipeline
 - [[Uncertainty Quantification for ABM Calibration]] — the uncertainty components feeding $\varepsilon$
 - [[ABM Calibration Case Studies]] — ABC applied to three models
+- [[Global Sensitivity Analysis - Overview]] — screening parameters before calibration

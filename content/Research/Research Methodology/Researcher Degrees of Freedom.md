@@ -24,6 +24,7 @@ used_by:
   - "[[Power Analysis and Sample Size]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Pre-registration and Open Science - Overview]]"
 ---
 
 # Researcher Degrees of Freedom
@@ -71,3 +72,4 @@ This mechanism explains why:
 - [[Forking Paths and Bayesian Approaches]] — alternatives to p-value-based inference
 - [[Omitted Variables Bias]] — a related source of analytical error
 - [[Hierarchical Models]] — partial pooling provides a structural solution by shrinking estimates across researcher-chosen subgroups
+- [[Pre-registration and Open Science - Overview]] — pre-registration constrains these degrees of freedom

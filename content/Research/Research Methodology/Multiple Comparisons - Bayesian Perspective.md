@@ -22,6 +22,7 @@ used_by:
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Empirical Bayes Interpretation of Shrinkage]]"
 aliases:
   - "Gelman Hill Yajima 2009"
   - "Why we don't have to worry about multiple comparisons"
@@ -126,3 +127,4 @@ The IHDP model is extended to include birth-weight subgroups (lighter vs. heavie
 - [[Hierarchical Linear Models]] — regression extensions of multilevel models
 - [[Power Analysis and Sample Size]] — underpowered studies amplify Type S and Type M errors
 - [[The Experimental Ideal]] — well-designed experiments with pre-registration reduce the multiplicity that motivates this paper's argument
+- [[Empirical Bayes Interpretation of Shrinkage]] — EB / local-FDR connection to multiple comparisons

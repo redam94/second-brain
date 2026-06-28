@@ -21,6 +21,7 @@ used_by:
   - "[[Spike-and-Slab Prior for Covariate Selection]]"
   - "[[MCMC Inference for CausalImpact]]"
   - "[[Counterfactual Impact Estimation]]"
+  - "[[The Kalman Filter]]"
 aliases:
   - structural time-series model
   - BSTS model
@@ -122,3 +123,4 @@ The model shows:
 - [[Single Marketing Time Series]] — ARIMA-based univariate approach that BSTS generalises
 - [[Carryover Effects and Distributed Lags]] — marketing carryover through a different (ADL) lens
 - [[Fitting and Validating Computation]] — MCMC validation for the BSTS sampler
+- [[The Kalman Filter]] — the filter/smoother BSTS inference relies on

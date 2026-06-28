@@ -4,19 +4,26 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
-date_updated: 2026-04-09
+date_updated: 2026-06-28
 concept_count: 9
 ---
 
 # Regression Models
 
 > [!abstract] Routing Summary
-> This folder covers Bayesian regression from BDA3 Part IV, Statistical Rethinking Chapters 4-5, and PyMC tutorials. Contains 9 notes.
+> This folder covers Bayesian regression from BDA3 Part IV, Statistical Rethinking Chapters 4-5, and PyMC tutorials. Contains 9 notes plus the Shrinkage Priors sub-topic.
 > - Need priors as regularization (ridge/lasso/horseshoe)? -> [[Bayesian Linear Regression]]
+> - Need the horseshoe / regularized horseshoe / global-local shrinkage family in depth? -> [[Shrinkage Priors/_Index|Shrinkage Priors]]
 > - Need multilevel/varying slopes models? -> [[Hierarchical Linear Models]]
 > - Need logistic or Poisson regression? -> [[Generalized Linear Models]]
 > - Need missing data (multiple imputation or DAG-based)? -> [[Missing Data Models]] or [[Missing Data - Statistical Rethinking]]
 > - Need counterfactual prediction or causal regression? -> [[Counterfactual Inference]]
+
+## Sub-topics
+
+| Sub-topic | Notes | Covers |
+|-----------|-------|--------|
+| [[Shrinkage Priors/_Index\|Shrinkage Priors]] | 5 | Global-local shrinkage, the horseshoe and regularized (Finnish) horseshoe, effective number of nonzeros, choosing the global scale — Piironen & Vehtari (2017) |
 
 ## Concept Map
 

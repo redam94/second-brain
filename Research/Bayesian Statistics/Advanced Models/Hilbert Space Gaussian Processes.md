@@ -22,6 +22,7 @@ depends_on:
   - "[[Spatial Models - BYM]]"
 used_by:
   - "[[Spatial Models - BYM]]"
+  - "[[State-Space Models and the Kalman Filter - Overview]]"
 ---
 
 # Hilbert Space Gaussian Processes (HSGPs)
@@ -99,3 +100,4 @@ The HSGP decomposition makes sampling feasible on daily data over 20 years.
 - [[Spatial Models - BYM]] — graph Laplacian ICAR model, conceptually related via spectral decomposition
 - [[Local Linear Trend and Seasonality]] — state-space counterpart for trend + seasonal decomposition
 - [[Bayesian Structural Time-Series Model]] — classical modular decomposition that HSGP can replace or augment
+- [[State-Space Models and the Kalman Filter - Overview]] — GP/state-space duality for time series

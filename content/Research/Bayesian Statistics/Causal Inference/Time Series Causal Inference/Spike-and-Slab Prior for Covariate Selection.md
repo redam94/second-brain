@@ -17,6 +17,7 @@ depends_on:
   - "[[Bayesian Structural Time-Series Model]]"
 used_by:
   - "[[MCMC Inference for CausalImpact]]"
+  - "[[The Horseshoe Prior]]"
 aliases:
   - spike-and-slab prior
   - Bayesian variable selection BSTS
@@ -115,3 +116,4 @@ Each full-conditional $p(\varrho_j \mid \varrho_{-j}, \ldots)$ evaluates easily 
 
 - [[Bayesian Structural Time-Series Model]] — full model
 - [[MCMC Inference for CausalImpact]] — how this prior is sampled
+- [[The Horseshoe Prior]] — continuous global-local alternative to spike-and-slab for sparsity

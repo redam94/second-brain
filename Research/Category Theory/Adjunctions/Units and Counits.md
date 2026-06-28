@@ -16,6 +16,7 @@ depends_on:
   - "[[Adjoint Functors]]"
 used_by:
   - "[[Synthesis/Adjoints and Limits]]"
+  - "[[Adjunctions Induce Monads]]"
 aliases:
   - unit of adjunction
   - counit of adjunction
@@ -92,3 +93,4 @@ One checks that these are mutual inverses using the triangle identities.
 - [[Adjunctions via Initial Objects]] — Universal maps and the unit's universal property
 - [[Synthesis/Adjoints and Limits]] — How units/counits are used in preservation proofs
 - [[Cartesian Closed Categories]] — the Product/Hom adjunction example (unit = currying, counit = evaluation) is the canonical CCC instance
+- [[Adjunctions Induce Monads]] — the T=GF monad induced by the adjunction this note defines

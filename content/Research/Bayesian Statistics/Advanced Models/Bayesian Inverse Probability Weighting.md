@@ -18,7 +18,8 @@ depends_on:
   - "[[Directed Acyclic Graphs]]"
   - "[[The Selection Problem]]"
   - "[[Hierarchical Models]]"
-used_by: []
+used_by:
+  - "[[Propensity Score Matching - Overview]]"
 aliases:
   - Bayesian IPW
   - Bayesian propensity scores
@@ -211,3 +212,4 @@ Visualizing the weighted propensity score distributions shows that IPTW makes th
 - [[Frequentist Causal Estimation]] — the frequentist side: classical IPW, doubly robust estimators, and AIPW
 - [[Bayesian Propensity Score Weighting]] — Bayesian propensity score weighting in the econometrics identification strategies framework
 - [[Propensity Score in Bayesian CI]] — the role of the propensity score within the full Bayesian causal inference pipeline
+- [[Propensity Score Matching - Overview]] — frequentist propensity-score matching alternative to IPW

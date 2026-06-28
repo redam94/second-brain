@@ -4,18 +4,25 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/Econometrics/_Index|Econometrics]]"
-date_updated: 2026-04-11
+date_updated: 2026-06-28
 concept_count: 4
 ---
 
 # Foundations
 
 > [!abstract] Routing Summary
-> This folder covers the conceptual foundations of applied econometrics and causal inference. Contains 4 notes.
+> This folder covers the conceptual foundations of applied econometrics and causal inference. Contains 4 notes plus the Randomization Inference sub-topic.
 > - Need the four FAQs framework for empirical research? -> [[Research Questions in Econometrics]]
 > - Need why randomization is the gold standard? -> [[The Experimental Ideal]]
 > - Need potential outcomes and selection bias? -> [[The Selection Problem]]
 > - Need DAGs, d-separation, backdoor adjustment, valid adjustment sets? -> [[Directed Acyclic Graphs]]
+> - Need Fisher randomization tests, sharp vs weak nulls, studentized/permutation inference? -> [[Research/Econometrics/Foundations/Randomization Inference/_Index|Randomization Inference]]
+
+## Sub-topics
+
+| Sub-topic | Notes | Covers |
+|-----------|-------|--------|
+| [[Research/Econometrics/Foundations/Randomization Inference/_Index\|Randomization Inference]] | 5 | Fisher randomization test & the sharp null, sharp vs weak (Neyman) nulls, studentized randomization tests with dual finite-sample/asymptotic validity, permutation tests & exact inference — Wu & Ding (2021) |
 
 ## Concept Map
 

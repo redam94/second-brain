@@ -13,7 +13,8 @@ depends_on:
   - "[[Limits and Colimits/Products and Equalizers]]"
   - "[[Adjunctions/Adjoint Functors]]"
   - "[[Foundations/Functor Categories]]"
-used_by: []
+used_by:
+  - "[[Beck's Monadicity Theorem]]"
 aliases:
   - CCC
   - cartesian closed category
@@ -103,3 +104,4 @@ When the monoidal product $\otimes$ is not the cartesian product $\times$, but s
 - [[Limits and Colimits/Products and Equalizers]] — Products, one ingredient of CCCs
 - [[Adjunctions/Adjoint Functors]] — The adjunction $- \times B \dashv (-)^B$
 - [[Synthesis/Limits in Presheaf Categories]] — Why presheaf categories are CCC
+- [[Beck's Monadicity Theorem]] — monadicity / algebraic structure connection

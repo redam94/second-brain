@@ -19,6 +19,7 @@ depends_on:
   - "[[Spike-and-Slab Prior for Covariate Selection]]"
 used_by:
   - "[[Counterfactual Impact Estimation]]"
+  - "[[The Kalman Filter]]"
 aliases:
   - Gibbs sampler CausalImpact
   - Kalman filter smoother BSTS
@@ -89,3 +90,4 @@ This is the distribution of what would have happened had no intervention occurre
 
 - [[Bayesian Structural Time-Series Model]] — model being inferred
 - [[Counterfactual Impact Estimation]] — how posterior predictive draws are used
+- [[The Kalman Filter]] — the simulation smoother builds on the Kalman recursion

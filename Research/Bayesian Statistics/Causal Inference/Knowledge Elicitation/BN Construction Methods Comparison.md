@@ -17,6 +17,7 @@ depends_on: []
 used_by:
   - "[[LLM Expert Elicitation for Bayesian Networks]]"
   - "[[Entropy-Based BN Evaluation]]"
+  - "[[Causal Discovery - Overview]]"
 aliases:
   - BN I BN II BN III comparison
 ---
@@ -102,3 +103,4 @@ Lower entropy = more structured, clearer dependencies. LLM wins on mean and min 
 - [[Entropy-Based BN Evaluation]] — quantitative comparison
 - [[LLM Expert Elicitation for Bayesian Networks]] — full BN III methodology
 - [[Directed Acyclic Graphs]] — the causal DAG theory that underpins BN structure and d-separation
+- [[Causal Discovery - Overview]] — data-driven structure learning vs expert elicitation

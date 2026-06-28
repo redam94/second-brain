@@ -26,6 +26,7 @@ used_by:
   - "[[Power Analysis and Sample Size]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Prediction vs Postdiction]]"
 ---
 
 # The Garden of Forking Paths
@@ -67,3 +68,4 @@ Conditional on the observed data, each analytic choice seems like the *only* rea
 - [[Forking Paths and Bayesian Approaches]] — how Bayesian methods address this
 - [[The Experimental Ideal]] — why randomized experiments mitigate these issues
 - [[Hierarchical Models]] — partial pooling provides a structural Bayesian solution to the multiplicity problem
+- [[Prediction vs Postdiction]] — pre-commitment makes the confirmatory/exploratory line explicit

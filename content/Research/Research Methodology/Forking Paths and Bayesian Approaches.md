@@ -25,6 +25,7 @@ used_by:
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Pre-registration and Open Science - Overview]]"
 ---
 
 # Forking Paths and Bayesian Approaches
@@ -70,3 +71,4 @@ For example, Bem's ESP result (53.1% hit rate, $p = 0.01$) can be reanalyzed: wi
 - [[The Experimental Ideal]] — pre-registration as a complementary (frequentist) safeguard
 - [[Asymptotics and Frequentist Connections]] — how Bayesian and frequentist inference relate formally
 - [[Power Analysis and Sample Size]] — under-powered studies amplify forking paths; Bayesian posterior simulation as an alternative to power calculations
+- [[Pre-registration and Open Science - Overview]] — how to actually pre-register (the practice this note recommends)

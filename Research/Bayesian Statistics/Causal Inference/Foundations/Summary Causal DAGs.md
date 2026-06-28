@@ -19,6 +19,7 @@ used_by:
   - "[[CaGReS Algorithm]]"
   - "[[s-Separation in Summary DAGs]]"
   - "[[Do-Calculus in Summary Causal DAGs]]"
+  - "[[Causal Discovery - Overview]]"
 aliases:
   - summary DAG
   - causal DAG summarization problem
@@ -135,3 +136,4 @@ This NP-hardness motivates the greedy approximation in [[CaGReS Algorithm]].
 - [[Zeng 2025 - Overview]] — paper overview
 - [[Frequentist Causal Estimation]] — the adjustment set framework that CI preservation in summary DAGs must protect
 - [[Bayesian Outcome Models]] — Bayesian causal estimation that relies on DAG structure for confounding adjustment
+- [[Causal Discovery - Overview]] — structure learning precedes DAG summarization

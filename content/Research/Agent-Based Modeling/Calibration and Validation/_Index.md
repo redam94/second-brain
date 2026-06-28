@@ -4,20 +4,22 @@ tags:
   - type/index
   - source/ingested
 parent: "[[../_Index|Agent-Based Modeling]]"
-date_updated: 2026-04-11
+date_updated: 2026-06-28
 ---
 
 # Calibration and Validation
 
 > [!abstract] Routing Summary
-> This topic covers the challenges and methods for calibrating and validating agent-based models. Contains 3 sub-topics and 10 total notes.
+> This topic covers the challenges and methods for calibrating and validating agent-based models. Contains 4 sub-topics and 15 total notes.
 > - For calibration methods (GA, HM+ABC, uncertainty quantification) -> [[Research/Agent-Based Modeling/Calibration and Validation/Calibration Methods/_Index|Calibration Methods]]
 > - For experimental design and parameter sensitivity -> [[Experimental Design/_Index|Experimental Design]]
+> - For global (variance-based) sensitivity analysis — Sobol, Morris, FAST -> [[Research/Agent-Based Modeling/Calibration and Validation/Sensitivity Analysis/_Index|Sensitivity Analysis]]
 > - For validation challenges and standards -> [[Research/Agent-Based Modeling/Calibration and Validation/Validation/_Index|Validation]]
 
 ## Sub-topics
 - [[Research/Agent-Based Modeling/Calibration and Validation/Calibration Methods/_Index|Calibration Methods]] — COVERS: ABM calibration overview (3 approaches), GA calibration (chromosome encoding, GA operators, convergence), Result-Analysis Module (macro/micro fitness), HM+ABC framework (implausibility score $I^r(x) = d^2/(V_s+V_o+V_m)$, wave-based pruning, ABC rejection sampling, $\varepsilon = 3(V_o+V_s+V_m)$), uncertainty quantification (4 sources: parameter uncertainty, model discrepancy, ensemble variance, observation uncertainty), case studies (SugarScape 10 waves, territorial birds 3,185 vs 11,000+ runs, RISC Scottish farms 16 binary variants + POM)
 - [[Experimental Design/_Index|Experimental Design]] — COVERS: parameter initialization distributions, one-at-a-time experimental design, 100-replication strategy, WOM toggle, benchmark configuration, sensitivity findings
+- [[Research/Agent-Based Modeling/Calibration and Validation/Sensitivity Analysis/_Index|Sensitivity Analysis]] — COVERS: global (variance-based) sensitivity analysis — Sobol first-order & total-effect indices, the ANOVA/HDMR decomposition, Morris elementary-effects screening ($\mu^*,\sigma$), Saltelli sampling & FAST, local-vs-global pitfalls, SALib (5 notes; GSA review 2024)
 - [[Research/Agent-Based Modeling/Calibration and Validation/Validation/_Index|Validation]] — COVERS: Merson's plausibility criterion, Troitzsch's systematic validation difficulty, input-output mismatch, stochastic variation, the plausibility standard
 
 ## Cross-Cutting Concepts

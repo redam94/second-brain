@@ -21,6 +21,7 @@ depends_on:
   - "[[Hierarchical Linear Models]]"
 used_by:
   - "[[Social Network Models]]"
+  - "[[Pair-Copula Constructions]]"
 ---
 
 # Bayesian Copula Estimation
@@ -117,6 +118,7 @@ with pm.Model() as copula_model:
 - [[Simulation-Based Estimation - Overview]] — Broader context: MSM, indirect inference, EMM
 - [[Discrete Choice Models]] — also uses LKJ Cholesky decomposition for correlation structure among alternatives
 - [[Market Share Models]] — copula dependence structure relevant to multivariate market share modeling
+- [[Pair-Copula Constructions]] — high-dimensional construction beyond the bivariate case
 
 ## Source
 

@@ -24,6 +24,7 @@ depends_on:
 used_by:
   - "[[Transfer Function Model]]"
   - "[[Multivariate Persistence and Cointegration]]"
+  - "[[State-Space Models and the Kalman Filter - Overview]]"
 ---
 
 # Single Marketing Time Series
@@ -178,3 +179,7 @@ Common choices: $\lambda = 0.5$ (square root), $\lambda \to 0$ (log), $\lambda =
 - Parameter estimation methods for ARIMA models: [[Parameter Estimation in Market Response]]
 - Bayesian state-space alternative to ARIMA: [[Bayesian Structural Time-Series Model]]
 - Model selection (AIC/BIC for order selection): [[Model Selection and Exploratory Analysis]]
+
+## See Also
+
+- [[State-Space Models and the Kalman Filter - Overview]] — ARIMA as a special-case state-space model

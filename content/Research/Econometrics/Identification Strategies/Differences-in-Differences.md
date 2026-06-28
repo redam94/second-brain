@@ -29,6 +29,7 @@ used_by:
   - "[[Observational vs Experimental Methods in Advertising]]"
   - "[[Generalized Synthetic Control Method]]"
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
+  - "[[Randomization Inference - Overview]]"
 ---
 
 # Differences-in-Differences
@@ -108,3 +109,4 @@ Advantages:
 - [[Model Checking]] — posterior predictive checks for validating common trends assumptions
 - [[Data Collection Models]] — Bayesian ignorability framework: DiD is the fix when standard ignorability fails
 - [[Counterfactual Inference]] — explicit counterfactual framing of the treatment effect DiD estimates
+- [[Randomization Inference - Overview]] — permutation/randomization inference for DiD designs

@@ -20,6 +20,7 @@ depends_on:
   - "[[Quantile Regression]]"
 used_by:
   - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[Random Coefficients Logit Model]]"
 ---
 
 # Discrete Choice Models
@@ -125,3 +126,4 @@ Discrete choice data can be structured in either **wide format** (one row per de
 - [[Hierarchical Linear Models]] — Mixed logit / random-coefficient extensions
 - [[raw/Discrete Choice and Random Utility Models]] — Full PyMC tutorial with code
 - [[Market Share Models]] — MCI and MNL choice models applied in marketing science; same logit foundation used for brand-level market share estimation
+- [[Random Coefficients Logit Model]] — the random-coefficients extension relaxing IIA

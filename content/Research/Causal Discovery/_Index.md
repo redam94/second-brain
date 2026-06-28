@@ -4,7 +4,7 @@ tags:
   - type/index
   - source/ingested
 parent: "[[../_Index|Research]]"
-date_updated: 2026-06-17
+date_updated: 2026-06-28
 concept_count: 5
 ---
 
@@ -12,13 +12,20 @@ concept_count: 5
 
 > [!abstract] Routing Summary
 > This folder covers **causal structure learning / discovery** — learning the structure of
-> directed acyclic graphs (DAGs / Bayesian networks) from data. Currently centered on **NOTEARS**
-> (Zheng et al., 2018), which recasts DAG learning as continuous optimization. 5 concept notes + 1 paper.
-> - Want the paper in one page? → [[NOTEARS - Overview]]
+> directed acyclic graphs (DAGs / Bayesian networks) from data. The **NOTEARS** notes (Zheng et al., 2018) cover the
+> continuous-optimization approach; the **Constraint and Score-Based Discovery** sub-topic covers the classical PC/FCI/GES/FCM families (Glymour, Zhang & Spirtes 2019).
+> - Want the NOTEARS paper in one page? → [[NOTEARS - Overview]]
 > - Need the problem setup (SEM, score functions, NP-hardness)? → [[DAG Structure Learning Problem]]
 > - Need **the key theorem** ($h(W)=\mathrm{tr}\,e^{W\circ W}-d$, acyclicity)? → [[Smooth Characterization of Acyclicity]]
 > - Need the optimization (augmented Lagrangian, L-BFGS, thresholding, Algorithm 1)? → [[NOTEARS Algorithm]]
 > - Need empirical results (vs FGS, SHD/FDR, Sachs data)? → [[NOTEARS Experiments]]
+> - Need the PC algorithm, FCI, GES, or LiNGAM/ANM (constraint- & score-based discovery)? → [[Research/Causal Discovery/Constraint and Score-Based Discovery/_Index|Constraint and Score-Based Discovery]]
+
+## Sub-topics
+
+| Sub-topic | Notes | Covers |
+|-----------|-------|--------|
+| [[Research/Causal Discovery/Constraint and Score-Based Discovery/_Index\|Constraint and Score-Based Discovery]] | 5 | Markov & faithfulness assumptions / CPDAG, the PC algorithm & FCI (constraint-based), GES (score-based), functional causal models (LiNGAM, ANM) — Glymour, Zhang & Spirtes (2019) |
 
 ## Concept Map
 

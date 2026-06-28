@@ -23,6 +23,8 @@ used_by:
   - "[[Forking Paths and Bayesian Approaches]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[James-Stein Estimator]]"
+  - "[[Empirical Bayes - Overview]]"
 aliases:
   - "Shrinkage as multiple comparisons correction"
   - "Partial pooling z-score reduction"
@@ -159,3 +161,5 @@ Functions in the `arm` package can then sample from the posterior distribution f
 - [[Hierarchical Linear Models]] — regression extensions with partial pooling
 - [[Forking Paths and Bayesian Approaches]] — complementary Bayesian perspective on multiplicity
 - [[Single-Parameter Models]] — building block: precision-weighted averaging
+- [[James-Stein Estimator]] — the frequentist shrinkage estimator this note cites (Efron & Morris)
+- [[Empirical Bayes - Overview]] — empirical-Bayes view of shrinkage and its FDR connections

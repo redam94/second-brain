@@ -17,6 +17,7 @@ used_by:
   - "[[Multi-Factor and Block Dependence Structures]]"
   - "[[SMM Estimation of Factor Copulas]]"
   - "[[Factor Copula Application - S&P 100 and Systemic Risk]]"
+  - "[[Vine Copulas - Overview]]"
 aliases:
   - Oh Patton 2012
   - Modelling Dependence in High Dimensions with Factor Copulas
@@ -79,4 +80,5 @@ This separation lets the researcher (i) estimate marginals using the large univa
 ## See Also
 
 - [[19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — general SMM method; this paper is a flagship application.
+- [[Vine Copulas - Overview]] — the alternative high-dimensional copula architecture
 - [[../_Index|Econometrics]]

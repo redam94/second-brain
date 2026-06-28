@@ -25,6 +25,7 @@ used_by:
   - "[[Social Network Models]]"
   - "[[Spatial Models - BYM]]"
   - "[[Copula Estimation]]"
+  - "[[Global-Local Shrinkage Priors]]"
 ---
 
 # Hierarchical Linear Models
@@ -60,3 +61,4 @@ $$\begin{pmatrix} \alpha_j \\ \beta_j \end{pmatrix} \sim N\!\left(\begin{pmatrix
 - [[Differences-in-Differences]] — frequentist fixed effects approach; HLM is the Bayesian alternative for panel data
 - [[Standard Errors and Clustering]] — clustering as a frequentist approach to the same grouped-data structure
 - [[Nonparametric Models Overview]] — GP and mixture model extensions when parametric hierarchical structure is insufficient
+- [[Global-Local Shrinkage Priors]] — shrinkage-prior view of the partial pooling used here

@@ -20,6 +20,7 @@ depends_on:
   - "[[The Experimental Ideal]]"
 used_by:
   - "[[Counterfactual Inference]]"
+  - "[[Randomization Inference - Overview]]"
 aliases:
   - synthetic controls
   - Abadie-Diamond-Hainmueller
@@ -220,3 +221,4 @@ Standard errors are not well-defined for $n=1$ treated unit. Instead, use **perm
 - [[Synthetic Control Inference and Diagnostics]] — inference methods and diagnostic plots beyond the basic Fisher test
 - [[Generalized Synthetic Control Method]] — interactive fixed effects generalization for multiple treated units
 - [[Abadie 2021 - Overview]] — Abadie's methodological overview and best-practices guidance
+- [[Randomization Inference - Overview]] — the general theory behind the placebo/permutation inference used here

@@ -4,17 +4,18 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-06-26
+date_updated: 2026-06-28
 concept_count: 16
 ---
 
 # Research Methodology
 
 > [!abstract] Routing Summary
-> This folder covers statistical methodology, the replication crisis, causal inference challenges, experimental design, and longitudinal methods. Contains 14 notes plus an Experimental Design subfolder (3 notes).
+> This folder covers statistical methodology, the replication crisis, causal inference challenges, experimental design, and longitudinal methods. Contains 14 notes plus an Experimental Design subfolder (3 notes) and a Pre-registration and Open Science subfolder (5 notes).
 > - Need the forking paths / p-hacking argument? -> [[Garden of Forking Paths]]
 > - Need sources of analytic flexibility? -> [[Researcher Degrees of Freedom]]
 > - Need Bayesian solutions to multiplicity? -> [[Forking Paths and Bayesian Approaches]]
+> - Need how to pre-register, registered reports, pre-analysis plans, or the OSF/AEA ecosystem? -> [[Research Methodology/Pre-registration and Open Science/_Index|Pre-registration and Open Science]]
 > - Need the full case against classical multiple comparisons corrections? -> [[Multiple Comparisons - Bayesian Perspective]]
 > - Need why observational ad measurement fails? -> [[Activity Bias in Advertising]]
 > - Need power analysis, multiple testing, or survival? -> [[Experimental Design/_Index|Experimental Design]]
@@ -49,6 +50,7 @@ concept_count: 16
 ## Sub-topics
 
 - [[Experimental Design/_Index|Experimental Design]] — Power analysis, multiple testing corrections, survival analysis (3 notes)
+- [[Pre-registration and Open Science/_Index|Pre-registration and Open Science]] — Prediction vs postdiction, pre-registration vs registered reports, pre-analysis plans & the OSF/AsPredicted/AEA ecosystem, limits & objections (5 notes; Nosek et al. 2018)
 
 ## Notes
 - [[Garden of Forking Paths]] — CONTAINS: Multiple comparisons as implicit forking, data-contingent analysis, why p-values are invalid when analysis is flexible

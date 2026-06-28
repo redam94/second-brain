@@ -18,6 +18,7 @@ used_by:
   - "[[Adjunctions via Initial Objects]]"
   - "[[Synthesis/Adjoints and Limits]]"
   - "[[Synthesis/Adjoint Functor Theorems]]"
+  - "[[Monads - Overview]]"
 aliases:
   - adjunction
   - adjoint functor
@@ -106,3 +107,4 @@ All four are equivalent; the choice of definition depends on context.
 - [[Adjunctions via Initial Objects]] — Universal maps and comma categories
 - [[Synthesis/Adjoints and Limits]] — Preservation theorem
 - [[Synthesis/Adjoint Functor Theorems]] — Existence theorems
+- [[Monads - Overview]] — monads arise from adjunctions

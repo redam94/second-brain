@@ -27,6 +27,7 @@ used_by:
   - "[[Regression Discontinuity Designs]]"
   - "[[Discrete Choice Models]]"
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
+  - "[[GMM Estimation and Instruments for Price Endogeneity]]"
 ---
 
 # Instrumental Variables
@@ -93,3 +94,4 @@ With heterogeneous effects, IV estimates the causal effect on **compliers** — 
 - [[Activity Bias in Advertising]] — real-world case where CIA fails and IV is the appropriate remedy
 - [[Bayesian Propensity Score Weighting]] — Bayesian selection-on-observables alternative; compare with IV when exclusion restriction is questionable
 - [[Parameter Estimation in Market Response]] — 2SLS used for price endogeneity in marketing mix models
+- [[GMM Estimation and Instruments for Price Endogeneity]] — IV/GMM for price endogeneity in demand estimation

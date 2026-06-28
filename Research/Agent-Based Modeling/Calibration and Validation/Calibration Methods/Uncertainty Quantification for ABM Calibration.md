@@ -17,6 +17,7 @@ used_by:
   - "[[History Matching for ABMs]]"
   - "[[Approximate Bayesian Computation for ABMs]]"
   - "[[HM-ABC Calibration Framework]]"
+  - "[[Global Sensitivity Analysis - Overview]]"
 aliases:
   - UQ for ABMs
   - ABM uncertainty sources
@@ -91,3 +92,4 @@ UQ-based calibration — HM + ABC — acknowledges these limitations and produce
 - [[History Matching for ABMs]] — uses all three variance components in the implausibility score
 - [[Approximate Bayesian Computation for ABMs]] — uses total uncertainty to set $\varepsilon$
 - [[HM-ABC Calibration Framework]] — the pipeline these uncertainties enable
+- [[Global Sensitivity Analysis - Overview]] — variance attribution complements UQ

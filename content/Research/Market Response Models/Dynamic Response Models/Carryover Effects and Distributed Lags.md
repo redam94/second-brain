@@ -30,6 +30,7 @@ used_by:
   - "[[Advertising and Promotion Effects]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
   - "[[Implementation of Market Response Models]]"
+  - "[[Linear-Gaussian State-Space Models]]"
 ---
 
 # Carryover Effects and Distributed Lags
@@ -205,3 +206,7 @@ A general rational lag is $B(L)/C(L)$ (Eq 4.72), which nests ADL models.
 - Transfer function extension: [[Transfer Function Model]]
 - Empirical carryover estimate ($\lambda \approx 0.43$ monthly): [[Advertising and Promotion Effects]]
 - Hysteresis in long-run analysis: [[Multivariate Persistence and Cointegration]]
+
+## See Also
+
+- [[Linear-Gaussian State-Space Models]] — dynamic models in state-space form
