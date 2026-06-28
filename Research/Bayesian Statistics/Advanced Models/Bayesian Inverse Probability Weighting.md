@@ -23,6 +23,7 @@ aliases:
   - Bayesian IPW
   - Bayesian propensity scores
   - Liao-Zigler method
+  - Bayesian Propensity Scores and IPW
   - IPTW Bayesian
 ---
 

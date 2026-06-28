@@ -111,7 +111,7 @@ The Bayesian version gives a posterior over the employment effect, propagating u
 
 - Frequentist DiD: [[Differences-in-Differences]] — fixed effects, common trends, classical CI
 - [[Counterfactual Inference]] — related counterfactual framework (pre/post, same group, no control)
-- [[Bayesian Non-parametric Causal Inference]] — non-parametric alternative when parallel trends is implausible
+- [[Nonparametric Causal Inference]] — non-parametric alternative when parallel trends is implausible
 - [[The Experimental Ideal]] and [[The Selection Problem]] — why we need quasi-experimental designs
 
 ## See Also
