@@ -17,6 +17,9 @@ used_by:
   - "[[General Structure of Bayesian CI]]"
   - "[[Propensity Score in Bayesian CI]]"
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
+  - "[[Propensity Score Matching]]"
+  - "[[Matching Algorithms and Caliper Matching]]"
+  - "[[Covariate Balance Diagnostics]]"
 aliases:
   - IPW estimator
   - doubly robust estimator

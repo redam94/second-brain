@@ -20,6 +20,7 @@ depends_on:
   - "[[The Selection Problem]]"
   - "[[Nonparametric Causal Inference]]"
   - "[[Bayesian Linear Regression]]"
+  - "[[Propensity Score Matching]]"
 used_by:
   - "[[Differences-in-Differences]]"
 aliases:
