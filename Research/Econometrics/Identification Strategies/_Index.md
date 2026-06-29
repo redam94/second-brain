@@ -4,14 +4,14 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Econometrics/_Index|Econometrics]]"
-date_updated: 2026-04-16
-concept_count: 16
+date_updated: 2026-06-29
+concept_count: 19
 ---
 
 # Identification Strategies
 
 > [!abstract] Routing Summary
-> This folder covers quasi-experimental methods from MHE Chapters 4-6, plus Bayesian and advanced synthetic control methods, DAG-based causal identification, and Bayesian propensity score weighting. Contains 16 notes.
+> This folder covers quasi-experimental methods from MHE Chapters 4-6, plus Bayesian and advanced synthetic control methods, DAG-based causal identification, propensity score matching, and Bayesian propensity score weighting. Contains 19 notes.
 > - Need instrumental variables or 2SLS? → [[Instrumental Variables]]
 > - Need LATE theorem or complier characterization? → [[Local Average Treatment Effects]]
 > - Need difference-in-differences or fixed effects? → [[Differences-in-Differences]]
@@ -24,6 +24,9 @@ concept_count: 16
 > - Need multiple treated units, bias correction, or matrix completion? → [[Synthetic Control Extensions]]
 > - Need GSC for multiple treated units with IFE model and bootstrap inference? → [[Generalized Synthetic Control Method]]
 > - Need DAG concepts, forks/chains/colliders, backdoor adjustment, d-separation? → [[DAGs and Causal Identification]]
+> - Need PSM theory (Rosenbaum-Rubin theorem, ATT estimand, balancing score)? → [[Propensity Score Matching]]
+> - Need NN matching, caliper matching, k:1, MatchIt R code? → [[Matching Algorithms and Caliper Matching]]
+> - Need SMDs, love plots, overlap plots, variance ratios after matching? → [[Covariate Balance Diagnostics]]
 > - Need Bayesian inverse probability weighting / Liao-Zigler marginalization method? → [[Bayesian Propensity Score Weighting]]
 
 ## Concept Map
@@ -42,6 +45,9 @@ concept_count: 16
 | Penalized SC, bias-corrected SC, elastic net, matrix completion | [[Synthetic Control Extensions]] | concept | [[Synthetic Control]], [[Synthetic Control Bias Theory]], [[Synthetic Control Inference and Diagnostics]] | Multiple extensions handle multiple treated units, sparse donors, and matrix completion |
 | IFE model, ATT estimand, 3-step GSC, bootstrap inference | [[Generalized Synthetic Control Method]] | concept | [[Synthetic Control]], [[Differences-in-Differences]], [[The Selection Problem]] | GSC unifies DiD and SC via interactive fixed effects; valid for multiple treated units |
 | DAGs, forks/chains/colliders, backdoor criterion, d-separation | [[DAGs and Causal Identification]] | concept | [[The Selection Problem]], [[The Experimental Ideal]] | Valid adjustment set blocks all backdoor paths; do-calculus enables causal inference from observational data |
+| Propensity score (balancing score), ATT estimand, PS sufficiency theorem | [[Propensity Score Matching]] | concept | [[Potential Outcomes Framework]], [[The Selection Problem]], [[Conditional Independence Assumption]] | PS sufficiency: CIA given X ⟹ CIA given e(X); reduces p-dim balancing to 1-dim |
+| NN matching, caliper (0.2 SD logit-e rule), k:1, with/without replacement, MatchIt | [[Matching Algorithms and Caliper Matching]] | concept | [[Propensity Score Matching]] | Caliper prevents poor matches; full matching is optimal; cluster SEs by matched pair |
+| SMD (|SMD| < 0.1), love plot, variance ratio, KS statistic, overlap plot | [[Covariate Balance Diagnostics]] | concept | [[Propensity Score Matching]], [[Matching Algorithms and Caliper Matching]] | Balance necessary but not sufficient — follow with sensitivity analysis |
 | Bayesian IPTW, Liao-Zigler marginalization, Rubin's rules SE | [[Bayesian Propensity Score Weighting]] | concept | [[DAGs and Causal Identification]], [[The Selection Problem]], [[Bayesian Linear Regression]] | Marginalize over posterior propensity scores to incorporate treatment-model uncertainty |
 
 ## Notes
@@ -60,6 +66,9 @@ concept_count: 16
 - [[Xu 2016 - Overview]] — CONTAINS: Paper overview, contribution summary, GSC vs DID/IFE/SC comparison table, caveats
 - [[Generalized Synthetic Control Method]] — CONTAINS: IFE model Assumption 1, strict exogeneity Assumption 2, ATT estimand, 3-step GSC estimator, LOO cross-validation Algorithm 1, parametric bootstrap Algorithm 2, Monte Carlo performance (Table 1), EDR voter turnout example
 - [[DAGs and Causal Identification]] — CONTAINS: Forks, chains, colliders, conditioning rules, d-separation formal definition, backdoor path definition, backdoor adjustment formula, valid adjustment sets, Simpson's paradox
+- [[Propensity Score Matching]] — CONTAINS: propensity score definition, PS sufficiency theorem (Rosenbaum & Rubin 1983, Thm 1), ATT estimand, PSM ATT estimator formula, treatment model variable selection guidance, comparison table PSM vs IPW vs regression vs DR
+- [[Matching Algorithms and Caliper Matching]] — CONTAINS: NN matching (greedy vs optimal, with/without replacement), caliper definition and 0.2-SD rule, k:1 matching bias-variance tradeoff, full matching, Mahalanobis distance matching, MatchIt R implementation, Abadie-Imbens SE correction
+- [[Covariate Balance Diagnostics]] — CONTAINS: SMD formula and |0.1| threshold, love plot interpretation, variance ratio [0.5,2.0] range, KS statistic, overlap plot (common support), cobalt/MatchIt/tableone R packages, overall assessment workflow
 - [[Bayesian Propensity Score Weighting]] — CONTAINS: IPTW formula, pseudo-population interpretation, why Bayesian propensity scores are problematic (likelihood incompatibility), Liao-Zigler marginalization integral, brms R implementation, Rubin's rules SE combination
 
 ## Sources
@@ -71,6 +80,7 @@ concept_count: 16
 - [[raw/Xu 2016 - Generalized Synthetic Control Method.pdf]] — Xu (2017), Political Analysis 25(1): 57–76. GSC method: IFE model, 3-step estimator, cross-validation, bootstrap inference, gsynth R package
 - [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Graham Harrison, Towards Data Science (2023-04-06): DAGs, confounders, backdoor adjustment, d-separation
 - [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW in R/brms
+- [[raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]] — Li et al. (2022), §2 pp. 3–8: propensity score matching and frequentist causal estimation (Rosenbaum & Rubin 1983 framework, matching methods, balance)
 
 ## See Also
 
