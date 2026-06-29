@@ -11,7 +11,7 @@ tags:
 source: "[[raw/Shaposhnyk et al. - 2025 - Can LLMs Assist Expert Elicitation for Probabilistic Causal Modeling.pdf]]"
 source_location: "§4.3, §5.3, pp. 4-8"
 date_ingested: 2026-04-10
-date_updated: 2026-04-13
+date_updated: 2026-06-29
 folder: "Bayesian Statistics/Causal Inference/Knowledge Elicitation"
 doc_type: paper
 depends_on:
@@ -118,3 +118,5 @@ See [[BN Construction Methods Comparison]] for full three-way comparison.
 - [[LLM Causal Reasoning Tasks]] — evaluation of LLM causal reasoning capabilities
 - [[Code Prompts for Causal Structure]] — alternative code-based prompting strategy for BN elicitation
 - [[Interactive Knowledge Elicitation Method]] — human-in-the-loop alternative to LLM elicitation
+- [[NOTEARS - Overview]] — data-driven continuous-optimisation approach to DAG structure learning; contrasts with LLM-based expert elicitation
+- [[DAG Structure Learning Problem]] — the structural challenge that both LLM elicitation and algorithmic discovery address

@@ -12,6 +12,7 @@ tags:
   - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-06-29
 folder: "Econometrics/Identification Strategies"
 doc_type: theorem
 source_location: "MHE Ch. 4, pp. 83-163"
@@ -70,3 +71,5 @@ You can't identify individual compliers, but you can describe them statistically
 - [[Hierarchical Models]] — Bayesian partial pooling as an alternative framework for treatment effect heterogeneity
 - [[Regression and the CEF]] — the CEF provides the population target that LATE identifies in the complier subpopulation
 - [[Bayesian Difference in Differences]] — DiD treatment effects under heterogeneous compliance connect to the LATE framework
+- [[Potential Outcomes Framework]] — LATE is defined in terms of $Y_{1i}$, $Y_{0i}$ for complier subgroup
+- [[Metalearners for CATE]] — ML approach to conditional ATE estimation; LATE targets a specific subgroup (compliers) rather than the full conditional average
