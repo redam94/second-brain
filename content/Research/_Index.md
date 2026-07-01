@@ -3,19 +3,20 @@ title: "Index: Research"
 tags:
   - type/index
   - source/ingested
-date_updated: 2026-06-26
-concept_count: 180
+date_updated: 2026-07-01
+concept_count: 216
 ---
 
 # Research
 
 > [!abstract] Routing Summary
-> This folder covers applied statistics, econometrics, causal inference, causal discovery, Bayesian experimental design, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 174 notes across 9 major topics.
+> This folder covers applied statistics, econometrics, causal inference, causal discovery, Bayesian experimental design, probabilistic numerics, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 210 notes across 10 major topics.
 > - Need Bayesian inference, computation, or regression? -> [[Research/Bayesian Statistics/_Index|Bayesian Statistics]]
 > - Need causal inference toolkit (IV, DiD, RD, synthetic control, GSC, DAGs)? -> [[Research/Econometrics/_Index|Econometrics]]
 > - Need causal *structure learning* / DAG discovery from data (NOTEARS, continuous optimization)? -> [[Research/Causal Discovery/_Index|Causal Discovery]]
 > - Need forking paths, power analysis, ad measurement, or longitudinal causal inference? -> [[Research/Research Methodology/_Index|Research Methodology]]
 > - Need Bayesian experimental design / expected information gain (EIG estimators, gradient/ACE/PCE, deep adaptive design)? -> [[Research/Bayesian Experimental Design/_Index|Bayesian Experimental Design]]
+> - Need probabilistic numerics (Bayesian quadrature, probabilistic linear solvers, Bayesian optimisation, ODE filters — computation as inference)? -> [[Research/Probabilistic Numerics/_Index|Probabilistic Numerics]]
 > - Need quantum mechanics, QFT, or gauge theory (flat notes)? -> [[Research/Theoretical Physics/_Index|Theoretical Physics]]
 > - Need quantum mechanics, QFT, or gauge theory (structured sub-folder notes)? -> [[Research/Physics/_Index|Physics]]
 > - Need ABM methodology, consumer behavior simulation, WOM modeling, or ABM calibration (GA, HM+ABC, uncertainty quantification)? -> [[Research/Agent-Based Modeling/_Index|Agent-Based Modeling]]
@@ -28,6 +29,7 @@ concept_count: 180
 |-------|-------|-------------|
 | [[Research/Bayesian Statistics/_Index\|Bayesian Statistics]] | 60 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference, **simulation-based calibration (SBC)** |
 | [[Research/Bayesian Experimental Design/_Index\|Bayesian Experimental Design]] | 21 | Lindley's information measure (1956), expected information gain (EIG), nested Monte Carlo, variational EIG estimators (posterior/marginal/VNMC/implicit), unified stochastic-gradient design, **adaptive & prior contrastive estimation (ACE/PCE)**, sequential/adaptive design, **deep adaptive design (DAD) policies**, EIG vs Fisher information |
+| [[Research/Probabilistic Numerics/_Index\|Probabilistic Numerics]] | 36 | Computation as Bayesian inference, the numerical agent, Gaussian algebra/GP regression, Gauss–Markov/SDE priors, Kalman filter & RTS smoother, **Bayesian quadrature** (kernel means, classical rules as posterior means), **probabilistic linear solvers** (CG = BayesCG), **Bayesian optimisation** (PI/EI/UCB/KG, entropy search), **ODE filters & smoothers** (EKF0/EKF1, convergence theory), uncertainty calibration |
 | [[Research/Econometrics/_Index\|Econometrics]] | 48 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, quantile regression, discrete choice, SMM, Brock-Mirman structural estimation, **staggered/multi-period DiD (group-time ATT, doubly-robust)**, **factor copulas / high-dimensional tail dependence** |
 | [[Research/Causal Discovery/_Index\|Causal Discovery]] | 5 | DAG / Bayesian-network structure learning, linear SEM, score-based learning, **NOTEARS** continuous optimization, smooth acyclicity $h(W)=\mathrm{tr}\,e^{W\circ W}-d$, augmented Lagrangian, vs FGS/GES/PC |
 | [[Research/Research Methodology/_Index\|Research Methodology]] | 16+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons, within/between-persons distinction (Rohrer & Murayama 2023), fixed-effects model, CLPM, dynamic panel model, estimands in longitudinal research, **Table 2 Fallacy**, regression adjustment logic, nuisance parameter bias simulation |
@@ -46,6 +48,7 @@ concept_count: 180
 - **Bayesian Media Mix Modeling**: [[Carryover (Adstock) Functional Forms]] + [[Shape (Saturation) Effects]] → [[Bayesian Media Mix Modeling - Overview]] → [[Bayesian Estimation and Priors for MMM]] → [[ROAS, mROAS, and Optimal Media Mix]] → [[MMM Model Selection and Application]]
 - **Causal Discovery (structure learning)**: [[NOTEARS - Overview]], [[DAG Structure Learning Problem]], [[Smooth Characterization of Acyclicity]], [[NOTEARS Algorithm]], [[NOTEARS Experiments]]
 - **Bayesian Experimental Design (EIG)**: [[Lindley's Information Measure]] → [[Expected Information Gain]] → [[Nested Estimation and Nested Monte Carlo]] → [[Variational BOED - Overview]] → [[Unified SGD BOED - Overview]] ([[Adaptive Contrastive Estimation (ACE)]] / [[Prior Contrastive Estimation (PCE)]]) → [[Modern Bayesian Experimental Design - Overview]] → [[From Designs to Policies (Deep Adaptive Design)]]
+- **Probabilistic Numerics (computation as inference)**: [[Computation as Probabilistic Inference]] / [[The Numerical Agent]] → [[Gaussian Distributions and Algebra]] → {[[Gaussian Process Regression]], [[Gauss-Markov Processes and SDEs]] → [[Bayesian Filtering and Smoothing]]} → application branches: [[Bayesian Quadrature]] → [[Classical Quadrature as Inference]]; [[Probabilistic Linear Solvers - Algorithmic Scaffold]] → [[Conjugate Gradients as Probabilistic Inference]]; [[Bayesian Optimisation]] → [[Acquisition Functions]]; [[ODE Filters and Smoothers]] → [[Theory of ODE Filters and Smoothers]]
 - **Model Building**: [[Bayesian Workflow - Overview]], [[Model Checking]], [[Model Comparison]], [[Overfitting and Information Criteria]]
 - **Multiple Comparisons**: [[Multiple Comparisons - Bayesian Perspective]], [[Multiple Testing Corrections]], [[Type S and Type M Errors]], [[Partial Pooling as Multiple Comparisons Correction]]
 - **Missing Data**: [[Missing Data Models]], [[Missing Data - Statistical Rethinking]], [[Data Collection Models]]
@@ -95,6 +98,7 @@ concept_count: 180
 - [[Econometrics/raw/Oh-Patton-2012-Factor-Copulas.pdf|Oh & Patton - Factor Copulas]] — Oh & Patton (2012), high-dimensional factor copulas, EVT tail dependence, rank-based SMM, S&P 100 systemic risk (2026-06-17)
 - [[Bayesian Statistics/raw/1804.06788-Talts-SBC.pdf|Talts et al. - Simulation-Based Calibration]] — Talts, Betancourt, Simpson, Vehtari & Gelman (2018), validating Bayesian inference algorithms via rank-statistic SBC (2026-06-17)
 - [[Market Response Models/raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf|Jin et al. - Bayesian Media Mix Modeling]] — Jin, Wang, Sun, Chan & Koehler (Google, 2017), Bayesian MMM with adstock carryover and Hill shape effects, ROAS/mROAS, optimal media mix (2026-06-17)
+- [[Probabilistic Numerics/raw/ProbabilisticNumerics.pdf|Hennig, Osborne & Kersting - Probabilistic Numerics]] — Hennig, Osborne & Kersting (2022), *Probabilistic Numerics: Computation as Machine Learning* (Cambridge University Press): computation as Bayesian inference, Bayesian quadrature, probabilistic linear solvers, Bayesian optimisation, ODE filters/smoothers (2026-07-01)
 
 ## See Also
 

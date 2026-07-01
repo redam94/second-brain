@@ -1,0 +1,35 @@
+filters:
+  and:
+    - file.inFolder("Research/Probabilistic Numerics")
+    - '!file.hasTag("type/index")'
+    - file.ext == "md"
+properties:
+  doc_type:
+    displayName: Type
+  source:
+    displayName: Source
+  source_location:
+    displayName: Location
+  date_ingested:
+    displayName: Ingested
+views:
+  - type: table
+    name: All PN Notes
+    order:
+      - file.name
+      - doc_type
+      - source
+      - source_location
+      - date_ingested
+    sort:
+      - property: date_ingested
+        direction: DESC
+  - type: table
+    name: By Folder
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - doc_type
+      - source_location
