@@ -4,14 +4,14 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Econometrics/_Index|Econometrics]]"
-date_updated: 2026-04-16
-concept_count: 16
+date_updated: 2026-07-01
+concept_count: 20
 ---
 
 # Identification Strategies
 
 > [!abstract] Routing Summary
-> This folder covers quasi-experimental methods from MHE Chapters 4-6, plus Bayesian and advanced synthetic control methods, DAG-based causal identification, and Bayesian propensity score weighting. Contains 16 notes.
+> This folder covers quasi-experimental methods from MHE Chapters 4-6, plus Bayesian and advanced synthetic control methods, DAG-based causal identification, propensity score matching, and Bayesian propensity score weighting. Contains 20 notes.
 > - Need instrumental variables or 2SLS? → [[Instrumental Variables]]
 > - Need LATE theorem or complier characterization? → [[Local Average Treatment Effects]]
 > - Need difference-in-differences or fixed effects? → [[Differences-in-Differences]]
@@ -25,6 +25,10 @@ concept_count: 16
 > - Need GSC for multiple treated units with IFE model and bootstrap inference? → [[Generalized Synthetic Control Method]]
 > - Need DAG concepts, forks/chains/colliders, backdoor adjustment, d-separation? → [[DAGs and Causal Identification]]
 > - Need Bayesian inverse probability weighting / Liao-Zigler marginalization method? → [[Bayesian Propensity Score Weighting]]
+> - Need the propensity score definition, balancing theorem, and ignorability sufficiency? → [[Propensity Score Definition and Properties]]
+> - Need nearest-neighbor, caliper, or subclassification matching algorithms? → [[Propensity Score Matching Methods]]
+> - Need covariate balance diagnostics (SMD, overlap plots, Love plots)? → [[Covariate Balance Diagnostics]]
+> - Need the original Rosenbaum & Rubin (1983) paper overview? → [[Rosenbaum and Rubin 1983 - Overview]]
 
 ## Concept Map
 
@@ -43,6 +47,10 @@ concept_count: 16
 | IFE model, ATT estimand, 3-step GSC, bootstrap inference | [[Generalized Synthetic Control Method]] | concept | [[Synthetic Control]], [[Differences-in-Differences]], [[The Selection Problem]] | GSC unifies DiD and SC via interactive fixed effects; valid for multiple treated units |
 | DAGs, forks/chains/colliders, backdoor criterion, d-separation | [[DAGs and Causal Identification]] | concept | [[The Selection Problem]], [[The Experimental Ideal]] | Valid adjustment set blocks all backdoor paths; do-calculus enables causal inference from observational data |
 | Bayesian IPTW, Liao-Zigler marginalization, Rubin's rules SE | [[Bayesian Propensity Score Weighting]] | concept | [[DAGs and Causal Identification]], [[The Selection Problem]], [[Bayesian Linear Regression]] | Marginalize over posterior propensity scores to incorporate treatment-model uncertainty |
+| Propensity score definition, balancing property, ignorability sufficiency, overlap | [[Propensity Score Definition and Properties]] | concept | [[Conditional Independence Assumption]], [[Potential Outcomes Framework]], [[The Selection Problem]] | e(X) is a sufficient statistic for covariate adjustment; conditioning on scalar e(X) identifies causal effects |
+| Nearest-neighbor, caliper, subclassification, full matching, Mahalanobis, CEM | [[Propensity Score Matching Methods]] | concept | [[Propensity Score Definition and Properties]], [[Conditional Independence Assumption]] | Matching creates balanced comparison groups; caliper 0.2 SD(logit-PS) is standard; always check balance |
+| SMD, variance ratio, overlap plots, Love plots, KS statistic, iterative workflow | [[Covariate Balance Diagnostics]] | concept | [[Propensity Score Matching Methods]], [[Propensity Score Definition and Properties]] | SMD < 0.1 is threshold for good balance; never use p-values to assess balance |
+| Rosenbaum & Rubin (1983) paper structure, results, example | [[Rosenbaum and Rubin 1983 - Overview]] | overview | [[Conditional Independence Assumption]], [[Potential Outcomes Framework]] | Theorem 1 (balancing) + Corollary (ignorability sufficiency) justify dimension-reduction to scalar e(X) |
 
 ## Notes
 - [[Mostly Harmless Econometrics - Overview]] — CONTAINS: Full book structure map, key concepts by chapter, cross-links to all identification strategy notes
@@ -61,9 +69,15 @@ concept_count: 16
 - [[Generalized Synthetic Control Method]] — CONTAINS: IFE model Assumption 1, strict exogeneity Assumption 2, ATT estimand, 3-step GSC estimator, LOO cross-validation Algorithm 1, parametric bootstrap Algorithm 2, Monte Carlo performance (Table 1), EDR voter turnout example
 - [[DAGs and Causal Identification]] — CONTAINS: Forks, chains, colliders, conditioning rules, d-separation formal definition, backdoor path definition, backdoor adjustment formula, valid adjustment sets, Simpson's paradox
 - [[Bayesian Propensity Score Weighting]] — CONTAINS: IPTW formula, pseudo-population interpretation, why Bayesian propensity scores are problematic (likelihood incompatibility), Liao-Zigler marginalization integral, brms R implementation, Rubin's rules SE combination
+- [[Rosenbaum and Rubin 1983 - Overview]] — CONTAINS: Research question, key contribution, paper structure table, main results (Theorem 1 + Corollary), Wisconsin Survey empirical example, historical significance
+- [[Propensity Score Definition and Properties]] — CONTAINS: Propensity score definition, unconfoundedness and overlap assumptions, Theorem 1 (balancing property) with proof sketch, Corollary (ignorability sufficiency) with proof sketch, estimation methods table, connection to IPW/matching, estimated vs. true propensity score efficiency result
+- [[Propensity Score Matching Methods]] — CONTAINS: Nearest-neighbor matching (with/without replacement, 1:K), caliper matching (Austin 2011: 0.2 SD logit-PS recommendation), subclassification (Cochran 1968: 5 strata → 90% bias removal), full matching, Mahalanobis distance matching, CEM, ATT vs. ATE, Python code skeleton, five common pitfalls
+- [[Covariate Balance Diagnostics]] — CONTAINS: SMD definition (Austin 2009 pooled-SD formula), variance ratio, overlap plots (mirror histogram + density), Love plots (schematic), KS statistic, iterative balance-improvement workflow, summary table of thresholds, warning against p-value balance tests, software table (MatchIt, cobalt, econml, DoubleML)
 
 ## Sources
 
+- [[raw/Rosenbaum Rubin 1983 - The Central Role of the Propensity Score.md]] — Rosenbaum & Rubin (1983), Biometrika 70(1):41–55. Foundational propensity score paper: balancing theorem, ignorability sufficiency, matching/subclassification methods.
+- [[raw/Imbens 2004 - Nonparametric Estimation of Average Treatment Effects.md]] — Imbens (2004), Review of Economics and Statistics 86(1):4–29. Unified review of matching, IPW, regression, and doubly-robust estimators under unconfoundedness.
 - [[raw/Mostly Harmless Econometrics.pdf]] — Mostly Harmless Econometrics (Angrist & Pischke, 2008), Chapters 4-6
 - [[raw/Difference in differences]] — PyMC example: Bayesian DiD with counterfactual inference
 - [[raw/15 - Synthetic Control — Causal Inference for the Brave and True]] — Causal Inference for the Brave and True, Ch. 15: Synthetic control with Python (scipy, sklearn)
