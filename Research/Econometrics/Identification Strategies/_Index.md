@@ -4,14 +4,14 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Econometrics/_Index|Econometrics]]"
-date_updated: 2026-04-16
-concept_count: 16
+date_updated: 2026-06-28
+concept_count: 19
 ---
 
 # Identification Strategies
 
 > [!abstract] Routing Summary
-> This folder covers quasi-experimental methods from MHE Chapters 4-6, plus Bayesian and advanced synthetic control methods, DAG-based causal identification, and Bayesian propensity score weighting. Contains 16 notes.
+> This folder covers quasi-experimental methods from MHE Chapters 4-6, plus Bayesian and advanced synthetic control methods, DAG-based causal identification, Bayesian propensity score weighting, and classical propensity score matching. Contains 19 notes.
 > - Need instrumental variables or 2SLS? → [[Instrumental Variables]]
 > - Need LATE theorem or complier characterization? → [[Local Average Treatment Effects]]
 > - Need difference-in-differences or fixed effects? → [[Differences-in-Differences]]
@@ -25,6 +25,9 @@ concept_count: 16
 > - Need GSC for multiple treated units with IFE model and bootstrap inference? → [[Generalized Synthetic Control Method]]
 > - Need DAG concepts, forks/chains/colliders, backdoor adjustment, d-separation? → [[DAGs and Causal Identification]]
 > - Need Bayesian inverse probability weighting / Liao-Zigler marginalization method? → [[Bayesian Propensity Score Weighting]]
+> - Need classical PS matching framework, balancing theorem, ATT vs ATE? → [[Propensity Score Matching - Overview]]
+> - Need NN matching, caliper width, optimal/full matching algorithms? → [[Matching Algorithms and Caliper]]
+> - Need love plots, SMD thresholds, overlap plots, Rubin balance criteria? → [[Covariate Balance and Matching Diagnostics]]
 
 ## Concept Map
 
@@ -43,6 +46,9 @@ concept_count: 16
 | IFE model, ATT estimand, 3-step GSC, bootstrap inference | [[Generalized Synthetic Control Method]] | concept | [[Synthetic Control]], [[Differences-in-Differences]], [[The Selection Problem]] | GSC unifies DiD and SC via interactive fixed effects; valid for multiple treated units |
 | DAGs, forks/chains/colliders, backdoor criterion, d-separation | [[DAGs and Causal Identification]] | concept | [[The Selection Problem]], [[The Experimental Ideal]] | Valid adjustment set blocks all backdoor paths; do-calculus enables causal inference from observational data |
 | Bayesian IPTW, Liao-Zigler marginalization, Rubin's rules SE | [[Bayesian Propensity Score Weighting]] | concept | [[DAGs and Causal Identification]], [[The Selection Problem]], [[Bayesian Linear Regression]] | Marginalize over posterior propensity scores to incorporate treatment-model uncertainty |
+| Balancing theorem, ATT estimand, PSM vs IPW, when matching fails | [[Propensity Score Matching - Overview]] | concept | [[The Selection Problem]], [[Conditional Independence Assumption]], [[Frequentist Causal Estimation]] | $e(X)$ is a sufficient statistic for covariate balance; PSM discards units, IPW reweights — complementary methods |
+| NN greedy, caliper $\delta=0.2\sigma_{\text{logit}}$, optimal/full matching, subclassification | [[Matching Algorithms and Caliper]] | concept | [[Propensity Score Matching - Overview]] | Caliper prevents poor matches; optimal matching minimises total distance globally; full matching uses all data |
+| SMD, love plot, overlap plot, variance ratio, Rubin (2001) criteria | [[Covariate Balance and Matching Diagnostics]] | concept | [[Propensity Score Matching - Overview]], [[Matching Algorithms and Caliper]] | Balance assessed via effect sizes ($|\text{SMD}|<0.1$) not $p$-values; love plot is primary visual diagnostic |
 
 ## Notes
 - [[Mostly Harmless Econometrics - Overview]] — CONTAINS: Full book structure map, key concepts by chapter, cross-links to all identification strategy notes
@@ -61,6 +67,9 @@ concept_count: 16
 - [[Generalized Synthetic Control Method]] — CONTAINS: IFE model Assumption 1, strict exogeneity Assumption 2, ATT estimand, 3-step GSC estimator, LOO cross-validation Algorithm 1, parametric bootstrap Algorithm 2, Monte Carlo performance (Table 1), EDR voter turnout example
 - [[DAGs and Causal Identification]] — CONTAINS: Forks, chains, colliders, conditioning rules, d-separation formal definition, backdoor path definition, backdoor adjustment formula, valid adjustment sets, Simpson's paradox
 - [[Bayesian Propensity Score Weighting]] — CONTAINS: IPTW formula, pseudo-population interpretation, why Bayesian propensity scores are problematic (likelihood incompatibility), Liao-Zigler marginalization integral, brms R implementation, Rubin's rules SE combination
+- [[Propensity Score Matching - Overview]] — CONTAINS: Propensity score definition, balancing theorem (R&R 1983 Thm 1), strong ignorability definition, ATT vs ATE estimand comparison, PSM vs IPW table, the matching workflow, why PSM fails for activity bias
+- [[Matching Algorithms and Caliper]] — CONTAINS: Logit PS distance metric, NN greedy matching (with/without replacement), caliper definition and $0.2\sigma_{\text{logit}}$ width rule, optimal matching, full matching, 1:k matching, subclassification, Mahalanobis distance, common support trimming, MatchIt R code
+- [[Covariate Balance and Matching Diagnostics]] — CONTAINS: SMD formula and $|$SMD$|<0.1$ threshold, why $p$-values are wrong for balance, love plot (definition + cobalt R code), propensity score overlap plot, variance ratio, KS statistic, ESS for weighting, Rubin (2001) three-criteria theorem, outcome-blinding principle, ATT estimation after matching
 
 ## Sources
 
@@ -71,6 +80,7 @@ concept_count: 16
 - [[raw/Xu 2016 - Generalized Synthetic Control Method.pdf]] — Xu (2017), Political Analysis 25(1): 57–76. GSC method: IFE model, 3-step estimator, cross-validation, bootstrap inference, gsynth R package
 - [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Graham Harrison, Towards Data Science (2023-04-06): DAGs, confounders, backdoor adjustment, d-separation
 - [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW in R/brms
+- [[raw/PSM-Rosenbaum-Rubin-Stuart-Survey.md]] — Survey synthesis: Rosenbaum & Rubin (1983) Biometrika; Rosenbaum & Rubin (1985) American Statistician; Stuart (2010) Statistical Science; Imbens (2004) RESTAT — foundational propensity score matching literature
 
 ## See Also
 
