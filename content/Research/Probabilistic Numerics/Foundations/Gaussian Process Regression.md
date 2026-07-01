@@ -130,3 +130,6 @@ This is the engine of [[Bayesian Quadrature]] (observe $f$, infer $\int f$) and 
 - [[Gauss-Markov Processes and SDEs]] — GPs with finite memory (linear-time inference).
 - [[Bayesian Quadrature]] — GP regression used to infer integrals.
 - [[Kernel Quadrature and Kernel Means]] — RKHS/kernel-mean view of integration.
+- [[Classical Quadrature as Inference]] — trapezoid/Gauss rules as the posterior mean of this regression applied to the integrand.
+- [[ODE Filters and Smoothers]] — GP regression in state-space form, conditioned on the ODE vector field.
+- [[First- and Second-Order Optimisation Methods]] — BFGS as Gaussian regression on the Hessian.

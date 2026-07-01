@@ -163,3 +163,4 @@ Thus polynomial exactness ↔ prior choice: choosing a degree-$(q-1)$ polynomial
 - [[Convergence and Priors in Bayesian Quadrature]] — $\mathcal O(N^{-1})$ (trapezoid) vs faster spline / Gauss rates.
 - [[Kernel Quadrature and Kernel Means]] — degenerate/polynomial kernels and vanishing variance.
 - [[Bayesian Filtering and Smoothing]] — the Kalman-filter implementation of the Bayesian trapezoidal rule.
+- [[Gaussian Process Regression]] — the general regression whose posterior mean these classical rules are, once the integral functional is applied.

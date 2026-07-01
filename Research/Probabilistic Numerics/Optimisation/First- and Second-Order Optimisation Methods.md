@@ -113,3 +113,4 @@ The rank-2 form (28.11) is the update already seen in the linear-algebra chapter
 - [[Conjugate Gradients as Probabilistic Inference]] — the linear-case ancestor; matrix-Gaussian priors on $B$.
 - [[Bayesian Filtering and Smoothing]] — the Kalman machinery behind probabilistic gradient descent.
 - [[The Global Optimisation Problem]] — the pivot from cheap-step to sample-efficient optimisation.
+- [[Gaussian Process Regression]] — the Gaussian-regression view underlying BFGS-as-inference on the Hessian.

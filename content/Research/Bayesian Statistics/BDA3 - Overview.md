@@ -10,6 +10,15 @@ source_location: "Full text (Parts I–V), pp. 1-590"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
 doc_type: overview
+depends_on: []
+used_by:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Single-Parameter Models]]"
+  - "[[Multiparameter Models]]"
+  - "[[Introduction to Bayesian Computation]]"
+  - "[[Approximation Methods]]"
+  - "[[Asymptotics and Frequentist Connections]]"
+
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"

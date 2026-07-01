@@ -216,3 +216,4 @@ with $\tilde{S}_n$ the innovation covariance at $\sigma:=1$ — nearly free, sin
 - [[Perturbative ODE Solvers]] — non-Bayesian sampling solvers; the particle filter is closer to these than to Gaussian filters.
 - [[Further Topics in ODE Solvers]] — BVPs, ODE inverse problems (EKF1 gives cheap gradients/Hessians), PDEs.
 - [[Bayesian Quadrature]] — the special case EKF0/EKS0 reduces to.
+- [[Gaussian Process Regression]] — the framework this instantiates in state-space (derivatives) form.

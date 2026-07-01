@@ -10,6 +10,12 @@ source_location: "Full text, pp. 1–173"
 date_ingested: 2026-05-08
 folder: "Category Theory"
 doc_type: textbook
+depends_on: []
+used_by:
+  - "[[Categories]]"
+  - "[[Functors]]"
+  - "[[Natural Transformations]]"
+
 aliases:
   - Leinster Category Theory
   - BCT Overview

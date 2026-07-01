@@ -130,3 +130,4 @@ Running a filter with such a prior for many steps, the predictive covariance $P_
 - [[Gaussian Process Regression]] — the non-Markov parent framework.
 - [[Solving ODEs as Inference]] — the main downstream application.
 - [[Hierarchical Inference in Gaussian Models]] — calibrating $\theta,\lambda$ at runtime.
+- [[Bayesian Quadrature]] — these priors give quadrature an $\mathcal{O}(N)$ filtering implementation.

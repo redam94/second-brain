@@ -13,6 +13,7 @@ aliases:
   - Interaction Effects Bayesian
 date_ingested: 2026-04-09
 doc_type: concept
+source: "[[raw/Bayesian moderation analysis]]"
 source_location: "raw/Bayesian moderation analysis"
 depends_on:
   - "[[Spurious Association and Confounds]]"

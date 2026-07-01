@@ -145,3 +145,4 @@ $$
 - [[First- and Second-Order Optimisation Methods]] — the outer-loop direction decision, using Wolfe guarantees.
 - [[Acquisition Functions]] — EI and value-of-information at global scale.
 - [[Gauss-Markov Processes and SDEs]] — the integrated Wiener process behind cubic splines.
+- [[The Global Optimisation Problem]] — the global counterpart, where the same value-of-information logic drives whole-evaluation choices.

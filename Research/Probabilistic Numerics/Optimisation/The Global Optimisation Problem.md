@@ -73,3 +73,4 @@ Relative to local optimisation, global optimisation typically: is **less amenabl
 - [[The Local Optimisation Problem]] — the local counterpart and its limitations.
 - [[Acquisition Functions]] — concrete decision rules balancing exploration and exploitation.
 - [[Value Loss and Entropy Search]] — loss functions framing the goal of optimisation.
+- [[Probabilistic Step-Size Selection and Line Searches]] — the local-optimisation counterpart: sample-efficient decisions under uncertainty at the step-size scale.

@@ -13,6 +13,7 @@ aliases:
   - Propensity Score Bayesian
 date_ingested: 2026-04-09
 doc_type: concept
+source: "[[raw/Bayesian Non-parametric Causal Inference]]"
 source_location: "raw/Bayesian Non-parametric Causal Inference"
 depends_on:
   - "[[Nonparametric Models Overview]]"

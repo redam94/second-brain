@@ -155,3 +155,4 @@ The posterior is only usable when $\mathfrak m_0,\ell,\mathfrak K$ are analytic.
 - [[Classical Quadrature as Inference]] — classical rules as BQ posterior means.
 - [[Convergence and Priors in Bayesian Quadrature]] — how the kernel controls the contraction rate.
 - [[Active Bayesian Quadrature and Bayesian Monte Carlo]] — adaptive, warped, non-Gaussian BQ.
+- [[Gauss-Markov Processes and SDEs]] — the IWP/Gauss–Markov priors that give BQ an $\mathcal{O}(N)$ Kalman-filter form.
