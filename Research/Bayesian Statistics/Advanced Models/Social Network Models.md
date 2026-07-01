@@ -13,6 +13,7 @@ aliases:
   - Dyadic Models
 date_ingested: 2026-04-09
 doc_type: concept
+source: "[[raw/Social Networks]]"
 source_location: "raw/Social Networks"
 depends_on:
   - "[[Copula Estimation]]"

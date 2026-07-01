@@ -15,6 +15,17 @@ source_location: "Full text (Ch. 1–17)"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
 doc_type: overview
+depends_on: []
+used_by:
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Garden of Forking Data]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Linear Models in Statistical Rethinking]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[HMC and Stan in Practice]]"
+  - "[[Monsters and Mixtures]]"
+  - "[[Posterior Sampling and Summarization]]"
+
 authors:
   - Richard McElreath
 year: 2015
