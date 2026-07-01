@@ -15,6 +15,7 @@ depends_on:
   - "[[Carryover (Adstock) Functional Forms]]"
   - "[[Shape (Saturation) Effects]]"
 used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Bayesian Estimation and Priors for MMM]]"
   - "[[ROAS, mROAS, and Optimal Media Mix]]"
   - "[[MMM Model Selection and Application]]"

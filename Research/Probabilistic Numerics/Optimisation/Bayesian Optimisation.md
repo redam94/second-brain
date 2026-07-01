@@ -17,6 +17,7 @@ depends_on:
   - "[[The Numerical Agent]]"
   - "[[Bayesian Quadrature]]"
 used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Value Loss and Entropy Search]]"
   - "[[Acquisition Functions]]"
   - "[[Further Topics in Global Optimisation]]"

@@ -17,6 +17,7 @@ depends_on:
   - "[[Shape (Saturation) Effects]]"
   - "[[MCMC Basics]]"
 used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[ROAS, mROAS, and Optimal Media Mix]]"
   - "[[MMM Model Selection and Application]]"
 aliases:

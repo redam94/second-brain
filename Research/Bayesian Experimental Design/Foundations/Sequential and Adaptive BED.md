@@ -13,6 +13,7 @@ doc_type: paper
 depends_on:
   - "[[Expected Information Gain]]"
 used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[From Designs to Policies (Deep Adaptive Design)]]"
   - "[[High-Dimensional Design Applications]]"
 aliases:

@@ -14,6 +14,7 @@ depends_on:
   - "[[Sequential and Adaptive BED]]"
   - "[[Optimization and Gradient Schemes for BED]]"
 used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Open Challenges and Future Directions]]"
 aliases:
   - DAD

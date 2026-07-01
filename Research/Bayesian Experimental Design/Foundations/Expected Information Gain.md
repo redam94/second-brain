@@ -15,6 +15,7 @@ depends_on:
   - "[[Lindley's Information Measure]]"
   - "[[Probability and Bayesian Inference]]"
 used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Nested Estimation and Nested Monte Carlo]]"
   - "[[Sequential and Adaptive BED]]"
   - "[[Variational BOED - Overview]]"

@@ -16,7 +16,8 @@ depends_on:
   - "[[Choosing the Global Scale and Effective Nonzeros]]"
   - "[[Regularized Horseshoe (Finnish Horseshoe)]]"
   - "[[Bayesian Linear Regression]]"
-used_by: []
+used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
 aliases:
   - Finnish Horseshoe
   - Piironen Vehtari Horseshoe

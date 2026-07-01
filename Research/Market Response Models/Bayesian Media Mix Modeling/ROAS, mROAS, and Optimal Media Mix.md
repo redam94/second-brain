@@ -15,6 +15,7 @@ depends_on:
   - "[[Bayesian Estimation and Priors for MMM]]"
   - "[[Bayesian Media Mix Modeling - Overview]]"
 used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[MMM Model Selection and Application]]"
 aliases:
   - ROAS

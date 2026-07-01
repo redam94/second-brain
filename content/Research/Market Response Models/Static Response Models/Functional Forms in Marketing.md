@@ -20,6 +20,7 @@ depends_on:
   - "[[Markets Data and Sales Drivers]]"
   - "[[Response Models for Marketing Management]]"
 used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Market Share Models]]"
   - "[[Aggregation of Relations]]"
   - "[[Design of Static Response Models]]"

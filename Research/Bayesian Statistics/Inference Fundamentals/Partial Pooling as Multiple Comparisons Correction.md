@@ -19,6 +19,7 @@ depends_on:
   - "[[Multiple Comparisons - Bayesian Perspective]]"
   - "[[Type S and Type M Errors]]"
 used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Hierarchical Linear Models]]"
   - "[[Forking Paths and Bayesian Approaches]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"

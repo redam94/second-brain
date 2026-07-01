@@ -13,6 +13,7 @@ doc_type: paper
 depends_on:
   - "[[Bayesian Linear Regression]]"
 used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[The Horseshoe Prior]]"
   - "[[Horseshoe and Regularized Horseshoe Priors]]"
   - "[[Choosing the Global Scale and Effective Nonzeros]]"

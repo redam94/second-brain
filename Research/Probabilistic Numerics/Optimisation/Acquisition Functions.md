@@ -16,6 +16,7 @@ depends_on:
   - "[[Value Loss and Entropy Search]]"
   - "[[Gaussian Process Regression]]"
 used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Further Topics in Global Optimisation]]"
 aliases:
   - Probability of Improvement

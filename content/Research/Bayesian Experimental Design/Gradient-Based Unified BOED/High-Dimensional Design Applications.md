@@ -15,6 +15,7 @@ depends_on:
   - "[[Adaptive Contrastive Estimation (ACE)]]"
   - "[[Prior Contrastive Estimation (PCE)]]"
 used_by:
+  - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Modern Bayesian Experimental Design - Overview]]"
 aliases:
   - BOED experiments
