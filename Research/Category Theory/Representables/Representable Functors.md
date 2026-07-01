@@ -8,6 +8,7 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 4.1, pp. 84–98"
 date_ingested: 2026-05-08
+folder: "Category Theory/Representables"
 doc_type: textbook
 depends_on:
   - "[[Foundations/Functors]]"

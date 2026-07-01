@@ -12,7 +12,9 @@ aliases:
   - Bayesian BART Causal
   - Propensity Score Bayesian
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Advanced Models"
 doc_type: concept
+source: "[[raw/Bayesian Non-parametric Causal Inference.md]]"
 source_location: "raw/Bayesian Non-parametric Causal Inference"
 depends_on:
   - "[[Nonparametric Models Overview]]"

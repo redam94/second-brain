@@ -12,7 +12,9 @@ aliases:
   - Missing Data SR
   - Bayesian Imputation SR
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Regression Models"
 doc_type: concept
+source: "[[raw/Missing Data.md]]"
 source_location: "raw/Missing Data"
 depends_on:
   - "[[Missing Data Models]]"

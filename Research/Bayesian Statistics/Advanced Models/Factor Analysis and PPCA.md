@@ -10,6 +10,11 @@ tags:
   - type/concept
   - doc/tutorial
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Advanced Models"
+aliases:
+  - "Factor Analysis"
+  - "PPCA"
+  - "Probabilistic PCA"
 raw: "[[raw/Factor analysis]]"
 doc_type: concept
 source_location: "raw/Factor analysis"

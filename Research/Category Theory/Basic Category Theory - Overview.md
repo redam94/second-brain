@@ -8,10 +8,22 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Full text, pp. 1–173"
 date_ingested: 2026-05-08
-doc_type: textbook
+folder: "Category Theory"
+doc_type: overview
 aliases:
   - Leinster Category Theory
   - BCT Overview
+depends_on:
+  - "[[raw/1612.09375v2.pdf]]"
+  - "[[Foundations/Categories]]"
+  - "[[Foundations/Functors]]"
+  - "[[Foundations/Natural Transformations]]"
+  - "[[Adjunctions/Adjoint Functors]]"
+  - "[[Representables/Representable Functors]]"
+  - "[[Representables/Yoneda Lemma]]"
+  - "[[Limits and Colimits/General Limits]]"
+used_by:
+  - "[[Category Theory/_Index]]"
 ---
 
 # Basic Category Theory — Overview
