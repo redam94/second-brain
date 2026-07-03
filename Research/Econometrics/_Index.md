@@ -4,21 +4,21 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-06-28
-concept_count: 51
+date_updated: 2026-07-03
+concept_count: 56
 ---
 
 # Econometrics
 
 > [!abstract] Routing Summary
-> This folder covers applied econometrics and causal inference from Mostly Harmless Econometrics plus Bayesian DiD, synthetic control, DAG tutorials, Bayesian propensity weighting, **classical propensity score matching (PSM)**, simulation-based estimation, staggered difference-in-differences, and high-dimensional dependence (copula) modelling. Contains 51 notes across 6 sub-topics.
+> This folder covers applied econometrics and causal inference from Mostly Harmless Econometrics plus Bayesian DiD, synthetic control, DAG tutorials, Bayesian propensity weighting, **classical propensity score matching (PSM)**, simulation-based estimation, staggered difference-in-differences, and high-dimensional dependence (copula) modelling including **vine copulas (Aas et al. 2009) and copula architecture comparison**. Contains 56 notes across 6 sub-topics.
 > - Need research design fundamentals, selection bias, or DAGs? -> [[Foundations/_Index|Foundations]]
 > - Need regression interpretation or OVB? -> [[Regression Foundations/_Index|Regression Foundations]]
 > - Need IV, DiD (canonical), RD, synthetic control, GSC, DAGs, or propensity weighting? -> [[Identification Strategies/_Index|Identification Strategies]]
 > - Need **staggered/multi-period DiD** (group-time ATT, doubly-robust estimands, event-study aggregation, multiplier-bootstrap inference)? -> [[Difference-in-Differences/_Index|Difference-in-Differences]]
 > - Need quantile regression, discrete choice, or SEs? -> [[Extensions/_Index|Extensions]]
 > - Need simulation-based estimation (MSM, indirect inference, EMM, copula SMM)? -> [[Extensions/_Index|Extensions]]
-> - Need high-dimensional dependence / copulas, tail dependence, or factor copulas? -> [[Dependence Modeling/_Index|Dependence Modeling]]
+> - Need high-dimensional dependence / copulas, tail dependence, factor copulas, or **vine copulas**? -> [[Dependence Modeling/_Index|Dependence Modeling]]
 
 ## Book Overview
 
@@ -33,7 +33,7 @@ concept_count: 51
 | [[Identification Strategies/_Index\|Identification Strategies]] | 19 | IV, LATE, DD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, **classical PSM (Rosenbaum-Rubin matching framework + diagnostics)** — quasi-experimental methods (MHE Ch 4-6 + Abadie 2021 + Xu 2017 + extras) |
 | [[Difference-in-Differences/_Index\|Difference-in-Differences]] | 6 | Staggered/multi-period DiD: group-time ATT(g,t), parallel-trends/no-anticipation/overlap assumptions, OR/IPW/doubly-robust estimands, event-study/group/calendar aggregation, multiplier-bootstrap uniform inference, TWFE critique (Callaway & Sant'Anna 2020) |
 | [[Extensions/_Index\|Extensions]] | 12 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8), simulation-based estimation: MSM, indirect inference, EMM, SMM for copulas (Liesenfeld & Breitung 1998, Oh & Patton 2011) |
-| [[Dependence Modeling/_Index\|Dependence Modeling]] | 6 | High-dimensional copulas, factor-copula construction, tail dependence via EVT, multi-factor/block structures, rank-based SMM, S&P 100 & systemic risk (Oh & Patton 2012) |
+| [[Dependence Modeling/_Index\|Dependence Modeling]] | 11 | High-dimensional copulas: factor copulas (Oh & Patton 2012, $n\geq50$, SMM) and vine copulas (Aas et al. 2009; Bedford & Cooke 2002, $n\lesssim20$, sequential MLE); tail dependence via EVT; architecture comparison |
 
 ## Sources
 
@@ -51,6 +51,7 @@ concept_count: 51
 - [[raw/Oh-Patton-2012-Factor-Copulas.pdf]] — Oh & Patton (2012), "Modelling Dependence in High Dimensions with Factor Copulas" (Duke): factor copulas, EVT tail dependence, rank-based SMM, S&P 100 systemic risk
 - [[raw/1803.09015-Callaway-SantAnna-DiD-Multiple-Periods.pdf]] — Callaway & Sant'Anna (2020), "Difference-in-Differences with Multiple Time Periods" (J. Econometrics): group-time ATT, doubly-robust estimands, aggregation schemes, multiplier-bootstrap inference, minimum-wage application
 - [[raw/PSM-Rosenbaum-Rubin-Stuart-Survey.md]] — Survey synthesis: Rosenbaum & Rubin (1983) Biometrika, Rosenbaum & Rubin (1985) AmStat, Stuart (2010) Statistical Science, Imbens (2004) RESTAT — classical propensity score matching framework, algorithms, and balance diagnostics
+- [[raw/Vine-Copulas-Aas-BedfordCooke-Survey.md]] — Survey synthesis: Aas et al. (2009) Insurance: Math. & Econ. 44:182-198 (pair-copula constructions); Bedford & Cooke (2002) Ann. Stat. 30:1031-1068 (vine graphical model); Czado (2010) Springer LNS 198 (practitioner review); Dißmann et al. (2013) CSDA 59:52-69 (R-vine selection and estimation)
 
 ## See Also
 
