@@ -79,4 +79,6 @@ This separation lets the researcher (i) estimate marginals using the large univa
 ## See Also
 
 - [[19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — general SMM method; this paper is a flagship application.
+- [[Vine Copulas - Overview]] — the complementary architecture for $n \lesssim 20$: pair-copula constructions with per-edge family flexibility.
+- [[High-Dimensional Copula Architecture Comparison]] — guidance on when to use factor vs vine vs elliptical copulas; decision flowchart; S&P 100 example.
 - [[../_Index|Econometrics]]
