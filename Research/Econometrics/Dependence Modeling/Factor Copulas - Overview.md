@@ -47,7 +47,7 @@ This separation lets the researcher (i) estimate marginals using the large univa
 ^contributions
 
 > [!definition] Position relative to the literature
-> The models extend **Hull & White (2004)**: they keep a simple linear, additive factor structure but allow the latent variables to have flexibly specified distributions. Related factor copulas appear in Andersen & Sidenius (2004) and van der Voort (2005) (non-linear structures) and McNeil et al. (2005) (times-to-default). Prior work largely focused on calibration/pricing, not estimation of unknown parameters. Alternatives that struggle in high dimensions: the **Normal copula** (Li 2000; zero tail dependence, symmetric); the **$t$ / grouped-$t$ copula** (Demarta & McNeil 2005; Daul et al. 2003 — usable up to 100 variables but forces equal upper/lower tail dependence, strongly rejected for equities); **Archimedean** copulas (Clayton, Gumbel — too few parameters for many variables); and **vine** copulas (Aas et al. 2009; hard-to-interpret/test assumptions). The formal SMM estimation of high-dimension copulas is new to the literature.
+> The models extend **Hull & White (2004)**: they keep a simple linear, additive factor structure but allow the latent variables to have flexibly specified distributions. Related factor copulas appear in Andersen & Sidenius (2004) and van der Voort (2005) (non-linear structures) and McNeil et al. (2005) (times-to-default). Prior work largely focused on calibration/pricing, not estimation of unknown parameters. Alternatives that struggle in high dimensions: the **Normal copula** (Li 2000; zero tail dependence, symmetric); the **$t$ / grouped-$t$ copula** (Demarta & McNeil 2005; Daul et al. 2003 — usable up to 100 variables but forces equal upper/lower tail dependence, strongly rejected for equities); **Archimedean** copulas (Clayton, Gumbel — too few parameters for many variables); and **vine** copulas ([[Vine Copulas - Overview|Aas et al. 2009]]; hard-to-interpret/test assumptions, better for $d < 30$). The formal SMM estimation of high-dimension copulas is new to the literature.
 ^literature
 
 > [!definition] Why a factor structure for the copula
@@ -78,5 +78,6 @@ This separation lets the researcher (i) estimate marginals using the large univa
 
 ## See Also
 
+- [[Vine Copulas - Overview]] — the alternative architecture for $d < 30$: pair-copula construction, C-vine, D-vine, sequential MLE; architecture comparison table included.
 - [[19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — general SMM method; this paper is a flagship application.
 - [[../_Index|Econometrics]]

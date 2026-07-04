@@ -4,14 +4,14 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-06-28
-concept_count: 51
+date_updated: 2026-07-04
+concept_count: 54
 ---
 
 # Econometrics
 
 > [!abstract] Routing Summary
-> This folder covers applied econometrics and causal inference from Mostly Harmless Econometrics plus Bayesian DiD, synthetic control, DAG tutorials, Bayesian propensity weighting, **classical propensity score matching (PSM)**, simulation-based estimation, staggered difference-in-differences, and high-dimensional dependence (copula) modelling. Contains 51 notes across 6 sub-topics.
+> This folder covers applied econometrics and causal inference from Mostly Harmless Econometrics plus Bayesian DiD, synthetic control, DAG tutorials, Bayesian propensity weighting, **classical propensity score matching (PSM)**, simulation-based estimation, staggered difference-in-differences, and high-dimensional dependence (copula) modelling — including **vine copulas** (C-vine, D-vine, sequential MLE, Dissmann structure selection). Contains 54 notes across 6 sub-topics.
 > - Need research design fundamentals, selection bias, or DAGs? -> [[Foundations/_Index|Foundations]]
 > - Need regression interpretation or OVB? -> [[Regression Foundations/_Index|Regression Foundations]]
 > - Need IV, DiD (canonical), RD, synthetic control, GSC, DAGs, or propensity weighting? -> [[Identification Strategies/_Index|Identification Strategies]]
@@ -33,7 +33,7 @@ concept_count: 51
 | [[Identification Strategies/_Index\|Identification Strategies]] | 19 | IV, LATE, DD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, **classical PSM (Rosenbaum-Rubin matching framework + diagnostics)** — quasi-experimental methods (MHE Ch 4-6 + Abadie 2021 + Xu 2017 + extras) |
 | [[Difference-in-Differences/_Index\|Difference-in-Differences]] | 6 | Staggered/multi-period DiD: group-time ATT(g,t), parallel-trends/no-anticipation/overlap assumptions, OR/IPW/doubly-robust estimands, event-study/group/calendar aggregation, multiplier-bootstrap uniform inference, TWFE critique (Callaway & Sant'Anna 2020) |
 | [[Extensions/_Index\|Extensions]] | 12 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8), simulation-based estimation: MSM, indirect inference, EMM, SMM for copulas (Liesenfeld & Breitung 1998, Oh & Patton 2011) |
-| [[Dependence Modeling/_Index\|Dependence Modeling]] | 6 | High-dimensional copulas, factor-copula construction, tail dependence via EVT, multi-factor/block structures, rank-based SMM, S&P 100 & systemic risk (Oh & Patton 2012) |
+| [[Dependence Modeling/_Index\|Dependence Modeling]] | 9 | High-dimensional copulas: **factor copulas** (latent factor, SMM, $d \geq 50$, Oh & Patton 2012) and **vine copulas** (pair-copula construction, C-vine/D-vine, sequential MLE, Dissmann structure selection, Aas et al. 2009 / Bedford & Cooke 2002) |
 
 ## Sources
 
@@ -51,6 +51,7 @@ concept_count: 51
 - [[raw/Oh-Patton-2012-Factor-Copulas.pdf]] — Oh & Patton (2012), "Modelling Dependence in High Dimensions with Factor Copulas" (Duke): factor copulas, EVT tail dependence, rank-based SMM, S&P 100 systemic risk
 - [[raw/1803.09015-Callaway-SantAnna-DiD-Multiple-Periods.pdf]] — Callaway & Sant'Anna (2020), "Difference-in-Differences with Multiple Time Periods" (J. Econometrics): group-time ATT, doubly-robust estimands, aggregation schemes, multiplier-bootstrap inference, minimum-wage application
 - [[raw/PSM-Rosenbaum-Rubin-Stuart-Survey.md]] — Survey synthesis: Rosenbaum & Rubin (1983) Biometrika, Rosenbaum & Rubin (1985) AmStat, Stuart (2010) Statistical Science, Imbens (2004) RESTAT — classical propensity score matching framework, algorithms, and balance diagnostics
+- [[raw/Vine-Copula-Aas-Czado-Survey.md]] — Synthesis survey: Aas, Czado, Frigessi & Bakken (2009) Ins:Math&Econ, Bedford & Cooke (2002) AoS, Czado & Nagler (2022) AnnRevStats — vine copulas, C-vine/D-vine structures, pair-copula decomposition, sequential MLE, Dissmann algorithm, software. Created 2026-07-04; source PDFs blocked by network policy.
 
 ## See Also
 
