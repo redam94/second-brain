@@ -107,6 +107,7 @@ After running $\xi^\*$, the geo-holdout's causal effect is estimated by a counte
 | [[Bayesian Structural Time-Series Model]] | Counterfactual read-out of the geo-holdout |
 | [[Variational BOED - Overview]] · [[Adaptive Contrastive Estimation (ACE)]] | Fast differentiable EIG estimators |
 | [[High-Dimensional Design Applications]] | Evidence gradient BOED scales to 100–400-D designs |
+| [[Geo-Experiment Methodology - Overview]] · [[Geo-Experiment Design and Power Analysis]] · [[Time-Based Regression Estimator for Geo Experiments]] | The classical (non-Bayesian) design/estimation methodology for this same geo-holdout problem |
 
 ## Related Concepts
 
@@ -118,7 +119,7 @@ After running $\xi^\*$, the geo-holdout's causal effect is estimated by a counte
 
 ## Gaps
 
-- **No vault note on geo-experiment methodology specifically** (matched-market design, GeoLift, time-based regression). The encoding above is constructed from general BED + MMM notes; consider ingesting Google's `GeoLift` / geo-based measurement literature.
+- ~~**No vault note on geo-experiment methodology specifically** (matched-market design, GeoLift, time-based regression).~~ **Resolved (2026-07-03):** see [[Research/Market Response Models/Geo-Experiment Methodology/_Index|Geo-Experiment Methodology]] — Vaver & Koehler (2011) give the geo-based regression (GBR) design/power methodology and Kerman, Wang & Vaver (2017) give the time-based regression (TBR) estimator underlying Google's open-source Matched Markets tool. Both are the classical, frequentist counterparts of the Bayesian design $\xi$ encoded above (see [[Geo-Experiment Design and Power Analysis]]'s "shared design vector" note); GeoLift's Augmented Synthetic Control machinery remains covered by the vault's existing [[Synthetic Control]] / [[Generalized Synthetic Control Method]] notes rather than a standalone ingestion.
 - **Relaxations for binary design variables** (Gumbel-softmax over geo assignment) are not covered in the BOED notes, which assume continuous designs.
 
 ## Follow-Up Questions

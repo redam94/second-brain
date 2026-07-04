@@ -25,6 +25,9 @@ depends_on:
   - "[[Power Analysis and Sample Size]]"
 used_by:
   - "[[Multiple Testing Corrections]]"
+  - "[[Delayed Feedback Model for Conversion Prediction]]"
+  - "[[EM and Gradient Optimization for the Delayed Feedback Model]]"
+  - "[[Bandit Models with Delayed and Censored Feedback]]"
 ---
 
 # Survival Analysis
@@ -137,3 +140,4 @@ Bayesian survival analysis places priors on hazard functions or regression coeff
 - [[Generalized Linear Models]] — Cox model shares the GLM structure
 - [[Missing Data Models]] — censoring is a form of missing data
 - [[Power Analysis and Sample Size]] — sample size calculation for survival studies
+- [[Delayed and Censored Feedback - Overview]] — extends right-censoring to settings where the event ("conversion") may never happen at all: a not-yet-converted click/action is right-censored at the elapsed time, exactly as here, but is modeled jointly with a latent "will it ever happen" indicator (see [[Delayed Feedback Model for Conversion Prediction]] for the supervised-learning version and [[Bandit Models with Delayed and Censored Feedback]] for the sequential-decision/bandit version)

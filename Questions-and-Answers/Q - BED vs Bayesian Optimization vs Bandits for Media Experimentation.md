@@ -18,6 +18,9 @@ answered_from:
   - "[[Further Topics in Global Optimisation]]"
   - "[[From Designs to Policies (Deep Adaptive Design)]]"
   - "[[Q- and A-learning - Overview]]"
+  - "[[Multi-Armed Bandits and Thompson Sampling - Overview]]"
+  - "[[Bernoulli Bandit and Thompson Sampling Algorithm]]"
+  - "[[Regret Bounds for Thompson Sampling]]"
 related_questions:
   - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]]"
@@ -58,10 +61,11 @@ Use BO when you don't need the whole response surface, just its **argmax**: the 
 
 ### 3. Bandits — when the goal is to *earn while learning*
 
-Use a bandit for **always-on tactical decisions** — creative/message rotation, real-time bidding, on-site placement — where each action simultaneously *is* the experiment and *earns* (or costs) reward, so you pay for every unit of exploration as **regret**. Bandits (ε-greedy, UCB, Thompson sampling) balance exploration and exploitation to minimize cumulative regret rather than to end with a precise parameter estimate. The vault does **not** yet have a dedicated bandit/Thompson-sampling note (see Gaps), but two anchors connect it to existing content:
+Use a bandit for **always-on tactical decisions** — creative/message rotation, real-time bidding, on-site placement — where each action simultaneously *is* the experiment and *earns* (or costs) reward, so you pay for every unit of exploration as **regret**. Bandits (ε-greedy, UCB, Thompson sampling) balance exploration and exploitation to minimize cumulative regret rather than to end with a precise parameter estimate. This paradigm now has a dedicated home — [[Multi-Armed Bandits and Thompson Sampling - Overview]] (Russo et al. 2018) — connecting to existing vault content via three anchors:
 
-- **Shared vocabulary with BO**: the bandit **UCB** rule is the same idea as **GP-UCB** in [[Acquisition Functions]] — an upper-confidence-bound acquisition. BO is essentially a bandit over a *continuous, GP-modeled* arm space; [[Further Topics in Global Optimisation]] notes BO "relates to but differs from reinforcement learning."
-- **Sequential decision theory**: choosing actions over time from accumulating history to maximize a long-run objective is the **dynamic treatment regime** problem — [[Q- and A-learning - Overview]], [[Optimal Regime via Dynamic Programming]] (backward induction, Q/value functions). A non-myopic media-allocation policy is a DTR/RL problem; [[From Designs to Policies (Deep Adaptive Design)|DAD]] is its BED-flavored, information-seeking cousin.
+- **Thompson sampling is the practical default**: draw one posterior sample per period and act greedily on it. [[Bernoulli Bandit and Thompson Sampling Algorithm]] gives the exact Beta-Bernoulli conjugate-update algorithm (and its general non-conjugate form); [[Contextual and Linear Bandits]] extends it to the linear/GLM/contextual reward models an MMM-driven allocator would actually use; [[Approximate Thompson Sampling and Practical Extensions]] covers nonstationary drift and Laplace/Langevin/bootstrap approximations when conjugacy fails.
+- **Shared vocabulary with BO**: the bandit **UCB** rule ([[UCB and Greedy Algorithms for Bandits]]) is the same idea as **GP-UCB** in [[Acquisition Functions]] — an upper-confidence-bound acquisition. BO is essentially a bandit over a *continuous, GP-modeled* arm space; [[Further Topics in Global Optimisation]] notes BO "relates to but differs from reinforcement learning."
+- **Sequential decision theory**: choosing actions over time from accumulating history to maximize a long-run objective is the **dynamic treatment regime** problem — [[Q- and A-learning - Overview]], [[Optimal Regime via Dynamic Programming]] (backward induction, Q/value functions). A non-myopic media-allocation policy is a DTR/RL problem; [[From Designs to Policies (Deep Adaptive Design)|DAD]] is its BED-flavored, information-seeking cousin, and posterior-sampling RL ([[Approximate Thompson Sampling and Practical Extensions]]) is its bandit-flavored one.
 
 ### 4. How to choose — and compose
 
@@ -90,6 +94,10 @@ They are layers, not rivals: run **BED/BO periodically** to (re)learn the respon
 | [[Further Topics in Global Optimisation]] | Batch/multi-fidelity BO; BO vs RL |
 | [[From Designs to Policies (Deep Adaptive Design)]] | Non-myopic amortized policies (BED side) |
 | [[Q- and A-learning - Overview]] · [[Optimal Regime via Dynamic Programming]] | Sequential-decision / DTR analog of bandits/RL |
+| [[Multi-Armed Bandits and Thompson Sampling - Overview]] · [[Bernoulli Bandit and Thompson Sampling Algorithm]] | The "earn while learning" objective; posterior-sampling algorithm |
+| [[UCB and Greedy Algorithms for Bandits]] | Optimistic (UCB) alternative to sampling; Gittins index |
+| [[Regret Bounds for Thompson Sampling]] | Formalizes regret; Lai-Robbins, eluder-dimension, and information-ratio bounds |
+| [[Contextual and Linear Bandits]] · [[Approximate Thompson Sampling and Practical Extensions]] | Linear/GLM/contextual reward models; nonstationarity; PSRL |
 
 ## Related Concepts
 
@@ -100,9 +108,10 @@ They are layers, not rivals: run **BED/BO periodically** to (re)learn the respon
 
 ## Gaps
 
-- **No dedicated note on multi-armed bandits, Thompson sampling, UCB1, or contextual bandits.** This is the biggest gap for the "earn-while-learning" paradigm; the answer bridges via GP-UCB and dynamic treatment regimes. Consider ingesting a bandits reference (e.g. Lattimore & Szepesvári, *Bandit Algorithms*) or Russo et al., *A Tutorial on Thompson Sampling*.
-- **No note on regret bounds** (cumulative vs simple regret) to formalize the bandit objective.
-- **BO↔RL relationship** is only mentioned in passing in [[Further Topics in Global Optimisation]].
+- ~~No dedicated note on multi-armed bandits, Thompson sampling, UCB1, or contextual bandits.~~ **Resolved (2026-07-03):** Russo et al. (2018), *A Tutorial on Thompson Sampling*, ingested as [[Multi-Armed Bandits and Thompson Sampling/_Index|Multi-Armed Bandits and Thompson Sampling]] (6 notes: overview, algorithm, UCB/greedy alternatives, regret bounds, contextual/linear bandits, approximate sampling & practical extensions).
+- ~~No note on regret bounds~~ (cumulative vs. Bayesian regret). **Resolved:** see [[Regret Bounds for Thompson Sampling]] (Lai-Robbins asymptotic bound, instance-independent and eluder-dimension bounds, information-ratio analysis).
+- **BO↔RL relationship** is only mentioned in passing in [[Further Topics in Global Optimisation]]; the bandit-side analog, **PSRL/deep exploration**, is now covered in [[Approximate Thompson Sampling and Practical Extensions]], but a note bridging BO and RL directly is still missing.
+- **Still open**: no note formalizes **information-directed sampling** (Russo & Van Roy 2014a/2018a) as a standalone method beyond its mention in [[Regret Bounds for Thompson Sampling]] — worth a dedicated note if the vault ingests that line of work further.
 
 ## Follow-Up Questions
 

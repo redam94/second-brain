@@ -4,14 +4,14 @@ tags:
   - type/index
   - topic/market-response
   - source/hanssens-parsons-schultz-2001
-date_updated: 2026-06-17
-concept_count: 31
+date_updated: 2026-07-03
+concept_count: 35
 ---
 
 # Market Response Models
 
 > [!abstract] Routing Summary
-> Empirical response models for marketing management using econometric and time series (ETS) analysis, plus modern Bayesian media mix modeling. Sources: Hanssens, Parsons & Schultz (2001) "Market Response Models," 2nd Ed., and Jin et al. (Google, 2017) Bayesian MMM. Contains 31 notes organized across 6 subfolders.
+> Empirical response models for marketing management using econometric and time series (ETS) analysis, plus modern Bayesian media mix modeling and classical geo-experiment methodology. Sources: Hanssens, Parsons & Schultz (2001) "Market Response Models," 2nd Ed., Jin et al. (Google, 2017) Bayesian MMM, and Vaver & Koehler (2011) / Kerman, Wang & Vaver (2017) on geo experiments. Contains 35 notes organized across 7 subfolders.
 > - Need overview and management framework? → [[Introduction/_Index|Introduction]]
 > - Need functional forms (linear, power, ADBUDG, MCI/MNL) with LaTeX + elasticities? → [[Static Response Models/_Index|Static Response Models]]
 > - Need Koyck/ADL carryover, reaction functions, hysteresis? → [[Dynamic Response Models/_Index|Dynamic Response Models]]
@@ -19,6 +19,7 @@ concept_count: 31
 > - Need ARIMA, transfer functions, VAR, cointegration, ECM? → [[Time Series Analysis/_Index|Time Series Analysis]]
 > - Need advertising/price/promotion empirical elasticities and optimal decisions? → [[Empirical Findings and Applications/_Index|Empirical Findings and Applications]]
 > - Need **Bayesian MMM** (adstock/carryover, Hill saturation, MCMC priors, ROAS/mROAS, optimal media mix, BIC selection)? → [[Bayesian Media Mix Modeling/_Index|Bayesian Media Mix Modeling]]
+> - Need **geo-experiment methodology** (matched-market design, geo-based regression power analysis, time-based regression / Matched Markets)? → [[Geo-Experiment Methodology/_Index|Geo-Experiment Methodology]]
 
 ## Concept Map
 
@@ -31,6 +32,7 @@ concept_count: 31
 | [[Time Series Analysis/_Index\|Time Series Analysis]] | 4 | ARIMA, transfer functions, VAR, cointegration, ECM, Granger causality |
 | [[Empirical Findings and Applications/_Index\|Empirical Findings]] | 5 | Advertising elasticity ≈ 0.10, price ≈ −2.5, Dorfman-Steiner, DSS |
 | [[Bayesian Media Mix Modeling/_Index\|Bayesian Media Mix Modeling]] | 6 | Adstock (geometric/delayed) carryover, Hill/logistic saturation, Bayesian MCMC + priors, ROAS/mROAS, optimal media mix, BIC model selection (Jin et al., Google 2017) |
+| [[Geo-Experiment Methodology/_Index\|Geo-Experiment Methodology]] | 4 | Geo-Based Regression (GBR) design + power analysis (Vaver & Koehler 2011), Time-Based Regression (TBR) / Matched Markets estimator, iROAS, stationarity assumption and design sensitivity (Kerman, Wang & Vaver 2017) |
 
 ## Key Equations Quick Reference
 
@@ -62,6 +64,7 @@ concept_count: 31
 - **Econometrics**: [[Regression and the CEF]], [[Omitted Variables Bias]], [[Instrumental Variables]], [[Differences-in-Differences]]
 - **Bayesian**: [[Bayesian Workflow - Overview]], [[Hierarchical Linear Models]], [[Model Comparison]]
 - **Research Methodology**: [[Garden of Forking Paths]], [[Power Analysis and Sample Size]], [[Multiple Testing Corrections]]
+- **Geo-Experiment Design**: [[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]] — the Bayesian EIG framing this folder's classical (GBR/TBR) methodology is the frequentist counterpart of
 - **Causal Inference**: [[Activity Bias in Advertising]], [[Directed Acyclic Graphs]], [[Conditional Independence Assumption]]
 - **Consumer Behavior**: [[Product Adoption and Diffusion Models]], [[Logit Purchase Decision Model]]
 
@@ -69,3 +72,5 @@ concept_count: 31
 
 - [[raw/Market Response Models Econometric and Time Series Analysis.pdf|Market Response Models Econometric and Time Series Analysis]] — Hanssens, Parsons & Schultz (2001), Kluwer Academic Publishers, 2nd Edition, 455 pp.
 - [[raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf]] — Jin, Wang, Sun, Chan & Koehler (Google, 2017), "Bayesian Methods for Media Mix Modeling with Carryover and Shape Effects": adstock, Hill saturation, MCMC estimation, ROAS/mROAS, optimal media mix, BIC selection, shampoo case study
+- [[raw/Vaver Koehler 2011 - Measuring Ad Effectiveness Using Geo Experiments.pdf]] — Vaver & Koehler (Google, 2011), "Measuring Ad Effectiveness Using Geo Experiments": geo-based regression (GBR) design, randomization, spend perturbation, power/sample-size formula
+- [[raw/Kerman Wang Vaver 2017 - Time-Based Regression Geo Experiments.pdf]] — Kerman, Wang & Vaver (Google, 2017), "Estimating Ad Effectiveness using Geo Experiments in a Time-Based Regression Framework": TBR estimator underlying Google's open-source Matched Markets tool

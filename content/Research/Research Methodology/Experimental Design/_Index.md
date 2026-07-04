@@ -4,18 +4,23 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/Research Methodology/_Index|Research Methodology]]"
-date_updated: 2026-04-09
-concept_count: 4
+date_updated: 2026-07-03
+concept_count: 8
 ---
 
 # Experimental Design
 
 > [!abstract] Routing Summary
-> This folder covers tools for designing, powering, and analyzing experiments. Contains 3 notes.
+> This folder covers tools for designing, powering, and analyzing experiments. Contains 4 notes plus a Delayed and Censored Feedback subfolder (4 notes).
 > - Need sample size formulas? -> [[Power Analysis and Sample Size]]
 > - Need Bonferroni, FDR, or q-values? -> [[Multiple Testing Corrections]]
 > - Need Kaplan-Meier or Cox regression? -> [[Survival Analysis]]
 > - Need Type S (sign) or Type M (magnitude) errors? -> [[Type S and Type M Errors]]
+> - Need conversion-delay modeling or bandit regret under delayed/censored rewards? -> [[Research/Research Methodology/Experimental Design/Delayed and Censored Feedback/_Index|Delayed and Censored Feedback]]
+
+## Sub-topics
+
+- [[Research/Research Methodology/Experimental Design/Delayed and Censored Feedback/_Index|Delayed and Censored Feedback]] — COVERS: Chapelle (2014)'s joint classifier + hazard-based delay model for ad conversion prediction (right-censoring of not-yet-converted examples), and Vernade, Cappé & Perchet (2017)'s stochastic bandit model with delayed and censored rewards, its DelayedUCB/DelayedKLUCB algorithms, and regret bounds. Extends this folder's [[Survival Analysis|survival/censoring]] concepts into the online sequential-decision setting. *(4 notes.)*
 
 ## Concept Map
 
@@ -37,6 +42,8 @@ concept_count: 4
 - [Sample size estimation and power analysis (PMC3409926)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3409926/)
 - [How does multiple testing correction work? (PMC2907892)](https://pmc.ncbi.nlm.nih.gov/articles/PMC2907892/)
 - [Survival Analysis and Interpretation of Time-to-Event Data (PMC6110618)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6110618/)
+- [[../raw/Chapelle 2014 - Modeling Delayed Feedback in Display Advertising.pdf]] — Chapelle (KDD 2014), "Modeling Delayed Feedback in Display Advertising"
+- [[../raw/Vernade Cappe Perchet 2017 - Stochastic Bandit Models for Delayed Conversions.pdf]] — Vernade, Cappé & Perchet (2017), "Stochastic Bandit Models for Delayed Conversions", arXiv:1706.09186
 
 ## See Also
 

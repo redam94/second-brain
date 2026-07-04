@@ -4,19 +4,20 @@ tags:
   - type/index
   - source/ingested
 parent: "[[../_Index|Research]]"
-date_updated: 2026-06-27
-concept_count: 21
+date_updated: 2026-07-03
+concept_count: 27
 ---
 
 # Bayesian Experimental Design
 
 > [!abstract] Routing Summary
-> Information-theoretic design of experiments: choose designs $\xi$ to maximize the **expected information gain (EIG)** about latents $\theta$. This topic ingests four papers tracing the field's full arc — its **foundation** (Lindley 1956), fast EIG **estimation** (Foster 2019), **unified gradient** design optimization (Foster 2020), and a **review** through policy-based adaptive design (Rainforth 2023). Contains 21 notes across 4 sub-topics.
+> Information-theoretic design of experiments: choose designs $\xi$ to maximize the **expected information gain (EIG)** about latents $\theta$. This topic ingests four papers tracing the field's full arc — its **foundation** (Lindley 1956), fast EIG **estimation** (Foster 2019), **unified gradient** design optimization (Foster 2020), and a **review** through policy-based adaptive design (Rainforth 2023) — plus a fifth on the **earn-while-learning** sibling paradigm, multi-armed bandits (Russo et al. 2018). Contains 27 notes across 5 sub-topics.
 > - The big picture across all papers / where to start? → [[Bayesian Experimental Design - Overview]]
 > - Core concepts (EIG, nested estimation, adaptive design)? → [[Research/Bayesian Experimental Design/Foundations/_Index|Foundations]]
 > - Fast EIG estimators (posterior, marginal, VNMC, implicit)? → [[Research/Bayesian Experimental Design/Variational EIG Estimators/_Index|Variational EIG Estimators]]
 > - One-stage gradient design (ACE, PCE, high-D applications)? → [[Research/Bayesian Experimental Design/Gradient-Based Unified BOED/_Index|Gradient-Based Unified BOED]]
 > - The state of the field (objectives, computation, policies, challenges)? → [[Research/Bayesian Experimental Design/Modern BED Review/_Index|Modern BED Review]]
+> - Earning reward while learning online — Thompson sampling, UCB, regret bounds? → [[Research/Bayesian Experimental Design/Multi-Armed Bandits and Thompson Sampling/_Index|Multi-Armed Bandits and Thompson Sampling]]
 
 ## Sub-topics
 
@@ -24,6 +25,7 @@ concept_count: 21
 - [[Research/Bayesian Experimental Design/Variational EIG Estimators/_Index|Variational EIG Estimators]] — COVERS (Foster 2019): four amortized variational EIG estimators — posterior/Barber–Agakov (lower), marginal (upper), VNMC (upper, consistent), implicit-likelihood — with $\mathcal{O}(T^{-1/2})$ convergence and selection rules. *(6 notes.)*
 - [[Research/Bayesian Experimental Design/Gradient-Based Unified BOED/_Index|Gradient-Based Unified BOED]] — COVERS (Foster 2020): single SGA loop jointly optimizing a variational lower bound and the design; the ACE & PCE contrastive bounds; likelihood-free ACE and gradient estimators; high-dimensional applications (400-D regression, 100-D docking). *(5 notes.)*
 - [[Research/Bayesian Experimental Design/Modern BED Review/_Index|Modern BED Review]] — COVERS (Rainforth 2023): EIG vs Fisher-information objectives; the computational revolution (MLMC debiasing, variational, implicit); stochastic-gradient design; deep adaptive design (policies); open challenges. *(6 notes.)*
+- [[Research/Bayesian Experimental Design/Multi-Armed Bandits and Thompson Sampling/_Index|Multi-Armed Bandits and Thompson Sampling]] — COVERS (Russo et al. 2018): the Beta-Bernoulli/general TS algorithm; UCB/greedy alternatives and the Gittins index; Bayesian regret, the Lai–Robbins bound, eluder dimension, and the information-ratio analysis; linear/GLM/contextual bandit reward models; approximate posterior sampling (Laplace, Langevin, bootstrap, ensemble), nonstationarity, and PSRL/deep exploration in RL. *(6 notes.)*
 
 ## Cross-Cutting Concepts
 
@@ -33,6 +35,7 @@ Concepts that span multiple sub-topics:
 - **Bound-trapping** — pairing a lower bound (ACE/$\hat\mu_{\text{post}}$) with an upper bound (VNMC/$\hat\mu_{\text{marg}}$) to verify designs: [[Convergence Rates and Estimator Selection]], [[High-Dimensional Design Applications]].
 - **Sequential / adaptive design** — from greedy BAD ([[Sequential and Adaptive BED]]) to amortized non-myopic policies ([[From Designs to Policies (Deep Adaptive Design)]]).
 - **Implicit-likelihood models** — [[Implicit Likelihood Estimator]] (error-bounded) → [[Likelihood-Free ACE and Gradient Estimation]] (bound-preserving) → [[The Computational Revolution in EIG Estimation|review §3.3.2]].
+- **Learn vs. earn-while-learning** — pure BED maximizes [[Expected Information Gain|EIG]] with no reward at stake; [[Multi-Armed Bandits and Thompson Sampling/Regret Bounds for Thompson Sampling|bandit regret bounds]] use an analogous *information ratio* that divides squared regret by mutual information, making the EIG the limiting case of "cost per bit" as the reward term vanishes. See [[Q - BED vs Bayesian Optimization vs Bandits for Media Experimentation]].
 
 ## Concept Dependency Chain
 
@@ -48,3 +51,5 @@ Concepts that span multiple sub-topics:
 - [[Research/Bayesian Statistics/_Index|Bayesian Statistics]] — inference, computation, and decision analysis that BED builds on
 - [[Research/Research Methodology/Experimental Design/_Index|Experimental Design (frequentist)]] — the classical power-analysis counterpart
 - [[Decision Analysis]] — EIG as expected utility of an experiment
+- [[Research/Bayesian Experimental Design/Multi-Armed Bandits and Thompson Sampling/_Index|Multi-Armed Bandits and Thompson Sampling]] — the earn-while-learning sibling paradigm (Thompson sampling, UCB, regret)
+- [[Q - BED vs Bayesian Optimization vs Bandits for Media Experimentation]] — BED vs. Bayesian optimization vs. bandits, worked through a media-measurement lens
