@@ -20,6 +20,11 @@ depends_on:
   - "[[Quantile Regression]]"
 used_by:
   - "[[Mostly Harmless Econometrics - Overview]]"
+aliases:
+  - DCM
+  - multinomial logit
+  - conditional logit
+  - random utility model
 ---
 
 # Discrete Choice Models

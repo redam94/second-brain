@@ -10,7 +10,7 @@ source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Workflow"
 doc_type: concept
-source_location: "Bayesian Workflow paper"
+source_location: "Sec. 2 (model construction, prior predictive checks)"
 depends_on:
   - "[[Bayesian Workflow - Overview]]"
   - "[[Hierarchical Models]]"
@@ -21,6 +21,9 @@ used_by:
   - "[[Iterative Model Improvement]]"
   - "[[Modeling as Software Development]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+aliases:
+  - prior predictive checking
+  - model construction workflow
 ---
 
 > [!summary]

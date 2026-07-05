@@ -21,6 +21,11 @@ depends_on:
 used_by:
   - "[[Confirmatory Factor Analysis and SEM]]"
   - "[[Copula Estimation]]"
+aliases:
+  - FA
+  - PPCA
+  - probabilistic PCA
+  - factor analysis
 ---
 
 # Factor Analysis and Probabilistic PCA (PPCA)

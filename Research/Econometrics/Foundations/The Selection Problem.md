@@ -23,6 +23,10 @@ used_by:
   - "[[Activity Bias in Advertising]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
+aliases:
+  - selection bias
+  - potential outcomes framework
+  - ATT
 ---
 
 # The Selection Problem

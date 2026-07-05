@@ -10,7 +10,7 @@ source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Workflow"
 doc_type: concept
-source_location: "Bayesian Workflow paper"
+source_location: "Sec. 6 (posterior predictive checks, LOO-CV, sensitivity analysis)"
 depends_on:
   - "[[Fitting and Validating Computation]]"
   - "[[Computational Troubleshooting]]"
@@ -23,6 +23,10 @@ used_by:
   - "[[Model Checking]]"
   - "[[Model Comparison]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+aliases:
+  - posterior predictive checks
+  - LOO-CV model evaluation
+  - model evaluation workflow
 ---
 
 # Evaluating Fitted Models

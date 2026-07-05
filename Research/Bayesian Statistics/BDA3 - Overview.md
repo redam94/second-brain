@@ -4,12 +4,19 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
+source_location: "Full text (23 chapters)"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
+depends_on: []
+used_by:
+  - "[[Statistical Rethinking - Overview]]"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
+  - "Gelman et al."
 ---
 
 # Bayesian Data Analysis, 3rd Edition

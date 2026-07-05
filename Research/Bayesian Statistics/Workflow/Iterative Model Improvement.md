@@ -10,7 +10,7 @@ source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Workflow"
 doc_type: concept
-source_location: "Bayesian Workflow paper"
+source_location: "Sec. 7-8 (model modification, comparison, stacking)"
 depends_on:
   - "[[Evaluating Fitted Models]]"
   - "[[Choosing and Building Models]]"
@@ -21,6 +21,10 @@ used_by:
   - "[[Modeling as Software Development]]"
   - "[[Model Comparison]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
+aliases:
+  - model expansion
+  - multiverse analysis
+  - stacking models
 ---
 
 > [!summary]

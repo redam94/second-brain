@@ -10,7 +10,7 @@ source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Workflow"
 doc_type: concept
-source_location: "Bayesian Workflow paper"
+source_location: "Sec. 3-4 (fitting, fake-data simulation, SBC)"
 depends_on:
   - "[[Choosing and Building Models]]"
   - "[[MCMC Basics]]"
@@ -22,6 +22,10 @@ used_by:
   - "[[Evaluating Fitted Models]]"
   - "[[Modeling as Software Development]]"
   - "[[Power Analysis and Sample Size]]"
+aliases:
+  - SBC
+  - simulation-based calibration
+  - fake-data simulation
 ---
 
 > [!summary]
