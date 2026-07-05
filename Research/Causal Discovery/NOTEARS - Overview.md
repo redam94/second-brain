@@ -105,5 +105,7 @@ case — though unlike the undirected case the resulting program is **nonconvex*
 - [[DAG Structure Learning Problem]] — the score-based / SEM formulation NOTEARS builds on
 - [[Smooth Characterization of Acyclicity]] — the central theorem ($h(W)=\mathrm{tr}\,e^{W\circ W}-d$)
 - [[NOTEARS Algorithm]] — how the continuous program is actually solved
-- [[NOTEARS Experiments]] — empirical results and benchmarks
+- [[NOTEARS Experiments]] — empirical results and benchmarks vs. GES/FGS
+- [[Markov Equivalence Classes and CPDAGs]] — what PC and GES output (CPDAGs); NOTEARS outputs full DAGs instead
+- [[GES - Greedy Equivalence Search]] — the score-based baseline (FGS/GES) that NOTEARS outperforms on dense graphs
 - [[Causal Discovery/_Index|Causal Discovery Index]]
