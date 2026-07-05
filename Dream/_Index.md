@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-06-29
+date_updated: 2026-07-05
 ---
 
 # Dream: Research Gaps
@@ -125,7 +125,7 @@ DAG-based reasoning was implicitly present throughout the vault but had no dedic
 ---
 
 ### 9. Causal Structure Learning from Data
-**Status:** 🌿 still relevant
+**Status:** 🍂 covered
 
 **Partially addressed (2026-06-22):** The `Causal Discovery/` subfolder now covers NOTEARS comprehensively: [[NOTEARS - Overview]], [[DAG Structure Learning Problem]], [[Smooth Characterization of Acyclicity]], [[NOTEARS Algorithm]], [[NOTEARS Experiments]]. The score-based continuous-optimization approach is well-documented. Constraint-based methods (PC algorithm, conditional independence testing) and score-based search (GES / Greedy Equivalence Search) remain entirely absent.
 
@@ -134,11 +134,7 @@ The vault has extensive coverage of DAG *reasoning* (d-separation, back-door cri
 
 **Adjacent notes:** [[Directed Acyclic Graphs]], [[Summary Causal DAGs]], [[LLM Expert Elicitation for Bayesian Networks]], [[BN Construction Methods Comparison]], [[Approximate Bayesian Computation for ABMs]]
 
-**Suggested sources / search terms:**
-- Spirtes, Glymour & Scheines (2000) — *Causation, Prediction, and Search* (PC algorithm)
-- Chickering (2002) — "Optimal structure identification with greedy search" (*JMLR*) — GES
-- Zheng et al. (2018) — "DAGs with NO TEARS: Continuous optimization for structure learning" (*NeurIPS*)
-- Search: "PC algorithm structure learning", "GES causal discovery", "NOTEARS", "constraint-based causal discovery"
+**Covered by:** [[Markov Equivalence Classes and CPDAGs]], [[PC Algorithm]], [[GES - Greedy Equivalence Search]] (all in `Causal Discovery/`, created 2026-07-05)
 
 ---
 
@@ -483,6 +479,7 @@ The vault has two complementary sections that are not yet connected: `Econometri
 | Bayesian Marketing Mix Modeling (#14) | [[Bayesian Media Mix Modeling - Overview]], [[Carryover (Adstock) Functional Forms]], [[Shape (Saturation) Effects]], [[ROAS, mROAS, and Optimal Media Mix]] + 2 more | 2026-06-22 |
 | Staggered DiD / Callaway-Sant'Anna (#19) | [[Difference-in-Differences with Multiple Time Periods - Overview]], [[Group-Time Average Treatment Effects]], [[Doubly-Robust Estimands for ATT(g,t)]] + 3 more | 2026-06-22 |
 | Propensity Score Methods / PSM (#1) | [[Propensity Score Matching - Overview]], [[Matching Algorithms and Caliper]], [[Covariate Balance and Matching Diagnostics]] | 2026-06-28 |
+| Causal Structure Learning from Data (#9) | [[Markov Equivalence Classes and CPDAGs]], [[PC Algorithm]], [[GES - Greedy Equivalence Search]] | 2026-07-05 |
 
 ---
 
@@ -503,3 +500,4 @@ The vault has two complementary sections that are not yet connected: `Econometri
 | 2026-06-22 | Run 11: reviewed 9 notes (Practical Issues in Simulation Estimation, QFT Overview, Units and Counits, Multi-Factor and Block Dependence Structures, Price and Distribution Effects, Method of Simulated Moments, Markets Data and Sales Drivers, Spurious Association and Confounds, Regression and the CEF). Gaps #6 (SBC), #14 (Bayesian MMM), #19 (Staggered DiD) marked 🍂 covered — all now have dedicated note clusters. Gaps #8 (Factor Copulas) and #9 (Causal Structure Learning) updated to 🌿 still relevant: factor copulas now well-covered, vine copulas absent; NOTEARS covered, PC/GES absent. Frontmatter fixes: added `date_updated: 2026-06-22` to all 9 notes; added `folder` to Units and Counits, Price and Distribution Effects, Markets Data and Sales Drivers; added `date_ingested` to Price and Distribution Effects and Markets Data. Cross-links added: Practical Issues ↔ Brock-Mirman SMM ↔ SMM Estimation of Factor Copulas; QFT Overview ↔ Wave Function and Hilbert Space ↔ Uncertainty Principle ↔ Quantum Entanglement (within Physics folder) + cross-links to Theoretical Physics parallel notes (Standard Model and Gauge Groups, QFT Overview flat); Units and Counits ↔ Cartesian Closed Categories; Multi-Factor ↔ Dependence Measures for Copulas ↔ Factor Analysis and PPCA ↔ Copula Estimation; Price and Distribution ↔ Discrete Choice Models ↔ Parameter Estimation in Market Response; Method of MSM ↔ Brock-Mirman SMM ↔ SMM Estimation of Factor Copulas; Markets Data ↔ Bayesian Media Mix Modeling Overview; Spurious Association ↔ Regression and the CEF (bidirectional). Added gaps #25 (ABM Calibration via SMM/II), #26 (Quantile Treatment Effects), #27 (Monads and Monadicity). |
 | 2026-06-15 | Run 10: reviewed 10 notes (s-Separation in Summary DAGs, Uncertainty Principle, BN Construction Methods Comparison, Local Linear Trend and Seasonality, Hilbert Space Gaussian Processes, Spurious Association and Confounds, Modeling as Software Development, Market Share Models, Functors and Limits, Time-Varying Treatments and G-computation). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-06-15` to all 10 notes; added `folder` to HSGP, Market Share Models, Functors and Limits; added `source:` field (wikilink) to HSGP; fixed `source_location` in Spurious Association and Confounds (Ch.9 → Ch.5); added missing H1 title header to Modeling as Software Development. Cross-links added: s-Separation ↔ Directed Acyclic Graphs; BN Construction Methods ↔ Directed Acyclic Graphs ↔ LLM Expert Elicitation (completing the BN trilogy); Local Linear Trend ↔ Single Marketing Time Series (state-space↔ARIMA bridge); HSGP — added full See Also section linking to Local Linear Trend and Seasonality ↔ Bayesian Structural Time-Series Model; Spurious Association ↔ Directed Acyclic Graphs (fork/pipe/collider → DAG formalization); Modeling as Software Development ↔ Garden of Forking Paths (version control as forking path defense); Market Share Models ↔ Discrete Choice Models (MNL/logit bridge MRM↔Econometrics) ↔ Monsters and Mixtures (heterogeneous MCI→latent segments); Functors and Limits ↔ Products and Equalizers; Time-Varying Treatments ↔ Bayesian Propensity Score Weighting (IPW-MSM connection). Added gaps #23 (Marginal Structural Models / Bayesian Bootstrap), #24 (Random Coefficients Logit / BLP Demand Estimation). Gaps #13 (State-Space/Kalman), #18 (DTRs), #21 (BN Foundations) reinforced by this run's notes. |
 | 2026-06-28 | Gap #1 (Propensity Score Matching) marked 🍂 covered. Searched arXiv, NBER, PMC, and academic homepages for Rosenbaum & Rubin (1983), Imbens (2004), Stuart (2010) — all freely available but blocked by session network policy. Created synthesis survey `raw/PSM-Rosenbaum-Rubin-Stuart-Survey.md` from training knowledge of the papers. Created 3 notes in `Econometrics/Identification Strategies/`: [[Propensity Score Matching - Overview]] (balancing theorem, strong ignorability, ATT vs ATE, PSM vs IPW, matching workflow, why matching fails for activity bias), [[Matching Algorithms and Caliper]] (NN greedy, caliper $\delta=0.2\sigma_{\text{logit}}$, optimal/full matching, subclassification, Mahalanobis, MatchIt R code), [[Covariate Balance and Matching Diagnostics]] (SMD, love plot, overlap plot, variance ratio, KS, Rubin 2001 criteria, cobalt R code). Updated Identification Strategies _Index.md (16→19 notes) and Econometrics _Index.md (48→51 notes). |
+| 2026-07-05 | Gap #9 (Causal Structure Learning — PC algorithm + GES) marked 🍂 covered. Gap had been 🌿 still relevant since 2026-06-22 (NOTEARS covered; PC/GES absent). Searched JMLR, arXiv, PMC for Chickering (2002), Spirtes et al. (2000), Colombo & Maathuis (2014) — confirmed freely available online but blocked by session network policy. Created synthesis survey `raw/PC-GES-Structure-Learning-Survey.md` from training knowledge. Created 3 notes in `Causal Discovery/`: [[Markov Equivalence Classes and CPDAGs]] (Verma-Pearl characterization theorem, CPDAG definition, Meek's 4 rules R1–R4, identifiability ceiling, non-Gaussian/interventional extensions), [[PC Algorithm]] (Markov + faithfulness assumptions, skeleton discovery via CI tests, v-structure orientation, stable-PC order-independence fix by Colombo & Maathuis 2014, consistency theorem, Fisher z / G-test / KCIT), [[GES - Greedy Equivalence Search]] (decomposable BIC score, forward/backward phase, valid insert/delete operators, Chickering Thm 15, FGES scaling, PC vs GES vs NOTEARS comparison table, pcalg R / causal-learn Python). Updated Causal Discovery _Index.md (5→8 notes). |
