@@ -8,6 +8,7 @@ tags:
 source: "[[raw/Oh-Patton-2012-Factor-Copulas.pdf]]"
 source_location: "Sec. 2.1-2.2, 2.5, pp. 4-6, 11"
 date_ingested: 2026-06-17
+date_updated: 2026-07-06
 folder: "Econometrics/Dependence Modeling"
 doc_type: paper
 depends_on:

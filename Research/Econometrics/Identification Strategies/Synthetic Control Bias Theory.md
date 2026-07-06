@@ -11,6 +11,7 @@ tags:
 source: "[[raw/Abadie 2021 - Using Synthetic Controls.pdf]]"
 source_location: "Abadie (2021), Sections 3.1–3.4, pp. 394–403"
 date_ingested: 2026-04-10
+date_updated: 2026-07-06
 folder: "Econometrics/Identification Strategies"
 doc_type: paper
 depends_on:
@@ -131,3 +132,4 @@ The regression estimator forces a perfect fit of the covariates ($\bar{\mathbf{X
 - [[Differences-in-Differences]] — the linear factor model nests DiD as a special case ($\lambda_t = $ constant)
 - [[Abadie 2021 - Overview]] — full paper overview
 - [[Bayesian Difference in Differences]] — Bayesian DiD is the parallel-trends special case ($\lambda_t = $ constant) of this linear factor model
+- [[Generalized Synthetic Control Method]] — the GSC (Xu 2016) extends this linear factor model by explicitly estimating the latent factors $\boldsymbol{\lambda}_t$ via interactive fixed effects rather than solving the constrained weights optimization
