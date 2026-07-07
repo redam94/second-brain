@@ -236,3 +236,7 @@ When a confounder creates a spurious correlation, we see an aggregate correlatio
 - [[Instrumental Variables]] — When backdoor adjustment is insufficient (unobserved confounders)
 - [[Regression and the CEF]] — regression is the estimator applied once a valid adjustment set is identified from the DAG
 - [[Conditional Independence Assumption]] — CIA is the statistical assumption that a valid DAG adjustment set justifies
+- [[Markov Equivalence Classes and CPDAGs]] — theory of what can be recovered from data (CPDAG, not DAG)
+- [[PC Algorithm]] — learning a DAG skeleton from data via conditional independence tests
+- [[Greedy Equivalence Search (GES)]] — score-based causal structure learning (Chickering 2002)
+- [[Causal Discovery Algorithms Comparison]] — practical guide to PC vs GES vs NOTEARS

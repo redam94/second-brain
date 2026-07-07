@@ -135,3 +135,6 @@ This NP-hardness motivates the greedy approximation in [[CaGReS Algorithm]].
 - [[Zeng 2025 - Overview]] — paper overview
 - [[Frequentist Causal Estimation]] — the adjustment set framework that CI preservation in summary DAGs must protect
 - [[Bayesian Outcome Models]] — Bayesian causal estimation that relies on DAG structure for confounding adjustment
+- [[PC Algorithm]] — learning a causal DAG from observational data (upstream step before DAG summarization)
+- [[Greedy Equivalence Search (GES)]] — score-based causal structure learning (Chickering 2002)
+- [[Causal Discovery Algorithms Comparison]] — PC vs GES vs NOTEARS for recovering the input DAG to summarize
