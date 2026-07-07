@@ -12,7 +12,8 @@ folder: "Causal Discovery"
 doc_type: paper
 depends_on:
   - "[[NOTEARS Algorithm]]"
-used_by: []
+used_by:
+  - "[[Causal Discovery Algorithms Comparison]]"
 aliases:
   - "NOTEARS results"
   - "NOTEARS vs FGS"

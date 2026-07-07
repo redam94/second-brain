@@ -120,3 +120,6 @@ See [[BN Construction Methods Comparison]] for full three-way comparison.
 - [[Interactive Knowledge Elicitation Method]] — human-in-the-loop alternative to LLM elicitation
 - [[NOTEARS - Overview]] — data-driven continuous-optimisation approach to DAG structure learning; contrasts with LLM-based expert elicitation
 - [[DAG Structure Learning Problem]] — the structural challenge that both LLM elicitation and algorithmic discovery address
+- [[PC Algorithm]] — constraint-based causal discovery from observational data (complement to expert elicitation)
+- [[Greedy Equivalence Search (GES)]] — score-based causal structure learning (Chickering 2002); can seed or validate expert-elicited structures
+- [[Causal Discovery Algorithms Comparison]] — when algorithmic discovery is preferable over expert elicitation
