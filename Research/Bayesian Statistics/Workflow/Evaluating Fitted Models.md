@@ -23,6 +23,11 @@ used_by:
   - "[[Model Checking]]"
   - "[[Model Comparison]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+aliases:
+  - "posterior predictive checks workflow"
+  - "evaluating Bayesian models"
+  - "Bayesian workflow step 3"
+  - "model adequacy assessment"
 ---
 
 # Evaluating Fitted Models

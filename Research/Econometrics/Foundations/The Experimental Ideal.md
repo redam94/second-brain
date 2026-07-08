@@ -16,6 +16,10 @@ depends_on:
   - "[[The Selection Problem]]"
   - "[[Research Questions in Econometrics]]"
   - "[[Regression and the CEF]]"
+aliases:
+  - "experimental ideal causal inference"
+  - "randomization ideal ATE"
+  - "RCT causal benchmark"
 used_by:
   - "[[Conditional Independence Assumption]]"
   - "[[Instrumental Variables]]"

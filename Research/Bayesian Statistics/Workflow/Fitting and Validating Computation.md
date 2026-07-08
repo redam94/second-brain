@@ -22,6 +22,11 @@ used_by:
   - "[[Evaluating Fitted Models]]"
   - "[[Modeling as Software Development]]"
   - "[[Power Analysis and Sample Size]]"
+aliases:
+  - "MCMC validation workflow"
+  - "computational diagnostics Bayesian"
+  - "Bayesian workflow step 2"
+  - "fake data simulation Bayesian"
 ---
 
 > [!summary]

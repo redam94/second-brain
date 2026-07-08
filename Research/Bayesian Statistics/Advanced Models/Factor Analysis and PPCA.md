@@ -21,6 +21,11 @@ depends_on:
 used_by:
   - "[[Confirmatory Factor Analysis and SEM]]"
   - "[[Copula Estimation]]"
+aliases:
+  - "PPCA"
+  - "probabilistic PCA"
+  - "Bayesian factor analysis"
+  - "dimensionality reduction Bayesian"
 ---
 
 # Factor Analysis and Probabilistic PCA (PPCA)

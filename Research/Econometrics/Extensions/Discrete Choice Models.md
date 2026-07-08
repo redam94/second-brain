@@ -20,6 +20,10 @@ depends_on:
   - "[[Quantile Regression]]"
 used_by:
   - "[[Mostly Harmless Econometrics - Overview]]"
+aliases:
+  - "random utility models"
+  - "MNL model Bayesian"
+  - "multinomial logit discrete choice"
 ---
 
 # Discrete Choice Models

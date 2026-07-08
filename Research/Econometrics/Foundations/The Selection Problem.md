@@ -15,6 +15,10 @@ source_location: "MHE Ch. 2, pp. 9-17"
 depends_on:
   - "[[Research Questions in Econometrics]]"
   - "[[Mostly Harmless Econometrics - Overview]]"
+aliases:
+  - "selection bias"
+  - "selection problem causal inference"
+  - "Angrist Pischke selection"
 used_by:
   - "[[The Experimental Ideal]]"
   - "[[Conditional Independence Assumption]]"

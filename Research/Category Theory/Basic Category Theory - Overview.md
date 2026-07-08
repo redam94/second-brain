@@ -12,6 +12,13 @@ doc_type: textbook
 aliases:
   - Leinster Category Theory
   - BCT Overview
+depends_on: []
+used_by:
+  - "[[Foundations/_Index|Foundations]]"
+  - "[[Adjunctions/_Index|Adjunctions]]"
+  - "[[Representables/_Index|Representables]]"
+  - "[[Limits and Colimits/_Index|Limits and Colimits]]"
+  - "[[Synthesis/_Index|Synthesis]]"
 ---
 
 # Basic Category Theory — Overview
