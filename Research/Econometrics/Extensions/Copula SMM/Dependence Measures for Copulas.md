@@ -143,6 +143,7 @@ In the [[SMM Copula Simulation and Application#^example-financial-dependence|fin
 | Gumbel | 0 | $2 - 2^{1/\delta}$ | No (upper only) |
 | Student-$t$ | $> 0$ | $> 0$ | Yes |
 | Factor copula (Oh & Patton) | $> 0$ | $> 0$ | Asymmetric (via $\lambda$) |
+| Vine / PCC (mixed families) | Pair-specific | Pair-specific | Pair-specific |
 
 The Normal copula's zero tail dependence is a significant limitation for financial applications where extreme co-movements are observed. The [[SMM Estimator for Copulas#^def-factor-copula|factor copula]] allows non-zero, asymmetric tail dependence through the skewed-$t$ factor distribution.
 
@@ -162,6 +163,8 @@ The Normal copula's zero tail dependence is a significant limitation for financi
 - [[SMM Copula Asymptotic Theory]] — asymptotic properties of sample Spearman's ρ and quantile dependence estimators
 - [[Factor Analysis and PPCA]] — factor structure in multivariate data is related to the factor copula architecture that extends these dependence measures to high-dimensional settings
 - [[Quantile Regression]] — quantile regression models the conditional quantile of an outcome; quantile dependence measures the conditional joint quantile behavior of a copula
+- [[Vine Copulas - Overview]] — vine copulas use Kendall $\tau$ as tree-structure selection weights; quantile dependence validates the selected pair copula families
+- [[Copula Architecture Comparison]] — this note's tail-dependence table is extended with vine copula entries
 
 ## Sources
 
