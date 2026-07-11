@@ -15,6 +15,10 @@ depends_on:
 used_by:
   - "[[Smooth Characterization of Acyclicity]]"
   - "[[NOTEARS Algorithm]]"
+  - "[[Markov Equivalence and CPDAGs]]"
+  - "[[PC Algorithm]]"
+  - "[[Greedy Equivalence Search]]"
+  - "[[Causal Discovery Algorithms - Comparison]]"
 aliases:
   - "Score-based DAG learning"
   - "Linear SEM structure learning"
@@ -140,4 +144,8 @@ The essential distinction: program (4)'s domain is the discrete set $\mathbb{D}$
 - [[NOTEARS - Overview]] — paper-level summary
 - [[Smooth Characterization of Acyclicity]] — how the constraint $\mathsf{G}(W)\in\mathbb{D}$ becomes $h(W)=0$
 - [[NOTEARS Algorithm]] — solving program (3)
+- [[Markov Equivalence and CPDAGs]] — the identifiability ceiling all methods face; CPDAG definition
+- [[PC Algorithm]] — constraint-based approach: the "Constraint-based" row in the landscape table
+- [[Greedy Equivalence Search]] — score-based approach: the "Local/approximate search" row (FGS/GES)
+- [[Causal Discovery Algorithms - Comparison]] — three-way comparison PC vs GES vs NOTEARS
 - [[Spurious Association and Confounds]] — DAG semantics in causal inference

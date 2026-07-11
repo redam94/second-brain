@@ -12,7 +12,8 @@ folder: "Causal Discovery"
 doc_type: paper
 depends_on:
   - "[[NOTEARS Algorithm]]"
-used_by: []
+used_by:
+  - "[[Causal Discovery Algorithms - Comparison]]"
 aliases:
   - "NOTEARS results"
   - "NOTEARS vs FGS"
@@ -140,3 +141,6 @@ produces **empirically consistent estimates** of the true weight matrix $W$ on b
 - [[NOTEARS Algorithm]] — the method being evaluated
 - [[NOTEARS - Overview]] — paper-level context
 - [[DAG Structure Learning Problem]] — baselines (FGS, GES, PC, LiNGAM) situated in the landscape
+- [[Greedy Equivalence Search]] — GES / FGS: the main score-based baseline NOTEARS competes against
+- [[PC Algorithm]] — constraint-based baseline also evaluated in the supplement
+- [[Causal Discovery Algorithms - Comparison]] — full three-way comparison with decision guide
