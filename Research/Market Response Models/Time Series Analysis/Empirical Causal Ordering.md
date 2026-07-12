@@ -4,14 +4,17 @@ aliases:
   - "Granger Causality Marketing"
   - "Causal Ordering VAR"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/causal-inference
   - topic/time-series
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
+date_ingested: 2026-04-11
 date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 7"
+folder: "Market Response Models/Time Series Analysis"
 chapter: "7"
 status: complete
 doc_type: concept

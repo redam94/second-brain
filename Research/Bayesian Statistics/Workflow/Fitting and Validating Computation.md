@@ -22,6 +22,9 @@ used_by:
   - "[[Evaluating Fitted Models]]"
   - "[[Modeling as Software Development]]"
   - "[[Power Analysis and Sample Size]]"
+aliases:
+  - "validating computation"
+  - "fitting Bayesian models"
 ---
 
 > [!summary]

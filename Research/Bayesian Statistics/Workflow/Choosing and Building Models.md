@@ -21,6 +21,9 @@ used_by:
   - "[[Iterative Model Improvement]]"
   - "[[Modeling as Software Development]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+aliases:
+  - "building models"
+  - "choosing models Bayesian"
 ---
 
 > [!summary]

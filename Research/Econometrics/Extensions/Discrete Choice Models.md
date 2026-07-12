@@ -20,6 +20,9 @@ depends_on:
   - "[[Quantile Regression]]"
 used_by:
   - "[[Mostly Harmless Econometrics - Overview]]"
+aliases:
+  - "discrete choice"
+  - "random utility model"
 ---
 
 # Discrete Choice Models

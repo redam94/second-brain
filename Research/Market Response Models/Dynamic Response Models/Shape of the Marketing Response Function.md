@@ -4,13 +4,16 @@ aliases:
   - "Marketing Response Shape"
   - "Concave vs S-shaped Response"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/functional-forms
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
+date_ingested: 2026-04-11
 date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 4"
+folder: "Market Response Models/Dynamic Response Models"
 chapter: "4"
 status: complete
 doc_type: concept

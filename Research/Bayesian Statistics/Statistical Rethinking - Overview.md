@@ -8,9 +8,26 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/statistical-modeling
-  - type/book-overview
+  - type/overview
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
+source_location: "Full textbook, Ch. 1–17"
 date_ingested: 2026-04-08
+folder: "Bayesian Statistics"
+doc_type: overview
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+used_by:
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Garden of Forking Data]]"
+  - "[[Posterior Sampling and Summarization]]"
+  - "[[Linear Models in Statistical Rethinking]]"
+  - "[[Spurious Association and Confounds]]"
+  - "[[HMC and Stan in Practice]]"
+  - "[[Monsters and Mixtures]]"
+  - "[[Hierarchical Linear Models]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Bayesian Linear Regression]]"
 authors:
   - Richard McElreath
 year: 2015
@@ -62,6 +79,6 @@ McElreath frames statistics through the **Golem of Prague** metaphor: statistica
 - [[BDA3 - Overview]] — the comprehensive Bayesian reference that complements this course
 - [[Bayesian Workflow - Overview]] — the Gelman et al. paper that formalizes the iterative workflow McElreath teaches
 - [[Forking Paths and Bayesian Approaches]] — McElreath's "garden of forking data" is related to Gelman's "garden of forking paths"
-- [[Mostly Harmless Econometrics - Overview]] — frequentist causal inference toolkit; McElreath covers some of the same causal reasoning from a Bayesian angle
+- [[Mostly Harmless Econometrics - Overview|Mostly Harmless Econometrics]] — frequentist causal inference toolkit; McElreath covers some of the same causal reasoning from a Bayesian angle
 - [[Bayesian Linear Regression]] — BDA3's treatment of the same regression models McElreath introduces in Chapters 4-7
 - [[Model Checking]] — posterior predictive checks are central to McElreath's iterative model-building philosophy (Ch. 6)

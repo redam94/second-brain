@@ -13,6 +13,8 @@ aliases:
   - Bayesian Imputation SR
 date_ingested: 2026-04-09
 doc_type: concept
+folder: "Bayesian Statistics/Regression Models"
+source: "[[raw/StatRethink-Bayes.pdf]]"
 source_location: "raw/Missing Data"
 depends_on:
   - "[[Missing Data Models]]"

@@ -12,6 +12,8 @@ aliases:
   - Bayesian DiD
 date_ingested: 2026-04-09
 doc_type: tutorial
+folder: "Econometrics/Identification Strategies"
+source: "https://www.pymc.io/projects/examples/en/latest/causal_inference/difference_in_differences.html"
 source_location: "PyMC Difference in Differences example (Benjamin T. Vincent, 2022)"
 depends_on:
   - "[[Differences-in-Differences]]"

@@ -4,9 +4,23 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
+source_location: "Full textbook, Ch. 1–23"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
+depends_on: []
+used_by:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Single-Parameter Models]]"
+  - "[[Multiparameter Models]]"
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[Hierarchical Models]]"
+  - "[[Introduction to Bayesian Computation]]"
+  - "[[Approximation Methods]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Statistical Rethinking - Overview]]"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
@@ -61,5 +75,5 @@ Andrew Gelman (Columbia), John Carlin (Melbourne), Hal Stern (UC Irvine), David 
 ## See Also (Cross-Domain)
 
 - [[Bayesian Workflow - Overview]] — the companion paper codifying applied workflow practice
-- [[Mostly Harmless Econometrics - Overview]] — the frequentist/econometric counterpart to BDA3
+- [[Mostly Harmless Econometrics - Overview|Mostly Harmless Econometrics]] — the frequentist/econometric counterpart to BDA3
 - [[Forking Paths and Bayesian Approaches]] — Bayesian rationale for addressing multiple comparisons

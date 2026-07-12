@@ -1,6 +1,7 @@
 ---
 title: "Factor Analysis and Probabilistic PCA"
 source: "https://www.pymc.io/projects/examples/en/latest/case_studies/factor_analysis.html"
+folder: "Bayesian Statistics/Advanced Models"
 tags:
   - source/ingested
   - topic/bayesian
@@ -21,6 +22,10 @@ depends_on:
 used_by:
   - "[[Confirmatory Factor Analysis and SEM]]"
   - "[[Copula Estimation]]"
+aliases:
+  - "Factor Analysis"
+  - "PPCA"
+  - "Probabilistic PCA"
 ---
 
 # Factor Analysis and Probabilistic PCA (PPCA)

@@ -4,11 +4,13 @@ aliases:
   - "Dynamic Marketing Models"
   - "Marketing Time Series Models"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/dynamic-models
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
+date_ingested: 2026-04-11
 date_updated: 2026-06-29
 folder: "Market Response Models/Dynamic Response Models"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 4"

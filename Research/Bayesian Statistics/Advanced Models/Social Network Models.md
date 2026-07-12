@@ -13,6 +13,8 @@ aliases:
   - Dyadic Models
 date_ingested: 2026-04-09
 doc_type: concept
+source: "[[Clippings/Social Networks]]"
+folder: "Bayesian Statistics/Advanced Models"
 source_location: "raw/Social Networks"
 depends_on:
   - "[[Copula Estimation]]"

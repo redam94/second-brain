@@ -4,13 +4,16 @@ aliases:
   - "MRM Model Selection"
   - "Exploratory Data Analysis Marketing"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/model-selection
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
+date_ingested: 2026-04-11
 date_updated: 2026-04-11
 source: "Hanssens, Parsons & Schultz (2001) Ch. 5"
+folder: "Market Response Models/Estimation and Testing"
 chapter: "5"
 status: complete
 doc_type: concept

@@ -23,6 +23,9 @@ used_by:
   - "[[Model Checking]]"
   - "[[Model Comparison]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+aliases:
+  - "evaluating models"
+  - "model evaluation Bayesian"
 ---
 
 # Evaluating Fitted Models

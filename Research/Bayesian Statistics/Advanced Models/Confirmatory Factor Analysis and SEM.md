@@ -14,6 +14,8 @@ aliases:
   - Structural Equation Model
 date_ingested: 2026-04-09
 doc_type: concept
+source: "[[Clippings/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics]]"
+folder: "Bayesian Statistics/Advanced Models"
 source_location: "raw/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics"
 depends_on:
   - "[[Factor Analysis and PPCA]]"
