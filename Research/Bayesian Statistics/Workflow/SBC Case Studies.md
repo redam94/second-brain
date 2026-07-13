@@ -8,6 +8,7 @@ tags:
 source: "[[raw/1804.06788-Talts-SBC.pdf]]"
 source_location: "Sec. 6 & Appendix A, pp. 9-14, 17-18 (Figs. 9-13, Listings 1-4)"
 date_ingested: 2026-06-17
+date_updated: 2026-07-13
 folder: "Bayesian Statistics/Workflow"
 doc_type: paper
 depends_on:
@@ -72,3 +73,5 @@ Each case implements SBC and reads the resulting rank histogram against the 99% 
 - [[Simulation-Based Calibration - Overview]]
 - [[Rank Statistics and Uniformity]]
 - [[Efficient MCMC]]
+- [[HMC and Stan in Practice]] — the centered/non-centered parameterization in case study 6.2 is a key HMC design choice
+- [[Computational Troubleshooting]] — covers the funnel geometry and non-centered reparameterization as a remedy

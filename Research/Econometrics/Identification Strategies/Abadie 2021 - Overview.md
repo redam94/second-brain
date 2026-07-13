@@ -10,6 +10,7 @@ tags:
 source: "[[raw/Abadie 2021 - Using Synthetic Controls.pdf]]"
 source_location: "JEL 59(2): 391–425"
 date_ingested: 2026-04-10
+date_updated: 2026-07-13
 folder: "Econometrics/Identification Strategies"
 doc_type: paper
 depends_on:
@@ -96,3 +97,5 @@ The central thesis: **mechanical application of synthetic controls without regar
 - [[Local Average Treatment Effects]] — LATE is the estimand when compliance matters; SC targets the ATT for the treated aggregate
 - [[The Selection Problem]] — SC addresses selection by constructing a matched counterfactual
 - [[Bayesian Difference in Differences]] — Bayesian alternative for the same aggregate time-series setting
+- [[Generalized Synthetic Control Method]] — Xu (2016) extension that explicitly estimates latent factors where SC matches on them implicitly; handles multiple treated units
+- [[Difference-in-Differences with Multiple Time Periods - Overview]] — Callaway & Sant'Anna alternative when treatment timing is staggered across many units (vs SC's single-treated-unit focus)

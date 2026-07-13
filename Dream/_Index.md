@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-07-06
+date_updated: 2026-07-13
 ---
 
 # Dream: Research Gaps
@@ -506,6 +506,58 @@ The vault has two complementary sections that are not yet connected: `Econometri
 
 ---
 
+### 32. RD Bandwidth Selection and Local Polynomial Estimation
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Regression Discontinuity Designs]] covers parametric polynomial regression and a nonparametric "small neighborhood δ" approach — but the formal bias-variance tradeoff for bandwidth selection is entirely absent. In practice, the choice of bandwidth $h$ is the most consequential decision in any RD analysis: too wide and the polynomial approximation is biased; too narrow and the estimator has high variance. Imbens & Kalyanaraman (2012) derive the MSE-optimal bandwidth selector (cross-validation over a kernel regression), and Calonico, Cattaneo & Titiunus (2014) provide bias-corrected robust confidence intervals (implemented in `rdrobust` for R and Stata). Without this, readers cannot apply the RD designs described in the vault to real data in a defensible way.
+
+**Adjacent notes:** [[Regression Discontinuity Designs]], [[Instrumental Variables]], [[Local Average Treatment Effects]], [[Model Checking]], [[Standard Errors and Clustering]]
+
+**Suggested sources / search terms:**
+- Imbens & Kalyanaraman (2012) — "Optimal bandwidth choice for the regression discontinuity estimator" (*Review of Economic Studies*)
+- Calonico, Cattaneo & Titiunus (2014) — "Robust nonparametric confidence intervals for regression-discontinuity designs" (*Econometrica*)
+- Cattaneo, Idrobo & Titiunus (2020) — *A Practical Introduction to Regression Discontinuity Designs*, Cambridge
+- Search: "RD optimal bandwidth", "rdrobust Stata R", "local linear regression RD", "bias-corrected robust CI RD"
+
+---
+
+### 33. Variational Inference (ADVI, ELBO, Mean Field)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[SBC Case Studies]] explicitly tests ADVI (Automatic Differentiation Variational Inference in Stan) on a simple linear regression and finds it "drastically underestimates the posterior for the slope β" — a sharp failure mode that makes ADVI's SBC rank histogram strongly non-uniform. The vault documents this failure but cannot explain it. The ELBO (Evidence Lower BOund) objective, mean-field factorization assumption (which forces posterior independence across parameters), the KL divergence $D_\text{KL}(q(\theta) \| p(\theta|y))$, black-box VI (BBVI), and ADVI's reparameterization trick are all absent. [[Approximation Methods]] (in `Bayesian Statistics/Computation/`) likely covers this partially, but the SBC case study makes the failure mode salient and motivates a dedicated treatment. This gap also connects to [[Hilbert Space Gaussian Processes]] (HSGPs use Laplace approximations / EP as alternatives to full VI), [[Efficient MCMC]] (VI as a cheaper but biased alternative), and [[Monsters and Mixtures]] (mean-field VI fails on mixture models due to the symmetry of mixture components).
+
+**Adjacent notes:** [[SBC Case Studies]], [[Approximation Methods]], [[Efficient MCMC]], [[Introduction to Bayesian Computation]], [[Fitting and Validating Computation]], [[Hilbert Space Gaussian Processes]]
+
+**Suggested sources / search terms:**
+- Blei, Kucukelbir & McAuliffe (2017) — "Variational inference: A review for statisticians" (*JASA*)
+- Kucukelbir et al. (2017) — "Automatic differentiation variational inference" (*JMLR*)
+- Jordan et al. (1999) — "An introduction to variational methods for graphical models" (*Machine Learning*)
+- Stan Development Team — *Stan User's Guide*, §Variational Inference with ADVI
+- Search: "variational inference ELBO", "mean-field variational Bayes", "ADVI Stan failure", "black-box variational inference", "BBVI PyMC"
+
+---
+
+### 34. Curry-Howard Correspondence and Type Theory
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Cartesian Closed Categories]] explicitly describes CCCs as "the categorical models of the simply-typed lambda calculus" and includes a callout on the **propositions as types / proofs as programs** correspondence (Curry-Howard): objects = types, morphisms = proofs, products = conjunction, exponentials = implication, terminal object = truth. This connection is stated but never developed. The vault's Category Theory section covers the full adjunction-limit-representable chain through synthesis (Chapter 6 of Leinster), but the bridge to type theory and programming language semantics is entirely absent. Dependent type theory (Martin-Löf, Coq/Lean, the HoTT book), the connection to functional programming (Haskell's type class hierarchy mirrors the adjunction chain: Functor → Applicative → Monad), and the denotational semantics of programming languages (Scott domains, domain theory) are all natural next chapters. This gap is especially salient given gap #27 (Monads and Monadicity), where the Category Theory and CS/PL connections converge.
+
+**Adjacent notes:** [[Cartesian Closed Categories]], [[Adjunctions/Adjoint Functors]], [[Adjunctions/Units and Counits]], [[Category Theory/Synthesis/Adjoints and Limits]], [[Basic Category Theory - Overview]]
+
+**Suggested sources / search terms:**
+- Wadler (2015) — "Propositions as types" (*Communications of the ACM*) — accessible survey
+- Pierce (2002) — *Types and Programming Languages*, MIT Press — standard PL textbook
+- Univalent Foundations Program (2013) — *Homotopy Type Theory* (HoTT Book) — CCC as model of dependent type theory
+- Lambek & Scott (1986) — *Introduction to Higher-Order Categorical Logic* — original categorical logic reference
+- Search: "Curry-Howard correspondence", "propositions as types proofs as programs", "CCC simply typed lambda calculus", "categorical semantics type theory", "Haskell category theory"
+
+---
+
+---
+
 ## Covered Gaps
 
 | Gap | Covered By | Date Covered |
@@ -537,4 +589,5 @@ The vault has two complementary sections that are not yet connected: `Econometri
 | 2026-06-22 | Run 11: reviewed 9 notes (Practical Issues in Simulation Estimation, QFT Overview, Units and Counits, Multi-Factor and Block Dependence Structures, Price and Distribution Effects, Method of Simulated Moments, Markets Data and Sales Drivers, Spurious Association and Confounds, Regression and the CEF). Gaps #6 (SBC), #14 (Bayesian MMM), #19 (Staggered DiD) marked 🍂 covered — all now have dedicated note clusters. Gaps #8 (Factor Copulas) and #9 (Causal Structure Learning) updated to 🌿 still relevant: factor copulas now well-covered, vine copulas absent; NOTEARS covered, PC/GES absent. Frontmatter fixes: added `date_updated: 2026-06-22` to all 9 notes; added `folder` to Units and Counits, Price and Distribution Effects, Markets Data and Sales Drivers; added `date_ingested` to Price and Distribution Effects and Markets Data. Cross-links added: Practical Issues ↔ Brock-Mirman SMM ↔ SMM Estimation of Factor Copulas; QFT Overview ↔ Wave Function and Hilbert Space ↔ Uncertainty Principle ↔ Quantum Entanglement (within Physics folder) + cross-links to Theoretical Physics parallel notes (Standard Model and Gauge Groups, QFT Overview flat); Units and Counits ↔ Cartesian Closed Categories; Multi-Factor ↔ Dependence Measures for Copulas ↔ Factor Analysis and PPCA ↔ Copula Estimation; Price and Distribution ↔ Discrete Choice Models ↔ Parameter Estimation in Market Response; Method of MSM ↔ Brock-Mirman SMM ↔ SMM Estimation of Factor Copulas; Markets Data ↔ Bayesian Media Mix Modeling Overview; Spurious Association ↔ Regression and the CEF (bidirectional). Added gaps #25 (ABM Calibration via SMM/II), #26 (Quantile Treatment Effects), #27 (Monads and Monadicity). |
 | 2026-06-15 | Run 10: reviewed 10 notes (s-Separation in Summary DAGs, Uncertainty Principle, BN Construction Methods Comparison, Local Linear Trend and Seasonality, Hilbert Space Gaussian Processes, Spurious Association and Confounds, Modeling as Software Development, Market Share Models, Functors and Limits, Time-Varying Treatments and G-computation). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-06-15` to all 10 notes; added `folder` to HSGP, Market Share Models, Functors and Limits; added `source:` field (wikilink) to HSGP; fixed `source_location` in Spurious Association and Confounds (Ch.9 → Ch.5); added missing H1 title header to Modeling as Software Development. Cross-links added: s-Separation ↔ Directed Acyclic Graphs; BN Construction Methods ↔ Directed Acyclic Graphs ↔ LLM Expert Elicitation (completing the BN trilogy); Local Linear Trend ↔ Single Marketing Time Series (state-space↔ARIMA bridge); HSGP — added full See Also section linking to Local Linear Trend and Seasonality ↔ Bayesian Structural Time-Series Model; Spurious Association ↔ Directed Acyclic Graphs (fork/pipe/collider → DAG formalization); Modeling as Software Development ↔ Garden of Forking Paths (version control as forking path defense); Market Share Models ↔ Discrete Choice Models (MNL/logit bridge MRM↔Econometrics) ↔ Monsters and Mixtures (heterogeneous MCI→latent segments); Functors and Limits ↔ Products and Equalizers; Time-Varying Treatments ↔ Bayesian Propensity Score Weighting (IPW-MSM connection). Added gaps #23 (Marginal Structural Models / Bayesian Bootstrap), #24 (Random Coefficients Logit / BLP Demand Estimation). Gaps #13 (State-Space/Kalman), #18 (DTRs), #21 (BN Foundations) reinforced by this run's notes. |
 | 2026-06-28 | Gap #1 (Propensity Score Matching) marked 🍂 covered. Searched arXiv, NBER, PMC, and academic homepages for Rosenbaum & Rubin (1983), Imbens (2004), Stuart (2010) — all freely available but blocked by session network policy. Created synthesis survey `raw/PSM-Rosenbaum-Rubin-Stuart-Survey.md` from training knowledge of the papers. Created 3 notes in `Econometrics/Identification Strategies/`: [[Propensity Score Matching - Overview]] (balancing theorem, strong ignorability, ATT vs ATE, PSM vs IPW, matching workflow, why matching fails for activity bias), [[Matching Algorithms and Caliper]] (NN greedy, caliper $\delta=0.2\sigma_{\text{logit}}$, optimal/full matching, subclassification, Mahalanobis, MatchIt R code), [[Covariate Balance and Matching Diagnostics]] (SMD, love plot, overlap plot, variance ratio, KS, Rubin 2001 criteria, cobalt R code). Updated Identification Strategies _Index.md (16→19 notes) and Econometrics _Index.md (48→51 notes). |
+| 2026-07-13 | Run 14: reviewed 9 notes (SBC Case Studies, Cartesian Closed Categories, Abadie 2021 Overview, Standard Errors and Clustering, Rank Statistics and Uniformity, Regression Discontinuity Designs, SMM Estimation of Factor Copulas, Functor Categories, Yoneda Embedding and Consequences). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-07-13` to all 9 notes; added `folder` to Cartesian Closed Categories, Functor Categories, Yoneda Embedding and Consequences (all Category Theory notes were missing this field). Cross-links added: SBC Case Studies → [[HMC and Stan in Practice]] + [[Computational Troubleshooting]] (centered/non-centered funnel geometry); Rank Statistics and Uniformity → [[SBC Case Studies]] (empirical demonstration of the uniformity theorem); Cartesian Closed Categories → [[Adjunctions/Units and Counits]] (evaluation map as counit) + [[Synthesis/Adjoints and Limits]]; Functor Categories → [[Adjunctions/Adjoint Functors]] (adjunctions between functor categories); Yoneda Embedding → [[Synthesis/Cartesian Closed Categories]] + [[Adjunctions/Adjoint Functors]] + [[Synthesis/Adjoint Functor Theorems]] (representability and GAFT); Abadie 2021 → [[Generalized Synthetic Control Method]] + [[Difference-in-Differences with Multiple Time Periods - Overview]]; Standard Errors and Clustering → [[Simultaneous Inference via Multiplier Bootstrap]] + [[Identifying Assumptions for Staggered DiD]]; Regression Discontinuity Designs → [[Standard Errors and Clustering]] (cluster at assignment unit) + [[Sensitivity Analysis in Observational Studies]]; SMM Estimation of Factor Copulas → [[Tail Dependence in Factor Copulas]] (why quantile dependence at 0.05/0.10/0.90/0.95 is chosen). Added gaps #32 (RD Bandwidth Selection / Local Polynomial Estimation), #33 (Variational Inference / ADVI / ELBO), #34 (Curry-Howard Correspondence and Type Theory). Gaps #27 (Monads), #29 (GARCH), #31 (EVT) reinforced by this run's notes. |
 | 2026-07-06 | Run 13: reviewed 10 notes (Factor Copula Construction, Adjoint Functor Theorems, Asymptotics and Frequentist Connections, Synthetic Control Bias Theory, HM-ABC Calibration Framework, Instrumental Variables, Factor Copulas - Overview, Time-Varying Treatments and G-computation, Sensitivity Analysis in Observational Studies, Code Prompt Aspects Analysis). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-07-06` to 9 notes; added `folder: "Category Theory/Synthesis"` to Adjoint Functor Theorems; fixed source path in HM-ABC Calibration Framework (`Research/Agent-Based Modeling/raw/…` → `Agent-Based Modeling/raw/…`); removed `[[raw/BDA3.pdf]]` from `depends_on` in Asymptotics and Frequentist Connections (raw PDFs should not appear as depends_on). Cross-links added: Adjoint Functor Theorems → [[Units and Counits]] (adjunction-monad correspondence; the unit $\eta_A$ from GAFT is the monad unit); Asymptotics and Frequentist Connections → [[Partial Pooling as Multiple Comparisons Correction]] (James-Stein result links Bayesian shrinkage to frequentist asymptotics); HM-ABC Calibration Framework → [[Method of Simulated Moments]] (moment-based ABM calibration bridge; gap #25 connection); Instrumental Variables → [[Synthetic Control]] (primary alternative for panel settings without valid instruments); Factor Copulas - Overview → [[Dependence Measures for Copulas]] (rank statistics used as SMM targets); Sensitivity Analysis in Observational Studies → [[Propensity Score Matching - Overview]] + [[Nonparametric Causal Inference]] (sensitivity analysis reported alongside PSM/BART estimates); Synthetic Control Bias Theory → [[Generalized Synthetic Control Method]] (GSC estimates the latent factors explicitly where SC matches on them implicitly); Code Prompt Aspects Analysis → [[LLM Causal Reasoning Tasks]] (taxonomy of tasks that the intervention study evaluates). Added gaps #30 (Partial Identification / Manski Bounds) and #31 (Extreme Value Theory / Tail Risk). Gaps #7 (Permutation Inference), #8 (Factor/Vine Copulas), #12 (Empirical Bayes), #25 (ABM+SMM), #27 (Monads) reinforced by this run's notes. |

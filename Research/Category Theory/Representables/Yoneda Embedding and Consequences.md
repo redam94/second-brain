@@ -8,6 +8,8 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 4.3, pp. 101–106"
 date_ingested: 2026-05-08
+date_updated: 2026-07-13
+folder: "Category Theory/Representables"
 doc_type: textbook
 depends_on:
   - "[[Yoneda Lemma]]"
@@ -106,3 +108,6 @@ is also fully faithful, and preserves limits (= colimits in $\mathcal{A}$).
 - [[Representable Functors]] — What is being embedded
 - [[Synthesis/Limits in Presheaf Categories]] — Density theorem and pointwise limits
 - [[Synthesis/Adjoints and Limits]] — Representables preserve limits
+- [[Synthesis/Cartesian Closed Categories]] — The density theorem (every presheaf is a colimit of representables) underpins the CCC exponential formula $Z^Y(A) = \hat{\mathcal{A}}(H_A \times Y, Z)$
+- [[Adjunctions/Adjoint Functors]] — Adjoints are unique up to natural isomorphism by Yoneda (Cor. 4.3.13): both $G$ and $G'$ represent $\mathcal{B}(F-, B)$, so $G \cong G'$
+- [[Synthesis/Adjoint Functor Theorems]] — Freyd's GAFT characterises when a functor is representable (and hence when it has a left adjoint)
