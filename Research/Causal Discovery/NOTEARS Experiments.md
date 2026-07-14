@@ -33,8 +33,8 @@ aliases:
 
 The paper's statistical-consistency questions are settled by prior work; these experiments target
 the **computational/structural-recovery** question: does the continuous relaxation actually recover
-good DAGs? Baselines: FGS (the fast greedy-search implementation, chosen as the strongest scalable
-baseline), plus GES, PC, and LiNGAM (PC and LiNGAM were significantly weaker and only reported in the supplement).
+good DAGs? Baselines: FGS (the fast greedy-search implementation of [[Greedy Equivalence Search (GES)|GES]], chosen as the strongest scalable
+baseline), plus GES, [[PC Algorithm|PC]], and LiNGAM (PC and LiNGAM were significantly weaker and only reported in the supplement).
 
 ## Main Content
 
@@ -140,3 +140,5 @@ produces **empirically consistent estimates** of the true weight matrix $W$ on b
 - [[NOTEARS Algorithm]] — the method being evaluated
 - [[NOTEARS - Overview]] — paper-level context
 - [[DAG Structure Learning Problem]] — baselines (FGS, GES, PC, LiNGAM) situated in the landscape
+- [[Greedy Equivalence Search (GES)]] — FGS/GES baseline; also a score-based method; NOTEARS outperforms on SF-4 dense graphs
+- [[PC Algorithm]] — constraint-based baseline; "significantly weaker" (supplement only)
