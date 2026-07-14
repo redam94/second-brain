@@ -119,7 +119,7 @@ The essential distinction: program (4)'s domain is the discrete set $\mathbb{D}$
 | **Exact** ([Cussens, 2012]; GOBNILP; [Chen et al., 2016]) | Guaranteed globally optimal | Only a few dozen nodes; intractable in general |
 | **Local / approximate search** (FGS, GES, hill-climbing, MMHC) | Add edges/parents one node at a time, check acyclicity incrementally | Needs bounded in-degree/treewidth — impossible to verify; real networks are scale-free with hub nodes |
 | **Order search** ([Teyssier & Koller, 2005]) | Search over $d!$ topological orderings | Trades acyclicity for an exponential ordering search |
-| **Constraint-based** (PC, [Spirtes & Glymour, 1991]) | Conditional-independence tests | Different paradigm; often less accurate |
+| **Constraint-based** ([[PC Algorithm\|PC]], [Spirtes & Glymour, 1991]) | Conditional-independence tests — see [[Constraint-Based Causal Discovery]] | Different paradigm; often less accurate |
 | **Hybrid / Bayesian** (MMHC; [Zhou, 2011]) | Combine the above | Conceptual complexity |
 
 > [!note] The "conceptual clarity" gap NOTEARS targets
@@ -141,3 +141,6 @@ The essential distinction: program (4)'s domain is the discrete set $\mathbb{D}$
 - [[Smooth Characterization of Acyclicity]] — how the constraint $\mathsf{G}(W)\in\mathbb{D}$ becomes $h(W)=0$
 - [[NOTEARS Algorithm]] — solving program (3)
 - [[Spurious Association and Confounds]] — DAG semantics in causal inference
+- [[Constraint-Based Causal Discovery]] — the CI-test paradigm (PC algorithm and relatives)
+- [[Greedy Equivalence Search (GES)]] — the score-based paradigm (GES/FGES); also uses BIC score
+- [[Markov Equivalence and CPDAGs]] — the output target of constraint-based and score-based methods
