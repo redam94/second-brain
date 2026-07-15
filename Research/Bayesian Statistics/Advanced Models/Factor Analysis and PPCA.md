@@ -10,9 +10,13 @@ tags:
   - type/concept
   - doc/tutorial
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Advanced Models"
 raw: "[[raw/Factor analysis]]"
 doc_type: concept
-source_location: "raw/Factor analysis"
+source_location: "raw/Factor analysis (PyMC tutorial)"
+aliases:
+  - PPCA Bayesian
+  - Probabilistic PCA
 depends_on:
   - "[[Bayesian Linear Regression]]"
   - "[[Nonparametric Models Overview]]"

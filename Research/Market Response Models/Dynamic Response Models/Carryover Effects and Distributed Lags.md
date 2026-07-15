@@ -12,7 +12,9 @@ tags:
   - topic/time-series
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
+date_ingested: 2026-04-11
 date_updated: 2026-04-11
+folder: "Market Response Models/Dynamic Response Models"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 4"
 chapter: "4"
 status: complete

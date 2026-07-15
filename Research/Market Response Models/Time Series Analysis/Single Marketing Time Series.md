@@ -11,7 +11,9 @@ tags:
   - topic/ARIMA
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
+date_ingested: 2026-04-11
 date_updated: 2026-04-11
+folder: "Market Response Models/Time Series Analysis"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 6"
 chapter: "6"
 status: complete
