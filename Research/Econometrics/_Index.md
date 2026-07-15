@@ -4,8 +4,8 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-06-28
-concept_count: 51
+date_updated: 2026-07-15
+concept_count: 55
 ---
 
 # Econometrics
@@ -18,7 +18,7 @@ concept_count: 51
 > - Need **staggered/multi-period DiD** (group-time ATT, doubly-robust estimands, event-study aggregation, multiplier-bootstrap inference)? -> [[Difference-in-Differences/_Index|Difference-in-Differences]]
 > - Need quantile regression, discrete choice, or SEs? -> [[Extensions/_Index|Extensions]]
 > - Need simulation-based estimation (MSM, indirect inference, EMM, copula SMM)? -> [[Extensions/_Index|Extensions]]
-> - Need high-dimensional dependence / copulas, tail dependence, or factor copulas? -> [[Dependence Modeling/_Index|Dependence Modeling]]
+> - Need high-dimensional dependence / copulas, tail dependence, factor copulas, or vine copulas? -> [[Dependence Modeling/_Index|Dependence Modeling]]
 
 ## Book Overview
 
@@ -33,7 +33,7 @@ concept_count: 51
 | [[Identification Strategies/_Index\|Identification Strategies]] | 19 | IV, LATE, DD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, **classical PSM (Rosenbaum-Rubin matching framework + diagnostics)** — quasi-experimental methods (MHE Ch 4-6 + Abadie 2021 + Xu 2017 + extras) |
 | [[Difference-in-Differences/_Index\|Difference-in-Differences]] | 6 | Staggered/multi-period DiD: group-time ATT(g,t), parallel-trends/no-anticipation/overlap assumptions, OR/IPW/doubly-robust estimands, event-study/group/calendar aggregation, multiplier-bootstrap uniform inference, TWFE critique (Callaway & Sant'Anna 2020) |
 | [[Extensions/_Index\|Extensions]] | 12 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8), simulation-based estimation: MSM, indirect inference, EMM, SMM for copulas (Liesenfeld & Breitung 1998, Oh & Patton 2011) |
-| [[Dependence Modeling/_Index\|Dependence Modeling]] | 6 | High-dimensional copulas, factor-copula construction, tail dependence via EVT, multi-factor/block structures, rank-based SMM, S&P 100 & systemic risk (Oh & Patton 2012) |
+| [[Dependence Modeling/_Index\|Dependence Modeling]] | 10 | High-dimensional copulas: **factor copulas** (latent factor structure, SMM, EVT tail dependence, Oh & Patton 2012) + **vine copulas** (pair-copula construction, C-vine/D-vine/R-vine, Aas et al. 2009; Dissmann et al. 2013 structure selection; Czado & Nagler 2022 review; architecture comparison) |
 
 ## Sources
 
@@ -49,6 +49,7 @@ concept_count: 51
 - [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), "Simulated Method of Moments Estimation for Copula-Based Multivariate Models"
 - [[raw/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — Evans (2024), CompMethods Ch. 19: full Python SMM tutorial + Brock-Mirman structural macro exercise
 - [[raw/Oh-Patton-2012-Factor-Copulas.pdf]] — Oh & Patton (2012), "Modelling Dependence in High Dimensions with Factor Copulas" (Duke): factor copulas, EVT tail dependence, rank-based SMM, S&P 100 systemic risk
+- [[raw/Vine-Copulas-Survey-Aas-Czado-Bedford-Cooke.md]] — Synthesis survey: Bedford & Cooke (2001, 2002) Annals of Statistics (R-vine definition); Aas et al. (2009) Insurance: Mathematics and Economics 44:182–198 (C-vine/D-vine density + h-functions); Dissmann et al. (2013) Computational Statistics and Data Analysis (greedy R-vine selection); Czado & Nagler (2022) Annual Review of Statistics (comprehensive review, rvinecopulib/pyvinecopulib)
 - [[raw/1803.09015-Callaway-SantAnna-DiD-Multiple-Periods.pdf]] — Callaway & Sant'Anna (2020), "Difference-in-Differences with Multiple Time Periods" (J. Econometrics): group-time ATT, doubly-robust estimands, aggregation schemes, multiplier-bootstrap inference, minimum-wage application
 - [[raw/PSM-Rosenbaum-Rubin-Stuart-Survey.md]] — Survey synthesis: Rosenbaum & Rubin (1983) Biometrika, Rosenbaum & Rubin (1985) AmStat, Stuart (2010) Statistical Science, Imbens (2004) RESTAT — classical propensity score matching framework, algorithms, and balance diagnostics
 
