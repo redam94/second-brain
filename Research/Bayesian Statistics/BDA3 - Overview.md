@@ -4,12 +4,28 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
+source_location: "full book, pp. 1-675"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
+depends_on: []
+used_by:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Single-Parameter Models]]"
+  - "[[Multiparameter Models]]"
+  - "[[Hierarchical Models]]"
+  - "[[Model Checking]]"
+  - "[[Model Comparison]]"
+  - "[[Introduction to Bayesian Computation]]"
+  - "[[Approximation Methods]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Nonparametric Models Overview]]"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
+  - "BDA3 - Overview"
 ---
 
 # Bayesian Data Analysis, 3rd Edition

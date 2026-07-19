@@ -21,6 +21,7 @@ aliases:
   - Parameter initialization
   - Sensitivity analysis in ABM
   - Experimental design for ABM
+  - Experimental Design for ABMs
 ---
 
 # Population Initialization and Parameter Sensitivity

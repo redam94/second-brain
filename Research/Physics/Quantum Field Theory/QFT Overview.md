@@ -22,6 +22,7 @@ used_by:
 aliases:
   - quantum field theory
   - QFT
+  - Quantum Field Theory Overview
 ---
 
 # QFT Overview

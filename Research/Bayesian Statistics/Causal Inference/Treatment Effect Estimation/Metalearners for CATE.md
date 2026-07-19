@@ -20,6 +20,7 @@ used_by:
   - "[[S-Learner]]"
   - "[[T-Learner and Minimax Rate]]"
   - "[[X-Learner]]"
+  - "[[Q-learning and A-learning]]"
 aliases:
   - metalearner framework
   - CATE estimation framework

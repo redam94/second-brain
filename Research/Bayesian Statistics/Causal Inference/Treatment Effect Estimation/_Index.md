@@ -5,7 +5,7 @@ tags:
   - source/ingested
 parent: "[[../Causal Inference/_Index|Bayesian Causal Inference]]"
 date_updated: 2026-04-10
-concept_count: 6
+concept_count: 7
 ---
 
 # Treatment Effect Estimation
@@ -17,6 +17,7 @@ concept_count: 6
 > - Need the two-model approach + minimax rate theorem? → [[T-Learner and Minimax Rate]]
 > - Need the main contribution: X-learner for unbalanced groups? → [[X-Learner]]
 > - Need empirical results (voter turnout, transphobia)? → [[Metalearner Simulation Results]]
+> - Need sequential/multi-stage optimal treatment rules (Q-learning, A-learning)? → [[Q-learning and A-learning]]
 
 ## Concept Map
 
@@ -49,6 +50,7 @@ Potential Outcomes Framework + Causal Estimands (existing)
 - [[T-Learner and Minimax Rate]] — CONTAINS: definition of two separate models; Theorem 1 (minimax rate $n^{-a_0}$); unbalanced failure mode
 - [[X-Learner]] — CONTAINS: full 3-step algorithm; imputed ITEs $\tilde{D}_i^1$, $\tilde{D}_i^0$; propensity score weighting; Theorem 2 (adaptive rate)
 - [[Metalearner Simulation Results]] — CONTAINS: simulation study; voter turnout application (ATE = 8.1%, unbalanced); transphobia canvassing (ATE = 0.22)
+- [[Q-learning and A-learning]] — CONTAINS: dynamic treatment regimes; Q-function backward induction; A-learning blip functions; optimal DTR definition
 
 ## Sources
 

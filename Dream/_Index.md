@@ -3,13 +3,17 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-07-13
+date_updated: 2026-07-19
 ---
 
 # Dream: Research Gaps
 
-> [!abstract] Purpose
-> This index tracks knowledge gaps — topics referenced or implied by existing Research notes that lack dedicated coverage. Updated each weekly cleanup run.
+> [!abstract] Routing Summary
+> This index tracks knowledge gaps — topics referenced or implied by existing Research notes that lack dedicated coverage. Updated each weekly vault-repair run.
+> - Looking for a gap's status? → Search by topic name below, check **Status** field
+> - Gap is 🌱 open? → see "Why it was a gap" for adjacent notes to read first
+> - Gap is 🍂 covered? → follow "Covered by" links to the new notes
+> - Want the full run log? → scroll to the **Run Log** table at the bottom
 
 ---
 
