@@ -18,7 +18,9 @@ depends_on:
   - "[[Directed Acyclic Graphs]]"
   - "[[The Selection Problem]]"
   - "[[Hierarchical Models]]"
-used_by: []
+used_by:
+  - "[[Li et al 2022 - Overview]]"
+  - "[[General Structure of Bayesian CI]]"
 aliases:
   - Bayesian IPW
   - Bayesian propensity scores
@@ -201,3 +203,5 @@ Visualizing the weighted propensity score distributions shows that IPTW makes th
 - [[Frequentist Causal Estimation]] — the frequentist side: classical IPW, doubly robust estimators, and AIPW
 - [[Bayesian Propensity Score Weighting]] — Bayesian propensity score weighting in the econometrics identification strategies framework
 - [[Propensity Score in Bayesian CI]] — the role of the propensity score within the full Bayesian causal inference pipeline
+- [[Li et al 2022 - Overview]] — critical review of Bayesian CI that discusses IPW and the Liao-Zigler approach in broader context
+- [[General Structure of Bayesian CI]] — formal Bayesian causal inference architecture that this note fits within

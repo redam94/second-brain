@@ -137,3 +137,6 @@ Bayesian survival analysis places priors on hazard functions or regression coeff
 - [[Generalized Linear Models]] — Cox model shares the GLM structure
 - [[Missing Data Models]] — censoring is a form of missing data
 - [[Power Analysis and Sample Size]] — sample size calculation for survival studies
+- [[Time-Varying Treatments and G-computation]] — G-computation and time-varying exposures generalize the survival analysis framework
+- [[Estimands in Longitudinal Research]] — defines target estimands in longitudinal studies where survival is often the outcome
+- [[Hierarchical Models]] — frailty models for clustered survival data are random-effects / hierarchical models

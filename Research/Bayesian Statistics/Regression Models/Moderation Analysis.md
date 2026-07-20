@@ -108,13 +108,6 @@ Including $x \cdot m$ alongside $x$ and $m$ introduces **multicollinearity** —
 
 Finding: $\beta_2 < 0$ (credibly), meaning training becomes less effective at building muscle mass in older individuals.
 
-## Connections
-
-- [[Spurious Association and Confounds]] — interaction effects and multivariate regression
-- [[Bayesian Linear Regression]] — priors as regularization for correlated predictors
-- [[Generalized Linear Models]] — moderation extends naturally to logistic/Poisson regression
-- [[Nonparametric Causal Inference]] — non-parametric alternative when the interaction form is unknown
-
 ## Source
 
 - [[raw/Bayesian moderation analysis]] — PyMC example by Benjamin T. Vincent (2021–2023)
@@ -127,3 +120,4 @@ Finding: $\beta_2 < 0$ (credibly), meaning training becomes less effective at bu
 - [[Generalized Linear Models]] — extending moderation to non-Gaussian outcomes (logistic, Poisson)
 - [[Nonparametric Causal Inference]] — non-parametric alternative when the interaction form is unknown
 - [[Hierarchical Models]] — when moderation coefficients themselves vary across groups (multilevel moderation)
+- [[Metalearners for CATE]] — heterogeneous treatment effects as an alternative framing of moderation by covariates

@@ -75,3 +75,6 @@ Each case implements SBC and reads the resulting rank histogram against the 99% 
 - [[Efficient MCMC]]
 - [[HMC and Stan in Practice]] — the centered/non-centered parameterization in case study 6.2 is a key HMC design choice
 - [[Computational Troubleshooting]] — covers the funnel geometry and non-centered reparameterization as a remedy
+- [[Approximation Methods]] — covers variational inference (ADVI, INLA) whose failures cases 6.3 and 6.4 diagnose
+- [[Spatial Models - BYM]] — spatial hierarchical modeling context for the Kenya HIV/INLA case study (6.4)
+- [[Bayesian Workflow - Overview]] — SBC case studies are part of the broader Bayesian workflow validation loop
