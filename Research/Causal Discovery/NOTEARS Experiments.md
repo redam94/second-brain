@@ -140,3 +140,6 @@ produces **empirically consistent estimates** of the true weight matrix $W$ on b
 - [[NOTEARS Algorithm]] — the method being evaluated
 - [[NOTEARS - Overview]] — paper-level context
 - [[DAG Structure Learning Problem]] — baselines (FGS, GES, PC, LiNGAM) situated in the landscape
+- [[PC Algorithm]] — constraint-based baseline compared in NOTEARS experiments (supplement)
+- [[Greedy Equivalence Search]] — GES / FGS: the primary baseline NOTEARS is measured against
+- [[Constraint vs Score-Based Causal Discovery]] — broader comparison of all three paradigms

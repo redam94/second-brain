@@ -141,3 +141,7 @@ The essential distinction: program (4)'s domain is the discrete set $\mathbb{D}$
 - [[Smooth Characterization of Acyclicity]] — how the constraint $\mathsf{G}(W)\in\mathbb{D}$ becomes $h(W)=0$
 - [[NOTEARS Algorithm]] — solving program (3)
 - [[Spurious Association and Confounds]] — DAG semantics in causal inference
+- [[PC Algorithm]] — the constraint-based paradigm listed in the landscape table
+- [[Greedy Equivalence Search]] — the score-based paradigm (GES / FGS) listed in the landscape table
+- [[Markov Equivalence and CPDAGs]] — the CPDAG that PC and GES identify; the theoretical target
+- [[Constraint vs Score-Based Causal Discovery]] — systematic comparison of all three paradigms
