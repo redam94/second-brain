@@ -22,6 +22,10 @@ used_by:
   - "[[Differences-in-Differences]]"
   - "[[Activity Bias in Advertising]]"
   - "[[Power Analysis and Sample Size]]"
+aliases:
+  - experimental ideal econometrics
+  - randomization ideal
+  - randomized experiment benchmark
 ---
 
 # The Experimental Ideal

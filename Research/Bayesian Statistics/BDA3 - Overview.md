@@ -4,9 +4,25 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
+source_location: "Full text, pp. 1–668"
+depends_on: []
+used_by:
+  - "[[Introduction to Bayesian Computation]]"
+  - "[[Approximation Methods]]"
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Multiparameter Models]]"
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[Single-Parameter Models]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Data-Averaged Posterior Self-Consistency]]"
+  - "[[Statistical Rethinking - Overview]]"
+  - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"

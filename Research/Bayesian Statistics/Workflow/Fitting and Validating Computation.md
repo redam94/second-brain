@@ -22,6 +22,10 @@ used_by:
   - "[[Evaluating Fitted Models]]"
   - "[[Modeling as Software Development]]"
   - "[[Power Analysis and Sample Size]]"
+aliases:
+  - fitting and validating computation Bayesian
+  - Bayesian computation validation
+  - MCMC convergence checking workflow
 ---
 
 > [!summary]

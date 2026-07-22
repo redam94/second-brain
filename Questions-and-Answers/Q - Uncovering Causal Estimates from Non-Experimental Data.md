@@ -23,6 +23,23 @@ answered_from:
   - "[[Bayesian Difference in Differences]]"
 related_questions:
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+doc_type: qa
+source_location: "N/A"
+depends_on:
+  - "[[The Selection Problem]]"
+  - "[[Conditional Independence Assumption]]"
+  - "[[Directed Acyclic Graphs]]"
+  - "[[Instrumental Variables]]"
+  - "[[Local Average Treatment Effects]]"
+  - "[[Differences-in-Differences]]"
+  - "[[Regression Discontinuity Designs]]"
+  - "[[Synthetic Control]]"
+  - "[[Generalized Synthetic Control Method]]"
+  - "[[Frequentist Causal Estimation]]"
+  - "[[Sensitivity Analysis in Observational Studies]]"
+  - "[[X-Learner]]"
+  - "[[Bayesian Difference in Differences]]"
+used_by: []
 aliases:
   - quasi-experimental methods
   - identification strategies observational data

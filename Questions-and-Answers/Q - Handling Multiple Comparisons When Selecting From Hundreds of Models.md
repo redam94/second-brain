@@ -20,6 +20,20 @@ answered_from:
   - "[[Model Comparison]]"
 related_questions:
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+doc_type: qa
+source_location: "N/A"
+depends_on:
+  - "[[Multiple Testing Corrections]]"
+  - "[[Garden of Forking Paths]]"
+  - "[[Researcher Degrees of Freedom]]"
+  - "[[Type S and Type M Errors]]"
+  - "[[Multiple Comparisons - Bayesian Perspective]]"
+  - "[[Partial Pooling as Multiple Comparisons Correction]]"
+  - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Iterative Model Improvement]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[Model Comparison]]"
+used_by: []
 aliases:
   - "Multiple comparisons with many models"
   - "Model selection and p-hacking"

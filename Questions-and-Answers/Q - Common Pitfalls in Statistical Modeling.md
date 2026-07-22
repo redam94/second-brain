@@ -27,6 +27,26 @@ answered_from:
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
 related_questions:
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
+doc_type: qa
+source_location: "N/A"
+depends_on:
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Spurious Association and Confounds]]"
+  - "[[Omitted Variables Bias]]"
+  - "[[The Selection Problem]]"
+  - "[[Garden of Forking Paths]]"
+  - "[[Researcher Degrees of Freedom]]"
+  - "[[Type S and Type M Errors]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[Model Checking]]"
+  - "[[Evaluating Fitted Models]]"
+  - "[[Computational Troubleshooting]]"
+  - "[[Missing Data - Statistical Rethinking]]"
+  - "[[Activity Bias in Advertising]]"
+  - "[[Choosing and Building Models]]"
+  - "[[Multiple Testing Corrections]]"
+  - "[[Partial Pooling as Multiple Comparisons Correction]]"
+used_by: []
 aliases:
   - "Statistical modeling mistakes"
   - "Modeling pitfalls for data scientists"
