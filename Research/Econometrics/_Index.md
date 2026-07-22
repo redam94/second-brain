@@ -4,14 +4,14 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-06-28
-concept_count: 51
+date_updated: 2026-07-22
+concept_count: 56
 ---
 
 # Econometrics
 
 > [!abstract] Routing Summary
-> This folder covers applied econometrics and causal inference from Mostly Harmless Econometrics plus Bayesian DiD, synthetic control, DAG tutorials, Bayesian propensity weighting, **classical propensity score matching (PSM)**, simulation-based estimation, staggered difference-in-differences, and high-dimensional dependence (copula) modelling. Contains 51 notes across 6 sub-topics.
+> This folder covers applied econometrics and causal inference from Mostly Harmless Econometrics plus Bayesian DiD, synthetic control, DAG tutorials, Bayesian propensity weighting, **classical propensity score matching (PSM)**, simulation-based estimation, staggered difference-in-differences, and high-dimensional dependence (copula) modelling — including both **factor copulas** (Oh & Patton 2012, $N=100$+) and **vine copulas** (Aas et al. 2009, pair-level flexibility, C/D/R-vine structures). Contains 56 notes across 6 sub-topics.
 > - Need research design fundamentals, selection bias, or DAGs? -> [[Foundations/_Index|Foundations]]
 > - Need regression interpretation or OVB? -> [[Regression Foundations/_Index|Regression Foundations]]
 > - Need IV, DiD (canonical), RD, synthetic control, GSC, DAGs, or propensity weighting? -> [[Identification Strategies/_Index|Identification Strategies]]
@@ -33,7 +33,7 @@ concept_count: 51
 | [[Identification Strategies/_Index\|Identification Strategies]] | 19 | IV, LATE, DD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, **classical PSM (Rosenbaum-Rubin matching framework + diagnostics)** — quasi-experimental methods (MHE Ch 4-6 + Abadie 2021 + Xu 2017 + extras) |
 | [[Difference-in-Differences/_Index\|Difference-in-Differences]] | 6 | Staggered/multi-period DiD: group-time ATT(g,t), parallel-trends/no-anticipation/overlap assumptions, OR/IPW/doubly-robust estimands, event-study/group/calendar aggregation, multiplier-bootstrap uniform inference, TWFE critique (Callaway & Sant'Anna 2020) |
 | [[Extensions/_Index\|Extensions]] | 12 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8), simulation-based estimation: MSM, indirect inference, EMM, SMM for copulas (Liesenfeld & Breitung 1998, Oh & Patton 2011) |
-| [[Dependence Modeling/_Index\|Dependence Modeling]] | 6 | High-dimensional copulas, factor-copula construction, tail dependence via EVT, multi-factor/block structures, rank-based SMM, S&P 100 & systemic risk (Oh & Patton 2012) |
+| [[Dependence Modeling/_Index\|Dependence Modeling]] | 11 | High-dimensional copulas: **factor copulas** (construction, EVT tail dependence, multi-factor/block, rank-based SMM, S&P 100 systemic risk — Oh & Patton 2012) + **vine copulas** (pair copula constructions, C/D/R-vine structures, sequential MLE, Dißmann structure selection, architecture comparison — Aas et al. 2009) |
 
 ## Sources
 
