@@ -105,5 +105,8 @@ case — though unlike the undirected case the resulting program is **nonconvex*
 - [[DAG Structure Learning Problem]] — the score-based / SEM formulation NOTEARS builds on
 - [[Smooth Characterization of Acyclicity]] — the central theorem ($h(W)=\mathrm{tr}\,e^{W\circ W}-d$)
 - [[NOTEARS Algorithm]] — how the continuous program is actually solved
-- [[NOTEARS Experiments]] — empirical results and benchmarks
+- [[NOTEARS Experiments]] — empirical results and benchmarks (includes PC and GES/FGS comparisons)
+- [[GES - Greedy Equivalence Search]] — the FGS baseline that NOTEARS compares against
+- [[PC Algorithm]] — the constraint-based baseline in NOTEARS experiments
+- [[Markov Equivalence and CPDAGs]] — the identifiable target of all observational structure learning
 - [[Causal Discovery/_Index|Causal Discovery Index]]
