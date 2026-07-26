@@ -1,5 +1,8 @@
 ---
 title: "Fitting and Validating Computation"
+aliases:
+  - "Computational Validation"
+  - "MCMC Diagnostics Workflow"
 tags:
   - source/ingested
   - topic/bayesian-statistics

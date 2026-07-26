@@ -1,5 +1,8 @@
 ---
 title: "Choosing and Building Models"
+aliases:
+  - "Model Building"
+  - "Prior Predictive Checks"
 tags:
   - source/ingested
   - topic/bayesian-statistics

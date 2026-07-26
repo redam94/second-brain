@@ -1,5 +1,8 @@
 ---
 title: "Iterative Model Improvement"
+aliases:
+  - "Model Expansion"
+  - "Bayesian Model Refinement"
 tags:
   - source/ingested
   - topic/bayesian-statistics

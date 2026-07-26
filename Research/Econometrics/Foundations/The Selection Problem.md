@@ -1,5 +1,8 @@
 ---
 title: The Selection Problem
+aliases:
+  - "Selection Bias"
+  - "Selection Problem"
 tags:
   - source/ingested
   - topic/econometrics

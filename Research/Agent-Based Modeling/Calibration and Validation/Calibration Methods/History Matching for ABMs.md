@@ -99,7 +99,7 @@ In the SugarScape toy model (2 parameters: metabolism $\in [1,4]$, vision $\in [
 - The three uncertainty components $V^r_m$, $V^r_s$, $V_o$ are defined in [[Uncertainty Quantification for ABM Calibration]]
 - HM output feeds directly into [[Approximate Bayesian Computation for ABMs]] as the uniform prior
 - Extends [[ABM Calibration Overview]] beyond GA point estimation
-- Latin Hypercube Sampling used for space-filling design; related to [[Experimental Design for ABMs]]
+- Latin Hypercube Sampling used for space-filling design; related to [[Population Initialization and Parameter Sensitivity]]
 
 ## See Also
 - [[HM-ABC Calibration Framework]] — the combined pipeline

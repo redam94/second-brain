@@ -1,5 +1,8 @@
 ---
 title: The Experimental Ideal
+aliases:
+  - "Randomized Experiments"
+  - "Experimental Ideal"
 tags:
   - source/ingested
   - topic/econometrics

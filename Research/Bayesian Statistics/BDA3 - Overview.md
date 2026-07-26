@@ -10,6 +10,12 @@ folder: "Bayesian Statistics"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
+doc_type: overview
+source_location: "full book, pp. 1-674"
+depends_on: []
+used_by:
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Forking Paths and Bayesian Approaches]]"
 ---
 
 # Bayesian Data Analysis, 3rd Edition

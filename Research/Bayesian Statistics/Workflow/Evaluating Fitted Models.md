@@ -1,5 +1,8 @@
 ---
 title: "Evaluating Fitted Models"
+aliases:
+  - "Model Evaluation"
+  - "Posterior Predictive Checks"
 tags:
   - source/ingested
   - topic/bayesian-statistics
