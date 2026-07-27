@@ -10,6 +10,13 @@ tags:
   - type/concept
   - doc/tutorial
 date_ingested: 2026-04-09
+date_updated: 2026-07-27
+folder: "Bayesian Statistics/Advanced Models"
+aliases:
+  - "Factor Analysis"
+  - "PPCA"
+  - "Probabilistic PCA"
+  - "Latent Factor Models"
 raw: "[[raw/Factor analysis]]"
 doc_type: concept
 source_location: "raw/Factor analysis"
@@ -126,4 +133,8 @@ Model quality can be assessed by comparing the reconstruction $\hat{X} = WF$ aga
 - [[Nonparametric Models Overview]] — Gaussian processes as infinite-dimensional factor models
 - [[Generalized Linear Models]] — Linear Gaussian models in the GLM framework
 - [[Approximation Methods]] — ADVI and variational inference methods used here
+- [[Confirmatory Factor Analysis and SEM]] — extends exploratory FA to confirmatory (CFA) with theory-driven structure constraints and SEM path diagrams
+- [[Monsters and Mixtures]] — discrete latent structure (mixture models) as the complement to FA's continuous latent structure
+- [[Hierarchical Linear Models]] — random effects in hierarchical models are a special case of latent variable structure
+- [[Dependence Measures for Copulas]] — factor structure in dependence modeling: latent common factors drive joint tail behavior (see also [[Multi-Factor and Block Dependence Structures]])
 - [[raw/Factor analysis]] — Full PyMC tutorial with code and plots

@@ -20,7 +20,6 @@ depends_on:
   - "[[Fitting and Validating Computation]]"
   - "[[Choosing and Building Models]]"
   - "[[Evaluating Fitted Models]]"
-  - "[[raw/BayesWorkflow.pdf]]"
 used_by:
   - "[[Iterative Model Improvement]]"
 ---
@@ -83,6 +82,7 @@ When fitting a series of similar models, keep model code modular so that fixing 
 - [[Bayesian Workflow - Overview]] — the full workflow that software engineering practices support
 - [[Iterative Model Improvement]] — the iterative cycle that version control and testing enable
 - [[Fitting and Validating Computation]] — simulation-based calibration as a model-level unit test
+- [[Simulation-Based Calibration - Overview]] — SBC is explicitly described in this note as the "model-level unit test" equivalent; the dedicated SBC notes formalize the procedure
 - [[Choosing and Building Models]] — modular model construction that maps to the modularity principles here
 - [[Evaluating Fitted Models]] — posterior predictive checks as integration tests
 - [[Garden of Forking Paths]] — version control and pre-registration are the practical defenses against forking paths
