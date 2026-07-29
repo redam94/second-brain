@@ -3,9 +3,12 @@ title: "Index: Bayesian Causal Inference"
 tags:
   - type/index
   - source/ingested
-parent: "[[../Bayesian Statistics/_Index|Bayesian Statistics]]"
+parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
 date_updated: 2026-04-10
 concept_count: 34
+doc_type: index
+aliases:
+  - Bayesian Causal Inference Index
 ---
 
 # Bayesian Causal Inference

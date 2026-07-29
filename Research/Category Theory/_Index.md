@@ -4,8 +4,11 @@ tags:
   - type/index
   - source/ingested
   - topic/category-theory
-parent: "[[../../Research/_Index|Research]]"
+parent: "[[Research/_Index|Research]]"
 date_updated: 2026-05-08
+doc_type: index
+aliases:
+  - Category Theory Index
 ---
 
 # Category Theory

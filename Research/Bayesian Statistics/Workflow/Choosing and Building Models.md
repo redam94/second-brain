@@ -21,6 +21,10 @@ used_by:
   - "[[Iterative Model Improvement]]"
   - "[[Modeling as Software Development]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+aliases:
+  - model construction
+  - prior predictive checks
+  - building a Bayesian model
 ---
 
 > [!summary]

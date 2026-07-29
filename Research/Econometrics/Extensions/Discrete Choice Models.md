@@ -20,6 +20,11 @@ depends_on:
   - "[[Quantile Regression]]"
 used_by:
   - "[[Mostly Harmless Econometrics - Overview]]"
+aliases:
+  - logit model
+  - multinomial logit
+  - random utility model
+  - McFadden model
 ---
 
 # Discrete Choice Models

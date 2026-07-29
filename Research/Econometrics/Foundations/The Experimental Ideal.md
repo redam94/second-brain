@@ -22,6 +22,10 @@ used_by:
   - "[[Differences-in-Differences]]"
   - "[[Activity Bias in Advertising]]"
   - "[[Power Analysis and Sample Size]]"
+aliases:
+  - randomized experiment
+  - randomized controlled trial
+  - natural experiment
 ---
 
 # The Experimental Ideal

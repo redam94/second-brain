@@ -4,12 +4,22 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
+source_location: "Gelman, Carlin, Stern, Dunson, Vehtari & Rubin (2013). Full text, pp. 1–667."
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
+  - "BDA"
+depends_on: []
+used_by:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Single-Parameter Models]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Simulation-Based Calibration - Overview]]"
 ---
 
 # Bayesian Data Analysis, 3rd Edition

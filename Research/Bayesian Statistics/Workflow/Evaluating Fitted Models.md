@@ -23,6 +23,10 @@ used_by:
   - "[[Model Checking]]"
   - "[[Model Comparison]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+aliases:
+  - evaluating models
+  - model diagnostics
+  - posterior evaluation
 ---
 
 # Evaluating Fitted Models

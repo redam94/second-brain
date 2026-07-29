@@ -22,6 +22,10 @@ used_by:
   - "[[Evaluating Fitted Models]]"
   - "[[Modeling as Software Development]]"
   - "[[Power Analysis and Sample Size]]"
+aliases:
+  - computational validation
+  - MCMC validation
+  - fake-data simulation
 ---
 
 > [!summary]
