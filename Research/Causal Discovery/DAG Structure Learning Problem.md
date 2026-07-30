@@ -140,4 +140,7 @@ The essential distinction: program (4)'s domain is the discrete set $\mathbb{D}$
 - [[NOTEARS - Overview]] — paper-level summary
 - [[Smooth Characterization of Acyclicity]] — how the constraint $\mathsf{G}(W)\in\mathbb{D}$ becomes $h(W)=0$
 - [[NOTEARS Algorithm]] — solving program (3)
+- [[Markov Equivalence and CPDAGs]] — what PC and GES actually output (equivalence classes, not unique DAGs)
+- [[PC Algorithm]] — the "Constraint-based" row in the landscape table above
+- [[GES - Greedy Equivalence Search]] — the "Local/approximate search (GES)" row in the landscape table
 - [[Spurious Association and Confounds]] — DAG semantics in causal inference

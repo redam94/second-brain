@@ -140,3 +140,5 @@ produces **empirically consistent estimates** of the true weight matrix $W$ on b
 - [[NOTEARS Algorithm]] — the method being evaluated
 - [[NOTEARS - Overview]] — paper-level context
 - [[DAG Structure Learning Problem]] — baselines (FGS, GES, PC, LiNGAM) situated in the landscape
+- [[GES - Greedy Equivalence Search]] — FGS is the Fast GES implementation used as the primary baseline here; this note explains the full GES algorithm and its consistency guarantees
+- [[PC Algorithm]] — also used as a baseline (supplement); this note explains the constraint-based approach and why it was "significantly weaker" in the linear Gaussian SEM setting
