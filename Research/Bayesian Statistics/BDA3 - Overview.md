@@ -10,6 +10,20 @@ folder: "Bayesian Statistics"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
+doc_type: overview
+source_location: "Full text, pp. 1–550"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Single-Parameter Models]]"
+  - "[[Multiparameter Models]]"
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[Introduction to Bayesian Computation]]"
+  - "[[Approximation Methods]]"
+  - "[[Bayesian Workflow - Overview]]"
+used_by:
+  - "[[Statistical Rethinking - Overview]]"
+  - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Bayesian Data Analysis, 3rd Edition

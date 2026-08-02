@@ -8,6 +8,7 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 5.2, pp. 131–138"
 date_ingested: 2026-05-08
+folder: "Category Theory/Limits and Colimits"
 doc_type: textbook
 depends_on:
   - "[[General Limits]]"
