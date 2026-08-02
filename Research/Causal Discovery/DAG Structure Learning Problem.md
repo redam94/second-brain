@@ -15,6 +15,9 @@ depends_on:
 used_by:
   - "[[Smooth Characterization of Acyclicity]]"
   - "[[NOTEARS Algorithm]]"
+  - "[[Markov Equivalence Classes and CPDAGs]]"
+  - "[[PC Algorithm - Constraint-Based Structure Learning]]"
+  - "[[GES - Greedy Equivalence Search]]"
 aliases:
   - "Score-based DAG learning"
   - "Linear SEM structure learning"
@@ -141,3 +144,6 @@ The essential distinction: program (4)'s domain is the discrete set $\mathbb{D}$
 - [[Smooth Characterization of Acyclicity]] — how the constraint $\mathsf{G}(W)\in\mathbb{D}$ becomes $h(W)=0$
 - [[NOTEARS Algorithm]] — solving program (3)
 - [[Spurious Association and Confounds]] — DAG semantics in causal inference
+- [[PC Algorithm - Constraint-Based Structure Learning]] — constraint-based approach to Program (4)
+- [[GES - Greedy Equivalence Search]] — score-based approach to Program (4); Chickering (2002) consistency
+- [[Markov Equivalence Classes and CPDAGs]] — the shared output target of PC and GES
