@@ -12,7 +12,8 @@ folder: "Causal Discovery"
 doc_type: paper
 depends_on:
   - "[[NOTEARS Algorithm]]"
-used_by: []
+used_by:
+  - "[[GES - Greedy Equivalence Search]]"
 aliases:
   - "NOTEARS results"
   - "NOTEARS vs FGS"
@@ -135,6 +136,11 @@ produces **empirically consistent estimates** of the true weight matrix $W$ on b
   continuous relaxation recovers true DAGs.
 - **Benchmark family**: the Sachs dataset and ER/SF/noise simulation protocol became standard for the
   later differentiable-DAG-learning literature.
+
+## See Also
+- [[GES - Greedy Equivalence Search]] — score-based baseline NOTEARS benchmarks against; outperformed on dense/large graphs
+- [[PC Algorithm]] — constraint-based baseline; NOTEARS also compares to PC in the benchmark table
+- [[Markov Equivalence and CPDAGs]] — CPDAGs, which GES/PC output and NOTEARS bypasses
 
 ## See Also
 - [[NOTEARS Algorithm]] — the method being evaluated
