@@ -10,6 +10,7 @@ tags:
 source: "[[raw/abm_word_of_mouth.pdf]]"
 source_location: "pp. 7286-7287"
 date_ingested: 2026-04-10
+date_updated: 2026-08-03
 folder: "Agent-Based Modeling/Social Dynamics/Networks and Diffusion"
 doc_type: paper
 depends_on:
@@ -100,3 +101,5 @@ Multi-wave adoption has practical consequences:
 - [[Product Adoption and Diffusion Models]] — the underlying adoption model
 - [[ABM vs Equation-Based Modeling]] — the theoretical comparison this supports
 - [[Social Network Formation in Consumer Markets]] — how networks are constructed
+- [[Opinion Leaders and Social Influence]] — opinion leaders act as bridges between clusters, accelerating the cross-cluster diffusion described here
+- [[Word of Mouth Mechanisms]] — WOM is the transmission mechanism driving the adoption waves in clustered networks

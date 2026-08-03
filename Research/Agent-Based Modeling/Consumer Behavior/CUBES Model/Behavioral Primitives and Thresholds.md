@@ -9,6 +9,7 @@ tags:
 source: "[[raw/abm_human_behaviour.pdf]]"
 source_location: "pp. 186-187"
 date_ingested: 2026-04-10
+date_updated: 2026-08-03
 folder: "Agent-Based Modeling/Consumer Behavior/CUBES Model"
 doc_type: paper
 depends_on:

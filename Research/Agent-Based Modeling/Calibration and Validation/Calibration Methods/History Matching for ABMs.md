@@ -5,9 +5,10 @@ tags:
   - topic/agent-based-modeling
   - type/concept
   - doc/paper
-source: "[[Research/Agent-Based Modeling/raw/calibration_ABM.pdf]]"
+source: "[[Agent-Based Modeling/raw/calibration_ABM.pdf]]"
 source_location: "Sections 2.14–2.16, 3.19, 4.11–4.12, pp. 4–5, 8"
 date_ingested: 2026-04-11
+date_updated: 2026-08-03
 folder: "Agent-Based Modeling/Calibration and Validation/Calibration Methods"
 doc_type: paper
 depends_on:
@@ -99,7 +100,7 @@ In the SugarScape toy model (2 parameters: metabolism $\in [1,4]$, vision $\in [
 - The three uncertainty components $V^r_m$, $V^r_s$, $V_o$ are defined in [[Uncertainty Quantification for ABM Calibration]]
 - HM output feeds directly into [[Approximate Bayesian Computation for ABMs]] as the uniform prior
 - Extends [[ABM Calibration Overview]] beyond GA point estimation
-- Latin Hypercube Sampling used for space-filling design; related to [[Experimental Design for ABMs]]
+- Latin Hypercube Sampling used for space-filling design; related to [[Population Initialization and Parameter Sensitivity]]
 
 ## See Also
 - [[HM-ABC Calibration Framework]] — the combined pipeline
