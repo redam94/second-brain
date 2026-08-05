@@ -7,11 +7,11 @@ tags:
   - source/ingested
   - topic/econometrics
   - topic/causal-inference
-  - type/book-overview
   - type/overview
   - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
+folder: "Econometrics/Identification Strategies"
 authors:
   - Joshua D. Angrist
   - Jörn-Steffen Pischke

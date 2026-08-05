@@ -17,6 +17,25 @@ answered_from:
   - "[[GA Fitness Evaluation and the RAM]]"
 related_questions:
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
+folder: "Questions-and-Answers"
+source: "vault"
+date_ingested: 2026-04-11
+doc_type: qa
+source_location: "synthesized from vault notes"
+depends_on:
+  - "[[Method of Simulated Moments]]"
+  - "[[SMM Weighting Matrix and Inference]]"
+  - "[[SMM Python Implementation]]"
+  - "[[Practical Issues in Simulation Estimation]]"
+  - "[[ABM Calibration Overview]]"
+  - "[[Genetic Algorithm Calibration for ABM]]"
+  - "[[GA Fitness Evaluation and the RAM]]"
+used_by:
+  - "[[Genetic Algorithm Calibration for ABM]]"
+  - "[[GA Fitness Evaluation and the RAM]]"
+  - "[[ABM Calibration Overview]]"
+  - "[[SMM Weighting Matrix and Inference]]"
+  - "[[Method of Simulated Moments]]"
 aliases:
   - SMM ABM calibration
   - Simulated Method of Moments for ABM

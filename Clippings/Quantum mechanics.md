@@ -5,9 +5,23 @@ author:
   - "[[Contributors to Wikimedia projects]]"
 published: 2001-11-14
 created: 2026-04-10
+date_ingested: 2026-04-10
 description:
 tags:
   - "clippings"
+  - "topic/quantum-mechanics"
+  - "topic/physics"
+  - "type/overview"
+  - "doc/article"
+folder: "Clippings"
+doc_type: article
+source_location: "web page (full article)"
+aliases:
+  - QM Wikipedia
+depends_on: []
+used_by:
+  - "[[Quantum Mechanics - Overview]]"
+  - "[[Wave Function and Hilbert Space]]"
 ---
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Hydrogen_Density_Plots.png/500px-Hydrogen_Density_Plots.png)
 

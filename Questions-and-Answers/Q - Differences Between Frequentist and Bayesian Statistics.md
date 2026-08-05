@@ -23,6 +23,30 @@ answered_from:
 related_questions:
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
+folder: "Questions-and-Answers"
+source: "vault"
+date_ingested: 2026-04-09
+doc_type: qa
+source_location: "synthesized from vault notes"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[Single-Parameter Models]]"
+  - "[[Posterior Sampling and Summarization]]"
+  - "[[Multiparameter Models]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Hierarchical Models]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Multiple Comparisons - Bayesian Perspective]]"
+  - "[[Regression and the CEF]]"
+used_by:
+  - "[[Bayesian Linear Regression]]"
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Multiparameter Models]]"
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Asymptotics and Frequentist Connections]]"
 aliases:
   - "Frequentist vs Bayesian"
   - "Bayesian vs frequentist statistics"

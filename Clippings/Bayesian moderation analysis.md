@@ -4,9 +4,22 @@ source: "https://www.pymc.io/projects/examples/en/latest/causal_inference/modera
 author:
 published:
 created: 2026-04-09
+date_ingested: 2026-04-09
 description: "This notebook covers Bayesian moderation analysis. This is appropriate when we believe that one predictor variable (the moderator) may influence the linear relationship between another predictor va..."
 tags:
   - "clippings"
+  - "topic/bayesian-statistics"
+  - "topic/causal-inference"
+  - "type/tutorial"
+  - "doc/tutorial"
+folder: "Clippings"
+doc_type: tutorial
+source_location: "web page (full article)"
+aliases:
+  - Bayesian Moderation PyMC
+depends_on: []
+used_by:
+  - "[[Design of Static Response Models]]"
 ---
 ## Bayesian moderation analysis
 

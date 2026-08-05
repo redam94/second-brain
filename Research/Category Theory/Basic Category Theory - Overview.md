@@ -8,10 +8,20 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Full text, pp. 1–173"
 date_ingested: 2026-05-08
-doc_type: textbook
+folder: "Category Theory"
+doc_type: overview
 aliases:
   - Leinster Category Theory
   - BCT Overview
+depends_on:
+  - "[[raw/1612.09375v2.pdf]]"
+used_by:
+  - "[[Foundations/_Index]]"
+  - "[[Adjunctions/_Index]]"
+  - "[[Limits and Colimits/_Index]]"
+  - "[[Universal Properties/_Index]]"
+  - "[[Synthesis/_Index]]"
+  - "[[Representables/_Index]]"
 ---
 
 # Basic Category Theory — Overview

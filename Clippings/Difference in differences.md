@@ -4,9 +4,23 @@ source: "https://www.pymc.io/projects/examples/en/latest/causal_inference/differ
 author:
 published:
 created: 2026-04-09
+date_ingested: 2026-04-09
 description: "Introduction: This notebook provides a brief overview of the difference in differences approach to causal inference, and shows a working example of how to conduct this type of analysis under the Ba..."
 tags:
   - "clippings"
+  - "topic/causal-inference"
+  - "topic/econometrics"
+  - "type/tutorial"
+  - "doc/tutorial"
+folder: "Clippings"
+doc_type: tutorial
+source_location: "web page (full article)"
+aliases:
+  - DiD PyMC tutorial
+depends_on: []
+used_by:
+  - "[[Difference-in-Differences with Multiple Time Periods - Overview]]"
+  - "[[Group-Time Average Treatment Effects]]"
 ---
 ## Difference in differences
 
