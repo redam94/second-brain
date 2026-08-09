@@ -12,7 +12,9 @@ folder: "Causal Discovery"
 doc_type: paper
 depends_on:
   - "[[NOTEARS Algorithm]]"
-used_by: []
+used_by:
+  - "[[GES - Greedy Equivalence Search]]"
+  - "[[Causal Discovery Landscape]]"
 aliases:
   - "NOTEARS results"
   - "NOTEARS vs FGS"
