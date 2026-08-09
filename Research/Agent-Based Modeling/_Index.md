@@ -17,12 +17,23 @@ date_updated: 2026-04-11
 > - For calibration and validation (GA, HM+ABC, uncertainty quantification, case studies) -> [[Calibration and Validation/_Index|Calibration and Validation]]
 > - For ABM application domains (marketing, flows, finance, organizations, risk) -> [[Applications/_Index|Applications]]
 
+## Concept Map
+
+| Sub-topic | Notes | Key Concepts | Depends On |
+|-----------|-------|-------------|-----------|
+| [[Foundations/_Index\|Foundations]] | 7 | ABM methodology, emergent phenomena, heterogeneity, decision rules, bounded rationality | — |
+| [[Consumer Behavior/_Index\|Consumer Behavior]] | 8 | Karakaya utility model, logit decisions, CUBES behavioral attitudes, threshold activation | Foundations |
+| [[Social Dynamics/_Index\|Social Dynamics]] | 9 | WOM mechanisms, opinion leaders, social networks, adoption/diffusion, market lock-in | Foundations, Consumer Behavior |
+| [[Calibration and Validation/_Index\|Calibration and Validation]] | 9 | GA calibration, HM+ABC framework, uncertainty quantification (V^r_m, V^r_s, V_o), LHS design | Foundations |
+| [[Applications/_Index\|Applications]] | 5 | Marketing (4Ps+WOM), evacuation simulation, financial markets, organizations, risk | Consumer Behavior, Social Dynamics |
+
 ## Sub-topics
-- [[Foundations/_Index|Foundations]] — COVERS: ABM methodology and principles, emergent phenomena, heterogeneity, ABM vs equation-based modeling, agent decision rules and bounded rationality
-- [[Consumer Behavior/_Index|Consumer Behavior]] — COVERS: Karakaya 4-component utility model, logit purchase decisions, CUBES behavioral attitudes (mistrust, opportunism, conditioning, innovativeness, imitation), behavioral primitives with threshold activation
-- [[Social Dynamics/_Index|Social Dynamics]] — COVERS: WOM mechanisms (positive/negative), opinion leaders (exogenous vs emergent), social network formation, product adoption/diffusion models, network topology effects, market share equilibrium and lock-in
-- [[Calibration and Validation/_Index|Calibration and Validation]] — COVERS: ABM calibration overview (3 approaches), GA calibration (chromosome encoding, GA operators, convergence), RAM fitness evaluation (macro/micro), HM+ABC framework (implausibility score, wave-based pruning, rejection sampling ABC), uncertainty quantification (model discrepancy $V^r_m$, ensemble variance $V^r_s$, observation uncertainty $V_o$), case studies (SugarScape, territorial birds vs GA/SA/EA, RISC Scottish farms POM), experimental design (LHS, parameter sensitivity), validation (plausibility standard)
-- [[Applications/_Index|Applications]] — COVERS: marketing strategy (4Ps under WOM), flow simulation (evacuation, traffic), financial market simulation, organizational simulation, operational risk modeling
+
+- [[Foundations/_Index|Foundations]] — CONTAINS: ABM methodology and principles, emergent phenomena, heterogeneity, ABM vs equation-based modeling, agent decision rules and bounded rationality
+- [[Consumer Behavior/_Index|Consumer Behavior]] — CONTAINS: Karakaya 4-component utility model, logit purchase decisions, CUBES behavioral attitudes (mistrust, opportunism, conditioning, innovativeness, imitation), behavioral primitives with threshold activation
+- [[Social Dynamics/_Index|Social Dynamics]] — CONTAINS: WOM mechanisms (positive/negative), opinion leaders (exogenous vs emergent), social network formation, product adoption/diffusion models, network topology effects, market share equilibrium and lock-in
+- [[Calibration and Validation/_Index|Calibration and Validation]] — CONTAINS: ABM calibration overview (3 approaches), GA calibration (chromosome encoding, GA operators, convergence), RAM fitness evaluation (macro/micro), HM+ABC framework (implausibility score, wave-based pruning, rejection sampling ABC), uncertainty quantification (model discrepancy $V^r_m$, ensemble variance $V^r_s$, observation uncertainty $V_o$), case studies (SugarScape, territorial birds vs GA/SA/EA, RISC Scottish farms POM), experimental design (LHS, parameter sensitivity), validation (plausibility standard)
+- [[Applications/_Index|Applications]] — CONTAINS: marketing strategy (4Ps under WOM), flow simulation (evacuation, traffic), financial market simulation, organizational simulation, operational risk modeling
 
 ## Key Concept Dependencies
 

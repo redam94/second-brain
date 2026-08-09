@@ -18,11 +18,11 @@ date_updated: 2026-04-10
 > - For operational risk and Basel II -> [[Risk/_Index|Risk]]
 
 ## Sub-topics
-- [[Marketing/_Index|Marketing]] — COVERS: 4Ps in ABM, quality/price/promotion/opinion leader experiments, WOM amplification of marketing effects
-- [[Flows and Crowds/_Index|Flows and Crowds]] — COVERS: evacuation modeling, stampede phenomena, traffic jams, TRANSIMS transportation simulator
-- [[Markets and Finance/_Index|Markets and Finance]] — COVERS: stock market microstructure, NASDAQ modeling, shopbots, price discovery
-- [[Organizations/_Index|Organizations]] — COVERS: business process simulation, store layout (Macy's, Sainsbury's), workforce management
-- [[Risk/_Index|Risk]] — COVERS: operational risk, SCGAM approach, fat-tailed distributions, Basel II capital requirements
+- [[Marketing/_Index|Marketing]] — CONTAINS: 4Ps in ABM, quality/price/promotion/opinion leader experiments, WOM amplification of marketing effects
+- [[Flows and Crowds/_Index|Flows and Crowds]] — CONTAINS: evacuation modeling, stampede phenomena, traffic jams, TRANSIMS transportation simulator
+- [[Markets and Finance/_Index|Markets and Finance]] — CONTAINS: stock market microstructure, NASDAQ modeling, shopbots, price discovery
+- [[Organizations/_Index|Organizations]] — CONTAINS: business process simulation, store layout (Macy's, Sainsbury's), workforce management
+- [[Risk/_Index|Risk]] — CONTAINS: operational risk, SCGAM approach, fat-tailed distributions, Basel II capital requirements
 
 ## Cross-Cutting Concepts
 - **Emergence across domains**: All five application areas rely on ABM's ability to capture [[Emergent Phenomena in ABM|emergent phenomena]] — stampedes in crowds, price bubbles in markets, lock-in in consumer behavior, cascading failures in risk

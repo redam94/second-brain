@@ -4,12 +4,25 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
+source_location: "Full textbook, Gelman et al. (2013/2025), pp. 1–675, 23 chapters"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
+depends_on: []
+used_by:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[MCMC Basics]]"
+  - "[[Efficient MCMC]]"
+  - "[[Approximation Methods]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Hierarchical Linear Models]]"
+  - "[[Generalized Linear Models]]"
+  - "[[Bayesian Workflow - Overview]]"
 ---
 
 # Bayesian Data Analysis, 3rd Edition

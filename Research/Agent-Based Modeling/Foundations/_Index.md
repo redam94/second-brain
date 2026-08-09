@@ -16,8 +16,8 @@ date_updated: 2026-04-10
 > - For overview of the ABM paradigm -> [[Core Concepts/ABM Methodology and Principles]]
 
 ## Sub-topics
-- [[Core Concepts/_Index|Core Concepts]] — COVERS: ABM definition, agent properties, emergent phenomena, heterogeneity modeling
-- [[Modeling Approaches/_Index|Modeling Approaches]] — COVERS: ABM vs differential equations, agent decision rules, bounded rationality, stochasticity
+- [[Core Concepts/_Index|Core Concepts]] — CONTAINS: ABM definition, agent properties, emergent phenomena, heterogeneity modeling
+- [[Modeling Approaches/_Index|Modeling Approaches]] — CONTAINS: ABM vs differential equations, agent decision rules, bounded rationality, stochasticity
 
 ## Cross-Cutting Concepts
 Concepts that span both sub-topics:

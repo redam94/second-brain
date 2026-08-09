@@ -16,8 +16,8 @@ date_updated: 2026-04-10
 > - For a comparison of decision architectures -> [[../Foundations/Modeling Approaches/Agent Decision Rules and Bounded Rationality]]
 
 ## Sub-topics
-- [[Karakaya Model/_Index|Karakaya Model]] — COVERS: 4-component utility function (quality, promotion, WOM, price), logit purchase decisions, marketing strategy experiments in a monopolistic market
-- [[CUBES Model/_Index|CUBES Model]] — COVERS: CUBES simulator architecture, five behavioral attitudes (mistrust, opportunism, conditioning, innovativeness, imitation), behavioral primitives with threshold activation, imitation and conditioning social processes
+- [[Karakaya Model/_Index|Karakaya Model]] — CONTAINS: 4-component utility function (quality, promotion, WOM, price), logit purchase decisions, marketing strategy experiments in a monopolistic market
+- [[CUBES Model/_Index|CUBES Model]] — CONTAINS: CUBES simulator architecture, five behavioral attitudes (mistrust, opportunism, conditioning, innovativeness, imitation), behavioral primitives with threshold activation, imitation and conditioning social processes
 
 ## Cross-Cutting Concepts
 Concepts that span both models:

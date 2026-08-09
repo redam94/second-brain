@@ -16,9 +16,9 @@ date_updated: 2026-04-11
 > - For validation challenges and standards -> [[Validation/_Index|Validation]]
 
 ## Sub-topics
-- [[Calibration Methods/_Index|Calibration Methods]] — COVERS: ABM calibration overview (3 approaches), GA calibration (chromosome encoding, GA operators, convergence), Result-Analysis Module (macro/micro fitness), HM+ABC framework (implausibility score $I^r(x) = d^2/(V_s+V_o+V_m)$, wave-based pruning, ABC rejection sampling, $\varepsilon = 3(V_o+V_s+V_m)$), uncertainty quantification (4 sources: parameter uncertainty, model discrepancy, ensemble variance, observation uncertainty), case studies (SugarScape 10 waves, territorial birds 3,185 vs 11,000+ runs, RISC Scottish farms 16 binary variants + POM)
-- [[Experimental Design/_Index|Experimental Design]] — COVERS: parameter initialization distributions, one-at-a-time experimental design, 100-replication strategy, WOM toggle, benchmark configuration, sensitivity findings
-- [[Validation/_Index|Validation]] — COVERS: Merson's plausibility criterion, Troitzsch's systematic validation difficulty, input-output mismatch, stochastic variation, the plausibility standard
+- [[Calibration Methods/_Index|Calibration Methods]] — CONTAINS: ABM calibration overview (3 approaches), GA calibration (chromosome encoding, GA operators, convergence), Result-Analysis Module (macro/micro fitness), HM+ABC framework (implausibility score $I^r(x) = d^2/(V_s+V_o+V_m)$, wave-based pruning, ABC rejection sampling, $\varepsilon = 3(V_o+V_s+V_m)$), uncertainty quantification (4 sources: parameter uncertainty, model discrepancy, ensemble variance, observation uncertainty), case studies (SugarScape 10 waves, territorial birds 3,185 vs 11,000+ runs, RISC Scottish farms 16 binary variants + POM)
+- [[Experimental Design/_Index|Experimental Design]] — CONTAINS: parameter initialization distributions, one-at-a-time experimental design, 100-replication strategy, WOM toggle, benchmark configuration, sensitivity findings
+- [[Validation/_Index|Validation]] — CONTAINS: Merson's plausibility criterion, Troitzsch's systematic validation difficulty, input-output mismatch, stochastic variation, the plausibility standard
 
 ## Cross-Cutting Concepts
 - **Micro-macro gap**: All sub-topics address the challenge of connecting agent-level parameters to population-level observables — calibration searches for the right micro parameters, experimental design explores their effects, and validation assesses whether the mapping is correct

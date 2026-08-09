@@ -7,6 +7,8 @@ tags:
   - topic/identification
   - topic/observational-studies
 date_asked: 2026-04-10
+folder: "Questions-and-Answers"
+doc_type: qa
 answered_from:
   - "[[The Selection Problem]]"
   - "[[Conditional Independence Assumption]]"

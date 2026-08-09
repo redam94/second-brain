@@ -3,11 +3,11 @@ title: "Mostly Harmless Econometrics: An Empiricist's Companion"
 aliases:
   - MHE
   - Angrist and Pischke
+  - Mostly Harmless Econometrics
 tags:
   - source/ingested
   - topic/econometrics
   - topic/causal-inference
-  - type/book-overview
   - type/overview
   - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"

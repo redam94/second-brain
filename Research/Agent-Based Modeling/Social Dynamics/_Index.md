@@ -16,9 +16,9 @@ date_updated: 2026-04-10
 > - For emergent market-level outcomes -> [[Market Dynamics/_Index|Market Dynamics]]
 
 ## Sub-topics
-- [[Word of Mouth/_Index|Word of Mouth]] — COVERS: WOM propagation mechanisms (positive/negative), opinion leader definitions (exogenous vs emergent), influence amplification, two-step flow of communication
-- [[Networks and Diffusion/_Index|Networks and Diffusion]] — COVERS: preference-based network formation, spatial perception fields, product adoption value function, S-curve dynamics, network topology effects (random vs clustered), two-wave adoption
-- [[Market Dynamics/_Index|Market Dynamics]] — COVERS: brand lock-in from initial dominance, cyclic market share competition, imitation cascade mechanism, age-dependent attitude convergence
+- [[Word of Mouth/_Index|Word of Mouth]] — CONTAINS: WOM propagation mechanisms (positive/negative), opinion leader definitions (exogenous vs emergent), influence amplification, two-step flow of communication
+- [[Networks and Diffusion/_Index|Networks and Diffusion]] — CONTAINS: preference-based network formation, spatial perception fields, product adoption value function, S-curve dynamics, network topology effects (random vs clustered), two-wave adoption
+- [[Market Dynamics/_Index|Market Dynamics]] — CONTAINS: brand lock-in from initial dominance, cyclic market share competition, imitation cascade mechanism, age-dependent attitude convergence
 
 ## Cross-Cutting Concepts
 - **Positive feedback loops**: WOM creates positive feedback (more users -> more WOM -> more users) that drives both adoption S-curves ([[Product Adoption and Diffusion Models]]) and lock-in effects ([[Market Share Equilibrium and Lock-In]])
