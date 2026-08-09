@@ -15,6 +15,9 @@ depends_on:
 used_by:
   - "[[Smooth Characterization of Acyclicity]]"
   - "[[NOTEARS Algorithm]]"
+  - "[[Constraint-Based Causal Discovery]]"
+  - "[[GES - Greedy Equivalence Search]]"
+  - "[[Causal Discovery Landscape]]"
 aliases:
   - "Score-based DAG learning"
   - "Linear SEM structure learning"
