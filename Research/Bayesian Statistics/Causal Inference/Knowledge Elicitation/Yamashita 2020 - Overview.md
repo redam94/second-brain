@@ -9,6 +9,7 @@ tags:
 source: "[[raw/Yamashita et al. - 2020 - Interactive Method to Elicit Local Causal Knowledge for Creating a Huge Causal Network.pdf]]"
 source_location: "pp. 437-446"
 date_ingested: 2026-04-10
+date_updated: 2026-08-10
 folder: "Bayesian Statistics/Causal Inference/Knowledge Elicitation"
 doc_type: paper
 depends_on: []

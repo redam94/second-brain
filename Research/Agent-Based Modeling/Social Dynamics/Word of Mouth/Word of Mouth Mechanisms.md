@@ -9,6 +9,7 @@ tags:
 source: "[[raw/abm_consumer.pdf]]"
 source_location: "pp. 2-3, 8"
 date_ingested: 2026-04-10
+date_updated: 2026-08-10
 folder: "Agent-Based Modeling/Social Dynamics/Word of Mouth"
 doc_type: paper
 depends_on:
@@ -101,3 +102,4 @@ In Bonabeau (2002), WOM is implicit in the adoption model:
 - [[Consumer Utility Function Components]] — how WOM enters utility
 - [[Social Network Formation in Consumer Markets]] — the network WOM travels through
 - [[ABM in Marketing Strategy]] — strategic implications of WOM
+- [[Network Topology Effects on Diffusion]] — WOM drives the adoption waves; clustered networks produce multi-wave WOM propagation patterns

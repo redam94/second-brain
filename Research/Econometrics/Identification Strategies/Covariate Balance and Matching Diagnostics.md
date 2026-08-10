@@ -15,6 +15,7 @@ tags:
 source: "[[raw/PSM-Rosenbaum-Rubin-Stuart-Survey.md]]"
 source_location: "Stuart (2010) §4; Austin (2009, 2011); Rubin (2001)"
 date_ingested: 2026-06-28
+date_updated: 2026-08-10
 folder: "Econometrics/Identification Strategies"
 doc_type: paper
 depends_on:
@@ -224,3 +225,4 @@ bal.plot(m.out, var.name = "X1", which = "both")  # density by group, before/aft
 - [[Activity Bias in Advertising]] — a case where all observable balance diagnostics pass but causal estimates remain biased (unobserved confounder)
 - [[The Selection Problem]] — why balance on $X$ does not guarantee unbiasedness when $U \not\in X$
 - [[Conditional Independence Assumption]] — the assumption that observable balance validates (or fails to validate)
+- [[Sensitivity Analysis in Observational Studies]] — complement to balance diagnostics: quantifies robustness to residual unmeasured confounding after matching

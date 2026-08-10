@@ -82,4 +82,4 @@ This note collects the empirical results: the Monte Carlo validation, the equide
 ## See Also
 
 - [[SMM Copula Simulation and Application]] — companion-paper note on related copula simulation/application results.
-- [[../_Index|Econometrics]]
+- [[Econometrics/_Index|Econometrics]] — parent section index
