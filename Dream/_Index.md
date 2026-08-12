@@ -23,7 +23,7 @@ date_updated: 2026-08-10
 
 **Covered by:** [[Propensity Score Matching - Overview]], [[Matching Algorithms and Caliper]], [[Covariate Balance and Matching Diagnostics]] (all in `Econometrics/Identification Strategies/`, created 2026-06-28)
 
-**Adjacent notes:** [[Bayesian Propensity Scores and IPW]], [[Frequentist Causal Estimation]], [[Conditional Independence Assumption]], [[The Selection Problem]], [[Omitted Variables Bias]], [[Activity Bias in Advertising]]
+**Adjacent notes:** [[Bayesian Inverse Probability Weighting]], [[Frequentist Causal Estimation]], [[Conditional Independence Assumption]], [[The Selection Problem]], [[Omitted Variables Bias]], [[Activity Bias in Advertising]]
 
 ---
 

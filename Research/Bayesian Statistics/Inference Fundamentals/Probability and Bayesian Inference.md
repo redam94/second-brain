@@ -14,8 +14,7 @@ aliases:
   - "Bayesian inference"
 doc_type: concept
 source_location: "BDA3 Ch.1, pp. 3-28"
-depends_on:
-  - "[[raw/BDA3.pdf]]"
+depends_on: []
 used_by:
   - "[[Single-Parameter Models]]"
   - "[[Garden of Forking Data]]"

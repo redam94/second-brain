@@ -13,8 +13,8 @@ folder: "Bayesian Statistics/Regression Models"
 aliases:
   - "Bayesian regression"
   - "Bayesian lasso"
-doc_type: textbook
-source_location: "BDA3 Ch.14:353-380"
+doc_type: concept
+source_location: "Ch. 14, pp. 353–380"
 depends_on:
   - "[[Probability and Bayesian Inference]]"
   - "[[MCMC Basics]]"

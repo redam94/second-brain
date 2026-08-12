@@ -10,6 +10,7 @@ tags:
   - doc/tutorial
 aliases:
   - Moderation Analysis
+  - Bayesian Moderation Analysis
   - Interaction Effects Bayesian
 date_ingested: 2026-04-09
 date_updated: 2026-06-29

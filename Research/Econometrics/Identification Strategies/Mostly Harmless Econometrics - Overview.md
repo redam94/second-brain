@@ -63,7 +63,7 @@ Every empirical project should answer these questions:
 
 ## Key Principles
 
-- The **[[Conditional Expectation Function|CEF]]** is the central object; regression approximates it
+- The **[[Regression and the CEF|CEF]]** is the central object; regression approximates it
 - Estimators in common use have simple, robust interpretations that are **not heavily model-dependent**
 - If the estimates you get are not what you want, the fault lies in the econometrician, not the econometrics
 - The book emphasizes **finite-sample inference** issues rather than asymptotic efficiency
