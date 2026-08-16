@@ -17,6 +17,7 @@ depends_on:
 used_by:
   - "[[Bayesian Outcome Models]]"
   - "[[Propensity Score in Bayesian CI]]"
+  - "[[Bayesian Propensity Scores and IPW]]"
 aliases:
   - Bayesian causal inference structure
   - Bayesian factorization causal

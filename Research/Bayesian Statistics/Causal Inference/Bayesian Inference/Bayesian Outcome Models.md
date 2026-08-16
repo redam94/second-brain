@@ -16,6 +16,7 @@ depends_on:
   - "[[Causal Estimands]]"
 used_by:
   - "[[Propensity Score in Bayesian CI]]"
+  - "[[Bayesian Propensity Scores and IPW]]"
 aliases:
   - BART causal
   - Bayesian Causal Forest

@@ -12,6 +12,15 @@ doc_type: textbook
 aliases:
   - Leinster Category Theory
   - BCT Overview
+depends_on: []
+used_by:
+  - "[[Categories]]"
+  - "[[Functors]]"
+  - "[[Natural Transformations]]"
+  - "[[Adjoint Functors]]"
+  - "[[Universal Properties - Introduction]]"
+  - "[[Yoneda Lemma]]"
+  - "[[General Limits]]"
 ---
 
 # Basic Category Theory — Overview

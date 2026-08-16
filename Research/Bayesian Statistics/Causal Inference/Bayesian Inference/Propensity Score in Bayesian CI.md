@@ -17,6 +17,7 @@ depends_on:
   - "[[Frequentist Causal Estimation]]"
 used_by:
   - "[[Sensitivity Analysis in Observational Studies]]"
+  - "[[Bayesian Propensity Scores and IPW]]"
 aliases:
   - Bayesian propensity score
   - propensity score Bayesian
