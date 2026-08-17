@@ -98,3 +98,5 @@ Higher involvement lowers the effective threshold, making the agent more respons
 - [[Behavioral Attitudes in CUBES]] — the attitudes that parameterize BPs
 - [[CUBES Simulator Architecture]] — where BPs fit in the system
 - [[Agent Decision Rules and Bounded Rationality]] — comparison with other decision mechanisms
+- [[Population Initialization and Parameter Sensitivity]] — threshold heterogeneity across socio-demographic segments and parameter sensitivity in ABMs
+- [[Uncertainty Quantification for ABM Calibration]] — BP threshold parameters are among the calibration targets explored via UQ ensemble methods

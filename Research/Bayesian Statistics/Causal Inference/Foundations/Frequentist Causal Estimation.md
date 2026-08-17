@@ -106,3 +106,4 @@ The propensity score — central to Frequentist approaches — has a nuanced rol
 - [[Bayesian Propensity Score Weighting]] — Bayesian propensity score methods in the econometrics context
 - [[Metalearners for CATE]] — the DR-learner applies doubly-robust logic to conditional treatment effect estimation
 - [[Sensitivity Analysis in Observational Studies]] — what happens when unconfoundedness fails
+- [[Propensity Score Matching - Overview]] — the matching strategy that uses $\hat{e}(X)$ to form pairs rather than weighting

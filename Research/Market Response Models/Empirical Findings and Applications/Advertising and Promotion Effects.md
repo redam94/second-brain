@@ -9,8 +9,9 @@ tags:
   - topic/advertising
   - topic/empirical-findings
   - source/hanssens-parsons-schultz-2001
-date_created: 2026-04-11
+date_ingested: 2026-04-11
 date_updated: 2026-04-11
+folder: "Market Response Models/Empirical Findings and Applications"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 8"
 chapter: "8"
 status: complete
@@ -143,3 +144,6 @@ A large-scale set of 23 split-panel experiments over four years found:
 - Activity bias in advertising measurement: [[Activity Bias in Advertising]]
 - Why RCTs (BehaviorScan, holdout experiments) are essential for measuring elasticities: [[Observational vs Experimental Methods in Advertising]]
 - Experimental design principles behind BehaviorScan weight tests: [[The Experimental Ideal]]
+- Bayesian MMM using these elasticities as prior knowledge and calibration targets: [[Bayesian Media Mix Modeling - Overview]]
+- Saturation effects that bound the advertising response: [[Shape (Saturation) Effects]]
+- ROAS and mROAS derived from these elasticity estimates: [[ROAS, mROAS, and Optimal Media Mix]]

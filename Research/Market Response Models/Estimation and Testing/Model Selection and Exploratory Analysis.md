@@ -8,7 +8,7 @@ tags:
   - topic/market-response
   - topic/model-selection
   - source/hanssens-parsons-schultz-2001
-date_created: 2026-04-11
+date_ingested: 2026-04-11
 date_updated: 2026-07-27
 folder: "Market Response Models/Estimation and Testing"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 5"

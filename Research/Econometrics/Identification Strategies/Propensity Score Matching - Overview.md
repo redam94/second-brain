@@ -146,3 +146,4 @@ The diagnostic signature: after matching, remaining SMD for observed covariates 
 - [[Activity Bias in Advertising]] — example where PSM fails (unobserved confounder)
 - [[Instrumental Variables]] — alternative when unconfoundedness fails; uses exogenous variation
 - [[Differences-in-Differences]] — alternative when panel data available; removes time-invariant unobservables
+- [[Sensitivity Analysis in Observational Studies]] — after matching, assess robustness to unmeasured confounders via Rosenbaum bounds; complement to balance diagnostics

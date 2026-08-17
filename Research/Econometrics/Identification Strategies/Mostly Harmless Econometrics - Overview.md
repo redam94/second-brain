@@ -12,6 +12,7 @@ tags:
   - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
+folder: "Econometrics/Identification Strategies"
 authors:
   - Joshua D. Angrist
   - Jörn-Steffen Pischke
@@ -63,7 +64,7 @@ Every empirical project should answer these questions:
 
 ## Key Principles
 
-- The **[[Conditional Expectation Function|CEF]]** is the central object; regression approximates it
+- The **[[Regression and the CEF|CEF]]** is the central object; regression approximates it
 - Estimators in common use have simple, robust interpretations that are **not heavily model-dependent**
 - If the estimates you get are not what you want, the fault lies in the econometrician, not the econometrics
 - The book emphasizes **finite-sample inference** issues rather than asymptotic efficiency
@@ -73,5 +74,7 @@ Every empirical project should answer these questions:
 - [[The Selection Problem]] — the fundamental challenge of causal inference
 - [[Conditional Independence Assumption]] — the key assumption for causal regression
 - [[Omitted Variables Bias]] — what goes wrong without proper controls
+- [[Regression Discontinuity Designs]] — MHE Ch. 6: design when treatment follows a discontinuous threshold rule
+- [[Synthetic Control]] — the Abadie et al. extension for single treated unit settings (not in MHE but a natural complement)
 - [[BDA3 - Overview]] — Bayesian counterpart covering inference, regression, and model-based causal analysis
 - [[Bayesian Workflow - Overview]] — iterative Bayesian approach to the same empirical questions
