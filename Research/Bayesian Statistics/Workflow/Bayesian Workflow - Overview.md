@@ -25,7 +25,25 @@ used_by:
   - "[[BDA3 - Overview]]"
   - "[[Statistical Rethinking - Overview]]"
   - "[[Bayesian Linear Regression]]"
+expanded_by:
+  - "[[From Inference to Data Analysis to Workflow]]"
+  - "[[Why Bayes - Benefits, Costs, and Borders]]"
+  - "[[Four Modeling Scenarios]]"
+  - "[[Multiple-Choice Exam - A Full Workflow Walkthrough]]"
 ---
+
+> [!info] Superseded by the 2026 textbook
+> This note summarizes the 2020 arXiv paper *Bayesian Workflow* (Gelman, Vehtari, Simpson, Margossian, Carpenter, Yao, Kennedy, Gabry, Bürkner & Modrák). That paper has since been expanded into the full-length textbook [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]], ingested into this vault as 79 notes across [[Foundations/_Index|Foundations]], [[Building Models/_Index|Building Models]], [[Evaluating and Comparing/_Index|Evaluating and Comparing]], [[Computational Workflow/_Index|Computational Workflow]], [[Case Studies/_Index|Case Studies]], and [[Appendices/_Index|Appendices]].
+>
+> **Start with the book notes for the expanded treatment:**
+> - [[From Inference to Data Analysis to Workflow]] — the master workflow diagram (Figure 2.1), transcribed as mermaid
+> - [[Why Bayes - Benefits, Costs, and Borders]] — the book's own accounting of when Bayes pays off
+> - [[Four Modeling Scenarios]] — the taxonomy that organizes the whole book
+> - [[Multiple-Choice Exam - A Full Workflow Walkthrough]] — one problem carried end to end
+> - [[Bayesian Workflow Book - Overview]] — the routing index for all 79 notes
+>
+> This note is kept because its compact framing of the 2020 paper remains a useful summary.
+
 
 > [!summary]
 > Bayesian workflow extends far beyond Bayesian inference ($p(\theta|y) \propto p(\theta)p(y|\theta)$). It encompasses the full iterative cycle of model building, fitting, checking, and revision that characterizes real applied Bayesian data analysis. This paper by Gelman, Vehtari, Simpson, Margossian, Carpenter, Yao, Kennedy, Gabry, Burkner, and Modrak (2020) codifies the tacit knowledge practitioners need.

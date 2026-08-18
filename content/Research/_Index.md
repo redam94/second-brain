@@ -3,15 +3,16 @@ title: "Index: Research"
 tags:
   - type/index
   - source/ingested
-date_updated: 2026-07-01
-concept_count: 216
+date_updated: 2026-08-18
+concept_count: 522
 ---
 
 # Research
 
 > [!abstract] Routing Summary
-> This folder covers applied statistics, econometrics, causal inference, causal discovery, Bayesian experimental design, probabilistic numerics, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 210 notes across 10 major topics.
+> This folder covers applied statistics, econometrics, causal inference, causal discovery, Bayesian experimental design, probabilistic numerics, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 522 notes across 10 major topics.
 > - Need Bayesian inference, computation, or regression? -> [[Research/Bayesian Statistics/_Index|Bayesian Statistics]]
+> - Need the **applied Bayesian workflow** — priors, predictive checks, LOO, failure modes, or 16 worked case studies? -> [[Research/Bayesian Statistics/Workflow/_Index|Bayesian Workflow]], starting at [[Bayesian Workflow Book - Overview]]
 > - Need causal inference toolkit (IV, DiD, RD, synthetic control, GSC, DAGs)? -> [[Research/Econometrics/_Index|Econometrics]]
 > - Need causal *structure learning* / DAG discovery from data (NOTEARS, continuous optimization)? -> [[Research/Causal Discovery/_Index|Causal Discovery]]
 > - Need forking paths, power analysis, ad measurement, or longitudinal causal inference? -> [[Research/Research Methodology/_Index|Research Methodology]]
@@ -27,7 +28,7 @@ concept_count: 216
 
 | Topic | Notes | Key Concepts |
 |-------|-------|-------------|
-| [[Research/Bayesian Statistics/_Index\|Bayesian Statistics]] | 60 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference, **simulation-based calibration (SBC)** |
+| [[Research/Bayesian Statistics/_Index\|Bayesian Statistics]] | 201 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference, **simulation-based calibration (SBC)**, and the full **2026 *Bayesian Workflow* textbook** (79 notes: model building and priors, predictive checking, PSIS-LOO, computational failure modes, 16 case studies) |
 | [[Research/Bayesian Experimental Design/_Index\|Bayesian Experimental Design]] | 21 | Lindley's information measure (1956), expected information gain (EIG), nested Monte Carlo, variational EIG estimators (posterior/marginal/VNMC/implicit), unified stochastic-gradient design, **adaptive & prior contrastive estimation (ACE/PCE)**, sequential/adaptive design, **deep adaptive design (DAD) policies**, EIG vs Fisher information |
 | [[Research/Probabilistic Numerics/_Index\|Probabilistic Numerics]] | 36 | Computation as Bayesian inference, the numerical agent, Gaussian algebra/GP regression, Gauss–Markov/SDE priors, Kalman filter & RTS smoother, **Bayesian quadrature** (kernel means, classical rules as posterior means), **probabilistic linear solvers** (CG = BayesCG), **Bayesian optimisation** (PI/EI/UCB/KG, entropy search), **ODE filters & smoothers** (EKF0/EKF1, convergence theory), uncertainty calibration |
 | [[Research/Econometrics/_Index\|Econometrics]] | 48 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, quantile regression, discrete choice, SMM, Brock-Mirman structural estimation, **staggered/multi-period DiD (group-time ATT, doubly-robust)**, **factor copulas / high-dimensional tail dependence** |
@@ -49,7 +50,7 @@ concept_count: 216
 - **Causal Discovery (structure learning)**: [[NOTEARS - Overview]], [[DAG Structure Learning Problem]], [[Smooth Characterization of Acyclicity]], [[NOTEARS Algorithm]], [[NOTEARS Experiments]]
 - **Bayesian Experimental Design (EIG)**: [[Lindley's Information Measure]] → [[Expected Information Gain]] → [[Nested Estimation and Nested Monte Carlo]] → [[Variational BOED - Overview]] → [[Unified SGD BOED - Overview]] ([[Adaptive Contrastive Estimation (ACE)]] / [[Prior Contrastive Estimation (PCE)]]) → [[Modern Bayesian Experimental Design - Overview]] → [[From Designs to Policies (Deep Adaptive Design)]]
 - **Probabilistic Numerics (computation as inference)**: [[Computation as Probabilistic Inference]] / [[The Numerical Agent]] → [[Gaussian Distributions and Algebra]] → {[[Gaussian Process Regression]], [[Gauss-Markov Processes and SDEs]] → [[Bayesian Filtering and Smoothing]]} → application branches: [[Bayesian Quadrature]] → [[Classical Quadrature as Inference]]; [[Probabilistic Linear Solvers - Algorithmic Scaffold]] → [[Conjugate Gradients as Probabilistic Inference]]; [[Bayesian Optimisation]] → [[Acquisition Functions]]; [[ODE Filters and Smoothers]] → [[Theory of ODE Filters and Smoothers]]
-- **Model Building**: [[Bayesian Workflow - Overview]], [[Model Checking]], [[Model Comparison]], [[Overfitting and Information Criteria]]
+- **Model Building**: [[Bayesian Workflow Book - Overview]] → [[From Inference to Data Analysis to Workflow]] → [[Choosing an Initial Model]] → [[Prior Predictive Checking]] → [[Posterior Predictive Checking]] → [[Cross Validation Checking]] → [[Model Expansion - Predictive Consistency and Coherence]]; also [[Bayesian Workflow - Overview]], [[Model Checking]], [[Model Comparison]], [[Overfitting and Information Criteria]]
 - **Multiple Comparisons**: [[Multiple Comparisons - Bayesian Perspective]], [[Multiple Testing Corrections]], [[Type S and Type M Errors]], [[Partial Pooling as Multiple Comparisons Correction]]
 - **Missing Data**: [[Missing Data Models]], [[Missing Data - Statistical Rethinking]], [[Data Collection Models]]
 - **Regression**: [[Bayesian Linear Regression]], [[Regression and the CEF]], [[Hierarchical Linear Models]], [[Generalized Linear Models]]

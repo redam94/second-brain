@@ -4,30 +4,59 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/Bayesian Statistics/_Index|Bayesian Statistics]]"
-date_updated: 2026-06-17
-concept_count: 13
+date_updated: 2026-08-18
+concept_count: 92
 ---
 
 # Bayesian Workflow
 
 > [!abstract] Routing Summary
-> This folder covers the iterative Bayesian modeling cycle from the Bayesian Workflow paper (Gelman et al. 2020) plus a deep treatment of Simulation-Based Calibration (Talts et al. 2018). Contains 13 notes.
-> - Need the full workflow overview / Figure 1? -> [[Bayesian Workflow - Overview]]
-> - Need prior predictive checking or model building? -> [[Choosing and Building Models]]
+> This folder covers the iterative Bayesian modeling cycle. Three sources: the **2026 textbook** *Bayesian Workflow* (Gelman, Vehtari & McElreath) in 79 notes across six sub-folders, the **2020 arXiv paper** it expands (7 notes, kept and cross-linked), and **Simulation-Based Calibration** (Talts et al. 2018, 6 notes). Contains **92 notes**.
+>
+> **Start here for the textbook:** [[Bayesian Workflow Book - Overview]] — the routing index for all 79 book notes.
+>
+> - Need the **master workflow diagram (Figure 2.1)**? -> [[From Inference to Data Analysis to Workflow]]
+> - Need to **specify a model or a prior**? -> [[Research/Bayesian Statistics/Workflow/Building Models/_Index|Building Models]]
+> - Need to **check or compare fitted models**? -> [[Research/Bayesian Statistics/Workflow/Evaluating and Comparing/_Index|Evaluating and Comparing]]
+> - Need **diagnostics, failure modes, or approximate inference**? -> [[Research/Bayesian Statistics/Workflow/Computational Workflow/_Index|Computational Workflow]]
+> - Need a **worked analysis of a real problem**? -> [[Research/Bayesian Statistics/Workflow/Case Studies/_Index|Case Studies]] (16 of them, routed by symptom)
+> - Need the **non-Bayesian translation** or a **BDA3 reading guide**? -> [[Research/Bayesian Statistics/Workflow/Appendices/_Index|Appendices]]
+> - Need **foundations: why Bayes, the four scenarios, Stan setup**? -> [[Foundations/_Index|Foundations]]
+>
+> **From the 2020 paper (kept, each with an `expanded_by` pointer):**
+> - Need the paper's compact workflow overview / Figure 1? -> [[Bayesian Workflow - Overview]]
+> - Need the paper on prior predictive checking or model building? -> [[Choosing and Building Models]]
+>
+> **Simulation-Based Calibration (Talts et al. 2018) — theory, complementary to the book:**
 > - Need the SBC method / fake-data validation at a glance? -> [[Simulation-Based Calibration - Overview]]
 > - Need the SBC foundational identity (prior = data-averaged posterior)? -> [[Data-Averaged Posterior Self-Consistency]]
 > - Need the rank statistic + uniformity theorem? -> [[Rank Statistics and Uniformity]]
 > - Need the step-by-step SBC recipe (Algorithm 1 & 2)? -> [[The SBC Algorithm]]
 > - Need to read SBC histogram shapes (∪/∩/sloped) or handle autocorrelation? -> [[Interpreting SBC Histograms]]
 > - Need worked SBC examples (HMC/ADVI/INLA, 8-schools)? -> [[SBC Case Studies]]
-> - Need SBC in the broader workflow context? -> [[Fitting and Validating Computation]]
-> - Need to debug divergences or multimodality? -> [[Computational Troubleshooting]]
-> - Need version control for models? -> [[Modeling as Software Development]]
+> - Need SBC in the broader workflow context? -> [[SBC in the Workflow]] (book) or [[Fitting and Validating Computation]] (paper)
+> - Need to debug divergences or multimodality? -> [[Failure Modes and Steps Forward]] (book) or [[Computational Troubleshooting]] (paper)
+> - Need version control for models? -> [[Statistical Modeling as Software Development]] (book) or [[Modeling as Software Development]] (paper)
+
+## Sub-folders (2026 textbook, 79 notes)
+
+| Sub-folder | Notes | Covers |
+|---|---|---|
+| [[Foundations/_Index\|Foundations]] | 8 | Why Bayes, varieties of Bayesian theory, the master workflow diagram, four modeling scenarios, Stan setup, two introductory examples (Ch. 1–4) |
+| [[Research/Bayesian Statistics/Workflow/Building Models/_Index\|Building Models]] | 19 | Model specification, every prior-choice rule, prior predictive checking, simulation as a modeling tool, poststratification, causal inference, decision (Ch. 5–7) |
+| [[Research/Bayesian Statistics/Workflow/Evaluating and Comparing/_Index\|Evaluating and Comparing]] | 16 | Posterior predictive checking, PSIS-LOO and Pareto $\hat{k}$, influence and sensitivity, model selection, stacking, model expansion, the replication crisis (Ch. 8–10) |
+| [[Research/Bayesian Statistics/Workflow/Computational Workflow/_Index\|Computational Workflow]] | 16 | The typical set, $\hat{R}$/ESS/MCSE, fail-fast development, the catalogue of failure modes, approximate inference, Pathfinder, modeling as software development (Ch. 11–13, 15) |
+| [[Research/Bayesian Statistics/Workflow/Simulation-Based Calibration/_Index\|Simulation-Based Calibration]] | 1 | SBC as an integrated workflow step, the $\gamma$ metric (Ch. 14) |
+| [[Research/Bayesian Statistics/Workflow/Case Studies/_Index\|Case Studies]] | 16 | Sixteen complete analyses, each with model spec, what went wrong, and the lesson — routed by symptom (Ch. 16–31) |
+| [[Research/Bayesian Statistics/Workflow/Appendices/_Index\|Appendices]] | 2 | The non-Bayesian translation of the whole workflow; a chapter-by-chapter BDA3 reading guide (App. A–B) |
+| [[Bayesian Workflow Book - Overview]] | 1 | The routing index for all 79 book notes (lives at this folder's root) |
 
 ## Concept Map
 
 | Concept | Note | Type | Depends On | Key Result |
 |---------|------|------|-----------|------------|
+| **The 2026 textbook, 31 chapters + 2 appendices** | [[Bayesian Workflow Book - Overview]] | overview | [[Bayesian Workflow - Overview]] | Routing index for all 79 book notes; the case-study symptom table |
+| Master workflow diagram (Figure 2.1) | [[From Inference to Data Analysis to Workflow]] | concept | [[Why Bayes - Benefits, Costs, and Borders]] | Inference ⊂ data analysis ⊂ workflow, transcribed as mermaid |
 | Full workflow vs mere Bayesian inference, Figure 1 | [[Bayesian Workflow - Overview]] | overview | [[Probability and Bayesian Inference]], [[MCMC Basics]], [[Hierarchical Models]] | Workflow = iterative cycle, not just fitting |
 | Model selection, modular construction, prior predictive | [[Choosing and Building Models]] | concept | [[Bayesian Workflow - Overview]], [[Hierarchical Models]], [[Probability and Bayesian Inference]] | Build models modularly, check priors first |
 | Warmup, convergence, fake-data simulation, SBC | [[Fitting and Validating Computation]] | concept | [[Choosing and Building Models]], [[MCMC Basics]], [[Efficient MCMC]], [[Bayesian Workflow - Overview]] | SBC validates the full inference pipeline |
@@ -43,6 +72,11 @@ concept_count: 13
 | Worked SBC experiments: misspecified prior, centered 8-schools HMC bias, ADVI, INLA spatial | [[SBC Case Studies]] | example | [[The SBC Algorithm]], [[Interpreting SBC Histograms]] | SBC catches distinct real failure modes |
 
 ## Notes
+
+**2026 textbook (79 notes — see the sub-folder indexes above):**
+- [[Bayesian Workflow Book - Overview]] — CONTAINS: the routing table for all 79 notes, the five-part structure, the sixteen-case-study symptom index, and the mapping from each 2020-paper note to its book expansion
+
+**2020 arXiv paper (kept and cross-linked):**
 - [[Bayesian Workflow - Overview]] — CONTAINS: Full workflow diagram (Figure 1), workflow vs inference distinction, iterative cycle overview
 - [[Choosing and Building Models]] — CONTAINS: Initial model selection, modular construction, prior predictive checking, domain expertise integration
 - [[Fitting and Validating Computation]] — CONTAINS: MCMC warmup, convergence checks, fake-data simulation, simulation-based calibration (SBC)
@@ -59,5 +93,6 @@ concept_count: 13
 
 ## Sources
 
+- [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf]] — Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*, 550 pp. — the full-length textbook expansion of the 2020 paper
 - [[raw/BayesWorkflow.pdf]] — Gelman et al. (2020), arXiv:2011.01808
 - [[raw/1804.06788-Talts-SBC.pdf]] — Talts, Betancourt, Simpson, Vehtari & Gelman (2018), "Validating Bayesian Inference Algorithms with Simulation-Based Calibration", arXiv:1804.06788 (shares authors with the Bayesian Workflow paper and BDA3)

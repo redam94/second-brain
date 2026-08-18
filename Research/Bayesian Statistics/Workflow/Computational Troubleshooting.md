@@ -25,7 +25,28 @@ used_by:
   - "[[Evaluating Fitted Models]]"
   - "[[HMC and Stan in Practice]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+expanded_by:
+  - "[[What to Do About Convergence Problems]]"
+  - "[[Failure Modes and Steps Forward]]"
+  - "[[Fit Fast, Fail Fast]]"
+  - "[[The Typical Set and the Log Posterior Density]]"
 ---
+
+> [!info] Expanded in the 2026 textbook
+> The 2020 paper's computational troubleshooting section becomes the 16 notes of [[Computational Workflow/_Index|Computational Workflow]] in [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]], plus four dedicated case studies.
+>
+> **Closest book counterparts:**
+> - [[Failure Modes and Steps Forward]] — the catalogue of pathologies and their fixes
+> - [[What to Do About Convergence Problems]] — the diagnostic ladder
+> - [[The Typical Set and the Log Posterior Density]] — why the geometry matters
+> - [[Fit Fast, Fail Fast]] — the paper's slogan, worked out in practice
+> - [[Modeling Ideas to Address Computing Problems]] — changing the model to fix the sampler
+>
+> **Case studies that dramatize these problems:**
+> - [[Sampling Problems with Latent Variables - No Vehicles in the Park]] — additive aliasing, centered vs. non-centered
+> - [[Challenge of Multimodality - Differential Equation for Planetary Motion]] — multimodality that reparameterization cannot fix
+> - [[Debugging a Model - World Cup Football]] and [[Model Building - Time-Series Decomposition for Birthdays]]
+
 
 > [!summary]
 > Section 5 of Gelman et al. (2020) addresses what to do when MCMC computation goes wrong. The central insight is the **folk theorem of statistical computing**: when you have computational problems, often the real issue is with your model, not the algorithm. Strategies include simplification, reparameterization, marginalization, adding prior information, and adding data.

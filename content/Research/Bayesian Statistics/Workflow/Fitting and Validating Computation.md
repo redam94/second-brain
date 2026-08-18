@@ -22,7 +22,23 @@ used_by:
   - "[[Evaluating Fitted Models]]"
   - "[[Modeling as Software Development]]"
   - "[[Power Analysis and Sample Size]]"
+expanded_by:
+  - "[[Chains, Iterations, and Effective Sample Size]]"
+  - "[[Initial Values, Adaptation, and Warmup]]"
+  - "[[SBC in the Workflow]]"
+  - "[[Effective Sample Size and Monte Carlo Standard Error]]"
 ---
+
+> [!info] Expanded in the 2026 textbook
+> The 2020 paper's material on fitting and validating computation is expanded across [[Research/Bayesian Statistics/Workflow/Computational Workflow/_Index|Computational Workflow]] and the SBC notes of [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]].
+>
+> **Closest book counterparts:**
+> - [[Initial Values, Adaptation, and Warmup]] — initialization as a workflow decision, not a default
+> - [[Chains, Iterations, and Effective Sample Size]] and [[Effective Sample Size and Monte Carlo Standard Error]]
+> - [[How Many Digits to Report]] — the practical consequence of MCSE
+> - [[SBC in the Workflow]] and [[Simulation-Based Calibration Checking in Model Development Workflow]] — SBC as a development subroutine, with five real bugs found
+> - [[Approximate Algorithms and Approximate Models]] and [[Variational Inference and Pathfinder]]
+
 
 > [!summary]
 > Sections 3--4 of Gelman et al. (2020) cover how to fit Bayesian models using MCMC (particularly HMC), validate that the computation is correct, and use simulated data to diagnose problems before touching real data. Key tools include convergence diagnostics, fake-data simulation, and simulation-based calibration (SBC).

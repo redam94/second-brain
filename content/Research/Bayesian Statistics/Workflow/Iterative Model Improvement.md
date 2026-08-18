@@ -21,7 +21,23 @@ used_by:
   - "[[Modeling as Software Development]]"
   - "[[Model Comparison]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
+expanded_by:
+  - "[[Model Expansion - Predictive Consistency and Coherence]]"
+  - "[[Topology of Models]]"
+  - "[[Comparing Models Visually]]"
+  - "[[Statistical and Scientific Inference]]"
 ---
+
+> [!info] Expanded in the 2026 textbook
+> The 2020 paper's account of iterative model improvement — including the garden-of-forking-paths worry — is expanded in [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]].
+>
+> **Closest book counterparts:**
+> - [[Model Expansion - Predictive Consistency and Coherence]] — how to expand a model without inflating the prior predictive
+> - [[Topology of Models]] — the space of models a workflow moves through
+> - [[Comparing Models Visually]] — reading a sequence of fits side by side
+> - [[Statistical and Scientific Inference]] and [[The Replication Crisis and Multiple Levels of Variation]] — the honest accounting of iterated analysis
+> - [[Simulated-Data Experimentation as Virtual Replication]] — the book's answer to the forking-paths objection
+
 
 > [!summary]
 > Sections 7--8 of Gelman et al. (2020) cover the iterative heart of Bayesian workflow: modifying models in response to data, failures, and new understanding, then comparing and combining multiple models. The goal is not to find the single "best" model but to understand how inferences change across a topology of related models.

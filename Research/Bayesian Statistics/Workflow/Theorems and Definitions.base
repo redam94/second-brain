@@ -1,0 +1,39 @@
+filters:
+  and:
+    - file.inFolder("Research/Bayesian Statistics/Workflow")
+    - file.ext == "md"
+    - or:
+        - file.hasTag("type/theorem")
+        - file.hasTag("type/definition")
+        - file.hasTag("type/example")
+properties:
+  source:
+    displayName: Source
+  source_location:
+    displayName: Location
+  doc_type:
+    displayName: Doc Type
+  file.folder:
+    displayName: Folder
+views:
+  - type: table
+    name: Formal Results
+    sort:
+      - property: file.name
+        direction: ASC
+    order:
+      - file.name
+      - source_location
+      - file.folder
+  - type: table
+    name: Worked Case Studies
+    filters:
+      and:
+        - file.hasTag("type/example")
+    sort:
+      - property: source_location
+        direction: ASC
+    order:
+      - file.name
+      - source_location
+      - source

@@ -23,7 +23,22 @@ depends_on:
   - "[[raw/BayesWorkflow.pdf]]"
 used_by:
   - "[[Iterative Model Improvement]]"
+expanded_by:
+  - "[[Statistical Modeling as Software Development]]"
+  - "[[Software Assisted Workflow]]"
+  - "[[Fitting Simpler Models for Computational Purposes]]"
+  - "[[Simulation-Based Calibration Checking in Model Development Workflow]]"
 ---
+
+> [!info] Expanded in the 2026 textbook
+> The 2020 paper's software-development analogy is developed at length in [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]].
+>
+> **Closest book counterparts:**
+> - [[Statistical Modeling as Software Development]] — the full analogy, including modularity and version control
+> - [[Software Assisted Workflow]] — what tooling should do for you
+> - [[Fitting Simpler Models for Computational Purposes]] — the statistical analogue of building up from a stub
+> - [[Simulation-Based Calibration Checking in Model Development Workflow]] — a worked debugging session with five real bugs, including why an independently written simulator matters
+
 
 # Modeling as Software Development
 

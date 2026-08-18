@@ -1,0 +1,48 @@
+filters:
+  and:
+    - file.inFolder("Research/Bayesian Statistics/Workflow")
+    - file.hasTag("source/ingested")
+    - '!file.hasTag("type/index")'
+    - file.ext == "md"
+properties:
+  doc_type:
+    displayName: Type
+  source:
+    displayName: Source
+  source_location:
+    displayName: Location
+  date_ingested:
+    displayName: Ingested
+  file.folder:
+    displayName: Folder
+views:
+  - type: table
+    name: All Workflow Notes
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - doc_type
+      - source_location
+      - date_ingested
+  - type: table
+    name: By Source Document
+    groupBy:
+      property: source
+      direction: ASC
+    order:
+      - file.name
+      - source_location
+      - doc_type
+      - file.folder
+  - type: table
+    name: Newest First
+    sort:
+      - property: date_ingested
+        direction: DESC
+    order:
+      - file.name
+      - date_ingested
+      - source_location
+      - file.folder

@@ -1,0 +1,37 @@
+filters:
+  and:
+    - file.inFolder("Research/Bayesian Statistics/Workflow")
+    - file.hasTag("source/ingested")
+    - '!file.hasTag("type/index")'
+    - file.ext == "md"
+properties:
+  depends_on:
+    displayName: Prerequisites
+  used_by:
+    displayName: Downstream
+  expanded_by:
+    displayName: Expanded By
+  tags:
+    displayName: Tags
+  file.folder:
+    displayName: Folder
+views:
+  - type: table
+    name: Dependency Graph
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - depends_on
+      - used_by
+      - tags
+  - type: table
+    name: Superseded 2020 Paper Notes
+    filters:
+      and:
+        - expanded_by != null
+    order:
+      - file.name
+      - expanded_by
+      - source_location

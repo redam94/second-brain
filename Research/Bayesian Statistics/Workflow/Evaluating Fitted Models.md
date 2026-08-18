@@ -23,7 +23,24 @@ used_by:
   - "[[Model Checking]]"
   - "[[Model Comparison]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+expanded_by:
+  - "[[Posterior Predictive Checking]]"
+  - "[[Cross Validation Checking]]"
+  - "[[Model Selection Using Predictive Performance]]"
+  - "[[Visualizing High-Dimensional Inference]]"
 ---
+
+> [!info] Expanded in the 2026 textbook
+> The 2020 paper's model-evaluation material becomes the 16 notes of [[Evaluating and Comparing/_Index|Evaluating and Comparing]] in [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]].
+>
+> **Closest book counterparts:**
+> - [[Posterior Predictive Checking]] — the full graphical repertoire
+> - [[Cross Validation Checking]] — PSIS-LOO, Pareto $\hat{k}$, LOO-PIT-ECDF, K-fold
+> - [[Influence of Individual Data Points]] and [[Influence of Likelihood and Prior]] — sensitivity analysis
+> - [[Model Selection Using Predictive Performance]] and [[Model Selection and Overfitting]]
+> - [[Stacking and Predictive Model Averaging]] — the recommended alternative to selection
+> - [[Visualizing High-Dimensional Inference]] — reading a fit you cannot plot directly
+
 
 # Evaluating Fitted Models
 

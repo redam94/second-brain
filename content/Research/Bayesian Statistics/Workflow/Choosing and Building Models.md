@@ -21,7 +21,24 @@ used_by:
   - "[[Iterative Model Improvement]]"
   - "[[Modeling as Software Development]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+expanded_by:
+  - "[[Choosing an Initial Model]]"
+  - "[[Prior Distributions]]"
+  - "[[Prior Predictive Checking]]"
+  - "[[Expressing a Bayesian Model with Probability Distributions]]"
 ---
+
+> [!info] Expanded in the 2026 textbook
+> The 2020 paper's treatment of model choice and construction is expanded into the 19 notes of [[Research/Bayesian Statistics/Workflow/Building Models/_Index|Building Models]] in [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]].
+>
+> **Closest book counterparts:**
+> - [[Choosing an Initial Model]] — where to start and why
+> - [[Relating a Model to Subject-Matter Assumptions]] — the step the paper compresses
+> - [[Expressing a Bayesian Model with Probability Distributions]] — the formal specification
+> - [[Prior Distributions]] and [[Constructing Priors for Effect Sizes]] — every prior-choice rule stated explicitly
+> - [[Prior Predictive Checking]] — the full procedure with worked examples
+> - [[Generative and Partially Generative Models]] — a distinction the paper does not draw
+
 
 > [!summary]
 > Before fitting a model, the Bayesian workflow involves choosing a starting point, constructing the model modularly, scaling parameters for interpretability, performing prior predictive checks, and deciding on the generative scope of the model. These steps (Section 2 of Gelman et al., 2020) set the foundation for everything that follows.
