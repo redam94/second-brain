@@ -6,6 +6,7 @@ tags:
 parent: "[[Econometrics/_Index|Econometrics]]"
 date_updated: 2026-04-09
 concept_count: 3
+doc_type: index
 ---
 
 # Regression Foundations

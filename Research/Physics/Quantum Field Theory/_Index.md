@@ -8,6 +8,7 @@ tags:
 parent: "[[Physics/_Index|Physics]]"
 date_updated: 2026-04-16
 concept_count: 5
+doc_type: index
 ---
 
 # Physics — Quantum Field Theory

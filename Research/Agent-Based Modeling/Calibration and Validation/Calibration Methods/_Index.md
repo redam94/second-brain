@@ -6,6 +6,7 @@ tags:
 parent: "[[../_Index|Calibration and Validation]]"
 date_updated: 2026-04-11
 concept_count: 8
+doc_type: index
 ---
 
 # Calibration Methods

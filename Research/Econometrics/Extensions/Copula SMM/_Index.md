@@ -6,6 +6,7 @@ tags:
 parent: "[[../Extensions/_Index|Extensions]]"
 date_updated: 2026-04-11
 concept_count: 5
+doc_type: index
 ---
 
 # Copula SMM

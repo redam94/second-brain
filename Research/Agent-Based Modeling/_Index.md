@@ -5,6 +5,7 @@ tags:
   - source/ingested
 parent: "[[../_Index|Research]]"
 date_updated: 2026-04-11
+doc_type: index
 ---
 
 # Agent-Based Modeling

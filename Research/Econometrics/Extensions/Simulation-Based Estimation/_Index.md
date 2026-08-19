@@ -6,6 +6,7 @@ tags:
 parent: "[[../Extensions/_Index|Extensions]]"
 date_updated: 2026-04-12
 concept_count: 8
+doc_type: index
 ---
 
 # Simulation-Based Estimation

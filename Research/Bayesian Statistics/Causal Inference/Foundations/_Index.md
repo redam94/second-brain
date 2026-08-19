@@ -6,6 +6,7 @@ tags:
 parent: "[[../_Index|Causal Inference]]"
 date_updated: 2026-04-10
 concept_count: 9
+doc_type: index
 ---
 
 # Causal Inference Foundations

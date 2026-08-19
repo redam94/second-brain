@@ -14,6 +14,8 @@ doc_type: paper
 depends_on:
   - "[[Code Prompt Aspects Analysis]]"
   - "[[Code vs Text Prompt Evaluation]]"
+  - "[[Liu 2025 - Overview]]"
+used_by: []
 aliases:
   - conditional statement fine-tuning
   - CodeAlpaca causal fine-tuning

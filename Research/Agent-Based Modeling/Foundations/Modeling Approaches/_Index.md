@@ -6,6 +6,7 @@ tags:
 parent: "[[../_Index|Foundations]]"
 date_updated: 2026-04-10
 concept_count: 2
+doc_type: index
 ---
 
 # Modeling Approaches

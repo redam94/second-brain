@@ -6,6 +6,7 @@ tags:
 parent: "[[../Causal Inference/_Index|Bayesian Causal Inference]]"
 date_updated: 2026-04-10
 concept_count: 6
+doc_type: index
 ---
 
 # Treatment Effect Estimation

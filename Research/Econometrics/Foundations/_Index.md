@@ -6,6 +6,7 @@ tags:
 parent: "[[Econometrics/_Index|Econometrics]]"
 date_updated: 2026-04-11
 concept_count: 4
+doc_type: index
 ---
 
 # Foundations

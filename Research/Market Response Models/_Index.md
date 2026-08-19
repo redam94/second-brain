@@ -6,6 +6,7 @@ tags:
   - source/hanssens-parsons-schultz-2001
 date_updated: 2026-06-17
 concept_count: 31
+doc_type: index
 ---
 
 # Market Response Models

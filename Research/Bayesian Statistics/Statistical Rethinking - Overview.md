@@ -8,12 +8,22 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/statistical-modeling
-  - type/book-overview
+  - type/overview
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 authors:
   - Richard McElreath
 year: 2015
+doc_type: overview
+source_location: "Full text, pp. 1-560"
+depends_on:
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[raw/StatRethink-Bayes.pdf]]"
+used_by:
+  - "[[BDA3 - Overview]]"
+  - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Statistical Rethinking

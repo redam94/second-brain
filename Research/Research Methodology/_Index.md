@@ -6,6 +6,7 @@ tags:
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-06-26
 concept_count: 16
+doc_type: index
 ---
 
 # Research Methodology

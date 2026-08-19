@@ -6,6 +6,7 @@ tags:
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-06-28
 concept_count: 51
+doc_type: index
 ---
 
 # Econometrics

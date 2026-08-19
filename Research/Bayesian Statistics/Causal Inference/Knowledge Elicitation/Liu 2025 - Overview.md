@@ -17,6 +17,7 @@ depends_on:
 used_by:
   - "[[LLM Causal Reasoning Tasks]]"
   - "[[Code Prompts for Causal Structure]]"
+  - "[[Fine-tuning on Conditional Statements]]"
 aliases:
   - Liu 2025
   - Magic-IF

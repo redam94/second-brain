@@ -12,6 +12,18 @@ doc_type: textbook
 aliases:
   - Leinster Category Theory
   - BCT Overview
+depends_on:
+  - "[[raw/1612.09375v2.pdf]]"
+used_by:
+  - "[[Foundations/Categories]]"
+  - "[[Foundations/Functors]]"
+  - "[[Foundations/Natural Transformations]]"
+  - "[[Adjunctions/Adjoint Functors]]"
+  - "[[Representables/Representable Functors]]"
+  - "[[Representables/Yoneda Lemma]]"
+  - "[[Limits and Colimits/General Limits]]"
+  - "[[Synthesis/Limits via Representables]]"
+  - "[[Synthesis/Adjoint Functor Theorems]]"
 ---
 
 # Basic Category Theory — Overview

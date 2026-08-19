@@ -6,6 +6,7 @@ tags:
 parent: "[[../_Index|Calibration and Validation]]"
 date_updated: 2026-04-10
 concept_count: 1
+doc_type: index
 ---
 
 # Validation

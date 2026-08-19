@@ -4,6 +4,7 @@ tags:
   - type/index
   - topic/market-response
 date_updated: 2026-04-11
+doc_type: index
 ---
 
 # Estimation and Testing

@@ -6,6 +6,7 @@ tags:
 parent: "[[../_Index|Research]]"
 date_updated: 2026-06-17
 concept_count: 5
+doc_type: index
 ---
 
 # Causal Discovery

@@ -6,6 +6,7 @@ tags:
   - topic/category-theory
 parent: "[[../../Research/_Index|Research]]"
 date_updated: 2026-05-08
+doc_type: index
 ---
 
 # Category Theory

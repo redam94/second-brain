@@ -29,6 +29,7 @@ used_by:
   - "[[Computational Troubleshooting]]"
   - "[[Bayesian Workflow - Overview]]"
   - "[[Bayesian Linear Regression]]"
+  - "[[BDA3 - Overview]]"
 ---
 
 # MCMC Basics

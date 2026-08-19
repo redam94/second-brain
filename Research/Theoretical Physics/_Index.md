@@ -6,6 +6,7 @@ tags:
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-04-11
 concept_count: 9
+doc_type: index
 ---
 
 # Theoretical Physics
