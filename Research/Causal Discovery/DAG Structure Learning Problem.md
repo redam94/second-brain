@@ -117,9 +117,9 @@ The essential distinction: program (4)'s domain is the discrete set $\mathbb{D}$
 | Camp | Idea | Limitation |
 |------|------|-----------|
 | **Exact** ([Cussens, 2012]; GOBNILP; [Chen et al., 2016]) | Guaranteed globally optimal | Only a few dozen nodes; intractable in general |
-| **Local / approximate search** (FGS, GES, hill-climbing, MMHC) | Add edges/parents one node at a time, check acyclicity incrementally | Needs bounded in-degree/treewidth — impossible to verify; real networks are scale-free with hub nodes |
+| **Local / approximate search** ([[GES - Overview\|GES/FGS]], hill-climbing, MMHC) | Add edges/parents one node at a time, check acyclicity incrementally | Needs bounded in-degree/treewidth — impossible to verify; real networks are scale-free with hub nodes |
 | **Order search** ([Teyssier & Koller, 2005]) | Search over $d!$ topological orderings | Trades acyclicity for an exponential ordering search |
-| **Constraint-based** (PC, [Spirtes & Glymour, 1991]) | Conditional-independence tests | Different paradigm; often less accurate |
+| **Constraint-based** ([[PC Algorithm - Overview\|PC]], [Spirtes & Glymour, 1991]) | Conditional-independence tests | Different paradigm; often less accurate |
 | **Hybrid / Bayesian** (MMHC; [Zhou, 2011]) | Combine the above | Conceptual complexity |
 
 > [!note] The "conceptual clarity" gap NOTEARS targets
@@ -140,4 +140,7 @@ The essential distinction: program (4)'s domain is the discrete set $\mathbb{D}$
 - [[NOTEARS - Overview]] — paper-level summary
 - [[Smooth Characterization of Acyclicity]] — how the constraint $\mathsf{G}(W)\in\mathbb{D}$ becomes $h(W)=0$
 - [[NOTEARS Algorithm]] — solving program (3)
+- [[PC Algorithm - Overview]] — constraint-based competitor (CI tests → CPDAG)
+- [[GES - Overview]] — score-based competitor (Chickering 2002; Theorem 15)
+- [[Causal Structure Learning - Paradigm Comparison]] — all three paradigms compared
 - [[Spurious Association and Confounds]] — DAG semantics in causal inference
