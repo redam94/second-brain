@@ -7,6 +7,7 @@ tags:
   - topic/simulation-estimation
   - topic/econometrics
 date_asked: 2026-04-11
+folder: "Questions-and-Answers"
 answered_from:
   - "[[Method of Simulated Moments]]"
   - "[[SMM Weighting Matrix and Inference]]"
@@ -21,6 +22,14 @@ aliases:
   - SMM ABM calibration
   - Simulated Method of Moments for ABM
   - How to calibrate ABM with SMM
+doc_type: concept
+source_location: "Synthesized from vault notes (Econometrics/Simulation-Based Estimation, ABM/Calibration)"
+depends_on:
+  - "[[Method of Simulated Moments]]"
+  - "[[SMM Weighting Matrix and Inference]]"
+  - "[[ABM Calibration Overview]]"
+  - "[[Genetic Algorithm Calibration for ABM]]"
+used_by: []
 ---
 
 # How can SMM be used to calibrate agent based models?

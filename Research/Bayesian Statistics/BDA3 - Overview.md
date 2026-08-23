@@ -4,12 +4,20 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
+doc_type: overview
+source_location: "Full text (Ch. 1–23, Parts I–V)"
+depends_on: []
+used_by:
+  - "[[Statistical Rethinking - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
 ---
 
 # Bayesian Data Analysis, 3rd Edition

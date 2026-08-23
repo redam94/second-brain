@@ -20,10 +20,26 @@ concept_count: 60
 > - Need Bayesian causal inference (potential outcomes, BART/BCF, IV, g-computation)? -> [[Causal Inference/_Index|Causal Inference]]
 > - Need the iterative modeling cycle **or simulation-based calibration (SBC) for validating inference algorithms**? -> [[Workflow/_Index|Bayesian Workflow]]
 
+## Concept Map
+
+| Concept | Note | Type | Depends On | Key Result |
+|---------|------|------|-----------|------------|
+| Bayes' theorem, probability as belief | [[Probability and Bayesian Inference]] | definition | — | Three-step Bayesian workflow |
+| Single-parameter conjugate models | [[Single-Parameter Models]] | concept | [[Probability and Bayesian Inference]] | Beta-binomial, Normal-Normal conjugacy |
+| Nuisance parameter marginalization | [[Multiparameter Models]] | concept | [[Single-Parameter Models]] | Joint-to-marginal posterior |
+| Bernstein-von Mises theorem | [[Asymptotics and Frequentist Connections]] | theorem | [[Multiparameter Models]] | Posterior → N(MLE, I⁻¹) asymptotically |
+| Partial pooling via exchangeability | [[Hierarchical Models]] | concept | [[Multiparameter Models]] | Eight-schools; precision-weighted pooling |
+| Posterior predictive checks | [[Model Checking]] | concept | [[Hierarchical Models]] | Bayesian goodness-of-fit |
+| WAIC, PSIS-LOO | [[Model Comparison]] | concept | [[Model Checking]] | Information-criteria model selection |
+| HMC, NUTS, Stan | [[Efficient MCMC]] | concept | [[MCMC Basics]] | Gradient-based sampler |
+| SBC rank uniformity | [[Simulation-Based Calibration]] | theorem | [[Efficient MCMC]] | Algorithm validation |
+| Bayesian linear regression, horseshoe | [[Bayesian Linear Regression]] | concept | [[Hierarchical Models]] | Priors as regularization |
+| BART, BCF | [[Bayesian Outcome Models]] | concept | [[Bayesian Linear Regression]] | Nonparametric causal outcome models |
+
 ## Book Overviews
 
-- [[BDA3 - Overview]] — Master index for the textbook's structure and key themes
-- [[Statistical Rethinking - Overview]] — McElreath's pedagogical Bayesian course with R and Stan
+- [[BDA3 - Overview]] — CONTAINS: full structure of BDA3 Parts I–V; key themes; author list
+- [[Statistical Rethinking - Overview]] — CONTAINS: golem metaphor; course structure Ch. 1–15; comparison with BDA3
 
 ## Sub-topics
 

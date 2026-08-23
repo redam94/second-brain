@@ -8,6 +8,7 @@ tags:
   - topic/model-comparison
   - topic/statistical-modeling
 date_asked: 2026-04-09
+folder: "Questions-and-Answers"
 answered_from:
   - "[[Statistical Rethinking - The Golem of Prague]]"
   - "[[Spurious Association and Confounds]]"
@@ -31,6 +32,18 @@ aliases:
   - "Statistical modeling mistakes"
   - "Modeling pitfalls for data scientists"
   - "Common statistical errors"
+doc_type: concept
+source_location: "Synthesized from vault notes (BDA3, Statistical Rethinking, Research Methodology)"
+depends_on:
+  - "[[Garden of Forking Paths]]"
+  - "[[Researcher Degrees of Freedom]]"
+  - "[[Type S and Type M Errors]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[Model Checking]]"
+  - "[[Spurious Association and Confounds]]"
+  - "[[Omitted Variables Bias]]"
+used_by:
+  - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
 ---
 
 # What are some common pitfalls in statistical modeling a data scientist should be aware of?

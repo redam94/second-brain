@@ -20,6 +20,19 @@ concept_count: 34
 > - For Bayesian structural time-series and CausalImpact? → [[Time Series Causal Inference/_Index|Time Series Causal Inference]]
 > - For paper overview of Li et al. 2022? → [[Li et al 2022 - Overview]]
 
+## Concept Map
+
+| Concept | Note | Type | Depends On | Key Result |
+|---------|------|------|-----------|------------|
+| Potential outcomes, SUTVA | [[Frequentist Causal Estimation]] | concept | — | Identification conditions for causal effects |
+| Causal estimands (ITE, SATE, CATE) | [[Bayesian Causal Estimands]] | definition | [[Frequentist Causal Estimation]] | CATE, PATE, MATE definitions |
+| Bayesian CI likelihood factorization | [[General Structure of Bayesian CI]] | theorem | [[Bayesian Causal Estimands]] | Propensity drops under ignorability |
+| BART, BCF, GP outcome models | [[Bayesian Outcome Models]] | concept | [[General Structure of Bayesian CI]] | Regularization-induced confounding warning |
+| S/T/X-learner CATE estimation | [[X-Learner]] | concept | [[Bayesian Outcome Models]] | X-learner optimal for unbalanced groups |
+| Sensitivity analysis, E-value | [[Sensitivity Analysis in Observational Studies]] | concept | [[General Structure of Bayesian CI]] | E-value; copula sensitivity bounds |
+| BSTS; CausalImpact | [[Bayesian Structural Time-Series Model]] | concept | [[General Structure of Bayesian CI]] | Counterfactual impact from spike-and-slab model |
+| LLM expert elicitation | [[LLM-Based Causal Structure Elicitation]] | concept | — | Dual-LLM BN construction vs BIC |
+
 ## Sub-topics
 
 | Sub-topic | Notes | Domain |

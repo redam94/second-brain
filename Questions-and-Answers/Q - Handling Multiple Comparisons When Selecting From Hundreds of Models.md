@@ -7,6 +7,7 @@ tags:
   - topic/bayesian-statistics
   - topic/model-comparison
 date_asked: 2026-04-09
+folder: "Questions-and-Answers"
 answered_from:
   - "[[Multiple Testing Corrections]]"
   - "[[Garden of Forking Paths]]"
@@ -24,6 +25,17 @@ aliases:
   - "Multiple comparisons with many models"
   - "Model selection and p-hacking"
   - "Variable selection multiple testing"
+doc_type: concept
+source_location: "Synthesized from vault notes (Research Methodology, Bayesian Statistics)"
+depends_on:
+  - "[[Multiple Testing Corrections]]"
+  - "[[Garden of Forking Paths]]"
+  - "[[Type S and Type M Errors]]"
+  - "[[Multiple Comparisons - Bayesian Perspective]]"
+  - "[[Partial Pooling as Multiple Comparisons Correction]]"
+  - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Overfitting and Information Criteria]]"
+used_by: []
 ---
 
 # How should I handle multiple comparisons when selecting from hundreds of models?

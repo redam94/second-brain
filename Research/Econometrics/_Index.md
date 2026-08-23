@@ -20,9 +20,26 @@ concept_count: 51
 > - Need simulation-based estimation (MSM, indirect inference, EMM, copula SMM)? -> [[Extensions/_Index|Extensions]]
 > - Need high-dimensional dependence / copulas, tail dependence, or factor copulas? -> [[Dependence Modeling/_Index|Dependence Modeling]]
 
+## Concept Map
+
+| Concept | Note | Type | Depends On | Key Result |
+|---------|------|------|-----------|------------|
+| Selection bias, experimental ideal | [[The Selection Problem]] | concept | — | Fundamental problem of causal inference |
+| CEF, best linear predictor | [[Regression and the CEF]] | theorem | [[The Selection Problem]] | OLS approximates CEF regardless of linearity |
+| OVB formula | [[Omitted Variables Bias]] | theorem | [[Regression and the CEF]] | Long vs short regression coefficient formula |
+| IV, LATE, exclusion restriction | [[Instrumental Variables]] | concept | [[The Selection Problem]] | Local average treatment effect |
+| Canonical DiD, parallel trends | [[Differences-in-Differences]] | concept | [[The Selection Problem]] | 2×2 DiD estimator |
+| Staggered DiD, group-time ATT | [[Difference-in-Differences with Multiple Periods]] | concept | [[Differences-in-Differences]] | Callaway-Sant'Anna doubly-robust estimand |
+| Regression discontinuity | [[Regression Discontinuity Designs]] | concept | [[The Selection Problem]] | Local continuity assumption |
+| Synthetic control | [[Synthetic Control]] | concept | [[Differences-in-Differences]] | Convex-hull donor weighting |
+| Generalized synthetic control | [[Generalized Synthetic Control Method]] | concept | [[Synthetic Control]] | IFE model unifying DiD and SC |
+| SMM for copulas | [[SMM for Copula Estimation]] | concept | [[Method of Simulated Moments]] | Rank-based SMM; S&P 100 systemic risk |
+| Factor copulas, tail dependence | [[Factor Copula Models]] | concept | [[SMM for Copula Estimation]] | GH and G copula factor structure |
+| PSM, balance diagnostics | [[Propensity Score Matching - Overview]] | concept | [[Conditional Independence Assumption]] | Rosenbaum-Rubin propensity framework |
+
 ## Book Overview
 
-- [[Identification Strategies/Mostly Harmless Econometrics - Overview|Mostly Harmless Econometrics - Overview]] — Master index for the book's concepts and structure (moved to Identification Strategies/)
+- [[Identification Strategies/Mostly Harmless Econometrics - Overview|Mostly Harmless Econometrics - Overview]] — CONTAINS: full structure of MHE Ch. 1–8; key estimators; research design philosophy
 
 ## Sub-topics
 

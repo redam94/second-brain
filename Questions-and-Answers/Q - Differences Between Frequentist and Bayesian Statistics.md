@@ -7,6 +7,7 @@ tags:
   - topic/probability
   - topic/research-methodology
 date_asked: 2026-04-09
+folder: "Questions-and-Answers"
 answered_from:
   - "[[Probability and Bayesian Inference]]"
   - "[[Asymptotics and Frequentist Connections]]"
@@ -26,6 +27,16 @@ related_questions:
 aliases:
   - "Frequentist vs Bayesian"
   - "Bayesian vs frequentist statistics"
+doc_type: concept
+source_location: "Synthesized from vault notes (BDA3, Statistical Rethinking, BayesWorkflow)"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[Hierarchical Models]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Multiple Comparisons - Bayesian Perspective]]"
+used_by: []
 ---
 
 # What are some differences between frequentist and Bayesian statistics?

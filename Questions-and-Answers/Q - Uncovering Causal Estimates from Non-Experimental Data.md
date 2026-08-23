@@ -7,6 +7,7 @@ tags:
   - topic/identification
   - topic/observational-studies
 date_asked: 2026-04-10
+folder: "Questions-and-Answers"
 answered_from:
   - "[[The Selection Problem]]"
   - "[[Conditional Independence Assumption]]"
@@ -27,6 +28,17 @@ aliases:
   - quasi-experimental methods
   - identification strategies observational data
   - causal identification non-experimental
+doc_type: concept
+source_location: "Synthesized from vault notes (Econometrics, Bayesian Causal Inference)"
+depends_on:
+  - "[[The Selection Problem]]"
+  - "[[Directed Acyclic Graphs]]"
+  - "[[Instrumental Variables]]"
+  - "[[Differences-in-Differences]]"
+  - "[[Regression Discontinuity Designs]]"
+  - "[[Synthetic Control]]"
+  - "[[Generalized Synthetic Control Method]]"
+used_by: []
 ---
 
 # What are some ways to uncover causal estimates from non-experimental data?
