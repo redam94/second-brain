@@ -8,6 +8,7 @@ tags:
 source: "[[raw/abm_word_of_mouth.pdf]]"
 source_location: "pp. 7280-7281"
 date_ingested: 2026-04-10
+date_updated: 2026-08-24
 folder: "Agent-Based Modeling/Foundations/Core Concepts"
 doc_type: paper
 depends_on: []
@@ -83,4 +84,6 @@ According to Bonabeau (2002), ABM is most useful when:
 - [[ABM vs Equation-Based Modeling]] — formal comparison of ABM and differential equation models
 - [[Heterogeneity in Agent Models]] — how individual differences are represented
 - [[Agent Decision Rules and Bounded Rationality]] — how agents make decisions
-- [[Genetic Algorithm Calibration for ABM]] — how GA is used to calibrate agent populations to match observed market data
+- [[ABM Calibration Overview]] — the problem of matching ABM outputs to real data
+- [[Genetic Algorithm Calibration for ABM]] — GA as one calibration strategy
+- [[ABM in Marketing Strategy]] — how ABM is applied to the marketing domain this vault focuses on

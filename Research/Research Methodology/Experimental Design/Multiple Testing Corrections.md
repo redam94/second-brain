@@ -10,6 +10,7 @@ tags:
   - doc/paper
 source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2907892/"
 date_ingested: 2026-04-08
+date_updated: 2026-08-24
 folder: "Research Methodology/Experimental Design"
 aliases:
   - "Bonferroni correction"
@@ -26,8 +27,6 @@ depends_on:
   - "[[Power Analysis and Sample Size]]"
 used_by:
   - "[[Forking Paths and Bayesian Approaches]]"
-  - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
-  - "[[Q - Common Pitfalls in Statistical Modeling]]"
 ---
 
 # Multiple Testing Corrections
