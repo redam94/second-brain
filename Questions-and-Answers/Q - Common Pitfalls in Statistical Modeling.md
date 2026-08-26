@@ -1,36 +1,50 @@
 ---
-title: "Q: What are some common pitfalls in statistical modeling a data scientist should be aware of?"
+title: 'Q: What are some common pitfalls in statistical modeling a data scientist
+  should be aware of?'
 tags:
-  - type/qa
-  - topic/research-methodology
-  - topic/bayesian-statistics
-  - topic/causal-inference
-  - topic/model-comparison
-  - topic/statistical-modeling
+- type/qa
+- topic/research-methodology
+- topic/bayesian-statistics
+- topic/causal-inference
+- topic/model-comparison
+- topic/statistical-modeling
 date_asked: 2026-04-09
 answered_from:
-  - "[[Statistical Rethinking - The Golem of Prague]]"
-  - "[[Spurious Association and Confounds]]"
-  - "[[Omitted Variables Bias]]"
-  - "[[The Selection Problem]]"
-  - "[[Garden of Forking Paths]]"
-  - "[[Researcher Degrees of Freedom]]"
-  - "[[Type S and Type M Errors]]"
-  - "[[Overfitting and Information Criteria]]"
-  - "[[Model Checking]]"
-  - "[[Evaluating Fitted Models]]"
-  - "[[Computational Troubleshooting]]"
-  - "[[Missing Data - Statistical Rethinking]]"
-  - "[[Activity Bias in Advertising]]"
-  - "[[Choosing and Building Models]]"
-  - "[[Multiple Testing Corrections]]"
-  - "[[Partial Pooling as Multiple Comparisons Correction]]"
+- '[[Statistical Rethinking - The Golem of Prague]]'
+- '[[Spurious Association and Confounds]]'
+- '[[Omitted Variables Bias]]'
+- '[[The Selection Problem]]'
+- '[[Garden of Forking Paths]]'
+- '[[Researcher Degrees of Freedom]]'
+- '[[Type S and Type M Errors]]'
+- '[[Overfitting and Information Criteria]]'
+- '[[Model Checking]]'
+- '[[Evaluating Fitted Models]]'
+- '[[Computational Troubleshooting]]'
+- '[[Missing Data - Statistical Rethinking]]'
+- '[[Activity Bias in Advertising]]'
+- '[[Choosing and Building Models]]'
+- '[[Multiple Testing Corrections]]'
+- '[[Partial Pooling as Multiple Comparisons Correction]]'
 related_questions:
-  - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
+- '[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]'
 aliases:
-  - "Statistical modeling mistakes"
-  - "Modeling pitfalls for data scientists"
-  - "Common statistical errors"
+- Statistical modeling mistakes
+- Modeling pitfalls for data scientists
+- Common statistical errors
+doc_type: qa
+source_location: N/A — AI-generated Q&A synthesized from vault notes
+depends_on:
+- '[[Statistical Rethinking - The Golem of Prague]]'
+- '[[Spurious Association and Confounds]]'
+- '[[Garden of Forking Paths]]'
+- '[[Researcher Degrees of Freedom]]'
+- '[[Overfitting and Information Criteria]]'
+- '[[Model Checking]]'
+- '[[Missing Data - Statistical Rethinking]]'
+- '[[Multiple Testing Corrections]]'
+- '[[Partial Pooling as Multiple Comparisons Correction]]'
+used_by: []
 ---
 
 # What are some common pitfalls in statistical modeling a data scientist should be aware of?

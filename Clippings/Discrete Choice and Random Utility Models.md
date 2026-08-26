@@ -1,12 +1,18 @@
 ---
-title: "Discrete Choice and Random Utility Models"
-source: "https://www.pymc.io/projects/examples/en/latest/generalized_linear_models/GLM-discrete-choice_models.html"
-author:
-published:
+title: Discrete Choice and Random Utility Models
+source: https://www.pymc.io/projects/examples/en/latest/generalized_linear_models/GLM-discrete-choice_models.html
+author: null
+published: null
 created: 2026-04-08
-description: "Extra dependencies install instructions In order to run this notebook (either locally or on binder) you won’t only need a working PyMC installation with all optional dependencies, but also to insta..."
+description: Extra dependencies install instructions In order to run this notebook
+  (either locally or on binder) you won’t only need a working PyMC installation with
+  all optional dependencies, but also to insta...
 tags:
-  - "clippings"
+- clippings
+doc_type: article
+source_location: web article (see source URL)
+depends_on: []
+used_by: []
 ---
 ## Discrete Choice and Random Utility Models
 

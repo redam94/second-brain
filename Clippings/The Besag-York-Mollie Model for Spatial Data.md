@@ -1,12 +1,18 @@
 ---
-title: "The Besag-York-Mollie Model for Spatial Data"
-source: "https://www.pymc.io/projects/examples/en/latest/spatial/nyc_bym.html"
-author:
-published:
+title: The Besag-York-Mollie Model for Spatial Data
+source: https://www.pymc.io/projects/examples/en/latest/spatial/nyc_bym.html
+author: null
+published: null
 created: 2026-04-09
-description: "Extra dependencies install instructions In order to run this notebook (either locally or on binder) you won’t only need a working PyMC installation with all optional dependencies, but also to insta..."
+description: Extra dependencies install instructions In order to run this notebook
+  (either locally or on binder) you won’t only need a working PyMC installation with
+  all optional dependencies, but also to insta...
 tags:
-  - "clippings"
+- clippings
+doc_type: tutorial
+source_location: web tutorial (see source URL)
+depends_on: []
+used_by: []
 ---
 ## The Besag-York-Mollie Model for Spatial Data
 

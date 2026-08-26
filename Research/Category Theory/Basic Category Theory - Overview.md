@@ -1,17 +1,37 @@
 ---
-title: "Basic Category Theory - Overview"
+title: Basic Category Theory - Overview
 tags:
-  - source/ingested
-  - topic/category-theory
-  - type/overview
-  - doc/textbook
-source: "[[raw/1612.09375v2.pdf]]"
-source_location: "Full text, pp. 1–173"
+- source/ingested
+- topic/category-theory
+- type/overview
+- doc/textbook
+source: '[[raw/1612.09375v2.pdf]]'
+source_location: Full text, pp. 1–173
 date_ingested: 2026-05-08
 doc_type: textbook
 aliases:
-  - Leinster Category Theory
-  - BCT Overview
+- Leinster Category Theory
+- BCT Overview
+depends_on:
+- '[[Categories]]'
+- '[[Functors]]'
+- '[[Natural Transformations]]'
+- '[[Functor Categories]]'
+- '[[Adjoint Functors]]'
+- '[[Units and Counits]]'
+- '[[Adjunctions via Initial Objects]]'
+- '[[Representable Functors]]'
+- '[[Yoneda Lemma]]'
+- '[[Yoneda Embedding and Consequences]]'
+- '[[Products and Equalizers]]'
+- '[[Pullbacks]]'
+- '[[General Limits]]'
+- '[[Colimits]]'
+- '[[Functors and Limits]]'
+- '[[Limits via Representables]]'
+- '[[Adjoints and Limits]]'
+- '[[Adjoint Functor Theorems]]'
+used_by: []
 ---
 
 # Basic Category Theory — Overview

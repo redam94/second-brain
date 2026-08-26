@@ -1,12 +1,18 @@
 ---
-title: "Factor analysis"
-source: "https://www.pymc.io/projects/examples/en/latest/case_studies/factor_analysis.html"
-author:
-published:
+title: Factor analysis
+source: https://www.pymc.io/projects/examples/en/latest/case_studies/factor_analysis.html
+author: null
+published: null
 created: 2026-04-08
-description: "Factor analysis is a widely used probabilistic model for identifying low-rank structure in multivariate data as encoded in latent variables. It is very closely related to principal components analy..."
+description: Factor analysis is a widely used probabilistic model for identifying
+  low-rank structure in multivariate data as encoded in latent variables. It is very
+  closely related to principal components analy...
 tags:
-  - "clippings"
+- clippings
+doc_type: tutorial
+source_location: web tutorial (see source URL)
+depends_on: []
+used_by: []
 ---
 ## Factor analysis
 

@@ -1,12 +1,18 @@
 ---
-title: "Confirmatory Factor Analysis and Structural Equation Models in Psychometrics"
-source: "https://www.pymc.io/projects/examples/en/latest/case_studies/CFA_SEM.html"
-author:
-published:
+title: Confirmatory Factor Analysis and Structural Equation Models in Psychometrics
+source: https://www.pymc.io/projects/examples/en/latest/case_studies/CFA_SEM.html
+author: null
+published: null
 created: 2026-04-09
-description: "“Evidently, the notions of relevance and dependence are far more basic to human reasoning than the numerical values attached to probability judgments…the language used for representing probabilisti..."
+description: “Evidently, the notions of relevance and dependence are far more basic
+  to human reasoning than the numerical values attached to probability judgments…the
+  language used for representing probabilisti...
 tags:
-  - "clippings"
+- clippings
+doc_type: article
+source_location: web article (see source URL)
+depends_on: []
+used_by: []
 ---
 ## Confirmatory Factor Analysis and Structural Equation Models in Psychometrics
 

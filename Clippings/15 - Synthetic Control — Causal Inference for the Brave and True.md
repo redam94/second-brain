@@ -1,12 +1,16 @@
 ---
-title: "15 - Synthetic Control — Causal Inference for the Brave and True"
-source: "https://matheusfacure.github.io/python-causality-handbook/15-Synthetic-Control.html"
-author:
-published:
+title: 15 - Synthetic Control — Causal Inference for the Brave and True
+source: https://matheusfacure.github.io/python-causality-handbook/15-Synthetic-Control.html
+author: null
+published: null
 created: 2026-04-10
-description:
+description: null
 tags:
-  - "clippings"
+- clippings
+doc_type: tutorial
+source_location: web tutorial (see source URL)
+depends_on: []
+used_by: []
 ---
 ## 15 - Synthetic Control
 

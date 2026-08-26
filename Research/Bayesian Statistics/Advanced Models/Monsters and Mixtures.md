@@ -26,6 +26,7 @@ depends_on:
 used_by:
   - "[[Nonparametric Models Overview]]"
   - "[[Generalized Linear Models]]"
+  - "[[Statistical Rethinking - Overview]]"
 ---
 
 # Monsters and Mixtures

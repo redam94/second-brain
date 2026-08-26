@@ -16,6 +16,7 @@ used_by:
   - "[[Functor Categories]]"
   - "[[Representables/Representable Functors]]"
   - "[[Adjunctions/Adjoint Functors]]"
+  - "[[Basic Category Theory - Overview]]"
 aliases:
   - functor
   - covariant functor

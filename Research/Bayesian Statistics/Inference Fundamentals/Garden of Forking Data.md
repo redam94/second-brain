@@ -23,6 +23,7 @@ depends_on:
   - "[[raw/StatRethink-Bayes.pdf]]"
 used_by:
   - "[[Posterior Sampling and Summarization]]"
+  - "[[Statistical Rethinking - Overview]]"
 ---
 
 # Garden of Forking Data

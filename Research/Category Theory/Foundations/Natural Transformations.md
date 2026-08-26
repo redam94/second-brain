@@ -18,6 +18,7 @@ used_by:
   - "[[Functor Categories]]"
   - "[[Adjunctions/Adjoint Functors]]"
   - "[[Representables/Yoneda Lemma]]"
+  - "[[Basic Category Theory - Overview]]"
 aliases:
   - natural transformation
   - natural isomorphism

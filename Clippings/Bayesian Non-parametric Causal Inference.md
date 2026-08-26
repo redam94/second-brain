@@ -1,12 +1,18 @@
 ---
-title: "Bayesian Non-parametric Causal Inference"
-source: "https://www.pymc.io/projects/examples/en/latest/causal_inference/bayesian_nonparametric_causal.html"
-author:
-published:
+title: Bayesian Non-parametric Causal Inference
+source: https://www.pymc.io/projects/examples/en/latest/causal_inference/bayesian_nonparametric_causal.html
+author: null
+published: null
 created: 2026-04-09
-description: "Causal Inference and Propensity Scores: There are few claims stronger than the assertion of a causal relationship and few claims more contestable. A naive world model - rich with tenuous connection..."
+description: 'Causal Inference and Propensity Scores: There are few claims stronger
+  than the assertion of a causal relationship and few claims more contestable. A naive
+  world model - rich with tenuous connection...'
 tags:
-  - "clippings"
+- clippings
+doc_type: tutorial
+source_location: web tutorial (see source URL)
+depends_on: []
+used_by: []
 ---
 ## Bayesian Non-parametric Causal Inference
 

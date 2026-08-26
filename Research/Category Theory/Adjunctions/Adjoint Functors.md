@@ -18,6 +18,7 @@ used_by:
   - "[[Adjunctions via Initial Objects]]"
   - "[[Synthesis/Adjoints and Limits]]"
   - "[[Synthesis/Adjoint Functor Theorems]]"
+  - "[[Basic Category Theory - Overview]]"
 aliases:
   - adjunction
   - adjoint functor

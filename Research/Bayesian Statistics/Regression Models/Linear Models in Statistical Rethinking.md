@@ -23,6 +23,7 @@ used_by:
   - "[[Spurious Association and Confounds]]"
   - "[[Overfitting and Information Criteria]]"
   - "[[Monsters and Mixtures]]"
+  - "[[Statistical Rethinking - Overview]]"
 ---
 
 # Linear Models in Statistical Rethinking

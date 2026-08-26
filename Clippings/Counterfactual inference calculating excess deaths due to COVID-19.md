@@ -1,12 +1,18 @@
 ---
-title: "Counterfactual inference: calculating excess deaths due to COVID-19"
-source: "https://www.pymc.io/projects/examples/en/latest/causal_inference/excess_deaths.html#modelling"
-author:
-published:
+title: 'Counterfactual inference: calculating excess deaths due to COVID-19'
+source: https://www.pymc.io/projects/examples/en/latest/causal_inference/excess_deaths.html#modelling
+author: null
+published: null
 created: 2026-04-09
-description: "Causal reasoning and counterfactual thinking are really interesting but complex topics! Nevertheless, we can make headway into understanding the ideas through relatively simple examples. This noteb..."
+description: Causal reasoning and counterfactual thinking are really interesting but
+  complex topics! Nevertheless, we can make headway into understanding the ideas through
+  relatively simple examples. This noteb...
 tags:
-  - "clippings"
+- clippings
+doc_type: tutorial
+source_location: web tutorial (see source URL)
+depends_on: []
+used_by: []
 ---
 ## Counterfactual inference: calculating excess deaths due to COVID-19
 

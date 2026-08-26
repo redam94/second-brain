@@ -1,12 +1,18 @@
 ---
-title: "Baby Births Modelling with HSGPs"
-source: "https://www.pymc.io/projects/examples/en/latest/gaussian_processes/GP-Births.html"
-author:
-published:
+title: Baby Births Modelling with HSGPs
+source: https://www.pymc.io/projects/examples/en/latest/gaussian_processes/GP-Births.html
+author: null
+published: null
 created: 2026-04-09
-description: "This notebook provides an example of using the Hilbert Space Gaussian Process (HSGP) technique, introduced in[], in the context of time series modeling. This technique has proven successful in spee..."
+description: This notebook provides an example of using the Hilbert Space Gaussian
+  Process (HSGP) technique, introduced in[], in the context of time series modeling.
+  This technique has proven successful in spee...
 tags:
-  - "clippings"
+- clippings
+doc_type: tutorial
+source_location: web tutorial (see source URL)
+depends_on: []
+used_by: []
 ---
 ## Baby Births Modelling with HSGPs
 

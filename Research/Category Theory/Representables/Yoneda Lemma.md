@@ -17,6 +17,7 @@ used_by:
   - "[[Yoneda Embedding and Consequences]]"
   - "[[Synthesis/Limits via Representables]]"
   - "[[Synthesis/Limits in Presheaf Categories]]"
+  - "[[Basic Category Theory - Overview]]"
 aliases:
   - Yoneda lemma
   - Yoneda

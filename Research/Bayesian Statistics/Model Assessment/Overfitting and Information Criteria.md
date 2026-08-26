@@ -30,6 +30,7 @@ used_by:
   - "[[Decision Analysis]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Statistical Rethinking - Overview]]"
 ---
 
 # Overfitting and Information Criteria

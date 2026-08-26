@@ -1,12 +1,18 @@
 ---
-title: "Missing Data"
-source: "https://www.pymc.io/projects/examples/en/latest/statistical_rethinking_lectures/18-Missing_Data.html"
-author:
-published:
+title: Missing Data
+source: https://www.pymc.io/projects/examples/en/latest/statistical_rethinking_lectures/18-Missing_Data.html
+author: null
+published: null
 created: 2026-04-09
-description: "This notebook is part of the PyMC port of the Statistical Rethinking 2023 lecture series by Richard McElreath. Video - Lecture 18 - Missing Data# Lecture 18 - Missing Data Missing Data, Found: Obse..."
+description: 'This notebook is part of the PyMC port of the Statistical Rethinking
+  2023 lecture series by Richard McElreath. Video - Lecture 18 - Missing Data# Lecture
+  18 - Missing Data Missing Data, Found: Obse...'
 tags:
-  - "clippings"
+- clippings
+doc_type: tutorial
+source_location: web tutorial (see source URL)
+depends_on: []
+used_by: []
 ---
 ## Missing Data
 

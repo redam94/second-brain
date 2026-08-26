@@ -1,29 +1,43 @@
 ---
-title: "Q: How should I handle multiple comparisons when selecting from hundreds of models?"
+title: 'Q: How should I handle multiple comparisons when selecting from hundreds of
+  models?'
 tags:
-  - type/qa
-  - topic/multiple-comparisons
-  - topic/research-methodology
-  - topic/bayesian-statistics
-  - topic/model-comparison
+- type/qa
+- topic/multiple-comparisons
+- topic/research-methodology
+- topic/bayesian-statistics
+- topic/model-comparison
 date_asked: 2026-04-09
 answered_from:
-  - "[[Multiple Testing Corrections]]"
-  - "[[Garden of Forking Paths]]"
-  - "[[Researcher Degrees of Freedom]]"
-  - "[[Type S and Type M Errors]]"
-  - "[[Multiple Comparisons - Bayesian Perspective]]"
-  - "[[Partial Pooling as Multiple Comparisons Correction]]"
-  - "[[Forking Paths and Bayesian Approaches]]"
-  - "[[Iterative Model Improvement]]"
-  - "[[Overfitting and Information Criteria]]"
-  - "[[Model Comparison]]"
+- '[[Multiple Testing Corrections]]'
+- '[[Garden of Forking Paths]]'
+- '[[Researcher Degrees of Freedom]]'
+- '[[Type S and Type M Errors]]'
+- '[[Multiple Comparisons - Bayesian Perspective]]'
+- '[[Partial Pooling as Multiple Comparisons Correction]]'
+- '[[Forking Paths and Bayesian Approaches]]'
+- '[[Iterative Model Improvement]]'
+- '[[Overfitting and Information Criteria]]'
+- '[[Model Comparison]]'
 related_questions:
-  - "[[Q - Common Pitfalls in Statistical Modeling]]"
+- '[[Q - Common Pitfalls in Statistical Modeling]]'
 aliases:
-  - "Multiple comparisons with many models"
-  - "Model selection and p-hacking"
-  - "Variable selection multiple testing"
+- Multiple comparisons with many models
+- Model selection and p-hacking
+- Variable selection multiple testing
+doc_type: qa
+source_location: N/A — AI-generated Q&A synthesized from vault notes
+depends_on:
+- '[[Multiple Testing Corrections]]'
+- '[[Garden of Forking Paths]]'
+- '[[Researcher Degrees of Freedom]]'
+- '[[Type S and Type M Errors]]'
+- '[[Multiple Comparisons - Bayesian Perspective]]'
+- '[[Partial Pooling as Multiple Comparisons Correction]]'
+- '[[Forking Paths and Bayesian Approaches]]'
+- '[[Overfitting and Information Criteria]]'
+- '[[Model Comparison]]'
+used_by: []
 ---
 
 # How should I handle multiple comparisons when selecting from hundreds of models?

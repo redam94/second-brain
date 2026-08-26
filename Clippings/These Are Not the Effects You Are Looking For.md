@@ -1,13 +1,20 @@
 ---
-title: "These Are Not the Effects You Are Looking For"
-source: "https://www.ajordannafa.com/blog/2022/statistical-adjustment-interpretation/"
+title: These Are Not the Effects You Are Looking For
+source: https://www.ajordannafa.com/blog/2022/statistical-adjustment-interpretation/
 author:
-  - "[[A. Jordan Nafa]]"
-published:
+- '[[A. Jordan Nafa]]'
+published: null
 created: 2026-06-25
-description: "This blog post provides an overview of the logic of statistical control, the fallacy of mutual adjustment, and a simulation-based illustration of correct and incorrect approaches to the interpretation of multivariable regression models in the social sciences."
+description: This blog post provides an overview of the logic of statistical control,
+  the fallacy of mutual adjustment, and a simulation-based illustration of correct
+  and incorrect approaches to the interpretation of multivariable regression models
+  in the social sciences.
 tags:
-  - "clippings"
+- clippings
+doc_type: article
+source_location: web article (see source URL)
+depends_on: []
+used_by: []
 ---
 Notes About Assumptions
 

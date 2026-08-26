@@ -1,22 +1,25 @@
 ---
-title: "Fine-tuning on Conditional Statements: Improving LLM Causal Reasoning via Code Training"
+title: 'Fine-tuning on Conditional Statements: Improving LLM Causal Reasoning via
+  Code Training'
 tags:
-  - source/ingested
-  - topic/causal-inference
-  - topic/large-language-models
-  - type/concept
-  - doc/paper
-source: "[[raw/Liu et al. - 2025 - Eliciting and Improving the Causal Reasoning Abilities of Large Language Models with Conditional Sta.pdf]]"
-source_location: "§7, pp. 487–490"
+- source/ingested
+- topic/causal-inference
+- topic/large-language-models
+- type/concept
+- doc/paper
+source: '[[raw/Liu et al. - 2025 - Eliciting and Improving the Causal Reasoning Abilities
+  of Large Language Models with Conditional Sta.pdf]]'
+source_location: §7, pp. 487–490
 date_ingested: 2026-04-10
-folder: "Bayesian Statistics/Causal Inference/Knowledge Elicitation"
+folder: Bayesian Statistics/Causal Inference/Knowledge Elicitation
 doc_type: paper
 depends_on:
-  - "[[Code Prompt Aspects Analysis]]"
-  - "[[Code vs Text Prompt Evaluation]]"
+- '[[Code Prompt Aspects Analysis]]'
+- '[[Code vs Text Prompt Evaluation]]'
 aliases:
-  - conditional statement fine-tuning
-  - CodeAlpaca causal fine-tuning
+- conditional statement fine-tuning
+- CodeAlpaca causal fine-tuning
+used_by: []
 ---
 
 # Fine-tuning on Conditional Statements: Improving LLM Causal Reasoning via Code Training

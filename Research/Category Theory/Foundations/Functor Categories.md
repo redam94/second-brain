@@ -20,6 +20,7 @@ used_by:
   - "[[Representables/Yoneda Lemma]]"
   - "[[Synthesis/Limits in Presheaf Categories]]"
   - "[[Synthesis/Cartesian Closed Categories]]"
+  - "[[Basic Category Theory - Overview]]"
 aliases:
   - functor category
   - presheaf category

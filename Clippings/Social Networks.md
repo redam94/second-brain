@@ -1,12 +1,18 @@
 ---
-title: "Social Networks"
-source: "https://www.pymc.io/projects/examples/en/latest/statistical_rethinking_lectures/15-Social_Networks.html"
-author:
-published:
+title: Social Networks
+source: https://www.pymc.io/projects/examples/en/latest/statistical_rethinking_lectures/15-Social_Networks.html
+author: null
+published: null
 created: 2026-04-09
-description: "This notebook is part of the PyMC port of the Statistical Rethinking 2023 lecture series by Richard McElreath. Video - Lecture 15 - Social Networks# Lecture 15 - Social Networks What Motivates Shar..."
+description: This notebook is part of the PyMC port of the Statistical Rethinking
+  2023 lecture series by Richard McElreath. Video - Lecture 15 - Social Networks#
+  Lecture 15 - Social Networks What Motivates Shar...
 tags:
-  - "clippings"
+- clippings
+doc_type: article
+source_location: web article (see source URL)
+depends_on: []
+used_by: []
 ---
 ## Social Networks
 

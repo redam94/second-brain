@@ -14,6 +14,7 @@ used_by:
   - "[[Functors]]"
   - "[[Natural Transformations]]"
   - "[[Adjunctions/Adjoint Functors]]"
+  - "[[Basic Category Theory - Overview]]"
 aliases:
   - category
   - small category

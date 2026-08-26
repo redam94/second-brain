@@ -29,6 +29,7 @@ used_by:
   - "[[Missing Data - Statistical Rethinking]]"
   - "[[Confirmatory Factor Analysis and SEM]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Statistical Rethinking - Overview]]"
 ---
 
 # Spurious Association and Confounds

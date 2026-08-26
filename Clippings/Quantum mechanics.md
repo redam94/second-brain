@@ -1,13 +1,17 @@
 ---
-title: "Quantum mechanics"
-source: "https://en.wikipedia.org/wiki/Quantum_mechanics"
+title: Quantum mechanics
+source: https://en.wikipedia.org/wiki/Quantum_mechanics
 author:
-  - "[[Contributors to Wikimedia projects]]"
+- '[[Contributors to Wikimedia projects]]'
 published: 2001-11-14
 created: 2026-04-10
-description:
+description: null
 tags:
-  - "clippings"
+- clippings
+doc_type: article
+source_location: web article (see source URL)
+depends_on: []
+used_by: []
 ---
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Hydrogen_Density_Plots.png/500px-Hydrogen_Density_Plots.png)
 

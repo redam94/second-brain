@@ -1,31 +1,46 @@
 ---
-title: "Q: What are some differences between frequentist and Bayesian statistics?"
+title: 'Q: What are some differences between frequentist and Bayesian statistics?'
 tags:
-  - type/qa
-  - topic/bayesian-statistics
-  - topic/frequentist
-  - topic/probability
-  - topic/research-methodology
+- type/qa
+- topic/bayesian-statistics
+- topic/frequentist
+- topic/probability
+- topic/research-methodology
 date_asked: 2026-04-09
 answered_from:
-  - "[[Probability and Bayesian Inference]]"
-  - "[[Asymptotics and Frequentist Connections]]"
-  - "[[Single-Parameter Models]]"
-  - "[[Posterior Sampling and Summarization]]"
-  - "[[Multiparameter Models]]"
-  - "[[Bayesian Linear Regression]]"
-  - "[[Hierarchical Models]]"
-  - "[[Overfitting and Information Criteria]]"
-  - "[[Statistical Rethinking - The Golem of Prague]]"
-  - "[[Forking Paths and Bayesian Approaches]]"
-  - "[[Multiple Comparisons - Bayesian Perspective]]"
-  - "[[Regression and the CEF]]"
+- '[[Probability and Bayesian Inference]]'
+- '[[Asymptotics and Frequentist Connections]]'
+- '[[Single-Parameter Models]]'
+- '[[Posterior Sampling and Summarization]]'
+- '[[Multiparameter Models]]'
+- '[[Bayesian Linear Regression]]'
+- '[[Hierarchical Models]]'
+- '[[Overfitting and Information Criteria]]'
+- '[[Statistical Rethinking - The Golem of Prague]]'
+- '[[Forking Paths and Bayesian Approaches]]'
+- '[[Multiple Comparisons - Bayesian Perspective]]'
+- '[[Regression and the CEF]]'
 related_questions:
-  - "[[Q - Common Pitfalls in Statistical Modeling]]"
-  - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
+- '[[Q - Common Pitfalls in Statistical Modeling]]'
+- '[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]'
 aliases:
-  - "Frequentist vs Bayesian"
-  - "Bayesian vs frequentist statistics"
+- Frequentist vs Bayesian
+- Bayesian vs frequentist statistics
+doc_type: qa
+source_location: N/A — AI-generated Q&A synthesized from vault notes
+depends_on:
+- '[[Probability and Bayesian Inference]]'
+- '[[Asymptotics and Frequentist Connections]]'
+- '[[Single-Parameter Models]]'
+- '[[Posterior Sampling and Summarization]]'
+- '[[Multiparameter Models]]'
+- '[[Bayesian Linear Regression]]'
+- '[[Hierarchical Models]]'
+- '[[Overfitting and Information Criteria]]'
+- '[[Statistical Rethinking - The Golem of Prague]]'
+- '[[Forking Paths and Bayesian Approaches]]'
+- '[[Multiple Comparisons - Bayesian Perspective]]'
+used_by: []
 ---
 
 # What are some differences between frequentist and Bayesian statistics?

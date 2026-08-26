@@ -1,26 +1,37 @@
 ---
-title: "Q: How can SMM be used to calibrate agent based models?"
+title: 'Q: How can SMM be used to calibrate agent based models?'
 tags:
-  - type/qa
-  - topic/agent-based-modeling
-  - topic/calibration
-  - topic/simulation-estimation
-  - topic/econometrics
+- type/qa
+- topic/agent-based-modeling
+- topic/calibration
+- topic/simulation-estimation
+- topic/econometrics
 date_asked: 2026-04-11
 answered_from:
-  - "[[Method of Simulated Moments]]"
-  - "[[SMM Weighting Matrix and Inference]]"
-  - "[[SMM Python Implementation]]"
-  - "[[Practical Issues in Simulation Estimation]]"
-  - "[[ABM Calibration Overview]]"
-  - "[[Genetic Algorithm Calibration for ABM]]"
-  - "[[GA Fitness Evaluation and the RAM]]"
+- '[[Method of Simulated Moments]]'
+- '[[SMM Weighting Matrix and Inference]]'
+- '[[SMM Python Implementation]]'
+- '[[Practical Issues in Simulation Estimation]]'
+- '[[ABM Calibration Overview]]'
+- '[[Genetic Algorithm Calibration for ABM]]'
+- '[[GA Fitness Evaluation and the RAM]]'
 related_questions:
-  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
+- '[[Q - Uncovering Causal Estimates from Non-Experimental Data]]'
 aliases:
-  - SMM ABM calibration
-  - Simulated Method of Moments for ABM
-  - How to calibrate ABM with SMM
+- SMM ABM calibration
+- Simulated Method of Moments for ABM
+- How to calibrate ABM with SMM
+doc_type: qa
+source_location: N/A — AI-generated Q&A synthesized from vault notes
+depends_on:
+- '[[Method of Simulated Moments]]'
+- '[[SMM Weighting Matrix and Inference]]'
+- '[[SMM Python Implementation]]'
+- '[[Practical Issues in Simulation Estimation]]'
+- '[[ABM Calibration Overview]]'
+- '[[Genetic Algorithm Calibration for ABM]]'
+- '[[GA Fitness Evaluation and the RAM]]'
+used_by: []
 ---
 
 # How can SMM be used to calibrate agent based models?

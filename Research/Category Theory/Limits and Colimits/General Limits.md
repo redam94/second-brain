@@ -19,6 +19,7 @@ used_by:
   - "[[Functors and Limits]]"
   - "[[Synthesis/Limits via Representables]]"
   - "[[Synthesis/Adjoints and Limits]]"
+  - "[[Basic Category Theory - Overview]]"
 aliases:
   - limit
   - cone

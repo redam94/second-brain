@@ -1,12 +1,18 @@
 ---
-title: "Bayesian copula estimation: Describing correlated joint distributions"
-source: "https://www.pymc.io/projects/examples/en/latest/howto/copula-estimation.html"
-author:
-published:
+title: 'Bayesian copula estimation: Describing correlated joint distributions'
+source: https://www.pymc.io/projects/examples/en/latest/howto/copula-estimation.html
+author: null
+published: null
 created: 2026-04-09
-description: "The problem: When we deal with multiple variables (e.g. a and b) we often want to describe the joint distribution P(a, b) parametrically. If we are lucky, then this joint distribution might be ‘sim..."
+description: 'The problem: When we deal with multiple variables (e.g. a and b) we
+  often want to describe the joint distribution P(a, b) parametrically. If we are
+  lucky, then this joint distribution might be ‘sim...'
 tags:
-  - "clippings"
+- clippings
+doc_type: tutorial
+source_location: web tutorial (see source URL)
+depends_on: []
+used_by: []
 ---
 ## Bayesian copula estimation: Describing correlated joint distributions
 

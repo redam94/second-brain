@@ -1,32 +1,47 @@
 ---
-title: "Q: What are some ways to uncover causal estimates from non-experimental data?"
+title: 'Q: What are some ways to uncover causal estimates from non-experimental data?'
 tags:
-  - type/qa
-  - topic/causal-inference
-  - topic/econometrics
-  - topic/identification
-  - topic/observational-studies
+- type/qa
+- topic/causal-inference
+- topic/econometrics
+- topic/identification
+- topic/observational-studies
 date_asked: 2026-04-10
 answered_from:
-  - "[[The Selection Problem]]"
-  - "[[Conditional Independence Assumption]]"
-  - "[[Directed Acyclic Graphs]]"
-  - "[[Instrumental Variables]]"
-  - "[[Local Average Treatment Effects]]"
-  - "[[Differences-in-Differences]]"
-  - "[[Regression Discontinuity Designs]]"
-  - "[[Synthetic Control]]"
-  - "[[Generalized Synthetic Control Method]]"
-  - "[[Frequentist Causal Estimation]]"
-  - "[[Sensitivity Analysis in Observational Studies]]"
-  - "[[X-Learner]]"
-  - "[[Bayesian Difference in Differences]]"
+- '[[The Selection Problem]]'
+- '[[Conditional Independence Assumption]]'
+- '[[Directed Acyclic Graphs]]'
+- '[[Instrumental Variables]]'
+- '[[Local Average Treatment Effects]]'
+- '[[Differences-in-Differences]]'
+- '[[Regression Discontinuity Designs]]'
+- '[[Synthetic Control]]'
+- '[[Generalized Synthetic Control Method]]'
+- '[[Frequentist Causal Estimation]]'
+- '[[Sensitivity Analysis in Observational Studies]]'
+- '[[X-Learner]]'
+- '[[Bayesian Difference in Differences]]'
 related_questions:
-  - "[[Q - Common Pitfalls in Statistical Modeling]]"
+- '[[Q - Common Pitfalls in Statistical Modeling]]'
 aliases:
-  - quasi-experimental methods
-  - identification strategies observational data
-  - causal identification non-experimental
+- quasi-experimental methods
+- identification strategies observational data
+- causal identification non-experimental
+doc_type: qa
+source_location: N/A — AI-generated Q&A synthesized from vault notes
+depends_on:
+- '[[The Selection Problem]]'
+- '[[Conditional Independence Assumption]]'
+- '[[Directed Acyclic Graphs]]'
+- '[[Instrumental Variables]]'
+- '[[Local Average Treatment Effects]]'
+- '[[Differences-in-Differences]]'
+- '[[Regression Discontinuity Designs]]'
+- '[[Synthetic Control]]'
+- '[[Frequentist Causal Estimation]]'
+- '[[Sensitivity Analysis in Observational Studies]]'
+- '[[X-Learner]]'
+used_by: []
 ---
 
 # What are some ways to uncover causal estimates from non-experimental data?

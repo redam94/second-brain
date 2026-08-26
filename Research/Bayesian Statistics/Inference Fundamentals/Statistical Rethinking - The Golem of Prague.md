@@ -21,6 +21,7 @@ used_by:
   - "[[Garden of Forking Data]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Statistical Rethinking - Overview]]"
 ---
 
 # The Golem of Prague

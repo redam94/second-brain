@@ -1,12 +1,18 @@
 ---
-title: "Difference in differences"
-source: "https://www.pymc.io/projects/examples/en/latest/causal_inference/difference_in_differences.html"
-author:
-published:
+title: Difference in differences
+source: https://www.pymc.io/projects/examples/en/latest/causal_inference/difference_in_differences.html
+author: null
+published: null
 created: 2026-04-09
-description: "Introduction: This notebook provides a brief overview of the difference in differences approach to causal inference, and shows a working example of how to conduct this type of analysis under the Ba..."
+description: 'Introduction: This notebook provides a brief overview of the difference
+  in differences approach to causal inference, and shows a working example of how
+  to conduct this type of analysis under the Ba...'
 tags:
-  - "clippings"
+- clippings
+doc_type: tutorial
+source_location: web tutorial (see source URL)
+depends_on: []
+used_by: []
 ---
 ## Difference in differences
 

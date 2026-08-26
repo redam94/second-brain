@@ -24,6 +24,7 @@ depends_on:
 used_by:
   - "[[Bayesian Workflow - Overview]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Statistical Rethinking - Overview]]"
 ---
 
 # Posterior Sampling and Summarization
