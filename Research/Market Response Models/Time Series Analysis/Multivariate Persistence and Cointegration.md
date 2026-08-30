@@ -6,6 +6,7 @@ aliases:
   - "Error Correction Marketing"
   - "Multivariate Persistence"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/time-series

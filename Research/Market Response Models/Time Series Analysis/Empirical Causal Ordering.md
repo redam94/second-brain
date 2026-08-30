@@ -4,6 +4,7 @@ aliases:
   - "Granger Causality Marketing"
   - "Causal Ordering VAR"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/causal-inference

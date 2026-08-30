@@ -5,6 +5,7 @@ aliases:
   - "OLS GLS 2SLS Marketing"
   - "Bayesian Marketing Estimation"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/estimation

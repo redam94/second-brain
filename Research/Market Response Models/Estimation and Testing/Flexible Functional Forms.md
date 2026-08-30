@@ -4,6 +4,7 @@ aliases:
   - "Translog Model Marketing"
   - "Flexible MRM Specifications"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/functional-forms

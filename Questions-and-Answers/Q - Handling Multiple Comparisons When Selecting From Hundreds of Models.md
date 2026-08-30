@@ -7,6 +7,8 @@ tags:
   - topic/bayesian-statistics
   - topic/model-comparison
 date_asked: 2026-04-09
+doc_type: qa
+folder: "Questions-and-Answers"
 answered_from:
   - "[[Multiple Testing Corrections]]"
   - "[[Garden of Forking Paths]]"

@@ -7,6 +7,8 @@ tags:
   - topic/simulation-estimation
   - topic/econometrics
 date_asked: 2026-04-11
+doc_type: qa
+folder: "Questions-and-Answers"
 answered_from:
   - "[[Method of Simulated Moments]]"
   - "[[SMM Weighting Matrix and Inference]]"
