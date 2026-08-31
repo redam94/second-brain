@@ -83,3 +83,4 @@ Researchers should not choose a "sophisticated" longitudinal model (CLPM, dynami
 - [[Estimands in Longitudinal Research]] — how to define the right causal target
 - [[Differences-in-Differences]] — econometric panel estimator that controls for time-invariant confounders via the within-unit design logic
 - [[Omitted Variables Bias]] — econometric framing of between-persons confounding
+- [[Time-Varying Treatments and G-computation]] — addresses Claim 2 directly: the g-formula and MSMs handle time-varying confounders that within-persons designs cannot eliminate

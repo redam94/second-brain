@@ -69,6 +69,7 @@ The paper frames methodology development as a progression: Example -> Case study
 - [[Iterative Model Improvement]]
 - [[Modeling as Software Development]]
 - [[Model Checking]] | [[Model Comparison]] | [[MCMC Basics]]
+- [[Simulation-Based Calibration - Overview]] — the concrete computational validation tool for step 4 of the workflow
 
 ## See Also (Cross-Domain)
 
