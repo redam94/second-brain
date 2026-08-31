@@ -1,0 +1,26 @@
+REFERENCE — PDF download blocked by network egress policy (jmlr.org denied)
+
+Chickering, D. M. (2002).
+Optimal Structure Identification With Greedy Search.
+Journal of Machine Learning Research, 3, 507–554.
+
+Freely available at:
+  https://www.jmlr.org/papers/volume3/chickering02b/chickering02b.pdf
+  https://www.jmlr.org/papers/v3/chickering02b.html
+
+Key contributions:
+- GES (Greedy Equivalence Search) algorithm for score-based DAG learning
+- Proof of the Meek Conjecture: any DAG can be reached from any other via
+  covered edge reversals, passing through intermediate CPDAGs
+- Optimality theorem: GES recovers the true CPDAG under faithfulness + Gaussian noise
+- Efficient operators on CPDAGs for greedy search
+- Two-phase algorithm (forward insert + backward delete)
+
+Related earlier work:
+Chickering, D. M. (1995).
+A Transformational Characterization of Equivalent Bayesian Network Structures.
+UAI 1995.
+
+Meek, C. (1995).
+Causal Inference and Causal Explanation with Background Knowledge.
+UAI 1995. (Meek orientation rules)

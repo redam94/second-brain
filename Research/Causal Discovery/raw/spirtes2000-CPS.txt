@@ -1,0 +1,21 @@
+REFERENCE — PDF download blocked by network egress policy (arxiv.org, stat.cmu.edu denied)
+
+Spirtes, P., Glymour, C., & Scheines, R. (2000).
+Causation, Prediction, and Search (2nd ed.).
+MIT Press. (Adaptive Computation and Machine Learning series)
+
+Originally published 1993 (Springer-Verlag).
+Freely available at: https://archive.illc.uva.nl/cil/uploaded_files/inlineitem/Spirtes_Glymour_Scheines_2000_Causation_Prediction_.pdf
+Also at: https://www.stat.cmu.edu/~larry/=sml/Causation.pdf
+
+Key contributions:
+- PC algorithm for constraint-based causal discovery (named after Peter & Clark)
+- FCI algorithm for causal discovery with latent variables
+- IC algorithm (essentially equivalent to PC)
+- Theorems on soundness and completeness under faithfulness
+- TETRAD software system
+
+Original PC algorithm paper:
+Spirtes, P., & Glymour, C. (1991).
+An algorithm for fast recovery of sparse causal graphs.
+Social Science Computer Review, 9(1), 62–72.

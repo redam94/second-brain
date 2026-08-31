@@ -1,0 +1,19 @@
+REFERENCE — PDF download blocked by network egress policy (jmlr.org denied)
+
+Kalisch, M., & Bühlmann, P. (2007).
+Estimating High-Dimensional Directed Acyclic Graphs with the PC-Algorithm.
+Journal of Machine Learning Research, 8, 613–636.
+
+Freely available at:
+  https://www.jmlr.org/papers/v8/kalisch07a.html
+  https://arxiv.org/pdf/math/0510436
+
+Key contributions:
+- High-dimensional consistency of the PC algorithm
+- Shows PC is consistent when d grows with n (e.g., d = O(n^a) for any a < ∞)
+- Requires: faithfulness, causal sufficiency, bounded neighborhood size q
+- Partial correlation / Fisher-z tests for Gaussian data
+- Connection between conditional independence and partial correlations in Gaussians
+
+The pcalg R package implements both PC and GES:
+Kalisch et al. (2012), Journal of Statistical Software, 47(11).
