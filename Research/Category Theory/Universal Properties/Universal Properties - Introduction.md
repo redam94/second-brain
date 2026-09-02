@@ -18,6 +18,7 @@ used_by:
 aliases:
   - universal property
   - universal construction
+folder: "Category Theory/Universal Properties"
 ---
 
 # Universal Properties — Introduction

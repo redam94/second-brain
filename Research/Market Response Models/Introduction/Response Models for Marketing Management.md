@@ -4,6 +4,7 @@ aliases:
   - "MRM Management Applications"
   - "Marketing Planning Cycle"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/marketing-management
@@ -21,6 +22,8 @@ used_by:
   - "[[Markets Data and Sales Drivers]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
   - "[[Implementation of Market Response Models]]"
+date_ingested: 2026-04-11
+folder: "Market Response Models/Introduction"
 ---
 
 # Response Models for Marketing Management

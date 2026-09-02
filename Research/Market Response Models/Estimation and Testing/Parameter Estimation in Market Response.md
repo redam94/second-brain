@@ -5,6 +5,7 @@ aliases:
   - "OLS GLS 2SLS Marketing"
   - "Bayesian Marketing Estimation"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/estimation
@@ -29,6 +30,8 @@ used_by:
   - "[[Marketing Generalizations Overview]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
   - "[[Implementation of Market Response Models]]"
+date_ingested: 2026-04-11
+folder: "Market Response Models/Estimation and Testing"
 ---
 
 # Parameter Estimation in Market Response

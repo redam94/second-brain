@@ -8,10 +8,28 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Full text, pp. 1–173"
 date_ingested: 2026-05-08
+folder: "Category Theory"
 doc_type: textbook
 aliases:
   - Leinster Category Theory
   - BCT Overview
+depends_on: []
+used_by:
+  - "[[Categories]]"
+  - "[[Functors]]"
+  - "[[Natural Transformations]]"
+  - "[[Representable Functors]]"
+  - "[[Yoneda Lemma]]"
+  - "[[Yoneda Embedding and Consequences]]"
+  - "[[Adjoint Functors]]"
+  - "[[Adjunctions via Initial Objects]]"
+  - "[[General Limits]]"
+  - "[[Products and Equalizers]]"
+  - "[[Pullbacks]]"
+  - "[[Colimits]]"
+  - "[[Limits via Representables]]"
+  - "[[Universal Properties - Introduction]]"
+  - "[[Cartesian Closed Categories]]"
 ---
 
 # Basic Category Theory — Overview

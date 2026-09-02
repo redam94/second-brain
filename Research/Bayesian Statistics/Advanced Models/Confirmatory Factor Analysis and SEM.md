@@ -13,6 +13,8 @@ aliases:
   - SEM
   - Structural Equation Model
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Advanced Models"
+source: "[[raw/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics.md]]"
 doc_type: concept
 source_location: "raw/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics"
 depends_on:

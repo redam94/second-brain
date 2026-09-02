@@ -6,6 +6,7 @@ aliases:
   - "Error Correction Marketing"
   - "Multivariate Persistence"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/time-series
@@ -27,6 +28,8 @@ used_by:
   - "[[Empirical Causal Ordering]]"
   - "[[Price and Distribution Effects]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
+date_ingested: 2026-04-11
+folder: "Market Response Models/Time Series Analysis"
 ---
 
 # Multivariate Persistence and Cointegration

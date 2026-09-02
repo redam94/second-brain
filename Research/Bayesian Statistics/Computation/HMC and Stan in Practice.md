@@ -6,7 +6,7 @@ tags:
   - topic/mcmc
   - topic/hmc
   - topic/stan
-  - type/tutorial
+  - type/concept
   - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08

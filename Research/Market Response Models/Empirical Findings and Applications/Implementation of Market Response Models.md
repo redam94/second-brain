@@ -4,6 +4,7 @@ aliases:
   - "MRM Implementation"
   - "Marketing Science Implementation"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/implementation
@@ -21,6 +22,8 @@ depends_on:
   - "[[Parameter Estimation in Market Response]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
 used_by: []
+date_ingested: 2026-04-11
+folder: "Market Response Models/Empirical Findings and Applications"
 ---
 
 # Implementation of Market Response Models

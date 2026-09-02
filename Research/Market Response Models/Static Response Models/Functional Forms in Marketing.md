@@ -4,6 +4,7 @@ aliases:
   - "Sales Response Functional Forms"
   - "Marketing Response Functions"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/functional-forms
@@ -29,6 +30,8 @@ used_by:
   - "[[Advertising and Promotion Effects]]"
   - "[[Price and Distribution Effects]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
+date_ingested: 2026-04-11
+folder: "Market Response Models/Static Response Models"
 ---
 
 # Functional Forms in Marketing

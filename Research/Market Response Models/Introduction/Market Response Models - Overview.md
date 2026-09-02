@@ -4,6 +4,7 @@ aliases:
   - "MRM Overview"
   - "Hanssens Parsons Schultz"
 tags:
+  - source/ingested
   - type/overview
   - topic/market-response
   - topic/econometrics
@@ -20,6 +21,8 @@ depends_on: []
 used_by:
   - "[[Response Models for Marketing Management]]"
   - "[[Markets Data and Sales Drivers]]"
+date_ingested: 2026-04-11
+folder: "Market Response Models/Introduction"
 ---
 
 # Market Response Models — Overview

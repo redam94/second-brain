@@ -4,6 +4,7 @@ aliases:
   - "Translog Model Marketing"
   - "Flexible MRM Specifications"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/functional-forms
@@ -21,6 +22,8 @@ depends_on:
   - "[[Parameter Estimation in Market Response]]"
 used_by:
   - "[[Model Selection and Exploratory Analysis]]"
+date_ingested: 2026-04-11
+folder: "Market Response Models/Estimation and Testing"
 ---
 
 # Flexible Functional Forms

@@ -20,6 +20,7 @@ used_by:
 aliases:
   - Yoneda lemma
   - Yoneda
+folder: "Category Theory/Representables"
 ---
 
 # Yoneda Lemma

@@ -4,6 +4,7 @@ aliases:
   - "Granger Causality Marketing"
   - "Causal Ordering VAR"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/causal-inference
@@ -20,6 +21,8 @@ depends_on:
   - "[[Multivariate Persistence and Cointegration]]"
   - "[[Reaction Functions and Competitive Dynamics]]"
 used_by: []
+date_ingested: 2026-04-11
+folder: "Market Response Models/Time Series Analysis"
 ---
 
 # Empirical Causal Ordering

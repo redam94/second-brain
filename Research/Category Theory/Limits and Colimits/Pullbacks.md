@@ -21,6 +21,7 @@ aliases:
   - fibered product
   - pushout
   - pullback square
+folder: "Category Theory/Limits and Colimits"
 ---
 
 # Pullbacks

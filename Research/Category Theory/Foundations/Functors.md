@@ -22,6 +22,7 @@ aliases:
   - contravariant functor
   - full functor
   - faithful functor
+folder: "Category Theory/Foundations"
 ---
 
 # Functors

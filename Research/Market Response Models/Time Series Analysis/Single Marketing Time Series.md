@@ -5,6 +5,7 @@ aliases:
   - "Univariate Time Series Marketing"
   - "Box-Jenkins Marketing"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/time-series
@@ -24,6 +25,8 @@ depends_on:
 used_by:
   - "[[Transfer Function Model]]"
   - "[[Multivariate Persistence and Cointegration]]"
+date_ingested: 2026-04-11
+folder: "Market Response Models/Time Series Analysis"
 ---
 
 # Single Marketing Time Series

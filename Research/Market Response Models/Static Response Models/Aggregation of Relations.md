@@ -4,6 +4,7 @@ aliases:
   - "Aggregation Bias in Marketing"
   - "Individual to Aggregate Response"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/aggregation
@@ -21,6 +22,8 @@ depends_on:
 used_by:
   - "[[Design of Static Response Models]]"
   - "[[Carryover Effects and Distributed Lags]]"
+date_ingested: 2026-04-11
+folder: "Market Response Models/Static Response Models"
 ---
 
 # Aggregation of Relations

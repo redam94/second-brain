@@ -4,6 +4,7 @@ aliases:
   - "Empirical Marketing Generalizations"
   - "Meta-Analysis Marketing"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/empirical-findings
@@ -21,6 +22,8 @@ depends_on:
 used_by:
   - "[[Advertising and Promotion Effects]]"
   - "[[Price and Distribution Effects]]"
+date_ingested: 2026-04-11
+folder: "Market Response Models/Empirical Findings and Applications"
 ---
 
 # Marketing Generalizations Overview

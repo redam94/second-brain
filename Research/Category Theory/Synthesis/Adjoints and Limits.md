@@ -21,6 +21,7 @@ aliases:
   - left adjoints preserve colimits
   - RAPL
   - LAPC
+folder: "Category Theory/Synthesis"
 ---
 
 # Adjoints and Limits

@@ -7,10 +7,12 @@ tags:
   - method/pymc
   - method/bayesian
   - type/concept
-  - doc/textbook
+  - doc/tutorial
 aliases:
   - Bayesian DiD
 date_ingested: 2026-04-09
+folder: "Econometrics/Identification Strategies"
+source: "PyMC Difference in Differences tutorial (Benjamin T. Vincent, 2022)"
 doc_type: tutorial
 source_location: "PyMC Difference in Differences example (Benjamin T. Vincent, 2022)"
 depends_on:

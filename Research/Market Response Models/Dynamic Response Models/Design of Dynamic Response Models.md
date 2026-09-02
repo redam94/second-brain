@@ -4,6 +4,7 @@ aliases:
   - "Dynamic Marketing Models"
   - "Marketing Time Series Models"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/dynamic-models
@@ -24,6 +25,7 @@ used_by:
   - "[[Transfer Function Model]]"
   - "[[Parameter Estimation in Market Response]]"
   - "[[Implementation of Market Response Models]]"
+date_ingested: 2026-04-11
 ---
 
 # Design of Dynamic Response Models

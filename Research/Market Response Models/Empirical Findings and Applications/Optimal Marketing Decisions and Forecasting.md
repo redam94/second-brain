@@ -4,6 +4,7 @@ aliases:
   - "Optimal Marketing Budget"
   - "Marketing Mix Optimization"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/optimization
@@ -25,6 +26,8 @@ depends_on:
   - "[[Response Models for Marketing Management]]"
 used_by:
   - "[[Implementation of Market Response Models]]"
+date_ingested: 2026-04-11
+folder: "Market Response Models/Empirical Findings and Applications"
 ---
 
 # Optimal Marketing Decisions and Forecasting

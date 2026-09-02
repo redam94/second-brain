@@ -4,6 +4,7 @@ aliases:
   - "Marketing Response Shape"
   - "Concave vs S-shaped Response"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/functional-forms
@@ -20,6 +21,8 @@ depends_on:
   - "[[Carryover Effects and Distributed Lags]]"
 used_by:
   - "[[Optimal Marketing Decisions and Forecasting]]"
+date_ingested: 2026-04-11
+folder: "Market Response Models/Dynamic Response Models"
 ---
 
 # Shape of the Marketing Response Function

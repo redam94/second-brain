@@ -12,6 +12,8 @@ aliases:
   - Social Networks SR
   - Dyadic Models
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Advanced Models"
+source: "[[raw/Social Networks.md]]"
 doc_type: concept
 source_location: "raw/Social Networks"
 depends_on:

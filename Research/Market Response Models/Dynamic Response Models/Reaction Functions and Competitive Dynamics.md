@@ -4,6 +4,7 @@ aliases:
   - "Competitive Reaction Marketing"
   - "Cournot Reaction Function"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/competitive-dynamics
@@ -24,6 +25,8 @@ used_by:
   - "[[Multivariate Persistence and Cointegration]]"
   - "[[Empirical Causal Ordering]]"
   - "[[Price and Distribution Effects]]"
+date_ingested: 2026-04-11
+folder: "Market Response Models/Dynamic Response Models"
 ---
 
 # Reaction Functions and Competitive Dynamics
