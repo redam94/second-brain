@@ -1,0 +1,20 @@
+SOURCE REFERENCE — PDF not downloaded (domain arxiv.org blocked by network egress policy)
+
+Kalisch, M. & Bühlmann, P. (2007). Estimating high-dimensional directed acyclic graphs
+with the PC-Algorithm.
+Journal of Machine Learning Research, 8, 613–636.
+
+Open-access URLs:
+  JMLR:  https://www.jmlr.org/papers/v8/kalisch07a.html
+  arXiv: https://arxiv.org/pdf/math/0510436
+
+Key contribution:
+Proves consistency of the PC algorithm for very high-dimensional, sparse DAGs with
+Gaussian distribution, where the number of nodes d is allowed to grow with sample size n
+as fast as O(n^a) for any 0 < a < ∞, under the assumption that the maximal neighbourhood
+size k grows at most as O(n^b) for b < 1/2. Provides the foundational theoretical
+justification for the PC algorithm in the high-dimensional setting.
+
+Note: For the original PC algorithm, see:
+Spirtes, P., Glymour, C. & Scheines, R. (2000). Causation, Prediction, and Search.
+2nd edition. MIT Press. (Free copy: https://archive.illc.uva.nl/cil/ — also blocked)

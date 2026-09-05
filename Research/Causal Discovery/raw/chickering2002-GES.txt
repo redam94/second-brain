@@ -1,0 +1,16 @@
+SOURCE REFERENCE — PDF not downloaded (domain jmlr.org blocked by network egress policy)
+
+Chickering, D. M. (2002). Optimal structure identification with greedy search.
+Journal of Machine Learning Research, 3, 507–554.
+
+Open-access URL: https://www.jmlr.org/papers/volume3/chickering02b/chickering02b.pdf
+
+Abstract (from JMLR listing):
+The problem of finding the optimal Bayesian network for a given dataset is known to be
+NP-hard. In practice, heuristic search algorithms are used. Chickering proves the
+"Meek Conjecture": if a DAG H is an independence map (I-map) of a DAG G, then there
+exists a sequence of edge additions and covered edge reversals transforming H into G
+while preserving I-map status. This result implies that GES — a two-phase greedy search
+over equivalence classes of DAGs using a decomposable score such as BIC or BDeu — is
+correct and complete: it identifies a perfect map of the generative distribution when
+one exists as a DAG.
