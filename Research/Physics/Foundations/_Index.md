@@ -8,6 +8,13 @@ tags:
 parent: "[[Physics/_Index|Physics]]"
 date_updated: 2026-04-16
 concept_count: 4
+doc_type: index
+folder: "Research/Physics/Foundations"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Physics — Foundations

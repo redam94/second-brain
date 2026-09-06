@@ -7,6 +7,12 @@ created: 2026-04-09
 description: "This notebook is part of the PyMC port of the Statistical Rethinking 2023 lecture series by Richard McElreath. Video - Lecture 18 - Missing Data# Lecture 18 - Missing Data Missing Data, Found: Obse..."
 tags:
   - "clippings"
+doc_type: concept
+folder: "Clippings"
+depends_on: []
+used_by: []
+source_location: "Full article"
+date_ingested: 2026-04-08
 ---
 ## Missing Data
 

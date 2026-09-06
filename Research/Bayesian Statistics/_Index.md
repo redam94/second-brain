@@ -6,6 +6,13 @@ tags:
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-06-17
 concept_count: 60
+doc_type: index
+folder: "Research/Bayesian Statistics"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Bayesian Statistics
@@ -29,13 +36,13 @@ concept_count: 60
 
 | Sub-topic | Notes | Domain |
 |-----------|-------|--------|
-| [[Inference Fundamentals/_Index\|Inference Fundamentals]] | 8 | Bayes' theorem, conjugate models, hierarchical models (BDA3 Part I) |
-| [[Model Assessment/_Index\|Model Assessment]] | 5 | Posterior predictive checks, model comparison, decision analysis (BDA3 Part II) |
-| [[Computation/_Index\|Computation]] | 5 | MCMC, HMC, variational inference, Stan (BDA3 Part III) |
-| [[Regression Models/_Index\|Regression Models]] | 9 | Bayesian regression, multilevel models, GLMs, missing data (BDA3 Part IV) |
-| [[Advanced Models/_Index\|Advanced Models]] | 10 | GPs, mixtures, Dirichlet processes, spatial, copulas, BART, Bayesian IPW (BDA3 Part V + PyMC) |
-| [[Workflow/_Index\|Bayesian Workflow]] | 13 | The iterative modeling cycle (Gelman et al. 2020) + simulation-based calibration: data-averaged posterior self-consistency, rank uniformity, the SBC algorithm, histogram diagnostics, case studies (Talts et al. 2018) |
-| [[Causal Inference/_Index\|Causal Inference]] | 10 | Potential outcomes, BART/BCF outcome models, propensity score, IV, g-formula (Li et al. 2022) |
+| [[Inference Fundamentals/_Index|Inference Fundamentals]] | 8 | Bayes' theorem, conjugate models, hierarchical models (BDA3 Part I) |
+| [[Model Assessment/_Index|Model Assessment]] | 5 | Posterior predictive checks, model comparison, decision analysis (BDA3 Part II) |
+| [[Computation/_Index|Computation]] | 5 | MCMC, HMC, variational inference, Stan (BDA3 Part III) |
+| [[Regression Models/_Index|Regression Models]] | 9 | Bayesian regression, multilevel models, GLMs, missing data (BDA3 Part IV) |
+| [[Advanced Models/_Index|Advanced Models]] | 10 | GPs, mixtures, Dirichlet processes, spatial, copulas, BART, Bayesian IPW (BDA3 Part V + PyMC) |
+| [[Workflow/_Index|Bayesian Workflow]] | 13 | The iterative modeling cycle (Gelman et al. 2020) + simulation-based calibration: data-averaged posterior self-consistency, rank uniformity, the SBC algorithm, histogram diagnostics, case studies (Talts et al. 2018) |
+| [[Causal Inference/_Index|Causal Inference]] | 10 | Potential outcomes, BART/BCF outcome models, propensity score, IV, g-formula (Li et al. 2022) |
 
 ## Sources
 

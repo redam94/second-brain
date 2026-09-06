@@ -20,6 +20,8 @@ depends_on: []
 used_by:
   - "[[Response Models for Marketing Management]]"
   - "[[Markets Data and Sales Drivers]]"
+folder: "Research/Market Response Models/Introduction"
+date_ingested: 2026-04-08
 ---
 
 # Market Response Models — Overview

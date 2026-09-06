@@ -6,6 +6,13 @@ tags:
 parent: "[[../_Index|Causal Inference]]"
 date_updated: 2026-04-10
 concept_count: 9
+doc_type: index
+folder: "Research/Bayesian Statistics/Causal Inference/Foundations"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Causal Inference Foundations

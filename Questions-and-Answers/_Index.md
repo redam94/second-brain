@@ -4,6 +4,13 @@ tags:
   - type/index
 date_updated: 2026-04-11
 question_count: 5
+doc_type: index
+folder: "Questions-and-Answers"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Questions and Answers

@@ -22,6 +22,8 @@ depends_on:
   - "[[Nonparametric Models Overview]]"
 used_by:
   - "[[Social Network Models]]"
+folder: "Research/Bayesian Statistics/Advanced Models"
+source: ""
 ---
 
 # Confirmatory Factor Analysis and Structural Equation Models

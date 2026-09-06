@@ -22,6 +22,8 @@ depends_on:
 used_by:
   - "[[Social Network Models]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+folder: "Research/Bayesian Statistics/Regression Models"
+source: "[[raw/StatRethink-Bayes.pdf]]"
 ---
 
 # Missing Data — Statistical Rethinking (Lecture 18)

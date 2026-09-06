@@ -5,6 +5,13 @@ tags:
   - source/ingested
 parent: "[[../_Index|Agent-Based Modeling]]"
 date_updated: 2026-04-11
+doc_type: index
+folder: "Research/Agent-Based Modeling/Calibration and Validation"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Calibration and Validation

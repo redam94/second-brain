@@ -7,6 +7,12 @@ created: 2026-04-08
 description: "Extra dependencies install instructions In order to run this notebook (either locally or on binder) you won’t only need a working PyMC installation with all optional dependencies, but also to insta..."
 tags:
   - "clippings"
+doc_type: concept
+folder: "Clippings"
+depends_on: []
+used_by: []
+source_location: "Full article"
+date_ingested: 2026-04-08
 ---
 ## Discrete Choice and Random Utility Models
 

@@ -8,6 +8,13 @@ tags:
 parent: "[[Physics/_Index|Physics]]"
 date_updated: 2026-04-16
 concept_count: 5
+doc_type: index
+folder: "Research/Physics/Quantum Field Theory"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Physics — Quantum Field Theory
@@ -24,7 +31,7 @@ concept_count: 5
 
 | Concept | Note | Type | Depends On | Key Result |
 |---------|------|------|------------|------------|
-| QFT overview | [[QFT Overview]] | overview | [[../Foundations/Wave Function and Hilbert Space\|QM]] | Fields are operator-valued; particles = excitations |
+| QFT overview | [[QFT Overview]] | overview | [[../Foundations/Wave Function and Hilbert Space|QM]] | Fields are operator-valued; particles = excitations |
 | Canonical quantization | [[Canonical Quantization of Fields]] | concept | QFT Overview | Klein–Gordon field; creation/annihilation operators |
 | Renormalization | [[Renormalization]] | concept | Canonical Quantization | Remove UV divergences; running coupling constant |
 | Gauge theory | [[Gauge Theory Overview]] | overview | QFT Overview | Local symmetry mandates gauge field; gauge boson |

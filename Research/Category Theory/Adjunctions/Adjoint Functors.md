@@ -24,6 +24,7 @@ aliases:
   - left adjoint
   - right adjoint
   - F ⊣ G
+folder: "Research/Category Theory/Adjunctions"
 ---
 
 # Adjoint Functors

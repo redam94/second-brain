@@ -6,6 +6,13 @@ tags:
 parent: "[[../_Index|Calibration and Validation]]"
 date_updated: 2026-04-11
 concept_count: 8
+doc_type: index
+folder: "Research/Agent-Based Modeling/Calibration and Validation/Calibration Methods"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Calibration Methods

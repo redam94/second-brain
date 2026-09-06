@@ -51,11 +51,11 @@ $$E[Y_i|D_i=1] - E[Y_i|D_i=0] = \underbrace{E[Y_{1i}-Y_{0i}|D_i=1]}_{\text{ATT}}
 
 | Method | How it addresses selection bias |
 |--------|-------------------------------|
-| [[The Experimental Ideal\|Random assignment]] | Makes $D_i$ independent of potential outcomes |
-| [[Conditional Independence Assumption\|CIA/Matching]] | Controls for observables that drive selection |
-| [[Instrumental Variables\|IV]] | Uses exogenous variation in treatment |
-| [[Differences-in-Differences\|DD/Fixed effects]] | Controls for time-invariant unobservables |
-| [[Regression Discontinuity Designs\|RD]] | Exploits arbitrary assignment rules |
+| [[The Experimental Ideal|Random assignment]] | Makes $D_i$ independent of potential outcomes |
+| [[Conditional Independence Assumption|CIA/Matching]] | Controls for observables that drive selection |
+| [[Instrumental Variables|IV]] | Uses exogenous variation in treatment |
+| [[Differences-in-Differences|DD/Fixed effects]] | Controls for time-invariant unobservables |
+| [[Regression Discontinuity Designs|RD]] | Exploits arbitrary assignment rules |
 
 ## See Also
 

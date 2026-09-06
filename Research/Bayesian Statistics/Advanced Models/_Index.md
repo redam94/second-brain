@@ -6,6 +6,13 @@ tags:
 parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
 date_updated: 2026-04-11
 concept_count: 10
+doc_type: index
+folder: "Research/Bayesian Statistics/Advanced Models"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Advanced Models

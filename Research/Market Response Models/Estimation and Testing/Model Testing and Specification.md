@@ -21,6 +21,8 @@ depends_on:
   - "[[Parameter Estimation in Market Response]]"
 used_by:
   - "[[Model Selection and Exploratory Analysis]]"
+folder: "Research/Market Response Models/Estimation and Testing"
+date_ingested: 2026-04-08
 ---
 
 # Model Testing and Specification

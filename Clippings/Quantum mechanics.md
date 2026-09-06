@@ -8,6 +8,12 @@ created: 2026-04-10
 description:
 tags:
   - "clippings"
+doc_type: concept
+folder: "Clippings"
+depends_on: []
+used_by: []
+source_location: "Full article"
+date_ingested: 2026-04-08
 ---
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Hydrogen_Density_Plots.png/500px-Hydrogen_Density_Plots.png)
 

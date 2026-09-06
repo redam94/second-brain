@@ -91,7 +91,7 @@ Units are drawn i.i.d. from a superpopulation $\mathcal{P}$ over $(X, W, Y(0), Y
 | Learner | Strategy | Key Advantage | Key Weakness |
 |---------|----------|---------------|--------------|
 | [[S-Learner]] | Single model on $(X, W)$ | Borrows strength across groups | Treatment indicator may be regularized to zero |
-| [[T-Learner and Minimax Rate\|T-Learner]] | Separate models for $W=0$ and $W=1$ | Clean separation | Suboptimal for unbalanced groups |
+| [[T-Learner and Minimax Rate|T-Learner]] | Separate models for $W=0$ and $W=1$ | Clean separation | Suboptimal for unbalanced groups |
 | [[X-Learner]] | Two-stage: impute ITEs, then regress | Best for unbalanced treatment | More complex; requires propensity score |
 
 ## Connections

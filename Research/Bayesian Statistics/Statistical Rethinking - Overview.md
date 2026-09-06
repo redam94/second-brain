@@ -8,12 +8,23 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/statistical-modeling
-  - type/book-overview
+  - type/overview
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 authors:
   - Richard McElreath
 year: 2015
+doc_type: overview
+folder: "Research/Bayesian Statistics"
+depends_on: []
+used_by:
+  - "[[Linear Models in Statistical Rethinking]]"
+  - "[[Spurious Association and Confounds]]"
+  - "[[Hierarchical Linear Models]]"
+  - "[[Generalized Linear Models]]"
+  - "[[Missing Data - Statistical Rethinking]]"
+  - "[[HMC and Stan in Practice]]"
+source_location: "Full text (McElreath, 2015/2020)"
 ---
 
 # Statistical Rethinking
@@ -33,10 +44,10 @@ McElreath frames statistics through the **Golem of Prague** metaphor: statistica
 
 | Part          | Chapters | Topics                                                                                                                                                                  |
 | ------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Foundations   | Ch 1–3   | [[Statistical Rethinking - The Golem of Prague\|Philosophy]],[[Garden of Forking Data\|Bayesian updating]],[[Posterior Sampling and Summarization\|Posterior sampling]] |
-| Linear Models | Ch 4–7   | [[Linear Models in Statistical Rethinking\|Gaussian model]], [[Spurious Association and Confounds\|Multivariate regression]], interactions                              |
-| MCMC & GLMs   | Ch 8–11  | [[HMC and Stan in Practice\|HMC/Stan]], [[Overfitting and Information Criteria\|Information theory]],[[Monsters and Mixtures\|GLMs,zero-inflation]]                     |
-| Multilevel    | Ch 12–13 | Varying effects, [[Hierarchical Linear Models\|partial pooling]], Gaussian processes                                                                                    |
+| Foundations   | Ch 1–3   | [[Statistical Rethinking - The Golem of Prague|Philosophy]],[[Garden of Forking Data|Bayesian updating]],[[Posterior Sampling and Summarization|Posterior sampling]] |
+| Linear Models | Ch 4–7   | [[Linear Models in Statistical Rethinking|Gaussian model]], [[Spurious Association and Confounds|Multivariate regression]], interactions                              |
+| MCMC & GLMs   | Ch 8–11  | [[HMC and Stan in Practice|HMC/Stan]], [[Overfitting and Information Criteria|Information theory]],[[Monsters and Mixtures|GLMs,zero-inflation]]                     |
+| Multilevel    | Ch 12–13 | Varying effects, [[Hierarchical Linear Models|partial pooling]], Gaussian processes                                                                                    |
 | Missing Data  | Ch 14–15 | Measurement error, imputation, concluding reflections                                                                                                                   |
 
 ## Key Principles
@@ -49,7 +60,7 @@ McElreath frames statistics through the **Golem of Prague** metaphor: statistica
 
 ## Comparison with BDA3
 
-| Aspect        | Statistical Rethinking                             | [[BDA3 - Overview\|BDA3]]                          |
+| Aspect        | Statistical Rethinking                             | [[BDA3 - Overview|BDA3]]                          |
 | ------------- | -------------------------------------------------- | -------------------------------------------------- |
 | Approach      | Course/pedagogical                                 | Reference/comprehensive                            |
 | Math level    | Accessible, code-first                             | Rigorous, proof-heavy                              |

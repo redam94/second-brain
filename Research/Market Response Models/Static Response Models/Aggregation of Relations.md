@@ -21,6 +21,8 @@ depends_on:
 used_by:
   - "[[Design of Static Response Models]]"
   - "[[Carryover Effects and Distributed Lags]]"
+folder: "Research/Market Response Models/Static Response Models"
+date_ingested: 2026-04-08
 ---
 
 # Aggregation of Relations

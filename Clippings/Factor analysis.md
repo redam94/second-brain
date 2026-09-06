@@ -7,6 +7,12 @@ created: 2026-04-08
 description: "Factor analysis is a widely used probabilistic model for identifying low-rank structure in multivariate data as encoded in latent variables. It is very closely related to principal components analy..."
 tags:
   - "clippings"
+doc_type: concept
+folder: "Clippings"
+depends_on: []
+used_by: []
+source_location: "Full article"
+date_ingested: 2026-04-08
 ---
 ## Factor analysis
 

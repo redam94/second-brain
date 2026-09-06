@@ -20,6 +20,8 @@ depends_on:
   - "[[Multivariate Persistence and Cointegration]]"
   - "[[Reaction Functions and Competitive Dynamics]]"
 used_by: []
+folder: "Research/Market Response Models/Time Series Analysis"
+date_ingested: 2026-04-08
 ---
 
 # Empirical Causal Ordering

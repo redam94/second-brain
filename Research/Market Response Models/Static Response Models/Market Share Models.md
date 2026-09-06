@@ -27,6 +27,7 @@ used_by:
   - "[[Reaction Functions and Competitive Dynamics]]"
   - "[[Price and Distribution Effects]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
+date_ingested: 2026-04-08
 ---
 
 # Market Share Models

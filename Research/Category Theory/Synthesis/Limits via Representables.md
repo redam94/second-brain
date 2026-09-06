@@ -21,6 +21,7 @@ aliases:
   - limits as representables
   - cone functor
   - lim ⊣ Δ
+folder: "Research/Category Theory/Synthesis"
 ---
 
 # Limits via Representables

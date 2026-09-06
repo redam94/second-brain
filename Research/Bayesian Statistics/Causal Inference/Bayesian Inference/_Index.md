@@ -6,6 +6,13 @@ tags:
 parent: "[[../_Index|Causal Inference]]"
 date_updated: 2026-04-10
 concept_count: 3
+doc_type: index
+folder: "Research/Bayesian Statistics/Causal Inference/Bayesian Inference"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Bayesian Causal Inference Methods
@@ -44,5 +51,5 @@ concept_count: 3
 ## See Also
 - [[Foundations/_Index|Foundations]] — prerequisite potential outcomes framework
 - [[Sensitivity and Complex Mechanisms/_Index|Sensitivity and Complex Mechanisms]] — extensions to non-ideal settings
-- [[Bayesian Propensity Scores and IPW]] — existing vault note on Bayesian IPW (Heiss blog)
+- [[Bayesian Propensity Score Weighting]] — existing vault note on Bayesian IPW (Heiss blog)
 - [[Nonparametric Causal Inference]] — existing vault note on BART/non-parametric causal methods

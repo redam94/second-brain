@@ -6,6 +6,13 @@ tags:
 parent: "[[../Bayesian Statistics/_Index|Bayesian Statistics]]"
 date_updated: 2026-04-10
 concept_count: 34
+doc_type: index
+folder: "Research/Bayesian Statistics/Causal Inference"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Bayesian Causal Inference
@@ -24,12 +31,12 @@ concept_count: 34
 
 | Sub-topic | Notes | Domain |
 |-----------|-------|--------|
-| [[Foundations/_Index\|Foundations]] | 3 | Potential outcomes, SUTVA, ignorability, causal estimands, frequentist methods |
-| [[Bayesian Inference/_Index\|Bayesian Inference]] | 3 | Bayesian CI structure, outcome models (BART/GP/BCF), propensity score strategies |
-| [[Sensitivity and Complex Mechanisms/_Index\|Sensitivity and Complex Mechanisms]] | 3 | E-value, copula sensitivity, IV/principal stratification, g-formula, time-varying treatments |
-| [[Knowledge Elicitation/_Index\|Knowledge Elicitation]] | 9 | Interactive (Yamashita 2020) and LLM-based (Shaposhnyk 2025) causal structure elicitation |
-| [[Treatment Effect Estimation/_Index\|Treatment Effect Estimation]] | 6 | S/T/X-learner metalearners for CATE; minimax rates; voter turnout & transphobia applications |
-| [[Time Series Causal Inference/_Index\|Time Series Causal Inference]] | 7 | BSTS model; spike-and-slab; Gibbs sampler; CausalImpact; advertising application |
+| [[Foundations/_Index|Foundations]] | 3 | Potential outcomes, SUTVA, ignorability, causal estimands, frequentist methods |
+| [[Bayesian Inference/_Index|Bayesian Inference]] | 3 | Bayesian CI structure, outcome models (BART/GP/BCF), propensity score strategies |
+| [[Sensitivity and Complex Mechanisms/_Index|Sensitivity and Complex Mechanisms]] | 3 | E-value, copula sensitivity, IV/principal stratification, g-formula, time-varying treatments |
+| [[Knowledge Elicitation/_Index|Knowledge Elicitation]] | 9 | Interactive (Yamashita 2020) and LLM-based (Shaposhnyk 2025) causal structure elicitation |
+| [[Treatment Effect Estimation/_Index|Treatment Effect Estimation]] | 6 | S/T/X-learner metalearners for CATE; minimax rates; voter turnout & transphobia applications |
+| [[Time Series Causal Inference/_Index|Time Series Causal Inference]] | 7 | BSTS model; spike-and-slab; Gibbs sampler; CausalImpact; advertising application |
 
 ## Paper Overview
 
@@ -88,6 +95,6 @@ Causal Structure Learning
 
 ## Cross-Links to Existing Vault Notes
 
-- [[Bayesian Propensity Scores and IPW]] — Bayesian IPW via Liao-Zigler two-stage method (Heiss blog) — related to [[Propensity Score in Bayesian CI]] Strategy 3
+- [[Bayesian Propensity Score Weighting]] — Bayesian IPW via Liao-Zigler two-stage method (Heiss blog) — related to [[Propensity Score in Bayesian CI]] Strategy 3
 - [[Nonparametric Causal Inference]] — BART and non-parametric Bayesian causal methods — related to [[Bayesian Outcome Models]]
 - [[Copula Estimation]] — copula methods used in sensitivity analysis — related to [[Sensitivity Analysis in Observational Studies]]

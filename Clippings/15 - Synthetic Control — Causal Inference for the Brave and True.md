@@ -7,6 +7,12 @@ created: 2026-04-10
 description:
 tags:
   - "clippings"
+doc_type: tutorial
+folder: "Clippings"
+depends_on: []
+used_by: []
+source_location: "Full article"
+date_ingested: 2026-04-08
 ---
 ## 15 - Synthetic Control
 

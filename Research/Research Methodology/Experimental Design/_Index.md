@@ -6,6 +6,13 @@ tags:
 parent: "[[Research Methodology/_Index|Research Methodology]]"
 date_updated: 2026-04-09
 concept_count: 4
+doc_type: index
+folder: "Research/Research Methodology/Experimental Design"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Experimental Design

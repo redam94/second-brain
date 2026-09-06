@@ -85,7 +85,7 @@ The "moments" are functions of **rank statistics** — strictly, this is not cla
 
 ## See Also
 
-- [[19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — general SMM exposition (Evans 2024); this factor-copula application is a flagship use of the method.
+- [[Clippings/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python|19. SMM Estimation (Evans 2024)]] — general SMM exposition (Evans 2024); this factor-copula application is a flagship use of the method.
 - [[Method of Simulated Moments]] — the underlying MSM/GMM framework.
 - [[SMM Weighting Matrix and Inference]] — weight-matrix choice and inference in SMM generally.
 - [[Bayesian copula estimation Describing correlated joint distributions]] — contrast: a **Bayesian** (PyMC) Gaussian-copula estimation, vs the **frequentist** simulation-based moment-matching used here.

@@ -24,6 +24,13 @@ aliases:
   - "Multiple comparisons with many models"
   - "Model selection and p-hacking"
   - "Variable selection multiple testing"
+doc_type: example
+folder: "Questions-and-Answers"
+depends_on: []
+used_by: []
+source_location: "N/A"
+date_ingested: 2026-04-08
+source: ""
 ---
 
 # How should I handle multiple comparisons when selecting from hundreds of models?

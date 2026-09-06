@@ -8,6 +8,12 @@ created: 2026-04-09
 description: "A step-by-step explanation of Directed Acyclic Graphs from the basics through to more advanced aspects"
 tags:
   - "clippings"
+doc_type: concept
+folder: "Clippings"
+depends_on: []
+used_by: []
+source_location: "Full article"
+date_ingested: 2026-04-08
 ---
 ![Photo by Caleb Jones on Unsplash](https://towardsdatascience.com/wp-content/uploads/2023/04/1Ui01e0ixX0-QTNR2C8mUAg-scaled.jpeg)
 

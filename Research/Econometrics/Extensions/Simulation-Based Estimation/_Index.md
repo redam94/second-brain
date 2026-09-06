@@ -6,6 +6,13 @@ tags:
 parent: "[[../Extensions/_Index|Extensions]]"
 date_updated: 2026-04-12
 concept_count: 8
+doc_type: index
+folder: "Research/Econometrics/Extensions/Simulation-Based Estimation"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Simulation-Based Estimation

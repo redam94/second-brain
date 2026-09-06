@@ -26,6 +26,13 @@ related_questions:
 aliases:
   - "Frequentist vs Bayesian"
   - "Bayesian vs frequentist statistics"
+doc_type: definition
+folder: "Questions-and-Answers"
+depends_on: []
+used_by: []
+source_location: "N/A"
+date_ingested: 2026-04-08
+source: ""
 ---
 
 # What are some differences between frequentist and Bayesian statistics?

@@ -27,6 +27,13 @@ aliases:
   - quasi-experimental methods
   - identification strategies observational data
   - causal identification non-experimental
+doc_type: theorem
+folder: "Questions-and-Answers"
+depends_on: []
+used_by: []
+source_location: "N/A"
+date_ingested: 2026-04-08
+source: ""
 ---
 
 # What are some ways to uncover causal estimates from non-experimental data?
@@ -248,7 +255,7 @@ Other approaches: Rosenbaum & Rubin (1983) hidden binary confounder model, copul
 - [[Causal Estimands]] — ITE, SATE, CATE, PATE, MATE — what we're estimating
 - [[Omitted Variables Bias]] — what happens when CIA fails without a remedy
 - [[Activity Bias in Advertising]] — real-world failure of CIA; motivates IV
-- [[Bayesian Propensity Scores and IPW]] — Bayesian take on IPW/matching
+- [[Bayesian Propensity Score Weighting]] — Bayesian take on IPW/matching
 - [[Nonparametric Causal Inference]] — BART-based Bayesian causal estimation
 - [[Counterfactual Inference]] — Bayesian counterfactual prediction (COVID deaths example)
 - [[Q - Common Pitfalls in Statistical Modeling]] — confounding as a top pitfall

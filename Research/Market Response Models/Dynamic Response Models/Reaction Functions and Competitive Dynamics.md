@@ -24,6 +24,8 @@ used_by:
   - "[[Multivariate Persistence and Cointegration]]"
   - "[[Empirical Causal Ordering]]"
   - "[[Price and Distribution Effects]]"
+folder: "Research/Market Response Models/Dynamic Response Models"
+date_ingested: 2026-04-08
 ---
 
 # Reaction Functions and Competitive Dynamics

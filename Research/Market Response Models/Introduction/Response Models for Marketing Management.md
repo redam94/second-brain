@@ -21,6 +21,8 @@ used_by:
   - "[[Markets Data and Sales Drivers]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
   - "[[Implementation of Market Response Models]]"
+folder: "Research/Market Response Models/Introduction"
+date_ingested: 2026-04-08
 ---
 
 # Response Models for Marketing Management

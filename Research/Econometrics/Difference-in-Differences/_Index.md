@@ -4,6 +4,13 @@ tags: [type/index, source/ingested]
 parent: "[[../_Index|Econometrics]]"
 date_updated: 2026-06-17
 concept_count: 6
+doc_type: index
+folder: "Research/Econometrics/Difference-in-Differences"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Difference-in-Differences
@@ -46,6 +53,6 @@ concept_count: 6
 - [[../Identification Strategies/_Index|Identification Strategies]] — IV, RD, synthetic control, and the canonical DiD
 - [[Synthetic Control]] — alternative for staggered policy adoption
 - [[Difference in differences]] — PyMC Bayesian DiD tutorial (2x2 baseline)
-- [[Mostly Harmless Econometrics]] — DiD chapter (Angrist & Pischke)
+- [[Mostly Harmless Econometrics - Overview]] — DiD chapter (Angrist & Pischke)
 - [[The Experimental Ideal]] — randomization benchmark
 - [[Estimands in Longitudinal Research]] — choosing potential-outcome targets

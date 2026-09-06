@@ -27,6 +27,8 @@ used_by:
   - "[[Empirical Causal Ordering]]"
   - "[[Price and Distribution Effects]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
+folder: "Research/Market Response Models/Time Series Analysis"
+date_ingested: 2026-04-08
 ---
 
 # Multivariate Persistence and Cointegration

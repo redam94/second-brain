@@ -6,6 +6,13 @@ tags:
 parent: "[[../_Index|Consumer Behavior]]"
 date_updated: 2026-04-10
 concept_count: 3
+doc_type: index
+folder: "Research/Agent-Based Modeling/Consumer Behavior/Karakaya Model"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Karakaya Model

@@ -29,6 +29,8 @@ used_by:
   - "[[Advertising and Promotion Effects]]"
   - "[[Price and Distribution Effects]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
+folder: "Research/Market Response Models/Static Response Models"
+date_ingested: 2026-04-08
 ---
 
 # Functional Forms in Marketing

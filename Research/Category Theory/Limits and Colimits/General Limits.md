@@ -25,6 +25,7 @@ aliases:
   - diagram
   - terminal cone
   - lim
+folder: "Research/Category Theory/Limits and Colimits"
 ---
 
 # General Limits

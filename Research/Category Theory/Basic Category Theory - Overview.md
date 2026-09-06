@@ -12,6 +12,15 @@ doc_type: textbook
 aliases:
   - Leinster Category Theory
   - BCT Overview
+folder: "Research/Category Theory"
+depends_on: []
+used_by:
+  - "[[Foundations/_Index]]"
+  - "[[Adjunctions/_Index]]"
+  - "[[Limits and Colimits/_Index]]"
+  - "[[Universal Properties/_Index]]"
+  - "[[Representables/_Index]]"
+  - "[[Synthesis/_Index]]"
 ---
 
 # Basic Category Theory — Overview
@@ -23,12 +32,12 @@ aliases:
 
 | Chapter | Title | Notes Location |
 |---------|-------|---------------|
-| 1 | Categories, functors, natural transformations | [[Foundations/_Index\|Foundations]] |
-| 2 | Adjoints | [[Adjunctions/_Index\|Adjunctions]] |
-| 3 | Interlude on sets | [[Foundations/_Index\|Foundations]] (size) |
-| 4 | Representables | [[Representables/_Index\|Representables]] |
-| 5 | Limits | [[Limits and Colimits/_Index\|Limits and Colimits]] |
-| 6 | Adjoints, representables, limits | [[Synthesis/_Index\|Synthesis]] |
+| 1 | Categories, functors, natural transformations | [[Foundations/_Index|Foundations]] |
+| 2 | Adjoints | [[Adjunctions/_Index|Adjunctions]] |
+| 3 | Interlude on sets | [[Foundations/_Index|Foundations]] (size) |
+| 4 | Representables | [[Representables/_Index|Representables]] |
+| 5 | Limits | [[Limits and Colimits/_Index|Limits and Colimits]] |
+| 6 | Adjoints, representables, limits | [[Synthesis/_Index|Synthesis]] |
 | App | Proof of GAFT | [[Synthesis/Adjoint Functor Theorems]] |
 
 ## The Central Thesis
@@ -51,14 +60,14 @@ Categories/Functors/Nat. Trans.
 
 | Result | Location |
 |--------|----------|
-| [[Foundations/Natural Transformations#^nat-trans-def\|Natural transformation definition]] | Ch. 1.3 |
-| [[Adjunctions/Adjoint Functors#^adjunction-def\|Adjunction definition (4 equivalent forms)]] | Ch. 2.1–2.2 |
-| [[Representables/Yoneda Lemma#^yoneda-thm\|Yoneda Lemma]] | Ch. 4.2 |
-| [[Representables/Yoneda Embedding and Consequences#^yoneda-embedding\|Yoneda embedding full and faithful]] | Ch. 4.3 |
-| [[Limits and Colimits/General Limits#^limit-def\|General limit definition]] | Ch. 5.1 |
-| [[Synthesis/Limits via Representables#^cones-representable\|Cones are representable]] | Ch. 6.1 |
-| [[Synthesis/Adjoints and Limits#^adjoints-limits\|Adjoints preserve (co)limits]] | Ch. 6.3 |
-| [[Synthesis/Adjoint Functor Theorems#^gaft\|General Adjoint Functor Theorem]] | Ch. 6.3 |
+| [[Foundations/Natural Transformations#^nat-trans-def|Natural transformation definition]] | Ch. 1.3 |
+| [[Adjunctions/Adjoint Functors#^adjunction-def|Adjunction definition (4 equivalent forms)]] | Ch. 2.1–2.2 |
+| [[Representables/Yoneda Lemma#^yoneda-thm|Yoneda Lemma]] | Ch. 4.2 |
+| [[Representables/Yoneda Embedding and Consequences#^yoneda-embedding|Yoneda embedding full and faithful]] | Ch. 4.3 |
+| [[Limits and Colimits/General Limits#^limit-def|General limit definition]] | Ch. 5.1 |
+| [[Synthesis/Limits via Representables#^cones-representable|Cones are representable]] | Ch. 6.1 |
+| [[Synthesis/Adjoints and Limits#^adjoints-limits|Adjoints preserve (co)limits]] | Ch. 6.3 |
+| [[Synthesis/Adjoint Functor Theorems#^gaft|General Adjoint Functor Theorem]] | Ch. 6.3 |
 
 ## Sub-folder Index
 

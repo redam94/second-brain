@@ -80,5 +80,5 @@ This separation lets the researcher (i) estimate marginals using the large univa
 
 ## See Also
 
-- [[19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — general SMM method; this paper is a flagship application.
+- [[Clippings/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python|19. SMM Estimation (Evans 2024)]] — general SMM method; this paper is a flagship application.
 - [[../_Index|Econometrics]]

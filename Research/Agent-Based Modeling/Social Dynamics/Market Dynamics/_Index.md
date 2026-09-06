@@ -6,6 +6,13 @@ tags:
 parent: "[[../_Index|Social Dynamics]]"
 date_updated: 2026-04-10
 concept_count: 1
+doc_type: index
+folder: "Research/Agent-Based Modeling/Social Dynamics/Market Dynamics"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Market Dynamics

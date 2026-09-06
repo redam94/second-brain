@@ -10,6 +10,21 @@ folder: "Bayesian Statistics"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
+doc_type: overview
+depends_on: []
+used_by:
+  - "[[Introduction to Bayesian Computation]]"
+  - "[[MCMC Basics]]"
+  - "[[Efficient MCMC]]"
+  - "[[Approximation Methods]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Hierarchical Linear Models]]"
+  - "[[Generalized Linear Models]]"
+  - "[[Missing Data Models]]"
+  - "[[Model Checking]]"
+  - "[[Model Comparison]]"
+  - "[[Hierarchical Models]]"
+source_location: "Full text (Gelman et al., 2013/2025)"
 ---
 
 # Bayesian Data Analysis, 3rd Edition

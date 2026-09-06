@@ -8,6 +8,12 @@ created: 2026-04-10
 description:
 tags:
   - "clippings"
+doc_type: concept
+folder: "Clippings"
+depends_on: []
+used_by: []
+source_location: "Full article"
+date_ingested: 2026-04-08
 ---
 In [physics](https://en.wikipedia.org/wiki/Physics "Physics"), a **gauge theory** is a type of [field theory](https://en.wikipedia.org/wiki/Field_theory_\(physics\) "Field theory (physics)") in which the [Lagrangian](https://en.wikipedia.org/wiki/Lagrangian_\(field_theory\) "Lagrangian (field theory)"), and hence the dynamics of the system itself, does not change under [local transformations](https://en.wikipedia.org/wiki/Local_symmetry "Local symmetry") according to certain smooth families of operations ([Lie groups](https://en.wikipedia.org/wiki/Lie_group "Lie group")). Formally, the Lagrangian is [invariant](https://en.wikipedia.org/wiki/Invariant_\(physics\) "Invariant (physics)") under these transformations.
 

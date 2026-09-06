@@ -24,6 +24,7 @@ used_by:
   - "[[Transfer Function Model]]"
   - "[[Parameter Estimation in Market Response]]"
   - "[[Implementation of Market Response Models]]"
+date_ingested: 2026-04-08
 ---
 
 # Design of Dynamic Response Models

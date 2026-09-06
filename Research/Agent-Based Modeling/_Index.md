@@ -5,6 +5,13 @@ tags:
   - source/ingested
 parent: "[[../_Index|Research]]"
 date_updated: 2026-04-11
+doc_type: index
+folder: "Research/Agent-Based Modeling"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Agent-Based Modeling

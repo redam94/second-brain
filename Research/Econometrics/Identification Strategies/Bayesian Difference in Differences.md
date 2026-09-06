@@ -20,6 +20,8 @@ depends_on:
   - "[[Regression and the CEF]]"
 used_by:
   - "[[Observational vs Experimental Methods in Advertising]]"
+folder: "Research/Econometrics/Identification Strategies"
+source: ""
 ---
 
 # Bayesian Difference in Differences

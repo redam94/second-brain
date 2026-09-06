@@ -63,9 +63,9 @@ The coefficient $\rho$ has a causal interpretation as the average causal effect.
 
 | Concept | Relationship |
 |---------|-------------|
-| [[The Selection Problem\|Selection bias]] | What the CIA eliminates |
-| [[Omitted Variables Bias\|OVB]] | What happens when CIA fails |
-| [[Instrumental Variables\|IV]] | Alternative when CIA is implausible |
+| [[The Selection Problem|Selection bias]] | What the CIA eliminates |
+| [[Omitted Variables Bias|OVB]] | What happens when CIA fails |
+| [[Instrumental Variables|IV]] | Alternative when CIA is implausible |
 | Propensity score | Dimension-reducing tool under the CIA |
 
 ## See Also

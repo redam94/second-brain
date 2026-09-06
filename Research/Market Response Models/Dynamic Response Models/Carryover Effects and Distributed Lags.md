@@ -30,6 +30,8 @@ used_by:
   - "[[Advertising and Promotion Effects]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
   - "[[Implementation of Market Response Models]]"
+folder: "Research/Market Response Models/Dynamic Response Models"
+date_ingested: 2026-04-08
 ---
 
 # Carryover Effects and Distributed Lags

@@ -29,6 +29,8 @@ used_by:
   - "[[Marketing Generalizations Overview]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
   - "[[Implementation of Market Response Models]]"
+folder: "Research/Market Response Models/Estimation and Testing"
+date_ingested: 2026-04-08
 ---
 
 # Parameter Estimation in Market Response

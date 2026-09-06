@@ -18,6 +18,7 @@ aliases:
   - category
   - small category
   - locally small category
+folder: "Research/Category Theory/Foundations"
 ---
 
 # Categories

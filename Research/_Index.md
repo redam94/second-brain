@@ -5,6 +5,13 @@ tags:
   - source/ingested
 date_updated: 2026-06-26
 concept_count: 180
+doc_type: index
+folder: "Research"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Research
@@ -25,14 +32,14 @@ concept_count: 180
 
 | Topic | Notes | Key Concepts |
 |-------|-------|-------------|
-| [[Bayesian Statistics/_Index\|Bayesian Statistics]] | 60 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference, **simulation-based calibration (SBC)** |
-| [[Econometrics/_Index\|Econometrics]] | 48 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, quantile regression, discrete choice, SMM, Brock-Mirman structural estimation, **staggered/multi-period DiD (group-time ATT, doubly-robust)**, **factor copulas / high-dimensional tail dependence** |
-| [[Causal Discovery/_Index\|Causal Discovery]] | 5 | DAG / Bayesian-network structure learning, linear SEM, score-based learning, **NOTEARS** continuous optimization, smooth acyclicity $h(W)=\mathrm{tr}\,e^{W\circ W}-d$, augmented Lagrangian, vs FGS/GES/PC |
-| [[Research Methodology/_Index\|Research Methodology]] | 16+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons, within/between-persons distinction (Rohrer & Murayama 2023), fixed-effects model, CLPM, dynamic panel model, estimands in longitudinal research, **Table 2 Fallacy**, regression adjustment logic, nuisance parameter bias simulation |
-| [[Theoretical Physics/_Index\|Theoretical Physics]] | 7 | Quantum mechanics, Hilbert space, Schrödinger equation, QFT, second quantization, QED, renormalization, gauge theory, Standard Model |
-| [[Physics/_Index\|Physics]] | 9 | Wave functions, Hilbert space, Schrödinger equation, entanglement, QFT, canonical quantization, renormalization, gauge theory, Yang–Mills (structured sub-folder organization) |
-| [[Agent-Based Modeling/_Index\|Agent-Based Modeling]] | 34 | ABM methodology, emergence, heterogeneity, consumer utility models, CUBES behavioral simulator, WOM, opinion leaders, network diffusion, GA calibration, validation, HM+ABC calibration (McCulloch et al. 2022), history matching, ABC, uncertainty quantification |
-| [[Market Response Models/_Index\|Market Response Models]] | 31 | Functional forms (10), Koyck/ADL carryover, reaction functions, OLS/2SLS/Bayes estimation, ARIMA, transfer functions, VAR, cointegration, ECM, empirical generalizations (advertising ≈ 0.10, price ≈ −2.5), **Bayesian MMM (adstock, Hill saturation, ROAS/mROAS, optimal media mix)** |
+| [[Bayesian Statistics/_Index|Bayesian Statistics]] | 60 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference, **simulation-based calibration (SBC)** |
+| [[Econometrics/_Index|Econometrics]] | 48 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, quantile regression, discrete choice, SMM, Brock-Mirman structural estimation, **staggered/multi-period DiD (group-time ATT, doubly-robust)**, **factor copulas / high-dimensional tail dependence** |
+| [[Causal Discovery/_Index|Causal Discovery]] | 5 | DAG / Bayesian-network structure learning, linear SEM, score-based learning, **NOTEARS** continuous optimization, smooth acyclicity $h(W)=\mathrm{tr}\,e^{W\circ W}-d$, augmented Lagrangian, vs FGS/GES/PC |
+| [[Research Methodology/_Index|Research Methodology]] | 16+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons, within/between-persons distinction (Rohrer & Murayama 2023), fixed-effects model, CLPM, dynamic panel model, estimands in longitudinal research, **Table 2 Fallacy**, regression adjustment logic, nuisance parameter bias simulation |
+| [[Theoretical Physics/_Index|Theoretical Physics]] | 7 | Quantum mechanics, Hilbert space, Schrödinger equation, QFT, second quantization, QED, renormalization, gauge theory, Standard Model |
+| [[Physics/_Index|Physics]] | 9 | Wave functions, Hilbert space, Schrödinger equation, entanglement, QFT, canonical quantization, renormalization, gauge theory, Yang–Mills (structured sub-folder organization) |
+| [[Agent-Based Modeling/_Index|Agent-Based Modeling]] | 34 | ABM methodology, emergence, heterogeneity, consumer utility models, CUBES behavioral simulator, WOM, opinion leaders, network diffusion, GA calibration, validation, HM+ABC calibration (McCulloch et al. 2022), history matching, ABC, uncertainty quantification |
+| [[Market Response Models/_Index|Market Response Models]] | 31 | Functional forms (10), Koyck/ADL carryover, reaction functions, OLS/2SLS/Bayes estimation, ARIMA, transfer functions, VAR, cointegration, ECM, empirical generalizations (advertising ≈ 0.10, price ≈ −2.5), **Bayesian MMM (adstock, Hill saturation, ROAS/mROAS, optimal media mix)** |
 
 ## Cross-Cutting Themes
 

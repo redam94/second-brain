@@ -6,6 +6,13 @@ tags:
 parent: "[[../_Index|Research]]"
 date_updated: 2026-06-17
 concept_count: 5
+doc_type: index
+folder: "Research/Causal Discovery"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Causal Discovery

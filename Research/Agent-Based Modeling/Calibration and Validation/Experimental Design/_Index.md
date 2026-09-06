@@ -6,6 +6,13 @@ tags:
 parent: "[[../_Index|Calibration and Validation]]"
 date_updated: 2026-04-10
 concept_count: 1
+doc_type: index
+folder: "Research/Agent-Based Modeling/Calibration and Validation/Experimental Design"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Experimental Design

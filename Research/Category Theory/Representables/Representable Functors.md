@@ -24,6 +24,7 @@ aliases:
   - H^A
   - H_A
   - generalized element
+folder: "Research/Category Theory/Representables"
 ---
 
 # Representable Functors

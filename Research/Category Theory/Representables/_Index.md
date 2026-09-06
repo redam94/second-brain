@@ -7,6 +7,13 @@ tags:
 parent: "[[../_Index|Category Theory]]"
 date_updated: 2026-05-08
 concept_count: 3
+doc_type: index
+folder: "Research/Category Theory/Representables"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Representables

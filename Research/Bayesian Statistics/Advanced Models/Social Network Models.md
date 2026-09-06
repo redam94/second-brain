@@ -21,6 +21,8 @@ depends_on:
   - "[[Generalized Linear Models]]"
 used_by:
   - "[[Missing Data - Statistical Rethinking]]"
+folder: "Research/Bayesian Statistics/Advanced Models"
+source: ""
 ---
 
 # Social Network Models

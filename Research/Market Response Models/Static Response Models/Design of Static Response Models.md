@@ -23,6 +23,8 @@ used_by:
   - "[[Design of Dynamic Response Models]]"
   - "[[Parameter Estimation in Market Response]]"
   - "[[Implementation of Market Response Models]]"
+folder: "Research/Market Response Models/Static Response Models"
+date_ingested: 2026-04-08
 ---
 
 # Design of Static Response Models

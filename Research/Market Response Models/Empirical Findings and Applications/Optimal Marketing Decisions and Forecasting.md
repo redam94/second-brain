@@ -25,6 +25,8 @@ depends_on:
   - "[[Response Models for Marketing Management]]"
 used_by:
   - "[[Implementation of Market Response Models]]"
+folder: "Research/Market Response Models/Empirical Findings and Applications"
+date_ingested: 2026-04-08
 ---
 
 # Optimal Marketing Decisions and Forecasting

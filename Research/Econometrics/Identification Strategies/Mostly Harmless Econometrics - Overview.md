@@ -58,9 +58,9 @@ Every empirical project should answer these questions:
 
 | Part | Chapters | Topics |
 |------|----------|--------|
-| I — Introduction | Ch 1-2 | [[Research Questions in Econometrics\|Questions about Questions]], [[The Experimental Ideal]] |
-| II — The Core | Ch 3-5 | [[Regression and the CEF\|Regression]], [[Instrumental Variables\|IV]], [[Differences-in-Differences\|DD & Panel Data]] |
-| III — Extensions | Ch 6-8 | [[Regression Discontinuity Designs\|RD]], [[Quantile Regression]], [[Standard Errors and Clustering\|Standard Errors]] |
+| I — Introduction | Ch 1-2 | [[Research Questions in Econometrics|Questions about Questions]], [[The Experimental Ideal]] |
+| II — The Core | Ch 3-5 | [[Regression and the CEF|Regression]], [[Instrumental Variables|IV]], [[Differences-in-Differences|DD & Panel Data]] |
+| III — Extensions | Ch 6-8 | [[Regression Discontinuity Designs|RD]], [[Quantile Regression]], [[Standard Errors and Clustering|Standard Errors]] |
 
 ## Key Principles
 

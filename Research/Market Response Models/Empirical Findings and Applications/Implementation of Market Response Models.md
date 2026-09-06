@@ -21,6 +21,8 @@ depends_on:
   - "[[Parameter Estimation in Market Response]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
 used_by: []
+folder: "Research/Market Response Models/Empirical Findings and Applications"
+date_ingested: 2026-04-08
 ---
 
 # Implementation of Market Response Models

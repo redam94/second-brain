@@ -21,6 +21,8 @@ depends_on:
 used_by:
   - "[[Advertising and Promotion Effects]]"
   - "[[Price and Distribution Effects]]"
+folder: "Research/Market Response Models/Empirical Findings and Applications"
+date_ingested: 2026-04-08
 ---
 
 # Marketing Generalizations Overview

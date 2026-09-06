@@ -24,6 +24,8 @@ depends_on:
 used_by:
   - "[[Transfer Function Model]]"
   - "[[Multivariate Persistence and Cointegration]]"
+folder: "Research/Market Response Models/Time Series Analysis"
+date_ingested: 2026-04-08
 ---
 
 # Single Marketing Time Series

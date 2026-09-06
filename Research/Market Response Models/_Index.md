@@ -6,6 +6,13 @@ tags:
   - source/hanssens-parsons-schultz-2001
 date_updated: 2026-06-17
 concept_count: 31
+doc_type: index
+folder: "Research/Market Response Models"
+source: ""
+date_ingested: "N/A"
+depends_on: []
+used_by: []
+source_location: "N/A"
 ---
 
 # Market Response Models
@@ -24,13 +31,13 @@ concept_count: 31
 
 | Subfolder | Notes | Key Concepts |
 |-----------|-------|-------------|
-| [[Introduction/_Index\|Introduction]] | 3 | MRM framework, simultaneous system, management tasks, scanner data, GRPs |
-| [[Static Response Models/_Index\|Static Response Models]] | 4 | 10 functional forms, MCI/MNL market share, aggregation bias, SCAN*PRO |
-| [[Dynamic Response Models/_Index\|Dynamic Response Models]] | 4 | Koyck, PDL, ADL, ratchet/hysteresis, reaction functions, S-shape, pulsing |
-| [[Estimation and Testing/_Index\|Estimation and Testing]] | 4 | OLS, GLS, SUR, 2SLS, Bayes HB/EB, RESET, specification errors, AIC/BIC |
-| [[Time Series Analysis/_Index\|Time Series Analysis]] | 4 | ARIMA, transfer functions, VAR, cointegration, ECM, Granger causality |
-| [[Empirical Findings and Applications/_Index\|Empirical Findings]] | 5 | Advertising elasticity ≈ 0.10, price ≈ −2.5, Dorfman-Steiner, DSS |
-| [[Bayesian Media Mix Modeling/_Index\|Bayesian Media Mix Modeling]] | 6 | Adstock (geometric/delayed) carryover, Hill/logistic saturation, Bayesian MCMC + priors, ROAS/mROAS, optimal media mix, BIC model selection (Jin et al., Google 2017) |
+| [[Introduction/_Index|Introduction]] | 3 | MRM framework, simultaneous system, management tasks, scanner data, GRPs |
+| [[Static Response Models/_Index|Static Response Models]] | 4 | 10 functional forms, MCI/MNL market share, aggregation bias, SCAN*PRO |
+| [[Dynamic Response Models/_Index|Dynamic Response Models]] | 4 | Koyck, PDL, ADL, ratchet/hysteresis, reaction functions, S-shape, pulsing |
+| [[Estimation and Testing/_Index|Estimation and Testing]] | 4 | OLS, GLS, SUR, 2SLS, Bayes HB/EB, RESET, specification errors, AIC/BIC |
+| [[Time Series Analysis/_Index|Time Series Analysis]] | 4 | ARIMA, transfer functions, VAR, cointegration, ECM, Granger causality |
+| [[Empirical Findings and Applications/_Index|Empirical Findings]] | 5 | Advertising elasticity ≈ 0.10, price ≈ −2.5, Dorfman-Steiner, DSS |
+| [[Bayesian Media Mix Modeling/_Index|Bayesian Media Mix Modeling]] | 6 | Adstock (geometric/delayed) carryover, Hill/logistic saturation, Bayesian MCMC + priors, ROAS/mROAS, optimal media mix, BIC model selection (Jin et al., Google 2017) |
 
 ## Key Equations Quick Reference
 
