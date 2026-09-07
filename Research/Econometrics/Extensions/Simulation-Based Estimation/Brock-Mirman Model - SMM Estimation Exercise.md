@@ -154,6 +154,8 @@ SMM resolves this by simulating the TFP path $\{z_{s,t}\}$ directly, making any 
 - [[Indirect Inference]] — alternative that uses AR(1) or VAR regression coefficients as moments (natural choice for BM model)
 - [[Efficient Method of Moments]] — simulation-based approach that matches auxiliary-model coefficients rather than raw moments; applicable to the BM model via VAR auxiliary regression
 - [[SMM Estimator for Copulas]] — another application of the same SMM framework
+- [[ABM Calibration Overview]] — the SMM framework applies directly to ABM calibration: simulated ABM output moments matched to observed market/behavioural moments, exactly as done here with the BM macroeconomic moments
+- [[Approximate Bayesian Computation for ABMs]] — ABC is the Bayesian counterpart to SMM for simulation calibration; both simulate from the model and compare output to data, differing in how they measure discrepancy and propagate uncertainty
 
 ## Sources
 

@@ -187,8 +187,11 @@ After matching, assess balance using `cobalt` — see [[Covariate Balance and Ma
 - [[Propensity Score Matching - Overview]] — the framework and assumptions
 - [[Covariate Balance and Matching Diagnostics]] — how to evaluate whether the chosen algorithm achieved balance
 - [[Frequentist Causal Estimation]] — IPW as an alternative to matching; DR estimators that combine both
+- [[Conditional Independence Assumption]] — the identifying assumption that matching is designed to satisfy; caliper width and common-support trimming choices should be motivated by where this assumption is most plausible
 
 ## See Also
 
 - [[Synthetic Control]] — an alternative matching-like approach for aggregate-level data using convex-combination weights
 - [[Bayesian Propensity Score Weighting]] — Bayesian extension of weighting (not matching)
+- [[Sensitivity Analysis in Observational Studies]] — after confirming balance via matching diagnostics, Rosenbaum bounds quantify robustness of the matched-sample estimate to unmeasured confounding
+- [[Nonparametric Causal Inference]] — BART-based methods (BART-BCF) as a nonparametric alternative to matching; avoids the caliper/algorithm selection problem by learning the response surface directly

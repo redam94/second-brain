@@ -102,3 +102,5 @@ This unifies limits with the adjunction/initial-object perspective: limits are r
 - [[Limits and Colimits/General Limits]] — Limits as terminal cones
 - [[Synthesis/Adjoint Functor Theorems]] — Constructing adjoints via initial objects
 - [[Universal Properties/Universal Properties - Introduction]] — Unification of universal constructions
+- [[Synthesis/Adjoints and Limits]] — derives the equivalence between right adjoints and limit-preserving functors; limits as right adjoints to the diagonal is a direct consequence of the terminal-cone characterisation in this note
+- [[Representables/Yoneda Lemma]] — Yoneda identifies elements of $X(A)$ with natural transformations $H_A \Rightarrow X$; this is the representable analogue of the initial-object / comma-category perspective
