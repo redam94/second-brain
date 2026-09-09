@@ -9,6 +9,7 @@ source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 4.1, pp. 84–98"
 date_ingested: 2026-05-08
 doc_type: textbook
+folder: "Category Theory/Representables"
 depends_on:
   - "[[Foundations/Functors]]"
   - "[[Foundations/Functor Categories]]"

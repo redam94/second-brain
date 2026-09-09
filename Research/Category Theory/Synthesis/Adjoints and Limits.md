@@ -9,6 +9,7 @@ source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 6.3, pp. 157–163"
 date_ingested: 2026-05-08
 doc_type: textbook
+folder: "Category Theory/Synthesis"
 depends_on:
   - "[[Adjunctions/Adjoint Functors]]"
   - "[[Limits and Colimits/General Limits]]"

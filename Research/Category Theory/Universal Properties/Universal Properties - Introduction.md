@@ -9,6 +9,7 @@ source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 0, pp. 1–4"
 date_ingested: 2026-05-08
 doc_type: textbook
+folder: "Category Theory/Universal Properties"
 depends_on:
   - "[[Foundations/Categories]]"
 used_by:

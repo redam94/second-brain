@@ -13,7 +13,9 @@ aliases:
   - Bayesian Imputation SR
 date_ingested: 2026-04-09
 doc_type: concept
-source_location: "raw/Missing Data"
+folder: "Bayesian Statistics/Regression Models"
+source: "[[raw/Missing Data]]"
+source_location: "Full text"
 depends_on:
   - "[[Missing Data Models]]"
   - "[[Spurious Association and Confounds]]"

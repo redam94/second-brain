@@ -9,6 +9,7 @@ source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 6.1, pp. 141–147"
 date_ingested: 2026-05-08
 doc_type: textbook
+folder: "Category Theory/Synthesis"
 depends_on:
   - "[[Limits and Colimits/General Limits]]"
   - "[[Representables/Representable Functors]]"

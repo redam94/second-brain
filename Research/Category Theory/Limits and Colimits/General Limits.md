@@ -9,6 +9,7 @@ source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 5.1, pp. 120–134"
 date_ingested: 2026-05-08
 doc_type: textbook
+folder: "Category Theory/Limits and Colimits"
 depends_on:
   - "[[Products and Equalizers]]"
   - "[[Pullbacks]]"

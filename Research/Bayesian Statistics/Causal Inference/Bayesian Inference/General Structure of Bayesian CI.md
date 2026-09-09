@@ -118,4 +118,5 @@ An alternative general-purpose approach: the **Bayesian bootstrap** (Rubin, 1981
 
 ## See Also
 - [[Sensitivity Analysis in Observational Studies]] — transparent parametrization for non-identified parameters
-- [[Bayesian Propensity Scores and IPW]] — practical Bayesian IPW approaches
+- [[Bayesian Inverse Probability Weighting]] — practical Bayesian IPW approaches
+- [[Bayesian Propensity Score Weighting]] — Bayesian propensity score weighting
