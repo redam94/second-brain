@@ -5,11 +5,13 @@ aliases:
   - "MNL Market Share"
   - "Multinomial Logit Share"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/market-share
   - topic/discrete-choice
   - source/hanssens-parsons-schultz-2001
+date_ingested: 2026-04-11
 date_created: 2026-04-11
 date_updated: 2026-06-15
 folder: "Market Response Models/Static Response Models"
