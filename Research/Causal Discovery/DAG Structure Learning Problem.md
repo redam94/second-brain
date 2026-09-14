@@ -15,6 +15,9 @@ depends_on:
 used_by:
   - "[[Smooth Characterization of Acyclicity]]"
   - "[[NOTEARS Algorithm]]"
+  - "[[Markov Equivalence and CPDAGs]]"
+  - "[[PC Algorithm]]"
+  - "[[GES - Greedy Equivalence Search]]"
 aliases:
   - "Score-based DAG learning"
   - "Linear SEM structure learning"
@@ -117,9 +120,9 @@ The essential distinction: program (4)'s domain is the discrete set $\mathbb{D}$
 | Camp | Idea | Limitation |
 |------|------|-----------|
 | **Exact** ([Cussens, 2012]; GOBNILP; [Chen et al., 2016]) | Guaranteed globally optimal | Only a few dozen nodes; intractable in general |
-| **Local / approximate search** (FGS, GES, hill-climbing, MMHC) | Add edges/parents one node at a time, check acyclicity incrementally | Needs bounded in-degree/treewidth — impossible to verify; real networks are scale-free with hub nodes |
+| **Local / approximate search** ([[GES - Greedy Equivalence Search\|FGS, GES]], hill-climbing, MMHC) | Add edges/parents one node at a time, check acyclicity incrementally | Needs bounded in-degree/treewidth — impossible to verify; real networks are scale-free with hub nodes |
 | **Order search** ([Teyssier & Koller, 2005]) | Search over $d!$ topological orderings | Trades acyclicity for an exponential ordering search |
-| **Constraint-based** (PC, [Spirtes & Glymour, 1991]) | Conditional-independence tests | Different paradigm; often less accurate |
+| **Constraint-based** ([[PC Algorithm\|PC]], [Spirtes & Glymour, 1991]) | Conditional-independence tests | Different paradigm; often less accurate |
 | **Hybrid / Bayesian** (MMHC; [Zhou, 2011]) | Combine the above | Conceptual complexity |
 
 > [!note] The "conceptual clarity" gap NOTEARS targets
