@@ -89,3 +89,7 @@ This is the distribution of what would have happened had no intervention occurre
 
 - [[Bayesian Structural Time-Series Model]] — model being inferred
 - [[Counterfactual Impact Estimation]] — how posterior predictive draws are used
+- [[Brodersen 2015 - Overview]] — paper overview and empirical application context
+- [[CausalImpact Empirical Application]] — applied use of this inference algorithm
+- [[Fitting and Validating Computation]] — SBC and fake-data checks for validating MCMC algorithms like this one
+- [[MCMC Basics]] — Gibbs sampling theory underlying Step 1 and Step 2

@@ -1,8 +1,9 @@
 ---
-title: Factor Copula Construction
+title: "Factor Copula Construction"
 tags:
   - source/ingested
   - topic/econometrics
+  - topic/copulas
   - type/definition
   - doc/paper
 source: "[[raw/Oh-Patton-2012-Factor-Copulas.pdf]]"
@@ -86,4 +87,7 @@ The construction separates dependence from marginals (per Sklar). One specifies 
 ## See Also
 
 - [[Bayesian copula estimation Describing correlated joint distributions]] — PyMC tutorial constructing a Gaussian copula directly; here the Gaussian copula is just the all-Normal special case of the factor construction.
+- [[Factor Copula Application - S&P 100 and Systemic Risk]] — empirical application of this construction to 100 equity return series.
+- [[SMM Copula Asymptotic Theory]] — asymptotic inference for the SMM estimator used when the copula density is unavailable.
+- [[Copula Estimation]] — Bayesian Gaussian copula for the bivariate case; the factor construction generalises this to high dimensions.
 - [[../_Index|Econometrics]]

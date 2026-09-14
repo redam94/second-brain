@@ -8,6 +8,7 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 4.2, pp. 95–103"
 date_ingested: 2026-05-08
+folder: "Category Theory/Representables"
 doc_type: textbook
 depends_on:
   - "[[Representable Functors]]"
@@ -84,7 +85,7 @@ The bijection $[\mathcal{A}^{\mathrm{op}}, \mathbf{Set}](H_A, X) \cong X(A)$ is 
 - The Yoneda lemma is the foundation for the **Yoneda embedding** ([[Yoneda Embedding and Consequences]]).
 - **Limits via representables** ([[Synthesis/Limits via Representables]]): the cone functor $\mathrm{Cone}(-, D): \mathcal{A}^{\mathrm{op}} \to \mathbf{Set}$ is a presheaf, and the limit represents it.
 - **Density theorem** ([[Synthesis/Limits in Presheaf Categories]]): every presheaf is a colimit of representables.
-- In **Adjunctions**: the natural bijection $\mathcal{B}(FA, B) \cong \mathcal{A}(A,GB)$ is a Yoneda-type statement about representability.
+- In **[[Adjoint Functors|Adjunctions]]**: the natural bijection $\mathcal{B}(FA, B) \cong \mathcal{A}(A,GB)$ is a Yoneda-type statement about representability; the unit $\eta: 1 \Rightarrow GF$ is exactly the image of $1_{FA}$ under the Yoneda bijection.
 
 ## See Also
 
