@@ -2,7 +2,7 @@
 title: "Quantum mechanics"
 source: "https://en.wikipedia.org/wiki/Quantum_mechanics"
 author:
-  - "[[Contributors to Wikimedia projects]]"
+  - "Wikipedia contributors"
 published: 2001-11-14
 created: 2026-04-10
 description:
@@ -572,4 +572,4 @@ By 1930, quantum mechanics had been further unified and formalized by [David Hil
 
 ## Vault Notes
 
-- [[Quantum Mechanics Overview]] — Quantum mechanics foundations
+- [[Quantum Mechanics - Overview]] — Quantum mechanics foundations

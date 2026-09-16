@@ -13,7 +13,7 @@ folder: "Bayesian Statistics/Regression Models"
 aliases:
   - "Bayesian regression"
   - "Bayesian lasso"
-doc_type: textbook
+doc_type: concept
 source_location: "BDA3 Ch.14:353-380"
 depends_on:
   - "[[Probability and Bayesian Inference]]"
@@ -44,7 +44,7 @@ With a noninformative prior $p(\beta, \sigma^2) \propto \sigma^{-2}$, the poster
 Informative priors on $\beta$ provide **regularization**:
 - **Ridge-like**: $\beta_j \sim N(0, \tau^2)$ — shrinks coefficients toward zero
 - **Lasso-like**: $\beta_j \sim \text{Laplace}(0, \lambda)$ — encourages sparsity
-- **[[Horseshoe and Regularized Horseshoe Priors|Horseshoe prior]]**: heavy-tailed, allows large signals while shrinking noise — state of the art for sparse problems
+- **Horseshoe prior**: heavy-tailed, allows large signals while shrinking noise — state of the art for sparse problems (see gap #20 in [[Dream/_Index|Dream]])
 
 ## Key Topics
 
@@ -67,4 +67,4 @@ Informative priors on $\beta$ provide **regularization**:
 - [[Linear Models in Statistical Rethinking]] — McElreath's code-first treatment of the full linear model framework including priors and prediction
 - [[Moderation Analysis]] — interaction terms as an extension of Bayesian linear regression
 - [[Missing Data Models]] — Bayesian regression handles missing data naturally through the generative model
-- [[Horseshoe and Regularized Horseshoe Priors]] — detailed treatment of global-local shrinkage priors for high-dimensional sparse regression
+- Horseshoe and Regularized Horseshoe Priors — global-local shrinkage priors for sparse regression (Carvalho et al. 2010; Piironen & Vehtari 2017) — not yet ingested, tracked in [[Dream/_Index|Dream]] gap #20

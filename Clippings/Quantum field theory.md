@@ -2,7 +2,7 @@
 title: "Quantum field theory"
 source: "https://en.wikipedia.org/wiki/Quantum_field_theory"
 author:
-  - "[[Contributors to Wikimedia projects]]"
+  - "Wikipedia contributors"
 published: 2001-09-26
 created: 2026-04-10
 description:
@@ -632,4 +632,4 @@ Compared to ordinary QFT, [topological quantum field theory](https://en.wikipedi
 
 ## Vault Notes
 
-- [[Quantum Field Theory Overview]] — QFT fundamentals
+- [[QFT Overview]] — QFT fundamentals

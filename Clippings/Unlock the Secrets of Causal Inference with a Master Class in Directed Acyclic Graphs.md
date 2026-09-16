@@ -2,7 +2,7 @@
 title: "Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs"
 source: "https://towardsdatascience.com/unlock-the-secrets-of-causal-inference-with-a-master-class-in-directed-acyclic-graphs-f2d3b40738e/"
 author:
-  - "[[Graham Harrison]]"
+  - "Graham Harrison"
 published: 2023-04-06
 created: 2026-04-09
 description: "A step-by-step explanation of Directed Acyclic Graphs from the basics through to more advanced aspects"

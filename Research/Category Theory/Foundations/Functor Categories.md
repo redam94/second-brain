@@ -24,7 +24,7 @@ aliases:
   - functor category
   - presheaf category
   - presheaf
-  - "[[A, B]]"
+  - "[A, B]"
 ---
 
 # Functor Categories

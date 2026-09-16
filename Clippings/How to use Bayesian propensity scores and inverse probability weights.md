@@ -2,7 +2,7 @@
 title: "How to use Bayesian propensity scores and inverse probability weights"
 source: "https://www.andrewheiss.com/blog/2021/12/18/bayesian-propensity-scores-weights/"
 author:
-  - "[[Andrew Heiss]]"
+  - "Andrew Heiss"
 published:
 created: 2026-04-10
 description: "For mathematical and philosophical reasons, propensity scores and inverse probability weights don’t work in Bayesian inference. But never fear! There’s still a way to do it!"
@@ -472,4 +472,4 @@ Heiss, Andrew. 2021. “How to Use Bayesian Propensity Scores and Inverse Probab
 
 ## Vault Notes
 
-- [[Bayesian Propensity Scores and IPW]] — Liao-Zigler two-stage Bayesian IPW method
+- [[Bayesian Inverse Probability Weighting]] — Liao-Zigler two-stage Bayesian IPW method
