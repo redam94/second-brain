@@ -10,6 +10,7 @@ tags:
 source: "[[raw/tdb136.pdf]]"
 source_location: "Liesenfeld & Breitung (1998), Section 4, pp. 8-11"
 date_ingested: 2026-04-11
+date_updated: 2026-08-24
 folder: "Econometrics/Extensions/Simulation-Based Estimation"
 doc_type: paper
 depends_on:
@@ -175,6 +176,8 @@ Two strategies for choosing the auxiliary model:
 - [[Method of Simulated Moments]] — direct moment-matching approach
 - [[Efficient Method of Moments]] — data-driven auxiliary model (SNP)
 - [[Practical Issues in Simulation Estimation]] — implementation guidance
+- [[ABM Calibration Overview]] — calibrating ABMs to data; SMM and indirect inference are applicable here (see Dream gap #25)
+- [[HM-ABC Calibration Framework]] — alternative Bayesian calibration approach for ABMs (history matching + ABC instead of binding function)
 
 ## Sources
 

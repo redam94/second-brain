@@ -12,6 +12,8 @@ aliases:
   - Bayesian BART Causal
   - Propensity Score Bayesian
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Advanced Models"
+source: "[[raw/Bayesian Non-parametric Causal Inference]]"
 doc_type: concept
 source: "[[raw/Bayesian Non-parametric Causal Inference]]"
 source_location: "raw/Bayesian Non-parametric Causal Inference"
@@ -81,7 +83,7 @@ Because BART is Bayesian, these estimates come with full posterior distributions
 | OLS regression adjustment | Linear | Frequentist CIs | Full covariate control |
 | Propensity score matching | None for outcome | Limited | Balances covariates |
 | BART (non-parametric Bayes) | Flexible trees | Full posterior | Full covariate control |
-| [[Difference in differences\|DiD]] | Linear trends | Posterior | Parallel trends assumption |
+| [[Differences-in-Differences|DiD]] | Linear trends | Posterior | Parallel trends assumption |
 
 ## Connections
 
@@ -89,6 +91,9 @@ Because BART is Bayesian, these estimates come with full posterior distributions
 - Compare with [[Counterfactual Inference]] (linear model for excess deaths)
 - Non-parametric priors: see [[Nonparametric Models Overview]] (Dirichlet processes, GPs)
 - Related to [[The Experimental Ideal]] and [[The Selection Problem]] in econometrics
+- Compare with [[Bayesian Inverse Probability Weighting]] — IPW-based Bayesian ATE using Liao-Zigler; BART here is fully Bayesian alternative
+- Design-stage balance: [[Propensity Score Matching - Overview]] — frequentist matching before outcome modeling
+- Causal structure: [[General Structure of Bayesian CI]] — formal Bayesian factorization framework this fits within
 
 ## Source
 

@@ -91,7 +91,12 @@ Three Frequentist inferential approaches exist within the potential outcomes fra
 
 - [[Potential Outcomes Framework]] — foundational setup reviewed in §2
 - [[General Structure of Bayesian CI]] — core inference architecture (§3)
+<<<<<<< HEAD
 - [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]] — existing vault note on Bayesian IPW (Heiss blog), extended here
+=======
+- [[Bayesian Inverse Probability Weighting]] — existing vault note on Bayesian IPW (Heiss blog / Liao-Zigler method), extended here
+- [[Bayesian Propensity Score Weighting]] — Bayesian propensity score weighting in the econometrics identification framework
+>>>>>>> main
 - [[Nonparametric Causal Inference]] — existing vault note; BART and GP models discussed in §4
 - [[Copula Estimation]] — copula-based sensitivity analysis in §6
 

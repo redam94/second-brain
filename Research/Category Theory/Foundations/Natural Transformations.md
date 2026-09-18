@@ -8,6 +8,8 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 1.3, pp. 31–42"
 date_ingested: 2026-05-08
+date_updated: 2026-06-29
+folder: "Category Theory/Foundations"
 doc_type: textbook
 depends_on:
   - "[[Categories]]"
@@ -89,3 +91,4 @@ whenever the composites make sense. This makes natural transformations the 2-cel
 - [[Functor Categories]] — Category whose morphisms are natural transformations
 - [[Representables/Yoneda Lemma]] — Fundamental theorem about natural transformations out of representables
 - [[Adjunctions/Adjoint Functors]] — Defined via unit/counit natural transformations
+- [[Limits and Colimits/General Limits]] — Limits (cones) are defined as natural transformations to a constant diagram

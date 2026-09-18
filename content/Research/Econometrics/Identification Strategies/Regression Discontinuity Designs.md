@@ -13,6 +13,7 @@ tags:
   - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-07-13
 folder: "Econometrics/Identification Strategies"
 doc_type: concept
 source_location: "MHE Ch. 6, pp. 189-202"
@@ -93,3 +94,5 @@ Fuzzy RD = **IV with $T_i = 1(x_i \geq x_0)$ as the instrument** for $D_i$.
 - [[Mostly Harmless Econometrics - Overview]]
 - [[Model Checking]] — posterior predictive checks for formalizing RD validity tests
 - [[The Experimental Ideal]] — RD approximates a local experiment at the cutoff; the ideal benchmark it approximates
+- [[Standard Errors and Clustering]] — RD inference should cluster at the assignment unit (school, cohort, precinct) to account for within-cluster correlation in the running variable
+- [[Sensitivity Analysis in Observational Studies]] — RD validity checks (covariate smoothness, density test, backdating) are a form of sensitivity analysis: testing robustness of the "as-if-random" assumption near the cutoff

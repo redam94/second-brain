@@ -88,3 +88,5 @@ The thinning in Algorithm 2 restores the *independence* condition that Theorem 1
 - [[SBC Case Studies]]
 - [[Simulation-Based Calibration - Overview]]
 - [[Efficient MCMC]]
+- [[Model Checking]] — SBC is a principled form of prior predictive / computational model checking
+- [[Approximate Bayesian Computation for ABMs]] — ABC likewise validates models by comparing simulated and observed summary statistics; a simulation-based analogue in the ABM calibration domain

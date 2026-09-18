@@ -151,3 +151,7 @@ QM is applicable to molecules, atoms, and subatomic particles. Its predictions h
 - [[Quantum Field Theory - Overview]] — The relativistic, field-theoretic extension of QM
 - [[Gauge Theory - Overview]] — Symmetry principles that constrain QFT interactions
 - [[QED and Renormalization]] — The first successful quantum field theory
+- [[Physics/Foundations/Wave Function and Hilbert Space|Wave Function & Hilbert Space]] — structured subfolder note covering the same Hilbert space formalism in more depth
+- [[Physics/Foundations/Schrödinger Equation and Time Evolution|Schrödinger Equation & Time Evolution]] — structured subfolder note on time evolution and the unitary operator $U(t)$
+- [[Physics/Foundations/Uncertainty Principle|Uncertainty Principle]] — structured subfolder note on Heisenberg's uncertainty relation
+- [[Physics/Foundations/Quantum Entanglement|Quantum Entanglement]] — structured subfolder note on non-local correlations and Bell's theorem

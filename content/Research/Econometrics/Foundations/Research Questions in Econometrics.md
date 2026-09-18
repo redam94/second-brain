@@ -11,6 +11,7 @@ tags:
   - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-08-24
 folder: "Econometrics/Foundations"
 doc_type: concept
 source_location: "MHE Ch. 1, pp. 3-7"
@@ -60,3 +61,5 @@ What population, sample, and assumptions underlie your standard errors? Covered 
 - [[Bayesian Workflow - Overview]] — iterative Bayesian research design paralleling the FAQ framework
 - [[Omitted Variables Bias]] — the specific failure mode that FAQ #3 (identification strategy) aims to rule out
 - [[Activity Bias in Advertising]] — a worked example showing all four FAQs applied to an advertising measurement problem
+- [[Propensity Score Matching - Overview]] — one answer to FAQ #3 for observational data (selection on observables)
+- [[Difference-in-Differences with Multiple Time Periods - Overview]] — advanced panel identification strategy (FAQ #3) when staggered treatment timing is present

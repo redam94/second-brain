@@ -82,3 +82,6 @@ These conditions extend the canonical parallel-trends assumption to multiple gro
 - [[The Experimental Ideal]] — randomization as the strongest (and stronger) benchmark
 - [[Synthetic Control]] — alternative when parallel trends is implausible
 - de Chaisemartin & D'Haultfœuille (2020); Sun & Abraham (2020) — stronger parallel-trends variants
+- [[Bayesian Difference in Differences]] — Bayesian approach to DiD; same identifying assumptions apply
+- [[Conditional Independence Assumption]] — the overlap condition (Assumption 6) is the DiD analog of the CIA common-support requirement
+- [[Regression Discontinuity Designs]] — another quasi-experimental alternative that does not rely on parallel trends

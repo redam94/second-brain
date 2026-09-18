@@ -9,6 +9,7 @@ tags:
   - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-08-03
 folder: "Bayesian Statistics/Model Assessment"
 aliases:
   - "Ignorability"
@@ -60,3 +61,5 @@ The ignorability concept directly parallels the **unconfoundedness** assumption 
 - [[Differences-in-Differences]] — panel fixed effects as an alternative when ignorability fails for observational studies
 - [[Counterfactual Inference]] — counterfactual prediction relies on the same ignorability assumption (pre-COVID model applied forward)
 - [[Spurious Association and Confounds]] — confounds are precisely the case where the data collection mechanism is not ignorable
+- [[Frequentist Causal Estimation]] — the IPW/DR estimator toolkit for recovering causal effects when ignorability holds conditionally on observed covariates
+- [[Propensity Score Matching - Overview]] — matching as an alternative design strategy when ignorability must be imposed rather than guaranteed by randomization

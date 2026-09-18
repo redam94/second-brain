@@ -3,7 +3,11 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
+<<<<<<< HEAD
 date_updated: 2026-06-28
+=======
+date_updated: 2026-09-14
+>>>>>>> main
 ---
 
 # Dream: Research Gaps
@@ -19,12 +23,21 @@ date_updated: 2026-06-28
 **Status:** 🍂 covered
 
 **Why it was a gap:**
+<<<<<<< HEAD
 [[Activity Bias in Advertising]] explicitly states that "propensity score matching and regression with controls cannot fix" activity bias, but there was no note explaining what propensity score methods are, when they succeed, and why they fail here. The [[Conditional Independence Assumption]] note covers the theoretical requirement for selection-on-observables identification, and [[The Selection Problem]] motivates the challenge. The Bayesian side is covered by [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]]; the frequentist IPW and DR estimators are in [[Frequentist Causal Estimation]] (added 2026-04-10). The remaining hole — the classical Rosenbaum & Rubin matching framework and its diagnostics (covariate balance, overlap/common support, caliper matching) — is now filled.
+=======
+[[Activity Bias in Advertising]] explicitly states that "propensity score matching and regression with controls cannot fix" activity bias, but there is no note explaining what propensity score methods are, when they succeed, and why they fail here. The [[Conditional Independence Assumption]] note covers the theoretical requirement for selection-on-observables identification, and [[The Selection Problem]] motivates the challenge — but the frequentist methodological toolkit (propensity score matching, IPW, doubly robust estimators, AIPW) is missing. The Bayesian side is covered by [[Bayesian Inverse Probability Weighting]]. The frequentist IPW and DR estimators are now in [[Frequentist Causal Estimation]] (added 2026-04-10) — but the classical Rosenbaum & Rubin matching framework and diagnostics (covariate balance, overlap plots, caliper matching) remain absent.
+
+**Covered by:** [[Propensity Score Matching - Overview]], [[Matching Algorithms and Caliper]], [[Covariate Balance and Matching Diagnostics]] (all in `Econometrics/Identification Strategies/`, created 2026-06-28)
+>>>>>>> main
 
 **Adjacent notes:** [[Bayesian Inverse Probability Weighting|Bayesian Propensity Scores and IPW]], [[Frequentist Causal Estimation]], [[Conditional Independence Assumption]], [[The Selection Problem]], [[Omitted Variables Bias]], [[Activity Bias in Advertising]]
 
+<<<<<<< HEAD
 **Covered by:** [[Propensity Score Matching - Overview]], [[Propensity Score and the Balancing Property]], [[Matching Methods and Distance Measures]], [[Covariate Balance Diagnostics]], [[Common Support and Overlap]] (all in `Econometrics/Identification Strategies/Propensity Score Matching/`, ingested 2026-06-28 from Stuart 2010)
 
+=======
+>>>>>>> main
 ---
 
 ### 2. Synthetic Control Methods
@@ -412,6 +425,515 @@ The vault has two complementary sections that are not yet connected: `Econometri
 
 ---
 
+### 28. Mediation Analysis and Natural Direct/Indirect Effects
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Bayesian Moderation Analysis]] explicitly contrasts moderation with mediation: "Mediation: $x$ affects $y$ (partly) *through* $m$. Requires causal DAG reasoning. See the PyMC mediation analysis example for contrast." Yet no note in the vault covers mediation. This is a significant omission given the vault's depth in causal inference: [[Spurious Association and Confounds]] covers fork/pipe/collider patterns (mediation is the *pipe* $x \to m \to y$), [[Potential Outcomes Framework]] defines the potential outcomes that mediation analysis targets, and [[Directed Acyclic Graphs]] formalises the front-door criterion. The classical Baron-Kenny "causal steps" approach and the difference-in-coefficients/product-of-coefficients estimators are absent, as is the modern potential-outcomes approach: Pearl's natural direct effect (NDE) and natural indirect effect (NIE), the identification requirement of no unmeasured mediator-outcome confounding, and the sensitivity analysis methods (VanderWeele 2015). The Bayesian approach (posterior over mediation pathways) connects this to [[Hierarchical Linear Models]] and [[Generalized Linear Models]].
+
+**Adjacent notes:** [[Bayesian Moderation Analysis]], [[Spurious Association and Confounds]], [[Potential Outcomes Framework]], [[Directed Acyclic Graphs]], [[Nonparametric Causal Inference]], [[Causal Estimands]], [[Generalized Linear Models]]
+
+**Suggested sources / search terms:**
+- Baron & Kenny (1986) — "The moderator-mediator variable distinction in social psychological research" (*JPSP*)
+- VanderWeele (2015) — *Explanation in Causal Inference: Methods for Mediation and Interaction*, Oxford
+- Pearl (2001) — "Direct and indirect effects" (*UAI proceedings*)
+- Imai, Keele & Tingley (2010) — "A general approach to causal mediation analysis" (*Psychological Methods*)
+- Search: "mediation analysis causal inference", "natural direct indirect effect", "Baron Kenny mediation", "PyMC mediation", "sensitivity analysis mediation"
+
+---
+
+### 29. GARCH and Conditional Heteroscedasticity Models
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Factor Copula Application - S&P 100 and Systemic Risk]] fits **AR(1)-GJR-GARCH** marginal models with a leverage parameter $\gamma_i > 0$ for 97/100 S&P 100 constituents before applying the factor copula. This is the standard pre-filtering step in financial econometrics, yet GARCH models are entirely absent from the vault. [[Single Marketing Time Series]] covers ARIMA for marketing data; [[Carryover Effects and Distributed Lags]] covers ADL/Koyck models — neither addresses conditional heteroscedasticity. The ARCH/GARCH family (Engle 1982; Bollerslev 1986) models time-varying variance: $\sigma_t^2 = \omega + \alpha\varepsilon_{t-1}^2 + \beta\sigma_{t-1}^2$. Extensions include EGARCH (asymmetric), GJR-GARCH (leverage), GARCH-M (risk premium in mean), and multivariate variants (DCC, BEKK). The Bayesian approach connects to [[Efficient MCMC]] and [[Introduction to Bayesian Computation]]. Without this note, readers of the Factor Copula and Dependence Modeling notes cannot understand the marginal filtering step that converts raw returns into standardised residuals suitable for copula estimation.
+
+**Adjacent notes:** [[Factor Copula Application - S&P 100 and Systemic Risk]], [[SMM Estimation of Factor Copulas]], [[Dependence Measures for Copulas]], [[Single Marketing Time Series]], [[Carryover Effects and Distributed Lags]], [[Bayesian Structural Time-Series Model]], [[Introduction to Bayesian Computation]]
+
+**Suggested sources / search terms:**
+- Engle (1982) — "Autoregressive conditional heteroscedasticity with estimates of the variance of UK inflation" (*Econometrica*) — ARCH
+- Bollerslev (1986) — "Generalized autoregressive conditional heteroscedasticity" (*Journal of Econometrics*) — GARCH
+- Glosten, Jagannathan & Runkle (1993) — "On the relation between the expected value and the volatility of the nominal excess return on stocks" (*JF*) — GJR-GARCH
+- Engle (2002) — "Dynamic conditional correlation" (*JBES*) — DCC multivariate GARCH
+- Search: "GARCH model volatility clustering", "GJR-GARCH leverage effect", "ARCH GARCH PyMC Stan", "DCC multivariate GARCH", "GARCH copula marginal filtering"
+
+---
+
+### 30. Partial Identification and Manski Bounds
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Sensitivity Analysis in Observational Studies]] quantifies robustness to unmeasured confounding — it asks "how much confounding would be needed to explain away the result?" A complementary and arguably more fundamental approach is *partial identification*: characterizing the sharp range of treatment effects that is **logically compatible with the observed data** without imposing any untestable assumptions. Manski (1990) derives the "natural bounds" for average treatment effects under binary treatment and bounded outcomes — no assumptions beyond data support. Balke & Pearl (1994) derive tight bounds under binary IV. Lee (2009) provides sample selection (trimming) bounds. Rambachan & Roth (2023) derive sensitivity analysis bounds for parallel trends violations in DiD. None of this is in the vault. The gap matters because sensitivity analysis and partial identification are complementary: sensitivity analysis says "here's how robust my estimate is"; partial identification says "here's the worst case without any assumptions." Both should inform applied causal inference alongside the point estimates in [[Frequentist Causal Estimation]], [[Sensitivity Analysis in Observational Studies]], and [[Differences-in-Differences]].
+
+**Adjacent notes:** [[Sensitivity Analysis in Observational Studies]], [[Potential Outcomes Framework]], [[Instrumental Variables]], [[The Selection Problem]], [[Differences-in-Differences]], [[Frequentist Causal Estimation]]
+
+**Suggested sources / search terms:**
+- Manski (1990) — "Nonparametric bounds on treatment effects" (*AER Papers and Proceedings*)
+- Balke & Pearl (1994) — "Nonparametric bounds on causal effects from partial compliance"
+- Lee (2009) — "Training, wages, and sample selection: Estimating sharp bounds on treatment effects" (*Review of Economic Studies*)
+- Rambachan & Roth (2023) — "A more credible approach to parallel trends" (*Review of Economic Studies*)
+- Search: "partial identification treatment effects", "Manski bounds ATE", "Balke Pearl bounds IV", "Lee bounds sample selection", "sensitivity analysis parallel trends violations"
+
+---
+
+### 31. Extreme Value Theory (EVT) and Tail Risk
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Factor Copulas - Overview]] describes "analytical tail-dependence results via extreme value theory" as a key feature of the fat-tailed factor copula, and [[Tail Dependence in Factor Copulas]] derives these results in detail. [[Factor Copula Application - S&P 100 and Systemic Risk]] fits AR(1)-GJR-GARCH marginals before applying the factor copula — and EVT provides the distributional theory for the tail behavior of those standardised residuals. Yet EVT itself is never introduced in the vault. The foundational content missing: the three types of extreme value distributions (Gumbel, Fréchet, Weibull), the Generalized Extreme Value (GEV) family and Fisher-Tippett-Gnedenko theorem, the Pickands-Balkema-de Haan theorem (exceedances over a threshold converge to the Generalized Pareto Distribution), Peaks-Over-Threshold (POT) methods, and max-stable distributions (the copula-level analogue of the GEV for multivariate extremes). EVT also connects to [[Operational Risk Modeling with ABM]] (extreme loss modeling) and to the copula dependence measures in [[Dependence Measures for Copulas]] (upper/lower tail dependence coefficients have EVT interpretations). Without this note, readers of the Dependence Modeling cluster cannot understand why fat-tailed factor distributions produce non-zero tail dependence or how to model extreme risks in practice.
+
+**Adjacent notes:** [[Factor Copulas - Overview]], [[Tail Dependence in Factor Copulas]], [[Dependence Measures for Copulas]], [[Factor Copula Application - S&P 100 and Systemic Risk]], [[Operational Risk Modeling with ABM]], [[SMM Estimation of Factor Copulas]]
+
+**Suggested sources / search terms:**
+- Coles (2001) — *An Introduction to Statistical Modeling of Extreme Values*, Springer — standard reference
+- McNeil, Frey & Embrechts (2005) — *Quantitative Risk Management*, Ch. 7: Extreme Value Theory — finance context
+- Pickands (1975) — "Statistical inference using extreme order statistics" (*Annals of Statistics*)
+- Beirlant et al. (2004) — *Statistics of Extremes: Theory and Applications*, Wiley
+- Search: "extreme value theory GPD", "Pickands-Balkema-de Haan theorem", "peaks over threshold method", "GEV distribution tail risk", "EVT copula tail dependence"
+
+---
+
+### 32. RD Bandwidth Selection and Local Polynomial Estimation
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Regression Discontinuity Designs]] covers parametric polynomial regression and a nonparametric "small neighborhood δ" approach — but the formal bias-variance tradeoff for bandwidth selection is entirely absent. In practice, the choice of bandwidth $h$ is the most consequential decision in any RD analysis: too wide and the polynomial approximation is biased; too narrow and the estimator has high variance. Imbens & Kalyanaraman (2012) derive the MSE-optimal bandwidth selector (cross-validation over a kernel regression), and Calonico, Cattaneo & Titiunus (2014) provide bias-corrected robust confidence intervals (implemented in `rdrobust` for R and Stata). Without this, readers cannot apply the RD designs described in the vault to real data in a defensible way.
+
+**Adjacent notes:** [[Regression Discontinuity Designs]], [[Instrumental Variables]], [[Local Average Treatment Effects]], [[Model Checking]], [[Standard Errors and Clustering]]
+
+**Suggested sources / search terms:**
+- Imbens & Kalyanaraman (2012) — "Optimal bandwidth choice for the regression discontinuity estimator" (*Review of Economic Studies*)
+- Calonico, Cattaneo & Titiunus (2014) — "Robust nonparametric confidence intervals for regression-discontinuity designs" (*Econometrica*)
+- Cattaneo, Idrobo & Titiunus (2020) — *A Practical Introduction to Regression Discontinuity Designs*, Cambridge
+- Search: "RD optimal bandwidth", "rdrobust Stata R", "local linear regression RD", "bias-corrected robust CI RD"
+
+---
+
+### 33. Variational Inference (ADVI, ELBO, Mean Field)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[SBC Case Studies]] explicitly tests ADVI (Automatic Differentiation Variational Inference in Stan) on a simple linear regression and finds it "drastically underestimates the posterior for the slope β" — a sharp failure mode that makes ADVI's SBC rank histogram strongly non-uniform. The vault documents this failure but cannot explain it. The ELBO (Evidence Lower BOund) objective, mean-field factorization assumption (which forces posterior independence across parameters), the KL divergence $D_\text{KL}(q(\theta) \| p(\theta|y))$, black-box VI (BBVI), and ADVI's reparameterization trick are all absent. [[Approximation Methods]] (in `Bayesian Statistics/Computation/`) likely covers this partially, but the SBC case study makes the failure mode salient and motivates a dedicated treatment. This gap also connects to [[Hilbert Space Gaussian Processes]] (HSGPs use Laplace approximations / EP as alternatives to full VI), [[Efficient MCMC]] (VI as a cheaper but biased alternative), and [[Monsters and Mixtures]] (mean-field VI fails on mixture models due to the symmetry of mixture components).
+
+**Adjacent notes:** [[SBC Case Studies]], [[Approximation Methods]], [[Efficient MCMC]], [[Introduction to Bayesian Computation]], [[Fitting and Validating Computation]], [[Hilbert Space Gaussian Processes]]
+
+**Suggested sources / search terms:**
+- Blei, Kucukelbir & McAuliffe (2017) — "Variational inference: A review for statisticians" (*JASA*)
+- Kucukelbir et al. (2017) — "Automatic differentiation variational inference" (*JMLR*)
+- Jordan et al. (1999) — "An introduction to variational methods for graphical models" (*Machine Learning*)
+- Stan Development Team — *Stan User's Guide*, §Variational Inference with ADVI
+- Search: "variational inference ELBO", "mean-field variational Bayes", "ADVI Stan failure", "black-box variational inference", "BBVI PyMC"
+
+---
+
+### 34. Curry-Howard Correspondence and Type Theory
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Cartesian Closed Categories]] explicitly describes CCCs as "the categorical models of the simply-typed lambda calculus" and includes a callout on the **propositions as types / proofs as programs** correspondence (Curry-Howard): objects = types, morphisms = proofs, products = conjunction, exponentials = implication, terminal object = truth. This connection is stated but never developed. The vault's Category Theory section covers the full adjunction-limit-representable chain through synthesis (Chapter 6 of Leinster), but the bridge to type theory and programming language semantics is entirely absent. Dependent type theory (Martin-Löf, Coq/Lean, the HoTT book), the connection to functional programming (Haskell's type class hierarchy mirrors the adjunction chain: Functor → Applicative → Monad), and the denotational semantics of programming languages (Scott domains, domain theory) are all natural next chapters. This gap is especially salient given gap #27 (Monads and Monadicity), where the Category Theory and CS/PL connections converge.
+
+**Adjacent notes:** [[Cartesian Closed Categories]], [[Adjunctions/Adjoint Functors]], [[Adjunctions/Units and Counits]], [[Category Theory/Synthesis/Adjoints and Limits]], [[Basic Category Theory - Overview]]
+
+**Suggested sources / search terms:**
+- Wadler (2015) — "Propositions as types" (*Communications of the ACM*) — accessible survey
+- Pierce (2002) — *Types and Programming Languages*, MIT Press — standard PL textbook
+- Univalent Foundations Program (2013) — *Homotopy Type Theory* (HoTT Book) — CCC as model of dependent type theory
+- Lambek & Scott (1986) — *Introduction to Higher-Order Categorical Logic* — original categorical logic reference
+- Search: "Curry-Howard correspondence", "propositions as types proofs as programs", "CCC simply typed lambda calculus", "categorical semantics type theory", "Haskell category theory"
+
+---
+
+### 35. Regularization-Induced Confounding in High-Dimensional Bayesian Causal Inference
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Li et al 2022 - Overview]] explicitly identifies *regularization-induced confounding* as a "critical high-dimensional challenge unique to Bayesian causal inference": in high-dimensional outcome models, shrinkage priors (lasso, horseshoe) that regularize covariate coefficients toward zero can induce spurious apparent associations between treatment and outcome. When confounders are shrunk toward zero by a regularizing prior, the treatment coefficient must "absorb" the variation they would otherwise explain — producing a biased treatment effect estimate even when the causal model is correct and all confounders are observed. No note explains: (1) why this happens (the prior independence of treatment and outcome model parameters — Assumption 3.2 in Li et al. — acts as strongly informative in high dimensions); (2) the proposed remedies (BART avoids regularization-induced confounding by not imposing a parametric structure; separate specification of treatment and outcome models; design-stage overlap enforcement); or (3) when Bayesian regularization is safe vs. dangerous in causal settings (low-dimensional settings, or when the regularization strength is calibrated to the true sparsity level). This gap sits between [[Li et al 2022 - Overview]] and gap #20 (Horseshoe Priors) but is distinct — it concerns the *causal* implications of regularization, not the prior's statistical properties.
+
+**Adjacent notes:** [[Li et al 2022 - Overview]], [[Bayesian Outcome Models]], [[General Structure of Bayesian CI]], [[Nonparametric Causal Inference]], [[Bayesian Linear Regression]], gap #20 (Horseshoe and Regularized Horseshoe Priors)
+
+**Suggested sources / search terms:**
+- Li, Ding & Mealli (2023) — "Bayesian causal inference: a critical review" (*Phil. Trans. R. Soc. A*) — §4 on high-dimensional outcome models
+- Hahn, Murray & Carvalho (2020) — "Bayesian regression tree models for causal inference: Regularization, confounding, and heterogeneous treatment effects" (*Bayesian Analysis*) — BART-BCF as the solution
+- Zigler & Cefalu (2017) — "Invited commentary: Targeted learning in real-world settings" (*American Journal of Epidemiology*)
+- Search: "regularization-induced confounding Bayesian", "BART BCF causal inference", "Bayesian causal high-dimensional prior", "Hahn Murray Carvalho BCF"
+
+---
+
+### 36. Causal Survival Analysis and Estimand Controversy around the Hazard Ratio
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Survival Analysis]] introduces the Cox proportional hazards model and hazard ratio (HR) — but does not address the growing literature questioning the HR as a *causal* estimand. Hernán (2010, "The hazard of hazard ratios") shows the HR is *non-collapsible* and subject to built-in *survivor bias*: even under perfect randomization, conditioning on time-in-study (surviving long enough to be at risk) induces selection that changes the HR over time. The restriction mean survival time (RMST), risk difference at a fixed time, and counterfactual survival curves are proposed as causally interpretable alternatives. No note covers: the non-collapsibility issue; the structural nested failure time model (SNFTM) for estimating survivor-average causal effects; marginal structural Cox models (IPW-weighted Cox to target a marginal HR); censoring-weighted Kaplan-Meier curves; or the estimand framework applied to survival outcomes. This gap connects [[Survival Analysis]] to [[Estimands in Longitudinal Research]], [[Potential Outcomes Framework]], and [[Causal Estimands]] — and is especially salient for clinical trial analysis and time-to-event data in advertising/subscription contexts.
+
+**Adjacent notes:** [[Survival Analysis]], [[Estimands in Longitudinal Research]], [[Potential Outcomes Framework]], [[Causal Estimands]], [[Time-Varying Treatments and G-computation]], gap #23 (Marginal Structural Models)
+
+**Suggested sources / search terms:**
+- Hernán (2010) — "The hazard of hazard ratios" (*Epidemiology*)
+- Hernán & Robins (2020) — *Causal Inference: What If*, Ch. 17: Survival analysis causal inference
+- Uno et al. (2014) — "Moving beyond the hazard ratio in quantifying the between-group difference in survival analysis" (*JCO*)
+- ICH E9(R1) Addendum (2019) — Estimand Framework for clinical trials (includes survival setting)
+- Search: "hazard ratio non-collapsible", "restricted mean survival time RMST causal", "marginal structural Cox model", "structural nested failure time model", "ICH E9 R1 estimand survival"
+
+---
+
+---
+
+### 37. Bayesian Model Averaging (BMA) and Model Stacking
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Model Selection and Exploratory Analysis]] explicitly names Bayesian Model Averaging as an alternative to AIC/BIC model selection: "assign posterior probability to each model and average predictions." [[Overfitting and Information Criteria]] covers WAIC and information criteria that can be re-interpreted as model weights, and [[Model Comparison]] (BDA3 Ch. 7) likely covers Bayes factors as the weights. But no note explains the BMA machinery end-to-end: computing marginal likelihoods (or approximating them via BIC/harmonic mean), forming model weights $P(M_k \mid y) \propto P(y \mid M_k) P(M_k)$, averaging predictions $\hat{y} = \sum_k P(M_k \mid y) E[y^* \mid y, M_k]$, and the failure modes (BMA concentrates on a single model as $n \to \infty$; it is not the same as predictive stacking). Bayesian stacking (Yao et al. 2018) improves on BMA by optimizing linear prediction weights to maximize held-out log-score — treating model selection as a regularized ensemble problem. The vault's model comparison toolkit (AIC, BIC, WAIC, LOO-CV) is strong, but the synthesis step — combining rather than selecting models — is absent.
+
+**Adjacent notes:** [[Model Selection and Exploratory Analysis]], [[Overfitting and Information Criteria]], [[Model Comparison]], [[Bayesian Workflow - Overview]], [[Hierarchical Models]], [[MMM Model Selection and Application]]
+
+**Suggested sources / search terms:**
+- Hoeting, Madigan, Raftery & Volinsky (1999) — "Bayesian model averaging: A tutorial" (*Statistical Science*)
+- Yao, Vehtari, Simpson & Gelman (2018) — "Using stacking to average Bayesian predictive distributions" (*Bayesian Analysis*)
+- Raftery, Madigan & Hoeting (1997) — "Bayesian model averaging for linear regression models" (*JASA*)
+- Search: "Bayesian model averaging BMA", "model stacking Bayesian", "Yao stacking predictive", "LOO stacking vs BMA", "model weights WAIC"
+
+---
+
+### 39. Design of Computer Experiments (Latin Hypercube Sampling, Space-Filling Designs)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[History Matching for ABMs]] explicitly uses Latin Hypercube Sampling (LHS) for space-filling parameter exploration and contained a now-fixed broken wikilink to a nonexistent `[[Experimental Design for ABMs]]` note — signaling that this topic was intended to be covered but never was. [[Population Initialization and Parameter Sensitivity]] covers local (one-at-a-time) parameter sensitivity but not the global space-filling designs needed for efficient high-dimensional ABM calibration. [[Uncertainty Quantification for ABM Calibration]] and [[Approximate Bayesian Computation for ABMs]] both depend on dense, space-covering parameter samples without explaining how to generate them. The theory of computer experiments (Sacks et al. 1989; the DACE metamodeling framework) and the main space-filling design families — maximin LHS, orthogonal LHS, Sobol quasi-random sequences, Halton sequences, central composite designs — are entirely absent. This gap is the methodological foundation missing beneath the entire ABM calibration cluster and directly connects to gap #10 (Global Sensitivity Analysis), which uses Sobol sequences for the Saltelli-Tarantola method.
+
+**Adjacent notes:** [[History Matching for ABMs]], [[Population Initialization and Parameter Sensitivity]], [[Uncertainty Quantification for ABM Calibration]], [[Approximate Bayesian Computation for ABMs]], [[HM-ABC Calibration Framework]], gap #10 (Global Sensitivity Analysis)
+
+**Suggested sources / search terms:**
+- McKay, Beckman & Conover (1979) — "A comparison of three methods for selecting values of input variables in the analysis of output from a computer code" (*Technometrics*) — original LHS paper
+- Sacks, Welch, Mitchell & Wynn (1989) — "Design and analysis of computer experiments" (*Statistical Science*) — DACE metamodel framework
+- Saltelli et al. (2008) — *Global Sensitivity Analysis: The Primer*, Ch. 1–2: quasi-random sampling and Sobol sequences
+- Santner, Williams & Notz (2003) — *The Design and Analysis of Computer Experiments*, Springer
+- Search: "Latin hypercube sampling design", "space-filling experimental design", "Sobol sequences quasi-random", "computer experiments DACE metamodel", "pyDOE Python LHS"
+
+---
+
+### 40. Double/Debiased Machine Learning (DML) and Neyman Orthogonality
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Synthetic Control Extensions]] covers matrix completion and elastic-net SC — methods that apply ML regularization to panel counterfactual estimation. [[Metalearners for CATE]] (X-Learner, T-Learner, S-Learner) use cross-fitting to avoid regularization bias in treatment effect estimation. [[Frequentist Causal Estimation]] establishes the doubly-robust (DR) framework that DML extends. Yet no note covers the Chernozhukov et al. (2018) Double/Debiased Machine Learning framework, which unifies all three: (1) **Neyman orthogonality** — using a loss function whose gradient is insensitive (locally orthogonal) to nuisance function errors, so that $\sqrt{n}$-consistent estimation of structural parameters is possible even with slow ($n^{1/4}$-consistent) nuisance estimators; (2) **cross-fitting** (sample splitting) — avoids the "own-observation" bias of using the same data to estimate nuisance functions and target parameters; (3) **DR scores** as the canonical Neyman-orthogonal score for the ATE/ATT/CATE. DML directly addresses the regularization-induced confounding problem (gap #35) in a frequentist framework — BART-BCF is the Bayesian solution, DML is the frequentist solution. The `EconML` (Microsoft) and `DoubleML` (Python/R) libraries implement DML and are increasingly standard in applied causal ML work.
+
+**Adjacent notes:** [[Frequentist Causal Estimation]], [[Metalearners for CATE]], [[Synthetic Control Extensions]], [[Nonparametric Causal Inference]], [[Propensity Score Matching - Overview]], gap #35 (Regularization-Induced Confounding)
+
+**Suggested sources / search terms:**
+- Chernozhukov, Chetverikov, Demirer, Duflo, Hansen, Newey & Robins (2018) — "Double/debiased machine learning for treatment and structural parameters" (*Econometrics Journal*)
+- Chernozhukov, Newey & Robins (2018) — "Double/debiased machine learning using regularized Riesz representers" (*arXiv*)
+- Bach, Chernozhukov, Kurz & Spindler (2022) — "DoubleML — An object-oriented implementation of double machine learning in Python" (*JMLR*)
+- Syrgkanis et al. (2019) — "Machine learning estimation of heterogeneous treatment effects with instruments" (EconML)
+- Search: "double machine learning DML Chernozhukov", "Neyman orthogonality causal inference", "cross-fitting debiased ML", "EconML DoubleML Python", "partially linear model DML"
+
+---
+
+### 41. Granovetter Threshold Models and Social Tipping Points
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Behavioral Primitives and Thresholds]] formalizes CUBES's three-threshold BP mechanism (lower inhibiting, upper inhibiting, triggering) as the core decision unit for each consumer agent. [[Network Topology Effects on Diffusion]] shows that clustered networks produce two-wave adoption patterns invisible to mean-field models. These two notes describe — without naming it — the precise mechanism of Granovetter's (1978) threshold model of collective behavior: individuals adopt when the fraction of others who have adopted exceeds their personal threshold, and the distribution of thresholds across the population determines whether small initial shocks cascade (tipping point) or stall. No note explains: Granovetter's original binary-threshold model and its fixedpoint analysis (the S-curve emerges from heterogeneous threshold distributions); Schelling's (1978) segregation model as a parallel instantiation; the connection between threshold heterogeneity, network topology, and the multi-wave patterns in [[Network Topology Effects on Diffusion]]; or the theoretical bridge to the Bass model (gap #22, innovation/imitation = external/internal influence = threshold below/above the adopter fraction). This gap is the missing theoretical glue between the CUBES behavioral layer and the network diffusion layer of the ABM section.
+
+**Adjacent notes:** [[Behavioral Primitives and Thresholds]], [[Network Topology Effects on Diffusion]], [[Product Adoption and Diffusion Models]], [[Opinion Leaders and Social Influence]], [[Word of Mouth Mechanisms]], [[Heterogeneity in Agent Models]], [[Social Network Formation in Consumer Markets]], gap #22 (Bass Diffusion Model)
+
+**Suggested sources / search terms:**
+- Granovetter (1978) — "Threshold models of collective behavior" (*American Journal of Sociology*)
+- Watts (2002) — "A simple model of global cascades on random networks" (*PNAS*)
+- Dodds & Watts (2004) — "Universal behavior in a generalized model of contagion" (*Physical Review Letters*) — generalizes the threshold model to arbitrary contagion
+- Schelling (1978) — *Micromotives and Macrobehavior*, Ch. 3–4: tipping and segregation
+- Search: "Granovetter threshold model collective action", "social tipping point network", "cascade threshold model", "Watts Strogatz contagion threshold", "heterogeneous threshold adoption model"
+
+---
+
+### 38. Sparse Gaussian Process Approximations (Inducing Points, Nyström)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Nonparametric Models Overview]] explicitly flags the O($n^3$) cost of Gaussian processes as the key computational barrier: "challenging for large datasets." [[Hilbert Space Gaussian Processes]] covers one approximation — HSGPs, which exploit the spectral structure of stationary kernels on regular 1D/2D grids. But the general family of *sparse* GP approximations for irregular, high-dimensional inputs is entirely absent. The two main families are: (1) **inducing point methods** — Nyström approximation (Williams & Seeger 2001; approximates the kernel matrix by $m \ll n$ inducing inputs), Fully Independent Training Conditional (FITC; Snelson & Ghahramani 2006), and Stochastic Variational GP (SVGP; Hensman et al. 2013), which optimizes inducing points via ELBO and enables minibatch training; (2) **kernel approximations** — random Fourier features (Rahimi & Recht 2007) and structured kernel interpolation (SKI; Wilson & Nickisch 2015). Without these, readers of the [[Spatial Models - BYM]] and [[Hilbert Space Gaussian Processes]] notes cannot scale GP models to non-temporal, high-dimensional problems (e.g., geo-spatial marketing data, image features, embedding spaces). This gap is especially salient given the vault's interest in the [[Approximation Methods]] / ADVI connection (gap #33) and the [[Factor Analysis and PPCA]] amortized inference workflow.
+
+**Adjacent notes:** [[Nonparametric Models Overview]], [[Hilbert Space Gaussian Processes]], [[Spatial Models - BYM]], [[Approximation Methods]], [[Factor Analysis and PPCA]], [[Efficient MCMC]]
+
+**Suggested sources / search terms:**
+- Titsias (2009) — "Variational learning of inducing variables in sparse Gaussian processes" (*AISTATS*)
+- Hensman, Fusi & Lawrence (2013) — "Gaussian processes for big data" (*UAI*) — stochastic variational GP
+- Williams & Seeger (2001) — "Using the Nyström method to speed up kernel machines" (*NIPS*)
+- Rahimi & Recht (2007) — "Random features for large-scale kernel machines" (*NIPS*)
+- Search: "sparse Gaussian process inducing points", "SVGP GPflow PyTorch", "Nyström approximation GP", "random Fourier features kernel", "HSGP vs inducing points"
+
+---
+
+### 42. Weak Instruments and First-Stage Diagnostics
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Instrumental Variables and Principal Stratification]] derives the CACE/LATE estimand and shows it equals the probability limit of the 2SLS estimator — but never addresses the critical practical question: *when is the instrument strong enough?* A weak instrument (one with only modest predictive power for treatment take-up) causes 2SLS estimates to be severely biased toward OLS — the "worst-case" estimator under confounding. The Staiger & Stock (1997) rule of thumb (first-stage F > 10) and the more formal Stock & Yogo (2005) critical values for weak-instrument tests are absent. Recent developments include: Olea & Pflueger (2013) robust F-statistic for non-i.i.d. errors; Anderson-Rubin (AR) confidence sets and conditional likelihood ratio (CLR) tests, which are valid regardless of instrument strength; and many-weak-instruments asymptotics (Chao & Swanson 2005, Newey & Windmeijer 2009). The vault covers IV theory thoroughly ([[Frequentist Causal Estimation]], [[Instrumental Variables and Principal Stratification]]) but gives practitioners no tools to assess instrument validity before trusting the estimate.
+
+**Adjacent notes:** [[Instrumental Variables and Principal Stratification]], [[Frequentist Causal Estimation]], [[Causal Estimands]], [[Local Average Treatment Effects]], [[Standard Errors and Clustering]]
+
+**Suggested sources / search terms:**
+- Staiger & Stock (1997) — "Instrumental variables regression with weak instruments" (*Econometrica*)
+- Stock & Yogo (2005) — "Testing for weak instruments in linear IV regression" (Andrews & Stock, eds.)
+- Olea & Pflueger (2013) — "A robust F-statistic for weak instruments" (*Journal of Econometrics*)
+- Andrews & Stock & Sun (2019) — "Weak instruments in instrumental variables regression: Theory and practice" (*Annual Review of Economics*)
+- Search: "weak instruments F-statistic 2SLS", "Stock Yogo critical values", "Anderson-Rubin confidence set IV", "many weak instruments asymptotics", "ivregress weakiv Stata"
+
+---
+
+### 43. Spectral Analysis and Frequency-Domain Methods for Time Series
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Hilbert Space Gaussian Processes]] explicitly states that "The orthonormal basis is analogous to the **spectral representation** of stationary processes" — linking the HSGP approximation to the spectral density of the kernel. [[Local Linear Trend and Seasonality]] and [[Bayesian Structural Time-Series Model]] decompose time series into trend + seasonal components, which correspond to specific frequency bands. [[Single Marketing Time Series]] covers ARIMA in the time domain. Yet no note introduces the frequency domain itself: the spectral density $f(\omega) = \sum_{h=-\infty}^{\infty} \gamma(h) e^{-i\omega h}$ as the Fourier transform of the autocovariance function, the Wiener-Khintchine theorem (the two representations are equivalent for stationary processes), the periodogram as the sample analogue of the spectral density, Welch's method and smoothed spectral estimates, and the Whittle likelihood (a frequency-domain approximate likelihood that enables computationally efficient estimation of time series models including long-memory / fractionally integrated processes). The spectral perspective connects ARIMA models (rational spectral densities), HSGP kernels (smooth spectral densities), and seasonal decomposition (peaks at seasonal frequencies) in a unified framework that is entirely missing from the vault.
+
+**Adjacent notes:** [[Hilbert Space Gaussian Processes]], [[Local Linear Trend and Seasonality]], [[Bayesian Structural Time-Series Model]], [[Single Marketing Time Series]], [[Carryover Effects and Distributed Lags]], [[Nonparametric Models Overview]]
+
+**Suggested sources / search terms:**
+- Brockwell & Davis (2016) — *Introduction to Time Series and Forecasting*, 3rd Ed., Ch. 4: Spectral Analysis
+- Shumway & Stoffer (2017) — *Time Series Analysis and Its Applications with R Examples*, 4th Ed., Ch. 4
+- Chatfield (2004) — *The Analysis of Time Series: An Introduction*, 6th Ed.
+- Whittle (1953) — "Estimation and information in stationary time series" (*Arkiv för Matematik*)
+- Search: "spectral density time series R", "periodogram smoothing Welch", "Whittle likelihood long memory", "frequency domain analysis marketing", "spectral representation stationary process"
+
+---
+
+### 44. Entropy Balancing and Overlap Weighting
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Covariate Balance and Matching Diagnostics]] mentions "overlap weights" alongside IPW in its discussion of the effective sample size diagnostic: "For weighting estimators (IPW, overlap weights), the ESS measures how much the weights reduce information." [[Bayesian Propensity Score Weighting]] and [[Frequentist Causal Estimation]] cover IPTW/IPW — but no note explains the newer weighting approaches that directly target covariate balance rather than estimating a propensity score first. **Entropy balancing** (Hainmueller 2012) finds weights via a constrained optimization that forces exact balance on user-specified moments (means, variances, interactions) without any model of the propensity score. **Overlap weights** (Li, Morgan & Zaslavsky 2018) use $w(X) = e(X)(1-e(X))$ as weights, down-weighting units with extreme propensity scores and focusing inference on the overlap population — the subgroup for whom treatment could plausibly be assigned either way. Both methods improve on IPTW: entropy balancing avoids propensity model misspecification; overlap weights avoid extreme weights and ESS loss. Neither is covered in the vault, leaving practitioners without the state-of-the-art balancing toolkit for when PSM or IPTW performs poorly.
+
+**Adjacent notes:** [[Covariate Balance and Matching Diagnostics]], [[Propensity Score Matching - Overview]], [[Bayesian Propensity Score Weighting]], [[Frequentist Causal Estimation]], [[Matching Algorithms and Caliper]], [[Conditional Independence Assumption]]
+
+**Suggested sources / search terms:**
+- Hainmueller (2012) — "Entropy balancing for causal effects: A multivariate reweighting method to produce balanced samples in observational studies" (*Political Analysis*)
+- Li, Morgan & Zaslavsky (2018) — "Balancing covariates via propensity score weighting" (*JASA*)
+- Zubizarreta (2015) — "Stable weights that balance covariates for estimation with incomplete outcome data" (*JASA*)
+- Ben-Michael, Feller & Rothstein (2021) — "The augmented synthetic control method" (*JASA*) — stable balancing weights in SC context
+- Search: "entropy balancing Hainmueller R", "overlap weights propensity score", "stable balancing weights", "ebal R package", "WeightIt R overlap weights"
+
+---
+
+### 45. Event Study Designs and Pre-Trend Testing
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Differences-in-Differences]] mentions "leads and lags to test for pre-trends" and "state-specific trends as robustness check" — but event study methodology as a self-contained research design is absent. The event study approach centers on estimating *dynamic treatment effects* $\tau_\ell$ for each period $\ell$ relative to the treatment event time, using relative-period indicator interactions: $Y_{it} = \alpha_i + \lambda_t + \sum_{\ell \neq -1} \tau_\ell D_{it}^\ell + \varepsilon_{it}$. The pre-treatment estimates $\tau_\ell$ for $\ell < 0$ serve as a visual parallel-trends test; post-treatment $\tau_\ell$ trace the dynamic causal effect profile. [[Identifying Assumptions for Staggered DiD]] mentions "event study estimates" without explaining how they are constructed. Under staggered adoption, the standard event study estimator suffers the same TWFE bias as the static DiD (Callaway & Sant'Anna 2021 provide cohort-specific event study estimates as a solution). Roth (2022) formalizes the pre-trend test as a power problem: standard pre-trend tests are under-powered for economically meaningful parallel-trends violations, motivating honest confidence intervals and sensitivity analysis approaches (Rambachan & Roth 2023, already referenced in gap #30). No note covers the full event study design: relative-time dummies, normalization convention ($\tau_{-1} = 0$), treatment of anticipation ($\tau_\ell = 0$ for $\ell < 0$ under no-anticipation), handling of "long lags" (binning remote periods), and the connection to distributed lag models in [[Carryover Effects and Distributed Lags]].
+
+**Adjacent notes:** [[Differences-in-Differences]], [[Difference-in-Differences with Multiple Time Periods - Overview]], [[Group-Time Average Treatment Effects]], [[Aggregating Group-Time Effects]], [[Identifying Assumptions for Staggered DiD]], [[Carryover Effects and Distributed Lags]], gap #30 (Partial Identification / Rambachan-Roth sensitivity)
+
+**Suggested sources / search terms:**
+- Schmidheiny & Siegloch (2023) — "On event studies and distributed lags in two-way fixed effects models: Identification, equivalence, and generalization" (*Journal of Applied Econometrics*) — connects event studies to distributed lag models
+- Roth (2022) — "Pre-test with caution: Event study estimates after testing for parallel trends" (*AER: Insights*)
+- Callaway & Sant'Anna (2021) — dynamic treatment effect aggregation by event time (§3 of their DiD paper)
+- Rambachan & Roth (2023) — "A more credible approach to parallel trends" (*Review of Economic Studies*) — honest CIs for pre-trend violations
+- Search: "event study design econometrics", "dynamic treatment effects DiD", "relative time indicators", "Roth pre-trend test power", "stacked DiD event study"
+
+---
+
+### 46. Causal Forests and Generalized Random Forests (GRF)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Metalearners for CATE]] (X-Learner, T-Learner, S-Learner from Künzel et al. 2019) use flexible base learners in a two-stage regression strategy for CATE estimation. But Wager & Athey (2018) Causal Forests — which embed causal inference directly into the tree-splitting criterion — are entirely absent. Causal forests split leaves to maximize *heterogeneity in treatment effects* (rather than heterogeneity in outcomes), using a doubly-robust score as the objective. The key innovation is *honesty*: each tree is fit on a subsample held out from the splitting step, creating a sample-splitting structure that yields valid asymptotic confidence intervals for individual-level CATEs — something metalearners based on cross-fitting alone do not guarantee without additional assumptions. Athey & Wager (2019) extend this to the Generalized Random Forest (GRF) framework, which estimates any moment condition locally via adaptive nearest-neighbour weighting, unifying CATE, instrumental forests, local linear forests, and quantile forests (connecting to gap #26: Quantile Treatment Effects). The `grf` R package is widely used in applied economics and medicine. This gap means the vault's CATE toolkit (metalearners + BART + DR-learner) is missing the most widely-cited method for CATEs with valid pointwise confidence intervals.
+
+**Adjacent notes:** [[Metalearners for CATE]], [[X-Learner]], [[T-Learner and Minimax Rate]], [[S-Learner]], [[Nonparametric Causal Inference]], [[Frequentist Causal Estimation]], [[Potential Outcomes Framework]], gap #26 (Quantile Treatment Effects), gap #40 (Double/Debiased Machine Learning)
+
+**Suggested sources / search terms:**
+- Wager & Athey (2018) — "Estimation and inference of heterogeneous treatment effects using random forests" (*JASA*)
+- Athey, Tibshirani & Wager (2019) — "Generalized random forests" (*Annals of Statistics*)
+- Athey & Wager (2021) — "Policy learning with observational data" (*Econometrica*)
+- Künzel, Sekhon, Bickel & Yu (2019) — "Metalearners for estimating heterogeneous treatment effects using machine learning" (*PNAS*)
+- Search: "causal forest grf R", "Wager Athey causal forests", "honest causal inference forest", "generalized random forest GRF", "CATE confidence intervals honest"
+
+---
+
+### 47. Synthetic Difference-in-Differences (SDiD)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The vault covers [[Synthetic Control]] (Abadie et al., minimizes pre-treatment MSPE with non-negative unit weights), [[Differences-in-Differences]] (parallel trends with unit and time fixed effects), and [[Generalized Synthetic Control Method]] (GSC, interactive fixed effects). But Arkhangelsky et al. (2021) Synthetic DiD — which bridges SC and DiD by combining *unit weights* (like SC) with *time weights* (targeting pre-trend balance) — is entirely absent. SDiD simultaneously re-weights control units (to match the treated unit's pre-period trajectory) and down-weights early pre-period observations (to focus on recent pre-trends), producing an estimator that is valid under parallel trends *or* synthetic control assumptions — a double robustness property analogous to doubly-robust causal estimators. SDiD outperforms both SC and TWFE DiD in simulations, and the `sdid` Stata/R packages make it accessible. The connection between SDiD weights and entropy balancing (gap #44) and between SDiD placebo tests and permutation inference (gap #7) are also absent. This gap sits at the intersection of the vault's three quasi-experimental estimator clusters (SC, DiD, GSC) and resolves an architectural limitation all three share separately.
+
+**Adjacent notes:** [[Synthetic Control]], [[Differences-in-Differences]], [[Generalized Synthetic Control Method]], [[Synthetic Control Bias Theory]], [[Difference-in-Differences with Multiple Time Periods - Overview]], [[Bayesian Difference in Differences]], gap #44 (Entropy Balancing), gap #7 (Permutation/Randomization Inference)
+
+**Suggested sources / search terms:**
+- Arkhangelsky, Athey, Hirshberg, Imbens & Wager (2021) — "Synthetic difference-in-differences" (*American Economic Review*)
+- Friedman, Hastie & Tibshirani (2008) — elastic net as analogue of the time-weighting step (methodological connection)
+- Clarke, Pailañir, Athey & Imbens (2023) — "Synthetic difference in differences estimation" (sdid Stata command)
+- Ben-Michael, Feller & Rothstein (2021) — "The augmented synthetic control method" (*JASA*) — augmented SC with outcome model, parallel to SDiD
+- Search: "synthetic difference-in-differences Arkhangelsky", "SDiD unit weights time weights", "sdid R Stata package", "augmented synthetic control", "doubly robust synthetic control"
+
+---
+
+---
+
+### 48. Kan Extensions
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Limits in Presheaf Categories]] introduces the **Density Theorem**: every presheaf $X$ is canonically isomorphic to the colimit of representables indexed by its category of elements — i.e., $X \cong \mathrm{colim}_{(A,x) \in \mathcal{E}(X)} H_A$. This is precisely the *left Kan extension* of the identity functor along the Yoneda embedding, though the note does not name it as such. [[Adjoint Functor Theorems]] uses the density theorem in its proof ("every object is a canonical colimit of representables, enabling the solution set condition") but Kan extensions are never defined. Mac Lane described Kan extensions as "the most important concept in category theory." The right Kan extension $\text{Ran}_K F$ and left Kan extension $\text{Lan}_K F$ appear in: the proof of the GAFT (solution set condition via free cocompletion), the density theorem (left Kan extension along Yoneda as the universal property of presheaf categories), the semantics of type theory (globular sets, polynomial functors), and the theory of monads (gap #27: $T = GF$ is a Kan extension along the unit). This is the natural next chapter after the vault's synthesis material (Chapters 4–6 of Leinster's BCT), and connects to gap #27 (Monads) and gap #34 (Curry-Howard / type theory semantics).
+
+**Adjacent notes:** [[Limits in Presheaf Categories]], [[Adjoint Functor Theorems]], [[Adjoint Functors]], [[Yoneda Lemma]], [[Yoneda Embedding and Consequences]], [[Units and Counits]]
+
+**Suggested sources / search terms:**
+- Leinster (2014) — *Basic Category Theory*, Ch. 4: Representables (as preparation; Kan extensions appear in the exercises)
+- Mac Lane (1971) — *Categories for the Working Mathematician*, Ch. X: Kan Extensions — the canonical reference
+- Riehl (2017) — *Category Theory in Context*, Ch. 6: Kan Extensions — more accessible treatment
+- Search: "left Kan extension colimit representables", "right Kan extension limit", "Lan Ran adjoint functors", "density theorem Kan extension Yoneda", "pointwise Kan extensions"
+
+---
+
+### 49. Targeted Maximum Likelihood Estimation (TMLE)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The vault covers the two inputs to doubly-robust estimation thoroughly: [[Nonparametric Causal Inference]] (BART-based outcome regression and propensity models), [[Bayesian Propensity Score Weighting]] and [[Frequentist Causal Estimation]] (IPW/DR estimators). Gap #40 (DML) covers Neyman orthogonality as the frequentist framework for semiparametric efficiency. But **Targeted Maximum Likelihood Estimation** (van der Laan & Rubin 2006) — the canonical doubly-robust, semiparametrically efficient estimator in the nonparametric efficiency bound literature — is entirely absent. TMLE proceeds in three steps: (1) estimate the initial outcome regression $\hat{Q}$; (2) fit a "fluctuation" logistic model using the clever covariate $H = T/\hat{g} - (1-T)/(1-\hat{g})$ to update $\hat{Q}$ toward the efficient influence function; (3) plug the targeted $\hat{Q}^*$ into the substitution estimator. The result is doubly robust (consistent if either $\hat{Q}$ or $\hat{g}$ is consistent) and achieves the semiparametric efficiency bound when both are correctly specified. The `tlverse` R ecosystem (SuperLearner + tmle3) and `PyATE` / `causalml` implement it. TMLE bridges [[Nonparametric Causal Inference]] (BART as the first-stage learner), [[Frequentist Causal Estimation]] (the DR score TMLE targets), and gap #40 (DML as the competing frequentist approach). Unlike DML, TMLE is also available in a Bayesian variant (Bayesian TMLE, which targets the posterior efficient influence function) connecting it to [[Bayesian Inverse Probability Weighting]].
+
+**Adjacent notes:** [[Nonparametric Causal Inference]], [[Frequentist Causal Estimation]], [[Bayesian Inverse Probability Weighting]], [[Bayesian Propensity Score Weighting]], [[Metalearners for CATE]], gap #40 (Double/Debiased Machine Learning), gap #23 (Marginal Structural Models)
+
+**Suggested sources / search terms:**
+- van der Laan & Rubin (2006) — "Targeted maximum likelihood learning" (*Int J Biostatistics*) — original TMLE paper
+- van der Laan & Rose (2011) — *Targeted Learning: Causal Inference for Observational and Experimental Data*, Springer
+- Schuler & Rose (2017) — "Targeted maximum likelihood estimation for causal inference in observational studies" (*American Journal of Epidemiology*) — accessible tutorial
+- Luque-Fernandez et al. (2018) — "Targeted maximum likelihood estimation for a binary treatment" (*Statistics in Medicine*)
+- Search: "targeted maximum likelihood TMLE", "efficient influence function doubly robust", "tlverse SuperLearner", "tmle3 R package", "Bayesian TMLE"
+
+---
+
+### 50. General Bootstrap Methods
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Simultaneous Inference via Multiplier Bootstrap]] covers the wild/multiplier bootstrap specifically for uniform inference in staggered DiD. [[Synthetic Control]] uses Fisher's exact permutation test as its inference workaround for a single treated unit. But the general nonparametric bootstrap (Efron 1979) — resampling observations with replacement to approximate the sampling distribution of any statistic — is entirely absent from the vault. The block bootstrap for time series (Künsch 1989; Politis & Romano 1994) corrects for serial correlation when resampling panel or time-series data: essential for the marketing and econometric time-series models in the vault. The parametric bootstrap for posterior predictive checking (Gelman et al.) applies in the Bayesian workflow. The percentile, BCa (bias-corrected accelerated), and bootstrap-t confidence intervals are the standard frequentist inference tools that complement the asymptotic standard errors in [[Standard Errors and Clustering]] and the simulation-based Bayesian methods in [[MCMC Basics]]. Without this note, readers cannot apply bootstrap inference to the vast majority of estimators in the vault — only the specific cases where multiplier or permutation tests are described.
+
+**Adjacent notes:** [[Standard Errors and Clustering]], [[Simultaneous Inference via Multiplier Bootstrap]], [[MCMC Basics]], [[Computational Troubleshooting]], [[Synthetic Control]], [[Simulation-Based Calibration - Overview]], [[Method of Simulated Moments]]
+
+**Suggested sources / search terms:**
+- Efron (1979) — "Bootstrap methods: Another look at the jackknife" (*Annals of Statistics*) — original bootstrap paper
+- Efron & Tibshirani (1993) — *An Introduction to the Bootstrap*, CRC Press — standard reference
+- Künsch (1989) — "The jackknife and the bootstrap for general stationary observations" (*Annals of Statistics*) — block bootstrap
+- Davison & Hinkley (1997) — *Bootstrap Methods and Their Application*, Cambridge — comprehensive treatment
+- Search: "nonparametric bootstrap confidence intervals", "block bootstrap time series", "BCa bootstrap interval", "parametric bootstrap posterior predictive", "bootstrap vs permutation test"
+
+---
+
+### 51. Causal Effect Identification Algorithms (ID Algorithm)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Do-Calculus in Summary Causal DAGs]] proves that Pearl's do-calculus rules are sound and complete for summary causal DAGs, citing "Shpitser-Pearl completeness of do-calculus for DAGs" (Theorem 6.2 proof sketch). [[Directed Acyclic Graphs]] covers d-separation, the backdoor criterion, and the frontdoor criterion — but only these two specific identification strategies. The general question of *when* a causal effect is identifiable from observational data — and *how* to compute the identifying functional when it is — is answered by the **ID algorithm** (Shpitser & Pearl 2006; Huang & Valtorta 2006). The ID algorithm is a complete, sound procedure for nonparametric identification: given a DAG with observed and unobserved variables, it either outputs the c-component factorization of $P(Y \mid \text{do}(X))$ or returns FAIL if the effect is provably not identifiable. Hedging with "we control for these variables using the backdoor criterion" is a special case; when the backdoor fails (e.g., with an unobserved confounder and an instrument), the ID algorithm determines whether identification is still possible. This gap means the vault has the do-calculus rules but not the algorithm that applies them automatically — practitioners can check identifiability manually for simple graphs but are stranded for complex ones.
+
+**Adjacent notes:** [[Do-Calculus in Summary Causal DAGs]], [[Directed Acyclic Graphs]], [[Frequentist Causal Estimation]], [[s-Separation in Summary DAGs]], [[CaGReS Algorithm]], [[Instrumental Variables]], [[Instrumental Variables and Principal Stratification]]
+
+**Suggested sources / search terms:**
+- Shpitser & Pearl (2006) — "Identification of joint interventional distributions in recursive semi-Markovian causal models" (*AAAI 2006*) — ID algorithm
+- Huang & Valtorta (2006) — "Identifiability in causal Bayesian networks: A sound and complete algorithm" (*AAAI 2006*)
+- Pearl (2009) — *Causality*, 2nd Ed., Ch. 3–4 (do-calculus and identification)
+- Bareinboim & Pearl (2016) — "Causal inference and the data-fusion problem" (*PNAS*)
+- Search: "ID algorithm causal identification", "Shpitser Pearl do-calculus complete", "c-component factorization", "nonparametric identification", "causaleffect R package"
+
+---
+
+### 52. Bounded Rationality and Behavioral Economics Foundations
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Agent Decision Rules and Bounded Rationality]] is built on the premise that ABM agents use heuristics and imperfect information rather than full optimization — but never explains *why* this is realistic or what the empirical and theoretical foundations are. Simon's bounded rationality (1955, 1957) — limited cognitive resources, satisficing rather than optimizing — is the philosophical foundation but is not explained. Kahneman & Tversky's prospect theory (1979) and the System 1/System 2 framework (*Thinking, Fast and Slow*, 2011) provide the empirical and theoretical underpinning: decision-makers use fast, heuristic System 1 thinking for most choices, with biases like loss aversion ($\lambda \approx 2$), status quo bias, and probability distortion (overweighting small probabilities). These biases are why the vault's logit purchase rule (Karakaya: threshold + stochastic noise) and threshold activation (CUBES: behavioral primitives) are better behavioral models than utility maximization. The connection to econometric discrete choice models is also absent: McFadden's random utility model (*Econometrica*, 1974) — the theoretical bridge between behavioral psychology and the logit model in [[Discrete Choice Models]] — assumes rational utility maximization with additive noise, in contrast to the true bounded rationality in ABM. Without this foundational note, the rationale for ABM decision rule architectures rests on assertion rather than theory.
+
+**Adjacent notes:** [[Agent Decision Rules and Bounded Rationality]], [[ABM Methodology and Principles]], [[Heterogeneity in Agent Models]], [[Discrete Choice Models]], [[Consumer Utility Function Components]], [[Logit Purchase Decision Model]], [[Behavioral Primitives and Thresholds]]
+
+**Suggested sources / search terms:**
+- Simon (1955) — "A behavioral model of rational choice" (*Quarterly Journal of Economics*) — original bounded rationality
+- Kahneman & Tversky (1979) — "Prospect theory: An analysis of decision under risk" (*Econometrica*)
+- Kahneman (2011) — *Thinking, Fast and Slow* — System 1/System 2 framework
+- McFadden (1974) — "Conditional logit analysis of qualitative choice behavior" — random utility model
+- Search: "bounded rationality Simon", "prospect theory behavioral economics", "System 1 System 2 heuristics", "random utility model McFadden", "behavioral ABM agents"
+
+---
+
+### 53. Spatial Econometrics and Moran's I
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Spatial Models - BYM]] covers the Bayesian approach to areal spatial data (ICAR prior, BYM2, PyMC implementation) — the vault has a principled Bayesian treatment of spatial autocorrelation. But the frequentist spatial econometrics toolkit is entirely absent. [[Standard Errors and Clustering]] notes that geographically correlated errors are a form of clustering, yet offers no spatial-specific solution: the spatial lag model (SAR: $Y = \rho WY + X\beta + \varepsilon$, where $W$ is the row-normalised spatial weights matrix and $\rho$ captures global spatial dependence), the spatial error model (SEM: $Y = X\beta + u$, $u = \lambda Wu + \varepsilon$, where spatial autocorrelation is entirely in the residuals), and the spatial Durbin model (SDM: includes spatially lagged covariates $WX$ alongside $WY$) are the canonical frequentist tools. Moran's I is the standard diagnostic for residual spatial autocorrelation and provides the motivation for choosing SAR/SEM over OLS — analogous to the Moulton factor in the standard clustering case. [[Fixed-Effects Model]] and [[Conditional Independence Assumption]] have no spatial counterpart. Geographically weighted regression (GWR) allows spatially varying coefficients and is the spatial analogue of the heterogeneous-treatment-effect models in [[Metalearners for CATE]]. For practitioners working with marketing, public health, or policy data aggregated at geographic units (markets, counties, states), the absence of any spatial regression diagnostics or estimators is a practical gap.
+
+**Adjacent notes:** [[Spatial Models - BYM]], [[Standard Errors and Clustering]], [[Fixed-Effects Model]], [[Conditional Independence Assumption]], [[Regression and the CEF]], [[Hierarchical Linear Models]], [[Metalearners for CATE]]
+
+**Suggested sources / search terms:**
+- Anselin (1988) — *Spatial Econometrics: Methods and Models*, Kluwer — the foundational textbook
+- Cliff & Ord (1981) — *Spatial Processes: Models and Applications* — Moran's I and spatial autocorrelation statistics
+- LeSage & Pace (2009) — *Introduction to Spatial Econometrics*, CRC Press — modern treatment including Bayesian spatial regression
+- Fotheringham, Brunsdon & Charlton (2002) — *Geographically Weighted Regression* — GWR for spatially varying coefficients
+- Search: "Moran's I spatial autocorrelation test", "SAR SEM spatial lag error model", "spdep R spatial regression", "PySAL spatial econometrics Python", "geographically weighted regression GWR"
+
+---
+
+### 54. Bayesian Sample Size Determination and Design Analysis
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Power Analysis and Sample Size]] explicitly notes: "In Bayesian analysis, the concept of 'power' is less central — instead, one can use **posterior predictive simulation** to assess whether the planned sample provides adequate precision for quantities of interest." But this one sentence is the entire coverage of Bayesian sample size analysis. The method it describes — simulating from the prior predictive distribution to check whether a planned $N$ will yield posteriors sufficiently concentrated for the research question — is never explained. Gelman & Carlin (2014) formalise **design analysis**: rather than asking "what is the power?", ask "what is the Type M (magnitude) and Type S (sign) error rate under the assumed true effect?" This reframes sample size planning around effect size plausibility, not just rejection rates. Schönbrodt & Wagenmakers (2018) develop **Bayes Factor Design Analysis** (BFDA) using the Sequential Bayes Factor stopping rule: the sample size is determined by the desired evidence level (BF > 10 or < 1/10), not a pre-set $\alpha$. The `bayesDP` and `RBesT` R packages implement Bayesian adaptive designs for clinical trials. All of these are absent, leaving readers who prefer Bayesian inference with no framework for study planning beyond the classical formula in the current note.
+
+**Adjacent notes:** [[Power Analysis and Sample Size]], [[Fitting and Validating Computation]], [[Hierarchical Models]], [[Forking Paths and Bayesian Approaches]], [[Simulation-Based Calibration - Overview]], [[Type S and Type M Errors]], [[Multiple Comparisons - Bayesian Perspective]]
+
+**Suggested sources / search terms:**
+- Gelman & Carlin (2014) — "Beyond power calculations: Assessing Type S and Type M errors" (*Perspectives on Psychological Science*)
+- Schönbrodt & Wagenmakers (2018) — "Bayes factor design analysis: Planning for compelling evidence" (*Psychonomic Bulletin & Review*)
+- Kruschke & Liddell (2018) — "The Bayesian New Statistics: Hypothesis testing, estimation, meta-analysis, and power analysis from a Bayesian perspective" (*Psychonomic Bulletin & Review*)
+- Spiegelhalter, Freedman & Parmar (1994) — "Bayesian approaches to randomized trials" (*JRSS-A*) — assurance (Bayesian power)
+- Search: "Bayesian sample size determination", "design analysis Type S Type M error", "Bayes factor design analysis BFDA", "prior predictive sample size", "assurance Bayesian power clinical trial"
+
+---
+
+### 55. Fuzzy Regression Discontinuity and Regression Kink Design
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Regression Discontinuity Designs]] covers the sharp RD design: at the cutoff $c$, treatment status jumps discontinuously from 0 to 1, and the treatment effect is the ratio of the discontinuity in outcomes to the discontinuity in treatment (which is 1 in the sharp case, so the LATE = ITT). But two important extensions are entirely absent. **Fuzzy RD** (Hahn, Todd & van der Klaauw 2001): treatment probability (not status) jumps at the cutoff, so some units near $c$ do not comply. The fuzzy RD estimator is the Wald estimator at the cutoff: $\tau_{\text{LATE}} = \lim_{x \to c^+} E[Y|X=x] - \lim_{x \to c^-} E[Y|X=x]$ divided by $\lim_{x \to c^+} E[T|X=x] - \lim_{x \to c^-} E[T|X=x]$, interpreted as a LATE for compliers at the cutoff — directly connecting to [[Instrumental Variables and Principal Stratification]]. **Regression Kink Design** (Card, Lee, Pei & Weber 2015): instead of a jump in treatment *level*, there is a kink (slope change) in treatment *intensity* at $c$. The RKD estimator is the ratio of the kink in the outcome to the kink in treatment. The `rdrobust` package (gap #32) handles both. These designs are widely used in public economics (unemployment insurance kinks, means-tested programme cutoffs) and sit at the intersection of [[Regression Discontinuity Designs]] and [[Instrumental Variables]].
+
+**Adjacent notes:** [[Regression Discontinuity Designs]], [[Instrumental Variables]], [[Instrumental Variables and Principal Stratification]], [[Local Average Treatment Effects]], [[Matching Algorithms and Caliper]] (common support trimming at RD cutoff), gap #32 (RD Bandwidth Selection)
+
+**Suggested sources / search terms:**
+- Hahn, Todd & van der Klaauw (2001) — "Identification and estimation of treatment effects with a regression-discontinuity design" (*Econometrica*) — fuzzy RD
+- Card, Lee, Pei & Weber (2015) — "Inference on causal effects in a generalized regression kink design" (*Econometrica*) — RKD
+- Imbens & Lemieux (2008) — "Regression discontinuity designs: A guide to practice" (*Journal of Econometrics*) — covers both sharp and fuzzy RD
+- Cattaneo, Idrobo & Titiunus (2020) — *A Practical Introduction to Regression Discontinuity Designs*, Vols 1–2 — the practitioner's handbook
+- Search: "fuzzy regression discontinuity design", "regression kink design Card Lee", "Wald estimator RD compliers LATE", "rdrobust fuzzy RD", "RKD kink in benefit schedule"
+
+---
+
+### 56. INLA and Latent Gaussian Models
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Fitting and Validating Computation]] explicitly lists **INLA** alongside variational inference and Laplace approximation as a fast approximate method: "Early in the workflow, approximate methods (variational inference, Laplace approximation, INLA, penalized ML) can help explore model space quickly." Yet INLA is never explained in the vault. INLA (Integrated Nested Laplace Approximation, Rue, Martino & Chopin 2009) is a deterministic Bayesian inference engine for the class of **latent Gaussian models** (LGMs): models where the latent field has a sparse Gaussian structure (GMRF), making the Laplace approximation to the posterior of hyperparameters highly accurate while the posterior of the latent field is well-approximated by a Gaussian. This class includes spatial models (the vault's [[Spatial Models - BYM]] is a canonical INLA use case), spatiotemporal models, ARIMA-type models, and generalised additive models. INLA is dramatically faster than MCMC for these models (seconds vs hours) but requires the LGM structure; it is unavailable for general models like factor copulas or ABMs. [[Approximation Methods]] (in `Bayesian Statistics/Computation/`) covers variational inference and Laplace approximation, but INLA's specific machinery — the GMRF prior, the nested Laplace approximation to the hyperparameter posterior, and the R-INLA / INLA R package — is entirely absent. Without this note, readers of [[Spatial Models - BYM]] cannot understand what `INLA()` calls are doing, or when to prefer INLA over Stan/PyMC.
+
+**Adjacent notes:** [[Fitting and Validating Computation]], [[Spatial Models - BYM]], [[Approximation Methods]], [[Efficient MCMC]], [[Hierarchical Models]], [[Hilbert Space Gaussian Processes]], [[Local Linear Trend and Seasonality]], [[MCMC Basics]]
+
+**Suggested sources / search terms:**
+- Rue, Martino & Chopin (2009) — "Approximate Bayesian inference for latent Gaussian models by using integrated nested Laplace approximations" (*JRSS-B*) — the original INLA paper
+- Lindgren, Rue & Lindström (2011) — "An explicit link between Gaussian fields and Gaussian Markov random fields" (*JRSS-B*) — SPDE approach enabling INLA for spatial fields
+- Krainski et al. (2018) — *Advanced Spatial Modeling with Stochastic Partial Differential Equations Using R and INLA*
+- Search: "INLA R package latent Gaussian model", "Rue Martino Chopin INLA", "GMRF INLA spatial", "approximate Bayesian inference INLA vs Stan", "R-INLA tutorial"
+
+---
+
+### 57. Heckman Selection Model and the Control Function Approach
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[The Selection Problem]] establishes the fundamental challenge: $E[Y_0|D=1] \neq E[Y_0|D=0]$ when treated and control units are systematically different. The solutions covered in the vault — randomisation ([[The Experimental Ideal]]), instrumental variables ([[Instrumental Variables]]), matching ([[Propensity Score Matching - Overview]]), and Bayesian IPW ([[Bayesian Inverse Probability Weighting]]) — all address selection on observables or require an instrument. But a distinct class of methods addresses **selection on unobservables via a structural model of selection**: the Heckman (1979) two-step estimator (selectivity correction) and the more general **control function approach** (Heckman & Robb 1985; Wooldridge 2015). The Heckman model specifies a probit selection equation and uses the inverse Mills ratio as a generated regressor to control for selection into the treated sample — effectively modelling the selection error directly. [[Response Models for Marketing Management]] and [[Activity Bias in Advertising]] highlight why self-selection into treatment (active/passive users, endogenous advertising spend) invalidates simple conditioning; the vault documents the problem but not this structural remedy. The control function approach (projecting the endogenous regressor onto its instrument(s) to form a residual control) also connects [[Instrumental Variables]] to the treatment of endogenous regressors in nonlinear models where 2SLS is inconsistent. This gap bridges [[The Selection Problem]], [[Instrumental Variables]], and [[Propensity Score Matching - Overview]] but is currently absent.
+
+**Adjacent notes:** [[The Selection Problem]], [[Instrumental Variables]], [[Activity Bias in Advertising]], [[Propensity Score Matching - Overview]], [[Conditional Independence Assumption]], [[Frequentist Causal Estimation]], [[Response Models for Marketing Management]], [[Regression and the CEF]], [[Observational vs Experimental Methods in Advertising]]
+
+**Suggested sources / search terms:**
+- Heckman (1979) — "Sample selection bias as a specification error" (*Econometrica*) — the two-step estimator
+- Heckman & Robb (1985) — "Alternative methods for evaluating the impact of interventions" (Ch. in *Longitudinal Analysis of Labor Market Data*)
+- Wooldridge (2015) — "Control function methods in applied econometrics" (*Journal of Human Resources*)
+- Vella (1998) — "Estimating models with sample selection bias" (*Journal of Human Resources*) — review
+- Search: "Heckman selection model two-step", "inverse Mills ratio selectivity bias", "control function approach endogeneity", "sample selection bias Heckman", "sampleSelection R package"
+
+---
+
 ## Covered Gaps
 
 | Gap | Covered By | Date Covered |
@@ -422,6 +944,7 @@ The vault has two complementary sections that are not yet connected: `Econometri
 | Simulation-Based Calibration (#6) | [[Simulation-Based Calibration - Overview]], [[The SBC Algorithm]], [[Interpreting SBC Histograms]], [[SBC Case Studies]] + 2 more | 2026-06-22 |
 | Bayesian Marketing Mix Modeling (#14) | [[Bayesian Media Mix Modeling - Overview]], [[Carryover (Adstock) Functional Forms]], [[Shape (Saturation) Effects]], [[ROAS, mROAS, and Optimal Media Mix]] + 2 more | 2026-06-22 |
 | Staggered DiD / Callaway-Sant'Anna (#19) | [[Difference-in-Differences with Multiple Time Periods - Overview]], [[Group-Time Average Treatment Effects]], [[Doubly-Robust Estimands for ATT(g,t)]] + 3 more | 2026-06-22 |
+<<<<<<< HEAD
 | Propensity Score Methods / Matching (#1) | [[Propensity Score Matching - Overview]], [[Propensity Score and the Balancing Property]], [[Covariate Balance Diagnostics]], [[Common Support and Overlap]] + 1 more | 2026-06-28 |
 | Permutation & Randomization Inference (#7) | [[Randomization Inference - Overview]], [[Fisher Randomization Test and the Sharp Null]], [[Studentized Randomization Tests]], [[Sharp vs Weak Null Hypotheses]] + 1 more | 2026-06-28 |
 | Empirical Bayes & Shrinkage Estimation (#12) | [[Empirical Bayes - Overview]], [[James-Stein Estimator]], [[Stein's Paradox and Risk Dominance]], [[Robbins Formula and Poisson Empirical Bayes]] + 1 more | 2026-06-28 |
@@ -433,6 +956,9 @@ The vault has two complementary sections that are not yet connected: `Econometri
 | Global Sensitivity Analysis (#10) | [[Global Sensitivity Analysis - Overview]], [[Variance-Based Sensitivity and Sobol Indices]], [[Morris Elementary Effects Screening]], [[Sampling and Estimation for Sobol Indices]] + 1 more | 2026-06-28 |
 | State-Space Models & Kalman Filter (#13) | [[State-Space Models and the Kalman Filter - Overview]], [[The Kalman Filter]], [[The RTS Smoother]], [[Linear-Gaussian State-Space Models]] + 1 more | 2026-06-28 |
 | Monads and Monadicity (#27) | [[Monads - Overview]], [[Monads and the Monad Laws]], [[Adjunctions Induce Monads]], [[Beck's Monadicity Theorem]] + 1 more | 2026-06-28 |
+=======
+| Propensity Score Methods / PSM (#1) | [[Propensity Score Matching - Overview]], [[Matching Algorithms and Caliper]], [[Covariate Balance and Matching Diagnostics]] | 2026-06-28 |
+>>>>>>> main
 
 ---
 
@@ -449,7 +975,23 @@ The vault has two complementary sections that are not yet connected: `Econometri
 | 2026-05-25 | Run 7: reviewed 9 notes (Copula Estimation, Time-Varying Treatments and G-computation, Introduction to Bayesian Computation, Missing Data Models, Functors and Limits, Universal Properties Introduction, Dependence Measures for Copulas, Instrumental Variables, Quantum Entanglement). No existing gaps newly covered this run. Fixed broken wikilink `[[LKJ distribution]]` → plain text in Copula Estimation; fixed misleading alias `[[Nonparametric Models Overview\|multivariate Bayesian models]]` → `[[Nonparametric Models Overview]]`; removed raw file from `depends_on` in Introduction to Bayesian Computation. Added cross-links: Introduction to Bayesian Computation ↔ Approximation Methods; Time-Varying Treatments ↔ Estimands in Longitudinal Research ↔ Cross-Lagged and Dynamic Panel Models ↔ Instrumental Variables and Principal Stratification; Instrumental Variables ↔ Differences-in-Differences ↔ Instrumental Variables and Principal Stratification; Quantum Entanglement ↔ Schrödinger Equation and Time Evolution ↔ Uncertainty Principle. Added gaps #17 (LKJ Distribution and Correlation Priors), #18 (Dynamic Treatment Regimes and Optimal Policy). |
 | 2026-06-01 | Run 8: reviewed 9 notes (Behavioral Attitudes in CUBES, Products and Equalizers, SMM Copula Simulation and Application, Dependence Measures for Copulas, Bayesian Inverse Probability Weighting, Causal Model - Cause Precondition Effect, Bayesian Linear Regression, GA Fitness Evaluation and the RAM, Synthetic Control). No existing gaps newly covered this run. Fixed frontmatter: added `folder` to Products and Equalizers; corrected `doc_type: concept` → `doc_type: textbook` in Bayesian Linear Regression. Fixed Connections section in Causal Model - Cause Precondition Effect to wikilink DAG reference. Added cross-links: Behavioral Attitudes ↔ Word of Mouth Mechanisms ↔ Opinion Leaders ↔ Product Adoption Diffusion Models ↔ Network Topology Effects; Products and Equalizers ↔ Functors and Limits; SMM Copula Simulation ↔ Method of Simulated Moments ↔ Brock-Mirman SMM; Dependence Measures ↔ Quantile Regression; Bayesian IPW ↔ Frequentist Causal Estimation ↔ Bayesian Propensity Score Weighting ↔ Propensity Score in Bayesian CI; Causal Model - CPE ↔ Directed Acyclic Graphs ↔ LLM Expert Elicitation ↔ BN Construction Methods Comparison; Bayesian Linear Regression ↔ Linear Models in StatRethink ↔ Moderation Analysis ↔ Missing Data Models; GA Fitness RAM ↔ ABC for ABMs ↔ UQ for ABM Calibration ↔ ABM Calibration Case Studies; Synthetic Control ↔ Requirements/Bias/Extensions/Inference sub-notes ↔ GSC ↔ Abadie 2021. Added gaps #19 (Staggered/Heterogeneous DiD), #20 (Horseshoe and Regularized Horseshoe Priors). |
 | 2026-06-08 | Run 9: reviewed 10 notes (Opinion Leaders and Social Influence, LLM-BN Decision Support Application, Discrete Choice Models, Practical Issues in Simulation Estimation, Instrumental Variables, Bayesian Linear Regression, Copula Estimation, ABM in Marketing Strategy, Brodersen 2015 - Overview, ABM Validation Challenges). No existing gaps newly covered this run. No frontmatter errors found. Cross-links added: Opinion Leaders ↔ Carryover Effects and Distributed Lags ↔ Advertising and Promotion Effects (WOM→MRM bridge); LLM-BN ↔ Directed Acyclic Graphs ↔ Model Checking; Discrete Choice Models ↔ Market Share Models (logit bridge Econometrics↔MRM); Instrumental Variables ↔ Bayesian Propensity Score Weighting ↔ Parameter Estimation in Market Response (2SLS for price endogeneity); Bayesian Linear Regression — added wikilink for Horseshoe prior + See Also entry [[Horseshoe and Regularized Horseshoe Priors]]; Copula Estimation ↔ Discrete Choice Models (LKJ) ↔ Market Share Models; ABM in Marketing Strategy ↔ Market Response Models - Overview ↔ Advertising and Promotion Effects ↔ Marketing Generalizations Overview; Brodersen 2015 ↔ Synthetic Control ↔ Advertising and Promotion Effects; ABM Validation Challenges ↔ Model Checking ↔ Garden of Forking Paths. Added gaps #21 (Bayesian Networks Fundamentals), #22 (Bass Diffusion Model). Gaps #6 (SBC), #19 (Staggered DiD), #20 (Horseshoe priors) reinforced by this run's notes. |
+| 2026-06-29 | Run 12: reviewed 9 notes (Hilbert Space Gaussian Processes, LLM Expert Elicitation for Bayesian Networks, Moderation Analysis, Natural Transformations, Factor Copula Application S&P 100, Generalized Synthetic Control Method, Local Average Treatment Effects, Design of Dynamic Response Models, Schrödinger Equation and Time Evolution). No existing gaps covered this run. Frontmatter fixes: added `date_updated: 2026-06-29` to all 9 notes; added `folder` to LLM Expert Elicitation, Moderation Analysis, Natural Transformations, Design of Dynamic Response Models; added `source` wikilink to Moderation Analysis. Fixed broken wikilink `[[Bayesian Non-parametric Causal Inference]]` → `[[Nonparametric Causal Inference]]` in Moderation Analysis. Cross-links added: LLM Expert Elicitation ↔ NOTEARS Overview + DAG Structure Learning Problem (expert elicitation vs. algorithmic discovery bridge); LATE — added [[Potential Outcomes Framework]] and [[Metalearners for CATE]] to See Also; Schrödinger Equation — added [[Quantum Entanglement]] to See Also; Moderation Analysis — added See Also section (Spurious Association, Bayesian Linear Regression, GLMs, Nonparametric Causal Inference, Hierarchical Models); Natural Transformations — added [[Limits and Colimits/General Limits]] to See Also (cones as natural transformations); Design of Dynamic Response Models — added See Also section with cross-vault links (Bayesian Structural Time-Series, HSGP, Instrumental Variables, Method of Simulated Moments). Added gaps #28 (Mediation Analysis / Natural Direct/Indirect Effects) and #29 (GARCH and Conditional Heteroscedasticity). Gaps #21 (BN Foundations), #27 (Monads), #8 (Factor/Vine Copulas) reinforced by this run's notes. |
 | 2026-06-22 | Run 11: reviewed 9 notes (Practical Issues in Simulation Estimation, QFT Overview, Units and Counits, Multi-Factor and Block Dependence Structures, Price and Distribution Effects, Method of Simulated Moments, Markets Data and Sales Drivers, Spurious Association and Confounds, Regression and the CEF). Gaps #6 (SBC), #14 (Bayesian MMM), #19 (Staggered DiD) marked 🍂 covered — all now have dedicated note clusters. Gaps #8 (Factor Copulas) and #9 (Causal Structure Learning) updated to 🌿 still relevant: factor copulas now well-covered, vine copulas absent; NOTEARS covered, PC/GES absent. Frontmatter fixes: added `date_updated: 2026-06-22` to all 9 notes; added `folder` to Units and Counits, Price and Distribution Effects, Markets Data and Sales Drivers; added `date_ingested` to Price and Distribution Effects and Markets Data. Cross-links added: Practical Issues ↔ Brock-Mirman SMM ↔ SMM Estimation of Factor Copulas; QFT Overview ↔ Wave Function and Hilbert Space ↔ Uncertainty Principle ↔ Quantum Entanglement (within Physics folder) + cross-links to Theoretical Physics parallel notes (Standard Model and Gauge Groups, QFT Overview flat); Units and Counits ↔ Cartesian Closed Categories; Multi-Factor ↔ Dependence Measures for Copulas ↔ Factor Analysis and PPCA ↔ Copula Estimation; Price and Distribution ↔ Discrete Choice Models ↔ Parameter Estimation in Market Response; Method of MSM ↔ Brock-Mirman SMM ↔ SMM Estimation of Factor Copulas; Markets Data ↔ Bayesian Media Mix Modeling Overview; Spurious Association ↔ Regression and the CEF (bidirectional). Added gaps #25 (ABM Calibration via SMM/II), #26 (Quantile Treatment Effects), #27 (Monads and Monadicity). |
 | 2026-06-15 | Run 10: reviewed 10 notes (s-Separation in Summary DAGs, Uncertainty Principle, BN Construction Methods Comparison, Local Linear Trend and Seasonality, Hilbert Space Gaussian Processes, Spurious Association and Confounds, Modeling as Software Development, Market Share Models, Functors and Limits, Time-Varying Treatments and G-computation). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-06-15` to all 10 notes; added `folder` to HSGP, Market Share Models, Functors and Limits; added `source:` field (wikilink) to HSGP; fixed `source_location` in Spurious Association and Confounds (Ch.9 → Ch.5); added missing H1 title header to Modeling as Software Development. Cross-links added: s-Separation ↔ Directed Acyclic Graphs; BN Construction Methods ↔ Directed Acyclic Graphs ↔ LLM Expert Elicitation (completing the BN trilogy); Local Linear Trend ↔ Single Marketing Time Series (state-space↔ARIMA bridge); HSGP — added full See Also section linking to Local Linear Trend and Seasonality ↔ Bayesian Structural Time-Series Model; Spurious Association ↔ Directed Acyclic Graphs (fork/pipe/collider → DAG formalization); Modeling as Software Development ↔ Garden of Forking Paths (version control as forking path defense); Market Share Models ↔ Discrete Choice Models (MNL/logit bridge MRM↔Econometrics) ↔ Monsters and Mixtures (heterogeneous MCI→latent segments); Functors and Limits ↔ Products and Equalizers; Time-Varying Treatments ↔ Bayesian Propensity Score Weighting (IPW-MSM connection). Added gaps #23 (Marginal Structural Models / Bayesian Bootstrap), #24 (Random Coefficients Logit / BLP Demand Estimation). Gaps #13 (State-Space/Kalman), #18 (DTRs), #21 (BN Foundations) reinforced by this run's notes. |
+<<<<<<< HEAD
 | 2026-06-28 | Run 12 (gap-filling ingest): researched, downloaded, and ingested 5 papers covering open gaps across the user-prioritised Causal / Bayesian / Econometrics-marketing themes. **Gaps #1, #7, #12, #20, #24 marked 🍂 covered.** New note clusters (26 notes + 5 leaf indexes): #20 Horseshoe → `Bayesian Statistics/Regression Models/Shrinkage Priors/` (Piironen & Vehtari 2017); #12 Empirical Bayes → `Bayesian Statistics/Inference Fundamentals/Empirical Bayes/` (Efron, *Large-Scale Inference* Ch. 1); #1 Propensity Score Matching → `Econometrics/Identification Strategies/Propensity Score Matching/` (Stuart 2010); #7 Randomization Inference → `Econometrics/Foundations/Randomization Inference/` (Wu & Ding 2021); #24 BLP Demand → `Econometrics/Extensions/BLP Demand Estimation/` (Conlon & Gortmaker 2020, PyBLP). Updated parent indexes (Regression Models, Inference Fundamentals, Identification Strategies, Foundations, Extensions) with sub-topic routing entries. NOTE: gap #22 (Bass Diffusion) was targeted but no legal open-access PDF could be obtained (Management Science / Journal of Marketing paywalled, author site offline) — left open for a future run. Ran vault-repair afterward to verify links and frontmatter. |
 | 2026-06-28 | Run 13 (gap-filling ingest): researched, downloaded, and ingested 6 papers spanning new themes (Category Theory, Research Methodology, Causal Discovery, Time Series, ABM/UQ, Dependence Modeling). **Gaps #3, #8, #9, #10, #13, #27 marked 🍂 covered** (#8 and #9 were 🌿 still relevant — vine copulas and PC/GES were the remaining holes, now filled). New note clusters (30 notes + 6 leaf indexes): #27 Monads → `Category Theory/Monads/` (Riehl, *Category Theory in Context* Ch. 5 — note: Leinster's book has no monads chapter, so Riehl was used instead); #3 Pre-registration → `Research Methodology/Pre-registration and Open Science/` (Nosek et al. 2018); #9 Causal discovery PC/GES → `Causal Discovery/Constraint and Score-Based Discovery/` (Glymour, Zhang & Spirtes 2019); #13 State-space/Kalman → `Bayesian Statistics/Causal Inference/Time Series Causal Inference/State-Space and Kalman Filter/` (Särkkä 2013); #10 Global sensitivity → `Agent-Based Modeling/Calibration and Validation/Sensitivity Analysis/` (GSA Methods Review 2024); #8 Vine copulas → `Econometrics/Dependence Modeling/Vine Copulas/` (Aas 2016). Updated 6 parent indexes with sub-topic routing. Fixed non-standard `[[../...]]` relative wikilinks in the new clusters to vault-root-relative paths. Ran vault-repair afterward (no broken links; added reciprocal backlinks from anchor notes). Remaining open gaps: #11, #15, #16, #17, #18, #21, #22, #23, #25, #26. |
+=======
+| 2026-06-28 | Gap #1 (Propensity Score Matching) marked 🍂 covered. Searched arXiv, NBER, PMC, and academic homepages for Rosenbaum & Rubin (1983), Imbens (2004), Stuart (2010) — all freely available but blocked by session network policy. Created synthesis survey `raw/PSM-Rosenbaum-Rubin-Stuart-Survey.md` from training knowledge of the papers. Created 3 notes in `Econometrics/Identification Strategies/`: [[Propensity Score Matching - Overview]] (balancing theorem, strong ignorability, ATT vs ATE, PSM vs IPW, matching workflow, why matching fails for activity bias), [[Matching Algorithms and Caliper]] (NN greedy, caliper $\delta=0.2\sigma_{\text{logit}}$, optimal/full matching, subclassification, Mahalanobis, MatchIt R code), [[Covariate Balance and Matching Diagnostics]] (SMD, love plot, overlap plot, variance ratio, KS, Rubin 2001 criteria, cobalt R code). Updated Identification Strategies _Index.md (16→19 notes) and Econometrics _Index.md (48→51 notes). |
+| 2026-08-31 | Run 21: reviewed 10 notes (Bayesian Workflow - Overview, Standard Errors and Clustering, Hilbert Space Gaussian Processes, Within-Between Persons Distinction - Overview, LLM Expert Elicitation for Bayesian Networks, Agent Decision Rules and Bounded Rationality, Synthetic Control, The SBC Algorithm, Adjunctions via Initial Objects, Do-Calculus in Summary Causal DAGs). No existing gaps newly covered this run. Frontmatter fix: added `folder: "Category Theory/Adjunctions"` to Adjunctions via Initial Objects. Cross-links added: Agent Decision Rules → [[Heterogeneity in Agent Models]] + [[Emergent Phenomena in ABM]] + [[Discrete Choice Models]] (cross-domain ABM↔econometrics bridge via logit rule); The SBC Algorithm → [[Model Checking]] + [[Approximate Bayesian Computation for ABMs]] (simulation-based validation analogue across domains); Within-Between Persons Distinction - Overview → [[Time-Varying Treatments and G-computation]] (Claim 2 on time-varying confounders leads directly to g-computation); Bayesian Workflow - Overview → [[Simulation-Based Calibration - Overview]] (SBC as the concrete tool for step 4); Do-Calculus in Summary Causal DAGs → [[General Structure of Bayesian CI]] + [[Propensity Score in Bayesian CI]] + [[Frequentist Causal Estimation]] (identification results feed estimation methods). Added gaps #50 (General Bootstrap Methods), #51 (Causal Effect Identification Algorithms / ID Algorithm), #52 (Bounded Rationality and Behavioral Economics Foundations). Gaps #9 (Causal Structure Learning: PC/GES), #21 (BN Foundations), #43 (Spectral Analysis) reinforced by this run's notes. |
+| 2026-09-14 | Run 23: reviewed 9 notes (Canonical Quantization of Fields, Yoneda Lemma, Differences-in-Differences, Single-Parameter Models, Factor Copula Construction, NOTEARS - Overview, Response Models for Marketing Management, MCMC Inference for CausalImpact, Fitting and Validating Computation). No existing gaps newly covered this run. Frontmatter fixes: added `folder: "Category Theory/Representables"` to Yoneda Lemma; added `source/ingested` and `topic/copulas` tags to Factor Copula Construction (quoted title); added `date_ingested`, `folder`, `source/ingested` tag to Response Models for Marketing Management; renamed `## Cross-Links` → `## See Also` in Response Models for Marketing Management. H1 heading added to Fitting and Validating Computation (body was missing the `# Title` line). Cross-links added: Yoneda Lemma — fixed "In Adjunctions" to wikilink `[[Adjoint Functors\|Adjunctions]]` with explanation of how the unit $\eta_A$ arises from the Yoneda bijection; MCMC Inference for CausalImpact — added `[[Brodersen 2015 - Overview]]`, `[[CausalImpact Empirical Application]]`, `[[Fitting and Validating Computation]]`, `[[MCMC Basics]]` to See Also; Factor Copula Construction — added `[[Factor Copula Application - S&P 100 and Systemic Risk]]`, `[[SMM Copula Asymptotic Theory]]`, `[[Copula Estimation]]` to See Also; Fitting and Validating Computation — added `[[Simulation-Based Calibration - Overview]]` and `[[Interpreting SBC Histograms]]` to See Also. Added gaps #56 (INLA and Latent Gaussian Models) and #57 (Heckman Selection Model and Control Function Approach). Gaps #13 (State-Space/Kalman), #9 (Causal Structure Learning: PC/GES), #20 (Horseshoe Priors) reinforced by this run's notes. |
+| 2026-09-07 | Run 22: reviewed 10 notes (ABM Validation Challenges, Standard Errors and Clustering, Code Prompts for Causal Structure, Causal Model - Cause Precondition Effect, Wave Function and Hilbert Space, Matching Algorithms and Caliper, Power Analysis and Sample Size, Spatial Models - BYM, Brock-Mirman Model - SMM Estimation Exercise, Adjunctions via Initial Objects). No existing gaps newly covered this run. Factual/LaTeX fix: corrected `$\mathcal{H} = L^2(\mathbb{C})$` → `$\mathcal{H} = L^2(\mathbb{R})$` in Wave Function and Hilbert Space (wavefunctions are square-integrable complex-valued functions on ℝ, not ℂ). Frontmatter fix: changed `depends_on: []` → `depends_on: ["[[Directed Acyclic Graphs]]"]` in Causal Model - Cause Precondition Effect. Cross-links added: ABM Validation Challenges → [[Approximate Bayesian Computation for ABMs]] (ABC calibration inherits the plausibility-standard logic; simulation output distributions compared to observed data); Standard Errors and Clustering → [[Bayesian Difference in Differences]] (Bayesian posterior inference propagates group-level uncertainty that cluster-robust SEs address frequentistically); Code Prompts for Causal Structure → [[NLP Causal Extraction Methods]] (code prompts as alternative to NLP pipeline) + [[BN Construction Methods Comparison]] (situates code-prompt elicitation in BN construction taxonomy); Causal Model - Cause Precondition Effect → [[Code Prompts for Causal Structure]] (both encode explicit cause-effect structure; GUI workshop vs. LLM prompt engineering); Wave Function and Hilbert Space → [[Quantum Mechanics - Mathematical Formalism]] + [[Quantum Mechanics - Overview]] + [[QFT Overview]] (cross-linking Physics/Foundations to Theoretical Physics subfolder); Matching Algorithms and Caliper → [[Conditional Independence Assumption]] (identifying assumption matching satisfies; CIA plausibility motivates caliper/common-support choices) + [[Sensitivity Analysis in Observational Studies]] (Rosenbaum bounds as post-match robustness) + [[Nonparametric Causal Inference]] (BART-BCF as nonparametric alternative); Power Analysis and Sample Size → [[Multiple Comparisons - Bayesian Perspective]] (Bayesian approach to FDR; sample-size question of how many tests to run); Spatial Models - BYM → [[Model Checking]] (posterior predictive checks for BYM; overdispersion and spatial residual patterns via replicated data); Brock-Mirman SMM Exercise → [[ABM Calibration Overview]] (SMM framework applies directly to ABM calibration) + [[Approximate Bayesian Computation for ABMs]] (ABC as Bayesian counterpart to SMM for simulation calibration); Adjunctions via Initial Objects → [[Synthesis/Adjoints and Limits]] (limits as right adjoints to diagonal; terminal-cone characterisation derived here) + [[Representables/Yoneda Lemma]] (representable analogue of initial-object/comma-category perspective). Added gaps #53 (Spatial Econometrics and Moran's I), #54 (Bayesian Sample Size Determination and Design Analysis), #55 (Fuzzy Regression Discontinuity and Regression Kink Design). |
+| 2026-08-24 | Run 20: reviewed 10 notes (ABM Methodology and Principles, Xu 2016 - Overview, s-Separation in Summary DAGs, Tail Dependence in Factor Copulas, Research Questions in Econometrics, Multiple Testing Corrections, HMC and Stan in Practice, Bayesian Propensity Score Weighting, Limits in Presheaf Categories, Indirect Inference). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-08-24` to all 10 notes; added `folder: "Category Theory/Synthesis"` to Limits in Presheaf Categories; fixed `depends_on` in Limits in Presheaf Categories (path-prefixed wikilinks → bare note names); fixed `used_by` in Limits in Presheaf Categories (same); removed `[[raw/StatRethink-Bayes.pdf]]` from `depends_on` in HMC and Stan in Practice (raw PDFs should not be in depends_on); removed dead `[[Q - Handling Multiple Comparisons...]]` and `[[Q - Common Pitfalls...]]` wikilinks from `used_by` in Multiple Testing Corrections. Cross-links added: HMC and Stan in Practice → [[SBC Case Studies]] + [[Simulation-Based Calibration - Overview]] (NUTS passes where ADVI fails); Tail Dependence in Factor Copulas → [[Dependence Measures for Copulas]] + [[SMM Estimation of Factor Copulas]] (SMM uses quantile-dep. as targets) + fixed broken `[[../_Index\|Econometrics]]` → `[[Econometrics/_Index\|Econometrics]]`; Bayesian Propensity Score Weighting → [[Propensity Score Matching - Overview]] + [[Covariate Balance and Matching Diagnostics]] + [[General Structure of Bayesian CI]]; Limits in Presheaf Categories — updated See Also (bare note links + added [[Yoneda Lemma]] + [[Adjoint Functor Theorems]]); ABM Methodology and Principles → [[ABM Calibration Overview]] + [[ABM in Marketing Strategy]]; Indirect Inference → [[ABM Calibration Overview]] + [[HM-ABC Calibration Framework]] (gap #25 bridge); Research Questions in Econometrics → [[Propensity Score Matching - Overview]] + [[Difference-in-Differences with Multiple Time Periods - Overview]]; Xu 2016 → [[Difference-in-Differences with Multiple Time Periods - Overview]] (staggered DiD as IFE-level companion); s-Separation in Summary DAGs → [[NOTEARS - Overview]] (structure learning outputs → summarization pipeline). Added gaps #48 (Kan Extensions) and #49 (TMLE). |
+| 2026-08-17 | Run 19: reviewed 10 notes (Differences-in-Differences, Advertising and Promotion Effects, Propensity Score Matching - Overview, Mostly Harmless Econometrics - Overview, Synthetic Control Bias Theory, Frequentist Causal Estimation, Quantum Mechanics - Overview, Omitted Variables Bias, Model Selection and Exploratory Analysis, Behavioral Primitives and Thresholds). No existing gaps newly covered this run. Frontmatter fixes: added `folder: "Econometrics/Identification Strategies"` to Mostly Harmless Econometrics - Overview; changed `date_created` → `date_ingested` in Advertising and Promotion Effects and Model Selection and Exploratory Analysis; added `folder: "Market Response Models/Empirical Findings and Applications"` to Advertising and Promotion Effects. Fixed broken wikilink `[[Conditional Expectation Function\|CEF]]` → `[[Regression and the CEF\|CEF]]` in Mostly Harmless Econometrics - Overview. Cross-links added: Differences-in-Differences → [[Difference-in-Differences with Multiple Time Periods - Overview]] (new See Also entry for staggered DiD); Propensity Score Matching → [[Sensitivity Analysis in Observational Studies]] (Rosenbaum bounds as post-match robustness check); Frequentist Causal Estimation → [[Propensity Score Matching - Overview]] (matching as the paired-unit alternative to weighting); Behavioral Primitives → [[Population Initialization and Parameter Sensitivity]] + [[Uncertainty Quantification for ABM Calibration]] (BP thresholds as calibration targets); Omitted Variables Bias → [[Directed Acyclic Graphs]] + [[DAGs and Causal Identification]] + [[Table 2 Fallacy]] + [[Spurious Association and Confounds]] (DAG identification connects OVB to the formal causal framework); Quantum Mechanics - Overview → structured Physics subfolder counterparts ([[Physics/Foundations/Wave Function and Hilbert Space]], [[Physics/Foundations/Schrödinger Equation and Time Evolution]], [[Physics/Foundations/Uncertainty Principle]], [[Physics/Foundations/Quantum Entanglement]]); Mostly Harmless Econometrics - Overview → [[Regression Discontinuity Designs]] + [[Synthetic Control]] (completing the MHE identification strategy set); Advertising and Promotion Effects → [[Bayesian Media Mix Modeling - Overview]] + [[Shape (Saturation) Effects]] + [[ROAS, mROAS, and Optimal Media Mix]] (bridging empirical generalizations → Bayesian MMM workflow). Added gaps #45 (Event Study Designs and Pre-Trend Testing), #46 (Causal Forests and Generalized Random Forests / GRF), #47 (Synthetic Difference-in-Differences / SDiD). Gaps #7 (Permutation Inference), #40 (DML), #44 (Entropy Balancing) reinforced by this run's notes. |
+| 2026-08-10 | Run 18: reviewed 9 notes (Network Topology Effects on Diffusion, Instrumental Variables and Principal Stratification, Colimits, Quantum Field Theory - Overview, Yamashita 2020 - Overview, Covariate Balance and Matching Diagnostics, Factor Copula Application S&P 100, Hilbert Space Gaussian Processes, Word of Mouth Mechanisms). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-08-10` to 7 notes missing it (IV and Principal Stratification, Colimits, QFT Overview, Yamashita 2020, Covariate Balance, Factor Copula Application, Word of Mouth Mechanisms); added `folder: "Category Theory/Limits and Colimits"` to Colimits. Fixed broken relative-path wikilink `[[../_Index\|Econometrics]]` → `[[Econometrics/_Index\|Econometrics]]` in Factor Copula Application. Cross-links added: IV and Principal Stratification — inlined wikilink on "2SLS estimator" → `[[Frequentist Causal Estimation]]`, added `[[Frequentist Causal Estimation]]` and `[[Metalearners for CATE]]` to See Also; Covariate Balance — added `[[Sensitivity Analysis in Observational Studies]]` to See Also (complement: matching diagnostics check design, sensitivity analysis checks robustness post-match); Word of Mouth Mechanisms — added `[[Network Topology Effects on Diffusion]]` to See Also (WOM drives the two-wave adoption patterns; closing the bidirectional link). Added gaps #42 (Weak Instruments and First-Stage Diagnostics), #43 (Spectral Analysis and Frequency-Domain Methods for Time Series), #44 (Entropy Balancing and Overlap Weighting). |
+| 2026-08-03 | Run 17: reviewed 10 notes (Parameter Estimation in Market Response, Synthetic Control Extensions, Behavioral Primitives and Thresholds, History Matching for ABMs, Within-Between Persons Causal Inference, Frequentist Causal Estimation, Directed Acyclic Graphs, Network Topology Effects on Diffusion, Synthetic Control Bias Theory, Data Collection Models). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-08-03` to all 10 notes; fixed source path in History Matching for ABMs (`Research/Agent-Based Modeling/raw/…` → `Agent-Based Modeling/raw/…`); removed nonexistent `[[Q - Uncovering Causal Estimates from Non-Experimental Data]]` from `used_by` in Frequentist Causal Estimation; fixed broken wikilink `[[Experimental Design for ABMs]]` → `[[Population Initialization and Parameter Sensitivity]]` in History Matching for ABMs; fixed broken See Also link `[[Bayesian Propensity Scores and IPW]]` → `[[Bayesian Inverse Probability Weighting]]` + `[[Bayesian Propensity Score Weighting]]` in Frequentist Causal Estimation. Cross-links added: Parameter Estimation in Market Response → [[Bayesian Estimation and Priors for MMM]] (HB shrinkage ↔ MMM hierarchical priors); Frequentist Causal Estimation → [[Metalearners for CATE]] (DR estimator ↔ DR-learner); Within-Between Persons Causal Inference → [[Standard Errors and Clustering]] + [[Cross-Lagged and Dynamic Panel Models]] (new See Also entries); Network Topology Effects on Diffusion → [[Opinion Leaders and Social Influence]] + [[Word of Mouth Mechanisms]] (new See Also entries); Data Collection Models → [[Frequentist Causal Estimation]] + [[Propensity Score Matching - Overview]] (new See Also entries). Added gaps #39 (Design of Computer Experiments / LHS), #40 (Double/Debiased Machine Learning / DML), #41 (Granovetter Threshold Models / Social Tipping Points). Gaps #10 (Global Sensitivity Analysis), #22 (Bass Diffusion Model), #35 (Regularization-Induced Confounding) reinforced by this run's notes. |
+| 2026-07-27 | Run 16: reviewed 9 notes (Model Selection and Exploratory Analysis, Overfitting and Information Criteria, Factor Analysis and PPCA, Asymptotics and Frequentist Connections, Estimands in Longitudinal Research, Modeling as Software Development, Nonparametric Models Overview, Carryover (Adstock) Functional Forms, SMM Copula Asymptotic Theory). No existing gaps newly covered this run. Frontmatter fixes: added `folder` to Model Selection and Exploratory Analysis and Factor Analysis and PPCA; added `date_updated: 2026-07-27` to all 9 notes; added `aliases` to Factor Analysis and PPCA; fixed broken source path `[[Research/Research Methodology/raw/rohrer-murayama-2023.pdf]]` → `[[Research Methodology/raw/rohrer-murayama-2023.pdf]]` in Estimands in Longitudinal Research; removed `[[raw/BayesWorkflow.pdf]]` from `depends_on` in Modeling as Software Development (raw PDFs should not be in depends_on). Cross-links added: Model Selection and Exploratory Analysis → [[Bayesian Workflow - Overview]] + [[Forking Paths and Bayesian Approaches]] + [[MMM Model Selection and Application]] + [[Researcher Degrees of Freedom]] (new See Also section); Overfitting and Information Criteria → [[Model Selection and Exploratory Analysis]]; Factor Analysis and PPCA → [[Confirmatory Factor Analysis and SEM]] + [[Monsters and Mixtures]] + [[Hierarchical Linear Models]] + [[Dependence Measures for Copulas]]; Estimands in Longitudinal Research → [[Table 2 Fallacy]] + [[Survival Analysis]]; Modeling as Software Development → [[Simulation-Based Calibration - Overview]]; Nonparametric Models Overview → [[Factor Analysis and PPCA]] + [[Hilbert Space Gaussian Processes]] + [[Spatial Models - BYM]] + [[Monsters and Mixtures]] + [[Nonparametric Causal Inference]]; Carryover (Adstock) Functional Forms → [[Design of Dynamic Response Models]]; SMM Copula Asymptotic Theory → [[Factor Copulas - Overview]] + [[Indirect Inference]]. Added gaps #37 (Bayesian Model Averaging and Stacking) and #38 (Sparse GP Approximations / Inducing Points). Gaps #29 (GARCH), #33 (Variational Inference), #16 (Latent Class Models) reinforced by this run's notes. |
+| 2026-07-20 | Run 15: reviewed 10 notes (Survival Analysis, Nonparametric Causal Inference, Consumer Utility Function Components, Identifying Assumptions for Staggered DiD, Moderation Analysis, Interpreting SBC Histograms, SBC Case Studies, Li et al 2022 - Overview, Bayesian Inverse Probability Weighting, Instrumental Variables). No existing gaps newly covered this run. Frontmatter fixes: added `folder` and `source` fields to Nonparametric Causal Inference. Fixed broken wikilinks: `[[Difference in differences\|DiD]]` → `[[Differences-in-Differences\|DiD]]` in Nonparametric Causal Inference (table row); `[[Bayesian Propensity Scores and IPW]]` → `[[Bayesian Inverse Probability Weighting]]` + `[[Bayesian Propensity Score Weighting]]` in Li et al 2022 - Overview; same link fixed in Dream/_Index.md gap #1 text. Fixed structure of Moderation Analysis: removed duplicate Connections/See Also sections (links appeared in both; consolidated into single See Also). Cross-links added: Nonparametric Causal Inference → [[Bayesian Inverse Probability Weighting]] + [[Propensity Score Matching - Overview]] + [[General Structure of Bayesian CI]]; Moderation Analysis → [[Metalearners for CATE]] (See Also); SBC Case Studies → [[Approximation Methods]] + [[Spatial Models - BYM]] + [[Bayesian Workflow - Overview]] (See Also); Bayesian Inverse Probability Weighting — updated `used_by` to include Li et al 2022 + General Structure of Bayesian CI; added both to See Also; Interpreting SBC Histograms → [[Bayesian Workflow - Overview]] (See Also); Survival Analysis → [[Time-Varying Treatments and G-computation]] + [[Estimands in Longitudinal Research]] + [[Hierarchical Models]] (frailty) (See Also); Identifying Assumptions for Staggered DiD → [[Bayesian Difference in Differences]] + [[Conditional Independence Assumption]] + [[Regression Discontinuity Designs]] (See Also); Consumer Utility Function Components → [[Carryover Effects and Distributed Lags]] + [[Shape of the Marketing Response Function]] + [[ABM in Marketing Strategy]] (See Also). Added gaps #35 (Regularization-Induced Confounding in High-Dimensional Bayesian CI) and #36 (Causal Survival Analysis and Estimand Controversy around the Hazard Ratio). |
+| 2026-07-13 | Run 14: reviewed 9 notes (SBC Case Studies, Cartesian Closed Categories, Abadie 2021 Overview, Standard Errors and Clustering, Rank Statistics and Uniformity, Regression Discontinuity Designs, SMM Estimation of Factor Copulas, Functor Categories, Yoneda Embedding and Consequences). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-07-13` to all 9 notes; added `folder` to Cartesian Closed Categories, Functor Categories, Yoneda Embedding and Consequences (all Category Theory notes were missing this field). Cross-links added: SBC Case Studies → [[HMC and Stan in Practice]] + [[Computational Troubleshooting]] (centered/non-centered funnel geometry); Rank Statistics and Uniformity → [[SBC Case Studies]] (empirical demonstration of the uniformity theorem); Cartesian Closed Categories → [[Adjunctions/Units and Counits]] (evaluation map as counit) + [[Synthesis/Adjoints and Limits]]; Functor Categories → [[Adjunctions/Adjoint Functors]] (adjunctions between functor categories); Yoneda Embedding → [[Synthesis/Cartesian Closed Categories]] + [[Adjunctions/Adjoint Functors]] + [[Synthesis/Adjoint Functor Theorems]] (representability and GAFT); Abadie 2021 → [[Generalized Synthetic Control Method]] + [[Difference-in-Differences with Multiple Time Periods - Overview]]; Standard Errors and Clustering → [[Simultaneous Inference via Multiplier Bootstrap]] + [[Identifying Assumptions for Staggered DiD]]; Regression Discontinuity Designs → [[Standard Errors and Clustering]] (cluster at assignment unit) + [[Sensitivity Analysis in Observational Studies]]; SMM Estimation of Factor Copulas → [[Tail Dependence in Factor Copulas]] (why quantile dependence at 0.05/0.10/0.90/0.95 is chosen). Added gaps #32 (RD Bandwidth Selection / Local Polynomial Estimation), #33 (Variational Inference / ADVI / ELBO), #34 (Curry-Howard Correspondence and Type Theory). Gaps #27 (Monads), #29 (GARCH), #31 (EVT) reinforced by this run's notes. |
+| 2026-07-06 | Run 13: reviewed 10 notes (Factor Copula Construction, Adjoint Functor Theorems, Asymptotics and Frequentist Connections, Synthetic Control Bias Theory, HM-ABC Calibration Framework, Instrumental Variables, Factor Copulas - Overview, Time-Varying Treatments and G-computation, Sensitivity Analysis in Observational Studies, Code Prompt Aspects Analysis). No existing gaps newly covered this run. Frontmatter fixes: added `date_updated: 2026-07-06` to 9 notes; added `folder: "Category Theory/Synthesis"` to Adjoint Functor Theorems; fixed source path in HM-ABC Calibration Framework (`Research/Agent-Based Modeling/raw/…` → `Agent-Based Modeling/raw/…`); removed `[[raw/BDA3.pdf]]` from `depends_on` in Asymptotics and Frequentist Connections (raw PDFs should not appear as depends_on). Cross-links added: Adjoint Functor Theorems → [[Units and Counits]] (adjunction-monad correspondence; the unit $\eta_A$ from GAFT is the monad unit); Asymptotics and Frequentist Connections → [[Partial Pooling as Multiple Comparisons Correction]] (James-Stein result links Bayesian shrinkage to frequentist asymptotics); HM-ABC Calibration Framework → [[Method of Simulated Moments]] (moment-based ABM calibration bridge; gap #25 connection); Instrumental Variables → [[Synthetic Control]] (primary alternative for panel settings without valid instruments); Factor Copulas - Overview → [[Dependence Measures for Copulas]] (rank statistics used as SMM targets); Sensitivity Analysis in Observational Studies → [[Propensity Score Matching - Overview]] + [[Nonparametric Causal Inference]] (sensitivity analysis reported alongside PSM/BART estimates); Synthetic Control Bias Theory → [[Generalized Synthetic Control Method]] (GSC estimates the latent factors explicitly where SC matches on them implicitly); Code Prompt Aspects Analysis → [[LLM Causal Reasoning Tasks]] (taxonomy of tasks that the intervention study evaluates). Added gaps #30 (Partial Identification / Manski Bounds) and #31 (Extreme Value Theory / Tail Risk). Gaps #7 (Permutation Inference), #8 (Factor/Vine Copulas), #12 (Empirical Bayes), #25 (ABM+SMM), #27 (Monads) reinforced by this run's notes. |
+>>>>>>> main

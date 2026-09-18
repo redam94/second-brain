@@ -12,7 +12,8 @@ source_location: "§2, pp. 439-440"
 date_ingested: 2026-04-10
 folder: "Bayesian Statistics/Causal Inference/Knowledge Elicitation"
 doc_type: paper
-depends_on: []
+depends_on:
+  - "[[Directed Acyclic Graphs]]"
 used_by:
   - "[[Interactive Knowledge Elicitation Method]]"
 aliases:
@@ -89,3 +90,4 @@ This design choice makes the model tractable for non-experts: it is easier to th
 - [[Directed Acyclic Graphs]] — the formal probabilistic counterpart: DAGs encode the same cause-effect relationships as conditional independence structure
 - [[LLM Expert Elicitation for Bayesian Networks]] — LLM-based knowledge elicitation also extracts causal structure from domain knowledge
 - [[BN Construction Methods Comparison]] — compares manual elicitation approaches including structured three-element models with data-driven and hybrid methods
+- [[Code Prompts for Causal Structure]] — Liu et al.'s code-prompt method also makes cause-effect structure explicit (via `if`/`elif` conditionals); contrasts the GUI workshop approach of Yamashita with the LLM prompt engineering approach of Liu

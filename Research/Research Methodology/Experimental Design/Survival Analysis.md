@@ -140,4 +140,10 @@ Bayesian survival analysis places priors on hazard functions or regression coeff
 - [[Generalized Linear Models]] — Cox model shares the GLM structure
 - [[Missing Data Models]] — censoring is a form of missing data
 - [[Power Analysis and Sample Size]] — sample size calculation for survival studies
+<<<<<<< HEAD
 - [[Delayed and Censored Feedback - Overview]] — extends right-censoring to settings where the event ("conversion") may never happen at all: a not-yet-converted click/action is right-censored at the elapsed time, exactly as here, but is modeled jointly with a latent "will it ever happen" indicator (see [[Delayed Feedback Model for Conversion Prediction]] for the supervised-learning version and [[Bandit Models with Delayed and Censored Feedback]] for the sequential-decision/bandit version)
+=======
+- [[Time-Varying Treatments and G-computation]] — G-computation and time-varying exposures generalize the survival analysis framework
+- [[Estimands in Longitudinal Research]] — defines target estimands in longitudinal studies where survival is often the outcome
+- [[Hierarchical Models]] — frailty models for clustered survival data are random-effects / hierarchical models
+>>>>>>> main

@@ -11,6 +11,7 @@ tags:
 source: "[[raw/Xu 2016 - Generalized Synthetic Control Method.pdf]]"
 source_location: "Political Analysis 25(1): 57–76"
 date_ingested: 2026-04-10
+date_updated: 2026-08-24
 folder: "Econometrics/Identification Strategies"
 doc_type: paper
 depends_on:
@@ -94,5 +95,6 @@ The key insight: by estimating the IFE model on the control group only, then pro
 - [[Synthetic Control Bias Theory]] — the linear factor model underpinning GSC
 - [[Synthetic Control Extensions]] — survey of extensions including GSC, elastic net, matrix completion
 - [[Differences-in-Differences]] — the special case when parallel trends holds
+- [[Difference-in-Differences with Multiple Time Periods - Overview]] — Callaway-Sant'Anna handles staggered timing at the DiD level; GSC handles time-varying factors at the IFE level
 - [[Abadie 2021 - Overview]] — complementary methodological guide on canonical SC feasibility
 - [[The Selection Problem]] — GSC addresses the selection problem when parallel trends (DiD) or convex hull (SC) conditions fail

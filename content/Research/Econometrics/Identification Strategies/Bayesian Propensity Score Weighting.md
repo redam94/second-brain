@@ -13,6 +13,7 @@ tags:
 source: "[[raw/How to use Bayesian propensity scores and inverse probability weights]]"
 source_location: "Andrew Heiss blog, 2021-12-18"
 date_ingested: 2026-04-15
+date_updated: 2026-08-24
 folder: "Econometrics/Identification Strategies"
 doc_type: tutorial
 depends_on:
@@ -210,6 +211,9 @@ rubin_se(outcome_models$ate, outcome_models$ate_se)
 
 ## See Also
 
-- [[Synthetic Control]] — Alternative to IPTW for single-unit treatment; uses weights differently
-- [[Counterfactual Inference]] — Bayesian approach to predicting counterfactual outcomes
-- [[Missing Data Models]] — Multiple imputation (which Rubin's rules were originally designed for)
+- [[Propensity Score Matching - Overview]] — frequentist counterpart: matching units (not weighting) to achieve balance
+- [[Covariate Balance and Matching Diagnostics]] — SMD, love plots, overlap plots for diagnosing balance after either matching or weighting
+- [[General Structure of Bayesian CI]] — situates Bayesian IPTW within the broader Bayesian causal inference framework
+- [[Synthetic Control]] — alternative for single-unit treatment; unit weights that sum to 1, not normalized by propensity scores
+- [[Counterfactual Inference]] — Bayesian approach to predicting counterfactual outcomes directly
+- [[Missing Data Models]] — multiple imputation (Rubin's rules were originally designed for missing data)

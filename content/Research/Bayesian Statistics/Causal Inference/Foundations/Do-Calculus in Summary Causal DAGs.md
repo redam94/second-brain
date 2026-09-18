@@ -111,3 +111,6 @@ Practical causal inference using a summary DAG follows the same steps as on the 
 - [[CaGReS Algorithm]] — produces the summary DAG used here
 - [[Summary Causal DAGs]] — formal definition of the object
 - [[Canonical Causal DAGs]] — the proof foundation for Theorems 6.1–6.2
+- [[General Structure of Bayesian CI]] — Bayesian estimation framework that consumes the identification results proven here
+- [[Propensity Score in Bayesian CI]] — a specific adjustment-set estimator derived from do-calculus backdoor criterion
+- [[Frequentist Causal Estimation]] — frequentist adjustment methods (backdoor, IPW) that follow from do-calculus identification

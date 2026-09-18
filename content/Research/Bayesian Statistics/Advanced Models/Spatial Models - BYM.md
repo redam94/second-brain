@@ -127,6 +127,7 @@ Spatial smoothing is useful for **forecasting**: low-accident tracts surrounded 
 - [[Generalized Linear Models]] — Poisson GLM that the BYM model wraps
 - [[Nonparametric Models Overview]] — broader context of non-parametric Bayesian approaches to which BYM belongs
 - [[Social Network Models]] — a related graph-structured model where nodes are agents rather than areas
+- [[Model Checking]] — posterior predictive checks apply directly to BYM models; the overdispersion and spatial residual patterns from a BYM fit should be checked via replicated data from the posterior predictive distribution
 
 ## Source
 

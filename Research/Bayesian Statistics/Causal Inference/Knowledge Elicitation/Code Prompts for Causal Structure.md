@@ -141,3 +141,5 @@ Section 6 experiments (see [[Code Prompt Aspects Analysis]]) confirm that the co
 - [[Code vs Text Prompt Evaluation]] — empirical comparison of these prompts vs. text
 - [[Code Prompt Aspects Analysis]] — which aspects of the code prompt matter most
 - [[Fine-tuning on Conditional Statements]] — using conditional statements in training data
+- [[NLP Causal Extraction Methods]] — alternative text-based approaches to extracting causal structure; code prompts represent a structured alternative to the NLP extraction pipeline
+- [[BN Construction Methods Comparison]] — situates code-prompt-based elicitation within the broader taxonomy of BN construction methods (manual, data-driven, hybrid)

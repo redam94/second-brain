@@ -8,6 +8,7 @@ tags:
 source: "[[raw/1804.06788-Talts-SBC.pdf]]"
 source_location: "Sec. 4.1 & Appendix B, pp. 5, 18-19 (Thm. 1/2, Eqs. 2-4.1)"
 date_ingested: 2026-06-17
+date_updated: 2026-07-13
 folder: "Bayesian Statistics/Workflow"
 doc_type: paper
 depends_on:
@@ -82,3 +83,4 @@ uniform over the $L+1$ ranks. $\square$
 - [[Interpreting SBC Histograms]]
 - [[Simulation-Based Calibration - Overview]]
 - [[MCMC Basics]]
+- [[SBC Case Studies]] — the empirical demonstration of these theorems: ∪-shape (misspecified prior), sloped histogram (biased HMC), ADVI failure, subtle INLA bias via ECDF-difference

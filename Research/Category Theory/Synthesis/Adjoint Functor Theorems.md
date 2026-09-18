@@ -8,6 +8,8 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 6.3, pp. 163–171; Appendix, pp. 173"
 date_ingested: 2026-05-08
+date_updated: 2026-07-06
+folder: "Category Theory/Synthesis"
 doc_type: textbook
 depends_on:
   - "[[Adjunctions/Adjoint Functors]]"
@@ -105,4 +107,8 @@ The SAFT applies when $\mathcal{B}$ has nice properties (well-powered + cogenera
 - [[Adjunctions/Adjoint Functors]] — Adjunction definition
 - [[Adjoints and Limits]] — Right adjoints preserve limits (necessity in GAFT)
 - [[Adjunctions/Adjunctions via Initial Objects]] — The proof constructs initial objects
+<<<<<<< HEAD
 - [[Algebras for a Monad - Eilenberg-Moore and Kleisli]] — limits/colimits of algebras & adjoint construction
+=======
+- [[Adjunctions/Units and Counits]] — The unit $\eta_A$ constructed in the GAFT proof is the unit of the adjunction; the monad $T = GF$ arising from any adjunction is described there
+>>>>>>> main

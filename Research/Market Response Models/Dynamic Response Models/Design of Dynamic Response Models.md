@@ -9,7 +9,8 @@ tags:
   - topic/dynamic-models
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-06-29
+folder: "Market Response Models/Dynamic Response Models"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 4"
 chapter: "4"
 status: complete
@@ -101,3 +102,10 @@ Dynamic response models can be written in the ADL form, which relates to the ARI
 - Estimation issues: [[Parameter Estimation in Market Response]]
 - Time series tools: [[Single Marketing Time Series]]
 - Reaction dynamics: [[Reaction Functions and Competitive Dynamics]]
+
+## See Also
+
+- [[Bayesian Structural Time-Series Model]] — state-space alternative for decomposing trend, seasonality, and marketing effects in the same ADL spirit
+- [[Hilbert Space Gaussian Processes]] — non-parametric alternative for flexible trend and seasonal decomposition
+- [[Instrumental Variables]] — 2SLS motivation for endogenous advertising and price in ADL models
+- [[Method of Simulated Moments]] — simulation-based estimation applicable to structural dynamic response models

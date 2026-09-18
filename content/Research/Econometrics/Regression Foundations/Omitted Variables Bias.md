@@ -79,6 +79,10 @@ For returns to schooling where "ability" ($A_i$) is omitted:
 - [[Conditional Independence Assumption]]
 - [[Regression and the CEF]]
 - [[Instrumental Variables]]
+- [[Directed Acyclic Graphs]] — OVB arises when a fork or pipe in the DAG is not adjusted for; the DAG identifies which variables must be in $X$
+- [[DAGs and Causal Identification]] — back-door criterion formalizes which omitted variables produce bias
+- [[Table 2 Fallacy]] — OVB from mutual adjustment: control variables in multivariable regression have their own OVB problems and should not be interpreted as independent causal estimates
+- [[Spurious Association and Confounds]] — fork/pipe/collider patterns that generate OVB
 - [[Bayesian Linear Regression]] — Bayesian shrinkage as regularization that partially mitigates OVB in high-dimensional settings
 - [[The Experimental Ideal]] — randomization eliminates OVB by construction; the gold-standard contrast to observational confounding
 - [[Research Questions in Econometrics]] — FAQ #3 (identification strategy) is directly aimed at the OVB threat

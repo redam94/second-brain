@@ -12,6 +12,7 @@ tags:
 source: "[[raw/Xu 2016 - Generalized Synthetic Control Method.pdf]]"
 source_location: "Xu (2017), Political Analysis 25(1): 57–76, Sections 2–5"
 date_ingested: 2026-04-10
+date_updated: 2026-06-29
 folder: "Econometrics/Identification Strategies"
 doc_type: paper
 depends_on:

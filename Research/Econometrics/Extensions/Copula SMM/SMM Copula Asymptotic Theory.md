@@ -10,6 +10,7 @@ tags:
 source: "[[raw/Oh_Patton_SMM_copulas_nov11.pdf]]"
 source_location: "Oh & Patton (2011), Sections 2.2-2.4, pp. 6-13"
 date_ingested: 2026-04-11
+date_updated: 2026-07-27
 folder: "Econometrics/Extensions/Copula SMM"
 doc_type: paper
 depends_on:
@@ -195,6 +196,8 @@ where the remainder $\mathbf{R}_{T,S} = o_p(1)$.
 - Builds on [[SMM Estimator for Copulas]] — the estimator whose properties are established here
 - [[Dependence Measures for Copulas]] — the moments whose asymptotic behavior drives $\boldsymbol{\Sigma}_0$
 - [[Method of Simulated Moments]] — general MSM theory that this extends to the copula setting
+- [[Factor Copulas - Overview]] — the primary copula model estimated by this SMM procedure in Oh & Patton (2012)
+- [[Indirect Inference]] — a related simulation-based estimation framework; II uses an auxiliary model while SMM matches moments directly
 - [[SMM Copula Specification Testing]] — uses these asymptotic results for the J-test
 - [[SMM Copula Simulation and Application]] — verifies these results in finite samples
 

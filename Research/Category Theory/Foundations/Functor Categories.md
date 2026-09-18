@@ -8,6 +8,8 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 1.3–1.4, pp. 38–52"
 date_ingested: 2026-05-08
+date_updated: 2026-07-13
+folder: "Category Theory/Foundations"
 doc_type: textbook
 depends_on:
   - "[[Functors]]"
@@ -93,3 +95,4 @@ For fixed $A$, this gives the **representable functor** $\mathcal{A}(A, -): \mat
 - [[Representables/Yoneda Lemma]] — Natural transformations out of representables
 - [[Synthesis/Limits in Presheaf Categories]] — Pointwise limits
 - [[Synthesis/Cartesian Closed Categories]] — Presheaf categories are CCC
+- [[Adjunctions/Adjoint Functors]] — Adjunctions between functor categories are the source of many structural results; the functor category $[\mathcal{A}^{\mathrm{op}}, \mathbf{Set}]$ carries the CCC adjunction $- \times B \dashv (-)^B$

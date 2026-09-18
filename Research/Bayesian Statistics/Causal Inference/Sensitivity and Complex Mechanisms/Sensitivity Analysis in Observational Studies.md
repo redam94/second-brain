@@ -9,6 +9,7 @@ tags:
 source: "[[raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]]"
 source_location: "§6, pp. 12–14"
 date_ingested: 2026-04-10
+date_updated: 2026-07-06
 folder: "Bayesian Statistics/Causal Inference/Sensitivity and Complex Mechanisms"
 doc_type: paper
 depends_on:
@@ -131,3 +132,5 @@ This connects to the broader theme of identifiability in Bayesian causal inferen
 ## See Also
 - [[Instrumental Variables and Principal Stratification]] — alternative approach when unconfoundedness is untenable
 - [[Frequentist Causal Estimation]] — doubly-robust estimators whose bias sensitivity analysis quantifies
+- [[Propensity Score Matching - Overview]] — PSM is the most common observational method; sensitivity analysis (E-value, Rosenbaum bounds) is routinely reported alongside PSM estimates
+- [[Nonparametric Causal Inference]] — BART-based ATE/ATT estimation; sensitivity analysis quantifies robustness of these estimates to unmeasured confounding

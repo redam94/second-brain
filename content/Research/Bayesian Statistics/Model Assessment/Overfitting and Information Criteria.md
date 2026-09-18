@@ -10,6 +10,7 @@ tags:
   - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-07-27
 folder: "Bayesian Statistics/Model Assessment"
 aliases:
   - "WAIC"
@@ -94,3 +95,4 @@ WAIC is the most general: it uses the full posterior, makes no Gaussian approxim
 - [[Hierarchical Models]] — partial pooling is a form of regularization that directly reduces effective model complexity
 - [[Bayesian Workflow - Overview]] — information criteria (WAIC/LOO) are the quantitative tools in the iterative model comparison step
 - [[Probability and Bayesian Inference]] — KL divergence and the log score are grounded in the probability theory introduced there
+- [[Model Selection and Exploratory Analysis]] — applies AIC/BIC and cross-validation in the market response modeling context (Ch. 5 of Hanssens et al.)

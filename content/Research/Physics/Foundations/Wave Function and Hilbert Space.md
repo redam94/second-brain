@@ -47,7 +47,7 @@ Classical physics describes a particle by its exact position and momentum. Quant
 The possible states form the *projective space* of $\mathcal{H}$.
 
 **Examples of Hilbert spaces:**
-- Position/momentum of a particle: $\mathcal{H} = L^2(\mathbb{C})$, the space of square-integrable functions
+- Position/momentum of a particle: $\mathcal{H} = L^2(\mathbb{R})$, the space of square-integrable complex-valued functions on the real line
 - Spin-$\tfrac{1}{2}$ particle: $\mathcal{H} = \mathbb{C}^2$ with the standard inner product
 
 ### Observables
@@ -95,3 +95,6 @@ where $|c_n|^2$ is the probability of measuring eigenvalue $\lambda_n$.
 - [[Schrödinger Equation and Time Evolution]] — time dynamics of the state vector
 - [[Uncertainty Principle]] — limits on simultaneous eigenvalues of non-commuting observables
 - [[Quantum Entanglement]] — non-separable states of composite systems
+- [[Quantum Mechanics - Mathematical Formalism]] — Theoretical Physics companion note covering Dirac notation, operators, and commutation relations at a higher level of abstraction
+- [[Quantum Mechanics - Overview]] — big-picture survey of quantum mechanics connecting to the Theoretical Physics notes cluster
+- [[QFT Overview]] — quantum field theory generalises this single-particle Hilbert space formalism to many-body field operators

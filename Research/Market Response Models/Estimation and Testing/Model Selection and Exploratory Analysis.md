@@ -8,8 +8,9 @@ tags:
   - topic/market-response
   - topic/model-selection
   - source/hanssens-parsons-schultz-2001
-date_created: 2026-04-11
-date_updated: 2026-04-11
+date_ingested: 2026-04-11
+date_updated: 2026-07-27
+folder: "Market Response Models/Estimation and Testing"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 5"
 chapter: "5"
 status: complete
@@ -100,5 +101,11 @@ The more researchers test, the more likely a spuriously good-fitting model will 
 - Specification testing: [[Model Testing and Specification]]
 - Flexible forms for comparison: [[Flexible Functional Forms]]
 - Bayesian model comparison: [[Model Comparison]], [[Overfitting and Information Criteria]]
-- Multiple testing: [[Multiple Testing Corrections]], [[Garden of Forking Paths]]
+- Multiple testing: [[Multiple Testing Corrections]], [[Garden of Forking Paths]], [[Forking Paths and Bayesian Approaches]]
 - ARIMA identification (EDA for time series): [[Single Marketing Time Series]]
+
+## See Also
+
+- [[Bayesian Workflow - Overview]] — information criteria (WAIC/LOO) appear at the model-comparison step of the Bayesian workflow
+- [[MMM Model Selection and Application]] — applies these model selection tools in the Bayesian MMM context (geometric vs. delayed adstock, saturation specification)
+- [[Researcher Degrees of Freedom]] — the multiple-comparison risk when searching over variable sets, functional forms, and lag structures simultaneously

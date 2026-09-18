@@ -9,6 +9,7 @@ tags:
 source: "[[Research/Research Methodology/raw/rohrer-murayama-2023.pdf]]"
 source_location: "pp. 2–5 (Within-persons not necessary, not sufficient, can be helpful)"
 date_ingested: 2026-04-11
+date_updated: 2026-08-03
 folder: "Research Methodology"
 doc_type: paper
 depends_on:
@@ -106,3 +107,5 @@ Problems arise when researchers implicitly claim causal interpretations for nonc
 - [[Fixed-Effects Model]] — the within-persons approach, assumptions, and limitations
 - [[Estimands in Longitudinal Research]] — how to define the right target before choosing a level
 - [[Within-Between Persons Distinction - Overview]] — paper overview
+- [[Standard Errors and Clustering]] — clustering SEs at the person level is standard practice in longitudinal fixed-effects models
+- [[Cross-Lagged and Dynamic Panel Models]] — models reciprocal dynamics (Y → X) that neither within- nor between-persons alone addresses

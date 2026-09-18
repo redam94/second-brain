@@ -5,9 +5,10 @@ tags:
   - topic/agent-based-modeling
   - type/overview
   - doc/paper
-source: "[[Research/Agent-Based Modeling/raw/calibration_ABM.pdf]]"
+source: "[[Agent-Based Modeling/raw/calibration_ABM.pdf]]"
 source_location: "Abstract, Sections 1–3, pp. 1–6"
 date_ingested: 2026-04-11
+date_updated: 2026-07-06
 folder: "Agent-Based Modeling/Calibration and Validation/Calibration Methods"
 doc_type: paper
 depends_on:
@@ -85,3 +86,4 @@ Trade-off: HM+ABC produces slightly narrower 95% CIs than ABC alone (more precis
 - [[Approximate Bayesian Computation for ABMs]] — the ABC step in detail
 - [[Uncertainty Quantification for ABM Calibration]] — the three uncertainty sources
 - [[ABM Calibration Case Studies]] — validation on SugarScape, birds, RISC
+- [[Method of Simulated Moments]] — econometric simulation-based estimation; moment-matching from ABM output is closely analogous to SMM (the `used_by` field of that note flags this connection explicitly)

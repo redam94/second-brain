@@ -8,6 +8,7 @@ tags:
 source: "[[raw/Oh-Patton-2012-Factor-Copulas.pdf]]"
 source_location: "Secs. 1-2, pp. 1-11"
 date_ingested: 2026-06-17
+date_updated: 2026-07-06
 folder: "Econometrics/Dependence Modeling"
 doc_type: paper
 depends_on: []
@@ -75,6 +76,7 @@ This separation lets the researcher (i) estimate marginals using the large univa
 - [[SMM Estimation of Factor Copulas]] — the estimation method (no closed-form likelihood).
 - [[Factor Copula Application - S&P 100 and Systemic Risk]] — the high-dimensional empirical study.
 - [[SMM Estimator for Copulas]] — the companion Oh & Patton (2011) paper providing the estimator this paper applies.
+- [[Dependence Measures for Copulas]] — the rank-based moment statistics (Kendall's $\tau$, Spearman's $\rho$, quantile dependence) used as SMM targets.
 - [[Bayesian copula estimation Describing correlated joint distributions]] — a PyMC Gaussian-copula tutorial; contrast the Bayesian Gaussian-copula approach with the frequentist, fat-tailed, factor-based approach here.
 
 ## See Also

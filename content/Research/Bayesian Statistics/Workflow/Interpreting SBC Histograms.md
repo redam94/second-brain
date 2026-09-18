@@ -88,3 +88,4 @@ A misbehaving analysis can show several deviations at once, but because the sign
 - [[SBC Case Studies]]
 - [[Simulation-Based Calibration - Overview]]
 - [[Model Checking]]
+- [[Bayesian Workflow - Overview]] — SBC histogram interpretation is a key step in the broader Bayesian workflow

@@ -8,6 +8,7 @@ tags:
 source: "[[raw/Quantum field theory]]"
 source_location: "Introduction, History, Principles sections"
 date_ingested: 2026-04-11
+date_updated: 2026-08-10
 folder: "Theoretical Physics"
 doc_type: article
 depends_on:

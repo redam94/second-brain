@@ -8,6 +8,7 @@ tags:
 source: "[[raw/Oh-Patton-2012-Factor-Copulas.pdf]]"
 source_location: "Sec. 2.3-2.4, pp. 6-10; App. A, pp. 26-31"
 date_ingested: 2026-06-17
+date_updated: 2026-08-24
 folder: "Econometrics/Dependence Modeling"
 doc_type: paper
 depends_on:
@@ -122,4 +123,6 @@ Lower (upper) tail dependence is the probability both variables lie below (above
 ## See Also
 
 - [[Factor Copulas - Overview]]
-- [[../_Index|Econometrics]]
+- [[Dependence Measures for Copulas]] — the tail dependence coefficients ($\tau^L$, $\tau^U$) estimated here are the EVT-based targets for SMM
+- [[SMM Estimation of Factor Copulas]] — uses quantile dependence (empirical proxy for $\tau^L$/$\tau^U$) as SMM moment conditions
+- [[Research/Econometrics/_Index|Econometrics]]

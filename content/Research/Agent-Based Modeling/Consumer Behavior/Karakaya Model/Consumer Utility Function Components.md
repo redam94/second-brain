@@ -128,6 +128,10 @@ Higher quality attributes increase production costs, creating the fundamental tr
 - Parameter values and experimental variations are detailed in [[Population Initialization and Parameter Sensitivity]]
 
 ## See Also
+
 - [[Logit Purchase Decision Model]] — how utility translates to purchase
 - [[Word of Mouth Mechanisms]] — how $WOM_i$ is computed
 - [[Karakaya et al 2011 - Overview]] — paper context
+- [[Carryover Effects and Distributed Lags]] — the promotion carryover ($\beta \cdot Pro_{t-1}$) mirrors adstock/ADL carryover in market response models
+- [[Shape of the Marketing Response Function]] — connects the S-curve / diminishing returns marketing literature to the promotion and WOM utility components
+- [[ABM in Marketing Strategy]] — higher-level strategic implications of the utility model in marketing ABM contexts

@@ -11,7 +11,7 @@ tags:
   - topic/econometrics
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-08-03
 source: "Hanssens, Parsons & Schultz (2001) Ch. 5"
 chapter: "5"
 status: complete
@@ -187,3 +187,4 @@ Related to [[Instrumental Variables]] (MHE context).
 - Bayesian workflow: [[Bayesian Workflow - Overview]]
 - IV estimator theory: [[Instrumental Variables]]
 - SUR for market share systems: [[Market Share Models]]
+- Bayesian hierarchical estimation applied to media mix: [[Bayesian Estimation and Priors for MMM]]

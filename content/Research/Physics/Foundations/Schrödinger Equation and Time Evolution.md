@@ -9,6 +9,7 @@ tags:
 source: "[[raw/Quantum mechanics]]"
 source_location: "Time evolution of a quantum state; Examples"
 date_ingested: 2026-04-16
+date_updated: 2026-06-29
 folder: "Physics/Foundations"
 doc_type: article
 depends_on:
@@ -122,3 +123,4 @@ $$
 - [[Wave Function and Hilbert Space]] — the state $\psi$ that evolves
 - [[Uncertainty Principle]] — consequences of the non-commuting position and momentum operators
 - [[Canonical Quantization of Fields]] — the harmonic oscillator generalized to fields
+- [[Quantum Entanglement]] — superposition and non-classical correlations among multi-particle states; entangled states evolve under the multi-particle Hamiltonian

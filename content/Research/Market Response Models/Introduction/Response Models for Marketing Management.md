@@ -8,8 +8,11 @@ tags:
   - topic/market-response
   - topic/marketing-management
   - source/hanssens-parsons-schultz-2001
+  - source/ingested
 date_created: 2026-04-11
+date_ingested: 2026-04-11
 date_updated: 2026-04-11
+folder: "Market Response Models/Introduction"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 1"
 chapter: "1"
 status: complete
@@ -110,7 +113,7 @@ Three reasons to use formal response models rather than managerial intuition:
 2. **Accountability**: parameters are estimated and can be revised with new data
 3. **Optimization**: calculus-based optima replace arbitrary budget rules
 
-## Cross-Links
+## See Also
 
 - Book overview: [[Market Response Models - Overview]]
 - Data and measurement: [[Markets Data and Sales Drivers]]

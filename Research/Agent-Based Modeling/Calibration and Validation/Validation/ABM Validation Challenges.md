@@ -101,4 +101,8 @@ Given the difficulty of formal validation, the papers converge on a **plausibili
 - [[ABM vs Equation-Based Modeling]] — why micro-level validation is harder for ABM than for equation-based models
 - [[Model Checking]] — Bayesian posterior predictive checks as analog to macro-level ABM validation; same logic of checking emergent/simulated output against observations
 - [[Garden of Forking Paths]] — researcher degrees of freedom in ABM specification choices (agent rules, network topology, parameter ranges) mirror the forking paths problem in statistical analysis
+<<<<<<< HEAD
 - [[Global Sensitivity Analysis - Overview]] — GSA as a robustness/validation strategy
+=======
+- [[Approximate Bayesian Computation for ABMs]] — ABC calibration as an alternative to GA or analytic approaches; ABC inherits the plausibility-standard logic by comparing simulated output distributions to observed data
+>>>>>>> main

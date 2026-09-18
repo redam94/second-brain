@@ -6,9 +6,10 @@ tags:
   - topic/longitudinal-methods
   - type/concept
   - doc/paper
-source: "[[Research/Research Methodology/raw/rohrer-murayama-2023.pdf]]"
+source: "[[Research Methodology/raw/rohrer-murayama-2023.pdf]]"
 source_location: "pp. 7–11 (Setting the analysis goal; Making the most of within-persons data)"
 date_ingested: 2026-04-11
+date_updated: 2026-07-27
 folder: "Research Methodology"
 doc_type: paper
 depends_on:
@@ -110,3 +111,5 @@ Some argue researchers should always start with descriptive analyses before atte
 - [[Fixed-Effects Model]] — one answer to a specific class of (contemporaneous, within-person) estimands
 - [[Cross-Lagged and Dynamic Panel Models]] — models for lagged reciprocal estimands
 - [[Within-Between Persons Causal Inference]] — how each level helps for different estimands
+- [[Table 2 Fallacy]] — estimand ambiguity in multi-covariate regression: which coefficient is the "target" estimand?
+- [[Survival Analysis]] — the ICH E9(R1) estimand framework extends to time-to-event outcomes; hazard ratios conflate estimand and estimator

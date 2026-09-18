@@ -29,6 +29,7 @@ expanded_by:
   - "[[Effective Sample Size and Monte Carlo Standard Error]]"
 ---
 
+<<<<<<< HEAD
 > [!info] Expanded in the 2026 textbook
 > The 2020 paper's material on fitting and validating computation is expanded across [[Computational Workflow/_Index|Computational Workflow]] and the SBC notes of [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]].
 >
@@ -39,6 +40,9 @@ expanded_by:
 > - [[SBC in the Workflow]] and [[Simulation-Based Calibration Checking in Model Development Workflow]] — SBC as a development subroutine, with five real bugs found
 > - [[Approximate Algorithms and Approximate Models]] and [[Variational Inference and Pathfinder]]
 
+=======
+# Fitting and Validating Computation
+>>>>>>> main
 
 > [!summary]
 > Sections 3--4 of Gelman et al. (2020) cover how to fit Bayesian models using MCMC (particularly HMC), validate that the computation is correct, and use simulated data to diagnose problems before touching real data. Key tools include convergence diagnostics, fake-data simulation, and simulation-based calibration (SBC).
@@ -102,3 +106,5 @@ Fitting models to data simulated under *different* assumptions (e.g., $t$-distri
 - [[Efficient MCMC]] — HMC, NUTS, and tuning strategies
 - [[Model Checking]] — posterior predictive checks after fitting
 - [[Approximation Methods]] — variational inference and Laplace approximation as fast alternatives
+- [[Simulation-Based Calibration - Overview]] — the full SBC procedure and its implementation details
+- [[Interpreting SBC Histograms]] — how to read rank-statistic histograms from SBC runs

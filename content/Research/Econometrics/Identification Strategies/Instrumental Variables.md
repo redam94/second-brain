@@ -14,6 +14,7 @@ tags:
   - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-07-06
 folder: "Econometrics/Identification Strategies"
 doc_type: concept
 source_location: "MHE Ch. 4, pp. 83-163"
@@ -98,4 +99,8 @@ With heterogeneous effects, IV estimates the causal effect on **compliers** — 
 - [[Activity Bias in Advertising]] — real-world case where CIA fails and IV is the appropriate remedy
 - [[Bayesian Propensity Score Weighting]] — Bayesian selection-on-observables alternative; compare with IV when exclusion restriction is questionable
 - [[Parameter Estimation in Market Response]] — 2SLS used for price endogeneity in marketing mix models
+<<<<<<< HEAD
 - [[GMM Estimation and Instruments for Price Endogeneity]] — IV/GMM for price endogeneity in demand estimation
+=======
+- [[Synthetic Control]] — the primary alternative identification strategy for single-treated-unit panel settings where IV instruments are unavailable and parallel trends is implausible
+>>>>>>> main
