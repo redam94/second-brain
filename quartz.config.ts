@@ -82,6 +82,10 @@ const config: QuartzConfig = {
         enableSiteMap: true,
         enableRSS: true,
       }),
+      Plugin.LLMs({
+        description:
+          "A structured knowledge base covering Bayesian statistics, econometrics, causal inference, market response modeling, Bayesian experimental design, and agent-based modeling.",
+      }),
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.Favicon(),
