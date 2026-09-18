@@ -102,9 +102,6 @@ When the monoidal product $\otimes$ is not the cartesian product $\times$, but s
 - [[Limits and Colimits/Products and Equalizers]] — Products, one ingredient of CCCs
 - [[Adjunctions/Adjoint Functors]] — The adjunction $- \times B \dashv (-)^B$
 - [[Synthesis/Limits in Presheaf Categories]] — Why presheaf categories are CCC
-<<<<<<< HEAD
 - [[Beck's Monadicity Theorem]] — monadicity / algebraic structure connection
-=======
 - [[Adjunctions/Units and Counits]] — The evaluation map $\mathrm{ev}_{B,C}: C^B \times B \to C$ is the counit of $- \times B \dashv (-)^B$
 - [[Synthesis/Adjoints and Limits]] — General adjunction-limit connections; CCC is the special case where $- \times B$ has a right adjoint
->>>>>>> main

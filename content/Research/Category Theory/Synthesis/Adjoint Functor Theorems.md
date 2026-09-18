@@ -107,8 +107,5 @@ The SAFT applies when $\mathcal{B}$ has nice properties (well-powered + cogenera
 - [[Adjunctions/Adjoint Functors]] — Adjunction definition
 - [[Adjoints and Limits]] — Right adjoints preserve limits (necessity in GAFT)
 - [[Adjunctions/Adjunctions via Initial Objects]] — The proof constructs initial objects
-<<<<<<< HEAD
 - [[Algebras for a Monad - Eilenberg-Moore and Kleisli]] — limits/colimits of algebras & adjoint construction
-=======
 - [[Adjunctions/Units and Counits]] — The unit $\eta_A$ constructed in the GAFT proof is the unit of the adjunction; the monad $T = GF$ arising from any adjunction is described there
->>>>>>> main

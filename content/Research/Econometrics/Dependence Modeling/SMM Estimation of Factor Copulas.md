@@ -102,9 +102,6 @@ The "moments" are functions of **rank statistics** — strictly, this is not cla
 - [[Method of Simulated Moments]] — the underlying MSM/GMM framework.
 - [[SMM Weighting Matrix and Inference]] — weight-matrix choice and inference in SMM generally.
 - [[Bayesian copula estimation Describing correlated joint distributions]] — contrast: a **Bayesian** (PyMC) Gaussian-copula estimation, vs the **frequentist** simulation-based moment-matching used here.
-<<<<<<< HEAD
 - [[Estimation and Structure Selection for Vines]] — alternative estimation/selection approach
-=======
 - [[Tail Dependence in Factor Copulas]] — explains why quantile dependence at $q \in \{0.05, 0.10, 0.90, 0.95\}$ is chosen as the moment targets: it directly measures the tail dependence that distinguishes fat-tailed factor copulas from the Gaussian
->>>>>>> main
 - [[../_Index|Econometrics]]
