@@ -16,6 +16,8 @@ used_by:
   - "[[ABM vs Equation-Based Modeling]]"
   - "[[Market Share Equilibrium and Lock-In]]"
   - "[[Product Adoption and Diffusion Models]]"
+  - "[[LLM-Powered Agents - Overview]]"
+  - "[[Generative Agents Architecture - Memory, Reflection and Planning]]"
 aliases:
   - Emergence
   - Emergent behavior

@@ -134,3 +134,4 @@ This connects to the broader theme of identifiability in Bayesian causal inferen
 - [[Frequentist Causal Estimation]] — doubly-robust estimators whose bias sensitivity analysis quantifies
 - [[Propensity Score Matching - Overview]] — PSM is the most common observational method; sensitivity analysis (E-value, Rosenbaum bounds) is routinely reported alongside PSM estimates
 - [[Nonparametric Causal Inference]] — BART-based ATE/ATT estimation; sensitivity analysis quantifies robustness of these estimates to unmeasured confounding
+- [[Honest DiD - Sensitivity to Parallel Trends Violations]] — both report a breakdown point

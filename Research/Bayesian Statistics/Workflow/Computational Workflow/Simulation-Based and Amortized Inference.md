@@ -18,12 +18,12 @@ depends_on:
 used_by:
   - "[[Posterior Predictive Checking]]"
   - "[[Simulation-Based Calibration - Overview]]"
+  - "[[Neural Simulation-Based Inference - Overview]]"
 aliases:
   - "ABC"
   - "Approximate Bayesian computation"
   - "SBI"
   - "Amortized Bayesian inference"
-  - "Neural density estimators"
   - "Likelihood-free inference"
 ---
 
@@ -152,3 +152,5 @@ aliases:
 - [[Generative and Partially Generative Models]] — the requirement these methods impose
 - [[Simulation-Based Calibration - Overview]] — the same $(\theta,y)$ draws, used to validate rather than to infer
 - [[Synthetic Likelihood - Overview]] — a related approach to intractable likelihoods already in the vault
+- [[In-Context Learning and Few-Shot Prompting]] — both amortize inference
+- [[Neural Simulation-Based Inference - Overview]] — dedicated treatment of neural posterior, likelihood and ratio estimation

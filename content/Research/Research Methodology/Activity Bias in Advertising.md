@@ -70,3 +70,5 @@ used_by:
 - [[Conditional Independence Assumption]] — the assumption violated by activity bias
 - [[Instrumental Variables]] — exogenous variation approach when CIA fails, as it does here
 - [[Research Questions in Econometrics]] — this paper is a worked answer to all four FAQs applied to online advertising measurement
+- [[Sample Ratio Mismatch and Trustworthiness Checks]] — differential observation by arm
+- [[Differences-in-Differences]] — DiD on pre/post exposure panels is a common observational ad-measurement design and inherits activity bias when exposure timing tracks browsing activity

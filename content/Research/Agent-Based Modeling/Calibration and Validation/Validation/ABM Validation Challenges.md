@@ -16,6 +16,8 @@ depends_on:
   - "[[ABM Methodology and Principles]]"
 used_by:
   - "[[Global Sensitivity Analysis - Overview]]"
+  - "[[Validity, Bias and Calibration of LLM-Simulated Populations]]"
+  - "[[LLM Agents vs Rule-Based Agents in ABM]]"
 aliases:
   - Validation of ABM
   - ABM validation
@@ -103,3 +105,4 @@ Given the difficulty of formal validation, the papers converge on a **plausibili
 - [[Garden of Forking Paths]] — researcher degrees of freedom in ABM specification choices (agent rules, network topology, parameter ranges) mirror the forking paths problem in statistical analysis
 - [[Global Sensitivity Analysis - Overview]] — GSA as a robustness/validation strategy
 - [[Approximate Bayesian Computation for ABMs]] — ABC calibration as an alternative to GA or analytic approaches; ABC inherits the plausibility-standard logic by comparing simulated output distributions to observed data
+- [[Validity, Bias and Calibration of LLM-Simulated Populations]] — validation threats specific to LLM-driven agents

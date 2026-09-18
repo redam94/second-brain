@@ -12,13 +12,12 @@ date_ingested: 2026-04-16
 folder: "Physics/Quantum Field Theory"
 doc_type: article
 depends_on:
-  - "[[Gauge Theory Overview]]"
+  - "[[Gauge Theory - Overview]]"
   - "[[Renormalization]]"
 used_by: []
 aliases:
   - Yang-Mills theory
   - non-abelian gauge theory
-  - Standard Model
   - field strength tensor
   - gauge anomaly
 ---
@@ -107,12 +106,12 @@ A classical gauge symmetry can be **broken by quantum corrections** — this is 
 
 ## Connections
 
-- **[[Gauge Theory Overview]]**: Yang–Mills generalizes abelian gauge theory to non-commutative groups.
+- **[[Gauge Theory - Overview]]**: Yang–Mills generalizes abelian gauge theory to non-commutative groups.
 - **[[Renormalization]]**: Asymptotic freedom in QCD (SU(3) Yang–Mills) makes the running coupling small at high energies, justifying perturbation theory.
-- **[[QFT Overview]]**: The Standard Model — the culmination of QFT — is Yang–Mills theory with gauge group SU(3)×SU(2)×U(1).
+- **[[Quantum Field Theory - Overview]]**: The Standard Model — the culmination of QFT — is Yang–Mills theory with gauge group SU(3)×SU(2)×U(1).
 
 ## See Also
 
-- [[Gauge Theory Overview]] — abelian gauge theory and the covariant derivative
+- [[Gauge Theory - Overview]] — abelian gauge theory and the covariant derivative
 - [[Renormalization]] — asymptotic freedom and the running coupling
-- [[QFT Overview]] — the Standard Model in context
+- [[Quantum Field Theory - Overview]] — the Standard Model in context

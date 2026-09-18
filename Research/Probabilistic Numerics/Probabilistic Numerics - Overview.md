@@ -84,3 +84,4 @@ Because step 3 returns a *distribution*, the same object supports (a) a point es
 - [[Foundations/_Index|Foundations]] — start here for the Gaussian toolbox
 - [[Bayesian Statistics/_Index|Bayesian Statistics]] — the inferential foundations PN borrows
 - [[Bayesian Experimental Design/_Index|Bayesian Experimental Design]] — the same expected-information-gain logic that drives active evaluation and acquisition functions
+- [[Bayesian Quadrature]] — the canonical worked example of computation-as-inference

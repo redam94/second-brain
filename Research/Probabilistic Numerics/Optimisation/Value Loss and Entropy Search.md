@@ -22,7 +22,6 @@ aliases:
   - Value Loss
   - Entropy Search
   - Predictive Entropy Search
-  - Knowledge Gradient
   - Multi-Step Look-Ahead
   - Information-Theoretic Acquisition
   - PES

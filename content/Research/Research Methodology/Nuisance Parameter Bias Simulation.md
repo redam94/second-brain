@@ -223,7 +223,7 @@ Error rates by parameter:
 - [[Table 2 Fallacy]] — This simulation is the empirical proof-of-concept for the Table 2 Fallacy argument
 - [[Logic of Regression Adjustment]] — The theoretical explanation for why coverage fails for nuisance parameters
 - [[DAGs and Causal Identification]] — The DAG structure underlying the DGP and the adjustment set choice
-- [[Bayesian Propensity Score Weighting]] — A correct approach that avoids misinterpreting confounder coefficients by focusing estimation on the treatment
+- [[Bayesian Inverse Probability Weighting]] — A correct approach that avoids misinterpreting confounder coefficients by focusing estimation on the treatment
 
 ## See Also
 

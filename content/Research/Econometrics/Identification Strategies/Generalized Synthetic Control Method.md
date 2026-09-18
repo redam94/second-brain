@@ -284,3 +284,4 @@ The R package `gsynth` implements GSC with:
 - [[Synthetic Control Extensions]] — broader survey of SC extensions
 - [[Differences-in-Differences]] — the special case when parallel trends holds
 - [[Abadie 2021 - Overview]] — complementary guide on canonical SC feasibility and requirements
+- [[SDID vs DiD vs Synthetic Control]] — balancing latent factors versus estimating them

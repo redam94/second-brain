@@ -22,6 +22,9 @@ used_by:
   - "[[Uncertainty Quantification for ABM Calibration]]"
   - "[[ABM Validation Challenges]]"
   - "[[Q - Using SMM to Calibrate Agent Based Models]]"
+  - "[[Neural SBI for Agent-Based and Economic Models]]"
+  - "[[LLM Agents vs Rule-Based Agents in ABM]]"
+  - "[[Persona Mixture Calibration of LLM Agents]]"
 aliases:
   - ABM calibration
   - Model calibration
@@ -150,3 +153,5 @@ where $V^r_s$ = ensemble variance, $V^r_o$ = observation uncertainty, $V^r_m$ = 
 - [[ABM Calibration Case Studies]] — SugarScape, birds, RISC applications
 - [[Population Initialization and Parameter Sensitivity]] — experimental calibration
 - [[ABM Validation Challenges]] — validating any calibrated model
+- [[Persona Mixture Calibration of LLM Agents]] — calibrating persona shares to human choice data
+- [[Neural SBI for Agent-Based and Economic Models]] — a neural, fully Bayesian calibration strategy

@@ -87,3 +87,4 @@ Trade-off: HM+ABC produces slightly narrower 95% CIs than ABC alone (more precis
 - [[Uncertainty Quantification for ABM Calibration]] — the three uncertainty sources
 - [[ABM Calibration Case Studies]] — validation on SugarScape, birds, RISC
 - [[Method of Simulated Moments]] — econometric simulation-based estimation; moment-matching from ABM output is closely analogous to SMM (the `used_by` field of that note flags this connection explicitly)
+- [[Neural SBI for Agent-Based and Economic Models]] — a neural alternative to the ABC stage

@@ -19,7 +19,6 @@ aliases:
   - pullback
   - fibred product
   - fibered product
-  - pushout
   - pullback square
 ---
 

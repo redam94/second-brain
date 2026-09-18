@@ -104,3 +104,5 @@ TBR's estimation only ever consumes **two aggregate time series** — $y_t$ (how
 - [[TBR Design Sensitivity and the Stationarity Assumption]] — TBR's design process, bias/coverage evaluation, and the stationarity assumption in depth
 - [[Bayesian Structural Time-Series Model]] — the more flexible Bayesian state-space counterfactual model TBR simplifies
 - [[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]] — the Bayesian EIG framing this estimator is the frequentist counterpart of
+- [[SDID for Geo Experiments and Marketing Panels]] — TBR placed in the DiD/SC/SDID taxonomy
+- [[Switchback Experiment Design and Analysis]] — model-based versus design-based inference over time

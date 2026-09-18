@@ -18,6 +18,7 @@ used_by:
   - "[[Hierarchical Models]]"
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
   - "[[Overfitting and Information Criteria]]"
+  - "[[Gamma-Gamma Model of Monetary Value]]"
 aliases:
   - Parametric Empirical Bayes
   - Estimating the Prior
@@ -84,3 +85,4 @@ Both readings describe the same shrinkage. The EB reading is the bridge to moder
 - [[Multiple Comparisons - Bayesian Perspective]]
 - [[Asymptotics and Frequentist Connections]]
 - [[_Index]]
+- [[Gamma-Gamma Model of Monetary Value]] — a marketing example of shrinkage toward the population mean

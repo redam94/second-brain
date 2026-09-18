@@ -124,3 +124,4 @@ The **q-value** of a test is the minimum FDR at which that test would be called 
 - [[Partial Pooling as Multiple Comparisons Correction]] — formal algebra of how shrinkage reduces z-scores
 - [[Power Analysis and Sample Size]] — designing studies with adequate power
 - [[The Experimental Ideal]] — even randomized experiments require multiple comparisons correction when testing many outcomes
+- [[Always-Valid p-values and the mSPRT]] — sequential versions of Bonferroni and Benjamini-Hochberg

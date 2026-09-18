@@ -15,7 +15,6 @@ aliases:
   - "Variational inference"
   - "Laplace approximation"
   - "Expectation propagation"
-  - "VI"
 doc_type: concept
 source_location: "BDA3 Ch.13, pp. 311-349"
 depends_on:
@@ -27,6 +26,7 @@ used_by:
   - "[[HMC and Stan in Practice]]"
   - "[[Factor Analysis and PPCA]]"
   - "[[BDA3 - Overview]]"
+  - "[[Variational Inference - Overview]]"
 ---
 
 # Approximation Methods
@@ -75,3 +75,4 @@ $$q^* = \arg\min_{q \in \mathcal{Q}} \; \text{KL}(q \| p(\theta \mid y))$$
 
 - [[Efficient MCMC]] — the exact alternative
 - [[Fitting and Validating Computation]] — validating that approximations are adequate
+- [[Variational Inference - Overview]] — full treatment of variational inference

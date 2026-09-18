@@ -4,8 +4,8 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/Bayesian Statistics/_Index|Bayesian Statistics]]"
-date_updated: 2026-04-09
-concept_count: 5
+date_updated: 2026-09-18
+concept_count: 21
 ---
 
 # Computation
@@ -16,6 +16,15 @@ concept_count: 5
 > - Need Gibbs sampler or Metropolis-Hastings? -> [[MCMC Basics]]
 > - Need HMC, NUTS, or Stan? -> [[Efficient MCMC]] or [[HMC and Stan in Practice]]
 > - Need variational inference or Laplace approximation? -> [[Approximation Methods]]
+> - Need a **full treatment of variational inference** (ELBO, CAVI, black-box VI, ADVI, VAEs, normalizing flows, PSIS k-hat / VSBC diagnostics)? -> [[Research/Bayesian Statistics/Computation/Variational Inference/_Index|Variational Inference]]
+> - Need **neural simulation-based inference** (NPE / NLE / NRE, conditional normalizing flows, amortized vs sequential, SBI benchmarking, ABM calibration)? -> [[Research/Bayesian Statistics/Computation/Neural Simulation-Based Inference/_Index|Neural Simulation-Based Inference]]
+
+## Sub-topics
+
+| Sub-topic | Notes | Covers |
+|-----------|-------|--------|
+| [[Research/Bayesian Statistics/Computation/Variational Inference/_Index\|Variational Inference]] | 8 | ELBO and KL minimization, mean-field CAVI, stochastic / black-box VI, ADVI, reparameterization trick and VAEs, normalizing-flow posteriors, diagnosing VI with PSIS $\hat k$ and VSBC — Blei 2017, Ranganath 2014, Kucukelbir 2017, Kingma & Welling 2013, Rezende & Mohamed 2015, Yao 2018 |
+| [[Research/Bayesian Statistics/Computation/Neural Simulation-Based Inference/_Index\|Neural Simulation-Based Inference]] | 8 | Neural posterior / likelihood / ratio estimation, sequential neural likelihood, conditional normalizing flows, amortized vs sequential inference, benchmarking and diagnostics (SBC, coverage, C2ST), neural SBI for economic ABMs — Cranmer 2020, Papamakarios 2016/2019, Hermans 2020, Lueckmann 2021, Dyer 2022 |
 
 ## Concept Map
 

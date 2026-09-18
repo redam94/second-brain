@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[Doubly-Robust Estimands for ATT(g,t)]]"
   - "[[Simultaneous Inference via Multiplier Bootstrap]]"
+  - "[[Event Study Designs and Dynamic Treatment Effects]]"
 aliases:
   - parallel trends staggered
   - no-anticipation assumption
@@ -85,3 +86,4 @@ These conditions extend the canonical parallel-trends assumption to multiple gro
 - [[Bayesian Difference in Differences]] — Bayesian approach to DiD; same identifying assumptions apply
 - [[Conditional Independence Assumption]] — the overlap condition (Assumption 6) is the DiD analog of the CIA common-support requirement
 - [[Regression Discontinuity Designs]] — another quasi-experimental alternative that does not rely on parallel trends
+- [[Honest DiD - Sensitivity to Parallel Trends Violations]] — robust inference when parallel trends may fail

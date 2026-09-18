@@ -81,3 +81,4 @@ Here $\theta$ is a **matrix**, not a vector, but the same multivariate-Gaussian-
 - [[Approximate Thompson Sampling and Practical Extensions]] — Laplace/Langevin approximations needed for the logistic news-recommendation model
 - [[Regret Bounds for Thompson Sampling]] — linear/eluder-dimension regret bounds, and the assortment/sparse-model failure modes
 - [[UCB and Greedy Algorithms for Bandits]] — the ellipsoidal- vs. hyper-rectangular-confidence-set argument for why modeling correlation among actions (as in coherent TS here) matters
+- [[RLHF and Instruction Tuning]] — the RLHF environment is a contextual bandit

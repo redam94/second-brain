@@ -24,7 +24,6 @@ aliases:
   - "Predictively consistent priors"
   - "Against parsimony"
   - "Sieve of models"
-  - "R2D2 prior"
 ---
 
 # Model Expansion — Predictive Consistency and Coherence

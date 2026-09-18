@@ -93,3 +93,4 @@ $$ m_{g,t,\delta}^{nev}(X) = \mathbb{E}[Y_t - Y_{g-\delta-1}\mid X, C=1], \qquad
 - Sant'Anna & Zhao (2020) — the 2-period DR DiD estimator extended here
 - Abadie (2005) — semiparametric IPW DiD
 - [[How to use Bayesian propensity scores and inverse probability weights]] — Bayesian IPW counterpart
+- [[Neyman Orthogonality]] — why the doubly-robust form tolerates ML nuisance estimates

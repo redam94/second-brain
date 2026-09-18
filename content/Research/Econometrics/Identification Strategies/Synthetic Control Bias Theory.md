@@ -22,6 +22,7 @@ used_by:
   - "[[Synthetic Control Inference and Diagnostics]]"
   - "[[Synthetic Control Requirements]]"
   - "[[Synthetic Control Extensions]]"
+  - "[[SDID vs DiD vs Synthetic Control]]"
 aliases:
   - "linear factor model synthetic control"
   - "synthetic control bias bound"

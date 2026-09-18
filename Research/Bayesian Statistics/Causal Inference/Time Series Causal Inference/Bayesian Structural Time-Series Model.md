@@ -22,6 +22,7 @@ used_by:
   - "[[MCMC Inference for CausalImpact]]"
   - "[[Counterfactual Impact Estimation]]"
   - "[[The Kalman Filter]]"
+  - "[[Probabilistic Forecasting - Overview]]"
 aliases:
   - structural time-series model
   - BSTS model

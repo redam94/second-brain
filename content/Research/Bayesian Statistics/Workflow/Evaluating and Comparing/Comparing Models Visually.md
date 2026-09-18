@@ -22,7 +22,6 @@ used_by:
 aliases:
   - "Multiverse analysis"
   - "Eight reasons to fit multiple models"
-  - "Researcher degrees of freedom"
   - "Explore the process of model fitting"
 ---
 

@@ -13,7 +13,7 @@ folder: "Physics/Quantum Field Theory"
 doc_type: article
 depends_on:
   - "[[Canonical Quantization of Fields]]"
-  - "[[QFT Overview]]"
+  - "[[Quantum Field Theory - Overview]]"
 used_by:
   - "[[Yang-Mills Theory and Gauge Fields]]"
 aliases:
@@ -109,11 +109,11 @@ The Lamb shift (1947) was the experimental trigger for renormalization:
 ## Connections
 
 - **[[Canonical Quantization of Fields]]**: Loop integrals over virtual quanta (created and destroyed by ladder operators) produce the divergences that renormalization cures.
-- **[[Gauge Theory Overview]]**: Ward identities in gauge theories constrain the renormalization; they ensure that gauge invariance is preserved after renormalization.
+- **[[Gauge Theory - Overview]]**: Ward identities in gauge theories constrain the renormalization; they ensure that gauge invariance is preserved after renormalization.
 - **[[Yang-Mills Theory and Gauge Fields]]**: Non-abelian gauge theories are renormalizable ('t Hooft, 1971); asymptotic freedom makes QCD tractable.
 
 ## See Also
 
-- [[QFT Overview]] — broader context for renormalization
+- [[Quantum Field Theory - Overview]] — broader context for renormalization
 - [[Canonical Quantization of Fields]] — source of the divergent integrals
 - [[Yang-Mills Theory and Gauge Fields]] — asymptotic freedom in QCD

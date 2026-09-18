@@ -120,3 +120,5 @@ See [[BN Construction Methods Comparison]] for full three-way comparison.
 - [[Interactive Knowledge Elicitation Method]] — human-in-the-loop alternative to LLM elicitation
 - [[NOTEARS - Overview]] — data-driven continuous-optimisation approach to DAG structure learning; contrasts with LLM-based expert elicitation
 - [[DAG Structure Learning Problem]] — the structural challenge that both LLM elicitation and algorithmic discovery address
+- [[In-Context Learning and Few-Shot Prompting]] — how the prompted LLMs work
+- [[ReAct - Reasoning and Acting Agents]] — both follow a propose-then-verify loop

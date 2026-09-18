@@ -103,3 +103,4 @@ where $w(g,t)$ are known/estimable weights chosen to answer a specific question.
 - Goodman-Bacon (2019) — TWFE decomposition motivating positive-weight aggregation
 - Sun & Abraham (2020) — cohort-specific (interaction-weighted) event study
 - [[Estimands in Longitudinal Research]] — choosing the target estimand
+- [[Event Study Designs and Dynamic Treatment Effects]] — event-time aggregation of group-time effects

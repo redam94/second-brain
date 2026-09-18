@@ -73,3 +73,4 @@ From Foster 2019, Table 1: $\hat\mu_{m+\ell}$ is the only estimator marked **imp
 - [[Variational Marginal Estimator]] — the explicit-likelihood version
 - [[Variational Posterior Estimator (Barber-Agakov)]] — the other implicit-capable estimator
 - [[Likelihood-Free ACE and Gradient Estimation]] — Foster 2020's bound-preserving implicit approach
+- [[Neural Ratio Estimation]] — related ratio surrogates in experimental design

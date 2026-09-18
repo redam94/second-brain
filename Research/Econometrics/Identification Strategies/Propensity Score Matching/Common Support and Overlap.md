@@ -15,6 +15,8 @@ depends_on:
 used_by:
   - "[[Propensity Score Matching - Overview]]"
   - "[[Matching Methods and Distance Measures]]"
+  - "[[DML Estimators for ATE and the Interactive Model]]"
+  - "[[Honest Trees and Causal Forests]]"
 aliases:
   - Common Support
   - Overlap

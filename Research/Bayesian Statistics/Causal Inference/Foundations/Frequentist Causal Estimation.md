@@ -19,6 +19,8 @@ used_by:
   - "[[Propensity Score in Bayesian CI]]"
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
   - "[[Propensity Score Matching - Overview]]"
+  - "[[Causal Machine Learning - Overview]]"
+  - "[[DML Estimators for ATE and the Interactive Model]]"
 aliases:
   - IPW estimator
   - doubly robust estimator
@@ -105,7 +107,7 @@ The propensity score — central to Frequentist approaches — has a nuanced rol
 ## See Also
 - [[Propensity Score in Bayesian CI]] — Bayesian strategies using the propensity score
 - [[Bayesian Inverse Probability Weighting]] — Bayesian IPW via the Liao-Zigler approach (Heiss blog)
-- [[Bayesian Propensity Score Weighting]] — Bayesian propensity score methods in the econometrics context
 - [[Metalearners for CATE]] — the DR-learner applies doubly-robust logic to conditional treatment effect estimation
 - [[Sensitivity Analysis in Observational Studies]] — what happens when unconfoundedness fails
 - [[Propensity Score Matching - Overview]] — the matching strategy that uses $\hat{e}(X)$ to form pairs rather than weighting
+- [[DML Estimators for ATE and the Interactive Model]] — the doubly-robust estimator with ML nuisance functions

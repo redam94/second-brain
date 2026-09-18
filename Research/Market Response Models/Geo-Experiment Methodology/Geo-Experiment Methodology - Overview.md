@@ -22,6 +22,7 @@ used_by:
   - "[[Time-Based Regression Estimator for Geo Experiments]]"
   - "[[TBR Design Sensitivity and the Stationarity Assumption]]"
   - "[[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]]"
+  - "[[SDID for Geo Experiments and Marketing Panels]]"
 aliases:
   - Geo Experiments
   - Matched Market Testing
@@ -102,3 +103,4 @@ The vault's existing [[Synthetic Control]] note (and its extensions in [[Xu 2016
 - [[Bayesian Structural Time-Series Model]] — the more flexible Bayesian state-space counterfactual model TBR simplifies
 - [[Synthetic Control]] · [[Abadie 2021 - Overview]] · [[Xu 2016 - Overview]] — the donor-weighting alternative to time-based regression (basis of GeoLift)
 - [[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]] — the Bayesian EIG framing this classical methodology is the frequentist counterpart of
+- [[SDID for Geo Experiments and Marketing Panels]] — SDID as an estimator for geo tests

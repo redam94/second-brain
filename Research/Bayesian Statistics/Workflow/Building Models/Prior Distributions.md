@@ -328,3 +328,4 @@ about every choice; write a sentence about each parameter in the model.**"
 - [[Prior Predictive Checking]] — how to see what a prior actually implies
 - [[Tail Behavior and Prior-Likelihood Conflict]] — what happens when prior and data disagree
 - [[Global-Local Shrinkage Priors]] — the regularizing priors this section gestures at
+- [[Designing Simulated-Data Experiments]] — fake-data simulation is how a candidate prior's implications are examined

@@ -46,6 +46,8 @@ import yaml
 
 WIKILINK_RE = re.compile(r'\[\[([^\]|#]+)(?:[|#][^\]]*)?\]\]')
 FRONTMATTER_RE = re.compile(r'^---\s*\n(.*?)\n---', re.DOTALL)
+# Non-vault directories at the repo root: Quartz site tooling and the content/ mirror of the vault
+EXCLUDED_TOP_DIRS = {'node_modules', 'content', 'public', 'quartz', 'scripts'}
 
 
 def parse_frontmatter(text: str) -> dict:
@@ -86,6 +88,9 @@ def collect_notes(vault_path: Path, folder_filter: str | None = None) -> list[di
             continue
 
         rel_path = md_file.relative_to(vault_path)
+        # Skip site tooling, the Quartz content/ mirror of the vault, and raw source dumps
+        if rel_path.parts[0] in EXCLUDED_TOP_DIRS or 'raw' in rel_path.parts[:-1]:
+            continue
         text = md_file.read_text(encoding='utf-8', errors='ignore')
         fm = parse_frontmatter(text)
         links = parse_wikilinks(text)

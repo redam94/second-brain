@@ -115,3 +115,5 @@ This ensures that the better-estimated CATE component dominates.
 - [[T-Learner and Minimax Rate]] — foundation that X-learner improves on
 - [[S-Learner]] — simpler alternative
 - [[Metalearner Simulation Results]] — empirical performance
+- [[Conformal Inference for Counterfactuals and ITEs]] — CATE intervals under-cover individual effects
+- [[R-Learner and Orthogonal CATE Estimation]] — Nie & Wager's counterexample showing the X-learner is not quasi-oracle

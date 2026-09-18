@@ -25,6 +25,9 @@ used_by:
   - "[[Transfer Function Model]]"
   - "[[Multivariate Persistence and Cointegration]]"
   - "[[State-Space Models and the Kalman Filter - Overview]]"
+  - "[[DeepAR and Global Autoregressive Neural Forecasters]]"
+  - "[[Hierarchical Forecast Reconciliation (MinT)]]"
+  - "[[Probabilistic Forecasting - Overview]]"
 ---
 
 # Single Marketing Time Series
@@ -183,3 +186,4 @@ Common choices: $\lambda = 0.5$ (square root), $\lambda \to 0$ (log), $\lambda =
 ## See Also
 
 - [[State-Space Models and the Kalman Filter - Overview]] — ARIMA as a special-case state-space model
+- [[Probabilistic Forecasting - Overview]] — modern probabilistic successor to ARIMA forecasting

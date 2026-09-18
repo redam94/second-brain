@@ -86,3 +86,4 @@ In sequential settings, replacing $p(\theta)$ with $p(\theta\mid h_{t-1})$ has e
 - [[From Designs to Policies (Deep Adaptive Design)]] — amortized policies that fix BAD's two flaws
 - [[High-Dimensional Design Applications]] — the CES iterated-design experiment
 - [[Dynamic Treatment Regimes Framework]] — a parallel sequential-decision framework in causal inference
+- [[Tool Use and the Agent Loop]] — choosing the next query/action adaptively

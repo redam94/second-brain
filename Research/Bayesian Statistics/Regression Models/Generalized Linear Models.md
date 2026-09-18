@@ -26,6 +26,7 @@ used_by:
   - "[[Spatial Models - BYM]]"
   - "[[Counterfactual Inference]]"
   - "[[Moderation Analysis]]"
+  - "[[Reward Modeling from Human Preferences]]"
 ---
 
 # Generalized Linear Models

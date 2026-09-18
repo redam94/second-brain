@@ -17,6 +17,7 @@ used_by:
   - "[[ABM vs Equation-Based Modeling]]"
   - "[[Heterogeneity in Agent Models]]"
   - "[[Agent Decision Rules and Bounded Rationality]]"
+  - "[[LLM-Powered Agents - Overview]]"
 aliases:
   - ABM
   - Agent-Based Modeling

@@ -17,6 +17,15 @@ used_by:
   - "[[General Structure of Bayesian CI]]"
   - "[[Dynamic Treatment Regimes Framework]]"
   - "[[Q- and A-learning - Overview]]"
+  - "[[Event Study Designs and Dynamic Treatment Effects]]"
+  - "[[Synthetic Difference-in-Differences - Overview]]"
+  - "[[Causal Machine Learning - Overview]]"
+  - "[[Honest Trees and Causal Forests]]"
+  - "[[Online Experimentation - Overview]]"
+  - "[[Switchback Experiment Design and Analysis]]"
+  - "[[Interference and Marketplace Experiments]]"
+  - "[[Confidence Sequences]]"
+  - "[[Conformal Inference for Counterfactuals and ITEs]]"
 aliases:
   - Rubin causal model
   - potential outcomes
@@ -106,3 +115,4 @@ A/B testing and randomized controlled trials are the gold standard for causal in
 ## See Also
 - [[Causal Estimands]] — formal definitions of ITE, SATE, CATE, PATE, MATE
 - [[Propensity Score in Bayesian CI]] — propensity score $e(x)$ plays central role despite dropping from likelihood
+- [[Conformal Inference for Counterfactuals and ITEs]] — distribution-free intervals for counterfactuals

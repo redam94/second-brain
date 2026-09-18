@@ -109,3 +109,6 @@ The conditional statement corpus likely improves understanding of both code prom
 - [[Code Prompt Aspects Analysis]] — motivation for using conditional statements specifically
 - [[Code vs Text Prompt Evaluation]] — baseline performance before fine-tuning
 - [[Liu 2025 - Overview]] — full paper overview
+- [[In-Context Learning and Few-Shot Prompting]] — fine-tuning versus prompting
+- [[RLHF and Instruction Tuning]] — small targeted fine-tunes vs preference-based post-training
+- [[LLM Causal Reasoning Tasks]] — the abductive and counterfactual benchmarks on which the fine-tuned models are evaluated

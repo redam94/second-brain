@@ -25,6 +25,7 @@ used_by:
   - "[[Activity Bias in Advertising]]"
   - "[[Researcher Degrees of Freedom]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Regularization Bias and the Partially Linear Model]]"
 ---
 
 # Omitted Variables Bias
@@ -86,3 +87,4 @@ For returns to schooling where "ability" ($A_i$) is omitted:
 - [[Bayesian Linear Regression]] — Bayesian shrinkage as regularization that partially mitigates OVB in high-dimensional settings
 - [[The Experimental Ideal]] — randomization eliminates OVB by construction; the gold-standard contrast to observational confounding
 - [[Research Questions in Econometrics]] — FAQ #3 (identification strategy) is directly aimed at the OVB threat
+- [[Regularization Bias and the Partially Linear Model]] — shrinkage on controls leaks into the treatment coefficient

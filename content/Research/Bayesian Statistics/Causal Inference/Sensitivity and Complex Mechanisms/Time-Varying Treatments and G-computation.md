@@ -141,4 +141,4 @@ The Bayesian approach applies **g-computation**: fit Bayesian models for each co
 - [[Instrumental Variables and Principal Stratification]] — principal stratification as an alternative framework for complex treatment assignments
 - [[Estimands in Longitudinal Research]] — the theoretical estimand that sequential treatments must target
 - [[Cross-Lagged and Dynamic Panel Models]] — frequentist/structural alternatives for dynamic panel estimation
-- [[Bayesian Propensity Score Weighting]] — IPW-based marginal structural models use propensity score weighting at each time step
+- [[Bayesian Inverse Probability Weighting]] — IPW-based marginal structural models use propensity score weighting at each time step

@@ -4,8 +4,8 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-08-18
-concept_count: 201
+date_updated: 2026-09-18
+concept_count: 217
 ---
 
 # Bayesian Statistics
@@ -15,6 +15,7 @@ concept_count: 201
 > - Need inference basics (Bayes' theorem, conjugate priors, hierarchical)? -> [[Research/Bayesian Statistics/Inference Fundamentals/_Index|Inference Fundamentals]]
 > - Need model evaluation (PPC, WAIC, LOO)? -> [[Research/Bayesian Statistics/Model Assessment/_Index|Model Assessment]]
 > - Need MCMC, HMC, or variational inference? -> [[Research/Bayesian Statistics/Computation/_Index|Computation]]
+> - Need **variational inference in depth** (ELBO, ADVI, VAEs, diagnostics) or **neural simulation-based inference** (NPE/NLE/NRE for simulators and ABMs)? -> [[Research/Bayesian Statistics/Computation/Variational Inference/_Index|Variational Inference]], [[Research/Bayesian Statistics/Computation/Neural Simulation-Based Inference/_Index|Neural Simulation-Based Inference]]
 > - Need regression, GLMs, or missing data? -> [[Research/Bayesian Statistics/Regression Models/_Index|Regression Models]]
 > - Need GPs, mixtures, spatial, or causal BART? -> [[Research/Bayesian Statistics/Advanced Models/_Index|Advanced Models]]
 > - Need Bayesian causal inference (potential outcomes, BART/BCF, IV, g-computation)? -> [[Research/Bayesian Statistics/Causal Inference/_Index|Causal Inference]]
@@ -33,7 +34,7 @@ concept_count: 201
 |-----------|-------|--------|
 | [[Research/Bayesian Statistics/Inference Fundamentals/_Index\|Inference Fundamentals]] | 8 | Bayes' theorem, conjugate models, hierarchical models (BDA3 Part I) |
 | [[Research/Bayesian Statistics/Model Assessment/_Index\|Model Assessment]] | 5 | Posterior predictive checks, model comparison, decision analysis (BDA3 Part II) |
-| [[Research/Bayesian Statistics/Computation/_Index\|Computation]] | 5 | MCMC, HMC, variational inference, Stan (BDA3 Part III) |
+| [[Research/Bayesian Statistics/Computation/_Index\|Computation]] | 21 | MCMC, HMC, variational inference, Stan (BDA3 Part III); **Variational Inference** sub-topic (8 notes: ELBO, CAVI, BBVI, ADVI, VAEs, flows, PSIS/VSBC diagnostics) and **Neural Simulation-Based Inference** sub-topic (8 notes: NPE/NLE/NRE, flows, amortized vs sequential, benchmarking, ABM calibration) |
 | [[Research/Bayesian Statistics/Regression Models/_Index\|Regression Models]] | 9 | Bayesian regression, multilevel models, GLMs, missing data (BDA3 Part IV) |
 | [[Research/Bayesian Statistics/Advanced Models/_Index\|Advanced Models]] | 10 | GPs, mixtures, Dirichlet processes, spatial, copulas, BART, Bayesian IPW (BDA3 Part V + PyMC) |
 | [[Research/Bayesian Statistics/Workflow/_Index\|Bayesian Workflow]] | 92 | **The 2026 *Bayesian Workflow* textbook in full** (79 notes: foundations, model building and priors, evaluation and comparison, computation and failure modes, SBC, 16 case studies, 2 appendices) + the 2020 paper it expands (7 notes) + simulation-based calibration theory (Talts et al. 2018, 6 notes) |

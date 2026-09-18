@@ -18,6 +18,7 @@ used_by:
   - "[[Sharp vs Weak Null Hypotheses]]"
   - "[[Studentized Randomization Tests]]"
   - "[[Permutation Tests and Exact Inference]]"
+  - "[[Switchback Experiment Design and Analysis]]"
 aliases:
   - Randomization-Based Inference
   - Randomization Inference Overview

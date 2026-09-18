@@ -29,6 +29,7 @@ used_by:
   - "[[Confirmatory Factor Analysis and SEM]]"
   - "[[Copula Estimation]]"
   - "[[Vine Copulas - Overview]]"
+  - "[[Reparameterization Trick and Variational Autoencoders]]"
 ---
 
 # Factor Analysis and Probabilistic PCA (PPCA)
@@ -150,3 +151,4 @@ Model quality can be assessed by comparing the reconstruction $\hat{X} = WF$ aga
 - [[Dependence Measures for Copulas]] — factor structure in dependence modeling: latent common factors drive joint tail behavior (see also [[Multi-Factor and Block Dependence Structures]])
 - [[raw/Factor analysis]] — Full PyMC tutorial with code and plots
 - [[Vine Copulas - Overview]] — latent-structure vs pairwise dependence modeling
+- [[Reparameterization Trick and Variational Autoencoders]] — the VAE as the nonlinear generalization of PPCA

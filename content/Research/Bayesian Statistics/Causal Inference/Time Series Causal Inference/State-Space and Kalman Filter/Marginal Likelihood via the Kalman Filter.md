@@ -17,7 +17,6 @@ depends_on:
 used_by: []
 aliases:
   - prediction error decomposition
-  - marginal likelihood
   - energy function
   - state-space likelihood
   - Kalman filter likelihood

@@ -4,8 +4,8 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-07-03
-concept_count: 24
+date_updated: 2026-09-18
+concept_count: 32
 ---
 
 # Research Methodology
@@ -19,6 +19,7 @@ concept_count: 24
 > - Need the full case against classical multiple comparisons corrections? -> [[Multiple Comparisons - Bayesian Perspective]]
 > - Need why observational ad measurement fails? -> [[Activity Bias in Advertising]]
 > - Need power analysis, multiple testing, survival, or delayed/censored feedback? -> [[Experimental Design/_Index|Experimental Design]]
+> - Need **online experimentation** (CUPED, sequential / always-valid inference, SRM, interference, switchbacks)? -> [[Experimental Design/Online Experimentation/_Index|Online Experimentation]]
 > - Need overview of within- vs between-persons distinction and causal inference? -> [[Within-Between Persons Distinction - Overview]]
 > - Need when fixed-effects / within-persons designs help for causal claims? -> [[Within-Between Persons Causal Inference]]
 > - Need the fixed-effects model (assumptions, DAG, limitations)? -> [[Fixed-Effects Model]]

@@ -207,3 +207,7 @@ A model is identified only if each parameter $\theta_k$ moves at least one momen
 - How can the Efficient Method of Moments (EMM) be used to achieve near-MLE efficiency in ABM estimation?
 - How does one validate an SMM-calibrated ABM beyond fitting the calibration moments?
 - What moment conditions best identify WOM and network diffusion parameters in consumer ABMs?
+
+## See Also
+
+- [[Neural SBI for Agent-Based and Economic Models]] — the Bayesian neural counterpart to SMM calibration

@@ -243,3 +243,5 @@ aliases:
 - [[Cross Validation Checking]] — when the same data cannot be used for fitting and checking
 - [[Influence of Individual Data Points]] — following up on which observations fit badly
 - [[Model Checking]] — BDA3's treatment, including $p$-values in more detail
+- [[Conformity Scores and Adaptive Prediction Sets]] — conformalized Bayes
+- [[Simulation-Based Calibration - Overview]] — SBC checks the computation; posterior predictive checks test the model against data — complementary halves of model criticism

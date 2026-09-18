@@ -12,10 +12,7 @@ source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Model Assessment"
 aliases:
-  - "WAIC"
-  - "LOO-CV"
   - "Bayes factors"
-  - "ELPD"
 doc_type: concept
 source_location: "BDA3 Ch.7:165-196"
 depends_on:
@@ -27,6 +24,8 @@ used_by:
   - "[[Decision Analysis]]"
   - "[[Nonparametric Models Overview]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
+  - "[[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)]]"
+  - "[[Probabilistic Forecasting - Overview]]"
 ---
 
 # Model Comparison
@@ -76,3 +75,4 @@ $$
 - [[Evaluating Fitted Models]] — workflow perspective on diagnosing model fit
 - [[Decision Analysis]] — using predictive distributions to make decisions, not just compare models
 - [[Nonparametric Models Overview]] — flexible model classes where comparison tools are especially important
+- [[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)]] — log score as the proper scoring rule behind predictive comparison

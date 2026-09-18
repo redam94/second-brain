@@ -34,7 +34,7 @@ Parse the user's request to identify:
 
 ```bash
 SKILL_DIR="$(dirname "$0")"  # or use absolute path to skill directory
-VAULT="/Users/redam94/Documents/second-brain"
+VAULT="/Users/redam94/Coding/Projects/second-brain"
 
 # Full vault
 python3 "$SKILL_DIR/build_graph.py" "$VAULT" -o /tmp/vault_graph.json
@@ -43,7 +43,7 @@ python3 "$SKILL_DIR/build_graph.py" "$VAULT" -o /tmp/vault_graph.json
 python3 "$SKILL_DIR/build_graph.py" "$VAULT" --folder "Research/Bayesian Statistics" -o /tmp/graph.json
 ```
 
-The `--folder` argument restricts which notes are parsed. The graph JSON still resolves cross-folder links when building edges — use `--folder` on `analyze_graph.py` or `optimize_structure.py` to restrict analysis after building the full graph.
+`build_graph.py` skips non-vault directories (`node_modules/`, `content/` — the Quartz mirror of the vault —, `public/`, `quartz/`, `scripts/`) and `raw/` source dumps, so the graph contains only real notes. The `--folder` argument restricts which notes are parsed. The graph JSON still resolves cross-folder links when building edges — use `--folder` on `analyze_graph.py` or `optimize_structure.py` to restrict analysis after building the full graph.
 
 **Graph JSON schema**:
 ```json
@@ -59,7 +59,7 @@ The `--folder` argument restricts which notes are parsed. The graph JSON still r
 ### Step 3: Run analysis
 
 ```bash
-SKILL_DIR="/Users/redam94/Documents/second-brain/.claude/skills/vault-graph"
+SKILL_DIR="/Users/redam94/Coding/Projects/second-brain/.claude/skills/vault-graph"
 
 # All analytics
 python3 "$SKILL_DIR/analyze_graph.py" /tmp/vault_graph.json --mode all --top 15
@@ -118,8 +118,8 @@ After running the scripts, interpret the JSON output and present findings to the
 ## Example Commands
 
 ```bash
-SKILL_DIR="/Users/redam94/Documents/second-brain/.claude/skills/vault-graph"
-VAULT="/Users/redam94/Documents/second-brain"
+SKILL_DIR="/Users/redam94/Coding/Projects/second-brain/.claude/skills/vault-graph"
+VAULT="/Users/redam94/Coding/Projects/second-brain"
 
 # Quick full-vault analytics
 python3 "$SKILL_DIR/build_graph.py" "$VAULT" | \

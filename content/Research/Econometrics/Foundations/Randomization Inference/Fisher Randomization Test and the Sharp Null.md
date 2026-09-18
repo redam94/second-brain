@@ -82,3 +82,4 @@ Under $H_{0\text F}$ the six numbers $\{9,7,8,4,6,5\}$ are fixed; only *which th
 - [[Potential Outcomes Framework]] — the Science Table and the imputation logic.
 - [[The Experimental Ideal]] — Fisher's randomization principle.
 - [[Power Analysis and Sample Size]] — power of exact tests depends on the number of distinct randomizations.
+- [[Conformal Prediction - Overview]] — prediction sets are inverted permutation tests

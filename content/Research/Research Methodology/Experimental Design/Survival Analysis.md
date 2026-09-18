@@ -28,6 +28,9 @@ used_by:
   - "[[Delayed Feedback Model for Conversion Prediction]]"
   - "[[EM and Gradient Optimization for the Delayed Feedback Model]]"
   - "[[Bandit Models with Delayed and Censored Feedback]]"
+  - "[[Shifted-Beta-Geometric Model for Contractual Retention]]"
+  - "[[Pareto-NBD Model]]"
+  - "[[Customer Lifetime Value - Overview]]"
 ---
 
 # Survival Analysis
@@ -152,3 +155,4 @@ Bayesian survival analysis places priors on hazard functions or regression coeff
 - [[Time-Varying Treatments and G-computation]] — G-computation and time-varying exposures generalize the survival analysis framework
 - [[Estimands in Longitudinal Research]] — defines target estimands in longitudinal studies where survival is often the outcome
 - [[Hierarchical Models]] — frailty models for clustered survival data are random-effects / hierarchical models
+- [[Shifted-Beta-Geometric Model for Contractual Retention]] — discrete-time hazard with beta frailty

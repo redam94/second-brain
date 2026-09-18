@@ -25,6 +25,7 @@ depends_on:
 used_by:
   - "[[Mostly Harmless Econometrics - Overview]]"
   - "[[Activity Bias in Advertising]]"
+  - "[[SDID Inference - Bootstrap, Jackknife and Placebo]]"
 ---
 
 # Standard Errors and Clustering
@@ -82,3 +83,4 @@ Robust standard errors can be biased in small samples — they tend to be **too 
 - [[Simultaneous Inference via Multiplier Bootstrap]] — the multiplier (wild) bootstrap for uniform inference in staggered DiD; directly extends the cluster bootstrap to the group-time ATT setting
 - [[Identifying Assumptions for Staggered DiD]] — staggered treatment adoption is the canonical context where ignoring clustering in DiD is most harmful
 - [[Bayesian Difference in Differences]] — Bayesian approach to DiD; proper posterior inference automatically propagates group-level uncertainty that cluster-robust SEs address in the frequentist setting
+- [[Interference and Marketplace Experiments]] — randomization unit versus analysis unit

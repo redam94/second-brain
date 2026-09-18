@@ -12,12 +12,12 @@ date_ingested: 2026-04-16
 folder: "Physics/Quantum Field Theory"
 doc_type: article
 depends_on:
-  - "[[QFT Overview]]"
+  - "[[Quantum Field Theory - Overview]]"
   - "[[../Foundations/Schrödinger Equation and Time Evolution]]"
   - "[[../Foundations/Uncertainty Principle]]"
 used_by:
   - "[[Renormalization]]"
-  - "[[Gauge Theory Overview]]"
+  - "[[Gauge Theory - Overview]]"
 aliases:
   - second quantization
   - ladder operators
@@ -130,10 +130,10 @@ This is **infinite** (summing over all modes). In practice this infinite constan
 - **[[../Foundations/Schrödinger Equation and Time Evolution]]**: The quantum harmonic oscillator (particle in parabolic potential) is the exact prototype.
 - **[[../Foundations/Uncertainty Principle]]**: The commutation $[\hat{a},\hat{a}^\dagger]=1$ is the ladder-operator form of $[\hat{X},\hat{P}]=i\hbar$.
 - **[[Renormalization]]**: Perturbative calculations in QFT using these operators produce UV-divergent integrals that require renormalization.
-- **[[Gauge Theory Overview]]**: The photon field is a spin-1 gauge field; its quantization follows the same procedure with additional constraints.
+- **[[Gauge Theory - Overview]]**: The photon field is a spin-1 gauge field; its quantization follows the same procedure with additional constraints.
 
 ## See Also
 
-- [[QFT Overview]] — conceptual context and motivation
+- [[Quantum Field Theory - Overview]] — conceptual context and motivation
 - [[Renormalization]] — handling the infinities that arise
-- [[Gauge Theory Overview]] — gauge bosons as quantized gauge fields
+- [[Gauge Theory - Overview]] — gauge bosons as quantized gauge fields

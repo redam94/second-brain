@@ -17,7 +17,7 @@ depends_on:
   - "[[The Selection Problem]]"
 used_by:
   - "[[Table 2 Fallacy]]"
-  - "[[Bayesian Propensity Score Weighting]]"
+  - "[[Bayesian Inverse Probability Weighting]]"
   - "[[Nuisance Parameter Bias Simulation]]"
 aliases:
   - regression adjustment
@@ -104,7 +104,7 @@ Identifying multiple paths simultaneously requires all of:
 - [[DAGs and Causal Identification]] — Provides the formal backdoor criterion and rules for valid adjustment sets
 - [[Potential Outcomes Framework]] — The PATE definition and potential outcomes notation underpinning this framework
 - [[Table 2 Fallacy]] — The downstream error: misinterpreting confounder coefficients as causally identified
-- [[Bayesian Propensity Score Weighting]] — An alternative adjustment strategy using propensity scores; same identification conditions apply
+- [[Bayesian Inverse Probability Weighting]] — An alternative adjustment strategy using propensity scores; same identification conditions apply
 - [[The Selection Problem]] — Why adjustment is necessary: non-random treatment assignment creates backdoor paths
 
 ## See Also
@@ -112,3 +112,4 @@ Identifying multiple paths simultaneously requires all of:
 - [[Conditional Independence Assumption]] — The CIA / unconfoundedness assumption required for regression adjustment
 - [[Omitted Variables Bias]] — What happens when adjustment set $\mathcal{Z}$ is *insufficient* (fails to block all backdoor paths)
 - [[Regression and the CEF]] — The statistical relationship between regression and the Conditional Expectation Function
+- [[CUPED and Regression-Adjusted Variance Reduction]] — adjustment for precision rather than identification

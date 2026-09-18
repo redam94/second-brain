@@ -21,9 +21,6 @@ used_by:
   - "[[Solving ODEs as Inference]]"
   - "[[Classical ODE Solvers as Regression]]"
 aliases:
-  - Kalman Filter
-  - RTS Smoother
-  - Rauch-Tung-Striebel Smoother
   - Filtering and Smoothing
   - Message Passing on Chains
 ---

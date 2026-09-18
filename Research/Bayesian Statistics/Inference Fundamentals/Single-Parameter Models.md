@@ -22,6 +22,11 @@ used_by:
   - "[[Hierarchical Models]]"
   - "[[BDA3 - Overview]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[BG-NBD Model]]"
+  - "[[Gamma-Gamma Model of Monetary Value]]"
+  - "[[Shifted-Beta-Geometric Model for Contractual Retention]]"
+  - "[[Pareto-NBD Model]]"
+  - "[[Customer Lifetime Value - Overview]]"
 ---
 
 # Single-Parameter Models
@@ -61,3 +66,4 @@ The posterior precision equals the sum of prior and data precisions.
 - [[Model Checking]] — prior predictive checks begin with single-parameter models
 - [[BDA3 - Overview]] — Chapter 2 in context of the full BDA3 curriculum
 - [[Statistical Rethinking - The Golem of Prague]] — Statistical Rethinking's introduction uses the same globe-tossing beta-binomial as the motivating example
+- [[Pareto-NBD Model]] — the gamma-Poisson (NBD) mixture at work in customer-base analysis

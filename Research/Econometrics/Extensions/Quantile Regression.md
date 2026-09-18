@@ -22,6 +22,9 @@ depends_on:
 used_by:
   - "[[Mostly Harmless Econometrics - Overview]]"
   - "[[Discrete Choice Models]]"
+  - "[[Conformalized Quantile Regression]]"
+  - "[[Conformal Prediction - Overview]]"
+  - "[[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)]]"
 ---
 
 # Quantile Regression
@@ -64,3 +67,6 @@ Just as regression approximates the CEF, quantile regression approximates the co
 - [[Bayesian Linear Regression]] — Bayesian quantile regression uses asymmetric Laplace likelihood
 - [[Discrete Choice Models]] — another approach to modeling non-mean outcomes
 - [[Mostly Harmless Econometrics - Overview]]
+- [[Conformalized Quantile Regression]] — gives quantile regression a finite-sample predictive coverage guarantee
+- [[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)]] — pinball loss is a proper score for quantiles
+- [[Generalized Random Forests - Local Moment Equations]] — nonparametric quantile forests

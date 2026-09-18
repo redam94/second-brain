@@ -208,3 +208,7 @@ aliases:
 - [[Initial Values, Adaptation, and Warmup]] — the problem Pathfinder solves best
 - [[Failure Modes and Steps Forward]] — Pathfinder for multimodality
 - [[Simulation-Based and Amortized Inference]] — the other optimization-and-neural-network family
+- [[Diagnosing Variational Inference (PSIS k-hat and VSBC)]] — how to check whether a variational fit can be trusted
+- [[Automatic Differentiation Variational Inference (ADVI)]] — the ADVI algorithm in detail
+- [[Normalizing Flows as Conditional Density Estimators]] — same flow architecture, opposite KL direction
+- [[Simulation-Based Calibration - Overview]] — SBC/VSBC is how an approximate (variational) posterior is validated

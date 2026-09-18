@@ -333,4 +333,4 @@ Thus, in the abelian case, where ${\displaystyle A_{\mu }(x)\rightarrow A'_{\mu 
 
 ## Vault Notes
 
-- [[Gauge Theory Overview]] — Gauge theory and the Standard Model
+- [[Gauge Theory - Overview]] — Gauge theory and the Standard Model

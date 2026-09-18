@@ -30,6 +30,12 @@ used_by:
   - "[[Generalized Synthetic Control Method]]"
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
   - "[[Randomization Inference - Overview]]"
+  - "[[Pre-Trend Testing and Its Pitfalls]]"
+  - "[[Honest DiD - Sensitivity to Parallel Trends Violations]]"
+  - "[[SDID vs DiD vs Synthetic Control]]"
+  - "[[SDID Estimator - Unit and Time Weights]]"
+  - "[[Event Study Designs and Dynamic Treatment Effects]]"
+  - "[[Synthetic Difference-in-Differences - Overview]]"
 ---
 
 # Differences-in-Differences
@@ -103,3 +109,6 @@ Advantages:
 - [[Counterfactual Inference]] — explicit counterfactual framing of the treatment effect DiD estimates
 - [[Randomization Inference - Overview]] — permutation/randomization inference for DiD designs
 - [[Difference-in-Differences with Multiple Time Periods - Overview]] — the Callaway-Sant'Anna extension for staggered adoption with heterogeneous effects; the standard two-way FE estimator used here can be biased in that setting
+- [[Event Study Designs and Dynamic Treatment Effects]] — the leads-and-lags specification in depth
+- [[Pre-Trend Testing and Its Pitfalls]] — why passing a pre-trend test does not validate parallel trends
+- [[Activity Bias in Advertising]] — a cautionary marketing application: parallel trends fails when treatment timing is driven by user activity

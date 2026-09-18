@@ -22,7 +22,6 @@ used_by:
   - "[[Global-Local Shrinkage Priors]]"
 aliases:
   - "Prior-likelihood conflict"
-  - "Shrinkage factor"
   - "Normal-Cauchy model"
   - "Bias term model"
   - "Priors under transformation"

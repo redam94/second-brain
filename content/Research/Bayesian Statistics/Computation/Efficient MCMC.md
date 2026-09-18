@@ -13,7 +13,6 @@ folder: "Bayesian Statistics/Computation"
 aliases:
   - "Hamiltonian Monte Carlo"
   - "HMC"
-  - "Stan"
   - "NUTS"
 doc_type: concept
 source_location: "BDA3 Ch.12, pp. 293-310"

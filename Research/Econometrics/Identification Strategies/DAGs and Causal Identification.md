@@ -17,10 +17,9 @@ depends_on:
 used_by:
   - "[[Differences-in-Differences]]"
   - "[[Instrumental Variables]]"
-  - "[[Bayesian Propensity Score Weighting]]"
+  - "[[Bayesian Inverse Probability Weighting]]"
   - "[[Synthetic Control]]"
 aliases:
-  - directed acyclic graphs
   - DAG
   - d-separation
   - backdoor criterion
@@ -202,7 +201,7 @@ For the DAG with paths:
 
 - [[The Selection Problem]] — DAGs make selection bias explicit by showing which variables confound treatment assignment
 - [[The Experimental Ideal]] — RCTs eliminate backdoor paths by randomizing treatment; DAGs show why this works
-- [[Bayesian Propensity Score Weighting]] — Uses DAGs to identify which confounders to include in the propensity score model
+- [[Bayesian Inverse Probability Weighting]] — Uses DAGs to identify which confounders to include in the propensity score model
 - [[Missing Data Models]] — Uses DAGs to distinguish MCAR/MAR/MNAR and identify valid imputation strategies
 - [[Nonparametric Causal Inference]] — BART + propensity scores uses DAG-identified confounders
 - [[Differences-in-Differences]] — Common trends assumption can be encoded as a DAG restriction
@@ -211,4 +210,3 @@ For the DAG with paths:
 
 - [[Synthetic Control]] — Uses the potential outcomes framework; DAGs clarify the no-interference assumption
 - [[Instrumental Variables]] — An instrument must be exogenous in the DAG (no backdoor path from $Z$ to $Y$ except through $X$)
-- [[Bayesian Propensity Score Weighting]] — Bayesian implementation of backdoor adjustment via IPTW

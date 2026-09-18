@@ -22,8 +22,6 @@ used_by:
 aliases:
   - "Birthdays"
   - "Valentine's Day and Halloween births"
-  - "Hilbert space GP"
-  - "Pathfinder initialization"
   - "Fast approximate workflow"
 ---
 

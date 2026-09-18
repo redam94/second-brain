@@ -97,7 +97,8 @@ With heterogeneous effects, IV estimates the causal effect on **compliers** — 
 - [[Hierarchical Models]] — Bayesian partial pooling as an alternative approach to treatment effect heterogeneity
 - [[Data Collection Models]] — ignorability through instrumental design vs. conditioning on observables
 - [[Activity Bias in Advertising]] — real-world case where CIA fails and IV is the appropriate remedy
-- [[Bayesian Propensity Score Weighting]] — Bayesian selection-on-observables alternative; compare with IV when exclusion restriction is questionable
+- [[Bayesian Inverse Probability Weighting]] — Bayesian selection-on-observables alternative; compare with IV when exclusion restriction is questionable
 - [[Parameter Estimation in Market Response]] — 2SLS used for price endogeneity in marketing mix models
 - [[GMM Estimation and Instruments for Price Endogeneity]] — IV/GMM for price endogeneity in demand estimation
 - [[Synthetic Control]] — the primary alternative identification strategy for single-treated-unit panel settings where IV instruments are unavailable and parallel trends is implausible
+- [[Generalized Random Forests - Local Moment Equations]] — instrumental forests for heterogeneous IV effects

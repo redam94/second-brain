@@ -20,7 +20,6 @@ used_by:
   - "[[Fitting Simpler Models for Computational Purposes]]"
   - "[[Sampling Problems with Latent Variables - No Vehicles in the Park]]"
 aliases:
-  - "Folk theorem of statistical computing"
   - "Meeting in the middle"
   - "QR decomposition"
   - "Marginalization"

@@ -16,6 +16,10 @@ used_by:
   - "[[Consumer Utility Function Components]]"
   - "[[Logit Purchase Decision Model]]"
   - "[[Behavioral Primitives and Thresholds]]"
+  - "[[Homo Silicus - LLMs as Simulated Economic Agents]]"
+  - "[[LLM-Powered Agents - Overview]]"
+  - "[[LLM Agents vs Rule-Based Agents in ABM]]"
+  - "[[Generative Agents Architecture - Memory, Reflection and Planning]]"
 aliases:
   - Agent decision making
   - Bounded rationality in ABM
@@ -105,3 +109,5 @@ All three approaches incorporate bounded rationality:
 - [[Heterogeneity in Agent Models]] — agent heterogeneity determines how decision-rule parameters vary across individuals
 - [[Emergent Phenomena in ABM]] — bounded rationality at the individual level generates macro-level emergent outcomes
 - [[Discrete Choice Models]] — the econometric structural analogue of the logit decision rule; compare to the Karakaya utility + logit architecture
+- [[Tool Use and the Agent Loop]] — the other, LLM sense of "agent"
+- [[LLM Agents vs Rule-Based Agents in ABM]] — LLMs as an alternative to hand-written decision rules

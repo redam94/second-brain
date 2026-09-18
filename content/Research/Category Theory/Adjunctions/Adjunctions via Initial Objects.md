@@ -20,7 +20,6 @@ aliases:
   - comma category
   - universal arrow
   - initial object
-  - terminal object
 ---
 
 # Adjunctions via Initial Objects

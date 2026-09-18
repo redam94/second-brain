@@ -22,7 +22,6 @@ aliases:
   - "Stacking"
   - "Bayesian model averaging"
   - "Bayes factors instability"
-  - "Projection predictive variable selection"
   - "projpred"
 ---
 

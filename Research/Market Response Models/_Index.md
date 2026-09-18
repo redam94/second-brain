@@ -4,8 +4,8 @@ tags:
   - type/index
   - topic/market-response
   - source/hanssens-parsons-schultz-2001
-date_updated: 2026-07-03
-concept_count: 35
+date_updated: 2026-09-18
+concept_count: 42
 ---
 
 # Market Response Models
@@ -20,6 +20,7 @@ concept_count: 35
 > - Need advertising/price/promotion empirical elasticities and optimal decisions? → [[Empirical Findings and Applications/_Index|Empirical Findings and Applications]]
 > - Need **Bayesian MMM** (adstock/carryover, Hill saturation, MCMC priors, ROAS/mROAS, optimal media mix, BIC selection)? → [[Bayesian Media Mix Modeling/_Index|Bayesian Media Mix Modeling]]
 > - Need **geo-experiment methodology** (matched-market design, geo-based regression power analysis, time-based regression / Matched Markets)? → [[Geo-Experiment Methodology/_Index|Geo-Experiment Methodology]]
+> - Need **customer-level models / customer lifetime value** (Pareto-NBD, BG-NBD, Gamma-Gamma, RFM iso-value curves, shifted-beta-geometric retention, Bayesian extensions)? → [[Customer Lifetime Value/_Index|Customer Lifetime Value]]
 
 ## Concept Map
 
@@ -33,6 +34,7 @@ concept_count: 35
 | [[Empirical Findings and Applications/_Index\|Empirical Findings]] | 5 | Advertising elasticity ≈ 0.10, price ≈ −2.5, Dorfman-Steiner, DSS |
 | [[Bayesian Media Mix Modeling/_Index\|Bayesian Media Mix Modeling]] | 6 | Adstock (geometric/delayed) carryover, Hill/logistic saturation, Bayesian MCMC + priors, ROAS/mROAS, optimal media mix, BIC model selection (Jin et al., Google 2017) |
 | [[Geo-Experiment Methodology/_Index\|Geo-Experiment Methodology]] | 4 | Geo-Based Regression (GBR) design + power analysis (Vaver & Koehler 2011), Time-Based Regression (TBR) / Matched Markets estimator, iROAS, stationarity assumption and design sensitivity (Kerman, Wang & Vaver 2017) |
+| [[Customer Lifetime Value/_Index\|Customer Lifetime Value]] | 7 | Customer-base analysis: Pareto-NBD and BG-NBD buy-till-you-die models, P(alive) and conditional expected transactions, Gamma-Gamma monetary value, RFM sufficient statistics and iso-value curves, shifted-beta-geometric contractual retention, hierarchical-Bayes / covariate / deep (ZILN) extensions — Fader, Hardie & Lee 2005–2013; Wang et al. 2019 |
 
 ## Key Equations Quick Reference
 

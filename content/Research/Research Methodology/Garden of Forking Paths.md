@@ -12,7 +12,6 @@ date_ingested: 2026-04-08
 folder: "Research Methodology"
 aliases:
   - "Forking paths"
-  - "Researcher degrees of freedom"
   - "p-hacking"
 doc_type: concept
 source_location: "p_hacking.pdf pp. 1-14"
@@ -69,3 +68,4 @@ Conditional on the observed data, each analytic choice seems like the *only* rea
 - [[The Experimental Ideal]] — why randomized experiments mitigate these issues
 - [[Hierarchical Models]] — partial pooling provides a structural Bayesian solution to the multiplicity problem
 - [[Prediction vs Postdiction]] — pre-commitment makes the confirmatory/exploratory line explicit
+- [[The Peeking Problem and Optional Stopping]] — the stopping rule as a forking path

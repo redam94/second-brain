@@ -18,7 +18,6 @@ used_by:
 aliases:
   - Ben Said 2002
   - CUBES paper
-  - CUstomer BEhavior Simulator
 ---
 
 # Ben Said et al 2002 - Overview

@@ -105,3 +105,4 @@ In Bonabeau (2002), WOM is implicit in the adoption model:
 - [[Social Network Formation in Consumer Markets]] — the network WOM travels through
 - [[ABM in Marketing Strategy]] — strategic implications of WOM
 - [[Network Topology Effects on Diffusion]] — WOM drives the adoption waves; clustered networks produce multi-wave WOM propagation patterns
+- [[Generative Agents Architecture - Memory, Reflection and Planning]] — diffusion emerging from conversation rather than a coded rule

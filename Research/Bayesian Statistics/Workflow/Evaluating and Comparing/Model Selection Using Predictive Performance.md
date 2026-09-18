@@ -25,7 +25,6 @@ aliases:
   - "elpd_loo"
   - "Expected log predictive density"
   - "Three scenarios for the normal approximation"
-  - "PSIS-LOO"
 ---
 
 # Model Selection Using Predictive Performance

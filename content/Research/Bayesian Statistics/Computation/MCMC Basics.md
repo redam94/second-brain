@@ -29,6 +29,11 @@ used_by:
   - "[[Computational Troubleshooting]]"
   - "[[Bayesian Workflow - Overview]]"
   - "[[Bayesian Linear Regression]]"
+  - "[[Variational Inference - Overview]]"
+  - "[[Mean-Field Family and Coordinate Ascent VI (CAVI)]]"
+  - "[[Neural Likelihood Estimation and Sequential Neural Likelihood]]"
+  - "[[Neural Simulation-Based Inference - Overview]]"
+  - "[[Neural Ratio Estimation]]"
 ---
 
 # MCMC Basics

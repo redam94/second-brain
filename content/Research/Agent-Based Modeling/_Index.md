@@ -4,7 +4,7 @@ tags:
   - type/index
   - source/ingested
 parent: "[[../_Index|Research]]"
-date_updated: 2026-04-11
+date_updated: 2026-09-18
 ---
 
 # Agent-Based Modeling
@@ -16,6 +16,7 @@ date_updated: 2026-04-11
 > - For social interaction mechanisms (WOM, networks, diffusion, market dynamics) -> [[Research/Agent-Based Modeling/Social Dynamics/_Index|Social Dynamics]]
 > - For calibration and validation (GA, HM+ABC, uncertainty quantification, case studies) -> [[Research/Agent-Based Modeling/Calibration and Validation/_Index|Calibration and Validation]]
 > - For ABM application domains (marketing, flows, finance, organizations, risk) -> [[Research/Agent-Based Modeling/Applications/_Index|Applications]]
+> - For **LLM-powered agents** (generative agents, silicon samples / simulated respondents, homo silicus, validity and calibration of LLM populations) -> [[Research/Agent-Based Modeling/LLM-Powered Agents/_Index|LLM-Powered Agents]]
 
 ## Sub-topics
 - [[Foundations/_Index|Foundations]] — COVERS: ABM methodology and principles, emergent phenomena, heterogeneity, ABM vs equation-based modeling, agent decision rules and bounded rationality
@@ -23,6 +24,7 @@ date_updated: 2026-04-11
 - [[Research/Agent-Based Modeling/Social Dynamics/_Index|Social Dynamics]] — COVERS: WOM mechanisms (positive/negative), opinion leaders (exogenous vs emergent), social network formation, product adoption/diffusion models, network topology effects, market share equilibrium and lock-in
 - [[Research/Agent-Based Modeling/Calibration and Validation/_Index|Calibration and Validation]] — COVERS: ABM calibration overview (3 approaches), GA calibration (chromosome encoding, GA operators, convergence), RAM fitness evaluation (macro/micro), HM+ABC framework (implausibility score, wave-based pruning, rejection sampling ABC), uncertainty quantification (model discrepancy $V^r_m$, ensemble variance $V^r_s$, observation uncertainty $V_o$), case studies (SugarScape, territorial birds vs GA/SA/EA, RISC Scottish farms POM), experimental design (LHS, parameter sensitivity), validation (plausibility standard)
 - [[Research/Agent-Based Modeling/Applications/_Index|Applications]] — COVERS: marketing strategy (4Ps under WOM), flow simulation (evacuation, traffic), financial market simulation, organizational simulation, operational risk modeling
+- [[Research/Agent-Based Modeling/LLM-Powered Agents/_Index|LLM-Powered Agents]] — COVERS: the LLM-agent paradigm for ABM (Gao et al. 2023 survey), generative-agent architecture with memory/reflection/planning (Park et al. 2023), silicon samples and algorithmic fidelity (Argyle et al. 2022), homo silicus economic experiments (Horton 2023), persona-mixture calibration, LLM vs rule-based agents, opinion-alignment metrics (Santurkar et al. 2023), and a validity/bias threat taxonomy with a validation protocol (8 notes, added 2026-09-18)
 
 ## Key Concept Dependencies
 

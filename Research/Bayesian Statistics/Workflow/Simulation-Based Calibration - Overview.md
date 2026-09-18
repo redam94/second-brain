@@ -17,6 +17,8 @@ used_by:
   - "[[The SBC Algorithm]]"
   - "[[Interpreting SBC Histograms]]"
   - "[[SBC Case Studies]]"
+  - "[[Diagnosing Variational Inference (PSIS k-hat and VSBC)]]"
+  - "[[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]]"
 aliases:
   - SBC
   - Simulation-Based Calibration
@@ -77,3 +79,8 @@ SBC answers the question: **does my algorithm actually sample the posterior of t
 - [[SBC Case Studies]]
 - [[Bayesian Workflow - Overview]]
 - [[Model Checking]] · [[Model Comparison]]
+- [[Conformal Prediction - Overview]] — a different, predictive meaning of "calibration"
+- [[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]] — SBC applied to neural posteriors and what it cannot detect
+- [[Posterior Predictive Checking]] — posterior predictive checking asks whether the model fits the data, once SBC has established that the computation can be trusted
+- [[Computational Troubleshooting]] — what to do when SBC (or the sampler diagnostics) signal a computational problem
+- [[Variational Inference and Pathfinder]] — approximate algorithms are where SBC most often finds miscalibration

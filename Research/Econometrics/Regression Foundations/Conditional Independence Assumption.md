@@ -25,6 +25,9 @@ used_by:
   - "[[Activity Bias in Advertising]]"
   - "[[Observational vs Experimental Methods in Advertising]]"
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
+  - "[[Causal Machine Learning - Overview]]"
+  - "[[Honest Trees and Causal Forests]]"
+  - "[[Regularization Bias and the Partially Linear Model]]"
 ---
 
 # Conditional Independence Assumption
@@ -75,3 +78,4 @@ The coefficient $\rho$ has a causal interpretation as the average causal effect.
 - [[The Selection Problem]]
 - [[Data Collection Models]] — Bayesian treatment of ignorability, the direct parallel to CIA
 - [[Directed Acyclic Graphs]] — DAGs provide the algorithmic tool for finding the adjustment set that satisfies the CIA
+- [[Nonparametric Causal Inference]] — flexible Bayesian outcome models (BART, BCF) that estimate effects under this assumption

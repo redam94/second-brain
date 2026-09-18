@@ -108,3 +108,4 @@ The pointwise impact $\phi_t$ is the time-series analog of the DiD estimate $(\b
 - [[MCMC Inference for CausalImpact]] — how counterfactual draws are generated
 - [[CausalImpact Empirical Application]] — how these quantities are reported in practice
 - [[Bayesian Structural Time-Series Model]] — the model being predicted from
+- [[Forecast Evaluation and Backtesting]] — placebo backtests of the counterfactual forecast

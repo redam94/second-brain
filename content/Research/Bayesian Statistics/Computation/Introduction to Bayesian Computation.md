@@ -22,6 +22,9 @@ used_by:
   - "[[MCMC Basics]]"
   - "[[Efficient MCMC]]"
   - "[[BDA3 - Overview]]"
+  - "[[Variational Inference - Overview]]"
+  - "[[Diagnosing Variational Inference (PSIS k-hat and VSBC)]]"
+  - "[[The ELBO and KL Divergence Minimization]]"
 ---
 
 # Introduction to Bayesian Computation

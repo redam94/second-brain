@@ -133,3 +133,4 @@ This is the engine of [[Bayesian Quadrature]] (observe $f$, infer $\int f$) and 
 - [[Classical Quadrature as Inference]] — trapezoid/Gauss rules as the posterior mean of this regression applied to the integrand.
 - [[ODE Filters and Smoothers]] — GP regression in state-space form, conditioned on the ODE vector field.
 - [[First- and Second-Order Optimisation Methods]] — BFGS as Gaussian regression on the Hessian.
+- [[Scaled Dot-Product and Multi-Head Attention]] — attention as a kernel-weighted smoother

@@ -23,7 +23,6 @@ aliases:
   - CACE
   - complier average causal effect
   - local average treatment effect
-  - LATE
   - principal stratification
 ---
 

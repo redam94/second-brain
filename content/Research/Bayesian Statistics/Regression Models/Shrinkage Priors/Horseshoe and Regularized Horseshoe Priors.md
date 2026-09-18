@@ -16,10 +16,12 @@ depends_on:
   - "[[Choosing the Global Scale and Effective Nonzeros]]"
   - "[[Regularized Horseshoe (Finnish Horseshoe)]]"
   - "[[Bayesian Linear Regression]]"
+  - "[[Hierarchical Models]]"
 used_by:
   - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
 aliases:
-  - Finnish Horseshoe
+  - Horseshoe Priors
+  - Sparse Regression Priors
   - Piironen Vehtari Horseshoe
   - Regularized Horseshoe Overview
   - Sparsity Information and Regularization
@@ -89,6 +91,8 @@ The paper also shows the regularized horseshoe is the **continuous counterpart o
 - The slab regularization is in [[Regularized Horseshoe (Finnish Horseshoe)]].
 - Builds on [[Bayesian Linear Regression]]; competes with [[Spike-and-Slab Prior for Covariate Selection]].
 - Connected to model-size control and the bias–variance view in [[Overfitting and Information Criteria]].
+- **Versus ridge and LASSO.** A single Gaussian (ridge) prior over-shrinks large signals, while a Laplace (Bayesian LASSO) prior under-shrinks noise and biases signals; global-local priors avoid both by giving each coefficient its own heavy-tailed scale. The horseshoe can be read as a continuous relaxation of spike-and-slab selection.
+- **Computation.** Global-local scale mixtures are fit with the same HMC/NUTS machinery as other hierarchical priors ([[Efficient MCMC]], [[Hierarchical Models]]); a non-centered parameterization of $\lambda_j,\tau$ is usually needed for good posterior geometry.
 
 ## See Also
 - [[Global-Local Shrinkage Priors]] — the framework these priors belong to

@@ -132,3 +132,7 @@ From Chapter 10 (Implementation):
 - Pulsing strategies: [[Shape of the Marketing Response Function]]
 - VAR/ECM forecasting: [[Multivariate Persistence and Cointegration]]
 - Implementation context: [[Implementation of Market Response Models]]
+
+## See Also
+
+- [[Hierarchical Forecast Reconciliation (MinT)]] — forecasts that add up across planning levels

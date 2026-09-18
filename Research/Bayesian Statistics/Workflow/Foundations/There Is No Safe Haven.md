@@ -230,3 +230,4 @@ for communities of users who are not full-time quantitative analysts.
 - [[Four Modeling Scenarios]] — the practical ladder for models known to be imperfect
 - [[Partial Pooling as Multiple Comparisons Correction]] — the toy-problem evidence (source 3) in detail
 - [[Forking Paths and Bayesian Approaches]] — researcher degrees of freedom as the flip side of "no safe haven"
+- [[From Inference to Data Analysis to Workflow]] — the next chapter's response: since no method is safe by default, embed inference in a workflow

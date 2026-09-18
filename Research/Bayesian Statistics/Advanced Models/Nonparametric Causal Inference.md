@@ -10,7 +10,6 @@ tags:
   - doc/tutorial
 aliases:
   - Bayesian BART Causal
-  - Propensity Score Bayesian
 date_ingested: 2026-04-09
 folder: "Bayesian Statistics/Advanced Models"
 source: "[[raw/Bayesian Non-parametric Causal Inference]]"
@@ -97,3 +96,8 @@ Because BART is Bayesian, these estimates come with full posterior distributions
 ## Source
 
 - [[raw/Bayesian Non-parametric Causal Inference]] — PyMC example: BART + propensity scores for ATE/ATT estimation
+
+## See Also
+
+- [[Honest Trees and Causal Forests]] — the frequentist counterpart to BART
+- [[Conditional Independence Assumption]] — BART/BCF outcome models still rely on selection on observables

@@ -110,3 +110,4 @@ Circular shifting lets a limited pretest data set support power analyses for lon
 - [[Time-Based Regression Estimator for Geo Experiments]] — the alternative estimator for low-geo-count experiments
 - [[TBR Design Sensitivity and the Stationarity Assumption]] — TBR's analogous design/power procedure and assumption checks
 - [[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]] — the Bayesian EIG framing this classical variance-based design is the frequentist counterpart of
+- [[Interference and Marketplace Experiments]] — geo tests are cluster-randomized designs against interference

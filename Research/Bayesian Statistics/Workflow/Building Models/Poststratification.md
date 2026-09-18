@@ -20,6 +20,8 @@ used_by:
   - "[[Causal Inference as Generalization]]"
   - "[[Posterior Predictive Checking]]"
   - "[[Statistical and Scientific Inference]]"
+  - "[[Silicon Samples and Algorithmic Fidelity]]"
+  - "[[Validity, Bias and Calibration of LLM-Simulated Populations]]"
 aliases:
   - "MRP"
   - "Multilevel regression and poststratification"
@@ -300,3 +302,4 @@ for each cell.
 - [[Simulation to Express Uncertainty]] — how the $S$ columns get their uncertainty
 - [[Bayesian Structural Time-Series Model]] — another setting where sample-to-population generalization
   drives the modeling
+- [[Silicon Samples and Algorithmic Fidelity]] — silicon sampling is poststratification over personas

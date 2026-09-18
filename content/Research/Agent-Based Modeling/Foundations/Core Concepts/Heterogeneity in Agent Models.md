@@ -16,6 +16,10 @@ used_by:
   - "[[Consumer Utility Function Components]]"
   - "[[Behavioral Attitudes in CUBES]]"
   - "[[Population Initialization and Parameter Sensitivity]]"
+  - "[[Silicon Samples and Algorithmic Fidelity]]"
+  - "[[LLM-Powered Agents - Overview]]"
+  - "[[LLM Agents vs Rule-Based Agents in ABM]]"
+  - "[[Persona Mixture Calibration of LLM Agents]]"
 aliases:
   - Agent heterogeneity
   - Individual differences in ABM
@@ -100,3 +104,5 @@ Bonabeau (2002) argues that ABM should be used when "the population is heterogen
 - [[Opinion Leaders and Social Influence]] — the extreme end of behavioral heterogeneity: highly influential agents with outsized market impact
 - [[Network Topology Effects on Diffusion]] — network position heterogeneity amplifies behavioral heterogeneity in diffusion dynamics
 - [[ABM vs Equation-Based Modeling]] — heterogeneity is the primary reason to choose ABM over aggregate equation-based models
+- [[Silicon Samples and Algorithmic Fidelity]] — persona-conditioned heterogeneity
+- [[Shifted-Beta-Geometric Model for Contractual Retention]] — the "ruse of heterogeneity" in aggregate retention curves

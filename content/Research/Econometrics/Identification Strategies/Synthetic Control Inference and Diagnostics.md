@@ -131,3 +131,4 @@ Cattaneo, Feng, and Titiunik (2021) propose predictive intervals for $\hat{\tau}
 - [[Synthetic Control Requirements]] — conditions under which inference is valid
 - [[Abadie 2021 - Overview]] — full paper overview
 - [[The Selection Problem]] — permutation inference validates that the pre-treatment matching solved the selection problem
+- [[SDID Inference - Bootstrap, Jackknife and Placebo]] — placebo variance estimation versus permutation p-values

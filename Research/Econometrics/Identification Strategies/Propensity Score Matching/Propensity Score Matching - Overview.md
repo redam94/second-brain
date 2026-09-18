@@ -14,6 +14,7 @@ depends_on:
   - "[[Potential Outcomes Framework]]"
   - "[[Propensity Score and the Balancing Property]]"
 used_by:
+  - "[[Propensity Score Matching - Balancing Theorem and Failure Modes]]"
   - "[[Matching Methods and Distance Measures]]"
   - "[[Covariate Balance Diagnostics]]"
   - "[[Common Support and Overlap]]"
@@ -69,11 +70,13 @@ A worked pipeline: estimate $\hat e_i$ by logistic regression of treatment on co
 - The theoretical engine is the [[Propensity Score and the Balancing Property]].
 - Concrete matching algorithms and distances: [[Matching Methods and Distance Measures]].
 - Quality control: [[Covariate Balance Diagnostics]] and [[Common Support and Overlap]].
-- Frequentist estimation context: [[Frequentist Causal Estimation]]; the weighting use connects to [[Bayesian Inverse Probability Weighting]] and [[Bayesian Propensity Score Weighting]].
+- Frequentist estimation context: [[Frequentist Causal Estimation]]; the weighting use connects to [[Bayesian Inverse Probability Weighting]] and [[Bayesian Inverse Probability Weighting]].
 - Addresses [[The Selection Problem]] and [[Omitted Variables Bias]] for *observed* confounders; an alternative observational-design strategy is [[Synthetic Control]].
 
 ## See Also
 
+- [[Propensity Score Matching - Balancing Theorem and Failure Modes]] — companion synthesis (Rosenbaum & Rubin 1983): balancing theorem with proof sketch, ATT vs ATE, PSM vs IPW, and why PSM fails under activity bias
+- [[Matching Algorithms and Caliper]] / [[Covariate Balance and Matching Diagnostics]] — practitioner-oriented companions to [[Matching Methods and Distance Measures]] and [[Covariate Balance Diagnostics]]
 - [[Propensity Score and the Balancing Property]]
 - [[Matching Methods and Distance Measures]]
 - [[Covariate Balance Diagnostics]]

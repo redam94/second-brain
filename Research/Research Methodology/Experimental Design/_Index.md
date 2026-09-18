@@ -4,8 +4,8 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research Methodology/_Index|Research Methodology]]"
-date_updated: 2026-07-03
-concept_count: 8
+date_updated: 2026-09-18
+concept_count: 16
 ---
 
 # Experimental Design
@@ -17,10 +17,12 @@ concept_count: 8
 > - Need Kaplan-Meier or Cox regression? -> [[Survival Analysis]]
 > - Need Type S (sign) or Type M (magnitude) errors? -> [[Type S and Type M Errors]]
 > - Need conversion-delay modeling or bandit regret under delayed/censored rewards? -> [[Delayed and Censored Feedback/_Index|Delayed and Censored Feedback]]
+> - Need **online A/B testing statistics** (CUPED, peeking, always-valid p-values / mSPRT, confidence sequences, SRM, marketplace interference, switchbacks)? -> [[Online Experimentation/_Index|Online Experimentation]]
 
 ## Sub-topics
 
 - [[Delayed and Censored Feedback/_Index|Delayed and Censored Feedback]] — COVERS: Chapelle (2014)'s joint classifier + hazard-based delay model for ad conversion prediction (right-censoring of not-yet-converted examples), and Vernade, Cappé & Perchet (2017)'s stochastic bandit model with delayed and censored rewards, its DelayedUCB/DelayedKLUCB algorithms, and regret bounds. Extends this folder's [[Survival Analysis|survival/censoring]] concepts into the online sequential-decision setting. *(4 notes.)*
+- [[Online Experimentation/_Index|Online Experimentation]] — COVERS: the online controlled experiment framework and its failure modes, CUPED variance reduction (Deng et al. 2013), the peeking problem, always-valid p-values and the mSPRT (Johari et al.), confidence sequences (Howard et al. 2021), sample ratio mismatch and trustworthiness checks, interference in two-sided marketplaces, and switchback design and analysis (Bojinov et al.) (8 notes, added 2026-09-18)
 
 ## Concept Map
 

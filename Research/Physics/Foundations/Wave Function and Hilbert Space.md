@@ -93,4 +93,4 @@ where $|c_n|^2$ is the probability of measuring eigenvalue $\lambda_n$.
 - [[Quantum Entanglement]] — non-separable states of composite systems
 - [[Quantum Mechanics - Mathematical Formalism]] — Theoretical Physics companion note covering Dirac notation, operators, and commutation relations at a higher level of abstraction
 - [[Quantum Mechanics - Overview]] — big-picture survey of quantum mechanics connecting to the Theoretical Physics notes cluster
-- [[QFT Overview]] — quantum field theory generalises this single-particle Hilbert space formalism to many-body field operators
+- [[Quantum Field Theory - Overview]] — quantum field theory generalises this single-particle Hilbert space formalism to many-body field operators

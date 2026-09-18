@@ -98,6 +98,6 @@ This requires:
 
 ## See Also
 
-- [[Bayesian Propensity Score Weighting]] — Correct approach: use DAG to select adjustment set for the treatment, then focus interpretation solely on the treatment effect
+- [[Bayesian Inverse Probability Weighting]] — Correct approach: use DAG to select adjustment set for the treatment, then focus interpretation solely on the treatment effect
 - [[The Selection Problem]] — The fundamental challenge that makes adjustment necessary and limits what can be identified
 - [[Observational vs Experimental Methods in Advertising]] — Activity bias as a case where confounders (activity) cause 10–1000x overestimates when treated as if identified

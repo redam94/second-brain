@@ -24,6 +24,10 @@ used_by:
   - "[[Multiple Testing Corrections]]"
   - "[[Survival Analysis]]"
   - "[[Activity Bias in Advertising]]"
+  - "[[Pre-Trend Testing and Its Pitfalls]]"
+  - "[[The Peeking Problem and Optional Stopping]]"
+  - "[[Online Experimentation - Overview]]"
+  - "[[CUPED and Regression-Adjusted Variance Reduction]]"
 ---
 
 # Power Analysis and Sample Size
@@ -107,3 +111,5 @@ In Bayesian analysis, the concept of "power" is less central — instead, one ca
 - [[Fitting and Validating Computation]] — simulation-based calibration as a Bayesian alternative to classical power analysis
 - [[Hierarchical Models]] — multilevel designs increase effective power via partial pooling; power analysis for hierarchical models differs from flat designs
 - [[Multiple Comparisons - Bayesian Perspective]] — Bayesian approach to false discovery control; connects to the sample-size question of how many tests one can afford to run
+- [[Neural Scaling Laws]] — design-stage extrapolation of loss vs scale
+- [[CUPED and Regression-Adjusted Variance Reduction]] — pre-period covariates shrink the variance in sample-size formulas by (1 - rho^2)

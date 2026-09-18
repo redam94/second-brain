@@ -41,14 +41,18 @@ The single most important routing artifact is the master workflow diagram, **Fig
 > | Why Bayes, and when it isn't worth it | [[Why Bayes - Benefits, Costs, and Borders]] |
 > | The taxonomy organizing the whole book | [[Four Modeling Scenarios]] |
 > | One problem carried end to end | [[Multiple-Choice Exam - A Full Workflow Walkthrough]] |
+> | Where to start: the first model to write down | [[Choosing an Initial Model]], [[Generative and Partially Generative Models]] |
 > | How to pick and specify a prior | [[Prior Distributions]], [[Constructing Priors for Effect Sizes]], [[Joint Priors and Covariance Matrices]] |
 > | Checking a model before seeing data | [[Prior Predictive Checking]] |
+> | Testing a model and its code on fake data | [[Designing Simulated-Data Experiments]] |
 > | Checking a model after fitting | [[Posterior Predictive Checking]], [[Cross Validation Checking]] |
 > | Choosing between models | [[Model Selection Using Predictive Performance]], [[Stacking and Predictive Model Averaging]] |
 > | Chains that won't mix | [[What to Do About Convergence Problems]], [[Failure Modes and Steps Forward]] |
 > | Validating that your Stan program is correct | [[SBC in the Workflow]], [[Simulation-Based Calibration Checking in Model Development Workflow]] |
+> | Keeping the modeling loop fast | [[Fit Fast, Fail Fast]] |
 > | A fast approximation to fit-and-fail-fast | [[Variational Inference and Pathfinder]], [[Approximate Algorithms and Approximate Models]] |
 > | Causal effects and generalization | [[Causal Inference as Generalization]], [[Poststratification]] |
+> | What a fitted model does and does not tell you scientifically | [[Statistical and Scientific Inference]] |
 > | A non-Bayesian translation of everything above | [[Statistical and Computational Workflow for Bayesians and Non-Bayesians]] |
 > | What to read in BDA3 and what to skip | [[How to Get the Most Out of Bayesian Data Analysis]] |
 

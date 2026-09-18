@@ -23,6 +23,8 @@ used_by:
   - "[[Decision Analysis]]"
   - "[[BDA3 - Overview]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Transformers and LLM Foundations - Overview]]"
+  - "[[Autoregressive Language Modeling and Pretraining]]"
 ---
 
 # Probability and Bayesian Inference

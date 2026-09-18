@@ -14,7 +14,7 @@ doc_type: article
 depends_on:
   - "[[Wave Function and Hilbert Space]]"
 used_by:
-  - "[[QFT Overview]]"
+  - "[[Quantum Field Theory - Overview]]"
 aliases:
   - entanglement
   - Bell's theorem
@@ -81,11 +81,11 @@ When a quantum system interacts with its environment, it becomes entangled with 
 
 - **[[Wave Function and Hilbert Space]]**: Entanglement is a direct consequence of the tensor-product structure of composite Hilbert spaces and the superposition principle.
 - **[[Schrödinger Equation and Time Evolution]]**: The joint state of entangled particles evolves unitarily under the Schrödinger equation until a measurement disturbs the system.
-- **[[QFT Overview]]**: Quantum field theory treats entanglement at the level of field modes; vacuum entanglement plays a role in Hawking radiation and the Unruh effect.
+- **[[Quantum Field Theory - Overview]]**: Quantum field theory treats entanglement at the level of field modes; vacuum entanglement plays a role in Hawking radiation and the Unruh effect.
 
 ## See Also
 
 - [[Wave Function and Hilbert Space]] — the state formalism underlying entanglement
 - [[Schrödinger Equation and Time Evolution]] — unitary time evolution of composite quantum systems
 - [[Uncertainty Principle]] — another non-classical consequence of the commutation structure of quantum observables
-- [[QFT Overview]] — entanglement in the field-theory context
+- [[Quantum Field Theory - Overview]] — entanglement in the field-theory context

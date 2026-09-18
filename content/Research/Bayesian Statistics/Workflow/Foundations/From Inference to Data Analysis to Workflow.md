@@ -291,3 +291,4 @@ Box (1980), and Jaynes (1983). A common feature is **respect for analyst subject
 - [[Four Modeling Scenarios]] — the ladder from "programming error" to "model contains the truth"
 - [[Computational Tools and Probabilistic Programming]] — the software that makes the loop fast enough to iterate
 - [[Statistical and Scientific Inference]] — workflow embedded in the larger scientific cycle
+- [[There Is No Safe Haven]] — the motivation for workflow: no statistical method is a safe haven

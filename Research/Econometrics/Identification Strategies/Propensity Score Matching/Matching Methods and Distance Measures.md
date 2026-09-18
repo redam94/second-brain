@@ -18,7 +18,6 @@ used_by:
 aliases:
   - Distance Measures
   - Nearest Neighbor Matching
-  - Caliper Matching
   - Mahalanobis Matching
   - Full Matching
   - Optimal Matching
@@ -75,7 +74,7 @@ With-replacement frequency weights: if one treated unit is matched to 3 controls
 - Operationalizes the [[Propensity Score and the Balancing Property]] (the distances rely on $e(X)$).
 - Step 2 of the pipeline in [[Propensity Score Matching - Overview]].
 - Every method must be checked with [[Covariate Balance Diagnostics]] and respect [[Common Support and Overlap]] (calipers automatically enforce overlap; weighting/subclassification do not).
-- The IPTW weighting use links to [[Bayesian Inverse Probability Weighting]], [[Bayesian Propensity Score Weighting]], and [[Frequentist Causal Estimation]].
+- The IPTW weighting use links to [[Bayesian Inverse Probability Weighting]], [[Bayesian Inverse Probability Weighting]], and [[Frequentist Causal Estimation]].
 
 ## See Also
 

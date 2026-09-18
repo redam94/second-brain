@@ -21,7 +21,6 @@ used_by:
   - "[[The Replication Crisis and Multiple Levels of Variation]]"
 aliases:
   - "Double dipping"
-  - "Garden of forking paths"
   - "Post-selection inference"
   - "Severe tests vs preregistration"
 ---

@@ -102,3 +102,4 @@ Rogers (1983) further classified adopter categories that relate to opinion leade
 - [[ABM in Marketing Strategy]] — strategic implications of leader targeting
 - [[Carryover Effects and Distributed Lags]] — WOM persistence in market response models: the same social amplification creates advertising carryover captured by Koyck/ADL models
 - [[Advertising and Promotion Effects]] — empirical generalizations on advertising elasticity; ABM quality-WOM interaction vs. traditional MRM promotion effects
+- [[Generative Agents Architecture - Memory, Reflection and Planning]] — over-cooperative LLM agents can inflate simulated influence

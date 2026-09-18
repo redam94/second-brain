@@ -24,7 +24,6 @@ aliases:
   - Linear SDE
   - Integrated Wiener Process
   - IWP
-  - State-Space Model
   - Ornstein-Uhlenbeck Process
   - Matern Process
   - Ito Integral

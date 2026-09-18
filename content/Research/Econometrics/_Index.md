@@ -4,8 +4,8 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-06-28
-concept_count: 60
+date_updated: 2026-09-18
+concept_count: 77
 ---
 
 # Econometrics
@@ -16,6 +16,8 @@ concept_count: 60
 > - Need regression interpretation or OVB? -> [[Research/Econometrics/Regression Foundations/_Index|Regression Foundations]]
 > - Need IV, DiD (canonical), RD, synthetic control, GSC, DAGs, or propensity weighting? -> [[Research/Econometrics/Identification Strategies/_Index|Identification Strategies]]
 > - Need **staggered/multi-period DiD** (group-time ATT, doubly-robust estimands, event-study aggregation, multiplier-bootstrap inference)? -> [[Research/Econometrics/Difference-in-Differences/_Index|Difference-in-Differences]]
+> - Need **synthetic DiD, event studies, pre-trend testing or Honest DiD**? -> [[Research/Econometrics/Identification Strategies/Synthetic Difference-in-Differences/_Index|Synthetic Difference-in-Differences]]
+> - Need **causal machine learning** (double/debiased ML, Neyman orthogonality, cross-fitting, causal forests / GRF, R-learner)? -> [[Research/Econometrics/Causal Machine Learning/_Index|Causal Machine Learning]]
 > - Need quantile regression, discrete choice, or SEs? -> [[Research/Econometrics/Extensions/_Index|Extensions]]
 > - Need simulation-based estimation (MSM, indirect inference, EMM, copula SMM)? -> [[Research/Econometrics/Extensions/_Index|Extensions]]
 > - Need high-dimensional dependence / copulas, tail dependence, or factor copulas? -> [[Research/Econometrics/Dependence Modeling/_Index|Dependence Modeling]]
@@ -31,11 +33,12 @@ concept_count: 60
 |-----------|-------|--------|
 | [[Foundations/_Index\|Foundations]] | 4 | Research questions, experimental ideal, selection bias, DAGs (MHE Part I + Pearl) |
 | [[Research/Econometrics/Regression Foundations/_Index\|Regression Foundations]] | 3 | CEF, CIA, omitted variables bias (MHE Ch 3) |
-| [[Research/Econometrics/Identification Strategies/_Index\|Identification Strategies]] | 19 | IV, LATE, DD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, **classical PSM (Rosenbaum-Rubin matching framework + diagnostics)** — quasi-experimental methods (MHE Ch 4-6 + Abadie 2021 + Xu 2017 + extras) |
+| [[Research/Econometrics/Identification Strategies/_Index\|Identification Strategies]] | 27 | IV, LATE, DD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, **classical PSM (Rosenbaum-Rubin matching framework + diagnostics)** — quasi-experimental methods (MHE Ch 4-6 + Abadie 2021 + Xu 2017 + extras); **Synthetic DiD sub-topic (8 notes: SDID estimator and inference, geo-experiment application, event studies, pre-trend testing, Honest DiD)** |
 | [[Research/Econometrics/Difference-in-Differences/_Index\|Difference-in-Differences]] | 6 | Staggered/multi-period DiD: group-time ATT(g,t), parallel-trends/no-anticipation/overlap assumptions, OR/IPW/doubly-robust estimands, event-study/group/calendar aggregation, multiplier-bootstrap uniform inference, TWFE critique (Callaway & Sant'Anna 2020) |
 | [[Research/Econometrics/Extensions/_Index\|Extensions]] | 23 | Quantile regression, discrete choice, standard errors (MHE Ch 7-8), simulation-based estimation: MSM, indirect inference, EMM, SMM for copulas, and foundational time-series SME theory (Liesenfeld & Breitung 1998, Evans 2024, Oh & Patton 2011, Duffie & Singleton 1993) |
 | [[Research/Econometrics/Dependence Modeling/_Index\|Dependence Modeling]] | 6 | High-dimensional copulas, factor-copula construction, tail dependence via EVT, multi-factor/block structures, rank-based SMM, S&P 100 & systemic risk (Oh & Patton 2012) |
 | [[Research/Econometrics/Plausible GMM/_Index\|Plausible GMM]] | 5 | Quasi-Bayesian inference when moment conditions are plausible but not exact: plausibility characteristic $\mu_*$, proper prior over misspecification, CU-GMM quasi-posterior, local Gaussian prior approximation & "no free lunch", institutions-and-GDP IV application (Chernozhukov, Hansen, Kong & Wang 2026) |
+| [[Research/Econometrics/Causal Machine Learning/_Index\|Causal Machine Learning]] | 9 | Regularization bias and the partially linear model, Neyman orthogonality, cross-fitting (DML1/DML2), DML for ATE / ATTE / LATE with AIPW scores, honest trees and causal forests, generalized random forests (local moment equations), forest asymptotics and inference, R-learner — Chernozhukov et al. 2018, Wager & Athey 2018, Athey-Tibshirani-Wager 2019, Nie & Wager 2021 |
 
 ## Sources
 

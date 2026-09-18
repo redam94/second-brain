@@ -16,6 +16,7 @@ used_by:
   - "[[Frequentist Causal Estimation]]"
   - "[[General Structure of Bayesian CI]]"
   - "[[Dynamic Treatment Regimes Framework]]"
+  - "[[DML Estimators for ATE and the Interactive Model]]"
 aliases:
   - treatment effect
   - ATE

@@ -100,3 +100,5 @@ CIDEr is used for abductive reasoning because it amplifies rare/unique words, me
 ## See Also
 - [[Code Prompts for Causal Structure]] — how these task structures are encoded in code
 - [[Liu 2025 - Overview]] — paper overview and results
+- [[Autoregressive Language Modeling and Pretraining]] — the zero-shot generation it relies on
+- [[Fine-tuning on Conditional Statements]] — fine-tuning on conditional statements as a way to improve performance on these tasks

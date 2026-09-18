@@ -109,3 +109,4 @@ $$
 - Sant'Anna & Zhao (2020) — the 2-period DR DiD estimator extended here
 - Abadie (2005) — semiparametric IPW DiD
 - [[How to use Bayesian propensity scores and inverse probability weights]] — Bayesian IPW counterpart
+- [[Neyman Orthogonality]] — why the doubly-robust form tolerates ML nuisance estimates

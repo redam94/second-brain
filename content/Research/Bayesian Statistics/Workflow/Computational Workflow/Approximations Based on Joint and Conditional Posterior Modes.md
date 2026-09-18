@@ -18,7 +18,6 @@ used_by:
   - "[[Modeling Ideas to Address Computing Problems]]"
   - "[[Variational Inference and Pathfinder]]"
 aliases:
-  - "Laplace approximation"
   - "INLA"
   - "TMB"
   - "L-BFGS"

@@ -21,7 +21,6 @@ aliases:
   - Causal Faithfulness Assumption
   - Markov Equivalence Class
   - CPDAG
-  - d-separation
 ---
 
 # Markov and Faithfulness Assumptions

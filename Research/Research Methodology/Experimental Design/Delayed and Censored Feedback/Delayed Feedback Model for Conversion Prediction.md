@@ -114,3 +114,4 @@ The paper stresses that $p(x)$ and $\lambda(x)$ **cannot be identified separatel
 - [[Survival Analysis]] — the right-censoring concept this model generalizes with an added "never happens" outcome
 - [[EM and Gradient Optimization for the Delayed Feedback Model]] — how $p(x)$ and $\lambda(x)$ are actually fit
 - [[Bandit Models with Delayed and Censored Feedback]] — the same $(C,D)$ structure inside a regret-minimizing bandit
+- [[Pareto-NBD Model]] — another latent "will they ever convert/return" model

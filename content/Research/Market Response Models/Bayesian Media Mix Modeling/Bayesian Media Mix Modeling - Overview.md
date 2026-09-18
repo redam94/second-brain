@@ -83,3 +83,4 @@ Because these transformations make the model **nonlinear in the parameters**, or
 - [[ROAS, mROAS, and Optimal Media Mix]]
 - [[MMM Model Selection and Application]]
 - [[_Index|Index: Bayesian Media Mix Modeling]]
+- [[Hierarchical Models]] — geo-level and brand-level MMMs pool channel parameters through hierarchical priors

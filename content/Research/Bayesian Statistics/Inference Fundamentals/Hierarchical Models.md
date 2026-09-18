@@ -31,6 +31,9 @@ used_by:
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
   - "[[Horseshoe and Regularized Horseshoe Priors]]"
   - "[[Empirical Bayes - Overview]]"
+  - "[[Bayesian and Hierarchical Extensions of CLV Models]]"
+  - "[[Customer Lifetime Value - Overview]]"
+  - "[[Local vs Global Forecasting Models]]"
 ---
 
 # Hierarchical Models
@@ -150,3 +153,6 @@ Hierarchical models appear naturally in causal inference:
 - [[Efficient MCMC]] — HMC with non-centered parameterization is required for efficient sampling from hierarchical posteriors
 - [[Power Analysis and Sample Size]] — multilevel models improve effective power by pooling information across groups
 - [[Empirical Bayes - Overview]] — empirical-Bayes estimation of the prior, the frequentist analogue of hierarchical pooling
+- [[Local vs Global Forecasting Models]] — partial pooling analogy for cross-series learning
+- [[Bayesian and Hierarchical Extensions of CLV Models]] — hierarchical Bayes for customer-level parameters
+- [[Bayesian Media Mix Modeling - Overview]] — an applied example: hierarchical priors pooling media effects across geos or brands

@@ -21,12 +21,10 @@ used_by:
 aliases:
   - Probability of Improvement
   - Expected Improvement
-  - Upper Confidence Bound
   - GP-UCB
   - Knowledge Gradient
   - PI
   - EI
-  - UCB
   - KG
   - Portfolio of Acquisition Functions
 ---

@@ -128,3 +128,7 @@ The **model-based planning cycle** iterates: Set objectives → Specify model �
 ### Related Methods (Cross-Domain)
 - [[The Experimental Ideal]], [[Differences-in-Differences]] — causal inference counterparts
 - [[Bayesian Workflow - Overview]] — Bayesian estimation approach to the same models
+
+## See Also
+
+- [[Customer Lifetime Value - Overview]] — customer-level complement to aggregate response models

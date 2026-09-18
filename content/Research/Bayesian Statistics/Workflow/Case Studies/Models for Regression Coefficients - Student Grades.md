@@ -28,7 +28,6 @@ aliases:
   - Projection Predictive Variable Selection
   - projpred case study
   - R2D2 prior example
-  - Piranha principle
 ---
 
 # Models for Regression Coefficients and Variable Selection: Student Grades

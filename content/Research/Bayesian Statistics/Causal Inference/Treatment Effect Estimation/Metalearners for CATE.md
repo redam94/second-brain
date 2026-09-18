@@ -20,6 +20,8 @@ used_by:
   - "[[S-Learner]]"
   - "[[T-Learner and Minimax Rate]]"
   - "[[X-Learner]]"
+  - "[[Causal Machine Learning - Overview]]"
+  - "[[R-Learner and Orthogonal CATE Estimation]]"
 aliases:
   - metalearner framework
   - CATE estimation framework
@@ -109,3 +111,6 @@ Units are drawn i.i.d. from a superpopulation $\mathcal{P}$ over $(X, W, Y(0), Y
 
 - [[Künzel 2019 - Overview]] — paper context
 - [[S-Learner]], [[T-Learner and Minimax Rate]], [[X-Learner]] — the three metalearners
+- [[Conformal Inference for Counterfactuals and ITEs]] — CATE intervals under-cover individual effects
+- [[R-Learner and Orthogonal CATE Estimation]] — the orthogonal member of the metalearner family
+- [[Honest Trees and Causal Forests]] — a CATE estimator with pointwise confidence intervals

@@ -16,6 +16,8 @@ depends_on:
   - "[[Synthetic Likelihood Construction]]"
 used_by:
   - "[[Nicholson's Blowfly Application]]"
+  - "[[Neural Likelihood Estimation and Sequential Neural Likelihood]]"
+  - "[[Neural Simulation-Based Inference - Overview]]"
 aliases:
   - synthetic likelihood
   - Wood 2010
@@ -77,3 +79,4 @@ The first **general-purpose** method for well-founded statistical inference abou
 - [[Synthetic Likelihood Construction]] — the estimator and its properties
 - [[Nicholson's Blowfly Application]] — the empirical demonstration
 - [[Approximate Bayesian Computation for ABMs]] — the closest likelihood-free relative
+- [[Neural Likelihood Estimation and Sequential Neural Likelihood]] — the flow-based successor to the Gaussian synthetic likelihood

@@ -16,7 +16,7 @@ depends_on:
   - "[[Wave Function and Hilbert Space]]"
 used_by:
   - "[[Canonical Quantization of Fields]]"
-  - "[[QFT Overview]]"
+  - "[[Quantum Field Theory - Overview]]"
 aliases:
   - Schrödinger equation
   - time evolution operator

@@ -15,6 +15,8 @@ depends_on:
   - "[[Studentized Randomization Tests]]"
 used_by:
   - "[[Randomization Inference - Overview]]"
+  - "[[Split Conformal Prediction and the Coverage Guarantee]]"
+  - "[[Conformal Prediction - Overview]]"
 aliases:
   - Permutation Test
   - Exact Inference
@@ -66,3 +68,4 @@ The "+1" (counting the observed assignment) keeps the test valid. With $B=10{,}0
 - [[Differences-in-Differences]] — permutation-based standard errors as a robustness device.
 - [[Multiple Testing Corrections]] — permutation methods also underpin some max-T multiplicity adjustments.
 - [[Power Analysis and Sample Size]] — exact tests' power is limited by the number of distinct permutations.
+- [[Split Conformal Prediction and the Coverage Guarantee]] — same uniform-rank "+1" exchangeability argument

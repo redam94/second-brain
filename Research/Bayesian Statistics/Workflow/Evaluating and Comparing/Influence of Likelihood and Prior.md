@@ -25,7 +25,6 @@ aliases:
   - "priorsense"
   - "Prior sensitivity analysis"
   - "Static sensitivity analysis"
-  - "Multiverse analysis"
   - "Bayesian R2 prior"
 ---
 

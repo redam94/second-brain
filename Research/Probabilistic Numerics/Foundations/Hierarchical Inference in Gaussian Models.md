@@ -23,9 +23,7 @@ aliases:
   - Hyperparameter Inference
   - Marginal Likelihood
   - Evidence
-  - Conjugate Priors
   - Gauss-Gamma
-  - Empirical Bayes
   - Type-II Likelihood
 ---
 # Hierarchical Inference in Gaussian Models

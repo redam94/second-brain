@@ -24,7 +24,6 @@ aliases:
   - "ORBITA"
   - "Heart stents study"
   - "Against significance thresholding"
-  - "Type S and type M errors"
 ---
 
 # From Inference to Decision

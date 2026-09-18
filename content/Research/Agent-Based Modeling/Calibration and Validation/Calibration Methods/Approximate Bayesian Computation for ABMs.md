@@ -18,6 +18,8 @@ depends_on:
 used_by:
   - "[[ABM Calibration Case Studies]]"
   - "[[Global Sensitivity Analysis - Overview]]"
+  - "[[Neural Posterior Estimation (NPE)]]"
+  - "[[Neural Simulation-Based Inference - Overview]]"
 aliases:
   - ABC calibration
   - rejection sampling ABC
@@ -120,3 +122,4 @@ From 100-parameter accuracy tests (Section 5.16–5.17):
 - [[Uncertainty Quantification for ABM Calibration]] — the uncertainty components feeding $\varepsilon$
 - [[ABM Calibration Case Studies]] — ABC applied to three models
 - [[Global Sensitivity Analysis - Overview]] — screening parameters before calibration
+- [[Neural Posterior Estimation (NPE)]] — the tolerance-free neural alternative to ABC

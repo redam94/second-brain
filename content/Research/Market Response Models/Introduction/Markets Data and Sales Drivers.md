@@ -131,3 +131,7 @@ MRMs can be estimated at brand level (selective demand) or category level (prima
 - Empirical advertising findings: [[Advertising and Promotion Effects]]
 - Aggregation bias: [[Carryover Effects and Distributed Lags]]
 - Bayesian MMM workflow (GRPs + adstock transform are the primary data inputs): [[Bayesian Media Mix Modeling - Overview]]
+
+## See Also
+
+- [[Customer Lifetime Value - Overview]] — customer-level transaction data and CLV

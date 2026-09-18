@@ -77,3 +77,4 @@ Because $\hat\mu_{\text{post}}$ amortizes a distribution over $\theta$, it is pr
 - [[Variational Marginal Estimator]] — the dual (upper) bound targeting $p(y\mid d)$
 - [[Adaptive Contrastive Estimation (ACE)]] — the joint-optimization successor
 - [[Convergence Rates and Estimator Selection]] — $\mathcal{O}(T^{-1/2})$ rate and estimator choice
+- [[The ELBO and KL Divergence Minimization]] — the same variational lower-bound construction

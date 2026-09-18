@@ -73,3 +73,4 @@ This mechanism explains why:
 - [[Omitted Variables Bias]] — a related source of analytical error
 - [[Hierarchical Models]] — partial pooling provides a structural solution by shrinking estimates across researcher-chosen subgroups
 - [[Pre-registration and Open Science - Overview]] — pre-registration constrains these degrees of freedom
+- [[The Peeking Problem and Optional Stopping]] — data-dependent stopping as a researcher degree of freedom

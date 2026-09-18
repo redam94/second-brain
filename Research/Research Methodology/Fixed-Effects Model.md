@@ -17,6 +17,9 @@ depends_on:
 used_by:
   - "[[Cross-Lagged and Dynamic Panel Models]]"
   - "[[Estimands in Longitudinal Research]]"
+  - "[[SDID Estimator - Unit and Time Weights]]"
+  - "[[Event Study Designs and Dynamic Treatment Effects]]"
+  - "[[Synthetic Difference-in-Differences - Overview]]"
 aliases:
   - FE model
   - within-person mean centering

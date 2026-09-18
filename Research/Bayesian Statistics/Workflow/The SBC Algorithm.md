@@ -17,6 +17,7 @@ used_by:
   - "[[Interpreting SBC Histograms]]"
   - "[[SBC Case Studies]]"
   - "[[Simulation-Based Calibration - Overview]]"
+  - "[[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]]"
 aliases:
   - SBC Algorithm
   - Algorithm 1

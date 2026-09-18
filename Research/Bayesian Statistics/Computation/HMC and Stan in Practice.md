@@ -12,10 +12,8 @@ source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics/Computation"
 aliases:
-  - "Hamiltonian Monte Carlo"
   - "Stan"
   - "map2stan"
-  - "NUTS"
 doc_type: tutorial
 source_location: "Statistical Rethinking Ch.8, pp. 241-265"
 depends_on:

@@ -78,3 +78,4 @@ Each case implements SBC and reads the resulting rank histogram against the 99% 
 - [[Approximation Methods]] — covers variational inference (ADVI, INLA) whose failures cases 6.3 and 6.4 diagnose
 - [[Spatial Models - BYM]] — spatial hierarchical modeling context for the Kenya HIV/INLA case study (6.4)
 - [[Bayesian Workflow - Overview]] — SBC case studies are part of the broader Bayesian workflow validation loop
+- [[Mean-Field Family and Coordinate Ascent VI (CAVI)]] — explains why mean-field ADVI underestimates posterior variance

@@ -265,3 +265,4 @@ problem.**"
 - [[Four Modeling Scenarios]] — scenario 1 as the only rung with known truth
 - [[Fit Fast, Fail Fast]] — the computational discipline that makes many simulations affordable
 - [[Fitting and Validating Computation]] — the 2020 paper's treatment of fake-data simulation
+- [[Prior Distributions]] — simulated-data experiments draw their true parameters from the prior

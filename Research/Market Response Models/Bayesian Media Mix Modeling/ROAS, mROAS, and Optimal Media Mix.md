@@ -76,3 +76,5 @@ ROAS and mROAS can be computed overall or per channel; per-channel is what guide
 - [[Bayesian Media Mix Modeling - Overview]]
 - [[MMM Model Selection and Application]]
 - [[_Index|Index: Bayesian Media Mix Modeling]]
+- [[Compute-Optimal Training (Chinchilla)]] — same Lagrangian budget-allocation structure
+- [[Customer Lifetime Value - Overview]] — CLV as the value metric behind ROAS

@@ -18,6 +18,7 @@ used_by:
   - "[[Matching Methods and Distance Measures]]"
   - "[[Covariate Balance Diagnostics]]"
   - "[[Common Support and Overlap]]"
+  - "[[Conformal Inference for Counterfactuals and ITEs]]"
 aliases:
   - Propensity Score
   - Rosenbaum-Rubin Theorem
@@ -77,7 +78,7 @@ Variance ratio guideline for calipers: if the variance of the linear propensity 
 - The positivity component motivates [[Common Support and Overlap]].
 - The balancing property is what is *checked* in [[Covariate Balance Diagnostics]] and *exploited* in [[Matching Methods and Distance Measures]].
 - Matching on observed confounders addresses [[Omitted Variables Bias]] and [[The Selection Problem]] only to the extent ignorability holds.
-- The same score underlies weighting estimators: [[Bayesian Propensity Score Weighting]], [[Bayesian Inverse Probability Weighting]], [[Frequentist Causal Estimation]].
+- The same score underlies weighting estimators: [[Bayesian Inverse Probability Weighting]], [[Bayesian Inverse Probability Weighting]], [[Frequentist Causal Estimation]].
 
 ## See Also
 
@@ -85,3 +86,4 @@ Variance ratio guideline for calipers: if the variance of the linear propensity 
 - [[Matching Methods and Distance Measures]]
 - [[Common Support and Overlap]]
 - [[_Index]]
+- [[Conformal Prediction Under Covariate Shift]] — same propensity-odds weights

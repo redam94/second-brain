@@ -22,7 +22,6 @@ used_by:
 aliases:
   - Simulation-Based Inference
   - Simulation Estimation
-  - SBI
 ---
 
 # Simulation-Based Estimation - Overview

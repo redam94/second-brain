@@ -18,6 +18,8 @@ used_by:
   - "[[Influence of Individual Data Points]]"
   - "[[Model Selection and Overfitting]]"
   - "[[LOO Model Checking and Comparison - Roaches]]"
+  - "[[Diagnosing Variational Inference (PSIS k-hat and VSBC)]]"
+  - "[[Forecast Evaluation and Backtesting]]"
 aliases:
   - "LOO-CV"
   - "LOO-PIT"
@@ -140,3 +142,5 @@ aliases:
 - [[Influence of Individual Data Points]] — pointwise LOO as a diagnostic for observations
 - [[Model Selection and Overfitting]] — LOO as a model-comparison criterion
 - [[Overfitting and Information Criteria]] — BDA3 background on WAIC and LOO
+- [[Diagnosing Variational Inference (PSIS k-hat and VSBC)]] — same PSIS machinery and 0.7 k-hat threshold
+- [[Forecast Evaluation and Backtesting]] — time-ordered counterpart to LOO

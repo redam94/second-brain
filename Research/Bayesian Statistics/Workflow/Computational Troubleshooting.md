@@ -125,3 +125,7 @@ Adding reasonable priors increases log-concavity of the posterior, leading to fa
 - [[Fitting and Validating Computation]] | [[Evaluating Fitted Models]]
 - [[MCMC Basics]] | [[Efficient MCMC]] | [[HMC and Stan in Practice]] | [[Hierarchical Models]]
 - [[Choosing and Building Models]] — model simplification is the first response to computational failures
+
+## See Also
+
+- [[Simulation-Based Calibration - Overview]] — SBC is the systematic test for the computational faults this note diagnoses informally

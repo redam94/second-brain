@@ -75,3 +75,4 @@ TS enjoys both frequentist regret guarantees matching the Lai–Robbins lower bo
 - [[Contextual and Linear Bandits]] — linear/generalized-linear reward models, news recommendation, product assortment
 - [[Approximate Thompson Sampling and Practical Extensions]] — Laplace/Langevin/bootstrap/ensemble approximations, nonstationarity, concurrence, RL in MDPs
 - [[Q - BED vs Bayesian Optimization vs Bandits for Media Experimentation]] — where bandits fit relative to BED and Bayesian optimization in a media-measurement decision framework
+- [[Confidence Sequences]] — anytime-valid bounds behind UCB-style methods
