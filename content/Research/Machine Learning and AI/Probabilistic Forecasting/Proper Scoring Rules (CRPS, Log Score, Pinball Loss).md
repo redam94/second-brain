@@ -20,6 +20,8 @@ used_by:
   - "[[Forecast Evaluation and Backtesting]]"
   - "[[DeepAR and Global Autoregressive Neural Forecasters]]"
   - "[[Time-Series Foundation Models (Chronos)]]"
+  - "[[Q - Four Meanings of Calibration]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
 aliases:
   - Proper Scoring Rules
   - Strictly Proper Scoring Rules

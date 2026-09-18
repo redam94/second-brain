@@ -17,6 +17,7 @@ used_by:
   - "[[Stein's Paradox and Risk Dominance]]"
   - "[[Empirical Bayes Interpretation of Shrinkage]]"
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - James-Stein
   - James-Stein Estimator

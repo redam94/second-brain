@@ -18,6 +18,7 @@ depends_on:
   - "[[Retrieval-Augmented Generation (RAG)]]"
 used_by:
   - "[[LLM Reasoning, Retrieval and Agents - Overview]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
 aliases:
   - LLM Agents
   - Agent Loop

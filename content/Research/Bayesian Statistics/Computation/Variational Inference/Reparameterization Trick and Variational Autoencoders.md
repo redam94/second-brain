@@ -20,6 +20,8 @@ depends_on:
 used_by:
   - "[[Automatic Differentiation Variational Inference (ADVI)]]"
   - "[[Normalizing Flows for Variational Inference]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - Reparameterization Trick
   - Pathwise Gradient Estimator

@@ -18,6 +18,7 @@ depends_on:
 used_by:
   - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Further Topics in Global Optimisation]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
 aliases:
   - Probability of Improvement
   - Expected Improvement

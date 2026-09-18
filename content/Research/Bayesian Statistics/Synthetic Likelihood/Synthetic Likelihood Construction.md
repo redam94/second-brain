@@ -17,6 +17,7 @@ depends_on:
   - "[[MCMC Basics]]"
 used_by:
   - "[[Nicholson's Blowfly Application]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - synthetic likelihood estimator
   - log synthetic likelihood

@@ -23,6 +23,10 @@ depends_on:
 used_by:
   - "[[Regression Discontinuity Designs]]"
   - "[[Quantile Regression]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
+  - "[[From ITT to Treatment-on-the-Treated in Ad Experiments]]"
+  - "[[User-Level Ad Experiments - Overview]]"
+  - "[[Predicted Ghost Ads and Ghost Bids Mechanics]]"
 ---
 
 # Local Average Treatment Effects
@@ -75,3 +79,4 @@ You can't identify individual compliers, but you can describe them statistically
 - [[Bayesian Difference in Differences]] — DiD treatment effects under heterogeneous compliance connect to the LATE framework
 - [[Potential Outcomes Framework]] — LATE is defined in terms of $Y_{1i}$, $Y_{0i}$ for complier subgroup
 - [[Metalearners for CATE]] — ML approach to conditional ATE estimation; LATE targets a specific subgroup (compliers) rather than the full conditional average
+- [[From ITT to Treatment-on-the-Treated in Ad Experiments]] — a worked one-sided-noncompliance case where LATE equals ATT

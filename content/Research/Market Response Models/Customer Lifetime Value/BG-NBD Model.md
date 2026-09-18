@@ -19,6 +19,8 @@ depends_on:
 used_by:
   - "[[Bayesian and Hierarchical Extensions of CLV Models]]"
   - "[[Gamma-Gamma Model of Monetary Value]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - BG/NBD
   - BG/NBD Model

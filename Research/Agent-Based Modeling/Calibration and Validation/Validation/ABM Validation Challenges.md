@@ -18,6 +18,7 @@ used_by:
   - "[[Global Sensitivity Analysis - Overview]]"
   - "[[Validity, Bias and Calibration of LLM-Simulated Populations]]"
   - "[[LLM Agents vs Rule-Based Agents in ABM]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - Validation of ABM
   - ABM validation

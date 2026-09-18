@@ -15,7 +15,8 @@ doc_type: paper
 depends_on:
   - "[[Potential Outcomes Framework]]"
   - "[[General Structure of Bayesian CI]]"
-used_by: []
+used_by:
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
 aliases:
   - E-value
   - Rosenbaum bounds

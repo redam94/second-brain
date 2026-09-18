@@ -23,6 +23,7 @@ used_by:
   - "[[Random Coefficients Logit Model]]"
   - "[[Homo Silicus - LLMs as Simulated Economic Agents]]"
   - "[[Reward Modeling from Human Preferences]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 ---
 
 # Discrete Choice Models

@@ -23,6 +23,8 @@ depends_on:
   - "[[Functional Forms in Marketing]]"
 used_by:
   - "[[Optimal Marketing Decisions and Forecasting]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
 ---
 
 # Advertising and Promotion Effects

@@ -20,6 +20,7 @@ used_by:
   - "[[Neural Scaling Laws]]"
   - "[[Compute-Optimal Training (Chinchilla)]]"
   - "[[In-Context Learning and Few-Shot Prompting]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
 aliases:
   - Next-Token Prediction
   - Causal Language Modeling

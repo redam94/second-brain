@@ -20,6 +20,7 @@ used_by:
   - "[[RLHF and Instruction Tuning]]"
   - "[[Evaluating LLM Systems - Benchmarks, Hallucination and Human Preference]]"
   - "[[LLM Reasoning, Retrieval and Agents - Overview]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
 aliases:
   - Reward Model
   - Preference Model

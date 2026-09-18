@@ -21,6 +21,9 @@ used_by:
   - "[[Neural Likelihood Estimation and Sequential Neural Likelihood]]"
   - "[[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]]"
   - "[[Neural SBI for Agent-Based and Economic Models]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - NPE
   - SNPE

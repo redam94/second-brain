@@ -29,6 +29,7 @@ used_by:
   - "[[Quantile Regression]]"
   - "[[Standard Errors and Clustering]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
 ---
 
 # Regression and the CEF

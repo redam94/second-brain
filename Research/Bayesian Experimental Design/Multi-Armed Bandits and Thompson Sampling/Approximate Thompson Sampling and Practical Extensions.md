@@ -17,6 +17,7 @@ depends_on:
   - "[[Contextual and Linear Bandits]]"
 used_by:
   - "[[Multi-Armed Bandits and Thompson Sampling - Overview]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
 aliases:
   - Laplace Approximation TS
   - Langevin Monte Carlo TS

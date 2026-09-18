@@ -15,7 +15,8 @@ doc_type: paper
 depends_on:
   - "[[Indirect Inference]]"
   - "[[Simulation-Based Estimation - Overview]]"
-used_by: []
+used_by:
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - EMM
   - SNP Approach

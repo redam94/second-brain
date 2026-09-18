@@ -28,6 +28,8 @@ used_by:
   - "[[The Peeking Problem and Optional Stopping]]"
   - "[[Online Experimentation - Overview]]"
   - "[[CUPED and Regression-Adjusted Variance Reduction]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise]]"
 ---
 
 # Power Analysis and Sample Size
@@ -113,3 +115,4 @@ In Bayesian analysis, the concept of "power" is less central — instead, one ca
 - [[Multiple Comparisons - Bayesian Perspective]] — Bayesian approach to false discovery control; connects to the sample-size question of how many tests one can afford to run
 - [[Neural Scaling Laws]] — design-stage extrapolation of loss vs scale
 - [[CUPED and Regression-Adjusted Variance Reduction]] — pre-period covariates shrink the variance in sample-size formulas by (1 - rho^2)
+- [[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise]] — power arithmetic when the effect is tiny relative to sales variance

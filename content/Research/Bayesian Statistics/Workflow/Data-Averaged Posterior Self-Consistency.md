@@ -15,6 +15,8 @@ used_by:
   - "[[Simulation-Based Calibration - Overview]]"
   - "[[Rank Statistics and Uniformity]]"
   - "[[The SBC Algorithm]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
+  - "[[Q - Four Meanings of Calibration]]"
 aliases:
   - Data-Averaged Posterior
   - Self-Consistency of the Bayesian Joint Distribution

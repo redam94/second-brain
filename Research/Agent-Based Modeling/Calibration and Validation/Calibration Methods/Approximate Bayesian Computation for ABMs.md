@@ -20,6 +20,7 @@ used_by:
   - "[[Global Sensitivity Analysis - Overview]]"
   - "[[Neural Posterior Estimation (NPE)]]"
   - "[[Neural Simulation-Based Inference - Overview]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - ABC calibration
   - rejection sampling ABC

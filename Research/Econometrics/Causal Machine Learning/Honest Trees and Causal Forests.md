@@ -22,6 +22,8 @@ depends_on:
 used_by:
   - "[[Asymptotic Normality and Inference for Forests]]"
   - "[[Generalized Random Forests - Local Moment Equations]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - Causal Forest
   - Causal Forests

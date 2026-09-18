@@ -15,6 +15,7 @@ depends_on:
   - "[[Synthetic Likelihood - Overview]]"
 used_by:
   - "[[Synthetic Likelihood Construction]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - Ricker map
   - phase-insensitive statistics

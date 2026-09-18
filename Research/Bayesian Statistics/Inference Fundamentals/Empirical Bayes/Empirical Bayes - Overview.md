@@ -18,6 +18,9 @@ depends_on:
 used_by:
   - "[[Hierarchical Models]]"
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - Empirical Bayes
   - EB

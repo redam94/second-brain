@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[Convergence Rates and Estimator Selection]]"
   - "[[Implicit Likelihood Estimator]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - Variational marginal estimator
   - mu_marg

@@ -17,38 +17,38 @@ tags:
 
 ## Selected Analyses
 
-### [[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG|How would a geo-holdout experiment be encoded as a design ξ and its EIG computed against an MMM posterior?]]
-*July 1, 2026 · Market Response · Bayesian Experimental Design · Bayesian Statistics*
+### [[Q - Partial Pooling Across Statistics and ML and When It Hurts|Partial pooling shows up as hierarchical models, James–Stein / empirical Bayes shrinkage, global-local shrinkage priors, the Gamma-Gamma and NBD customer models, global forecasting models and LLM pretraining. What is the shared mechanism, and when does pooling hurt?]]
+*September 18, 2026 · Bayesian Statistics · Hierarchical Models · Machine Learning · Customer Lifetime Value · Forecasting*
 
-Encode the geo-holdout as a **design vector**  = which geos get their spend perturbed, on which channel(s), by how much, and over which weeks.
-
----
-
-### [[Q - Carryover Dynamics and the Timing of Sequential Media Experiments|How do adstock/carryover dynamics interact with the timing of sequential media experiments (delayed outcomes)?]]
-*July 1, 2026 · Market Response · Bayesian Experimental Design · Bayesian Statistics*
-
-Carryover means an intervention's effect is **spread over future periods**, so a sequential experimentation loop faces **delayed outcomes**: you cannot read a test's result — or start a clean next test — until the adstock has decayed.
+The shared mechanism has three parts: (1) many parallel units are treated as draws from one population distribution; (2) that distribution is **learned from the pooled (marginal) data** rather than assumed; (3) each unit's estimate is a compromise between its own data and the population, with the weight set by relative precision.
 
 ---
 
-### [[Q - Continuous Learning in Media Measurement with Interaction Effects|What would continuous learning look like in media measurement, given that media has interaction effects and learning all interactions is costly or needs more cells than available techniques support?]]
-*July 1, 2026 · Market Response · Bayesian Experimental Design · Bayesian Statistics · Probabilistic Numerics*
+### [[Q - How Adstock Breaks Switchback and Sequential Test Assumptions|How does advertising carryover (adstock) violate the assumptions of switchback experiments, always-valid sequential tests and geo tests, and what design changes fix it?]]
+*September 18, 2026 · Online Experimentation · Market Response · Causal Inference · Time Series · Research Methodology*
 
-Continuous learning in media measurement is a **closed loop**: a Bayesian *surrogate* of the response surface (a media-mix model or GP) is continually re-fit as data arrive; an **active-experimentation** layer then picks the next spend allocation / geo-test to run by maximizing **expected information gain** about the effects — including interactions — that are still uncertain and decision-relevant.
-
----
-
-### [[Q - BED vs Bayesian Optimization vs Bandits for Media Experimentation|When should continuous media learning use Bayesian experimental design vs Bayesian optimization vs a bandit?]]
-*July 1, 2026 · Market Response · Bayesian Experimental Design · Probabilistic Numerics · Bayesian Statistics*
-
-All three sit on the *same Bayesian surrogate* of the response surface and differ only in **objective**.
+Adstock is **interference across time**: today's outcome depends on the whole past assignment path.
 
 ---
 
-### [[Q - Using SMM to Calibrate Agent Based Models|How can SMM be used to calibrate agent based models?]]
-*April 11, 2026 · Agent Based Modeling · Calibration · Simulation Estimation · Econometrics*
+### [[Q - Variational Bounds Compared from the ELBO to EIG Estimators|How do the ELBO, the Barber–Agakov posterior bound and the marginal / VNMC bounds on expected information gain, the contrastive PCE and ACE bounds, neural ratio estimation and the forward-KL objective of neural posterior estimation relate? Which direction of KL does each use, is each an upper or lower bound, and what failure does that choice cause?]]
+*September 18, 2026 · Variational Inference · Bayesian Experimental Design · Likelihood Free Inference · Bayesian Statistics*
 
-The Simulated Method of Moments (SMM) calibrates an ABM by choosing structural parameters  to minimize a weighted distance between observed macro-level data moments and their simulated counterparts produced by running the ABM at .
+Every one of these objectives is the same identity, **intractable quantity = computable surrogate ± an expected KL**, obtained by replacing an intractable density with a learned .
+
+---
+
+### [[Q - Exchangeability and What Replaces It When It Fails|Exchangeability underlies permutation/randomization tests, conformal prediction and hierarchical priors. Which vault methods break when it fails (time series, covariate shift, interference, clustering), and what replaces it in each case?]]
+*September 18, 2026 · Causal Inference · Conformal Prediction · Econometrics · Bayesian Statistics · Online Experimentation*
+
+Exchangeability is a **symmetry**: the joint law is unchanged by permuting indices, so the rank of any one item among the rest is uniform.
+
+---
+
+### [[Q - Choosing a Simulation-Based Inference Method for ABM Calibration|For calibrating an agent-based model, how do I choose among SMM, indirect inference, EMM, synthetic likelihood, ABC, history matching, genetic-algorithm calibration and neural posterior / likelihood / ratio estimation?]]
+*September 18, 2026 · Agent Based Modeling · Likelihood Free Inference · Simulation Estimation · Calibration · Bayesian Statistics*
+
+The eleven methods differ on only three design choices: **what is compared** (hand-picked moments, an auxiliary model's parameters, or learned summaries), **how the comparison is scored** (a quadratic distance to minimise, a threshold to pass, a Gaussian or neural density to evaluate) and **whether the simulator is called inside the search loop or once up front**.
 
 ---
 

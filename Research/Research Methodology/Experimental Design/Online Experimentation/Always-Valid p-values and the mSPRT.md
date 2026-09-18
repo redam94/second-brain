@@ -19,6 +19,9 @@ depends_on:
 used_by:
   - "[[Confidence Sequences]]"
   - "[[Sample Ratio Mismatch and Trustworthiness Checks]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - Always Valid Inference
   - Always-Valid p-value

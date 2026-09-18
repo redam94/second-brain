@@ -18,6 +18,7 @@ used_by:
   - "[[Neural Posterior Estimation (NPE)]]"
   - "[[Neural Likelihood Estimation and Sequential Neural Likelihood]]"
   - "[[Neural SBI for Agent-Based and Economic Models]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - Conditional Normalizing Flows
   - Neural Density Estimators

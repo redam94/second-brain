@@ -20,6 +20,7 @@ depends_on:
   - "[[DAGs and Causal Identification]]"
 used_by:
   - "[[Table 2 Fallacy]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
 aliases:
   - Table 2 simulation
   - nuisance parameter bias

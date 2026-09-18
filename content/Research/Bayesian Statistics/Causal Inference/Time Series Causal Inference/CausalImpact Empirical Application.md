@@ -15,7 +15,8 @@ doc_type: paper
 depends_on:
   - "[[Counterfactual Impact Estimation]]"
   - "[[Spike-and-Slab Prior for Covariate Selection]]"
-used_by: []
+used_by:
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
 aliases:
   - CausalImpact advertising example
   - Google advertising campaign CausalImpact

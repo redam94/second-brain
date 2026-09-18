@@ -21,6 +21,8 @@ used_by:
   - "[[DML Estimators for ATE and the Interactive Model]]"
   - "[[Generalized Random Forests - Local Moment Equations]]"
   - "[[R-Learner and Orthogonal CATE Estimation]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
 aliases:
   - Neyman Orthogonal Score
   - Orthogonal Moment Condition

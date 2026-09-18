@@ -20,6 +20,8 @@ depends_on:
 used_by:
   - "[[Asymptotic Normality and Inference for Forests]]"
   - "[[R-Learner and Orthogonal CATE Estimation]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - Generalized Random Forests
   - GRF

@@ -20,6 +20,7 @@ depends_on:
   - "[[Hierarchical Models]]"
 used_by:
   - "[[Statistical and Scientific Inference]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - "Santa Clara antibody study"
   - "Bendavid"

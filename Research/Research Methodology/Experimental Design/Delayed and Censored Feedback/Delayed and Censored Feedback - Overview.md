@@ -18,6 +18,8 @@ used_by:
   - "[[Delayed Feedback Model for Conversion Prediction]]"
   - "[[EM and Gradient Optimization for the Delayed Feedback Model]]"
   - "[[Bandit Models with Delayed and Censored Feedback]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
 aliases:
   - Delayed Feedback
   - Censored Feedback

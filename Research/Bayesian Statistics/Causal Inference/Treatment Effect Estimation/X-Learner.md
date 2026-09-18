@@ -18,6 +18,8 @@ depends_on:
   - "[[Metalearners for CATE]]"
 used_by:
   - "[[Metalearner Simulation Results]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - X-learner
   - cross learner

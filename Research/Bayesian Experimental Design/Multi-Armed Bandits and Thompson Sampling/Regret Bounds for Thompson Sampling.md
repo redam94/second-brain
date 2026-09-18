@@ -19,6 +19,8 @@ depends_on:
 used_by:
   - "[[Multi-Armed Bandits and Thompson Sampling - Overview]]"
   - "[[Contextual and Linear Bandits]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
 aliases:
   - Bayesian Regret
   - Cumulative Regret

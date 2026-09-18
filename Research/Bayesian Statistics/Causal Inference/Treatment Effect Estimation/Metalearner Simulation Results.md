@@ -16,7 +16,8 @@ depends_on:
   - "[[X-Learner]]"
   - "[[T-Learner and Minimax Rate]]"
   - "[[S-Learner]]"
-used_by: []
+used_by:
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - metalearner applications
   - voter turnout CATE

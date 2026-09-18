@@ -22,6 +22,8 @@ depends_on:
   - "[[Power Analysis and Sample Size]]"
 used_by:
   - "[[Honest DiD - Sensitivity to Parallel Trends Violations]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - Pre-trends test
   - Parallel trends pre-test

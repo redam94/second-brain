@@ -27,6 +27,10 @@ used_by:
   - "[[CUPED and Regression-Adjusted Variance Reduction]]"
   - "[[Interference and Marketplace Experiments]]"
   - "[[Sample Ratio Mismatch and Trustworthiness Checks]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[User-Level Ad Experiments - Overview]]"
+  - "[[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise]]"
+  - "[[Intent-to-Treat, PSA and Ghost Ad Designs]]"
 ---
 
 # The Experimental Ideal

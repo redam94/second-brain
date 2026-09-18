@@ -19,6 +19,7 @@ depends_on:
   - "[[LLM-Powered Agents - Overview]]"
 used_by:
   - "[[Validity, Bias and Calibration of LLM-Simulated Populations]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - OpinionQA
   - Whose Opinions Do Language Models Reflect

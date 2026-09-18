@@ -19,6 +19,7 @@ used_by:
   - "[[Table 2 Fallacy]]"
   - "[[Bayesian Inverse Probability Weighting]]"
   - "[[Nuisance Parameter Bias Simulation]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
 aliases:
   - regression adjustment
   - statistical control

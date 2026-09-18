@@ -29,6 +29,7 @@ used_by:
   - "[[Missing Data - Statistical Rethinking]]"
   - "[[Confirmatory Factor Analysis and SEM]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
 ---
 
 # Spurious Association and Confounds

@@ -19,6 +19,7 @@ depends_on:
 used_by:
   - "[[Fixed-Effects Model]]"
   - "[[Estimands in Longitudinal Research]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 aliases:
   - within-persons causal inference
   - between-persons causal inference

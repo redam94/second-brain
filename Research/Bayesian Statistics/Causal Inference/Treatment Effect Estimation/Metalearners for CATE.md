@@ -22,6 +22,7 @@ used_by:
   - "[[X-Learner]]"
   - "[[Causal Machine Learning - Overview]]"
   - "[[R-Learner and Orthogonal CATE Estimation]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - metalearner framework
   - CATE estimation framework

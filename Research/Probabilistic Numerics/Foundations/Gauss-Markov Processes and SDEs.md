@@ -20,6 +20,7 @@ used_by:
   - "[[ODE Filters and Smoothers]]"
   - "[[Theory of ODE Filters and Smoothers]]"
   - "[[Classical ODE Solvers as Regression]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - Linear SDE
   - Integrated Wiener Process

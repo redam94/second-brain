@@ -17,6 +17,7 @@ used_by:
   - "[[The SBC Algorithm]]"
   - "[[Interpreting SBC Histograms]]"
   - "[[Simulation-Based Calibration - Overview]]"
+  - "[[Q - Four Meanings of Calibration]]"
 aliases:
   - Rank Statistic
   - SBC Uniformity Theorem

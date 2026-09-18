@@ -16,6 +16,8 @@ used_by:
   - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[From Designs to Policies (Deep Adaptive Design)]]"
   - "[[High-Dimensional Design Applications]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
 aliases:
   - BAD
   - Bayesian Adaptive Design

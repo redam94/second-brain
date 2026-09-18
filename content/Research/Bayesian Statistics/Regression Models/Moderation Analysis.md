@@ -23,6 +23,7 @@ depends_on:
   - "[[Generalized Linear Models]]"
 used_by:
   - "[[Nonparametric Causal Inference]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 ---
 
 # Bayesian Moderation Analysis

@@ -19,6 +19,8 @@ depends_on:
 used_by:
   - "[[RFM Sufficient Statistics and Iso-Value Curves]]"
   - "[[Bayesian and Hierarchical Extensions of CLV Models]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - Gamma-Gamma Model
   - Gamma-Gamma Spend Model

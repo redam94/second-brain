@@ -25,6 +25,9 @@ used_by:
   - "[[Neural SBI for Agent-Based and Economic Models]]"
   - "[[LLM Agents vs Rule-Based Agents in ABM]]"
   - "[[Persona Mixture Calibration of LLM Agents]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
+  - "[[Q - Four Meanings of Calibration]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - ABM calibration
   - Model calibration

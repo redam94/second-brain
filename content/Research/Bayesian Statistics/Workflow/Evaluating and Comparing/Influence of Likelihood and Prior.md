@@ -20,6 +20,8 @@ used_by:
   - "[[Prior Specification for Regression Models - Sleep Study]]"
   - "[[Models for Regression Coefficients - Student Grades]]"
   - "[[Topology of Models]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - "Power scaling"
   - "priorsense"

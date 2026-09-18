@@ -21,6 +21,8 @@ used_by:
   - "[[Variational BOED - Overview]]"
   - "[[Unified SGD BOED - Overview]]"
   - "[[Information-Theoretic Design Objectives]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - EIG
   - Expected Information Gain

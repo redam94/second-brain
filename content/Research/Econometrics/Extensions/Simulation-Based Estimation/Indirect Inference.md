@@ -18,6 +18,7 @@ depends_on:
   - "[[Method of Simulated Moments]]"
 used_by:
   - "[[Efficient Method of Moments]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - Indirect Inference Estimator
   - Minimum Distance Estimator (Simulation)

@@ -18,6 +18,7 @@ used_by:
   - "[[Variational BOED - Overview]]"
   - "[[The Computational Revolution in EIG Estimation]]"
   - "[[Convergence Rates and Estimator Selection]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - NMC
   - Nested Monte Carlo

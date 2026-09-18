@@ -20,6 +20,8 @@ used_by:
   - "[[LOO Model Checking and Comparison - Roaches]]"
   - "[[Diagnosing Variational Inference (PSIS k-hat and VSBC)]]"
   - "[[Forecast Evaluation and Backtesting]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - Four Meanings of Calibration]]"
 aliases:
   - "LOO-CV"
   - "LOO-PIT"

@@ -17,6 +17,7 @@ depends_on:
 used_by:
   - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Modern Bayesian Experimental Design - Overview]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - BOED experiments
   - Death process experiment

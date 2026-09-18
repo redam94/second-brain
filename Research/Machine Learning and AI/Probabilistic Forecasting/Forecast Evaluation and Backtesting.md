@@ -21,7 +21,11 @@ depends_on:
   - "[[Probabilistic Forecasting - Overview]]"
   - "[[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)]]"
   - "[[Cross Validation Checking]]"
-used_by: []
+used_by:
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - Four Meanings of Calibration]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - Backtesting
   - Rolling-Origin Evaluation

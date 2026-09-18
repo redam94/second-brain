@@ -20,6 +20,9 @@ depends_on:
   - "[[Potential Outcomes Framework]]"
 used_by:
   - "[[Online Experimentation - Overview]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
 aliases:
   - Switchback Experiments
   - Switchback Design

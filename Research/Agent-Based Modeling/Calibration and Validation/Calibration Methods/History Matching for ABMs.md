@@ -18,6 +18,8 @@ used_by:
   - "[[Approximate Bayesian Computation for ABMs]]"
   - "[[ABM Calibration Case Studies]]"
   - "[[Global Sensitivity Analysis - Overview]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
+  - "[[Q - Four Meanings of Calibration]]"
 aliases:
   - HM calibration
   - History matching ABM

@@ -25,6 +25,7 @@ used_by:
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[Pre-registration and Open Science - Overview]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 ---
 
 # Researcher Degrees of Freedom

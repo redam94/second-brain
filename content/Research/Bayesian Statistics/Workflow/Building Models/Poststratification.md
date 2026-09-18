@@ -22,6 +22,8 @@ used_by:
   - "[[Statistical and Scientific Inference]]"
   - "[[Silicon Samples and Algorithmic Fidelity]]"
   - "[[Validity, Bias and Calibration of LLM-Simulated Populations]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - "MRP"
   - "Multilevel regression and poststratification"

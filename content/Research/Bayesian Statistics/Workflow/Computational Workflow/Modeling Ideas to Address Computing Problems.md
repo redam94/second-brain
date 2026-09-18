@@ -19,6 +19,7 @@ used_by:
   - "[[What to Do About Convergence Problems]]"
   - "[[Fitting Simpler Models for Computational Purposes]]"
   - "[[Sampling Problems with Latent Variables - No Vehicles in the Park]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - "Meeting in the middle"
   - "QR decomposition"

@@ -17,6 +17,7 @@ used_by:
   - "[[Randomization Inference - Overview]]"
   - "[[Split Conformal Prediction and the Coverage Guarantee]]"
   - "[[Conformal Prediction - Overview]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 aliases:
   - Permutation Test
   - Exact Inference

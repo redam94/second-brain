@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[High-Dimensional Design Applications]]"
   - "[[Optimization and Gradient Schemes for BED]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - Likelihood-free ACE
   - ACE gradient estimation

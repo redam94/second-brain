@@ -15,6 +15,7 @@ depends_on:
   - "[[Nested Estimation and Nested Monte Carlo]]"
 used_by:
   - "[[Unified SGD BOED - Overview]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - EIG estimator convergence
   - Theorem 1 Foster 2019

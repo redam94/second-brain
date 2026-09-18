@@ -20,6 +20,7 @@ used_by:
   - "[[Joint Priors and Covariance Matrices]]"
   - "[[Simulation-Based Calibration - Overview]]"
   - "[[Models for Regression Coefficients - Student Grades]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - "Prior predictive check"
   - "Prior predictive simulation"

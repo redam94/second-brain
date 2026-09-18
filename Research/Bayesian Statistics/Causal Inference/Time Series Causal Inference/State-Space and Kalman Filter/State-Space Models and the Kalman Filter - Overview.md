@@ -17,6 +17,7 @@ used_by:
   - "[[The Kalman Filter]]"
   - "[[The RTS Smoother]]"
   - "[[Marginal Likelihood via the Kalman Filter]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - Kalman filter overview
   - Bayesian filtering and smoothing overview

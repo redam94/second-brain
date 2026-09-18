@@ -19,6 +19,8 @@ depends_on:
   - "[[Metalearners for CATE]]"
 used_by:
   - "[[Causal Machine Learning - Overview]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - R-Learner
   - R-learner

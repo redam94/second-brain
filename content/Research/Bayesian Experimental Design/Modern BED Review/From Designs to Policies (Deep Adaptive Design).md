@@ -16,6 +16,8 @@ depends_on:
 used_by:
   - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Open Challenges and Future Directions]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
 aliases:
   - DAD
   - Deep Adaptive Design

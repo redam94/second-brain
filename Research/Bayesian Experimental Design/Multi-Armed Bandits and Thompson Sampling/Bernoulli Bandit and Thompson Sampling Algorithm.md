@@ -19,6 +19,8 @@ used_by:
   - "[[Regret Bounds for Thompson Sampling]]"
   - "[[Contextual and Linear Bandits]]"
   - "[[Approximate Thompson Sampling and Practical Extensions]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
 aliases:
   - Beta-Bernoulli Bandit
   - BernTS

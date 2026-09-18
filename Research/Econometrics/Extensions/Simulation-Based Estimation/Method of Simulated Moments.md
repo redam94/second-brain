@@ -24,6 +24,7 @@ used_by:
   - "[[SMM Python Implementation]]"
   - "[[Q - Using SMM to Calibrate Agent Based Models]]"
   - "[[BLP Demand Estimation - Overview]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - MSM
   - SMM

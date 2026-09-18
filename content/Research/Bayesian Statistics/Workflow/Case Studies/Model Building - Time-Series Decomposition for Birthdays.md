@@ -19,6 +19,7 @@ depends_on:
   - "[[Approximate Algorithms and Approximate Models]]"
 used_by:
   - "[[Models for Regression Coefficients - Student Grades]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - "Birthdays"
   - "Valentine's Day and Halloween births"

@@ -17,6 +17,7 @@ used_by:
   - "[[Sharp vs Weak Null Hypotheses]]"
   - "[[Studentized Randomization Tests]]"
   - "[[Permutation Tests and Exact Inference]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 aliases:
   - FRT
   - Fisher Randomization Test

@@ -16,6 +16,8 @@ depends_on:
 used_by:
   - "[[Adaptive Contrastive Estimation (ACE)]]"
   - "[[Convergence Rates and Estimator Selection]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - Variational posterior estimator
   - Barber-Agakov bound

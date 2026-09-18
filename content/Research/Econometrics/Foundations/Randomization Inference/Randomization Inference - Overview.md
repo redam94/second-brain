@@ -19,6 +19,7 @@ used_by:
   - "[[Studentized Randomization Tests]]"
   - "[[Permutation Tests and Exact Inference]]"
   - "[[Switchback Experiment Design and Analysis]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 aliases:
   - Randomization-Based Inference
   - Randomization Inference Overview

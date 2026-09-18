@@ -17,6 +17,7 @@ used_by:
   - "[[Identifying Assumptions for Staggered DiD]]"
   - "[[Doubly-Robust Estimands for ATT(g,t)]]"
   - "[[Aggregating Group-Time Effects]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - ATT(g,t)
   - group-time ATT

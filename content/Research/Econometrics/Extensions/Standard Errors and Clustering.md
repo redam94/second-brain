@@ -26,6 +26,8 @@ used_by:
   - "[[Mostly Harmless Econometrics - Overview]]"
   - "[[Activity Bias in Advertising]]"
   - "[[SDID Inference - Bootstrap, Jackknife and Placebo]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 ---
 
 # Standard Errors and Clustering

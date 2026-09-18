@@ -19,6 +19,8 @@ depends_on:
 used_by:
   - "[[EM and Gradient Optimization for the Delayed Feedback Model]]"
   - "[[Bandit Models with Delayed and Censored Feedback]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
 aliases:
   - Delayed Feedback Model
   - DFM

@@ -20,6 +20,8 @@ depends_on:
 used_by:
   - "[[Confidence Sequences]]"
   - "[[Sample Ratio Mismatch and Trustworthiness Checks]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
 aliases:
   - CUPED
   - Controlled-experiment Using Pre-Experiment Data

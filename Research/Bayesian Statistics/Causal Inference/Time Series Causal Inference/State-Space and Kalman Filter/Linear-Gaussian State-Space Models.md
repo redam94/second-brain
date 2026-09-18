@@ -18,6 +18,7 @@ used_by:
   - "[[The RTS Smoother]]"
   - "[[Marginal Likelihood via the Kalman Filter]]"
   - "[[Probabilistic Forecasting - Overview]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - state-space model
   - probabilistic state space model

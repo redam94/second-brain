@@ -20,6 +20,9 @@ used_by:
   - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[ROAS, mROAS, and Optimal Media Mix]]"
   - "[[MMM Model Selection and Application]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - MMM Priors
   - MMM MCMC Estimation
@@ -80,3 +83,4 @@ Because the adstock and Hill transforms make the model nonlinear in its paramete
 - [[MCMC Basics]]
 - [[Bayesian Linear Regression]]
 - [[_Index|Index: Bayesian Media Mix Modeling]]
+- [[Conversion Lift Studies on Ad Platforms]] — the lift studies that supply experimental priors

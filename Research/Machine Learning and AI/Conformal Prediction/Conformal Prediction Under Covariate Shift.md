@@ -19,6 +19,8 @@ depends_on:
 used_by:
   - "[[Conformal Inference for Counterfactuals and ITEs]]"
   - "[[Conformal Prediction - Overview]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
 aliases:
   - Weighted Conformal Prediction
   - Weighted Exchangeability

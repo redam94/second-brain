@@ -20,6 +20,9 @@ depends_on:
   - "[[Propensity Score and the Balancing Property]]"
 used_by:
   - "[[Conformal Prediction - Overview]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - Conformal Counterfactual Inference
   - Conformal ITE Intervals

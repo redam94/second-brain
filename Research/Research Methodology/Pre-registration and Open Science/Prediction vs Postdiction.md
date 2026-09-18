@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[Pre-registration vs Registered Reports]]"
   - "[[Limits and Objections to Pre-registration]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - "Confirmatory vs Exploratory"
   - "Prediction and Postdiction"

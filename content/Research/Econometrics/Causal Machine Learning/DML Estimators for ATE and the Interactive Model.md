@@ -22,6 +22,9 @@ depends_on:
 used_by:
   - "[[Causal Machine Learning - Overview]]"
   - "[[Generalized Random Forests - Local Moment Equations]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
+  - "[[Experimental Benchmarks for Observational Ad Measurement]]"
 aliases:
   - Interactive Regression Model
   - IRM
@@ -134,3 +137,4 @@ def dml_ate(Y, D, X, fit_g, fit_m, K=5, clip=0.01):
 - [[Honest Trees and Causal Forests]] and [[R-Learner and Orthogonal CATE Estimation]] — when the target is $\tau(x)$ rather than its average; averaging AIPW scores built from forest nuisances is how GRF-style software recovers an ATE from a CATE fit.
 - [[Causal Estimands]] — ATE vs ATT vs LATE definitions.
 - [[Covariate Balance and Matching Diagnostics]] — diagnostics that remain useful for checking the fitted propensity.
+- [[Experimental Benchmarks for Observational Ad Measurement]] — DML tested against RCT ground truth

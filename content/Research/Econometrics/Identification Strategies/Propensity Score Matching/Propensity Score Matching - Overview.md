@@ -18,6 +18,7 @@ used_by:
   - "[[Matching Methods and Distance Measures]]"
   - "[[Covariate Balance Diagnostics]]"
   - "[[Common Support and Overlap]]"
+  - "[[Experimental Benchmarks for Observational Ad Measurement]]"
 aliases:
   - PSM
   - Matching Methods

@@ -21,6 +21,7 @@ used_by:
   - "[[Conformal Inference for Counterfactuals and ITEs]]"
   - "[[Marginal vs Conditional Coverage]]"
   - "[[Conformal Prediction - Overview]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 aliases:
   - CQR
   - Conformal Quantile Regression

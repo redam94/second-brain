@@ -15,6 +15,7 @@ depends_on:
   - "[[ABM Methodology and Principles]]"
 used_by:
   - "[[ABM in Marketing Strategy]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - Karakaya 2011
   - Marketing strategies WOM ABM

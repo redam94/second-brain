@@ -25,6 +25,7 @@ used_by:
   - "[[Sample Ratio Mismatch and Trustworthiness Checks]]"
   - "[[Interference and Marketplace Experiments]]"
   - "[[Switchback Experiment Design and Analysis]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
 aliases:
   - Online Controlled Experiments
   - OCE
@@ -143,3 +144,4 @@ Each step is developed in its own note; step 2 is valid *because* $X_\text{pre}$
 - [[Observational vs Experimental Methods in Advertising]]
 - [[Pre-registration and Open Science - Overview]]
 - [[Multiple Comparisons - Bayesian Perspective]]
+- [[User-Level Ad Experiments - Overview]] — the advertising-specific application of user-randomized tests

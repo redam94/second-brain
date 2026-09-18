@@ -20,6 +20,8 @@ depends_on:
 used_by:
   - "[[Differences-in-Differences]]"
   - "[[Generalized Synthetic Control Method]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
 aliases:
   - "Abadie L'Hour synthetic control"
   - "penalized synthetic control"

@@ -19,6 +19,7 @@ used_by:
   - "[[Quasi-Bayes for Plausible Moment Restrictions]]"
   - "[[Gaussian Local Prior Approximation]]"
   - "[[Plausible GMM - Institutions and GDP Application]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
 aliases:
   - plausibility characteristic
   - non-dogmatic prior over misspecification

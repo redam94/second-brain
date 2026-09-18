@@ -966,6 +966,7 @@ The vault has bandits ([[Multi-Armed Bandits and Thompson Sampling - Overview]],
 - Gutierrez & Gérardy (2017) — "Causal Inference and Uplift Modelling: A Review of the Literature" (PMLR 67)
 - Athey & Wager (2021) — "Policy Learning with Observational Data"
 - Yadlowsky et al. (2021) — "Evaluating Treatment Prioritization Rules via Rank-Weighted Average Treatment Effects" (arXiv 2111.07966)
+- Kennedy (2020) — "Towards optimal doubly robust estimation of heterogeneous causal effects" (DR-learner, arXiv 2004.14497) — requested by [[Q - The Common Structure of Doubly-Robust Estimators]]
 
 ---
 
@@ -1024,6 +1025,7 @@ With ML models now in the vault (forests, DeepAR, transformers), there is no not
 
 **Suggested sources / search terms:**
 - Müller et al. (2022) — "Transformers Can Do Bayesian Inference" (arXiv 2112.10510)
+- Xie et al. (2022) — "An Explanation of In-context Learning as Implicit Bayesian Inference" (arXiv 2111.02080) — requested by [[Q - In-Context Learning as Amortized Bayesian Inference]]
 - Hollmann et al. (2023) — "TabPFN" (arXiv 2207.01848)
 - Lim et al. (2021) — "Temporal Fusion Transformers" (arXiv 1912.09363)
 
@@ -1136,6 +1138,127 @@ With ML models now in the vault (forests, DeepAR, transformers), there is no not
 - Greenberg, Nonnenmacher & Macke (2019) — "Automatic Posterior Transformation" (arXiv 1905.07488)
 - Zhang, Carpenter, Gelman & Vehtari (2022) — "Pathfinder" (arXiv 2108.03782)
 - Minka (2001) — "Expectation Propagation for approximate Bayesian inference"; Burda et al. (2015) — IWAE (arXiv 1509.00519)
+- Poole et al. (2019) — "On Variational Bounds of Mutual Information" (arXiv 1905.06922; MINE / NWJ / InfoNCE critics and the log-K ceiling) — requested by [[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]
+
+---
+
+### 71. MMM Calibration with Experiments (Practice and Theory)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Q - Using Experiment Results as Priors in a Bayesian MMM]] had to mark most of its answer as synthesis: the vault has no source on how lift tests are actually used to calibrate MMMs — experiment-as-likelihood vs prior, power / commensurate priors for discounting, converting user-level lift into MMM units, time-varying coefficients, or hierarchical pooling of many lift tests.
+
+**Adjacent notes:** [[Bayesian Estimation and Priors for MMM]], [[Conversion Lift Studies on Ad Platforms]], [[User-Level vs Geo-Level Experiments - When to Use Which]], [[Geo-Experiment Methodology - Overview]], [[Plausible GMM - Overview]]
+
+**Suggested sources / search terms:**
+- Google Meridian / Meta Robyn calibration documentation; Zhang et al. (2023) "Media Mix Model Calibration with Bayesian Priors" (Google)
+- Ibrahim & Chen (2000) power priors; Hobbs et al. (2011) commensurate priors
+- Johnson, Lewis & Nubbemeyer — 432-experiment Google Display Network meta-analysis; Gordon et al. (2022) proxy-metric models trained on RCTs
+
+---
+
+### 72. Likelihood Principle, Stopping Rules and Value of Information
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Q - Does Peeking Matter for a Bayesian]] found no note on the likelihood principle or stopping-rule ignorability ([[Data Collection Models]] omits sequential designs), and nothing on Bayesian optimal stopping or expected value of sample information — the decision-theoretic answer to "when do I stop the test?" and to robust budget allocation under response-curve uncertainty ([[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]).
+
+**Adjacent notes:** [[The Peeking Problem and Optional Stopping]], [[Always-Valid p-values and the mSPRT]], [[Decision Analysis]], [[From Inference to Decision]], [[Expected Information Gain]]
+
+**Suggested sources / search terms:**
+- Berger & Wolpert (1988) *The Likelihood Principle*
+- Rouder (2014) "Optional stopping: No problem for Bayesians"; de Heide & Grünwald (2021) "Why optional stopping can be a problem for Bayesians" (arXiv 1708.08278)
+- Raiffa & Schlaifer — EVSI / preposterior analysis; Chick & Frazier on sequential sampling with economics of selection
+
+---
+
+### 73. Exchangeability, Dependent-Data Resampling and Randomization Inference under Interference
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Q - Exchangeability and What Replaces It When It Fails]] and [[Q - Partial Pooling Across Statistics and ML and When It Hurts]] both found that exchangeability itself (de Finetti, partial / conditional exchangeability) is never written down, and that the vault lacks block bootstrap / HAC material, restricted randomization tests for paired geo designs, and randomization inference under interference.
+
+**Adjacent notes:** [[Randomization Inference - Overview]], [[Hierarchical Models]], [[Standard Errors and Clustering]], [[Switchback Experiment Design and Analysis]], [[SDID Inference - Bootstrap, Jackknife and Placebo]]
+
+**Suggested sources / search terms:**
+- Bernardo (1996) "The concept of exchangeability and its applications"
+- Politis & Romano (1994) stationary bootstrap; Newey & West (1987) HAC
+- Athey, Eckles & Imbens (2018) "Exact p-values for network interference" (arXiv 1506.02084); Basse, Feller & Toulis (2019)
+
+---
+
+### 74. Selective Inference, the Reusable Holdout and Multiverse Analysis
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]] separates three cures but the vault has no note on post-selection (selective) inference, the reusable holdout / adaptive data analysis, the power cost of sample splitting, or multiverse / specification-curve analysis.
+
+**Adjacent notes:** [[Garden of Forking Paths]], [[Cross-Fitting and Sample Splitting]], [[Pre-Trend Testing and Its Pitfalls]], [[Comparing Models Visually]], [[Multiple Testing Corrections]]
+
+**Suggested sources / search terms:**
+- Taylor & Tibshirani (2015) "Statistical learning and selective inference" (PNAS)
+- Dwork et al. (2015) "The reusable holdout" (Science)
+- Steegen et al. (2016) multiverse analysis; Simonsohn, Simmons & Nelson (2020) specification curve
+
+---
+
+### 75. Good and Bad Controls, Design-Based Regression Adjustment and OVB-Based Sensitivity
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Q - Covariate Adjustment for Precision vs Identification]] and [[Q - A Unified View of Sensitivity to Assumption Violations]] found no catalogue of good vs bad controls, nothing on Lin / Freedman design-based regression adjustment, no Cinelli–Hazlett or Oster sensitivity tools, and that the CausalImpact notes never state that control series must be unaffected by the intervention.
+
+**Adjacent notes:** [[Logic of Regression Adjustment]], [[CUPED and Regression-Adjusted Variance Reduction]], [[Omitted Variables Bias]], [[Counterfactual Impact Estimation]], [[Sensitivity Analysis in Observational Studies]]
+
+**Suggested sources / search terms:**
+- Cinelli, Forney & Pearl (2022) "A Crash Course in Good and Bad Controls"
+- Lin (2013) "Agnostic notes on regression adjustments to experimental data" (arXiv 1208.2301)
+- Cinelli & Hazlett (2020) "Making sense of sensitivity"; Oster (2019)
+
+---
+
+### 76. State-Space Marketing Models, Nonlinear Filtering and Calibration Methods
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]] found no state-space model with a control input (a state-space MMM with adstock as state), no particle / nonlinear filtering outside the ODE notes, and no derivation of the Durbin–Koopman simulation smoother; [[Q - Four Meanings of Calibration]] found no recalibration methods (isotonic, temperature scaling), no Kennedy–O'Hagan calibration and no emulator-based history matching.
+
+**Adjacent notes:** [[Linear-Gaussian State-Space Models]], [[Bayesian Structural Time-Series Model]], [[Carryover (Adstock) Functional Forms]], [[History Matching for ABMs]], [[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)]]
+
+**Suggested sources / search terms:**
+- Durbin & Koopman (2012) *Time Series Analysis by State Space Methods*; Särkkä (2013) *Bayesian Filtering and Smoothing*
+- Naik, Mantrala & Sawyer (1998) / Naik & Raman — Kalman-filter advertising models
+- Kennedy & O'Hagan (2001) "Bayesian calibration of computer models"; Guo et al. (2017) "On Calibration of Modern Neural Networks" (arXiv 1706.04599)
+
+---
+
+### 77. CLV-Based Media Optimization: Surrogates and Marginal Customer Quality
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Q - Optimizing Media Spend on CLV with Delayed Feedback]] found no surrogate-index note, no model of marginal customer quality (are ad-acquired customers worth less?), no CLV model with time-varying marketing covariates, and no empirical evidence in the vault either way. Overlaps gap #69 (extended BTYD models) and #67 (surrogate indices).
+
+**Adjacent notes:** [[Customer Lifetime Value - Overview]], [[ROAS, mROAS, and Optimal Media Mix]], [[Delayed Feedback Model for Conversion Prediction]], [[Bayesian and Hierarchical Extensions of CLV Models]]
+
+**Suggested sources / search terms:**
+- Athey, Chetty, Imbens & Kang (2019) "The Surrogate Index"
+- Schweidel & Knox (2013) "Incorporating direct marketing activity into latent attrition models"
+- Lewis (2006) "Customer acquisition promotions and customer asset value" (JMR)
+
+---
+
+### 78. Advanced User-Level Ad Experimentation
+**Status:** 🌱 new
+
+**Why it's a gap:**
+Follow-ons from the [[User-Level Ad Experiments - Overview]] cluster: bid-level randomization and incrementality bidding, the "People and Cookies" correction, proxy-metric models that predict lift, and two sources that could not be downloaded (Johnson 2023 "Inferno"; Barajas & Bhamidipati 2021).
+
+**Adjacent notes:** [[Predicted Ghost Ads and Ghost Bids Mechanics]], [[Identity Fragmentation and the Privacy-Era Limits of User-Level Tests]], [[Conversion Lift Studies on Ad Platforms]]
+
+**Suggested sources / search terms:**
+- Lewis & Wong (2018) "Incrementality Bidding & Attribution"; Waisman, Nair & Carrion (2019) (arXiv 1908.08600)
+- Coey & Bailey (2016) "People and Cookies: Imperfect Treatment Assignment in Online Experiments" (WWW)
+- Johnson (2023) "Inferno: A Guide to Field Experiments in Online Display Advertising" (JEMS)
 
 ---
 
@@ -1173,6 +1296,7 @@ With ML models now in the vault (forests, DeepAR, transformers), there is no not
 
 | Date | Action |
 |------|--------|
+| 2026-09-18 | **Run 25 (consolidation Q&A + user-level testing).** Wrote 20 cross-cluster consolidation Q&A notes (Questions-and-Answers now 29) and ingested the `Market Response Models/User-Level Ad Experiments` cluster (9 notes; 8 sources; Johnson 2023 "Inferno" and Barajas & Bhamidipati 2021 could not be downloaded). The Q&As' own Gaps sections were mined for this index: **added gaps #71–#78** and added requested sources to #59, #63, #70. One Q&A caught a formula error in [[Optimal Marketing Decisions and Forecasting]] (now fixed). |
 | 2026-09-18 | **Graph cleanup and de-duplication.** Duplicate titles resolved: horseshoe stub merged into [[Horseshoe and Regularized Horseshoe Priors]] (Shrinkage Priors cluster); loose PSM synthesis note retitled [[Propensity Score Matching - Balancing Theorem and Failure Modes]] and moved with [[Matching Algorithms and Caliper]] and [[Covariate Balance and Matching Diagnostics]] into the `Propensity Score Matching/` sub-folder. Same-source duplicates merged: `Theoretical Physics/` folded into `Physics/` ([[Quantum Field Theory - Overview]], [[Gauge Theory - Overview]] merged; 5 notes moved); [[Bayesian Inverse Probability Weighting]] absorbed "Bayesian Propensity Score Weighting". 52 colliding aliases removed (titles and aliases are now unique vault-wide). 25 missing links added from shared-neighbour analysis. Graph after cleanup: 732 nodes, 10,834 edges, 1 component, 0 orphans. `vault-graph/build_graph.py` now skips `node_modules/`, `content/`, `public/`, `quartz/`, `scripts/` and `raw/`. |
 | 2026-09-18 | **Run 24 (top-down audit + gap-filling ingest).** Audit finding: all 57 prior gaps were generated bottom-up from existing notes, so the vault had zero machine-learning / AI coverage and lacked online-experimentation, customer-lifetime-value and modern-forecasting material. Researched and ingested **49 primary papers → 85 notes in 11 new clusters**: new topic `Machine Learning and AI/` (Transformers and LLM Foundations 7, LLM Reasoning Retrieval and Agents 8, Conformal Prediction 7, Probabilistic Forecasting 7); `Agent-Based Modeling/LLM-Powered Agents` 8; `Bayesian Statistics/Computation/Neural Simulation-Based Inference` 8 and `/Variational Inference` 8; `Econometrics/Causal Machine Learning` 9; `Econometrics/Identification Strategies/Synthetic Difference-in-Differences` 8; `Research Methodology/Experimental Design/Online Experimentation` 8; `Market Response Models/Customer Lifetime Value` 7. **Gaps #33, #40, #45, #46, #47 marked 🍂 covered; #18 status corrected to covered** (DTR cluster already existed). Added 98 See Also backlinks + 115 `used_by` entries to 89 existing notes. Added new section "AI-Era and Applied Gaps" with gaps #58–#70. Also resolved 5 leftover git merge-conflict blocks in this file. |
 | 2026-04-09 | Initial Dream index created. Three gaps identified from review of 9 Research notes. |

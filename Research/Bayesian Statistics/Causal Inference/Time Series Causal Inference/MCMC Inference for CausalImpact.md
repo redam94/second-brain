@@ -20,6 +20,7 @@ depends_on:
 used_by:
   - "[[Counterfactual Impact Estimation]]"
   - "[[The Kalman Filter]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - Gibbs sampler CausalImpact
   - Kalman filter smoother BSTS

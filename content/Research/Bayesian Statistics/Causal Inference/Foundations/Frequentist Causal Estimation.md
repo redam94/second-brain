@@ -21,6 +21,7 @@ used_by:
   - "[[Propensity Score Matching - Overview]]"
   - "[[Causal Machine Learning - Overview]]"
   - "[[DML Estimators for ATE and the Interactive Model]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
 aliases:
   - IPW estimator
   - doubly robust estimator

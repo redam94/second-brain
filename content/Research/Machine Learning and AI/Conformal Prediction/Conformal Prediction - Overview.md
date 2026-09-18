@@ -22,6 +22,8 @@ used_by:
   - "[[Marginal vs Conditional Coverage]]"
   - "[[Conformal Prediction Under Covariate Shift]]"
   - "[[Conformal Inference for Counterfactuals and ITEs]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - Four Meanings of Calibration]]"
 aliases:
   - Conformal Inference
   - Conformal Prediction

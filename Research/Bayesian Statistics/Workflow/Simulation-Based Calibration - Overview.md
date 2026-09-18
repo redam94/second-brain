@@ -19,6 +19,8 @@ used_by:
   - "[[SBC Case Studies]]"
   - "[[Diagnosing Variational Inference (PSIS k-hat and VSBC)]]"
   - "[[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
+  - "[[Q - Four Meanings of Calibration]]"
 aliases:
   - SBC
   - Simulation-Based Calibration

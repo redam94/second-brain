@@ -18,6 +18,9 @@ depends_on:
   - "[[Bayesian Structural Time-Series Model]]"
 used_by:
   - "[[CausalImpact Empirical Application]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - CausalImpact estimation
   - causal effect time series

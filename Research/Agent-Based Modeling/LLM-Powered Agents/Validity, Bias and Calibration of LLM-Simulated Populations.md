@@ -23,6 +23,7 @@ depends_on:
   - "[[Poststratification]]"
 used_by:
   - "[[LLM-Powered Agents - Overview]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - Validity of Silicon Samples
   - LLM Simulation Validity

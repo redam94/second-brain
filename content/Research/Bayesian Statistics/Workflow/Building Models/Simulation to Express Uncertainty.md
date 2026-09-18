@@ -20,6 +20,7 @@ used_by:
   - "[[Point Estimates and Uncertainties]]"
   - "[[Posterior Predictive Checking]]"
   - "[[Poststratification]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 aliases:
   - "Simulate first summarize last"
   - "Propagating uncertainty"

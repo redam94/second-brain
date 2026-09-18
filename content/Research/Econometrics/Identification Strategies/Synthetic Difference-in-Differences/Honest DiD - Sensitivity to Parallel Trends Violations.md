@@ -19,7 +19,9 @@ depends_on:
   - "[[Event Study Designs and Dynamic Treatment Effects]]"
   - "[[Pre-Trend Testing and Its Pitfalls]]"
   - "[[Differences-in-Differences]]"
-used_by: []
+used_by:
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
 aliases:
   - Honest DiD
   - HonestDiD

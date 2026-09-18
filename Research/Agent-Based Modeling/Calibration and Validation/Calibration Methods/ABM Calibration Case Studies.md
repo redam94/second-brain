@@ -15,7 +15,8 @@ depends_on:
   - "[[History Matching for ABMs]]"
   - "[[Approximate Bayesian Computation for ABMs]]"
   - "[[Uncertainty Quantification for ABM Calibration]]"
-used_by: []
+used_by:
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - SugarScape calibration
   - RISC calibration

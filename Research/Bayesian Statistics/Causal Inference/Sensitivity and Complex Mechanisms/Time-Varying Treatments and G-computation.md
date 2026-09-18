@@ -16,7 +16,9 @@ depends_on:
   - "[[Potential Outcomes Framework]]"
   - "[[General Structure of Bayesian CI]]"
   - "[[Bayesian Outcome Models]]"
-used_by: []
+used_by:
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
 aliases:
   - g-computation
   - g-formula

@@ -22,6 +22,8 @@ depends_on:
 used_by:
   - "[[Local vs Global Forecasting Models]]"
   - "[[Forecast Evaluation and Backtesting]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - Chronos
   - Time-Series Foundation Models

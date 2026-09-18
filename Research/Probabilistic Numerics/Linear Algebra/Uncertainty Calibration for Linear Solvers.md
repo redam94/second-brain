@@ -18,6 +18,7 @@ depends_on:
   - "[[Hierarchical Inference in Gaussian Models]]"
 used_by:
   - "[[Lessons from Integration]]"
+  - "[[Q - Four Meanings of Calibration]]"
 aliases:
   - Uncertainty Calibration
   - Rayleigh Regression

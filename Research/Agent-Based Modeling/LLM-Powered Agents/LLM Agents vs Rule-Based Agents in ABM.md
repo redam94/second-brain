@@ -20,6 +20,7 @@ depends_on:
   - "[[ABM Validation Challenges]]"
 used_by:
   - "[[Validity, Bias and Calibration of LLM-Simulated Populations]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - LLM vs Rule-Based Agents
   - Generative ABM vs Classical ABM

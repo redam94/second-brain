@@ -19,6 +19,9 @@ depends_on:
 used_by:
   - "[[Synthetic Control Requirements]]"
   - "[[Synthetic Control Extensions]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 aliases:
   - "synthetic control permutation test"
   - "RMSPE ratio"

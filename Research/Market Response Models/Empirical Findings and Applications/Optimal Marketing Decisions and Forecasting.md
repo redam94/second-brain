@@ -25,6 +25,8 @@ depends_on:
   - "[[Response Models for Marketing Management]]"
 used_by:
   - "[[Implementation of Market Response Models]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
 ---
 
 # Optimal Marketing Decisions and Forecasting
@@ -41,12 +43,12 @@ used_by:
 >
 > First-order condition: $(P-c) \frac{\partial Q}{\partial A} = 1$
 >
-> Rearranging: $\frac{A}{(P-c)Q} = \frac{A}{S} = \eta_{QA} \cdot \frac{A/S}{A/S} = \eta_{QA}$
+> Rearranging with the advertising elasticity $\eta_{QA} = \frac{\partial Q}{\partial A}\frac{A}{Q}$: $(P-c)\,\eta_{QA}\,\frac{Q}{A} = 1$, so $\frac{A}{(P-c)Q} = \eta_{QA}$ — advertising as a share of *gross margin* equals the advertising elasticity.
 >
-> So the **optimal advertising-to-sales ratio**:
-> $$\frac{A^*}{S^*} = \eta_{QA} \cdot \frac{1}{m/P} = \frac{\eta_{QA}}{\eta_{QP}}$$
+> Dividing by revenue $S = PQ$ instead, with $m = P - c$ the unit margin, gives the **optimal advertising-to-sales ratio**:
+> $$\frac{A^*}{S^*} = \eta_{QA} \cdot \frac{m}{P} = \frac{\eta_{QA}}{\eta_{QP}}$$
 >
-> where $\eta_{QP}$ is the absolute price elasticity. The optimal advertising-to-sales ratio equals the ratio of advertising elasticity to price elasticity. With $\eta_{QA} = 0.10$ and $\eta_{QP} = 2.5$: optimal A/S = 4%.
+> where $\eta_{QP}$ is the absolute price elasticity and the last step uses the optimal-pricing (Lerner) condition $\frac{P-c}{P} = \frac{1}{\eta_{QP}}$. The optimal advertising-to-sales ratio equals the ratio of advertising elasticity to price elasticity. With $\eta_{QA} = 0.10$ and $\eta_{QP} = 2.5$: optimal A/S = 4%.
 > ^thm-dorfman-steiner
 
 ## ADBUDG Optimization
@@ -87,9 +89,9 @@ Cross-price effects shift the Nash equilibrium prices. Markets with higher cross
 
 With multiplicative response $Q = K \cdot A^{\alpha} P^{-\beta} D^{\gamma}$, optimal conditions yield:
 
-$$\frac{A^*}{S^*} = \frac{\alpha}{m}, \quad \frac{d^*}{S^*} = \frac{\gamma}{m}, \quad P^* = \frac{c\beta}{\beta - 1}$$
+$$\frac{A^*}{S^*} = \alpha m = \frac{\alpha}{\beta}, \quad \frac{d^*}{S^*} = \gamma m = \frac{\gamma}{\beta}, \quad P^* = \frac{c\beta}{\beta - 1}$$
 
-where $d$ is distribution spending and $m = (P-c)/P$ is the margin.
+where $d$ is distribution spending and $m = (P-c)/P$ is the margin ratio, which equals $1/\beta$ at the optimal price. (The first-order condition $(P-c)\,\alpha\,Q/A = 1$ gives $A = \alpha (P-c) Q$, hence $A/S = \alpha m$ — the multi-instrument form of the Dorfman–Steiner result above. Corrected 2026-09-18; an earlier version of this note had $\alpha/m$.)
 
 ## Forecasting Methods
 

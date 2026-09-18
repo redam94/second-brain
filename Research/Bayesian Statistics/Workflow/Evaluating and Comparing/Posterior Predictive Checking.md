@@ -19,6 +19,7 @@ used_by:
   - "[[Cross Validation Checking]]"
   - "[[Influence of Individual Data Points]]"
   - "[[LOO Model Checking and Comparison - Roaches]]"
+  - "[[Q - Four Meanings of Calibration]]"
 aliases:
   - "PPC"
   - "Posterior predictive check"

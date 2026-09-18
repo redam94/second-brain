@@ -24,6 +24,7 @@ used_by:
   - "[[Multivariate Persistence and Cointegration]]"
   - "[[Empirical Causal Ordering]]"
   - "[[Price and Distribution Effects]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
 ---
 
 # Reaction Functions and Competitive Dynamics

@@ -19,6 +19,9 @@ depends_on:
   - "[[Potential Outcomes Framework]]"
 used_by:
   - "[[Online Experimentation - Overview]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
 aliases:
   - Confidence Sequence
   - Anytime-Valid Confidence Intervals

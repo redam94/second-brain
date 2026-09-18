@@ -22,6 +22,8 @@ depends_on:
   - "[[Introduction to Bayesian Computation]]"
 used_by:
   - "[[Variational Inference - Overview]]"
+  - "[[Q - Four Meanings of Calibration]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - PSIS Diagnostic for Variational Inference
   - Pareto k-hat Diagnostic for VI

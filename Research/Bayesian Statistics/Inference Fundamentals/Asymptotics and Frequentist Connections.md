@@ -25,6 +25,8 @@ used_by:
   - "[[Forking Paths and Bayesian Approaches]]"
   - "[[BDA3 - Overview]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
+  - "[[Q - Four Meanings of Calibration]]"
 ---
 
 # Asymptotics and Frequentist Connections

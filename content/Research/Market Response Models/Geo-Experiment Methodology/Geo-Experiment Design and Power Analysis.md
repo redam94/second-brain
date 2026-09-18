@@ -17,6 +17,11 @@ depends_on:
 used_by:
   - "[[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]]"
   - "[[Time-Based Regression Estimator for Geo Experiments]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
+  - "[[User-Level vs Geo-Level Experiments - When to Use Which]]"
 aliases:
   - Geo-Based Regression
   - GBR

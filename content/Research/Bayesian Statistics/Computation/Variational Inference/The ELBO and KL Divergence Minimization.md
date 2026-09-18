@@ -25,6 +25,7 @@ used_by:
   - "[[Reparameterization Trick and Variational Autoencoders]]"
   - "[[Normalizing Flows for Variational Inference]]"
   - "[[Diagnosing Variational Inference (PSIS k-hat and VSBC)]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - ELBO
   - Evidence Lower Bound

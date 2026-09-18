@@ -26,6 +26,8 @@ used_by:
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[Prediction vs Postdiction]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 ---
 
 # The Garden of Forking Paths

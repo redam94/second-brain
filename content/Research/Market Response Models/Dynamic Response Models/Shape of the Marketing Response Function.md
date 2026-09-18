@@ -20,6 +20,7 @@ depends_on:
   - "[[Carryover Effects and Distributed Lags]]"
 used_by:
   - "[[Optimal Marketing Decisions and Forecasting]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
 ---
 
 # Shape of the Marketing Response Function

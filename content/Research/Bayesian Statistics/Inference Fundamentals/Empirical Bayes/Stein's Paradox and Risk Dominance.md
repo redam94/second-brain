@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[Empirical Bayes Interpretation of Shrinkage]]"
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - Stein's Paradox
   - Stein Paradox

@@ -20,6 +20,8 @@ used_by:
   - "[[LLM-Powered Agents - Overview]]"
   - "[[LLM Agents vs Rule-Based Agents in ABM]]"
   - "[[Persona Mixture Calibration of LLM Agents]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - Agent heterogeneity
   - Individual differences in ABM

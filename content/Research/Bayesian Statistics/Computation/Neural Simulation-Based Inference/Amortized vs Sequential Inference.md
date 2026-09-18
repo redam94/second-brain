@@ -20,6 +20,8 @@ depends_on:
 used_by:
   - "[[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]]"
   - "[[Neural SBI for Agent-Based and Economic Models]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
 aliases:
   - Amortized Inference
   - Amortization in SBI

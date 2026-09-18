@@ -23,6 +23,7 @@ used_by:
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
   - "[[Empirical Bayes Interpretation of Shrinkage]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - "Gelman Hill Yajima 2009"
   - "Why we don't have to worry about multiple comparisons"

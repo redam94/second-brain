@@ -18,6 +18,7 @@ used_by:
   - "[[Expected Information Gain]]"
   - "[[Sequential and Adaptive BED]]"
   - "[[Information-Theoretic Design Objectives]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
 aliases:
   - Lindley 1956
   - Lindley information

@@ -21,6 +21,7 @@ used_by:
   - "[[Differences-in-Differences]]"
   - "[[Instrumental Variables]]"
   - "[[PC Algorithm and Constraint-Based Discovery]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
 aliases:
   - DAGs
   - directed acyclic graph

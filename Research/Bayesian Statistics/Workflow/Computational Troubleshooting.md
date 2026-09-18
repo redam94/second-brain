@@ -25,6 +25,7 @@ used_by:
   - "[[Evaluating Fitted Models]]"
   - "[[HMC and Stan in Practice]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 expanded_by:
   - "[[What to Do About Convergence Problems]]"
   - "[[Failure Modes and Steps Forward]]"

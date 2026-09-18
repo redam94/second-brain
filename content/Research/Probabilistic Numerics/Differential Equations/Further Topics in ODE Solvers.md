@@ -17,6 +17,7 @@ depends_on:
   - "[[Solving ODEs as Inference]]"
 used_by:
   - "[[Probabilistic Numerics - Overview]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - ODE Inverse Problems
   - Boundary Value Problems

@@ -31,6 +31,9 @@ used_by:
   - "[[Optimal Marketing Decisions and Forecasting]]"
   - "[[Implementation of Market Response Models]]"
   - "[[Linear-Gaussian State-Space Models]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 ---
 
 # Carryover Effects and Distributed Lags

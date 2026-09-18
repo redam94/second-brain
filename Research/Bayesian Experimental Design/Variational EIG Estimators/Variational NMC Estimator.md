@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[Convergence Rates and Estimator Selection]]"
   - "[[High-Dimensional Design Applications]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - Variational NMC
   - VNMC

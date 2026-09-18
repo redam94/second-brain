@@ -25,6 +25,10 @@ used_by:
   - "[[Observational vs Experimental Methods in Advertising]]"
   - "[[Power Analysis and Sample Size]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
+  - "[[User-Level Ad Experiments - Overview]]"
+  - "[[Identity Fragmentation and the Privacy-Era Limits of User-Level Tests]]"
 ---
 
 # Activity Bias in Advertising
@@ -72,3 +76,4 @@ used_by:
 - [[Research Questions in Econometrics]] — this paper is a worked answer to all four FAQs applied to online advertising measurement
 - [[Sample Ratio Mismatch and Trustworthiness Checks]] — differential observation by arm
 - [[Differences-in-Differences]] — DiD on pre/post exposure panels is a common observational ad-measurement design and inherits activity bias when exposure timing tracks browsing activity
+- [[Experimental Benchmarks for Observational Ad Measurement]] — the large-scale sequel: how far PSM, regression and DML land from RCT answers at Facebook

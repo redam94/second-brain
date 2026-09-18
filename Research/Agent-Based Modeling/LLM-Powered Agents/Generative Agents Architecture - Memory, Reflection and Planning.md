@@ -19,6 +19,7 @@ depends_on:
 used_by:
   - "[[LLM Agents vs Rule-Based Agents in ABM]]"
   - "[[Validity, Bias and Calibration of LLM-Simulated Populations]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - Generative Agents
   - "Generative Agents Architecture (Memory, Reflection, Planning)"

@@ -20,6 +20,8 @@ used_by:
   - "[[Using a Fitted Model for Decision Analysis - Classification Competition]]"
   - "[[Statistical and Scientific Inference]]"
   - "[[The Replication Crisis and Multiple Levels of Variation]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
 aliases:
   - "ORBITA"
   - "Heart stents study"

@@ -14,7 +14,8 @@ doc_type: textbook
 depends_on:
   - "[[The Kalman Filter]]"
   - "[[Linear-Gaussian State-Space Models]]"
-used_by: []
+used_by:
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - prediction error decomposition
   - energy function

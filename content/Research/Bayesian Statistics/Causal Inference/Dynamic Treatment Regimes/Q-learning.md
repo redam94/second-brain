@@ -15,6 +15,7 @@ depends_on:
   - "[[Optimal Regime via Dynamic Programming]]"
 used_by:
   - "[[A-learning and Robustness]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
 aliases:
   - Q-learning
   - backward regression treatment regimes

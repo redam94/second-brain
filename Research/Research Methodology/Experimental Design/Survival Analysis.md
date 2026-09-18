@@ -31,6 +31,7 @@ used_by:
   - "[[Shifted-Beta-Geometric Model for Contractual Retention]]"
   - "[[Pareto-NBD Model]]"
   - "[[Customer Lifetime Value - Overview]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
 ---
 
 # Survival Analysis

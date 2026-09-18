@@ -17,6 +17,12 @@ depends_on:
   - "[[Geo-Experiment Design and Power Analysis]]"
 used_by:
   - "[[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - TBR Design Process
   - TBR Stationarity Assumption

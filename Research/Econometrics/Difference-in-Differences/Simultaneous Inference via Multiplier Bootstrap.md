@@ -15,6 +15,7 @@ depends_on:
   - "[[Aggregating Group-Time Effects]]"
 used_by:
   - "[[Difference-in-Differences with Multiple Time Periods - Overview]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 aliases:
   - multiplier bootstrap DiD
   - uniform confidence bands DiD

@@ -21,6 +21,8 @@ used_by:
   - "[[Cross-Fitting and Sample Splitting]]"
   - "[[DML Estimators for ATE and the Interactive Model]]"
   - "[[R-Learner and Orthogonal CATE Estimation]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - Partially Linear Regression Model
   - PLR Model

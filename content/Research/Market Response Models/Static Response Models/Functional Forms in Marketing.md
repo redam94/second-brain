@@ -30,6 +30,7 @@ used_by:
   - "[[Advertising and Promotion Effects]]"
   - "[[Price and Distribution Effects]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
 ---
 
 # Functional Forms in Marketing

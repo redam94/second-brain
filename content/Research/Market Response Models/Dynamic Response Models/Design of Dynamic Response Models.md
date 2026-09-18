@@ -24,6 +24,7 @@ used_by:
   - "[[Transfer Function Model]]"
   - "[[Parameter Estimation in Market Response]]"
   - "[[Implementation of Market Response Models]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
 ---
 
 # Design of Dynamic Response Models

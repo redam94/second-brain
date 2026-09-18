@@ -17,6 +17,10 @@ depends_on:
 used_by:
   - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[MMM Model Selection and Application]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - ROAS
   - mROAS

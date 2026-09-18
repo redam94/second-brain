@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[Convergence Rates and Estimator Selection]]"
   - "[[Likelihood-Free ACE and Gradient Estimation]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - Implicit likelihood estimator
   - mu_m+l

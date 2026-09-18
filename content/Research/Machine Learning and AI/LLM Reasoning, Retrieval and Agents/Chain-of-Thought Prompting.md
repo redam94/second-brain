@@ -20,6 +20,7 @@ used_by:
   - "[[ReAct - Reasoning and Acting Agents]]"
   - "[[Tool Use and the Agent Loop]]"
   - "[[Evaluating LLM Systems - Benchmarks, Hallucination and Human Preference]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
 aliases:
   - CoT
   - CoT Prompting

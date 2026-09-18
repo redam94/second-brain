@@ -17,6 +17,7 @@ used_by:
   - "[[The Horseshoe Prior]]"
   - "[[Horseshoe and Regularized Horseshoe Priors]]"
   - "[[Choosing the Global Scale and Effective Nonzeros]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - Global-Local Priors
   - Scale Mixture of Gaussians

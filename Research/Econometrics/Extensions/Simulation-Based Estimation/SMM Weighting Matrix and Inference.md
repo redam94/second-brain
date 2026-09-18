@@ -19,6 +19,7 @@ used_by:
   - "[[SMM Python Implementation]]"
   - "[[Practical Issues in Simulation Estimation]]"
   - "[[Q - Using SMM to Calibrate Agent Based Models]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - SMM optimal weighting matrix
   - two-step SMM

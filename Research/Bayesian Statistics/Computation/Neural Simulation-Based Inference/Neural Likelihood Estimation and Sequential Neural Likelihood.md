@@ -22,6 +22,7 @@ used_by:
   - "[[Amortized vs Sequential Inference]]"
   - "[[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]]"
   - "[[Neural SBI for Agent-Based and Economic Models]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - NLE
   - SNL

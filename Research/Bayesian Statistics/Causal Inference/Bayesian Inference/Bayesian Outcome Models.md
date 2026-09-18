@@ -16,6 +16,8 @@ depends_on:
   - "[[Causal Estimands]]"
 used_by:
   - "[[Propensity Score in Bayesian CI]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - BART causal
   - Bayesian Causal Forest

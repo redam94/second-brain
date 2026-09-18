@@ -26,6 +26,7 @@ used_by:
   - "[[Spatial Models - BYM]]"
   - "[[Copula Estimation]]"
   - "[[Global-Local Shrinkage Priors]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 ---
 
 # Hierarchical Linear Models

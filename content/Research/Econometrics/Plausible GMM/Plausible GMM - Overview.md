@@ -17,6 +17,8 @@ depends_on:
   - "[[Gaussian Local Prior Approximation]]"
 used_by:
   - "[[Plausible GMM - Institutions and GDP Application]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - PGMM
   - Plausible GMM

@@ -19,6 +19,9 @@ depends_on:
 used_by:
   - "[[Always-Valid p-values and the mSPRT]]"
   - "[[Confidence Sequences]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - Peeking Problem
   - Optional Stopping

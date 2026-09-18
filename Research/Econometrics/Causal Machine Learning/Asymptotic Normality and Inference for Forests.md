@@ -18,6 +18,7 @@ depends_on:
   - "[[Generalized Random Forests - Local Moment Equations]]"
 used_by:
   - "[[Causal Machine Learning - Overview]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - Forest Central Limit Theorem
   - Infinitesimal Jackknife for Random Forests

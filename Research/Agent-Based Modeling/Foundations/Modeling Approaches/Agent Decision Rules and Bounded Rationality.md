@@ -20,6 +20,7 @@ used_by:
   - "[[LLM-Powered Agents - Overview]]"
   - "[[LLM Agents vs Rule-Based Agents in ABM]]"
   - "[[Generative Agents Architecture - Memory, Reflection and Planning]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - Agent decision making
   - Bounded rationality in ABM

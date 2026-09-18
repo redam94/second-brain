@@ -18,6 +18,7 @@ depends_on:
   - "[[Gamma-Gamma Model of Monetary Value]]"
 used_by:
   - "[[Bayesian and Hierarchical Extensions of CLV Models]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
 aliases:
   - RFM and CLV
   - Iso-Value Curves

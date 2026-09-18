@@ -20,6 +20,8 @@ used_by:
   - "[[BG-NBD Model]]"
   - "[[RFM Sufficient Statistics and Iso-Value Curves]]"
   - "[[Bayesian and Hierarchical Extensions of CLV Models]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - Pareto/NBD
   - Pareto/NBD Model

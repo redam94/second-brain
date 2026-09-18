@@ -16,6 +16,7 @@ used_by:
   - "[[The BLP Contraction Mapping]]"
   - "[[GMM Estimation and Instruments for Price Endogeneity]]"
   - "[[Numerical Integration and Optimization in PyBLP]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - Mixed Logit
   - Random Coefficients Logit

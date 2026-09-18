@@ -20,7 +20,9 @@ depends_on:
   - "[[Amortized vs Sequential Inference]]"
   - "[[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]]"
   - "[[ABM Calibration Overview]]"
-used_by: []
+used_by:
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - Neural SBI for ABMs
   - Black-Box Bayesian Inference for ABMs

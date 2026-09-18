@@ -20,6 +20,7 @@ used_by:
   - "[[Theory of ODE Filters and Smoothers]]"
   - "[[Solving ODEs as Inference]]"
   - "[[Classical ODE Solvers as Regression]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - Filtering and Smoothing
   - Message Passing on Chains

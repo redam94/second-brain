@@ -14,6 +14,8 @@ depends_on:
   - "[[Global Sensitivity Analysis - Overview]]"
 used_by:
   - "[[Sampling and Estimation for Sobol Indices]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - Morris Method
   - Elementary Effects

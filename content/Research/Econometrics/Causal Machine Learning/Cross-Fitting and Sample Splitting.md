@@ -20,6 +20,8 @@ used_by:
   - "[[DML Estimators for ATE and the Interactive Model]]"
   - "[[Honest Trees and Causal Forests]]"
   - "[[R-Learner and Orthogonal CATE Estimation]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - Cross-Fitting
   - DML1 and DML2

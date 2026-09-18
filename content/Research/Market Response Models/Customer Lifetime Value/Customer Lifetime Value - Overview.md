@@ -23,6 +23,7 @@ used_by:
   - "[[RFM Sufficient Statistics and Iso-Value Curves]]"
   - "[[Shifted-Beta-Geometric Model for Contractual Retention]]"
   - "[[Bayesian and Hierarchical Extensions of CLV Models]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
 aliases:
   - CLV
   - Customer Lifetime Value

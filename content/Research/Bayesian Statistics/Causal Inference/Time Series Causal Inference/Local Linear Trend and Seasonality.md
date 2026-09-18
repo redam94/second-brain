@@ -17,6 +17,8 @@ depends_on:
 used_by:
   - "[[MCMC Inference for CausalImpact]]"
   - "[[Linear-Gaussian State-Space Models]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - local linear trend model
   - state-space trend

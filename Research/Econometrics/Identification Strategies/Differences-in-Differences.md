@@ -36,6 +36,7 @@ used_by:
   - "[[SDID Estimator - Unit and Time Weights]]"
   - "[[Event Study Designs and Dynamic Treatment Effects]]"
   - "[[Synthetic Difference-in-Differences - Overview]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
 ---
 
 # Differences-in-Differences

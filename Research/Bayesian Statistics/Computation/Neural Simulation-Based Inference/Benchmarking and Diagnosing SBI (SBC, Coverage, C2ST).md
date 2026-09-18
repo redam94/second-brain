@@ -19,6 +19,10 @@ depends_on:
   - "[[The SBC Algorithm]]"
 used_by:
   - "[[Neural SBI for Agent-Based and Economic Models]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
+  - "[[Q - Four Meanings of Calibration]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - SBI Benchmark
   - sbibm

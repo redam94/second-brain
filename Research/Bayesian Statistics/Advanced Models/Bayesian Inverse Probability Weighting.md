@@ -28,6 +28,7 @@ used_by:
   - "[[Li et al 2022 - Overview]]"
   - "[[General Structure of Bayesian CI]]"
   - "[[Differences-in-Differences]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
 aliases:
   - Bayesian IPW
   - Bayesian propensity scores

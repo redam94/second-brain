@@ -19,6 +19,8 @@ used_by:
   - "[[Bayesian Estimation and Priors for MMM]]"
   - "[[ROAS, mROAS, and Optimal Media Mix]]"
   - "[[MMM Model Selection and Application]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - MMM
   - Media Mix Model

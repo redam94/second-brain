@@ -20,6 +20,8 @@ depends_on:
 used_by:
   - "[[Validity, Bias and Calibration of LLM-Simulated Populations]]"
   - "[[LLM Agents vs Rule-Based Agents in ABM]]"
+  - "[[Q - Four Meanings of Calibration]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - Persona Mixture Calibration
   - Theory-Grounded Agents

@@ -18,6 +18,7 @@ used_by:
   - "[[Topology of Models]]"
   - "[[Stacking and Predictive Model Averaging]]"
   - "[[From Inference to Decision]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
 aliases:
   - "M-open vs M-closed"
   - "M-closed framework"

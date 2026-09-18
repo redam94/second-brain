@@ -16,7 +16,8 @@ depends_on:
   - "[[Quasi-Bayes for Plausible Moment Restrictions]]"
   - "[[Gaussian Local Prior Approximation]]"
   - "[[Instrumental Variables]]"
-used_by: []
+used_by:
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
 aliases:
   - Acemoglu Johnson Robinson PGMM
   - institutions and GDP plausible IV

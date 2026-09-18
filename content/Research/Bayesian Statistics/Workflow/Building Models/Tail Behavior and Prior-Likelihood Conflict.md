@@ -20,6 +20,8 @@ used_by:
   - "[[Influence of Likelihood and Prior]]"
   - "[[Predictive Model Checking and Comparison - Clinical Trial]]"
   - "[[Global-Local Shrinkage Priors]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - "Prior-likelihood conflict"
   - "Normal-Cauchy model"

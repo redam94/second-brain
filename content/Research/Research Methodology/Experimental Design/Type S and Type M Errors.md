@@ -21,6 +21,10 @@ used_by:
   - "[[Forking Paths and Bayesian Approaches]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
+  - "[[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise]]"
 aliases:
   - "Type S error"
   - "Type M error"

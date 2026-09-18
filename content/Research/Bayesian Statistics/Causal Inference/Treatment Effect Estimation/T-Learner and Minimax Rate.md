@@ -18,6 +18,7 @@ depends_on:
 used_by:
   - "[[X-Learner]]"
   - "[[Metalearner Simulation Results]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - two-learner
   - T-RF

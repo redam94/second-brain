@@ -20,6 +20,8 @@ depends_on:
   - "[[The Experimental Ideal]]"
 used_by:
   - "[[Switchback Experiment Design and Analysis]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
 aliases:
   - Interference and Marketplace Experiments (Switchback, Cluster Randomization)
   - SUTVA Violations in A/B Tests
@@ -131,3 +133,4 @@ For network interference the dominant design is **graph-cluster randomization** 
 - [[Randomization Inference - Overview]]
 - [[Q - Carryover Dynamics and the Timing of Sequential Media Experiments]]
 - [[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]]
+- [[Identity Fragmentation and the Privacy-Era Limits of User-Level Tests]] — contamination across a user's devices and identities as a form of interference

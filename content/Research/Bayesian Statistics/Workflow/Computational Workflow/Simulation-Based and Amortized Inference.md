@@ -19,6 +19,8 @@ used_by:
   - "[[Posterior Predictive Checking]]"
   - "[[Simulation-Based Calibration - Overview]]"
   - "[[Neural Simulation-Based Inference - Overview]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
 aliases:
   - "ABC"
   - "Approximate Bayesian computation"

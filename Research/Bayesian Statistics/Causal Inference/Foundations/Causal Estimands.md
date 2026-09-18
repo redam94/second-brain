@@ -17,6 +17,7 @@ used_by:
   - "[[General Structure of Bayesian CI]]"
   - "[[Dynamic Treatment Regimes Framework]]"
   - "[[DML Estimators for ATE and the Interactive Model]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - treatment effect
   - ATE

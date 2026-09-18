@@ -28,6 +28,8 @@ used_by:
   - "[[Causal Machine Learning - Overview]]"
   - "[[Honest Trees and Causal Forests]]"
   - "[[Regularization Bias and the Partially Linear Model]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Experimental Benchmarks for Observational Ad Measurement]]"
 ---
 
 # Conditional Independence Assumption

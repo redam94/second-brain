@@ -18,6 +18,7 @@ depends_on:
   - "[[Autoregressive Language Modeling and Pretraining]]"
 used_by:
   - "[[Transformers and LLM Foundations - Overview]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
 aliases:
   - Chinchilla Scaling Laws
   - Chinchilla

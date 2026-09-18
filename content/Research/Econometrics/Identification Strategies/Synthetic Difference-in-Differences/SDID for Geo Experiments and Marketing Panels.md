@@ -20,7 +20,10 @@ depends_on:
   - "[[SDID vs DiD vs Synthetic Control]]"
   - "[[SDID Inference - Bootstrap, Jackknife and Placebo]]"
   - "[[Geo-Experiment Methodology - Overview]]"
-used_by: []
+used_by:
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - SDID geo lift
   - SDID for marketing measurement

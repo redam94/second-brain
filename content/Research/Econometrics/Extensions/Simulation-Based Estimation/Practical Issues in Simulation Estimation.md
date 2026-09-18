@@ -20,6 +20,7 @@ depends_on:
 used_by:
   - "[[SMM Weighting Matrix and Inference]]"
   - "[[SMM Python Implementation]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - Variance Reduction in Simulation
   - Common Random Numbers

@@ -18,6 +18,7 @@ used_by:
   - "[[Nicholson's Blowfly Application]]"
   - "[[Neural Likelihood Estimation and Sequential Neural Likelihood]]"
   - "[[Neural Simulation-Based Inference - Overview]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - synthetic likelihood
   - Wood 2010

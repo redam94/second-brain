@@ -19,6 +19,7 @@ depends_on:
   - "[[Automatic Differentiation Variational Inference (ADVI)]]"
 used_by:
   - "[[Variational Inference - Overview]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - Planar Flow
   - Radial Flow

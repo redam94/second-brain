@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[The RTS Smoother]]"
   - "[[Marginal Likelihood via the Kalman Filter]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - Kalman filter
   - predict-update recursion

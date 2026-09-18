@@ -252,6 +252,7 @@ Other approaches: Rosenbaum & Rubin (1983) hidden binary confounder model, copul
 - [[Nonparametric Causal Inference]] — BART-based Bayesian causal estimation
 - [[Counterfactual Inference]] — Bayesian counterfactual prediction (COVID deaths example)
 - [[Q - Common Pitfalls in Statistical Modeling]] — confounding as a top pitfall
+- [[Experimental Benchmarks for Observational Ad Measurement]] — empirical evidence on how well observational methods recover experimental ad effects
 
 ## Gaps
 

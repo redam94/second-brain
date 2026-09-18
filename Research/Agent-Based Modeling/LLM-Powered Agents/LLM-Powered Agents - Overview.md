@@ -25,6 +25,7 @@ used_by:
   - "[[LLM Agents vs Rule-Based Agents in ABM]]"
   - "[[Opinion Alignment Metrics for Language Models]]"
   - "[[Validity, Bias and Calibration of LLM-Simulated Populations]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - LLM-Empowered Agent-Based Modeling
   - Generative Agent-Based Modeling

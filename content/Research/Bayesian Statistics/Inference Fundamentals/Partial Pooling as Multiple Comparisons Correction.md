@@ -26,6 +26,9 @@ used_by:
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[James-Stein Estimator]]"
   - "[[Empirical Bayes - Overview]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - "Shrinkage as multiple comparisons correction"
   - "Partial pooling z-score reduction"

@@ -26,6 +26,9 @@ used_by:
   - "[[Interference and Marketplace Experiments]]"
   - "[[Confidence Sequences]]"
   - "[[Conformal Inference for Counterfactuals and ITEs]]"
+  - "[[From ITT to Treatment-on-the-Treated in Ad Experiments]]"
+  - "[[User-Level Ad Experiments - Overview]]"
+  - "[[Intent-to-Treat, PSA and Ghost Ad Designs]]"
 aliases:
   - Rubin causal model
   - potential outcomes

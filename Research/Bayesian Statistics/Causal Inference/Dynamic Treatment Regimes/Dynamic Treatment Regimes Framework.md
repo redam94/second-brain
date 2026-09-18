@@ -17,6 +17,7 @@ depends_on:
 used_by:
   - "[[Optimal Regime via Dynamic Programming]]"
   - "[[Q- and A-learning - Overview]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
 aliases:
   - optimal regime definition
   - sequential randomization assumption

@@ -18,6 +18,8 @@ depends_on:
   - "[[ROAS, mROAS, and Optimal Media Mix]]"
 used_by:
   - "[[Bayesian Media Mix Modeling - Overview]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - BIC Model Selection MMM
   - Shampoo Advertiser MMM

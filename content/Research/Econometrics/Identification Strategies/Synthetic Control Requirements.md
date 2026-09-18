@@ -20,6 +20,9 @@ depends_on:
 used_by:
   - "[[Synthetic Control Inference and Diagnostics]]"
   - "[[Differences-in-Differences]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - "synthetic control feasibility"
   - "synthetic control assumptions"

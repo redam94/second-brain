@@ -19,6 +19,7 @@ used_by:
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
   - "[[Overfitting and Information Criteria]]"
   - "[[Gamma-Gamma Model of Monetary Value]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - Parametric Empirical Bayes
   - Estimating the Prior

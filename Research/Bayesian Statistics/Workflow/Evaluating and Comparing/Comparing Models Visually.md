@@ -19,6 +19,7 @@ depends_on:
 used_by:
   - "[[Model Selection and Overfitting]]"
   - "[[Stacking and Predictive Model Averaging]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
 aliases:
   - "Multiverse analysis"
   - "Eight reasons to fit multiple models"

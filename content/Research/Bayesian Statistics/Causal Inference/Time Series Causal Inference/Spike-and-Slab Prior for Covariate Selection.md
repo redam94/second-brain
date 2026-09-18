@@ -18,6 +18,8 @@ depends_on:
 used_by:
   - "[[MCMC Inference for CausalImpact]]"
   - "[[The Horseshoe Prior]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
 aliases:
   - spike-and-slab prior
   - Bayesian variable selection BSTS

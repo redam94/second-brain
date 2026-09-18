@@ -19,6 +19,7 @@ used_by:
   - "[[Instrumental Variables]]"
   - "[[Bayesian Inverse Probability Weighting]]"
   - "[[Synthetic Control]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
 aliases:
   - DAG
   - d-separation

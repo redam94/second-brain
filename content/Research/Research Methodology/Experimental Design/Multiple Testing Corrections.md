@@ -27,6 +27,7 @@ depends_on:
   - "[[Power Analysis and Sample Size]]"
 used_by:
   - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 ---
 
 # Multiple Testing Corrections

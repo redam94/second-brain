@@ -32,6 +32,7 @@ used_by:
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[Neural Scaling Laws]]"
   - "[[Transformers and LLM Foundations - Overview]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 ---
 
 # Overfitting and Information Criteria

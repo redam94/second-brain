@@ -22,6 +22,7 @@ used_by:
   - "[[SDID vs DiD vs Synthetic Control]]"
   - "[[SDID Inference - Bootstrap, Jackknife and Placebo]]"
   - "[[SDID for Geo Experiments and Marketing Panels]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
 aliases:
   - SDID weights
   - SDID unit weights

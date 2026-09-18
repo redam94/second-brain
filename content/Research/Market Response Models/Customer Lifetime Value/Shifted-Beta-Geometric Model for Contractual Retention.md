@@ -19,6 +19,7 @@ depends_on:
   - "[[Survival Analysis]]"
 used_by:
   - "[[Bayesian and Hierarchical Extensions of CLV Models]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
 aliases:
   - sBG Model
   - sBG

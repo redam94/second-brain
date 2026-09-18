@@ -19,6 +19,7 @@ used_by:
   - "[[Covariate Balance Diagnostics]]"
   - "[[Common Support and Overlap]]"
   - "[[Conformal Inference for Counterfactuals and ITEs]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
 aliases:
   - Propensity Score
   - Rosenbaum-Rubin Theorem

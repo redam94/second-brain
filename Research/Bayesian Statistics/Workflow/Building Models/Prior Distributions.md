@@ -21,6 +21,7 @@ used_by:
   - "[[Prior Predictive Checking]]"
   - "[[Influence of Likelihood and Prior]]"
   - "[[Prior Specification for Regression Models - Sleep Study]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - "Weakly informative priors"
   - "Noninformative priors"

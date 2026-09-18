@@ -20,6 +20,7 @@ used_by:
   - "[[Stochastic and Black-Box Variational Inference]]"
   - "[[Automatic Differentiation Variational Inference (ADVI)]]"
   - "[[Diagnosing Variational Inference (PSIS k-hat and VSBC)]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - CAVI
   - Coordinate Ascent Variational Inference

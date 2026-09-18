@@ -15,6 +15,7 @@ depends_on:
 used_by:
   - "[[Empirical Bayes Interpretation of Shrinkage]]"
   - "[[Multiple Comparisons - Bayesian Perspective]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - Robbins Formula
   - Robbins' Formula

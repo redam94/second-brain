@@ -19,6 +19,11 @@ depends_on:
 used_by:
   - "[[TBR Design Sensitivity and the Stationarity Assumption]]"
   - "[[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - Time-Based Regression
   - TBR

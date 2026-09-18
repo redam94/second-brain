@@ -16,6 +16,8 @@ used_by:
   - "[[Variance-Based Sensitivity and Sobol Indices]]"
   - "[[Morris Elementary Effects Screening]]"
   - "[[Sampling and Estimation for Sobol Indices]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - GSA
   - Global Sensitivity Analysis

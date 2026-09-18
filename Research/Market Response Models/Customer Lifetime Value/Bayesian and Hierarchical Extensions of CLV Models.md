@@ -19,7 +19,9 @@ depends_on:
   - "[[Gamma-Gamma Model of Monetary Value]]"
   - "[[Shifted-Beta-Geometric Model for Contractual Retention]]"
   - "[[Hierarchical Models]]"
-used_by: []
+used_by:
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - Bayesian CLV
   - Hierarchical Bayes CLV

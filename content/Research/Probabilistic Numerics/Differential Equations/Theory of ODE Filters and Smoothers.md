@@ -16,6 +16,7 @@ depends_on:
   - "[[Gauss-Markov Processes and SDEs]]"
 used_by:
   - "[[Further Topics in ODE Solvers]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - Convergence Rates of ODE Filters
   - A-Stability of ODE Filters

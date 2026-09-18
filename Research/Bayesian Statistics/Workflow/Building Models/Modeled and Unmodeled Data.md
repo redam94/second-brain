@@ -20,6 +20,8 @@ used_by:
   - "[[Prior Predictive Checking]]"
   - "[[The SBC Algorithm]]"
   - "[[Designing Simulated-Data Experiments]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - "Five kinds of variable"
   - "Unmodeled parameters"

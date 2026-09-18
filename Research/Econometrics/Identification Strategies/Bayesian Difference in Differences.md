@@ -21,6 +21,7 @@ depends_on:
   - "[[Regression and the CEF]]"
 used_by:
   - "[[Observational vs Experimental Methods in Advertising]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
 ---
 
 # Bayesian Difference in Differences

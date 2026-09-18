@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[Aggregating Group-Time Effects]]"
   - "[[Simultaneous Inference via Multiplier Bootstrap]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
 aliases:
   - DR estimand DiD
   - outcome regression DiD

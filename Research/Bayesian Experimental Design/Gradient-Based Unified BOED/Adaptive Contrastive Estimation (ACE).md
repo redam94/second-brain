@@ -17,6 +17,7 @@ used_by:
   - "[[Prior Contrastive Estimation (PCE)]]"
   - "[[Likelihood-Free ACE and Gradient Estimation]]"
   - "[[High-Dimensional Design Applications]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - ACE
   - Adaptive Contrastive Estimation

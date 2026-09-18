@@ -23,6 +23,8 @@ depends_on:
 used_by:
   - "[[SDID Inference - Bootstrap, Jackknife and Placebo]]"
   - "[[SDID for Geo Experiments and Marketing Panels]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
 aliases:
   - SDID double robustness
   - SDID bias decomposition

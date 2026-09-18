@@ -19,6 +19,7 @@ used_by:
   - "[[Prior Distributions]]"
   - "[[Specifying the Data Model and the Prior]]"
   - "[[Poststratification]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - "8 schools"
   - "Eight schools model"

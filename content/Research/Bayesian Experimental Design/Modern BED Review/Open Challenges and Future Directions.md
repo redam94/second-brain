@@ -13,7 +13,9 @@ doc_type: paper
 depends_on:
   - "[[Modern Bayesian Experimental Design - Overview]]"
   - "[[From Designs to Policies (Deep Adaptive Design)]]"
-used_by: []
+used_by:
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
 aliases:
   - BED future directions
   - BED open problems

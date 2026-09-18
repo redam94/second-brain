@@ -21,6 +21,8 @@ used_by:
   - "[[Value Loss and Entropy Search]]"
   - "[[Acquisition Functions]]"
   - "[[Further Topics in Global Optimisation]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
 aliases:
   - BO
   - Bayesian Optimization

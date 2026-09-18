@@ -15,6 +15,8 @@ depends_on:
 used_by:
   - "[[Sampling and Estimation for Sobol Indices]]"
   - "[[Morris Elementary Effects Screening]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - Sobol Indices
   - Sobol Sensitivity Indices

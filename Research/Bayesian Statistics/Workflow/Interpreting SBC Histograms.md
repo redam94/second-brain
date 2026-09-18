@@ -17,6 +17,7 @@ depends_on:
 used_by:
   - "[[SBC Case Studies]]"
   - "[[Simulation-Based Calibration - Overview]]"
+  - "[[Q - Four Meanings of Calibration]]"
 aliases:
   - SBC Histogram Shapes
   - Reading SBC Diagnostics

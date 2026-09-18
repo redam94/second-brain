@@ -15,6 +15,7 @@ depends_on:
   - "[[Potential Outcomes Framework]]"
 used_by:
   - "[[Studentized Randomization Tests]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 aliases:
   - Fisher vs Neyman Null
   - Weak Null Hypothesis

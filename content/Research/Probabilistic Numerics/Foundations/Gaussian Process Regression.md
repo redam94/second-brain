@@ -22,6 +22,7 @@ used_by:
   - "[[Bayesian Optimisation]]"
   - "[[Solving ODEs as Inference]]"
   - "[[Uncertainty Calibration for Linear Solvers]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - GP Regression
   - Gaussian Process

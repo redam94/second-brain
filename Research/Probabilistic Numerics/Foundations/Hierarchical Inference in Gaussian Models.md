@@ -19,6 +19,8 @@ used_by:
   - "[[Uncertainty Calibration for Linear Solvers]]"
   - "[[Theory of ODE Filters and Smoothers]]"
   - "[[ODE Filters and Smoothers]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - Hyperparameter Inference
   - Marginal Likelihood

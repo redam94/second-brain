@@ -26,6 +26,8 @@ used_by:
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
   - "[[Pre-registration and Open Science - Overview]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 ---
 
 # Forking Paths and Bayesian Approaches

@@ -17,6 +17,7 @@ depends_on:
 used_by:
   - "[[Bayesian Outcome Models]]"
   - "[[Propensity Score in Bayesian CI]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
 aliases:
   - Bayesian causal inference structure
   - Bayesian factorization causal

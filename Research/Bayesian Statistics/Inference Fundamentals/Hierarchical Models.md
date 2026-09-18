@@ -34,6 +34,11 @@ used_by:
   - "[[Bayesian and Hierarchical Extensions of CLV Models]]"
   - "[[Customer Lifetime Value - Overview]]"
   - "[[Local vs Global Forecasting Models]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 ---
 
 # Hierarchical Models

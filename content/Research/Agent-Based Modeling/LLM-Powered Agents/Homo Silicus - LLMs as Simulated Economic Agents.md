@@ -22,6 +22,7 @@ used_by:
   - "[[Persona Mixture Calibration of LLM Agents]]"
   - "[[LLM Agents vs Rule-Based Agents in ABM]]"
   - "[[Validity, Bias and Calibration of LLM-Simulated Populations]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - Homo Silicus
   - Homo silicus

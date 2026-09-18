@@ -24,6 +24,7 @@ used_by:
   - "[[Missing Data Models]]"
   - "[[Missing Data - Statistical Rethinking]]"
   - "[[Nonparametric Causal Inference]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
 ---
 
 # Data Collection Models

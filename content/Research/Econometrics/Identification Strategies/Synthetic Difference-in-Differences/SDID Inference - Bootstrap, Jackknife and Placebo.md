@@ -20,6 +20,8 @@ depends_on:
   - "[[Standard Errors and Clustering]]"
 used_by:
   - "[[SDID for Geo Experiments and Marketing Panels]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 aliases:
   - SDID standard errors
   - SDID variance estimation

@@ -18,6 +18,7 @@ depends_on:
 used_by:
   - "[[Gaussian Local Prior Approximation]]"
   - "[[Plausible GMM - Institutions and GDP Application]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
 aliases:
   - quasi-Bayesian posterior
   - QBP

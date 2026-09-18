@@ -21,6 +21,9 @@ used_by:
   - "[[Marginal vs Conditional Coverage]]"
   - "[[Conformal Prediction Under Covariate Shift]]"
   - "[[Conformal Inference for Counterfactuals and ITEs]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - Four Meanings of Calibration]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - Split Conformal
   - Inductive Conformal Prediction

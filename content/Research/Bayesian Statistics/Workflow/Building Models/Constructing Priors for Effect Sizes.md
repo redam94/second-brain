@@ -20,6 +20,7 @@ used_by:
   - "[[From Inference to Decision]]"
   - "[[The Replication Crisis and Multiple Levels of Variation]]"
   - "[[Predictive Model Checking and Comparison - Clinical Trial]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - "Zero-centered priors"
   - "Meta-analytic prior"

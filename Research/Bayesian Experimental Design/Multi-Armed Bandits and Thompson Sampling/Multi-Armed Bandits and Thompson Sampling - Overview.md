@@ -16,6 +16,7 @@ depends_on:
   - "[[Probability and Bayesian Inference]]"
 used_by:
   - "[[Q - BED vs Bayesian Optimization vs Bandits for Media Experimentation]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
 aliases:
   - Thompson Sampling
   - Multi-Armed Bandits

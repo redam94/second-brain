@@ -22,6 +22,9 @@ depends_on:
   - "[[Overfitting and Information Criteria]]"
 used_by:
   - "[[Counterfactual Inference]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Q - Does Peeking Matter for a Bayesian]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
 ---
 
 # Decision Analysis

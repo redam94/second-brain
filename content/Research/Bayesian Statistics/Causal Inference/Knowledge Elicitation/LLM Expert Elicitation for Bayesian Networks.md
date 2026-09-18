@@ -21,6 +21,7 @@ depends_on:
   - "[[Directed Acyclic Graphs]]"
 used_by:
   - "[[LLM-BN Decision Support Application]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - dual-LLM elicitation
   - LLM causal structure discovery

@@ -15,6 +15,7 @@ depends_on:
 used_by:
   - "[[High-Dimensional Design Applications]]"
   - "[[The Computational Revolution in EIG Estimation]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - PCE
   - Prior Contrastive Estimation

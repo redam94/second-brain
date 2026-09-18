@@ -18,6 +18,8 @@ used_by:
   - "[[Influence of Likelihood and Prior]]"
   - "[[Model Selection and Overfitting]]"
   - "[[LOO Model Checking and Comparison - Roaches]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 aliases:
   - "Pointwise LOO"
   - "Influence function"

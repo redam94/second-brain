@@ -19,6 +19,7 @@ used_by:
   - "[[Approximate Bayesian Computation for ABMs]]"
   - "[[Uncertainty Quantification for ABM Calibration]]"
   - "[[ABM Calibration Case Studies]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - HM+ABC Framework
   - McCulloch 2022 calibration

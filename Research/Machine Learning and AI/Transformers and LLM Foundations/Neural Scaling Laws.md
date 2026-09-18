@@ -19,6 +19,7 @@ depends_on:
 used_by:
   - "[[Compute-Optimal Training (Chinchilla)]]"
   - "[[In-Context Learning and Few-Shot Prompting]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
 aliases:
   - Scaling Laws for Neural Language Models
   - Kaplan Scaling Laws

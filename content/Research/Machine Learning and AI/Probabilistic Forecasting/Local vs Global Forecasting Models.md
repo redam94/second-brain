@@ -21,6 +21,8 @@ depends_on:
   - "[[Hierarchical Models]]"
 used_by:
   - "[[Forecast Evaluation and Backtesting]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - Local vs Global Models
   - Global Forecasting Models

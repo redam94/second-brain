@@ -17,6 +17,9 @@ used_by:
   - "[[Bayesian Media Mix Modeling - Overview]]"
   - "[[Bayesian Estimation and Priors for MMM]]"
   - "[[MMM Model Selection and Application]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - Hill Function
   - Shape Effect

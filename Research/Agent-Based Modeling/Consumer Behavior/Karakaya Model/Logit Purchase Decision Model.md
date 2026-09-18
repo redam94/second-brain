@@ -17,6 +17,7 @@ depends_on:
 used_by:
   - "[[ABM in Marketing Strategy]]"
   - "[[Population Initialization and Parameter Sensitivity]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - Logit purchase model
   - Stochastic purchase decision

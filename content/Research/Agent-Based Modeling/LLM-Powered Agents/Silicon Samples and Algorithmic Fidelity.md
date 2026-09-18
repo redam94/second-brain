@@ -21,6 +21,7 @@ used_by:
   - "[[Homo Silicus - LLMs as Simulated Economic Agents]]"
   - "[[Opinion Alignment Metrics for Language Models]]"
   - "[[Validity, Bias and Calibration of LLM-Simulated Populations]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - Silicon Sampling
   - Silicon Samples

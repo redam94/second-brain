@@ -16,6 +16,7 @@ depends_on:
   - "[[Linear-Gaussian State-Space Models]]"
 used_by:
   - "[[Marginal Likelihood via the Kalman Filter]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - RTS smoother
   - Rauch-Tung-Striebel smoother

@@ -19,6 +19,7 @@ used_by:
   - "[[Classical ODE Solvers as Regression]]"
   - "[[ODE Filters and Smoothers]]"
   - "[[Perturbative ODE Solvers]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - Initial Value Problem
   - IVP as Regression

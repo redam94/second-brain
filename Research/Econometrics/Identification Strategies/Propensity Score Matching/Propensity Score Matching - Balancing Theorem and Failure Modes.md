@@ -27,6 +27,7 @@ used_by:
   - "[[Covariate Balance and Matching Diagnostics]]"
   - "[[Bayesian Inverse Probability Weighting]]"
   - "[[Activity Bias in Advertising]]"
+  - "[[Experimental Benchmarks for Observational Ad Measurement]]"
 ---
 
 # Propensity Score Matching - Balancing Theorem and Failure Modes

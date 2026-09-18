@@ -24,6 +24,7 @@ used_by:
   - "[[SDID vs DiD vs Synthetic Control]]"
   - "[[SDID Estimator - Unit and Time Weights]]"
   - "[[Synthetic Difference-in-Differences - Overview]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
 aliases:
   - synthetic controls
   - Abadie-Diamond-Hainmueller

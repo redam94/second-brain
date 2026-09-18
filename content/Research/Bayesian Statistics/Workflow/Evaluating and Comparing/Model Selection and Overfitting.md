@@ -19,6 +19,7 @@ used_by:
   - "[[Stacking and Predictive Model Averaging]]"
   - "[[Statistical and Scientific Inference]]"
   - "[[The Replication Crisis and Multiple Levels of Variation]]"
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - "Double dipping"
   - "Post-selection inference"

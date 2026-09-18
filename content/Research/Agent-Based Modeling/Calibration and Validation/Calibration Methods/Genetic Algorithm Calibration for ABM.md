@@ -19,6 +19,7 @@ depends_on:
 used_by:
   - "[[GA Fitness Evaluation and the RAM]]"
   - "[[Q - Using SMM to Calibrate Agent Based Models]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - GA calibration
   - Genetic algorithm for ABM

@@ -20,6 +20,7 @@ depends_on:
 used_by:
   - "[[LLM Reasoning, Retrieval and Agents - Overview]]"
   - "[[Evaluating LLM Systems - Benchmarks, Hallucination and Human Preference]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
 aliases:
   - RLHF
   - Reinforcement Learning from Human Feedback

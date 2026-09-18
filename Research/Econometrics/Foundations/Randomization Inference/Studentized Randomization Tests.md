@@ -16,6 +16,8 @@ depends_on:
   - "[[Randomization Inference - Overview]]"
 used_by:
   - "[[Permutation Tests and Exact Inference]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
 aliases:
   - Studentized FRT
   - Studentized Statistic

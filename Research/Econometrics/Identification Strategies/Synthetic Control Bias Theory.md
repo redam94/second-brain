@@ -23,6 +23,7 @@ used_by:
   - "[[Synthetic Control Requirements]]"
   - "[[Synthetic Control Extensions]]"
   - "[[SDID vs DiD vs Synthetic Control]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
 aliases:
   - "linear factor model synthetic control"
   - "synthetic control bias bound"

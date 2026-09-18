@@ -23,6 +23,8 @@ depends_on:
   - "[[Instrumental Variables]]"
 used_by:
   - "[[Bayesian Difference in Differences]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
+  - "[[User-Level Ad Experiments - Overview]]"
 ---
 
 # Observational vs Experimental Methods in Advertising
@@ -72,3 +74,4 @@ This paper provides a vivid illustration of concepts from [[Regression and the C
 - [[Nonparametric Causal Inference]] — Bayesian nonparametric (BART + propensity score) approaches to causal ATE/ATT estimation
 - [[Bayesian Difference in Differences]] — Bayesian counterfactual framing of DiD that could be applied to advertising holdout experiments
 - [[Type S and Type M Errors]] — the 1198% observational estimate vs 5.4% RCT is a textbook Type M error; the exaggeration ratio of ≈220× illustrates the scale of bias that can arise from violated identification assumptions
+- [[User-Level Ad Experiments - Overview]] — how the experimental alternative is actually designed and analysed

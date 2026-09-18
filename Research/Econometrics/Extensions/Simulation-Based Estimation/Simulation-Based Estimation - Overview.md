@@ -19,6 +19,7 @@ used_by:
   - "[[Indirect Inference]]"
   - "[[Efficient Method of Moments]]"
   - "[[SMM Estimator for Copulas]]"
+  - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
 aliases:
   - Simulation-Based Inference
   - Simulation Estimation

@@ -16,7 +16,10 @@ doc_type: paper
 depends_on:
   - "[[Survival Analysis]]"
   - "[[Delayed Feedback Model for Conversion Prediction]]"
-used_by: []
+used_by:
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
 aliases:
   - Delayed Bandits
   - Censored Bandits

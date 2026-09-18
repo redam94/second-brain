@@ -16,6 +16,7 @@ depends_on:
   - "[[Plausible Moment Restriction Model]]"
 used_by:
   - "[[Plausible GMM - Institutions and GDP Application]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
 aliases:
   - local prior
   - PGMM Gaussian approximation

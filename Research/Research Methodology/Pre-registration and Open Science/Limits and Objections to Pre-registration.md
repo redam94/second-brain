@@ -14,7 +14,8 @@ depends_on:
   - "[[Pre-registration and Open Science - Overview]]"
   - "[[Prediction vs Postdiction]]"
   - "[[Pre-analysis Plans and the Open Science Ecosystem]]"
-used_by: []
+used_by:
+  - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
 aliases:
   - "Objections to Preregistration"
   - "Limits of Preregistration"

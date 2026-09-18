@@ -23,6 +23,9 @@ used_by:
   - "[[Counterfactual Impact Estimation]]"
   - "[[The Kalman Filter]]"
   - "[[Probabilistic Forecasting - Overview]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - structural time-series model
   - BSTS model

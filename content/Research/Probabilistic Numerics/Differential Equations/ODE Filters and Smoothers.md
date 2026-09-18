@@ -20,6 +20,7 @@ depends_on:
 used_by:
   - "[[Theory of ODE Filters and Smoothers]]"
   - "[[Further Topics in ODE Solvers]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - ODE Filter
   - EKF0

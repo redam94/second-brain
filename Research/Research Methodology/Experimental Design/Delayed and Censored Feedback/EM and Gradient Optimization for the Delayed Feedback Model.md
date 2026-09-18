@@ -16,7 +16,8 @@ doc_type: paper
 depends_on:
   - "[[Survival Analysis]]"
   - "[[Delayed Feedback Model for Conversion Prediction]]"
-used_by: []
+used_by:
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
 aliases:
   - Delayed Feedback Model optimization
   - DFM EM algorithm

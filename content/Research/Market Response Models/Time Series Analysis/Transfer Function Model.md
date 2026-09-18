@@ -25,6 +25,7 @@ depends_on:
   - "[[Design of Dynamic Response Models]]"
 used_by:
   - "[[Multivariate Persistence and Cointegration]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 ---
 
 # Transfer Function Model

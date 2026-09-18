@@ -19,6 +19,7 @@ depends_on:
   - "[[Hierarchical Models]]"
 used_by:
   - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
 aliases:
   - Horseshoe Priors
   - Sparse Regression Priors

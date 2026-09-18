@@ -18,6 +18,10 @@ used_by:
   - "[[Bayesian Media Mix Modeling - Overview]]"
   - "[[Bayesian Estimation and Priors for MMM]]"
   - "[[MMM Model Selection and Application]]"
+  - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
+  - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
 aliases:
   - Adstock
   - Geometric Adstock

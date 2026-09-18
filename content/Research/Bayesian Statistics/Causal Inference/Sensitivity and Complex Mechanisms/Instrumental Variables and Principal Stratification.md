@@ -16,7 +16,9 @@ depends_on:
   - "[[Potential Outcomes Framework]]"
   - "[[Causal Estimands]]"
   - "[[General Structure of Bayesian CI]]"
-used_by: []
+used_by:
+  - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[From ITT to Treatment-on-the-Treated in Ad Experiments]]"
 aliases:
   - IV causal inference
   - instrumental variable

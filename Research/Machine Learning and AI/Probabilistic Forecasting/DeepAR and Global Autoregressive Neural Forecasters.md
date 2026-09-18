@@ -21,6 +21,8 @@ used_by:
   - "[[Local vs Global Forecasting Models]]"
   - "[[Time-Series Foundation Models (Chronos)]]"
   - "[[Forecast Evaluation and Backtesting]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 aliases:
   - DeepAR
   - Autoregressive Recurrent Network Forecasting

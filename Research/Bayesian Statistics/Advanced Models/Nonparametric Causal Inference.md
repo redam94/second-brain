@@ -22,6 +22,7 @@ depends_on:
   - "[[Bayesian Linear Regression]]"
 used_by:
   - "[[Moderation Analysis]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 ---
 
 # Bayesian Non-parametric Causal Inference

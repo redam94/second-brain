@@ -18,6 +18,7 @@ depends_on:
 used_by:
   - "[[Logic of Regression Adjustment]]"
   - "[[Nuisance Parameter Bias Simulation]]"
+  - "[[Q - Covariate Adjustment for Precision vs Identification]]"
 aliases:
   - Table 2 fallacy
   - mutual adjustment fallacy

@@ -16,6 +16,7 @@ depends_on:
   - "[[Bernoulli Bandit and Thompson Sampling Algorithm]]"
 used_by:
   - "[[Regret Bounds for Thompson Sampling]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
 aliases:
   - Upper Confidence Bound
   - UCB

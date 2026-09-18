@@ -15,7 +15,9 @@ doc_type: paper
 depends_on:
   - "[[Q-learning]]"
   - "[[Optimal Regime via Dynamic Programming]]"
-used_by: []
+used_by:
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
 aliases:
   - A-learning
   - advantage learning

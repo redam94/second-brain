@@ -29,6 +29,9 @@ used_by:
   - "[[Discrete Choice Models]]"
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
   - "[[GMM Estimation and Instruments for Price Endogeneity]]"
+  - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[From ITT to Treatment-on-the-Treated in Ad Experiments]]"
+  - "[[Predicted Ghost Ads and Ghost Bids Mechanics]]"
 ---
 
 # Instrumental Variables

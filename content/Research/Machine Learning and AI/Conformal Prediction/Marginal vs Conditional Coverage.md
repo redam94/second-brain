@@ -19,6 +19,9 @@ used_by:
   - "[[Conformal Prediction Under Covariate Shift]]"
   - "[[Conformal Inference for Counterfactuals and ITEs]]"
   - "[[Conformal Prediction - Overview]]"
+  - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Q - Four Meanings of Calibration]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - Conditional Coverage
   - Marginal Coverage

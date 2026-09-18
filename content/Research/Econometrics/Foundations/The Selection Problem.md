@@ -23,6 +23,8 @@ used_by:
   - "[[Activity Bias in Advertising]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
+  - "[[User-Level Ad Experiments - Overview]]"
+  - "[[Intent-to-Treat, PSA and Ghost Ad Designs]]"
 ---
 
 # The Selection Problem

@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[Q-learning]]"
   - "[[A-learning and Robustness]]"
+  - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
 aliases:
   - Q-functions
   - value functions

@@ -20,6 +20,7 @@ used_by:
   - "[[Failure Modes and Steps Forward]]"
   - "[[What to Do About Convergence Problems]]"
   - "[[Model Building - Time-Series Decomposition for Birthdays]]"
+  - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
 aliases:
   - "VI"
   - "ADVI"

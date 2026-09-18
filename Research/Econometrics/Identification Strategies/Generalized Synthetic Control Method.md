@@ -23,6 +23,7 @@ depends_on:
 used_by:
   - "[[Synthetic Control Extensions]]"
   - "[[Bayesian Difference in Differences]]"
+  - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
 aliases:
   - "GSC method"
   - "generalized synthetic control"

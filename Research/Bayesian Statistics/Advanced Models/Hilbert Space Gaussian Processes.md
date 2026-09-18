@@ -23,6 +23,7 @@ depends_on:
 used_by:
   - "[[Spatial Models - BYM]]"
   - "[[State-Space Models and the Kalman Filter - Overview]]"
+  - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
 ---
 
 # Hilbert Space Gaussian Processes (HSGPs)

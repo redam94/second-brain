@@ -17,6 +17,8 @@ depends_on:
   - "[[Frequentist Causal Estimation]]"
 used_by:
   - "[[Sensitivity Analysis in Observational Studies]]"
+  - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
+  - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
 aliases:
   - Bayesian propensity score
   - propensity score Bayesian

@@ -19,6 +19,9 @@ depends_on:
   - "[[Neural Scaling Laws]]"
 used_by:
   - "[[Transformers and LLM Foundations - Overview]]"
+  - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
+  - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
 aliases:
   - In-Context Learning
   - Few-Shot Prompting
