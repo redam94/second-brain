@@ -7,6 +7,11 @@ tags:
   - topic/bayesian-statistics
   - topic/model-comparison
 date_asked: 2026-04-09
+date_ingested: 2026-04-09
+folder: Questions-and-Answers
+source: vault
+source_location: vault-synthesis
+doc_type: qa
 answered_from:
   - "[[Multiple Testing Corrections]]"
   - "[[Garden of Forking Paths]]"
@@ -18,6 +23,19 @@ answered_from:
   - "[[Iterative Model Improvement]]"
   - "[[Overfitting and Information Criteria]]"
   - "[[Model Comparison]]"
+depends_on:
+  - "[[Multiple Testing Corrections]]"
+  - "[[Garden of Forking Paths]]"
+  - "[[Researcher Degrees of Freedom]]"
+  - "[[Type S and Type M Errors]]"
+  - "[[Multiple Comparisons - Bayesian Perspective]]"
+  - "[[Partial Pooling as Multiple Comparisons Correction]]"
+  - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[Model Comparison]]"
+used_by:
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 related_questions:
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
 aliases:

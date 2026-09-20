@@ -7,6 +7,11 @@ tags:
   - topic/simulation-estimation
   - topic/econometrics
 date_asked: 2026-04-11
+date_ingested: 2026-04-11
+folder: Questions-and-Answers
+source: vault
+source_location: vault-synthesis
+doc_type: qa
 answered_from:
   - "[[Method of Simulated Moments]]"
   - "[[SMM Weighting Matrix and Inference]]"
@@ -15,6 +20,16 @@ answered_from:
   - "[[ABM Calibration Overview]]"
   - "[[Genetic Algorithm Calibration for ABM]]"
   - "[[GA Fitness Evaluation and the RAM]]"
+depends_on:
+  - "[[Method of Simulated Moments]]"
+  - "[[SMM Weighting Matrix and Inference]]"
+  - "[[SMM Python Implementation]]"
+  - "[[Practical Issues in Simulation Estimation]]"
+  - "[[ABM Calibration Overview]]"
+  - "[[Genetic Algorithm Calibration for ABM]]"
+  - "[[GA Fitness Evaluation and the RAM]]"
+used_by:
+  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 related_questions:
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 aliases:

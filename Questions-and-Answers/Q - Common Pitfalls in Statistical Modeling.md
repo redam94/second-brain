@@ -8,6 +8,11 @@ tags:
   - topic/model-comparison
   - topic/statistical-modeling
 date_asked: 2026-04-09
+date_ingested: 2026-04-09
+folder: Questions-and-Answers
+source: vault
+source_location: vault-synthesis
+doc_type: qa
 answered_from:
   - "[[Statistical Rethinking - The Golem of Prague]]"
   - "[[Spurious Association and Confounds]]"
@@ -25,6 +30,21 @@ answered_from:
   - "[[Choosing and Building Models]]"
   - "[[Multiple Testing Corrections]]"
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
+depends_on:
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Spurious Association and Confounds]]"
+  - "[[Omitted Variables Bias]]"
+  - "[[The Selection Problem]]"
+  - "[[Garden of Forking Paths]]"
+  - "[[Researcher Degrees of Freedom]]"
+  - "[[Type S and Type M Errors]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[Model Checking]]"
+  - "[[Partial Pooling as Multiple Comparisons Correction]]"
+used_by:
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
+  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 related_questions:
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
 aliases:

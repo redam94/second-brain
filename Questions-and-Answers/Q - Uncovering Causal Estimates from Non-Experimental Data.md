@@ -7,6 +7,11 @@ tags:
   - topic/identification
   - topic/observational-studies
 date_asked: 2026-04-10
+date_ingested: 2026-04-10
+folder: Questions-and-Answers
+source: vault
+source_location: vault-synthesis
+doc_type: qa
 answered_from:
   - "[[The Selection Problem]]"
   - "[[Conditional Independence Assumption]]"
@@ -21,6 +26,20 @@ answered_from:
   - "[[Sensitivity Analysis in Observational Studies]]"
   - "[[X-Learner]]"
   - "[[Bayesian Difference in Differences]]"
+depends_on:
+  - "[[The Selection Problem]]"
+  - "[[Conditional Independence Assumption]]"
+  - "[[Directed Acyclic Graphs]]"
+  - "[[Instrumental Variables]]"
+  - "[[Local Average Treatment Effects]]"
+  - "[[Differences-in-Differences]]"
+  - "[[Regression Discontinuity Designs]]"
+  - "[[Synthetic Control]]"
+  - "[[Frequentist Causal Estimation]]"
+  - "[[Sensitivity Analysis in Observational Studies]]"
+used_by:
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Q - Using SMM to Calibrate Agent Based Models]]"
 related_questions:
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
 aliases:

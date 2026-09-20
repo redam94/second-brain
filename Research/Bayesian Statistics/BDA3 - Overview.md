@@ -7,6 +7,17 @@ tags:
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: textbook
+source_location: "Full text, multiple chapters (BDA3 3rd ed.)"
+depends_on: []
+used_by:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Single-Parameter Models]]"
+  - "[[Multiparameter Models]]"
+  - "[[Hierarchical Models]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Statistical Rethinking - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"

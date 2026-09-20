@@ -7,6 +7,11 @@ tags:
   - topic/probability
   - topic/research-methodology
 date_asked: 2026-04-09
+date_ingested: 2026-04-09
+folder: Questions-and-Answers
+source: vault
+source_location: vault-synthesis
+doc_type: qa
 answered_from:
   - "[[Probability and Bayesian Inference]]"
   - "[[Asymptotics and Frequentist Connections]]"
@@ -20,6 +25,20 @@ answered_from:
   - "[[Forking Paths and Bayesian Approaches]]"
   - "[[Multiple Comparisons - Bayesian Perspective]]"
   - "[[Regression and the CEF]]"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[Single-Parameter Models]]"
+  - "[[Posterior Sampling and Summarization]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Hierarchical Models]]"
+  - "[[Overfitting and Information Criteria]]"
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Forking Paths and Bayesian Approaches]]"
+  - "[[Multiple Comparisons - Bayesian Perspective]]"
+used_by:
+  - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
 related_questions:
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
