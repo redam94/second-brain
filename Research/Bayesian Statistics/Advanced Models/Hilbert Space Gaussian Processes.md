@@ -11,7 +11,7 @@ aliases:
   - HSGP
   - Hilbert Space GP
 date_ingested: 2026-04-09
-date_updated: 2026-06-15
+date_updated: 2026-06-29
 folder: "Bayesian Statistics/Advanced Models"
 doc_type: concept
 source: "[[raw/Baby Births Modelling with HSGPs]]"

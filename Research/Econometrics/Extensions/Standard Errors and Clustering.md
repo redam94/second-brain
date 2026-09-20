@@ -14,6 +14,7 @@ tags:
   - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-07-13
 folder: "Econometrics/Extensions"
 doc_type: concept
 source_location: "MHE Ch. 8, pp. 221-243"
@@ -76,3 +77,6 @@ Robust standard errors can be biased in small samples — they tend to be **too 
 - [[Differences-in-Differences]]
 - [[Mostly Harmless Econometrics - Overview]]
 - [[Hierarchical Linear Models]] — Bayesian multilevel approach to clustered data and group-level variation
+- [[Simultaneous Inference via Multiplier Bootstrap]] — the multiplier (wild) bootstrap for uniform inference in staggered DiD; directly extends the cluster bootstrap to the group-time ATT setting
+- [[Identifying Assumptions for Staggered DiD]] — staggered treatment adoption is the canonical context where ignoring clustering in DiD is most harmful
+- [[Bayesian Difference in Differences]] — Bayesian approach to DiD; proper posterior inference automatically propagates group-level uncertainty that cluster-robust SEs address in the frequentist setting

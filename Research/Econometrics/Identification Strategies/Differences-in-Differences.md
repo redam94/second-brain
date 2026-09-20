@@ -100,3 +100,4 @@ Advantages:
 - [[Model Checking]] — posterior predictive checks for validating common trends assumptions
 - [[Data Collection Models]] — Bayesian ignorability framework: DiD is the fix when standard ignorability fails
 - [[Counterfactual Inference]] — explicit counterfactual framing of the treatment effect DiD estimates
+- [[Difference-in-Differences with Multiple Time Periods - Overview]] — the Callaway-Sant'Anna extension for staggered adoption with heterogeneous effects; the standard two-way FE estimator used here can be biased in that setting

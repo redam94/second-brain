@@ -11,6 +11,7 @@ tags:
   - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-07-27
 folder: "Bayesian Statistics/Advanced Models"
 aliases:
   - "Gaussian processes"
@@ -82,3 +83,8 @@ $$G \sim \text{DP}(\alpha, G_0)$$
 - [[Model Comparison]] — comparing parametric vs. nonparametric fits
 - [[Efficient MCMC]] — computation for these complex models
 - [[Hierarchical Linear Models]] — hierarchical regression as the parametric precursor before moving to GP/nonparametric models
+- [[Factor Analysis and PPCA]] — uses this overview as its theoretical foundation (linear Gaussian latent factor model)
+- [[Hilbert Space Gaussian Processes]] — scalable GP approximation for time-series settings (addresses the O(n³) bottleneck)
+- [[Spatial Models - BYM]] — applies Gaussian Markov Random Fields (a GP on a graph) for spatial smoothing
+- [[Monsters and Mixtures]] — covers finite mixture models (Ch. 22) in full detail; the Dirichlet Process extends these to infinite mixtures (Ch. 23)
+- [[Nonparametric Causal Inference]] — uses BART (a nonparametric Bayesian tree model) for causal ATE/ATT estimation

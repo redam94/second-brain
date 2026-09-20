@@ -8,14 +8,16 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 6.2, pp. 148–157"
 date_ingested: 2026-05-08
+date_updated: 2026-08-24
+folder: "Category Theory/Synthesis"
 doc_type: textbook
 depends_on:
-  - "[[Foundations/Functor Categories]]"
-  - "[[Limits and Colimits/General Limits]]"
-  - "[[Representables/Yoneda Lemma]]"
-  - "[[Representables/Yoneda Embedding and Consequences]]"
+  - "[[Functor Categories]]"
+  - "[[General Limits]]"
+  - "[[Yoneda Lemma]]"
+  - "[[Yoneda Embedding and Consequences]]"
 used_by:
-  - "[[Synthesis/Cartesian Closed Categories]]"
+  - "[[Cartesian Closed Categories]]"
 aliases:
   - pointwise limits
   - density theorem
@@ -93,11 +95,14 @@ This generalises the commutativity of products and intersections in set theory.
 ## Connections
 
 - The **cartesian closed** structure of $[\mathcal{A}^{\mathrm{op}}, \mathbf{Set}]$ ([[Cartesian Closed Categories]]) also relies on limits being pointwise.
-- The density theorem is used in the proof of the **General Adjoint Functor Theorem** ([[Adjoint Functor Theorems]]).
+- The density theorem is used in the proof of the **General Adjoint Functor Theorem** ([[Adjoint Functor Theorems]]): every object is a canonical colimit of representables, enabling the solution set condition.
+- The density theorem identifies the left Kan extension of the identity along Yoneda as a precursor to the full theory of Kan extensions (not yet covered in vault; see Dream/#48).
 
 ## See Also
 
-- [[Foundations/Functor Categories]] — Presheaf categories
-- [[Limits and Colimits/General Limits]] — Limits in general
-- [[Representables/Yoneda Embedding and Consequences]] — Yoneda embedding preserves limits
-- [[Synthesis/Cartesian Closed Categories]] — Presheaf categories are cartesian closed
+- [[Functor Categories]] — presheaf categories as the special case $[\mathcal{A}^{\mathrm{op}}, \mathbf{Set}]$
+- [[General Limits]] — limits in general categories
+- [[Yoneda Embedding and Consequences]] — Yoneda embedding preserves limits (Corollary 6.2.12)
+- [[Yoneda Lemma]] — the foundational result underlying the density theorem
+- [[Cartesian Closed Categories]] — presheaf categories are cartesian closed (uses pointwise limits)
+- [[Adjoint Functor Theorems]] — GAFT uses the density theorem in its proof

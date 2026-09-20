@@ -8,6 +8,7 @@ tags:
 source: "[[raw/Oh-Patton-2012-Factor-Copulas.pdf]]"
 source_location: "Sec. 3.3, pp. 14-18; Sec. 4, pp. 18-25; Tables 1-11"
 date_ingested: 2026-06-17
+date_updated: 2026-06-29
 folder: "Econometrics/Dependence Modeling"
 doc_type: paper
 depends_on:
@@ -81,4 +82,4 @@ This note collects the empirical results: the Monte Carlo validation, the equide
 ## See Also
 
 - [[SMM Copula Simulation and Application]] — companion-paper note on related copula simulation/application results.
-- [[../_Index|Econometrics]]
+- [[Econometrics/_Index|Econometrics]] — parent section index

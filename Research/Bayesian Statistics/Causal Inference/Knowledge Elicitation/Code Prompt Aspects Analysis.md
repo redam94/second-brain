@@ -9,6 +9,7 @@ tags:
 source: "[[raw/Liu et al. - 2025 - Eliciting and Improving the Causal Reasoning Abilities of Large Language Models with Conditional Sta.pdf]]"
 source_location: "§6, pp. 483–486"
 date_ingested: 2026-04-10
+date_updated: 2026-07-06
 folder: "Bayesian Statistics/Causal Inference/Knowledge Elicitation"
 doc_type: paper
 depends_on:
@@ -99,3 +100,4 @@ The results paint a consistent picture:
 - [[Code Prompts for Causal Structure]] — the prompt methodology analyzed here
 - [[Code vs Text Prompt Evaluation]] — overall evaluation results
 - [[Fine-tuning on Conditional Statements]] — using this finding for training
+- [[LLM Causal Reasoning Tasks]] — the broader taxonomy of causal reasoning tasks (abductive, counterfactual) that this intervention study evaluates on

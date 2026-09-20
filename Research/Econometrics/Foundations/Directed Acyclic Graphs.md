@@ -9,6 +9,7 @@ tags:
 source: "[[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]]"
 source_location: "Full article — Graham Harrison, Towards Data Science, 2023-04-06"
 date_ingested: 2026-04-11
+date_updated: 2026-08-03
 folder: "Econometrics/Foundations"
 doc_type: article
 depends_on:

@@ -22,8 +22,8 @@ depends_on:
   - "[[MCMC Basics]]"
   - "[[Efficient MCMC]]"
   - "[[Garden of Forking Data]]"
-  - "[[raw/StatRethink-Bayes.pdf]]"
 used_by: []
+date_updated: 2026-08-24
 ---
 
 # HMC and Stan in Practice
@@ -80,5 +80,7 @@ Key diagnostics:
 - [[MCMC Basics]] — BDA3's formal treatment of MCMC theory (Ch 11)
 - [[Efficient MCMC]] — BDA3's treatment of HMC and efficient computation (Ch 12)
 - [[Computational Troubleshooting]] — Bayesian Workflow paper's diagnostic approach
-- [[Approximation Methods]] — when you don't need full MCMC
+- [[Approximation Methods]] — when you don't need full MCMC (ADVI, Laplace)
+- [[SBC Case Studies]] — SBC reveals that HMC/NUTS passes while ADVI fails for even simple regressions
+- [[Simulation-Based Calibration - Overview]] — rank-statistic uniformity test for validating NUTS convergence
 - [[Statistical Rethinking - Overview]]

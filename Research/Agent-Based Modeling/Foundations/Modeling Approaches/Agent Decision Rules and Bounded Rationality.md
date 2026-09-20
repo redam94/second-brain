@@ -102,3 +102,6 @@ All three approaches incorporate bounded rationality:
 - [[Behavioral Primitives and Thresholds]] — the CUBES decision mechanism
 - [[Product Adoption and Diffusion Models]] — the Bonabeau adoption rule
 - [[ABM Methodology and Principles]] — the broader framework these rules operate within
+- [[Heterogeneity in Agent Models]] — agent heterogeneity determines how decision-rule parameters vary across individuals
+- [[Emergent Phenomena in ABM]] — bounded rationality at the individual level generates macro-level emergent outcomes
+- [[Discrete Choice Models]] — the econometric structural analogue of the logit decision rule; compare to the Karakaya utility + logit architecture

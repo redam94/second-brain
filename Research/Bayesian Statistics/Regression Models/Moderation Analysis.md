@@ -12,7 +12,10 @@ aliases:
   - Moderation Analysis
   - Interaction Effects Bayesian
 date_ingested: 2026-04-09
+date_updated: 2026-06-29
+folder: "Bayesian Statistics/Regression Models"
 doc_type: concept
+source: "[[raw/Bayesian moderation analysis]]"
 source_location: "raw/Bayesian moderation analysis"
 depends_on:
   - "[[Spurious Association and Confounds]]"
@@ -105,14 +108,16 @@ Including $x \cdot m$ alongside $x$ and $m$ introduces **multicollinearity** —
 
 Finding: $\beta_2 < 0$ (credibly), meaning training becomes less effective at building muscle mass in older individuals.
 
-## Connections
-
-- [[Spurious Association and Confounds]] — interaction effects and multivariate regression
-- [[Bayesian Linear Regression]] — priors as regularization for correlated predictors
-- [[Generalized Linear Models]] — moderation extends naturally to logistic/Poisson regression
-- [[Bayesian Non-parametric Causal Inference]] — non-parametric alternative when the interaction form is unknown
-
 ## Source
 
 - [[raw/Bayesian moderation analysis]] — PyMC example by Benjamin T. Vincent (2021–2023)
 - Hayes (2017): *Introduction to Mediation, Moderation, and Conditional Process Analysis*
+
+## See Also
+
+- [[Spurious Association and Confounds]] — fork/pipe/collider confounding; DAG contrast to moderation
+- [[Bayesian Linear Regression]] — linear regression foundation; priors as regularisation for correlated predictors
+- [[Generalized Linear Models]] — extending moderation to non-Gaussian outcomes (logistic, Poisson)
+- [[Nonparametric Causal Inference]] — non-parametric alternative when the interaction form is unknown
+- [[Hierarchical Models]] — when moderation coefficients themselves vary across groups (multilevel moderation)
+- [[Metalearners for CATE]] — heterogeneous treatment effects as an alternative framing of moderation by covariates

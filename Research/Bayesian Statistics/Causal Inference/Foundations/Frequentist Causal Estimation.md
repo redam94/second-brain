@@ -8,6 +8,7 @@ tags:
 source: "[[raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]]"
 source_location: "§2, pp. 3–5"
 date_ingested: 2026-04-10
+date_updated: 2026-08-03
 folder: "Bayesian Statistics/Causal Inference/Foundations"
 doc_type: paper
 depends_on:
@@ -16,7 +17,6 @@ depends_on:
 used_by:
   - "[[General Structure of Bayesian CI]]"
   - "[[Propensity Score in Bayesian CI]]"
-  - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
 aliases:
   - IPW estimator
   - doubly robust estimator
@@ -102,5 +102,8 @@ The propensity score — central to Frequentist approaches — has a nuanced rol
 
 ## See Also
 - [[Propensity Score in Bayesian CI]] — Bayesian strategies using the propensity score
-- [[Bayesian Propensity Scores and IPW]] — existing vault note on Bayesian IPW (Heiss blog)
+- [[Bayesian Inverse Probability Weighting]] — Bayesian IPW via the Liao-Zigler approach (Heiss blog)
+- [[Bayesian Propensity Score Weighting]] — Bayesian propensity score methods in the econometrics context
+- [[Metalearners for CATE]] — the DR-learner applies doubly-robust logic to conditional treatment effect estimation
 - [[Sensitivity Analysis in Observational Studies]] — what happens when unconfoundedness fails
+- [[Propensity Score Matching - Overview]] — the matching strategy that uses $\hat{e}(X)$ to form pairs rather than weighting

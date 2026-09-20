@@ -10,6 +10,7 @@ tags:
 source: "[[raw/Abadie 2021 - Using Synthetic Controls.pdf]]"
 source_location: "Abadie (2021), Section 8, pp. 415–422"
 date_ingested: 2026-04-10
+date_updated: 2026-08-03
 folder: "Econometrics/Identification Strategies"
 doc_type: paper
 depends_on:

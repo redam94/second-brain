@@ -98,3 +98,4 @@ In Bayesian analysis, the concept of "power" is less central — instead, one ca
 - [[Forking Paths and Bayesian Approaches]] — under-powered studies interact with analytic flexibility to inflate false discovery rates
 - [[Fitting and Validating Computation]] — simulation-based calibration as a Bayesian alternative to classical power analysis
 - [[Hierarchical Models]] — multilevel designs increase effective power via partial pooling; power analysis for hierarchical models differs from flat designs
+- [[Multiple Comparisons - Bayesian Perspective]] — Bayesian approach to false discovery control; connects to the sample-size question of how many tests one can afford to run

@@ -24,6 +24,8 @@ used_by:
   - "[[Power Analysis and Sample Size]]"
 ---
 
+# Fitting and Validating Computation
+
 > [!summary]
 > Sections 3--4 of Gelman et al. (2020) cover how to fit Bayesian models using MCMC (particularly HMC), validate that the computation is correct, and use simulated data to diagnose problems before touching real data. Key tools include convergence diagnostics, fake-data simulation, and simulation-based calibration (SBC).
 
@@ -86,3 +88,5 @@ Fitting models to data simulated under *different* assumptions (e.g., $t$-distri
 - [[Efficient MCMC]] — HMC, NUTS, and tuning strategies
 - [[Model Checking]] — posterior predictive checks after fitting
 - [[Approximation Methods]] — variational inference and Laplace approximation as fast alternatives
+- [[Simulation-Based Calibration - Overview]] — the full SBC procedure and its implementation details
+- [[Interpreting SBC Histograms]] — how to read rank-statistic histograms from SBC runs

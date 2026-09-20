@@ -9,6 +9,7 @@ tags:
 source: "[[raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]]"
 source_location: "§7a, pp. 14–16"
 date_ingested: 2026-04-10
+date_updated: 2026-08-10
 folder: "Bayesian Statistics/Causal Inference/Sensitivity and Complex Mechanisms"
 doc_type: paper
 depends_on:
@@ -76,7 +77,7 @@ Under monotonicity, only compliers, always-takers, and never-takers exist ($U_i 
 > $$\tau_{\text{co}} \equiv \mathbb{E}[Y_i(1) - Y_i(0) \mid U_i = \text{co}]$$
 > Under monotonicity, this equals:
 > $$\tau_{\text{co}} = \frac{\mathbb{E}[Y_i \mid Z_i = 1] - \mathbb{E}[Y_i \mid Z_i = 0]}{\mathbb{E}[W_i \mid Z_i = 1] - \mathbb{E}[W_i \mid Z_i = 0]}$$
-> which is exactly the probability limit of the two-stage least squares (2SLS) estimator.
+> which is exactly the probability limit of the [[Frequentist Causal Estimation|two-stage least squares (2SLS) estimator]].
 ^def-cace
 
 Also called the **Local Average Treatment Effect (LATE)** in the Frequentist literature (Imbens & Angrist 1994).
@@ -148,3 +149,5 @@ The Bayesian IV approach is closely related to the 2SLS estimator: the CACE equa
 ## See Also
 - [[Time-Varying Treatments and G-computation]] — sequential treatment extension
 - [[Sensitivity Analysis in Observational Studies]] — alternative when IV is unavailable
+- [[Frequentist Causal Estimation]] — 2SLS as the frequentist counterpart; doubly-robust estimators for IV settings
+- [[Metalearners for CATE]] — CACE is a LATE; CATE metalearners generalize beyond the complier subgroup

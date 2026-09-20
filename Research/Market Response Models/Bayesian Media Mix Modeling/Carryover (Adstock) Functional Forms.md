@@ -9,6 +9,7 @@ tags:
 source: "[[raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf]]"
 source_location: "Sec. 2.1, pp. 3-4 (Eqs. 1-3)"
 date_ingested: 2026-06-17
+date_updated: 2026-07-27
 folder: "Market Response Models/Bayesian Media Mix Modeling"
 doc_type: paper
 depends_on:
@@ -72,4 +73,5 @@ Some media build effect immediately (peak at exposure); others (e.g. brand TV) t
 - [[Shape (Saturation) Effects]]
 - [[Carryover Effects and Distributed Lags]]
 - [[Bayesian Media Mix Modeling - Overview]]
+- [[Design of Dynamic Response Models]] — covers the broader design space for dynamic marketing response (Koyck, PDL, ARMA transfer functions) of which adstock is a special case
 - [[_Index|Index: Bayesian Media Mix Modeling]]
