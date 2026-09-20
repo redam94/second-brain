@@ -1,0 +1,14 @@
+PDF DOWNLOAD BLOCKED (egress proxy policy)
+
+Paper: "Estimating High-Dimensional Directed Acyclic Graphs with the PC-Algorithm"
+Authors: Markus Kalisch, Peter Bühlmann
+Journal: Journal of Machine Learning Research, Vol. 8, pp. 613–636, 2007
+arXiv: https://arxiv.org/pdf/math/0510436
+JMLR: https://www.jmlr.org/papers/v8/kalisch07a.html
+
+Notes derived from this paper are in:
+  - PC Algorithm.md
+  - Markov Equivalence and CPDAGs.md  (partial — Kalisch & Bühlmann prove PC consistency)
+
+Original algorithm source: Spirtes, Glymour & Scheines (2000), Causation, Prediction, and Search,
+2nd Ed., MIT Press.  CMU preprint: https://www.stat.cmu.edu/~spirtes/pubs.html

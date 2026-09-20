@@ -1,0 +1,11 @@
+PDF DOWNLOAD BLOCKED (egress proxy policy)
+
+Paper: "Optimal Structure Identification With Greedy Search"
+Author: David Maxwell Chickering
+Journal: Journal of Machine Learning Research, Vol. 3, pp. 507–554, 2002
+Free PDF: https://www.jmlr.org/papers/volume3/chickering02b/chickering02b.pdf
+HTML: https://www.jmlr.org/papers/volume3/chickering02b/chickering02b.html
+
+Notes derived from this paper are in:
+  - Greedy Equivalence Search.md
+  - Markov Equivalence and CPDAGs.md  (partial — Chickering proves the Meek Conjecture here)

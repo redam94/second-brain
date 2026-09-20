@@ -15,6 +15,9 @@ depends_on:
 used_by:
   - "[[Smooth Characterization of Acyclicity]]"
   - "[[NOTEARS Algorithm]]"
+  - "[[PC Algorithm]]"
+  - "[[Greedy Equivalence Search]]"
+  - "[[Markov Equivalence and CPDAGs]]"
 aliases:
   - "Score-based DAG learning"
   - "Linear SEM structure learning"
