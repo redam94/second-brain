@@ -112,6 +112,8 @@ with pm.Model() as copula_model:
 
 - [[Dependence Measures for Copulas]] — Spearman's rank correlation, quantile dependence, tail dependence — pure copula functionals used in SMM estimation
 - [[SMM Estimator for Copulas]] — Simulation-based estimation for copulas with intractable likelihoods (Oh & Patton, 2011)
+- [[Factor Copulas - Overview]] — high-dimensional extension of copula modeling via a latent factor structure
+- [[Factor Copula Application - S&P 100 and Systemic Risk]] — empirical application using factor copulas on 100 S&P stocks, contrasting with the Gaussian copula here
 - [[Simulation-Based Estimation - Overview]] — Broader context: MSM, indirect inference, EMM
 - [[Discrete Choice Models]] — also uses LKJ Cholesky decomposition for correlation structure among alternatives
 - [[Market Share Models]] — copula dependence structure relevant to multivariate market share modeling

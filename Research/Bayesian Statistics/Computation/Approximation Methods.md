@@ -74,4 +74,8 @@ $$q^* = \arg\min_{q \in \mathcal{Q}} \; \text{KL}(q \| p(\theta \mid y))$$
 ## See Also
 
 - [[Efficient MCMC]] — the exact alternative
+- [[HMC and Stan in Practice]] — practical MCMC context in which approximations trade off against
+- [[Introduction to Bayesian Computation]] — broader Bayesian computation overview and method landscape
 - [[Fitting and Validating Computation]] — validating that approximations are adequate
+- [[Bayesian Workflow - Overview]] — when to choose approximations vs exact MCMC in a workflow
+- [[Hilbert Space Gaussian Processes]] — GP models where Laplace/EP approximations are commonly used

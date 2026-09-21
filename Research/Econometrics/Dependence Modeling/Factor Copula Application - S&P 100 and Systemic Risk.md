@@ -82,4 +82,6 @@ This note collects the empirical results: the Monte Carlo validation, the equide
 ## See Also
 
 - [[SMM Copula Simulation and Application]] — companion-paper note on related copula simulation/application results.
+- [[Bayesian Copula Estimation]] — Bayesian Gaussian copula via PyMC; the simpler bivariate alternative to the high-dimensional factor copula approach here
+- [[Dependence Measures for Copulas]] — rank correlations, tail dependence coefficients, and quantile dependence measures that this note reports empirically
 - [[Econometrics/_Index|Econometrics]] — parent section index

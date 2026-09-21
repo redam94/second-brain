@@ -132,3 +132,11 @@ From Chapter 10 (Implementation):
 - Pulsing strategies: [[Shape of the Marketing Response Function]]
 - VAR/ECM forecasting: [[Multivariate Persistence and Cointegration]]
 - Implementation context: [[Implementation of Market Response Models]]
+
+## See Also
+
+- [[ROAS, mROAS, and Optimal Media Mix]] — Bayesian MMM approach to budget optimization and marginal ROAS computation
+- [[Bayesian Estimation and Priors for MMM]] — Bayesian priors and posterior-based optimization for the same marketing-mix problem
+- [[MMM Model Selection and Application]] — model comparison in the Bayesian MMM context, complementing the static regression approach here
+- [[Activity Bias in Advertising]] — why observational market response estimates may not be causal, complicating optimization
+- [[Bayesian Workflow - Overview]] — iterative modeling workflow applicable to market response model building
