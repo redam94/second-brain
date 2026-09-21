@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/These Are Not the Effects You Are Looking For.md",
+                "file": "Clippings/Bayesian copula estimation Describing correlated joint distributions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "These Are Not the Effects You Are Looking For"
+              "title": "Bayesian copula estimation Describing correlated joint distributions"
             }
           }
         ]
@@ -179,10 +179,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4e026be74554a5cd",
+  "active": "374618560912beae",
   "lastOpenFiles": [
-    "Research/Econometrics/Extensions/Copula SMM/Dependence Measures for Copulas.md",
+    "Research/raw/These Are Not the Effects You Are Looking For.md",
+    "Research/Research Methodology/Table 2 Fallacy.md",
+    "Research/Research Methodology/Nuisance Parameter Bias Simulation.md",
+    "Research/Research Methodology/Logic of Regression Adjustment.md",
+    "Research/Econometrics/raw/PSM-Rosenbaum-Rubin-Stuart-Survey.md",
+    "Research/Econometrics/Identification Strategies/Propensity Score Matching - Overview.md",
+    "Research/Econometrics/Identification Strategies/Matching Algorithms and Caliper.md",
+    "Research/Econometrics/Identification Strategies/Covariate Balance and Matching Diagnostics.md",
     "Clippings/These Are Not the Effects You Are Looking For.md",
+    "Research/Econometrics/Extensions/Copula SMM/Dependence Measures for Copulas.md",
     "Research/Econometrics/Foundations/Directed Acyclic Graphs.md",
     "Research/Econometrics/Foundations/Research Questions in Econometrics.md",
     "Research/Econometrics/Foundations/The Experimental Ideal.md",
@@ -200,14 +208,6 @@
     "Research/Market Response Models/Bayesian Media Mix Modeling/_Index.md",
     "Research/Econometrics/Difference-in-Differences/Simultaneous Inference via Multiplier Bootstrap.md",
     "Research/Market Response Models/Bayesian Media Mix Modeling/MMM Model Selection and Application.md",
-    "Research/Econometrics/Dependence Modeling/Multi-Factor and Block Dependence Structures.md",
-    "Research/Market Response Models/Bayesian Media Mix Modeling/ROAS, mROAS, and Optimal Media Mix.md",
-    "Research/Econometrics/Difference-in-Differences/Aggregating Group-Time Effects.md",
-    "Research/Econometrics/Dependence Modeling/Tail Dependence in Factor Copulas.md",
-    "Research/Bayesian Statistics/Workflow/SBC Case Studies.md",
-    "Research/Market Response Models/Bayesian Media Mix Modeling/Bayesian Estimation and Priors for MMM.md",
-    "Research/Econometrics/Difference-in-Differences/Doubly-Robust Estimands for ATT(g,t).md",
-    "Research/Bayesian Statistics/Workflow/Interpreting SBC Histograms.md",
     "Research/Econometrics/Dependence Modeling",
     "Research/Market Response Models/Bayesian Media Mix Modeling",
     "Research/Econometrics/Difference-in-Differences",
