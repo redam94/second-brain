@@ -51,7 +51,7 @@ State-Space Models and the Kalman Filter - Overview
 
 ## Sources
 
-- [[raw/Sarkka 2013 - Bayesian Filtering and Smoothing.pdf]] — Särkkä S. 2013. *Bayesian Filtering and Smoothing.* Cambridge University Press. Chapters 3-4 (filtering & Kalman filter), 8 (smoothing & RTS), 12 (parameter estimation).
+- Sarkka 2013 - Bayesian Filtering and Smoothing — Särkkä S. 2013. *Bayesian Filtering and Smoothing.* Cambridge University Press. Chapters 3-4 (filtering & Kalman filter), 8 (smoothing & RTS), 12 (parameter estimation).
 
 ## Cross-Links to Existing Vault Notes
 

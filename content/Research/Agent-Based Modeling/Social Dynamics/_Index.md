@@ -25,6 +25,6 @@ date_updated: 2026-04-10
 - **Local vs global information**: All three sub-topics depend on agents using local rather than global information — local WOM, local network neighbors, local market observations
 
 ## Sources
-- [[raw/abm_consumer.pdf]] — WOM utility, opinion leaders, preference networks
-- [[raw/abm_human_behaviour.pdf]] — Imitation process, market share dynamics
-- [[raw/abm_word_of_mouth.pdf]] — Adoption model, topology experiments
+- abm_consumer — WOM utility, opinion leaders, preference networks
+- abm_human_behaviour — Imitation process, market share dynamics
+- abm_word_of_mouth — Adoption model, topology experiments

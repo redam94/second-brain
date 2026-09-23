@@ -190,7 +190,7 @@ For practitioners implementing simulation-based estimation:
 
 ## Sources
 
-- [[raw/tdb136.pdf]] — Liesenfeld & Breitung (1998), Section 6
-- [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), Sections 2.4, 3
+- tdb136 — Liesenfeld & Breitung (1998), Section 6
+- Oh_Patton_SMM_copulas_nov11 — Oh & Patton (2011), Sections 2.4, 3
 - Hendry, D.F. (1984), "Monte Carlo Experimentation in Econometrics," *Handbook of Econometrics* Vol. 2
 - Calzolari, G., F. Di Iorio, and G. Fiorentini (1998), "Control Variates for Variance Reduction in Indirect Inference," *The Econometrics Journal*, forthcoming

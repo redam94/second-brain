@@ -149,8 +149,8 @@ A protocol for a geo or user-level media test:
 | [[Type S and Type M Errors]] | Selection on significance exaggerates |
 | [[Varieties of Bayesian Theory]] · [[Asymptotics and Frequentist Connections]] | M-open conditioning; when the prior washes out |
 | [[Garden of Forking Paths]] · [[Forking Paths and Bayesian Approaches]] | Stopping rule as a data-contingent analysis choice |
-| [[raw/Johari 2015 - Always Valid Inference.pdf]] | Secs. 3-5 |
-| [[raw/Howard 2021 - Time-uniform Nonparametric Confidence Sequences.pdf]] | Secs. 1-4.2, 6 |
+| Johari 2015 - Always Valid Inference | Secs. 3-5 |
+| Howard 2021 - Time-uniform Nonparametric Confidence Sequences | Secs. 1-4.2, 6 |
 
 ## Related Concepts
 

@@ -5,7 +5,7 @@ tags:
   - topic/causal-inference
   - topic/difference-in-differences
   - method/pymc
-  - method/bayesian
+  - topic/bayesian-statistics
   - type/concept
   - doc/textbook
 aliases:
@@ -129,5 +129,5 @@ The Bayesian version gives a posterior over the employment effect, propagating u
 
 ## Source
 
-- [[raw/Difference in differences]] — PyMC example by Benjamin T. Vincent (2022); Card & Krueger minimum wage example
+- Difference in differences — PyMC example by Benjamin T. Vincent (2022); Card & Krueger minimum wage example
 - Recommended textbooks: *The Effect* (Huntington-Klein) and *Causal Inference: The Mixtape* (Cunningham)

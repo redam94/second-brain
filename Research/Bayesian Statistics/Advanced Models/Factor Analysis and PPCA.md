@@ -3,9 +3,9 @@ title: "Factor Analysis and Probabilistic PCA"
 source: "https://www.pymc.io/projects/examples/en/latest/case_studies/factor_analysis.html"
 tags:
   - source/ingested
-  - topic/bayesian
+  - topic/bayesian-statistics
   - topic/dimensionality-reduction
-  - method/factor-analysis
+  - topic/factor-analysis
   - method/ppca
   - type/concept
   - doc/tutorial

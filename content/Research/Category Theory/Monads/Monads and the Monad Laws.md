@@ -104,4 +104,4 @@ These are the canonical monads on $\mathsf{Set}$ (Examples 5.1.4–5.1.5); each 
 - [[Algebras for a Monad - Eilenberg-Moore and Kleisli]]
 - [[Beck's Monadicity Theorem]]
 - [[Natural Transformations]] · [[Functors]] · [[Units and Counits]]
-- Source: [[raw/Riehl - Category Theory in Context.pdf]]
+- Source: Riehl - Category Theory in Context

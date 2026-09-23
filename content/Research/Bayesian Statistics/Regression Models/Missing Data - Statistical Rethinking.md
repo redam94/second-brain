@@ -3,7 +3,7 @@ title: "Missing Data — Statistical Rethinking (Lecture 18)"
 tags:
   - source/ingested
   - topic/missing-data
-  - topic/imputation
+  - topic/multiple-imputation
   - method/pymc
   - source/statistical-rethinking
   - type/concept
@@ -95,5 +95,5 @@ Conditioning on observed homework ($R=0$) blocks the path through $R$ but induce
 
 ## Source
 
-- [[raw/Missing Data]] — PyMC port of Statistical Rethinking 2023, Lecture 18 (McElreath)
+- Missing Data — PyMC port of Statistical Rethinking 2023, Lecture 18 (McElreath)
 - Video: [Lecture 18 — Missing Data](https://youtu.be/Oeq6GChHOzc)

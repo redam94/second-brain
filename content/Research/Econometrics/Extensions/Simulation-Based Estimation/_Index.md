@@ -67,9 +67,9 @@ concept_count: 15
 
 ## Sources
 
-- [[raw/tdb136.pdf]] — Liesenfeld & Breitung (1998), "Simulation Based Methods of Moments in Empirical Finance"
-- [[raw/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — Evans (2024), Computational Methods for Economists, Ch. 19: full SMM tutorial with Python code, truncated normal example, Brock-Mirman exercise
-- [[raw/Duffie Singleton 1993 - Simulated Moments Estimation of Markov Models of Asset Prices]] — Duffie & Singleton (1993), Econometrica 61(4):929–952: foundational SME theory for time-series Markov asset-pricing models (geometric ergodicity, AUC condition, consistency Thms 1–3, asymptotic normality Thm 4)
+- tdb136 — Liesenfeld & Breitung (1998), "Simulation Based Methods of Moments in Empirical Finance"
+- 19 — Evans (2024), Computational Methods for Economists, Ch. 19: full SMM tutorial with Python code, truncated normal example, Brock-Mirman exercise
+- Duffie Singleton 1993 - Simulated Moments Estimation of Markov Models of Asset Prices — Duffie & Singleton (1993), Econometrica 61(4):929–952: foundational SME theory for time-series Markov asset-pricing models (geometric ergodicity, AUC condition, consistency Thms 1–3, asymptotic normality Thm 4)
 
 ## See Also
 

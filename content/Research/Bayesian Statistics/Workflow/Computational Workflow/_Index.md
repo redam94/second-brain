@@ -65,7 +65,7 @@ concept_count: 16
 - [[Statistical Modeling as Software Development]] — CONTAINS: version control, modularity, testing, reproducibility; Ch. 15
 
 ## Sources
-- [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf]] — Chapters 11–13, 15, pp. 193–260
+- Gelman Vehtari McElreath 2026 - Bayesian Workflow (book) — Chapters 11–13, 15, pp. 193–260
 
 ## See Also
 - [[Research/Bayesian Statistics/Workflow/Simulation-Based Calibration/_Index|Simulation-Based Calibration]] — validating that the computation is correct, not just converged

@@ -48,13 +48,13 @@ concept_count: 10
 
 ## Sources
 
-- [[raw/BDA3.pdf]] — Bayesian Data Analysis, 3rd Edition (Gelman et al.), Part V (pp. 469-573)
-- [[raw/StatRethink-Bayes.pdf]] — Statistical Rethinking (McElreath, 2015), Chapters 9-11
-- [[raw/Factor analysis]] — PyMC tutorial: factor analysis and PPCA with identifiability fixes
-- [[raw/Baby Births Modelling with HSGPs]] — PyMC HSGP tutorial: time series decomposition with Hilbert Space GPs
-- [[raw/Bayesian copula estimation Describing correlated joint distributions]] — PyMC copula tutorial: Gaussian copula estimation
-- [[raw/The Besag-York-Mollie Model for Spatial Data]] — PyMC BYM tutorial: areal spatial modelling on NYC traffic data
-- [[raw/Social Networks]] — PyMC port of Statistical Rethinking Lecture 15: dyadic network models
-- [[raw/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics]] — PyMC CFA/SEM case study
-- [[raw/Bayesian Non-parametric Causal Inference]] — PyMC BART tutorial: non-parametric causal inference
-- [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW method in R/brms
+- BDA3 — Bayesian Data Analysis, 3rd Edition (Gelman et al.), Part V (pp. 469-573)
+- StatRethink-Bayes — Statistical Rethinking (McElreath, 2015), Chapters 9-11
+- Factor analysis — PyMC tutorial: factor analysis and PPCA with identifiability fixes
+- Baby Births Modelling with HSGPs — PyMC HSGP tutorial: time series decomposition with Hilbert Space GPs
+- Bayesian copula estimation Describing correlated joint distributions — PyMC copula tutorial: Gaussian copula estimation
+- The Besag-York-Mollie Model for Spatial Data — PyMC BYM tutorial: areal spatial modelling on NYC traffic data
+- Social Networks — PyMC port of Statistical Rethinking Lecture 15: dyadic network models
+- Confirmatory Factor Analysis and Structural Equation Models in Psychometrics — PyMC CFA/SEM case study
+- Bayesian Non-parametric Causal Inference — PyMC BART tutorial: non-parametric causal inference
+- How to use Bayesian propensity scores and inverse probability weights — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW method in R/brms

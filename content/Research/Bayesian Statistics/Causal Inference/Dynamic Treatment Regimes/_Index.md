@@ -37,7 +37,7 @@ concept_count: 5
 - [[A-learning and Robustness]] — CONTAINS: Def. contrast/advantage function; g-estimation equations (Eqs. 30-31); double-robustness property; efficiency-vs-robustness trade-off and simulation findings (Figs. 1-6).
 
 ## Sources
-- [[raw/q- and a- learning.pdf]] — Schulte, Tsiatis, Laber & Davidian (2014), "Q- and A-learning Methods for Estimating Optimal Dynamic Treatment Regimes", *Statistical Science* 29(4):640–661. Demonstrated on the STAR\*D depression study (§7).
+- q- and a- learning — Schulte, Tsiatis, Laber & Davidian (2014), "Q- and A-learning Methods for Estimating Optimal Dynamic Treatment Regimes", *Statistical Science* 29(4):640–661. Demonstrated on the STAR\*D depression study (§7).
 
 ## See Also
 - [[Time-Varying Treatments and G-computation]] — related sequential-treatment identification

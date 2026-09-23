@@ -223,4 +223,4 @@ where $r_{mt}$ is the S&P 500 index return. This is a GJR-GARCH model with asymm
 
 ## Sources
 
-- [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), Sections 3-4
+- Oh_Patton_SMM_copulas_nov11 — Oh & Patton (2011), Sections 3-4

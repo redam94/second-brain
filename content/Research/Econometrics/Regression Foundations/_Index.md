@@ -31,7 +31,7 @@ concept_count: 3
 
 ## Sources
 
-- [[raw/Mostly Harmless Econometrics.pdf]] — Mostly Harmless Econometrics (Angrist & Pischke, 2008), Chapter 3
+- Mostly Harmless Econometrics — Mostly Harmless Econometrics (Angrist & Pischke, 2008), Chapter 3
 
 ## See Also
 

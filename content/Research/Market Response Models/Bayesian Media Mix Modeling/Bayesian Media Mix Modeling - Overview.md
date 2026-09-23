@@ -2,10 +2,10 @@
 title: Bayesian Media Mix Modeling - Overview
 tags:
   - source/ingested
-  - topic/market-response-models
+  - topic/market-response
   - type/overview
   - doc/paper
-  - method/mcmc
+  - topic/mcmc
 source: "[[raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf]]"
 source_location: "Secs. 1-2, pp. 1-6; Sec. 9, pp. 27-28"
 date_ingested: 2026-06-17

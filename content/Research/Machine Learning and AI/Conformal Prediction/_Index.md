@@ -60,7 +60,7 @@ parent: "[[Research/Machine Learning and AI/_Index|Machine Learning and AI]]"
 
 ## Sources
 
-- [[raw/Angelopoulos Bates 2021 - Gentle Introduction to Conformal Prediction.pdf]] — Angelopoulos, A. N. & Bates, S. (2021, v6 Dec. 2022), "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification," arXiv:2107.07511.
-- [[raw/Romano Patterson Candes 2019 - Conformalized Quantile Regression.pdf]] — Romano, Y., Patterson, E. & Candès, E. J. (2019), "Conformalized Quantile Regression," NeurIPS 2019, arXiv:1905.03222.
-- [[raw/Tibshirani et al 2019 - Conformal Prediction Under Covariate Shift.pdf]] — Tibshirani, R. J., Barber, R. F., Candès, E. J. & Ramdas, A. (2019), "Conformal Prediction Under Covariate Shift," NeurIPS 2019, arXiv:1904.06019.
-- [[raw/Lei Candes 2020 - Conformal Inference of Counterfactuals and ITEs.pdf]] — Lei, L. & Candès, E. J. (2021), "Conformal Inference of Counterfactuals and Individual Treatment Effects," *Journal of the Royal Statistical Society: Series B*, arXiv:2006.06138.
+- Angelopoulos Bates 2021 - Gentle Introduction to Conformal Prediction — Angelopoulos, A. N. & Bates, S. (2021, v6 Dec. 2022), "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification," arXiv:2107.07511.
+- Romano Patterson Candes 2019 - Conformalized Quantile Regression — Romano, Y., Patterson, E. & Candès, E. J. (2019), "Conformalized Quantile Regression," NeurIPS 2019, arXiv:1905.03222.
+- Tibshirani et al 2019 - Conformal Prediction Under Covariate Shift — Tibshirani, R. J., Barber, R. F., Candès, E. J. & Ramdas, A. (2019), "Conformal Prediction Under Covariate Shift," NeurIPS 2019, arXiv:1904.06019.
+- Lei Candes 2020 - Conformal Inference of Counterfactuals and ITEs — Lei, L. & Candès, E. J. (2021), "Conformal Inference of Counterfactuals and Individual Treatment Effects," *Journal of the Royal Statistical Society: Series B*, arXiv:2006.06138.

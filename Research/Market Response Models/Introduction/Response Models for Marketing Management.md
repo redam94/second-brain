@@ -6,7 +6,7 @@ aliases:
 tags:
   - type/concept
   - topic/market-response
-  - topic/marketing-management
+  - topic/marketing
   - source/hanssens-parsons-schultz-2001
   - source/ingested
 date_created: 2026-04-11

@@ -74,7 +74,7 @@ concept_count: 51
 
 ## Source
 
-- [[raw/Market Response Models Econometric and Time Series Analysis.pdf|Market Response Models Econometric and Time Series Analysis]] — Hanssens, Parsons & Schultz (2001), Kluwer Academic Publishers, 2nd Edition, 455 pp.
-- [[raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf]] — Jin, Wang, Sun, Chan & Koehler (Google, 2017), "Bayesian Methods for Media Mix Modeling with Carryover and Shape Effects": adstock, Hill saturation, MCMC estimation, ROAS/mROAS, optimal media mix, BIC selection, shampoo case study
-- [[raw/Vaver Koehler 2011 - Measuring Ad Effectiveness Using Geo Experiments.pdf]] — Vaver & Koehler (Google, 2011), "Measuring Ad Effectiveness Using Geo Experiments": geo-based regression (GBR) design, randomization, spend perturbation, power/sample-size formula
-- [[raw/Kerman Wang Vaver 2017 - Time-Based Regression Geo Experiments.pdf]] — Kerman, Wang & Vaver (Google, 2017), "Estimating Ad Effectiveness using Geo Experiments in a Time-Based Regression Framework": TBR estimator underlying Google's open-source Matched Markets tool
+- Market Response Models Econometric and Time Series Analysis — Hanssens, Parsons & Schultz (2001), Kluwer Academic Publishers, 2nd Edition, 455 pp.
+- Jin-2017-Bayesian-MMM-Carryover-Shape — Jin, Wang, Sun, Chan & Koehler (Google, 2017), "Bayesian Methods for Media Mix Modeling with Carryover and Shape Effects": adstock, Hill saturation, MCMC estimation, ROAS/mROAS, optimal media mix, BIC selection, shampoo case study
+- Vaver Koehler 2011 - Measuring Ad Effectiveness Using Geo Experiments — Vaver & Koehler (Google, 2011), "Measuring Ad Effectiveness Using Geo Experiments": geo-based regression (GBR) design, randomization, spend perturbation, power/sample-size formula
+- Kerman Wang Vaver 2017 - Time-Based Regression Geo Experiments — Kerman, Wang & Vaver (Google, 2017), "Estimating Ad Effectiveness using Geo Experiments in a Time-Based Regression Framework": TBR estimator underlying Google's open-source Matched Markets tool

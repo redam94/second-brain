@@ -81,4 +81,4 @@ Concrete monads to keep in mind (see [[Monads and the Monad Laws]] for details):
 - [[Algebras for a Monad - Eilenberg-Moore and Kleisli]]
 - [[Beck's Monadicity Theorem]]
 - [[Adjoint Functors]] · [[Units and Counits]] · [[Adjoint Functor Theorems]] · [[Cartesian Closed Categories]]
-- Source: [[raw/Riehl - Category Theory in Context.pdf]]
+- Source: Riehl - Category Theory in Context

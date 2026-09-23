@@ -5,7 +5,6 @@ tags:
   - topic/research-methodology
   - topic/online-experimentation
   - topic/variance-reduction
-  - topic/ab-testing
   - type/method
   - doc/paper
 source: "[[raw/Deng 2013 - CUPED Improving Sensitivity with Pre-Experiment Data.pdf]]"

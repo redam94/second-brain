@@ -34,7 +34,7 @@ concept_count: 4
 - [[Nicholson's Blowfly Application]] — CONTAINS: Gurney–Nisbet model (Eqs. 3-4) + stochastic discretization; blowfly summary statistics; full-vs-demographic $\chi^2$/AIC comparison (Fig. 3); stability-diagram analysis (Fig. 4) → intrinsic limit cycles.
 
 ## Sources
-- [[raw/Wood 2010 - Statistical Inference for Noisy Nonlinear Ecological Dynamic Systems]] — Wood, S.N. (2010), *Statistical inference for noisy nonlinear ecological dynamic systems*, **Nature** 466(7310):1102–1104. DOI:10.1038/nature09319.
+- Wood 2010 - Statistical Inference for Noisy Nonlinear Ecological Dynamic Systems — Wood, S.N. (2010), *Statistical inference for noisy nonlinear ecological dynamic systems*, **Nature** 466(7310):1102–1104. DOI:10.1038/nature09319.
 
 ## See Also
 - [[Approximate Bayesian Computation for ABMs]] — the closest likelihood-free relative (acceptance-threshold vs. MVN likelihood)

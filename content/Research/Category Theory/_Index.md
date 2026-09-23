@@ -45,4 +45,4 @@ date_updated: 2026-06-28
 - [[Basic Category Theory - Overview]] — Full book map with chapter-to-folder mapping and key theorem index
 
 ## Sources
-- [[raw/1612.09375v2.pdf]] — *Basic Category Theory*, Tom Leinster, Cambridge University Press 2014
+- 1612.09375v2 — *Basic Category Theory*, Tom Leinster, Cambridge University Press 2014

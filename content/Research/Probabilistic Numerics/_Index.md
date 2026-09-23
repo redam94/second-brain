@@ -46,7 +46,7 @@ Concepts that span multiple sub-topics:
 - **ODEs:** [[Solving ODEs as Inference]] → [[Classical ODE Solvers as Regression]] → [[ODE Filters and Smoothers]] → [[Theory of ODE Filters and Smoothers]] → [[Perturbative ODE Solvers]] → [[Further Topics in ODE Solvers]].
 
 ## Sources
-- [[raw/ProbabilisticNumerics.pdf]] — Philipp Hennig, Michael A. Osborne, Hans P. Kersting, *Probabilistic Numerics: Computation as Machine Learning*, **Cambridge University Press**, 2022. (Draft/pre-publication copy, 412 pp.)
+- ProbabilisticNumerics — Philipp Hennig, Michael A. Osborne, Hans P. Kersting, *Probabilistic Numerics: Computation as Machine Learning*, **Cambridge University Press**, 2022. (Draft/pre-publication copy, 412 pp.)
 
 ## See Also
 - [[Research/Bayesian Statistics/_Index|Bayesian Statistics]] — the inference, GP, and conjugate-prior foundations PN reuses

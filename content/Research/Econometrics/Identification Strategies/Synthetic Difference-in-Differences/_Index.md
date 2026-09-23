@@ -65,7 +65,7 @@ parent: "[[Research/Econometrics/Identification Strategies/_Index|Identification
 
 ## Sources
 
-- [[raw/Arkhangelsky 2021 - Synthetic Difference in Differences.pdf]] — Arkhangelsky, D., Athey, S., Hirshberg, D. A., Imbens, G. W. & Wager, S. (2021), "Synthetic Difference-in-Differences," *American Economic Review* 111(12). arXiv:1812.09970v4.
-- [[raw/Roth 2022 - Pretest with Caution.pdf]] — Roth, J. (2022), "Pretest with Caution: Event-Study Estimates after Testing for Parallel Trends," *AER: Insights* 4(3): 305–322.
-- [[raw/Rambachan Roth 2023 - A More Credible Approach to Parallel Trends.pdf]] — Rambachan, A. & Roth, J. (2023), "A More Credible Approach to Parallel Trends," *Review of Economic Studies* 90(5): 2555–2591.
-- [[raw/Roth 2023 - Whats Trending in Difference-in-Differences.pdf]] — Roth, J., Sant'Anna, P. H. C., Bilinski, A. & Poe, J. (2023), "What's Trending in Difference-in-Differences? A Synthesis of the Recent Econometrics Literature," *Journal of Econometrics*. arXiv:2201.01194.
+- Arkhangelsky 2021 - Synthetic Difference in Differences — Arkhangelsky, D., Athey, S., Hirshberg, D. A., Imbens, G. W. & Wager, S. (2021), "Synthetic Difference-in-Differences," *American Economic Review* 111(12). arXiv:1812.09970v4.
+- Roth 2022 - Pretest with Caution — Roth, J. (2022), "Pretest with Caution: Event-Study Estimates after Testing for Parallel Trends," *AER: Insights* 4(3): 305–322.
+- Rambachan Roth 2023 - A More Credible Approach to Parallel Trends — Rambachan, A. & Roth, J. (2023), "A More Credible Approach to Parallel Trends," *Review of Economic Studies* 90(5): 2555–2591.
+- Roth 2023 - Whats Trending in Difference-in-Differences — Roth, J., Sant'Anna, P. H. C., Bilinski, A. & Poe, J. (2023), "What's Trending in Difference-in-Differences? A Synthesis of the Recent Econometrics Literature," *Journal of Econometrics*. arXiv:2201.01194.

@@ -3,7 +3,7 @@ title: RLHF and Instruction Tuning
 tags:
   - source/ingested
   - topic/machine-learning
-  - topic/llm
+  - topic/large-language-models
   - topic/rlhf
   - topic/reinforcement-learning
   - type/method

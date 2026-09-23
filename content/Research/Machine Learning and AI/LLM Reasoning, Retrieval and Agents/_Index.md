@@ -4,7 +4,7 @@ tags:
   - type/index
   - source/ingested
   - topic/machine-learning
-  - topic/llm
+  - topic/large-language-models
   - topic/llm-agents
 date_ingested: 2026-09-18
 folder: "Machine Learning and AI/LLM Reasoning, Retrieval and Agents"
@@ -65,7 +65,7 @@ parent: "[[Research/Machine Learning and AI/_Index|Machine Learning and AI]]"
 
 ## Sources
 
-- [[raw/Wei 2022 - Chain-of-Thought Prompting.pdf]] — Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q. & Zhou, D. (2022), "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models," *NeurIPS 2022*. arXiv:2201.11903.
-- [[raw/Lewis 2020 - Retrieval-Augmented Generation.pdf]] — Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S. & Kiela, D. (2020), "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks," *NeurIPS 2020*. arXiv:2005.11401.
-- [[raw/Yao 2022 - ReAct Reasoning and Acting.pdf]] — Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K. & Cao, Y. (2023), "ReAct: Synergizing Reasoning and Acting in Language Models," *ICLR 2023*. arXiv:2210.03629.
-- [[raw/Ouyang 2022 - InstructGPT RLHF.pdf]] — Ouyang, L., Wu, J., Jiang, X., et al. (2022), "Training Language Models to Follow Instructions with Human Feedback," *NeurIPS 2022*. arXiv:2203.02155.
+- Wei 2022 - Chain-of-Thought Prompting — Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q. & Zhou, D. (2022), "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models," *NeurIPS 2022*. arXiv:2201.11903.
+- Lewis 2020 - Retrieval-Augmented Generation — Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S. & Kiela, D. (2020), "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks," *NeurIPS 2020*. arXiv:2005.11401.
+- Yao 2022 - ReAct Reasoning and Acting — Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K. & Cao, Y. (2023), "ReAct: Synergizing Reasoning and Acting in Language Models," *ICLR 2023*. arXiv:2210.03629.
+- Ouyang 2022 - InstructGPT RLHF — Ouyang, L., Wu, J., Jiang, X., et al. (2022), "Training Language Models to Follow Instructions with Human Feedback," *NeurIPS 2022*. arXiv:2203.02155.

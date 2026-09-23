@@ -258,9 +258,9 @@ Other approaches: Rosenbaum & Rubin (1983) hidden binary confounder model, copul
 | [[X-Learner]] | Cross-imputation CATE estimation for unbalanced designs |
 | [[Bayesian Difference in Differences]] | Bayesian DiD with full posterior over treatment effect |
 | [[Bayesian Structural Time-Series Model]] | BSTS / CausalImpact for time-series interventions |
-| [[raw/Mostly Harmless Econometrics.pdf]] | Angrist & Pischke (2008), Chs. 2–6 |
-| [[raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]] | Li, Ding & Mealli (2022) — Bayesian CI framework |
-| [[raw/Künzel et al. - 2017 - Metalearners for estimating heterogeneous treatment effects using machine learning.pdf]] | Künzel et al. (2019), PNAS — metalearners |
+| Mostly Harmless Econometrics | Angrist & Pischke (2008), Chs. 2–6 |
+| Li et al. - 2022 - Bayesian causal inference a critical review | Li, Ding & Mealli (2022) — Bayesian CI framework |
+| Künzel et al. - 2017 - Metalearners for estimating heterogeneous treatment effects using machine learning | Künzel et al. (2019), PNAS — metalearners |
 
 ## Related Concepts
 

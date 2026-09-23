@@ -143,5 +143,5 @@ For copula models where the likelihood is not known in closed form (e.g., factor
 
 ## Sources
 
-- [[raw/tdb136.pdf]] — Liesenfeld & Breitung (1998), "Simulation Based Methods of Moments in Empirical Finance"
-- [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), "Simulated Method of Moments Estimation for Copula-Based Multivariate Models"
+- tdb136 — Liesenfeld & Breitung (1998), "Simulation Based Methods of Moments in Empirical Finance"
+- Oh_Patton_SMM_copulas_nov11 — Oh & Patton (2011), "Simulated Method of Moments Estimation for Copula-Based Multivariate Models"

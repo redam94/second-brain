@@ -5,7 +5,7 @@ tags:
   - topic/market-response
   - topic/customer-lifetime-value
   - topic/hierarchical-models
-  - topic/bayesian-inference
+  - topic/bayesian-statistics
   - type/application
   - doc/paper
 source: "[[raw/Fader Hardie 2007 - Incorporating Time-Invariant Covariates into the Pareto-NBD and BG-NBD Models.pdf]]"

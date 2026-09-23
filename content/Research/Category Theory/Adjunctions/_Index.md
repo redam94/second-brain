@@ -40,7 +40,7 @@ concept_count: 3
 - [[Adjunctions via Initial Objects]] — CONTAINS: initial/terminal object definition, comma category definition, adjunction ↔ initial objects theorem, limits as terminal cones
 
 ## Sources
-- [[raw/1612.09375v2.pdf]] — *Basic Category Theory*, Ch. 2.1–2.3
+- 1612.09375v2 — *Basic Category Theory*, Ch. 2.1–2.3
 
 ## See Also
 - [[../Synthesis/Adjoints and Limits]] — Right adjoints preserve limits

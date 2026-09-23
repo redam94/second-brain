@@ -44,12 +44,12 @@ aliases:
 
 The most fundamental pitfall. The vault covers this from two complementary perspectives:
 
-**Confounding and spurious association** ([[Spurious Association and Confounds]], [[raw/StatRethink-Bayes.pdf|Statistical Rethinking Ch. 5]]): When a confound $C$ causes both predictor $X$ and outcome $Y$, bivariate regression shows a "significant" effect that disappears when $C$ is included. The classic example: Waffle House density correlates with divorce rate, but both are driven by being a Southern state.
+**Confounding and spurious association** ([[Spurious Association and Confounds]], Statistical Rethinking Ch. 5): When a confound $C$ causes both predictor $X$ and outcome $Y$, bivariate regression shows a "significant" effect that disappears when $C$ is included. The classic example: Waffle House density correlates with divorce rate, but both are driven by being a Southern state.
 
 > [!warning] Post-Treatment Bias ([[Spurious Association and Confounds]])
 > Controlling for variables *caused by* the treatment blocks the indirect causal path. If treatment $\to$ mediator $\to$ outcome, including the mediator makes the treatment appear ineffective. This connects to the econometric concept of [[Conditional Independence Assumption|bad controls]].
 
-**Selection bias** ([[The Selection Problem]], [[raw/Mostly Harmless Econometrics.pdf|MHE Ch. 2]]): Individuals who receive treatment differ systematically from those who don't. The observed difference decomposes as:
+**Selection bias** ([[The Selection Problem]], MHE Ch. 2): Individuals who receive treatment differ systematically from those who don't. The observed difference decomposes as:
 
 $$
 E[Y_i|D_i=1] - E[Y_i|D_i=0] = \underbrace{E[Y_{1i}-Y_{0i}|D_i=1]}_{\text{ATT}} + \underbrace{E[Y_{0i}|D_i=1] - E[Y_{0i}|D_i=0]}_{\text{selection bias}}
@@ -57,7 +57,7 @@ $$
 
 Selection bias can be so large it reverses the sign of the true effect -- hospitals appear harmful because sick people seek them out.
 
-**Omitted variables bias** ([[Omitted Variables Bias]], [[raw/Mostly Harmless Econometrics.pdf|MHE Ch. 3]]): The OVB formula $\rho^s = \rho^l + \gamma^l \cdot \delta_{As}$ shows that omitting a relevant variable biases the coefficient on included variables by the product of (a) the omitted variable's effect on the outcome and (b) its correlation with the included variable.
+**Omitted variables bias** ([[Omitted Variables Bias]], MHE Ch. 3): The OVB formula $\rho^s = \rho^l + \gamma^l \cdot \delta_{As}$ shows that omitting a relevant variable biases the coefficient on included variables by the product of (a) the omitted variable's effect on the outcome and (b) its correlation with the included variable.
 
 > [!example] Example: Activity Bias in Advertising ([[Activity Bias in Advertising]])
 > Lewis, Rao & Reiley (2011) showed that observational methods overestimate the causal effect of online ads by **160x** compared to the RCT. The mechanism: users exposed to ads are inherently more active online, and this activity bias cannot be controlled away no matter how many covariates are included. The [[Conditional Independence Assumption]] is fundamentally violated.
@@ -70,7 +70,7 @@ Selection bias can be so large it reverses the sign of the true effect -- hospit
 
 Covered in detail in [[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]].
 
-The [[Garden of Forking Paths|garden of forking paths]] ([[raw/p_hacking.pdf|Gelman & Loken 2013]]) describes how the many decision points in data analysis -- which variables to include, how to transform them, which subgroups to examine -- create an enormous space of possible analyses. Even without intent to deceive, the p-value from the analysis you chose does not account for the analyses you *would have* chosen with different data ([[Researcher Degrees of Freedom]]).
+The [[Garden of Forking Paths|garden of forking paths]] (Gelman & Loken 2013) describes how the many decision points in data analysis -- which variables to include, how to transform them, which subgroups to examine -- create an enormous space of possible analyses. Even without intent to deceive, the p-value from the analysis you chose does not account for the analyses you *would have* chosen with different data ([[Researcher Degrees of Freedom]]).
 
 With just 5 binary analytic choices, there are $2^5 = 32$ possible analysis paths. The probability that at least one yields $p < 0.05$ is far higher than 5%.
 
@@ -80,7 +80,7 @@ With just 5 binary analytic choices, there are $2^5 = 32$ possible analysis path
 
 ### 3. Overfitting and Underfitting
 
-[[Overfitting and Information Criteria]] ([[raw/StatRethink-Bayes.pdf|Statistical Rethinking Ch. 9]]) uses the metaphors of Scylla (overfitting) and Charybdis (underfitting):
+[[Overfitting and Information Criteria]] (Statistical Rethinking Ch. 9) uses the metaphors of Scylla (overfitting) and Charybdis (underfitting):
 
 - **$R^2$ always increases** with more parameters -- even random predictors improve in-sample fit
 - A 5th-degree polynomial achieves $R^2 = 0.99$ on 6 data points but predicts *negative* brain volumes between them
@@ -117,7 +117,7 @@ With just 5 binary analytic choices, there are $2^5 = 32$ possible analysis path
 
 ### 5. Using Statistical Tests as "Golems"
 
-[[Statistical Rethinking - The Golem of Prague]] ([[raw/StatRethink-Bayes.pdf|Statistical Rethinking Ch. 1]]) argues that statistical tests (t-tests, chi-squared, ANOVA) are pre-fabricated golems -- powerful within their domain but dangerous when misapplied. Three key insights:
+[[Statistical Rethinking - The Golem of Prague]] (Statistical Rethinking Ch. 1) argues that statistical tests (t-tests, chi-squared, ANOVA) are pre-fabricated golems -- powerful within their domain but dangerous when misapplied. Three key insights:
 
 1. **Hypotheses are not models** -- the mapping between hypotheses, process models, and statistical models is many-to-many. Rejecting a null tells you very little.
 2. **Falsification rarely works cleanly** -- observation error, continuous hypotheses, and the consensual nature of science all undermine naive falsification
@@ -130,7 +130,7 @@ With just 5 binary analytic choices, there are $2^5 = 32$ possible analysis path
 
 ### 6. Neglecting Model Checking
 
-[[Model Checking]] ([[raw/BDA3.pdf|BDA3 Ch. 6]]) and [[Evaluating Fitted Models]] ([[raw/BayesWorkflow.pdf|Bayesian Workflow Sec. 6]]) describe the iterative process of assessing model fit:
+[[Model Checking]] (BDA3 Ch. 6) and [[Evaluating Fitted Models]] (Bayesian Workflow Sec. 6) describe the iterative process of assessing model fit:
 
 **Posterior predictive checking:** simulate replicated data $y^{\text{rep}}$ from the fitted model and compare to observed data:
 
@@ -150,7 +150,7 @@ If $y^{\text{rep}}$ doesn't "look like" the observed data, the model is missing 
 
 ### 7. Computational Problems Masking Model Problems
 
-[[Computational Troubleshooting]] ([[raw/BayesWorkflow.pdf|Bayesian Workflow Sec. 5]]) introduces the **folk theorem of statistical computing**:
+[[Computational Troubleshooting]] (Bayesian Workflow Sec. 5) introduces the **folk theorem of statistical computing**:
 
 > When you have computational problems, often there is a problem with your model, not the algorithm.
 
@@ -169,7 +169,7 @@ Divergent transitions, poor mixing, and slow convergence often signal a nonsensi
 
 ### 8. Type S and Type M Errors from Underpowered Analyses
 
-[[Type S and Type M Errors]] ([[raw/multiple2f.pdf|Gelman et al. 2009, Sec. 3.1]]) reframes what goes wrong beyond the classical Type 1/Type 2 dichotomy:
+[[Type S and Type M Errors]] (Gelman et al. 2009, Sec. 3.1) reframes what goes wrong beyond the classical Type 1/Type 2 dichotomy:
 
 - **Type S (sign) error**: claiming an effect is positive when it's actually negative
 - **Type M (magnitude) error**: the exaggeration ratio $|\hat{\tau}|/|\tau|$ is far from 1
@@ -212,13 +212,13 @@ A checklist for avoiding these pitfalls:
 | [[Choosing and Building Models]] | Modular model construction, prior predictive checks |
 | [[Computational Troubleshooting]] | Folk theorem, debugging strategies |
 | [[Missing Data - Statistical Rethinking]] | Missingness mechanisms, Bayesian imputation |
-| [[raw/StatRethink-Bayes.pdf]] | Statistical Rethinking (McElreath) |
-| [[raw/BDA3.pdf]] | Bayesian Data Analysis 3rd ed. (Gelman et al.) |
-| [[raw/BayesWorkflow.pdf]] | Bayesian Workflow (Gelman et al. 2020) |
-| [[raw/Mostly Harmless Econometrics.pdf]] | Mostly Harmless Econometrics (Angrist & Pischke) |
-| [[raw/p_hacking.pdf]] | Garden of Forking Paths (Gelman & Loken 2013) |
-| [[raw/multiple2f.pdf]] | Multiple Comparisons (Gelman, Hill & Yajima 2009) |
-| [[raw/ssrn-2080235.pdf]] | Activity Bias (Lewis, Rao & Reiley 2011) |
+| StatRethink-Bayes | Statistical Rethinking (McElreath) |
+| BDA3 | Bayesian Data Analysis 3rd ed. (Gelman et al.) |
+| BayesWorkflow | Bayesian Workflow (Gelman et al. 2020) |
+| Mostly Harmless Econometrics | Mostly Harmless Econometrics (Angrist & Pischke) |
+| p_hacking | Garden of Forking Paths (Gelman & Loken 2013) |
+| multiple2f | Multiple Comparisons (Gelman, Hill & Yajima 2009) |
+| ssrn-2080235 | Activity Bias (Lewis, Rao & Reiley 2011) |
 
 ## Related Concepts
 

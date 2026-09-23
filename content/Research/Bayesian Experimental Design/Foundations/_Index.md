@@ -34,10 +34,10 @@ concept_count: 4
 - [[Sequential and Adaptive BED]] — CONTAINS: sequential model (Eq. 5); incremental EIG (Eq. 4); total-EIG additivity (Eq. 17); the two flaws of traditional BAD; estimator-compatibility caveat; adaptive psychology / CES examples.
 
 ## Sources
-- [[../raw/Lindley 1956 - On a Measure of the Information Provided by an Experiment.pdf]] — Lindley, D.V. (1956), *On a Measure of the Information Provided by an Experiment*, **Ann. Math. Stat.** 27(4):986–1005. The founding paper.
-- [[../raw/Rainforth et al 2023 - Modern Bayesian Experimental Design.pdf]] — §2 (objectives, BAD), §3.1–3.2 (nested estimation, debiasing)
-- [[../raw/Foster et al 2019 - Variational Bayesian Optimal Experimental Design.pdf]] — §2 (background, NMC, sequential model)
-- [[../raw/Foster et al 2020 - Unified Stochastic Gradient BOED.pdf]] — §2 (background), §3.5 (iterated design)
+- Lindley 1956 - On a Measure of the Information Provided by an Experiment — Lindley, D.V. (1956), *On a Measure of the Information Provided by an Experiment*, **Ann. Math. Stat.** 27(4):986–1005. The founding paper.
+- Rainforth et al 2023 - Modern Bayesian Experimental Design — §2 (objectives, BAD), §3.1–3.2 (nested estimation, debiasing)
+- Foster et al 2019 - Variational Bayesian Optimal Experimental Design — §2 (background, NMC, sequential model)
+- Foster et al 2020 - Unified Stochastic Gradient BOED — §2 (background), §3.5 (iterated design)
 
 ## See Also
 - [[Research/Bayesian Experimental Design/Variational EIG Estimators/_Index|Variational EIG Estimators]] — the fast estimators that beat NMC

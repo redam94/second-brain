@@ -124,8 +124,8 @@ so ICL is approximate **posterior predictive** inference with pretraining supply
 | [[Hierarchical Models]], [[Empirical Bayes - Overview]] | Population-then-sharpen structure; explicit prior as the contrast case |
 | [[Chain-of-Thought Prompting]] | Exemplar-order sensitivity, ablations, emergence with scale |
 | [[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]] | SBC, its blind spots, C2ST, invariance checks, misspecification |
-| [[raw/Brown 2020 - Language Models are Few-Shot Learners.pdf]] | Sec. 1 (Fig. 1.1, footnote 1), Sec. 5 |
-| [[raw/Papamakarios Murray 2016 - Fast Epsilon-Free Inference of Simulation Models.pdf]] | Sec. 2, Proposition 1 |
+| Brown 2020 - Language Models are Few-Shot Learners | Sec. 1 (Fig. 1.1, footnote 1), Sec. 5 |
+| Papamakarios Murray 2016 - Fast Epsilon-Free Inference of Simulation Models | Sec. 2, Proposition 1 |
 
 ## Related Concepts
 

@@ -4,9 +4,8 @@ source: "https://www.pymc.io/projects/examples/en/latest/generalized_linear_mode
 tags:
   - source/ingested
   - topic/econometrics
-  - topic/bayesian
-  - method/discrete-choice
-  - method/random-utility
+  - topic/bayesian-statistics
+  - topic/discrete-choice
   - type/concept
   - doc/textbook
 date_ingested: 2026-04-09

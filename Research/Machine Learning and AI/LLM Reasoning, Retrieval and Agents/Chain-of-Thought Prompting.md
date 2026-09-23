@@ -3,7 +3,7 @@ title: Chain-of-Thought Prompting
 tags:
   - source/ingested
   - topic/machine-learning
-  - topic/llm
+  - topic/large-language-models
   - topic/prompting
   - type/method
   - doc/paper

@@ -4,7 +4,7 @@ tags:
   - source/ingested
   - topic/econometrics
   - topic/causal-inference
-  - topic/experiments
+  - topic/experimental-design
   - type/concept
   - doc/textbook
 source: "[[raw/Mostly Harmless Econometrics.pdf]]"

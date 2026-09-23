@@ -62,10 +62,10 @@ parent: "[[Research/Bayesian Statistics/Computation/_Index|Computation]]"
 
 ## Sources
 
-- [[raw/Cranmer Brehmer Louppe 2020 - The Frontier of Simulation-Based Inference.pdf]] - Cranmer, K., Brehmer, J. & Louppe, G. (2020), "The frontier of simulation-based inference," *PNAS*. arXiv:1911.01429.
-- [[raw/Papamakarios Murray 2016 - Fast Epsilon-Free Inference of Simulation Models.pdf]] - Papamakarios, G. & Murray, I. (2016), "Fast $\epsilon$-free Inference of Simulation Models with Bayesian Conditional Density Estimation," *NeurIPS*. arXiv:1605.06376.
-- [[raw/Papamakarios Sterratt Murray 2019 - Sequential Neural Likelihood.pdf]] - Papamakarios, G., Sterratt, D. C. & Murray, I. (2019), "Sequential Neural Likelihood: Fast Likelihood-free Inference with Autoregressive Flows," *AISTATS*. arXiv:1805.07226.
-- [[raw/Hermans Begy Louppe 2020 - Likelihood-free MCMC with Amortized Approximate Ratio Estimators.pdf]] - Hermans, J., Begy, V. & Louppe, G. (2020), "Likelihood-free MCMC with Amortized Approximate Ratio Estimators," *ICML*. arXiv:1903.04057.
-- [[raw/Lueckmann 2021 - Benchmarking Simulation-Based Inference.pdf]] - Lueckmann, J.-M., Boelts, J., Greenberg, D. S., Goncalves, P. J. & Macke, J. H. (2021), "Benchmarking Simulation-Based Inference," *AISTATS*. arXiv:2101.04653.
-- [[raw/Papamakarios 2019 - Normalizing Flows for Probabilistic Modeling and Inference.pdf]] - Papamakarios, G., Nalisnick, E., Rezende, D. J., Mohamed, S. & Lakshminarayanan, B. (2021), "Normalizing Flows for Probabilistic Modeling and Inference," *JMLR*. arXiv:1912.02762.
-- [[raw/Dyer 2022 - Black-Box Bayesian Inference for Economic Agent-Based Models.pdf]] - Dyer, J., Cannon, P., Farmer, J. D. & Schmon, S. (2022), "Black-box Bayesian inference for economic agent-based models." arXiv:2202.00625.
+- Cranmer Brehmer Louppe 2020 - The Frontier of Simulation-Based Inference - Cranmer, K., Brehmer, J. & Louppe, G. (2020), "The frontier of simulation-based inference," *PNAS*. arXiv:1911.01429.
+- Papamakarios Murray 2016 - Fast Epsilon-Free Inference of Simulation Models - Papamakarios, G. & Murray, I. (2016), "Fast $\epsilon$-free Inference of Simulation Models with Bayesian Conditional Density Estimation," *NeurIPS*. arXiv:1605.06376.
+- Papamakarios Sterratt Murray 2019 - Sequential Neural Likelihood - Papamakarios, G., Sterratt, D. C. & Murray, I. (2019), "Sequential Neural Likelihood: Fast Likelihood-free Inference with Autoregressive Flows," *AISTATS*. arXiv:1805.07226.
+- Hermans Begy Louppe 2020 - Likelihood-free MCMC with Amortized Approximate Ratio Estimators - Hermans, J., Begy, V. & Louppe, G. (2020), "Likelihood-free MCMC with Amortized Approximate Ratio Estimators," *ICML*. arXiv:1903.04057.
+- Lueckmann 2021 - Benchmarking Simulation-Based Inference - Lueckmann, J.-M., Boelts, J., Greenberg, D. S., Goncalves, P. J. & Macke, J. H. (2021), "Benchmarking Simulation-Based Inference," *AISTATS*. arXiv:2101.04653.
+- Papamakarios 2019 - Normalizing Flows for Probabilistic Modeling and Inference - Papamakarios, G., Nalisnick, E., Rezende, D. J., Mohamed, S. & Lakshminarayanan, B. (2021), "Normalizing Flows for Probabilistic Modeling and Inference," *JMLR*. arXiv:1912.02762.
+- Dyer 2022 - Black-Box Bayesian Inference for Economic Agent-Based Models - Dyer, J., Cannon, P., Farmer, J. D. & Schmon, S. (2022), "Black-box Bayesian inference for economic agent-based models." arXiv:2202.00625.

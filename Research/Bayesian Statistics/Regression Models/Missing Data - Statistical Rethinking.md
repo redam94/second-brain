@@ -3,7 +3,7 @@ title: "Missing Data — Statistical Rethinking (Lecture 18)"
 tags:
   - source/ingested
   - topic/missing-data
-  - topic/imputation
+  - topic/multiple-imputation
   - method/pymc
   - source/statistical-rethinking
   - type/concept

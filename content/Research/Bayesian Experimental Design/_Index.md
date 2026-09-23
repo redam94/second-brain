@@ -42,10 +42,10 @@ Concepts that span multiple sub-topics:
 [[Lindley's Information Measure]] → [[Expected Information Gain]] → [[Nested Estimation and Nested Monte Carlo]] → [[Variational BOED - Overview]] → {[[Variational Posterior Estimator (Barber-Agakov)]], [[Variational Marginal Estimator]], [[Variational NMC Estimator]], [[Implicit Likelihood Estimator]]} → [[Convergence Rates and Estimator Selection]] → [[Unified SGD BOED - Overview]] → [[Adaptive Contrastive Estimation (ACE)]] → [[Prior Contrastive Estimation (PCE)]] / [[Likelihood-Free ACE and Gradient Estimation]] → [[High-Dimensional Design Applications]]; and (review thread) [[Information-Theoretic Design Objectives]] → [[The Computational Revolution in EIG Estimation]] → [[Optimization and Gradient Schemes for BED]] → [[From Designs to Policies (Deep Adaptive Design)]] → [[Open Challenges and Future Directions]].
 
 ## Sources
-- [[raw/Lindley 1956 - On a Measure of the Information Provided by an Experiment.pdf]] — Lindley, D.V., *On a Measure of the Information Provided by an Experiment*, **Ann. Math. Stat.** 27(4):986–1005, 1956. The founding paper.
-- [[raw/Foster et al 2019 - Variational Bayesian Optimal Experimental Design.pdf]] — Foster et al., *Variational Bayesian Optimal Experimental Design*, NeurIPS 2019. arXiv:1903.05480.
-- [[raw/Foster et al 2020 - Unified Stochastic Gradient BOED.pdf]] — Foster et al., *A Unified Stochastic Gradient Approach to Designing Bayesian-Optimal Experiments*, AISTATS 2020. arXiv:1911.00294.
-- [[raw/Rainforth et al 2023 - Modern Bayesian Experimental Design.pdf]] — Rainforth, Foster, Ivanova, Bickford Smith, *Modern Bayesian Experimental Design*, Statistical Science 2023. arXiv:2302.14545.
+- Lindley 1956 - On a Measure of the Information Provided by an Experiment — Lindley, D.V., *On a Measure of the Information Provided by an Experiment*, **Ann. Math. Stat.** 27(4):986–1005, 1956. The founding paper.
+- Foster et al 2019 - Variational Bayesian Optimal Experimental Design — Foster et al., *Variational Bayesian Optimal Experimental Design*, NeurIPS 2019. arXiv:1903.05480.
+- Foster et al 2020 - Unified Stochastic Gradient BOED — Foster et al., *A Unified Stochastic Gradient Approach to Designing Bayesian-Optimal Experiments*, AISTATS 2020. arXiv:1911.00294.
+- Rainforth et al 2023 - Modern Bayesian Experimental Design — Rainforth, Foster, Ivanova, Bickford Smith, *Modern Bayesian Experimental Design*, Statistical Science 2023. arXiv:2302.14545.
 
 ## See Also
 - [[Research/Bayesian Statistics/_Index|Bayesian Statistics]] — inference, computation, and decision analysis that BED builds on

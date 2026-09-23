@@ -99,4 +99,4 @@ Contrast with the observational 401(k) example (§6.2): the interactive-model AT
 - [[GMM Estimation and Instruments for Price Endogeneity]] and [[Plausible GMM - Overview]] — moment-condition estimation; DML and GRF are moment-condition methods with ML nuisances / local weights.
 - [[Synthetic Control Extensions]] — ML regularization applied to panel counterfactuals.
 - [[Sensitivity Analysis in Observational Studies]] — none of these methods protects against unobserved confounding.
-- Sources: [[raw/Chernozhukov 2018 - Double Debiased Machine Learning.pdf]], [[raw/Wager Athey 2018 - Heterogeneous Treatment Effects using Random Forests.pdf]], [[raw/Athey Tibshirani Wager 2019 - Generalized Random Forests.pdf]], [[raw/Nie Wager 2021 - Quasi-Oracle Estimation of Heterogeneous Treatment Effects.pdf]].
+- Sources: Chernozhukov 2018 - Double Debiased Machine Learning, Wager Athey 2018 - Heterogeneous Treatment Effects using Random Forests, Athey Tibshirani Wager 2019 - Generalized Random Forests, Nie Wager 2021 - Quasi-Oracle Estimation of Heterogeneous Treatment Effects.

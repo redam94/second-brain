@@ -42,7 +42,7 @@ Part II of *Probabilistic Numerics: Computation as Machine Learning* (Hennig, Os
 - [[Lessons from Integration]] — CONTAINS: the four Ch. 13 lessons; PN is no-worse and can be fast; Monte Carlo as MAP under a white-noise prior (Thm 12.1); dimension-independence as "equally bad"; quasi-Monte Carlo / Riemann sums; four arguments against a PRNG; "which sequence is random?"; adversarial caveat; software and further reading.
 
 ## Sources
-- [[raw/ProbabilisticNumerics.pdf]] — Part II "Integration" (Ch. 8-13, book pp. 63-121). Philipp Hennig, Michael A. Osborne, Hans P. Kersting, *Probabilistic Numerics: Computation as Machine Learning*, Cambridge University Press, 2022. Exercise solutions: book pp. 357-368 (Exercise 9.3, pathological MC variance).
+- ProbabilisticNumerics — Part II "Integration" (Ch. 8-13, book pp. 63-121). Philipp Hennig, Michael A. Osborne, Hans P. Kersting, *Probabilistic Numerics: Computation as Machine Learning*, Cambridge University Press, 2022. Exercise solutions: book pp. 357-368 (Exercise 9.3, pathological MC variance).
 
 ## See Also
 - [[../Foundations/_Index|Foundations]] — GP regression, Gaussian algebra, Gauss-Markov/SDEs, filtering/smoothing, hierarchical inference (prerequisites).

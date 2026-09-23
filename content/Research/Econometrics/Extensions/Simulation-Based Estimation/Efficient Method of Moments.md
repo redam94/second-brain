@@ -150,7 +150,7 @@ Andersen, Chung, and Sørensen (1998) conduct a comprehensive Monte Carlo study 
 
 ## Sources
 
-- [[raw/tdb136.pdf]] — Liesenfeld & Breitung (1998), Section 5
+- tdb136 — Liesenfeld & Breitung (1998), Section 5
 - Gallant, A.R. and D.W. Nychka (1987), "Semi-Nonparametric Maximum Likelihood Estimation," *Econometrica* 55, 363-390
 - Gallant, A.R. and G.E. Tauchen (1996a), "Which Moments to Match?," *Econometric Theory* 12, 657-681
 - Gallant, A.R. and J.R. Long (1997), "Estimating Stochastic Differential Equations Efficiently by Minimum Chi-Squared," *Biometrica* 84, 125-141

@@ -61,7 +61,7 @@ parent: "[[Research/Machine Learning and AI/_Index|Machine Learning and AI]]"
 
 ## Sources
 
-- [[raw/Gneiting Raftery 2007 - Strictly Proper Scoring Rules Prediction and Estimation.pdf]] — Gneiting, T. & Raftery, A. E. (2007), "Strictly Proper Scoring Rules, Prediction, and Estimation," *Journal of the American Statistical Association* 102(477), 359-378.
-- [[raw/Salinas 2017 - DeepAR Probabilistic Forecasting with Autoregressive Recurrent Networks.pdf]] — Salinas, D., Flunkert, V. & Gasthaus, J. (2017), "DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks," arXiv:1704.04110 (v3, 2019; later *International Journal of Forecasting* 2020 with Januschowski).
-- [[raw/Ansari 2024 - Chronos Learning the Language of Time Series.pdf]] — Ansari, A. F. et al. (2024), "Chronos: Learning the Language of Time Series," *Transactions on Machine Learning Research*, arXiv:2403.07815.
-- [[raw/Wickramasuriya 2019 - Optimal Forecast Reconciliation MinT.pdf]] — Wickramasuriya, S. L., Athanasopoulos, G. & Hyndman, R. J. (2019), "Optimal Forecast Reconciliation for Hierarchical and Grouped Time Series Through Trace Minimization," *JASA* 114(526), 804-819 (Monash working paper 22/17 version).
+- Gneiting Raftery 2007 - Strictly Proper Scoring Rules Prediction and Estimation — Gneiting, T. & Raftery, A. E. (2007), "Strictly Proper Scoring Rules, Prediction, and Estimation," *Journal of the American Statistical Association* 102(477), 359-378.
+- Salinas 2017 - DeepAR Probabilistic Forecasting with Autoregressive Recurrent Networks — Salinas, D., Flunkert, V. & Gasthaus, J. (2017), "DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks," arXiv:1704.04110 (v3, 2019; later *International Journal of Forecasting* 2020 with Januschowski).
+- Ansari 2024 - Chronos Learning the Language of Time Series — Ansari, A. F. et al. (2024), "Chronos: Learning the Language of Time Series," *Transactions on Machine Learning Research*, arXiv:2403.07815.
+- Wickramasuriya 2019 - Optimal Forecast Reconciliation MinT — Wickramasuriya, S. L., Athanasopoulos, G. & Hyndman, R. J. (2019), "Optimal Forecast Reconciliation for Hierarchical and Grouped Time Series Through Trace Minimization," *JASA* 114(526), 804-819 (Monash working paper 22/17 version).

@@ -52,7 +52,7 @@ Potential Outcomes Framework + Causal Estimands (existing)
 
 ## Sources
 
-- [[raw/Künzel et al. - 2017 - Metalearners for estimating heterogeneous treatment effects using machine learning.pdf]] — Künzel SR, Sekhon JS, Bickel PJ, Yu B. 2019. *PNAS* 116(10): 4156–4165.
+- Künzel et al. - 2017 - Metalearners for estimating heterogeneous treatment effects using machine learning — Künzel SR, Sekhon JS, Bickel PJ, Yu B. 2019. *PNAS* 116(10): 4156–4165.
 
 ## Cross-Links to Existing Vault Notes
 

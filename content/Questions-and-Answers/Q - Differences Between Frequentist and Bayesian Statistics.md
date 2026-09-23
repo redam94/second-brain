@@ -37,7 +37,7 @@ aliases:
 
 ### 1. What Is Probability?
 
-This is the foundational divide ([[Probability and Bayesian Inference]], [[raw/BDA3.pdf|BDA3 Ch. 1]]):
+This is the foundational divide ([[Probability and Bayesian Inference]], BDA3 Ch. 1):
 
 | Framework | Probability means... | Parameters are... |
 |-----------|---------------------|-------------------|
@@ -54,7 +54,7 @@ In the frequentist view, asking "what is the probability that $\theta = 0.4$?" i
 
 **Frequentist**: fit a model by maximizing the likelihood $p(y \mid \theta)$; report a point estimate $\hat{\theta}$ and standard errors derived from the sampling distribution of $\hat{\theta}$.
 
-**Bayesian**: combine the prior $p(\theta)$ with the likelihood $p(y \mid \theta)$ to obtain the posterior $p(\theta \mid y)$ via Bayes' theorem ([[Probability and Bayesian Inference]], [[raw/BDA3.pdf|BDA3 Ch. 1]]):
+**Bayesian**: combine the prior $p(\theta)$ with the likelihood $p(y \mid \theta)$ to obtain the posterior $p(\theta \mid y)$ via Bayes' theorem ([[Probability and Bayesian Inference]], BDA3 Ch. 1):
 
 $$
 p(\theta \mid y) = \frac{p(y \mid \theta)\, p(\theta)}{p(y)} \propto p(y \mid \theta)\, p(\theta)
@@ -66,7 +66,7 @@ The **posterior** is the complete Bayesian answer — not a point estimate but a
 
 ### 3. Uncertainty Quantification: Confidence vs. Credible Intervals
 
-This is the most practically important difference ([[Asymptotics and Frequentist Connections]], [[raw/BDA3.pdf|BDA3 Ch. 4]]):
+This is the most practically important difference ([[Asymptotics and Frequentist Connections]], BDA3 Ch. 4):
 
 > [!definition] Frequentist 95% Confidence Interval
 > An interval $[L(y), U(y)]$ constructed so that, if the experiment were repeated many times, **95% of such intervals would contain the true $\theta$**. This says nothing about the probability that $\theta$ lies in any *particular* interval — it's a property of the procedure, not the realized interval.
@@ -85,7 +85,7 @@ In practice, many researchers *interpret* confidence intervals as credible inter
 
 **The biggest practical distinction in finite samples.**
 
-Frequentist methods have no formal mechanism for incorporating prior knowledge (though regularization methods like ridge and lasso are implicitly Bayesian). Bayesian methods explicitly require a prior $p(\theta)$ ([[Single-Parameter Models]], [[raw/BDA3.pdf|BDA3 Ch. 2]]):
+Frequentist methods have no formal mechanism for incorporating prior knowledge (though regularization methods like ridge and lasso are implicitly Bayesian). Bayesian methods explicitly require a prior $p(\theta)$ ([[Single-Parameter Models]], BDA3 Ch. 2):
 
 | Prior type | Description | When to use |
 |-----------|-------------|-------------|
@@ -111,7 +111,7 @@ This is a precision-weighted average of the prior mean $\mu_0$ and the sample me
 
 **Frequentist**: report $\hat{\theta}$ and a standard error (or confidence interval). Uncertainty is summarized by the sampling distribution of $\hat{\theta}$ over hypothetical repeated experiments.
 
-**Bayesian**: report the full posterior $p(\theta \mid y)$. Point summaries are optional ([[Posterior Sampling and Summarization]], [[raw/StatRethink-Bayes.pdf|Statistical Rethinking Ch. 3]]):
+**Bayesian**: report the full posterior $p(\theta \mid y)$. Point summaries are optional ([[Posterior Sampling and Summarization]], Statistical Rethinking Ch. 3):
 - **Median** minimizes expected absolute loss
 - **Mean** minimizes expected quadratic loss
 - **Mode (MAP)** minimizes zero-one loss
@@ -132,7 +132,7 @@ Frequentist prediction intervals account for parameter uncertainty only approxim
 
 **Frequentist**: nuisance parameters are profiled out (maximize over them), or eliminated via conditioning or sufficiency. The sampling distribution of profile likelihood estimators may be complex.
 
-**Bayesian**: marginalize over nuisance parameters by integration ([[Multiparameter Models]], [[raw/BDA3.pdf|BDA3 Ch. 3]]):
+**Bayesian**: marginalize over nuisance parameters by integration ([[Multiparameter Models]], BDA3 Ch. 3):
 
 $$
 p(\theta_1 \mid y) = \int p(\theta_1, \theta_2 \mid y)\, d\theta_2
@@ -144,7 +144,7 @@ This is conceptually clean but computationally demanding — motivating MCMC and
 
 ### 7. Hierarchical / Multilevel Settings
 
-This is where Bayesian methods most clearly dominate frequentist alternatives ([[Hierarchical Models]], [[raw/BDA3.pdf|BDA3 Ch. 5]]).
+This is where Bayesian methods most clearly dominate frequentist alternatives ([[Hierarchical Models]], BDA3 Ch. 5).
 
 **Frequentist**: fixed effects (no pooling) or random effects (complete pooling). The frequentist random effects estimator requires approximations that become unreliable with few groups.
 
@@ -217,11 +217,11 @@ The posterior for each $\theta_j$ borrows strength from all groups. The degree o
 | [[Forking Paths and Bayesian Approaches]] | Why p-values fail under data-contingent analysis |
 | [[Multiple Comparisons - Bayesian Perspective]] | Hierarchical models replacing classical corrections |
 | [[Regression and the CEF]] | Frequentist regression: best linear approximation to CEF |
-| [[raw/BDA3.pdf]] | BDA3 Chs. 1-5 — the canonical Bayesian reference |
-| [[raw/StatRethink-Bayes.pdf]] | Statistical Rethinking — accessible Bayesian perspective |
-| [[raw/Mostly Harmless Econometrics.pdf]] | Frequentist regression from the econometrics perspective |
-| [[raw/multiple2f.pdf]] | Gelman et al. (2009) — Bayesian superiority for multiple comparisons |
-| [[raw/p_hacking.pdf]] | Gelman & Loken (2013) — frequentist p-values under model search |
+| BDA3 | BDA3 Chs. 1-5 — the canonical Bayesian reference |
+| StatRethink-Bayes | Statistical Rethinking — accessible Bayesian perspective |
+| Mostly Harmless Econometrics | Frequentist regression from the econometrics perspective |
+| multiple2f | Gelman et al. (2009) — Bayesian superiority for multiple comparisons |
+| p_hacking | Gelman & Loken (2013) — frequentist p-values under model search |
 
 ## Related Concepts
 

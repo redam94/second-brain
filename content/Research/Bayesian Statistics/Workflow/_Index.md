@@ -93,6 +93,6 @@ concept_count: 92
 
 ## Sources
 
-- [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf]] — Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*, 550 pp. — the full-length textbook expansion of the 2020 paper
-- [[raw/BayesWorkflow.pdf]] — Gelman et al. (2020), arXiv:2011.01808
-- [[raw/1804.06788-Talts-SBC.pdf]] — Talts, Betancourt, Simpson, Vehtari & Gelman (2018), "Validating Bayesian Inference Algorithms with Simulation-Based Calibration", arXiv:1804.06788 (shares authors with the Bayesian Workflow paper and BDA3)
+- Gelman Vehtari McElreath 2026 - Bayesian Workflow (book) — Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*, 550 pp. — the full-length textbook expansion of the 2020 paper
+- BayesWorkflow — Gelman et al. (2020), arXiv:2011.01808
+- 1804.06788-Talts-SBC — Talts, Betancourt, Simpson, Vehtari & Gelman (2018), "Validating Bayesian Inference Algorithms with Simulation-Based Calibration", arXiv:1804.06788 (shares authors with the Bayesian Workflow paper and BDA3)

@@ -46,7 +46,7 @@ concept_count: 8
 - [[Multiple-Choice Exam - A Full Workflow Walkthrough]] — CONTAINS: 16 figures' worth of a single problem carried through prior predictive checking, fitting, diagnostics, posterior predictive checking, expansion, and comparison; Ch. 4
 
 ## Sources
-- [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf]] — Chapters 1–4, pp. 3–60
+- Gelman Vehtari McElreath 2026 - Bayesian Workflow (book) — Chapters 1–4, pp. 3–60
 
 ## See Also
 - [[Research/Bayesian Statistics/Workflow/Building Models/_Index|Building Models]] — where the workflow goes next

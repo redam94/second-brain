@@ -25,7 +25,7 @@ concept_count: 1
 - [[Market Share Equilibrium and Lock-In]] — CONTAINS: lock-in experiment (70% initial -> sustained dominance), cyclic competition experiment (equal start -> oscillating shares), three mechanisms (imitation cascade, conditioning reinforcement, opinion leader disqualification), age-dependent dynamics
 
 ## Sources
-- [[raw/abm_human_behaviour.pdf]] — Ben Said et al. (2002) market share experiments
+- abm_human_behaviour — Ben Said et al. (2002) market share experiments
 
 ## See Also
 - [[../Word of Mouth/_Index|Word of Mouth]] — the mechanism driving market dynamics

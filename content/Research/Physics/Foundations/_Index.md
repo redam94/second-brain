@@ -46,4 +46,4 @@ concept_count: 7
 
 ## Sources
 
-- [[raw/Quantum mechanics]] — Wikipedia: Quantum mechanics (2026-04-10)
+- Quantum mechanics — Wikipedia: Quantum mechanics (2026-04-10)

@@ -34,8 +34,8 @@ concept_count: 4
 - [[Bandit Models with Delayed and Censored Feedback]] — CONTAINS: the $(C_t,D_t)$ stochastic bandit model and $m$-thresholded censored variant (§2); the regret decomposition (Lemma 1); censored and uncensored regret lower bounds (Theorems 3–4, recovering Lai–Robbins in the uncensored limit); the delay-corrected estimator $\tilde N_k(t),\hat\theta_k(t)$ (Eq. 5); DelayedUCB and DelayedKLUCB indices (Prop. 6, Lemma 7) and their finite-time regret upper bounds (Theorems 9, 11 and Corollaries 10, 12); simulation results.
 
 ## Sources
-- [[../raw/Chapelle 2014 - Modeling Delayed Feedback in Display Advertising.pdf]] — Chapelle, O. (2014), *Modeling Delayed Feedback in Display Advertising*, **KDD'14**, Criteo Labs.
-- [[../raw/Vernade Cappe Perchet 2017 - Stochastic Bandit Models for Delayed Conversions.pdf]] — Vernade, C., Cappé, O. & Perchet, V. (2017), *Stochastic Bandit Models for Delayed Conversions*, arXiv:1706.09186.
+- Chapelle 2014 - Modeling Delayed Feedback in Display Advertising — Chapelle, O. (2014), *Modeling Delayed Feedback in Display Advertising*, **KDD'14**, Criteo Labs.
+- Vernade Cappe Perchet 2017 - Stochastic Bandit Models for Delayed Conversions — Vernade, C., Cappé, O. & Perchet, V. (2017), *Stochastic Bandit Models for Delayed Conversions*, arXiv:1706.09186.
 
 ## See Also
 - [[Survival Analysis]] — the classical right-censoring framework this sub-topic extends with a "may never happen" outcome

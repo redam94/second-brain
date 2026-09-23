@@ -5,7 +5,7 @@ tags:
   - topic/bayesian-statistics
   - topic/mcmc
   - topic/hmc
-  - topic/stan
+  - method/stan
   - type/tutorial
   - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"

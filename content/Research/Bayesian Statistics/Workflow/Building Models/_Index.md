@@ -71,7 +71,7 @@ concept_count: 19
 - [[From Inference to Decision]] — CONTAINS: Figure 7.9; expected utility; Ch. 7.3–7.4
 
 ## Sources
-- [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf]] — Chapters 5–7, pp. 63–134
+- Gelman Vehtari McElreath 2026 - Bayesian Workflow (book) — Chapters 5–7, pp. 63–134
 
 ## See Also
 - [[Foundations/_Index|Foundations]] — the framing these chapters build on

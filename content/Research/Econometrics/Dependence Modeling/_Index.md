@@ -46,7 +46,7 @@ concept_count: 6
 
 ## Sources
 
-- [[raw/Oh-Patton-2012-Factor-Copulas.pdf]] — Oh & Patton (2012), "Modelling Dependence in High Dimensions with Factor Copulas", Duke University. 51 pp. JEL C31, C32, C51.
+- Oh-Patton-2012-Factor-Copulas — Oh & Patton (2012), "Modelling Dependence in High Dimensions with Factor Copulas", Duke University. 51 pp. JEL C31, C32, C51.
 
 ## See Also
 

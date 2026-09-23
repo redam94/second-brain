@@ -39,7 +39,7 @@ concept_count: 6
 
 ## Sources
 
-- [[raw/1803.09015-Callaway-SantAnna-DiD-Multiple-Periods.pdf]] — Callaway & Sant'Anna (2020), "Difference-in-Differences with Multiple Time Periods," *Journal of Econometrics*. JEL C14, C21, C23, J23, J38. 45 pp. Open-source R package `did` (CRAN). Supplementary Appendix at pedrohcgs.github.io.
+- 1803.09015-Callaway-SantAnna-DiD-Multiple-Periods — Callaway & Sant'Anna (2020), "Difference-in-Differences with Multiple Time Periods," *Journal of Econometrics*. JEL C14, C21, C23, J23, J38. 45 pp. Open-source R package `did` (CRAN). Supplementary Appendix at pedrohcgs.github.io.
 
 ## See Also
 

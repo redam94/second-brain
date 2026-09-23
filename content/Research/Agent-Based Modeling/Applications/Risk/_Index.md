@@ -19,4 +19,4 @@ concept_count: 1
 - [[Operational Risk Modeling with ABM]] — CONTAINS: why ABM for operational risk, SCGAM approach, ABM vs traditional risk models, fat-tailed loss distributions, examples of major operational losses
 
 ## Sources
-- [[raw/abm_word_of_mouth.pdf]] — Bonabeau (2002)
+- abm_word_of_mouth — Bonabeau (2002)

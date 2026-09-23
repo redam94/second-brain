@@ -31,9 +31,9 @@ concept_count: 3
 - [[Heterogeneity in Agent Models]] — CONTAINS: forms of heterogeneity across all three papers, preference heterogeneity (Karakaya), behavioral heterogeneity (Ben Said), structural heterogeneity (Bonabeau)
 
 ## Sources
-- [[raw/abm_word_of_mouth.pdf]] — Primary source (Bonabeau 2002)
-- [[raw/abm_consumer.pdf]] — Heterogeneity examples (Karakaya et al. 2011)
-- [[raw/abm_human_behaviour.pdf]] — Behavioral heterogeneity (Ben Said et al. 2002)
+- abm_word_of_mouth — Primary source (Bonabeau 2002)
+- abm_consumer — Heterogeneity examples (Karakaya et al. 2011)
+- abm_human_behaviour — Behavioral heterogeneity (Ben Said et al. 2002)
 
 ## See Also
 - [[../Modeling Approaches/_Index|Modeling Approaches]] — how these core concepts are operationalized

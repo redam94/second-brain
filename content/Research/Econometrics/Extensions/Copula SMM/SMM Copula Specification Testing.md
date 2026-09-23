@@ -110,4 +110,4 @@ When using the identity weight matrix, the limiting distribution depends on $\ha
 
 ## Sources
 
-- [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), Section 2.5
+- Oh_Patton_SMM_copulas_nov11 — Oh & Patton (2011), Section 2.5

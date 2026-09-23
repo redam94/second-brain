@@ -77,4 +77,4 @@ Categories/Functors/Nat. Trans.
 
 ## See Also
 
-- [[raw/1612.09375v2.pdf]] — Source PDF
+- 1612.09375v2 — Source PDF

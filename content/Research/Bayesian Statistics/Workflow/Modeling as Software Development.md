@@ -30,7 +30,7 @@ expanded_by:
 ---
 
 > [!info] Expanded in the 2026 textbook
-> The 2020 paper's software-development analogy is developed at length in [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]].
+> The 2020 paper's software-development analogy is developed at length in Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*.
 >
 > **Closest book counterparts:**
 > - [[Statistical Modeling as Software Development]] — the full analogy, including modularity and version control

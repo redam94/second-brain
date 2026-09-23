@@ -145,8 +145,8 @@ Two more appearances: [[Hierarchical Inference in Gaussian Models]] uses the evi
 | [[Building Up to a Hierarchical Model - Coronavirus Testing]] | Few-groups failure, hyperprior sweep, MRP needs group-level predictors |
 | [[Bayesian Estimation and Priors for MMM]], [[Hierarchical Inference in Gaussian Models]] | Prior dominance with weak data; evidence / type-II likelihood |
 | [[Computational Troubleshooting]], [[Modeling Ideas to Address Computing Problems]] | Funnel pathology and its fixes |
-| [[raw/BDA3.pdf]] | Ch. 5, pp. 101–138 |
-| [[raw/multiple2f.pdf]] | Gelman, Hill & Yajima (2009), Secs. 3.2, 4 |
+| BDA3 | Ch. 5, pp. 101–138 |
+| multiple2f | Gelman, Hill & Yajima (2009), Secs. 3.2, 4 |
 
 ## Related Concepts
 

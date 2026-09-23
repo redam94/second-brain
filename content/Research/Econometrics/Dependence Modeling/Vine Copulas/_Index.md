@@ -36,7 +36,7 @@ concept_count: 5
 
 ## Sources
 
-- [[raw/Aas 2016 - Pair-Copula Constructions for Financial Applications.pdf]] — Aas, K. (2016), "Pair-Copula Constructions for Financial Applications: A Review", *Econometrics* 4(4):43. 15 pp. JEL C13, C15, C51, C52, C53, C58.
+- Aas 2016 - Pair-Copula Constructions for Financial Applications — Aas, K. (2016), "Pair-Copula Constructions for Financial Applications: A Review", *Econometrics* 4(4):43. 15 pp. JEL C13, C15, C51, C52, C53, C58.
 
 ## See Also
 

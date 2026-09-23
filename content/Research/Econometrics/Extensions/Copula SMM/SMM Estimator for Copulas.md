@@ -191,4 +191,4 @@ Oh and Patton (2011) introduce a factor copula as a key application:
 
 ## Sources
 
-- [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), Sections 1-2.1
+- Oh_Patton_SMM_copulas_nov11 — Oh & Patton (2011), Sections 1-2.1

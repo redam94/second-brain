@@ -25,6 +25,6 @@ Concepts that span both sub-topics:
 - **Heterogeneity**: Defined in [[Core Concepts/Heterogeneity in Agent Models]] and operationalized through decision rules in [[Modeling Approaches/Agent Decision Rules and Bounded Rationality]]
 
 ## Sources
-- [[raw/abm_word_of_mouth.pdf]] — Bonabeau (2002), primary source for foundations
-- [[raw/abm_consumer.pdf]] — Karakaya et al. (2011), decision model examples
-- [[raw/abm_human_behaviour.pdf]] — Ben Said et al. (2002), threshold-based decisions
+- abm_word_of_mouth — Bonabeau (2002), primary source for foundations
+- abm_consumer — Karakaya et al. (2011), decision model examples
+- abm_human_behaviour — Ben Said et al. (2002), threshold-based decisions

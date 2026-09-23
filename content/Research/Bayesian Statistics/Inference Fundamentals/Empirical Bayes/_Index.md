@@ -40,4 +40,4 @@ Leaf index for the Empirical Bayes folder, covering Efron's *Large-Scale Inferen
 
 ## Sources
 
-- [[raw/Efron - Empirical Bayes and the James-Stein Estimator (LSI Ch1).pdf]] — Efron, *Large-Scale Inference*, Ch. 1, pp. 1-12.
+- Efron - Empirical Bayes and the James-Stein Estimator (LSI Ch1) — Efron, *Large-Scale Inference*, Ch. 1, pp. 1-12.

@@ -8,7 +8,7 @@ tags:
   - type/concept
   - topic/market-response
   - topic/time-series
-  - topic/ARIMA
+  - topic/arima
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
 date_updated: 2026-04-11

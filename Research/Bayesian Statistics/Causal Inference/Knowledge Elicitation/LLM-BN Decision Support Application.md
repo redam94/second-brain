@@ -4,7 +4,7 @@ tags:
   - source/ingested
   - topic/causal-inference
   - topic/bayesian-networks
-  - topic/llm
+  - topic/large-language-models
   - type/example
   - doc/paper
 source: "[[raw/Shaposhnyk et al. - 2025 - Can LLMs Assist Expert Elicitation for Probabilistic Causal Modeling.pdf]]"

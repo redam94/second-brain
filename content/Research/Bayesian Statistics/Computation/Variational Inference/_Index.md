@@ -64,9 +64,9 @@ parent: "[[Research/Bayesian Statistics/Computation/_Index|Computation]]"
 
 ## Sources
 
-- [[raw/Blei 2017 - Variational Inference A Review for Statisticians.pdf]] — Blei, D. M., Kucukelbir, A. & McAuliffe, J. D. (2017), "Variational Inference: A Review for Statisticians," *JASA* 112(518). arXiv:1601.00670.
-- [[raw/Kucukelbir 2017 - Automatic Differentiation Variational Inference.pdf]] — Kucukelbir, A., Tran, D., Ranganath, R., Gelman, A. & Blei, D. M. (2017), "Automatic Differentiation Variational Inference," *JMLR* 18. arXiv:1603.00788.
-- [[raw/Kingma 2013 - Auto-Encoding Variational Bayes.pdf]] — Kingma, D. P. & Welling, M. (2013/2014), "Auto-Encoding Variational Bayes," ICLR. arXiv:1312.6114.
-- [[raw/Yao 2018 - Yes but Did It Work Evaluating Variational Inference.pdf]] — Yao, Y., Vehtari, A., Simpson, D. & Gelman, A. (2018), "Yes, but Did It Work?: Evaluating Variational Inference," ICML, PMLR 80. arXiv:1802.02538.
-- [[raw/Ranganath 2014 - Black Box Variational Inference.pdf]] — Ranganath, R., Gerrish, S. & Blei, D. M. (2014), "Black Box Variational Inference," AISTATS. arXiv:1401.0118.
-- [[raw/Rezende 2015 - Variational Inference with Normalizing Flows.pdf]] — Rezende, D. J. & Mohamed, S. (2015), "Variational Inference with Normalizing Flows," ICML. arXiv:1505.05770.
+- Blei 2017 - Variational Inference A Review for Statisticians — Blei, D. M., Kucukelbir, A. & McAuliffe, J. D. (2017), "Variational Inference: A Review for Statisticians," *JASA* 112(518). arXiv:1601.00670.
+- Kucukelbir 2017 - Automatic Differentiation Variational Inference — Kucukelbir, A., Tran, D., Ranganath, R., Gelman, A. & Blei, D. M. (2017), "Automatic Differentiation Variational Inference," *JMLR* 18. arXiv:1603.00788.
+- Kingma 2013 - Auto-Encoding Variational Bayes — Kingma, D. P. & Welling, M. (2013/2014), "Auto-Encoding Variational Bayes," ICLR. arXiv:1312.6114.
+- Yao 2018 - Yes but Did It Work Evaluating Variational Inference — Yao, Y., Vehtari, A., Simpson, D. & Gelman, A. (2018), "Yes, but Did It Work?: Evaluating Variational Inference," ICML, PMLR 80. arXiv:1802.02538.
+- Ranganath 2014 - Black Box Variational Inference — Ranganath, R., Gerrish, S. & Blei, D. M. (2014), "Black Box Variational Inference," AISTATS. arXiv:1401.0118.
+- Rezende 2015 - Variational Inference with Normalizing Flows — Rezende, D. J. & Mohamed, S. (2015), "Variational Inference with Normalizing Flows," ICML. arXiv:1505.05770.

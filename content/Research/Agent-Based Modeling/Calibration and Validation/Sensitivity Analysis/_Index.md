@@ -37,4 +37,4 @@ concept_count: 5
 - [[Local vs Global Sensitivity Analysis]] — CONTAINS: OAT definition, assumptions of linearity/independence, OAT pitfalls (no interactions, baseline dependence, vanishing high-dim coverage, non-monotonicity), pure-interaction $Y=ab$ counterexample
 
 ## Sources
-- [[raw/Review of Global Sensitivity Analysis Methods 2024.pdf]] — Sadeghi & Matwin (2024), "A Review of Global Sensitivity Analysis Methods and a Comparative Case Study on Digit Classification"
+- Review of Global Sensitivity Analysis Methods 2024 — Sadeghi & Matwin (2024), "A Review of Global Sensitivity Analysis Methods and a Comparative Case Study on Digit Classification"

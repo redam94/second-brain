@@ -3,8 +3,8 @@ title: Evaluating LLM Systems - Benchmarks, Hallucination and Human Preference
 tags:
   - source/ingested
   - topic/machine-learning
-  - topic/llm
-  - topic/evaluation
+  - topic/large-language-models
+  - topic/model-evaluation
   - type/concept
   - doc/paper
 source: "[[raw/Ouyang 2022 - InstructGPT RLHF.pdf]]"

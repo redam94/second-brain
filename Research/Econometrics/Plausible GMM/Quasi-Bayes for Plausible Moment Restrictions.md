@@ -6,7 +6,7 @@ tags:
   - topic/bayesian-statistics
   - type/concept
   - doc/paper
-  - method/mcmc
+  - topic/mcmc
 source: "[[raw/Plausible GMM - A Quasi-Bayesian Approach]]"
 source_location: "§2.2 Quasi-Bayes for Plausible Moment Restrictions (pp. 7-10)"
 date_ingested: 2026-06-27

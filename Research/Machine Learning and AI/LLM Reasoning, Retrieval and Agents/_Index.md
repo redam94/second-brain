@@ -4,7 +4,7 @@ tags:
   - type/index
   - source/ingested
   - topic/machine-learning
-  - topic/llm
+  - topic/large-language-models
   - topic/llm-agents
 date_ingested: 2026-09-18
 folder: "Machine Learning and AI/LLM Reasoning, Retrieval and Agents"

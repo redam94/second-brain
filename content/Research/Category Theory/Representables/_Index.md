@@ -40,7 +40,7 @@ concept_count: 3
 - [[Yoneda Embedding and Consequences]] — CONTAINS: Yoneda embedding definition, full faithfulness theorem, uniqueness of representations, adjoints unique, tensor product unique, Yoneda preserves limits
 
 ## Sources
-- [[raw/1612.09375v2.pdf]] — *Basic Category Theory*, Ch. 4.1–4.3
+- 1612.09375v2 — *Basic Category Theory*, Ch. 4.1–4.3
 
 ## See Also
 - [[../Synthesis/Limits via Representables]] — Limits as representable functors (Ch. 6.1)

@@ -152,10 +152,10 @@ So the honest summary: the Bayesian analogue of double robustness is **design-st
 | [[Bayesian Inverse Probability Weighting]], [[Propensity Score in Bayesian CI]] | Why weights are not in the likelihood; Liao–Zigler; three strategies; feedback problem |
 | [[Bayesian Outcome Models]], [[General Structure of Bayesian CI]] | Regularization-induced confounding; BCF; Bayesian bootstrap |
 | [[Propensity Score and the Balancing Property]], [[Common Support and Overlap]] | The weight-side nuisance and positivity |
-| [[raw/Chernozhukov 2018 - Double Debiased Machine Learning.pdf]] | §5.1, Theorem 5.1, Remark 5.2 |
-| [[raw/Arkhangelsky 2021 - Synthetic Difference in Differences.pdf]] | §4.2, p. 23 |
-| [[raw/Lei Candes 2020 - Conformal Inference of Counterfactuals and ITEs.pdf]] | Proposition 1, Theorem 1 |
-| [[raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]] | §5, pp. 10–13 |
+| Chernozhukov 2018 - Double Debiased Machine Learning | §5.1, Theorem 5.1, Remark 5.2 |
+| Arkhangelsky 2021 - Synthetic Difference in Differences | §4.2, p. 23 |
+| Lei Candes 2020 - Conformal Inference of Counterfactuals and ITEs | Proposition 1, Theorem 1 |
+| Li et al. - 2022 - Bayesian causal inference a critical review | §5, pp. 10–13 |
 
 ## Related Concepts
 

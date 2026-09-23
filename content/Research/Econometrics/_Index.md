@@ -42,22 +42,22 @@ concept_count: 77
 
 ## Sources
 
-- [[raw/Mostly Harmless Econometrics.pdf]] — Full textbook PDF (Angrist & Pischke, 2008)
-- [[raw/Discrete Choice and Random Utility Models]] — PyMC tutorial: Bayesian discrete choice models (McFadden framework)
-- [[raw/Difference in differences]] — PyMC tutorial: Bayesian DiD with counterfactual prediction
-- [[raw/15 - Synthetic Control — Causal Inference for the Brave and True]] — Causal Inference for the Brave and True, Ch. 15: synthetic control with Python (scipy, sklearn)
-- [[raw/Abadie 2021 - Using Synthetic Controls.pdf]] — Abadie (2021) JEL: authoritative guide to synthetic controls, bias theory, requirements, extensions
-- [[raw/Xu 2016 - Generalized Synthetic Control Method.pdf]] — Xu (2017) Political Analysis: GSC method unifying DID and SC via IFE model
-- [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Graham Harrison, Towards Data Science (2023): comprehensive DAG tutorial
-- [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW in R/brms
-- [[raw/tdb136.pdf]] — Liesenfeld & Breitung (1998), "Simulation Based Methods of Moments in Empirical Finance"
-- [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), "Simulated Method of Moments Estimation for Copula-Based Multivariate Models"
-- [[raw/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — Evans (2024), CompMethods Ch. 19: full Python SMM tutorial + Brock-Mirman structural macro exercise
-- [[raw/Oh-Patton-2012-Factor-Copulas.pdf]] — Oh & Patton (2012), "Modelling Dependence in High Dimensions with Factor Copulas" (Duke): factor copulas, EVT tail dependence, rank-based SMM, S&P 100 systemic risk
-- [[raw/1803.09015-Callaway-SantAnna-DiD-Multiple-Periods.pdf]] — Callaway & Sant'Anna (2020), "Difference-in-Differences with Multiple Time Periods" (J. Econometrics): group-time ATT, doubly-robust estimands, aggregation schemes, multiplier-bootstrap inference, minimum-wage application
-- [[raw/Plausible GMM - A Quasi-Bayesian Approach]] — Chernozhukov, Hansen, Kong & Wang (2026), arXiv:2507.00555 (econ.EM): quasi-Bayesian GMM under plausible (non-exact) moment conditions, priors over misspecification, Bernstein–von Mises concentration, institutions-and-GDP IV application
-- [[raw/Duffie Singleton 1993 - Simulated Moments Estimation of Markov Models of Asset Prices]] — Duffie & Singleton (1993), Econometrica 61(4):929–952: foundational Simulated Moments Estimator (SME) theory for time-series Markov asset-pricing models — geometric ergodicity, AUC condition, consistency, asymptotic normality
-- [[raw/PSM-Rosenbaum-Rubin-Stuart-Survey.md]] — Survey synthesis: Rosenbaum & Rubin (1983) Biometrika, Rosenbaum & Rubin (1985) AmStat, Stuart (2010) Statistical Science, Imbens (2004) RESTAT — classical propensity score matching framework, algorithms, and balance diagnostics
+- Mostly Harmless Econometrics — Full textbook PDF (Angrist & Pischke, 2008)
+- Discrete Choice and Random Utility Models — PyMC tutorial: Bayesian discrete choice models (McFadden framework)
+- Difference in differences — PyMC tutorial: Bayesian DiD with counterfactual prediction
+- 15 - Synthetic Control — Causal Inference for the Brave and True — Causal Inference for the Brave and True, Ch. 15: synthetic control with Python (scipy, sklearn)
+- Abadie 2021 - Using Synthetic Controls — Abadie (2021) JEL: authoritative guide to synthetic controls, bias theory, requirements, extensions
+- Xu 2016 - Generalized Synthetic Control Method — Xu (2017) Political Analysis: GSC method unifying DID and SC via IFE model
+- Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs — Graham Harrison, Towards Data Science (2023): comprehensive DAG tutorial
+- How to use Bayesian propensity scores and inverse probability weights — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW in R/brms
+- tdb136 — Liesenfeld & Breitung (1998), "Simulation Based Methods of Moments in Empirical Finance"
+- Oh_Patton_SMM_copulas_nov11 — Oh & Patton (2011), "Simulated Method of Moments Estimation for Copula-Based Multivariate Models"
+- 19 — Evans (2024), CompMethods Ch. 19: full Python SMM tutorial + Brock-Mirman structural macro exercise
+- Oh-Patton-2012-Factor-Copulas — Oh & Patton (2012), "Modelling Dependence in High Dimensions with Factor Copulas" (Duke): factor copulas, EVT tail dependence, rank-based SMM, S&P 100 systemic risk
+- 1803.09015-Callaway-SantAnna-DiD-Multiple-Periods — Callaway & Sant'Anna (2020), "Difference-in-Differences with Multiple Time Periods" (J. Econometrics): group-time ATT, doubly-robust estimands, aggregation schemes, multiplier-bootstrap inference, minimum-wage application
+- Plausible GMM - A Quasi-Bayesian Approach — Chernozhukov, Hansen, Kong & Wang (2026), arXiv:2507.00555 (econ.EM): quasi-Bayesian GMM under plausible (non-exact) moment conditions, priors over misspecification, Bernstein–von Mises concentration, institutions-and-GDP IV application
+- Duffie Singleton 1993 - Simulated Moments Estimation of Markov Models of Asset Prices — Duffie & Singleton (1993), Econometrica 61(4):929–952: foundational Simulated Moments Estimator (SME) theory for time-series Markov asset-pricing models — geometric ergodicity, AUC condition, consistency, asymptotic normality
+- PSM-Rosenbaum-Rubin-Stuart-Survey — Survey synthesis: Rosenbaum & Rubin (1983) Biometrika, Rosenbaum & Rubin (1985) AmStat, Stuart (2010) Statistical Science, Imbens (2004) RESTAT — classical propensity score matching framework, algorithms, and balance diagnostics
 
 ## See Also
 

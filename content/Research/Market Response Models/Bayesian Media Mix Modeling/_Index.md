@@ -40,7 +40,7 @@ Deep ingestion of Jin, Wang, Sun, Chan & Koehler (Google, 2017), *"Bayesian Meth
 
 ## Sources
 
-- [[raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf]] — Jin, Y., Wang, Y., Sun, Y., Chan, D., & Koehler, J. (2017). *Bayesian Methods for Media Mix Modeling with Carryover and Shape Effects.* Google Inc., 14 April 2017. 34 pp.
+- Jin-2017-Bayesian-MMM-Carryover-Shape — Jin, Y., Wang, Y., Sun, Y., Chan, D., & Koehler, J. (2017). *Bayesian Methods for Media Mix Modeling with Carryover and Shape Effects.* Google Inc., 14 April 2017. 34 pp.
 
 ## See Also
 

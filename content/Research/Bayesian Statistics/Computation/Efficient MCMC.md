@@ -4,7 +4,7 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/hmc
-  - topic/stan
+  - method/stan
   - type/concept
   - doc/textbook
 source: "[[raw/BDA3.pdf]]"

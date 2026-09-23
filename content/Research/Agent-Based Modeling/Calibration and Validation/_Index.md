@@ -29,7 +29,7 @@ date_updated: 2026-06-28
 - **Point estimate vs. posterior**: GA/simulated annealing/evolutionary algorithms find the best-fitting parameter set (computationally cheap, ~256–290 runs); HM+ABC finds the full posterior distribution of plausible parameters (more informative, ~3,185 runs); both are appropriate depending on whether uncertainty quantification is required
 
 ## Sources
-- [[raw/abm_human_behaviour.pdf]] — GA calibration and RAM (Ben Said et al. 2002)
-- [[raw/abm_consumer.pdf]] — Experimental design and sensitivity (Karakaya et al. 2011)
-- [[raw/abm_word_of_mouth.pdf]] — Analytical baselines and validation discussion (Bonabeau 2002)
-- [[raw/calibration_ABM.pdf]] — HM+ABC framework with UQ (McCulloch et al. 2022, JASSS 25(2))
+- abm_human_behaviour — GA calibration and RAM (Ben Said et al. 2002)
+- abm_consumer — Experimental design and sensitivity (Karakaya et al. 2011)
+- abm_word_of_mouth — Analytical baselines and validation discussion (Bonabeau 2002)
+- calibration_ABM — HM+ABC framework with UQ (McCulloch et al. 2022, JASSS 25(2))

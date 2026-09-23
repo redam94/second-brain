@@ -37,7 +37,7 @@ concept_count: 8
 - [[Further Topics in Global Optimisation]] — CONTAINS: batch/parallel BO, BO vs. reinforcement learning, AutoML hyperparameter tuning, conditional hyperparameters, training-curve early information, multi-fidelity, software (`emukit`).
 
 ## Sources
-- [[raw/ProbabilisticNumerics.pdf]] — *Probabilistic Numerics: Computation as Machine Learning*, Hennig, Osborne & Kersting (Cambridge University Press, 2022), **Parts IV–V, book pp. 195–278** (Ch. 24–34).
+- ProbabilisticNumerics — *Probabilistic Numerics: Computation as Machine Learning*, Hennig, Osborne & Kersting (Cambridge University Press, 2022), **Parts IV–V, book pp. 195–278** (Ch. 24–34).
 
 ## See Also
 - [[../Foundations/_Index|Foundations]] — Gaussian algebra, GP regression, Gauss-Markov/SDEs, Bayesian filtering, the numerical agent.

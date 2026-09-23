@@ -23,7 +23,7 @@ concept_count: 1
 - [[Universal Properties - Introduction]] — CONTAINS: table of examples (free group, product, tensor product), categorical unification theorem, uniqueness of universal properties, table of three equivalent languages
 
 ## Sources
-- [[raw/1612.09375v2.pdf]] — *Basic Category Theory*, Ch. 0
+- 1612.09375v2 — *Basic Category Theory*, Ch. 0
 
 ## See Also
 - [[../Adjunctions/_Index|Adjunctions]] — Universal properties via adjunctions

@@ -55,7 +55,7 @@ concept_count: 5
 - [[Functors and Limits]] — CONTAINS: preservation/reflection/creation definitions, forgetful functor creates limits example, right adjoints are continuous
 
 ## Sources
-- [[raw/1612.09375v2.pdf]] — *Basic Category Theory*, Ch. 5.1–5.3
+- 1612.09375v2 — *Basic Category Theory*, Ch. 5.1–5.3
 
 ## See Also
 - [[../Synthesis/_Index|Synthesis]] — Limits via representables, adjoints and limits, functor theorem

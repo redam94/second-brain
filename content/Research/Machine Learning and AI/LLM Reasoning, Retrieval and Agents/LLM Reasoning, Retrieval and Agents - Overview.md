@@ -3,7 +3,7 @@ title: LLM Reasoning, Retrieval and Agents - Overview
 tags:
   - source/ingested
   - topic/machine-learning
-  - topic/llm
+  - topic/large-language-models
   - topic/llm-agents
   - type/overview
   - doc/paper

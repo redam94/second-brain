@@ -3,7 +3,7 @@ title: Reward Modeling from Human Preferences
 tags:
   - source/ingested
   - topic/machine-learning
-  - topic/llm
+  - topic/large-language-models
   - topic/rlhf
   - topic/preference-learning
   - type/concept

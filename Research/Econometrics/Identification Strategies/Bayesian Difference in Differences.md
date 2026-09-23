@@ -5,7 +5,7 @@ tags:
   - topic/causal-inference
   - topic/difference-in-differences
   - method/pymc
-  - method/bayesian
+  - topic/bayesian-statistics
   - type/concept
   - doc/textbook
 aliases:

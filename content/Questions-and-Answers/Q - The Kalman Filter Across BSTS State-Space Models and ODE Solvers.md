@@ -132,10 +132,10 @@ Three observations the table makes visible:
 
 | Note | Relevance |
 |------|-----------|
-| [[Linear-Gaussian State-Space Models]], [[The Kalman Filter]], [[The RTS Smoother]], [[Marginal Likelihood via the Kalman Filter]], [[State-Space Models and the Kalman Filter - Overview]] | Generic model, recursions, energy function; [[raw/Sarkka 2013 - Bayesian Filtering and Smoothing.pdf|Särkkä 2013]] Ch. 4, 8, 12 |
+| [[Linear-Gaussian State-Space Models]], [[The Kalman Filter]], [[The RTS Smoother]], [[Marginal Likelihood via the Kalman Filter]], [[State-Space Models and the Kalman Filter - Overview]] | Generic model, recursions, energy function; Särkkä 2013 Ch. 4, 8, 12 |
 | [[Bayesian Structural Time-Series Model]], [[Local Linear Trend and Seasonality]] | BSTS matrices, state blocks, variance priors |
 | [[MCMC Inference for CausalImpact]], [[Counterfactual Impact Estimation]] | Simulation smoother, posterior predictive counterfactual, widening intervals |
-| [[Bayesian Filtering and Smoothing]], [[Gauss-Markov Processes and SDEs]], [[Gaussian Process Regression]] | Filter = $\mathcal O(N)$ GP regression; SDE discretisation; IWP/Matérn; [[raw/ProbabilisticNumerics.pdf|Hennig et al.]] Ch. 4–5 |
+| [[Bayesian Filtering and Smoothing]], [[Gauss-Markov Processes and SDEs]], [[Gaussian Process Regression]] | Filter = $\mathcal O(N)$ GP regression; SDE discretisation; IWP/Matérn; Hennig et al. Ch. 4–5 |
 | [[Hierarchical Inference in Gaussian Models]] | Recursive Gamma scale calibration during filtering |
 | [[Solving ODEs as Inference]], [[ODE Filters and Smoothers]], [[Theory of ODE Filters and Smoothers]] | IVP as regression on $x'$; EKF0/EKF1/EKS/IEKS/particle; $h^q$ rates, calibration, A-stability, square-root filtering |
 | [[Further Topics in ODE Solvers]] | Uncertainty-aware likelihood; extended SSM fusing ODE and data |

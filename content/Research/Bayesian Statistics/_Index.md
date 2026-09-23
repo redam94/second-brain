@@ -43,14 +43,14 @@ concept_count: 217
 
 ## Sources
 
-- [[raw/Wood 2010 - Statistical Inference for Noisy Nonlinear Ecological Dynamic Systems]] — Wood, S.N. (2010), *Statistical inference for noisy nonlinear ecological dynamic systems*, **Nature** 466(7310):1102–1104 (synthetic likelihood)
-- [[raw/BDA3.pdf]] — Bayesian Data Analysis, 3rd Edition (Gelman, Carlin, Stern, Dunson, Vehtari, Rubin)
-- [[Workflow/raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf]] — Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*, 550 pp. (textbook)
-- [[raw/BayesWorkflow.pdf]] — Bayesian Workflow (Gelman, Vehtari, Simpson et al., 2020)
-- [[raw/1804.06788-Talts-SBC.pdf|Talts et al. - Simulation-Based Calibration]] — Talts, Betancourt, Simpson, Vehtari & Gelman (2018), "Validating Bayesian Inference Algorithms with Simulation-Based Calibration" (arXiv:1804.06788)
-- [[raw/StatRethink-Bayes.pdf]] — Statistical Rethinking (McElreath, 2015)
-- [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW in R/brms
-- [[Causal Inference/raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]] — Li, Ding & Mealli (2022): Bayesian causal inference critical review, *Phil. Trans. R. Soc. A* 381
+- Wood 2010 - Statistical Inference for Noisy Nonlinear Ecological Dynamic Systems — Wood, S.N. (2010), *Statistical inference for noisy nonlinear ecological dynamic systems*, **Nature** 466(7310):1102–1104 (synthetic likelihood)
+- BDA3 — Bayesian Data Analysis, 3rd Edition (Gelman, Carlin, Stern, Dunson, Vehtari, Rubin)
+- Gelman Vehtari McElreath 2026 - Bayesian Workflow (book) — Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*, 550 pp. (textbook)
+- BayesWorkflow — Bayesian Workflow (Gelman, Vehtari, Simpson et al., 2020)
+- Talts et al. - Simulation-Based Calibration — Talts, Betancourt, Simpson, Vehtari & Gelman (2018), "Validating Bayesian Inference Algorithms with Simulation-Based Calibration" (arXiv:1804.06788)
+- StatRethink-Bayes — Statistical Rethinking (McElreath, 2015)
+- How to use Bayesian propensity scores and inverse probability weights — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW in R/brms
+- Li et al. - 2022 - Bayesian causal inference a critical review — Li, Ding & Mealli (2022): Bayesian causal inference critical review, *Phil. Trans. R. Soc. A* 381
 
 ## See Also
 

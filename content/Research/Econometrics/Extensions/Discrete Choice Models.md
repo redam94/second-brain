@@ -4,9 +4,8 @@ source: "https://www.pymc.io/projects/examples/en/latest/generalized_linear_mode
 tags:
   - source/ingested
   - topic/econometrics
-  - topic/bayesian
-  - method/discrete-choice
-  - method/random-utility
+  - topic/bayesian-statistics
+  - topic/discrete-choice
   - type/concept
   - doc/textbook
 date_ingested: 2026-04-09
@@ -127,7 +126,7 @@ Discrete choice data can be structured in either **wide format** (one row per de
 - [[Generalized Linear Models]] — Logistic regression as a special (binary) case
 - [[Instrumental Variables]] — Handling endogeneity in choice attribute prices
 - [[Hierarchical Linear Models]] — Mixed logit / random-coefficient extensions
-- [[raw/Discrete Choice and Random Utility Models]] — Full PyMC tutorial with code
+- Discrete Choice and Random Utility Models — Full PyMC tutorial with code
 - [[Market Share Models]] — MCI and MNL choice models applied in marketing science; same logit foundation used for brand-level market share estimation
 - [[Random Coefficients Logit Model]] — the random-coefficients extension relaxing IIA
 - [[Reward Modeling from Human Preferences]] — the reward model is a logistic paired-comparison (Bradley-Terry) choice model

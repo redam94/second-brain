@@ -38,7 +38,7 @@ concept_count: 5
 - [[Plausible GMM - Institutions and GDP Application]] — CONTAINS: linear IV model & moments; prior on $\theta$; augmented misspecification model $C_t=(1,W_t,D_t^\top)\pi$; PGMM-g / PGMM(d)-g / PGMM-u / CH priors; Figure 1 prior-sensitivity of $\beta_X$.
 
 ## Sources
-- [[raw/Plausible GMM - A Quasi-Bayesian Approach]] — Chernozhukov, Hansen, Kong & Wang (2026), arXiv:2507.00555 (econ.EM). Main body §1–§3.1 only; §4 theorems + 401(k) application are in the unincluded Supplemental Appendix.
+- Plausible GMM - A Quasi-Bayesian Approach — Chernozhukov, Hansen, Kong & Wang (2026), arXiv:2507.00555 (econ.EM). Main body §1–§3.1 only; §4 theorems + 401(k) application are in the unincluded Supplemental Appendix.
 
 ## See Also
 - [[Instrumental Variables]] — classical exact-exclusion IV (the relaxed case here)

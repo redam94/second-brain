@@ -5,7 +5,6 @@ tags:
   - source/ingested
   - topic/research-methodology
   - topic/online-experimentation
-  - topic/ab-testing
 date_ingested: 2026-09-18
 folder: "Research Methodology/Experimental Design/Online Experimentation"
 parent: "[[Research/Research Methodology/Experimental Design/_Index|Experimental Design]]"
@@ -67,12 +66,12 @@ parent: "[[Research/Research Methodology/Experimental Design/_Index|Experimental
 
 ## Sources
 
-- [[raw/Deng 2013 - CUPED Improving Sensitivity with Pre-Experiment Data.pdf]] — Deng, A., Xu, Y., Kohavi, R. & Walker, T. (2013), "Improving the Sensitivity of Online Controlled Experiments by Utilizing Pre-Experiment Data," *WSDM 2013*.
-- [[raw/Johari 2015 - Always Valid Inference.pdf]] — Johari, R., Pekelis, L. & Walsh, D. (2015; v3 2019), "Always Valid Inference: Continuous Monitoring of A/B Tests," arXiv:1512.04922 (*Operations Research* 2022).
-- [[raw/Howard 2021 - Time-uniform Nonparametric Confidence Sequences.pdf]] — Howard, S., Ramdas, A., McAuliffe, J. & Sekhon, J. (2021), "Time-uniform, nonparametric, nonasymptotic confidence sequences," *Annals of Statistics*; arXiv:1810.08240.
-- [[raw/Larsen 2022 - Statistical Challenges in Online Controlled Experiments.pdf]] — Larsen, N., Stallrich, J., Sengupta, S., Deng, A., Kohavi, R. & Stevens, N. (2022), "Statistical Challenges in Online Controlled Experiments: A Review of A/B Testing Methodology," arXiv:2212.11366.
-- [[raw/Kohavi 2012 - Trustworthy Online Controlled Experiments Five Puzzling Outcomes.pdf]] — Kohavi, R., Deng, A., Frasca, B., Longbotham, R., Walker, T. & Xu, Y. (2012), "Trustworthy Online Controlled Experiments: Five Puzzling Outcomes Explained," *KDD 2012*.
-- [[raw/Fabijan 2019 - Diagnosing Sample Ratio Mismatch.pdf]] — Fabijan, A. et al. (2019), "Diagnosing Sample Ratio Mismatch in Online Controlled Experiments: A Taxonomy and Rules of Thumb for Practitioners," *KDD 2019*.
-- [[raw/Lindon 2020 - Anytime-Valid Inference for Multinomial Count Data.pdf]] — Lindon, M. & Malek, A. (2020), "Anytime-Valid Inference for Multinomial Count Data," arXiv:2011.03567.
-- [[raw/Johari 2020 - Experimental Design in Two-Sided Platforms.pdf]] — Johari, R., Li, H., Liskovich, I. & Weintraub, G. (2020), "Experimental Design in Two-Sided Platforms: An Analysis of Bias," arXiv:2002.05670 (*Management Science* 2022).
-- [[raw/Bojinov 2020 - Design and Analysis of Switchback Experiments.pdf]] — Bojinov, I., Simchi-Levi, D. & Zhao, J. (2020), "Design and Analysis of Switchback Experiments," arXiv:2009.00148 (*Management Science* 2023).
+- Deng 2013 - CUPED Improving Sensitivity with Pre-Experiment Data — Deng, A., Xu, Y., Kohavi, R. & Walker, T. (2013), "Improving the Sensitivity of Online Controlled Experiments by Utilizing Pre-Experiment Data," *WSDM 2013*.
+- Johari 2015 - Always Valid Inference — Johari, R., Pekelis, L. & Walsh, D. (2015; v3 2019), "Always Valid Inference: Continuous Monitoring of A/B Tests," arXiv:1512.04922 (*Operations Research* 2022).
+- Howard 2021 - Time-uniform Nonparametric Confidence Sequences — Howard, S., Ramdas, A., McAuliffe, J. & Sekhon, J. (2021), "Time-uniform, nonparametric, nonasymptotic confidence sequences," *Annals of Statistics*; arXiv:1810.08240.
+- Larsen 2022 - Statistical Challenges in Online Controlled Experiments — Larsen, N., Stallrich, J., Sengupta, S., Deng, A., Kohavi, R. & Stevens, N. (2022), "Statistical Challenges in Online Controlled Experiments: A Review of A/B Testing Methodology," arXiv:2212.11366.
+- Kohavi 2012 - Trustworthy Online Controlled Experiments Five Puzzling Outcomes — Kohavi, R., Deng, A., Frasca, B., Longbotham, R., Walker, T. & Xu, Y. (2012), "Trustworthy Online Controlled Experiments: Five Puzzling Outcomes Explained," *KDD 2012*.
+- Fabijan 2019 - Diagnosing Sample Ratio Mismatch — Fabijan, A. et al. (2019), "Diagnosing Sample Ratio Mismatch in Online Controlled Experiments: A Taxonomy and Rules of Thumb for Practitioners," *KDD 2019*.
+- Lindon 2020 - Anytime-Valid Inference for Multinomial Count Data — Lindon, M. & Malek, A. (2020), "Anytime-Valid Inference for Multinomial Count Data," arXiv:2011.03567.
+- Johari 2020 - Experimental Design in Two-Sided Platforms — Johari, R., Li, H., Liskovich, I. & Weintraub, G. (2020), "Experimental Design in Two-Sided Platforms: An Analysis of Bias," arXiv:2002.05670 (*Management Science* 2022).
+- Bojinov 2020 - Design and Analysis of Switchback Experiments — Bojinov, I., Simchi-Levi, D. & Zhao, J. (2020), "Design and Analysis of Switchback Experiments," arXiv:2009.00148 (*Management Science* 2023).

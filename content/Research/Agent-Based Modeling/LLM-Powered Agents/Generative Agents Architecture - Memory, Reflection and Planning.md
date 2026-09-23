@@ -4,7 +4,7 @@ tags:
   - source/ingested
   - topic/agent-based-modeling
   - topic/large-language-models
-  - topic/generative-agents
+  - topic/llm-agents
   - type/method
   - doc/paper
 source: "[[raw/Park 2023 - Generative Agents Interactive Simulacra.pdf]]"

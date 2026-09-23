@@ -116,4 +116,4 @@ Having seen that every adjunction induces a monad ([[Adjunctions Induce Monads]]
 - [[Monads and the Monad Laws]]
 - [[Monads - Overview]]
 - [[Adjoint Functors]] · [[Adjoint Functor Theorems]] · [[Cartesian Closed Categories]]
-- Source: [[raw/Riehl - Category Theory in Context.pdf]]
+- Source: Riehl - Category Theory in Context

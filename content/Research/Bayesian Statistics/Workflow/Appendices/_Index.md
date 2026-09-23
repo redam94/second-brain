@@ -28,7 +28,7 @@ concept_count: 2
 - [[How to Get the Most Out of Bayesian Data Analysis]] — CONTAINS: a section-by-section reading guide to BDA3; the retraction of the $-2$ multiplier on information criteria; the retraction of method-of-moments hyperparameter estimation and posterior predictive $p$-values; the three approximation strategies; the definition of robustness as description not virtue; Appendix B
 
 ## Sources
-- [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf]] — Appendices A–B, pp. 485–499
+- Gelman Vehtari McElreath 2026 - Bayesian Workflow (book) — Appendices A–B, pp. 485–499
 
 ## See Also
 - [[Bayesian Workflow Book - Overview]] — the book's routing index

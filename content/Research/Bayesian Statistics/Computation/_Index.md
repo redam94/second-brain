@@ -45,5 +45,5 @@ concept_count: 21
 
 ## Sources
 
-- [[raw/BDA3.pdf]] — Bayesian Data Analysis, 3rd Edition (Gelman et al.), Part III (pp. 259-349)
-- [[raw/StatRethink-Bayes.pdf]] — Statistical Rethinking (McElreath, 2015), Chapter 8
+- BDA3 — Bayesian Data Analysis, 3rd Edition (Gelman et al.), Part III (pp. 259-349)
+- StatRethink-Bayes — Statistical Rethinking (McElreath, 2015), Chapter 8

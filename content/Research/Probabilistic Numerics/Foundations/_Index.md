@@ -38,7 +38,7 @@ concept_count: 7
 - [[Hierarchical Inference in Gaussian Models]] — CONTAINS: hyperparameters & evidence/marginal-likelihood definition, Gauss–Gamma conjugate prior/posterior with sufficient statistics (Eq. 6.5–6.8), Student-$t$ predictive (Eq. 6.9), Gauss-inverse-Wishart multivariate case, recursive scale calibration in filters (Eq. 6.13–6.14), empirical vs full Bayes.
 
 ## Sources
-- [[raw/ProbabilisticNumerics.pdf]] — Hennig, Osborne & Kersting, *Probabilistic Numerics: Computation as Machine Learning* (CUP, 2022), Part I "Mathematical Background" + Introduction, book pp. 1-62.
+- ProbabilisticNumerics — Hennig, Osborne & Kersting, *Probabilistic Numerics: Computation as Machine Learning* (CUP, 2022), Part I "Mathematical Background" + Introduction, book pp. 1-62.
 
 ## See Also
 - [[Research/Probabilistic Numerics/Integration/_Index|Integration]] — Bayesian quadrature and integration as inference.

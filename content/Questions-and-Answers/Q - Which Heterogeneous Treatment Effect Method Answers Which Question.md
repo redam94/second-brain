@@ -142,9 +142,9 @@ Two details worth keeping from the source notes. First, the forest's honesty req
 | [[Marginal vs Conditional Coverage]] | What a marginal guarantee does and does not say |
 | [[Local Average Treatment Effects]], [[Group-Time Average Treatment Effects]] | Subgroup effects not defined by covariates |
 | [[DML Estimators for ATE and the Interactive Model]] | CI for an average or subgroup-average effect |
-| [[raw/Lei Candes 2020 - Conformal Inference of Counterfactuals and ITEs.pdf]] | Sec. 3.6 simulation table |
-| [[raw/Wager Athey 2018 - Heterogeneous Treatment Effects using Random Forests.pdf]] | Theorems 1, 11; §5 Tables 1–3 |
-| [[raw/Nie Wager 2021 - Quasi-Oracle Estimation of Heterogeneous Treatment Effects.pdf]] | §4–6 |
+| Lei Candes 2020 - Conformal Inference of Counterfactuals and ITEs | Sec. 3.6 simulation table |
+| Wager Athey 2018 - Heterogeneous Treatment Effects using Random Forests | Theorems 1, 11; §5 Tables 1–3 |
+| Nie Wager 2021 - Quasi-Oracle Estimation of Heterogeneous Treatment Effects | §4–6 |
 
 ## Related Concepts
 

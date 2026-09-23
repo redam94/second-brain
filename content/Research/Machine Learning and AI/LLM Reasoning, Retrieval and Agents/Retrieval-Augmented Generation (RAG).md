@@ -3,7 +3,7 @@ title: Retrieval-Augmented Generation (RAG)
 tags:
   - source/ingested
   - topic/machine-learning
-  - topic/llm
+  - topic/large-language-models
   - topic/retrieval
   - type/method
   - doc/paper

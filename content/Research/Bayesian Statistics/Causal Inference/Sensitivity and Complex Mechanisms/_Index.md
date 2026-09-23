@@ -39,7 +39,7 @@ concept_count: 3
 
 ## Sources
 
-- [[raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]] — §6–7, pp. 12–18
+- Li et al. - 2022 - Bayesian causal inference a critical review — §6–7, pp. 12–18
 
 ## See Also
 - [[Research/Bayesian Statistics/Causal Inference/Bayesian Inference/_Index|Bayesian Inference]] — core Bayesian CI structure that these methods extend

@@ -138,9 +138,9 @@ A routing checklist for media work:
 | [[RLHF and Instruction Tuning]] · [[Reward Modeling from Human Preferences]] | KL-regularised objective, bandit environment, learned reward |
 | [[Tool Use and the Agent Loop]] | LLM as a stationary policy with state in the context |
 | [[Open Challenges and Future Directions]] | BED's sensitivity to misspecification; BAD as a Bayes-adaptive MDP |
-| [[raw/Russo et al 2018 - A Tutorial on Thompson Sampling.pdf]] | Chs. 1-8 |
-| [[raw/q- and a- learning.pdf]] | Schulte et al. 2014, Secs. 2-6 |
-| [[raw/Ouyang 2022 - InstructGPT RLHF.pdf]] | Secs. 3.5, 4 |
+| Russo et al 2018 - A Tutorial on Thompson Sampling | Chs. 1-8 |
+| q- and a- learning | Schulte et al. 2014, Secs. 2-6 |
+| Ouyang 2022 - InstructGPT RLHF | Secs. 3.5, 4 |
 
 ## Related Concepts
 

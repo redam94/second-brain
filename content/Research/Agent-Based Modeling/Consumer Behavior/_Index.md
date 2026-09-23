@@ -27,5 +27,5 @@ Concepts that span both models:
 - **Bounded rationality**: Karakaya uses logit noise; CUBES uses threshold filtering.
 
 ## Sources
-- [[raw/abm_consumer.pdf]] — Karakaya, Badur & Aytekin (2011)
-- [[raw/abm_human_behaviour.pdf]] — Ben Said, Bouron & Drogoul (2002)
+- abm_consumer — Karakaya, Badur & Aytekin (2011)
+- abm_human_behaviour — Ben Said, Bouron & Drogoul (2002)

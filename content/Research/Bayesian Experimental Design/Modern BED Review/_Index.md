@@ -40,7 +40,7 @@ concept_count: 5
 - [[Open Challenges and Future Directions]] — CONTAINS: policy-based BAD scaling; active-learning (BALD) & Bayesian-RL links; misspecification catastrophic-failure (linear-regression extremes example); likelihood-principle protection; implicit-simulator & richer-model directions.
 
 ## Sources
-- [[../raw/Rainforth et al 2023 - Modern Bayesian Experimental Design.pdf]] — Rainforth, T., Foster, A., Ivanova, D.R., Bickford Smith, F. (2023), *Modern Bayesian Experimental Design*, **Statistical Science** (accepted). arXiv:2302.14545.
+- Rainforth et al 2023 - Modern Bayesian Experimental Design — Rainforth, T., Foster, A., Ivanova, D.R., Bickford Smith, F. (2023), *Modern Bayesian Experimental Design*, **Statistical Science** (accepted). arXiv:2302.14545.
 
 ## See Also
 - [[Research/Bayesian Experimental Design/Foundations/_Index|Foundations]] — the EIG, nested estimation, and adaptive-design core

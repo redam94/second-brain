@@ -25,4 +25,4 @@ concept_count: 1
 - [[Population Initialization and Parameter Sensitivity]] — CONTAINS: fixed parameters (Table 1), consumer parameter distributions, OAT experimental design, WOM toggle, benchmark configuration, sensitivity findings
 
 ## Sources
-- [[raw/abm_consumer.pdf]] — Karakaya et al. (2011) experimental setup
+- abm_consumer — Karakaya et al. (2011) experimental setup

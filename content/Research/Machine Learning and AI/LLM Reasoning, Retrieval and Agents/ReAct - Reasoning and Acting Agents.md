@@ -3,7 +3,7 @@ title: ReAct - Reasoning and Acting Agents
 tags:
   - source/ingested
   - topic/machine-learning
-  - topic/llm
+  - topic/large-language-models
   - topic/llm-agents
   - type/method
   - doc/paper

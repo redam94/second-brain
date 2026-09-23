@@ -6,7 +6,7 @@ tags:
   - topic/likelihood-free-inference
   - type/theorem
   - doc/paper
-  - method/mcmc
+  - topic/mcmc
 source: "[[raw/Wood 2010 - Statistical Inference for Noisy Nonlinear Ecological Dynamic Systems]]"
 source_location: "Fig. 2, 'Evaluating the synthetic likelihood', Methods summary, pp. 3-4, 7-8"
 date_ingested: 2026-06-27

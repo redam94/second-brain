@@ -117,7 +117,7 @@ Finding: $\beta_2 < 0$ (credibly), meaning training becomes less effective at bu
 
 ## Source
 
-- [[raw/Bayesian moderation analysis]] — PyMC example by Benjamin T. Vincent (2021–2023)
+- Bayesian moderation analysis — PyMC example by Benjamin T. Vincent (2021–2023)
 - Hayes (2017): *Introduction to Mediation, Moderation, and Conditional Process Analysis*
 
 ## See Also

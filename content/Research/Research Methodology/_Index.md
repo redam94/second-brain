@@ -71,11 +71,11 @@ concept_count: 32
 
 ## Sources
 
-- [[raw/p_hacking.pdf]] — "The Garden of Forking Paths" (Gelman & Loken, 2013)
-- [[raw/ssrn-2080235.pdf]] — "Here, There, and Everywhere" (Lewis, Rao, & Reiley, 2011)
-- [[raw/multiple2f.pdf]] — "Why we (usually) don't have to worry about multiple comparisons" (Gelman, Hill & Yajima, 2009)
-- [[raw/rohrer-murayama-2023.pdf]] — "These Are Not the Effects You Are Looking For" (Rohrer & Murayama, 2023, AMPPS 6(1))
-- [[raw/These Are Not the Effects You Are Looking For]] — A. Jordan Nafa (2022), blog post: Table 2 Fallacy, logic of statistical control, mutual adjustment, simulation study with R/Python/Stan demonstrating nuisance parameter bias (2026-06-26)
+- p_hacking — "The Garden of Forking Paths" (Gelman & Loken, 2013)
+- ssrn-2080235 — "Here, There, and Everywhere" (Lewis, Rao, & Reiley, 2011)
+- multiple2f — "Why we (usually) don't have to worry about multiple comparisons" (Gelman, Hill & Yajima, 2009)
+- rohrer-murayama-2023 — "These Are Not the Effects You Are Looking For" (Rohrer & Murayama, 2023, AMPPS 6(1))
+- These Are Not the Effects You Are Looking For — A. Jordan Nafa (2022), blog post: Table 2 Fallacy, logic of statistical control, mutual adjustment, simulation study with R/Python/Stan demonstrating nuisance parameter bias (2026-06-26)
 
 ## See Also
 

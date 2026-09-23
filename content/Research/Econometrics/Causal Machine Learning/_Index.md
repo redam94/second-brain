@@ -67,7 +67,7 @@ parent: "[[Research/Econometrics/_Index|Econometrics]]"
 
 ## Sources
 
-- [[raw/Chernozhukov 2018 - Double Debiased Machine Learning.pdf]] — Chernozhukov, V., Chetverikov, D., Demirer, M., Duflo, E., Hansen, C., Newey, W. & Robins, J. (2018), "Double/Debiased Machine Learning for Treatment and Structural Parameters," *The Econometrics Journal* 21(1). arXiv:1608.00060.
-- [[raw/Wager Athey 2018 - Heterogeneous Treatment Effects using Random Forests.pdf]] — Wager, S. & Athey, S. (2018), "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests," *Journal of the American Statistical Association* 113(523). arXiv:1510.04342.
-- [[raw/Athey Tibshirani Wager 2019 - Generalized Random Forests.pdf]] — Athey, S., Tibshirani, J. & Wager, S. (2019), "Generalized Random Forests," *Annals of Statistics* 47(2). arXiv:1610.01271.
-- [[raw/Nie Wager 2021 - Quasi-Oracle Estimation of Heterogeneous Treatment Effects.pdf]] — Nie, X. & Wager, S. (2021), "Quasi-Oracle Estimation of Heterogeneous Treatment Effects," *Biometrika* 108(2). arXiv:1712.04912.
+- Chernozhukov 2018 - Double Debiased Machine Learning — Chernozhukov, V., Chetverikov, D., Demirer, M., Duflo, E., Hansen, C., Newey, W. & Robins, J. (2018), "Double/Debiased Machine Learning for Treatment and Structural Parameters," *The Econometrics Journal* 21(1). arXiv:1608.00060.
+- Wager Athey 2018 - Heterogeneous Treatment Effects using Random Forests — Wager, S. & Athey, S. (2018), "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests," *Journal of the American Statistical Association* 113(523). arXiv:1510.04342.
+- Athey Tibshirani Wager 2019 - Generalized Random Forests — Athey, S., Tibshirani, J. & Wager, S. (2019), "Generalized Random Forests," *Annals of Statistics* 47(2). arXiv:1610.01271.
+- Nie Wager 2021 - Quasi-Oracle Estimation of Heterogeneous Treatment Effects — Nie, X. & Wager, S. (2021), "Quasi-Oracle Estimation of Heterogeneous Treatment Effects," *Biometrika* 108(2). arXiv:1712.04912.

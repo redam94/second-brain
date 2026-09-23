@@ -25,6 +25,6 @@ concept_count: 1
 - [[ABM Validation Challenges]] — CONTAINS: Merson's criterion, Troitzsch's systematic validation difficulty, input-output mismatch, stochastic variation, validation strategies across papers, plausibility standard
 
 ## Sources
-- [[raw/abm_word_of_mouth.pdf]] — Bonabeau (2002) validation discussion
-- [[raw/abm_human_behaviour.pdf]] — Ben Said et al. (2002) Merson citation
-- [[raw/abm_consumer.pdf]] — Karakaya et al. (2011) Troitzsch citation
+- abm_word_of_mouth — Bonabeau (2002) validation discussion
+- abm_human_behaviour — Ben Said et al. (2002) Merson citation
+- abm_consumer — Karakaya et al. (2011) Troitzsch citation

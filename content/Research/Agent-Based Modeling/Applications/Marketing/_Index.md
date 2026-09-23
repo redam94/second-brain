@@ -19,4 +19,4 @@ concept_count: 1
 - [[ABM in Marketing Strategy]] — CONTAINS: 4Ps in ABM, quality dominance under WOM, price complexity, promotion diminishing returns, opinion leader targeting, ABM vs traditional marketing comparison
 
 ## Sources
-- [[raw/abm_consumer.pdf]] — Karakaya et al. (2011)
+- abm_consumer — Karakaya et al. (2011)

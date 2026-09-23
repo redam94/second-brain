@@ -52,7 +52,7 @@ concept_count: 5
 - [[Cartesian Closed Categories]] — CONTAINS: CCC definition, evaluation map, Set/CAT/presheaf CCC, Vect_k not CCC, monoidal closed, connection to lambda calculus
 
 ## Sources
-- [[raw/1612.09375v2.pdf]] — *Basic Category Theory*, Ch. 6.1–6.3 and Appendix
+- 1612.09375v2 — *Basic Category Theory*, Ch. 6.1–6.3 and Appendix
 
 ## See Also
 - [[../Representables/_Index|Representables]] — Yoneda lemma used throughout synthesis

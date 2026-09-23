@@ -44,7 +44,7 @@ concept_count: 4
 - [[Functor Categories]] — CONTAINS: functor category definition, presheaf category definition, examples (diagrams as functor categories, sheaves), isomorphisms in functor categories, hom bifunctor
 
 ## Sources
-- [[raw/1612.09375v2.pdf]] — *Basic Category Theory*, Tom Leinster, Ch. 1.1–1.4 and Ch. 3
+- 1612.09375v2 — *Basic Category Theory*, Tom Leinster, Ch. 1.1–1.4 and Ch. 3
 
 ## See Also
 - [[../Adjunctions/_Index|Adjunctions]] — Adjoint functors, built on functors and natural transformations

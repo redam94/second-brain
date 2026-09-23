@@ -71,14 +71,14 @@ concept_count: 20
 
 ## Sources
 
-- [[raw/Mostly Harmless Econometrics.pdf]] — Mostly Harmless Econometrics (Angrist & Pischke, 2008), Chapters 4-6
-- [[raw/Difference in differences]] — PyMC example: Bayesian DiD with counterfactual inference
-- [[raw/15 - Synthetic Control — Causal Inference for the Brave and True]] — Causal Inference for the Brave and True, Ch. 15: Synthetic control with Python (scipy, sklearn)
-- [[raw/Abadie 2021 - Using Synthetic Controls.pdf]] — Abadie (2021), JEL 59(2): 391–425. Authoritative methodological guide: feasibility, bias theory, inference, requirements, extensions
-- [[raw/Xu 2016 - Generalized Synthetic Control Method.pdf]] — Xu (2017), Political Analysis 25(1): 57–76. GSC method: IFE model, 3-step estimator, cross-validation, bootstrap inference, gsynth R package
-- [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Graham Harrison, Towards Data Science (2023-04-06): DAGs, confounders, backdoor adjustment, d-separation
-- [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW in R/brms
-- [[raw/PSM-Rosenbaum-Rubin-Stuart-Survey.md]] — Survey synthesis: Rosenbaum & Rubin (1983) Biometrika; Rosenbaum & Rubin (1985) American Statistician; Stuart (2010) Statistical Science; Imbens (2004) RESTAT — foundational propensity score matching literature
+- Mostly Harmless Econometrics — Mostly Harmless Econometrics (Angrist & Pischke, 2008), Chapters 4-6
+- Difference in differences — PyMC example: Bayesian DiD with counterfactual inference
+- 15 - Synthetic Control — Causal Inference for the Brave and True — Causal Inference for the Brave and True, Ch. 15: Synthetic control with Python (scipy, sklearn)
+- Abadie 2021 - Using Synthetic Controls — Abadie (2021), JEL 59(2): 391–425. Authoritative methodological guide: feasibility, bias theory, inference, requirements, extensions
+- Xu 2016 - Generalized Synthetic Control Method — Xu (2017), Political Analysis 25(1): 57–76. GSC method: IFE model, 3-step estimator, cross-validation, bootstrap inference, gsynth R package
+- Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs — Graham Harrison, Towards Data Science (2023-04-06): DAGs, confounders, backdoor adjustment, d-separation
+- How to use Bayesian propensity scores and inverse probability weights — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW in R/brms
+- PSM-Rosenbaum-Rubin-Stuart-Survey — Survey synthesis: Rosenbaum & Rubin (1983) Biometrika; Rosenbaum & Rubin (1985) American Statistician; Stuart (2010) Statistical Science; Imbens (2004) RESTAT — foundational propensity score matching literature
 
 ## See Also
 

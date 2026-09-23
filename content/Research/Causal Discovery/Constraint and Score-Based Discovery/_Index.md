@@ -39,4 +39,4 @@ concept_count: 5
 
 ## Sources
 
-- [[raw/Glymour Zhang Spirtes 2019 - Review of Causal Discovery Methods.pdf]] — Glymour, Zhang & Spirtes (2019), *Review of Causal Discovery Methods Based on Graphical Models*, Frontiers in Genetics 10:524.
+- Glymour Zhang Spirtes 2019 - Review of Causal Discovery Methods — Glymour, Zhang & Spirtes (2019), *Review of Causal Discovery Methods Based on Graphical Models*, Frontiers in Genetics 10:524.

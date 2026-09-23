@@ -44,8 +44,8 @@ concept_count: 1
 - [[SBC Case Studies]] — CONTAINS: HMC/ADVI/INLA comparisons, eight schools
 
 ## Sources
-- [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf]] — Chapter 14, pp. 249–254
-- [[raw/1804.06788-Talts-SBC.pdf]] — the original SBC paper
+- Gelman Vehtari McElreath 2026 - Bayesian Workflow (book) — Chapter 14, pp. 249–254
+- 1804.06788-Talts-SBC — the original SBC paper
 
 ## See Also
 - [[Simulation-Based Calibration Checking in Model Development Workflow]] — Chapter 31, the worked case study

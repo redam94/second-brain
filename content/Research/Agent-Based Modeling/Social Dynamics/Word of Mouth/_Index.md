@@ -28,9 +28,9 @@ concept_count: 2
 - [[Opinion Leaders and Social Influence]] — CONTAINS: Lazarsfeld two-step flow, Karakaya opinion leaders (M=200, 3x multiplier), CUBES emergent leaders, comparison table, Rogers adopter categories
 
 ## Sources
-- [[raw/abm_consumer.pdf]] — WOM utility and opinion leader targeting
-- [[raw/abm_human_behaviour.pdf]] — Imitation-based WOM and emergent leaders
-- [[raw/abm_word_of_mouth.pdf]] — Network-based WOM diffusion
+- abm_consumer — WOM utility and opinion leader targeting
+- abm_human_behaviour — Imitation-based WOM and emergent leaders
+- abm_word_of_mouth — Network-based WOM diffusion
 
 ## See Also
 - [[../Networks and Diffusion/_Index|Networks and Diffusion]] — the substrate WOM travels through

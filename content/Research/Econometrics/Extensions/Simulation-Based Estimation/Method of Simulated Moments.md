@@ -213,7 +213,7 @@ This $T$-dimensional integral has no closed-form solution. Standard GMM using un
 
 ## Sources
 
-- [[raw/tdb136.pdf]] — Liesenfeld & Breitung (1998), Sections 1-3
+- tdb136 — Liesenfeld & Breitung (1998), Sections 1-3
 - McFadden, D. (1989), "A Method of Simulated Moments for Estimation of Discrete Response Models without Numerical Integration," *Econometrica* 57, 995-1026
 - Pakes, A. and D. Pollard (1989), "Simulation and the Asymptotics of Optimization Estimators," *Econometrica* 57, 1027-1057
 - Newey, W.K. and D. McFadden (1994), "Large Sample Estimation and Hypothesis Testing," *Handbook of Econometrics* 4, 2111-2245

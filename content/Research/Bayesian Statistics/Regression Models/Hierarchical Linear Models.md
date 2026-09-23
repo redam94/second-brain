@@ -4,7 +4,6 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/hierarchical-models
-  - topic/multilevel-models
   - type/concept
   - doc/textbook
 source: "[[raw/BDA3.pdf]]"

@@ -29,5 +29,5 @@ date_updated: 2026-04-10
 - **Heterogeneity requirement**: Each domain features agents with meaningfully different properties — driver aggressiveness (traffic), trading strategies (markets), behavioral attitudes (consumers)
 
 ## Sources
-- [[raw/abm_word_of_mouth.pdf]] — Bonabeau (2002), four application areas
-- [[raw/abm_consumer.pdf]] — Karakaya et al. (2011), marketing strategy application
+- abm_word_of_mouth — Bonabeau (2002), four application areas
+- abm_consumer — Karakaya et al. (2011), marketing strategy application

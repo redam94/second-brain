@@ -126,8 +126,8 @@ The upshot: you never need a cell for every interaction. You need a *continuous 
 | [[High-Dimensional Design Applications]] | Gradient BOED scaling to 100–400-D design spaces |
 | [[Bayesian Optimisation]] · [[Acquisition Functions]] | Same value-of-information logic when the goal is to optimize allocation |
 | [[Gaussian Process Regression]] · [[Hilbert Space Gaussian Processes]] | Continuous interaction surrogate instead of a factorial grid |
-| [[raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf\|Jin et al. 2017]] | Original MMM source |
-| [[raw/Rainforth et al 2023 - Modern Bayesian Experimental Design.pdf\|Rainforth et al. 2023]] | Adaptive design, DAD, computational scaling |
+| Jin et al. 2017 | Original MMM source |
+| Rainforth et al. 2023 | Adaptive design, DAD, computational scaling |
 
 ## Related Concepts
 

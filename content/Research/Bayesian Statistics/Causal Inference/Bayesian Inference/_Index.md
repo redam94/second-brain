@@ -39,7 +39,7 @@ concept_count: 3
 
 ## Sources
 
-- [[raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]] — §3–5, pp. 5–13
+- Li et al. - 2022 - Bayesian causal inference a critical review — §3–5, pp. 5–13
 
 ## See Also
 - [[Foundations/_Index|Foundations]] — prerequisite potential outcomes framework

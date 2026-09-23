@@ -4,7 +4,6 @@ tags:
   - source/ingested
   - topic/research-methodology
   - topic/survival-analysis
-  - topic/time-to-event
   - topic/cox-model
   - type/concept
   - doc/paper

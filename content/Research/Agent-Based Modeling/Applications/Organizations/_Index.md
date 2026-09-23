@@ -19,4 +19,4 @@ concept_count: 1
 - [[Organizational Simulation]] — CONTAINS: business process modeling, store layout optimization (Macy's, Sainsbury's), workforce management, customer flow patterns
 
 ## Sources
-- [[raw/abm_word_of_mouth.pdf]] — Bonabeau (2002)
+- abm_word_of_mouth — Bonabeau (2002)

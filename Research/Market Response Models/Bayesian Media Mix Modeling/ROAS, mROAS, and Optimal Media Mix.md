@@ -2,10 +2,10 @@
 title: ROAS, mROAS, and Optimal Media Mix
 tags:
   - source/ingested
-  - topic/market-response-models
+  - topic/market-response
   - type/definition
   - doc/paper
-  - method/mcmc
+  - topic/mcmc
 source: "[[raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf]]"
 source_location: "Sec. 4, pp. 7-10 (Eqs. 10-16); Sec. 5.2, pp. 13-15"
 date_ingested: 2026-06-17

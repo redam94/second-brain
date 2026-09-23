@@ -2,10 +2,10 @@
 title: Carryover (Adstock) Functional Forms
 tags:
   - source/ingested
-  - topic/market-response-models
+  - topic/market-response
   - type/definition
   - doc/paper
-  - method/mcmc
+  - topic/mcmc
 source: "[[raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf]]"
 source_location: "Sec. 2.1, pp. 3-4 (Eqs. 1-3)"
 date_ingested: 2026-06-17

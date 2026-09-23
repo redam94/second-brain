@@ -40,7 +40,7 @@ concept_count: 6
 - [[Approximate Thompson Sampling and Practical Extensions]] — CONTAINS: Gibbs sampling, Laplace approximation, Langevin Monte Carlo, and bootstrap approximate posterior sampling; incremental (fixed-compute) variants and ensemble sampling; prior specification, constraints/caution, nonstationary TS, and concurrent TS; posterior sampling for reinforcement learning (PSRL) and deep exploration.
 
 ## Sources
-- [[../raw/Russo et al 2018 - A Tutorial on Thompson Sampling.pdf]] — Russo, D.J., Van Roy, B., Kazerouni, A., Osband, I., Wen, Z. (2018), *A Tutorial on Thompson Sampling*, **Foundations and Trends in Machine Learning** 11(1):1-96. arXiv:1707.02038.
+- Russo et al 2018 - A Tutorial on Thompson Sampling — Russo, D.J., Van Roy, B., Kazerouni, A., Osband, I., Wen, Z. (2018), *A Tutorial on Thompson Sampling*, **Foundations and Trends in Machine Learning** 11(1):1-96. arXiv:1707.02038.
 
 ## See Also
 - [[../Bayesian Experimental Design - Overview|Bayesian Experimental Design - Overview]] — the "learn, don't earn" sibling paradigm

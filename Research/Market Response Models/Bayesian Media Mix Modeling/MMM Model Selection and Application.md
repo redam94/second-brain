@@ -2,10 +2,10 @@
 title: MMM Model Selection and Application
 tags:
   - source/ingested
-  - topic/market-response-models
+  - topic/market-response
   - type/example
   - doc/paper
-  - method/mcmc
+  - topic/mcmc
 source: "[[raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf]]"
 source_location: "Sec. 5, pp. 10-15; Sec. 6, pp. 16-18; Sec. 8, pp. 22-27 (Eq. 18, Tables 7-9)"
 date_ingested: 2026-06-17

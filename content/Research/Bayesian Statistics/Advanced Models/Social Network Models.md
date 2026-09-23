@@ -99,5 +99,5 @@ with pm.Model() as network_model:
 
 ## Source
 
-- [[raw/Social Networks]] — PyMC port of Statistical Rethinking 2023, Lecture 15 (McElreath)
+- Social Networks — PyMC port of Statistical Rethinking 2023, Lecture 15 (McElreath)
 - Video: [Lecture 15 — Social Networks](https://youtu.be/L_QumFUv7C8)

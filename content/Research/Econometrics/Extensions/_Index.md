@@ -35,12 +35,12 @@ concept_count: 23
 
 ## Sources
 
-- [[raw/Mostly Harmless Econometrics.pdf]] — Mostly Harmless Econometrics (Angrist & Pischke, 2008), Chapters 7–8
-- [[raw/Discrete Choice and Random Utility Models]] — PyMC tutorial: Bayesian discrete choice models
-- [[raw/tdb136.pdf]] — Liesenfeld & Breitung (1998), "Simulation Based Methods of Moments in Empirical Finance"
-- [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), "Simulated Method of Moments Estimation for Copula-Based Multivariate Models"
+- Mostly Harmless Econometrics — Mostly Harmless Econometrics (Angrist & Pischke, 2008), Chapters 7–8
+- Discrete Choice and Random Utility Models — PyMC tutorial: Bayesian discrete choice models
+- tdb136 — Liesenfeld & Breitung (1998), "Simulation Based Methods of Moments in Empirical Finance"
+- Oh_Patton_SMM_copulas_nov11 — Oh & Patton (2011), "Simulated Method of Moments Estimation for Copula-Based Multivariate Models"
 - [Computational Methods for Economists — Ch. 19](https://opensourceecon.github.io/CompMethods/struct_est/SMM.html) — Evans (2024)
-- [[raw/Duffie Singleton 1993 - Simulated Moments Estimation of Markov Models of Asset Prices]] — Duffie & Singleton (1993), Econometrica 61(4):929–952
+- Duffie Singleton 1993 - Simulated Moments Estimation of Markov Models of Asset Prices — Duffie & Singleton (1993), Econometrica 61(4):929–952
 
 ## See Also
 

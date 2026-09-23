@@ -37,7 +37,7 @@ concept_count: 5
 
 ## Sources
 
-- [[raw/Nosek et al 2018 - The Preregistration Revolution.pdf]] — "The Preregistration Revolution" (Nosek, Ebersole, DeHaven & Mellor, 2018, PNAS 115(11):2600-2606)
+- Nosek et al 2018 - The Preregistration Revolution — "The Preregistration Revolution" (Nosek, Ebersole, DeHaven & Mellor, 2018, PNAS 115(11):2600-2606)
 
 ## See Also
 

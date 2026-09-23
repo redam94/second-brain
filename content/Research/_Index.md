@@ -68,45 +68,45 @@ concept_count: 595
 
 ## Sources
 
-- [[raw/BDA3.pdf]] — Bayesian Data Analysis, 3rd Edition (Gelman et al., 2013/2025)
-- [[raw/BayesWorkflow.pdf]] — Bayesian Workflow (Gelman, Vehtari, Simpson et al., 2020)
-- [[raw/StatRethink-Bayes.pdf]] — Statistical Rethinking: A Bayesian Course (McElreath, 2015)
-- [[raw/p_hacking.pdf]] — The Garden of Forking Paths (Gelman & Loken, 2013)
-- [[raw/ssrn-2080235.pdf]] — Here, There, and Everywhere (Lewis, Rao, & Reiley, 2011)
-- [[raw/Mostly Harmless Econometrics.pdf]] — Mostly Harmless Econometrics (Angrist & Pischke, 2008)
-- [[raw/Discrete Choice and Random Utility Models]] — PyMC tutorial: Bayesian discrete choice / random utility models (2026-04-08)
-- [[raw/Factor analysis]] — PyMC tutorial: factor analysis and probabilistic PCA (2026-04-08)
-- [[raw/Baby Births Modelling with HSGPs]] — PyMC tutorial: Hilbert Space Gaussian Processes for time series (2026-04-09)
-- [[raw/Bayesian Non-parametric Causal Inference]] — PyMC tutorial: BART + propensity scores for causal ATE/ATT estimation (2026-04-09)
-- [[raw/Bayesian copula estimation Describing correlated joint distributions]] — PyMC tutorial: Gaussian copula for joint distributions (2026-04-09)
-- [[raw/Missing Data]] — PyMC / Statistical Rethinking Lecture 18: DAG-based missing data analysis (2026-04-09)
-- [[raw/Counterfactual inference calculating excess deaths due to COVID-19]] — PyMC tutorial: Bayesian counterfactual inference, COVID excess deaths (2026-04-09)
-- [[raw/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics]] — PyMC case study: CFA and SEM for psychometrics (2026-04-09)
-- [[raw/The Besag-York-Mollie Model for Spatial Data]] — PyMC tutorial: BYM spatial model on NYC traffic data (2026-04-09)
-- [[raw/Difference in differences]] — PyMC tutorial: Bayesian DiD with counterfactual prediction (2026-04-09)
-- [[raw/Social Networks]] — PyMC / Statistical Rethinking Lecture 15: dyadic social network models (2026-04-09)
-- [[raw/Bayesian moderation analysis]] — PyMC tutorial: moderation analysis with interaction terms (2026-04-09)
-- [[raw/multiple2f.pdf]] — "Why we (usually) don't have to worry about multiple comparisons" (Gelman, Hill & Yajima, 2009)
-- [[raw/15 - Synthetic Control — Causal Inference for the Brave and True]] — Causal Inference for the Brave and True, Ch. 15: synthetic control with Python (Matheu Facure, 2023)
-- [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Graham Harrison, Towards Data Science (2023-04-06): DAGs, confounders, backdoor adjustment, d-separation
-- [[raw/How to use Bayesian propensity scores and inverse probability weights]] — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW in R/brms
-- [[raw/Quantum mechanics]] — Wikipedia: quantum mechanics, Hilbert space formalism, Schrödinger equation, entanglement, Bell's theorem (2026-04-11)
-- [[raw/Quantum field theory]] — Wikipedia: quantum field theory, canonical quantization, Fock space, path integrals, Feynman diagrams (2026-04-11)
-- [[raw/Gauge theory]] — Wikipedia: gauge theory, local symmetry, Yang-Mills, Standard Model gauge groups (2026-04-11)
-- [[Market Response Models/raw/Market Response Models Econometric and Time Series Analysis.pdf|Market Response Models Econometric and Time Series Analysis]] — Hanssens, Parsons & Schultz (2001), 2nd Ed.: functional forms, Koyck/ADL lags, OLS/2SLS/Bayes, ARIMA, transfer functions, VAR/cointegration/ECM, advertising/price empirical generalizations
-- [[Agent-Based Modeling/raw/abm_word_of_mouth.pdf]] — Bonabeau (2002), ABM methods and techniques for simulating human systems (PNAS)
-- [[Agent-Based Modeling/raw/abm_consumer.pdf]] — Karakaya, Badur & Aytekin (2011), marketing strategies with WOM using ABM
-- [[Agent-Based Modeling/raw/abm_human_behaviour.pdf]] — Ben Said, Bouron & Drogoul (2002), CUBES consumer behavior simulator
-- [[Agent-Based Modeling/raw/calibration_ABM.pdf]] — McCulloch et al. (2022), Calibrating ABMs using Uncertainty Quantification Methods (JASSS 25(2))
-- [[Research Methodology/raw/rohrer-murayama-2023.pdf]] — Rohrer & Murayama (2023), These Are Not the Effects You Are Looking For: Causality and the Within/Between-Persons Distinction (AMPPS 6(1))
-- [[raw/These Are Not the Effects You Are Looking For]] — A. Jordan Nafa (2022), Table 2 Fallacy, logic of statistical control/mutual adjustment, simulation (R/Python/Stan) demonstrating nuisance parameter bias (2026-06-26)
-- [[raw/19. Simulated Method of Moments Estimation — Computational Methods for Economists using Python]] — Evans (2024), Computational Methods for Economists, Ch. 19: SMM theory, Python implementation, Brock-Mirman structural macro exercise (2026-04-12)
-- [[Causal Discovery/raw/1803.01422-NOTEARS.pdf|NOTEARS]] — Zheng, Aragam, Ravikumar & Xing (2018), *DAGs with NO TEARS: Continuous Optimization for Structure Learning* (NeurIPS), arXiv:1803.01422 (2026-06-17)
-- [[Econometrics/raw/1803.09015-Callaway-SantAnna-DiD-Multiple-Periods.pdf|Callaway & Sant'Anna - DiD with Multiple Time Periods]] — Callaway & Sant'Anna (2020), staggered difference-in-differences: group-time ATT, doubly-robust estimands, aggregation, multiplier-bootstrap inference (2026-06-17)
-- [[Econometrics/raw/Oh-Patton-2012-Factor-Copulas.pdf|Oh & Patton - Factor Copulas]] — Oh & Patton (2012), high-dimensional factor copulas, EVT tail dependence, rank-based SMM, S&P 100 systemic risk (2026-06-17)
-- [[Bayesian Statistics/raw/1804.06788-Talts-SBC.pdf|Talts et al. - Simulation-Based Calibration]] — Talts, Betancourt, Simpson, Vehtari & Gelman (2018), validating Bayesian inference algorithms via rank-statistic SBC (2026-06-17)
-- [[Market Response Models/raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf|Jin et al. - Bayesian Media Mix Modeling]] — Jin, Wang, Sun, Chan & Koehler (Google, 2017), Bayesian MMM with adstock carryover and Hill shape effects, ROAS/mROAS, optimal media mix (2026-06-17)
-- [[Probabilistic Numerics/raw/ProbabilisticNumerics.pdf|Hennig, Osborne & Kersting - Probabilistic Numerics]] — Hennig, Osborne & Kersting (2022), *Probabilistic Numerics: Computation as Machine Learning* (Cambridge University Press): computation as Bayesian inference, Bayesian quadrature, probabilistic linear solvers, Bayesian optimisation, ODE filters/smoothers (2026-07-01)
+- BDA3 — Bayesian Data Analysis, 3rd Edition (Gelman et al., 2013/2025)
+- BayesWorkflow — Bayesian Workflow (Gelman, Vehtari, Simpson et al., 2020)
+- StatRethink-Bayes — Statistical Rethinking: A Bayesian Course (McElreath, 2015)
+- p_hacking — The Garden of Forking Paths (Gelman & Loken, 2013)
+- ssrn-2080235 — Here, There, and Everywhere (Lewis, Rao, & Reiley, 2011)
+- Mostly Harmless Econometrics — Mostly Harmless Econometrics (Angrist & Pischke, 2008)
+- Discrete Choice and Random Utility Models — PyMC tutorial: Bayesian discrete choice / random utility models (2026-04-08)
+- Factor analysis — PyMC tutorial: factor analysis and probabilistic PCA (2026-04-08)
+- Baby Births Modelling with HSGPs — PyMC tutorial: Hilbert Space Gaussian Processes for time series (2026-04-09)
+- Bayesian Non-parametric Causal Inference — PyMC tutorial: BART + propensity scores for causal ATE/ATT estimation (2026-04-09)
+- Bayesian copula estimation Describing correlated joint distributions — PyMC tutorial: Gaussian copula for joint distributions (2026-04-09)
+- Missing Data — PyMC / Statistical Rethinking Lecture 18: DAG-based missing data analysis (2026-04-09)
+- Counterfactual inference calculating excess deaths due to COVID-19 — PyMC tutorial: Bayesian counterfactual inference, COVID excess deaths (2026-04-09)
+- Confirmatory Factor Analysis and Structural Equation Models in Psychometrics — PyMC case study: CFA and SEM for psychometrics (2026-04-09)
+- The Besag-York-Mollie Model for Spatial Data — PyMC tutorial: BYM spatial model on NYC traffic data (2026-04-09)
+- Difference in differences — PyMC tutorial: Bayesian DiD with counterfactual prediction (2026-04-09)
+- Social Networks — PyMC / Statistical Rethinking Lecture 15: dyadic social network models (2026-04-09)
+- Bayesian moderation analysis — PyMC tutorial: moderation analysis with interaction terms (2026-04-09)
+- multiple2f — "Why we (usually) don't have to worry about multiple comparisons" (Gelman, Hill & Yajima, 2009)
+- 15 - Synthetic Control — Causal Inference for the Brave and True — Causal Inference for the Brave and True, Ch. 15: synthetic control with Python (Matheu Facure, 2023)
+- Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs — Graham Harrison, Towards Data Science (2023-04-06): DAGs, confounders, backdoor adjustment, d-separation
+- How to use Bayesian propensity scores and inverse probability weights — Andrew Heiss (2021-12-18): Liao-Zigler Bayesian IPW in R/brms
+- Quantum mechanics — Wikipedia: quantum mechanics, Hilbert space formalism, Schrödinger equation, entanglement, Bell's theorem (2026-04-11)
+- Quantum field theory — Wikipedia: quantum field theory, canonical quantization, Fock space, path integrals, Feynman diagrams (2026-04-11)
+- Gauge theory — Wikipedia: gauge theory, local symmetry, Yang-Mills, Standard Model gauge groups (2026-04-11)
+- Market Response Models Econometric and Time Series Analysis — Hanssens, Parsons & Schultz (2001), 2nd Ed.: functional forms, Koyck/ADL lags, OLS/2SLS/Bayes, ARIMA, transfer functions, VAR/cointegration/ECM, advertising/price empirical generalizations
+- abm_word_of_mouth — Bonabeau (2002), ABM methods and techniques for simulating human systems (PNAS)
+- abm_consumer — Karakaya, Badur & Aytekin (2011), marketing strategies with WOM using ABM
+- abm_human_behaviour — Ben Said, Bouron & Drogoul (2002), CUBES consumer behavior simulator
+- calibration_ABM — McCulloch et al. (2022), Calibrating ABMs using Uncertainty Quantification Methods (JASSS 25(2))
+- rohrer-murayama-2023 — Rohrer & Murayama (2023), These Are Not the Effects You Are Looking For: Causality and the Within/Between-Persons Distinction (AMPPS 6(1))
+- These Are Not the Effects You Are Looking For — A. Jordan Nafa (2022), Table 2 Fallacy, logic of statistical control/mutual adjustment, simulation (R/Python/Stan) demonstrating nuisance parameter bias (2026-06-26)
+- 19 — Evans (2024), Computational Methods for Economists, Ch. 19: SMM theory, Python implementation, Brock-Mirman structural macro exercise (2026-04-12)
+- NOTEARS — Zheng, Aragam, Ravikumar & Xing (2018), *DAGs with NO TEARS: Continuous Optimization for Structure Learning* (NeurIPS), arXiv:1803.01422 (2026-06-17)
+- Callaway & Sant'Anna - DiD with Multiple Time Periods — Callaway & Sant'Anna (2020), staggered difference-in-differences: group-time ATT, doubly-robust estimands, aggregation, multiplier-bootstrap inference (2026-06-17)
+- Oh & Patton - Factor Copulas — Oh & Patton (2012), high-dimensional factor copulas, EVT tail dependence, rank-based SMM, S&P 100 systemic risk (2026-06-17)
+- Talts et al. - Simulation-Based Calibration — Talts, Betancourt, Simpson, Vehtari & Gelman (2018), validating Bayesian inference algorithms via rank-statistic SBC (2026-06-17)
+- Jin et al. - Bayesian Media Mix Modeling — Jin, Wang, Sun, Chan & Koehler (Google, 2017), Bayesian MMM with adstock carryover and Hill shape effects, ROAS/mROAS, optimal media mix (2026-06-17)
+- Hennig, Osborne & Kersting - Probabilistic Numerics — Hennig, Osborne & Kersting (2022), *Probabilistic Numerics: Computation as Machine Learning* (Cambridge University Press): computation as Bayesian inference, Bayesian quadrature, probabilistic linear solvers, Bayesian optimisation, ODE filters/smoothers (2026-07-01)
 
 ## See Also
 

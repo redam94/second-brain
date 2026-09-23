@@ -30,7 +30,7 @@ expanded_by:
 ---
 
 > [!info] Expanded in the 2026 textbook
-> The 2020 paper's material on fitting and validating computation is expanded across [[Research/Bayesian Statistics/Workflow/Computational Workflow/_Index|Computational Workflow]] and the SBC notes of [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]].
+> The 2020 paper's material on fitting and validating computation is expanded across [[Research/Bayesian Statistics/Workflow/Computational Workflow/_Index|Computational Workflow]] and the SBC notes of Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*.
 >
 > **Closest book counterparts:**
 > - [[Initial Values, Adaptation, and Warmup]] — initialization as a workflow decision, not a default

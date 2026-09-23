@@ -231,7 +231,7 @@ where the remainder $\mathbf{R}_{T,S} = o_p(1)$.
 
 ## Sources
 
-- [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), Sections 2.2-2.4, Appendix
+- Oh_Patton_SMM_copulas_nov11 — Oh & Patton (2011), Sections 2.2-2.4, Appendix
 - Fermanian, J., D. Radulović, and M. Wegkamp (2004), "Weak Convergence of Empirical Copula Process," *Bernoulli* 10, 847-860
 - Rémillard, B. (2010), "Goodness-of-fit Tests for Copulas of Multivariate Time Series," working paper
 - Newey, W.K. and D. McFadden (1994), "Large Sample Estimation and Hypothesis Testing," *Handbook of Econometrics* 4, 2111-2245

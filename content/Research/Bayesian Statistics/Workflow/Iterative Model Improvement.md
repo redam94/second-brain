@@ -29,7 +29,7 @@ expanded_by:
 ---
 
 > [!info] Expanded in the 2026 textbook
-> The 2020 paper's account of iterative model improvement — including the garden-of-forking-paths worry — is expanded in [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]].
+> The 2020 paper's account of iterative model improvement — including the garden-of-forking-paths worry — is expanded in Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*.
 >
 > **Closest book counterparts:**
 > - [[Model Expansion - Predictive Consistency and Coherence]] — how to expand a model without inflating the prior predictive

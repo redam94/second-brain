@@ -64,8 +64,8 @@ parent: "[[Research/Agent-Based Modeling/_Index|Agent-Based Modeling]]"
 
 ## Sources
 
-- [[raw/Gao 2023 - LLM Empowered Agent-Based Modeling Survey.pdf]] — Gao, C., Lan, X., Li, N., Yuan, Y., Ding, J., Zhou, Z., Xu, F. & Li, Y. (2023), "Large Language Models Empowered Agent-based Modeling and Simulation: A Survey and Perspectives," arXiv:2312.11970.
-- [[raw/Park 2023 - Generative Agents Interactive Simulacra.pdf]] — Park, J. S., O'Brien, J. C., Cai, C. J., Morris, M. R., Liang, P. & Bernstein, M. S. (2023), "Generative Agents: Interactive Simulacra of Human Behavior," UIST '23, arXiv:2304.03442.
-- [[raw/Argyle 2022 - Out of One Many Silicon Samples.pdf]] — Argyle, L. P., Busby, E. C., Fulda, N., Gubler, J., Rytting, C. & Wingate, D. (2022), "Out of One, Many: Using Language Models to Simulate Human Samples," arXiv:2209.06899.
-- [[raw/Horton 2023 - Homo Silicus LLMs as Simulated Economic Agents.pdf]] — Horton, J. J., Filippas, A. & Manning, B. S. (2023; v2 2026), "Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus?", arXiv:2301.07543.
-- [[raw/Santurkar 2023 - Whose Opinions Do Language Models Reflect.pdf]] — Santurkar, S., Durmus, E., Ladhak, F., Lee, C., Liang, P. & Hashimoto, T. (2023), "Whose Opinions Do Language Models Reflect?", arXiv:2303.17548.
+- Gao 2023 - LLM Empowered Agent-Based Modeling Survey — Gao, C., Lan, X., Li, N., Yuan, Y., Ding, J., Zhou, Z., Xu, F. & Li, Y. (2023), "Large Language Models Empowered Agent-based Modeling and Simulation: A Survey and Perspectives," arXiv:2312.11970.
+- Park 2023 - Generative Agents Interactive Simulacra — Park, J. S., O'Brien, J. C., Cai, C. J., Morris, M. R., Liang, P. & Bernstein, M. S. (2023), "Generative Agents: Interactive Simulacra of Human Behavior," UIST '23, arXiv:2304.03442.
+- Argyle 2022 - Out of One Many Silicon Samples — Argyle, L. P., Busby, E. C., Fulda, N., Gubler, J., Rytting, C. & Wingate, D. (2022), "Out of One, Many: Using Language Models to Simulate Human Samples," arXiv:2209.06899.
+- Horton 2023 - Homo Silicus LLMs as Simulated Economic Agents — Horton, J. J., Filippas, A. & Manning, B. S. (2023; v2 2026), "Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus?", arXiv:2301.07543.
+- Santurkar 2023 - Whose Opinions Do Language Models Reflect — Santurkar, S., Durmus, E., Ladhak, F., Lee, C., Liang, P. & Hashimoto, T. (2023), "Whose Opinions Do Language Models Reflect?", arXiv:2303.17548.

@@ -90,4 +90,4 @@ The converse question — *does every monad arise this way?* — is answered "ye
 - [[Algebras for a Monad - Eilenberg-Moore and Kleisli]]
 - [[Beck's Monadicity Theorem]]
 - [[Adjoint Functors]] · [[Units and Counits]] · [[Monads - Overview]]
-- Source: [[raw/Riehl - Category Theory in Context.pdf]]
+- Source: Riehl - Category Theory in Context

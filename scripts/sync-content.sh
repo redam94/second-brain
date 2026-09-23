@@ -32,6 +32,10 @@ fi
 
 echo "Content sync complete."
 
+# raw/ source folders are not published (ignorePatterns), so unlink references to them
+echo "Unlinking raw/ references..."
+python3 "$SCRIPT_DIR/unlink-raw.py"
+
 # Fix single-line blockquote display math (prevents KaTeX \tag parse errors)
 echo "Fixing blockquote math..."
 python3 "$SCRIPT_DIR/fix-blockquote-math.py"

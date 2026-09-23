@@ -48,4 +48,4 @@ folder: "Econometrics/Foundations/Randomization Inference"
 
 ## Sources
 
-- [[raw/Wu Ding 2021 - Randomization Tests for Weak Null Hypotheses.pdf]] — Wu, J. & Ding, P. (2021), "Randomization Tests for Weak Null Hypotheses in Randomized Experiments," *Journal of the American Statistical Association*.
+- Wu Ding 2021 - Randomization Tests for Weak Null Hypotheses — Wu, J. & Ding, P. (2021), "Randomization Tests for Weak Null Hypotheses in Randomized Experiments," *Journal of the American Statistical Association*.

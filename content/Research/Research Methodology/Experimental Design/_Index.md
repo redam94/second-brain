@@ -44,8 +44,8 @@ concept_count: 16
 - [Sample size estimation and power analysis (PMC3409926)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3409926/)
 - [How does multiple testing correction work? (PMC2907892)](https://pmc.ncbi.nlm.nih.gov/articles/PMC2907892/)
 - [Survival Analysis and Interpretation of Time-to-Event Data (PMC6110618)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6110618/)
-- [[../raw/Chapelle 2014 - Modeling Delayed Feedback in Display Advertising.pdf]] — Chapelle (KDD 2014), "Modeling Delayed Feedback in Display Advertising"
-- [[../raw/Vernade Cappe Perchet 2017 - Stochastic Bandit Models for Delayed Conversions.pdf]] — Vernade, Cappé & Perchet (2017), "Stochastic Bandit Models for Delayed Conversions", arXiv:1706.09186
+- Chapelle 2014 - Modeling Delayed Feedback in Display Advertising — Chapelle (KDD 2014), "Modeling Delayed Feedback in Display Advertising"
+- Vernade Cappe Perchet 2017 - Stochastic Bandit Models for Delayed Conversions — Vernade, Cappé & Perchet (2017), "Stochastic Bandit Models for Delayed Conversions", arXiv:1706.09186
 
 ## See Also
 

@@ -2,10 +2,10 @@
 title: Bayesian Estimation and Priors for MMM
 tags:
   - source/ingested
-  - topic/market-response-models
+  - topic/market-response
   - type/concept
   - doc/paper
-  - method/mcmc
+  - topic/mcmc
 source: "[[raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf]]"
 source_location: "Sec. 3, pp. 6-7; Secs. 6-7, pp. 16-21; Appendix pp. 28-30"
 date_ingested: 2026-06-17

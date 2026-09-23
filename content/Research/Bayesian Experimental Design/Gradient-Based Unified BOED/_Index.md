@@ -37,7 +37,7 @@ concept_count: 4
 - [[High-Dimensional Design Applications]] — CONTAINS: death process (Figs. 1–2), 400-D regression (Table 1), advertising ablation (Fig. 3), 100-D biomolecular docking vs experts (Table 2), CES iterated design (Fig. 4); ACE+VNMC bound-trapping; design-error metric.
 
 ## Sources
-- [[../raw/Foster et al 2020 - Unified Stochastic Gradient BOED.pdf]] — Foster, A., Jankowiak, M., O'Meara, M., Teh, Y.W., Rainforth, T. (2020), *A Unified Stochastic Gradient Approach to Designing Bayesian-Optimal Experiments*, **AISTATS 2020**, PMLR 108. arXiv:1911.00294.
+- Foster et al 2020 - Unified Stochastic Gradient BOED — Foster, A., Jankowiak, M., O'Meara, M., Teh, Y.W., Rainforth, T. (2020), *A Unified Stochastic Gradient Approach to Designing Bayesian-Optimal Experiments*, **AISTATS 2020**, PMLR 108. arXiv:1911.00294.
 
 ## See Also
 - [[Research/Bayesian Experimental Design/Variational EIG Estimators/_Index|Variational EIG Estimators]] — Foster 2019, the estimation predecessor

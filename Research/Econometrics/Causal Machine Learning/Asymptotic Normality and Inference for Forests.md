@@ -5,7 +5,7 @@ tags:
   - topic/causal-inference
   - topic/machine-learning
   - topic/random-forests
-  - topic/asymptotic-theory
+  - topic/asymptotics
   - type/theorem
   - doc/paper
 source: "[[raw/Wager Athey 2018 - Heterogeneous Treatment Effects using Random Forests.pdf]]"

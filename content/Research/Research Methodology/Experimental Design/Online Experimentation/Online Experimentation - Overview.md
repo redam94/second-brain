@@ -4,7 +4,6 @@ tags:
   - source/ingested
   - topic/research-methodology
   - topic/online-experimentation
-  - topic/ab-testing
   - topic/causal-inference
   - type/overview
   - doc/paper

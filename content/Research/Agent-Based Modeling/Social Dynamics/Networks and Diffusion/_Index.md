@@ -31,9 +31,9 @@ concept_count: 3
 - [[Network Topology Effects on Diffusion]] — CONTAINS: random vs clustered experiment, two-wave adoption pattern, bridging ties as bottleneck, when to use ABM vs equations criterion
 
 ## Sources
-- [[raw/abm_word_of_mouth.pdf]] — Adoption model and topology experiments
-- [[raw/abm_consumer.pdf]] — Preference-based network formation
-- [[raw/abm_human_behaviour.pdf]] — Spatial perception fields
+- abm_word_of_mouth — Adoption model and topology experiments
+- abm_consumer — Preference-based network formation
+- abm_human_behaviour — Spatial perception fields
 
 ## See Also
 - [[../Word of Mouth/_Index|Word of Mouth]] — what propagates through these networks

@@ -42,7 +42,7 @@ Part III of *Probabilistic Numerics: Computation as Machine Learning* (Hennig, O
 - [[Uncertainty Calibration for Linear Solvers]] — CONTAINS: projection-complement covariance (21.1), scalar $\Omega=\omega I$ (21.2); Rayleigh coefficients $a(m)$ and spectral bounds; **Rayleigh regression** (21.4)/(21.5); predicting projections $Av$ with $\Sigma_v$ (Fig 21.2 calibration); individual-element difficulty; hard upper bound vs estimated average (Fig 21.3); Gauss-Gamma conjugate-prior scale inference (Ch. 22.5, Eqs 22.7-22.11); conservative worst-case interpretation.
 
 ## Sources
-- [[raw/ProbabilisticNumerics.pdf]] — Part III "Linear Algebra" (Ch. 14-23, book pp. 123-193). Philipp Hennig, Michael A. Osborne, Hans P. Kersting, *Probabilistic Numerics: Computation as Machine Learning*, Cambridge University Press, 2022. Key algorithms 16.1 (CG), 17.1/17.2 (probabilistic skeleton), 18.1 (pCG); proofs in Ch. 22 (book pp. 183-192); software: ProbNum (probnum.org).
+- ProbabilisticNumerics — Part III "Linear Algebra" (Ch. 14-23, book pp. 123-193). Philipp Hennig, Michael A. Osborne, Hans P. Kersting, *Probabilistic Numerics: Computation as Machine Learning*, Cambridge University Press, 2022. Key algorithms 16.1 (CG), 17.1/17.2 (probabilistic skeleton), 18.1 (pCG); proofs in Ch. 22 (book pp. 183-192); software: ProbNum (probnum.org).
 
 ## See Also
 - [[../Foundations/_Index|Foundations]] — Gaussian algebra, GP regression, hierarchical/empirical-Bayes inference, the numerical agent (prerequisites).

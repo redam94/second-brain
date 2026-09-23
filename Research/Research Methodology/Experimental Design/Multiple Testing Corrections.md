@@ -5,7 +5,6 @@ tags:
   - topic/research-methodology
   - topic/multiple-comparisons
   - topic/fdr
-  - topic/bonferroni
   - type/concept
   - doc/paper
 source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2907892/"

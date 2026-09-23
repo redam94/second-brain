@@ -5,7 +5,6 @@ tags:
   - topic/research-methodology
   - topic/online-experimentation
   - topic/sequential-analysis
-  - topic/ab-testing
   - type/concept
   - doc/paper
 source: "[[raw/Johari 2015 - Always Valid Inference.pdf]]"

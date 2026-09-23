@@ -59,7 +59,7 @@ parent: "[[Research/Machine Learning and AI/_Index|Machine Learning and AI]]"
 
 ## Sources
 
-- [[raw/Vaswani 2017 - Attention Is All You Need.pdf]] — Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L. & Polosukhin, I. (2017), "Attention Is All You Need," *NeurIPS 2017*. arXiv:1706.03762.
-- [[raw/Kaplan 2020 - Scaling Laws for Neural Language Models.pdf]] — Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., Gray, S., Radford, A., Wu, J. & Amodei, D. (2020), "Scaling Laws for Neural Language Models." arXiv:2001.08361.
-- [[raw/Hoffmann 2022 - Training Compute-Optimal Large Language Models.pdf]] — Hoffmann, J., Borgeaud, S., Mensch, A., et al. (2022), "Training Compute-Optimal Large Language Models." arXiv:2203.15556.
-- [[raw/Brown 2020 - Language Models are Few-Shot Learners.pdf]] — Brown, T. B., Mann, B., Ryder, N., Subbiah, M., et al. (2020), "Language Models are Few-Shot Learners," *NeurIPS 2020*. arXiv:2005.14165.
+- Vaswani 2017 - Attention Is All You Need — Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L. & Polosukhin, I. (2017), "Attention Is All You Need," *NeurIPS 2017*. arXiv:1706.03762.
+- Kaplan 2020 - Scaling Laws for Neural Language Models — Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., Gray, S., Radford, A., Wu, J. & Amodei, D. (2020), "Scaling Laws for Neural Language Models." arXiv:2001.08361.
+- Hoffmann 2022 - Training Compute-Optimal Large Language Models — Hoffmann, J., Borgeaud, S., Mensch, A., et al. (2022), "Training Compute-Optimal Large Language Models." arXiv:2203.15556.
+- Brown 2020 - Language Models are Few-Shot Learners — Brown, T. B., Mann, B., Ryder, N., Subbiah, M., et al. (2020), "Language Models are Few-Shot Learners," *NeurIPS 2020*. arXiv:2005.14165.

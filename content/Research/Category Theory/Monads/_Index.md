@@ -43,4 +43,4 @@ aliases:
 
 ## Sources
 
-- [[raw/Riehl - Category Theory in Context.pdf]] — Chapter 5, "Monads and their Algebras" (pp. 179–216): §5.1 Monads from adjunctions, §5.2 Adjunctions from monads, §5.3 Monadic functors, §5.4 Canonical presentations via free algebras, §5.5 Recognizing categories of algebras, §5.6 Limits and colimits in categories of algebras.
+- Riehl - Category Theory in Context — Chapter 5, "Monads and their Algebras" (pp. 179–216): §5.1 Monads from adjunctions, §5.2 Adjunctions from monads, §5.3 Monadic functors, §5.4 Canonical presentations via free algebras, §5.5 Recognizing categories of algebras, §5.6 Limits and colimits in categories of algebras.

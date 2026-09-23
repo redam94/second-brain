@@ -96,7 +96,7 @@ The HSGP decomposition makes sampling feasible on daily data over 20 years.
 
 ## Source
 
-- [[raw/Baby Births Modelling with HSGPs]] — PyMC example: HSGP for time series, birthdays dataset
+- Baby Births Modelling with HSGPs — PyMC example: HSGP for time series, birthdays dataset
 - Original case study by Aki Vehtari (Stan): iterative GP components for birth rate modelling
 
 ## See Also

@@ -9,7 +9,7 @@ tags:
   - type/concept
   - topic/market-response
   - topic/time-series
-  - topic/VAR
+  - topic/var
   - topic/cointegration
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11

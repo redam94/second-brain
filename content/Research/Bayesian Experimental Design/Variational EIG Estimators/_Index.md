@@ -40,7 +40,7 @@ concept_count: 5
 - [[Convergence Rates and Estimator Selection]] — CONTAINS: three-term error decomposition; Theorem 1 ($\mathcal{O}(T^{-1/2})$); VNMC debiasing; Table 2 (bias²/var); four selection rules; optimal $K/T$ split.
 
 ## Sources
-- [[../raw/Foster et al 2019 - Variational Bayesian Optimal Experimental Design.pdf]] — Foster, A., Jankowiak, M., Bingham, E., Horsfall, P., Teh, Y.W., Rainforth, T., Goodman, N. (2019), *Variational Bayesian Optimal Experimental Design*, **NeurIPS 32**, 14036–14047. arXiv:1903.05480.
+- Foster et al 2019 - Variational Bayesian Optimal Experimental Design — Foster, A., Jankowiak, M., Bingham, E., Horsfall, P., Teh, Y.W., Rainforth, T., Goodman, N. (2019), *Variational Bayesian Optimal Experimental Design*, **NeurIPS 32**, 14036–14047. arXiv:1903.05480.
 
 ## See Also
 - [[Research/Bayesian Experimental Design/Gradient-Based Unified BOED/_Index|Gradient-Based Unified BOED]] — Foster 2020 makes these bounds differentiable in the design

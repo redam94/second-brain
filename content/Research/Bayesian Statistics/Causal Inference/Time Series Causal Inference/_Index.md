@@ -69,7 +69,7 @@ Bayesian Structural Time-Series Model
 
 ## Sources
 
-- [[raw/Brodersen - 2015 - Inferring causal impact using Bayesian structural time-series models.pdf]] — Brodersen KH, Gallusser F, Koehler J, Remy N, Scott SL. 2015. *Ann. Appl. Stat.* 9(1): 247–274.
+- Brodersen - 2015 - Inferring causal impact using Bayesian structural time-series models — Brodersen KH, Gallusser F, Koehler J, Remy N, Scott SL. 2015. *Ann. Appl. Stat.* 9(1): 247–274.
 
 ## Cross-Links to Existing Vault Notes
 

@@ -38,7 +38,7 @@ concept_count: 5
 
 ## Sources
 
-- [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), "Simulated Method of Moments Estimation for Copula-Based Multivariate Models"
+- Oh_Patton_SMM_copulas_nov11 — Oh & Patton (2011), "Simulated Method of Moments Estimation for Copula-Based Multivariate Models"
 
 ## See Also
 

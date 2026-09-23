@@ -154,7 +154,7 @@ A decision rule for a consumer or media-response ABM:
 | [[Neural SBI for Agent-Based and Economic Models]] | Dyer et al. results, embedding nets, NPE-versus-SMM contrast |
 | [[Simulation-Based and Amortized Inference]] | typical-set caveat; amortization economics |
 | [[Global Sensitivity Analysis - Overview]], [[Morris Elementary Effects Screening]], [[Variance-Based Sensitivity and Sobol Indices]] | screen-then-quantify costs and rules |
-| [[raw/calibration_ABM.pdf]], [[raw/tdb136.pdf]], [[raw/Dyer 2022 - Black-Box Bayesian Inference for Economic Agent-Based Models.pdf]], [[raw/Lueckmann 2021 - Benchmarking Simulation-Based Inference.pdf]] | primary sources behind the numbers |
+| calibration_ABM, tdb136, Dyer 2022 - Black-Box Bayesian Inference for Economic Agent-Based Models, Lueckmann 2021 - Benchmarking Simulation-Based Inference | primary sources behind the numbers |
 
 ## Related Concepts
 

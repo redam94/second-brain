@@ -28,7 +28,7 @@ aliases:
 
 ## The Book
 
-*Probabilistic Numerics: Computation as Machine Learning*, by **Philipp Hennig, Michael A. Osborne, and Hans P. Kersting** (Cambridge University Press, 2022). This is a draft/pre-publication copy ingested for personal study; see [[raw/ProbabilisticNumerics.pdf]].
+*Probabilistic Numerics: Computation as Machine Learning*, by **Philipp Hennig, Michael A. Osborne, and Hans P. Kersting** (Cambridge University Press, 2022). This is a draft/pre-publication copy ingested for personal study; see ProbabilisticNumerics.
 
 The text is organised into seven parts plus a solutions section. Each part first states the numerical problem, then reveals the classical solver as inference, then builds new uncertainty-aware algorithms on that foundation.
 

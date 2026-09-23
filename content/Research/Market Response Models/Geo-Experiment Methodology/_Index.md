@@ -34,8 +34,8 @@ concept_count: 4
 - [[TBR Design Sensitivity and the Stationarity Assumption]] — CONTAINS: the 4-step pseudo-geo-experiment design/power procedure (with data "recycling"); closed-form and simulated sensitivity of the iROAS CI half-width to spend intensity, pretest length, test length, cooldown length, and treatment/control geo volume; the simulation-based bias/coverage evaluation (2000 datasets × 9 noise/correlation scenarios, near-zero bias, nominal coverage); the formal stationarity/stability assumption for TBR unbiasedness; TBR-OR (orthogonal regression) as a partial fix under sustained trend/seasonality, and its own instability at low correlation; the 210-DMA design preanalysis example (\$22,000 predicted vs. \$18,273 actual spend).
 
 ## Sources
-- [[../raw/Vaver Koehler 2011 - Measuring Ad Effectiveness Using Geo Experiments.pdf]] — Vaver, J. & Koehler, J. (2011), *Measuring Ad Effectiveness Using Geo Experiments*, Google Inc. The founding GBR paper.
-- [[../raw/Kerman Wang Vaver 2017 - Time-Based Regression Geo Experiments.pdf]] — Kerman, J., Wang, P. & Vaver, J. (2017), *Estimating Ad Effectiveness using Geo Experiments in a Time-Based Regression Framework*, Google Inc. Introduces TBR and the Matched Markets tool.
+- Vaver Koehler 2011 - Measuring Ad Effectiveness Using Geo Experiments — Vaver, J. & Koehler, J. (2011), *Measuring Ad Effectiveness Using Geo Experiments*, Google Inc. The founding GBR paper.
+- Kerman Wang Vaver 2017 - Time-Based Regression Geo Experiments — Kerman, J., Wang, P. & Vaver, J. (2017), *Estimating Ad Effectiveness using Geo Experiments in a Time-Based Regression Framework*, Google Inc. Introduces TBR and the Matched Markets tool.
 
 ## See Also
 - [[../_Index|Market Response Models]] — parent folder index

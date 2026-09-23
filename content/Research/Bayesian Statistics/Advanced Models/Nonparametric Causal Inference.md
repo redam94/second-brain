@@ -100,7 +100,7 @@ Because BART is Bayesian, these estimates come with full posterior distributions
 
 ## Source
 
-- [[raw/Bayesian Non-parametric Causal Inference]] — PyMC example: BART + propensity scores for ATE/ATT estimation
+- Bayesian Non-parametric Causal Inference — PyMC example: BART + propensity scores for ATE/ATT estimation
 
 ## See Also
 

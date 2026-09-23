@@ -67,12 +67,12 @@ parent: "[[Research/Market Response Models/_Index|Market Response Models]]"
 
 ## Sources
 
-- [[raw/Johnson Lewis Nubbemeyer 2017 - Ghost Ads.pdf]] — Johnson, G. A., Lewis, R. A. & Nubbemeyer, E. I., "Ghost Ads: Improving the Economics of Measuring Online Ad Effectiveness," *Journal of Marketing Research* 54(6), 867-884 (2017). File is the February 2016 working-paper version (NBER Economics of Digitization conference copy).
-- [[raw/Lewis Rao 2015 - The Unfavorable Economics of Measuring the Returns to Advertising.pdf]] — Lewis, R. A. & Rao, J. M., *Quarterly Journal of Economics* 130(4), 1941-1973 (2015).
-- [[raw/Gordon et al 2019 - A Comparison of Approaches to Advertising Measurement.pdf]] — Gordon, B. R., Zettelmeyer, F., Bhargava, N. & Chapsky, D., *Marketing Science* 38(2) (2019). File is the April 2018 Kellogg working paper.
-- [[raw/Gordon Moakler Zettelmeyer 2023 - Close Enough Non-Experimental Ad Measurement.pdf]] — Gordon, B. R., Moakler, R. & Zettelmeyer, F., "Close Enough? A Large-Scale Exploration of Non-Experimental Approaches to Advertising Measurement," arXiv 2201.07055v2 (*Marketing Science* 2023).
-- [[raw/Lin Misra 2022 - The Identity Fragmentation Bias.pdf]] — Lin, T. & Misra, S., arXiv 2008.12849v2 (*Marketing Science* 41(3), 2022).
-- [[raw/Johnson Lewis Reiley 2017 - When Less Is More Data and Power in Advertising Experiments.pdf]] — Johnson, G. A., Lewis, R. A. & Reiley, D. H., *Marketing Science* 36(1) (2017). File is the December 2015 author version.
-- [[raw/Lewis Rao Reiley 2013 - Measuring the Effects of Advertising The Digital Frontier.pdf]] — Lewis, R., Rao, J. M. & Reiley, D. H., NBER Working Paper 19520 (2013).
-- [[raw/Barajas Bhamidipati Shanahan 2021 - Online Advertising Incrementality Testing Tutorial.pdf]] — Barajas, J., Bhamidipati, N. & Shanahan, J. G., KDD 2021 tutorial proposal (outline only).
+- Johnson Lewis Nubbemeyer 2017 - Ghost Ads — Johnson, G. A., Lewis, R. A. & Nubbemeyer, E. I., "Ghost Ads: Improving the Economics of Measuring Online Ad Effectiveness," *Journal of Marketing Research* 54(6), 867-884 (2017). File is the February 2016 working-paper version (NBER Economics of Digitization conference copy).
+- Lewis Rao 2015 - The Unfavorable Economics of Measuring the Returns to Advertising — Lewis, R. A. & Rao, J. M., *Quarterly Journal of Economics* 130(4), 1941-1973 (2015).
+- Gordon et al 2019 - A Comparison of Approaches to Advertising Measurement — Gordon, B. R., Zettelmeyer, F., Bhargava, N. & Chapsky, D., *Marketing Science* 38(2) (2019). File is the April 2018 Kellogg working paper.
+- Gordon Moakler Zettelmeyer 2023 - Close Enough Non-Experimental Ad Measurement — Gordon, B. R., Moakler, R. & Zettelmeyer, F., "Close Enough? A Large-Scale Exploration of Non-Experimental Approaches to Advertising Measurement," arXiv 2201.07055v2 (*Marketing Science* 2023).
+- Lin Misra 2022 - The Identity Fragmentation Bias — Lin, T. & Misra, S., arXiv 2008.12849v2 (*Marketing Science* 41(3), 2022).
+- Johnson Lewis Reiley 2017 - When Less Is More Data and Power in Advertising Experiments — Johnson, G. A., Lewis, R. A. & Reiley, D. H., *Marketing Science* 36(1) (2017). File is the December 2015 author version.
+- Lewis Rao Reiley 2013 - Measuring the Effects of Advertising The Digital Frontier — Lewis, R., Rao, J. M. & Reiley, D. H., NBER Working Paper 19520 (2013).
+- Barajas Bhamidipati Shanahan 2021 - Online Advertising Incrementality Testing Tutorial — Barajas, J., Bhamidipati, N. & Shanahan, J. G., KDD 2021 tutorial proposal (outline only).
 - Not obtained (plain citations): Johnson, G. (2023), "Inferno: A Guide to Field Experiments in Online Display Advertising," *Journal of Economics & Management Strategy* 32, 469-490; Barajas, J. & Bhamidipati, N. (2021), "Incrementality Testing in Programmatic Advertising: Enhanced Precision with Double-Blind Designs," *Proceedings of The Web Conference 2021*.

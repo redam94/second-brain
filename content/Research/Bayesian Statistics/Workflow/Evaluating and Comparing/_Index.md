@@ -65,7 +65,7 @@ concept_count: 16
 - [[Simulated-Data Experimentation as Virtual Replication]] — CONTAINS: Figures 10.3–10.6; Ch. 10.5–10.6
 
 ## Sources
-- [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf]] — Chapters 8–10, pp. 137–190
+- Gelman Vehtari McElreath 2026 - Bayesian Workflow (book) — Chapters 8–10, pp. 137–190
 
 ## See Also
 - [[Research/Bayesian Statistics/Workflow/Building Models/_Index|Building Models]] — what is being evaluated

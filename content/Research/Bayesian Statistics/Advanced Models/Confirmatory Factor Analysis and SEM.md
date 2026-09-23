@@ -106,4 +106,4 @@ Bayesian CFA/SEM uses posterior predictive checks (PPCs) and model comparison (W
 
 ## Source
 
-- [[raw/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics]] — PyMC case study; draws on Levy & Mislevy, *Bayesian Psychometric Modeling*
+- Confirmatory Factor Analysis and Structural Equation Models in Psychometrics — PyMC case study; draws on Levy & Mislevy, *Bayesian Psychometric Modeling*

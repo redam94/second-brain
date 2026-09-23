@@ -139,7 +139,7 @@ A decision rule for choosing and configuring the design:
 | [[ROAS, mROAS, and Optimal Media Mix]] | ROAS numerator runs to $t_1+L-1$ |
 | [[Delayed and Censored Feedback - Overview]] · [[Delayed Feedback Model for Conversion Prediction]] · [[Bandit Models with Delayed and Censored Feedback]] | Measurement delay, censoring likelihood, delay-corrected estimator |
 | [[Time-Varying Treatments and G-computation]] · [[CUPED and Regression-Adjusted Variance Reduction]] | Sequence estimands; clean pre-period covariates |
-| [[raw/Bojinov 2020 - Design and Analysis of Switchback Experiments.pdf]] | Secs. 2-4 and 6 |
+| Bojinov 2020 - Design and Analysis of Switchback Experiments | Secs. 2-4 and 6 |
 
 ## Related Concepts
 

@@ -34,7 +34,7 @@ expanded_by:
 ---
 
 > [!info] Expanded in the 2026 textbook
-> The 2020 paper's computational troubleshooting section becomes the 16 notes of [[Research/Bayesian Statistics/Workflow/Computational Workflow/_Index|Computational Workflow]] in [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]], plus four dedicated case studies.
+> The 2020 paper's computational troubleshooting section becomes the 16 notes of [[Research/Bayesian Statistics/Workflow/Computational Workflow/_Index|Computational Workflow]] in Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*, plus four dedicated case studies.
 >
 > **Closest book counterparts:**
 > - [[Failure Modes and Steps Forward]] — the catalogue of pathologies and their fixes

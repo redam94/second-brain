@@ -37,7 +37,7 @@ concept_count: 5
 - [[Imitation and Conditioning Processes]] — CONTAINS: imitation process (spatial gradient, perception field), conditioning process (reinforcement), process interaction table, information cascades
 
 ## Sources
-- [[raw/abm_human_behaviour.pdf]] — Ben Said, Bouron & Drogoul (2002)
+- abm_human_behaviour — Ben Said, Bouron & Drogoul (2002)
 
 ## See Also
 - [[../Karakaya Model/_Index|Karakaya Model]] — alternative consumer behavior ABM

@@ -155,8 +155,8 @@ print("median dispersion ratio:", np.median(ratio))   # << 1 signals modal colla
 
 ## Sources
 
-- [[raw/Horton 2023 - Homo Silicus LLMs as Simulated Economic Agents.pdf]] — Horton, Filippas & Manning, arXiv 2301.07543v2.
-- [[raw/Santurkar 2023 - Whose Opinions Do Language Models Reflect.pdf]] — Santurkar et al., arXiv 2303.17548.
-- [[raw/Argyle 2022 - Out of One Many Silicon Samples.pdf]] — Argyle et al., arXiv 2209.06899.
-- [[raw/Park 2023 - Generative Agents Interactive Simulacra.pdf]] — Park et al., arXiv 2304.03442.
-- [[raw/Gao 2023 - LLM Empowered Agent-Based Modeling Survey.pdf]] — Gao et al., arXiv 2312.11970.
+- Horton 2023 - Homo Silicus LLMs as Simulated Economic Agents — Horton, Filippas & Manning, arXiv 2301.07543v2.
+- Santurkar 2023 - Whose Opinions Do Language Models Reflect — Santurkar et al., arXiv 2303.17548.
+- Argyle 2022 - Out of One Many Silicon Samples — Argyle et al., arXiv 2209.06899.
+- Park 2023 - Generative Agents Interactive Simulacra — Park et al., arXiv 2304.03442.
+- Gao 2023 - LLM Empowered Agent-Based Modeling Survey — Gao et al., arXiv 2312.11970.

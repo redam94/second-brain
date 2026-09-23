@@ -46,4 +46,4 @@ Notes ingested from Piironen & Vehtari (2017), "Sparsity information and regular
 - [[Partial Pooling as Multiple Comparisons Correction]] — shrinkage as multiplicity control
 
 ## Sources
-- [[raw/Piironen Vehtari 2017 - Regularized Horseshoe.pdf]] — Piironen & Vehtari (2017), Electronic Journal of Statistics.
+- Piironen Vehtari 2017 - Regularized Horseshoe — Piironen & Vehtari (2017), Electronic Journal of Statistics.

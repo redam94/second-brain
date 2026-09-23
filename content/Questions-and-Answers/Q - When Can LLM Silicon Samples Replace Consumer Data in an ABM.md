@@ -164,7 +164,7 @@ This extends the ten-step validation-and-calibration protocol in [[Validity, Bia
 | [[In-Context Learning and Few-Shot Prompting]] | prompt sensitivity; "evaluate like any estimator" |
 | [[Evaluating LLM Systems - Benchmarks, Hallucination and Human Preference]] | metric disagreement, held-out raters, human-human agreement as ceiling |
 | [[LLM Expert Elicitation for Bayesian Networks]] | LLM as elicited expert, with data-based verification |
-| [[raw/Argyle 2022 - Out of One Many Silicon Samples.pdf]], [[raw/Santurkar 2023 - Whose Opinions Do Language Models Reflect.pdf]], [[raw/Horton 2023 - Homo Silicus LLMs as Simulated Economic Agents.pdf]], [[raw/Park 2023 - Generative Agents Interactive Simulacra.pdf]], [[raw/Gao 2023 - LLM Empowered Agent-Based Modeling Survey.pdf]] | primary sources |
+| Argyle 2022 - Out of One Many Silicon Samples, Santurkar 2023 - Whose Opinions Do Language Models Reflect, Horton 2023 - Homo Silicus LLMs as Simulated Economic Agents, Park 2023 - Generative Agents Interactive Simulacra, Gao 2023 - LLM Empowered Agent-Based Modeling Survey | primary sources |
 
 ## Related Concepts
 

@@ -174,11 +174,11 @@ For your workflow of running hundreds of models:
 | [[Iterative Model Improvement]] | Stacking, projection predictive selection, multiverse analysis |
 | [[Overfitting and Information Criteria]] | Information criteria, regularizing priors |
 | [[Model Comparison]] | LOO-CV, PSIS-LOO, WAIC, Bayes factors |
-| [[raw/multiple2f.pdf]] | Gelman, Hill & Yajima (2009) -- primary source |
-| [[raw/p_hacking.pdf]] | Gelman & Loken (2013) -- garden of forking paths |
-| [[raw/StatRethink-Bayes.pdf]] | Statistical Rethinking Ch. 9 -- overfitting and regularization |
-| [[raw/BDA3.pdf]] | BDA3 Ch. 7 -- model comparison |
-| [[raw/BayesWorkflow.pdf]] | Gelman et al. (2020) -- Bayesian workflow |
+| multiple2f | Gelman, Hill & Yajima (2009) -- primary source |
+| p_hacking | Gelman & Loken (2013) -- garden of forking paths |
+| StatRethink-Bayes | Statistical Rethinking Ch. 9 -- overfitting and regularization |
+| BDA3 | BDA3 Ch. 7 -- model comparison |
+| BayesWorkflow | Gelman et al. (2020) -- Bayesian workflow |
 
 ## Related Concepts
 

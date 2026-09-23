@@ -46,5 +46,5 @@ concept_count: 7
 
 ## Sources
 
-- [[raw/Quantum field theory]] — Wikipedia: Quantum field theory (2026-04-10)
-- [[raw/Gauge theory]] — Wikipedia: Gauge theory (2026-04-10)
+- Quantum field theory — Wikipedia: Quantum field theory (2026-04-10)
+- Gauge theory — Wikipedia: Gauge theory (2026-04-10)

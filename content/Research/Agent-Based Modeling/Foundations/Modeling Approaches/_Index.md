@@ -28,9 +28,9 @@ concept_count: 2
 - [[Agent Decision Rules and Bounded Rationality]] — CONTAINS: threshold-based rules (CUBES), utility+logit rules (Karakaya), probability rules (Bonabeau), bounded rationality features comparison, role of stochasticity
 
 ## Sources
-- [[raw/abm_word_of_mouth.pdf]] — Formal ABM vs DE comparison (Bonabeau 2002)
-- [[raw/abm_consumer.pdf]] — Logit decision model (Karakaya et al. 2011)
-- [[raw/abm_human_behaviour.pdf]] — Threshold decision model (Ben Said et al. 2002)
+- abm_word_of_mouth — Formal ABM vs DE comparison (Bonabeau 2002)
+- abm_consumer — Logit decision model (Karakaya et al. 2011)
+- abm_human_behaviour — Threshold decision model (Ben Said et al. 2002)
 
 ## See Also
 - [[../Core Concepts/_Index|Core Concepts]] — foundational definitions these approaches build on

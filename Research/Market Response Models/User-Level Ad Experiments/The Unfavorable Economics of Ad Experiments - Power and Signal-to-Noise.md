@@ -5,7 +5,7 @@ tags:
   - topic/market-response
   - topic/advertising
   - topic/ad-experiments
-  - topic/statistical-power
+  - topic/power-analysis
   - type/concept
   - doc/paper
 source:

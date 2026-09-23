@@ -182,7 +182,7 @@ Two strategies for choosing the auxiliary model:
 
 ## Sources
 
-- [[raw/tdb136.pdf]] — Liesenfeld & Breitung (1998), Section 4
+- tdb136 — Liesenfeld & Breitung (1998), Section 4
 - Gouriéroux, C., A. Monfort, and E. Renault (1993), "Indirect Inference," *Journal of Applied Econometrics* 8, S85-S118
 - Gallant, A.R. and G.E. Tauchen (1996a), "Which Moments to Match?," *Econometric Theory* 12, 657-681
 - Smith, A.A. (1993), "Estimating Nonlinear Time-Series Models Using Simulated Vector Autoregressions," *Journal of Applied Econometrics* 8, S63-S84

@@ -185,6 +185,6 @@ The Normal copula's zero tail dependence is a significant limitation for financi
 
 ## Sources
 
-- [[raw/Oh_Patton_SMM_copulas_nov11.pdf]] — Oh & Patton (2011), Section 2.1
+- Oh_Patton_SMM_copulas_nov11 — Oh & Patton (2011), Section 2.1
 - Nelsen, R.B. (2006), *An Introduction to Copulas*, 2nd ed., Springer
 - Joe, H. (1997), *Multivariate Models and Dependence Concepts*, Chapman and Hall

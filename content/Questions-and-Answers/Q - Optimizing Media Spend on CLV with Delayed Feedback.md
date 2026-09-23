@@ -161,7 +161,7 @@ Model-based CLV is thus the vault's version of a surrogate: a function of short-
 | [[Decision Analysis]] · [[From Inference to Decision]] | Expected-utility rule and its three conditions; against thresholds |
 | [[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)]] · [[Forecast Evaluation and Backtesting]] | CRPS, rolling origin, coverage of sums |
 | [[Instrumental Variables and Principal Stratification]] · [[Activity Bias in Advertising]] | Post-treatment strata; selection of credited customers |
-| [[raw/Fader Hardie Lee 2005 - RFM and CLV Iso-Value Curves.pdf]] | Secs. 1-5, Eq. 2, Tables 2-3 |
+| Fader Hardie Lee 2005 - RFM and CLV Iso-Value Curves | Secs. 1-5, Eq. 2, Tables 2-3 |
 
 ## Related Concepts
 

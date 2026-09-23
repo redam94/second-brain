@@ -31,7 +31,7 @@ concept_count: 3
 - [[Logit Purchase Decision Model]] — CONTAINS: logit function (Eq. 7), purchase rule (Eq. 8), threshold mechanism, logit properties, post-purchase behavior
 
 ## Sources
-- [[raw/abm_consumer.pdf]] — Karakaya, Badur & Aytekin (2011)
+- abm_consumer — Karakaya, Badur & Aytekin (2011)
 
 ## See Also
 - [[../CUBES Model/_Index|CUBES Model]] — alternative consumer behavior ABM

@@ -63,9 +63,9 @@ concept_count: 15
 
 ## Sources
 
-- [[raw/Yamashita et al. - 2020 - Interactive Method to Elicit Local Causal Knowledge for Creating a Huge Causal Network.pdf]] — Yamashita, Kanno & Furuta. HCII 2020. Interactive causal knowledge elicitation for disaster scenarios.
-- [[raw/Shaposhnyk et al. - 2025 - Can LLMs Assist Expert Elicitation for Probabilistic Causal Modeling.pdf]] — Shaposhnyk, Zahorska & Yanushkevich. arXiv 2025. LLM-based BN expert elicitation.
-- [[raw/Liu et al. - 2025 - Eliciting and Improving the Causal Reasoning Abilities of Large Language Models with Conditional Sta.pdf]] — Liu, Yin, Zhang, Zhao & Feng. Computational Linguistics Vol. 51 No. 2 (2025). Code prompts and conditional statements for LLM causal reasoning (abductive + counterfactual tasks).
+- Yamashita et al. - 2020 - Interactive Method to Elicit Local Causal Knowledge for Creating a Huge Causal Network — Yamashita, Kanno & Furuta. HCII 2020. Interactive causal knowledge elicitation for disaster scenarios.
+- Shaposhnyk et al. - 2025 - Can LLMs Assist Expert Elicitation for Probabilistic Causal Modeling — Shaposhnyk, Zahorska & Yanushkevich. arXiv 2025. LLM-based BN expert elicitation.
+- Liu et al. - 2025 - Eliciting and Improving the Causal Reasoning Abilities of Large Language Models with Conditional Sta — Liu, Yin, Zhang, Zhao & Feng. Computational Linguistics Vol. 51 No. 2 (2025). Code prompts and conditional statements for LLM causal reasoning (abductive + counterfactual tasks).
 
 ## Cross-Cutting Theme
 

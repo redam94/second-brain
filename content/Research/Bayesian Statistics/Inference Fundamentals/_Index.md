@@ -53,6 +53,6 @@ concept_count: 9
 
 ## Sources
 
-- [[raw/BDA3.pdf]] — Bayesian Data Analysis, 3rd Edition (Gelman et al.), Part I (pp. 1-137)
-- [[raw/StatRethink-Bayes.pdf]] — Statistical Rethinking (McElreath, 2015), Chapters 1-3
-- [[raw/multiple2f.pdf]] — "Why we (usually) don't have to worry about multiple comparisons" (Gelman, Hill & Yajima, 2009)
+- BDA3 — Bayesian Data Analysis, 3rd Edition (Gelman et al.), Part I (pp. 1-137)
+- StatRethink-Bayes — Statistical Rethinking (McElreath, 2015), Chapters 1-3
+- multiple2f — "Why we (usually) don't have to worry about multiple comparisons" (Gelman, Hill & Yajima, 2009)

@@ -19,4 +19,4 @@ concept_count: 1
 - [[Flow Simulation Applications]] — CONTAINS: evacuation modeling, stampede phenomena, traffic jams as emergence, TRANSIMS transportation simulator
 
 ## Sources
-- [[raw/abm_word_of_mouth.pdf]] — Bonabeau (2002)
+- abm_word_of_mouth — Bonabeau (2002)

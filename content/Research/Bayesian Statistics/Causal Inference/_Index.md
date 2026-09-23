@@ -82,12 +82,12 @@ Causal Structure Learning
 
 ## Sources
 
-- [[raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]] — Li F, Ding P, Mealli F. 2023. *Phil. Trans. R. Soc. A* 381: 20220153
-- [[raw/Yamashita et al. - 2020 - Interactive Method to Elicit Local Causal Knowledge for Creating a Huge Causal Network.pdf]] — Yamashita G, Kanno T, Furuta K. 2020. HCII, LNCS 12217, pp. 437-446
-- [[raw/Shaposhnyk et al. - 2025 - Can LLMs Assist Expert Elicitation for Probabilistic Causal Modeling.pdf]] — Shaposhnyk O, Zahorska D, Yanushkevich S. 2025. arXiv:2504.10397
-- [[raw/Künzel et al. - 2017 - Metalearners for estimating heterogeneous treatment effects using machine learning.pdf]] — Künzel SR, Sekhon JS, Bickel PJ, Yu B. 2019. *PNAS* 116(10): 4156-4165
-- [[raw/Brodersen - 2015 - Inferring causal impact using Bayesian structural time-series models.pdf]] — Brodersen KH, Gallusser F, Koehler J, Remy N, Scott SL. 2015. *Ann. Appl. Stat.* 9(1): 247-274
-- [[raw/q- and a- learning.pdf]] — Schulte PJ, Tsiatis AA, Laber EB, Davidian M. 2014. "Q- and A-learning Methods for Estimating Optimal Dynamic Treatment Regimes", *Statistical Science* 29(4): 640-661
+- Li et al. - 2022 - Bayesian causal inference a critical review — Li F, Ding P, Mealli F. 2023. *Phil. Trans. R. Soc. A* 381: 20220153
+- Yamashita et al. - 2020 - Interactive Method to Elicit Local Causal Knowledge for Creating a Huge Causal Network — Yamashita G, Kanno T, Furuta K. 2020. HCII, LNCS 12217, pp. 437-446
+- Shaposhnyk et al. - 2025 - Can LLMs Assist Expert Elicitation for Probabilistic Causal Modeling — Shaposhnyk O, Zahorska D, Yanushkevich S. 2025. arXiv:2504.10397
+- Künzel et al. - 2017 - Metalearners for estimating heterogeneous treatment effects using machine learning — Künzel SR, Sekhon JS, Bickel PJ, Yu B. 2019. *PNAS* 116(10): 4156-4165
+- Brodersen - 2015 - Inferring causal impact using Bayesian structural time-series models — Brodersen KH, Gallusser F, Koehler J, Remy N, Scott SL. 2015. *Ann. Appl. Stat.* 9(1): 247-274
+- q- and a- learning — Schulte PJ, Tsiatis AA, Laber EB, Davidian M. 2014. "Q- and A-learning Methods for Estimating Optimal Dynamic Treatment Regimes", *Statistical Science* 29(4): 640-661
 
 ## Cross-Links to Existing Vault Notes
 

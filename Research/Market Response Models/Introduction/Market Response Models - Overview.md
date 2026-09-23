@@ -7,7 +7,7 @@ tags:
   - type/overview
   - topic/market-response
   - topic/econometrics
-  - topic/marketing-science
+  - topic/marketing
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
 date_updated: 2026-04-11

@@ -111,4 +111,4 @@ aliases:
 - [[Adjunctions Induce Monads]]
 - [[Beck's Monadicity Theorem]]
 - [[Adjoint Functors]] · [[Units and Counits]] · [[Monads - Overview]]
-- Source: [[raw/Riehl - Category Theory in Context.pdf]]
+- Source: Riehl - Category Theory in Context

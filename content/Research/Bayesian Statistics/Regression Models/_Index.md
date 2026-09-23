@@ -52,8 +52,8 @@ concept_count: 9
 
 ## Sources
 
-- [[raw/BDA3.pdf]] — Bayesian Data Analysis, 3rd Edition (Gelman et al.), Part IV (pp. 351-467)
-- [[raw/StatRethink-Bayes.pdf]] — Statistical Rethinking (McElreath, 2015), Chapters 4-5
-- [[raw/Counterfactual inference calculating excess deaths due to COVID-19]] — PyMC example: counterfactual time series regression
-- [[raw/Bayesian moderation analysis]] — PyMC example: moderation analysis with interaction terms
-- [[raw/Missing Data]] — PyMC port of Statistical Rethinking 2023, Lecture 18
+- BDA3 — Bayesian Data Analysis, 3rd Edition (Gelman et al.), Part IV (pp. 351-467)
+- StatRethink-Bayes — Statistical Rethinking (McElreath, 2015), Chapters 4-5
+- Counterfactual inference calculating excess deaths due to COVID-19 — PyMC example: counterfactual time series regression
+- Bayesian moderation analysis — PyMC example: moderation analysis with interaction terms
+- Missing Data — PyMC port of Statistical Rethinking 2023, Lecture 18

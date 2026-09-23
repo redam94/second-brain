@@ -52,10 +52,10 @@ Calibration <------> Validation
 
 | Paper | Authors | Year | Focus | Notes Produced |
 |-------|---------|------|-------|---------------|
-| [[raw/abm_word_of_mouth.pdf]] | Bonabeau | 2002 | ABM methodology, applications, adoption model | Foundations + Applications + Social Dynamics |
-| [[raw/abm_consumer.pdf]] | Karakaya, Badur & Aytekin | 2011 | Marketing strategies with WOM | Consumer Behavior (Karakaya) + Social Dynamics |
-| [[raw/abm_human_behaviour.pdf]] | Ben Said, Bouron & Drogoul | 2002 | CUBES consumer behavior simulator | Consumer Behavior (CUBES) + Calibration (GA/RAM) |
-| [[raw/calibration_ABM.pdf]] | McCulloch, Ge, Ward, Heppenstall, Polhill & Malleson | 2022 | HM+ABC calibration with uncertainty quantification | Calibration Methods (HM+ABC framework, HM, ABC, UQ, case studies) |
+| abm_word_of_mouth | Bonabeau | 2002 | ABM methodology, applications, adoption model | Foundations + Applications + Social Dynamics |
+| abm_consumer | Karakaya, Badur & Aytekin | 2011 | Marketing strategies with WOM | Consumer Behavior (Karakaya) + Social Dynamics |
+| abm_human_behaviour | Ben Said, Bouron & Drogoul | 2002 | CUBES consumer behavior simulator | Consumer Behavior (CUBES) + Calibration (GA/RAM) |
+| calibration_ABM | McCulloch, Ge, Ward, Heppenstall, Polhill & Malleson | 2022 | HM+ABC calibration with uncertainty quantification | Calibration Methods (HM+ABC framework, HM, ABC, UQ, case studies) |
 
 ## Recent Ingestion Log
 

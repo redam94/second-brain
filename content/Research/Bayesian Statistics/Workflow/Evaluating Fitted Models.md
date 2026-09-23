@@ -31,7 +31,7 @@ expanded_by:
 ---
 
 > [!info] Expanded in the 2026 textbook
-> The 2020 paper's model-evaluation material becomes the 16 notes of [[Research/Bayesian Statistics/Workflow/Evaluating and Comparing/_Index|Evaluating and Comparing]] in [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]].
+> The 2020 paper's model-evaluation material becomes the 16 notes of [[Research/Bayesian Statistics/Workflow/Evaluating and Comparing/_Index|Evaluating and Comparing]] in Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*.
 >
 > **Closest book counterparts:**
 > - [[Posterior Predictive Checking]] — the full graphical repertoire

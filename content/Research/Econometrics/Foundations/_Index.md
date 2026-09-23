@@ -41,8 +41,8 @@ concept_count: 4
 
 ## Sources
 
-- [[raw/Mostly Harmless Econometrics.pdf]] — Mostly Harmless Econometrics (Angrist & Pischke, 2008), Chapters 1-2
-- [[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]] — Graham Harrison, Towards Data Science (2023-04-06): DAGs from basics to backdoor adjustment
+- Mostly Harmless Econometrics — Mostly Harmless Econometrics (Angrist & Pischke, 2008), Chapters 1-2
+- Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs — Graham Harrison, Towards Data Science (2023-04-06): DAGs from basics to backdoor adjustment
 
 ## See Also
 

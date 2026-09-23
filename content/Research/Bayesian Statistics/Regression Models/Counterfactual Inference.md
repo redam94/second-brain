@@ -105,4 +105,4 @@ The result is a **posterior distribution over excess deaths** — not just a poi
 
 ## Source
 
-- [[raw/Counterfactual inference calculating excess deaths due to COVID-19]] — PyMC example by Benjamin T. Vincent (2022)
+- Counterfactual inference calculating excess deaths due to COVID-19 — PyMC example by Benjamin T. Vincent (2022)

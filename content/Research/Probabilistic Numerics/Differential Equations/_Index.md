@@ -39,7 +39,7 @@ concept_count: 6
 - [[Further Topics in ODE Solvers]] — CONTAINS: BVP SSM, ODE inverse problems & uncertainty-aware likelihood, free gradient/Hessian estimators (Thm/Eqs 41.13–41.14), §41.3 numerics+data consolidation (Covid example), probabilistic PDE solvers, Part VII "So What?" frontier questions.
 
 ## Sources
-- [[raw/ProbabilisticNumerics.pdf]] — Hennig, Osborne & Kersting, *Probabilistic Numerics: Computation as Machine Learning* (Cambridge, 2022), Parts VI–VII, book pp. 279–356 (Ch. 35–42).
+- ProbabilisticNumerics — Hennig, Osborne & Kersting, *Probabilistic Numerics: Computation as Machine Learning* (Cambridge, 2022), Parts VI–VII, book pp. 279–356 (Ch. 35–42).
 
 ## See Also
 - [[../Foundations/_Index|Foundations]] — especially [[Gauss-Markov Processes and SDEs]] and [[Bayesian Filtering and Smoothing]], the prior and inference engine reused throughout this leaf.

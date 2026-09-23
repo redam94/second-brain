@@ -52,4 +52,4 @@ Classical Rosenbaum-Rubin propensity-score **matching** framework and its diagno
 
 ## Sources
 
-- [[raw/Stuart 2010 - Matching Methods for Causal Inference - A Review.pdf]] — Stuart, E. A. (2010). Matching Methods for Causal Inference: A Review and a Look Forward. *Statistical Science* 25(1), 1-21.
+- Stuart 2010 - Matching Methods for Causal Inference - A Review — Stuart, E. A. (2010). Matching Methods for Causal Inference: A Review and a Look Forward. *Statistical Science* 25(1), 1-21.

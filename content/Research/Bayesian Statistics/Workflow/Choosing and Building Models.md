@@ -29,7 +29,7 @@ expanded_by:
 ---
 
 > [!info] Expanded in the 2026 textbook
-> The 2020 paper's treatment of model choice and construction is expanded into the 19 notes of [[Research/Bayesian Statistics/Workflow/Building Models/_Index|Building Models]] in [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf|Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*]].
+> The 2020 paper's treatment of model choice and construction is expanded into the 19 notes of [[Research/Bayesian Statistics/Workflow/Building Models/_Index|Building Models]] in Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*.
 >
 > **Closest book counterparts:**
 > - [[Choosing an Initial Model]] — where to start and why

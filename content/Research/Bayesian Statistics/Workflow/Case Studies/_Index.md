@@ -66,7 +66,7 @@ concept_count: 16
 - [[Simulation-Based Calibration Checking in Model Development Workflow]] — CONTAINS: Figures 31.1–31.11; five bugs, the Fano-factor filter, coverage plots; Ch. 31
 
 ## Sources
-- [[raw/Gelman Vehtari McElreath 2026 - Bayesian Workflow (book).pdf]] — Chapters 16–31, pp. 263–482
+- Gelman Vehtari McElreath 2026 - Bayesian Workflow (book) — Chapters 16–31, pp. 263–482
 
 ## See Also
 - [[Bayesian Workflow Book - Overview]] — the book's routing index

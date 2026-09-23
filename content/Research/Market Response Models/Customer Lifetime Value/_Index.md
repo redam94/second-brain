@@ -62,11 +62,11 @@ parent: "[[Research/Market Response Models/_Index|Market Response Models]]"
 
 ## Sources
 
-- [[raw/Fader Hardie Lee 2005 - Counting Your Customers the Easy Way BG-NBD.pdf]] — Fader, P. S., Hardie, B. G. S. & Lee, K. L. (2005), "'Counting Your Customers' the Easy Way: An Alternative to the Pareto/NBD Model," *Marketing Science* 24(2), 275–284.
-- [[raw/Fader Hardie 2005 - A Note on Deriving the Pareto-NBD Model.pdf]] — Fader, P. S. & Hardie, B. G. S. (2005), "A Note on Deriving the Pareto/NBD Model and Related Expressions," brucehardie.com/notes/009. (Derives the results of Schmittlein, Morrison & Colombo 1987, *Management Science* 33(1), 1–24, which is paywalled and not held.)
-- [[raw/Fader Hardie Lee 2005 - RFM and CLV Iso-Value Curves.pdf]] — Fader, P. S., Hardie, B. G. S. & Lee, K. L. (2005), "RFM and CLV: Using Iso-Value Curves for Customer Base Analysis," *Journal of Marketing Research* 42(4), 415–430 (author preprint, Feb 2005).
-- [[raw/Fader Hardie 2013 - The Gamma-Gamma Model of Monetary Value.pdf]] — Fader, P. S. & Hardie, B. G. S. (2013), "The Gamma-Gamma Model of Monetary Value," brucehardie.com/notes/025.
-- [[raw/Fader Hardie 2007 - How to Project Customer Retention.pdf]] — Fader, P. S. & Hardie, B. G. S. (2007), "How to Project Customer Retention," *Journal of Interactive Marketing* 21(1), 76–90 (author preprint, May 2006).
-- [[raw/Fader Hardie 2007 - Incorporating Time-Invariant Covariates into the Pareto-NBD and BG-NBD Models.pdf]] — Fader, P. S. & Hardie, B. G. S. (2007), brucehardie.com/notes/019.
-- [[raw/Wang Liu Miao 2019 - A Deep Probabilistic Model for Customer Lifetime Value Prediction.pdf]] — Wang, X., Liu, T. & Miao, J. (2019), arXiv:1912.07753.
+- Fader Hardie Lee 2005 - Counting Your Customers the Easy Way BG-NBD — Fader, P. S., Hardie, B. G. S. & Lee, K. L. (2005), "'Counting Your Customers' the Easy Way: An Alternative to the Pareto/NBD Model," *Marketing Science* 24(2), 275–284.
+- Fader Hardie 2005 - A Note on Deriving the Pareto-NBD Model — Fader, P. S. & Hardie, B. G. S. (2005), "A Note on Deriving the Pareto/NBD Model and Related Expressions," brucehardie.com/notes/009. (Derives the results of Schmittlein, Morrison & Colombo 1987, *Management Science* 33(1), 1–24, which is paywalled and not held.)
+- Fader Hardie Lee 2005 - RFM and CLV Iso-Value Curves — Fader, P. S., Hardie, B. G. S. & Lee, K. L. (2005), "RFM and CLV: Using Iso-Value Curves for Customer Base Analysis," *Journal of Marketing Research* 42(4), 415–430 (author preprint, Feb 2005).
+- Fader Hardie 2013 - The Gamma-Gamma Model of Monetary Value — Fader, P. S. & Hardie, B. G. S. (2013), "The Gamma-Gamma Model of Monetary Value," brucehardie.com/notes/025.
+- Fader Hardie 2007 - How to Project Customer Retention — Fader, P. S. & Hardie, B. G. S. (2007), "How to Project Customer Retention," *Journal of Interactive Marketing* 21(1), 76–90 (author preprint, May 2006).
+- Fader Hardie 2007 - Incorporating Time-Invariant Covariates into the Pareto-NBD and BG-NBD Models — Fader, P. S. & Hardie, B. G. S. (2007), brucehardie.com/notes/019.
+- Wang Liu Miao 2019 - A Deep Probabilistic Model for Customer Lifetime Value Prediction — Wang, X., Liu, T. & Miao, J. (2019), arXiv:1912.07753.
 - Software read for grounding (not stored): PyMC-Marketing `pymc_marketing/clv` source (GitHub main, 2026-09-18); `lifetimes` README.

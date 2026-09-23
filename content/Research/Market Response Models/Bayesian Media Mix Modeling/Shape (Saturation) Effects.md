@@ -2,10 +2,10 @@
 title: Shape (Saturation) Effects
 tags:
   - source/ingested
-  - topic/market-response-models
+  - topic/market-response
   - type/definition
   - doc/paper
-  - method/mcmc
+  - topic/mcmc
 source: "[[raw/Jin-2017-Bayesian-MMM-Carryover-Shape.pdf]]"
 source_location: "Sec. 2.2, pp. 3-5 (Eqs. 4-6)"
 date_ingested: 2026-06-17

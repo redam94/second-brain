@@ -131,6 +131,6 @@ Spatial smoothing is useful for **forecasting**: low-accident tracts surrounded 
 
 ## Source
 
-- [[raw/The Besag-York-Mollie Model for Spatial Data]] — PyMC example by Daniel Saunders (2023); NYC pedestrian accident data
+- The Besag-York-Mollie Model for Spatial Data — PyMC example by Daniel Saunders (2023); NYC pedestrian accident data
 - Riebler et al. (2016): "An intuitive Bayesian spatial model for disease mapping that accounts for scaling"
 - Stan case study: [ICAR and BYM2](https://mc-stan.org/users/documentation/case-studies/icar_stan.html)

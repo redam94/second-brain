@@ -46,7 +46,7 @@ concept_count: 8
 - [[ABM Calibration Case Studies]] — CONTAINS: SugarScape step-by-step, birds model (3 fitting criteria, 3 waves, efficiency comparison vs simulated annealing/EA/ABC), RISC Scottish cattle farms (16 binary model variants, MASE error metric, POM application)
 
 ## Sources
-- [[raw/abm_human_behaviour.pdf]] — GA calibration and RAM (Ben Said et al. 2002)
-- [[raw/abm_consumer.pdf]] — Experimental calibration approach (Karakaya et al. 2011)
-- [[raw/abm_word_of_mouth.pdf]] — Analytical baseline comparison (Bonabeau 2002)
-- [[raw/calibration_ABM.pdf]] — HM+ABC framework (McCulloch et al. 2022, JASSS 25(2))
+- abm_human_behaviour — GA calibration and RAM (Ben Said et al. 2002)
+- abm_consumer — Experimental calibration approach (Karakaya et al. 2011)
+- abm_word_of_mouth — Analytical baseline comparison (Bonabeau 2002)
+- calibration_ABM — HM+ABC framework (McCulloch et al. 2022, JASSS 25(2))

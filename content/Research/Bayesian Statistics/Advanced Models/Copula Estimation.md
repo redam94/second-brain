@@ -122,4 +122,4 @@ with pm.Model() as copula_model:
 
 ## Source
 
-- [[raw/Bayesian copula estimation Describing correlated joint distributions]] — PyMC example: Gaussian copula with Normal × Exponential marginals, Gates Foundation project
+- Bayesian copula estimation Describing correlated joint distributions — PyMC example: Gaussian copula with Normal × Exponential marginals, Gates Foundation project

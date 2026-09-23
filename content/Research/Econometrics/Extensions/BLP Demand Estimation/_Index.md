@@ -46,4 +46,4 @@ aliases:
 
 ## Sources
 
-- [[raw/Conlon Gortmaker 2020 - Best Practices BLP Demand Estimation (PyBLP).pdf]] — Conlon, C. & Gortmaker, J. (2020), "Best Practices for Differentiated Products Demand Estimation with PyBLP," *RAND Journal of Economics*.
+- Conlon Gortmaker 2020 - Best Practices BLP Demand Estimation (PyBLP) — Conlon, C. & Gortmaker, J. (2020), "Best Practices for Differentiated Products Demand Estimation with PyBLP," *RAND Journal of Economics*.
