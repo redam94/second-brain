@@ -13,6 +13,10 @@ tags:
 > [!info] For AI assistants
 > Reading this site with a language model? Start at [llms.txt](https://redam94.github.io/second-brain/llms.txt) — a routed index of every note. Any page is also available as raw markdown by appending `.md` to its URL.
 
+<a href="./static/graph3d/" data-router-ignore>
+  Explore the 3D knowledge graph →
+</a>
+
 ---
 
 ## Selected Analyses
