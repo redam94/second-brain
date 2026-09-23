@@ -18,7 +18,6 @@ depends_on:
   - "[[Probability and Bayesian Inference]]"
   - "[[MCMC Basics]]"
   - "[[Hierarchical Models]]"
-  - "[[raw/BayesWorkflow.pdf]]"
 used_by:
   - "[[Posterior Sampling and Summarization]]"
   - "[[Model Checking]]"

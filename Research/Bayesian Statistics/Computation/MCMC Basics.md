@@ -21,7 +21,6 @@ depends_on:
   - "[[Introduction to Bayesian Computation]]"
   - "[[Probability and Bayesian Inference]]"
   - "[[Hierarchical Models]]"
-  - "[[raw/BDA3.pdf]]"
 used_by:
   - "[[Efficient MCMC]]"
   - "[[HMC and Stan in Practice]]"

@@ -8,12 +8,24 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/statistical-modeling
-  - type/book-overview
+  - type/overview
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
+source_location: "Full textbook, Statistical Rethinking 2nd ed. (McElreath, 2020)"
 date_ingested: 2026-04-08
+folder: "Bayesian Statistics"
+doc_type: overview
 authors:
   - Richard McElreath
 year: 2015
+depends_on:
+  - "[[BDA3 - Overview]]"
+used_by:
+  - "[[Linear Models in Statistical Rethinking]]"
+  - "[[HMC and Stan in Practice]]"
+  - "[[Spurious Association and Confounds]]"
+  - "[[Hierarchical Linear Models]]"
+  - "[[Missing Data - Statistical Rethinking]]"
 ---
 
 # Statistical Rethinking

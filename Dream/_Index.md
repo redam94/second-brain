@@ -23,7 +23,7 @@ date_updated: 2026-09-21
 
 **Covered by:** [[Propensity Score Matching - Overview]], [[Matching Algorithms and Caliper]], [[Covariate Balance and Matching Diagnostics]] (all in `Econometrics/Identification Strategies/`, created 2026-06-28)
 
-**Adjacent notes:** [[Bayesian Propensity Scores and IPW]], [[Frequentist Causal Estimation]], [[Conditional Independence Assumption]], [[The Selection Problem]], [[Omitted Variables Bias]], [[Activity Bias in Advertising]]
+**Adjacent notes:** [[Bayesian Propensity Score Weighting]], [[Bayesian Inverse Probability Weighting]], [[Frequentist Causal Estimation]], [[Conditional Independence Assumption]], [[The Selection Problem]], [[Omitted Variables Bias]], [[Activity Bias in Advertising]]
 
 ---
 
@@ -444,7 +444,7 @@ The vault has two complementary sections that are not yet connected: `Econometri
 **Why it's a gap:**
 [[Bayesian Moderation Analysis]] explicitly contrasts moderation with mediation: "Mediation: $x$ affects $y$ (partly) *through* $m$. Requires causal DAG reasoning. See the PyMC mediation analysis example for contrast." Yet no note in the vault covers mediation. This is a significant omission given the vault's depth in causal inference: [[Spurious Association and Confounds]] covers fork/pipe/collider patterns (mediation is the *pipe* $x \to m \to y$), [[Potential Outcomes Framework]] defines the potential outcomes that mediation analysis targets, and [[Directed Acyclic Graphs]] formalises the front-door criterion. The classical Baron-Kenny "causal steps" approach and the difference-in-coefficients/product-of-coefficients estimators are absent, as is the modern potential-outcomes approach: Pearl's natural direct effect (NDE) and natural indirect effect (NIE), the identification requirement of no unmeasured mediator-outcome confounding, and the sensitivity analysis methods (VanderWeele 2015). The Bayesian approach (posterior over mediation pathways) connects this to [[Hierarchical Linear Models]] and [[Generalized Linear Models]].
 
-**Adjacent notes:** [[Bayesian Moderation Analysis]], [[Spurious Association and Confounds]], [[Potential Outcomes Framework]], [[Directed Acyclic Graphs]], [[Nonparametric Causal Inference]], [[Causal Estimands]], [[Generalized Linear Models]]
+**Adjacent notes:** [[Moderation Analysis|Bayesian Moderation Analysis]], [[Spurious Association and Confounds]], [[Potential Outcomes Framework]], [[Directed Acyclic Graphs]], [[Nonparametric Causal Inference]], [[Causal Estimands]], [[Generalized Linear Models]]
 
 **Suggested sources / search terms:**
 - Baron & Kenny (1986) — "The moderator-mediator variable distinction in social psychological research" (*JPSP*)

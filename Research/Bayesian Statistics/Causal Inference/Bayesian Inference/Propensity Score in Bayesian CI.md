@@ -102,7 +102,7 @@ This gives a **posterior predictive distribution of $\hat{\tau}^{\text{DR}}$** (
 - [[General Structure of Bayesian CI]] — why propensity score drops from likelihood under ignorability
 - [[Bayesian Outcome Models]] — outcome models that the propensity score enters
 - [[Frequentist Causal Estimation]] — Hájek IPW and doubly-robust estimators
-- [[Bayesian Propensity Scores and IPW]] — existing vault note on Bayesian IPW (Heiss blog, Liao-Zigler method)
+- [[Bayesian Propensity Score Weighting]] — Bayesian IPW via Liao-Zigler two-stage method (Heiss blog)
 
 ## See Also
 - [[Sensitivity Analysis in Observational Studies]] — sensitivity analysis when unconfoundedness fails
