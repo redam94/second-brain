@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1412">
+  <title>Second Brain · 3D Atlas</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./vendor/3d-force-graph.min.js"></script>
+  <script defer src="./graph-data.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <header>
+    <a id="home" href="../../" class="brand"><span class="brand-icon">✳</span><span>SECOND BRAIN<small>Knowledge atlas</small></span></a>
+    <span class="header-note">Follow an idea. Find the connections.</span>
+    <a href="../../" class="back">Read the notes ↗</a>
+  </header>
+  <main>
+    <aside class="sidebar" aria-label="Search and filters">
+      <div class="intro"><span class="eyebrow">YOUR KNOWLEDGE, CONNECTED</span><h1>A new perspective.</h1><p>Search a thought, then explore its neighborhood.</p></div>
+      <label for="search">Find a note <kbd>⌘ / Ctrl K</kbd></label>
+      <div class="search-wrap"><input id="search" type="search" placeholder="Try causal inference…" autocomplete="off" disabled><span aria-hidden="true">⌕</span></div>
+      <label for="topic">Topic</label><select id="topic" disabled><option value="">All topics</option></select>
+      <label for="tag">Tag</label><select id="tag" disabled><option value="">All tags</option></select>
+      <div class="options">
+        <label class="check"><input id="hubs" type="checkbox"> Show index notes</label>
+        <label class="check"><input id="all-links" type="checkbox"> Show all connections</label>
+      </div>
+      <div class="results-heading"><strong id="results-title">Places to begin</strong><span id="result-count"></span></div>
+      <div id="results" class="results" aria-label="Notes"></div>
+      <p id="search-status" class="quiet" role="status">Loading the published notes…</p>
+    </aside>
+    <section class="canvas-panel" aria-label="Interactive knowledge graph">
+      <div id="graph" aria-label="Drag to rotate. Scroll to zoom. Select a note to explore its links."></div>
+      <div class="graph-top"><div><span class="eyebrow">3D EXPLORER</span><p id="counts">Connecting the dots…</p></div><button id="reset" disabled>Reset view ↺</button></div>
+      <div id="loading" class="loading" role="status"><span class="loader"></span><strong>Mapping your second brain</strong><p>Loading notes and preparing search.</p></div>
+      <div id="legend" class="legend" aria-label="Topic colors"></div>
+      <div class="graph-bottom"><span>Drag to orbit · Scroll to zoom · Right-drag to pan</span><span id="view-status">Connections appear when you select a note.</span></div>
+    </section>
+    <aside id="detail" class="detail" aria-label="Selected note" hidden>
+      <div class="detail-top"><span class="eyebrow">SELECTED NOTE</span><button id="close-detail" aria-label="Close selected note">×</button></div>
+      <p id="detail-topic" class="topic-name"></p><h2 id="detail-title"></h2>
+      <div id="detail-tags" class="tags"></div>
+      <p id="detail-excerpt" class="excerpt"></p>
+      <a id="open-note" class="primary" target="_blank" rel="noopener">Read full note ↗</a>
+      <label for="scope">Explore around this note</label>
+      <select id="scope"><option value="0">Full graph</option><option value="1" selected>Direct connections</option><option value="2">Within two links</option></select>
+      <div class="relation-tabs"><button id="incoming" class="active">Backlinks</button><button id="outgoing">Links from this note</button></div>
+      <div id="neighbors" class="neighbors"></div>
+      <p class="quiet">Lines represent note references. Spatial distance is a layout choice, not a similarity score.</p>
+    </aside>
+  </main>
+  <noscript>This explorer needs JavaScript. <a href="../../">Browse the notes instead.</a></noscript>
+</body>
+</html>
