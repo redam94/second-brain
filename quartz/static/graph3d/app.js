@@ -4,7 +4,19 @@
   const $ = id => document.getElementById(id);
   const noteBase = new URL('../../', location.href);
   const indexURL = new URL('../contentIndex.json', location.href);
-  const colors = ['#c9e49a','#8bc6b2','#e2b786','#a5bde7','#c6a4d8','#e0989b','#78bbc9','#d2cf84','#afaee6','#d2a67b','#82ba90','#b6c8ad','#a6abb1','#d8c5aa'];
+  // Topic colors per theme, tuned against the Quartz background (--light) of each mode.
+  const topicColors = {
+    light: ['#5c6b22','#2f7d6b','#b0632a','#3e6aa8','#7d4f9a','#b0474d','#2b7f93','#8a8420','#5a58b0','#9a6532','#3f8a52','#6f7f5a','#5e6670','#a07a45'],
+    dark: ['#a8b850','#8bc6b2','#e2b786','#a5bde7','#c6a4d8','#e0989b','#78bbc9','#d2cf84','#afaee6','#d2a67b','#82ba90','#b6c8ad','#a6abb1','#d8c5aa'],
+  };
+  const themeName = () => document.documentElement.getAttribute('saved-theme') === 'dark' ? 'dark' : 'light';
+  const cssVar = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  let theme = {};
+  const readTheme = () => {
+    theme = { bg: cssVar('--light'), faint: cssVar('--lightgray'), gray: cssVar('--gray'), dark: cssVar('--dark'), accent: cssVar('--secondary') };
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme.bg);
+  };
+  readTheme();
   const pretty = s => s.replaceAll('-', ' ');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const duration = reducedMotion ? 0 : 700;
@@ -17,7 +29,7 @@
     if (n.id === selected) b.classList.add('selected');
     const title = document.createElement('strong'); title.textContent = n.title;
     const meta = document.createElement('small');
-    const dot = document.createElement('span'); dot.className = 'dot'; dot.style.background = palette.get(n.group);
+    const dot = document.createElement('span'); dot.className = 'dot'; dot.dataset.group = n.group; dot.style.background = palette.get(n.group);
     meta.append(dot, `${pretty(n.group)} · ${n.degree} connections`); b.append(title, meta);
     if (snippet) { const p = document.createElement('span'); p.className = 'snippet'; p.textContent = snippet; b.append(p); }
     b.onclick = () => select(n.id); return b;
@@ -30,11 +42,27 @@
       $('loading').append(title, p);
     }
   }
+  function buildPalette() {
+    const colors = topicColors[themeName()], groups = [...new Set(model.nodes.map(n => n.group))].sort();
+    palette = new Map(groups.map((g, i) => [g, colors[i % colors.length]]));
+  }
+  function applyTheme() {
+    readTheme();
+    if (!model) return;
+    buildPalette();
+    for (const dot of document.querySelectorAll('.dot[data-group]')) dot.style.background = palette.get(dot.dataset.group);
+    if (graph) { graph.backgroundColor(theme.bg); styleGraph(); }
+  }
+  function setTheme(name, persist = true) {
+    document.documentElement.setAttribute('saved-theme', name);
+    if (persist) try { localStorage.setItem('theme', name); } catch (_) { /* Storage may be blocked. */ }
+    applyTheme();
+  }
   function initialize(data) {
     model = data; byId = new Map(model.nodes.map(n => [n.id, n]));
     adjacent = GraphData.adjacency(model.nodes, model.links);
     const groups = [...new Set(model.nodes.map(n => n.group))].sort();
-    palette = new Map(groups.map((g, i) => [g, colors[i % colors.length]]));
+    buildPalette();
     for (const g of groups) { const o = document.createElement('option'); o.value = g; o.textContent = pretty(g); $('topic').append(o); }
     for (const t of [...new Set(model.nodes.flatMap(n => n.tags))].sort()) {
       const o = document.createElement('option'); o.value = t; o.textContent = t; $('tag').append(o);
@@ -42,7 +70,7 @@
     $('topic').disabled = $('tag').disabled = $('reset').disabled = false;
     try {
       graph = new ForceGraph3D($('graph'), { controlType: 'orbit', rendererConfig: { antialias: true, alpha: false } })
-        .backgroundColor('#0b1412').showNavInfo(false).nodeRelSize(2.5)
+        .backgroundColor(theme.bg).showNavInfo(false).nodeRelSize(2.5)
         .nodeVal(n => 1.8 + Math.log2(1 + n.degree)).nodeResolution(10).nodeOpacity(.95)
         .nodeLabel(n => { const el = document.createElement('span'); el.textContent = n.title; return el; })
         .linkOpacity(.25).linkWidth(0).warmupTicks(50).cooldownTicks(110)
@@ -82,7 +110,7 @@
     $('legend').replaceChildren();
     for (const group of [...new Set(nodes.map(n => n.group))].sort()) {
       const label = document.createElement('span'), dot = document.createElement('i');
-      dot.className = 'dot'; dot.style.background = palette.get(group); label.append(dot, pretty(group)); $('legend').append(label);
+      dot.className = 'dot'; dot.dataset.group = group; dot.style.background = palette.get(group); label.append(dot, pretty(group)); $('legend').append(label);
     }
     $('view-status').textContent = !nodes.length ? 'No notes match these filters.' : scope ? `${scope === 1 ? 'Direct connections' : 'Two-link neighborhood'} · filters apply` : 'Select a note to reveal its connections.';
   }
@@ -90,9 +118,9 @@
     if (!graph) return;
     const active = hovered || selected;
     const nearby = active ? adjacent.get(active) : null;
-    graph.nodeColor(n => n.id === active ? '#ffffff' : active && !nearby?.has(n.id) ? '#344d40' : palette.get(n.group));
+    graph.nodeColor(n => n.id === active ? theme.dark : active && !nearby?.has(n.id) ? theme.faint : palette.get(n.group));
     graph.linkVisibility(l => $('all-links').checked || (!!selected && Number($('scope').value) > 0) || (!!active && (GraphData.idOf(l.source) === active || GraphData.idOf(l.target) === active)));
-    graph.linkColor(l => active && (GraphData.idOf(l.source) === active || GraphData.idOf(l.target) === active) ? '#d1eab4' : '#527761');
+    graph.linkColor(l => active && (GraphData.idOf(l.source) === active || GraphData.idOf(l.target) === active) ? theme.accent : theme.gray);
     graph.linkDirectionalArrowLength(l => active && (GraphData.idOf(l.source) === active || GraphData.idOf(l.target) === active) ? 2.3 : 0)
       .linkDirectionalArrowRelPos(.85);
   }
@@ -169,6 +197,10 @@
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); $('search').focus(); $('search').select(); }
     if (e.key === 'Escape') { if ($('search').value) { $('search').value = ''; renderResults(); } else if (selected) clearSelection(); }
   });
+  // Theme toggle and sync behave like the Quartz site (shared localStorage key 'theme').
+  $('darkmode').onclick = () => setTheme(themeName() === 'dark' ? 'light' : 'dark');
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => setTheme(e.matches ? 'dark' : 'light'));
+  window.addEventListener('storage', e => { if (e.key === 'theme' && (e.newValue === 'light' || e.newValue === 'dark')) setTheme(e.newValue, false); });
   document.addEventListener('visibilitychange', () => { if (graph) document.hidden ? graph.pauseAnimation() : graph.resumeAnimation(); });
   window.addEventListener('hashchange', () => location.hash ? openHash() : clearSelection());
   try {
