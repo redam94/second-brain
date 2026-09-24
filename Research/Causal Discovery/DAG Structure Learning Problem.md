@@ -15,6 +15,10 @@ depends_on:
 used_by:
   - "[[Smooth Characterization of Acyclicity]]"
   - "[[NOTEARS Algorithm]]"
+  - "[[PC Algorithm]]"
+  - "[[GES - Greedy Equivalence Search]]"
+  - "[[Markov Equivalence Classes and CPDAGs]]"
+  - "[[Causal Structure Learning - Method Comparison]]"
 aliases:
   - "Score-based DAG learning"
   - "Linear SEM structure learning"
