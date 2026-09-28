@@ -20,7 +20,9 @@ depends_on:
   - "[[Model Testing and Specification]]"
   - "[[Flexible Functional Forms]]"
   - "[[Parameter Estimation in Market Response]]"
-used_by: []
+  - "[[Overfitting and Information Criteria]]"
+used_by:
+  - "[[MMM Model Selection and Application]]"
 ---
 
 # Model Selection and Exploratory Analysis
@@ -109,3 +111,4 @@ The more researchers test, the more likely a spuriously good-fitting model will 
 - [[Bayesian Workflow - Overview]] — information criteria (WAIC/LOO) appear at the model-comparison step of the Bayesian workflow
 - [[MMM Model Selection and Application]] — applies these model selection tools in the Bayesian MMM context (geometric vs. delayed adstock, saturation specification)
 - [[Researcher Degrees of Freedom]] — the multiple-comparison risk when searching over variable sets, functional forms, and lag structures simultaneously
+- [[Simulation-Based Calibration - Overview]] — SBC provides a complementary model validation approach: checking that the prior and likelihood are self-consistent before comparing models on data

@@ -220,3 +220,4 @@ Standard errors are not well-defined for $n=1$ treated unit. Instead, use **perm
 - [[Synthetic Control Inference and Diagnostics]] — inference methods and diagnostic plots beyond the basic Fisher test
 - [[Generalized Synthetic Control Method]] — interactive fixed effects generalization for multiple treated units
 - [[Abadie 2021 - Overview]] — Abadie's methodological overview and best-practices guidance
+- [[Difference-in-Differences with Multiple Time Periods - Overview]] — Callaway & Sant'Anna staggered DiD as a complementary alternative when multiple units are treated at different times

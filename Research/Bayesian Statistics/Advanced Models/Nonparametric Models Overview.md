@@ -82,6 +82,7 @@ $$G \sim \text{DP}(\alpha, G_0)$$
 - [[Bayesian Linear Regression]] — the parametric starting point
 - [[Model Comparison]] — comparing parametric vs. nonparametric fits
 - [[Efficient MCMC]] — computation for these complex models
+- [[Approximation Methods]] — variational Bayes and Laplace approximations for the intractable posteriors that arise in GP and DP models
 - [[Hierarchical Linear Models]] — hierarchical regression as the parametric precursor before moving to GP/nonparametric models
 - [[Factor Analysis and PPCA]] — uses this overview as its theoretical foundation (linear Gaussian latent factor model)
 - [[Hilbert Space Gaussian Processes]] — scalable GP approximation for time-series settings (addresses the O(n³) bottleneck)

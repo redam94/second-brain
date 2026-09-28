@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-09-21
+date_updated: 2026-09-28
 ---
 
 # Dream: Research Gaps
@@ -981,6 +981,39 @@ The vault covers the two inputs to doubly-robust estimation thoroughly: [[Nonpar
 
 ---
 
+### 60. DR-Learner (Doubly-Robust Metalearner for CATE)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The vault's heterogeneous-treatment-effect toolkit covers three metalearners from Künzel et al. (2019): [[S-Learner]], [[T-Learner and Minimax Rate]], and [[X-Learner]]. But Kennedy (2023) "Towards Optimal Doubly Robust Estimation of Heterogeneous Causal Effects" introduces the **DR-Learner** — a fourth metalearner using the augmented IPW (doubly-robust) score as a pseudo-outcome for estimating CATE. Step 1: estimate propensity $\hat{g}$ and outcome regression $\hat{Q}$ via cross-fitting. Step 2: construct the DR pseudo-outcome $\tilde{\tau}_i = \frac{T_i - \hat{g}(X_i)}{\hat{g}(X_i)(1-\hat{g}(X_i))}(Y_i - \hat{Q}(X_i, T_i)) + \hat{Q}(X_i, 1) - \hat{Q}(X_i, 0)$. Step 3: regress $\tilde{\tau}_i$ on $X_i$ with any supervised learner. The DR-Learner achieves oracle-efficient CATE estimation under weak conditions — only requiring that the product of the nuisance convergence rates is $o(n^{-1/2})$, not that either converges at $n^{-1/4}$ individually. The X-Learner (already in the vault) borrows the two-stage idea but does not use the DR score, so it lacks the efficiency guarantee. No note explains this fourth metalearner, its connection to gap #40 (Double/Debiased Machine Learning — which uses Neyman-orthogonal scores for ATE/ATT, not CATE), or its connection to gap #49 (TMLE — the semiparametric-efficiency-bound approach to the same problem).
+
+**Adjacent notes:** [[Metalearners for CATE]], [[X-Learner]], [[T-Learner and Minimax Rate]], [[S-Learner]], [[Nonparametric Causal Inference]], [[Frequentist Causal Estimation]], [[Propensity Score in Bayesian CI]], gap #40 (Double/Debiased Machine Learning), gap #49 (TMLE)
+
+**Suggested sources / search terms:**
+- Kennedy (2023) — "Towards optimal doubly robust estimation of heterogeneous causal effects" (*arXiv:2004.14497*)
+- Chernozhukov et al. (2018) — DML paper, Section on CATE via DR scores (*Econometrics Journal*)
+- Nie & Wager (2021) — "Quasi-oracle estimation of heterogeneous treatment effects" (*Biometrika*) — R-Learner as related approach
+- Search: "DR-learner doubly robust CATE", "Kennedy 2023 heterogeneous treatment effects", "doubly robust metalearner", "EconML DR learner", "oracle efficient CATE estimation"
+
+---
+
+### 61. Bayes Factors, Marginal Likelihood, and Bridge Sampling
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The vault's model comparison toolkit is built around predictive accuracy criteria: [[Overfitting and Information Criteria]] covers AIC/BIC/DIC/WAIC/LOO-CV, and [[Model Selection and Exploratory Analysis]] explicitly lists BIC as a proxy for Bayesian model comparison. But **Bayes factors** — the ratio of marginal likelihoods $\text{BF}_{10} = p(y | M_1)/p(y | M_0)$ — represent the full Bayesian framework for model comparison: they update the prior odds over models into posterior odds, naturally penalize complexity via the Occam's razor effect embedded in marginal likelihood, and are the Bayesian analogue of likelihood ratio tests for non-nested models. No note covers: why marginal likelihood is $\int p(y|\theta, M) p(\theta|M)\, d\theta$ (the prior-averaged likelihood), the prior-sensitivity criticism (Bayes factors are strongly sensitive to prior variance, unlike LOO/WAIC), the intractability of marginal likelihoods in most models, or the computational approaches — Laplace approximation (fast, accurate for posterior-like priors), thermodynamic integration (path sampling), and **bridge sampling** (the gold-standard estimator; Meng & Wong 1996, Gronau et al. 2017). [[Approximation Methods]] covers variational Bayes but not the marginal-likelihood estimation problem. [[Bayesian Workflow - Overview]] uses LOO and WAIC throughout without explaining why Bayes factors are avoided in the workflow. This gap means practitioners cannot understand when to use Bayes factors vs. LOO, how to implement bridge sampling in Stan/RStan, or why the BIC approximation to the log Bayes factor is valid only asymptotically.
+
+**Adjacent notes:** [[Model Comparison]], [[Overfitting and Information Criteria]], [[Model Selection and Exploratory Analysis]], [[Approximation Methods]], [[Bayesian Workflow - Overview]], [[Single-Parameter Models]], [[Simulation-Based Calibration - Overview]]
+
+**Suggested sources / search terms:**
+- Jeffreys (1961) — *Theory of Probability* — original Bayes factor scale (decisive/strong/moderate evidence)
+- Kass & Raftery (1995) — "Bayes factors" (*JASA 90:773*) — canonical reference for the Bayes factor framework and approximations
+- Meng & Wong (1996) — "Simulating ratios of normalizing constants via a simple identity" (*Statistica Sinica*) — bridge sampling estimator
+- Gronau et al. (2017) — "A tutorial on bridge sampling" (*Journal of Mathematical Psychology*) — practical implementation in Stan
+- Search: "Bayes factor bridge sampling Stan", "marginal likelihood estimation", "BayesFactor R package", "thermodynamic integration MCMC", "Occam razor marginal likelihood"
+
+---
+
 ## Covered Gaps
 
 | Gap | Covered By | Date Covered |
@@ -999,6 +1032,7 @@ The vault covers the two inputs to doubly-robust estimation thoroughly: [[Nonpar
 
 | Date | Action |
 |------|--------|
+| 2026-09-28 | Run 25: reviewed 10 notes (Difference-in-Differences with Multiple Time Periods - Overview, Ben Said et al 2002 - Overview, S-Learner, Discrete Choice Models, Factor Copula Construction, Advertising and Promotion Effects, Synthetic Control, Table 2 Fallacy, Nonparametric Models Overview, Model Selection and Exploratory Analysis). No existing gaps newly covered this run. Formatting fixes: corrected broken wikilink `[[Difference in differences]]` → `[[Differences-in-Differences]]` in both `depends_on` frontmatter and body text of Difference-in-Differences with Multiple Time Periods - Overview; fixed relative-path wikilink `[[../_Index\|Econometrics]]` → `[[Econometrics/_Index\|Econometrics]]` in Factor Copula Construction. Frontmatter fixes: added `[[Overfitting and Information Criteria]]` to `depends_on` in Model Selection and Exploratory Analysis; changed `used_by: []` → `used_by: ["[[MMM Model Selection and Application]]"]` in Model Selection and Exploratory Analysis. Cross-links added: Difference-in-Differences with Multiple Time Periods - Overview → `[[Potential Outcomes Framework]]` + `[[Frequentist Causal Estimation]]` (new See Also entries for foundational notation and doubly-robust estimation context); Ben Said et al 2002 - Overview → `[[Karakaya et al 2011 - Overview]]` + `[[Network Topology Effects on Diffusion]]` + `[[Product Adoption and Diffusion Models]]` (parallel consumer ABM and diffusion context); S-Learner → `[[Potential Outcomes Framework]]` + `[[Counterfactual Inference]]` + `[[Propensity Score in Bayesian CI]]` (foundational notation, BART S-learner context, propensity overlap failure mode); Discrete Choice Models → `[[Consumer Utility Function Components]]` + `[[Logit Purchase Decision Model]]` (cross-domain bridge to ABM logit-based purchase rules); Advertising and Promotion Effects → `[[Carryover (Adstock) Functional Forms]]` (carryover decay λ directly referenced in duration-interval calculations); Synthetic Control → `[[Difference-in-Differences with Multiple Time Periods - Overview]]` (staggered DiD as complementary panel alternative); Table 2 Fallacy → `[[Spurious Association and Confounds]]` + `[[Fixed-Effects Model]]` + `[[Within-Between Persons Causal Inference]]` (DAG-based confound taxonomy, FE regression as a common site of the fallacy, within/between decomposition context); Nonparametric Models Overview → `[[Approximation Methods]]` (variational Bayes for intractable GP/DP posteriors); Model Selection and Exploratory Analysis → `[[Simulation-Based Calibration - Overview]]` (SBC as complementary prior–likelihood self-consistency check before model comparison on data). Added gaps #60 (DR-Learner / Doubly-Robust Metalearner for CATE) and #61 (Bayes Factors, Marginal Likelihood, and Bridge Sampling). Gaps #37 (Bayesian Model Averaging), #46 (Causal Forests / GRF), #49 (TMLE), #40 (DML) reinforced by this run's notes. |
 | 2026-04-09 | Initial Dream index created. Three gaps identified from review of 9 Research notes. |
 | 2026-04-09 | Run 2: reviewed 9 notes (Decision Analysis, Observational vs Experimental, Missing Data Models, GLMs, LATE, Forking Paths, Spurious Association, Modeling as Software Development, Power Analysis). Added gaps 4 (Causal DAGs) and 5 (Heterogeneous Treatment Effects / CATE). All prior gaps remain 🌱 new. |
 | 2026-04-10 | Run 3: reviewed 9 notes (Synthetic Control, Fitting and Validating Computation, Iterative Model Improvement, Power Analysis, Golem of Prague, Model Comparison, Garden of Forking Data, Multiple Comparisons Bayesian, Spatial BYM). Gaps #2 and #4 marked 🍂 covered (notes now exist). Gap #1 updated to 🌿 still relevant (Bayesian IPW note exists but frequentist propensity score matching not yet covered). Added gaps #6 (Simulation-Based Calibration) and #7 (Permutation/Randomization Inference). |

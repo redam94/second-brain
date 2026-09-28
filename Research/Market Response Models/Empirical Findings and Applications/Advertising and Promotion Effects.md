@@ -138,7 +138,7 @@ A large-scale set of 23 split-panel experiments over four years found:
 ## Cross-Links
 
 - Core generalizations framework: [[Marketing Generalizations Overview]]
-- Carryover parameter ($\lambda$): [[Carryover Effects and Distributed Lags]]
+- Carryover parameter ($\lambda$) and functional forms: [[Carryover Effects and Distributed Lags]], [[Carryover (Adstock) Functional Forms]]
 - Price findings: [[Price and Distribution Effects]]
 - Optimal advertising budget: [[Optimal Marketing Decisions and Forecasting]]
 - Activity bias in advertising measurement: [[Activity Bias in Advertising]]

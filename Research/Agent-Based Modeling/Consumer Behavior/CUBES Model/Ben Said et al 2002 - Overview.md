@@ -96,3 +96,6 @@ Agent population characteristics are calibrated using GA to match real market da
 - [[Genetic Algorithm Calibration for ABM]] — population calibration
 - [[GA Fitness Evaluation and the RAM]] — Result-Analysis Module used to score GA fitness against market data
 - [[Market Share Equilibrium and Lock-In]] — emergent brand lock-in and cyclic competition results
+- [[Karakaya et al 2011 - Overview]] — parallel consumer ABM using logit purchase decisions and WOM
+- [[Network Topology Effects on Diffusion]] — how social network structure affects the speed of consumer adoption and opinion spread
+- [[Product Adoption and Diffusion Models]] — ABM-based diffusion models that complement the social imitation dynamics in CUBES

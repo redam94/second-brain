@@ -80,3 +80,6 @@ In a simple example with one covariate $x \in [-1, 1]$ and piecewise linear $\ta
 - [[Metalearners for CATE]] — framework context
 - [[T-Learner and Minimax Rate]] — next level: separate models per arm
 - [[X-Learner]] — most sophisticated metalearner
+- [[Potential Outcomes Framework]] — the $Y(0), Y(1)$ notation and CATE definition underlying the S-learner
+- [[Counterfactual Inference]] — Bayesian counterfactual estimation; BART S-learner appears in this context
+- [[Propensity Score in Bayesian CI]] — propensity scores address the "propensity far from 0.5" failure mode of the S-learner

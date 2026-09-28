@@ -115,3 +115,5 @@ Discrete choice data can be structured in either **wide format** (one row per de
 - [[Hierarchical Linear Models]] — Mixed logit / random-coefficient extensions
 - [[raw/Discrete Choice and Random Utility Models]] — Full PyMC tutorial with code
 - [[Market Share Models]] — MCI and MNL choice models applied in marketing science; same logit foundation used for brand-level market share estimation
+- [[Consumer Utility Function Components]] — utility function formulation in the Karakaya ABM, sharing the same logit/softmax foundation
+- [[Logit Purchase Decision Model]] — the ABM-level logit rule derived from the same random utility theory

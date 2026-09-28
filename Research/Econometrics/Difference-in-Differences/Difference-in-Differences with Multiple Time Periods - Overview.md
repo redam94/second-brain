@@ -12,7 +12,7 @@ folder: "Econometrics/Difference-in-Differences"
 doc_type: paper
 depends_on:
   - "[[The Experimental Ideal]]"
-  - "[[Difference in differences]]"
+  - "[[Differences-in-Differences]]"
 used_by:
   - "[[Group-Time Average Treatment Effects]]"
   - "[[Identifying Assumptions for Staggered DiD]]"
@@ -70,7 +70,7 @@ The paper situates itself within the heterogeneous-treatment-effects-in-DiD lite
 - Estimands in [[Doubly-Robust Estimands for ATT(g,t)]].
 - Summary measures in [[Aggregating Group-Time Effects]].
 - Asymptotics and uniform bands in [[Simultaneous Inference via Multiplier Bootstrap]].
-- Generalizes the canonical 2x2 design in [[Difference in differences]] and the DiD chapter of [[Mostly Harmless Econometrics]].
+- Generalizes the canonical 2x2 design in [[Differences-in-Differences]] and the DiD chapter of [[Mostly Harmless Econometrics]].
 - Conceptual cousin to [[Synthetic Control]] for staggered policy adoption.
 
 ## See Also
@@ -78,3 +78,5 @@ The paper situates itself within the heterogeneous-treatment-effects-in-DiD lite
 - [[The Experimental Ideal]] — the randomization benchmark DiD approximates
 - [[Estimands in Longitudinal Research]] — potential-outcomes targets over time
 - [[Directed Acyclic Graphs]] — graphical view of conditional parallel trends
+- [[Potential Outcomes Framework]] — foundational notation for $ATT(g,t)$ and the three-step identification strategy
+- [[Frequentist Causal Estimation]] — doubly-robust and IPW estimators that the CS framework generalizes to the staggered setting

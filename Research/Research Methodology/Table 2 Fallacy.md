@@ -101,3 +101,6 @@ This requires:
 - [[Bayesian Propensity Score Weighting]] — Correct approach: use DAG to select adjustment set for the treatment, then focus interpretation solely on the treatment effect
 - [[The Selection Problem]] — The fundamental challenge that makes adjustment necessary and limits what can be identified
 - [[Observational vs Experimental Methods in Advertising]] — Activity bias as a case where confounders (activity) cause 10–1000x overestimates when treated as if identified
+- [[Spurious Association and Confounds]] — DAG-based view of confounds (forks, pipes, colliders) that clarifies why confounders cannot be jointly identified alongside the treatment
+- [[Fixed-Effects Model]] — FE regressions are a common site of the Table 2 Fallacy: time-invariant covariates swept out by fixed effects are often incorrectly interpreted as within-person causal effects
+- [[Within-Between Persons Causal Inference]] — the within/between decomposition is another context where misinterpreting level-2 coefficients as causal commits the Table 2 Fallacy
