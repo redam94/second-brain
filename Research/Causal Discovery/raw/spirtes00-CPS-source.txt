@@ -1,0 +1,4 @@
+SOURCE: Spirtes, Glymour & Scheines (2000) — "Causation, Prediction, and Search", 2nd Ed.
+MIT Press. ISBN 978-0-262-19440-2.
+URL: https://archive.illc.uva.nl/cil/uploaded_files/inlineitem/Spirtes_Glymour_Scheines_2000_Causation_Prediction_.pdf
+STATUS: PDF download blocked by egress proxy policy (403). Notes written from training knowledge.

@@ -1,0 +1,4 @@
+SOURCE: Chickering (2002) — "Optimal Structure Identification With Greedy Search"
+Journal of Machine Learning Research, vol. 3, pp. 507-554.
+URL: https://www.jmlr.org/papers/volume3/chickering02b/chickering02b.pdf
+STATUS: PDF download blocked by egress proxy policy (403). Notes written from training knowledge.
