@@ -1,0 +1,33 @@
+SOURCE REFERENCE: Chickering (2002) — Greedy Equivalence Search
+
+Citation:
+  Chickering, D. M. (2002). Optimal structure identification with greedy search.
+  Journal of Machine Learning Research, 3(Nov), 507–554.
+
+URL: https://jmlr.org/papers/v3/chickering02b.html
+Direct PDF: https://jmlr.org/papers/volume3/chickering02b/chickering02b.pdf
+
+Download status: PDF freely available (JMLR open access) but could not be
+downloaded due to session proxy policy blocking jmlr.org (403 policy denial).
+Recorded 2026-09-29.
+
+Abstract (from paper):
+  This paper identifies a set of assumptions sufficient to ensure that a greedy search
+  algorithm in the space of equivalence classes of Bayesian networks recovers the
+  equivalence class of the generative distribution in the large-sample limit. Given
+  these assumptions, the paper presents a greedy search algorithm—called Greedy
+  Equivalence Search (GES)—and proves that the algorithm is correct. GES is motivated
+  by a result due to Meek (1997), called the "Meek conjecture," which asserts that any
+  two distinct Bayesian-network structures that encode the same set of independence
+  assertions can always be connected by a sequence of single-edge insertions and
+  deletions such that each Bayesian-network structure in the sequence is an independence
+  map of the other. This paper proves the Meek conjecture, and uses the result to
+  guarantee the correctness of GES.
+
+Key contents:
+  - Proof of the Meek Conjecture (Theorem 15)
+  - GES algorithm: Forward Equivalence Search (FES) + Backward Equivalence Search (BES)
+  - Turning operators (Insert, Delete) for moving between equivalence classes
+  - Consistency guarantee for GES under faithfulness assumption
+  - Relationship to Chickering (2002a) "Learning Equivalence Classes of Bayesian-Network
+    Structures"
