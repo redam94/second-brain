@@ -21,13 +21,13 @@ depends_on:
   - "[[Introduction to Bayesian Computation]]"
   - "[[Probability and Bayesian Inference]]"
   - "[[Hierarchical Models]]"
-  - "[[raw/BDA3.pdf]]"
 used_by:
   - "[[Efficient MCMC]]"
   - "[[HMC and Stan in Practice]]"
   - "[[Fitting and Validating Computation]]"
   - "[[Computational Troubleshooting]]"
   - "[[Bayesian Workflow - Overview]]"
+  - "[[BDA3 - Overview]]"
   - "[[Bayesian Linear Regression]]"
 ---
 

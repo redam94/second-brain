@@ -20,7 +20,6 @@ depends_on:
   - "[[Single-Parameter Models]]"
   - "[[Probability and Bayesian Inference]]"
   - "[[Multiparameter Models]]"
-  - "[[raw/BDA3.pdf]]"
 used_by:
   - "[[Hierarchical Linear Models]]"
   - "[[MCMC Basics]]"
@@ -29,6 +28,8 @@ used_by:
   - "[[Iterative Model Improvement]]"
   - "[[Evaluating Fitted Models]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[BDA3 - Overview]]"
+  - "[[Statistical Rethinking - Overview]]"
 ---
 
 # Hierarchical Models

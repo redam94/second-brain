@@ -4,9 +4,22 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
+source_location: "Full text, pp. 1-625"
 date_ingested: 2026-04-08
+date_updated: 2026-09-30
 folder: "Bayesian Statistics"
+doc_type: overview
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Hierarchical Models]]"
+  - "[[MCMC Basics]]"
+  - "[[Bayesian Workflow - Overview]]"
+used_by:
+  - "[[Statistical Rethinking - Overview]]"
+  - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"

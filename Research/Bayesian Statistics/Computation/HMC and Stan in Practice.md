@@ -22,7 +22,8 @@ depends_on:
   - "[[MCMC Basics]]"
   - "[[Efficient MCMC]]"
   - "[[Garden of Forking Data]]"
-used_by: []
+used_by:
+  - "[[Statistical Rethinking - Overview]]"
 date_updated: 2026-08-24
 ---
 

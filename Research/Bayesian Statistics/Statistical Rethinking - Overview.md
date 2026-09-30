@@ -8,12 +8,24 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/statistical-modeling
-  - type/book-overview
+  - type/overview
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
+source_location: "Full text, pp. 1-469"
 date_ingested: 2026-04-08
+date_updated: 2026-09-30
 authors:
   - Richard McElreath
 year: 2015
+doc_type: overview
+depends_on:
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Hierarchical Models]]"
+  - "[[HMC and Stan in Practice]]"
+  - "[[Bayesian Workflow - Overview]]"
+used_by:
+  - "[[BDA3 - Overview]]"
+  - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
 ---
 
 # Statistical Rethinking

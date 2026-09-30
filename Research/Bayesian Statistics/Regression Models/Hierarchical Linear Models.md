@@ -25,6 +25,8 @@ used_by:
   - "[[Social Network Models]]"
   - "[[Spatial Models - BYM]]"
   - "[[Copula Estimation]]"
+  - "[[BDA3 - Overview]]"
+  - "[[Statistical Rethinking - Overview]]"
 ---
 
 # Hierarchical Linear Models

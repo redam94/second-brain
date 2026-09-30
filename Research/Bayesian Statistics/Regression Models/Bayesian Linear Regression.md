@@ -26,6 +26,7 @@ used_by:
   - "[[Factor Analysis and PPCA]]"
   - "[[Overfitting and Information Criteria]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[BDA3 - Overview]]"
 ---
 
 # Bayesian Linear Regression

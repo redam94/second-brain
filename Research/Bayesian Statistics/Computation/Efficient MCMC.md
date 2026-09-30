@@ -20,13 +20,13 @@ source_location: "BDA3 Ch.12, pp. 293-310"
 depends_on:
   - "[[MCMC Basics]]"
   - "[[Introduction to Bayesian Computation]]"
-  - "[[raw/BDA3.pdf]]"
 used_by:
   - "[[HMC and Stan in Practice]]"
   - "[[Approximation Methods]]"
   - "[[Computational Troubleshooting]]"
   - "[[Fitting and Validating Computation]]"
   - "[[Nonparametric Models Overview]]"
+  - "[[BDA3 - Overview]]"
 ---
 
 # Efficient MCMC

@@ -24,6 +24,7 @@ used_by:
   - "[[Bayesian Workflow - Overview]]"
   - "[[Confirmatory Factor Analysis and SEM]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[BDA3 - Overview]]"
 ---
 
 # Model Checking
