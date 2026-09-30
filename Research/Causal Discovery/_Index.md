@@ -4,17 +4,30 @@ tags:
   - type/index
   - source/ingested
 parent: "[[../_Index|Research]]"
-date_updated: 2026-06-17
-concept_count: 5
+date_updated: 2026-09-30
+concept_count: 9
 ---
 
 # Causal Discovery
 
 > [!abstract] Routing Summary
 > This folder covers **causal structure learning / discovery** — learning the structure of
-> directed acyclic graphs (DAGs / Bayesian networks) from data. Currently centered on **NOTEARS**
-> (Zheng et al., 2018), which recasts DAG learning as continuous optimization. 5 concept notes + 1 paper.
-> - Want the paper in one page? → [[NOTEARS - Overview]]
+> directed acyclic graphs (DAGs / Bayesian networks) from data. Three paradigms:
+> **constraint-based** (PC algorithm), **score-based** (GES), **continuous optimization** (NOTEARS).
+> 9 concept notes across all three paradigms.
+>
+> **Orientation / paradigm comparison:**
+> - All three paradigms + identifiability summary? → [[Causal Structure Learning - Overview]]
+> - What is a CPDAG? What can observational data identify? → [[Markov Equivalence Classes and CPDAGs]]
+>
+> **Constraint-based (PC algorithm):**
+> - Full PC algorithm (skeleton recovery, v-structures, Meek rules)? → [[PC Algorithm]]
+>
+> **Score-based (GES):**
+> - Full GES algorithm (FES + BES phases, BIC, consistency theorem)? → [[GES Algorithm]]
+>
+> **Continuous optimization (NOTEARS):**
+> - Want the NOTEARS paper in one page? → [[NOTEARS - Overview]]
 > - Need the problem setup (SEM, score functions, NP-hardness)? → [[DAG Structure Learning Problem]]
 > - Need **the key theorem** ($h(W)=\mathrm{tr}\,e^{W\circ W}-d$, acyclicity)? → [[Smooth Characterization of Acyclicity]]
 > - Need the optimization (augmented Lagrangian, L-BFGS, thresholding, Algorithm 1)? → [[NOTEARS Algorithm]]
@@ -24,6 +37,10 @@ concept_count: 5
 
 | Concept | Note | Type | Depends On | Key Result |
 |---------|------|------|-----------|------------|
+| Three paradigms + identifiability | [[Causal Structure Learning - Overview]] | overview | [[DAG Structure Learning Problem]] | Faithfulness → CPDAG is the ceiling |
+| Markov equivalence + CPDAG definition | [[Markov Equivalence Classes and CPDAGs]] | concept | [[Directed Acyclic Graphs]] | Verma-Pearl: same skeleton + v-structures ↔ equivalent |
+| PC algorithm (constraint-based) | [[PC Algorithm]] | concept | [[Markov Equivalence Classes and CPDAGs]] | CI tests → skeleton → Meek → CPDAG |
+| GES algorithm (score-based) | [[GES Algorithm]] | concept | [[Markov Equivalence Classes and CPDAGs]] | FES + BES over CPDAGs; score-consistent (Chickering 2002) |
 | Continuous reformulation of DAG learning | [[NOTEARS - Overview]] | overview | [[DAG Structure Learning Problem]] | Combinatorial → continuous program |
 | Linear SEM + LS score | [[DAG Structure Learning Problem]] | concept | [[Confirmatory Factor Analysis and SEM]] | $F(W)=\frac{1}{2n}\lVert X-XW\rVert_F^2+\lambda\lVert W\rVert_1$ |
 | Matrix-exponential acyclicity | [[Smooth Characterization of Acyclicity]] | theorem | [[DAG Structure Learning Problem]] | $h(W)=\mathrm{tr}\,e^{W\circ W}-d=0 \iff$ DAG |
@@ -34,6 +51,13 @@ concept_count: 5
 
 ## Notes
 
+### Constraint-based and Score-based (added 2026-09-30)
+- [[Causal Structure Learning - Overview]] — CONTAINS: three paradigms, core assumptions (Markov, faithfulness, causal sufficiency), identifiability ceiling, when to use which method.
+- [[Markov Equivalence Classes and CPDAGs]] — CONTAINS: Def (Markov equivalence), **Verma-Pearl theorem** (same skeleton + v-structures ↔ equivalent), CPDAG definition, Chickering compelled-edge theorem, identifiability limits, extensions (LiNGAM etc.).
+- [[PC Algorithm]] — CONTAINS: Phase 1 skeleton recovery (CI tests at increasing conditioning size), Phase 2 v-structure orientation, Phase 3 **Meek rules** (R1–R4), consistency theorem, CI tests by data type, order-dependence and PC-stable fix, extensions (FCI, RFCI).
+- [[GES Algorithm]] — CONTAINS: decomposable score definition, BIC score, **FES** (Insert operator), **BES** (Delete operator), consistency theorem (**Theorem 15**, Chickering 2002), **Meek Conjecture**, GES vs. PC comparison table, R/Python examples, extensions (GIES, fGES).
+
+### Continuous optimization (NOTEARS, added 2026-06-17)
 - [[NOTEARS - Overview]] — CONTAINS: research question, the 4 contributions, NOTEARS acronym, undirected-GM analogy, lineage.
 - [[DAG Structure Learning Problem]] — CONTAINS: Defs (data/SEM, induced graph $\mathsf{G}(W)$, linear SEM, LS score $F$), Programs (3) & (4), NP-hardness, landscape table of prior methods (exact / local / order / constraint / hybrid).
 - [[Smooth Characterization of Acyclicity]] — CONTAINS: desiderata (a)–(d), **Prop. 1** (infinite series $\mathrm{tr}(I-B)^{-1}=d$), **Prop. 2** (matrix exp $\mathrm{tr}\,e^B=d$), **Theorem 1** ($h(W)=\mathrm{tr}\,e^{W\circ W}-d$ + gradient), sign-cancellation example, proofs.
@@ -41,14 +65,20 @@ concept_count: 5
 - [[NOTEARS Experiments]] — CONTAINS: ER/SF + Gauss/Exp/Gumbel design, SHD/FDR vs FGS (Fig. 3), Table 1 global-optimum comparison, Sachs real-data result, limitations & future work.
 
 ## Cross-Cutting Concepts
-- **Linear SEM / weighted adjacency matrix $W$**: the object of estimation; appears in [[DAG Structure Learning Problem]] (definition) and threads through every note.
+- **Faithfulness assumption**: underlies all three paradigms; required for consistency of both PC ([[PC Algorithm]]) and GES ([[GES Algorithm]]) and implicit in NOTEARS ([[DAG Structure Learning Problem]]).
+- **CPDAG / Markov equivalence class**: the output of all consistent algorithms; defined in [[Markov Equivalence Classes and CPDAGs]], used by [[PC Algorithm]] and [[GES Algorithm]].
+- **Linear SEM / weighted adjacency matrix $W$**: the object of estimation; appears in [[DAG Structure Learning Problem]] (definition) and threads through every NOTEARS note.
 - **Matrix exponential $e^{W\circ W}$**: the engine of both the constraint ([[Smooth Characterization of Acyclicity]]) and its $O(d^3)$ cost ([[NOTEARS Algorithm]], [[NOTEARS Experiments]]).
 - **Nonconvexity / stationary points**: introduced in [[Smooth Characterization of Acyclicity]], handled in [[NOTEARS Algorithm]], empirically assessed in [[NOTEARS Experiments]].
 
 ## Sources
 - [[raw/1803.01422-NOTEARS.pdf]] — Zheng, Aragam, Ravikumar & Xing, *DAGs with NO TEARS: Continuous Optimization for Structure Learning*, NeurIPS 2018 (arXiv:1803.01422). Code: <https://github.com/xunzheng/notears>.
+- Spirtes, Glymour & Scheines (2000) — *Causation, Prediction, and Search*, 2nd Ed., MIT Press (no local PDF; proxy restriction).
+- Chickering (2002) — "Optimal Structure Identification with Greedy Search", JMLR 3:507–554 (no local PDF; freely at jmlr.org/papers/v3/chickering02b.html).
 
 ## See Also
 - [[Confirmatory Factor Analysis and SEM]] — structural equation models in the Bayesian setting
 - [[Spurious Association and Confounds]] — DAG semantics for causal inference
 - [[Nonparametric Causal Inference]] — related causal-modeling material
+- [[Directed Acyclic Graphs]] — d-separation and causal reasoning used throughout
+- [[Summary Causal DAGs]] — downstream use of structure learning outputs
