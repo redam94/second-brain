@@ -1,0 +1,14 @@
+SOURCE RECORD — PDF identified but download blocked by network proxy
+
+Title:    Vines — a new graphical model for dependent random variables
+Authors:  Tim Bedford, Roger M. Cooke
+Journal:  Annals of Statistics, Volume 30, Issue 4, August 2002, pp. 1031–1068
+DOI:      10.1214/aos/1031689016
+Open PDF: https://projecteuclid.org/journals/annals-of-statistics/volume-30/issue-4/
+          Vines--a-new-graphical-model-for-dependent-random-variables/
+          10.1214/aos/1031689016.pdf   (Project Euclid open access)
+
+Note: At session time 2026-10-01, the egress proxy rejected CONNECT to
+projecteuclid.org:443 (policy denial). The paper is freely available
+(open access) at the URL above. All note content derived from training-data
+knowledge of this foundational paper.

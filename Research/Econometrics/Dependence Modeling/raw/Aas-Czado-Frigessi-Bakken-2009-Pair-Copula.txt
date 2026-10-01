@@ -1,0 +1,12 @@
+SOURCE RECORD — PDF identified but download blocked by network proxy
+
+Title:    Pair-copula constructions of multiple dependence
+Authors:  Kjersti Aas, Claudia Czado, Arnoldo Frigessi, Henrik Bakken
+Journal:  Insurance: Mathematics and Economics, Volume 44, Issue 2, April 2009, pp. 182–198
+DOI:      10.1016/j.insmatheco.2007.02.001
+Free PDF: https://epub.ub.uni-muenchen.de/1855/1/paper_487.pdf  (LMU Munich preprint, 2006)
+
+Note: At session time 2026-10-01, the egress proxy rejected CONNECT to
+epub.ub.uni-muenchen.de:443 (policy denial). The paper is freely available
+at the URL above. All note content derived from training-data knowledge
+of this foundational paper.
