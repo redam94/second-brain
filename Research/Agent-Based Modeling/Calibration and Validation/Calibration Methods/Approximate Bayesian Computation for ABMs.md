@@ -6,7 +6,7 @@ tags:
   - topic/bayesian-statistics
   - type/concept
   - doc/paper
-source: "[[Research/Agent-Based Modeling/raw/calibration_ABM.pdf]]"
+source: "[[raw/calibration_ABM.pdf]]"
 source_location: "Sections 3.7–3.9, 3.20–3.21, pp. 5–6"
 date_ingested: 2026-04-11
 folder: "Agent-Based Modeling/Calibration and Validation/Calibration Methods"

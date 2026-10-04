@@ -6,7 +6,7 @@ tags:
   - topic/longitudinal-methods
   - type/concept
   - doc/paper
-source: "[[Research Methodology/raw/rohrer-murayama-2023.pdf]]"
+source: "[[raw/rohrer-murayama-2023.pdf]]"
 source_location: "pp. 7–11 (Setting the analysis goal; Making the most of within-persons data)"
 date_ingested: 2026-04-11
 date_updated: 2026-07-27

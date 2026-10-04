@@ -5,7 +5,7 @@ tags:
   - topic/agent-based-modeling
   - type/concept
   - doc/paper
-source: "[[Agent-Based Modeling/raw/calibration_ABM.pdf]]"
+source: "[[raw/calibration_ABM.pdf]]"
 source_location: "Sections 2.14–2.16, 3.19, 4.11–4.12, pp. 4–5, 8"
 date_ingested: 2026-04-11
 date_updated: 2026-08-03

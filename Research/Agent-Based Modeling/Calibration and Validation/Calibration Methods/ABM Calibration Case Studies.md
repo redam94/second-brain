@@ -5,7 +5,7 @@ tags:
   - topic/agent-based-modeling
   - type/example
   - doc/paper
-source: "[[Research/Agent-Based Modeling/raw/calibration_ABM.pdf]]"
+source: "[[raw/calibration_ABM.pdf]]"
 source_location: "Section 4 (SugarScape pp. 6–9), Section 5 (birds pp. 9–15, RISC pp. 15–21)"
 date_ingested: 2026-04-11
 folder: "Agent-Based Modeling/Calibration and Validation/Calibration Methods"

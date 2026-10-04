@@ -6,7 +6,7 @@ tags:
   - topic/longitudinal-methods
   - type/concept
   - doc/paper
-source: "[[Research/Research Methodology/raw/rohrer-murayama-2023.pdf]]"
+source: "[[raw/rohrer-murayama-2023.pdf]]"
 source_location: "pp. 2–5 (Within-persons not necessary, not sufficient, can be helpful)"
 date_ingested: 2026-04-11
 date_updated: 2026-08-03
