@@ -78,3 +78,4 @@ Every empirical project should answer these questions:
 - [[Synthetic Control]] — the Abadie et al. extension for single treated unit settings (not in MHE but a natural complement)
 - [[BDA3 - Overview]] — Bayesian counterpart covering inference, regression, and model-based causal analysis
 - [[Bayesian Workflow - Overview]] — iterative Bayesian approach to the same empirical questions
+- [[Difference-in-Differences with Multiple Time Periods - Overview]] — Callaway & Sant'Anna extension handling staggered treatment timing beyond MHE's canonical two-period DiD

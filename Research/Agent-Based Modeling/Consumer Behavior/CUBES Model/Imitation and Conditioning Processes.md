@@ -89,3 +89,6 @@ The social processes produce two key emergent phenomena:
 - [[Word of Mouth Mechanisms]] — how imitation manifests as WOM
 - [[Opinion Leaders and Social Influence]] — agents with amplified imitation influence
 - [[Market Share Equilibrium and Lock-In]] — emergent dynamics from process interaction
+- [[Behavioral Primitives and Thresholds]] — threshold-based decision rules governing when imitation fires
+- [[Product Adoption and Diffusion Models]] — macro-level view of the adoption curves these micro processes generate
+- [[Network Topology Effects on Diffusion]] — how network structure shapes imitation propagation

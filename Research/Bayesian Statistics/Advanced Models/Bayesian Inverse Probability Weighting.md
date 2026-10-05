@@ -204,4 +204,5 @@ Visualizing the weighted propensity score distributions shows that IPTW makes th
 - [[Bayesian Propensity Score Weighting]] — Bayesian propensity score weighting in the econometrics identification strategies framework
 - [[Propensity Score in Bayesian CI]] — the role of the propensity score within the full Bayesian causal inference pipeline
 - [[Li et al 2022 - Overview]] — critical review of Bayesian CI that discusses IPW and the Liao-Zigler approach in broader context
+- [[Propensity Score Matching - Overview]] — frequentist matching alternative to IPW weighting
 - [[General Structure of Bayesian CI]] — formal Bayesian causal inference architecture that this note fits within

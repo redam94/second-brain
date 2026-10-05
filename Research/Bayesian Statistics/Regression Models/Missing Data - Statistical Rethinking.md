@@ -12,7 +12,9 @@ aliases:
   - Missing Data SR
   - Bayesian Imputation SR
 date_ingested: 2026-04-09
+folder: "Bayesian Statistics/Regression Models"
 doc_type: concept
+source: "[[raw/Missing Data]]"
 source_location: "raw/Missing Data"
 depends_on:
   - "[[Missing Data Models]]"
@@ -87,7 +89,7 @@ Conditioning on observed homework ($R=0$) blocks the path through $R$ but induce
 ## Connections
 
 - Builds on [[Missing Data Models]] (BDA3 / Rubin's rules for multiple imputation)
-- Causal DAG reasoning: see [[Spurious Association and Confounds]] and [[Data Collection Models]]
+- Causal DAG reasoning: see [[Spurious Association and Confounds]], [[Data Collection Models]], and [[DAGs and Causal Identification]]
 - [[Counterfactual Inference]] also uses causal reasoning about unobservable quantities
 
 ## Source

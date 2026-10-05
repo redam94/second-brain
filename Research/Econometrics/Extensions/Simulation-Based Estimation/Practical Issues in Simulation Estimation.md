@@ -181,6 +181,7 @@ For practitioners implementing simulation-based estimation:
 - [[SMM Weighting Matrix and Inference]] — step-size guidance for numerical Jacobians in the parameter Σ̂ computation
 - [[SMM Python Implementation]] — Python code illustrating the eps step-size issue in scipy L-BFGS-B and the common random numbers pattern
 - [[Brock-Mirman Model - SMM Estimation Exercise]] — structural macro estimation example illustrating common random numbers and R-choice in practice
+- [[ABM Calibration Overview]] — simulation-based calibration of agent-based models, analogous challenges for R and step-size selection
 - [[SMM Estimation of Factor Copulas]] — high-dimensional application where R=25T and the step-size guidance is directly applied
 
 ## Sources

@@ -212,3 +212,5 @@ For the DAG with paths:
 - [[Synthetic Control]] — Uses the potential outcomes framework; DAGs clarify the no-interference assumption
 - [[Instrumental Variables]] — An instrument must be exogenous in the DAG (no backdoor path from $Z$ to $Y$ except through $X$)
 - [[Bayesian Propensity Score Weighting]] — Bayesian implementation of backdoor adjustment via IPTW
+- [[Spurious Association and Confounds]] — fork and chain patterns producing spurious correlations, SR treatment
+- [[Missing Data - Statistical Rethinking]] — DAG-based missingness mechanisms (MCAR/MAR/MNAR) using the same d-separation logic
