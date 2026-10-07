@@ -6,6 +6,7 @@ tags:
   - topic/frequentist
   - topic/probability
   - topic/research-methodology
+doc_type: concept
 date_asked: 2026-04-09
 answered_from:
   - "[[Probability and Bayesian Inference]]"

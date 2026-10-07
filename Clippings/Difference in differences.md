@@ -7,6 +7,7 @@ created: 2026-04-09
 description: "Introduction: This notebook provides a brief overview of the difference in differences approach to causal inference, and shows a working example of how to conduct this type of analysis under the Ba..."
 tags:
   - "clippings"
+doc_type: tutorial
 ---
 ## Difference in differences
 

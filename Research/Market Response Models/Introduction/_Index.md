@@ -3,6 +3,7 @@ title: "Index: MRM Introduction"
 tags:
   - type/index
   - topic/market-response
+doc_type: index
 date_updated: 2026-04-11
 ---
 

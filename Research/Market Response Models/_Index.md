@@ -4,6 +4,7 @@ tags:
   - type/index
   - topic/market-response
   - source/hanssens-parsons-schultz-2001
+doc_type: index
 date_updated: 2026-06-17
 concept_count: 31
 ---

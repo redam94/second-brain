@@ -3,6 +3,7 @@ title: "Index: Experimental Design"
 tags:
   - type/index
   - source/ingested
+doc_type: index
 parent: "[[../_Index|Calibration and Validation]]"
 date_updated: 2026-04-10
 concept_count: 1

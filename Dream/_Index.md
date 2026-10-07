@@ -3,10 +3,16 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
+doc_type: index
 date_updated: 2026-09-28
 ---
 
 # Dream: Research Gaps
+
+> [!abstract] Routing Summary
+> This folder tracks knowledge gaps — topics referenced or implied by Research notes that lack dedicated coverage. Each entry records why the gap existed and which notes were created to cover it.
+> - Looking for a specific gap topic? Use the section headers below
+> - All covered gaps are marked 🍂; open gaps are unmarked
 
 > [!abstract] Purpose
 > This index tracks knowledge gaps — topics referenced or implied by existing Research notes that lack dedicated coverage. Updated each weekly cleanup run.

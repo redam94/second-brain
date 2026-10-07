@@ -3,6 +3,7 @@ title: "Index: Networks and Diffusion"
 tags:
   - type/index
   - source/ingested
+doc_type: index
 parent: "[[../_Index|Social Dynamics]]"
 date_updated: 2026-04-10
 concept_count: 3

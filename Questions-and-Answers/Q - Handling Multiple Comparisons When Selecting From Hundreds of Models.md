@@ -6,6 +6,7 @@ tags:
   - topic/research-methodology
   - topic/bayesian-statistics
   - topic/model-comparison
+doc_type: concept
 date_asked: 2026-04-09
 answered_from:
   - "[[Multiple Testing Corrections]]"

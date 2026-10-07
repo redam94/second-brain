@@ -7,6 +7,7 @@ created: 2026-04-09
 description: "The problem: When we deal with multiple variables (e.g. a and b) we often want to describe the joint distribution P(a, b) parametrically. If we are lucky, then this joint distribution might be ‘sim..."
 tags:
   - "clippings"
+doc_type: tutorial
 ---
 ## Bayesian copula estimation: Describing correlated joint distributions
 

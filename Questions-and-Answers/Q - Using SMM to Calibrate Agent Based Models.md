@@ -6,6 +6,7 @@ tags:
   - topic/calibration
   - topic/simulation-estimation
   - topic/econometrics
+doc_type: concept
 date_asked: 2026-04-11
 answered_from:
   - "[[Method of Simulated Moments]]"

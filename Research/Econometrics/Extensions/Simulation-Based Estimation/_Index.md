@@ -3,6 +3,7 @@ title: "Index: Simulation-Based Estimation"
 tags:
   - type/index
   - source/ingested
+doc_type: index
 parent: "[[../Extensions/_Index|Extensions]]"
 date_updated: 2026-04-12
 concept_count: 8

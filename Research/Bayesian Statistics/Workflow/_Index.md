@@ -3,6 +3,7 @@ title: "Index: Bayesian Workflow"
 tags:
   - type/index
   - source/ingested
+doc_type: index
 parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
 date_updated: 2026-06-17
 concept_count: 13

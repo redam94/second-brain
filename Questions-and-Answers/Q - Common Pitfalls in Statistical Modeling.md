@@ -7,6 +7,7 @@ tags:
   - topic/causal-inference
   - topic/model-comparison
   - topic/statistical-modeling
+doc_type: concept
 date_asked: 2026-04-09
 answered_from:
   - "[[Statistical Rethinking - The Golem of Prague]]"

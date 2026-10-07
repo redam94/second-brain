@@ -8,6 +8,7 @@ created: 2026-06-25
 description: "This blog post provides an overview of the logic of statistical control, the fallacy of mutual adjustment, and a simulation-based illustration of correct and incorrect approaches to the interpretation of multivariable regression models in the social sciences."
 tags:
   - "clippings"
+doc_type: tutorial
 ---
 Notes About Assumptions
 

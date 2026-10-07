@@ -3,6 +3,7 @@ title: "Index: Calibration and Validation"
 tags:
   - type/index
   - source/ingested
+doc_type: index
 parent: "[[../_Index|Agent-Based Modeling]]"
 date_updated: 2026-04-11
 ---

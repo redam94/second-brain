@@ -7,6 +7,7 @@ created: 2026-04-09
 description: "Causal reasoning and counterfactual thinking are really interesting but complex topics! Nevertheless, we can make headway into understanding the ideas through relatively simple examples. This noteb..."
 tags:
   - "clippings"
+doc_type: tutorial
 ---
 ## Counterfactual inference: calculating excess deaths due to COVID-19
 

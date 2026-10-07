@@ -3,6 +3,7 @@ title: "Index: Theoretical Physics"
 tags:
   - type/index
   - source/ingested
+doc_type: index
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-04-11
 concept_count: 9

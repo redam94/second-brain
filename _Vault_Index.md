@@ -2,7 +2,7 @@
 title: "Vault Index"
 tags:
   - type/index
-  - type/vault-root
+doc_type: index
 date_updated: 2026-06-17
 concept_count: 265
 ---

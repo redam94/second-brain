@@ -4,6 +4,7 @@ tags:
   - type/index
   - source/ingested
   - topic/physics
+doc_type: index
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-04-16
 concept_count: 9

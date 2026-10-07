@@ -3,6 +3,7 @@ title: "Index: Bayesian Statistics"
 tags:
   - type/index
   - source/ingested
+doc_type: index
 parent: "[[Research/_Index|Research]]"
 date_updated: 2026-06-17
 concept_count: 60

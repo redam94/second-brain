@@ -1,6 +1,7 @@
 ---
 title: "Index: Bayesian Media Mix Modeling"
 tags: [type/index, source/ingested]
+doc_type: index
 parent: "[[../_Index|Market Response Models]]"
 date_updated: 2026-06-17
 concept_count: 6

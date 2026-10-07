@@ -5,6 +5,7 @@ tags:
   - source/ingested
   - topic/physics
   - topic/quantum-field-theory
+doc_type: index
 parent: "[[Physics/_Index|Physics]]"
 date_updated: 2026-04-16
 concept_count: 5

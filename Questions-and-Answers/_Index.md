@@ -2,6 +2,7 @@
 title: "Index: Questions and Answers"
 tags:
   - type/index
+doc_type: index
 date_updated: 2026-04-11
 question_count: 5
 ---

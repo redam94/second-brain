@@ -3,6 +3,7 @@ title: "Index: Research"
 tags:
   - type/index
   - source/ingested
+doc_type: index
 date_updated: 2026-06-26
 concept_count: 180
 ---

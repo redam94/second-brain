@@ -6,6 +6,7 @@ tags:
   - topic/econometrics
   - topic/identification
   - topic/observational-studies
+doc_type: concept
 date_asked: 2026-04-10
 answered_from:
   - "[[The Selection Problem]]"

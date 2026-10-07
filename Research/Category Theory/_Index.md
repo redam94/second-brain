@@ -4,6 +4,7 @@ tags:
   - type/index
   - source/ingested
   - topic/category-theory
+doc_type: index
 parent: "[[../../Research/_Index|Research]]"
 date_updated: 2026-05-08
 ---

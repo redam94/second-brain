@@ -3,6 +3,7 @@ title: "Index: Agent-Based Modeling"
 tags:
   - type/index
   - source/ingested
+doc_type: index
 parent: "[[../_Index|Research]]"
 date_updated: 2026-04-11
 ---

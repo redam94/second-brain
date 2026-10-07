@@ -4,6 +4,7 @@ tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+doc_type: overview
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"

@@ -3,6 +3,7 @@ title: "Index: Sensitivity Analysis and Complex Mechanisms"
 tags:
   - type/index
   - source/ingested
+doc_type: index
 parent: "[[../_Index|Causal Inference]]"
 date_updated: 2026-04-10
 concept_count: 3

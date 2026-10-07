@@ -3,6 +3,7 @@ title: "Index: Estimation and Testing"
 tags:
   - type/index
   - topic/market-response
+doc_type: index
 date_updated: 2026-04-11
 ---
 
