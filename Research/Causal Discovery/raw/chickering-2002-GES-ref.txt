@@ -1,0 +1,21 @@
+SOURCE REFERENCE (PDF not downloaded — network policy blocked outbound access)
+
+Title: Optimal Structure Identification With Greedy Search
+Authors: David Maxwell Chickering
+Journal: Journal of Machine Learning Research, Vol. 3, pp. 507-554, November 2002
+JMLR page: https://jmlr.org/papers/v3/chickering02b.html
+PDF: https://www.jmlr.org/papers/volume3/chickering02b/chickering02b.pdf (JMLR open access)
+
+Relevance: Introduces and proves the correctness of GES (Greedy Equivalence Search), a two-phase
+score-based algorithm for causal DAG structure learning. Key results:
+1. Proof of the Meek conjecture (that the score is always improvable if the current equivalence class
+   is not the true one, under faithfulness and consistent scoring).
+2. Algorithm correctness: GES recovers the Markov equivalence class of the true DAG in the
+   large-sample limit under CMC + faithfulness + decomposable, consistent scoring.
+3. Forward phase (FES) operators and backward phase (BES) operators with proofs of validity.
+
+Also relevant: Meek (1995) — "Causal inference and causal explanation with background knowledge"
+for the Meek rules (R1-R4) for CPDAG orientation.
+Ramsey et al. (2017) — "A million variables and more: the Fast Greedy Equivalence Search (FGES)
+algorithm for optimizing Bayesian networks and Gaussian graphical models" (International Journal of
+Data Science and Analytics 3, pp. 219-230) for the parallelized FGES variant.

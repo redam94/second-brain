@@ -4,7 +4,7 @@ tags:
   - type/index
   - source/ingested
 date_updated: 2026-06-26
-concept_count: 180
+concept_count: 184
 ---
 
 # Research
@@ -13,7 +13,7 @@ concept_count: 180
 > This folder covers applied statistics, econometrics, causal inference, causal discovery, theoretical physics, agent-based modeling, and market response models from textbooks and research papers. Contains 153 notes across 8 major topics.
 > - Need Bayesian inference, computation, or regression? -> [[Bayesian Statistics/_Index|Bayesian Statistics]]
 > - Need causal inference toolkit (IV, DiD, RD, synthetic control, GSC, DAGs)? -> [[Econometrics/_Index|Econometrics]]
-> - Need causal *structure learning* / DAG discovery from data (NOTEARS, continuous optimization)? -> [[Causal Discovery/_Index|Causal Discovery]]
+> - Need causal *structure learning* / DAG discovery from data (NOTEARS, PC algorithm, GES, CPDAGs)? -> [[Causal Discovery/_Index|Causal Discovery]]
 > - Need forking paths, power analysis, ad measurement, or longitudinal causal inference? -> [[Research Methodology/_Index|Research Methodology]]
 > - Need quantum mechanics, QFT, or gauge theory (flat notes)? -> [[Theoretical Physics/_Index|Theoretical Physics]]
 > - Need quantum mechanics, QFT, or gauge theory (structured sub-folder notes)? -> [[Physics/_Index|Physics]]
@@ -27,7 +27,7 @@ concept_count: 180
 |-------|-------|-------------|
 | [[Bayesian Statistics/_Index\|Bayesian Statistics]] | 60 | Bayes' theorem, conjugate priors, hierarchical models, MCMC/HMC, GLMs, GPs, spatial, copulas, BART, Bayesian IPW, Bayesian causal inference, **simulation-based calibration (SBC)** |
 | [[Econometrics/_Index\|Econometrics]] | 48 | Selection bias, CEF, IV, LATE, DiD, RD, synthetic control, GSC, DAGs, Bayesian IPTW, quantile regression, discrete choice, SMM, Brock-Mirman structural estimation, **staggered/multi-period DiD (group-time ATT, doubly-robust)**, **factor copulas / high-dimensional tail dependence** |
-| [[Causal Discovery/_Index\|Causal Discovery]] | 5 | DAG / Bayesian-network structure learning, linear SEM, score-based learning, **NOTEARS** continuous optimization, smooth acyclicity $h(W)=\mathrm{tr}\,e^{W\circ W}-d$, augmented Lagrangian, vs FGS/GES/PC |
+| [[Causal Discovery/_Index\|Causal Discovery]] | 9 | DAG / Bayesian-network structure learning, linear SEM, score-based learning, **NOTEARS** continuous optimization, smooth acyclicity $h(W)=\mathrm{tr}\,e^{W\circ W}-d$, **PC algorithm** (skeleton + Meek orientation, CI tests, CPDAG), **GES** (FES/BES over equivalence classes, Meek conjecture), **Markov equivalence / CPDAG**, constraint-based paradigm (CMC, faithfulness) |
 | [[Research Methodology/_Index\|Research Methodology]] | 16+3 | Forking paths, researcher degrees of freedom, activity bias, power analysis, FDR, survival analysis, Type S/M errors, Bayesian multiple comparisons, within/between-persons distinction (Rohrer & Murayama 2023), fixed-effects model, CLPM, dynamic panel model, estimands in longitudinal research, **Table 2 Fallacy**, regression adjustment logic, nuisance parameter bias simulation |
 | [[Theoretical Physics/_Index\|Theoretical Physics]] | 7 | Quantum mechanics, Hilbert space, Schrödinger equation, QFT, second quantization, QED, renormalization, gauge theory, Standard Model |
 | [[Physics/_Index\|Physics]] | 9 | Wave functions, Hilbert space, Schrödinger equation, entanglement, QFT, canonical quantization, renormalization, gauge theory, Yang–Mills (structured sub-folder organization) |
@@ -42,7 +42,7 @@ concept_count: 180
 - **High-Dimensional Dependence (Factor Copulas)**: [[Factor Copulas - Overview]] → [[Factor Copula Construction]] → [[Tail Dependence in Factor Copulas]] / [[Multi-Factor and Block Dependence Structures]] → [[SMM Estimation of Factor Copulas]] → [[Factor Copula Application - S&P 100 and Systemic Risk]]
 - **Simulation-Based Calibration (SBC)**: [[Simulation-Based Calibration - Overview]] → [[Data-Averaged Posterior Self-Consistency]] → [[Rank Statistics and Uniformity]] → [[The SBC Algorithm]] → [[Interpreting SBC Histograms]] → [[SBC Case Studies]]
 - **Bayesian Media Mix Modeling**: [[Carryover (Adstock) Functional Forms]] + [[Shape (Saturation) Effects]] → [[Bayesian Media Mix Modeling - Overview]] → [[Bayesian Estimation and Priors for MMM]] → [[ROAS, mROAS, and Optimal Media Mix]] → [[MMM Model Selection and Application]]
-- **Causal Discovery (structure learning)**: [[NOTEARS - Overview]], [[DAG Structure Learning Problem]], [[Smooth Characterization of Acyclicity]], [[NOTEARS Algorithm]], [[NOTEARS Experiments]]
+- **Causal Discovery (structure learning)**: [[Constraint-Based Causal Discovery - Overview]], [[Markov Equivalence and CPDAGs]], [[PC Algorithm]], [[GES - Greedy Equivalence Search]] → [[NOTEARS - Overview]], [[DAG Structure Learning Problem]], [[Smooth Characterization of Acyclicity]], [[NOTEARS Algorithm]], [[NOTEARS Experiments]]
 - **Model Building**: [[Bayesian Workflow - Overview]], [[Model Checking]], [[Model Comparison]], [[Overfitting and Information Criteria]]
 - **Multiple Comparisons**: [[Multiple Comparisons - Bayesian Perspective]], [[Multiple Testing Corrections]], [[Type S and Type M Errors]], [[Partial Pooling as Multiple Comparisons Correction]]
 - **Missing Data**: [[Missing Data Models]], [[Missing Data - Statistical Rethinking]], [[Data Collection Models]]
