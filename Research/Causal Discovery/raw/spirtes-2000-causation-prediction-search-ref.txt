@@ -1,0 +1,18 @@
+SOURCE REFERENCE (PDF not downloaded — network policy blocked outbound access)
+
+Title: Causation, Prediction, and Search (2nd edition)
+Authors: Peter Spirtes, Clark Glymour, Richard Scheines
+Publisher: MIT Press, 2000 (adaptive computation and machine learning series)
+Original: 1993, Springer-Verlag
+
+Free PDF: Available from the Carnegie Mellon authors' pages and some university repositories.
+Key URL reference: https://www.cs.cmu.edu/afs/cs.cmu.edu/project/learn-43/lib/photoz/.g/web/glossy/printit.html
+
+Relevance: Original formalization of the PC algorithm (named after Peter and Clark), the FCI algorithm,
+and the foundational causal Markov condition / faithfulness assumption framework for constraint-based
+causal structure learning. Chapter 5 contains the PC algorithm pseudocode and consistency proof.
+
+Also relevant: Kalisch & Bühlmann (2007) — "Estimating high-dimensional directed acyclic graphs with the
+PC-algorithm" (JMLR 8, pp. 613-636) for the stable/order-independent version.
+Colombo & Maathuis (2014) — "Order-independent constraint-based causal structure learning" (JMLR 15,
+pp. 3741-3782) for the stable-PC version.
