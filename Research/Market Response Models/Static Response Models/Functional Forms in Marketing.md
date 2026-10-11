@@ -4,6 +4,7 @@ aliases:
   - "Sales Response Functional Forms"
   - "Marketing Response Functions"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/functional-forms

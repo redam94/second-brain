@@ -5,6 +5,7 @@ aliases:
   - "Scanner Data Marketing"
   - "Marketing Mix Variables"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/data

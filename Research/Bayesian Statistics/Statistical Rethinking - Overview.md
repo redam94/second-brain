@@ -1,19 +1,31 @@
 ---
 title: "Statistical Rethinking: A Bayesian Course with Examples in R and Stan"
 aliases:
-  - "Statistical Rethinking"
-  - "McElreath"
-  - "SR"
+  - Statistical Rethinking
+  - McElreath
+  - SR
+  - Statistical Rethinking Overview
 tags:
   - source/ingested
   - topic/bayesian-statistics
   - topic/statistical-modeling
-  - type/book-overview
+  - type/overview
+  - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
 authors:
   - Richard McElreath
 year: 2015
+doc_type: overview
+source_location: "SR pp. 1-612 (full textbook)"
+depends_on:
+  - "[[Statistical Rethinking - The Golem of Prague]]"
+  - "[[Garden of Forking Data]]"
+  - "[[Hierarchical Models]]"
+  - "[[HMC and Stan in Practice]]"
+used_by:
+  - "[[BDA3 - Overview]]"
+  - "[[Bayesian Workflow - Overview]]"
 ---
 
 # Statistical Rethinking

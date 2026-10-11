@@ -1,15 +1,35 @@
 ---
 title: "Bayesian Data Analysis 3rd Edition - Overview"
+aliases:
+  - BDA3
+  - Bayesian Data Analysis
+  - BDA3 Overview
 tags:
   - source/ingested
   - topic/bayesian-statistics
   - type/overview
+  - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
-aliases:
-  - "BDA3"
-  - "Bayesian Data Analysis"
+authors:
+  - Andrew Gelman
+  - John Carlin
+  - Hal Stern
+  - David Dunson
+  - Aki Vehtari
+  - Donald Rubin
+year: 2013
+doc_type: overview
+source_location: "BDA3 pp. 1-675 (full textbook)"
+depends_on:
+  - "[[Probability and Bayesian Inference]]"
+  - "[[Hierarchical Models]]"
+  - "[[MCMC Basics]]"
+  - "[[Bayesian Linear Regression]]"
+used_by:
+  - "[[Statistical Rethinking - Overview]]"
+  - "[[Bayesian Workflow - Overview]]"
 ---
 
 # Bayesian Data Analysis, 3rd Edition

@@ -8,10 +8,17 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Full text, pp. 1–173"
 date_ingested: 2026-05-08
-doc_type: textbook
+doc_type: overview
+depends_on:
+  - "[[Categories, Functors and Natural Transformations]]"
+  - "[[Adjoints]]"
+  - "[[Representable Functors and the Yoneda Lemma]]"
+  - "[[Limits]]"
+used_by: []
 aliases:
   - Leinster Category Theory
   - BCT Overview
+  - Basic Category Theory
 ---
 
 # Basic Category Theory — Overview
