@@ -9,8 +9,9 @@ tags:
   - topic/functional-forms
   - topic/econometrics
   - source/hanssens-parsons-schultz-2001
-date_created: 2026-04-11
+date_ingested: 2026-04-11
 date_updated: 2026-04-11
+folder: "Market Response Models/Static Response Models"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 3"
 chapter: "3"
 status: complete
@@ -250,3 +251,11 @@ Regime assignment can be endogenous (Goldfeld-Quandt, Maddala-Nelson) or trigger
 - Estimation of nonlinear forms: [[Parameter Estimation in Market Response]]
 - Empirical elasticities: [[Advertising and Promotion Effects]], [[Price and Distribution Effects]]
 - Product adoption S-curves: [[Product Adoption and Diffusion Models]]
+
+## See Also
+
+- [[Bayesian Media Mix Modeling - Overview]] — applies the Hill saturation form (similar to ADBUDG) and geometric adstock as the carryover component; Bayesian estimation of the same forms covered here
+- [[Carryover (Adstock) Functional Forms]] — Bayesian MMM's treatment of carryover, complementing the static functional forms above with dynamic lag structures
+- [[Discrete Choice Models]] — logistic/logit form (§9 above) in the random utility / discrete choice context
+- [[Logit Purchase Decision Model]] — ABM implementation of the logistic purchase decision function
+- [[Market Response Models - Overview]] — book-level overview and cross-links to all chapters

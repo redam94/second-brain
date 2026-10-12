@@ -8,6 +8,7 @@ tags:
   - doc/textbook
 source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-04-08
 folder: "Bayesian Statistics/Workflow"
 doc_type: concept
 source_location: "Bayesian Workflow paper"
@@ -16,12 +17,13 @@ depends_on:
   - "[[Choosing and Building Models]]"
   - "[[Hierarchical Models]]"
   - "[[Bayesian Workflow - Overview]]"
-  - "[[raw/BayesWorkflow.pdf]]"
 used_by:
   - "[[Modeling as Software Development]]"
   - "[[Model Comparison]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
 ---
+
+# Iterative Model Improvement
 
 > [!summary]
 > Sections 7--8 of Gelman et al. (2020) cover the iterative heart of Bayesian workflow: modifying models in response to data, failures, and new understanding, then comparing and combining multiple models. The goal is not to find the single "best" model but to understand how inferences change across a topology of related models.

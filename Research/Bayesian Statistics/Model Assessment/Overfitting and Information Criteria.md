@@ -10,7 +10,7 @@ tags:
   - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
-date_updated: 2026-07-27
+date_updated: 2026-10-12
 folder: "Bayesian Statistics/Model Assessment"
 aliases:
   - "WAIC"

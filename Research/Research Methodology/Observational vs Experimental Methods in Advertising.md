@@ -10,6 +10,7 @@ tags:
   - doc/paper
 source: "[[raw/ssrn-2080235.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-04-08
 folder: "Research Methodology"
 aliases:
   - "Advertising causal inference"
@@ -72,3 +73,5 @@ This paper provides a vivid illustration of concepts from [[Regression and the C
 - [[Nonparametric Causal Inference]] — Bayesian nonparametric (BART + propensity score) approaches to causal ATE/ATT estimation
 - [[Bayesian Difference in Differences]] — Bayesian counterfactual framing of DiD that could be applied to advertising holdout experiments
 - [[Type S and Type M Errors]] — the 1198% observational estimate vs 5.4% RCT is a textbook Type M error; the exaggeration ratio of ≈220× illustrates the scale of bias that can arise from violated identification assumptions
+- [[Propensity Score Matching - Overview]] — the matching strategy that fails here due to activity selection bias, covered in full detail
+- [[Sensitivity Analysis in Observational Studies]] — quantifying how robust a result is to unmeasured confounding; particularly relevant when RCTs are unavailable

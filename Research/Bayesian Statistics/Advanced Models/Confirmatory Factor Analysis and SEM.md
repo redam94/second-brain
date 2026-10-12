@@ -13,6 +13,8 @@ aliases:
   - SEM
   - Structural Equation Model
 date_ingested: 2026-04-09
+date_updated: 2026-04-09
+folder: "Bayesian Statistics/Advanced Models"
 doc_type: concept
 source_location: "raw/Confirmatory Factor Analysis and Structural Equation Models in Psychometrics"
 depends_on:
@@ -98,6 +100,17 @@ Bayesian CFA/SEM uses posterior predictive checks (PPCs) and model comparison (W
 - [[Hierarchical Models]] — latent factors as hierarchical random effects
 - [[Spurious Association and Confounds]] — causal thinking about latent ↔ indicator relationships
 - [[Nonparametric Models Overview]] — for factor models with non-Gaussian priors
+
+## See Also
+
+- [[Factor Analysis and PPCA]] — exploratory factor analysis / PPCA as the unsupervised precursor to CFA
+- [[Hierarchical Models]] — latent factors as hierarchical random effects; partial pooling across items
+- [[Spurious Association and Confounds]] — DAG-based reasoning about latent ↔ observed variable relationships
+- [[Nonparametric Models Overview]] — non-Gaussian factor models with more flexible priors
+- [[Social Network Models]] — another latent-variable model for dyadic relational data
+- [[Moderation Analysis]] — interaction terms in SEMs; when the latent pathway depends on a moderator
+- [[Bayesian Workflow - Overview]] — the SBC / prior predictive / PPC workflow applies to CFA and SEM models
+- [[Model Checking]] — posterior predictive checks for latent variable models
 
 ## Source
 
