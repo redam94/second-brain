@@ -3,7 +3,7 @@ title: "Vault Index"
 tags:
   - type/index
   - type/vault-root
-date_updated: 2026-06-17
+date_updated: 2026-10-13
 concept_count: 265
 ---
 
@@ -18,6 +18,7 @@ concept_count: 265
 > - Need web clippings and saved articles? -> [[Clippings/_Index|Clippings]]
 > - Need market response models (functional forms, carryover, VAR, advertising/price elasticities)? -> [[Research/Market Response Models/_Index|Market Response Models]]
 > - Need category theory (functors, Yoneda lemma, limits, adjoint functor theorems)? -> [[Research/Category Theory/_Index|Category Theory]]
+> - Need model validation literature (overfitting, feature-importance bias, SHAP vs causality, time-series CV, ad experiments, simulation studies, SR 11-7)? -> [[Research/Model Validation/_Index|Model Validation]]
 > - Need causal discovery / DAG structure learning from data (NOTEARS, continuous optimization)? -> [[Research/Causal Discovery/_Index|Causal Discovery]]
 
 ## Areas
@@ -39,9 +40,12 @@ Cross-cutting topics that span multiple folders:
 - **Longitudinal Methods**: [[Within-Between Persons Distinction - Overview|Within/Between Overview]], [[Fixed-Effects Model|FE Model]], [[Cross-Lagged and Dynamic Panel Models|CLPM/DPM]], [[Estimands in Longitudinal Research|Longitudinal Estimands]]
 - **Market Response Models**: [[Market Response Models - Overview|MRM Overview]], [[Functional Forms in Marketing|Functional Forms]], [[Market Share Models|MCI/MNL]], [[Carryover Effects and Distributed Lags|Koyck/ADL]], [[Reaction Functions and Competitive Dynamics|Reaction Functions]], [[Parameter Estimation in Market Response|Estimation]], [[Single Marketing Time Series|ARIMA]], [[Transfer Function Model|Transfer Function]], [[Multivariate Persistence and Cointegration|VAR/Cointegration]], [[Advertising and Promotion Effects|Advertising Generalizations]], [[Price and Distribution Effects|Price Generalizations]]
 - **Causal Discovery**: [[Research/Causal Discovery/NOTEARS - Overview|NOTEARS Overview]], [[Research/Causal Discovery/DAG Structure Learning Problem|DAG Structure Learning]], [[Research/Causal Discovery/Smooth Characterization of Acyclicity|Smooth Acyclicity h(W)]], [[Research/Causal Discovery/NOTEARS Algorithm|NOTEARS Algorithm]], [[Research/Causal Discovery/NOTEARS Experiments|NOTEARS Experiments]]
+- **Model Validation**: [[Research/Model Validation/_Index|Model Validation]], [[Riley et al 2020 - Sample Size for Prediction Models|Riley Sample Size]], [[Breiman 2001 - Statistical Modeling The Two Cultures|Two Cultures]], [[Bergmeir et al 2018 - Cross-Validation for Time Series|Time-Series CV]], [[Strobl et al 2008 - Conditional Variable Importance|Conditional Importance]], [[Meinshausen and Buhlmann 2010 - Stability Selection|Stability Selection]], [[Kumar et al 2020 - Problems with Shapley-Value Explanations|Shapley Problems]], [[Gordon et al 2019 - Advertising Measurement at Facebook|Facebook Ad Experiments]], [[Morris et al 2019 - Using Simulation Studies to Evaluate Methods|ADEMP]], [[SR 11-7 - Supervisory Guidance on Model Risk Management|SR 11-7]]
 - **Category Theory**: [[Research/Category Theory/Basic Category Theory - Overview|BCT Overview]], [[Research/Category Theory/Foundations/Categories|Categories]], [[Research/Category Theory/Foundations/Functors|Functors]], [[Research/Category Theory/Foundations/Natural Transformations|Natural Transformations]], [[Research/Category Theory/Adjunctions/Adjoint Functors|Adjoint Functors]], [[Research/Category Theory/Representables/Yoneda Lemma|Yoneda Lemma]], [[Research/Category Theory/Limits and Colimits/General Limits|Limits]], [[Research/Category Theory/Synthesis/Adjoints and Limits|RAPL Theorem]], [[Research/Category Theory/Synthesis/Adjoint Functor Theorems|GAFT/SAFT]]
 
 ## Recent Ingestions
+
+- 2026-10-13: Ingested the 27-entry reference list of an analytics model-validation review (Oct 2026) into new topic [[Research/Model Validation/_Index|Model Validation]]. Wrote 25 reference notes in 6 sub-folders: [[Research/Model Validation/Overfitting and Analytic Flexibility/_Index|Overfitting and Analytic Flexibility]] (3), [[Research/Model Validation/Time Series Validation/_Index|Time Series Validation]] (5), [[Research/Model Validation/Feature Importance/_Index|Feature Importance]] (5), [[Research/Model Validation/Interpretability and Causality/_Index|Interpretability and Causality]] (4), [[Research/Model Validation/Advertising Measurement/_Index|Advertising Measurement]] (4), [[Research/Model Validation/Simulation and Governance/_Index|Simulation and Governance]] (4). Gelman & Loken (2013) and Jin et al. (2017) were already in the vault, so they are linked instead of duplicated. Also: raw bibliography with verified quotations, 7 indexes, 3 .base views, and backlinks from 4 existing notes.
 
 - 2026-06-17: Ingested 4 research papers (24 notes total) across four topics:
     - **DiD** → [[Research/Econometrics/Difference-in-Differences/_Index|Difference-in-Differences]]: Callaway & Sant'Anna (2020), *Difference-in-Differences with Multiple Time Periods* — 6 notes ([[Difference-in-Differences with Multiple Time Periods - Overview|Overview]], [[Group-Time Average Treatment Effects]], [[Identifying Assumptions for Staggered DiD]], [[Doubly-Robust Estimands for ATT(g,t)]] (Theorem 1), [[Aggregating Group-Time Effects]], [[Simultaneous Inference via Multiplier Bootstrap]] (Theorems 2–3) + minimum-wage application).

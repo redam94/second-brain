@@ -3,7 +3,7 @@ title: "Index: Research"
 tags:
   - type/index
   - source/ingested
-date_updated: 2026-06-26
+date_updated: 2026-10-13
 concept_count: 180
 ---
 
@@ -19,6 +19,7 @@ concept_count: 180
 > - Need quantum mechanics, QFT, or gauge theory (structured sub-folder notes)? -> [[Physics/_Index|Physics]]
 > - Need ABM methodology, consumer behavior simulation, WOM modeling, or ABM calibration (GA, HM+ABC, uncertainty quantification)? -> [[Agent-Based Modeling/_Index|Agent-Based Modeling]]
 > - Need market response models (functional forms, carryover, VAR, empirical elasticities)? -> [[Market Response Models/_Index|Market Response Models]]
+> - Need model validation literature (overfitting, spurious time-series correlation, feature-importance bias, SHAP vs causality, ad-measurement experiments, simulation studies, model-risk governance)? -> [[Model Validation/_Index|Model Validation]]
 > - Need a specific concept? Check the Concept Map below or use the .base files for database views
 
 ## Concept Map
@@ -33,6 +34,7 @@ concept_count: 180
 | [[Physics/_Index\|Physics]] | 9 | Wave functions, Hilbert space, Schrödinger equation, entanglement, QFT, canonical quantization, renormalization, gauge theory, Yang–Mills (structured sub-folder organization) |
 | [[Agent-Based Modeling/_Index\|Agent-Based Modeling]] | 34 | ABM methodology, emergence, heterogeneity, consumer utility models, CUBES behavioral simulator, WOM, opinion leaders, network diffusion, GA calibration, validation, HM+ABC calibration (McCulloch et al. 2022), history matching, ABC, uncertainty quantification |
 | [[Market Response Models/_Index\|Market Response Models]] | 31 | Functional forms (10), Koyck/ADL carryover, reaction functions, OLS/2SLS/Bayes estimation, ARIMA, transfer functions, VAR, cointegration, ECM, empirical generalizations (advertising ≈ 0.10, price ≈ −2.5), **Bayesian MMM (adstock, Hill saturation, ROAS/mROAS, optimal media mix)** |
+| [[Model Validation/_Index\|Model Validation]] | 25 | Riley sample-size criteria, Ioannidis PPV, researcher degrees of freedom, spurious regression, cointegration, time-series CV validity, Rashomon effect, RF importance bias, conditional permutation importance, model class reliance, stability selection, Shapley/SHAP limits, Goodhart variants, ad-measurement field experiments, MMM challenges, ADEMP simulation design, AMSS, SR 11-7, NIST AI RMF |
 
 ## Cross-Cutting Themes
 
