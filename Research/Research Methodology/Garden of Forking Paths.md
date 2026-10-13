@@ -26,6 +26,8 @@ used_by:
   - "[[Power Analysis and Sample Size]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Simmons et al 2011 - False-Positive Psychology]]"
+  - "[[Ioannidis 2005 - Why Most Published Research Findings Are False]]"
 ---
 
 # The Garden of Forking Paths
@@ -67,3 +69,4 @@ Conditional on the observed data, each analytic choice seems like the *only* rea
 - [[Forking Paths and Bayesian Approaches]] — how Bayesian methods address this
 - [[The Experimental Ideal]] — why randomized experiments mitigate these issues
 - [[Hierarchical Models]] — partial pooling provides a structural Bayesian solution to the multiplicity problem
+- [[Research/Model Validation/_Index|Model Validation]] — this paper is cited as evidence that best-of-many model selection manufactures findings; see [[Simmons et al 2011 - False-Positive Psychology]] and [[Ioannidis 2005 - Why Most Published Research Findings Are False]]

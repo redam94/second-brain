@@ -25,6 +25,9 @@ used_by:
   - "[[Observational vs Experimental Methods in Advertising]]"
   - "[[Power Analysis and Sample Size]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Lewis and Rao 2015 - Unfavorable Economics of Measuring Ad Returns]]"
+  - "[[Gordon et al 2019 - Advertising Measurement at Facebook]]"
+  - "[[Blake et al 2015 - Paid Search Effectiveness Field Experiment]]"
 ---
 
 # Activity Bias in Advertising
@@ -70,3 +73,4 @@ used_by:
 - [[Conditional Independence Assumption]] — the assumption violated by activity bias
 - [[Instrumental Variables]] — exogenous variation approach when CIA fails, as it does here
 - [[Research Questions in Econometrics]] — this paper is a worked answer to all four FAQs applied to online advertising measurement
+- [[Lewis and Rao 2015 - Unfavorable Economics of Measuring Ad Returns]], [[Gordon et al 2019 - Advertising Measurement at Facebook]], [[Blake et al 2015 - Paid Search Effectiveness Field Experiment]] — further experiments showing observational ad measurement is badly biased

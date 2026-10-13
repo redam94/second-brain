@@ -18,6 +18,8 @@ used_by:
   - "[[Bayesian Estimation and Priors for MMM]]"
   - "[[ROAS, mROAS, and Optimal Media Mix]]"
   - "[[MMM Model Selection and Application]]"
+  - "[[Chan and Perry 2017 - Challenges in Media Mix Modeling]]"
+  - "[[Zhang and Vaver 2017 - Aggregate Marketing System Simulator]]"
 aliases:
   - MMM
   - Media Mix Model
@@ -80,3 +82,5 @@ Because these transformations make the model **nonlinear in the parameters**, or
 - [[ROAS, mROAS, and Optimal Media Mix]]
 - [[MMM Model Selection and Application]]
 - [[_Index|Index: Bayesian Media Mix Modeling]]
+- [[Chan and Perry 2017 - Challenges in Media Mix Modeling]] — companion Google white paper on MMM data limits and simulation-based validation
+- [[Research/Model Validation/_Index|Model Validation]] — cited for small-sample bias (two years of weekly data → response curves underestimated ~18–40%)

@@ -24,6 +24,7 @@ used_by:
   - "[[Power Analysis and Sample Size]]"
   - "[[Q - Handling Multiple Comparisons When Selecting From Hundreds of Models]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+  - "[[Simmons et al 2011 - False-Positive Psychology]]"
 ---
 
 # Researcher Degrees of Freedom
@@ -71,3 +72,4 @@ This mechanism explains why:
 - [[Forking Paths and Bayesian Approaches]] — alternatives to p-value-based inference
 - [[Omitted Variables Bias]] — a related source of analytical error
 - [[Hierarchical Models]] — partial pooling provides a structural solution by shrinking estimates across researcher-chosen subgroups
+- [[Simmons et al 2011 - False-Positive Psychology]] — the paper that coined "researcher degrees of freedom" (61% false-positive simulation)
