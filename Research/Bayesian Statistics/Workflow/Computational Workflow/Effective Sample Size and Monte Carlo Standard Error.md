@@ -18,6 +18,8 @@ used_by:
   - "[[How Many Digits to Report]]"
   - "[[Fit Fast, Fail Fast]]"
   - "[[Point Estimates and Uncertainties]]"
+  - "[[Strobl 2007 - Null and Power Case Results]]"
+  - "[[Morris et al 2019 - Performance Measures and Monte Carlo Standard Errors]]"
 aliases:
   - "ESS"
   - "Bulk-ESS"
@@ -167,3 +169,5 @@ aliases:
 - [[How Many Digits to Report]] — MCSE applied to a worked example
 - [[Point Estimates and Uncertainties]] — posterior sd vs. MCSE
 - [[Efficient MCMC]] — BDA3 background on autocorrelation and efficiency
+- [[Strobl 2007 - Null and Power Case Results]] — worked MCSE of a rate, sqrt(r(1-r)/R)
+- [[Morris et al 2019 - Performance Measures and Monte Carlo Standard Errors]] — Monte Carlo SE across simulation repetitions

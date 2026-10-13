@@ -39,6 +39,7 @@ used_by:
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
   - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
   - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
+  - "[[Lewis Rao 2015 - Robustness, Scale, Targeting and Measurement Technology]]"
 ---
 
 # Hierarchical Models
@@ -161,3 +162,4 @@ Hierarchical models appear naturally in causal inference:
 - [[Local vs Global Forecasting Models]] — partial pooling analogy for cross-series learning
 - [[Bayesian and Hierarchical Extensions of CLV Models]] — hierarchical Bayes for customer-level parameters
 - [[Bayesian Media Mix Modeling - Overview]] — an applied example: hierarchical priors pooling media effects across geos or brands
+- [[Lewis Rao 2015 - Robustness, Scale, Targeting and Measurement Technology]] — evolving prior pools weak per-campaign likelihoods

@@ -19,6 +19,7 @@ used_by:
   - "[[Covariate Balance Diagnostics]]"
   - "[[Common Support and Overlap]]"
   - "[[Experimental Benchmarks for Observational Ad Measurement]]"
+  - "[[Model Reliance, Causal Effects and Conditional Model Reliance]]"
 aliases:
   - PSM
   - Matching Methods
@@ -83,3 +84,4 @@ A worked pipeline: estimate $\hat e_i$ by logistic regression of treatment on co
 - [[Covariate Balance Diagnostics]]
 - [[Common Support and Overlap]]
 - [[_Index]]
+- [[Model Reliance, Causal Effects and Conditional Model Reliance]] — matching estimator of conditional model reliance

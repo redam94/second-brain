@@ -18,6 +18,7 @@ used_by:
   - "[[Prior Distributions]]"
   - "[[Statistical and Scientific Inference]]"
   - "[[Choosing an Initial Model]]"
+  - "[[Gelman Loken 2013 - Garden of Forking Paths - Overview]]"
 aliases:
   - "No safe haven"
   - "Convincing evidence"
@@ -231,3 +232,4 @@ for communities of users who are not full-time quantitative analysts.
 - [[Partial Pooling as Multiple Comparisons Correction]] — the toy-problem evidence (source 3) in detail
 - [[Forking Paths and Bayesian Approaches]] — researcher degrees of freedom as the flip side of "no safe haven"
 - [[From Inference to Data Analysis to Workflow]] — the next chapter's response: since no method is safe by default, embed inference in a workflow
+- [[Gelman Loken 2013 - Garden of Forking Paths - Overview]] — small-effect, low-power setting

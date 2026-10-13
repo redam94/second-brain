@@ -4,15 +4,17 @@ tags:
   - type/index
   - source/ingested
 parent: "[[Research/_Index|Research]]"
-date_updated: 2026-09-18
-concept_count: 32
+date_updated: 2026-10-13
+concept_count: 39
 ---
 
 # Research Methodology
 
 > [!abstract] Routing Summary
-> This folder covers statistical methodology, the replication crisis, causal inference challenges, experimental design, and longitudinal methods. Contains 14 notes plus an Experimental Design subfolder (8 notes, including a Delayed and Censored Feedback sub-subfolder) and a Pre-registration and Open Science subfolder (5 notes).
+> This folder covers statistical methodology, the replication crisis, causal inference challenges, experimental design, and longitudinal methods. Contains 21 notes (14 concept notes plus 7 notes giving full capture of Gelman & Loken 2013) plus an Experimental Design subfolder (8 notes, including a Delayed and Censored Feedback sub-subfolder) and a Pre-registration and Open Science subfolder (5 notes).
 > - Need the forking paths / p-hacking argument? -> [[Garden of Forking Paths]]
+> - Need the **full Gelman & Loken (2013) paper**: four testing procedures, case studies, the red-pink forks, Bem's 53%, the way forward? -> [[Gelman Loken 2013 - Garden of Forking Paths - Overview]]
+> - Need how false positives, low power and analytic flexibility play out in *predictive models and model validation*? -> [[Model Validation and Interpretability - Overview]]
 > - Need sources of analytic flexibility? -> [[Researcher Degrees of Freedom]]
 > - Need Bayesian solutions to multiplicity? -> [[Forking Paths and Bayesian Approaches]]
 > - Need how to pre-register, registered reports, pre-analysis plans, or the OSF/AEA ecosystem? -> [[Research Methodology/Pre-registration and Open Science/_Index|Pre-registration and Open Science]]
@@ -36,6 +38,12 @@ concept_count: 32
 | Multiple comparisons without explicit p-hacking | [[Garden of Forking Paths]] | concept | [[The Experimental Ideal]], [[Research Questions in Econometrics]] | Data-contingent analysis invalidates p-values even without p-hacking |
 | Sources of analytic flexibility inflating false positives | [[Researcher Degrees of Freedom]] | concept | [[Garden of Forking Paths]], [[The Experimental Ideal]], [[Omitted Variables Bias]] | Every analytic choice is a hidden comparison |
 | Bayesian/hierarchical solutions to multiplicity | [[Forking Paths and Bayesian Approaches]] | concept | [[Garden of Forking Paths]], [[Researcher Degrees of Freedom]], [[Multiple Testing Corrections]] | Hierarchical models naturally regularize multiple comparisons |
+| Forking paths paper map | [[Gelman Loken 2013 - Garden of Forking Paths - Overview]] | overview | [[Garden of Forking Paths]] | Source map of Gelman & Loken (2013), errata, headline claims |
+| Four testing procedures | [[Gelman Loken 2013 - Four Testing Procedures and the Data-Contingent Decision Variable]] | theorem | [[Garden of Forking Paths]] | Procedure #3 (one analysis, chosen given the data) inflates error rates without any fishing |
+| Main effects vs interactions | [[Gelman Loken 2013 - Main Effects vs Interactions Case Studies]] | example | Four Testing Procedures | Case studies where the reported comparison was one of many plausible ones |
+| Red-pink study forks | [[Gelman Loken 2013 - Data Exclusion, Coding and Pooling Forks in the Red-Pink Study]] | example | [[Researcher Degrees of Freedom]] | Exclusion, coding and pooling choices multiply the implicit comparisons |
+| Bayesian reading of Bem | [[Gelman Loken 2013 - Three Reactions and the Bayesian Reading of Bem's 53 Percent]] | example | [[Forking Paths and Bayesian Approaches]] | Flat-prior posterior = 1 - one-sided p; a sensible prior shrinks 53% toward 50% |
+| Way forward | [[Gelman Loken 2013 - Way Forward - Preregistration, Replication and Analyzing All Comparisons]] | concept | [[Garden of Forking Paths]] | Pre-publication replication, pre-registration where feasible, analyse all comparisons hierarchically |
 | Multilevel models as structural multiple comparisons solution | [[Multiple Comparisons - Bayesian Perspective]] | overview | [[Multiple Testing Corrections]], [[Hierarchical Models]], [[Garden of Forking Paths]] | Partial pooling replaces classical corrections; adapts to variance ratio |
 | Observational methods overestimate ad effects | [[Activity Bias in Advertising]] | concept | [[Conditional Independence Assumption]], [[The Selection Problem]], [[The Experimental Ideal]], [[Omitted Variables Bias]] | Activity bias causes 10-1000x overestimation |
 | Why regression and matching fail for ads | [[Observational vs Experimental Methods in Advertising]] | concept | [[Activity Bias in Advertising]], [[The Selection Problem]], [[Conditional Independence Assumption]], [[Regression and the CEF]], [[Instrumental Variables]] | No observational method recovers true ad effect |
@@ -69,6 +77,14 @@ concept_count: 32
 - [[Logic of Regression Adjustment]] — CONTAINS: potential outcomes setup, PATE definition, what adjustment identifies vs. doesn't, single-path theorem, "adjustment set as sacrifice" framing, strategies for identifying multiple paths
 - [[Nuisance Parameter Bias Simulation]] — CONTAINS: DAG DGP with 4 measured confounders + 2 unobserved confounders, R/Python data simulation code, full Stan model, 90% CI coverage table (5 parameters × 2 conditions × 3 sample sizes), error-of-magnitude results, "big data is not a substitute" finding
 
+- [[Gelman Loken 2013 - Garden of Forking Paths - Overview]] — CONTAINS: research question, headline claims, section-by-section source map, errata in the paper (Simmons date, item numbering)
+- [[Gelman Loken 2013 - Four Testing Procedures and the Data-Contingent Decision Variable]] — CONTAINS: the four procedures (#1 one pre-chosen test to #4 fishing), the data-contingent decision variable, null-data simulation of the math-test example, union-bound gloss
+- [[Gelman Loken 2013 - Main Effects vs Interactions Case Studies]] — CONTAINS: the published case studies where main effects or interactions were reported depending on the data
+- [[Gelman Loken 2013 - Data Exclusion, Coding and Pooling Forks in the Red-Pink Study]] — CONTAINS: the fertility-window and colour coding forks, exclusion and pooling choices, 576-combination fork count (vault illustration)
+- [[Gelman Loken 2013 - Three Reactions and the Bayesian Reading of Bem's 53 Percent]] — CONTAINS: three reactions to the critique, flat-prior posterior equal to 1 - one-sided p (Greenland-Poole), skeptical-prior table for Bem
+- [[Gelman Loken 2013 - Way Forward - Preregistration, Replication and Analyzing All Comparisons]] — CONTAINS: pre-publication replication (Nosek-Spies-Motyl p = .59), limits of pre-registration for observational work, analysing all comparisons with hierarchical models
+- [[Gelman Loken 2013 - Front Matter, Borges Epigraph and References]] — CONTAINS: title page, Borges epigraph and Yates translation, full reference list including references never cited in the text
+
 ## Sources
 
 - [[raw/p_hacking.pdf]] — "The Garden of Forking Paths" (Gelman & Loken, 2013)
@@ -83,3 +99,4 @@ concept_count: 32
 - [[The Experimental Ideal]] — Why randomized experiments are the benchmark
 - [[The Selection Problem]] — The fundamental challenge of causal inference
 - [[Econometrics/_Index|Econometrics]] — Panel data and identification strategies
+- [[Model Validation and Interpretability/_Index|Model Validation and Interpretability]] — false discovery (Ioannidis, Simmons et al.), overfitting and model validation

@@ -18,6 +18,7 @@ depends_on:
 used_by:
   - "[[Simulated-Data Experimentation as Virtual Replication]]"
   - "[[Poststratification]]"
+  - "[[Ioannidis 2005 - Why Most Published Findings Are False - Overview]]"
 aliases:
   - "Replication crisis"
   - "Statistical significance filter"
@@ -186,3 +187,4 @@ aliases:
 - [[Simulated-Data Experimentation as Virtual Replication]] — the cheap substitute for replication
 - [[Constructing Priors for Effect Sizes]] — exaggeration factors quantified
 - [[Forking Paths and Bayesian Approaches]] — the researcher-degrees-of-freedom side of the same problem
+- [[Ioannidis 2005 - Why Most Published Findings Are False - Overview]] — foundational prediction of the replication crisis

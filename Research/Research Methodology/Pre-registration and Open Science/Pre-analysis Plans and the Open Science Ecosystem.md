@@ -18,6 +18,7 @@ used_by:
   - "[[Pre-registration vs Registered Reports]]"
   - "[[Limits and Objections to Pre-registration]]"
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
+  - "[[SR 11-7 - Applying Model Risk Management to Marketing Analytics]]"
 aliases:
   - "Pre-analysis Plan"
   - "PAP"
@@ -106,3 +107,4 @@ Nosek et al. devote most of the paper to nine practical challenges. The key stra
 - [[Pre-registration and Open Science - Overview]] — the big picture
 - [[Limits and Objections to Pre-registration]] — even a perfect PAP has limits
 - [[The Experimental Ideal]] — randomized design as the complement to a pre-specified analysis
+- [[SR 11-7 - Applying Model Risk Management to Marketing Analytics]] — pre-registered acceptance criteria as the governance analogue

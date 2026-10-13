@@ -18,6 +18,7 @@ depends_on:
 used_by:
   - "[[Fit Fast, Fail Fast]]"
   - "[[Modeling as Software Development]]"
+  - "[[Morris et al 2019 - Reporting, Tables and Zip and Lollipop Plots]]"
 aliases:
   - "Significant digits"
   - "Replicability of stochastic computation"
@@ -255,3 +256,4 @@ aliases:
 - [[Chains, Iterations, and Effective Sample Size]] — how long to run, from the convergence side
 - [[Point Estimates and Uncertainties]] — which summary to report before deciding its precision
 - [[Visualizing High-Dimensional Inference]] — graphical display at larger scale
+- [[Morris et al 2019 - Reporting, Tables and Zip and Lollipop Plots]] — report no more precision than the Monte Carlo SE justifies

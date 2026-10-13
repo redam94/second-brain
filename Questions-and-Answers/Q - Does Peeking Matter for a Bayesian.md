@@ -173,3 +173,7 @@ A protocol for a geo or user-level media test:
 - For a weekly-look geo test, how much wider is a confidence sequence than an O'Brien-Fleming boundary, and than the Bayesian interval under the archive prior?
 - How should a stop-on-success experiment be down-weighted when used as an MMM prior?
 - Can the adaptive-assignment confidence sequence be combined with Thompson sampling on creatives to give regret control and a valid readout at once?
+
+## See Also
+
+- [[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]] — Bayesian nonsolution argument and optional-stopping simulations

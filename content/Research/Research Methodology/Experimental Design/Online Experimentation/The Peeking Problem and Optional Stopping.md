@@ -21,6 +21,7 @@ used_by:
   - "[[Q - Does Peeking Matter for a Bayesian]]"
   - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
+  - "[[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]]"
 aliases:
   - Peeking Problem
   - Optional Stopping
@@ -135,3 +136,4 @@ print((z[:, looks] > 1.96).any(axis=1).mean())   # ~0.20, not 0.05
 - [[Prediction vs Postdiction]]
 - [[UCB and Greedy Algorithms for Bandits]]
 - [[Q - BED vs Bayesian Optimization vs Bandits for Media Experimentation]]
+- [[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]] — optional-stopping false-positive rates

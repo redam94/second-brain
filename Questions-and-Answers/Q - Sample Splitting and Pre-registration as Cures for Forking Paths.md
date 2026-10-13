@@ -173,3 +173,8 @@ For the owner's work:
 - How much power does a sealed 50/50 hold-out cost in a typical geo test, and when does rotation recover it without reintroducing dependence?
 - Can conditional (selective) inference replace the gating pre-trend test in DiD-style geo analyses?
 - What is a workable pre-analysis-plan template for a Bayesian MMM refresh, given that iterative model checking is part of the workflow?
+
+## See Also
+
+- [[Riley 2020 - Extensions - Subgroups, Variable Selection, ML and Model Updating]] — argument against data splitting in favour of bootstrap internal validation
+- [[Gelman Loken 2013 - Way Forward - Preregistration, Replication and Analyzing All Comparisons]] — source of the pre-publication replication recommendation

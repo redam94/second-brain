@@ -11,7 +11,7 @@ tags:
   - topic/specification
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-10-13
 source: "Hanssens, Parsons & Schultz (2001) Ch. 5"
 chapter: "5"
 status: complete
@@ -21,6 +21,8 @@ depends_on:
   - "[[Parameter Estimation in Market Response]]"
 used_by:
   - "[[Model Selection and Exploratory Analysis]]"
+  - "[[Granger 2003 - Spurious Regression from Yule to Granger-Newbold]]"
+  - "[[Bergmeir 2018 - Sunspot Example with Ljung-Box Residual Filter]]"
 ---
 
 # Model Testing and Specification
@@ -120,3 +122,8 @@ Related to Box-Cox variance stabilization in ARIMA — see [[Single Marketing Ti
 - Model selection: [[Model Selection and Exploratory Analysis]]
 - Bayesian model comparison: [[Model Comparison]], [[Overfitting and Information Criteria]]
 - Research methodology: [[Garden of Forking Paths]], [[Researcher Degrees of Freedom]]
+
+## See Also
+
+- [[Granger 2003 - Spurious Regression from Yule to Granger-Newbold]] — the R^2 > DW rule of thumb
+- [[Bergmeir 2018 - Sunspot Example with Ljung-Box Residual Filter]] — residual autocorrelation test as an admissibility filter

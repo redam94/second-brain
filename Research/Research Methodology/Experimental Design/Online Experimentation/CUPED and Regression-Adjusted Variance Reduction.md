@@ -21,6 +21,7 @@ used_by:
   - "[[Sample Ratio Mismatch and Trustworthiness Checks]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
   - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
+  - "[[Lewis Rao 2015 - Table II Estimation Protocol, Windows and ROI Standard Errors]]"
 aliases:
   - CUPED
   - Controlled-experiment Using Pre-Experiment Data
@@ -158,3 +159,4 @@ With $\rho = 0.7$ the variance falls by $49\%$, so an experiment planned for fou
 - [[Type S and Type M Errors]]
 - [[Activity Bias in Advertising]]
 - [[Poststratification]]
+- [[Lewis Rao 2015 - Table II Estimation Protocol, Windows and ROI Standard Errors]] — sub-linear s.e. reduction 1 - sqrt(1-R2)

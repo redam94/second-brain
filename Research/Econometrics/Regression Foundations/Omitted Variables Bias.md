@@ -29,6 +29,8 @@ used_by:
   - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
   - "[[Identity Fragmentation and the Privacy-Era Limits of User-Level Tests]]"
+  - "[[Hooker Mentch Zhou 2021 - Conditional and Relearning Importance Measures]]"
+  - "[[Dillon et al - SHAP and Causal Insights - Overview]]"
 ---
 
 # Omitted Variables Bias
@@ -85,3 +87,5 @@ For returns to schooling where "ability" ($A_i$) is omitted:
 - [[The Experimental Ideal]] — randomization eliminates OVB by construction; the gold-standard contrast to observational confounding
 - [[Research Questions in Econometrics]] — FAQ #3 (identification strategy) is directly aimed at the OVB threat
 - [[Regularization Bias and the Partially Linear Model]] — shrinkage on controls leaks into the treatment coefficient
+- [[Hooker Mentch Zhou 2021 - Conditional and Relearning Importance Measures]] — proof of Theorem 3 is the omitted-variable formula applied to drop-and-refit importance
+- [[Dillon et al - SHAP and Causal Insights - Overview]] — omitted latent need flips the sign of SHAP attributions

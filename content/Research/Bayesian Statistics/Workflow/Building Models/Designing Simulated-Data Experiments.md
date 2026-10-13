@@ -20,6 +20,17 @@ used_by:
   - "[[Simulation-Based Calibration - Overview]]"
   - "[[Simulated-Data Experimentation as Virtual Replication]]"
   - "[[Failure Modes and Steps Forward]]"
+  - "[[Strobl 2007 - Null and Power Case Simulation Design]]"
+  - "[[Strobl 2008 - Correlated Predictor Selection in Tree Ensembles]]"
+  - "[[Hooker Mentch Zhou 2021 - Permute-and-Predict Extrapolation - Overview]]"
+  - "[[Stability Selection Simulation Study - Designs A-G and Results]]"
+  - "[[Stability Selection Figs 5-6 - Per-Cell Power Readings]]"
+  - "[[Stability Selection for Gaussian Graphical Models and Computational Cost]]"
+  - "[[Granger 2003 - Spurious Regression Monte Carlo in Python]]"
+  - "[[Bergmeir 2018 - Monte Carlo Design and MAPAE-MPAE Metrics]]"
+  - "[[Morris White Crowther 2019 - Simulation Studies (ADEMP) - Overview]]"
+  - "[[Jin 2017 MMM - Sample Size vs Bias Study (Two vs Sixty Years)]]"
+  - "[[Model Validation and Interpretability - Overview]]"
 aliases:
   - "Fake-data simulation"
   - "Parameter recovery"
@@ -266,3 +277,14 @@ problem.**"
 - [[Fit Fast, Fail Fast]] — the computational discipline that makes many simulations affordable
 - [[Fitting and Validating Computation]] — the 2020 paper's treatment of fake-data simulation
 - [[Prior Distributions]] — simulated-data experiments draw their true parameters from the prior
+- [[Strobl 2007 - Null and Power Case Simulation Design]] — placebo (null) and power simulation design for validating an interpretability method
+- [[Strobl 2008 - Correlated Predictor Selection in Tree Ensembles]] — matched-pair planted-truth simulation design
+- [[Hooker Mentch Zhou 2021 - Permute-and-Predict Extrapolation - Overview]] — known-truth simulation where the estimand changes the correct ranking
+- [[Stability Selection Simulation Study - Designs A-G and Results]] — real-X/synthetic-beta designs and permutation nulls
+- [[Stability Selection Figs 5-6 - Per-Cell Power Readings]] — factorial simulation grid with per-cell results
+- [[Stability Selection for Gaussian Graphical Models and Computational Cost]] — independent-permutation null as a calibration check for structure learners
+- [[Granger 2003 - Spurious Regression Monte Carlo in Python]] — persistence-matched null procedure
+- [[Bergmeir 2018 - Monte Carlo Design and MAPAE-MPAE Metrics]] — simulation to test a validation scheme rather than a model
+- [[Morris White Crowther 2019 - Simulation Studies (ADEMP) - Overview]] — frequentist multi-repetition counterpart; turns the plain-text citation into a link
+- [[Jin 2017 MMM - Sample Size vs Bias Study (Two vs Sixty Years)]] — known-truth simulation showing priors drive small-sample bias
+- [[Model Validation and Interpretability - Overview]] — known-truth simulation as one of six validation remedies

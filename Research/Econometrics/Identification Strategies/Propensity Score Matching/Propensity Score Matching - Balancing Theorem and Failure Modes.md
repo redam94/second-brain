@@ -28,6 +28,7 @@ used_by:
   - "[[Bayesian Inverse Probability Weighting]]"
   - "[[Activity Bias in Advertising]]"
   - "[[Experimental Benchmarks for Observational Ad Measurement]]"
+  - "[[Gordon et al 2019 - Observational Lift Estimates by Study and Method]]"
 ---
 
 # Propensity Score Matching - Balancing Theorem and Failure Modes
@@ -150,3 +151,4 @@ The diagnostic signature: after matching, remaining SMD for observed covariates 
 - [[Instrumental Variables]] — alternative when unconfoundedness fails; uses exogenous variation
 - [[Differences-in-Differences]] — alternative when panel data available; removes time-invariant unobservables
 - [[Sensitivity Analysis in Observational Studies]] — after matching, assess robustness to unmeasured confounders via Rosenbaum bounds; complement to balance diagnostics
+- [[Gordon et al 2019 - Observational Lift Estimates by Study and Method]] — failure case against RCT ground truth

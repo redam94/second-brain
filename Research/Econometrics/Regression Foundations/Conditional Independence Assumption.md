@@ -30,6 +30,7 @@ used_by:
   - "[[Regularization Bias and the Partially Linear Model]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
   - "[[Experimental Benchmarks for Observational Ad Measurement]]"
+  - "[[Strobl 2008 - Permutation Importance Null Hypotheses]]"
 ---
 
 # Conditional Independence Assumption
@@ -81,3 +82,4 @@ The coefficient $\rho$ has a causal interpretation as the average causal effect.
 - [[Data Collection Models]] — Bayesian treatment of ignorability, the direct parallel to CIA
 - [[Directed Acyclic Graphs]] — DAGs provide the algorithmic tool for finding the adjustment set that satisfies the CIA
 - [[Nonparametric Causal Inference]] — flexible Bayesian outcome models (BART, BCF) that estimate effects under this assumption
+- [[Strobl 2008 - Permutation Importance Null Hypotheses]] — conditional permutation importance tests a conditional-independence null

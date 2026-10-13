@@ -11,7 +11,7 @@ tags:
 source: "[[raw/Brodersen - 2015 - Inferring causal impact using Bayesian structural time-series models.pdf]]"
 source_location: "§2, pp. 251-258"
 date_ingested: 2026-04-10
-date_updated: 2026-04-13
+date_updated: 2026-10-13
 folder: "Bayesian Statistics/Causal Inference/Time Series Causal Inference"
 doc_type: paper
 depends_on:
@@ -26,6 +26,7 @@ used_by:
   - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
   - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
+  - "[[Granger 2003 - Cointegration and the Error-Correction Representation]]"
 aliases:
   - structural time-series model
   - BSTS model
@@ -138,3 +139,4 @@ The model shows:
 - [[Carryover Effects and Distributed Lags]] — marketing carryover through a different (ADL) lens
 - [[Fitting and Validating Computation]] — MCMC validation for the BSTS sampler
 - [[The Kalman Filter]] — the filter/smoother BSTS inference relies on
+- [[Granger 2003 - Cointegration and the Error-Correction Representation]] — shared latent trend as the common factor of cointegrated series

@@ -21,7 +21,7 @@ depends_on:
   - "[[Efficient MCMC]]"
   - "[[Garden of Forking Data]]"
 used_by: []
-date_updated: 2026-08-24
+date_updated: 2026-10-13
 ---
 
 # HMC and Stan in Practice
@@ -82,3 +82,4 @@ Key diagnostics:
 - [[SBC Case Studies]] — SBC reveals that HMC/NUTS passes while ADVI fails for even simple regressions
 - [[Simulation-Based Calibration - Overview]] — rank-statistic uniformity test for validating NUTS convergence
 - [[Statistical Rethinking - Overview]]
+- [[Jin 2017 MMM - STAN Sampler Code and MCMC Implementation]] — orthogonalising controls gives a 40x speed-up

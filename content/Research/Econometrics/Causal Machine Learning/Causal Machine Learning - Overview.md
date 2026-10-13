@@ -27,6 +27,7 @@ used_by:
   - "[[Generalized Random Forests - Local Moment Equations]]"
   - "[[Asymptotic Normality and Inference for Forests]]"
   - "[[R-Learner and Orthogonal CATE Estimation]]"
+  - "[[Dillon et al - SHAP and Causal Insights - Overview]]"
 aliases:
   - Causal ML
   - Double Machine Learning Overview
@@ -100,3 +101,4 @@ Contrast with the observational 401(k) example (§6.2): the interactive-model AT
 - [[Synthetic Control Extensions]] — ML regularization applied to panel counterfactuals.
 - [[Sensitivity Analysis in Observational Studies]] — none of these methods protects against unobserved confounding.
 - Sources: Chernozhukov 2018 - Double Debiased Machine Learning, Wager Athey 2018 - Heterogeneous Treatment Effects using Random Forests, Athey Tibshirani Wager 2019 - Generalized Random Forests, Nie Wager 2021 - Quasi-Oracle Estimation of Heterogeneous Treatment Effects.
+- [[Dillon et al - SHAP and Causal Insights - Overview]] — practitioner case study contrasting SHAP with DML

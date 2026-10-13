@@ -25,7 +25,6 @@ used_by:
   - "[[Renormalization]]"
 aliases:
   - quantum fields
-  - quantum field theory
   - QFT
 ---
 

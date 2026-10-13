@@ -4,8 +4,8 @@ tags:
   - type/index
   - topic/market-response
   - source/hanssens-parsons-schultz-2001
-date_updated: 2026-09-18
-concept_count: 51
+date_updated: 2026-10-13
+concept_count: 86
 ---
 
 # Market Response Models
@@ -20,7 +20,8 @@ concept_count: 51
 > - Need advertising/price/promotion empirical elasticities and optimal decisions? → [[Research/Market Response Models/Empirical Findings and Applications/_Index|Empirical Findings and Applications]]
 > - Need **Bayesian MMM** (adstock/carryover, Hill saturation, MCMC priors, ROAS/mROAS, optimal media mix, BIC selection)? → [[Research/Market Response Models/Bayesian Media Mix Modeling/_Index|Bayesian Media Mix Modeling]]
 > - Need **geo-experiment methodology** (matched-market design, geo-based regression power analysis, time-based regression / Matched Markets)? → [[Research/Market Response Models/Geo-Experiment Methodology/_Index|Geo-Experiment Methodology]]
-> - Need **user-level ad experiments** (ITT / PSA / ghost-ad designs, ITT→treatment-on-the-treated, the power economics of ad tests, platform conversion lift, experimental benchmarks for observational methods, identity fragmentation, user- vs geo-level choice)? → [[Research/Market Response Models/User-Level Ad Experiments/_Index|User-Level Ad Experiments]]
+> - Need **user-level ad experiments** (ITT / PSA / ghost-ad designs, ITT→treatment-on-the-treated, the power economics of ad tests, platform conversion lift, experimental benchmarks for observational methods, identity fragmentation, user- vs geo-level choice, the eBay paid-search experiment)? → [[Research/Market Response Models/User-Level Ad Experiments/_Index|User-Level Ad Experiments]]
+> - Need how to **validate** an MMM or attribution model (known-truth simulation, experiments as ground truth, model risk governance)? → [[Model Validation and Interpretability - Overview]]
 > - Need **customer-level models / customer lifetime value** (Pareto-NBD, BG-NBD, Gamma-Gamma, RFM iso-value curves, shifted-beta-geometric retention, Bayesian extensions)? → [[Research/Market Response Models/Customer Lifetime Value/_Index|Customer Lifetime Value]]
 
 ## Concept Map
@@ -33,9 +34,9 @@ concept_count: 51
 | [[Research/Market Response Models/Estimation and Testing/_Index\|Estimation and Testing]] | 4 | OLS, GLS, SUR, 2SLS, Bayes HB/EB, RESET, specification errors, AIC/BIC |
 | [[Research/Market Response Models/Time Series Analysis/_Index\|Time Series Analysis]] | 4 | ARIMA, transfer functions, VAR, cointegration, ECM, Granger causality |
 | [[Research/Market Response Models/Empirical Findings and Applications/_Index\|Empirical Findings]] | 5 | Advertising elasticity ≈ 0.10, price ≈ −2.5, Dorfman-Steiner, DSS |
-| [[Research/Market Response Models/Bayesian Media Mix Modeling/_Index\|Bayesian Media Mix Modeling]] | 6 | Adstock (geometric/delayed) carryover, Hill/logistic saturation, Bayesian MCMC + priors, ROAS/mROAS, optimal media mix, BIC model selection (Jin et al., Google 2017) |
+| [[Research/Market Response Models/Bayesian Media Mix Modeling/_Index\|Bayesian Media Mix Modeling]] | 13 | Adstock (geometric/delayed) carryover, Hill/logistic saturation, Bayesian MCMC + priors, ROAS/mROAS, optimal media mix, BIC model selection (Jin et al., Google 2017); full-capture audit 2026-10-13 added simulation design, sample size vs bias (Table 4), prior sensitivity (Tables 5-6), shampoo diagnostics, verbatim Stan code, limitations |
 | [[Research/Market Response Models/Geo-Experiment Methodology/_Index\|Geo-Experiment Methodology]] | 4 | Geo-Based Regression (GBR) design + power analysis (Vaver & Koehler 2011), Time-Based Regression (TBR) / Matched Markets estimator, iROAS, stationarity assumption and design sensitivity (Kerman, Wang & Vaver 2017) |
-| [[Research/Market Response Models/User-Level Ad Experiments/_Index\|User-Level Ad Experiments]] | 9 | Individually randomized ad tests: intent-to-treat, PSA and (predicted) ghost-ad designs, ghost bids, ITT→ATT scaling under one-sided noncompliance, Lewis–Rao power economics, Meta-style conversion lift studies, Gordon et al. experimental benchmarks for PSM/regression/DML, identity-fragmentation bias, and a user-level vs geo-level decision note |
+| [[Research/Market Response Models/User-Level Ad Experiments/_Index\|User-Level Ad Experiments]] | 38 | Individually randomized ad tests: intent-to-treat, PSA and (predicted) ghost-ad designs, ghost bids, ITT→ATT scaling under one-sided noncompliance, Lewis–Rao power economics, Meta-style conversion lift studies, Gordon et al. experimental benchmarks for PSM/regression/DML, identity-fragmentation bias, and a user-level vs geo-level decision note; full paper maps of Gordon et al. 2019 (10 notes) and Lewis & Rao 2015 (9 notes); **Blake, Nosko & Tadelis 2015** eBay paid-search field experiment sub-folder (10 notes: brand-keyword substitution, DMA geo DiD, OLS vs IV, ROI -63%) |
 | [[Research/Market Response Models/Customer Lifetime Value/_Index\|Customer Lifetime Value]] | 7 | Customer-base analysis: Pareto-NBD and BG-NBD buy-till-you-die models, P(alive) and conditional expected transactions, Gamma-Gamma monetary value, RFM sufficient statistics and iso-value curves, shifted-beta-geometric contractual retention, hierarchical-Bayes / covariate / deep (ZILN) extensions — Fader, Hardie & Lee 2005–2013; Wang et al. 2019 |
 
 ## Key Equations Quick Reference
@@ -78,3 +79,4 @@ concept_count: 51
 - Jin-2017-Bayesian-MMM-Carryover-Shape — Jin, Wang, Sun, Chan & Koehler (Google, 2017), "Bayesian Methods for Media Mix Modeling with Carryover and Shape Effects": adstock, Hill saturation, MCMC estimation, ROAS/mROAS, optimal media mix, BIC selection, shampoo case study
 - Vaver Koehler 2011 - Measuring Ad Effectiveness Using Geo Experiments — Vaver & Koehler (Google, 2011), "Measuring Ad Effectiveness Using Geo Experiments": geo-based regression (GBR) design, randomization, spend perturbation, power/sample-size formula
 - Kerman Wang Vaver 2017 - Time-Based Regression Geo Experiments — Kerman, Wang & Vaver (Google, 2017), "Estimating Ad Effectiveness using Geo Experiments in a Time-Based Regression Framework": TBR estimator underlying Google's open-source Matched Markets tool
+- Blake Nosko Tadelis 2015 - Consumer Heterogeneity and Paid Search Effectiveness — Blake, Nosko & Tadelis (Econometrica 83(1), 2015; NBER WP 20171): eBay brand-keyword shutdowns and non-brand DMA geo experiment on paid search effectiveness

@@ -18,6 +18,7 @@ depends_on:
 used_by:
   - "[[Approximate Algorithms and Approximate Models]]"
   - "[[Challenge of Multimodality - Differential Equation for Planetary Motion]]"
+  - "[[Jin 2017 MMM - Shampoo Case Study Data, Diagnostics and Posteriors]]"
 aliases:
   - "Convergence troubleshooting"
   - "Stacking chains"
@@ -217,3 +218,4 @@ aliases:
 - [[Modeling Ideas to Address Computing Problems]] — reparameterization, marginalization, priors, data
 - [[Challenge of Multimodality - Differential Equation for Planetary Motion]] — the full worked troubleshooting case study
 - [[Approximate Algorithms and Approximate Models]] — when exact computation is abandoned
+- [[Jin 2017 MMM - Shampoo Case Study Data, Diagnostics and Posteriors]] — orthogonalising collinear controls fixes a correlated posterior

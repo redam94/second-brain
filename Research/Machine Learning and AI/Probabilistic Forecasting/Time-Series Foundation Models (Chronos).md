@@ -24,6 +24,7 @@ used_by:
   - "[[Forecast Evaluation and Backtesting]]"
   - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Out-of-Sample Validation for Time-Series Models]]"
 aliases:
   - Chronos
   - Time-Series Foundation Models
@@ -148,3 +149,4 @@ q10, q50, q90 = np.quantile(samples[0].numpy(), [0.1, 0.5, 0.9], axis=0)
 - [[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)]] — cross-entropy as a (non-distance-aware) log score vs CRPS as a distance-aware alternative.
 - [[Counterfactual Impact Estimation]] — a zero-shot forecaster is a cheap counterfactual baseline, but without control-series covariates it cannot absorb common shocks the way BSTS with contemporaneous controls does.
 - [[Bayesian Structural Time-Series Model]] — the interpretable, covariate-aware local alternative.
+- [[Out-of-Sample Validation for Time-Series Models]] — rolling-origin and nested alternatives to a single held-out tail

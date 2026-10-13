@@ -26,6 +26,9 @@ used_by:
   - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
   - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
   - "[[User-Level vs Geo-Level Experiments - When to Use Which]]"
+  - "[[Zhang Vaver 2017 - Aggregate Marketing System Simulator - Overview]]"
+  - "[[Chan Perry 2017 - Why Experiments and Matching Fall Short for MMM Questions]]"
+  - "[[Blake 2015 - Non-Brand DMA Geo Experiment and DiD Estimates]]"
 aliases:
   - Geo Experiments
   - Matched Market Testing
@@ -108,3 +111,6 @@ The vault's existing [[Synthetic Control]] note (and its extensions in [[Xu 2016
 - [[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]] — the Bayesian EIG framing this classical methodology is the frequentist counterpart of
 - [[SDID for Geo Experiments and Marketing Panels]] — SDID as an estimator for geo tests
 - [[User-Level vs Geo-Level Experiments - When to Use Which]] — choosing between user-randomized and geo-randomized designs
+- [[Zhang Vaver 2017 - Aggregate Marketing System Simulator - Overview]] — AMSS was designed to evaluate geo experiments too
+- [[Chan Perry 2017 - Why Experiments and Matching Fall Short for MMM Questions]] — why experiments cannot cover all MMM questions
+- [[Blake 2015 - Non-Brand DMA Geo Experiment and DiD Estimates]] — early large-scale DMA geo experiment with DiD

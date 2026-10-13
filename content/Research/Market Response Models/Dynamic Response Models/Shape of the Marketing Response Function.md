@@ -9,7 +9,7 @@ tags:
   - topic/functional-forms
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-10-13
 source: "Hanssens, Parsons & Schultz (2001) Ch. 4"
 chapter: "4"
 status: complete
@@ -21,6 +21,7 @@ depends_on:
 used_by:
   - "[[Optimal Marketing Decisions and Forecasting]]"
   - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Kumar et al - Shapley Values as Contrastive and Actionable Explanations]]"
 ---
 
 # Shape of the Marketing Response Function
@@ -106,3 +107,7 @@ Convex response (exponential form) implies increasing marginal returns — rare 
 - Hysteresis in time series: [[Multivariate Persistence and Cointegration]]
 - Product adoption S-curves: [[Product Adoption and Diffusion Models]]
 - Ratchet models: [[Carryover Effects and Distributed Lags]]
+
+## See Also
+
+- [[Kumar et al - Shapley Values as Contrastive and Actionable Explanations]] — under saturation a large SHAP value is not a marginal return

@@ -23,6 +23,7 @@ used_by:
   - "[[Causal Machine Learning - Overview]]"
   - "[[R-Learner and Orthogonal CATE Estimation]]"
   - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
+  - "[[Model Reliance, Causal Effects and Conditional Model Reliance]]"
 aliases:
   - metalearner framework
   - CATE estimation framework
@@ -115,3 +116,4 @@ Units are drawn i.i.d. from a superpopulation $\mathcal{P}$ over $(X, W, Y(0), Y
 - [[Conformal Inference for Counterfactuals and ITEs]] — CATE intervals under-cover individual effects
 - [[R-Learner and Orthogonal CATE Estimation]] — the orthogonal member of the metalearner family
 - [[Honest Trees and Causal Forests]] — a CATE estimator with pointwise confidence intervals
+- [[Model Reliance, Causal Effects and Conditional Model Reliance]] — predictive reliance on treatment grows with Var(CATE)

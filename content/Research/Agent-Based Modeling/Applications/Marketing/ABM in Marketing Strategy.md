@@ -110,3 +110,4 @@ Karakaya et al. (2011) model three of the 4Ps explicitly (excluding Place):
 - [[Market Response Models - Overview]] — traditional (non-ABM) marketing mix modeling; same 4Ps decisions without agent heterogeneity or WOM endogeneity
 - [[Advertising and Promotion Effects]] — empirical advertising elasticity (≈0.10 short-run); compare with ABM finding that WOM substitutes for promotion
 - [[Marketing Generalizations Overview]] — empirical meta-analysis that ABM findings should be benchmarked against
+- [[Zhang Vaver 2017 - Aggregate Marketing System Simulator - Overview]] — segment-count relative of marketing ABMs

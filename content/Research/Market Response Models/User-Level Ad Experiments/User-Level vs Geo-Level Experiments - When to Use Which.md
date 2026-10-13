@@ -30,6 +30,9 @@ depends_on:
   - "[[Conversion Lift Studies on Ad Platforms]]"
 used_by:
   - "[[User-Level Ad Experiments - Overview]]"
+  - "[[Blake Nosko Tadelis 2015 - Paid Search Effectiveness - Overview]]"
+  - "[[Lewis Rao 2015 - Robustness, Scale, Targeting and Measurement Technology]]"
+  - "[[Model Validation and Interpretability - Overview]]"
 aliases:
   - User-Level vs Geo Experiments
   - Choosing an Incrementality Test Design
@@ -148,3 +151,6 @@ The geo line makes the trade-off concrete: a 3% lift in *total* regional sales i
 - [[Switchback Experiment Design and Analysis]] — time-randomized alternative when neither users nor geos can be split.
 - [[Synthetic Control]], [[Differences-in-Differences]], [[SDID vs DiD vs Synthetic Control]] — estimators for the geo side.
 - [[Online Experimentation - Overview]] — shared statistical infrastructure.
+- [[Blake Nosko Tadelis 2015 - Paid Search Effectiveness - Overview]] — canonical geo-level search test
+- [[Lewis Rao 2015 - Robustness, Scale, Targeting and Measurement Technology]] — geo tests are ITT; multipliers are a lower bound
+- [[Model Validation and Interpretability - Overview]] — experimental ground truth in model validation

@@ -18,6 +18,8 @@ used_by:
   - "[[DML Estimators for ATE and the Interactive Model]]"
   - "[[Honest Trees and Causal Forests]]"
   - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
+  - "[[Chan Perry 2017 - Why Experiments and Matching Fall Short for MMM Questions]]"
+  - "[[Gordon et al 2019 - Propensity Estimation, Bootstrap Inference and Balance Diagnostics]]"
 aliases:
   - Common Support
   - Overlap
@@ -69,3 +71,5 @@ Region-of-common-support trimming on the propensity-score distribution plot (Stu
 - [[Matching Methods and Distance Measures]]
 - [[Covariate Balance Diagnostics]]
 - [[_Index]]
+- [[Chan Perry 2017 - Why Experiments and Matching Fall Short for MMM Questions]] — time-series MMM case where overlap fails
+- [[Gordon et al 2019 - Propensity Estimation, Bootstrap Inference and Balance Diagnostics]] — propensity overlap on the trimmed support

@@ -20,6 +20,7 @@ used_by:
   - "[[Overfitting and Information Criteria]]"
   - "[[Gamma-Gamma Model of Monetary Value]]"
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Riley 2020 - Shrinkage and Optimism Criteria for Overfitting]]"
 aliases:
   - Parametric Empirical Bayes
   - Estimating the Prior
@@ -87,3 +88,4 @@ Both readings describe the same shrinkage. The EB reading is the bridge to moder
 - [[Asymptotics and Frequentist Connections]]
 - [[_Index]]
 - [[Gamma-Gamma Model of Monetary Value]] — a marketing example of shrinkage toward the population mean
+- [[Riley 2020 - Shrinkage and Optimism Criteria for Overfitting]] — uniform shrinkage factor

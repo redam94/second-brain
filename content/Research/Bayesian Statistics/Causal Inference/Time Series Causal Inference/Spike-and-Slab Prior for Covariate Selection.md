@@ -20,6 +20,8 @@ used_by:
   - "[[The Horseshoe Prior]]"
   - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Stability Paths and the Stable-Variable Set]]"
+  - "[[Stability Selection (Meinshausen Buhlmann 2010) - Bibliography and Cited Works]]"
 aliases:
   - spike-and-slab prior
   - Bayesian variable selection BSTS
@@ -119,3 +121,5 @@ Each full-conditional $p(\varrho_j \mid \varrho_{-j}, \ldots)$ evaluates easily 
 - [[Bayesian Structural Time-Series Model]] — full model
 - [[MCMC Inference for CausalImpact]] — how this prior is sampled
 - [[The Horseshoe Prior]] — continuous global-local alternative to spike-and-slab for sparsity
+- [[Stability Paths and the Stable-Variable Set]] — frequentist resampling analogue of the median probability model
+- [[Stability Selection (Meinshausen Buhlmann 2010) - Bibliography and Cited Works]] — Bayesian inclusion-probability precedents

@@ -23,6 +23,7 @@ used_by:
   - "[[Solving ODEs as Inference]]"
   - "[[Uncertainty Calibration for Linear Solvers]]"
   - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
+  - "[[Model Class Reliance for Linear and RKHS Model Classes]]"
 aliases:
   - GP Regression
   - Gaussian Process
@@ -135,3 +136,4 @@ This is the engine of [[Bayesian Quadrature]] (observe $f$, infer $\int f$) and 
 - [[ODE Filters and Smoothers]] — GP regression in state-space form, conditioned on the ODE vector field.
 - [[First- and Second-Order Optimisation Methods]] — BFGS as Gaussian regression on the Hessian.
 - [[Scaled Dot-Product and Multi-Head Attention]] — attention as a kernel-weighted smoother
+- [[Model Class Reliance for Linear and RKHS Model Classes]] — MCR computable exactly for norm-bounded kernel regression classes

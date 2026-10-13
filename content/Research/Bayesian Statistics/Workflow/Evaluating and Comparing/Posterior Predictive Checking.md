@@ -20,6 +20,7 @@ used_by:
   - "[[Influence of Individual Data Points]]"
   - "[[LOO Model Checking and Comparison - Roaches]]"
   - "[[Q - Four Meanings of Calibration]]"
+  - "[[Jin 2017 MMM - Shampoo Case Study Data, Diagnostics and Posteriors]]"
 aliases:
   - "PPC"
   - "Posterior predictive check"
@@ -258,3 +259,4 @@ aliases:
 - [[Model Checking]] — BDA3's treatment, including $p$-values in more detail
 - [[Conformity Scores and Adaptive Prediction Sets]] — conformalized Bayes
 - [[Simulation-Based Calibration - Overview]] — SBC checks the computation; posterior predictive checks test the model against data — complementary halves of model criticism
+- [[Jin 2017 MMM - Shampoo Case Study Data, Diagnostics and Posteriors]] — residual ACF over posterior draws as a misspecification check

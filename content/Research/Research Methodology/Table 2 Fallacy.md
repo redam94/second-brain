@@ -19,6 +19,7 @@ used_by:
   - "[[Logic of Regression Adjustment]]"
   - "[[Nuisance Parameter Bias Simulation]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Dillon et al - Non-Confounding Redundancy and the Control-or-Drop Rule]]"
 aliases:
   - Table 2 fallacy
   - mutual adjustment fallacy
@@ -104,3 +105,4 @@ This requires:
 - [[Bayesian Inverse Probability Weighting]] — Correct approach: use DAG to select adjustment set for the treatment, then focus interpretation solely on the treatment effect
 - [[The Selection Problem]] — The fundamental challenge that makes adjustment necessary and limits what can be identified
 - [[Observational vs Experimental Methods in Advertising]] — Activity bias as a case where confounders (activity) cause 10–1000x overestimates when treated as if identified
+- [[Dillon et al - Non-Confounding Redundancy and the Control-or-Drop Rule]] — reading every SHAP value as a total effect is the Table 2 fallacy

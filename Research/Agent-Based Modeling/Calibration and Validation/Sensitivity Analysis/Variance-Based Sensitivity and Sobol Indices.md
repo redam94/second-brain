@@ -17,6 +17,8 @@ used_by:
   - "[[Morris Elementary Effects Screening]]"
   - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
   - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
+  - "[[Permute-and-Predict Extrapolation in Variable Importance]]"
+  - "[[Hooker Mentch Zhou 2021 - Partial Dependence Alternatives and Conclusions]]"
 aliases:
   - Sobol Indices
   - Sobol Sensitivity Indices
@@ -83,3 +85,5 @@ Suppose a 3-parameter ABM gives $S_1=0.40,\ S_2=0.20,\ S_3=0.05$ and $S_{T1}=0.4
 - [[History Matching for ABMs]]; [[Approximate Bayesian Computation for ABMs]] — $S_{Ti}$ guides which parameters to keep active.
 - Sobol (2001), "Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates."
 - Saltelli et al. (2010), "Variance based sensitivity analysis of model output: design and estimator for the total sensitivity index."
+- [[Permute-and-Predict Extrapolation in Variable Importance]] — PaP importance equals a Sobol index under independent inputs
+- [[Hooker Mentch Zhou 2021 - Partial Dependence Alternatives and Conclusions]] — additive-model distillation as an empirical functional ANOVA

@@ -22,6 +22,8 @@ used_by:
   - "[[Topology of Models]]"
   - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
   - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
+  - "[[Jin 2017 MMM - Shampoo Case Study Data, Diagnostics and Posteriors]]"
+  - "[[Jin 2017 MMM - Sample Size vs Bias Study (Two vs Sixty Years)]]"
 aliases:
   - "Power scaling"
   - "priorsense"
@@ -303,3 +305,5 @@ and compared."
 - [[Joint Priors and Covariance Matrices]] — the joint priors recommended when marginals mislead
 - [[Influence of Individual Data Points]] — the data-side counterpart
 - [[Prior Specification for Regression Models - Sleep Study]] — an extended `priorsense` case study
+- [[Jin 2017 MMM - Shampoo Case Study Data, Diagnostics and Posteriors]] — retention-rate posterior equals its prior on real data
+- [[Jin 2017 MMM - Sample Size vs Bias Study (Two vs Sixty Years)]] — how beta and K priors move small-sample curve bias

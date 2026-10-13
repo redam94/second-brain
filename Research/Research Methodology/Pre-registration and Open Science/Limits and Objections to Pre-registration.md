@@ -16,6 +16,7 @@ depends_on:
   - "[[Pre-analysis Plans and the Open Science Ecosystem]]"
 used_by:
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
+  - "[[Gelman Loken 2013 - Way Forward - Preregistration, Replication and Analyzing All Comparisons]]"
 aliases:
   - "Objections to Preregistration"
   - "Limits of Preregistration"
@@ -91,3 +92,4 @@ Pre-registration shifts the culture from providing **means, motive, and opportun
 
 - [[Researcher Degrees of Freedom]] — the flexibilities pre-registration constrains but cannot fully eliminate
 - [[The Experimental Ideal]] — design-side safeguards that pair with analysis-side commitment
+- [[Gelman Loken 2013 - Way Forward - Preregistration, Replication and Analyzing All Comparisons]] — early statement that exploratory work cannot be pre-registered

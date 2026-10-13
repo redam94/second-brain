@@ -25,6 +25,11 @@ used_by:
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
   - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
   - "[[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise]]"
+  - "[[Manheim Garrabrant - Regressional Goodhart and Tails Coming Apart]]"
+  - "[[Ioannidis 2005 - Why Most Published Findings Are False - Overview]]"
+  - "[[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]]"
+  - "[[Lewis Rao 2015 - Impact-to-SD Ratio Derivation and Calibrated Campaign]]"
+  - "[[Gelman Loken 2013 - Way Forward - Preregistration, Replication and Analyzing All Comparisons]]"
 aliases:
   - "Type S error"
   - "Type M error"
@@ -114,3 +119,8 @@ Classical multiple comparisons corrections (Bonferroni, FDR) address Type 1 erro
 - [[Hierarchical Models]] — the modeling framework that addresses all error types
 - [[Activity Bias in Advertising]] — the most dramatic Type M error in the vault: the 1198% observational estimate vs 5.4% RCT result yields an exaggeration ratio of ≈220×
 - [[Observational vs Experimental Methods in Advertising]] — documents the full magnitude of observational bias in advertising as a concrete illustration of Type M error
+- [[Manheim Garrabrant - Regressional Goodhart and Tails Coming Apart]] — Type M exaggeration is regressional Goodhart under a significance filter
+- [[Ioannidis 2005 - Why Most Published Findings Are False - Overview]] — companion argument on underpowered studies
+- [[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]] — small-n early-stopped significant results exaggerate magnitude
+- [[Lewis Rao 2015 - Impact-to-SD Ratio Derivation and Calibrated Campaign]] — exaggeration factor in low-powered ad tests
+- [[Gelman Loken 2013 - Way Forward - Preregistration, Replication and Analyzing All Comparisons]] — >99% power replication returning p = .59

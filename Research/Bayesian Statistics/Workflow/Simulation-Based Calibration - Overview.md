@@ -21,6 +21,7 @@ used_by:
   - "[[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]]"
   - "[[Q - Does Peeking Matter for a Bayesian]]"
   - "[[Q - Four Meanings of Calibration]]"
+  - "[[Morris White Crowther 2019 - Simulation Studies (ADEMP) - Overview]]"
 aliases:
   - SBC
   - Simulation-Based Calibration
@@ -86,3 +87,4 @@ SBC answers the question: **does my algorithm actually sample the posterior of t
 - [[Posterior Predictive Checking]] — posterior predictive checking asks whether the model fits the data, once SBC has established that the computation can be trusted
 - [[Computational Troubleshooting]] — what to do when SBC (or the sampler diagnostics) signal a computational problem
 - [[Variational Inference and Pathfinder]] — approximate algorithms are where SBC most often finds miscalibration
+- [[Morris White Crowther 2019 - Simulation Studies (ADEMP) - Overview]] — frequentist fixed-theta counterpart to SBC

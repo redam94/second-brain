@@ -23,6 +23,7 @@ used_by:
   - "[[Forecast Evaluation and Backtesting]]"
   - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Out-of-Sample Validation for Time-Series Models]]"
 aliases:
   - Local vs Global Models
   - Global Forecasting Models
@@ -142,3 +143,4 @@ models = {
 - [[Bayesian Structural Time-Series Model]] and [[Local Linear Trend and Seasonality]] — local Bayesian structural models.
 - [[Transformers and LLM Foundations - Overview]] — pretraining/zero-shot/fine-tuning vocabulary borrowed from LLMs.
 - [[Bayesian Media Mix Modeling - Overview]] — geo-level MMMs face the same pooling choice across geos.
+- [[Out-of-Sample Validation for Time-Series Models]] — validation-scheme choice for panels of series

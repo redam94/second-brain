@@ -197,3 +197,12 @@ For your workflow of running hundreds of models:
 - How does partial pooling interact with cross-validation for model selection?
 - When is stacking preferred over projection predictive selection?
 - How should I handle multiple comparisons when the models are non-nested or structurally different?
+
+## See Also
+
+- [[Strobl 2007 - Split-Selection Bias in CART Trees]] — the same selection inflation one level down, inside the tree algorithm
+- [[Fisher Rudin Dominici 2019 - Model Class Reliance - Overview]] — report conclusions across near-equivalent models instead of selecting one
+- [[Stability Selection PFER Bound (Theorem 1) and Its Proof]] — finite-sample bound on expected false selections
+- [[Ioannidis 2005 - Box 1 Genome-Wide Association Worked Example]] — low pre-study odds make significant selections almost always false
+- [[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]] — selection among analyses inflates false positives (60.7%)
+- [[Out-of-Sample Validation for Time-Series Models]] — selection-on-holdout optimism and nested outer scores

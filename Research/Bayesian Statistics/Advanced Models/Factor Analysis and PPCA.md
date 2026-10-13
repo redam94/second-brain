@@ -13,7 +13,6 @@ date_ingested: 2026-04-09
 date_updated: 2026-07-27
 folder: "Bayesian Statistics/Advanced Models"
 aliases:
-  - "Factor Analysis"
   - "PPCA"
   - "Probabilistic PCA"
   - "Latent Factor Models"

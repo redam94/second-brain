@@ -28,6 +28,7 @@ used_by:
   - "[[Conversion Lift Studies on Ad Platforms]]"
   - "[[Experimental Benchmarks for Observational Ad Measurement]]"
   - "[[User-Level vs Geo-Level Experiments - When to Use Which]]"
+  - "[[Gordon et al 2019 - RCT ITT and ATT Lifts for 15 Studies]]"
 aliases:
   - ITT to ATT Scaling
   - Treatment on the Treated in Advertising
@@ -169,3 +170,4 @@ def lift_from_holdout(y, z, w):
 - [[Geo-Experiment Design and Power Analysis]] — geo tests estimate an ITT-type effect per dollar (incremental ROAS) and never attempt the ATT.
 - [[Bayesian Estimation and Priors for MMM]] and [[Q - Using Experiment Results as Priors in a Bayesian MMM]] — converting ITT/ATT into incremental outcomes per dollar for model calibration.
 - [[Type S and Type M Errors]] — dividing a noisy ITT by a small $\pi_{co}$ magnifies exaggeration in absolute terms.
+- [[Gordon et al 2019 - RCT ITT and ATT Lifts for 15 Studies]] — full Tables 3-4 with CIs

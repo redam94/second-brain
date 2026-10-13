@@ -20,6 +20,7 @@ used_by:
   - "[[Model Selection and Overfitting]]"
   - "[[Stacking and Predictive Model Averaging]]"
   - "[[LOO Model Checking and Comparison - Roaches]]"
+  - "[[Breiman 2001 - Statistical Modeling The Two Cultures - Overview]]"
 aliases:
   - "elpd"
   - "elpd_loo"
@@ -286,3 +287,5 @@ package using **fast PSIS-LOO** (Vehtari, Gelman, and Gabry 2017).
 - [[Overfitting and Information Criteria]] — BDA3 background on elpd, WAIC, and LOO
 - [[Model Selection and Overfitting]] — the double-dipping risk in selecting on elpd
 - [[LOO Model Checking and Comparison - Roaches]] — the roaches example in full
+- [[Breiman 2001 - Statistical Modeling The Two Cultures - Overview]] — prediction-first stance on model assessment
+- [[MMM Model Selection and Application]] — complexity penalty decides among near-equal likelihoods

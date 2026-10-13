@@ -15,6 +15,7 @@ depends_on:
   - "[[Matching Methods and Distance Measures]]"
 used_by:
   - "[[Propensity Score Matching - Overview]]"
+  - "[[Gordon et al 2019 - Propensity Estimation, Bootstrap Inference and Balance Diagnostics]]"
 aliases:
   - Balance Diagnostics
   - Standardized Mean Difference
@@ -77,3 +78,4 @@ Stuart and Green (2008), 1:1 nearest-neighbor on the propensity score: the prope
 - [[Common Support and Overlap]]
 - [[Matching Methods and Distance Measures]]
 - [[_Index]]
+- [[Gordon et al 2019 - Propensity Estimation, Bootstrap Inference and Balance Diagnostics]] — balance achieved yet estimates badly biased

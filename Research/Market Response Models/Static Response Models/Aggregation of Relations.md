@@ -9,7 +9,7 @@ tags:
   - topic/aggregation
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-10-13
 source: "Hanssens, Parsons & Schultz (2001) Ch. 3"
 chapter: "3"
 status: complete
@@ -21,6 +21,7 @@ depends_on:
 used_by:
   - "[[Design of Static Response Models]]"
   - "[[Carryover Effects and Distributed Lags]]"
+  - "[[Granger 2003 - Forecasting, Decision Science and Aggregation]]"
 ---
 
 # Aggregation of Relations
@@ -89,3 +90,7 @@ See [[Carryover Effects and Distributed Lags]] for temporal aggregation correcti
 - Temporal aggregation bias: [[Carryover Effects and Distributed Lags]]
 - Hierarchical models for heterogeneity: [[Hierarchical Linear Models]]
 - Random coefficients: [[Functional Forms in Marketing]]
+
+## See Also
+
+- [[Granger 2003 - Forecasting, Decision Science and Aggregation]] — Granger's aggregation conjecture

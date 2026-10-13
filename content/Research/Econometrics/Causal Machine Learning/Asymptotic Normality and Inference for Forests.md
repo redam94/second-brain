@@ -19,6 +19,7 @@ depends_on:
 used_by:
   - "[[Causal Machine Learning - Overview]]"
   - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
+  - "[[Strobl 2007 - Bootstrap-Induced Association]]"
 aliases:
   - Forest Central Limit Theorem
   - Infinitesimal Jackknife for Random Forests
@@ -144,3 +145,4 @@ ci = tau_b.mean() + np.array([-1.96, 1.96]) * np.sqrt(V_IJ)
 - [[Permutation Tests and Exact Inference]] — resampling for exact tests vs. half-sampling for variance estimation.
 - [[Power Analysis and Sample Size]] — with $\sigma_n^2\approx s/n$, detecting heterogeneity requires far larger samples than detecting an average effect.
 - Source for the GRF results: Athey Tibshirani Wager 2019 - Generalized Random Forests.
+- [[Strobl 2007 - Bootstrap-Induced Association]] — importance-focused reason to grow trees on subsamples without replacement

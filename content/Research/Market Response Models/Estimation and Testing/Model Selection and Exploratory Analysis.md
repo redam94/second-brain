@@ -9,7 +9,7 @@ tags:
   - topic/model-comparison
   - source/hanssens-parsons-schultz-2001
 date_ingested: 2026-04-11
-date_updated: 2026-07-27
+date_updated: 2026-10-13
 folder: "Market Response Models/Estimation and Testing"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 5"
 chapter: "5"
@@ -113,3 +113,5 @@ The more researchers test, the more likely a spuriously good-fitting model will 
 - [[Bayesian Workflow - Overview]] — information criteria (WAIC/LOO) appear at the model-comparison step of the Bayesian workflow
 - [[MMM Model Selection and Application]] — applies these model selection tools in the Bayesian MMM context (geometric vs. delayed adstock, saturation specification)
 - [[Researcher Degrees of Freedom]] — the multiple-comparison risk when searching over variable sets, functional forms, and lag structures simultaneously
+- [[Strobl et al 2008 - Conditional Variable Importance - Overview]] — correlated drivers inflate marginal tree-based importance
+- [[Gelman Loken 2013 - Garden of Forking Paths - Overview]] — data-contingent specification search is procedure #3

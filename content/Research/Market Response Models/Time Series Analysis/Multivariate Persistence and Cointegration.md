@@ -13,7 +13,7 @@ tags:
   - topic/cointegration
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-10-13
 source: "Hanssens, Parsons & Schultz (2001) Ch. 7"
 chapter: "7"
 status: complete
@@ -27,6 +27,7 @@ used_by:
   - "[[Empirical Causal Ordering]]"
   - "[[Price and Distribution Effects]]"
   - "[[Optimal Marketing Decisions and Forecasting]]"
+  - "[[Granger 2003 - Cointegration and the Error-Correction Representation]]"
 ---
 
 # Multivariate Persistence and Cointegration
@@ -162,3 +163,7 @@ The VAR captures all six simultaneously without imposing causal structure a prio
 - Causal ordering: [[Empirical Causal Ordering]]
 - Cointegration in econometrics: [[Differences-in-Differences]]
 - Bayesian structural time series: [[Bayesian Structural Time-Series Model]]
+
+## See Also
+
+- [[Granger 2003 - Cointegration and the Error-Correction Representation]] — Granger's own account of cointegration and the representation theorem

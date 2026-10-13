@@ -22,6 +22,7 @@ used_by:
   - "[[Probabilistic Linear Solvers - Algorithmic Scaffold]]"
   - "[[First- and Second-Order Optimisation Methods]]"
   - "[[ODE Filters and Smoothers]]"
+  - "[[Janzing 2020 - KernelSHAP vs SHAPR Experiments]]"
 aliases:
   - Gaussian Algebra
   - Normal Distribution
@@ -123,3 +124,4 @@ Sum rule ↔ marginalisation ↔ selecting sub-blocks; product rule ↔ conditio
 - [[Gaussian Process Regression]] — the infinite-dimensional generalisation.
 - [[Bayesian Filtering and Smoothing]] — Gaussian conditioning applied recursively in time.
 - [[Hierarchical Inference in Gaussian Models]] — inference over the Gaussian's own parameters.
+- [[Janzing 2020 - KernelSHAP vs SHAPR Experiments]] — Gaussian conditional formula used for exact conditional Shapley values

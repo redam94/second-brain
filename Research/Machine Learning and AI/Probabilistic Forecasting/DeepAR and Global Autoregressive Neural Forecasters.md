@@ -23,6 +23,7 @@ used_by:
   - "[[Forecast Evaluation and Backtesting]]"
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
   - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
+  - "[[Bergmeir Hyndman Koo 2018 - CV for Time Series - Overview]]"
 aliases:
   - DeepAR
   - Autoregressive Recurrent Network Forecasting
@@ -150,3 +151,4 @@ q90_span = np.quantile(fcst.samples[:, 3:15].sum(axis=1), 0.9)
 - [[Bayesian Structural Time-Series Model]] — a local alternative with explicit trend/seasonal/regression components.
 - [[Transfer Function Model]] — classical treatment of covariates with dynamic (lagged) effects; DeepAR's covariates must be known in the prediction range.
 - [[Optimal Marketing Decisions and Forecasting]] — forecasts as inputs to planning decisions.
+- [[Bergmeir Hyndman Koo 2018 - CV for Time Series - Overview]] — purely autoregressive forecasters justify K-fold CV

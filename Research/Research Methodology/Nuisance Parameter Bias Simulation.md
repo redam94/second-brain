@@ -21,6 +21,7 @@ depends_on:
 used_by:
   - "[[Table 2 Fallacy]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Morris et al 2019 - ADEMP Planning of Aims, DGMs, Estimands and Methods]]"
 aliases:
   - Table 2 simulation
   - nuisance parameter bias
@@ -228,3 +229,4 @@ Error rates by parameter:
 
 - [[Simulation-Based Calibration - Overview]] — Related technique for validating that a Bayesian model recovers true parameter values under its own DGP
 - [[Omitted Variables Bias]] — What happens when the confounder set is *incomplete* (different failure mode from Table 2 Fallacy)
+- [[Morris et al 2019 - ADEMP Planning of Aims, DGMs, Estimands and Methods]] — ADEMP as the checklist for describing the simulation

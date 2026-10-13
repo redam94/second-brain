@@ -10,7 +10,7 @@ tags:
   - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
-date_updated: 2026-06-15
+date_updated: 2026-10-13
 folder: "Bayesian Statistics/Regression Models"
 aliases:
   - "Waffle House divorce"
@@ -30,6 +30,9 @@ used_by:
   - "[[Confirmatory Factor Analysis and SEM]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Strobl 2008 - Marginal vs Conditional Importance and Spurious Correlation]]"
+  - "[[Dillon et al - SHAP Plots vs True Causal Effects]]"
+  - "[[Granger 2003 - Spurious Regression from Yule to Granger-Newbold]]"
 ---
 
 # Spurious Association and Confounds
@@ -90,3 +93,6 @@ When two predictors are highly correlated, their individual effects become unide
 - [[Data Collection Models]] — ignorability is the formal condition under which controlling for confounds gives a causal interpretation
 - [[Directed Acyclic Graphs]] — DAG framework for identifying forks, pipes, and colliders that this chapter reasons about informally
 - [[Regression and the CEF]] — MHE's econometric treatment of multivariate regression as CEF approximation, the frequentist parallel to Statistical Rethinking's confound analysis
+- [[Strobl 2008 - Marginal vs Conditional Importance and Spurious Correlation]] — ML-importance version of spurious association via a common cause
+- [[Dillon et al - SHAP Plots vs True Causal Effects]] — spurious and post-treatment associations shown through ML explanations
+- [[Granger 2003 - Spurious Regression from Yule to Granger-Newbold]] — spurious association without any common cause

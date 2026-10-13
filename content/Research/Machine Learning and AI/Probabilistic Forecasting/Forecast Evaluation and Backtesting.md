@@ -26,6 +26,12 @@ used_by:
   - "[[Q - Four Meanings of Calibration]]"
   - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
+  - "[[Granger 2003 - Forecasting, Decision Science and Aggregation]]"
+  - "[[Bergmeir Hyndman Koo 2018 - CV for Time Series - Overview]]"
+  - "[[Out-of-Sample Validation for Time-Series Models]]"
+  - "[[Morris et al 2019 - Performance Measures and Monte Carlo Standard Errors]]"
+  - "[[SR 11-7 - Outcomes Analysis and Back-Testing]]"
+  - "[[NIST AI RMF - MEASURE Function]]"
 aliases:
   - Backtesting
   - Rolling-Origin Evaluation
@@ -173,3 +179,9 @@ def agg_relative(scores, baseline):              # dict model -> array over data
 - [[Optimal Marketing Decisions and Forecasting]] — forecast accuracy in a decision context; the right $\rho$ in $\rho$-risk is set by the cost ratio of over- vs under-forecasting.
 - [[Quantile Regression]] — direct estimation of the quantiles being scored.
 - [[Probabilistic Forecasting - Overview]] — cluster entry point.
+- [[Granger 2003 - Forecasting, Decision Science and Aggregation]] — Granger's forecasting stages
+- [[Bergmeir Hyndman Koo 2018 - CV for Time Series - Overview]] — when random K-fold over lag-embedded rows is valid
+- [[Out-of-Sample Validation for Time-Series Models]] — nested rolling origin, blocked CV with gaps, null baselines
+- [[Morris et al 2019 - Performance Measures and Monte Carlo Standard Errors]] — interval coverage in a backtest needs a Monte Carlo SE
+- [[SR 11-7 - Outcomes Analysis and Back-Testing]] — regulatory definition of back-testing
+- [[NIST AI RMF - MEASURE Function]] — performance under deployment-like conditions

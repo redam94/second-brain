@@ -22,6 +22,10 @@ used_by:
   - "[[Forecast Evaluation and Backtesting]]"
   - "[[Q - Exchangeability and What Replaces It When It Fails]]"
   - "[[Q - Four Meanings of Calibration]]"
+  - "[[Stability Selection Simulation Study - Designs A-G and Results]]"
+  - "[[Breiman 2001 - Critique of Data Models - Goodness of Fit, Multiplicity and Predictive Accuracy]]"
+  - "[[Bergmeir 2018 - Theorem 1 Validity of K-Fold CV for Autoregressive Models]]"
+  - "[[Model Validation and Interpretability - Overview]]"
 aliases:
   - "LOO-CV"
   - "LOO-PIT"
@@ -146,3 +150,7 @@ aliases:
 - [[Overfitting and Information Criteria]] — BDA3 background on WAIC and LOO
 - [[Diagnosing Variational Inference (PSIS k-hat and VSBC)]] — same PSIS machinery and 0.7 k-hat threshold
 - [[Forecast Evaluation and Backtesting]] — time-ordered counterpart to LOO
+- [[Stability Selection Simulation Study - Designs A-G and Results]] — CV-tuned selection vs stability selection on false selections and power
+- [[Breiman 2001 - Critique of Data Models - Goodness of Fit, Multiplicity and Predictive Accuracy]] — predictive accuracy over goodness-of-fit tests
+- [[Bergmeir 2018 - Theorem 1 Validity of K-Fold CV for Autoregressive Models]] — dependent-data analogue of LOO-CV
+- [[Model Validation and Interpretability - Overview]] — forward-in-time validation and when shuffled CV fails

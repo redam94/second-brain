@@ -20,6 +20,13 @@ used_by:
   - "[[Statistical and Scientific Inference]]"
   - "[[The Replication Crisis and Multiple Levels of Variation]]"
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
+  - "[[Model Class Reliance - Outer and Inner Finite-Sample Bounds]]"
+  - "[[Model Class Reliance - Appendix B Proofs of the Finite-Sample Bounds]]"
+  - "[[Meinshausen Buhlmann 2010 - Stability Selection - Overview]]"
+  - "[[Manheim Garrabrant - Regressional Goodhart and Tails Coming Apart]]"
+  - "[[Riley et al 2020 - Sample Size for Prediction Models - Overview]]"
+  - "[[Bergmeir 2018 - Conclusions, Decision Rule and Scope Limits]]"
+  - "[[Model Validation and Interpretability - Overview]]"
 aliases:
   - "Double dipping"
   - "Post-selection inference"
@@ -188,3 +195,10 @@ aliases:
 - [[Stacking and Predictive Model Averaging]] — what to do when several models are similarly good
 - [[Forking Paths and Bayesian Approaches]] — the multiple-comparisons framing of the same problem
 - [[The Replication Crisis and Multiple Levels of Variation]] — the position this section argues against
+- [[Model Class Reliance - Outer and Inner Finite-Sample Bounds]] — covering-number control of overfitting inside a Rashomon set
+- [[Model Class Reliance - Appendix B Proofs of the Finite-Sample Bounds]] — mixture-cover proof of why an in-sample loss band does not overfit
+- [[Meinshausen Buhlmann 2010 - Stability Selection - Overview]] — CV-tuned Lasso over-selects; selection-oriented alternative
+- [[Manheim Garrabrant - Regressional Goodhart and Tails Coming Apart]] — optimism of the best-of-K in-sample score
+- [[Riley et al 2020 - Sample Size for Prediction Models - Overview]] — closed-form criteria for the parameters a dataset can support
+- [[Bergmeir 2018 - Conclusions, Decision Rule and Scope Limits]] — underfitting, not overfitting, breaks CV validity
+- [[Model Validation and Interpretability - Overview]] — best-of-many optimism and nested outer windows

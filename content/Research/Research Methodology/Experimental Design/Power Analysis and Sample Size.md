@@ -30,6 +30,10 @@ used_by:
   - "[[CUPED and Regression-Adjusted Variance Reduction]]"
   - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
   - "[[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise]]"
+  - "[[Riley et al 2020 - Sample Size for Prediction Models - Overview]]"
+  - "[[Ioannidis 2005 - Six Corollaries and the Proteus Phenomenon]]"
+  - "[[Morris et al 2019 - Estimates Data Checks, n_sim Choice and Analysis Remarks]]"
+  - "[[Lewis Rao 2015 - Table III Power and Experiment Size Multipliers]]"
 ---
 
 # Power Analysis and Sample Size
@@ -116,3 +120,7 @@ In Bayesian analysis, the concept of "power" is less central — instead, one ca
 - [[Neural Scaling Laws]] — design-stage extrapolation of loss vs scale
 - [[CUPED and Regression-Adjusted Variance Reduction]] — pre-period covariates shrink the variance in sample-size formulas by (1 - rho^2)
 - [[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise]] — power arithmetic when the effect is tiny relative to sales variance
+- [[Riley et al 2020 - Sample Size for Prediction Models - Overview]] — sample-size planning for prediction models
+- [[Ioannidis 2005 - Six Corollaries and the Proteus Phenomenon]] — low power lowers the probability that significant findings are true
+- [[Morris et al 2019 - Estimates Data Checks, n_sim Choice and Analysis Remarks]] — binomial-variance inversion for the number of repetitions
+- [[Lewis Rao 2015 - Table III Power and Experiment Size Multipliers]] — inverse-square experiment multiplier

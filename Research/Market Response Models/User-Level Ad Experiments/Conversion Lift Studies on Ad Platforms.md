@@ -23,6 +23,7 @@ depends_on:
 used_by:
   - "[[Experimental Benchmarks for Observational Ad Measurement]]"
   - "[[User-Level vs Geo-Level Experiments - When to Use Which]]"
+  - "[[Gordon et al 2019 - Facebook Experiment Design and Exposure Endogeneity]]"
 aliases:
   - Conversion Lift
   - Facebook Conversion Lift
@@ -139,3 +140,4 @@ Reading checklist:
 - [[Geo-Experiment Methodology - Overview]] — the cross-platform, offline-capable complement.
 - [[Customer Lifetime Value - Overview]] — valuing incremental conversions beyond the first purchase.
 - [[Activity Bias in Advertising]] — the selection that makes platform-reported exposed-vs-unexposed numbers unusable.
+- [[Gordon et al 2019 - Facebook Experiment Design and Exposure Endogeneity]] — runner-up control-ad algorithm and endogeneity mechanisms

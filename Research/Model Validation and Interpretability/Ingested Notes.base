@@ -1,0 +1,42 @@
+filters:
+  and:
+    - file.inFolder("Research/Model Validation and Interpretability")
+    - '!file.hasTag("type/index")'
+    - file.ext == "md"
+    - '!file.inFolder("Research/Model Validation and Interpretability/raw")'
+properties:
+  doc_type:
+    displayName: Type
+  source:
+    displayName: Source
+  source_location:
+    displayName: Location
+  date_ingested:
+    displayName: Ingested
+  status:
+    displayName: Status
+  file.folder:
+    displayName: Folder
+views:
+  - type: table
+    name: All Model Validation Notes
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - doc_type
+      - source
+      - source_location
+      - date_ingested
+      - status
+  - type: table
+    name: By Type
+    groupBy:
+      property: doc_type
+      direction: ASC
+    order:
+      - file.name
+      - source
+      - source_location
+      - file.folder

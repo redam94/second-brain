@@ -18,6 +18,7 @@ used_by:
   - "[[Horseshoe and Regularized Horseshoe Priors]]"
   - "[[Choosing the Global Scale and Effective Nonzeros]]"
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Riley 2020 - Shrinkage and Optimism Criteria for Overfitting]]"
 aliases:
   - Global-Local Priors
   - Scale Mixture of Gaussians
@@ -78,3 +79,4 @@ Changing $\tau$ (equivalently $a_j$) tilts the U: small $\tau$ (e.g. $a_j=0.1$) 
 - [[Horseshoe and Regularized Horseshoe Priors]] — overview hub
 - [[Spike-and-Slab Prior for Covariate Selection]] — discrete-mixture alternative
 - [[Hierarchical Linear Models]] — global $\tau$ as a shared hyperparameter
+- [[Riley 2020 - Shrinkage and Optimism Criteria for Overfitting]] — how much shrinkage a dataset can support

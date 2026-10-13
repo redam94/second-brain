@@ -18,6 +18,7 @@ used_by:
   - "[[Empirical Bayes Interpretation of Shrinkage]]"
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Manheim Garrabrant - Regressional Goodhart and Tails Coming Apart]]"
 aliases:
   - James-Stein
   - James-Stein Estimator
@@ -125,3 +126,4 @@ With $A=1$ this shrinks the MLE **halfway** toward $\mathbf{0}$. But if $A$ is u
 - [[Multiple Comparisons - Bayesian Perspective]]
 - [[Overfitting and Information Criteria]]
 - [[_Index]]
+- [[Manheim Garrabrant - Regressional Goodhart and Tails Coming Apart]] — shrinkage is the remedy for regressional Goodhart

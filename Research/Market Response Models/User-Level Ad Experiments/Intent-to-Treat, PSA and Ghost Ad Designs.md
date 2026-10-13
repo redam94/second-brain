@@ -26,6 +26,8 @@ used_by:
   - "[[From ITT to Treatment-on-the-Treated in Ad Experiments]]"
   - "[[Conversion Lift Studies on Ad Platforms]]"
   - "[[User-Level vs Geo-Level Experiments - When to Use Which]]"
+  - "[[Blake 2015 - Non-Brand DMA Geo Experiment and DiD Estimates]]"
+  - "[[Blake Nosko Tadelis 2015 - Paid Search Effectiveness - Overview]]"
 aliases:
   - PSA Tests
   - Placebo Ad Experiments
@@ -144,3 +146,5 @@ print(round(30500 * (p / 0.7) * 2))   # ~4,900 dollars
 - [[Geo-Experiment Design and Power Analysis]] — the ITT design with regions as units.
 - [[Instrumental Variables and Principal Stratification]] — "counterfactual treated" are the compliers stratum.
 - [[User-Level vs Geo-Level Experiments - When to Use Which]] — design selection in practice.
+- [[Blake 2015 - Non-Brand DMA Geo Experiment and DiD Estimates]] — ITT search-blackout design
+- [[Blake Nosko Tadelis 2015 - Paid Search Effectiveness - Overview]] — Blake, Nosko & Tadelis as an ITT search-blackout design

@@ -11,7 +11,7 @@ tags:
 source: "[[raw/multiple2f.pdf]]"
 source_location: "Sec. 3.2, pp. 8-12"
 date_ingested: 2026-04-09
-date_updated: 2026-04-13
+date_updated: 2026-10-13
 folder: "Bayesian Statistics/Inference Fundamentals"
 doc_type: concept
 depends_on:
@@ -29,6 +29,7 @@ used_by:
   - "[[Q - Exchangeability and What Replaces It When It Fails]]"
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
+  - "[[Gelman Loken 2013 - Three Reactions and the Bayesian Reading of Bem's 53 Percent]]"
 aliases:
   - "Shrinkage as multiple comparisons correction"
   - "Partial pooling z-score reduction"
@@ -181,3 +182,4 @@ Functions in the `arm` package can then sample from the posterior distribution f
 - [[Single-Parameter Models]] — building block: precision-weighted averaging
 - [[James-Stein Estimator]] — the frequentist shrinkage estimator this note cites (Efron & Morris)
 - [[Empirical Bayes - Overview]] — empirical-Bayes view of shrinkage and its FDR connections
+- [[Gelman Loken 2013 - Three Reactions and the Bayesian Reading of Bem's 53 Percent]] — condition on all comparisons with hierarchical models

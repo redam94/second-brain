@@ -8,7 +8,7 @@ tags:
   - doc/textbook
 source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
-date_updated: 2026-06-15
+date_updated: 2026-10-13
 folder: "Bayesian Statistics/Workflow"
 aliases:
   - "Bayesian software engineering"
@@ -22,6 +22,8 @@ depends_on:
   - "[[Evaluating Fitted Models]]"
 used_by:
   - "[[Iterative Model Improvement]]"
+  - "[[SR 11-7 - Ongoing Monitoring, Process Verification, Overrides and Benchmarking]]"
+  - "[[NIST AI RMF - How AI Risks Differ and Human-AI Interaction]]"
 expanded_by:
   - "[[Statistical Modeling as Software Development]]"
   - "[[Software Assisted Workflow]]"
@@ -101,3 +103,5 @@ When fitting a series of similar models, keep model code modular so that fixing 
 - [[Choosing and Building Models]] — modular model construction that maps to the modularity principles here
 - [[Evaluating Fitted Models]] — posterior predictive checks as integration tests
 - [[Garden of Forking Paths]] — version control and pre-registration are the practical defenses against forking paths
+- [[SR 11-7 - Ongoing Monitoring, Process Verification, Overrides and Benchmarking]] — process verification and change control
+- [[NIST AI RMF - How AI Risks Differ and Human-AI Interaction]] — underdeveloped testing standards

@@ -29,6 +29,7 @@ used_by:
   - "[[Local vs Global Forecasting Models]]"
   - "[[Forecast Evaluation and Backtesting]]"
   - "[[Q - Four Meanings of Calibration]]"
+  - "[[Out-of-Sample Validation for Time-Series Models]]"
 aliases:
   - Probabilistic Forecasting
   - Modern ML Forecasting
@@ -135,3 +136,4 @@ def crps_samples(samples, y):          # samples: (n,), y: scalar
 - [[Quantile Regression]] — the pinball loss as an estimation criterion.
 - [[Hilbert Space Gaussian Processes]] and [[Model Building - Time-Series Decomposition for Birthdays]] — additive GP decomposition of a time series; the same kernel algebra powers Chronos's KernelSynth generator.
 - [[Overfitting and Information Criteria]] — out-of-sample log score as the target of WAIC/LOO.
+- [[Out-of-Sample Validation for Time-Series Models]] — evaluation-scheme design for probabilistic forecasters

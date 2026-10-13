@@ -21,6 +21,7 @@ used_by:
   - "[[Evaluating LLM Systems - Benchmarks, Hallucination and Human Preference]]"
   - "[[LLM Reasoning, Retrieval and Agents - Overview]]"
   - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Manheim Garrabrant - Adversarial Goodhart, Campbell's Law and Cobra Effects]]"
 aliases:
   - Reward Model
   - Preference Model
@@ -112,3 +113,4 @@ def rm_loss_one_prompt(rm, prompt, completions_ranked_best_first):
 - [[Evaluating LLM Systems - Benchmarks, Hallucination and Human Preference]] — human preference win rates as the primary metric, and the RM as an automated proxy.
 - [[Bernoulli Bandit and Thompson Sampling Algorithm]] — binary-feedback learning where the unknown is a success probability per arm rather than a utility function over text.
 - [[Multiple Testing Corrections]] — relevant when many model variants are compared on the same preference data.
+- [[Manheim Garrabrant - Adversarial Goodhart, Campbell's Law and Cobra Effects]] — reward hacking as adversarial Goodhart

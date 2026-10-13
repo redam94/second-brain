@@ -16,6 +16,7 @@ used_by:
   - "[[Variance-Based Sensitivity and Sobol Indices]]"
   - "[[Morris Elementary Effects Screening]]"
   - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[SR 11-7 - Conceptual Soundness, Sensitivity Analysis and Stress Testing]]"
 aliases:
   - OAT
   - One-at-a-time Sensitivity
@@ -69,3 +70,4 @@ ABM output $Y = a\,b$ (pure interaction, no main effects) with $a,b \in [-1,1]$,
 - [[Uncertainty Quantification for ABM Calibration]]; [[History Matching for ABMs]]; [[Approximate Bayesian Computation for ABMs]].
 - Saltelli et al., *Sensitivity Analysis in Practice* (2004).
 - Li et al. (2023), "Comparison of local and global sensitivity analysis methods."
+- [[SR 11-7 - Conceptual Soundness, Sensitivity Analysis and Stress Testing]] — varying inputs jointly to detect interactions

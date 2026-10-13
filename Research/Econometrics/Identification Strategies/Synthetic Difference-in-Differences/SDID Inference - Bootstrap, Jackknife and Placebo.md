@@ -22,6 +22,7 @@ used_by:
   - "[[SDID for Geo Experiments and Marketing Panels]]"
   - "[[Q - Comparing Geo-Test Estimators from TBR to Synthetic DiD]]"
   - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Strobl 2007 - Bootstrap-Induced Association]]"
 aliases:
   - SDID standard errors
   - SDID variance estimation
@@ -149,3 +150,4 @@ def sdid_jackknife_var(Y, N0, T0, w, l):
 - [[SDID vs DiD vs Synthetic Control]]
 - [[Power Analysis and Sample Size]]
 - [[Honest DiD - Sensitivity to Parallel Trends Violations]]
+- [[Strobl 2007 - Bootstrap-Induced Association]] — another case where the bootstrap fails and permutation alternatives are preferred

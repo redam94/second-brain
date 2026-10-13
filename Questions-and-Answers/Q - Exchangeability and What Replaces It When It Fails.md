@@ -202,3 +202,7 @@ When the randomization (or sampling) unit is a group, only permutations of whole
 - For a matched-pair geo experiment, how does the exact within-pair FRT interval compare with the TBR posterior and the SDID placebo interval on the same data?
 - When geos differ by an order of magnitude in size, which group-level predictors make residual geo effects plausibly exchangeable, and how would one check it?
 - Can the switchback FRT be extended to geometric adstock, where $m$-carryover holds only approximately?
+
+## See Also
+
+- [[Bergmeir 2018 - Theorem 1 Validity of K-Fold CV for Autoregressive Models]] — martingale-difference errors replace exchangeability

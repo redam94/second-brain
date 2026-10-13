@@ -29,6 +29,11 @@ used_by:
   - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
   - "[[User-Level Ad Experiments - Overview]]"
   - "[[Identity Fragmentation and the Privacy-Era Limits of User-Level Tests]]"
+  - "[[AMSS Paid Search Module (Queries, Auction, Organic vs Paid)]]"
+  - "[[Chan Perry 2017 - Selection Bias in MMM (Ad Targeting, Seasonality, Funnels, Endogenous Controls)]]"
+  - "[[Blake 2015 - SEM Mechanics and the Endogeneity of Click-Priced Spend]]"
+  - "[[Gordon et al 2019 - Facebook Experiment Design and Exposure Endogeneity]]"
+  - "[[Lewis Rao 2015 - Impact-to-SD Ratio Derivation and Calibrated Campaign]]"
 ---
 
 # Activity Bias in Advertising
@@ -77,3 +82,8 @@ used_by:
 - [[Sample Ratio Mismatch and Trustworthiness Checks]] — differential observation by arm
 - [[Differences-in-Differences]] — DiD on pre/post exposure panels is a common observational ad-measurement design and inherits activity bias when exposure timing tracks browsing activity
 - [[Experimental Benchmarks for Observational Ad Measurement]] — the large-scale sequel: how far PSM, regression and DML land from RCT answers at Facebook
+- [[AMSS Paid Search Module (Queries, Auction, Organic vs Paid)]] — search spend follows latent demand
+- [[Chan Perry 2017 - Selection Bias in MMM (Ad Targeting, Seasonality, Funnels, Endogenous Controls)]] — ad targeting absorbs latent-demand credit
+- [[Blake 2015 - SEM Mechanics and the Endogeneity of Click-Priced Spend]] — click-priced spend endogeneity as the search analogue of activity bias
+- [[Gordon et al 2019 - Facebook Experiment Design and Exposure Endogeneity]] — user-induced endogeneity
+- [[Lewis Rao 2015 - Impact-to-SD Ratio Derivation and Calibrated Campaign]] — browsing-shopping correlation as a bias source

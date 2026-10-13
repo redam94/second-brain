@@ -23,6 +23,7 @@ used_by:
   - "[[R-Learner and Orthogonal CATE Estimation]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
   - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
+  - "[[Dillon et al - Observed Confounding and Double ML for Ad Spend]]"
 aliases:
   - Neyman Orthogonal Score
   - Orthogonal Moment Condition
@@ -134,3 +135,4 @@ Two caveats the paper states explicitly: orthogonality is "a joint property of t
 - [[Instrumental Variables]] — optimal-instrument estimation is the prototypical case with $\lambda_N'=0$.
 - [[Plausible GMM - Overview]] — another relaxation of exact moment conditions.
 - [[The Experimental Ideal]] — with a known randomization probability, orthogonal scores need only consistent outcome models.
+- [[Dillon et al - Observed Confounding and Double ML for Ad Spend]] — applied DML example with a null effect

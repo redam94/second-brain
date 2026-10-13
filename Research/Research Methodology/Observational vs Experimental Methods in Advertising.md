@@ -25,6 +25,8 @@ used_by:
   - "[[Bayesian Difference in Differences]]"
   - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
   - "[[User-Level Ad Experiments - Overview]]"
+  - "[[Blake 2015 - OLS vs IV Spend Elasticities and the Endogeneity Gap]]"
+  - "[[Gordon et al 2019 - Facebook RCTs vs Observational Ad Measurement - Overview]]"
 ---
 
 # Observational vs Experimental Methods in Advertising
@@ -75,3 +77,5 @@ This paper provides a vivid illustration of concepts from [[Regression and the C
 - [[Bayesian Difference in Differences]] — Bayesian counterfactual framing of DiD that could be applied to advertising holdout experiments
 - [[Type S and Type M Errors]] — the 1198% observational estimate vs 5.4% RCT is a textbook Type M error; the exaggeration ratio of ≈220× illustrates the scale of bias that can arise from violated identification assumptions
 - [[User-Level Ad Experiments - Overview]] — how the experimental alternative is actually designed and analysed
+- [[Blake 2015 - OLS vs IV Spend Elasticities and the Endogeneity Gap]] — elasticity 0.885 vs 0.002
+- [[Gordon et al 2019 - Facebook RCTs vs Observational Ad Measurement - Overview]] — within-study comparison at Facebook scale

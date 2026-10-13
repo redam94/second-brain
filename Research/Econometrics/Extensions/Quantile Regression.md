@@ -25,6 +25,7 @@ used_by:
   - "[[Conformalized Quantile Regression]]"
   - "[[Conformal Prediction - Overview]]"
   - "[[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)]]"
+  - "[[Breiman 2001 - Discussion by Cox, Efron, Hoadley and Parzen and Rejoinder]]"
 ---
 
 # Quantile Regression
@@ -70,3 +71,4 @@ Just as regression approximates the CEF, quantile regression approximates the co
 - [[Conformalized Quantile Regression]] — gives quantile regression a finite-sample predictive coverage guarantee
 - [[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)]] — pinball loss is a proper score for quantiles
 - [[Generalized Random Forests - Local Moment Equations]] — nonparametric quantile forests
+- [[Breiman 2001 - Discussion by Cox, Efron, Hoadley and Parzen and Rejoinder]] — Parzen's conditional quantile culture

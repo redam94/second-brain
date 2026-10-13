@@ -19,6 +19,7 @@ depends_on:
 used_by:
   - "[[Bayesian and Hierarchical Extensions of CLV Models]]"
   - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Blake 2015 - Consumer and Product Heterogeneity in Paid Search Response]]"
 aliases:
   - RFM and CLV
   - Iso-Value Curves
@@ -146,3 +147,4 @@ delta = np.log(1.15) / 52          # 15% annual, weekly data
 - [[Metalearners for CATE]] — RFM-based *targeting* needs incremental effects, not just value; CLV ranks customers by worth, CATE by responsiveness.
 - [[Bayesian and Hierarchical Extensions of CLV Models]] — posterior uncertainty on CLV, covariates, and the ML alternative for brand-new customers with no RFM history.
 - [[Survival Analysis]] — continuous-time discounting of a survivor function, $\int v(t)S(t)d(t)\,dt$, is the general CLV definition the appendix starts from.
+- [[Blake 2015 - Consumer and Product Heterogeneity in Paid Search Response]] — least active customers respond most

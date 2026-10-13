@@ -206,3 +206,7 @@ The bias-term row is the fix [[Relating a Model to Subject-Matter Assumptions]] 
 - What prior scale for the observational bias $b_m$ is defensible per channel type (search vs. TV)?
 - Given the current posterior, which spend level for the next geo test most reduces uncertainty about $\mathcal K_m$?
 - How fast should an experiment's weight decay, and can that be estimated from repeated tests on one channel?
+
+## See Also
+
+- [[Blake 2015 - ROI Derivation from Experimental Log-Sales Effects]] — geo-test log-sales effect to ROI prior

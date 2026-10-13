@@ -22,6 +22,7 @@ used_by:
   - "[[Time-Series Foundation Models (Chronos)]]"
   - "[[Q - Four Meanings of Calibration]]"
   - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Out-of-Sample Validation for Time-Series Models]]"
 aliases:
   - Proper Scoring Rules
   - Strictly Proper Scoring Rules
@@ -188,3 +189,4 @@ def interval_score(l, u, x, alpha):
 - [[Posterior Predictive Checking]] — graphical calibration checks for Bayesian predictive distributions.
 - [[Simulation-Based Calibration - Overview]] — rank/PIT-uniformity ideas applied to posterior computation rather than forecasts.
 - [[Counterfactual Impact Estimation]] — pre-period CRPS/interval score as a check on the counterfactual forecast's credibility.
+- [[Out-of-Sample Validation for Time-Series Models]] — rolling-origin backtest scored with CRPS

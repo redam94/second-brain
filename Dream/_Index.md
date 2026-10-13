@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-09-18
+date_updated: 2026-10-13
 ---
 
 # Dream: Research Gaps
@@ -986,7 +986,7 @@ The vault covers aggregate attribution (MMM) and experiments (geo, A/B) but not 
 ---
 
 ### 61. ML Interpretability (SHAP, Partial Dependence, Feature Attribution)
-**Status:** 🌱 new
+**Status:** 🌿 partially covered (2026-10-13). The critiques and causal reading are now in [[Explanations, Causality and Proxies/_Index|Explanations, Causality and Proxies]] (Kumar et al. 2020, Janzing et al. 2020, Dillon et al.) and [[Feature Importance and Stability/_Index|Feature Importance and Stability]] (Strobl, Hooker, Fisher, Meinshausen). Lundberg & Lee (2017) itself and Molnar's book are still not ingested.
 
 **Why it's a gap:**
 With ML models now in the vault (forests, DeepAR, transformers), there is no note on explaining them, nor on the key caveat that feature attributions are not causal effects ([[Table 2 Fallacy]], [[Logic of Regression Adjustment]]).
@@ -1262,6 +1262,118 @@ Follow-ons from the [[User-Level Ad Experiments - Overview]] cluster: bid-level 
 
 ---
 
+### 79. Supplements, Appendices and Published Discussions of Ingested Validation Sources
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The 2026-10-13 full-capture run found material that lives outside the PDFs it ingested:
+- Riley et al. (2020): supplements S1-S6, which hold the continuous-outcome derivations behind the 206 and 68 figures.
+- Lewis & Rao (2015): Online Appendix, with the formal Super Bowl impossibility theorem and the targeting derivation.
+- Blake et al. (2015): Econometrica online supplement (Tables A.II-A.V).
+- Meinshausen & Bühlmann (2010): the JRSS-B read-paper discussion and the authors' reply (pp. 448-473).
+- Strobl et al. (2007): Additional file 1 (R code).
+
+The notes flag several results as unverifiable without these.
+
+**Adjacent notes:** [[Riley 2020 - Shrinkage and Optimism Criteria for Overfitting]], [[Lewis Rao 2015 - Robustness, Scale, Targeting and Measurement Technology]], [[Blake 2015 - Non-Brand DMA Geo Experiment and DiD Estimates]], [[Stability Selection - Discussion, Limitations and Practice]]
+
+**Suggested sources / search terms:**
+- Riley et al. (2019), "Minimum sample size for developing a multivariable prediction model", Parts I (continuous) and II (binary and time-to-event), *Statistics in Medicine* 38
+- Lewis & Rao (2015) QJE Online Appendix; Blake, Nosko & Tadelis (2015) *Econometrica* supplementary material
+- Discussion of Meinshausen & Bühlmann (2010), *JRSS-B* 72(4): 448-473
+
+---
+
+### 80. Primary Sources on Spurious Regression and Cointegration
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Granger 2003 - Spurious Regression from Yule to Granger-Newbold]] describes Yule's card experiment, the Granger-Newbold rejection tables, Phillips' asymptotics and the Engle-Granger two-step method from the literature only. Exact tables and theorems cannot be checked without the originals.
+
+**Adjacent notes:** [[Granger 2003 - Cointegration and the Error-Correction Representation]], [[Multivariate Persistence and Cointegration]], [[Single Marketing Time Series]]
+
+**Suggested sources / search terms:**
+- Yule (1926), "Why do we sometimes get nonsense-correlations between time-series?", *JRSS* 89(1)
+- Granger & Newbold (1974), "Spurious regressions in econometrics", *Journal of Econometrics* 2
+- Phillips (1986), "Understanding spurious regressions in econometrics", *Journal of Econometrics* 33
+- Engle & Granger (1987), "Co-integration and error correction", *Econometrica* 55
+
+---
+
+### 81. Modern Variable-Importance Inference (Conditional, LOCO, Knockoffs)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The importance cluster ends around 2021. It cites the following without ingesting them:
+- conditional inference trees (Hothorn, Hornik & Zeileis 2006), whose test statistic Strobl et al. rely on;
+- the updated conditional permutation scheme (Debeer & Strobl 2020, `permimp`);
+- LOCO inference (Lei et al. 2018);
+- Rudin's (2019) case against explaining black boxes.
+
+Model-X knockoffs and Williamson et al.'s VIM inference, the main ways to test importance with error control, are also absent.
+
+**Adjacent notes:** [[Conditional Permutation Importance (Strobl 2008 Algorithm)]], [[Hooker Mentch Zhou 2021 - Conditional and Relearning Importance Measures]], [[Stability Selection PFER Bound (Theorem 1) and Its Proof]], [[Model Class Reliance - Discussion, Limitations and Extensions]]
+
+**Suggested sources / search terms:**
+- Hothorn, Hornik & Zeileis (2006), "Unbiased recursive partitioning: a conditional inference framework", *JCGS* 15
+- Debeer & Strobl (2020), "Conditional permutation importance revisited", *BMC Bioinformatics* 21
+- Candès, Fan, Janson & Lv (2018), "Panning for gold: model-X knockoffs" (arXiv 1610.02351)
+- Williamson, Gilbert, Simon & Carone (2021), "Nonparametric variable importance assessment using machine learning techniques", *Biometrics*
+- Rudin (2019), "Stop explaining black box machine learning models for high stakes decisions", *Nature Machine Intelligence*
+
+---
+
+### 82. Critiques and Empirical Tests of "Most Findings Are False"
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Ioannidis 2005 - Remedies, Limitations and Later Critiques]] summarises the critiques of Ioannidis (2005) from general knowledge only. It does not cover the Goodman-Greenland exchange, Jager & Leek's estimate of the science-wise false discovery rate (and its discussants), or the large replication projects that measured replication rates directly.
+
+**Adjacent notes:** [[Ioannidis 2005 - PPV of Research Findings and the 2x2 Framework]], [[The Replication Crisis and Multiple Levels of Variation]], [[Type S and Type M Errors]]
+
+**Suggested sources / search terms:**
+- Goodman & Greenland (2007), "Why most published research findings are false: problems in the analysis", *PLoS Medicine* (plus Ioannidis' reply)
+- Jager & Leek (2014), "An estimate of the science-wise false discovery rate", *Biostatistics* 15 (with discussion)
+- Open Science Collaboration (2015), "Estimating the reproducibility of psychological science", *Science* 349
+
+---
+
+### 83. Companion AI-Governance and Model-Risk Documents
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The governance notes rely on documents that sit beside the two ingested standards:
+- the NIST AI RMF Playbook and Roadmap, which turn the outcomes into suggested actions;
+- NIST SP 1270, on bias in AI;
+- the OCC Comptroller's Handbook on model risk management (2021);
+- the EU AI Act's conformity-assessment requirements.
+
+None is ingested.
+
+**Adjacent notes:** [[NIST AI RMF - MEASURE Function]], [[SR 11-7 - Validation Independence, Validation Gate and Periodic Review]], [[NIST AI RMF - Applying the Framework to Marketing Analytics Models]]
+
+**Suggested sources / search terms:**
+- NIST AI RMF Playbook (airc.nist.gov); NIST SP 1270, "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence" (2022)
+- OCC Comptroller's Handbook, "Model Risk Management" (2021)
+- Regulation (EU) 2024/1689 (AI Act), Articles 9-15
+
+---
+
+### 84. Competitive Brand Bidding and Paid-Search Incrementality After Blake et al.
+**Status:** 🌱 new
+
+**Why it's a gap:**
+[[Blake 2015 - Discussion, Limitations and Lessons for Marketing Measurement]] mentions later work on competitive brand bidding only from general knowledge. The post-2015 evidence on when branded search is incremental (competitor presence, ad position, and search-engine-run experiments) is not in the vault.
+
+**Adjacent notes:** [[Blake 2015 - Brand Keyword Experiments and Paid-Organic Substitution]], [[AMSS Paid Search Module (Queries, Auction, Organic vs Paid)]], [[Conversion Lift Studies on Ad Platforms]]
+
+**Suggested sources / search terms:**
+- Simonov, Nosko & Rao (2018), "Competition and crowd-out for brand keywords in sponsored search", *Marketing Science* 37(2)
+- Coviello, Gneezy & Goette (2017), "A large-scale field experiment to evaluate the effectiveness of paid search advertising" (CESifo WP)
+- Golden & Horton (2021), "The effects of search advertising on competitors: an experiment before a merger", *Management Science*
+
+---
+
 ## Covered Gaps
 
 | Gap | Covered By | Date Covered |
@@ -1296,6 +1408,7 @@ Follow-ons from the [[User-Level Ad Experiments - Overview]] cluster: bid-level 
 
 | Date | Action |
 |------|--------|
+| 2026-10-13 | Full-capture ingest of 21 sources on model validation, feature importance and advertising measurement into the new [[Research/Model Validation and Interpretability/_Index|Model Validation and Interpretability]] topic and [[Research/Market Response Models/User-Level Ad Experiments/Paid Search Field Experiment (Blake et al 2015)/_Index|Blake et al 2015]], plus coverage audits of Jin 2017, Gordon 2019, Lewis & Rao 2015 and Gelman & Loken 2013 (229 notes). Gap #61 marked 🌿 partially covered. Follow-on gaps #79-#84 added (missing supplements and discussions, spurious-regression primary sources, modern importance inference, Ioannidis critiques, companion governance documents, competitive brand bidding). |
 | 2026-09-18 | **Run 25 (consolidation Q&A + user-level testing).** Wrote 20 cross-cluster consolidation Q&A notes (Questions-and-Answers now 29) and ingested the `Market Response Models/User-Level Ad Experiments` cluster (9 notes; 8 sources; Johnson 2023 "Inferno" and Barajas & Bhamidipati 2021 could not be downloaded). The Q&As' own Gaps sections were mined for this index: **added gaps #71–#78** and added requested sources to #59, #63, #70. One Q&A caught a formula error in [[Optimal Marketing Decisions and Forecasting]] (now fixed). |
 | 2026-09-18 | **Graph cleanup and de-duplication.** Duplicate titles resolved: horseshoe stub merged into [[Horseshoe and Regularized Horseshoe Priors]] (Shrinkage Priors cluster); loose PSM synthesis note retitled [[Propensity Score Matching - Balancing Theorem and Failure Modes]] and moved with [[Matching Algorithms and Caliper]] and [[Covariate Balance and Matching Diagnostics]] into the `Propensity Score Matching/` sub-folder. Same-source duplicates merged: `Theoretical Physics/` folded into `Physics/` ([[Quantum Field Theory - Overview]], [[Gauge Theory - Overview]] merged; 5 notes moved); [[Bayesian Inverse Probability Weighting]] absorbed "Bayesian Propensity Score Weighting". 52 colliding aliases removed (titles and aliases are now unique vault-wide). 25 missing links added from shared-neighbour analysis. Graph after cleanup: 732 nodes, 10,834 edges, 1 component, 0 orphans. `vault-graph/build_graph.py` now skips `node_modules/`, `content/`, `public/`, `quartz/`, `scripts/` and `raw/`. |
 | 2026-09-18 | **Run 24 (top-down audit + gap-filling ingest).** Audit finding: all 57 prior gaps were generated bottom-up from existing notes, so the vault had zero machine-learning / AI coverage and lacked online-experimentation, customer-lifetime-value and modern-forecasting material. Researched and ingested **49 primary papers → 85 notes in 11 new clusters**: new topic `Machine Learning and AI/` (Transformers and LLM Foundations 7, LLM Reasoning Retrieval and Agents 8, Conformal Prediction 7, Probabilistic Forecasting 7); `Agent-Based Modeling/LLM-Powered Agents` 8; `Bayesian Statistics/Computation/Neural Simulation-Based Inference` 8 and `/Variational Inference` 8; `Econometrics/Causal Machine Learning` 9; `Econometrics/Identification Strategies/Synthetic Difference-in-Differences` 8; `Research Methodology/Experimental Design/Online Experimentation` 8; `Market Response Models/Customer Lifetime Value` 7. **Gaps #33, #40, #45, #46, #47 marked 🍂 covered; #18 status corrected to covered** (DTR cluster already existed). Added 98 See Also backlinks + 115 `used_by` entries to 89 existing notes. Added new section "AI-Era and Applied Gaps" with gaps #58–#70. Also resolved 5 leftover git merge-conflict blocks in this file. |

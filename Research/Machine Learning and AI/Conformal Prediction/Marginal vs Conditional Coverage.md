@@ -22,6 +22,7 @@ used_by:
   - "[[Q - Exchangeability and What Replaces It When It Fails]]"
   - "[[Q - Four Meanings of Calibration]]"
   - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
+  - "[[Morris et al 2019 - Performance Measures and Monte Carlo Standard Errors]]"
 aliases:
   - Conditional Coverage
   - Marginal Coverage
@@ -146,3 +147,4 @@ def stratified_coverage(covered, strata):
 - [[Simulation-Based Calibration - Overview]] — SBC's guarantee is also an average (over the prior), and can likewise hide poor behaviour in sub-regions of parameter space.
 - [[Multiple Testing Corrections]] — taking a minimum over many strata invites noise; assess FSC/SSC against the Beta/binomial spread rather than reading the raw minimum.
 - [[Metalearners for CATE]] — the analogous average-versus-conditional distinction for treatment effects (ATE versus CATE).
+- [[Morris et al 2019 - Performance Measures and Monte Carlo Standard Errors]] — coverage conditional on model SE tertile

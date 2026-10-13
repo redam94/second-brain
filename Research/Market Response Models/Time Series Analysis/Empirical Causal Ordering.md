@@ -10,7 +10,7 @@ tags:
   - topic/time-series
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-10-13
 source: "Hanssens, Parsons & Schultz (2001) Ch. 7"
 chapter: "7"
 status: complete
@@ -104,3 +104,7 @@ For managerial decisions (manipulating advertising), structural identification (
 - Granger causality and DAGs: [[Directed Acyclic Graphs]]
 - Structural causal identification: [[Instrumental Variables]], [[Conditional Independence Assumption]]
 - Reaction functions (inter-firm Granger causality): [[Reaction Functions and Competitive Dynamics]]
+
+## See Also
+
+- [[Granger 2003 - Granger Causality and Its Link to Cointegration]] — Granger's definition and cointegration-implies-causality

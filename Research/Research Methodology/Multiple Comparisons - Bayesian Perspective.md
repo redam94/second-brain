@@ -24,6 +24,9 @@ used_by:
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
   - "[[Empirical Bayes Interpretation of Shrinkage]]"
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
+  - "[[Ioannidis 2005 - Multiple Independent Teams and PPV Erosion]]"
+  - "[[Out-of-Sample Validation for Time-Series Models]]"
+  - "[[Gelman Loken 2013 - Three Reactions and the Bayesian Reading of Bem's 53 Percent]]"
 aliases:
   - "Gelman Hill Yajima 2009"
   - "Why we don't have to worry about multiple comparisons"
@@ -123,3 +126,6 @@ The IHDP model is extended to include birth-weight subgroups (lighter vs. heavie
 - [[Power Analysis and Sample Size]] — underpowered studies amplify Type S and Type M errors
 - [[The Experimental Ideal]] — well-designed experiments with pre-registration reduce the multiplicity that motivates this paper's argument
 - [[Empirical Bayes Interpretation of Shrinkage]] — EB / local-FDR connection to multiple comparisons
+- [[Ioannidis 2005 - Multiple Independent Teams and PPV Erosion]] — many-teams erosion as cross-study multiplicity
+- [[Out-of-Sample Validation for Time-Series Models]] — winner's curse and expected-max-of-normals formula
+- [[Gelman Loken 2013 - Three Reactions and the Bayesian Reading of Bem's 53 Percent]] — flat-prior posterior equals 1 - one-sided p

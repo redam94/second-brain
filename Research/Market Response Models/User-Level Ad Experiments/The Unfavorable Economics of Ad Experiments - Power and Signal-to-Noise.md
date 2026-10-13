@@ -26,6 +26,11 @@ used_by:
   - "[[Experimental Benchmarks for Observational Ad Measurement]]"
   - "[[User-Level vs Geo-Level Experiments - When to Use Which]]"
   - "[[Conversion Lift Studies on Ad Platforms]]"
+  - "[[Ioannidis 2005 - Six Corollaries and the Proteus Phenomenon]]"
+  - "[[Chan Perry 2017 - Five Plausible MMMs (Model Selection and Model Uncertainty)]]"
+  - "[[Blake 2015 - ROI Derivation from Experimental Log-Sales Effects]]"
+  - "[[Lewis Rao 2015 - Unfavorable Economics of Ad Measurement - Overview]]"
+  - "[[Model Validation and Interpretability - Overview]]"
 aliases:
   - Unfavorable Economics of Measuring Returns to Advertising
   - Lewis and Rao 2015
@@ -38,6 +43,7 @@ aliases:
 
 > [!summary]
 > Lewis & Rao (2015) analyse 25 large Yahoo! display-ad RCTs (\$2.8M of spend, most reaching over a million users) and show that measuring advertising ROI is hard *even with perfect randomization*. Individual sales have a coefficient of variation near **10**; a campaign costing \$0.14 per person must move mean sales by about \$0.35 against a standard deviation of \$75, an impact-to-standard-deviation ratio of **0.0047** and an $R^2$ of **0.0000054**. The median retailer experiment has a standard error on ROI of **26 percentage points**; to distinguish 0% from 10% ROI the median experiment would need to be **62 times larger**. The same arithmetic implies that any observational bias with an $R^2$ of $10^{-4}$ swamps the true effect. Precision comes from *design* — bigger doses, free and larger control groups, discarding outcomes that cannot be affected — far more than from covariates.
+^unfavorable-econ-summary
 
 ## Overview
 
@@ -182,3 +188,25 @@ Even ten million users per arm leave ROI known only to within roughly 24 points 
 - [[Customer Lifetime Value - Overview]] — the brokerage experiments value each acquired account at a fixed lifetime value; CLV models supply that input and its uncertainty.
 - [[Advertising and Promotion Effects]] — elasticity evidence; Johnson, Lewis & Reiley's experimental short-run elasticity is about 0.19 under their advertising-to-sales assumption.
 - [[User-Level vs Geo-Level Experiments - When to Use Which]].
+- [[Ioannidis 2005 - Six Corollaries and the Proteus Phenomenon]] — low-power ad experiments sit in the regime where most significant winners are false
+- [[Chan Perry 2017 - Five Plausible MMMs (Model Selection and Model Uncertainty)]] — Lewis-Rao signal-to-noise argument applied to MMM selection
+- [[Blake 2015 - ROI Derivation from Experimental Log-Sales Effects]] — residual noise decides whether an ad experiment is informative
+- [[Model Validation and Interpretability - Overview]] — where low-powered experiments fit in a validation plan
+
+## Full-Capture Companion Notes (Lewis & Rao 2015)
+
+*Added 2026-10-13 in a coverage audit.* This synthesis note condenses Lewis & Rao (2015) together with three related papers. The full section-by-section capture of Lewis & Rao, with every table transcribed, lives in:
+
+- [[Lewis Rao 2015 - Unfavorable Economics of Ad Measurement - Overview]] — research question, key numbers, and a Source Map from every section and footnote to a note.
+- [[Lewis Rao 2015 - The Advertiser's Problem and Marginal ROI]] — §II.A model, Figure I ($c^*$, $c_h$, three spending regions), §III.D marginal ROI variance.
+- [[Lewis Rao 2015 - Impact-to-SD Ratio Derivation and Calibrated Campaign]] — eqs. (1)-(8) with proof sketch, the representative campaign, the selection-30x example, the comScore 300% claim.
+- [[Lewis Rao 2015 - Table I Summary of the 25 Yahoo Display Experiments]] — all 25 rows of Table I and why point estimates are withheld.
+- [[Lewis Rao 2015 - Table II Estimation Protocol, Windows and ROI Standard Errors]] — all rows of Table II, estimation codes, window rule, binarization trade-off, Figure II.
+- [[Lewis Rao 2015 - Table III Power and Experiment Size Multipliers]] — all rows of Table III and counts per hypothesis set.
+- [[Lewis Rao 2015 - Robustness, Scale, Targeting and Measurement Technology]] — §IV: automaker volatility, scale and evolving priors, Super Bowl Impossibility Theorem, top-$M$ targeting condition, technology.
+- [[Lewis Rao 2015 - Market Implications, Persuasion Games and Conclusion]] — §V: selective pressure, Shin persuasion game, publisher scale economies, vitamin E analogy.
+
+**Corrections to the summary above (checked against the raw PDF).**
+- Table I's \$8.48 and \$70.20 are the *medians* (across retail experiments) of control-group mean sales and s.d.; the means are \$18.23 and \$95.94 (text: \$95.54).
+- Table II's median 95% CI radius is 4.4% of sales for retailers; the text's "median radius is 5.5%" appears to pool both panels.
+- The median retail multiplier for 0% vs +10% ROI is 62 in Table III and 61 in the text (p. 1964).

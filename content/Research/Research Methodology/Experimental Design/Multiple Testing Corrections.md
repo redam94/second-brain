@@ -9,7 +9,7 @@ tags:
   - doc/paper
 source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2907892/"
 date_ingested: 2026-04-08
-date_updated: 2026-08-24
+date_updated: 2026-10-13
 folder: "Research Methodology/Experimental Design"
 aliases:
   - "Bonferroni correction"
@@ -27,6 +27,10 @@ depends_on:
 used_by:
   - "[[Forking Paths and Bayesian Approaches]]"
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
+  - "[[Strobl 2007 - Split-Selection Bias in CART Trees]]"
+  - "[[Stability Selection PFER Bound (Theorem 1) and Its Proof]]"
+  - "[[Ioannidis 2005 - PPV of Research Findings and the 2x2 Framework]]"
+  - "[[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]]"
 ---
 
 # Multiple Testing Corrections
@@ -125,3 +129,7 @@ The **q-value** of a test is the minimum FDR at which that test would be called 
 - [[Power Analysis and Sample Size]] — designing studies with adequate power
 - [[The Experimental Ideal]] — even randomized experiments require multiple comparisons correction when testing many outcomes
 - [[Always-Valid p-values and the mSPRT]] — sequential versions of Bonferroni and Benjamini-Hochberg
+- [[Strobl 2007 - Split-Selection Bias in CART Trees]] — ctree's p-value-based variable selection is a multiplicity adjustment applied to split search
+- [[Stability Selection PFER Bound (Theorem 1) and Its Proof]] — PFER/FWER control for variable selection without p-values
+- [[Ioannidis 2005 - PPV of Research Findings and the 2x2 Framework]] — PPV = 1 - false discovery proportion at field level
+- [[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]] — why alpha correction cannot fix researcher degrees of freedom

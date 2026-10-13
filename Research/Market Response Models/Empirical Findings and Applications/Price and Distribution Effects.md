@@ -11,7 +11,7 @@ tags:
   - topic/empirical-findings
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-06-22
+date_updated: 2026-10-13
 date_ingested: 2026-04-11
 folder: "Market Response Models/Empirical Findings and Applications"
 source: "Hanssens, Parsons & Schultz (2001) Ch. 8"
@@ -26,6 +26,7 @@ depends_on:
   - "[[Multivariate Persistence and Cointegration]]"
 used_by:
   - "[[Optimal Marketing Decisions and Forecasting]]"
+  - "[[Granger 2003 - Cointegration and the Error-Correction Representation]]"
 ---
 
 # Price and Distribution Effects
@@ -134,3 +135,4 @@ Powdered detergents example (Table 8-7, Russell & Kamakura 1994):
 - Optimal pricing decisions: [[Optimal Marketing Decisions and Forecasting]]
 - Discrete choice econometrics for cross-price modeling: [[Discrete Choice Models]] — random-coefficients logit (BLP) is the structural model underlying cross-price elasticity estimation
 - Estimation methods for price response models: [[Parameter Estimation in Market Response]]
+- [[Granger 2003 - Cointegration and the Error-Correction Representation]] — persistent distribution effects and error correction

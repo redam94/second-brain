@@ -27,6 +27,16 @@ depends_on:
   - "[[Conditional Independence Assumption]]"
 used_by:
   - "[[User-Level vs Geo-Level Experiments - When to Use Which]]"
+  - "[[Janzing 2020 - Inputs as Causes - Interventional Equals Marginal Expectation]]"
+  - "[[Dillon et al - Unobserved Confounding and Quasi-Experimental Remedies]]"
+  - "[[Manheim Garrabrant - Adversarial Goodhart, Campbell's Law and Cobra Effects]]"
+  - "[[AMSS Ground Truth - Counterfactual Scenarios and Simulated ROAS]]"
+  - "[[Chan Perry 2017 - Selection Bias in MMM (Ad Targeting, Seasonality, Funnels, Endogenous Controls)]]"
+  - "[[SR 11-7 - Ongoing Monitoring, Process Verification, Overrides and Benchmarking]]"
+  - "[[Blake 2015 - OLS vs IV Spend Elasticities and the Endogeneity Gap]]"
+  - "[[Gordon et al 2019 - Observational Lift Estimates by Study and Method]]"
+  - "[[Lewis Rao 2015 - Impact-to-SD Ratio Derivation and Calibrated Campaign]]"
+  - "[[Model Validation and Interpretability - Overview]]"
 aliases:
   - LaLonde for Advertising
   - Gordon Zettelmeyer Facebook Benchmarks
@@ -39,6 +49,8 @@ aliases:
 
 > [!summary]
 > Two Facebook studies apply LaLonde's (1986) within-study-comparison logic to advertising: take an RCT, **throw away the randomized control group**, estimate the ad effect from exposed vs unexposed users in the test arm with observational methods, and compare with the RCT's ATT lift. **Gordon, Zettelmeyer, Bhargava & Chapsky (2019)**: 15 experiments, 500M user-observations; exact matching, propensity-score matching, stratification, regression adjustment, IPWRA and stratified regression with rich covariates. Observational estimates mostly **overstate** lift, sometimes understate it, no method dominates, and "in half of our studies, the estimated percentage increase in purchase outcomes is off by a factor of three across all methods." **Gordon, Moakler & Zettelmeyer (2023)**: 663 representative experiments, >5,000 user features including the platform's own predicted action rates, deep-learning nuisance models, stratified PSM and **double/debiased ML**. Median RCT lifts of 29% / 18% / 5% (upper / mid / lower funnel) become 173% / 176% / 64% under SPSM and 83% / 58% / 24% under DML. Their verdict: "more of a 'data problem' than a 'model problem'."
+
+^summary-experimental-benchmarks-for-observationa
 
 ## Overview
 
@@ -123,7 +135,7 @@ Propensity-model AUCs range from 0.6 to 0.95, median 0.76.
 > | Median absolute % error, DML | 557% | 488% | 672% |
 >
 > - Equality with the RCT lift is rejected for 91% (SPSM) and 75% (DML) of RCTs with significant lifts, and for 82% / 77% of those with insignificant lifts.
-> - Both methods usually *reduce* the exposed-unexposed bias — the remaining-percentage-bias distribution, $RPB=[1-(APE_{e\text{-}u}-APE_m)/APE_{e\text{-}u}]\times100$, sits mostly below 100% — but "not enough to come close". DML more often than SPSM makes things *worse* than the naive comparison.
+> - Both methods usually *reduce* the exposed-unexposed bias — the remaining-percentage-bias distribution, $RPB=[1-(APE_{e\text{-}u}-APE_m)/APE_{e\text{-}u}]\times100$, sits mostly below 100% — but of SPSM the paper says it "does not manage to reduce the bias enough to come close to the RCT estimates". DML more often than SPSM makes things *worse* than the naive comparison.
 > - Errors are multiplicatively largest where true lifts are smallest (first-decile APEs above 5,000%); absolute errors grow with the true lift.
 
 **When do they do better?** (§6, random-forest on APE with partial-dependence plots): prospecting rather than remarketing campaigns ("remarketing introduces additional endogeneity"); **low control-group conversion rates** ("if untreated users do not convert, no selection effect needs to be corrected"); more users; upper-funnel outcomes; **lower exposure rates** (a larger pool of unexposed comparison users); for SPSM, a better-fitting propensity model. "Even in these settings, the average percentage error of both observational methods remains high."
@@ -182,3 +194,19 @@ Expect the pattern of Fig. 10: a large drop from the raw exposed-unexposed contr
 - [[Q - Uncovering Causal Estimates from Non-Experimental Data]] — vault Q&A on when observational causal estimates can be trusted.
 - [[Bayesian Estimation and Priors for MMM]] — why MMM priors should come from experiments rather than attribution or observational user-level models.
 - [[User-Level vs Geo-Level Experiments - When to Use Which]] — what to do when no user-level RCT is available.
+- [[Janzing 2020 - Inputs as Causes - Interventional Equals Marginal Expectation]] — model-level interventional attributions are not ad lift estimates
+- [[Dillon et al - Unobserved Confounding and Quasi-Experimental Remedies]] — simulated demonstration that DML cannot fix unobserved confounding
+- [[Manheim Garrabrant - Adversarial Goodhart, Campbell's Law and Cobra Effects]] — paying on attributed conversions is a cobra effect
+- [[AMSS Ground Truth - Counterfactual Scenarios and Simulated ROAS]] — virtual-experiment ground truth for scoring estimators
+- [[Chan Perry 2017 - Selection Bias in MMM (Ad Targeting, Seasonality, Funnels, Endogenous Controls)]] — aggregate MMM version of the selection bias
+- [[SR 11-7 - Ongoing Monitoring, Process Verification, Overrides and Benchmarking]] — the benchmark is itself an alternative prediction
+- [[Blake 2015 - OLS vs IV Spend Elasticities and the Endogeneity Gap]] — OLS vs experimental ROI gap for search
+- [[Lewis Rao 2015 - Impact-to-SD Ratio Derivation and Calibrated Campaign]] — formal R2/t derivation and selection-30x example
+- [[Model Validation and Interpretability - Overview]] — experiments as ground truth among six remedies
+
+## Full Source Note Set (Gordon et al. 2019)
+
+*Added 2026-10-13 in a coverage audit.* This note condenses Gordon et al. (2019). The complete section-by-section capture, including all 22 × 23 lift estimates from Figs. 8-10 and A-8-A-13, Tables 1-6 in full, the joint-bootstrap algorithm, and the simulated-confounder sensitivity method from the online appendix, is in [[Gordon et al 2019 - Facebook RCTs vs Observational Ad Measurement - Overview]] and its notes:
+- [[Gordon et al 2019 - Observational Lift Estimates by Study and Method]] — the full grid. Fig. 10's "Regression Adjustment" columns match the IPWRA values in Figs. 8-9, so the PSM/STRATREG columns in the table above are unaffected.
+- [[Gordon et al 2019 - Sensitivity to Unobservables and Bias-Reduction Ratio]] — Table 6, Fig. 11, and the Ichino-Mealli-Nannicini $p_{jk}$ algorithm.
+- [[Gordon et al 2019 - Propensity Estimation, Bootstrap Inference and Balance Diagnostics]] — §6, including the balance evidence (standardized differences below 0.1 after matching).

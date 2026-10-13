@@ -18,6 +18,10 @@ used_by:
   - "[[Split Conformal Prediction and the Coverage Guarantee]]"
   - "[[Conformal Prediction - Overview]]"
   - "[[Q - Exchangeability and What Replaces It When It Fails]]"
+  - "[[Strobl 2007 - Bootstrap-Induced Association]]"
+  - "[[Strobl 2008 - Permutation Importance Null Hypotheses]]"
+  - "[[Hooker Mentch Zhou 2021 - Relearning Hypothesis Tests and Bike-Share Application]]"
+  - "[[Out-of-Sample Validation for Time-Series Models]]"
 aliases:
   - Permutation Test
   - Exact Inference
@@ -70,3 +74,7 @@ The "+1" (counting the observed assignment) keeps the test valid. With $B=10{,}0
 - [[Multiple Testing Corrections]] — permutation methods also underpin some max-T multiplicity adjustments.
 - [[Power Analysis and Sample Size]] — exact tests' power is limited by the number of distinct permutations.
 - [[Split Conformal Prediction and the Coverage Guarantee]] — same uniform-rank "+1" exchangeability argument
+- [[Strobl 2007 - Bootstrap-Induced Association]] — bootstrap samples create spurious association; permutation enforces the null
+- [[Strobl 2008 - Permutation Importance Null Hypotheses]] — which null licenses which permutation, applied to ML feature importance
+- [[Hooker Mentch Zhou 2021 - Relearning Hypothesis Tests and Bike-Share Application]] — permuting a correlated block breaks exchangeability under the null and inflates test size
+- [[Out-of-Sample Validation for Time-Series Models]] — worked random-ranking permutation test

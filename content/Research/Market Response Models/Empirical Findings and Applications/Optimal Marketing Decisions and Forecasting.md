@@ -10,7 +10,7 @@ tags:
   - topic/forecasting
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-10-13
 source: "Hanssens, Parsons & Schultz (2001) Chs. 9-10"
 chapter: "9-10"
 status: complete
@@ -27,6 +27,7 @@ used_by:
   - "[[Implementation of Market Response Models]]"
   - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
   - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Granger 2003 - Cointegration and the Error-Correction Representation]]"
 ---
 
 # Optimal Marketing Decisions and Forecasting
@@ -154,3 +155,4 @@ From Chapter 10 (Implementation):
 ## See Also
 
 - [[Hierarchical Forecast Reconciliation (MinT)]] — forecasts that add up across planning levels
+- [[Granger 2003 - Cointegration and the Error-Correction Representation]] — VAR/ECM long-horizon forecasts under cointegration

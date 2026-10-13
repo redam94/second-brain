@@ -25,6 +25,7 @@ used_by:
   - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
   - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
   - "[[Experimental Benchmarks for Observational Ad Measurement]]"
+  - "[[Kumar et al - Shapley Values in Normative Model Evaluation]]"
 aliases:
   - Interactive Regression Model
   - IRM
@@ -138,3 +139,4 @@ def dml_ate(Y, D, X, fit_g, fit_m, K=5, clip=0.01):
 - [[Causal Estimands]] — ATE vs ATT vs LATE definitions.
 - [[Covariate Balance and Matching Diagnostics]] — diagnostics that remain useful for checking the fitted propensity.
 - [[Experimental Benchmarks for Observational Ad Measurement]] — DML tested against RCT ground truth
+- [[Kumar et al - Shapley Values in Normative Model Evaluation]] — DML as the direct test for causal questions SHAP cannot answer

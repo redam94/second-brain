@@ -17,6 +17,7 @@ depends_on:
   - "[[Single Marketing Time Series]]"
 used_by:
   - "[[Forecast Evaluation and Backtesting]]"
+  - "[[Out-of-Sample Validation for Time-Series Models]]"
 aliases:
   - MinT
   - MinT Reconciliation
@@ -181,3 +182,4 @@ def shrink_cov(E):                                 # E: (T, m) one-step residual
 - [[Single Marketing Time Series]] — the ARIMA/ETS base forecasters.
 - [[DeepAR and Global Autoregressive Neural Forecasters]] — the DeepAR paper cites Hyndman et al. (2011) as the way to leverage hierarchical structure; base forecasts from any global model can be reconciled.
 - [[Geo-Experiment Methodology - Overview]] — geo panels are natural hierarchies.
+- [[Out-of-Sample Validation for Time-Series Models]] — rolling-origin template generalised

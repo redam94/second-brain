@@ -9,7 +9,7 @@ tags:
   - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
-date_updated: 2026-04-13
+date_updated: 2026-10-13
 folder: "Bayesian Statistics/Inference Fundamentals"
 aliases:
   - "Bayesian updating"
@@ -23,6 +23,7 @@ depends_on:
   - "[[raw/StatRethink-Bayes.pdf]]"
 used_by:
   - "[[Posterior Sampling and Summarization]]"
+  - "[[Gelman Loken 2013 - Garden of Forking Paths - Overview]]"
 ---
 
 # Garden of Forking Data
@@ -75,3 +76,4 @@ Every Bayesian model has three components:
 - [[Statistical Rethinking - The Golem of Prague]] — the philosophical setup
 - [[Garden of Forking Paths]] — Gelman's related concept about researcher flexibility (different "garden")
 - [[Statistical Rethinking - Overview]]
+- [[Gelman Loken 2013 - Garden of Forking Paths - Overview]] — same Borges metaphor, unrelated concept

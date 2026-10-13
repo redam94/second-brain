@@ -12,7 +12,7 @@ tags:
   - topic/time-series
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-10-13
 source: "Hanssens, Parsons & Schultz (2001) Ch. 4"
 chapter: "4"
 status: complete
@@ -34,6 +34,8 @@ used_by:
   - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
   - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
   - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
+  - "[[Granger 2003 - Spurious Regression and Cointegration - Overview]]"
+  - "[[AMSS MMM Evaluation - Simple Scenario and Lagged-Effects Study]]"
 ---
 
 # Carryover Effects and Distributed Lags
@@ -189,3 +191,6 @@ A general rational lag is $B(L)/C(L)$ (Eq 4.72), which nests ADL models.
 ## See Also
 
 - [[Linear-Gaussian State-Space Models]] — dynamic models in state-space form
+- [[Granger 2003 - Spurious Regression and Cointegration - Overview]] — stochastic-trend counterpart of long-run effects
+- [[AMSS MMM Evaluation - Simple Scenario and Lagged-Effects Study]] — distributed-lag regression scored against known truth
+- [[Carryover (Adstock) Functional Forms]] — Gaussian delayed adstock does not nest the Koyck lag

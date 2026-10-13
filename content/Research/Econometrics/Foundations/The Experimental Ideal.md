@@ -31,6 +31,7 @@ used_by:
   - "[[User-Level Ad Experiments - Overview]]"
   - "[[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise]]"
   - "[[Intent-to-Treat, PSA and Ghost Ad Designs]]"
+  - "[[Dillon et al - Unobserved Confounding and Quasi-Experimental Remedies]]"
 ---
 
 # The Experimental Ideal
@@ -90,3 +91,4 @@ $$
 - [[Regression Discontinuity Designs]] — the local experiment analogue: credible quasi-experimental identification near a threshold
 - [[Multiple Comparisons - Bayesian Perspective]] — even well-designed experiments face multiplicity; Bayesian multilevel models handle it structurally
 - [[Randomization Inference - Overview]] — inference that follows directly from the randomization this note motivates
+- [[Dillon et al - Unobserved Confounding and Quasi-Experimental Remedies]] — confidently wrong DML under unobserved confounding motivates randomization

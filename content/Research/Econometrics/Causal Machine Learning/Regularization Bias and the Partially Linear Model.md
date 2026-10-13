@@ -23,6 +23,8 @@ used_by:
   - "[[R-Learner and Orthogonal CATE Estimation]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
+  - "[[Randomised Lasso and the Irrepresentable Condition]]"
+  - "[[Dillon et al - Observed Confounding and Double ML for Ad Spend]]"
 aliases:
   - Partially Linear Regression Model
   - PLR Model
@@ -142,3 +144,5 @@ In the 401(k) application, this PLR estimator gives an eligibility effect of \$7
 - [[Instrumental Variables]] — the partially linear IV model (§4.2) replaces $D-m(X)$ with $Z-m(X)$ in the score: $\psi=(Y-D\theta-g(X))(Z-m(X))$.
 - [[Frequentist Causal Estimation]] — outcome-regression estimators are the "naive plug-in" family that this note shows to be fragile under ML.
 - [[Regression and the CEF]] — the classical regression-anatomy logic that partialling-out generalizes.
+- [[Randomised Lasso and the Irrepresentable Condition]] — when Lasso support recovery fails
+- [[Dillon et al - Observed Confounding and Double ML for Ad Spend]] — worked LinearDML example, including a failure under unobserved confounding

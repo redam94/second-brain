@@ -114,3 +114,4 @@ Practical causal inference using a summary DAG follows the same steps as on the 
 - [[General Structure of Bayesian CI]] — Bayesian estimation framework that consumes the identification results proven here
 - [[Propensity Score in Bayesian CI]] — a specific adjustment-set estimator derived from do-calculus backdoor criterion
 - [[Frequentist Causal Estimation]] — frequentist adjustment methods (backdoor, IPW) that follow from do-calculus identification
+- [[Janzing 2020 - Inputs as Causes - Interventional Equals Marginal Expectation]] — do-operator applied to an algorithm's input/output graph

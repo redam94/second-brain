@@ -37,6 +37,8 @@ used_by:
   - "[[Experimental Benchmarks for Observational Ad Measurement]]"
   - "[[Identity Fragmentation and the Privacy-Era Limits of User-Level Tests]]"
   - "[[User-Level vs Geo-Level Experiments - When to Use Which]]"
+  - "[[Blake Nosko Tadelis 2015 - Paid Search Effectiveness - Overview]]"
+  - "[[Lewis Rao 2015 - Unfavorable Economics of Ad Measurement - Overview]]"
 aliases:
   - User-Level Advertising Experiments
   - Incrementality Testing
@@ -48,6 +50,8 @@ aliases:
 
 > [!summary]
 > A **user-level ad experiment** randomizes *individual identifiers* (cookies, device IDs, logged-in accounts) into a group that is **eligible** for a campaign and a **holdout** that is not, and reads the causal ("incremental") effect of the campaign off the difference in outcomes. Three facts shape the whole methodology. (1) Assignment is random but **exposure is not**: only some eligible users are reached, so every design is an experiment with **one-sided noncompliance**, and the designs differ in how they find the control group's *would-have-been-exposed* users — not at all ([[Intent-to-Treat, PSA and Ghost Ad Designs|ITT]]), with placebo ads (PSA), or with logged counterfactual auction wins ([[Predicted Ghost Ads and Ghost Bids Mechanics|ghost ads / ghost bids]]). (2) Ad effects are tiny relative to the noise in individual sales — Lewis & Rao's calibrated campaign has an $R^2$ of $0.0000054$ — so [[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise|power, not bias, is the binding constraint]]. (3) The same tiny signal means [[Experimental Benchmarks for Observational Ad Measurement|observational substitutes fail]] even with thousands of features and DML, while [[Identity Fragmentation and the Privacy-Era Limits of User-Level Tests|identity fragmentation]] erodes the user-level unit itself and pushes practitioners back toward [[Geo-Experiment Methodology - Overview|geo experiments]].
+
+^summary-user-level-ad-experiments-overview
 
 ## Overview
 
@@ -145,3 +149,9 @@ For an MMM prior, steps 1-2 convert to incremental conversions by multiplying th
 - [[Power Analysis and Sample Size]] and [[Type S and Type M Errors]] — design-stage tools the power note relies on.
 - [[Advertising and Promotion Effects]] — econometric evidence on advertising response that these experiments complement.
 - [[Multi-Armed Bandits and Thompson Sampling - Overview]] — the "explore-exploit tests" Johnson, Lewis & Nubbemeyer anticipate once control groups are free.
+- [[Blake Nosko Tadelis 2015 - Paid Search Effectiveness - Overview]] — OLS ROI 4173% vs experimental -63%
+- [[Lewis Rao 2015 - Unfavorable Economics of Ad Measurement - Overview]] — full paper map
+
+## Source Note Sets
+
+*Added 2026-10-13.* Gordon, Zettelmeyer, Bhargava & Chapsky (2019) now has a dedicated section-by-section note set: [[Gordon et al 2019 - Facebook RCTs vs Observational Ad Measurement - Overview]] (design and endogeneity, estimators, data, inference and balance, RCT tables, observational grid, sensitivity analysis, conclusions).

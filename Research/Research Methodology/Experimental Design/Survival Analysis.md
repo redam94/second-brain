@@ -31,6 +31,7 @@ used_by:
   - "[[Pareto-NBD Model]]"
   - "[[Customer Lifetime Value - Overview]]"
   - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Morris et al 2019 - Worked Example Exponential vs Weibull vs Cox]]"
 ---
 
 # Survival Analysis
@@ -148,3 +149,4 @@ Bayesian survival analysis places priors on hazard functions or regression coeff
 - [[Estimands in Longitudinal Research]] — defines target estimands in longitudinal studies where survival is often the outcome
 - [[Hierarchical Models]] — frailty models for clustered survival data are random-effects / hierarchical models
 - [[Shifted-Beta-Geometric Model for Contractual Retention]] — discrete-time hazard with beta frailty
+- [[Morris et al 2019 - Worked Example Exponential vs Weibull vs Cox]] — simulation evaluation of survival estimators

@@ -9,7 +9,7 @@ tags:
 source: "[[raw/Li et al. - 2022 - Bayesian causal inference a critical review.pdf]]"
 source_location: "§6, pp. 12–14"
 date_ingested: 2026-04-10
-date_updated: 2026-07-06
+date_updated: 2026-10-13
 folder: "Bayesian Statistics/Causal Inference/Sensitivity and Complex Mechanisms"
 doc_type: paper
 depends_on:
@@ -17,6 +17,7 @@ depends_on:
   - "[[General Structure of Bayesian CI]]"
 used_by:
   - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
+  - "[[Gordon et al 2019 - Sensitivity to Unobservables and Bias-Reduction Ratio]]"
 aliases:
   - E-value
   - Rosenbaum bounds
@@ -136,3 +137,4 @@ This connects to the broader theme of identifiability in Bayesian causal inferen
 - [[Propensity Score Matching - Overview]] — PSM is the most common observational method; sensitivity analysis (E-value, Rosenbaum bounds) is routinely reported alongside PSM estimates
 - [[Nonparametric Causal Inference]] — BART-based ATE/ATT estimation; sensitivity analysis quantifies robustness of these estimates to unmeasured confounding
 - [[Honest DiD - Sensitivity to Parallel Trends Violations]] — both report a breakdown point
+- [[Gordon et al 2019 - Sensitivity to Unobservables and Bias-Reduction Ratio]] — simulated-confounder analysis calibrated by relative R2

@@ -1,0 +1,26 @@
+filters:
+  and:
+    - file.inFolder("Research/Model Validation and Interpretability")
+    - or:
+        - file.hasTag("type/theorem")
+        - file.hasTag("type/definition")
+properties:
+  source:
+    displayName: Source
+  source_location:
+    displayName: Location
+  doc_type:
+    displayName: Type
+  file.folder:
+    displayName: Topic
+views:
+  - type: table
+    name: Theorems and Definitions
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - source
+      - source_location
+      - doc_type

@@ -18,6 +18,7 @@ used_by:
   - "[[SBC Case Studies]]"
   - "[[Simulation-Based Calibration - Overview]]"
   - "[[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]]"
+  - "[[Morris et al 2019 - Estimates Data Checks, n_sim Choice and Analysis Remarks]]"
 aliases:
   - SBC Algorithm
   - Algorithm 1
@@ -91,3 +92,4 @@ The thinning in Algorithm 2 restores the *independence* condition that Theorem 1
 - [[Efficient MCMC]]
 - [[Model Checking]] — SBC is a principled form of prior predictive / computational model checking
 - [[Approximate Bayesian Computation for ABMs]] — ABC likewise validates models by comparing simulated and observed summary statistics; a simulation-based analogue in the ABM calibration domain
+- [[Morris et al 2019 - Estimates Data Checks, n_sim Choice and Analysis Remarks]] — Monte Carlo error arithmetic for sizing repetitions

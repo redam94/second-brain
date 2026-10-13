@@ -23,6 +23,8 @@ used_by:
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
   - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
   - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
+  - "[[Granger 2003 - Econometrics, Integrated Series and the String-of-Pearls Picture]]"
+  - "[[Morris et al 2019 - Performance Measures and Monte Carlo Standard Errors]]"
 aliases:
   - TBR Design Process
   - TBR Stationarity Assumption
@@ -108,3 +110,5 @@ The coverage/bias results above hold when the treatment/control relationship tru
 - [[Geo-Experiment Methodology - Overview]] — the topic overview and GBR/TBR comparison table
 - [[Bayesian Structural Time-Series Model]] — the more flexible model that handles non-stationary treatment/control relationships
 - [[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]] — the Bayesian EIG framing this classical design methodology is the frequentist counterpart of
+- [[Granger 2003 - Econometrics, Integrated Series and the String-of-Pearls Picture]] — why integrated series violate stationarity
+- [[Morris et al 2019 - Performance Measures and Monte Carlo Standard Errors]] — bias and coverage simulation should report Monte Carlo SEs

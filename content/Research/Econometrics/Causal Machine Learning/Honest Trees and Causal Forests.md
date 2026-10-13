@@ -24,6 +24,9 @@ used_by:
   - "[[Generalized Random Forests - Local Moment Equations]]"
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
   - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
+  - "[[Strobl 2007 - RF Importance Measures and the cforest Alternative]]"
+  - "[[Breiman 2001 - Occam Dilemma and Random Forests vs Single Trees]]"
+  - "[[Model Validation and Interpretability - Overview]]"
 aliases:
   - Causal Forest
   - Causal Forests
@@ -125,3 +128,6 @@ ci  <- cbind(hat$predictions - 1.96 * sqrt(hat$variance.estimates),
 - [[Common Support and Overlap]] — leaves without both arms cannot estimate $\tau$; the $k$-per-arm constraint operationalizes overlap locally.
 - [[R-Learner and Orthogonal CATE Estimation]] — an alternative, loss-based route to $\tau(\cdot)$ that can be stacked with a causal forest.
 - [[Heterogeneity in Agent Models]] — estimated CATE surfaces are a data-driven source of agent-level response heterogeneity for ABM calibration.
+- [[Strobl 2007 - RF Importance Measures and the cforest Alternative]] — conditional inference trees separate variable selection from cutpoint search, as honest trees separate split selection from leaf estimation
+- [[Breiman 2001 - Occam Dilemma and Random Forests vs Single Trees]] — Breiman's forest algorithm and results
+- [[Model Validation and Interpretability - Overview]] — tree importance vs causal effects

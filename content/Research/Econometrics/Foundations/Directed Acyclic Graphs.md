@@ -9,7 +9,7 @@ tags:
 source: "[[raw/Unlock the Secrets of Causal Inference with a Master Class in Directed Acyclic Graphs]]"
 source_location: "Full article — Graham Harrison, Towards Data Science, 2023-04-06"
 date_ingested: 2026-04-11
-date_updated: 2026-08-03
+date_updated: 2026-10-13
 folder: "Econometrics/Foundations"
 doc_type: article
 depends_on:
@@ -22,6 +22,7 @@ used_by:
   - "[[Instrumental Variables]]"
   - "[[PC Algorithm and Constraint-Based Discovery]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Chan Perry 2017 - Opportunities (Better Data, Bayesian, Category, Geo, Controls, Graphs)]]"
 aliases:
   - DAGs
   - directed acyclic graph
@@ -241,3 +242,4 @@ When a confounder creates a spurious correlation, we see an aggregate correlatio
 - [[Regression and the CEF]] — regression is the estimator applied once a valid adjustment set is identified from the DAG
 - [[Conditional Independence Assumption]] — CIA is the statistical assumption that a valid DAG adjustment set justifies
 - [[PC Algorithm and Constraint-Based Discovery]] — learning the DAG from data (vs reasoning about a given DAG)
+- [[Chan Perry 2017 - Opportunities (Better Data, Bayesian, Category, Geo, Controls, Graphs)]] — media-funnel graph as an applied DAG

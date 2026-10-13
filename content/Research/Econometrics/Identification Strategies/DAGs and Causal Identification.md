@@ -20,6 +20,9 @@ used_by:
   - "[[Bayesian Inverse Probability Weighting]]"
   - "[[Synthetic Control]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
+  - "[[Janzing et al 2020 - Feature Relevance as a Causal Problem - Overview]]"
+  - "[[Dillon et al - Non-Confounding Redundancy and the Control-or-Drop Rule]]"
+  - "[[Manheim Garrabrant - Causal Goodhart via Shared Cause, Intermediary and Metric Manipulation]]"
 aliases:
   - DAG
   - d-separation
@@ -219,3 +222,6 @@ For the DAG with paths:
 
 - [[Synthetic Control]] — Uses the potential outcomes framework; DAGs clarify the no-interference assumption
 - [[Instrumental Variables]] — An instrument must be exogenous in the DAG (no backdoor path from $Z$ to $Y$ except through $X$)
+- [[Janzing et al 2020 - Feature Relevance as a Causal Problem - Overview]] — back-door adjustment used to define feature attribution
+- [[Dillon et al - Non-Confounding Redundancy and the Control-or-Drop Rule]] — mediator vs confounder adjustment example
+- [[Manheim Garrabrant - Causal Goodhart via Shared Cause, Intermediary and Metric Manipulation]] — DAG-based failure cases for intervening on proxies

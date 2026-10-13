@@ -10,7 +10,7 @@ tags:
   - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
-date_updated: 2026-07-27
+date_updated: 2026-10-13
 folder: "Bayesian Statistics/Model Assessment"
 aliases:
   - "WAIC"
@@ -33,6 +33,7 @@ used_by:
   - "[[Neural Scaling Laws]]"
   - "[[Transformers and LLM Foundations - Overview]]"
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
+  - "[[Riley 2020 - Shrinkage and Optimism Criteria for Overfitting]]"
 ---
 
 # Overfitting and Information Criteria
@@ -96,3 +97,5 @@ WAIC is the most general: it uses the full posterior, makes no Gaussian approxim
 - [[Probability and Bayesian Inference]] — KL divergence and the log score are grounded in the probability theory introduced there
 - [[Model Selection and Exploratory Analysis]] — applies AIC/BIC and cross-validation in the market response modeling context (Ch. 5 of Hanssens et al.)
 - [[Neural Scaling Laws]] — the L(N,D) overfitting penalty
+- [[Riley 2020 - Shrinkage and Optimism Criteria for Overfitting]] — optimism and shrinkage as the frequentist counterpart of effective-parameter penalties
+- [[Bayesian Media Mix Modeling - Overview]] — BIC on a nonlinear MMM picks the best regression model, not the best causal one

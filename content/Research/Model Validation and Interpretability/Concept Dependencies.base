@@ -1,0 +1,26 @@
+filters:
+  and:
+    - file.inFolder("Research/Model Validation and Interpretability")
+    - '!file.hasTag("type/index")'
+    - file.ext == "md"
+    - '!file.inFolder("Research/Model Validation and Interpretability/raw")'
+properties:
+  depends_on:
+    displayName: Depends On
+  used_by:
+    displayName: Used By
+  doc_type:
+    displayName: Type
+  file.folder:
+    displayName: Folder
+views:
+  - type: table
+    name: Concept Dependency Graph
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - depends_on
+      - used_by
+      - doc_type

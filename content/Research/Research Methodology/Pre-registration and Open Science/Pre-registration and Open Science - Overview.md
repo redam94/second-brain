@@ -18,6 +18,9 @@ used_by:
   - "[[Pre-registration vs Registered Reports]]"
   - "[[Pre-analysis Plans and the Open Science Ecosystem]]"
   - "[[Limits and Objections to Pre-registration]]"
+  - "[[Ioannidis 2005 - Remedies, Limitations and Later Critiques]]"
+  - "[[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]]"
+  - "[[Morris et al 2019 - Protocols, Code Release, Consortia and Limits]]"
 aliases:
   - "Preregistration Overview"
   - "The Preregistration Revolution"
@@ -92,3 +95,6 @@ Pre-registration **reduces but does not eliminate** bias. It does not fix multip
 - [[Pre-registration vs Registered Reports]] — the two mechanisms, results-blind review
 - [[Pre-analysis Plans and the Open Science Ecosystem]] — OSF, AsPredicted, AEA RCT Registry, PAP contents
 - [[Limits and Objections to Pre-registration]] — what it does and doesn't fix
+- [[Ioannidis 2005 - Remedies, Limitations and Later Critiques]] — registration and protocol remedies
+- [[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]] — disclosure requirements as precursor of pre-registration
+- [[Morris et al 2019 - Protocols, Code Release, Consortia and Limits]] — simulation protocols as pre-registration for methods research

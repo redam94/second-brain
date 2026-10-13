@@ -11,7 +11,7 @@ tags:
   - topic/arima
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
-date_updated: 2026-04-11
+date_updated: 2026-10-13
 source: "Hanssens, Parsons & Schultz (2001) Ch. 6"
 chapter: "6"
 status: complete
@@ -28,6 +28,9 @@ used_by:
   - "[[DeepAR and Global Autoregressive Neural Forecasters]]"
   - "[[Hierarchical Forecast Reconciliation (MinT)]]"
   - "[[Probabilistic Forecasting - Overview]]"
+  - "[[Granger 2003 - Spurious Regression from Yule to Granger-Newbold]]"
+  - "[[Bergmeir 2018 - Sunspot Example with Ljung-Box Residual Filter]]"
+  - "[[Model Validation and Interpretability - Overview]]"
 ---
 
 # Single Marketing Time Series
@@ -187,3 +190,6 @@ Common choices: $\lambda = 0.5$ (square root), $\lambda \to 0$ (log), $\lambda =
 
 - [[State-Space Models and the Kalman Filter - Overview]] — ARIMA as a special-case state-space model
 - [[Probabilistic Forecasting - Overview]] — modern probabilistic successor to ARIMA forecasting
+- [[Granger 2003 - Spurious Regression from Yule to Granger-Newbold]] — why unit roots lead to spurious regression
+- [[Bergmeir 2018 - Sunspot Example with Ljung-Box Residual Filter]] — residual-whiteness testing to screen out underfitting
+- [[Model Validation and Interpretability - Overview]] — spurious fits in weekly series as a validation failure mode
