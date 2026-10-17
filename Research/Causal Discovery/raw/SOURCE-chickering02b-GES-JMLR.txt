@@ -1,0 +1,30 @@
+CITATION STUB — PDF download blocked by network proxy policy.
+Free PDF available at: https://jmlr.org/papers/v3/chickering02b.html
+
+Title: Optimal Structure Identification With Greedy Search
+Author: David Maxwell Chickering
+Year: 2002
+Venue: Journal of Machine Learning Research, Vol. 3, pp. 507-554
+arXiv / DOI: https://www.jmlr.org/papers/v3/chickering02b.html
+Also at: https://www.microsoft.com/en-us/research/?p=342392
+
+Abstract (from web search):
+Proves the "Meek Conjecture": if a DAG H is an independence map of a DAG G then there
+exists a finite sequence of edge additions and covered edge reversals in G that transforms
+G into H such that every intermediate graph is also an independence map of H. Using this
+result, the paper shows that the two-phase greedy search algorithm (GES) over equivalence
+classes of Bayesian network structures provably identifies a perfect map of the generative
+distribution if one exists, in the large-sample limit. GES uses insert and delete operators
+defined on equivalence classes (CPDAGs), and is exact in the identifiable case.
+
+Key contributions:
+1. Proof of the Meek conjecture (covered edge reversals can reach any equivalent DAG)
+2. The GES (Greedy Equivalence Search) algorithm — two phases:
+   - Forward phase: greedily adds edges (insert operator on CPDAG)
+   - Backward phase: greedily removes edges (delete operator on CPDAG)
+3. Consistency result: under faithfulness + causal sufficiency, GES recovers true CPDAG in large-sample limit
+4. Efficient CPDAG representation of the search space
+
+Related paper by same author:
+Chickering, D.M. (2002). Learning equivalence classes of Bayesian-network structures.
+JMLR, Vol. 2, pp. 445-498. (https://arxiv.org/pdf/1302.3566 — arXiv preprint)

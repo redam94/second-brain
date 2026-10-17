@@ -1,0 +1,33 @@
+CITATION STUB — PDF download blocked by network proxy policy.
+Free PDF available at: https://ics.uci.edu/~dechter/courses/ics-295cr/spring-2021/reading/Causation_Prediction_and_Search.pdf
+
+Title: Causation, Prediction, and Search (2nd Edition)
+Authors: Peter Spirtes, Clark Glymour, Richard Scheines
+Year: 2000 (1st edition 1993)
+Publisher: MIT Press (Adaptive Computation and Machine Learning)
+ISBN: 978-0-262-19440-2
+URL: https://www.cmu.edu/dietrich/philosophy/docs/scheines/spirtes5-2.doc (excerpt)
+
+Summary:
+The foundational reference for the PC algorithm (named after Peter and Clark).
+Chapters relevant to structure learning:
+- Ch. 2: Graphs and Conditional Independences
+- Ch. 3: Causal Theories, Markov Conditions, Faithfulness
+- Ch. 5: Discovery Algorithms for Causally Sufficient Structures (PC algorithm, FCI)
+- Ch. 6: Prediction
+
+The PC algorithm (§5.4) works in two phases:
+1. Skeleton discovery: Start from complete undirected graph. For increasing l=0,1,...,
+   test X ⊥⊥ Y | S for all subsets S ⊆ adj(X)\{Y} of size l. Remove edge if independent.
+2. Orientation: Orient v-structures (X-Z-Y where Z ∉ sep(X,Y)), then apply Meek rules.
+
+Assumptions:
+- Causal sufficiency (no latent common causes)
+- Faithfulness (all independence in distribution matches d-separation in DAG)
+- IID data
+
+Earlier relevant papers:
+- Spirtes & Glymour (1991) — "An algorithm for fast recovery of sparse causal graphs",
+  Social Science Computer Review 9(1):62-72. (Original PC paper)
+- Verma & Pearl (1990) — "Equivalence and synthesis of causal models", UAI 1990.
+  (Proved the skeleton + v-structure characterization of Markov equivalence)
