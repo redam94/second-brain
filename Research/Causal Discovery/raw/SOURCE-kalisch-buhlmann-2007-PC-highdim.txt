@@ -1,0 +1,35 @@
+CITATION STUB — PDF download blocked by network proxy policy.
+Free PDF available at: https://arxiv.org/pdf/math/0510436
+JMLR version: https://jmlr2020.csail.mit.edu/papers/volume8/kalisch07a/kalisch07a.pdf
+ETH mirror: https://stat.ethz.ch/Manuscripts/buhlmann/pcalgo2.pdf
+
+Title: Estimating High-Dimensional Directed Acyclic Graphs with the PC-Algorithm
+Authors: Markus Kalisch, Peter Bühlmann
+Year: 2007
+Venue: Journal of Machine Learning Research, Vol. 8, pp. 613-636
+arXiv: math/0510436 (submitted 2005-10-20)
+
+Abstract (from web search):
+The paper extends the PC algorithm to the high-dimensional setting where the number of
+variables d can be much larger than the sample size n (d >> n). The key results are:
+1. Under standard assumptions (faithfulness, causal sufficiency, sub-Gaussian tails),
+   the PC algorithm is uniformly consistent for DAG skeleton recovery when d grows
+   as fast as O(n^a) for any a > 0.
+2. The consistency result uses the fact that, for a sparse graph, only low-order
+   conditional independence tests (small |S|) are needed — the skeleton of the
+   true DAG limits conditioning set size to O(log n).
+3. Partial correlations (Fisher's Z transformation) are used as CI tests for Gaussian data.
+4. The paper also covers CPDAG (equivalence class) estimation.
+
+Key theoretical result (Theorem 1): Under faithfulness + sparsity + Gaussian +
+suitable penalty on Fisher's Z test, P(PC finds true skeleton) → 1 as n → ∞ even
+when d = d(n) → ∞, as long as d = O(n^a) for some a > 0.
+
+Implementation: pcalg R package (Kalisch et al., 2012, JOSS)
+  - pc() function implements the PC algorithm
+  - ges() function implements Chickering's GES
+  - gaussCItest() for Fisher's Z based CI tests
+
+Related:
+- Maathuis, Kalisch & Bühlmann (2009) — "Estimating high-dimensional intervention effects
+  from observational data" — IDA algorithm using PC output for causal effect bounds
