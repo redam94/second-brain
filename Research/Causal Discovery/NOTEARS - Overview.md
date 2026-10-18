@@ -16,6 +16,7 @@ used_by:
   - "[[Smooth Characterization of Acyclicity]]"
   - "[[NOTEARS Algorithm]]"
   - "[[NOTEARS Experiments]]"
+  - "[[Causal Discovery Methods Overview]]"
 aliases:
   - "DAGs with NO TEARS"
   - "NOTEARS"
