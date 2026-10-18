@@ -23,6 +23,21 @@ used_by:
   - "[[Decision Analysis]]"
   - "[[BDA3 - Overview]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Approximation Methods]]"
+  - "[[Asymptotics and Frequentist Connections]]"
+  - "[[Bayesian Linear Regression]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Choosing and Building Models]]"
+  - "[[Data Collection Models]]"
+  - "[[Hierarchical Models]]"
+  - "[[Introduction to Bayesian Computation]]"
+  - "[[Linear Models in Statistical Rethinking]]"
+  - "[[MCMC Basics]]"
+  - "[[Model Checking]]"
+  - "[[Multiparameter Models]]"
+  - "[[Posterior Sampling and Summarization]]"
+  - "[[Spurious Association and Confounds]]"
+
 ---
 
 # Probability and Bayesian Inference

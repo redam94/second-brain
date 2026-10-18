@@ -26,6 +26,16 @@ used_by:
   - "[[Factor Analysis and PPCA]]"
   - "[[Overfitting and Information Criteria]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Bayesian Propensity Score Weighting]]"
+  - "[[Counterfactual Inference]]"
+  - "[[Data Collection Models]]"
+  - "[[Hilbert Space Gaussian Processes]]"
+  - "[[Model Checking]]"
+  - "[[Model Comparison]]"
+  - "[[Moderation Analysis]]"
+  - "[[Nonparametric Causal Inference]]"
+  - "[[Spurious Association and Confounds]]"
+
 ---
 
 # Bayesian Linear Regression

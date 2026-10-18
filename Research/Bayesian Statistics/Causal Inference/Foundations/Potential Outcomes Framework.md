@@ -15,6 +15,22 @@ used_by:
   - "[[Causal Estimands]]"
   - "[[Frequentist Causal Estimation]]"
   - "[[General Structure of Bayesian CI]]"
+  - "[[Brodersen 2015 - Overview]]"
+  - "[[Counterfactual Inference]]"
+  - "[[Estimands in Longitudinal Research]]"
+  - "[[Instrumental Variables and Principal Stratification]]"
+  - "[[Künzel 2019 - Overview]]"
+  - "[[Li et al 2022 - Overview]]"
+  - "[[Logic of Regression Adjustment]]"
+  - "[[Metalearners for CATE]]"
+  - "[[Propensity Score Matching - Overview]]"
+  - "[[Sensitivity Analysis in Observational Studies]]"
+  - "[[Table 2 Fallacy]]"
+  - "[[Time-Varying Treatments and G-computation]]"
+  - "[[Within-Between Persons Causal Inference]]"
+  - "[[Within-Between Persons Distinction - Overview]]"
+  - "[[Zeng 2025 - Overview]]"
+
 aliases:
   - Rubin causal model
   - potential outcomes

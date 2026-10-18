@@ -29,6 +29,18 @@ used_by:
   - "[[Iterative Model Improvement]]"
   - "[[Evaluating Fitted Models]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Bayesian Inverse Probability Weighting]]"
+  - "[[Bayesian Workflow - Overview]]"
+  - "[[Confirmatory Factor Analysis and SEM]]"
+  - "[[Decision Analysis]]"
+  - "[[Missing Data Models]]"
+  - "[[Model Checking]]"
+  - "[[Model Comparison]]"
+  - "[[Monsters and Mixtures]]"
+  - "[[Multiple Comparisons - Bayesian Perspective]]"
+  - "[[Nonparametric Models Overview]]"
+  - "[[Partial Pooling as Multiple Comparisons Correction]]"
+
 ---
 
 # Hierarchical Models

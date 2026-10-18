@@ -22,6 +22,19 @@ used_by:
   - "[[Differences-in-Differences]]"
   - "[[Activity Bias in Advertising]]"
   - "[[Power Analysis and Sample Size]]"
+  - "[[Bayesian Difference in Differences]]"
+  - "[[DAGs and Causal Identification]]"
+  - "[[Difference-in-Differences with Multiple Time Periods - Overview]]"
+  - "[[Directed Acyclic Graphs]]"
+  - "[[Garden of Forking Paths]]"
+  - "[[Local Average Treatment Effects]]"
+  - "[[Regression and the CEF]]"
+  - "[[Research Questions in Econometrics]]"
+  - "[[Researcher Degrees of Freedom]]"
+  - "[[Survival Analysis]]"
+  - "[[Synthetic Control]]"
+  - "[[Synthetic Control Requirements]]"
+
 ---
 
 # The Experimental Ideal

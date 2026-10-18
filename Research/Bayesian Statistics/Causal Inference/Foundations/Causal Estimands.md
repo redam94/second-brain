@@ -15,6 +15,13 @@ depends_on:
 used_by:
   - "[[Frequentist Causal Estimation]]"
   - "[[General Structure of Bayesian CI]]"
+  - "[[Bayesian Outcome Models]]"
+  - "[[Estimands in Longitudinal Research]]"
+  - "[[Instrumental Variables and Principal Stratification]]"
+  - "[[Künzel 2019 - Overview]]"
+  - "[[Li et al 2022 - Overview]]"
+  - "[[Metalearners for CATE]]"
+
 aliases:
   - treatment effect
   - ATE

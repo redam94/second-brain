@@ -20,6 +20,15 @@ used_by:
   - "[[Nonparametric Causal Inference]]"
   - "[[Differences-in-Differences]]"
   - "[[Instrumental Variables]]"
+  - "[[Causal Model - Cause Precondition Effect]]"
+  - "[[Code Prompts for Causal Structure]]"
+  - "[[Cross-Lagged and Dynamic Panel Models]]"
+  - "[[Fixed-Effects Model]]"
+  - "[[Identifying Assumptions for Staggered DiD]]"
+  - "[[LLM Expert Elicitation for Bayesian Networks]]"
+  - "[[Summary Causal DAGs]]"
+  - "[[Zeng 2025 - Overview]]"
+
 aliases:
   - DAGs
   - directed acyclic graph

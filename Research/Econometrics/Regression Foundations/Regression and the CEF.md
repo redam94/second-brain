@@ -29,6 +29,15 @@ used_by:
   - "[[Quantile Regression]]"
   - "[[Standard Errors and Clustering]]"
   - "[[Q - Differences Between Frequentist and Bayesian Statistics]]"
+  - "[[Bayesian Difference in Differences]]"
+  - "[[Differences-in-Differences]]"
+  - "[[Discrete Choice Models]]"
+  - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[Observational vs Experimental Methods in Advertising]]"
+  - "[[Regression Discontinuity Designs]]"
+  - "[[Survival Analysis]]"
+  - "[[The Experimental Ideal]]"
+
 ---
 
 # Regression and the CEF

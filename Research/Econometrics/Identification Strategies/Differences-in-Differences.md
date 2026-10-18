@@ -29,6 +29,14 @@ used_by:
   - "[[Observational vs Experimental Methods in Advertising]]"
   - "[[Generalized Synthetic Control Method]]"
   - "[[Q - Uncovering Causal Estimates from Non-Experimental Data]]"
+  - "[[Abadie 2021 - Overview]]"
+  - "[[Brodersen 2015 - Overview]]"
+  - "[[Difference-in-Differences with Multiple Time Periods - Overview]]"
+  - "[[Mostly Harmless Econometrics - Overview]]"
+  - "[[Synthetic Control]]"
+  - "[[Synthetic Control Bias Theory]]"
+  - "[[Xu 2016 - Overview]]"
+
 ---
 
 # Differences-in-Differences

@@ -20,6 +20,14 @@ depends_on:
   - "[[The Experimental Ideal]]"
 used_by:
   - "[[Counterfactual Inference]]"
+  - "[[Abadie 2021 - Overview]]"
+  - "[[Generalized Synthetic Control Method]]"
+  - "[[Synthetic Control Bias Theory]]"
+  - "[[Synthetic Control Extensions]]"
+  - "[[Synthetic Control Inference and Diagnostics]]"
+  - "[[Synthetic Control Requirements]]"
+  - "[[Xu 2016 - Overview]]"
+
 aliases:
   - synthetic controls
   - Abadie-Diamond-Hainmueller

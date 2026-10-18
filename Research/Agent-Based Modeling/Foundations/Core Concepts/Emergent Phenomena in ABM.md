@@ -16,6 +16,11 @@ used_by:
   - "[[ABM vs Equation-Based Modeling]]"
   - "[[Market Share Equilibrium and Lock-In]]"
   - "[[Product Adoption and Diffusion Models]]"
+  - "[[Flow Simulation Applications]]"
+  - "[[Market and Financial Simulation]]"
+  - "[[Operational Risk Modeling with ABM]]"
+  - "[[Organizational Simulation]]"
+
 aliases:
   - Emergence
   - Emergent behavior

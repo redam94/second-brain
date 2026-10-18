@@ -25,6 +25,14 @@ used_by:
   - "[[BDA3 - Overview]]"
   - "[[Statistical Rethinking - Overview]]"
   - "[[Bayesian Linear Regression]]"
+  - "[[Choosing and Building Models]]"
+  - "[[Evaluating Fitted Models]]"
+  - "[[Fitting and Validating Computation]]"
+  - "[[Iterative Model Improvement]]"
+  - "[[Linear Models in Statistical Rethinking]]"
+  - "[[Modeling as Software Development]]"
+  - "[[Simulation-Based Calibration - Overview]]"
+
 ---
 
 > [!summary]
