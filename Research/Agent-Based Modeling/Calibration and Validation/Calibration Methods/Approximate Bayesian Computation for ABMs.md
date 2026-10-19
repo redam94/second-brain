@@ -118,3 +118,5 @@ From 100-parameter accuracy tests (Section 5.16–5.17):
 - [[HM-ABC Calibration Framework]] — the combined pipeline
 - [[Uncertainty Quantification for ABM Calibration]] — the uncertainty components feeding $\varepsilon$
 - [[ABM Calibration Case Studies]] — ABC applied to three models
+- [[Method of Simulated Moments]] — an alternative econometric calibration approach: instead of the ABC accept/reject step, SMM minimises the distance between observed and simulated moments with a formal weighting matrix; shares the simulation-based likelihood-free philosophy
+- [[Indirect Inference]] — a related simulation-based estimator that fits an auxiliary model to both observed and simulated data; applicable to ABMs where ABM outputs are treated as "data" from the structural model

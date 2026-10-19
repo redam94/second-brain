@@ -100,3 +100,4 @@ Bonabeau (2002) argues that ABM should be used when "the population is heterogen
 - [[Opinion Leaders and Social Influence]] — the extreme end of behavioral heterogeneity: highly influential agents with outsized market impact
 - [[Network Topology Effects on Diffusion]] — network position heterogeneity amplifies behavioral heterogeneity in diffusion dynamics
 - [[ABM vs Equation-Based Modeling]] — heterogeneity is the primary reason to choose ABM over aggregate equation-based models
+- [[Monsters and Mixtures]] — finite mixture models are the statistical analogue of ABM heterogeneity: instead of assigning each agent unique parameters, a mixture model assigns agents to discrete latent types, each with its own parameter set; both approaches model population heterogeneity, but ABM allows richer individual variation than a fixed number of mixture components

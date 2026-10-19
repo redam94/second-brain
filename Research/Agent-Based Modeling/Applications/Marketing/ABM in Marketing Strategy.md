@@ -110,3 +110,5 @@ Karakaya et al. (2011) model three of the 4Ps explicitly (excluding Place):
 - [[Market Response Models - Overview]] — traditional (non-ABM) marketing mix modeling; same 4Ps decisions without agent heterogeneity or WOM endogeneity
 - [[Advertising and Promotion Effects]] — empirical advertising elasticity (≈0.10 short-run); compare with ABM finding that WOM substitutes for promotion
 - [[Marketing Generalizations Overview]] — empirical meta-analysis that ABM findings should be benchmarked against
+- [[Bayesian Media Mix Modeling - Overview]] — the Bayesian econometric approach to the same marketing mix optimisation problem; no agent interactions or WOM but provides rigorous posterior inference over ROAS and budget allocation
+- [[ROAS, mROAS, and Optimal Media Mix]] — optimal media allocation under posterior uncertainty; connects the quality-vs-promotion tradeoff in ABM findings to formal budget optimisation

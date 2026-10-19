@@ -22,7 +22,6 @@ depends_on:
   - "[[Asymptotics and Frequentist Connections]]"
   - "[[Efficient MCMC]]"
   - "[[Probability and Bayesian Inference]]"
-  - "[[raw/BDA3.pdf]]"
 used_by:
   - "[[HMC and Stan in Practice]]"
   - "[[Factor Analysis and PPCA]]"
@@ -79,3 +78,4 @@ $$q^* = \arg\min_{q \in \mathcal{Q}} \; \text{KL}(q \| p(\theta \mid y))$$
 - [[Fitting and Validating Computation]] — validating that approximations are adequate
 - [[Bayesian Workflow - Overview]] — when to choose approximations vs exact MCMC in a workflow
 - [[Hilbert Space Gaussian Processes]] — GP models where Laplace/EP approximations are commonly used
+- [[Spatial Models - BYM]] — the BYM spatial model is estimated via INLA (Integrated Nested Laplace Approximation), making it a major applied use-case of the Laplace approximation

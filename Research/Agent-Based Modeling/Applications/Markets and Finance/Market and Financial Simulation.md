@@ -68,3 +68,10 @@ Bonabeau describes ABM modeling of NASDAQ markets:
 ## See Also
 - [[ABM Methodology and Principles]] — the paradigm underlying market simulation
 - [[Emergent Phenomena in ABM]] — prices and crashes as emergent phenomena
+- [[Heterogeneity in Agent Models]] — heterogeneous trader strategies are the engine of market ABMs
+- [[Agent Decision Rules and Bounded Rationality]] — the decision architectures used by trading agents
+- [[Operational Risk Modeling with ABM]] — related finance/risk application
+- [[Flow Simulation Applications]] — related physical-flow ABM application
+- [[Organizational Simulation]] — related organizational ABM application
+- [[ABM in Marketing Strategy]] — comparable consumer-market simulation using ABM
+- [[Factor Copula Application - S&P 100 and Systemic Risk]] — quantitative (non-ABM) approach to systemic risk in the same financial market domain; complements ABM market simulation
