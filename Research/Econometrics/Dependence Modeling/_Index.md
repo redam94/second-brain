@@ -2,20 +2,28 @@
 title: "Index: Dependence Modeling"
 tags: [type/index, source/ingested]
 parent: "[[../_Index|Econometrics]]"
-date_updated: 2026-06-17
-concept_count: 6
+date_updated: 2026-10-20
+concept_count: 10
 ---
 
 # Dependence Modeling
 
 > [!abstract] Routing Summary
-> High-dimensional dependence (copula) modelling for economic/financial variables, from Oh & Patton (2012) "Modelling Dependence in High Dimensions with Factor Copulas". Covers the factor-copula construction, its tail-dependence theory via EVT, multi-factor/block extensions, SMM estimation, and the S&P 100 / systemic-risk application.
-> - Need the motivation, contribution, and big picture? -> [[Factor Copulas - Overview]]
-> - Need the latent factor model defining the copula? -> [[Factor Copula Construction]]
-> - Need analytical tail-dependence coefficients (correlated crashes/booms)? -> [[Tail Dependence in Factor Copulas]]
-> - Need multiple factors, heterogeneous or industry-block dependence? -> [[Multi-Factor and Block Dependence Structures]]
-> - Need the estimation method (no closed-form likelihood, rank-based SMM)? -> [[SMM Estimation of Factor Copulas]]
-> - Need the empirical results, asymmetric dependence, or systemic risk? -> [[Factor Copula Application - S&P 100 and Systemic Risk]]
+> High-dimensional dependence (copula) modelling for economic/financial variables. Two major architectures: **Factor copulas** (Oh & Patton 2012/2017 — parsimonious latent-factor model, scales to $d=100$+) and **Vine / pair-copula constructions** (Aas et al. 2009; Bedford & Cooke 2002 — flexible, heterogeneous families per pair, practical up to $d\approx20$).
+>
+> **Factor copulas:**
+> - Need the motivation, contribution, and big picture? → [[Factor Copulas - Overview]]
+> - Need the latent factor model defining the copula? → [[Factor Copula Construction]]
+> - Need analytical tail-dependence coefficients (correlated crashes/booms)? → [[Tail Dependence in Factor Copulas]]
+> - Need multiple factors, heterogeneous or industry-block dependence? → [[Multi-Factor and Block Dependence Structures]]
+> - Need the estimation method (no closed-form likelihood, rank-based SMM)? → [[SMM Estimation of Factor Copulas]]
+> - Need the empirical results, asymmetric dependence, or systemic risk? → [[Factor Copula Application - S&P 100 and Systemic Risk]]
+>
+> **Vine / pair-copula constructions:**
+> - Need the motivation and density decomposition theorem? → [[Vine Copulas - Overview]]
+> - Need the h-function recursion and sequential estimation algorithm? → [[Pair Copula Construction]]
+> - Need C-vine vs D-vine vs R-vine structure taxonomy? → [[C-Vine and D-Vine Structures]]
+> - Need Dissmann tree-selection, AIC family selection, software? → [[Vine Model Selection]]
 
 ## Concept Map
 
@@ -27,6 +35,10 @@ concept_count: 6
 | Multi-factor & block | [[Multi-Factor and Block Dependence Structures]] | concept | Construction | $K$-factor + block equidependence (market + 7 SIC industry factors, 16 params) → heterogeneous dependence |
 | SMM estimation | [[SMM Estimation of Factor Copulas]] | theorem | Construction, Multi-Factor | Match rank correlation + quantile dependence; consistent & asym. normal ($S/T\to\infty$); GMM sandwich, bootstrap + numerical-derivative covariance |
 | S&P 100 & systemic risk | [[Factor Copula Application - S&P 100 and Systemic Risk]] | example | SMM, Tail Dependence, Multi-Factor | Skew $t$-$t$ block copula fits best; crashes more correlated than booms; superior MES/$kES$ estimates |
+| Vine motivation & density theorem | [[Vine Copulas - Overview]] | overview | Factor Copulas - Overview | Decompose joint density into $d(d-1)/2$ pair copulas; each pair has its own family; Bedford-Cooke 2002 |
+| H-functions & SML algorithm | [[Pair Copula Construction]] | concept | Vine Copulas - Overview | $h_{1\|2}=\partial C_{12}/\partial u_2$; SML: estimate tree-by-tree on pseudo-observations |
+| C-vine, D-vine, R-vine | [[C-Vine and D-Vine Structures]] | definition | Vine Copulas - Overview | Star=C-vine (pivot variable); Path=D-vine (ordered variables); General=R-vine |
+| Tree/family selection | [[Vine Model Selection]] | concept | C-Vine, Pair Copula | Dissmann MST on $\|\hat\tau\|$; AIC family selection; truncated vine; VineCopula R / pyvinecopulib |
 
 ## Notes
 
@@ -36,10 +48,15 @@ concept_count: 6
 - [[Multi-Factor and Block Dependence Structures]] — CONTAINS: $K$-factor model, conditional-independence/frailty interpretation, flexible weights, empirical 8-factor block model (16 params), block dependence-matrix averaging.
 - [[SMM Estimation of Factor Copulas]] — CONTAINS: semiparametric DGP, SMM objective $Q_{T,S}$, rank-correlation & quantile-dependence moments, moment-count reduction, consistency/normality theorem, bootstrap + numerical-derivative covariance and step-size condition, $J$-test, MLE/GMM/SMM efficiency comparison.
 - [[Factor Copula Application - S&P 100 and Systemic Risk]] — CONTAINS: Monte Carlo design & results (Tables 1-5), AR(1)-GJR-GARCH marginals, equidependence & block estimates (Tables 8-10), asymmetric/fat-tail findings, MES & $kES$ systemic-risk measures (Table 11).
+- [[Vine Copulas - Overview]] — CONTAINS: Bedford-Cooke regular-vine definition, proximity condition, density decomposition theorem, parameter count, 3-variable D-vine example, financial data example, C/D/R-vine summary.
+- [[Pair Copula Construction]] — CONTAINS: h-function definition and table (Gaussian/$t$/Clayton/Gumbel/Frank), recursive conditional-CDF formula, simplifying assumption, sequential MLE algorithm, 4-variable D-vine trace, full 4-variable density.
+- [[C-Vine and D-Vine Structures]] — CONTAINS: C-vine (star) and D-vine (path) formal definitions with 4-variable edge tables, R-vine counting (Cayley's formula), structure-choice heuristics, DAX R-vine example, vine-vs-factor scalability comparison.
+- [[Vine Model Selection]] — CONTAINS: Dissmann MST algorithm (conditional Kendall's $\tau$ weights), AIC/BIC family selection, truncated vine, GOF tests (Rosenblatt, Vuong, SA test), VineCopula R / pyvinecopulib software reference, 4-variable trace, vine-vs-factor JBES comparison.
 
 ## Sources
 
 - [[raw/Oh-Patton-2012-Factor-Copulas.pdf]] — Oh & Patton (2012), "Modelling Dependence in High Dimensions with Factor Copulas", Duke University. 51 pp. JEL C31, C32, C51.
+- [[raw/Vine-PairCopula-Survey.md]] — Survey of vine/pair-copula construction literature (Bedford & Cooke 2002; Aas et al. 2009; Czado 2019). Source PDFs not downloadable (network policy); content synthesised from comprehensive secondary coverage.
 
 ## See Also
 
