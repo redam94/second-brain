@@ -15,9 +15,17 @@ date_updated: 2026-04-11
 > - Concave/S-shaped/convex response, hysteresis, pulsing → [[Shape of the Marketing Response Function]]
 > - Design decisions for dynamic models → [[Design of Dynamic Response Models]]
 
-| Note | Topic |
-|------|-------|
-| [[Carryover Effects and Distributed Lags]] | Koyck model, PDL, GLPF, ADL(r,s), ratchet models, temporal aggregation bias |
-| [[Reaction Functions and Competitive Dynamics]] | Cournot, Bertrand, Stackelberg, Sweezy, absolute/relative reaction, Tobit |
-| [[Shape of the Marketing Response Function]] | Concave vs S-shaped, hysteresis, threshold effects, pulsing strategies |
-| [[Design of Dynamic Response Models]] | Lag order selection, short vs long-run effects, simultaneity, ARMAX |
+## Concept Map
+
+| Concept | Note | Type | Key Result |
+|---------|------|------|-----------|
+| Koyck/PDL/ADL carryover, temporal aggregation | [[Carryover Effects and Distributed Lags]] | concept | Koyck: $Q_t = (1-\lambda)\beta X_t + \lambda Q_{t-1}$; long-run effect = $\beta/(1-\lambda)$ |
+| Cournot/Bertrand/Stackelberg reaction functions | [[Reaction Functions and Competitive Dynamics]] | concept | Reaction functions define competitive equilibrium strategy |
+| Concave/S-shaped response, pulsing, hysteresis | [[Shape of the Marketing Response Function]] | concept | S-shape justifies advertising pulsing over continuous spend |
+| Lag order, simultaneity, short vs long-run | [[Design of Dynamic Response Models]] | concept | ADL model nests Koyck and PDL; model selection via AIC/BIC |
+
+## Notes
+- [[Carryover Effects and Distributed Lags]] — CONTAINS: Koyck transformation, PDL, GLPF, ADL(r,s), ratchet/hysteresis models, temporal aggregation bias theorem
+- [[Reaction Functions and Competitive Dynamics]] — CONTAINS: Cournot/Bertrand/Stackelberg/Sweezy equilibria, absolute/relative reaction functions, Tobit censoring
+- [[Shape of the Marketing Response Function]] — CONTAINS: Concave vs S-shaped response, hysteresis, threshold effects, pulsing strategies, Sasieni constant
+- [[Design of Dynamic Response Models]] — CONTAINS: Lag order selection, short/long-run effect decomposition, simultaneity, ARMAX specification

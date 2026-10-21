@@ -5,7 +5,7 @@ tags:
   - source/ingested
 parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
 date_updated: 2026-04-09
-concept_count: 9
+concept_count: 10
 ---
 
 # Regression Models
@@ -13,6 +13,7 @@ concept_count: 9
 > [!abstract] Routing Summary
 > This folder covers Bayesian regression from BDA3 Part IV, Statistical Rethinking Chapters 4-5, and PyMC tutorials. Contains 9 notes.
 > - Need priors as regularization (ridge/lasso/horseshoe)? -> [[Bayesian Linear Regression]]
+> - Need horseshoe / regularized horseshoe prior (global-local shrinkage for sparsity)? -> [[Horseshoe and Regularized Horseshoe Priors]]
 > - Need multilevel/varying slopes models? -> [[Hierarchical Linear Models]]
 > - Need logistic or Poisson regression? -> [[Generalized Linear Models]]
 > - Need missing data (multiple imputation or DAG-based)? -> [[Missing Data Models]] or [[Missing Data - Statistical Rethinking]]
@@ -31,6 +32,7 @@ concept_count: 9
 | DAG-based missing data (MCAR/MAR/MNAR via causal graphs) | [[Missing Data - Statistical Rethinking]] | concept | [[Missing Data Models]], [[Spurious Association and Confounds]], [[Data Collection Models]], [[Counterfactual Inference]] | DAGs clarify which missing-data mechanism applies |
 | Gaussian models, MAP, prior predictive simulation | [[Linear Models in Statistical Rethinking]] | concept | [[Probability and Bayesian Inference]], [[Bayesian Workflow - Overview]] | Prior predictive simulation validates model assumptions |
 | Multivariate regression, confounds, post-treatment bias | [[Spurious Association and Confounds]] | concept | [[Linear Models in Statistical Rethinking]], [[Bayesian Linear Regression]], [[Probability and Bayesian Inference]] | DAGs identify which variables to include/exclude |
+| Global-local shrinkage for sparse high-dim regression | [[Horseshoe and Regularized Horseshoe Priors]] | concept | [[Bayesian Linear Regression]] | Horseshoe aggressively shrinks noise while leaving signals unshrunk |
 
 ## Notes
 - [[Bayesian Linear Regression]] — CONTAINS: Priors as regularization, ridge/lasso/horseshoe, posterior predictive checks, causal interpretation
@@ -42,6 +44,7 @@ concept_count: 9
 - [[Missing Data - Statistical Rethinking]] — CONTAINS: DAG-based missing data analysis, MCAR/MAR/MNAR through causal graphs, imputation via DAGs
 - [[Linear Models in Statistical Rethinking]] — CONTAINS: Gaussian models, MAP estimation, prior predictive simulation, prediction intervals
 - [[Spurious Association and Confounds]] — CONTAINS: Multivariate regression, Waffle House divorce example, post-treatment bias, masked relationships, DAGs
+- [[Horseshoe and Regularized Horseshoe Priors]] — CONTAINS: Half-Cauchy global-local shrinkage, regularized horseshoe (Piironen & Vehtari 2017), sparsity-based $\tau_0$ selection
 
 ## Sources
 

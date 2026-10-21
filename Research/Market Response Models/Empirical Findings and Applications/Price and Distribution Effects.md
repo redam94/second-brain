@@ -4,6 +4,7 @@ aliases:
   - "Price Elasticity Generalizations"
   - "Distribution Response Marketing"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/price

@@ -1,5 +1,8 @@
 ---
 title: "Bayesian Propensity Score Weighting"
+aliases:
+  - Bayesian Propensity Scores and IPW
+  - Bayesian IPW
 tags:
   - source/ingested
   - topic/causal-inference

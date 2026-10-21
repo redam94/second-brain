@@ -4,6 +4,7 @@ aliases:
   - "MRM Model Selection"
   - "Exploratory Data Analysis Marketing"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/model-selection

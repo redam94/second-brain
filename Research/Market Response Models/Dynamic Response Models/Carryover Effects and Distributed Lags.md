@@ -6,6 +6,7 @@ aliases:
   - "Advertising Carryover"
   - "ADL Model Marketing"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/dynamic-models

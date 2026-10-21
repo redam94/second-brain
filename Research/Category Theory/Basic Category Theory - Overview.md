@@ -9,6 +9,8 @@ source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Full text, pp. 1–173"
 date_ingested: 2026-05-08
 doc_type: textbook
+depends_on: []
+used_by: []
 aliases:
   - Leinster Category Theory
   - BCT Overview

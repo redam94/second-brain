@@ -4,6 +4,7 @@ aliases:
   - "MRM Implementation"
   - "Marketing Science Implementation"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/implementation

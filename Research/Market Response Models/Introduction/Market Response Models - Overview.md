@@ -4,6 +4,7 @@ aliases:
   - "MRM Overview"
   - "Hanssens Parsons Schultz"
 tags:
+  - source/ingested
   - type/overview
   - topic/market-response
   - topic/econometrics

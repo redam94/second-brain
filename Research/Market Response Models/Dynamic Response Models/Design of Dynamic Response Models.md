@@ -4,6 +4,7 @@ aliases:
   - "Dynamic Marketing Models"
   - "Marketing Time Series Models"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/dynamic-models

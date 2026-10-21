@@ -4,6 +4,7 @@ aliases:
   - "Empirical Marketing Generalizations"
   - "Meta-Analysis Marketing"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/empirical-findings

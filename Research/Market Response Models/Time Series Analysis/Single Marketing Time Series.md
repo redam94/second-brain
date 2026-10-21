@@ -5,6 +5,7 @@ aliases:
   - "Univariate Time Series Marketing"
   - "Box-Jenkins Marketing"
 tags:
+  - source/ingested
   - type/concept
   - topic/market-response
   - topic/time-series
