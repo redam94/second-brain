@@ -76,6 +76,8 @@ This separation lets the researcher (i) estimate marginals using the large univa
 - [[Factor Copula Application - S&P 100 and Systemic Risk]] — the high-dimensional empirical study.
 - [[SMM Estimator for Copulas]] — the companion Oh & Patton (2011) paper providing the estimator this paper applies.
 - [[Dependence Measures for Copulas]] — the rank-based moment statistics (Kendall's $\tau$, Spearman's $\rho$, quantile dependence) used as SMM targets.
+- [[Vine Copulas - Overview]] — the alternative high-dimensional copula approach: flexible pair-by-pair family choices, suited for $n \leq 30$; explicitly contrasted with factor copulas in the literature position note above.
+- [[Pair Copula Construction and PCC Density]] — the PCC density formula and h-function recursion underpinning vine copulas.
 - [[Bayesian copula estimation Describing correlated joint distributions]] — a PyMC Gaussian-copula tutorial; contrast the Bayesian Gaussian-copula approach with the frequentist, fat-tailed, factor-based approach here.
 
 ## See Also
