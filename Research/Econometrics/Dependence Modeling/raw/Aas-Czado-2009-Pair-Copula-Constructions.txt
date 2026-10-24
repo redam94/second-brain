@@ -1,0 +1,31 @@
+SOURCE REFERENCE — PDF NOT DOWNLOADED (network policy blocked academic download hosts)
+======================================================================================
+
+Title:     Pair-copula constructions of multiple dependence
+Authors:   Kjersti Aas, Claudia Czado, Arnoldo Frigessi, Henrik Bakken
+Published: Insurance: Mathematics and Economics, 44(2), 182–198, 2009
+DOI:       https://doi.org/10.1016/j.insmatheco.2007.02.001
+
+Free version (working paper, 2006):
+  LMU Munich Sonderforschungsbereich 386, Paper 487
+  URL: https://epub.ub.uni-muenchen.de/1855/1/paper_487.pdf
+  (45 pages; all four authors; content substantially matches the 2009 journal article)
+
+Abstract (from journal):
+  The article constructs pair-copula models for multivariate data using the pair copula
+  decomposition of a general multivariate distribution. It introduces regular vines
+  (R-vines) as the graphical framework for organising the bivariate building blocks and
+  derives closed-form expressions for the density of two important special cases: the
+  C-vine (canonical vine) and the D-vine (drawable vine). It develops maximum-likelihood
+  and sequential estimation methods for these models, and illustrates them on Norwegian
+  financial data, where the pair-copula approach substantially outperforms the Gaussian
+  and t-copula benchmarks.
+
+Key contributions:
+  1. Operationalises the Bedford & Cooke (2002) vine framework for statistical estimation.
+  2. Provides tractable density formulas for C-vine and D-vine pair copula constructions.
+  3. Derives the h-function (conditional CDF transform) used in sequential sampling.
+  4. Proposes sequential and full ML estimation procedures.
+  5. Demonstrates superior fit to multivariate financial data via AIC/BIC model selection.
+
+JEL/MSC: C13, C32, C51

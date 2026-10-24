@@ -1,0 +1,36 @@
+SOURCE REFERENCE — PDF NOT DOWNLOADED (network policy blocked academic download hosts)
+======================================================================================
+
+Title:     Vines — a new graphical model for dependent random variables
+Authors:   Tim Bedford, Roger M. Cooke
+Published: The Annals of Statistics, 30(4), 1031–1068, 2002
+DOI:       https://doi.org/10.1214/aos/1031689016
+
+Open Access (Project Euclid):
+  URL: https://projecteuclid.org/journals/annals-of-statistics/volume-30/issue-4/
+       Vines--a-new-graphical-model-for-dependent-random-variables/10.1214/aos/1031689016.pdf
+  Note: Journal marks this Open Access; download blocked by session network policy.
+
+Pre-publication draft:
+  Title on draft: "Tines - a new graphical model for dependent random variables" (2001)
+  URL: https://rogermcooke.net/rogermcooke_files/Vines_An_Stat.pdf
+
+Abstract (paraphrased from published version):
+  Bedford & Cooke introduce a new graphical model for multivariate distributions called
+  a vine, which represents the joint density as a product of bivariate copulas. They
+  show that regular vines (R-vines) provide a flexible framework for organising nested
+  trees of pair copulas, and that any joint density satisfying regularity conditions can
+  be represented as a vine. They characterise two important special cases — canonical
+  vines (C-vines) and drawable vines (D-vines) — and establish the proximity condition
+  required for regular vines. The paper also develops a vine-based sampling algorithm.
+
+Key contributions:
+  1. Introduces the vine graph as a sequence of trees T_1, T_2, ..., T_{n-1}.
+  2. Establishes the proximity condition for regular vines (R-vines).
+  3. Proves that any regular vine gives a valid joint density factorisation.
+  4. Characterises C-vines (star trees) and D-vines (path trees) as special cases.
+  5. Develops the vine-based sampling algorithm via conditional CDF transforms.
+
+Companion paper:
+  Kurowicka & Cooke (2004/2006) — "Uncertainty Analysis with High Dimensional Dependence Modelling"
+  (uses vines for uncertainty quantification; further develops the theory)
