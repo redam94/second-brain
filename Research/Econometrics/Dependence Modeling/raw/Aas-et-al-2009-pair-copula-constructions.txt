@@ -1,0 +1,38 @@
+SOURCE REFERENCE (PDF download blocked by proxy policy on 2026-10-25)
+======================================================================
+
+Citation:
+  Aas, K., Czado, C., Frigessi, A., & Bakken, H. (2009).
+  "Pair-copula constructions of multiple dependence."
+  Insurance: Mathematics and Economics, 44(2), 182-198.
+  DOI: 10.1016/j.insmatheco.2007.02.001
+
+Free preprint location:
+  LMU Munich SFB 386 Discussion Paper #487 (2006):
+  https://epub.ub.uni-muenchen.de/1855/1/paper_487.pdf
+  (access blocked by session proxy at time of ingest)
+
+Abstract (from published version):
+  Building on the work of Bedford, Cooke and Joe, we show how multivariate
+  data, which exhibit complex patterns of dependence in the tails, can be
+  modeled using a cascade of pair-copulae, acting on two variables at a time.
+  We use the pair-copula decomposition of a general multivariate distribution
+  and propose a method to perform inference. The models we consider may be
+  represented as a structured collection of trees (regular vine). The approach
+  is flexible in that it allows any bivariate copula to be used as the building
+  block for the pair-copula decomposition, enabling tail dependence and
+  asymmetry to be modelled simultaneously and at different strength for
+  different pairs of variables, thus overcoming the limitation of the
+  multivariate Gaussian or Student-t copulas.
+
+  We present a sequential estimation method, which proceeds tree by tree,
+  and is easily applied to large data sets. Pairs in higher trees are modelled
+  using conditional copulae based on the 'simplifying assumption'. The method
+  is illustrated on financial return data.
+
+Key contributions:
+  1. Practical statistical framework for pair-copula constructions (PCCs)
+  2. Sequential (tree-by-tree) estimation algorithm
+  3. h-function recursions for computing conditional CDFs
+  4. Joint MLE as alternative to sequential estimation
+  5. Application to financial return data (4 stock indices)
