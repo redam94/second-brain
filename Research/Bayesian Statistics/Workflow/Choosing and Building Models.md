@@ -21,6 +21,10 @@ used_by:
   - "[[Iterative Model Improvement]]"
   - "[[Modeling as Software Development]]"
   - "[[Q - Common Pitfalls in Statistical Modeling]]"
+aliases:
+  - prior specification
+  - likelihood specification
+  - model construction
 ---
 
 > [!summary]
