@@ -1,0 +1,28 @@
+PAPER METADATA — PDF download blocked by network proxy (jmlr.org policy denied)
+
+Title: Optimal Structure Identification with Greedy Search
+Author: David Maxwell Chickering
+Journal: Journal of Machine Learning Research
+Volume: 3, Pages: 507–554, November 2002
+URL: https://jmlr.org/papers/v3/chickering02b.html
+
+Abstract:
+This paper proves the so-called Meek Conjecture, which concerns transforming one DAG into
+another within the same Markov equivalence class through a sequence of edge additions and
+covered edge reversals. The paper also describes a two-phase greedy search algorithm (GES —
+Greedy Equivalence Search) that operates directly in the space of Markov equivalence classes
+(represented as CPDAGs). Phase 1 (forward equivalence search, FES) greedily adds edges to
+improve a score; Phase 2 (backward equivalence search, BES) greedily removes edges. Under
+the Faithfulness assumption and with a consistent scoring function (e.g. BIC), GES is shown
+to be consistent. Experiments on synthetic and real datasets demonstrate the two-phase approach
+works well with finite samples, matching or outperforming earlier structure-learning algorithms.
+
+Key contributions:
+1. Proof of the Meek Conjecture (transformational characterization of equivalence class
+   traversal — enables safe edge operations in CPDAG space)
+2. The GES algorithm: two-phase (FES + BES) greedy search on equivalence classes
+3. Characterization of Insert and Delete operators in CPDAG space
+4. Consistency proof under faithfulness + consistent scoring
+5. Empirical evaluation showing competitive performance
+
+Software: pcalg R package (fges function); TETRAD (Java); causal-learn (Python)

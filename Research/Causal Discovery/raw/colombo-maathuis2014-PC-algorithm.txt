@@ -1,0 +1,37 @@
+PAPER METADATA — PDF download blocked by network proxy (arxiv.org policy denied)
+
+Title: Order-Independent Constraint-Based Causal Structure Learning
+Authors: Diego Colombo and Marloes H. Maathuis
+Journal: Journal of Machine Learning Research
+Volume: 15(116), Pages: 3921–3962, 2014
+URL: https://jmlr.org/papers/v15/colombo14a.html
+arXiv: 1211.3295
+
+Abstract:
+The PC algorithm (Spirtes & Glymour 1991; Spirtes, Glymour & Scheines 2000) is the most
+widely used constraint-based causal structure learning algorithm. The adjacency search step
+shared by PC, FCI, RFCI, and CCD produces output that varies with the order in which
+variables are provided — a problematic form of order dependence. The authors propose
+modifications (PC-stable and order-independent PC variants) that remove some or all of
+this order dependence while maintaining consistency in high-dimensional settings under
+the same assumptions as the original PC algorithm. Experiments on synthetic data and a
+yeast gene expression dataset show the modifications perform similarly in low dimensions
+and better in high dimensions. Software in the R package pcalg.
+
+Key contributions:
+1. Characterization of the order-dependence problem in the PC skeleton search
+2. PC-stable: conservative modification removing order dependence in the skeleton phase
+3. RFCI/FCI stable variants
+4. Consistency proofs in high-dimensional sparse settings
+5. pcalg R package implementation
+
+Background (PC Algorithm, Spirtes & Glymour 1991 / SGS 2000):
+- Phase 1 (adjacency search): Start from complete undirected graph; for each adjacent pair
+  (X,Y), test conditional independence X ⊥⊥ Y | S for all subsets S of adj(X)\{Y} with
+  |S| = l (l = 0, 1, 2, ...); remove edge if independence found; record separating set sep(X,Y)
+- Phase 2 (orientation): Orient v-structures (unshielded colliders) using sep sets;
+  apply Meek (1995) orientation rules to complete the CPDAG
+- Assumptions: Faithfulness + Causal Sufficiency (no hidden common causes)
+- Consistency: Kalisch & Bühlmann (2007) showed PC-high-dim consistency under sparse faithfulness
+
+Software: pcalg R package; causal-learn Python library; TETRAD (Java)
