@@ -10,7 +10,7 @@ tags:
 source: "[[raw/tdb136.pdf]]"
 source_location: "Liesenfeld & Breitung (1998), Sections 1-3, pp. 1-8"
 date_ingested: 2026-04-11
-date_updated: 2026-06-22
+date_updated: 2026-10-26
 folder: "Econometrics/Extensions/Simulation-Based Estimation"
 doc_type: paper
 depends_on:
@@ -181,6 +181,7 @@ This $T$-dimensional integral has no closed-form solution. Standard GMM using un
 - [[Practical Issues in Simulation Estimation]] — implementation details
 - [[Brock-Mirman Model - SMM Estimation Exercise]] — full worked structural estimation example using MSM in Python
 - [[SMM Estimation of Factor Copulas]] — high-dimensional application of rank-based SMM to a 100-asset factor copula model
+- [[ABM Calibration Overview]] — SMM is directly applicable to ABM calibration (matching observed moments to simulated ABM output); this cross-section link is noted in `used_by` (gap #25)
 
 ## Sources
 

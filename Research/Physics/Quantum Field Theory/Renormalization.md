@@ -9,6 +9,7 @@ tags:
 source: "[[raw/Quantum field theory]]"
 source_location: "History — Infinities and renormalization; Non-renormalizability"
 date_ingested: 2026-04-16
+date_updated: 2026-10-26
 folder: "Physics/Quantum Field Theory"
 doc_type: article
 depends_on:
@@ -111,3 +112,4 @@ The Lamb shift (1947) was the experimental trigger for renormalization:
 - [[QFT Overview]] — broader context for renormalization
 - [[Canonical Quantization of Fields]] — source of the divergent integrals
 - [[Yang-Mills Theory and Gauge Fields]] — asymptotic freedom in QCD
+- [[QED and Renormalization]] — the Theoretical Physics companion note covering renormalization specifically in QED and the full renormalization program

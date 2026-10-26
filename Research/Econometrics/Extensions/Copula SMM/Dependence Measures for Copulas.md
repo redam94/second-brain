@@ -11,6 +11,7 @@ tags:
 source: "[[raw/Oh_Patton_SMM_copulas_nov11.pdf]]"
 source_location: "Oh & Patton (2011), Section 2.1, pp. 5-6; Nelsen (2006); Joe (1997)"
 date_ingested: 2026-04-11
+date_updated: 2026-10-26
 folder: "Econometrics/Extensions/Copula SMM"
 doc_type: paper
 depends_on:
@@ -162,6 +163,7 @@ The Normal copula's zero tail dependence is a significant limitation for financi
 - [[SMM Copula Asymptotic Theory]] — asymptotic properties of sample Spearman's ρ and quantile dependence estimators
 - [[Factor Analysis and PPCA]] — factor structure in multivariate data is related to the factor copula architecture that extends these dependence measures to high-dimensional settings
 - [[Quantile Regression]] — quantile regression models the conditional quantile of an outcome; quantile dependence measures the conditional joint quantile behavior of a copula
+- [[Factor Copulas - Overview]] — the factor copula (Oh & Patton) row in the tail-dependence table is explained here: skewed-$t$ factor distribution produces non-zero, asymmetric tail dependence that the Normal copula lacks
 
 ## Sources
 

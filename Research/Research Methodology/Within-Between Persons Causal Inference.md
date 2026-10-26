@@ -9,7 +9,7 @@ tags:
 source: "[[Research/Research Methodology/raw/rohrer-murayama-2023.pdf]]"
 source_location: "pp. 2–5 (Within-persons not necessary, not sufficient, can be helpful)"
 date_ingested: 2026-04-11
-date_updated: 2026-08-03
+date_updated: 2026-10-26
 folder: "Research Methodology"
 doc_type: paper
 depends_on:
@@ -105,3 +105,4 @@ Problems arise when researchers implicitly claim causal interpretations for nonc
 - [[Within-Between Persons Distinction - Overview]] — paper overview
 - [[Standard Errors and Clustering]] — clustering SEs at the person level is standard practice in longitudinal fixed-effects models
 - [[Cross-Lagged and Dynamic Panel Models]] — models reciprocal dynamics (Y → X) that neither within- nor between-persons alone addresses
+- [[Table 2 Fallacy]] — the same logic about what regression "controls" actually does (and doesn't) buy applies at both levels; time-varying confounders that survive fixed-effects demeaning are the within-person version of the fallacy

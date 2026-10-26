@@ -9,6 +9,7 @@ tags:
 source: "[[raw/abm_human_behaviour.pdf]]"
 source_location: "pp. 189"
 date_ingested: 2026-04-10
+date_updated: 2026-10-26
 folder: "Agent-Based Modeling/Social Dynamics/Market Dynamics"
 doc_type: paper
 depends_on:
@@ -87,3 +88,5 @@ The paper notes that these phenomena reproduce patterns observed in real markets
 - [[Emergent Phenomena in ABM]] — lock-in as a case of emergence
 - [[Imitation and Conditioning Processes]] — the processes driving lock-in
 - [[Ben Said et al 2002 - Overview]] — paper context
+- [[Market Share Models]] — the Market Response Models companion covering equilibrium market share models (MCI, MNL); lock-in dynamics depart from those steady-state predictions
+- [[Network Topology Effects on Diffusion]] — network structure amplifies positive-feedback lock-in through the WOM channel; topology determines whether a brand's early lead is self-reinforcing

@@ -15,7 +15,7 @@ tags:
 source: "[[raw/Counterfactual inference calculating excess deaths due to COVID-19]]"
 source_location: "PyMC example — Benjamin T. Vincent (2022)"
 date_ingested: 2026-04-09
-date_updated: 2026-04-13
+date_updated: 2026-10-26
 folder: "Bayesian Statistics/Regression Models"
 doc_type: concept
 depends_on:
@@ -100,6 +100,10 @@ The result is a **posterior distribution over excess deaths** — not just a poi
 - ZeroSumNormal constraint: related to sum-to-zero constraints in [[Generalized Linear Models]]
 - [[Potential Outcomes Framework]] — the formal framework underlying the "what would have happened" question
 - Related to Google's **[[Brodersen 2015 - Overview|CausalImpact]]** framework ([[Bayesian Structural Time-Series Model]]) — a more sophisticated state-space approach to the same counterfactual problem
+
+## See Also
+
+- [[Synthetic Control]] — another counterfactual prediction approach: fits a weighted combination of control units to match the pre-intervention series, then extrapolates to estimate post-intervention expected outcomes without COVID
 
 ## Source
 

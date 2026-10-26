@@ -8,6 +8,7 @@ tags:
 source: "[[raw/1804.06788-Talts-SBC.pdf]]"
 source_location: "Sec. 4.1 (Algorithm 1, p. 6), Sec. 5.1 (Algorithm 2, p. 9)"
 date_ingested: 2026-06-17
+date_updated: 2026-10-26
 folder: "Bayesian Statistics/Workflow"
 doc_type: paper
 depends_on:
@@ -90,3 +91,4 @@ The thinning in Algorithm 2 restores the *independence* condition that Theorem 1
 - [[Efficient MCMC]]
 - [[Model Checking]] — SBC is a principled form of prior predictive / computational model checking
 - [[Approximate Bayesian Computation for ABMs]] — ABC likewise validates models by comparing simulated and observed summary statistics; a simulation-based analogue in the ABM calibration domain
+- [[HM-ABC Calibration Framework]] — history matching + ABC is the ABM calibration counterpart to SBC: both run $N$ simulations to check whether simulated outputs cover observed data, using different test statistics and different software targets

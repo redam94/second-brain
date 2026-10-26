@@ -9,7 +9,7 @@ tags:
   - doc/textbook
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
-date_updated: 2026-07-06
+date_updated: 2026-10-26
 folder: "Bayesian Statistics/Inference Fundamentals"
 aliases:
   - "Bayesian central limit theorem"
@@ -67,3 +67,4 @@ The normal approximation fails when:
 - [[Regression and the CEF]] — frequentist regression; asymptotically equivalent to Bayesian under flat priors
 - [[Standard Errors and Clustering]] — frequentist inference machinery; Bayesian posteriors approximate robust SEs asymptotically
 - [[Partial Pooling as Multiple Comparisons Correction]] — the James-Stein estimator mentioned here (hierarchical models dominate unpooled ones) is a key result connecting Bayesian shrinkage to frequentist asymptotics
+- [[BDA3 - Overview]] — the textbook overview for this chapter's source (BDA3 Ch. 4); connects to single-parameter and multiparameter model contexts
