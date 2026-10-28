@@ -472,4 +472,4 @@ Heiss, Andrew. 2021. “How to Use Bayesian Propensity Scores and Inverse Probab
 
 ## Vault Notes
 
-- [[Bayesian Propensity Scores and IPW]] — Liao-Zigler two-stage Bayesian IPW method
+- [[Bayesian Inverse Probability Weighting]] — Liao-Zigler two-stage Bayesian IPW method

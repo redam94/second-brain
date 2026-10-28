@@ -10,6 +10,10 @@ folder: "Bayesian Statistics"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
+doc_type: overview
+source_location: "Full text, pp. 1–644"
+depends_on: []
+used_by: []
 ---
 
 # Bayesian Data Analysis, 3rd Edition

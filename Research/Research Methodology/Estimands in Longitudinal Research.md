@@ -16,7 +16,8 @@ depends_on:
   - "[[Within-Between Persons Distinction - Overview]]"
   - "[[Potential Outcomes Framework]]"
   - "[[Causal Estimands]]"
-used_by: []
+used_by:
+  - "[[Group-Time Average Treatment Effects]]"
 aliases:
   - longitudinal estimands
   - estimands psychological research

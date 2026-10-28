@@ -13,7 +13,8 @@ folder: "Bayesian Statistics/Causal Inference/Knowledge Elicitation"
 doc_type: paper
 depends_on:
   - "[[Causal Model - Cause Precondition Effect]]"
-used_by: []
+used_by:
+  - "[[LLM Expert Elicitation for Bayesian Networks]]"
 aliases:
   - Yamashita GUI method
   - workshop elicitation method

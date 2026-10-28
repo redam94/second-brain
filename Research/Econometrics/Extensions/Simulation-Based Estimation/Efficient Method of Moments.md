@@ -15,7 +15,8 @@ doc_type: paper
 depends_on:
   - "[[Indirect Inference]]"
   - "[[Simulation-Based Estimation - Overview]]"
-used_by: []
+used_by:
+  - "[[Practical Issues in Simulation Estimation]]"
 aliases:
   - EMM
   - SNP Approach

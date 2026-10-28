@@ -12,6 +12,8 @@ doc_type: textbook
 aliases:
   - Leinster Category Theory
   - BCT Overview
+depends_on: []
+used_by: []
 ---
 
 # Basic Category Theory — Overview
