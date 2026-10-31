@@ -76,6 +76,7 @@ This separation lets the researcher (i) estimate marginals using the large univa
 - [[Factor Copula Application - S&P 100 and Systemic Risk]] — the high-dimensional empirical study.
 - [[SMM Estimator for Copulas]] — the companion Oh & Patton (2011) paper providing the estimator this paper applies.
 - [[Dependence Measures for Copulas]] — the rank-based moment statistics (Kendall's $\tau$, Spearman's $\rho$, quantile dependence) used as SMM targets.
+- [[Vine Copulas - Overview]] — the competing high-dimensional alternative: each pair gets its own bivariate copula family, at the cost of $n(n-1)/2$ parameters; Oh & Patton consider vines "hard-to-interpret/test" in very high dimensions.
 - [[Bayesian copula estimation Describing correlated joint distributions]] — a PyMC Gaussian-copula tutorial; contrast the Bayesian Gaussian-copula approach with the frequentist, fat-tailed, factor-based approach here.
 
 ## See Also
