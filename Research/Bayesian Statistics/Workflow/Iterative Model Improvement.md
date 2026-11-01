@@ -12,6 +12,9 @@ date_updated: 2026-04-08
 folder: "Bayesian Statistics/Workflow"
 doc_type: concept
 source_location: "Bayesian Workflow paper"
+aliases:
+  - Iterative Modeling
+  - Model Refinement Loop
 depends_on:
   - "[[Evaluating Fitted Models]]"
   - "[[Choosing and Building Models]]"

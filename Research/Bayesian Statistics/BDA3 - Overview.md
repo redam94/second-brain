@@ -7,6 +7,8 @@ tags:
 source: "[[raw/BDA3.pdf]]"
 date_ingested: 2026-04-08
 folder: "Bayesian Statistics"
+doc_type: overview
+source_location: "Full text, pp. 1–675"
 aliases:
   - "BDA3"
   - "Bayesian Data Analysis"
