@@ -16,7 +16,8 @@ depends_on:
   - "[[Potential Outcomes Framework]]"
   - "[[Causal Estimands]]"
   - "[[General Structure of Bayesian CI]]"
-used_by: []
+used_by:
+  - "[[Time-Varying Treatments and G-computation]]"
 aliases:
   - IV causal inference
   - instrumental variable
@@ -80,7 +81,7 @@ Under monotonicity, only compliers, always-takers, and never-takers exist ($U_i 
 > which is exactly the probability limit of the [[Frequentist Causal Estimation|two-stage least squares (2SLS) estimator]].
 ^def-cace
 
-Also called the **Local Average Treatment Effect (LATE)** in the Frequentist literature (Imbens & Angrist 1994).
+Also called the **[[Local Average Treatment Effects|Local Average Treatment Effect (LATE)]]** in the Frequentist literature (Imbens & Angrist 1994).
 
 **Interpretation**: CACE is the intention-to-treat effect divided by the compliance rate. It measures the effect of the assignment on the outcome for the subpopulation that actually complies with the assignment.
 
@@ -151,3 +152,5 @@ The Bayesian IV approach is closely related to the 2SLS estimator: the CACE equa
 - [[Sensitivity Analysis in Observational Studies]] — alternative when IV is unavailable
 - [[Frequentist Causal Estimation]] — 2SLS as the frequentist counterpart; doubly-robust estimators for IV settings
 - [[Metalearners for CATE]] — CACE is a LATE; CATE metalearners generalize beyond the complier subgroup
+- [[Instrumental Variables]] — econometric derivation of 2SLS and weak instrument diagnostics (Econometrics/Identification Strategies)
+- [[Local Average Treatment Effects]] — frequentist LATE and its policy-relevance interpretation

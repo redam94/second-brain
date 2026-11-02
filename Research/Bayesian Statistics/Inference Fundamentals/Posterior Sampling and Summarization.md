@@ -9,7 +9,9 @@ tags:
   - doc/textbook
 source: "[[raw/StatRethink-Bayes.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-04-08
 folder: "Bayesian Statistics/Inference Fundamentals"
+doc_type: concept
 aliases:
   - "Sampling the imaginary"
   - "HPDI"
@@ -83,4 +85,6 @@ Use posterior predictive checks to assess model adequacy — compare simulated d
 - [[Decision Analysis]] — BDA3's treatment of loss functions and optimal decisions
 - [[Garden of Forking Data]] — building the posterior that this chapter summarizes
 - [[Bayesian Workflow - Overview]] — the iterative cycle of fitting, checking, and revising
+- [[MCMC Basics]] — how posterior samples are drawn in practice
+- [[Simulation-Based Calibration - Overview]] — formal extension of the fake-data checking idea to full calibration of Bayesian inference algorithms
 - [[Statistical Rethinking - Overview]]

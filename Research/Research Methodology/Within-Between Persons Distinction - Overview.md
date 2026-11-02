@@ -9,6 +9,7 @@ tags:
 source: "[[Research/Research Methodology/raw/rohrer-murayama-2023.pdf]]"
 source_location: "Abstract, Introduction, Conclusions, pp. 1–2, 10–11"
 date_ingested: 2026-04-11
+date_updated: 2026-04-11
 folder: "Research Methodology"
 doc_type: paper
 depends_on:
@@ -72,6 +73,7 @@ Researchers should not choose a "sophisticated" longitudinal model (CLPM, dynami
 - [[Directed Acyclic Graphs]] underlie all three model specifications (Boxes 1–3 in the paper)
 - [[Garden of Forking Paths]] — choosing a longitudinal model post-hoc without pre-specified estimand is a form of researcher degrees of freedom
 - [[Researcher Degrees of Freedom]] — the menu of longitudinal models (FE, CLPM, DPM, RI-CLPM) creates analytic flexibility
+- [[Forking Paths and Bayesian Approaches]] — Bayesian multilevel models as a principled response to the analytic flexibility problem in longitudinal research
 - [[Causal Estimands]] — the general framework for defining causal targets
 - [[Differences-in-Differences]] — DiD exploits the same within-vs-between logic: within-unit variation over time differences out time-invariant confounders, making it the natural econometric complement to the FE model
 - [[Omitted Variables Bias]] — between-persons confounding in observational panel data is an instance of OVB from stable unobserved traits

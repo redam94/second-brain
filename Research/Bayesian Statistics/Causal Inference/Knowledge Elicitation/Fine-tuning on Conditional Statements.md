@@ -9,11 +9,14 @@ tags:
 source: "[[raw/Liu et al. - 2025 - Eliciting and Improving the Causal Reasoning Abilities of Large Language Models with Conditional Sta.pdf]]"
 source_location: "§7, pp. 487–490"
 date_ingested: 2026-04-10
+date_updated: 2026-04-10
 folder: "Bayesian Statistics/Causal Inference/Knowledge Elicitation"
 doc_type: paper
 depends_on:
   - "[[Code Prompt Aspects Analysis]]"
   - "[[Code vs Text Prompt Evaluation]]"
+used_by:
+  - "[[Liu 2025 - Overview]]"
 aliases:
   - conditional statement fine-tuning
   - CodeAlpaca causal fine-tuning
@@ -108,3 +111,5 @@ The conditional statement corpus likely improves understanding of both code prom
 - [[Code Prompt Aspects Analysis]] — motivation for using conditional statements specifically
 - [[Code vs Text Prompt Evaluation]] — baseline performance before fine-tuning
 - [[Liu 2025 - Overview]] — full paper overview
+- [[NLP Causal Extraction Methods]] — complementary approach to extracting causal relations without fine-tuning
+- [[Interactive Knowledge Elicitation Method]] — human-in-the-loop alternative to LLM-driven elicitation

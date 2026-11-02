@@ -104,3 +104,4 @@ Adding reasonable priors increases log-concavity of the posterior, leading to fa
 - [[Fitting and Validating Computation]] | [[Evaluating Fitted Models]]
 - [[MCMC Basics]] | [[Efficient MCMC]] | [[HMC and Stan in Practice]] | [[Hierarchical Models]]
 - [[Choosing and Building Models]] — model simplification is the first response to computational failures
+- [[Simulation-Based Calibration - Overview]] — the formal version of the "simulate fake data and check" debugging strategy

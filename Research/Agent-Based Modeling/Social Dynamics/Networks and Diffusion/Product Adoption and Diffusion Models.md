@@ -9,6 +9,7 @@ tags:
 source: "[[raw/abm_word_of_mouth.pdf]]"
 source_location: "pp. 7285-7287"
 date_ingested: 2026-04-10
+date_updated: 2026-04-10
 folder: "Agent-Based Modeling/Social Dynamics/Networks and Diffusion"
 doc_type: paper
 depends_on:
@@ -108,3 +109,5 @@ In CUBES, these adopter categories are formalized through the five-group classif
 - [[ABM vs Equation-Based Modeling]] — formal comparison using this model
 - [[Network Topology Effects on Diffusion]] — how topology shapes adoption
 - [[Word of Mouth Mechanisms]] — the mechanism driving adoption
+- [[Market Share Models]] — aggregate market-level view of the same adoption dynamics (MNL/MCI share models as equilibrium outcome of diffusion)
+- [[Opinion Leaders and Social Influence]] — Rogers' adopter categories and targeting strategy
