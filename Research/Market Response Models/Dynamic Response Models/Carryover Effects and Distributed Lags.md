@@ -10,6 +10,7 @@ tags:
   - topic/market-response
   - topic/dynamic-models
   - topic/time-series
+  - source/ingested
   - source/hanssens-parsons-schultz-2001
 date_created: 2026-04-11
 date_updated: 2026-04-11

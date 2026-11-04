@@ -8,6 +8,7 @@ tags:
   - topic/market-response
   - topic/functional-forms
   - topic/econometrics
+  - source/ingested
   - source/hanssens-parsons-schultz-2001
 date_ingested: 2026-04-11
 date_updated: 2026-04-11

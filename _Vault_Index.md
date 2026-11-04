@@ -24,7 +24,7 @@ concept_count: 265
 
 | Area | Notes | Domain |
 |------|-------|--------|
-| [[Research/_Index\|Research]] | 202 | Applied statistics, econometrics, causal inference, causal discovery, agent-based modeling, market response models, category theory from textbooks and papers |
+| [[Research/_Index\|Research]] | 265 | Applied statistics, econometrics, causal inference, causal discovery, agent-based modeling, market response models, category theory from textbooks and papers |
 | [[Clippings/_Index\|Clippings]] | 13 | Web articles and saved content (raw source material) |
 
 ## Topic Map
