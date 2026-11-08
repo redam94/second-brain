@@ -121,3 +121,5 @@ Discrete choice data can be structured in either **wide format** (one row per de
 - [[Random Coefficients Logit Model]] — the random-coefficients extension relaxing IIA
 - [[Reward Modeling from Human Preferences]] — the reward model is a logistic paired-comparison (Bradley-Terry) choice model
 - [[Homo Silicus - LLMs as Simulated Economic Agents]] — conditional logit fitted to LLM-simulated choices
+- [[Consumer Utility Function Components]] — utility function formulation in the Karakaya ABM, sharing the same logit/softmax foundation
+- [[Logit Purchase Decision Model]] — the ABM-level logit rule derived from the same random utility theory

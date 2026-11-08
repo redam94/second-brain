@@ -15,6 +15,7 @@ doc_type: paper
 depends_on:
   - "[[Behavioral Attitudes in CUBES]]"
   - "[[Agent Decision Rules and Bounded Rationality]]"
+  - "[[Imitation and Conditioning Processes]]"
 used_by:
   - "[[Genetic Algorithm Calibration for ABM]]"
 aliases:

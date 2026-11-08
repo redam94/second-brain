@@ -140,3 +140,8 @@ From Chapter 10 (Implementation):
 
 - [[Hierarchical Forecast Reconciliation (MinT)]] — forecasts that add up across planning levels
 - [[Granger 2003 - Cointegration and the Error-Correction Representation]] — VAR/ECM long-horizon forecasts under cointegration
+- [[ROAS, mROAS, and Optimal Media Mix]] — Bayesian MMM approach to budget optimization and marginal ROAS computation
+- [[Bayesian Estimation and Priors for MMM]] — Bayesian priors and posterior-based optimization for the same marketing-mix problem
+- [[MMM Model Selection and Application]] — model comparison in the Bayesian MMM context, complementing the static regression approach here
+- [[Activity Bias in Advertising]] — why observational market response estimates may not be causal, complicating optimization
+- [[Bayesian Workflow - Overview]] — iterative modeling workflow applicable to market response model building

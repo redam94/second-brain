@@ -10,6 +10,7 @@ tags:
   - doc/paper
 source: "[[raw/ssrn-2080235.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-04-08
 folder: "Research Methodology"
 aliases:
   - "Advertising causal inference"
@@ -79,3 +80,5 @@ This paper provides a vivid illustration of concepts from [[Regression and the C
 - [[User-Level Ad Experiments - Overview]] — how the experimental alternative is actually designed and analysed
 - [[Blake 2015 - OLS vs IV Spend Elasticities and the Endogeneity Gap]] — elasticity 0.885 vs 0.002
 - [[Gordon et al 2019 - Facebook RCTs vs Observational Ad Measurement - Overview]] — within-study comparison at Facebook scale
+- [[Propensity Score Matching - Overview]] — the matching strategy that fails here due to activity selection bias, covered in full detail
+- [[Sensitivity Analysis in Observational Studies]] — quantifying how robust a result is to unmeasured confounding; particularly relevant when RCTs are unavailable

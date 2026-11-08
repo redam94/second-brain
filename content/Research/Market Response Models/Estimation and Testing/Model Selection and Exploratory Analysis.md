@@ -20,7 +20,9 @@ depends_on:
   - "[[Model Testing and Specification]]"
   - "[[Flexible Functional Forms]]"
   - "[[Parameter Estimation in Market Response]]"
-used_by: []
+  - "[[Overfitting and Information Criteria]]"
+used_by:
+  - "[[MMM Model Selection and Application]]"
 ---
 
 # Model Selection and Exploratory Analysis
@@ -115,3 +117,4 @@ The more researchers test, the more likely a spuriously good-fitting model will 
 - [[Researcher Degrees of Freedom]] — the multiple-comparison risk when searching over variable sets, functional forms, and lag structures simultaneously
 - [[Strobl et al 2008 - Conditional Variable Importance - Overview]] — correlated drivers inflate marginal tree-based importance
 - [[Gelman Loken 2013 - Garden of Forking Paths - Overview]] — data-contingent specification search is procedure #3
+- [[Simulation-Based Calibration - Overview]] — SBC provides a complementary model validation approach: checking that the prior and likelihood are self-consistent before comparing models on data

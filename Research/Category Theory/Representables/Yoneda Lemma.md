@@ -93,3 +93,5 @@ The bijection $[\mathcal{A}^{\mathrm{op}}, \mathbf{Set}](H_A, X) \cong X(A)$ is 
 - [[Yoneda Embedding and Consequences]] — Full faithfulness and uniqueness of representing objects
 - [[Synthesis/Limits via Representables]] — Limits as universal elements
 - [[Synthesis/Limits in Presheaf Categories]] — Density theorem
+- [[Adjoint Functors]] — The adjunction bijection $\mathcal{B}(FA,B)\cong\mathcal{A}(A,GB)$ is a Yoneda-type representability statement
+- [[Units and Counits]] — The unit $\eta: 1 \Rightarrow GF$ is the universal element picked out by the Yoneda bijection applied to $1_{FA}$

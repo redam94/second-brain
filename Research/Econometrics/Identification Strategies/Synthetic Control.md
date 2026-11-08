@@ -227,3 +227,4 @@ Standard errors are not well-defined for $n=1$ treated unit. Instead, use **perm
 - [[Abadie 2021 - Overview]] — Abadie's methodological overview and best-practices guidance
 - [[Randomization Inference - Overview]] — the general theory behind the placebo/permutation inference used here
 - [[Synthetic Difference-in-Differences - Overview]] — SDID relaxes level matching and adds time weights
+- [[Difference-in-Differences with Multiple Time Periods - Overview]] — Callaway & Sant'Anna staggered DiD as a complementary alternative when multiple units are treated at different times

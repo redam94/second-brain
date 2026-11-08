@@ -277,3 +277,4 @@ rubin_se(outcome_models$ate, outcome_models$ate_se)
 - [[Conformal Prediction Under Covariate Shift]] — same propensity-odds weights
 - [[Dahabreh 2020 - Outcome Model, Inverse Odds Weighting and Doubly Robust Estimators]] — inverse-odds weighting for transporting trial results
 - [[Degtiar 2023 - Weighting and Matching Methods]] — participation weights for generalizability
+- [[General Structure of Bayesian CI]] — formal Bayesian causal inference architecture that this note fits within

@@ -229,3 +229,5 @@ For the DAG with paths:
 - [[Manheim Garrabrant - Causal Goodhart via Shared Cause, Intermediary and Metric Manipulation]] — DAG-based failure cases for intervening on proxies
 - [[Pearl 2014 - Selection Diagrams and Definition of Transportability]] — transportability as cross-population identification
 - [[Bareinboim 2016 - Sample Selection Bias and Recoverability]] — selection-backdoor criterion
+- [[Spurious Association and Confounds]] — fork and chain patterns producing spurious correlations, SR treatment
+- [[Missing Data - Statistical Rethinking]] — DAG-based missingness mechanisms (MCAR/MAR/MNAR) using the same d-separation logic

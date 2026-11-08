@@ -8,6 +8,7 @@ tags:
   - doc/textbook
 source: "[[raw/BayesWorkflow.pdf]]"
 date_ingested: 2026-04-08
+date_updated: 2026-04-08
 folder: "Bayesian Statistics/Workflow"
 doc_type: concept
 source_location: "Bayesian Workflow paper"
@@ -16,7 +17,6 @@ depends_on:
   - "[[Choosing and Building Models]]"
   - "[[Hierarchical Models]]"
   - "[[Bayesian Workflow - Overview]]"
-  - "[[raw/BayesWorkflow.pdf]]"
 used_by:
   - "[[Modeling as Software Development]]"
   - "[[Model Comparison]]"
@@ -27,6 +27,8 @@ expanded_by:
   - "[[Comparing Models Visually]]"
   - "[[Statistical and Scientific Inference]]"
 ---
+
+# Iterative Model Improvement
 
 > [!info] Expanded in the 2026 textbook
 > The 2020 paper's account of iterative model improvement — including the garden-of-forking-paths worry — is expanded in Gelman, Vehtari & McElreath (2026), *Bayesian Workflow*.

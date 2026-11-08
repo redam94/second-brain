@@ -144,3 +144,5 @@ Section 6 experiments (see [[Code Prompt Aspects Analysis]]) confirm that the co
 - [[NLP Causal Extraction Methods]] — alternative text-based approaches to extracting causal structure; code prompts represent a structured alternative to the NLP extraction pipeline
 - [[BN Construction Methods Comparison]] — situates code-prompt-based elicitation within the broader taxonomy of BN construction methods (manual, data-driven, hybrid)
 - [[Chain-of-Thought Prompting]] — both structure the model's intermediate reasoning
+- [[DAG Structure Learning Problem]] — the formal structure-learning problem that LLM-based causal elicitation approaches from a different (knowledge-driven) angle
+- [[NOTEARS - Overview]] — data-driven automated alternative for learning causal structure when observational data exist

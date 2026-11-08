@@ -77,7 +77,7 @@ $$
 \frac{\partial Q}{\partial P} = \beta_2 + \beta_3 A
 $$
 
-Related to [[Bayesian moderation analysis]] in the Bayesian statistics module.
+Related to [[Moderation Analysis]] in the Bayesian statistics module.
 
 ## Dummy Variables and Categorical Marketing Variables
 

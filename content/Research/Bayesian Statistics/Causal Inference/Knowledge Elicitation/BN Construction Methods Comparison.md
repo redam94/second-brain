@@ -104,3 +104,5 @@ Lower entropy = more structured, clearer dependencies. LLM wins on mean and min 
 - [[LLM Expert Elicitation for Bayesian Networks]] — full BN III methodology
 - [[Directed Acyclic Graphs]] — the causal DAG theory that underpins BN structure and d-separation
 - [[Causal Discovery - Overview]] — data-driven structure learning vs expert elicitation
+- [[DAG Structure Learning Problem]] — automated structure learning as an alternative to the manual/LLM elicitation methods compared here
+- [[NOTEARS - Overview]] — continuous optimization approach to DAG structure learning; complementary to expert elicitation for large networks
