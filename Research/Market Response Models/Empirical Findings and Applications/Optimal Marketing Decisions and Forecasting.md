@@ -1,5 +1,6 @@
 ---
 title: "Optimal Marketing Decisions and Forecasting"
+folder: "Market Response Models/Empirical Findings and Applications"
 aliases:
   - "Optimal Marketing Budget"
   - "Marketing Mix Optimization"

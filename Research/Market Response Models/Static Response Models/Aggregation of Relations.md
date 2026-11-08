@@ -1,5 +1,6 @@
 ---
 title: "Aggregation of Relations"
+folder: "Market Response Models/Static Response Models"
 aliases:
   - "Aggregation Bias in Marketing"
   - "Individual to Aggregate Response"

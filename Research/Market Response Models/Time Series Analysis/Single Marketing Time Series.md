@@ -1,5 +1,6 @@
 ---
 title: "Single Marketing Time Series"
+folder: "Market Response Models/Time Series Analysis"
 aliases:
   - "ARIMA Marketing"
   - "Univariate Time Series Marketing"

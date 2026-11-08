@@ -1,5 +1,6 @@
 ---
 title: "Empirical Causal Ordering"
+folder: "Market Response Models/Time Series Analysis"
 aliases:
   - "Granger Causality Marketing"
   - "Causal Ordering VAR"

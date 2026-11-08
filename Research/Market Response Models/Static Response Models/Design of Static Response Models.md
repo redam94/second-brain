@@ -1,5 +1,6 @@
 ---
 title: "Design of Static Response Models"
+folder: "Market Response Models/Static Response Models"
 aliases:
   - "Static Marketing Models"
   - "Cross-Sectional Response Models"

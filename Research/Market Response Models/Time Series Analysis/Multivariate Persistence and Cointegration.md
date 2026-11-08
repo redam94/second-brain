@@ -1,5 +1,6 @@
 ---
 title: "Multivariate Persistence and Cointegration"
+folder: "Market Response Models/Time Series Analysis"
 aliases:
   - "VAR Marketing"
   - "Cointegration Marketing"

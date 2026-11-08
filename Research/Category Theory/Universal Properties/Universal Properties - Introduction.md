@@ -1,5 +1,6 @@
 ---
 title: "Universal Properties - Introduction"
+folder: "Category Theory/Universal Properties"
 tags:
   - source/ingested
   - topic/category-theory

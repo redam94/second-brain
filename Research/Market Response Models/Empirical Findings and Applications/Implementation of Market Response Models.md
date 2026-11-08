@@ -1,5 +1,6 @@
 ---
 title: "Implementation of Market Response Models"
+folder: "Market Response Models/Empirical Findings and Applications"
 aliases:
   - "MRM Implementation"
   - "Marketing Science Implementation"

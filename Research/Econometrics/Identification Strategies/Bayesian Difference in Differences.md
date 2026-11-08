@@ -1,5 +1,6 @@
 ---
 title: "Bayesian Difference in Differences"
+folder: "Econometrics/Identification Strategies"
 tags:
   - source/ingested
   - topic/causal-inference

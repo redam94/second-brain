@@ -1,5 +1,6 @@
 ---
 title: "Reaction Functions and Competitive Dynamics"
+folder: "Market Response Models/Dynamic Response Models"
 aliases:
   - "Competitive Reaction Marketing"
   - "Cournot Reaction Function"

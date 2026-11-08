@@ -1,5 +1,6 @@
 ---
 title: "Market Response Models - Overview"
+folder: "Market Response Models/Introduction"
 aliases:
   - "MRM Overview"
   - "Hanssens Parsons Schultz"

@@ -1,5 +1,6 @@
 ---
 title: "Parameter Estimation in Market Response"
+folder: "Market Response Models/Estimation and Testing"
 aliases:
   - "MRM Estimation"
   - "OLS GLS 2SLS Marketing"

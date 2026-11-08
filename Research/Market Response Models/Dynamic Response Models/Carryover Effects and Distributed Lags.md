@@ -1,5 +1,6 @@
 ---
 title: "Carryover Effects and Distributed Lags"
+folder: "Market Response Models/Dynamic Response Models"
 aliases:
   - "Koyck Model"
   - "Geometric Distributed Lag"

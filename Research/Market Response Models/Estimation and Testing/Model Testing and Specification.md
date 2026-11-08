@@ -1,5 +1,6 @@
 ---
 title: "Model Testing and Specification"
+folder: "Market Response Models/Estimation and Testing"
 aliases:
   - "MRM Specification Tests"
   - "RESET Test Marketing"

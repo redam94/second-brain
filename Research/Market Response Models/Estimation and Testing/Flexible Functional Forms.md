@@ -1,5 +1,6 @@
 ---
 title: "Flexible Functional Forms"
+folder: "Market Response Models/Estimation and Testing"
 aliases:
   - "Translog Model Marketing"
   - "Flexible MRM Specifications"

@@ -1,5 +1,6 @@
 ---
 title: "Marketing Generalizations Overview"
+folder: "Market Response Models/Empirical Findings and Applications"
 aliases:
   - "Empirical Marketing Generalizations"
   - "Meta-Analysis Marketing"
