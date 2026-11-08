@@ -23,6 +23,9 @@ used_by:
   - "[[Homo Silicus - LLMs as Simulated Economic Agents]]"
   - "[[Reward Modeling from Human Preferences]]"
   - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
+  - "[[Elrod and Keane 1995 - Factor-Analytic Probit Market Structure - Overview]]"
+  - "[[Market Structure Analysis - IIA, Nested Logit and Choice Maps (Concept Note)]]"
+  - "[[Caron 2012 - Plackett-Luce Model for Full Rankings]]"
 ---
 
 # Discrete Choice Models
@@ -123,3 +126,6 @@ Discrete choice data can be structured in either **wide format** (one row per de
 - [[Homo Silicus - LLMs as Simulated Economic Agents]] — conditional logit fitted to LLM-simulated choices
 - [[Consumer Utility Function Components]] — utility function formulation in the Karakaya ABM, sharing the same logit/softmax foundation
 - [[Logit Purchase Decision Model]] — the ABM-level logit rule derived from the same random utility theory
+- [[Elrod and Keane 1995 - Factor-Analytic Probit Market Structure - Overview]] — market structure from choice panels
+- [[Market Structure Analysis - IIA, Nested Logit and Choice Maps (Concept Note)]] — IIA and nested structure
+- [[Caron 2012 - Plackett-Luce Model for Full Rankings]] — rank-ordered logit

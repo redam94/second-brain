@@ -18,6 +18,8 @@ depends_on:
 used_by:
   - "[[Q - A Unified View of Sensitivity to Assumption Violations]]"
   - "[[Gordon et al 2019 - Sensitivity to Unobservables and Bias-Reduction Ratio]]"
+  - "[[Cinelli Hazlett 2020 - Making Sense of Sensitivity - Overview]]"
+  - "[[Franks 2019 - Flexible Sensitivity Analysis Without Observable Implications - Overview]]"
 aliases:
   - E-value
   - Rosenbaum bounds
@@ -138,3 +140,5 @@ This connects to the broader theme of identifiability in Bayesian causal inferen
 - [[Nonparametric Causal Inference]] — BART-based ATE/ATT estimation; sensitivity analysis quantifies robustness of these estimates to unmeasured confounding
 - [[Honest DiD - Sensitivity to Parallel Trends Violations]] — both report a breakdown point
 - [[Gordon et al 2019 - Sensitivity to Unobservables and Bias-Reduction Ratio]] — simulated-confounder analysis calibrated by relative R2
+- [[Cinelli Hazlett 2020 - Making Sense of Sensitivity - Overview]] — partial-R2 robustness values
+- [[Franks 2019 - Flexible Sensitivity Analysis Without Observable Implications - Overview]] — Tukey-factorization sensitivity

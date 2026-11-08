@@ -29,6 +29,9 @@ used_by:
   - "[[Copula Estimation]]"
   - "[[Vine Copulas - Overview]]"
   - "[[Reparameterization Trick and Variational Autoencoders]]"
+  - "[[Griffiths 2011 - The Indian Buffet Process - Overview]]"
+  - "[[Bürkner 2021 - Bayesian IRT with brms Overview]]"
+  - "[[Girosi King 2007 - Lee-Carter Model Estimation and Forecasting]]"
 ---
 
 # Factor Analysis and Probabilistic PCA (PPCA)
@@ -151,3 +154,6 @@ Model quality can be assessed by comparing the reconstruction $\hat{X} = WF$ aga
 - Factor analysis — Full PyMC tutorial with code and plots
 - [[Vine Copulas - Overview]] — latent-structure vs pairwise dependence modeling
 - [[Reparameterization Trick and Variational Autoencoders]] — the VAE as the nonlinear generalization of PPCA
+- [[Griffiths 2011 - The Indian Buffet Process - Overview]] — binary latent-feature analogue
+- [[Bürkner 2021 - Bayesian IRT with brms Overview]] — item response theory
+- [[Girosi King 2007 - Lee-Carter Model Estimation and Forecasting]] — Lee-Carter as a rank-one SVD factor model

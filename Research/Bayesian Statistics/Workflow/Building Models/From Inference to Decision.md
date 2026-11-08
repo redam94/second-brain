@@ -22,6 +22,7 @@ used_by:
   - "[[The Replication Crisis and Multiple Levels of Variation]]"
   - "[[Q - Does Peeking Matter for a Bayesian]]"
   - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Vickers 2019 - Net Benefit and Threshold Probability]]"
 aliases:
   - "ORBITA"
   - "Heart stents study"
@@ -289,3 +290,4 @@ aliases:
 - [[Constructing Priors for Effect Sizes]] — where the Cochrane prior comes from
 - [[Decision Analysis]] — BDA3's treatment, including institutional decision analysis
 - [[Point Estimates and Uncertainties]] — the summaries recommended in place of thresholds
+- [[Vickers 2019 - Net Benefit and Threshold Probability]] — threshold decisions

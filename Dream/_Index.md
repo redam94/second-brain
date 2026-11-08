@@ -1645,6 +1645,173 @@ The vault's market response coverage is strong on temporal dynamics (adstock, ca
 
 ---
 
+## PyMC Examples Gap-Fill Follow-ups (2026-11-08)
+
+### 102. Mediation and Sensitivity: Primary Sources Not Yet Captured
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The Causal Sensitivity cluster substituted open papers for Imai-Keele-Tingley 2010 and McCandless-Gustafson-Levy 2007, and lacks the E-value and marginal sensitivity model.
+
+**Adjacent notes:** [[Imai 2010 - Causal Mediation Analysis - Overview]], [[Franks 2019 - Flexible Sensitivity Analysis Without Observable Implications - Overview]]
+
+**Suggested sources / search terms:**
+- VanderWeele & Ding (2017), "Sensitivity analysis in observational research: introducing the E-value"
+- Zhao, Small & Bhattacharya (2019), marginal sensitivity model (arXiv)
+- Dorie et al. (2016), treatSens; Gustafson (2015), partially identified models
+
+---
+
+### 103. Hierarchical Dirichlet Processes and Neural Topic Models
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The nonparametrics cluster covers the DP, IBP and LDA, but HDP and neural/embedding topic models are concept notes only.
+
+**Adjacent notes:** [[Teh 2010 - Dirichlet Process - Overview]], [[Blei 2003 - Latent Dirichlet Allocation - Overview]]
+
+**Suggested sources / search terms:**
+- Teh, Jordan, Beal & Blei (2006), "Hierarchical Dirichlet processes", JASA
+- Srivastava & Sutton (2017) ProdLDA; Dieng, Ruiz & Blei (2020) embedded topic model (arXiv)
+- Yin & Wang (2014) GSDMM; Yan et al. (2013) biterm topic model
+
+---
+
+### 104. Stochastic Volatility, Label Switching and Riemannian HMC
+**Status:** 🌱 new
+
+**Why it's a gap:**
+Stochastic volatility and label switching are concept notes only in the Advanced MCMC cluster.
+
+**Adjacent notes:** [[Marginalising Discrete Latents - Why NUTS Cannot Sample Discrete Parameters]], [[Bayesian HMMs - Label Switching, Non-Homogeneous Transitions and Dwell Times]]
+
+**Suggested sources / search terms:**
+- Kim, Shephard & Chib (1998) stochastic volatility
+- Stephens (2000) and Jasra, Holmes & Stephens (2005) on label switching
+- Girolami & Calderhead (2011) Riemann manifold HMC; Zhang et al. (2022) Pathfinder
+
+---
+
+### 105. EVSI Estimation and the Original Decision Curve Paper
+**Status:** 🌱 new
+
+**Why it's a gap:**
+EVPI/EVSI are covered by concept notes; Vickers & Elkin 2006 and regression/moment-matching EVSI papers are not captured.
+
+**Adjacent notes:** [[Heath 2015 - Review of Expected Value of Information Methods - Overview]], [[Vickers 2019 - Step-by-Step Guide to Decision Curve Analysis - Overview]]
+
+**Suggested sources / search terms:**
+- Vickers & Elkin (2006), decision curve analysis
+- Strong, Oakley & Brennan (2014) EVPPI; Heath et al. (2018) EVSI moment matching (arXiv 1611.01373)
+- Srinivas et al. (2010) GP-UCB
+
+---
+
+### 106. Primary Rating-System and Latent-Class Diagnostic Sources
+**Status:** 🌱 new
+
+**Why it's a gap:**
+Hunter 2004, Glickman 1999, TrueSkill, Hui-Walter 1980 and Allenby-Rossi 1991 were replaced by substitutes or concept notes.
+
+**Adjacent notes:** [[Caron 2012 - Bayesian Inference for Generalized Bradley-Terry Models - Overview]], [[Hui-Walter and Latent Class Models for Diagnostic Tests (Concept Note)]]
+
+**Suggested sources / search terms:**
+- Hunter (2004) MM algorithms for Bradley-Terry; Glickman (1999) Glicko; Herbrich et al. (2007) TrueSkill
+- Hui & Walter (1980); Dendukuri & Joseph (2001)
+- Allenby & Rossi (1991) market structure; Frank et al. (2017) Wordbank
+
+---
+
+### 107. Original N-Mixture and LCMCR Papers
+**Status:** 🌱 new
+
+**Why it's a gap:**
+Royle 2004 and Manrique-Vallier 2016 could not be downloaded (bot checks); substitutes were used.
+
+**Adjacent notes:** [[Barker 2018 - Reliability of N-Mixture Models - Overview]], [[Concept - Latent Class and Dirichlet Process Models for Multiple Systems Estimation]]
+
+**Suggested sources / search terms:**
+- Royle (2004) N-mixture models, Biometrics
+- Manrique-Vallier (2016) DP latent-class MSE
+- Link (2003) heterogeneous detection; Bird & King (2018) MSE review
+
+---
+
+### 108. Nowcasting and Election-Model Primary Sources
+**Status:** 🌱 new
+
+**Why it's a gap:**
+Günther et al. 2021, Cori et al. 2013 and Mariano-Murasawa 2003 were substituted; the Economist model and Jackman poll pooling are absent.
+
+**Adjacent notes:** [[McGough 2020 - Nowcasting by Bayesian Smoothing - Overview]], [[Linzer 2013 - Dynamic Bayesian Forecasting of Presidential Elections - Overview]]
+
+**Suggested sources / search terms:**
+- Cori et al. (2013) EpiEstim; Günther et al. (2021) Bavaria nowcast
+- Jackman (2005) "Pooling the polls"; Heidemanns, Gelman & Morris (2020)
+- Mariano & Murasawa (2003); Särkkä, *Bayesian Filtering and Smoothing* (open)
+
+---
+
+### 109. Gibbs Posteriors, Original GAMLSS and Flood-Frequency Standards
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The distributional cluster substituted Ji 2024 for Yang-Wang-He 2016 and the JSS GAMLSS paper for Rigby-Stasinopoulos 2005; usual intake and log-Pearson III are concept notes.
+
+**Adjacent notes:** [[Ji 2024 - Gibbs Posterior and Learning-Rate Calibration]], [[Stasinopoulos 2007 - GAMLSS Model Framework]]
+
+**Suggested sources / search terms:**
+- Bissiri, Holmes & Walker (2016) general Bayesian updating; Syring & Martin (2019)
+- Rigby & Stasinopoulos (2005); Cole & Green (1992) LMS
+- Tooze et al. (2006) NCI usual intake; England et al. (2019) Bulletin 17C
+
+---
+
+### 110. SPDE, ETAS and Phylogenetic Comparative Methods
+**Status:** 🌱 new
+
+**Why it's a gap:**
+LGCP originals, the SPDE approach, Ogata's ETAS and phylogenetic regression are concept notes or substitutes.
+
+**Adjacent notes:** [[Simpson 2016 - Going Off Grid - Overview]], [[Reinhart 2018 - Self-Exciting Spatio-Temporal Point Processes - Overview]]
+
+**Suggested sources / search terms:**
+- Lindgren, Rue & Lindström (2011) SPDE
+- Ogata (1988) ETAS; Møller et al. (1998) LGCP; Diggle et al. (2013)
+- Geiger & Heckerman (1994) BGe; Airoldi et al. (2008) MMSB; Harmon, *Phylogenetic Comparative Methods* (open book)
+
+---
+
+### 111. Universal Differential Equations and Mechanistic Biology Sources
+**Status:** 🌱 new
+
+**Why it's a gap:**
+UDEs, jump-diffusions, surplus-production models and telegraph/Luria-Delbrück likelihoods are concept notes only.
+
+**Adjacent notes:** [[Universal Differential Equations and Scientific ML (Concept Note)]], [[Jump-Diffusion and Stochastic Differential Equation Models (Concept Note)]]
+
+**Suggested sources / search terms:**
+- Rackauckas et al. (2020) universal differential equations (arXiv 2001.04385)
+- Merton (1976) jump-diffusion; Millar & Meyer (2000) fisheries state-space
+- Peccoud & Ycart (1995) telegraph model; Gelman, Bois & Jiang (1996) population PK
+
+---
+
+### 112. Diffusion-Model Theory, Bchron and Life-Table Sources
+**Status:** 🌱 new
+
+**Why it's a gap:**
+Drift diffusion is covered via HDDM only; Bchron, life-table primary sources and the fast threshold test are missing.
+
+**Adjacent notes:** [[Wiecki 2013 - HDDM Hierarchical Drift-Diffusion Model - Overview]], [[Concept Note - Abridged Life Tables Years of Life Lost and the Counterfactual Path]]
+
+**Suggested sources / search terms:**
+- Ratcliff & McKoon (2008) diffusion decision model
+- Haslett & Parnell (2008) Bchron; Brouhns et al. (2002) Poisson Lee-Carter; Arriaga (1984)
+- Pierson et al. (2017) fast threshold test; Wulfsohn & Tsiatis (1997) joint models
+
+---
+
 ## Covered Gaps
 
 | Gap | Covered By | Date Covered |
@@ -1680,6 +1847,7 @@ The vault's market response coverage is strong on temporal dynamics (adstock, ca
 
 | Date | Action |
 |------|--------|
+| 2026-11-08 | **PyMC worked-examples gap-fill.** Audited the vault against all 117 examples at https://redam94.github.io/pymc-challenges/examples.html, then ingested 54 primary sources plus concept notes into the new topic [[Research/Applied Bayesian Model Families/_Index|Applied Bayesian Model Families]] (361 content notes + 74 indexes, 11 clusters, 11 parallel agents). Backlinks added to 58 existing notes. Added gaps #102-#112 (primary sources that were substituted or covered only by concept notes). |
 | 2026-11-08 | **Top-down ingest: meta-analysis, benchmark development, causal transportability, differential privacy.** Researched and full-captured 24 primary sources into the new topic [[Research/Evidence Synthesis, Generalization and Privacy/_Index|Evidence Synthesis, Generalization and Privacy]] (190 content notes + 28 indexes, 4 clusters, 8 parallel agents). Added See Also / `used_by` backlinks to 35 existing notes. Not ingested: Cole & Stuart 2010 and Stuart et al. 2011 (PMC bot check); Egger 1997 replaced by Sterne et al. 2011. Added gaps #85-#93. |
 | 2026-10-13 | Full-capture ingest of 21 sources on model validation, feature importance and advertising measurement into the new [[Research/Model Validation and Interpretability/_Index|Model Validation and Interpretability]] topic and [[Research/Market Response Models/User-Level Ad Experiments/Paid Search Field Experiment (Blake et al 2015)/_Index|Blake et al 2015]], plus coverage audits of Jin 2017, Gordon 2019, Lewis & Rao 2015 and Gelman & Loken 2013 (229 notes). Gap #61 marked 🌿 partially covered. Follow-on gaps #79-#84 added (missing supplements and discussions, spurious-regression primary sources, modern importance inference, Ioannidis critiques, companion governance documents, competitive brand bidding). |
 | 2026-10-12 | Run 27: reviewed 9 notes (Functional Forms in Marketing, Observational vs Experimental Methods in Advertising, Confirmatory Factor Analysis and SEM, Market Response Models - Overview, Iterative Model Improvement, Overfitting and Information Criteria, Data Collection Models, Tail Dependence in Factor Copulas, Organizational Simulation). No existing gaps newly covered this run. Frontmatter fixes: changed `date_created` → `date_ingested` in Functional Forms in Marketing and Market Response Models - Overview; added `folder: "Market Response Models/Static Response Models"` to Functional Forms in Marketing; added `folder: "Bayesian Statistics/Advanced Models"` and `date_updated: 2026-04-09` to Confirmatory Factor Analysis and SEM; added `date_updated: 2026-04-08` to Iterative Model Improvement and Observational vs Experimental Methods in Advertising; removed `[[raw/BayesWorkflow.pdf]]` from `depends_on` in Iterative Model Improvement (raw PDFs should not be in depends_on); added missing H1 title heading to Iterative Model Improvement; updated `date_updated: 2026-10-12` in Overfitting and Information Criteria. Cross-links added: Functional Forms in Marketing → new See Also section with `[[Bayesian Media Mix Modeling - Overview]]`, `[[Carryover (Adstock) Functional Forms]]`, `[[Discrete Choice Models]]`, `[[Logit Purchase Decision Model]]`, `[[Market Response Models - Overview]]`; Observational vs Experimental Methods in Advertising → `[[Propensity Score Matching - Overview]]` + `[[Sensitivity Analysis in Observational Studies]]` (new See Also entries); Confirmatory Factor Analysis and SEM → new See Also section with `[[Factor Analysis and PPCA]]`, `[[Hierarchical Models]]`, `[[Spurious Association and Confounds]]`, `[[Nonparametric Models Overview]]`, `[[Social Network Models]]`, `[[Moderation Analysis]]`, `[[Bayesian Workflow - Overview]]`, `[[Model Checking]]`; Market Response Models - Overview → `[[Bayesian Media Mix Modeling - Overview]]` (Related Methods section). Added (renumbered on merge, #58-#65 → #94-#101) gap #63 (Projection Predictive Variable Selection / projpred), #64 (Item Response Theory and Bayesian Psychometric Models), #65 (Causal Transportability and External Validity). |

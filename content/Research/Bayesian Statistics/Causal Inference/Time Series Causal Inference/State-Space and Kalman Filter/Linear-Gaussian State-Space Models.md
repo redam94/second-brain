@@ -19,6 +19,9 @@ used_by:
   - "[[Marginal Likelihood via the Kalman Filter]]"
   - "[[Probabilistic Forecasting - Overview]]"
   - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
+  - "[[Banbura 2013 - Sensor Fusion in State-Space Form (Concept Note)]]"
+  - "[[Linzer 2013 - Reverse Random-Walk Model and Priors]]"
+  - "[[Elo, Glicko and TrueSkill - Dynamic Skill Ratings (Concept Note)]]"
 aliases:
   - state-space model
   - probabilistic state space model
@@ -123,3 +126,6 @@ Särkkä builds filtering on the *general probabilistic state-space model* (a hi
 - [[Carryover Effects and Distributed Lags]] — autoregressive/distributed-lag dynamics expressible in state-space form (cf. Särkkä Ex. 3.4, $x_k=\sum a_i x_{k-i}+q$)
 - [[Single Marketing Time Series]] — ARIMA models have equivalent state-space representations
 - [[Hilbert Space Gaussian Processes]] — temporal GPs as linear-Gaussian state-space models
+- [[Banbura 2013 - Sensor Fusion in State-Space Form (Concept Note)]] — multi-sensor and mixed-frequency fusion
+- [[Linzer 2013 - Reverse Random-Walk Model and Priors]] — random-walk state opinion for poll aggregation
+- [[Elo, Glicko and TrueSkill - Dynamic Skill Ratings (Concept Note)]] — rating systems as approximate filters

@@ -19,6 +19,7 @@ used_by:
   - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Further Topics in Global Optimisation]]"
   - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
+  - "[[Value of Information Concept Note - Adaptive Sampling and Acting on a Noisy Belief]]"
 aliases:
   - Probability of Improvement
   - Expected Improvement
@@ -102,3 +103,4 @@ Across a common multimodal GP (Figs. 32.1, 33.1, 33.2, 33.4), the acquisition op
 - [[Bayesian Optimisation]] — how acquisitions arise as expected losses.
 - [[Gaussian Process Regression]] — the $m(x),\mathbb{V}(x)$ underlying every formula here.
 - [[Further Topics in Global Optimisation]] — multi-point EI, UCB, KG, PES.
+- [[Value of Information Concept Note - Adaptive Sampling and Acting on a Noisy Belief]] — value-of-information acquisition

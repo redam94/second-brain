@@ -19,6 +19,7 @@ used_by:
   - "[[Neural Likelihood Estimation and Sequential Neural Likelihood]]"
   - "[[Neural Simulation-Based Inference - Overview]]"
   - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
+  - "[[Chaos, Rough Likelihoods and Data Assimilation (Concept Note)]]"
 aliases:
   - synthetic likelihood
   - Wood 2010
@@ -81,3 +82,4 @@ The first **general-purpose** method for well-founded statistical inference abou
 - [[Nicholson's Blowfly Application]] — the empirical demonstration
 - [[Approximate Bayesian Computation for ABMs]] — the closest likelihood-free relative
 - [[Neural Likelihood Estimation and Sequential Neural Likelihood]] — the flow-based successor to the Gaussian synthetic likelihood
+- [[Chaos, Rough Likelihoods and Data Assimilation (Concept Note)]] — rough likelihoods of chaotic systems

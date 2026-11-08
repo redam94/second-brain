@@ -24,6 +24,10 @@ used_by:
   - "[[Spatial Models - BYM]]"
   - "[[State-Space Models and the Kalman Filter - Overview]]"
   - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
+  - "[[Value of Information Concept Note - When an Exact Gaussian Process Earns Its Price]]"
+  - "[[Simpson 2016 - Off-Grid Poisson-Form Likelihood]]"
+  - "[[Stasinopoulos 2007 - Bayesian P-Splines and Distributional Regression in PyMC]]"
+  - "[[Pewsey 2021 - Circular Models in PyMC]]"
 ---
 
 # Hilbert Space Gaussian Processes (HSGPs)
@@ -106,3 +110,7 @@ The HSGP decomposition makes sampling feasible on daily data over 20 years.
 - [[Local Linear Trend and Seasonality]] — state-space counterpart for trend + seasonal decomposition
 - [[Bayesian Structural Time-Series Model]] — classical modular decomposition that HSGP can replace or augment
 - [[State-Space Models and the Kalman Filter - Overview]] — GP/state-space duality for time series
+- [[Value of Information Concept Note - When an Exact Gaussian Process Earns Its Price]] — exact GP vs approximation trade-off
+- [[Simpson 2016 - Off-Grid Poisson-Form Likelihood]] — basis-function LGCPs
+- [[Stasinopoulos 2007 - Bayesian P-Splines and Distributional Regression in PyMC]] — P-splines as a smoother alternative
+- [[Pewsey 2021 - Circular Models in PyMC]] — periodic and circular covariates

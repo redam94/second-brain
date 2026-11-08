@@ -40,6 +40,7 @@ used_by:
   - "[[Dorie 2019 - ACIC 2016 Causal Inference Competition - Overview]]"
   - "[[Dorie 2019 - Motivation and Shortcomings of Method Comparisons]]"
   - "[[Dehghani 2021 - The Benchmark Lottery - Overview]]"
+  - "[[Rosenman 2020 - Combining Observational and Experimental Datasets - Overview]]"
 aliases:
   - LaLonde for Advertising
   - Gordon Zettelmeyer Facebook Benchmarks
@@ -209,6 +210,7 @@ Expect the pattern of Fig. 10: a large drop from the raw exposed-unexposed contr
 - [[Dorie 2019 - ACIC 2016 Causal Inference Competition - Overview]] — simulation-based benchmark for causal estimators
 - [[Dorie 2019 - Motivation and Shortcomings of Method Comparisons]] — limits of constructed observational studies
 - [[Dehghani 2021 - The Benchmark Lottery - Overview]] — why benchmark rankings are fragile
+- [[Rosenman 2020 - Combining Observational and Experimental Datasets - Overview]] — shrinking observational estimates toward experiments
 
 ## Full Source Note Set (Gordon et al. 2019)
 

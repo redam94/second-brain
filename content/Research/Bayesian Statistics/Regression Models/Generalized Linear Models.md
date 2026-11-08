@@ -27,6 +27,7 @@ used_by:
   - "[[Counterfactual Inference]]"
   - "[[Moderation Analysis]]"
   - "[[Reward Modeling from Human Preferences]]"
+  - "[[Stasinopoulos 2007 - GAMLSS Model Framework]]"
 ---
 
 # Generalized Linear Models
@@ -68,3 +69,4 @@ A GLM has three components:
 - [[Quantile Regression]] — Bayesian quantile regression uses the asymmetric Laplace, a GLM-family distribution
 - [[Monsters and Mixtures]] — zero-inflated and hurdle extensions of Poisson/binomial GLMs for over-dispersed count data
 - [[Hierarchical Models]] — the natural next step: add group-level structure to any GLM via partial pooling
+- [[Stasinopoulos 2007 - GAMLSS Model Framework]] — modelling every distribution parameter

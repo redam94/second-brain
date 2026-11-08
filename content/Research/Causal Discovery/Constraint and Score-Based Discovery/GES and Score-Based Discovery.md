@@ -15,6 +15,7 @@ depends_on:
   - "[[Causal Discovery - Overview]]"
 used_by:
   - "[[PC Algorithm and Constraint-Based Discovery]]"
+  - "[[Bayesian Causal Discovery - BGe Score, Interventions and Sachs Data]]"
 aliases:
   - GES
   - Greedy Equivalence Search
@@ -73,3 +74,4 @@ Where constraint-based methods grow from CI tests, score-based methods define a 
 - [[PC Algorithm and Constraint-Based Discovery]]
 - [[Markov and Faithfulness Assumptions]]
 - [[NOTEARS - Overview]]
+- [[Bayesian Causal Discovery - BGe Score, Interventions and Sachs Data]] — Bayesian scores for DAGs

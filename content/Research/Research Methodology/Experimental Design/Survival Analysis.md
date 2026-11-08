@@ -32,6 +32,9 @@ used_by:
   - "[[Customer Lifetime Value - Overview]]"
   - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
   - "[[Morris et al 2019 - Worked Example Exponential vs Weibull vs Cox]]"
+  - "[[McGough 2020 - Reporting Triangle and Chain-Ladder Setup]]"
+  - "[[Rizopoulos 2016 - JMbayes Joint Models Overview]]"
+  - "[[Reinhart 2018 - Likelihood, EM and Bayesian Estimation]]"
 ---
 
 # Survival Analysis
@@ -158,3 +161,6 @@ Bayesian survival analysis places priors on hazard functions or regression coeff
 - [[Hierarchical Models]] — frailty models for clustered survival data are random-effects / hierarchical models
 - [[Shifted-Beta-Geometric Model for Contractual Retention]] — discrete-time hazard with beta frailty
 - [[Morris et al 2019 - Worked Example Exponential vs Weibull vs Cox]] — simulation evaluation of survival estimators
+- [[McGough 2020 - Reporting Triangle and Chain-Ladder Setup]] — right truncation in reporting delays
+- [[Rizopoulos 2016 - JMbayes Joint Models Overview]] — joint longitudinal-survival models
+- [[Reinhart 2018 - Likelihood, EM and Bayesian Estimation]] — point-process likelihoods as hazards

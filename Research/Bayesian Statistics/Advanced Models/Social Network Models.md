@@ -22,6 +22,9 @@ depends_on:
   - "[[Generalized Linear Models]]"
 used_by:
   - "[[Missing Data - Statistical Rethinking]]"
+  - "[[Hoff 2002 - Latent Space Models Overview]]"
+  - "[[Network Outcome Models - Stochastic Block Models and Network Checks]]"
+  - "[[Griffiths 2011 - Applications of the IBP]]"
 ---
 
 # Social Network Models
@@ -95,3 +98,9 @@ with pm.Model() as network_model:
 
 - [[raw/Social Networks]] — PyMC port of Statistical Rethinking 2023, Lecture 15 (McElreath)
 - Video: [Lecture 15 — Social Networks](https://youtu.be/L_QumFUv7C8)
+
+## See Also
+
+- [[Hoff 2002 - Latent Space Models Overview]] — latent space network models
+- [[Network Outcome Models - Stochastic Block Models and Network Checks]] — stochastic block models
+- [[Griffiths 2011 - Applications of the IBP]] — latent-feature link prediction

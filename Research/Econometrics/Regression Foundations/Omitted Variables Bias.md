@@ -31,6 +31,7 @@ used_by:
   - "[[Identity Fragmentation and the Privacy-Era Limits of User-Level Tests]]"
   - "[[Hooker Mentch Zhou 2021 - Conditional and Relearning Importance Measures]]"
   - "[[Dillon et al - SHAP and Causal Insights - Overview]]"
+  - "[[Cinelli Hazlett 2020 - Partial R2 Parameterization and Bias Formulas]]"
 ---
 
 # Omitted Variables Bias
@@ -89,3 +90,4 @@ For returns to schooling where "ability" ($A_i$) is omitted:
 - [[Regularization Bias and the Partially Linear Model]] — shrinkage on controls leaks into the treatment coefficient
 - [[Hooker Mentch Zhou 2021 - Conditional and Relearning Importance Measures]] — proof of Theorem 3 is the omitted-variable formula applied to drop-and-refit importance
 - [[Dillon et al - SHAP and Causal Insights - Overview]] — omitted latent need flips the sign of SHAP attributions
+- [[Cinelli Hazlett 2020 - Partial R2 Parameterization and Bias Formulas]] — OVB in partial-R2 form

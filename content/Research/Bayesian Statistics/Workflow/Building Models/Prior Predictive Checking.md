@@ -21,6 +21,7 @@ used_by:
   - "[[Simulation-Based Calibration - Overview]]"
   - "[[Models for Regression Coefficients - Student Grades]]"
   - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
+  - "[[Bronk Ramsey 2009 - MCMC Outputs Diagnostics and Agreement Indices]]"
 aliases:
   - "Prior predictive check"
   - "Prior predictive simulation"
@@ -197,3 +198,4 @@ The mechanics — which variables to fix and which to simulate, in which order �
 - [[Prior Distributions]] — the informativity ladder these checks make visible
 - [[Joint Priors and Covariance Matrices]] — the fix for the dimension effect
 - [[Choosing and Building Models]] — the 2020 paper's treatment of prior predictive checking
+- [[Bronk Ramsey 2009 - MCMC Outputs Diagnostics and Agreement Indices]] — span priors and agreement indices

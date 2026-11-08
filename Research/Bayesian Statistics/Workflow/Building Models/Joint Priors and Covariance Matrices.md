@@ -18,6 +18,8 @@ used_by:
   - "[[Models for Regression Coefficients - Student Grades]]"
   - "[[Prior Specification for Regression Models - Sleep Study]]"
   - "[[Prior Predictive Checking]]"
+  - "[[Bayesian Gaussian Graphical Models - G-Wishart and Neighbourhood Selection]]"
+  - "[[Li 2019 - Graphical Horseshoe Estimator - Overview]]"
 aliases:
   - "Piranha principle"
   - "LKJ prior"
@@ -238,3 +240,5 @@ understand and use than the LKJ family.**"
 - [[Constructing Priors for Effect Sizes]] — where the numbers come from
 - [[Prior Predictive Checking]] — the tool for exploring implied marginals of an LKJ prior
 - [[Global-Local Shrinkage Priors]] — the joint-prior family the piranha principle recommends
+- [[Bayesian Gaussian Graphical Models - G-Wishart and Neighbourhood Selection]] — G-Wishart priors
+- [[Li 2019 - Graphical Horseshoe Estimator - Overview]] — graphical horseshoe

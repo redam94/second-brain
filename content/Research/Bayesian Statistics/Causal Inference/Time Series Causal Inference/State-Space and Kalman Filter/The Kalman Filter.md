@@ -17,6 +17,8 @@ used_by:
   - "[[The RTS Smoother]]"
   - "[[Marginal Likelihood via the Kalman Filter]]"
   - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
+  - "[[Rabiner 1989 - Problem 1 - Forward and Backward Algorithms]]"
+  - "[[Elo, Glicko and TrueSkill - Dynamic Skill Ratings (Concept Note)]]"
 aliases:
   - Kalman filter
   - predict-update recursion
@@ -136,3 +138,5 @@ Bayesian filtering computes the **filtering distribution** $p(\mathbf{x}_k \mid 
 - [[Bayesian Structural Time-Series Model]] — BSTS inference runs this filter (and its simulation-smoother variant) internally
 - [[MCMC Inference for CausalImpact]] — Durbin–Koopman simulation smoother builds on Kalman filtering
 - [[Local Linear Trend and Seasonality]] — the state components the filter tracks in practice
+- [[Rabiner 1989 - Problem 1 - Forward and Backward Algorithms]] — the discrete-state analogue: HMM forward algorithm
+- [[Elo, Glicko and TrueSkill - Dynamic Skill Ratings (Concept Note)]] — Elo as a fixed-gain filter

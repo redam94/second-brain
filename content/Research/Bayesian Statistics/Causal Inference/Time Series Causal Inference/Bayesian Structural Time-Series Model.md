@@ -27,6 +27,7 @@ used_by:
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
   - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
   - "[[Granger 2003 - Cointegration and the Error-Correction Representation]]"
+  - "[[Banbura et al 2013 - Now-casting and the Real-Time Data Flow - Overview]]"
 aliases:
   - structural time-series model
   - BSTS model
@@ -140,3 +141,4 @@ The model shows:
 - [[Fitting and Validating Computation]] — MCMC validation for the BSTS sampler
 - [[The Kalman Filter]] — the filter/smoother BSTS inference relies on
 - [[Granger 2003 - Cointegration and the Error-Correction Representation]] — shared latent trend as the common factor of cointegrated series
+- [[Banbura et al 2013 - Now-casting and the Real-Time Data Flow - Overview]] — real-time nowcasting with mixed-frequency data

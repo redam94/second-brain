@@ -20,6 +20,8 @@ depends_on:
 used_by:
   - "[[Q - Continuous Learning in Media Measurement with Interaction Effects]]"
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Silverman 2020 - Bayesian-Threshold Method]]"
+  - "[[Li 2019 - Graphical Horseshoe Estimator - Overview]]"
 aliases:
   - Horseshoe Priors
   - Sparse Regression Priors
@@ -102,3 +104,5 @@ The paper also shows the regularized horseshoe is the **continuous counterpart o
 - [[Regularized Horseshoe (Finnish Horseshoe)]] — the slab fix
 - [[Spike-and-Slab Prior for Covariate Selection]] — the discrete-mixture counterpart
 - [[Bayesian Linear Regression]] — the underlying regression model
+- [[Silverman 2020 - Bayesian-Threshold Method]] — shrinkage priors on list interactions
+- [[Li 2019 - Graphical Horseshoe Estimator - Overview]] — horseshoe for precision matrices

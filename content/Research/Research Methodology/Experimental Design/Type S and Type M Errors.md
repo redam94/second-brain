@@ -30,6 +30,7 @@ used_by:
   - "[[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]]"
   - "[[Lewis Rao 2015 - Impact-to-SD Ratio Derivation and Calibrated Campaign]]"
   - "[[Gelman Loken 2013 - Way Forward - Preregistration, Replication and Analyzing All Comparisons]]"
+  - "[[Concept Note - Forecasting Replication from Published Effects]]"
 aliases:
   - "Type S error"
   - "Type M error"
@@ -124,3 +125,4 @@ Classical multiple comparisons corrections (Bonferroni, FDR) address Type 1 erro
 - [[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]] — small-n early-stopped significant results exaggerate magnitude
 - [[Lewis Rao 2015 - Impact-to-SD Ratio Derivation and Calibrated Campaign]] — exaggeration factor in low-powered ad tests
 - [[Gelman Loken 2013 - Way Forward - Preregistration, Replication and Analyzing All Comparisons]] — >99% power replication returning p = .59
+- [[Concept Note - Forecasting Replication from Published Effects]] — forecasting replication under a publication filter

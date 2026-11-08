@@ -16,6 +16,7 @@ depends_on:
 used_by:
   - "[[Synthetic Likelihood Construction]]"
   - "[[Q - Choosing a Simulation-Based Inference Method for ABM Calibration]]"
+  - "[[Chaos, Rough Likelihoods and Data Assimilation (Concept Note)]]"
 aliases:
   - Ricker map
   - phase-insensitive statistics
@@ -76,3 +77,4 @@ Using regression coefficients as statistics promotes **approximate normality** o
 - [[Synthetic Likelihood - Overview]] — where this obstacle fits in the method
 - [[Synthetic Likelihood Construction]] — the synthetic likelihood built on these statistics
 - [[Nicholson's Blowfly Application]] — the specific statistics used in practice
+- [[Chaos, Rough Likelihoods and Data Assimilation (Concept Note)]] — chaos and data assimilation

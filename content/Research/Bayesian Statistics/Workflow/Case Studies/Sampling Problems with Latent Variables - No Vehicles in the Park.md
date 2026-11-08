@@ -21,6 +21,7 @@ depends_on:
   - "[[Approximate Algorithms and Approximate Models]]"
 used_by:
   - "[[Statistical Modeling as Software Development]]"
+  - "[[Concept - Marginalising Latent Discrete Counts for HMC]]"
 aliases:
   - No Vehicles in the Park
   - Vehicles in the Park case study
@@ -434,3 +435,4 @@ Exercises (§29.7) extend the model with **question order** as a predictor (fit,
 - [[Model Building - Time-Series Decomposition for Birthdays]] — a second case where centered beat non-centered and an intercept aliased
 - [[Building Up to a Hierarchical Model - Coronavirus Testing]] — hierarchical structure introduced for a different reason
 - [[Statistical Modeling as Software Development]] — the incremental Stan-program refactoring pattern used here
+- [[Concept - Marginalising Latent Discrete Counts for HMC]] — marginalising latent counts

@@ -25,6 +25,9 @@ used_by:
   - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
   - "[[Q - Does Peeking Matter for a Bayesian]]"
   - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
+  - "[[Heath 2015 - Review of Expected Value of Information Methods - Overview]]"
+  - "[[Vickers 2019 - Step-by-Step Guide to Decision Curve Analysis - Overview]]"
+  - "[[Philip 2020 - Extreme Event Attribution Protocol - Overview]]"
 ---
 
 # Decision Analysis
@@ -63,3 +66,6 @@ Common loss functions yield familiar estimators:
 - [[Overfitting and Information Criteria]] — model selection criteria that inform which posterior to use
 - [[Counterfactual Inference]] — counterfactual thinking as a prerequisite for decision framing
 - [[Model Checking]] — a model must pass posterior predictive checks before its posterior can be trusted in a decision analysis
+- [[Heath 2015 - Review of Expected Value of Information Methods - Overview]] — EVPI and EVPPI
+- [[Vickers 2019 - Step-by-Step Guide to Decision Curve Analysis - Overview]] — decision curves and net benefit
+- [[Philip 2020 - Extreme Event Attribution Protocol - Overview]] — attribution as a decision input

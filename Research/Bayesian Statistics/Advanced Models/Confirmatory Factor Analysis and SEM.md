@@ -25,6 +25,8 @@ depends_on:
   - "[[Nonparametric Models Overview]]"
 used_by:
   - "[[Social Network Models]]"
+  - "[[Bürkner 2021 - Bayesian IRT with brms Overview]]"
+  - "[[Bürkner 2021 - Covariates and Differential Item Functioning]]"
 ---
 
 # Confirmatory Factor Analysis and Structural Equation Models
@@ -112,6 +114,8 @@ Bayesian CFA/SEM uses posterior predictive checks (PPCs) and model comparison (W
 - [[Moderation Analysis]] — interaction terms in SEMs; when the latent pathway depends on a moderator
 - [[Bayesian Workflow - Overview]] — the SBC / prior predictive / PPC workflow applies to CFA and SEM models
 - [[Model Checking]] — posterior predictive checks for latent variable models
+- [[Bürkner 2021 - Bayesian IRT with brms Overview]] — IRT as a measurement model
+- [[Bürkner 2021 - Covariates and Differential Item Functioning]] — differential item functioning
 
 ## Source
 

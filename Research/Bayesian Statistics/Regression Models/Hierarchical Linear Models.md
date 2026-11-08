@@ -26,6 +26,7 @@ used_by:
   - "[[Copula Estimation]]"
   - "[[Global-Local Shrinkage Priors]]"
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[Betancourt 2015 - Gibbs, Random-Walk Metropolis and Reparameterisation]]"
 ---
 
 # Hierarchical Linear Models
@@ -62,3 +63,4 @@ $$\begin{pmatrix} \alpha_j \\ \beta_j \end{pmatrix} \sim N\!\left(\begin{pmatrix
 - [[Standard Errors and Clustering]] — clustering as a frequentist approach to the same grouped-data structure
 - [[Nonparametric Models Overview]] — GP and mixture model extensions when parametric hierarchical structure is insufficient
 - [[Global-Local Shrinkage Priors]] — shrinkage-prior view of the partial pooling used here
+- [[Betancourt 2015 - Gibbs, Random-Walk Metropolis and Reparameterisation]] — centred vs non-centred parameterisation

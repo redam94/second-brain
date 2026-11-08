@@ -22,6 +22,8 @@ used_by:
   - "[[LLM Reasoning, Retrieval and Agents - Overview]]"
   - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
   - "[[Manheim Garrabrant - Adversarial Goodhart, Campbell's Law and Cobra Effects]]"
+  - "[[Caron 2012 - Bayesian Inference for Generalized Bradley-Terry Models - Overview]]"
+  - "[[Weng and Lin 2011 - Bayesian Online Ranking Overview]]"
 aliases:
   - Reward Model
   - Preference Model
@@ -114,3 +116,5 @@ def rm_loss_one_prompt(rm, prompt, completions_ranked_best_first):
 - [[Bernoulli Bandit and Thompson Sampling Algorithm]] — binary-feedback learning where the unknown is a success probability per arm rather than a utility function over text.
 - [[Multiple Testing Corrections]] — relevant when many model variants are compared on the same preference data.
 - [[Manheim Garrabrant - Adversarial Goodhart, Campbell's Law and Cobra Effects]] — reward hacking as adversarial Goodhart
+- [[Caron 2012 - Bayesian Inference for Generalized Bradley-Terry Models - Overview]] — Bayesian Bradley-Terry
+- [[Weng and Lin 2011 - Bayesian Online Ranking Overview]] — online Bradley-Terry and Plackett-Luce ratings

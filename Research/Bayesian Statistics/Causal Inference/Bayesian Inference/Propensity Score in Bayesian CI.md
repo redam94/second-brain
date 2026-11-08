@@ -19,6 +19,8 @@ used_by:
   - "[[Sensitivity Analysis in Observational Studies]]"
   - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
   - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
+  - "[[Franks 2019 - Discussion Limits and Bayesian Sketch]]"
+  - "[[Rosenman 2020 - Hierarchical Bias Model Sketch for Few Holdouts]]"
 aliases:
   - Bayesian propensity score
   - propensity score Bayesian
@@ -109,3 +111,5 @@ This gives a **posterior predictive distribution of $\hat{\tau}^{\text{DR}}$** (
 ## See Also
 - [[Sensitivity Analysis in Observational Studies]] — sensitivity analysis when unconfoundedness fails
 - [[Bayesian Outcome Models#^warn-reg-confounding]] — regularization-induced confounding in high dimensions
+- [[Franks 2019 - Discussion Limits and Bayesian Sketch]] — Bayesian sensitivity sketch
+- [[Rosenman 2020 - Hierarchical Bias Model Sketch for Few Holdouts]] — calibrating propensity estimates with holdouts

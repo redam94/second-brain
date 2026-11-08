@@ -21,6 +21,7 @@ used_by:
   - "[[Andrews Kasy 2019 - Estimation and Replication Applications in Economics and Psychology]]"
   - "[[Andrews Kasy 2019 - Meta-Study Applications - Minimum Wage and Deworming]]"
   - "[[Andrews Kasy 2019 - Conclusion, Optimal Publication Rules and Limitations]]"
+  - "[[Concept Note - Forecasting Replication from Published Effects]]"
 aliases:
   - "Andrews Kasy 2019 overview"
   - "Identification of and Correction for Publication Bias (Andrews and Kasy, AER 2019)"
@@ -99,3 +100,4 @@ The setting maps to an internal repository of experiments: tests that "won" get 
 - [[Researcher Degrees of Freedom]]
 - [[Bayesian Estimation and Priors for MMM]]
 - [[Viechtbauer 2010 - Conducting Meta-Analyses in R with the metafor Package - Overview]]
+- [[Concept Note - Forecasting Replication from Published Effects]] — replication forecasting applied

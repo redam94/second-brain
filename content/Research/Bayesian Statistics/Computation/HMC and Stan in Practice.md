@@ -20,7 +20,11 @@ depends_on:
   - "[[MCMC Basics]]"
   - "[[Efficient MCMC]]"
   - "[[Garden of Forking Data]]"
-used_by: []
+used_by:
+  - "[[Hoffman 2021 - ChEES-HMC - Overview]]"
+  - "[[Betancourt 2015 - HMC for Hierarchical Models - Overview]]"
+  - "[[Izmailov 2021 - Full-Batch HMC for Neural Networks]]"
+  - "[[Margossian 2022 - Stan Workflow and MCMC Diagnostics]]"
 date_updated: 2026-10-13
 ---
 
@@ -83,3 +87,7 @@ Key diagnostics:
 - [[Simulation-Based Calibration - Overview]] — rank-statistic uniformity test for validating NUTS convergence
 - [[Statistical Rethinking - Overview]]
 - [[Jin 2017 MMM - STAN Sampler Code and MCMC Implementation]] — orthogonalising controls gives a 40x speed-up
+- [[Hoffman 2021 - ChEES-HMC - Overview]] — ChEES-HMC
+- [[Betancourt 2015 - HMC for Hierarchical Models - Overview]] — funnels and reparameterisation
+- [[Izmailov 2021 - Full-Batch HMC for Neural Networks]] — HMC at neural-network scale
+- [[Margossian 2022 - Stan Workflow and MCMC Diagnostics]] — Stan workflow for ODE models

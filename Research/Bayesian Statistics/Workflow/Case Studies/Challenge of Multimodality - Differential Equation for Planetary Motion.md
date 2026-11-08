@@ -21,6 +21,7 @@ depends_on:
   - "[[Topology of Models]]"
 used_by:
   - "[[Stacking and Predictive Model Averaging]]"
+  - "[[Likelihoods Built on Differential Equations (Concept Note)]]"
 aliases:
   - Planetary Motion case study
   - Multimodality case study
@@ -217,3 +218,4 @@ Exercises (§30.6) push in both directions: **30.1** asks whether the simulation
 - [[Posterior Predictive Checking]] — how the minor modes were shown to be inconsistent with the data
 - [[Sampling Problems with Latent Variables - No Vehicles in the Park]] — the contrasting case of exact additive aliasing
 - [[Designing Simulated-Data Experiments]] — the simulated-data setting that made exact diagnosis possible
+- [[Likelihoods Built on Differential Equations (Concept Note)]] — template for ODE likelihoods

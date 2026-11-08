@@ -22,6 +22,7 @@ used_by:
   - "[[Bayesian and Hierarchical Extensions of CLV Models]]"
   - "[[Q - Optimizing Media Spend on CLV with Delayed Feedback]]"
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
+  - "[[De Blasi 2015 - Species Sampling and Unseen Species Prediction]]"
 aliases:
   - Pareto/NBD
   - Pareto/NBD Model
@@ -169,3 +170,4 @@ def pnbd_loglik(r, a, s, b, x, tx, T):
 - [[Delayed Feedback Model for Conversion Prediction]] — same "silent because slow, or silent because never?" structure with an exponential delay.
 - [[Bayesian and Hierarchical Extensions of CLV Models]] — covariates via $\alpha = \alpha_0 e^{-\gamma_1' z_1}$, $\beta = \beta_0 e^{-\gamma_2' z_2}$; NUTS estimation in PyMC-Marketing.
 - [[Heterogeneity in Agent Models]] — gamma-distributed rates as a calibrated heterogeneity specification for consumer agents.
+- [[De Blasi 2015 - Species Sampling and Unseen Species Prediction]] — predicting unseen new customers/species

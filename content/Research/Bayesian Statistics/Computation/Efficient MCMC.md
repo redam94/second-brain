@@ -26,6 +26,9 @@ used_by:
   - "[[Computational Troubleshooting]]"
   - "[[Fitting and Validating Computation]]"
   - "[[Nonparametric Models Overview]]"
+  - "[[Hoffman 2021 - ChEES-HMC - Overview]]"
+  - "[[Hoffman 2022 - MEADS - Overview]]"
+  - "[[Betancourt 2015 - HMC for Hierarchical Models - Overview]]"
 ---
 
 # Efficient MCMC
@@ -68,3 +71,6 @@ Stan is the modern platform for Bayesian inference:
 - [[Approximation Methods]] — alternatives when MCMC is too slow
 - [[Computational Troubleshooting]] — diagnosing and fixing HMC issues
 - [[Hierarchical Models]] — non-centered parameterization (BDA3 Ch. 13) is the key reparameterization trick for efficient HMC on hierarchical posteriors
+- [[Hoffman 2021 - ChEES-HMC - Overview]] — GPU many-chain trajectory-length tuning
+- [[Hoffman 2022 - MEADS - Overview]] — tuning-free generalized HMC
+- [[Betancourt 2015 - HMC for Hierarchical Models - Overview]] — HMC on hierarchical geometry

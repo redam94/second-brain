@@ -18,6 +18,8 @@ depends_on:
   - "[[Hierarchical Models]]"
 used_by:
   - "[[Sampling Problems with Latent Variables - No Vehicles in the Park]]"
+  - "[[Rabiner 1989 - HMM Tutorial - Overview]]"
+  - "[[Bayesian HMMs - Label Switching, Non-Homogeneous Transitions and Dwell Times]]"
 aliases:
   - "Hidden Markov model"
   - "HMM"
@@ -346,3 +348,5 @@ minimum distance "**so as to not affect their natural movements**," recording po
 - [[Linear-Gaussian State-Space Models]] — the continuous-state counterpart
 - [[The Kalman Filter]] — the analogous forward recursion
 - [[Simulation to Express Uncertainty]] — why FFBS draws beat a Viterbi point estimate
+- [[Rabiner 1989 - HMM Tutorial - Overview]] — HMM algorithms
+- [[Bayesian HMMs - Label Switching, Non-Homogeneous Transitions and Dwell Times]] — Bayesian movement HMMs

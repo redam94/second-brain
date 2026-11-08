@@ -44,6 +44,12 @@ used_by:
   - "[[Roever 2020 - Normal-Normal Hierarchical Model and Likelihood]]"
   - "[[Viechtbauer 2010 - LRT, Permutation Tests, BLUPs and Model Fit]]"
   - "[[Bareinboim 2016 - Transportability and Data Fusion]]"
+  - "[[Molina 2015 - Fay-Herriot Area-Level Model and EBLUP]]"
+  - "[[Betancourt 2015 - Gibbs, Random-Walk Metropolis and Reparameterisation]]"
+  - "[[Paun 2018 - Partially Pooled Models Hierarchical D&S ItemDiff LogRndEff]]"
+  - "[[Wiecki 2013 - HDDM Hierarchical Drift-Diffusion Model - Overview]]"
+  - "[[Margossian 2022 - Population Two-Compartment Model]]"
+  - "[[Concept - Closed-Population Capture-Recapture and Otis Models]]"
 ---
 
 # Hierarchical Models
@@ -157,3 +163,9 @@ Hierarchical models appear naturally in causal inference:
 - [[Roever 2020 - Normal-Normal Hierarchical Model and Likelihood]] — the normal-normal model behind random-effects meta-analysis
 - [[Viechtbauer 2010 - LRT, Permutation Tests, BLUPs and Model Fit]] — frequentist BLUPs as partial pooling
 - [[Bareinboim 2016 - Transportability and Data Fusion]] — pooling vs transporting across populations
+- [[Molina 2015 - Fay-Herriot Area-Level Model and EBLUP]] — Fay-Herriot shrinkage as an area-level hierarchical model
+- [[Betancourt 2015 - Gibbs, Random-Walk Metropolis and Reparameterisation]] — non-centring and funnel geometry
+- [[Paun 2018 - Partially Pooled Models Hierarchical D&S ItemDiff LogRndEff]] — partially pooled annotator models
+- [[Wiecki 2013 - HDDM Hierarchical Drift-Diffusion Model - Overview]] — hierarchical drift diffusion
+- [[Margossian 2022 - Population Two-Compartment Model]] — population pharmacokinetics
+- [[Concept - Closed-Population Capture-Recapture and Otis Models]] — heterogeneous detection as random effects

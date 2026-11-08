@@ -23,6 +23,7 @@ used_by:
   - "[[Further Topics in Global Optimisation]]"
   - "[[Q - A Map of Sequential Decision Methods from Bandits to RLHF]]"
   - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
+  - "[[Value of Information Concept Note - Adaptive Sampling and Acting on a Noisy Belief]]"
 aliases:
   - BO
   - Bayesian Optimization
@@ -102,3 +103,4 @@ Most acquisition functions are **non-convex** (a diverse set of valuable locatio
 - [[Acquisition Functions]] — closed-form PI, EI, UCB, KG.
 - [[The Global Optimisation Problem]] — the problem BO solves.
 - [[Bayesian Quadrature]] — the integration analogue (surrogate = model, acquisition = design rule).
+- [[Value of Information Concept Note - Adaptive Sampling and Acting on a Noisy Belief]] — adaptive sampling decisions

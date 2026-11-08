@@ -22,6 +22,8 @@ used_by:
   - "[[Q - Does Peeking Matter for a Bayesian]]"
   - "[[Q - Four Meanings of Calibration]]"
   - "[[Morris White Crowther 2019 - Simulation Studies (ADEMP) - Overview]]"
+  - "[[Ji 2024 - Gibbs Posterior and Learning-Rate Calibration]]"
+  - "[[Bronk Ramsey 2009 - MCMC Outputs Diagnostics and Agreement Indices]]"
 aliases:
   - SBC
   - Simulation-Based Calibration
@@ -90,3 +92,5 @@ SBC answers the question: **does my algorithm actually sample the posterior of t
 - [[Computational Troubleshooting]] — what to do when SBC (or the sampler diagnostics) signal a computational problem
 - [[Variational Inference and Pathfinder]] — approximate algorithms are where SBC most often finds miscalibration
 - [[Morris White Crowther 2019 - Simulation Studies (ADEMP) - Overview]] — frequentist fixed-theta counterpart to SBC
+- [[Ji 2024 - Gibbs Posterior and Learning-Rate Calibration]] — calibrating generalized posteriors
+- [[Bronk Ramsey 2009 - MCMC Outputs Diagnostics and Agreement Indices]] — agreement indices as model checks

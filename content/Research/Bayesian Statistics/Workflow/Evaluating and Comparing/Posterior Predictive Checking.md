@@ -21,6 +21,7 @@ used_by:
   - "[[LOO Model Checking and Comparison - Roaches]]"
   - "[[Q - Four Meanings of Calibration]]"
   - "[[Jin 2017 MMM - Shampoo Case Study Data, Diagnostics and Posteriors]]"
+  - "[[Value of Information Concept Note - Showing Uncertainty and Choosing a Display]]"
 aliases:
   - "PPC"
   - "Posterior predictive check"
@@ -260,3 +261,4 @@ aliases:
 - [[Conformity Scores and Adaptive Prediction Sets]] — conformalized Bayes
 - [[Simulation-Based Calibration - Overview]] — SBC checks the computation; posterior predictive checks test the model against data — complementary halves of model criticism
 - [[Jin 2017 MMM - Shampoo Case Study Data, Diagnostics and Posteriors]] — residual ACF over posterior draws as a misspecification check
+- [[Value of Information Concept Note - Showing Uncertainty and Choosing a Display]] — displaying posterior uncertainty

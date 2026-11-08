@@ -21,6 +21,7 @@ used_by:
   - "[[Theory of ODE Filters and Smoothers]]"
   - "[[Further Topics in ODE Solvers]]"
   - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
+  - "[[Chen 2018 - Adjoint Sensitivity Method]]"
 aliases:
   - ODE Filter
   - EKF0
@@ -218,3 +219,4 @@ with $\tilde{S}_n$ the innovation covariance at $\sigma:=1$ — nearly free, sin
 - [[Further Topics in ODE Solvers]] — BVPs, ODE inverse problems (EKF1 gives cheap gradients/Hessians), PDEs.
 - [[Bayesian Quadrature]] — the special case EKF0/EKS0 reduces to.
 - [[Gaussian Process Regression]] — the framework this instantiates in state-space (derivatives) form.
+- [[Chen 2018 - Adjoint Sensitivity Method]] — adjoint gradients through ODE solvers

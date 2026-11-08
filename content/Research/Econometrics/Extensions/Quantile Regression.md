@@ -26,6 +26,7 @@ used_by:
   - "[[Conformal Prediction - Overview]]"
   - "[[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)]]"
   - "[[Breiman 2001 - Discussion by Cox, Efron, Hoadley and Parzen and Rejoinder]]"
+  - "[[Ji 2024 - Valid Standard Errors for Bayesian Quantile Regression - Overview]]"
 ---
 
 # Quantile Regression
@@ -78,3 +79,4 @@ Just as regression approximates the CEF, quantile regression approximates the co
 - [[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)]] — pinball loss is a proper score for quantiles
 - [[Generalized Random Forests - Local Moment Equations]] — nonparametric quantile forests
 - [[Breiman 2001 - Discussion by Cox, Efron, Hoadley and Parzen and Rejoinder]] — Parzen's conditional quantile culture
+- [[Ji 2024 - Valid Standard Errors for Bayesian Quantile Regression - Overview]] — why asymmetric-Laplace intervals mislead

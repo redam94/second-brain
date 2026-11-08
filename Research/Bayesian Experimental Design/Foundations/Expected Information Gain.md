@@ -23,6 +23,7 @@ used_by:
   - "[[Information-Theoretic Design Objectives]]"
   - "[[Q - Budget Allocation Under Power Laws from Chinchilla to Media Mix]]"
   - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
+  - "[[Krause 2008 - Entropy versus Mutual Information Criteria]]"
 aliases:
   - EIG
   - Expected Information Gain
@@ -93,3 +94,4 @@ The EIG is the expected utility of an experiment when utility is the **informati
 - [[Nested Estimation and Nested Monte Carlo]] — why and how the EIG is estimated
 - [[Decision Analysis]] — expected-utility framing of experimentation
 - [[Probability and Bayesian Inference]] — the prior→posterior update underlying information gain
+- [[Krause 2008 - Entropy versus Mutual Information Criteria]] — mutual-information sensor placement

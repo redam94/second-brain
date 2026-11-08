@@ -32,6 +32,7 @@ used_by:
   - "[[Gelman Loken 2013 - Three Reactions and the Bayesian Reading of Bem's 53 Percent]]"
   - "[[Meager 2019 - Pooling Factors and Measuring External Validity]]"
   - "[[Roever 2020 - Prediction, Shrinkage and Credible Intervals]]"
+  - "[[Molina 2015 - Fay-Herriot Area-Level Model and EBLUP]]"
 aliases:
   - "Shrinkage as multiple comparisons correction"
   - "Partial pooling z-score reduction"
@@ -173,3 +174,4 @@ Functions in the `arm` package can then sample from the posterior distribution f
 - [[Gelman Loken 2013 - Three Reactions and the Bayesian Reading of Bem's 53 Percent]] — condition on all comparisons with hierarchical models
 - [[Meager 2019 - Pooling Factors and Measuring External Validity]] — pooling factors measure how much sites share
 - [[Roever 2020 - Prediction, Shrinkage and Credible Intervals]] — Bayesian shrinkage of study effects
+- [[Molina 2015 - Fay-Herriot Area-Level Model and EBLUP]] — classical small-area shrinkage

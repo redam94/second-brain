@@ -26,6 +26,12 @@ depends_on:
 used_by:
   - "[[Nonparametric Models Overview]]"
   - "[[Generalized Linear Models]]"
+  - "[[MacKenzie 2002 - Occupancy Model and Likelihood]]"
+  - "[[Concept - Marginalising Latent Discrete Counts for HMC]]"
+  - "[[Marginalising Discrete Latents - Why NUTS Cannot Sample Discrete Parameters]]"
+  - "[[Concept - Label Switching and Label-Invariant Summaries]]"
+  - "[[Teh 2010 - DP Mixture Models and Applications]]"
+  - "[[Hui-Walter and Latent Class Models for Diagnostic Tests (Concept Note)]]"
 ---
 
 # Monsters and Mixtures
@@ -90,3 +96,9 @@ These are the observational-level equivalents of multilevel models — they mode
 - [[Overfitting and Information Criteria]] — model comparison for these models
 - [[Hierarchical Models]] — multilevel models as an alternative to overdispersion mixtures
 - [[Statistical Rethinking - Overview]]
+- [[MacKenzie 2002 - Occupancy Model and Likelihood]] — occupancy as a zero-inflated mixture
+- [[Concept - Marginalising Latent Discrete Counts for HMC]] — marginalising latent counts
+- [[Marginalising Discrete Latents - Why NUTS Cannot Sample Discrete Parameters]] — why NUTS needs discrete latents summed out
+- [[Concept - Label Switching and Label-Invariant Summaries]] — label switching in mixtures
+- [[Teh 2010 - DP Mixture Models and Applications]] — infinite mixtures
+- [[Hui-Walter and Latent Class Models for Diagnostic Tests (Concept Note)]] — latent class mixtures for diagnostic tests

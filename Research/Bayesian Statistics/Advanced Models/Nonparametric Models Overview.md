@@ -32,6 +32,10 @@ used_by:
   - "[[Factor Analysis and PPCA]]"
   - "[[Spatial Models - BYM]]"
   - "[[Wasserman Zhou 2010 - Orthogonal Series Density Estimation]]"
+  - "[[Teh 2010 - Dirichlet Process - Overview]]"
+  - "[[De Blasi 2015 - Gibbs-Type Priors - Overview]]"
+  - "[[Griffiths 2011 - The Indian Buffet Process - Overview]]"
+  - "[[Concept - Latent Class and Dirichlet Process Models for Multiple Systems Estimation]]"
 ---
 
 # Nonparametric Models Overview
@@ -91,3 +95,7 @@ $$G \sim \text{DP}(\alpha, G_0)$$
 - [[Monsters and Mixtures]] — covers finite mixture models (Ch. 22) in full detail; the Dirichlet Process extends these to infinite mixtures (Ch. 23)
 - [[Nonparametric Causal Inference]] — uses BART (a nonparametric Bayesian tree model) for causal ATE/ATT estimation
 - [[Wasserman Zhou 2010 - Orthogonal Series Density Estimation]] — private density estimation rates
+- [[Teh 2010 - Dirichlet Process - Overview]] — the Dirichlet process
+- [[De Blasi 2015 - Gibbs-Type Priors - Overview]] — Pitman-Yor and Gibbs-type priors
+- [[Griffiths 2011 - The Indian Buffet Process - Overview]] — the Indian buffet process
+- [[Concept - Latent Class and Dirichlet Process Models for Multiple Systems Estimation]] — DP latent-class population estimation

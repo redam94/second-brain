@@ -18,6 +18,8 @@ used_by:
   - "[[PC Algorithm and Constraint-Based Discovery]]"
   - "[[GES and Score-Based Discovery]]"
   - "[[Functional Causal Models (LiNGAM, ANM)]]"
+  - "[[Friedman 2000 - Being Bayesian about Network Structure - Overview]]"
+  - "[[Bayesian Causal Discovery - BGe Score, Interventions and Sachs Data]]"
 aliases:
   - Causal Structure Learning
   - Causal Search
@@ -83,3 +85,5 @@ A key conceptual point: causal discovery is "nothing but statistical estimation 
 - [[GES and Score-Based Discovery]]
 - [[Functional Causal Models (LiNGAM, ANM)]]
 - [[NOTEARS - Overview]]
+- [[Friedman 2000 - Being Bayesian about Network Structure - Overview]] — Bayesian order-MCMC structure learning
+- [[Bayesian Causal Discovery - BGe Score, Interventions and Sachs Data]] — BGe score with interventions

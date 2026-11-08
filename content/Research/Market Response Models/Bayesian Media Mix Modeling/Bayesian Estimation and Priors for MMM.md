@@ -28,6 +28,7 @@ used_by:
   - "[[Chan Perry 2017 - Opportunities (Better Data, Bayesian, Category, Geo, Controls, Graphs)]]"
   - "[[Meager 2019 - Conclusion, Limitations and Marketing Analogues]]"
   - "[[Dwork 2006 - Sensitivity and the Laplace Mechanism]]"
+  - "[[Unidentified Parameters - Keeping the Answer on the Question]]"
 aliases:
   - MMM Priors
   - MMM MCMC Estimation
@@ -99,3 +100,4 @@ Because the adstock and Hill transforms make the model nonlinear in its paramete
 - [[Chan Perry 2017 - Opportunities (Better Data, Bayesian, Category, Geo, Controls, Graphs)]] — category posteriors as informative priors
 - [[Meager 2019 - Conclusion, Limitations and Marketing Analogues]] — experiment-informed priors
 - [[Dwork 2006 - Sensitivity and the Laplace Mechanism]] — DP noise as a known measurement-error model
+- [[Unidentified Parameters - Keeping the Answer on the Question]] — priors on unidentified parameters stay priors

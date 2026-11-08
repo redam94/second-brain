@@ -19,6 +19,7 @@ used_by:
   - "[[Initial Values, Adaptation, and Warmup]]"
   - "[[Approximations Based on Joint and Conditional Posterior Modes]]"
   - "[[Point Estimates and Uncertainties]]"
+  - "[[Betancourt 2015 - Hierarchical Geometry and the Funnel]]"
 aliases:
   - "Typical set"
   - "lp__"
@@ -196,3 +197,4 @@ fact that makes the centered/non-centered choice in
 - [[Approximations Based on Joint and Conditional Posterior Modes]] — when mode-based approximations help anyway
 - [[HMC and Stan in Practice]] — the algorithm that navigates the annulus
 - [[Efficient MCMC]] — BDA3 background
+- [[Betancourt 2015 - Hierarchical Geometry and the Funnel]] — funnel geometry

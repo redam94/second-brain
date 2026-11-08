@@ -16,6 +16,7 @@ depends_on:
   - "[[Linear-Gaussian State-Space Models]]"
 used_by:
   - "[[Q - The Kalman Filter Across BSTS State-Space Models and ODE Solvers]]"
+  - "[[Banbura et al 2013 - Now-casting and the Real-Time Data Flow - Overview]]"
 aliases:
   - prediction error decomposition
   - energy function
@@ -99,3 +100,4 @@ Doing this integral directly is intractable (and grows with $T$). The state-spac
 - [[MCMC Inference for CausalImpact]] — the Gibbs sampler draws variances/coefficients conditional on states, the complement to integrating states out here
 - [[Spike-and-Slab Prior for Covariate Selection]] — variable selection relies on tractable marginal likelihoods of competing models
 - [[Single Marketing Time Series]] — ARIMA likelihoods are evaluated the same way via the Kalman filter
+- [[Banbura et al 2013 - Now-casting and the Real-Time Data Flow - Overview]] — nowcasting with a dynamic factor state-space model

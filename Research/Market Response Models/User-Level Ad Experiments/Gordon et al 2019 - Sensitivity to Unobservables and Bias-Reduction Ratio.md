@@ -22,6 +22,7 @@ depends_on:
 used_by:
   - "[[Gordon et al 2019 - Conclusions, Caveats and Related Literature]]"
   - "[[Experimental Benchmarks for Observational Ad Measurement]]"
+  - "[[Cinelli Hazlett 2020 - Informal Benchmarking Pitfalls and Related Methods]]"
 aliases:
   - Gordon 2019 Table 6
   - Bias Reduction Ratio
@@ -229,3 +230,4 @@ Read off the plots, so values are approximate. Markers: **C** census, **UA** use
 - [[Gordon et al 2019 - Facebook RCTs vs Observational Ad Measurement - Overview]]
 - [[Gordon et al 2019 - Observational Lift Estimates by Study and Method]] — the STRAT and E-U values used in $brr$.
 - [[Gordon et al 2019 - Conclusions, Caveats and Related Literature]] — what the authors conclude from this.
+- [[Cinelli Hazlett 2020 - Informal Benchmarking Pitfalls and Related Methods]] — why informal benchmarking misleads

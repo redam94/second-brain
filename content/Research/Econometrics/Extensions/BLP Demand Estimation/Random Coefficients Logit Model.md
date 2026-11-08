@@ -17,6 +17,7 @@ used_by:
   - "[[GMM Estimation and Instruments for Price Endogeneity]]"
   - "[[Numerical Integration and Optimization in PyBLP]]"
   - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
+  - "[[Market Structure Analysis - IIA, Nested Logit and Choice Maps (Concept Note)]]"
 aliases:
   - Mixed Logit
   - Random Coefficients Logit
@@ -93,3 +94,4 @@ In the cereal application, let the one nonlinear characteristic be sugar content
 - [[Supply Side and Markups]]
 - [[Functional Forms in Marketing]]
 - [[_Index]]
+- [[Market Structure Analysis - IIA, Nested Logit and Choice Maps (Concept Note)]] — substitution patterns and market structure

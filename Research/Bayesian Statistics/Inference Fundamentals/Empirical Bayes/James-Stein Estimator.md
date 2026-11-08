@@ -19,6 +19,7 @@ used_by:
   - "[[Partial Pooling as Multiple Comparisons Correction]]"
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
   - "[[Manheim Garrabrant - Regressional Goodhart and Tails Coming Apart]]"
+  - "[[Rosenman 2020 - Unbiased Risk Estimate and Common Shrinkage]]"
 aliases:
   - James-Stein
   - James-Stein Estimator
@@ -107,3 +108,4 @@ With $A=1$ this shrinks the MLE **halfway** toward $\mathbf{0}$. But if $A$ is u
 - [[Overfitting and Information Criteria]]
 - [[_Index]]
 - [[Manheim Garrabrant - Regressional Goodhart and Tails Coming Apart]] — shrinkage is the remedy for regressional Goodhart
+- [[Rosenman 2020 - Unbiased Risk Estimate and Common Shrinkage]] — Stein-type shrinkage across data sources

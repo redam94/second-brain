@@ -24,6 +24,8 @@ used_by:
   - "[[Validity, Bias and Calibration of LLM-Simulated Populations]]"
   - "[[Q - Exchangeability and What Replaces It When It Fails]]"
   - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
+  - "[[Molina 2015 - Unit-Level BHF Model and EB for Nonlinear Parameters]]"
+  - "[[Simoiu 2017 - North Carolina Traffic Stops and the Three Tests]]"
 aliases:
   - "MRP"
   - "Multilevel regression and poststratification"
@@ -315,3 +317,5 @@ for each cell.
 - [[Bayesian Structural Time-Series Model]] — another setting where sample-to-population generalization
   drives the modeling
 - [[Silicon Samples and Algorithmic Fidelity]] — silicon sampling is poststratification over personas
+- [[Molina 2015 - Unit-Level BHF Model and EB for Nonlinear Parameters]] — unit-level small-area models
+- [[Simoiu 2017 - North Carolina Traffic Stops and the Three Tests]] — stop-weighted aggregation of threshold estimates

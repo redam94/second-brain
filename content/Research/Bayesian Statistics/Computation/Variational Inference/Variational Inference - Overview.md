@@ -28,6 +28,8 @@ used_by:
   - "[[Normalizing Flows for Variational Inference]]"
   - "[[Diagnosing Variational Inference (PSIS k-hat and VSBC)]]"
   - "[[Q - Variational Bounds Compared from the ELBO to EIG Estimators]]"
+  - "[[Izmailov 2021 - Cheaper Approximations versus HMC]]"
+  - "[[Blei 2003 - Variational Inference and Parameter Estimation]]"
 aliases:
   - Variational Inference Overview
   - Variational Bayes
@@ -131,3 +133,5 @@ A minimal decision procedure, synthesizing the recommendations in the four paper
 - [[Normalizing Flows as Conditional Density Estimators]] - the flow architecture used as an amortized posterior in simulation-based inference.
 - [[Factor Analysis and PPCA]] - the linear-Gaussian latent variable model that the VAE generalizes.
 - [[Hilbert Space Gaussian Processes]] - a model-side approximation that often removes the need for an inference-side one.
+- [[Izmailov 2021 - Cheaper Approximations versus HMC]] — VI vs HMC for neural networks
+- [[Blei 2003 - Variational Inference and Parameter Estimation]] — mean-field VI for LDA
