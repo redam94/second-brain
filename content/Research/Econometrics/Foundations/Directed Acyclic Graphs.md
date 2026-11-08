@@ -23,6 +23,7 @@ used_by:
   - "[[PC Algorithm and Constraint-Based Discovery]]"
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
   - "[[Chan Perry 2017 - Opportunities (Better Data, Bayesian, Category, Geo, Controls, Graphs)]]"
+  - "[[Pearl 2014 - Selection Diagrams and Definition of Transportability]]"
 aliases:
   - DAGs
   - directed acyclic graph
@@ -243,3 +244,4 @@ When a confounder creates a spurious correlation, we see an aggregate correlatio
 - [[Conditional Independence Assumption]] — CIA is the statistical assumption that a valid DAG adjustment set justifies
 - [[PC Algorithm and Constraint-Based Discovery]] — learning the DAG from data (vs reasoning about a given DAG)
 - [[Chan Perry 2017 - Opportunities (Better Data, Bayesian, Category, Geo, Controls, Graphs)]] — media-funnel graph as an applied DAG
+- [[Pearl 2014 - Selection Diagrams and Definition of Transportability]] — selection diagrams extend DAGs across populations

@@ -21,6 +21,8 @@ depends_on:
 used_by:
   - "[[LLM Reasoning, Retrieval and Agents - Overview]]"
   - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
+  - "[[Liang 2022 - HELM - Overview]]"
+  - "[[Wang 2018 - GLUE - Overview]]"
 aliases:
   - LLM Evaluation
   - Evaluating LLM Systems
@@ -139,3 +141,5 @@ Sample-size intuition: InstructGPT's headline $85 \pm 3\%$ is a binomial proport
 - [[In-Context Learning and Few-Shot Prompting]] — source of the prompt sensitivity that evaluation must average over.
 - [[Overfitting and Information Criteria]] — benchmark overfitting and proxy-metric over-optimisation are the evaluation-side analogue.
 - [[Decision Analysis]] — choosing among systems when metrics conflict requires an explicit utility over them.
+- [[Liang 2022 - HELM - Overview]] — holistic multi-metric LLM evaluation
+- [[Wang 2018 - GLUE - Overview]] — the GLUE multi-task benchmark

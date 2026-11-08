@@ -21,6 +21,8 @@ depends_on:
 used_by:
   - "[[Advertising and Promotion Effects]]"
   - "[[Price and Distribution Effects]]"
+  - "[[Viechtbauer 2010 - Conducting Meta-Analyses in R with the metafor Package - Overview]]"
+  - "[[IntHout 2014 - HKSJ vs DerSimonian-Laird Random-Effects Meta-Analysis - Overview]]"
 ---
 
 # Marketing Generalizations Overview
@@ -108,3 +110,8 @@ Meta-analytic means are biased if studies systematically use the same misspecifi
 - Optimal decisions: [[Optimal Marketing Decisions and Forecasting]]
 - Carryover and aggregation: [[Carryover Effects and Distributed Lags]]
 - Research methodology: [[Power Analysis and Sample Size]], [[Multiple Testing Corrections]]
+
+## See Also
+
+- [[Viechtbauer 2010 - Conducting Meta-Analyses in R with the metafor Package - Overview]] — random-effects meta-analysis behind empirical generalizations
+- [[IntHout 2014 - HKSJ vs DerSimonian-Laird Random-Effects Meta-Analysis - Overview]] — reliable intervals when few studies are pooled

@@ -40,6 +40,10 @@ used_by:
   - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
   - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
   - "[[Lewis Rao 2015 - Robustness, Scale, Targeting and Measurement Technology]]"
+  - "[[Meager 2019 - Hierarchical Model Specifications]]"
+  - "[[Roever 2020 - Normal-Normal Hierarchical Model and Likelihood]]"
+  - "[[Viechtbauer 2010 - LRT, Permutation Tests, BLUPs and Model Fit]]"
+  - "[[Bareinboim 2016 - Transportability and Data Fusion]]"
 ---
 
 # Hierarchical Models
@@ -163,3 +167,7 @@ Hierarchical models appear naturally in causal inference:
 - [[Bayesian and Hierarchical Extensions of CLV Models]] — hierarchical Bayes for customer-level parameters
 - [[Bayesian Media Mix Modeling - Overview]] — an applied example: hierarchical priors pooling media effects across geos or brands
 - [[Lewis Rao 2015 - Robustness, Scale, Targeting and Measurement Technology]] — evolving prior pools weak per-campaign likelihoods
+- [[Meager 2019 - Hierarchical Model Specifications]] — hierarchical pooling of seven RCTs
+- [[Roever 2020 - Normal-Normal Hierarchical Model and Likelihood]] — the normal-normal model behind random-effects meta-analysis
+- [[Viechtbauer 2010 - LRT, Permutation Tests, BLUPs and Model Fit]] — frequentist BLUPs as partial pooling
+- [[Bareinboim 2016 - Transportability and Data Fusion]] — pooling vs transporting across populations

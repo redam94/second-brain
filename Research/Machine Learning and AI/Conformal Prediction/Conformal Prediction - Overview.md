@@ -25,6 +25,7 @@ used_by:
   - "[[Q - Exchangeability and What Replaces It When It Fails]]"
   - "[[Q - Four Meanings of Calibration]]"
   - "[[Hooker Mentch Zhou 2021 - Conditional and Relearning Importance Measures]]"
+  - "[[Liang 2022 - The Seven Metrics]]"
 aliases:
   - Conformal Inference
   - Conformal Prediction
@@ -154,3 +155,4 @@ With $n\approx500$ calibration images and $\alpha=0.1$, at least 90% of true-cla
 - [[Multiple Testing Corrections]] — relevant to conformal $p$-values for outlier detection and to Learn-then-Test (A&B App. A).
 - [[Time-Series Foundation Models (Chronos)]] — conformal calibration of zero-shot forecasts
 - [[Hooker Mentch Zhou 2021 - Conditional and Relearning Importance Measures]] — LOCO importance analysed as dropped-variable importance
+- [[Liang 2022 - The Seven Metrics]] — calibration and selective classification in HELM

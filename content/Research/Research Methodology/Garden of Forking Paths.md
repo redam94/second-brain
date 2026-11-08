@@ -40,6 +40,7 @@ used_by:
   - "[[Morris et al 2019 - Protocols, Code Release, Consortia and Limits]]"
   - "[[Chan Perry 2017 - Five Plausible MMMs (Model Selection and Model Uncertainty)]]"
   - "[[Model Validation and Interpretability - Overview]]"
+  - "[[Dehghani 2021 - Stateful Benchmarks and Adaptive Overfitting]]"
 ---
 
 # The Garden of Forking Paths
@@ -96,6 +97,7 @@ Conditional on the observed data, each analytic choice seems like the *only* rea
 - [[Morris et al 2019 - Protocols, Code Release, Consortia and Limits]] — selective reporting of favourable DGMs is forking paths in methods research
 - [[Chan Perry 2017 - Five Plausible MMMs (Model Selection and Model Uncertainty)]] — dozens of choices behind any single MMM
 - [[Model Validation and Interpretability - Overview]] — how forking paths show up when validating predictive-analytics products
+- [[Dehghani 2021 - Stateful Benchmarks and Adaptive Overfitting]] — adaptive overfitting to benchmarks
 
 ## Source-Verified Detail (coverage audit 2026-10-13)
 

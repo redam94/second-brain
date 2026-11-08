@@ -22,6 +22,7 @@ used_by:
   - "[[Q - Covariate Adjustment for Precision vs Identification]]"
   - "[[Q - How Adstock Breaks Switchback and Sequential Test Assumptions]]"
   - "[[User-Level vs Geo-Level Experiments - When to Use Which]]"
+  - "[[Wasserman Zhou 2010 - Rate Tables, Simulation and Open Questions]]"
 aliases:
   - Geo-Based Regression
   - GBR
@@ -124,3 +125,4 @@ Circular shifting lets a limited pretest data set support power analyses for lon
 - [[TBR Design Sensitivity and the Stationarity Assumption]] — TBR's analogous design/power procedure and assumption checks
 - [[Q - Encoding a Geo-Holdout as a Bayesian Experimental Design and Computing Its EIG]] — the Bayesian EIG framing this classical variance-based design is the frequentist counterpart of
 - [[Interference and Marketplace Experiments]] — geo tests are cluster-randomized designs against interference
+- [[Wasserman Zhou 2010 - Rate Tables, Simulation and Open Questions]] — how privacy noise scales with sample size

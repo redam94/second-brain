@@ -18,6 +18,7 @@ depends_on:
 used_by:
   - "[[Forecast Evaluation and Backtesting]]"
   - "[[Out-of-Sample Validation for Time-Series Models]]"
+  - "[[Abowd 2022 - Least Squares and Rounder Estimators]]"
 aliases:
   - MinT
   - MinT Reconciliation
@@ -183,3 +184,4 @@ def shrink_cov(E):                                 # E: (T, m) one-step residual
 - [[DeepAR and Global Autoregressive Neural Forecasters]] — the DeepAR paper cites Hyndman et al. (2011) as the way to leverage hierarchical structure; base forecasts from any global model can be reconciled.
 - [[Geo-Experiment Methodology - Overview]] — geo panels are natural hierarchies.
 - [[Out-of-Sample Validation for Time-Series Models]] — rolling-origin template generalised
+- [[Abowd 2022 - Least Squares and Rounder Estimators]] — constrained least-squares reconciliation of a noisy hierarchy

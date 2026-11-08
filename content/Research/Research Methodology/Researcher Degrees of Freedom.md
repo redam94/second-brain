@@ -47,6 +47,10 @@ used_by:
   - "[[Jin 2017 MMM - Prior Sensitivity Experiments on Beta and Half-Saturation]]"
   - "[[Lewis Rao 2015 - Market Implications, Persuasion Games and Conclusion]]"
   - "[[Model Validation and Interpretability - Overview]]"
+  - "[[Viechtbauer 2010 - Publication Bias, Trim-and-Fill and Cumulative Meta-Analysis]]"
+  - "[[Andrews Kasy 2019 - Identification of and Correction for Publication Bias - Overview]]"
+  - "[[Dehghani 2021 - Stateful Benchmarks and Adaptive Overfitting]]"
+  - "[[Wang 2018 - Appendices and Implementation Details]]"
 ---
 
 # Researcher Degrees of Freedom
@@ -116,6 +120,10 @@ This mechanism explains why:
 - [[Carryover (Adstock) Functional Forms]] — the adstock window L as an analyst choice
 - [[Lewis Rao 2015 - Market Implications, Persuasion Games and Conclusion]] — methodological wiggle room in ROI reporting
 - [[Model Validation and Interpretability - Overview]] — analytic flexibility in model building and its remedies
+- [[Viechtbauer 2010 - Publication Bias, Trim-and-Fill and Cumulative Meta-Analysis]] — publication-bias diagnostics
+- [[Andrews Kasy 2019 - Identification of and Correction for Publication Bias - Overview]] — selective publication as a filter on results
+- [[Dehghani 2021 - Stateful Benchmarks and Adaptive Overfitting]] — test-set reuse as forking paths
+- [[Wang 2018 - Appendices and Implementation Details]] — the dev-test gap on GLUE
 
 ## Source-Verified Fork Catalogue (coverage audit 2026-10-13)
 

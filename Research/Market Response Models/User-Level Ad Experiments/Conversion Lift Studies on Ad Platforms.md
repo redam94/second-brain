@@ -24,6 +24,10 @@ used_by:
   - "[[Experimental Benchmarks for Observational Ad Measurement]]"
   - "[[User-Level vs Geo-Level Experiments - When to Use Which]]"
   - "[[Gordon et al 2019 - Facebook Experiment Design and Exposure Endogeneity]]"
+  - "[[Allcott 2015 - Conclusions, Remedies and Marketing Implications]]"
+  - "[[Degtiar 2023 - Marketing Application Transporting Experiment Results]]"
+  - "[[Dwork Roth 2014 - Randomized Response]]"
+  - "[[Abowd 2022 - Conclusion, Limitations and Marketing Relevance]]"
 aliases:
   - Conversion Lift
   - Facebook Conversion Lift
@@ -141,3 +145,7 @@ Reading checklist:
 - [[Customer Lifetime Value - Overview]] — valuing incremental conversions beyond the first purchase.
 - [[Activity Bias in Advertising]] — the selection that makes platform-reported exposed-vs-unexposed numbers unusable.
 - [[Gordon et al 2019 - Facebook Experiment Design and Exposure Endogeneity]] — runner-up control-ad algorithm and endogeneity mechanisms
+- [[Allcott 2015 - Conclusions, Remedies and Marketing Implications]] — selection of which campaigns get tested
+- [[Degtiar 2023 - Marketing Application Transporting Experiment Results]] — generalizing lift results to the full audience
+- [[Dwork Roth 2014 - Randomized Response]] — noise cost of local privacy on conversion signals
+- [[Abowd 2022 - Conclusion, Limitations and Marketing Relevance]] — reading privacy-noised aggregate readouts

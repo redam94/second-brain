@@ -20,6 +20,8 @@ used_by:
   - "[[NIST AI Risk Management Framework]]"
   - "[[SHAP and Causal Interpretation of Predictive Models]]"
   - "[[Kumar et al 2020 - Problems with Shapley-Value Explanations - Overview]]"
+  - "[[Liang 2022 - Related Work, Missing Pieces and Limitations]]"
+  - "[[Wang 2018 - Evaluation Protocol and Scoring]]"
 aliases:
   - Goodhart's Law Variants
   - Goodhart Taxonomy
@@ -157,3 +159,5 @@ The paper has **9 numbered equations** and **4 figures**. The figures are the th
 - [[Chan Perry 2017 - Challenges in Media Mix Modeling - Overview]] — MMM practice, where many of these failures are routine
 - [[Kumar et al - Shapley Values in Normative Model Evaluation]] — selecting models by SHAP plausibility is proxy optimisation
 - [[NIST AI RMF - MAP Function]] — construct validation of metrics
+- [[Liang 2022 - Related Work, Missing Pieces and Limitations]] — benchmarks as targets
+- [[Wang 2018 - Evaluation Protocol and Scoring]] — private test sets and submission caps

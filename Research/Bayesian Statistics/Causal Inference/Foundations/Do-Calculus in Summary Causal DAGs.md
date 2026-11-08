@@ -15,7 +15,9 @@ depends_on:
   - "[[s-Separation in Summary DAGs]]"
   - "[[Canonical Causal DAGs]]"
   - "[[Frequentist Causal Estimation]]"
-used_by: []
+used_by:
+  - "[[Pearl 2014 - Threats vs Licenses and SCM Preliminaries]]"
+  - "[[Bareinboim 2016 - SCM Principles and Confounding Bias]]"
 aliases:
   - do-calculus summary DAG
   - ATE on summary DAG
@@ -109,3 +111,5 @@ Practical causal inference using a summary DAG follows the same steps as on the 
 - [[Propensity Score in Bayesian CI]] — a specific adjustment-set estimator derived from do-calculus backdoor criterion
 - [[Frequentist Causal Estimation]] — frequentist adjustment methods (backdoor, IPW) that follow from do-calculus identification
 - [[Janzing 2020 - Inputs as Causes - Interventional Equals Marginal Expectation]] — do-operator applied to an algorithm's input/output graph
+- [[Pearl 2014 - Threats vs Licenses and SCM Preliminaries]] — do-calculus foundations for transport
+- [[Bareinboim 2016 - SCM Principles and Confounding Bias]] — backdoor, front-door and z-identification

@@ -34,6 +34,7 @@ used_by:
   - "[[Transformers and LLM Foundations - Overview]]"
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
   - "[[Riley 2020 - Shrinkage and Optimism Criteria for Overfitting]]"
+  - "[[Abadi 2016 - MNIST and CIFAR-10 Experiments]]"
 ---
 
 # Overfitting and Information Criteria
@@ -103,3 +104,4 @@ WAIC is the most general: it uses the full posterior, makes no Gaussian approxim
 - [[Neural Scaling Laws]] — the L(N,D) overfitting penalty
 - [[Riley 2020 - Shrinkage and Optimism Criteria for Overfitting]] — optimism and shrinkage as the frequentist counterpart of effective-parameter penalties
 - [[Bayesian Media Mix Modeling - Overview]] — BIC on a nonlinear MMM picks the best regression model, not the best causal one
+- [[Abadi 2016 - MNIST and CIFAR-10 Experiments]] — small train/test gap under DP training

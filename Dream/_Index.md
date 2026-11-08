@@ -3,7 +3,7 @@ title: "Dream: Research Gaps"
 tags:
   - type/index
   - type/dream
-date_updated: 2026-10-13
+date_updated: 2026-11-08
 ---
 
 # Dream: Research Gaps
@@ -1374,6 +1374,140 @@ None is ingested.
 
 ---
 
+### 85. Propensity-Score Generalizability (Cole & Stuart 2010; Stuart et al. 2011)
+**Status:** 🌱 new
+
+**Why it's a gap:**
+Planned for the 2026-11-08 Causal Transportability cluster but not ingested: the only free copies are on PMC, which blocks automated downloads with a bot check. These are the original inverse-probability-of-sampling-weight and propensity-difference papers that later estimators build on.
+
+**Adjacent notes:** [[Dahabreh 2020 - Outcome Model, Inverse Odds Weighting and Doubly Robust Estimators]], [[Degtiar 2023 - Assessing Dissimilarity Between Study and Target]]
+
+**Suggested sources / search terms:**
+- Cole & Stuart (2010), "Generalizing evidence from randomized clinical trials to target populations: the ACTG 320 trial", *Am J Epidemiol* 172(1) — download manually
+- Stuart, Cole, Bradshaw & Leaf (2011), "The use of propensity scores to assess the generalizability of results from randomized trials", *JRSS-A* 174(2) — download manually
+
+---
+
+### 86. Publication-Bias Selection Models and the Original Egger Test
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The Meta-Analysis cluster covers the Egger regression through Sterne et al. (2011) and Andrews & Kasy (2019), but not Egger 1997 itself (behind a bot check) or the classical selection-model family.
+
+**Adjacent notes:** [[Sterne 2011 - Tests for Asymmetry and the Egger Regression]], [[Andrews Kasy 2019 - Relation to Existing Approaches and Meta-Regressions]], [[Viechtbauer 2010 - Publication Bias, Trim-and-Fill and Cumulative Meta-Analysis]]
+
+**Suggested sources / search terms:**
+- Egger, Davey Smith, Schneider & Minder (1997), *BMJ* 315:629
+- Duval & Tweedie (2000), trim-and-fill, *Biometrics*
+- Hedges (1992) / Vevea & Hedges (1995) weight-function selection models; Copas & Shi (2000)
+- Simonsohn, Nelson & Simmons (2014), "P-curve: a key to the file drawer"
+
+---
+
+### 87. Few-Study Heterogeneity Priors and Prediction Intervals
+**Status:** 🌱 new
+
+**Why it's a gap:**
+Röver (2020) and IntHout (2014) both stress that $\tau$ is poorly estimated with few studies, the usual case when pooling a handful of geo tests; empirical heterogeneity priors and prediction-interval methods are not yet in the vault.
+
+**Adjacent notes:** [[Roever 2020 - Priors for the Effect and Heterogeneity]], [[IntHout 2014 - Discussion, Limitations and Recommendations]]
+
+**Suggested sources / search terms:**
+- Turner et al. (2015) and Rhodes et al. (2015), empirical predictive distributions for $\tau^2$
+- Riley, Higgins & Deeks (2011), "Interpretation of random effects meta-analyses", *BMJ*
+- Friede, Röver, Wandel & Neuenschwander (2017), meta-analysis of few small studies
+
+---
+
+### 88. Transportability Algorithms and Covariate Selection for Generalization
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The vault has the transport theory (Pearl & Bareinboim 2014) and estimators (Dahabreh 2020) but not the complete transport algorithm, meta-transportability, or practical guidance on which covariates to measure in test markets.
+
+**Adjacent notes:** [[Pearl 2014 - S-Admissibility and the Graphical Criterion]], [[Degtiar 2023 - Identifying Assumptions]]
+
+**Suggested sources / search terms:**
+- Bareinboim & Pearl (2012/2013), complete transportability and meta-transportability
+- Hotz, Imbens & Mortimer (2005), predicting efficacy of future training programs
+- Tipton (2014), generalizability index; Egami & Hartman (2021), covariate selection for external validity
+
+---
+
+### 89. How Much Do Experimental Effects Generalize? Cross-Program Evidence
+**Status:** 🌱 new
+
+**Why it's a gap:**
+Allcott (2015) and Meager (2019) show site heterogeneity in one program; broader evidence across many programs, and distributional (quantile) pooling, would calibrate expectations for extrapolating marketing tests.
+
+**Adjacent notes:** [[Allcott 2015 - Microdata Extrapolation and the Prediction Failure]], [[Meager 2019 - Heterogeneity, Pooling Results and Predictive Distributions]]
+
+**Suggested sources / search terms:**
+- Vivalt (2020), "How much can we generalize from impact evaluations?", *JEEA*
+- Meager (2022), "Aggregating distributional treatment effects", *AER*
+
+---
+
+### 90. Benchmark Reliability: Replication, Variance and Contamination
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The Benchmark Development cluster documents construction and the Benchmark Lottery but not the empirical replication of benchmark gains, variance accounting, or test-set contamination in LLM evaluation.
+
+**Adjacent notes:** [[Dehghani 2021 - Stateful Benchmarks and Adaptive Overfitting]], [[Liang 2022 - Related Work, Missing Pieces and Limitations]]
+
+**Suggested sources / search terms:**
+- Recht, Roelofs, Schmidt & Shankar (2019), "Do ImageNet classifiers generalize to ImageNet?"
+- Bouthillier et al. (2021), "Accounting for variance in machine learning benchmarks"
+- Wang et al. (2019) SuperGLUE; Srivastava et al. (2022) BIG-bench; Mitchell et al. (2019) Model Cards
+
+---
+
+### 91. Adaptive Data Analysis and the Reusable Holdout
+**Status:** 🌱 new
+
+**Why it's a gap:**
+Differential privacy gives a formal fix for test-set reuse (adaptive overfitting), which bridges the Differential Privacy and Benchmark Development clusters and the vault's forking-paths notes.
+
+**Adjacent notes:** [[Dehghani 2021 - Stateful Benchmarks and Adaptive Overfitting]], [[Dwork Roth 2014 - Sparse Vector Technique]], [[Garden of Forking Paths]]
+
+**Suggested sources / search terms:**
+- Dwork, Feldman, Hardt, Pitassi, Reingold & Roth (2015), "The reusable holdout", *Science* 349
+- Blum & Hardt (2015), "The Ladder: a reliable leaderboard for machine learning competitions"
+
+---
+
+### 92. Modern DP Accounting: zCDP, Discrete Gaussian and Subsampling
+**Status:** 🌱 new
+
+**Why it's a gap:**
+Abowd et al. (2022) rely on zCDP and the discrete Gaussian, and Abadi/Dong rely on subsampling amplification, without the primary papers in the vault; Dwork & Roth Ch. 4-13 were also out of scope.
+
+**Adjacent notes:** [[Abowd 2022 - Why Differential Privacy, zCDP and Curator Models]], [[Dong Roth Su 2022 - Privacy Amplification by Subsampling]], [[Mironov 2017 - RDP Properties and Composition]]
+
+**Suggested sources / search terms:**
+- Bun & Steinke (2016), "Concentrated differential privacy: simplifications, extensions, and lower bounds"
+- Canonne, Kamath & Steinke (2020), "The discrete Gaussian for differential privacy"
+- Balle, Barthe & Gaboardi (2018), privacy amplification by subsampling; Kairouz, Oh & Viswanath (2015), optimal composition
+- McSherry & Talwar (2007), the exponential mechanism; Dwork & Roth (2014) Ch. 4-13
+
+---
+
+### 93. Differential Privacy in Ad Measurement Deployments
+**Status:** 🌱 new
+
+**Why it's a gap:**
+The DP cluster gives marketing angles by inference only; the vault lacks primary sources on DP in privacy-preserving attribution and conversion-reporting APIs, and in data clean rooms.
+
+**Adjacent notes:** [[Abowd 2022 - Conclusion, Limitations and Marketing Relevance]], [[Identity Fragmentation and the Privacy-Era Limits of User-Level Tests]], [[Conversion Lift Studies on Ad Platforms]]
+
+**Suggested sources / search terms:**
+- Search: "Attribution Reporting API summary reports differential privacy noise"
+- Search: "private ad modeling DP-SGD" (Denison et al., 2022, arXiv)
+- Search: "differentially private conversion measurement aggregate reports"
+
+---
+
 ## Covered Gaps
 
 | Gap | Covered By | Date Covered |
@@ -1408,6 +1542,7 @@ None is ingested.
 
 | Date | Action |
 |------|--------|
+| 2026-11-08 | **Top-down ingest: meta-analysis, benchmark development, causal transportability, differential privacy.** Researched and full-captured 24 primary sources into the new topic [[Research/Evidence Synthesis, Generalization and Privacy/_Index|Evidence Synthesis, Generalization and Privacy]] (190 content notes + 28 indexes, 4 clusters, 8 parallel agents). Added See Also / `used_by` backlinks to 35 existing notes. Not ingested: Cole & Stuart 2010 and Stuart et al. 2011 (PMC bot check); Egger 1997 replaced by Sterne et al. 2011. Added gaps #85-#93. |
 | 2026-10-13 | Full-capture ingest of 21 sources on model validation, feature importance and advertising measurement into the new [[Research/Model Validation and Interpretability/_Index|Model Validation and Interpretability]] topic and [[Research/Market Response Models/User-Level Ad Experiments/Paid Search Field Experiment (Blake et al 2015)/_Index|Blake et al 2015]], plus coverage audits of Jin 2017, Gordon 2019, Lewis & Rao 2015 and Gelman & Loken 2013 (229 notes). Gap #61 marked 🌿 partially covered. Follow-on gaps #79-#84 added (missing supplements and discussions, spurious-regression primary sources, modern importance inference, Ioannidis critiques, companion governance documents, competitive brand bidding). |
 | 2026-09-18 | **Run 25 (consolidation Q&A + user-level testing).** Wrote 20 cross-cluster consolidation Q&A notes (Questions-and-Answers now 29) and ingested the `Market Response Models/User-Level Ad Experiments` cluster (9 notes; 8 sources; Johnson 2023 "Inferno" and Barajas & Bhamidipati 2021 could not be downloaded). The Q&As' own Gaps sections were mined for this index: **added gaps #71–#78** and added requested sources to #59, #63, #70. One Q&A caught a formula error in [[Optimal Marketing Decisions and Forecasting]] (now fixed). |
 | 2026-09-18 | **Graph cleanup and de-duplication.** Duplicate titles resolved: horseshoe stub merged into [[Horseshoe and Regularized Horseshoe Priors]] (Shrinkage Priors cluster); loose PSM synthesis note retitled [[Propensity Score Matching - Balancing Theorem and Failure Modes]] and moved with [[Matching Algorithms and Caliper]] and [[Covariate Balance and Matching Diagnostics]] into the `Propensity Score Matching/` sub-folder. Same-source duplicates merged: `Theoretical Physics/` folded into `Physics/` ([[Quantum Field Theory - Overview]], [[Gauge Theory - Overview]] merged; 5 notes moved); [[Bayesian Inverse Probability Weighting]] absorbed "Bayesian Propensity Score Weighting". 52 colliding aliases removed (titles and aliases are now unique vault-wide). 25 missing links added from shared-neighbour analysis. Graph after cleanup: 732 nodes, 10,834 edges, 1 component, 0 orphans. `vault-graph/build_graph.py` now skips `node_modules/`, `content/`, `public/`, `quartz/`, `scripts/` and `raw/`. |

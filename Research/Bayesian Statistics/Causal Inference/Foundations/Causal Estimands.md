@@ -18,6 +18,8 @@ used_by:
   - "[[Dynamic Treatment Regimes Framework]]"
   - "[[DML Estimators for ATE and the Interactive Model]]"
   - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
+  - "[[Dorie 2019 - Estimands, Ignorability and Design Choices]]"
+  - "[[Degtiar 2023 - Populations, Estimands and External Validity Bias]]"
 aliases:
   - treatment effect
   - ATE
@@ -127,3 +129,5 @@ See [[Instrumental Variables and Principal Stratification]] for the full IV/comp
 ## See Also
 - [[Instrumental Variables and Principal Stratification]] — principal causal effects for IV settings
 - [[Time-Varying Treatments and G-computation]] — marginal structural model estimands for sequential treatments
+- [[Dorie 2019 - Estimands, Ignorability and Design Choices]] — SATT and SATC in a benchmark
+- [[Degtiar 2023 - Populations, Estimands and External Validity Bias]] — PATE vs SATE

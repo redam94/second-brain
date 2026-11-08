@@ -37,6 +37,9 @@ used_by:
   - "[[Gordon et al 2019 - Observational Lift Estimates by Study and Method]]"
   - "[[Lewis Rao 2015 - Impact-to-SD Ratio Derivation and Calibrated Campaign]]"
   - "[[Model Validation and Interpretability - Overview]]"
+  - "[[Dorie 2019 - ACIC 2016 Causal Inference Competition - Overview]]"
+  - "[[Dorie 2019 - Motivation and Shortcomings of Method Comparisons]]"
+  - "[[Dehghani 2021 - The Benchmark Lottery - Overview]]"
 aliases:
   - LaLonde for Advertising
   - Gordon Zettelmeyer Facebook Benchmarks
@@ -203,6 +206,9 @@ Expect the pattern of Fig. 10: a large drop from the raw exposed-unexposed contr
 - [[Blake 2015 - OLS vs IV Spend Elasticities and the Endogeneity Gap]] — OLS vs experimental ROI gap for search
 - [[Lewis Rao 2015 - Impact-to-SD Ratio Derivation and Calibrated Campaign]] — formal R2/t derivation and selection-30x example
 - [[Model Validation and Interpretability - Overview]] — experiments as ground truth among six remedies
+- [[Dorie 2019 - ACIC 2016 Causal Inference Competition - Overview]] — simulation-based benchmark for causal estimators
+- [[Dorie 2019 - Motivation and Shortcomings of Method Comparisons]] — limits of constructed observational studies
+- [[Dehghani 2021 - The Benchmark Lottery - Overview]] — why benchmark rankings are fragile
 
 ## Full Source Note Set (Gordon et al. 2019)
 

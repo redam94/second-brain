@@ -19,6 +19,7 @@ depends_on:
 used_by:
   - "[[Experimental Benchmarks for Observational Ad Measurement]]"
   - "[[User-Level Ad Experiments - Overview]]"
+  - "[[Dorie 2019 - ACIC 2016 Causal Inference Competition - Overview]]"
 aliases:
   - Gordon Zettelmeyer Bhargava Chapsky 2019
   - A Comparison of Approaches to Advertising Measurement
@@ -148,3 +149,4 @@ Cross-source syntheses that also use this paper: [[Experimental Benchmarks for O
 - [[User-Level Ad Experiments - Overview]] — cluster entry point.
 - [[Conversion Lift Studies on Ad Platforms]] — the experimental product.
 - [[From ITT to Treatment-on-the-Treated in Ad Experiments]] — estimands.
+- [[Dorie 2019 - ACIC 2016 Causal Inference Competition - Overview]] — simulated-truth counterpart to RCT benchmarks

@@ -27,6 +27,9 @@ used_by:
   - "[[Ioannidis 2005 - Remedies, Limitations and Later Critiques]]"
   - "[[Ioannidis 2005 - Reference List and Citation Map]]"
   - "[[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]]"
+  - "[[IntHout 2014 - Simulation Results and Error Rates]]"
+  - "[[Andrews Kasy 2019 - Identification of and Correction for Publication Bias - Overview]]"
+  - "[[Sterne 2011 - Funnel Plot Asymmetry - Overview]]"
 aliases:
   - Ioannidis 2005
   - Why Most Published Research Findings Are False
@@ -183,3 +186,6 @@ Full section, table and figure checklist mapped to the note that captures it.
 - [[Type S and Type M Errors]]: the magnitude-and-sign view of the same underpowered-study problem.
 - [[Model Selection and Overfitting]]: overfitting as the modelling analogue of data dredging.
 - [[Breiman 2001 - Critique of Data Models - Goodness of Fit, Multiplicity and Predictive Accuracy]] — critique of significance claims under unchecked models
+- [[IntHout 2014 - Simulation Results and Error Rates]] — inflated error rates in small meta-analyses
+- [[Andrews Kasy 2019 - Identification of and Correction for Publication Bias - Overview]] — identifying and correcting publication bias
+- [[Sterne 2011 - Funnel Plot Asymmetry - Overview]] — diagnosing small-study effects

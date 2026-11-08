@@ -29,6 +29,7 @@ used_by:
   - "[[From ITT to Treatment-on-the-Treated in Ad Experiments]]"
   - "[[User-Level Ad Experiments - Overview]]"
   - "[[Intent-to-Treat, PSA and Ghost Ad Designs]]"
+  - "[[Degtiar 2023 - Populations, Estimands and External Validity Bias]]"
 aliases:
   - Rubin causal model
   - potential outcomes
@@ -119,3 +120,4 @@ A/B testing and randomized controlled trials are the gold standard for causal in
 - [[Causal Estimands]] — formal definitions of ITE, SATE, CATE, PATE, MATE
 - [[Propensity Score in Bayesian CI]] — propensity score $e(x)$ plays central role despite dropping from likelihood
 - [[Conformal Inference for Counterfactuals and ITEs]] — distribution-free intervals for counterfactuals
+- [[Degtiar 2023 - Populations, Estimands and External Validity Bias]] — target-population estimands

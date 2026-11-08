@@ -17,6 +17,7 @@ used_by:
   - "[[Aggregating Group-Time Effects]]"
   - "[[Simultaneous Inference via Multiplier Bootstrap]]"
   - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
+  - "[[Dahabreh 2020 - Outcome Model, Inverse Odds Weighting and Doubly Robust Estimators]]"
 aliases:
   - DR estimand DiD
   - outcome regression DiD
@@ -95,3 +96,4 @@ $$ m_{g,t,\delta}^{nev}(X) = \mathbb{E}[Y_t - Y_{g-\delta-1}\mid X, C=1], \qquad
 - Abadie (2005) — semiparametric IPW DiD
 - [[How to use Bayesian propensity scores and inverse probability weights]] — Bayesian IPW counterpart
 - [[Neyman Orthogonality]] — why the doubly-robust form tolerates ML nuisance estimates
+- [[Dahabreh 2020 - Outcome Model, Inverse Odds Weighting and Doubly Robust Estimators]] — doubly robust estimator for a target population

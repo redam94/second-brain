@@ -21,6 +21,7 @@ used_by:
   - "[[The Replication Crisis and Multiple Levels of Variation]]"
   - "[[Predictive Model Checking and Comparison - Clinical Trial]]"
   - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
+  - "[[Roever 2020 - Priors for the Effect and Heterogeneity]]"
 aliases:
   - "Zero-centered priors"
   - "Meta-analytic prior"
@@ -251,3 +252,4 @@ the coefficients of these predictors to be near zero.**"
 - [[Joint Priors and Covariance Matrices]] — when independent priors are not enough
 - [[Empirical Bayes - Overview]] — estimating a prior from data, and why the authors dislike the name
 - [[Partial Pooling as Multiple Comparisons Correction]] — the shrinkage these priors deliver
+- [[Roever 2020 - Priors for the Effect and Heterogeneity]] — priors for the heterogeneity scale tau

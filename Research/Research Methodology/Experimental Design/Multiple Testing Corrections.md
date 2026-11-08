@@ -31,6 +31,8 @@ used_by:
   - "[[Stability Selection PFER Bound (Theorem 1) and Its Proof]]"
   - "[[Ioannidis 2005 - PPV of Research Findings and the 2x2 Framework]]"
   - "[[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]]"
+  - "[[Dehghani 2021 - Guidelines, Statistical Testing and Living Benchmarks]]"
+  - "[[Dwork Roth 2014 - Laplace Mechanism]]"
 ---
 
 # Multiple Testing Corrections
@@ -127,3 +129,5 @@ The **q-value** of a test is the minimum FDR at which that test would be called 
 - [[Stability Selection PFER Bound (Theorem 1) and Its Proof]] — PFER/FWER control for variable selection without p-values
 - [[Ioannidis 2005 - PPV of Research Findings and the 2x2 Framework]] — PPV = 1 - false discovery proportion at field level
 - [[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]] — why alpha correction cannot fix researcher degrees of freedom
+- [[Dehghani 2021 - Guidelines, Statistical Testing and Living Benchmarks]] — multi-dataset tests with correction
+- [[Dwork Roth 2014 - Laplace Mechanism]] — the ln(k/delta) union-bound analogue for k noisy counts

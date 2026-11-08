@@ -29,6 +29,10 @@ used_by:
   - "[[Zhang Vaver 2017 - Aggregate Marketing System Simulator - Overview]]"
   - "[[Chan Perry 2017 - Why Experiments and Matching Fall Short for MMM Questions]]"
   - "[[Blake 2015 - Non-Brand DMA Geo Experiment and DiD Estimates]]"
+  - "[[Allcott 2015 - Site Selection Bias in Program Evaluation - Overview]]"
+  - "[[Pearl 2014 - Marketing Application Transporting Geo and Lift Results]]"
+  - "[[Meager 2019 - Conclusion, Limitations and Marketing Analogues]]"
+  - "[[Roever 2020 - Prediction, Shrinkage and Credible Intervals]]"
 aliases:
   - Geo Experiments
   - Matched Market Testing
@@ -114,3 +118,7 @@ The vault's existing [[Synthetic Control]] note (and its extensions in [[Xu 2016
 - [[Zhang Vaver 2017 - Aggregate Marketing System Simulator - Overview]] — AMSS was designed to evaluate geo experiments too
 - [[Chan Perry 2017 - Why Experiments and Matching Fall Short for MMM Questions]] — why experiments cannot cover all MMM questions
 - [[Blake 2015 - Non-Brand DMA Geo Experiment and DiD Estimates]] — early large-scale DMA geo experiment with DiD
+- [[Allcott 2015 - Site Selection Bias in Program Evaluation - Overview]] — early test markets can overstate effects in later markets
+- [[Pearl 2014 - Marketing Application Transporting Geo and Lift Results]] — when a geo-test result transports to a new market
+- [[Meager 2019 - Conclusion, Limitations and Marketing Analogues]] — hierarchical pooling of several geo tests
+- [[Roever 2020 - Prediction, Shrinkage and Credible Intervals]] — predictive distribution for the next market's effect

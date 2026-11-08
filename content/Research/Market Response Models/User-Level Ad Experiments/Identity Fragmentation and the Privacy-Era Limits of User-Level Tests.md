@@ -25,6 +25,9 @@ depends_on:
   - "[[From ITT to Treatment-on-the-Treated in Ad Experiments]]"
 used_by:
   - "[[User-Level vs Geo-Level Experiments - When to Use Which]]"
+  - "[[Dwork Roth 2014 - Motivation, Attacks and Why Anonymization Fails]]"
+  - "[[Dwork 2006 - Interactive versus Non-Interactive Separation Results]]"
+  - "[[Abowd 2022 - 2020 Census TopDown Algorithm - Overview]]"
 aliases:
   - Identity Fragmentation Bias
   - Cookie-Level vs User-Level Measurement
@@ -164,3 +167,6 @@ The same zero effect reads as strongly positive or strongly negative depending o
 - [[Sample Ratio Mismatch and Trustworthiness Checks]] — cookie churn that differs by arm shows up as SRM.
 - [[Experimental Benchmarks for Observational Ad Measurement]] — those benchmarks hold identity fixed; off-platform observational attribution has fragmentation bias *on top of* selection bias.
 - [[Bayesian Media Mix Modeling - Overview]] — aggregate models are immune to fragmentation, one reason MMM has returned to favour.
+- [[Dwork Roth 2014 - Motivation, Attacks and Why Anonymization Fails]] — why anonymization fails
+- [[Dwork 2006 - Interactive versus Non-Interactive Separation Results]] — limits of private data release
+- [[Abowd 2022 - 2020 Census TopDown Algorithm - Overview]] — DP at deployment scale

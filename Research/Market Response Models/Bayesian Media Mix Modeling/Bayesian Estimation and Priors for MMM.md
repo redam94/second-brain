@@ -26,6 +26,8 @@ used_by:
   - "[[Q - Using Experiment Results as Priors in a Bayesian MMM]]"
   - "[[Riley 2020 - Shrinkage and Optimism Criteria for Overfitting]]"
   - "[[Chan Perry 2017 - Opportunities (Better Data, Bayesian, Category, Geo, Controls, Graphs)]]"
+  - "[[Meager 2019 - Conclusion, Limitations and Marketing Analogues]]"
+  - "[[Dwork 2006 - Sensitivity and the Laplace Mechanism]]"
 aliases:
   - MMM Priors
   - MMM MCMC Estimation
@@ -93,3 +95,5 @@ Because the adstock and Hill transforms make the model nonlinear in its paramete
 - [[Jin 2017 MMM - STAN Sampler Code and MCMC Implementation]] — the Appendix Stan program
 - [[Riley 2020 - Shrinkage and Optimism Criteria for Overfitting]] — parameter budget for 52-156-row weekly media models
 - [[Chan Perry 2017 - Opportunities (Better Data, Bayesian, Category, Geo, Controls, Graphs)]] — category posteriors as informative priors
+- [[Meager 2019 - Conclusion, Limitations and Marketing Analogues]] — experiment-informed priors
+- [[Dwork 2006 - Sensitivity and the Laplace Mechanism]] — DP noise as a known measurement-error model

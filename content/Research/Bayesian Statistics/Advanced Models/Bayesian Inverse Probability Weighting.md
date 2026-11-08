@@ -29,6 +29,8 @@ used_by:
   - "[[General Structure of Bayesian CI]]"
   - "[[Differences-in-Differences]]"
   - "[[Q - The Common Structure of Doubly-Robust Estimators]]"
+  - "[[Dahabreh 2020 - Outcome Model, Inverse Odds Weighting and Doubly Robust Estimators]]"
+  - "[[Degtiar 2023 - Weighting and Matching Methods]]"
 aliases:
   - Bayesian IPW
   - Bayesian propensity scores
@@ -285,3 +287,5 @@ rubin_se(outcome_models$ate, outcome_models$ate_se)
 - [[Synthetic Control]] — alternative for single-unit treatment; unit weights that sum to 1, not normalized by propensity scores
 - [[Missing Data Models]] — multiple imputation (Rubin's rules were originally designed for missing data)
 - [[Conformal Prediction Under Covariate Shift]] — same propensity-odds weights
+- [[Dahabreh 2020 - Outcome Model, Inverse Odds Weighting and Doubly Robust Estimators]] — inverse-odds weighting for transporting trial results
+- [[Degtiar 2023 - Weighting and Matching Methods]] — participation weights for generalizability

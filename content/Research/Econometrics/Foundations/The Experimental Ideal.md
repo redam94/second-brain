@@ -32,6 +32,8 @@ used_by:
   - "[[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise]]"
   - "[[Intent-to-Treat, PSA and Ghost Ad Designs]]"
   - "[[Dillon et al - Unobserved Confounding and Quasi-Experimental Remedies]]"
+  - "[[Allcott 2015 - Model of External Validity and Site Selection Bias]]"
+  - "[[Pearl 2014 - Selection Diagrams and Definition of Transportability]]"
 ---
 
 # The Experimental Ideal
@@ -92,3 +94,5 @@ $$
 - [[Multiple Comparisons - Bayesian Perspective]] — even well-designed experiments face multiplicity; Bayesian multilevel models handle it structurally
 - [[Randomization Inference - Overview]] — inference that follows directly from the randomization this note motivates
 - [[Dillon et al - Unobserved Confounding and Quasi-Experimental Remedies]] — confidently wrong DML under unobserved confounding motivates randomization
+- [[Allcott 2015 - Model of External Validity and Site Selection Bias]] — internal validity is not external validity
+- [[Pearl 2014 - Selection Diagrams and Definition of Transportability]] — formal conditions for carrying experimental results elsewhere

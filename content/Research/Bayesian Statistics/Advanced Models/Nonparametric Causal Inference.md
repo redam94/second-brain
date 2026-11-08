@@ -23,6 +23,7 @@ depends_on:
 used_by:
   - "[[Moderation Analysis]]"
   - "[[Q - Which Heterogeneous Treatment Effect Method Answers Which Question]]"
+  - "[[Dorie 2019 - Evaluation Metrics and Results by Method]]"
 ---
 
 # Bayesian Non-parametric Causal Inference
@@ -106,3 +107,4 @@ Because BART is Bayesian, these estimates come with full posterior distributions
 
 - [[Honest Trees and Causal Forests]] — the frequentist counterpart to BART
 - [[Conditional Independence Assumption]] — BART/BCF outcome models still rely on selection on observables
+- [[Dorie 2019 - Evaluation Metrics and Results by Method]] — BART's performance in ACIC 2016

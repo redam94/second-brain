@@ -22,6 +22,8 @@ used_by:
   - "[[Q - In-Context Learning as Amortized Bayesian Inference]]"
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
   - "[[Q - When Can LLM Silicon Samples Replace Consumer Data in an ABM]]"
+  - "[[Liang 2022 - Models and Adaptation via Prompting]]"
+  - "[[Liang 2022 - Experiments Meta-Analysis and Prompting Ablations]]"
 aliases:
   - In-Context Learning
   - Few-Shot Prompting
@@ -165,3 +167,5 @@ Practical implications for applied work: results depend on $K$, on which demonst
 - [[Code vs Text Prompt Evaluation]] and [[Code Prompt Aspects Analysis]]
 - [[Posterior Predictive Checking]]: checking a predictive distribution against held-out data, the discipline that ICL outputs also require.
 - [[Chain-of-Thought Prompting]] — chain-of-thought extends few-shot prompting
+- [[Liang 2022 - Models and Adaptation via Prompting]] — prompting as adaptation in HELM
+- [[Liang 2022 - Experiments Meta-Analysis and Prompting Ablations]] — prompt-format sensitivity

@@ -30,6 +30,8 @@ used_by:
   - "[[Q - Partial Pooling Across Statistics and ML and When It Hurts]]"
   - "[[Q - Sample Splitting and Pre-registration as Cures for Forking Paths]]"
   - "[[Gelman Loken 2013 - Three Reactions and the Bayesian Reading of Bem's 53 Percent]]"
+  - "[[Meager 2019 - Pooling Factors and Measuring External Validity]]"
+  - "[[Roever 2020 - Prediction, Shrinkage and Credible Intervals]]"
 aliases:
   - "Shrinkage as multiple comparisons correction"
   - "Partial pooling z-score reduction"
@@ -183,3 +185,5 @@ Functions in the `arm` package can then sample from the posterior distribution f
 - [[James-Stein Estimator]] — the frequentist shrinkage estimator this note cites (Efron & Morris)
 - [[Empirical Bayes - Overview]] — empirical-Bayes view of shrinkage and its FDR connections
 - [[Gelman Loken 2013 - Three Reactions and the Bayesian Reading of Bem's 53 Percent]] — condition on all comparisons with hierarchical models
+- [[Meager 2019 - Pooling Factors and Measuring External Validity]] — pooling factors measure how much sites share
+- [[Roever 2020 - Prediction, Shrinkage and Credible Intervals]] — Bayesian shrinkage of study effects

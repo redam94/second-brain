@@ -34,6 +34,9 @@ used_by:
   - "[[Ioannidis 2005 - Six Corollaries and the Proteus Phenomenon]]"
   - "[[Morris et al 2019 - Estimates Data Checks, n_sim Choice and Analysis Remarks]]"
   - "[[Lewis Rao 2015 - Table III Power and Experiment Size Multipliers]]"
+  - "[[IntHout 2014 - Simulation Results and Error Rates]]"
+  - "[[Wasserman Zhou 2010 - Differential Privacy as a Hypothesis-Testing Constraint]]"
+  - "[[Dong Roth Su 2022 - Trade-off Functions and f-DP]]"
 ---
 
 # Power Analysis and Sample Size
@@ -116,3 +119,6 @@ In Bayesian analysis, the concept of "power" is less central — instead, one ca
 - [[Ioannidis 2005 - Six Corollaries and the Proteus Phenomenon]] — low power lowers the probability that significant findings are true
 - [[Morris et al 2019 - Estimates Data Checks, n_sim Choice and Analysis Remarks]] — binomial-variance inversion for the number of repetitions
 - [[Lewis Rao 2015 - Table III Power and Experiment Size Multipliers]] — inverse-square experiment multiplier
+- [[IntHout 2014 - Simulation Results and Error Rates]] — false-positive rates of DL with few studies
+- [[Wasserman Zhou 2010 - Differential Privacy as a Hypothesis-Testing Constraint]] — privacy caps the power of any test
+- [[Dong Roth Su 2022 - Trade-off Functions and f-DP]] — privacy as a type I/II error trade-off

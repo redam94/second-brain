@@ -31,6 +31,7 @@ used_by:
   - "[[Nonparametric Causal Inference]]"
   - "[[Factor Analysis and PPCA]]"
   - "[[Spatial Models - BYM]]"
+  - "[[Wasserman Zhou 2010 - Orthogonal Series Density Estimation]]"
 ---
 
 # Nonparametric Models Overview
@@ -94,3 +95,4 @@ $$
 - [[Spatial Models - BYM]] — applies Gaussian Markov Random Fields (a GP on a graph) for spatial smoothing
 - [[Monsters and Mixtures]] — covers finite mixture models (Ch. 22) in full detail; the Dirichlet Process extends these to infinite mixtures (Ch. 23)
 - [[Nonparametric Causal Inference]] — uses BART (a nonparametric Bayesian tree model) for causal ATE/ATT estimation
+- [[Wasserman Zhou 2010 - Orthogonal Series Density Estimation]] — private density estimation rates

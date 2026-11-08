@@ -28,6 +28,7 @@ used_by:
   - "[[Zhang Vaver 2017 - Aggregate Marketing System Simulator - Overview]]"
   - "[[Chan Perry 2017 - Challenges in Media Mix Modeling - Overview]]"
   - "[[Model Validation and Interpretability - Overview]]"
+  - "[[Abowd 2022 - Conclusion, Limitations and Marketing Relevance]]"
 aliases:
   - MMM
   - Media Mix Model
@@ -169,3 +170,4 @@ Every reference in the paper, where it is used, and where the vault covers it.
 - [[_Index|Index: Bayesian Media Mix Modeling]]
 - [[Hierarchical Models]] — geo-level and brand-level MMMs pool channel parameters through hierarchical priors
 - [[Model Validation and Interpretability - Overview]] — validation checklist for MMMs and driver rankings
+- [[Abowd 2022 - Conclusion, Limitations and Marketing Relevance]] — DP-noised KPIs as measurements with known variance

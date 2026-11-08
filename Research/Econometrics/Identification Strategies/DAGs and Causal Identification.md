@@ -23,6 +23,8 @@ used_by:
   - "[[Janzing et al 2020 - Feature Relevance as a Causal Problem - Overview]]"
   - "[[Dillon et al - Non-Confounding Redundancy and the Control-or-Drop Rule]]"
   - "[[Manheim Garrabrant - Causal Goodhart via Shared Cause, Intermediary and Metric Manipulation]]"
+  - "[[Pearl 2014 - Selection Diagrams and Definition of Transportability]]"
+  - "[[Bareinboim 2016 - Sample Selection Bias and Recoverability]]"
 aliases:
   - DAG
   - d-separation
@@ -217,3 +219,5 @@ For the DAG with paths:
 - [[Janzing et al 2020 - Feature Relevance as a Causal Problem - Overview]] — back-door adjustment used to define feature attribution
 - [[Dillon et al - Non-Confounding Redundancy and the Control-or-Drop Rule]] — mediator vs confounder adjustment example
 - [[Manheim Garrabrant - Causal Goodhart via Shared Cause, Intermediary and Metric Manipulation]] — DAG-based failure cases for intervening on proxies
+- [[Pearl 2014 - Selection Diagrams and Definition of Transportability]] — transportability as cross-population identification
+- [[Bareinboim 2016 - Sample Selection Bias and Recoverability]] — selection-backdoor criterion

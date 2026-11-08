@@ -19,6 +19,8 @@ used_by:
   - "[[Zhang Vaver 2017 - Aggregate Marketing System Simulator - Overview]]"
   - "[[Chan Perry 2017 - Challenges in Media Mix Modeling - Overview]]"
   - "[[Simulation-Based Calibration - Overview]]"
+  - "[[Dorie 2019 - Simulation Design and Knobs]]"
+  - "[[IntHout 2014 - Simulation Design]]"
 aliases:
   - Simulation Studies for Evaluating Statistical Methods (ADEMP)
   - ADEMP
@@ -171,3 +173,5 @@ ADEMP planning → coding → estimates checks → performance measures (+MCSE) 
 - [[SR 11-7 - Applying Model Risk Management to Marketing Analytics]] — known-truth simulation as a compensating control
 - [[NIST AI RMF - MEASURE Function]] — validity demonstration and evaluation of TEVV metrics
 - [[Jin 2017 MMM - Simulation Design, Signal Strength and Priors]] — fully reported DGM in a marketing simulation
+- [[Dorie 2019 - Simulation Design and Knobs]] — worked large-scale simulation design
+- [[IntHout 2014 - Simulation Design]] — simulation of meta-analysis error rates
