@@ -8,6 +8,8 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 1.2, pp. 18–31"
 date_ingested: 2026-05-08
+date_updated: 2026-11-09
+folder: "Category Theory/Foundations"
 doc_type: textbook
 depends_on:
   - "[[Categories]]"
@@ -114,3 +116,5 @@ Equivalence is weaker than isomorphism of categories (which requires $GF = 1$ an
 - [[Natural Transformations]] — Maps between functors
 - [[Functor Categories]] — Categories of functors
 - [[Representables/Representable Functors]] — Functors isomorphic to hom-functors
+- [[Representables/Yoneda Embedding and Consequences]] — The Yoneda embedding as the canonical fully faithful functor
+- [[Adjunctions/Adjoint Functors]] — Pairs of functors with a natural bijection; adjoints are unique by Yoneda

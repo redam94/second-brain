@@ -5,9 +5,10 @@ tags:
   - topic/agent-based-modeling
   - type/concept
   - doc/paper
-source: "[[Research/Agent-Based Modeling/raw/calibration_ABM.pdf]]"
+source: "[[Agent-Based Modeling/raw/calibration_ABM.pdf]]"
 source_location: "Sections 2.1–2.7, 3.14–3.18, pp. 2–5"
 date_ingested: 2026-04-11
+date_updated: 2026-11-09
 folder: "Agent-Based Modeling/Calibration and Validation/Calibration Methods"
 doc_type: paper
 depends_on:
@@ -91,3 +92,7 @@ UQ-based calibration — HM + ABC — acknowledges these limitations and produce
 - [[History Matching for ABMs]] — uses all three variance components in the implausibility score
 - [[Approximate Bayesian Computation for ABMs]] — uses total uncertainty to set $\varepsilon$
 - [[HM-ABC Calibration Framework]] — the pipeline these uncertainties enable
+- [[Genetic Algorithm Calibration for ABM]] — the simpler calibration baseline that ignores model discrepancy and ensemble variance
+- [[ABM Calibration Case Studies]] — empirical application of these UQ concepts to SugarScape, birds, and RISC
+- [[Bayesian Workflow - Overview]] — parallel decomposition of uncertainty in Bayesian modeling (prior, likelihood, posterior checks)
+- [[Population Initialization and Parameter Sensitivity]] — local sensitivity analysis (OAT parameter sweeps) that precedes UQ-based global calibration

@@ -8,6 +8,8 @@ tags:
 source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Ch. 6.1, pp. 141–147"
 date_ingested: 2026-05-08
+date_updated: 2026-11-09
+folder: "Category Theory/Synthesis"
 doc_type: textbook
 depends_on:
   - "[[Limits and Colimits/General Limits]]"
@@ -90,5 +92,7 @@ Dually, $\mathrm{colim} \dashv \Delta$: the diagonal is right adjoint to the col
 
 - [[Limits and Colimits/General Limits]] — Limit definition
 - [[Representables/Representable Functors]] — What representability means
-- [[Representables/Yoneda Lemma]] — Used to prove uniqueness
-- [[Adjoints and Limits]] — Adjoint functors and limits
+- [[Representables/Yoneda Lemma]] — Used to prove uniqueness of limits
+- [[Representables/Yoneda Embedding and Consequences]] — Yoneda embedding preserves limits (Prop. 6.2.2)
+- [[Adjoints and Limits]] — Adjoint functors and limits; $\lim \dashv \Delta$ established here
+- [[Foundations/Functors]] — Diagonal functor $\Delta$ defined here
