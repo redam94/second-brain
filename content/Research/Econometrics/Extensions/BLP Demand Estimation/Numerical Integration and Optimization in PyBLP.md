@@ -40,7 +40,7 @@ The logit kernel is bounded on $(0,1)$ and infinitely differentiable, so it is w
 
 ## Main Content
 
-> [!definition] Integration rules: pMC, qMC, and quadrature ^integration-rules
+> [!definition] Integration rules: pMC, qMC, and quadrature
 > - **Pseudo-Monte Carlo (pMC).** Equally weighted random draws ($w_{it}=I_t^{-1}$). Simulation error is $O(I_t^{-1/2})$ and (by CLT) $\epsilon^{pMC}_{I_t}\xrightarrow{d} N(0, \sqrt{V(s_{jt})/I_t})$. Advantage: no curse of dimensionality. Disadvantage: error declines **slowly**.
 > - **Quasi-Monte Carlo (qMC).** Deterministic **low-discrepancy sequences** (e.g. **Halton**) that cover the hypercube $[0,1]^{K_2}$ more evenly; error $O(I_t^{-1}\cdot(\log I_t)^{K_2})$, beating pMC as $I_t$ grows. Best practice: **scramble** the sequence (Owen 2017) and **discard** the first ~1,000 points to avoid cross-dimension correlation.
 > - **Gaussian quadrature.** Approximates the integrand by a polynomial integrated exactly; a weighted sum over a chosen $(\nu_{it}, w_{it})$. **Gauss-Hermite** rules suit normal mixing densities. Most accurate for **few** dimensions, but **product rules** need $I_t^d$ points in dimension $d$ — the **curse of dimensionality**. **Sparse grids** (Heiss & Winschel 2008) and **monomial cubature** (Judd & Skrainka 2011) prune nodes (sometimes with negative weights, which can be problematic for counterfactuals).
@@ -48,7 +48,9 @@ The logit kernel is bounded on $(0,1)$ and infinitely differentiable, so it is w
 >
 > **Recommendation:** product rules to high polynomial accuracy for **few** random coefficients; **sparse grids or scrambled Halton** for $K_2 > 5$. After obtaining $\hat{\widetilde{\theta}}_2$, verify the chosen rule against finer alternatives by comparing $\lVert\boldsymbol{\mathcal{S}}_t - \boldsymbol{s}_t(\boldsymbol{\delta}_t,\hat{\widetilde{\theta}}_2; I_t)\rVert_2$.
 
-> [!definition] The Nested Fixed Point (NFXP) algorithm ^nfxp
+^integration-rules
+
+> [!definition] The Nested Fixed Point (NFXP) algorithm
 > For each guess of $\theta_2$ (the **outer loop**):
 > (a) **Inner loop** — for each market solve the share system for $\hat{\boldsymbol{\delta}}_t(\theta_2)$ via the [[The BLP Contraction Mapping|contraction]] (SQUAREM/LM).
 > (b) Build the intra-firm derivative matrix $\Delta_t$ and recover markups $\hat{\eta}_t(\theta_2) = \Delta_t^{-1}\boldsymbol{s}_t$.
@@ -56,7 +58,9 @@ The logit kernel is bounded on $(0,1)$ and infinitely differentiable, so it is w
 > (d) Form residuals $\hat\xi_{jt}(\theta_2), \hat\omega_{jt}(\theta_2)$, stack moments $g(\theta_2)$, and evaluate $q(\theta_2)=g(\theta_2)'W g(\theta_2)$.
 > Only the $K_2$ **nonlinear** parameters are searched over (Hessian is $K_2\times K_2$); linear parameters and fixed effects are "essentially free." Conlon-Gortmaker place $\alpha p_{jt}$ on the LHS so the endogenous markup depends only on $\theta_2$, enabling simultaneous supply/demand with fixed effects. (MPEC of Dubé et al. 2012 is an alternative; this paper focuses on the more popular NFXP.)
 
-> [!definition] Optimization of the GMM objective ^optimization
+^nfxp
+
+> [!definition] Optimization of the GMM objective
 > The objective is **non-convex** (the Hessian need not be PSD), so no routine guarantees a global minimum. Best practices:
 > - **Analytic gradients** (PyBLP computes them for any model, including supply+demand and fixed effects) — major speedup and better convergence than finite differences or derivative-free methods.
 > - **Gradient-based optimizers**: try **Knitro Interior/Direct** first if available, then a **BFGS**-based routine, ideally **SciPy L-BFGS-B** with bounds. Avoid Nelder-Mead.
@@ -66,11 +70,15 @@ The logit kernel is bounded on $(0,1)$ and infinitely differentiable, so it is w
 >
 > With these, **>99%** of simulation runs converge to a valid local minimum, contradicting Knittel & Metaxoglou (2014)'s many-local-optima finding.
 
-> [!definition] Numerical stability tricks ^numerical-tricks
+^optimization
+
+> [!definition] Numerical stability tricks
 > The exponentiated utilities $\sum_j \exp(\delta_{jt}+\mu_{ijt})$ cause **loss of precision / overflow** (e.g. $\exp(800)$). Fixes:
 > - **Protected log-sum-exp**: $\mathrm{LSE}(\boldsymbol{x}) = \log\sum_k \exp x_k = a + \log\sum_k\exp(x_k - a)$ with $a=\max\{0,\max_k x_k\}$ — implemented by default, near-zero cost, recommended.
 > - Work market-by-market; box-constrain random coefficients; robust error handling (replace near-singular $W$ or $\Delta_t$ with pseudo-inverses and warn).
 > - Tricks like using $\exp(\delta_{jt})$ in place of $\delta_{jt}$, or "hot starts," give little benefit once SQUAREM is used.
+
+^numerical-tricks
 
 ## Examples
 

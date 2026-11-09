@@ -37,12 +37,14 @@ The shock did **not** come from the empirical Bayes risk comparison (eqs. 1.24-1
 
 ## Main Content
 
-> [!theorem] James-Stein dominance / inadmissibility of the MLE ^js-dominance
+> [!theorem] James-Stein dominance / inadmissibility of the MLE
 > For $N \geq 3$, the [[James-Stein Estimator]] everywhere dominates the MLE in expected total squared error (Efron eq. 1.26):
 > $$E_{\boldsymbol{\mu}}\left\{\|\hat{\boldsymbol{\mu}}^{(JS)} - \boldsymbol{\mu}\|^2\right\} < E_{\boldsymbol{\mu}}\left\{\|\hat{\boldsymbol{\mu}}^{(MLE)} - \boldsymbol{\mu}\|^2\right\} \quad \text{for every choice of } \boldsymbol{\mu}.$$
 > This is **frequentist**: it implies the superiority of $\hat{\boldsymbol{\mu}}^{(JS)}$ no matter what one's prior beliefs about $\boldsymbol{\mu}$ may be. Since versions of the MLE underlie linear regression and ANOVA, its apparent uniform inferiority was a cause for alarm.
 
-> [!definition] Stein's unbiased risk estimate (the proof identity) ^sure
+^js-dominance
+
+> [!definition] Stein's unbiased risk estimate (the proof identity)
 > The proof starts from the algebraic identity (eq. 1.27)
 > $$(\hat\mu_i - \mu_i)^2 = (z_i - \hat\mu_i)^2 - (z_i - \mu_i)^2 + 2(\hat\mu_i - \mu_i)(z_i - \mu_i).$$
 > Summing and taking expectations under $\boldsymbol{z} \sim \mathcal{N}_N(\boldsymbol{\mu}, I)$, **integration by parts** on the normal density gives the key covariance identity
@@ -50,13 +52,19 @@ The shock did **not** come from the empirical Bayes risk comparison (eqs. 1.24-1
 > (valid whenever $\hat\mu_i$ is continuously differentiable in $\boldsymbol{z}$), which reduces the risk to (eq. 1.30)
 > $$E_{\boldsymbol{\mu}}\|\hat{\boldsymbol{\mu}} - \boldsymbol{\mu}\|^2 = E_{\boldsymbol{\mu}}\left\{\|\boldsymbol{z}-\hat{\boldsymbol{\mu}}\|^2\right\} - N + 2\sum_{i=1}^N E_{\boldsymbol{\mu}}\!\left\{\frac{\partial \hat\mu_i}{\partial z_i}\right\}.$$
 
-> [!theorem] Exact risk of James-Stein ^js-exact-risk
+^sure
+
+> [!theorem] Exact risk of James-Stein
 > Applying the risk identity (1.30) to $\hat{\boldsymbol{\mu}}^{(JS)}$ (eq. 1.31) yields
 > $$E_{\boldsymbol{\mu}}\left\{\|\hat{\boldsymbol{\mu}}^{(JS)} - \boldsymbol{\mu}\|^2\right\} = N - E_{\boldsymbol{\mu}}\!\left\{\frac{(N-2)^2}{S}\right\}, \qquad S = \sum z_i^2.$$
 > Since the subtracted term is **strictly positive whenever $N > 2$**, the JS risk is strictly below the MLE risk $N$ for all $\boldsymbol{\mu}$ — proving the theorem.
 
-> [!definition] Risk is total, not individual ^total-vs-individual
+^js-exact-risk
+
+> [!definition] Risk is total, not individual
 > The theorem concerns **total** squared-error loss $\sum(\hat\mu_i - \mu_i)^2$, with no guarantee for individual cases. Most individual effects are improved, but genuinely unusual cases can be made **worse** — JS over-shrinks outliers toward the crowd. This is why standalone MLE methods remain popular (protecting individual inferences), and why compromises like the limited-translation estimator exist (see [[James-Stein Estimator]]).
+
+^total-vs-individual
 
 ## Examples
 

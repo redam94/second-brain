@@ -51,7 +51,7 @@ Gneiting & Raftery take scores to be *positively oriented* (rewards). The foreca
 
 ## Main Content
 
-> [!definition] Proper and strictly proper scoring rule ^def-proper
+> [!definition] Proper and strictly proper scoring rule
 > Let $\mathcal P$ be a convex class of probability measures on $(\Omega,\mathcal A)$. A scoring rule is a function $S:\mathcal P\times\Omega\to\bar{\mathbb R}$. Write the expected score under $Q$ when $P$ is quoted as
 >
 > $$
@@ -60,7 +60,9 @@ Gneiting & Raftery take scores to be *positively oriented* (rewards). The foreca
 >
 > $S$ is **proper** relative to $\mathcal P$ if $S(Q,Q)\ge S(P,Q)$ for all $P,Q\in\mathcal P$, and **strictly proper** if equality holds only when $P=Q$ (Eq. 1, p. 360). If $S$ is (strictly) proper, so is $S^*(P,\omega)=cS(P,\omega)+h(\omega)$ for $c>0$ (Eq. 2): such rules are *equivalent*.
 
-> [!theorem] Characterisation via convex functions (Gneiting & Raftery, Theorem 1) ^thm-convex-characterisation
+^def-proper
+
+> [!theorem] Characterisation via convex functions (Gneiting & Raftery, Theorem 1)
 > A regular scoring rule $S$ is proper relative to $\mathcal P$ **if and only if** there exists a convex real-valued function $G$ on $\mathcal P$ such that
 >
 > $$
@@ -69,7 +71,9 @@ Gneiting & Raftery take scores to be *positively oriented* (rewards). The foreca
 >
 > where $G^*(P,\cdot)$ is a subtangent of $G$ at $P$. The statement holds with *strictly proper* and *strictly convex*. Equivalently, the expected-score function $G(P)=S(P,P)$ is convex and $S(P,\cdot)$ is a subtangent of $G$ at $P$ (p. 361).
 
-> [!definition] Entropy and divergence of a scoring rule ^def-entropy-divergence
+^thm-convex-characterisation
+
+> [!definition] Entropy and divergence of a scoring rule
 > $G(P)=\sup_Q S(Q,P)=S(P,P)$ is the **generalised entropy** (information measure) and
 >
 > $$
@@ -78,9 +82,11 @@ Gneiting & Raftery take scores to be *positively oriented* (rewards). The foreca
 >
 > is the associated **divergence** (Eqs. 6-7); on finite sample spaces it is the Bregman divergence of $G$. Proper rules also arise from decision problems: if $a_P$ is the Bayes act under $P$ and $U$ a utility, then $S(P,\omega)=U(\omega,a_P)$ is proper (Sec. 2.2).
 
+^def-entropy-divergence
+
 ### Scores for density forecasts (Sec. 4.1)
 
-> [!definition] Logarithmic score ^def-log-score
+> [!definition] Logarithmic score
 >
 > $$
 > \operatorname{LogS}(p,x)=\log p(x).
@@ -88,11 +94,13 @@ Gneiting & Raftery take scores to be *positively oriented* (rewards). The foreca
 >
 > Strictly proper relative to the class of dominated measures. Its entropy is negative Shannon entropy and its divergence is the Kullback–Leibler divergence (p. 365). It is **local** — it depends on $p$ only through $p(x)$ — and Bernardo (1979) showed every proper local rule is equivalent to it. Negatively oriented, it is the negative log predictive density (NLPD) used as the DeepAR training loss and as `elpd` in Bayesian [[Model Comparison]].
 
+^def-log-score
+
 Other density scores are the **quadratic score** $\operatorname{QS}(p,x)=2p(x)-\lVert p\rVert_2^2$ and the **spherical score** $p(x)/\lVert p\rVert_2$. By contrast the **linear score** $\operatorname{LinS}(p,x)=p(x)$ is *not* proper: it "encourages overprediction at the modes of an assessor's true predictive density" (p. 366).
 
 ### CRPS and the energy score (Secs. 4.2-4.3)
 
-> [!definition] Continuous ranked probability score ^def-crps
+> [!definition] Continuous ranked probability score
 > For a predictive CDF $F$ on $\mathbb R$, in negative orientation,
 >
 > $$
@@ -102,7 +110,9 @@ Other density scores are the **quadratic score** $\operatorname{QS}(p,x)=2p(x)-\
 >
 > with $X,X'$ independent draws from $F$ (Eqs. 20-21). It is the integral of Brier scores over all thresholds, is proper on all Borel measures and **strictly proper** on those with finite first moment, is reported **in the units of the observations**, and **reduces to the absolute error** when $F$ is a point mass — so it "provides a direct way to compare deterministic and probabilistic forecasts" (p. 367). Its divergence is the Cramér–von Mises-type distance $\int (F-G)^2\,\mathrm dy$.
 
-> [!theorem] Closed form for a Gaussian forecast ^thm-crps-gaussian
+^def-crps
+
+> [!theorem] Closed form for a Gaussian forecast
 > With $z=(x-\mu)/\sigma$,
 >
 > $$
@@ -111,11 +121,13 @@ Other density scores are the **quadratic score** $\operatorname{QS}(p,x)=2p(x)-\
 >
 > For a sample of size $n$ the score is computable from order statistics in $O(n\log n)$ (Hersbach 2000).
 
+^thm-crps-gaussian
+
 The **energy score** $\operatorname{ES}(P,x)=\tfrac12\mathbb E_P\lVert X-X'\rVert^\beta-\mathbb E_P\lVert X-x\rVert^\beta$, $\beta\in(0,2)$, generalises CRPS ($\beta=1$, $m=1$) to vector-valued outcomes and is strictly proper (Eq. 22); at $\beta=2$ it degenerates to squared error of the mean, which is proper but *not* strictly proper. This is the natural score for joint sample paths over a horizon or across a hierarchy.
 
 ### Quantile and interval forecasts (Sec. 6)
 
-> [!theorem] Proper scoring rules for a quantile (Theorem 6) ^thm-quantile-score
+> [!theorem] Proper scoring rules for a quantile (Theorem 6)
 > If $s$ is nondecreasing and $h$ arbitrary, then
 >
 > $$
@@ -128,9 +140,11 @@ The **energy score** $\operatorname{ES}(P,x)=\tfrac12\mathbb E_P\lVert X-X'\rVer
 > \operatorname{QL}_\alpha(r,x)=\begin{cases}\alpha\,(x-r), & x>r\\ (1-\alpha)(r-x), & x\le r.\end{cases}
 > $$
 
+^thm-quantile-score
+
 This is exactly the criterion minimised in [[Quantile Regression]] (Koenker & Bassett 1978; Sec. 9.2), and — doubled — the $\rho$-risk of DeepAR and the WQL of Chronos (see [[Forecast Evaluation and Backtesting]]). Eq. 48 shows that integrating a proper quantile score over levels, $S(F,x)=\int_0^1 S_\alpha(F^{-1}(\alpha);x)\,\nu(\mathrm d\alpha)$, yields a proper score for the whole distribution. With pinball loss and uniform $\nu$ this construction gives the CRPS up to a constant — the standard identity (not stated explicitly in the paper; see Laio & Tamea 2007) is $\operatorname{CRPS}^*(F,x)=2\int_0^1\operatorname{QL}_\alpha(F^{-1}(\alpha),x)\,\mathrm d\alpha$ — which is why an average of doubled pinball losses over a quantile grid is used as a CRPS approximation.
 
-> [!definition] Interval score ^def-interval-score
+> [!definition] Interval score
 > For the central $(1-\alpha)\times100\%$ interval $[l,u]$ (the $\alpha/2$ and $1-\alpha/2$ quantiles), negatively oriented,
 >
 > $$
@@ -138,6 +152,8 @@ This is exactly the criterion minimised in [[Quantile Regression]] (Koenker & Ba
 > $$
 >
 > (Eq. 43). "The forecaster is rewarded for narrow prediction intervals, and he or she incurs a penalty, the size of which depends on $\alpha$, if the observation misses the interval" (p. 370). It was later adopted as the interval metric of the M4 competition.
+
+^def-interval-score
 
 ### Links to Bayes factors and cross-validation (Sec. 7)
 

@@ -46,7 +46,7 @@ Why not just fit $Y\sim D\theta+g(X)$ with a flexible learner that leaves $\thet
 
 ## Main Content
 
-> [!definition] Partially linear regression model ^def-plr
+> [!definition] Partially linear regression model
 > $$
 > Y = D\theta_0 + g_0(X) + U,\qquad \mathbb E[U\mid X,D]=0,
 > $$
@@ -55,7 +55,9 @@ Why not just fit $Y\sim D\theta+g(X)$ with a flexible learner that leaves $\thet
 > $$
 > with outcome $Y$, scalar policy/treatment variable $D$, controls $X=(X_1,\dots,X_p)$, and nuisance $\eta_0=(m_0,g_0)$. (Vector $D$: add one equation like the second per component.)
 
-> [!theorem] Failure of the naive plug-in estimator ^thm-naive-failure
+^def-plr
+
+> [!theorem] Failure of the naive plug-in estimator
 > Split the sample into a main part $I$ (size $n$) and auxiliary part $I^c$; fit $\hat g_0$ on $I^c$ and set
 > $$
 > \hat\theta_0=\Big(\tfrac1n\sum_{i\in I}D_i^2\Big)^{-1}\tfrac1n\sum_{i\in I}D_i\big(Y_i-\hat g_0(X_i)\big).
@@ -69,9 +71,11 @@ Why not just fit $Y\sim D\theta+g(X)$ with a flexible learner that leaves $\thet
 > $$
 > Term $b$ is a sum of $n$ terms with **non-zero mean** divided by $\sqrt n$. If $\hat g_0$ converges at rate $n^{-\varphi_g}$ with $\varphi_g<1/2$, then $b$ is of stochastic order $\sqrt n\,n^{-\varphi_g}\to\infty$, so $|\sqrt n(\hat\theta_0-\theta_0)|\to_P\infty$ (eq. 1.4).
 
+^thm-naive-failure
+
 Note that sample splitting alone does **not** rescue the naive estimator — $\hat g_0$ above was already fit on an independent sample. The bias is a *first-order sensitivity* problem, not an overfitting problem.
 
-> [!theorem] The orthogonalized (double ML) estimator ^thm-dml-plr-decomp
+> [!theorem] The orthogonalized (double ML) estimator
 > Also fit $\hat m_0$ on $I^c$, form $\hat V_i=D_i-\hat m_0(X_i)$ and
 > $$
 > \check\theta_0=\Big(\tfrac1n\sum_{i\in I}\hat V_iD_i\Big)^{-1}\tfrac1n\sum_{i\in I}\hat V_i\big(Y_i-\hat g_0(X_i)\big).
@@ -85,18 +89,22 @@ Note that sample splitting alone does **not** rescue the naive estimator — $\h
 > $$
 > so $|b^*|\lesssim\sqrt n\,n^{-(\varphi_m+\varphi_g)}$, which vanishes e.g. when $\varphi_m,\varphi_g>1/4$. The remainder $c^*$ contains terms like $\tfrac1{\sqrt n}\sum_{i\in I}V_i(\hat g_0(X_i)-g_0(X_i))$ and is $o_P(1)$ **because of sample splitting** (see [[Cross-Fitting and Sample Splitting]]).
 
+^thm-dml-plr-decomp
+
 $\check\theta_0$ is a linear IV estimator with instrument $\hat V$: the residualized treatment is, by construction, (approximately) uncorrelated with anything that is a function of $X$, including the error in $\hat g_0$. A second, first-order-equivalent version is Robinson's pure **partialling-out** estimator,
 $$
 \check\theta_0=\Big(\tfrac1n\sum_{i\in I}\hat V_i\hat V_i\Big)^{-1}\tfrac1n\sum_{i\in I}\hat V_i\big(Y_i-\hat\ell_0(X_i)\big),\qquad \ell_0(X)=\mathbb E[Y\mid X],
 $$
 i.e. regress the outcome residual on the treatment residual — an ML-powered Frisch–Waugh–Lovell. Its practical advantage: both nuisances, $\ell_0$ and $m_0$, are plain conditional means that any off-the-shelf learner can target, whereas $g_0(X)=\mathbb E[Y-D\theta_0\mid X]$ depends on the unknown $\theta_0$.
 
-> [!theorem] Theorem 4.1 — DML inference in the PLR model ^thm-dml-plr
+> [!theorem] Theorem 4.1 — DML inference in the PLR model
 > Under Assumption 4.1 (moment bounds with $q>4$; $\mathbb E[V^2]\ge c$; bounded conditional variances; nuisance estimators with $\|\hat\eta_0-\eta_0\|_{P,2}\le\delta_N$ and the **product-rate condition** $\|\hat m_0-m_0\|_{P,2}\times\|\hat g_0-g_0\|_{P,2}\le\delta_NN^{-1/2}$ for score (4.3), or $\|\hat m_0-m_0\|_{P,2}\times(\|\hat m_0-m_0\|_{P,2}+\|\hat\ell_0-\ell_0\|_{P,2})\le\delta_NN^{-1/2}$ for score (4.4)), the cross-fit DML1 and DML2 estimators are first-order equivalent and
 > $$
 > \sigma^{-1}\sqrt N(\tilde\theta_0-\theta_0)\rightsquigarrow\mathcal N(0,1),\qquad \sigma^2=[\mathbb E V^2]^{-1}\,\mathbb E[V^2U^2]\,[\mathbb EV^2]^{-1},
 > $$
 > uniformly over $P\in\mathcal P$; the plug-in $\hat\sigma^2$ is consistent and $[\tilde\theta_0\pm\Phi^{-1}(1-\alpha/2)\hat\sigma/\sqrt N]$ is uniformly valid.
+
+^thm-dml-plr
 
 Two remarks sharpen this. **Efficiency (Remark 4.2):** under homoscedasticity $\sigma^2=\mathbb E[V^2]^{-1}\mathbb E[U^2]$, the semiparametric efficiency bound. **Tightness (Remark 4.3):** if $g_0,m_0$ are sparse with indices $s_g,s_m$ and estimated by $\ell_1$-penalization at rates $\sqrt{s_g/N},\sqrt{s_m/N}$, the product-rate condition reads $s_gs_m\ll N$ — far weaker than the $(s_g)^2+(s_m)^2\ll N$ needed without sample splitting. A very sparse propensity permits a dense outcome model and vice versa; if $m_0$ is known (a randomized experiment), mere *consistency* of $\hat g_0$ suffices.
 

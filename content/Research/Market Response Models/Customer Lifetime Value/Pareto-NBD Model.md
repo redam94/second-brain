@@ -41,7 +41,7 @@ The firm sees a transaction log and, for each customer, a silence since the last
 
 ## Main Content
 
-> [!definition] Pareto/NBD assumptions ^def-pnbd-assumptions
+> [!definition] Pareto/NBD assumptions
 > (Fader & Hardie 2005, Sec. 2)
 > 1. Customers are "alive" for some time, then become **permanently inactive**.
 > 2. While alive, purchases follow a **Poisson process** with rate $\lambda$: $P(X(t)=x \mid \lambda) = (\lambda t)^x e^{-\lambda t}/x!$; equivalently, interpurchase times are exponential.
@@ -49,6 +49,8 @@ The firm sees a transaction log and, for each customer, a silence since the last
 > 4. $\lambda \sim \text{gamma}(r, \alpha)$ across customers: $g(\lambda \mid r,\alpha) = \alpha^r \lambda^{r-1} e^{-\lambda\alpha}/\Gamma(r)$ ($\alpha$ is a *rate*, despite being called "scale" in the paper).
 > 5. $\mu \sim \text{gamma}(s, \beta)$ across customers.
 > 6. $\lambda$ and $\mu$ vary **independently** across customers.
+
+^def-pnbd-assumptions
 
 Assumptions 2 and 4 give the **NBD** for purchases while alive, and 3 and 5 give the **Pareto distribution of the second kind** (Lomax) for lifetimes (Eqs. 4–6):
 
@@ -60,7 +62,7 @@ $$
 
 The NBD is the gamma-Poisson marginal of [[Single-Parameter Models]]; the Pareto is a gamma mixture of exponentials, whose decreasing aggregate hazard is a pure sorting effect (compare [[Shifted-Beta-Geometric Model for Contractual Retention]]).
 
-> [!theorem] Individual-level likelihood and sufficiency of $(x, t_x, T)$ ^thm-pnbd-individual-likelihood
+> [!theorem] Individual-level likelihood and sufficiency of $(x, t_x, T)$
 > Given purchase times $t_1,\dots,t_x$ in $(0,T]$, either the customer is still alive at $T$, contributing $\lambda^x e^{-\lambda T}$, or died at some $\tau \in (t_x, T]$, contributing $\lambda^x e^{-\lambda \tau}$. "In both cases, information on when each of the $x$ transactions occurred is not required" — $t_x$ (recency) and $x$ (frequency) are sufficient. Integrating out $\tau$ (Eqs. 12–14):
 >
 > $$
@@ -70,7 +72,9 @@ The NBD is the gamma-Poisson marginal of [[Single-Parameter Models]]; the Pareto
 >
 > The authors note "this is a new result, as SMC do not present an explicit expression for the model likelihood function."
 
-> [!theorem] Likelihood for a randomly chosen customer ^thm-pnbd-likelihood
+^thm-pnbd-individual-likelihood
+
+> [!theorem] Likelihood for a randomly chosen customer
 > Taking the expectation over the two gammas (Eq. 18):
 >
 > $$
@@ -85,9 +89,11 @@ The NBD is the gamma-Poisson marginal of [[Single-Parameter Models]]; the Pareto
 >
 > and for $\alpha \le \beta$ (Eq. 20) the same with second argument $r+x$, ratio $\tfrac{\beta-\alpha}{\beta+\cdot}$ and base $(\beta+\cdot)$. Two forms are needed because the series for ${}_2F_1(a,b;c;z)$ converges only for $|z|<1$; choosing the branch by the sign of $\alpha-\beta$ keeps $z \in [0,1)$ (Sec. 2.1). Parameters are estimated by maximizing $\sum_i \ln L(r,\alpha,s,\beta \mid x_i,t_{x_i},T_i)$.
 
+^thm-pnbd-likelihood
+
 The derivation trick (Sec. 2.1) is a change of variables $p=\mu/(\lambda+\mu)$, $z=\lambda+\mu$ (Jacobian $z$), which turns every double integral of the form $\iint \lambda^\gamma\mu^\delta (\lambda+\mu)^{-1}e^{-(\lambda+\mu)t}g(\lambda)g(\mu)$ into Euler's integral for ${}_2F_1$. A second route (Eq. 21) integrates over $\lambda,\mu$ first and $\tau$ last, displaying the likelihood as "NBD likelihood × Pareto survivor" plus an integral over death times.
 
-> [!theorem] Mean of the Pareto/NBD ^thm-pnbd-mean
+> [!theorem] Mean of the Pareto/NBD
 > Conditional on the traits, $E[X(t)\mid\lambda,\mu] = \frac{\lambda}{\mu}\left(1-e^{-\mu t}\right)$ (Eq. 26); for a randomly chosen customer (Eq. 27, SMC Eq. 17), for $s \neq 1$,
 >
 > $$
@@ -96,7 +102,9 @@ The derivation trick (Sec. 2.1) is a change of variables $p=\mu/(\lambda+\mu)$, 
 >
 > This drives the aggregate tracking plot of cumulative repeat sales for a cohort.
 
-> [!theorem] Probability alive ^thm-pnbd-palive
+^thm-pnbd-mean
+
+> [!theorem] Probability alive
 > By Bayes' theorem $P(\tau>T \mid \lambda,\mu,x,t_x,T) = \lambda^x e^{-(\lambda+\mu)T}/L(\lambda,\mu\mid x,t_x,T)$, which simplifies to SMC's (A10) (Eq. 31):
 >
 > $$
@@ -112,7 +120,9 @@ The derivation trick (Sec. 2.1) is a change of variables $p=\mu/(\lambda+\mu)$, 
 >
 > The individual-level form shows the mechanics: $P(\text{alive})$ decays with the silence $T-t_x$ at rate $\lambda+\mu$, so a *high-frequency* customer is declared dead much sooner after going quiet — the root of the "increasing frequency paradox" in [[RFM Sufficient Statistics and Iso-Value Curves]]. (The note also flags an error in SMC's Eq. A25.)
 
-> [!theorem] Conditional expectation of future purchases ^thm-pnbd-conditional-expectation
+^thm-pnbd-palive
+
+> [!theorem] Conditional expectation of future purchases
 > Let $Y(t)$ be purchases in $(T,T+t]$. If alive at $T$, memorylessness gives $E[Y(t)\mid\lambda,\mu,\text{alive}] = \frac{\lambda}{\mu}(1-e^{-\mu t})$ (Eq. 38). Multiplying by $P(\text{alive})$ and averaging over the posterior (Eq. 41 rearranged; SMC Eq. 22):
 >
 > $$
@@ -120,6 +130,8 @@ The derivation trick (Sec. 2.1) is a change of variables $p=\mu/(\lambda+\mu)$, 
 > $$
 >
 > The second factor is the Pareto/NBD mean (above) with **updated parameters** $r\to r+x$, $\alpha\to\alpha+T$, $\beta\to\beta+T$ — the conjugate gamma posterior of a customer who survived to $T$.
+
+^thm-pnbd-conditional-expectation
 
 **Estimation difficulty.** Fader, Hardie & Lee (2005, Marketing Science, Sec. 2) describe the likelihood as "quite complex, involving numerous evaluations of the Gaussian hypergeometric function", whose numerical precision "can vary substantially over the parameter space", causing trouble for optimizers; they knew of only one published MLE implementation (Reinartz & Kumar 2003), and SMC's own three-step method-of-moments procedure lacks MLE's properties. Their own Pareto/NBD fit had to be done in MATLAB.
 

@@ -51,13 +51,17 @@ Bookkeeping also differs: Hoffmann et al. count all parameters and all FLOPs inc
 
 ## Main Content
 
-> [!algorithm] Approach 1: minimum over training curves ^alg-approach-1
+> [!algorithm] Approach 1: minimum over training curves
 > (Sec. 3.1.) For each model size (70M to 10B), train four runs whose cosine schedules decay 10x over horizons spanning a 16x range. Smooth and interpolate each loss curve as a function of FLOPs. At each of 1,500 log-spaced FLOP values, record which run attains the lowest loss, giving the envelope $(C, N, D)$. Fit power laws to the envelope: $a = 0.50$, $b = 0.50$.
 
-> [!algorithm] Approach 2: IsoFLOP profiles ^alg-approach-2
+^alg-approach-1
+
+> [!algorithm] Approach 2: IsoFLOP profiles
 > (Sec. 3.2.) Fix 9 budgets from $6 \times 10^{18}$ to $3 \times 10^{21}$ FLOPs. At each, train models of varying size (up to 16B) with $D = C/(6N)$ and the cosine schedule matched to $D$. Plot final loss against $N$: each budget shows "a clear valley in loss". Fit a parabola in $\log N$ to locate the minimum, then fit power laws through the minima: $a = 0.49$, $b = 0.51$.
 
-> [!algorithm] Approach 3: parametric loss fit ^alg-approach-3
+^alg-approach-2
+
+> [!algorithm] Approach 3: parametric loss fit
 > (Sec. 3.3, Appendix D.2.) Model all final losses as
 >
 > $$
@@ -73,7 +77,9 @@ Bookkeeping also differs: Hoffmann et al. count all parameters and all FLOPs inc
 >
 > Result (Eq. 10): $E = 1.69$, $A = 406.4$, $B = 410.7$, $\alpha = 0.34$, $\beta = 0.28$. The Huber loss matters: larger $\delta$ "pushes the model to overfit the small compute regime and poorly predict held-out data from larger runs".
 
-> [!theorem] Closed-form efficient frontier ^thm-frontier
+^alg-approach-3
+
+> [!theorem] Closed-form efficient frontier
 > Minimizing $\hat L$ subject to $6ND = C$ (Eq. 4):
 >
 > $$
@@ -90,6 +96,8 @@ Bookkeeping also differs: Hoffmann et al. count all parameters and all FLOPs inc
 > $$
 >
 > i.e. the elasticity-weighted reducible losses from "too few parameters" and "too little data" are balanced. With the fitted values, $a = 0.46$ and $b = 0.54$.
+
+^thm-frontier
 
 | Approach | $a$ ($N_{\text{opt}} \propto C^a$) | $b$ ($D_{\text{opt}} \propto C^b$) |
 |---|---|---|

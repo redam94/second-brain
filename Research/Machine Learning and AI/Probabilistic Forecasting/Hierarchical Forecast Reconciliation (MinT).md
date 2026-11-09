@@ -47,7 +47,7 @@ Reconciliation keeps the third strategy and repairs its incoherence — and, bec
 
 ## Main Content
 
-> [!definition] Summing matrix, base and reconciled forecasts (Sec. 2.1) ^def-summing-matrix
+> [!definition] Summing matrix, base and reconciled forecasts (Sec. 2.1)
 > Let $y_t\in\mathbb R^m$ stack all series and $b_t\in\mathbb R^n$ the bottom-level series. Then
 >
 > $$
@@ -68,12 +68,16 @@ Reconciliation keeps the third strategy and repairs its incoherence — and, bec
 >
 > $P$ maps base forecasts to bottom-level forecasts, and $S$ sums them up. Bottom-up is $P=[\,0_{n\times(m-n)}\ \ I_n\,]$; top-down is $P=[\,p\ \ 0_{n\times(m-1)}\,]$ for proportions $p$.
 
-> [!theorem] Unbiasedness condition ^thm-unbiased
+^def-summing-matrix
+
+> [!theorem] Unbiasedness condition
 > If the base forecasts are unbiased, $\mathbb E[\hat y_T(h)\mid\mathcal I_T]=S\beta_T(h)$, the reconciled forecasts are unbiased **iff** $SPS=S$, equivalently $PS=I_n$ (Sec. 2.1). Top-down violates this.
+
+^thm-unbiased
 
 **Why the 2011 GLS approach fails (Sec. 2.2).** Hyndman et al. modelled $\hat y_T(h)=S\beta_T(h)+\varepsilon_h$ with coherency-error covariance $\Sigma_h$, giving $P=(S^\top\Sigma_h^\dagger S)^{-1}S^\top\Sigma_h^\dagger$. But the residuals are $(I_m-SP)\hat y$, and $I_m-SP$ is idempotent with rank $m-n<m$, so $\Sigma_h$ **cannot be identified**. They fell back to OLS, $P=(S^\top S)^{-1}S^\top$.
 
-> [!theorem] Lemma 1 — covariance of reconciled forecast errors ^thm-mint-lemma1
+> [!theorem] Lemma 1 — covariance of reconciled forecast errors
 > For any $P$ with $SPS=S$,
 >
 > $$
@@ -83,7 +87,9 @@ Reconciliation keeps the third strategy and repairs its incoherence — and, bec
 >
 > where $\hat e_t(h)=y_{t+h}-\hat y_t(h)$ are the **base forecast errors**. *Proof sketch* (App. A.1): $\tilde e=SP\hat e+(I-SP)y_{t+h}$ and $(I-SP)S=0$. Under Gaussian errors this yields prediction intervals for *any* unbiased reconciliation method.
 
-> [!theorem] Theorem 1 — MinT reconciliation ^thm-mint
+^thm-mint-lemma1
+
+> [!theorem] Theorem 1 — MinT reconciliation
 > Let $W_h$ be positive definite. The $P$ that minimises $\operatorname{tr}[SPW_hP^\top S^\top]$ subject to $SPS=S$ is
 >
 > $$
@@ -98,6 +104,8 @@ Reconciliation keeps the third strategy and repairs its incoherence — and, bec
 >
 > where $S^\top=[\,C^\top\ \ I_n\,]$, $J=[\,0_{n\times m^*}\ \ I_n\,]$, $U^\top=[\,I_{m^*}\ \ -C\,]$ and $m^*=m-n$ is the number of aggregate series. The second form inverts a single $m^*\times m^*$ matrix rather than an $n\times n$ and an $m\times m$ one, which is what makes MinT scale.
 
+^thm-mint
+
 The reconciled forecasts are therefore the **GLS projection of $\hat y$ onto the coherent subspace** $\{\check y:U^\top\check y=0\}$ in the metric $W_h^{-1}$:
 
 $$
@@ -105,7 +113,7 @@ $$
 =\hat y-W_hU(U^\top W_hU)^{-1}U^\top\hat y .
 $$
 
-> [!theorem] Reconciliation never hurts (Sec. 2.3) ^thm-mint-pythagoras
+> [!theorem] Reconciliation never hurts (Sec. 2.3)
 > By the generalised Pythagorean inequality for this projection, for every coherent realisation $y_{T+h}$,
 >
 > $$
@@ -113,6 +121,8 @@ $$
 > $$
 >
 > MinT forecasts are "at least as good as the incoherent base forecasts." The authors conclude that "applying forecast reconciliation should always be preferred, and approaches that use limited information such as bottom-up or top-down should be avoided" (Sec. 5).
+
+^thm-mint-pythagoras
 
 Under the "error-additivity" assumption $\hat e=S\hat a$ (so $W_h=SV_hS^\top$ is singular), *every* unbiased $P$ attains the same variance; the Moore–Penrose inverse in the first form gives OLS and in the second gives bottom-up — explaining why both earlier methods appeared "optimal."
 

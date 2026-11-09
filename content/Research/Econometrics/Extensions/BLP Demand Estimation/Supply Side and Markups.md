@@ -34,7 +34,7 @@ Including supply gives a model of marginal costs, enabling counterfactuals (merg
 
 ## Main Content
 
-> [!definition] Bertrand-Nash pricing FOCs and the markup ^foc
+> [!definition] Bertrand-Nash pricing FOCs and the markup
 > Multiproduct firm $f$ controlling products $J_{ft}$ maximizes $\max_{p_{jt}}\sum_{j\in J_{ft}} s_{jt}(\boldsymbol{p}_t)(p_{jt}-c_{jt})$. The FOCs in matrix form for market $t$:
 > $$
 > \boldsymbol{s}_t(\boldsymbol{p}_t) = \Delta_t(\boldsymbol{p}_t)\cdot(\boldsymbol{p}_t - \boldsymbol{c}_t), \qquad \underbrace{\Delta_t(\boldsymbol{p}_t)^{-1}\boldsymbol{s}_t(\boldsymbol{p}_t)}_{\eta_t(\boldsymbol{p}_t, \boldsymbol{s}_t, \theta_2)} = \boldsymbol{p}_t - \boldsymbol{c}_t.
@@ -45,14 +45,18 @@ Including supply gives a model of marginal costs, enabling counterfactuals (merg
 > $$
 > the **Hadamard (element-wise) product** of the demand-derivative matrix ($\partial s_{jt}/\partial p_{kt}$) and the **ownership matrix** $\mathcal{H}_t$ (entry $(j,k)=1$ if the same firm produces $j$ and $k$, else 0). Alternative conduct (single-product, monopoly, Cournot, partial collusion) corresponds to different $\mathcal{H}_t$; Miller-Weinberg (2017) / Backus et al. (2020) even estimate a conduct parameter $\mathcal{H}_t(\kappa)$.
 
-> [!definition] Marginal cost parameterization and supply moments ^supply-moments
+^foc
+
+> [!definition] Marginal cost parameterization and supply moments
 > Recover $c_{jt} = p_{jt} - \eta_{jt}(\theta_2)$, then parameterize marginal cost:
 > $$
 > f_{MC}(p_{jt}-\eta_{jt}(\theta_2)) = f_{MC}(c_{jt}) = x_{jt}\gamma_1 + w_{jt}\gamma_2 + \omega_{jt},
 > $$
 > with $f_{MC}(\cdot)$ commonly the identity (or $\log$ to keep costs positive). The cost depends on product characteristics $x_{jt}$ and **cost shifters $w_{jt}$ excluded from demand**. This yields the supply moment condition $E[\omega_{jt}Z^S_{jt}]=0$, stacked with the demand moments in the GMM objective.
 
-> [!definition] Solving counterfactual pricing equilibria ^equilibrium
+^supply-moments
+
+> [!definition] Solving counterfactual pricing equilibria
 > Counterfactuals (mergers, cost changes) require solving the $J_t\times J_t$ nonlinear system for new equilibrium prices, replacing $\mathcal{H}_t$ with a post-merger $\mathcal{H}^*_t$:
 > $$
 > \boldsymbol{p}_t = \boldsymbol{c}_t + \eta_t(\boldsymbol{p}_t, \mathcal{H}^*_t).
@@ -62,6 +66,8 @@ Including supply gives a model of marginal costs, enabling counterfactuals (merg
 > \boldsymbol{p}_t \leftarrow \boldsymbol{c}_t + \zeta_t(\boldsymbol{p}_t), \quad \zeta_t(\boldsymbol{p}_t) = \Lambda_t^{-1}[\mathcal{H}^*_t \odot \Gamma_t](\boldsymbol{p}_t-\boldsymbol{c}_t) - \Lambda_t^{-1}\boldsymbol{s}_t(\boldsymbol{p}_t),
 > $$
 > which is **3-12x faster** than Newton-type approaches and reliably finds an equilibrium. Fast, reliable equilibrium solving is also what makes the **feasible optimal instruments** computable.
+
+^equilibrium
 
 ## Examples
 

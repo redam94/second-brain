@@ -41,12 +41,14 @@ The paper evaluates five model families (GPT-3/InstructGPT 350M–175B, LaMDA 42
 
 ## Main Content
 
-> [!definition] Chain of thought ^def-cot
+> [!definition] Chain of thought
 > A **chain of thought** is "a coherent series of intermediate reasoning steps that lead to the final answer for a problem" (Sec. 2). **Chain-of-thought prompting** supplies a few demonstrations of such chains as exemplars in a few-shot prompt, so that the model generates its own chain before the final answer at test time. Writing $x$ for the question, $r$ for the rationale and $y$ for the answer, the prompt is $(x_1, r_1, y_1), \dots, (x_k, r_k, y_k), x_{\text{test}}$ and the model autoregressively decodes $r_{\text{test}}$ and then $y_{\text{test}}$ — so the answer is conditioned on the generated reasoning.
+
+^def-cot
 
 **Four properties claimed (Sec. 2).** (1) Decomposition lets the model allocate more computation (more generated tokens) to problems needing more steps. (2) The chain gives "an interpretable window into the behavior of the model", useful for debugging — with the caveat that fully characterising the supporting computation "remains an open question". (3) It applies in principle to any task a human can solve via language. (4) It is elicited from off-the-shelf models with no fine-tuning.
 
-> [!theorem] Empirical finding — CoT is an emergent ability of scale ^thm-emergence
+> [!theorem] Empirical finding — CoT is an emergent ability of scale
 > On arithmetic benchmarks (Table 2, Appendix B), CoT "does not positively impact performance for small models, and only yields performance gains when used with models of $\sim$100B parameters" (Sec. 3.2). GSM8K solve rates, standard $\to$ CoT:
 >
 > | Model | Standard | CoT |
@@ -62,13 +64,17 @@ The paper evaluates five model families (GPT-3/InstructGPT 350M–175B, LaMDA 42
 >
 > Prior supervised best on GSM8K: 55% (fine-tuned GPT-3 175B + verifier, Cobbe et al. 2021).
 
+^thm-emergence
+
 Two further regularities: gains are larger on harder problems (GSM8K more than doubles, while the single-step SingleOp subset of MAWPS is flat or slightly negative — PaLM 540B 94.1 $\to$ 94.1), and the multi-step MultiArith subset jumps from 42.2 to 94.7 for PaLM 540B (Table 3).
 
-> [!example] Ablations — what is actually doing the work? (Sec. 3.3, Fig. 5) ^ex-ablations
+> [!example] Ablations — what is actually doing the work? (Sec. 3.3, Fig. 5)
 > Three alternative prompts test competing explanations, using LaMDA 137B and PaLM 540B on GSM8K:
 > - **Equation only** — emit just the equation before the answer. Little help on GSM8K (the semantics are too hard to translate directly), though it does help on one- and two-step datasets.
 > - **Variable compute only** — emit a string of dots ("...") of the same length as the equation, isolating "more tokens = more compute". Performs about the same as baseline, so extra computation alone is not the mechanism.
 > - **Reasoning after answer** — give the chain *after* the answer, testing whether CoT merely activates relevant knowledge. Also about baseline, so the answer genuinely depends on the sequentially generated reasoning.
+
+^ex-ablations
 
 **Robustness (Sec. 3.4, Fig. 6).** Prompting methods are notoriously exemplar-sensitive (GPT-3 on SST-2 ranges from 54.3% to 93.4% across exemplar permutations, Zhao et al. 2021). For CoT, chains written by three different annotators, a deliberately concise style, and three sets of exemplars sampled from the GSM8K training set all outperform standard prompting by a large margin on LaMDA 137B; results are also robust to exemplar order and number (Appendix A.2).
 
@@ -76,8 +82,10 @@ Two further regularities: gains are larger on harder problems (GSM8K more than d
 
 **Error analysis (Sec. 3.2, Appendix D).** For LaMDA 137B on GSM8K, of 50 correct answers all but two had logically correct chains. Of 50 wrong answers, 46% were *almost correct* (8% calculator error only, 16% symbol-mapping error, 22% one step missing) and 54% had major semantic or coherence errors. Scaling PaLM 62B $\to$ 540B fixes a large share of the one-step-missing and semantic-understanding errors (Appendix A.1).
 
-> [!definition] External calculator post-processing ^def-ext-calc
+> [!definition] External calculator post-processing
 > Because many chains are right except for arithmetic, the authors run Python `eval` on every equation in the generated chain and propagate the corrected values forward by string matching (Appendix B, Table 1). This lifts PaLM 540B on GSM8K from 56.9 to 58.6 and LaMDA 137B from 14.3 to 17.8. It is the simplest instance of [[Tool Use and the Agent Loop|tool use]]: the model plans, a deterministic tool computes.
+
+^def-ext-calc
 
 **Limitations stated by the authors (Sec. 6).** (i) Emulating human reasoning "does not answer whether the neural network is actually 'reasoning'"; (ii) annotation cost is trivial for few-shot use but could be prohibitive for fine-tuning; (iii) "there is no guarantee of correct reasoning paths", which can yield both correct and incorrect answers; (iv) emergence only at large scale makes CoT costly to serve. Point (iii) is precisely what [[ReAct - Reasoning and Acting Agents|ReAct]] later quantifies: 56% of CoT failures on HotpotQA are hallucinated facts.
 

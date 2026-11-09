@@ -60,7 +60,7 @@ and **three forces** moving the frontier (Sec. 2): (A) the machine-learning revo
 
 ## Main Content
 
-> [!definition] Simulation-based inference problem ^def-sbi
+> [!definition] Simulation-based inference problem
 > Given a prior $p(\theta)$, a simulator from which one can sample $x \sim p(x\mid\theta)$ but not evaluate $p(x\mid\theta)$, and an observation $x_o$, approximate the posterior
 >
 > $$
@@ -69,8 +69,12 @@ and **three forces** moving the frontier (Sec. 2): (A) the machine-learning revo
 >
 > Such models are called **implicit** models, in contrast to **prescribed** models whose likelihood can be written down (Cranmer et al., p. 1). Black-box SBI assumes neither differentiability of the simulator nor access to its internal random numbers (Lueckmann et al. 2021, Sec. 1).
 
-> [!definition] Surrogate (emulator) based inference ^def-surrogate
+^def-sbi
+
+> [!definition] Surrogate (emulator) based inference
 > Methods that "construct a surrogate model and use that for inference", as opposed to methods that, like ABC, "use the simulator itself during inference" (Sec. 3). Simulator output becomes *training data* for a learning stage; the trained surrogate is then queried instead of the simulator. This is what makes the expensive stage reusable, i.e. amortized.
+
+^def-surrogate
 
 ### The three neural targets
 
@@ -82,11 +86,13 @@ Cranmer et al. (Sec. 3.B, Fig. 3e-g) organize the neural methods by which condit
 | **NLE** | $q_\phi(x\mid\theta) \approx p(x\mid\theta)$ | conditional density estimation | MCMC or VI on $q_\phi(x_o\mid\theta)p(\theta)$ | [[Neural Likelihood Estimation and Sequential Neural Likelihood]] |
 | **NRE** | $\hat r(x,\theta) \approx p(x\mid\theta)/p(x)$ | binary / multi-class classification | MCMC on $\hat r(x_o,\theta)p(\theta)$ | [[Neural Ratio Estimation]] |
 
-> [!theorem] Trade-offs among the three targets (Cranmer et al., Sec. 3.B, p. 7) ^thm-tradeoffs
+> [!theorem] Trade-offs among the three targets (Cranmer et al., Sec. 3.B, p. 7)
 > - **Posterior.** "Learning the posterior directly provides the main target quantity in Bayesian inference, but induces a prior dependence at every stage of the inference method."
 > - **Likelihood / ratio.** These enable "frequentist inference or model comparisons, though for Bayesian inference an additional MCMC or VI step is necessary." Prior independence gives "extra flexibility to change the prior during inference."
 > - **Generative vs discriminative.** Likelihood and posterior surrogates can be *sampled*; but "learning the likelihood or posterior is an unsupervised learning problem, whereas estimating the likelihood ratio through a classifier is an example of supervised learning and often a simpler task."
 > - **All three** are amortized, all "require an upfront specification of the parameters of interest" with the network implicitly marginalizing over the latents $z$, and all can adopt an iteratively updated proposal (active learning).
+
+^thm-tradeoffs
 
 ### How the neural methods sit relative to the classical ones
 
@@ -98,11 +104,13 @@ Cranmer et al. (Sec. 3.B, Fig. 3e-g) organize the neural methods by which condit
 
 If the simulator exposes more than samples, Cranmer et al. (Sec. 2.C) list six extractable quantities, including the **joint score** $t(x,z\mid\theta) = \nabla_\theta \log p(x,z\mid\theta)$ and the **joint likelihood ratio** $r(x,z\mid\theta,\theta') = p(x,z\mid\theta)/p(x,z\mid\theta')$. These are tractable even though their marginal counterparts are not, and they can "augment" training data to turn surrogate fitting into a much more sample-efficient supervised problem. The marginal score is itself a locally sufficient summary statistic (Sec. 3.C). Probabilistic programming with inference compilation (Fig. 3d) goes further and infers the latent trace $z$ too. The same gradient-through-an-implicit-model ideas appear in experimental design in [[Likelihood-Free ACE and Gradient Estimation]].
 
-> [!example] Practitioner recommendations (Cranmer et al., Sec. 3.D, p. 8) ^ex-recommendations
+> [!example] Practitioner recommendations (Cranmer et al., Sec. 3.D, p. 8)
 > 1. If any of the augmented quantities (scores, joint ratios, differentiability, a probabilistic-programming interface) is available, use it.
 > 2. If powerful low-dimensional summaries already exist, traditional techniques remain reasonable.
 > 3. Otherwise "we recommend trying methods based on training a neural network surrogate for the likelihood or the likelihood ratio"; prefer the ratio when you do not need to sample synthetic data from the surrogate.
 > 4. Active learning helps every method, but "there is a tradeoff between active learning, which tailors the efficiency to a particular observed data set, and amortization." See [[Amortized vs Sequential Inference]].
+
+^ex-recommendations
 
 ### Relevance to marketing measurement and applied work
 

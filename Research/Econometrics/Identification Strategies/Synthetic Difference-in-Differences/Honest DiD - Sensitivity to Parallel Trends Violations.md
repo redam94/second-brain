@@ -50,14 +50,16 @@ The approach builds on Manski & Pepper (2018), who bounded DiD variation in thei
 
 ## Main Content
 
-> [!definition] Set-up and identified set ^def-honest-identified-set
+> [!definition] Set-up and identified set
 > Event-study coefficients $\hat\beta_n = (\hat\beta_{pre}^\top,\hat\beta_{post}^\top)^\top\in\mathbb R^{\underline T+\bar T}$ with $\sqrt n(\hat\beta_n-\beta)\to_d\mathcal N(0,\Sigma^*)$ and $\beta=\tau+\delta$, $\tau_{pre}=0$ ([[Event Study Designs and Dynamic Treatment Effects#^def-event-study-decomposition|decomposition]]). Target: a scalar $\theta = l^\top\tau_{post}$ (one period's effect, or the post-period average with $l = (1/\bar T,\dots,1/\bar T)^\top$). Assume $\delta\in\Delta$. The identified set is
 > $$
 > \mathcal S(\beta,\Delta) = \left\{\theta : \exists\,\delta\in\Delta,\ \tau_{post}\in\mathbb R^{\bar T}\ \text{s.t.}\ l^\top\tau_{post}=\theta,\ \beta = \delta + \begin{pmatrix}0\\ \tau_{post}\end{pmatrix}\right\}
 > $$
 > Exact parallel trends is the special case $\Delta=\{\delta:\delta_{post}=0\}$.
 
-> [!theorem] Lemma 2.1 — the identified set is an interval ^thm-honest-lemma21
+^def-honest-identified-set
+
+> [!theorem] Lemma 2.1 — the identified set is an interval
 > If $\Delta$ is closed and convex, $\mathcal S(\beta,\Delta) = [\theta^{lb},\theta^{ub}]$ with
 > $$
 > \theta^{lb} = l^\top\beta_{post} - \underbrace{\max_\delta\ l^\top\delta_{post}\ \ \text{s.t.}\ \delta\in\Delta,\ \delta_{pre}=\beta_{pre}}_{b^{max}(\beta_{pre},\Delta)}, \qquad
@@ -65,7 +67,9 @@ The approach builds on Manski & Pepper (2018), who bounded DiD variation in thei
 > $$
 > i.e. "point estimate minus worst-case bias, given the observed pre-trend." If $\Delta=\bigcup_k\Delta_k$, then $\mathcal S(\beta,\Delta)=\bigcup_k\mathcal S(\beta,\Delta_k)$, and a union of valid confidence sets is valid (Lemma 2.2).
 
-> [!definition] Restriction classes $\Delta$ (§2.4) ^def-honest-delta-classes
+^thm-honest-lemma21
+
+> [!definition] Restriction classes $\Delta$ (§2.4)
 > With $\delta_0=0$ at the reference period:
 >
 > **Relative magnitudes**
@@ -84,14 +88,18 @@ The approach builds on Manski & Pepper (2018), who bounded DiD variation in thei
 >
 > **Polyhedral class (Definition 1):** $\Delta=\{\delta:A\delta\le d\}$. $\Delta^{SD}$ is a polyhedron; $\Delta^{RM}$ and $\Delta^{SDRM}$ are finite unions of polyhedra (one per location and sign of the pre-period maximum). Bespoke restrictions — e.g. Ashenfelter's dip — fit the same template.
 
+^def-honest-delta-classes
+
 **Three-period illustration** ($\underline T=\bar T=1$): under $\Delta^{RM}(\bar M)$, $|\delta_1|\le\bar M|\delta_{-1}|$, so the identified set for $\tau_1$ is $\beta_1\pm\bar M|\beta_{-1}|$. Under $\Delta^{SD}(M)$, $\delta_1\in[-\delta_{-1}-M,\ -\delta_{-1}+M]$, so the set is $(\beta_1+\beta_{-1})\pm M$: extrapolate the pre-trend linearly, then allow slack $M$.
 
-> [!definition] Inferential goal — uniform ("honest") coverage ^def-honest-coverage
+> [!definition] Inferential goal — uniform ("honest") coverage
 > Under the normal approximation $\hat\beta_n\approx_d\mathcal N(\beta,\Sigma_n)$, find $\mathcal C_n$ with
 > $$
 > \inf_{\delta\in\Delta,\ \tau}\ \ \inf_{\theta\in\mathcal S(\delta+\tau,\Delta)}\ \mathbb P_{\hat\beta_n\sim\mathcal N(\delta+\tau,\Sigma_n)}\left(\theta\in\mathcal C_n(\hat\beta_n,\Sigma_n)\right)\ \ge\ 1-\alpha
 > $$
 > (eq. 10), which translates to uniform asymptotic coverage over a large class of DGPs with estimated $\hat\Sigma_n$ (eq. 11). Only $\hat\beta$ and its **full covariance matrix** are required — any estimator that delivers them (TWFE, Callaway–Sant'Anna, Sun–Abraham, IV event studies) can be plugged in.
+
+^def-honest-coverage
 
 ### Method 1 — moment inequalities (conditional / hybrid tests)
 
@@ -105,7 +113,7 @@ The nuisance parameters are the other $\bar T-1$ post-period effects. The test s
 
 ### Method 2 — fixed-length confidence intervals (FLCIs)
 
-> [!theorem] Optimal FLCI and its guarantees (§4) ^thm-honest-flci
+> [!theorem] Optimal FLCI and its guarantees (§4)
 > Consider $\mathcal C = (a+v^\top\hat\beta_n)\pm\chi$. For given $(a,v)$ the smallest valid half-length is
 > $$
 > \chi_n(a,v;\alpha) = \sigma_{v,n}\cdot cv_\alpha\left(\bar b(a,v)/\sigma_{v,n}\right), \qquad \sigma_{v,n}=\sqrt{v^\top\Sigma_nv}
@@ -120,6 +128,8 @@ The nuisance parameters are the other $\bar T-1$ post-period effects. The test s
 >
 > **Proposition 4.2:** an FLCI is consistent iff the identified set has its maximal possible length at the true $\delta$. For $\Delta^{RM}(\bar M)$ with $\bar M>0$ every affine estimator has *infinite* worst-case bias, so "the only valid FLCI is the entire real line"; FLCIs also ignore added sign/monotonicity restrictions.
 
+^thm-honest-flci
+
 **Recommendation (§5.2.5, §6.1.2):** FLCIs for $\Delta^{SD}(M)$; the ARP **hybrid** for everything else, including $\Delta^{RM}$. `HonestDiD` applies these defaults.
 
 ### Choosing $\Delta$ and reporting
@@ -132,11 +142,15 @@ The nuisance parameters are the other $\bar T-1$ post-period effects. The test s
 
 ## Examples
 
-> [!example] Benzarti & Carloni — French restaurant VAT cut (§6.2) ^ex-honest-vat
+> [!example] Benzarti & Carloni — French restaurant VAT cut (§6.2)
 > Event study of log restaurant profits vs other service firms, VAT cut July 2009. The pre-test **fails**: $\beta_{pre}=0$ is rejected ($p<0.01$). Industry-specific shocks, not smooth trends, are the concern, so use $\Delta^{RM}(\bar M)$. For the 2009 effect, $\bar M=1$ gives a robust confidence set of **$[0.07,\ 0.31]$** — wider than OLS but excluding zero. The **breakdown value is $\bar M\approx2$**: the conclusion survives unless post-period shocks were more than twice the largest pre-period shock (2009 was a recession, so this is a live question). For the four-year *average* effect, the $\bar M=1$ set already includes zero and is about twice as wide. Confidence sets are 40–80% longer than the estimated identified set — both sources of uncertainty matter.
 
-> [!example] Lovenheim & Willén — duty-to-bargain laws (§6.3) ^ex-honest-dtb
+^ex-honest-vat
+
+> [!example] Lovenheim & Willén — duty-to-bargain laws (§6.3)
 > Long-run employment effects, concern = smooth secular trends, so $\Delta^{SD}(M)$ with FLCIs for $\theta=\tau_{15}$. **Men:** robust sets resemble OLS near $M=0$; breakdown at $M\approx0.01$. **Women:** OLS is significantly *negative*, but a visible downward pre-trend means that for $M<0.01$ the robust set contains only **positive** values — the point estimate lies above the linear extrapolation of the pre-trend. Calibration: $M=0.01$ equals the employment effect of $1/40$ s.d. of teacher value-added per period. Also note the reference period was moved from $-1$ to $-2$ because cohorts at $-1$ may be partially treated — honest sets *require* $\tau_{pre}=0$.
+
+^ex-honest-dtb
 
 Workflow sketch in R:
 

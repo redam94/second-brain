@@ -55,12 +55,14 @@ His running example of a time series is the monthly unemployment rate, gathered 
 
 **Why the lecture has no figures.** Granger deliberately replaces a chart with a thought experiment: "Rather than show a diagram, I would rather you use internal visualization (I think that you learn more that way)." (p. 360) The whole lecture contains no diagrams or tables; the pearl pictures stand in for them. The [[Granger 2003 - Spurious Regression Monte Carlo in Python|simulation note]] supplies the plots he chose not to show.
 
-> [!example] Granger's string-of-pearls picture (p. 360) ^ex-pearls
+> [!example] Granger's string-of-pearls picture (p. 360)
 > **Setup (Granger's own words):** "Suppose that you have a loosely strung string of pearls which you throw down, gently, onto a hard table top with the string of pearls roughly stretched out. You will have created a time series with time represented by the distance down the table, the size of the variable as the distance from the bottom edge of the table to a point, and the set of pearls giving the points in the series." (p. 360)
 >
 > **Key property:** "As the placement of one pearl will impact where the next one lies, because they are linked together, this series will appear to be rather smooth, and will not have big fluctuations in value for one term to the next." (p. 360)
 >
 > **Formal reading:** the position of pearl $t$ is the position of pearl $t-1$ plus a small bounded displacement — a random walk $x_t = x_{t-1} + u_t$ with small-variance increments. Later (p. 361) Granger states this explicitly: "The string of pearls would be 'integrated' as it is a smooth series."
+
+^ex-pearls
 
 ### Data frequencies (pp. 360-361)
 
@@ -82,19 +84,23 @@ Granger continues: many series in finance and macroeconomics "do not have this p
 
 The lecture does not write the definitions down; the standard ones it relies on are:
 
-> [!definition] Weak (covariance) stationarity ^def-stationarity-granger
+> [!definition] Weak (covariance) stationarity
 > A process $\{x_t\}$ is (weakly) **stationary** if $\mathbb{E}[x_t] = \mu$ for all $t$, $\operatorname{Var}(x_t) = \sigma^2 < \infty$ for all $t$, and $\operatorname{Cov}(x_t, x_{t-k}) = \gamma_k$ depends only on the lag $k$, not on $t$. (Standard definition; see [[Single Marketing Time Series#^def-stationarity|stationarity in Single Marketing Time Series]].)
 
-> [!definition] Integrated of order $d$, $I(d)$ ^def-integrated
+^def-stationarity-granger
+
+> [!definition] Integrated of order $d$, $I(d)$
 > A series $x_t$ is **integrated of order $d$**, written $x_t \sim I(d)$, if it must be differenced $d$ times to obtain a stationary, invertible ARMA process: $\Delta^d x_t = (1-L)^d x_t \sim I(0)$, with $L$ the lag operator ($L x_t = x_{t-1}$) and $\Delta = 1 - L$. A stationary series is $I(0)$; a random walk $x_t = x_{t-1} + u_t$ with $u_t$ i.i.d. $(0,\sigma^2)$ is $I(1)$, and its variance $\operatorname{Var}(x_t \mid x_0) = t\sigma^2$ grows without bound.
 >
 > **Granger's terminological point (p. 361):** "integrated" is the precise word; Granger says such series are called, "sometimes incorrectly, 'non-stationary'" (p. 361). The lecture does not say why; the standard reason (this note's gloss) is that non-stationarity covers many other departures (deterministic trends, breaks, changing variance) that differencing does not cure. An $I(1)$ series is the specific non-stationarity removed by taking "changes or rates of returns" (p. 361) — for a log-level series, the first difference is the growth rate.
+
+^def-integrated
 
 Earlier single-series methods: "Methods to analyze a single integrated series had been proposed previously by Box and Jenkins (1970) and others, but the joint analysis of pairs, or more, of such series was missing an important feature." (p. 361) — the Box-Jenkins ARIMA framework ([[Single Marketing Time Series#^def-arima|ARIMA]]) handles one integrated series by differencing; what was missing was how two of them can be jointly related. That missing feature is cointegration, developed in [[Granger 2003 - Cointegration and the Error-Correction Representation]].
 
 ### Two chains with and without magnets (p. 361)
 
-> [!example] Two independent chains vs magnetised chains (p. 361) ^ex-magnets
+> [!example] Two independent chains vs magnetised chains (p. 361)
 > **Independent chains:** "Suppose that we had two similar chains of pearls and we threw each on the table separately, but for ease of visualization, they do not cross one another. Each would represent smooth series but would follow different shapes and have no relationship. The distances between the two sets of pearls would also give a smooth series if you plotted it." (p. 361)
 >
 > *Formal reading:* $x_t, y_t$ independent $I(1)$; then $y_t - x_t$ is also $I(1)$ (a sum of independent random walks is a random walk). Any linear combination wanders — **no cointegration**. This is exactly the setting in which a levels regression of $y$ on $x$ is **spurious** ([[Granger 2003 - Spurious Regression from Yule to Granger-Newbold]]).
@@ -103,14 +109,18 @@ Earlier single-series methods: "Methods to analyze a single integrated series ha
 >
 > *Formal reading:* $x_t, y_t \sim I(1)$ but $y_t - \beta x_t \sim I(0)$ — the magnets are the error-correcting force pulling the gap back toward its mean.
 
+^ex-magnets
+
 ## Examples
 
-> [!example] Marketing reading: which series are pearls? ^ex-marketing-pearls
+> [!example] Marketing reading: which series are pearls?
 > **Setup:** weekly marketing data for one brand, 52-156 rows: unit sales, brand search volume, cumulative distribution (store count), TV GRPs, paid-search spend, a price index.
 >
 > **Classification by the pearls test:** series whose next value is "tied" to the last — sales levels of a growing brand, search volume, distribution, a price index with permanent changes — behave like strings of pearls and are plausibly $I(1)$; flighted media (on/off bursts of GRPs) and promotions jump around a fixed mean and are plausibly $I(0)$. Their **changes** (week-over-week growth) are the "derived series" Granger says are "closer to being stationary" (p. 361).
 >
 > **Why it matters:** an $I(1)$ KPI regressed on $I(0)$ media, or two independent $I(1)$ series regressed on one another, breaks the standard-statistics assumption Granger flags; see the decision table in [[Granger 2003 - Spurious Regression from Yule to Granger-Newbold]] and unit-root tooling in [[Single Marketing Time Series]].
+
+^ex-marketing-pearls
 
 ## Connections
 

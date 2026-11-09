@@ -41,21 +41,25 @@ A key warning from Ch. 14 (Key Points): despite the name "linear" algebra, **mat
 
 ### The problem
 
-> [!definition] The spd linear problem ^def-problem
+> [!definition] The spd linear problem
 > Given a **symmetric positive-definite** matrix $A\in\mathbb{R}^{N\times N}$ (so $A=A^\top$ and $v^\top A v>0$ for all $v\neq 0$) and a right-hand side $b\in\mathbb{R}^N$, find $x\in\mathbb{R}^N$ solving
 > $$Ax=b, \qquad A\ \text{spd},\ x,b\in\mathbb{R}^N. \tag{16.1}$$
 > Because $A$ is spd it is invertible; its inverse is given a dedicated symbol
 > $$A^{-1}=:H,$$
 > ("$H$" is historic convention for inverse Hessians). Solving for general $b$ means finding $H$; solving for one specific $b$ means finding the single vector $x=Hb$.
 
+^def-problem
+
 Symbols: $N$ = dimension; $A$ = system matrix (spd); $b$ = right-hand side; $x$ = sought solution; $H=A^{-1}$ = matrix inverse.
 
-> [!definition] Least-squares / quadratic form ^def-quadratic
+> [!definition] Least-squares / quadratic form
 > Equation (16.1) is equivalent to the unconstrained minimisation of the convex quadratic
 > $$f(x)=\tfrac12 x^\top A x - x^\top b, \tag{16.2}$$
 > whose unique minimiser is $x=A^{-1}b$. Its gradient is the **residual**
 > $$r(x):=\nabla f(x)=Ax-b, \tag{16.3}$$
 > and its Hessian is the constant matrix $\nabla\nabla^\top f(x)=A$. The problem is solved iff $r(x)=0$. The terms "residual" and "gradient" are used interchangeably.
+
+^def-quadratic
 
 This dual view (linear system $\equiv$ convex quadratic minimisation) is the bridge to Part IV: least-squares estimation underlies Gaussian process regression (§4.2), and estimating spd Hessians and their inverses reappears in nonlinear optimisation. Iterative linear solvers connect to eigen/singular-value decompositions through the **Krylov sequence**.
 
@@ -65,7 +69,7 @@ The "pedestrian" solution is **Gaussian elimination** (LU decomposition, $\mathc
 
 **Iterative** solvers (prototype: Conjugate Gradients) instead continuously improve an initial guess $\hat{x}_0$, with $\mathcal{O}(N^2)$ cost per step, so they can be stopped at $i\ll N$ and already provide a good estimate. This "improve a point estimate over the run" behaviour is exactly what a probabilistic solver needs — it is what lets us assign uncertainty to an *incompletely* solved problem.
 
-> [!example] Conjugate Gradients (CG), basic form ^ex-cg-alg
+> [!example] Conjugate Gradients (CG), basic form
 > `CG(A(·), b, x₀)` (Algorithm 16.1). Initialise $r_0=Ax_0-b$, $d_0=0$, $\beta_0=0$. For $i=1,\dots,N$:
 > 1. $d_i=-r_{i-1}+\beta_{i-1}d_{i-1}$ — compute direction
 > 2. $z_i=Ad_i$ — **the one matrix-vector multiplication** (the expensive step)
@@ -78,15 +82,19 @@ The "pedestrian" solution is **Gaussian elimination** (LU decomposition, $\mathc
 >
 > The dominant cost is the single product $z_i=Ad_i$; every other line is $\mathcal{O}(N)$ or $\mathcal{O}(1)$. Two control parameters: $\alpha$ (how the observed projection updates $x_i$) and $\beta$ (which projection to take next). This split of "estimation" ($\alpha$, inference) from "action" ($\beta$, policy) is the agent structure reused from the integration chapter — see [[The Numerical Agent]].
 
+^ex-cg-alg
+
 ### Evaluation strategies: matrix-vector products as observations
 
 A probabilistic linear solver mimicking CG's *structure* proceeds by collecting observations of matrix-vector products $z_i=Ad_i$ for smartly chosen vectors $d_i$ (called **search directions** or **projections**). Collecting the $d_1,\dots,d_i$ as columns of $D_i$ and the $z_1,\dots,z_i$ as columns of $Z_i$, the whole observation set after $M$ steps is
 $$Z_i=AD_i,\qquad Z_i,D_i\in\mathbb{R}^{N\times M}.$$
 After each step the solver holds a posterior $p(A\mid D_i,Z_i)$, used both to form an estimate $x_i$ and to choose the next action $d_{i+1}$.
 
-> [!definition] Consistency of the estimator ^def-consistency
+> [!definition] Consistency of the estimator
 > The minimal assumption on the (as-yet-abstract) inference scheme is that it is **consistent** with the observations: it puts zero measure on all matrices $\tilde A$ with $\tilde A D_i\neq Z_i$. Consequently, any reasonable point estimators $A_i$ (for $A$) and $H_i$ (for $H=A^{-1}$) must satisfy
 > $$A_i D_i=Z_i\qquad\text{and}\qquad H_i Z_i=D_i.$$
+
+^def-consistency
 
 The crucial policy question: **how should the solver choose the next action $d_{i+1}$?**
 
@@ -104,12 +112,14 @@ This lets the residual be updated in $\mathcal{O}(N)$ time without a second matr
 $$r(x_{i+1})=A(x_{i+1}-x_i)+r(x_i)=z_{i+1}+r(x_i).$$
 Intuition (Fig. 17.1): the residual is the gradient of $f$, i.e. the direction of maximal improvement — so following it (mapped through $H_i$) is sensible, provided $H_i$ does not destroy that property.
 
-> [!definition] Optimal step size (symmetric $A$) ^def-alpha
+> [!definition] Optimal step size (symmetric $A$)
 > Parametrising $x_i=x_{i-1}+\alpha_i d_i$, the derivative of $f$ in $\alpha_i$ is $\alpha_i d_i^\top A d_i + d_i^\top r_{i-1}$, which vanishes at
 > $$\alpha_i=-\frac{d_i^\top A d_i}{d_i^\top r_{i-1}}=-\frac{d_i^\top r_{i-1}}{d_i^\top z_i}. \tag{17.3}$$
 > At this $\alpha_i$ the new gradient is orthogonal to $d_i$: $d_i^\top\nabla f(x_{i-1}+\alpha_i d_i)=0$. This costs one extra $\mathcal{O}(N)$ division using the already-computed $z_i=Ad_i$.
 
-> [!example] `LinSolve_Project` — the structural skeleton (Algorithm 17.2) ^ex-scaffold
+^def-alpha
+
+> [!example] `LinSolve_Project` — the structural skeleton (Algorithm 17.2)
 > `LinSolve_Project(A(·), b, p(A))`: initialise $x_0=H_0 b$, $r_0=Ax_0-b$. For $i=1,\dots,N$:
 > 1. $d_i=-H_{i-1}r_{i-1}$ — direction
 > 2. $z_i=Ad_i$ — **observe**
@@ -118,6 +128,8 @@ Intuition (Fig. 17.1): the residual is the gradient of $f$, i.e. the direction o
 > 8. $H_i=\textsc{Infer}(H\mid Y_i,S_i,p(A))$ — estimate the inverse (placeholder)
 >
 > This differs from CG (Algorithm 16.1) only in lines 5 and 12 — the inference step is left abstract. It is the skeleton for the rest of Part III: §19 fills in the `Infer` step with concrete Gaussian rules; §18 shows which choices reproduce classic solvers.
+
+^ex-scaffold
 
 ## Examples
 

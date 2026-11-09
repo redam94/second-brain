@@ -35,22 +35,28 @@ The paper draws the distinction sharply: **global** methods "explain the overall
 
 ## Main Content
 
-> [!definition] Local (one-at-a-time, OAT) sensitivity ^oat-definition
+> [!definition] Local (one-at-a-time, OAT) sensitivity
 > Fix all factors at a baseline $x^0$; perturb a single $x_i$ and measure the local response, e.g. the partial derivative
 > $$
 > S_i^{\text{local}} = \left.\frac{\partial f}{\partial x_i}\right|_{x = x^{0}} \approx \frac{f(x^0 + e_i\,\delta) - f(x^0)}{\delta}.
 > $$
 > Cost is just $O(p)$ runs, but the estimate is valid **only in the neighborhood of $x^0$** and **only one direction at a time**.
 
-> [!theorem] Why OAT fails for ABMs ^oat-pitfalls
+^oat-definition
+
+> [!theorem] Why OAT fails for ABMs
 > Local interpretability methods "typically make the underlying assumption that the machine learning model exhibits nonlinear relationships and independence between the input parameters. Consequently, if the input factors exhibit significant interactions, local interpretability methods may produce misleading or inaccurate results, as they rely on the assumption of parameter independence." Concretely:
 > - **No interactions captured** — holding others fixed hides any effect that only appears when factors co-vary (exactly the $S_{Ti}-S_i$ gap of [[Variance-Based Sensitivity and Sobol Indices]]).
 > - **Baseline-dependent** — conclusions change with the chosen $x^0$; a factor flat at baseline may be steep elsewhere.
 > - **Vanishing coverage in high dimensions** — an OAT design touches a measure-zero cross of the hypercube; the explored volume shrinks rapidly as $p$ grows, so most of an ABM's parameter space is never visited.
 > - **Misses non-monotonicity** — local slope says nothing about behavior across the full range.
 
-> [!definition] Global SA — the remedy ^global-remedy
+^oat-pitfalls
+
+> [!definition] Global SA — the remedy
 > Global methods require **no assumptions** about input relationships, can treat the ABM as a black box, and apportion output variability across factors over their **entire joint range**. The cost is more model evaluations (see [[Sampling and Estimation for Sobol Indices]]), traded for correct rankings, interaction detection, and factor-fixing decisions. Morris (see [[Morris Elementary Effects Screening]]) is a global method built from *many* OAT-style steps at *random* base points — a conceptual bridge from local to global.
+
+^global-remedy
 
 ## Examples
 

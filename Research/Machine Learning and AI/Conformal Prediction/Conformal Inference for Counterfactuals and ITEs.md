@@ -59,7 +59,7 @@ $$
 w_1(x)=\frac{dP_X(x)}{dP_{X\mid T=1}(x)}=\frac{\mathbb P(T=1)}{e(x)}\;\propto\;\frac1{e(x)},\qquad e(x)=\mathbb P(T=1\mid X=x).
 $$
 
-> [!definition] Weight functions by inferential target (Lei & Candès, Table 1) ^def-weights-table
+> [!definition] Weight functions by inferential target (Lei & Candès, Table 1)
 > | Target | ATE-type | ATT-type | ATC-type | General $Q_X$ |
 > |---|---|---|---|---|
 > | $w_1(x)$ for $Y(1)$ | $1/e(x)$ | $1$ | $(1-e(x))/e(x)$ | $(dQ_X/dP_X)(x)/e(x)$ |
@@ -67,7 +67,9 @@ $$
 >
 > "Weighted conformal inference depends on propensity scores in the same way IPW estimation of average causal effects depends on these same scores." Rescaling $w$ by a constant leaves the interval unchanged.
 
-> [!algorithm] Weighted split-CQR (Lei & Candès, Algorithm 1) ^alg-weighted-cqr
+^def-weights-table
+
+> [!algorithm] Weighted split-CQR (Lei & Candès, Algorithm 1)
 > **Input:** level $\alpha$; data $(X_i,Y_i)_{i\in\mathcal I}$ from one arm; test point $x$; quantile learner $\hat q_\beta(\cdot;\mathcal D)$; weight learner $\hat w(\cdot;\mathcal D)$.
 > 1. Split into training fold $\mathcal Z_{\text{tr}}$ and calibration fold $\mathcal Z_{\text{ca}}$ (the paper uses 75% for training).
 > 2. For $i\in\mathcal I_{\text{ca}}$: $V_i=\max\{\hat q_{\alpha_{lo}}(X_i;\mathcal Z_{\text{tr}})-Y_i,\;Y_i-\hat q_{\alpha_{hi}}(X_i;\mathcal Z_{\text{tr}})\}$.
@@ -77,7 +79,9 @@ $$
 >
 > **Output:** $\hat C(x)=[\hat q_{\alpha_{lo}}(x)-\eta(x),\;\hat q_{\alpha_{hi}}(x)+\eta(x)]$. If $\hat w(x)=\infty$ (e.g. $e(x)=0$) the output is $(-\infty,\infty)$.
 
-> [!theorem] Finite-sample coverage and robustness to weight error (Proposition 1) ^thm-lc-prop1
+^alg-weighted-cqr
+
+> [!theorem] Finite-sample coverage and robustness to weight error (Proposition 1)
 > Let $(X_i,Y_i)\overset{\text{i.i.d.}}{\sim}P_X\times P_{Y\mid X}$ and let the target be $Q_X\times P_{Y\mid X}$.
 > 1. If $\hat w=w=dQ_X/dP_X$, then $\mathbb P(Y\in\hat C(X))\ge1-\alpha$ with no further assumption.
 > 2. If additionally the scores have no ties, $Q_X\ll P_X$ and $(\mathbb E[\hat w(X)^r])^{1/r}\le M_r<\infty$, then coverage is at most $1-\alpha+c\,n^{1/r-1}$ with $c$ depending only on $M_r,r$.
@@ -85,9 +89,11 @@ $$
 >
 > The result is uniform over all $P_{Y\mid X}$ and all quantile learners.
 
+^thm-lc-prop1
+
 **Randomized experiments are exact (Sec. 3.4).** With perfect compliance $e(\cdot)$ is known by design. In a completely randomized experiment $e$ is constant and no weighting is needed; in stratified/blocked designs use Table 1 with the design's $e(x)$. Coverage holds in finite samples "even if our conditional quantile estimates are completely off". Since $\chi_r(Q_X\Vert P_X)\le\mathbb E[1/e(X)^r]$, coverage is nearly exact when $\mathbb E[1/e(X)^2]<\infty$; and the lower bound holds *regardless of overlap*, because the interval becomes $(-\infty,\infty)$ wherever $e(x)=0$.
 
-> [!theorem] Double robustness of conformal counterfactual intervals (Theorem 1) ^thm-lc-double-robust
+> [!theorem] Double robustness of conformal counterfactual intervals (Theorem 1)
 > Let $N=\lvert\mathcal Z_{\text{tr}}\rvert$, $n=\lvert\mathcal Z_{\text{ca}}\rvert$, with estimates $\hat q_{\beta,N}$ of the conditional quantiles of $Y(1)\mid X$ and $\hat e_N$ of $e$. Assume $\mathbb E[1/\hat e_N(X)\mid\mathcal Z_{\text{tr}}]<\infty$, $\mathbb E[1/e(X)]<\infty$, and **either**
 >
 > - **A1** (propensity consistent): $\lim_{N\to\infty}\mathbb E\big\lvert 1/\hat e_N(X)-1/e(X)\big\rvert=0$; **or**
@@ -100,6 +106,8 @@ $$
 > $$
 >
 > Under A2 the intervals additionally achieve asymptotic **conditional** coverage (Eq. 3.6).
+
+^thm-lc-double-robust
 
 Heuristic for A2: if $\hat q_\beta\approx q_\beta$ then $\mathbb P(V_i\le0\mid X_i)\approx\alpha_{hi}-\alpha_{lo}=1-\alpha$ for every $X_i$, so $0$ is approximately the $(1-\alpha)$ quantile of *any* reweighting of the $V_i$; hence $\eta(x)\approx0$ whatever the weights. The authors note the analogy with doubly robust ATE estimation (Robins et al. 1994; Kang & Schafer 2007) but stress that "consistency of point estimates and coverage of interval estimates are different concepts".
 

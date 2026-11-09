@@ -44,10 +44,12 @@ CQR conformalizes the quantile band. Where the econometric treatment in [[Quanti
 
 ## Main Content
 
-> [!definition] Conditional quantile function and oracle interval ^def-cond-quantile
+> [!definition] Conditional quantile function and oracle interval
 > With $F(y\mid X=x)=\mathbb P\{Y\le y\mid X=x\}$, the $\alpha$-th conditional quantile is $q_\alpha(x)=\inf\{y\in\mathbb R:F(y\mid X=x)\ge\alpha\}$. For $\alpha_{lo}=\alpha/2$, $\alpha_{hi}=1-\alpha/2$, the oracle interval $C(x)=[q_{\alpha_{lo}}(x),q_{\alpha_{hi}}(x)]$ satisfies **conditional** coverage $\mathbb P\{Y\in C(X)\mid X=x\}\ge1-\alpha$, and its length adapts to $x$.
 
-> [!definition] Pinball (check) loss ^def-pinball
+^def-cond-quantile
+
+> [!definition] Pinball (check) loss
 > Quantile regression solves $\hat\theta=\arg\min_\theta\tfrac1n\sum_i\rho_\alpha(Y_i,f(X_i;\theta))+\mathcal R(\theta)$ with
 >
 > $$
@@ -56,7 +58,9 @@ CQR conformalizes the quantile band. Where the econometric treatment in [[Quanti
 >
 > At $\alpha=0.5$ this is half the absolute error and targets the conditional median. Any learner can be converted to a quantile learner by swapping MSE for the pinball loss (A&B Sec. 2.2).
 
-> [!algorithm] Split conformal quantile regression (Romano et al., Algorithm 1) ^alg-cqr
+^def-pinball
+
+> [!algorithm] Split conformal quantile regression (Romano et al., Algorithm 1)
 > **Input:** data $(X_i,Y_i)_{i=1}^n$, level $\alpha\in(0,1)$, quantile regression algorithm $\mathcal A$.
 > 1. Randomly split $\{1,\dots,n\}$ into disjoint $\mathcal I_1$ (proper training) and $\mathcal I_2$ (calibration).
 > 2. Fit $\{\hat q_{\alpha_{lo}},\hat q_{\alpha_{hi}}\}\leftarrow\mathcal A(\{(X_i,Y_i):i\in\mathcal I_1\})$.
@@ -69,9 +73,11 @@ CQR conformalizes the quantile band. Where the econometric treatment in [[Quanti
 > 4. Let $Q_{1-\alpha}(E,\mathcal I_2)$ be the $(1-\alpha)(1+1/\lvert\mathcal I_2\rvert)$-th empirical quantile of $\{E_i\}$.
 > 5. **Output:** $C(x)=\big[\hat q_{\alpha_{lo}}(x)-Q_{1-\alpha}(E,\mathcal I_2),\;\hat q_{\alpha_{hi}}(x)+Q_{1-\alpha}(E,\mathcal I_2)\big]$.
 
+^alg-cqr
+
 **Reading the score.** $E_i$ is a *signed* distance to the nearest band edge. If $Y_i$ is below the lower estimate, $E_i=\lvert Y_i-\hat q_{\alpha_{lo}}(X_i)\rvert>0$; if above the upper, $E_i=\lvert Y_i-\hat q_{\alpha_{hi}}(X_i)\rvert>0$; if inside, $E_i\le0$ is the (negative) distance to the closer edge. The score therefore "accounts for both undercoverage and overcoverage": when the plug-in band is too wide, most $E_i$ are negative, $Q_{1-\alpha}<0$, and conformalization **shrinks** the band. This is one reason CQR beats un-conformalized quantile forests in the experiments despite using half the data for training.
 
-> [!theorem] CQR coverage (Romano et al., Theorem 1) ^thm-cqr
+> [!theorem] CQR coverage (Romano et al., Theorem 1)
 > If $(X_i,Y_i)$, $i=1,\dots,n+1$, are exchangeable, then the split-CQR interval satisfies
 >
 > $$
@@ -84,10 +90,14 @@ CQR conformalizes the quantile band. Where the econometric treatment in [[Quanti
 > \mathbb P\{Y_{n+1}\in C(X_{n+1})\}\le1-\alpha+\frac{1}{\lvert\mathcal I_2\rvert+1}.
 > $$
 
+^thm-cqr
+
 *Proof.* $Y_{n+1}\in C(X_{n+1})\iff E_{n+1}\le Q_{1-\alpha}(E,\mathcal I_2)$. Conditional on the proper training set the scores $\{E_i\}_{i\in\mathcal I_2}\cup\{E_{n+1}\}$ are exchangeable, so the inflated-quantile lemma ([[Split Conformal Prediction and the Coverage Guarantee#^thm-quantile-lemma|quantile lemma]]) gives both bounds; take expectations over $\mathcal I_1$.
 
-> [!theorem] Asymmetric (two-tailed) CQR (Romano et al., Theorem 2) ^thm-cqr-asym
+> [!theorem] Asymmetric (two-tailed) CQR (Romano et al., Theorem 2)
 > Calibrate the tails separately: let $Q_{1-\alpha_{lo}}(E_{lo},\mathcal I_2)$ be the $(1-\alpha_{lo})$-th empirical quantile of $\{\hat q_{\alpha_{lo}}(X_i)-Y_i\}$ and $Q_{1-\alpha_{hi}}(E_{hi},\mathcal I_2)$ that of $\{Y_i-\hat q_{\alpha_{hi}}(X_i)\}$, and set $C(X_{n+1})=[\hat q_{\alpha_{lo}}(X_{n+1})-Q_{1-\alpha_{lo}},\;\hat q_{\alpha_{hi}}(X_{n+1})+Q_{1-\alpha_{hi}}]$. Under exchangeability each one-sided bound holds with probability $\ge1-\alpha_{lo}$ and $\ge1-\alpha_{hi}$ respectively, hence $\mathbb P\{Y_{n+1}\in C(X_{n+1})\}\ge1-\alpha$ for $\alpha=\alpha_{lo}+\alpha_{hi}$.
+
+^thm-cqr-asym
 
 The symmetric version lets miscoverage be "spread arbitrarily over the left and right tails"; the asymmetric version controls each tail, at the price of longer intervals (average length $1.40\to1.58$ for CQR neural nets, $1.41\to1.57$ for CQR random forests).
 

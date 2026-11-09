@@ -45,7 +45,7 @@ This note collects what the two papers say about *when and why* globality helps,
 
 ## Main Content
 
-> [!definition] Local model ^def-local-model
+> [!definition] Local model
 > For each series $i=1,\dots,N$ a separate parameter $\theta_i$ is estimated from $z_{i,1:T_i}$ alone:
 >
 > $$
@@ -54,7 +54,9 @@ This note collects what the two papers say about *when and why* globality helps,
 >
 > Total parameter count grows as $O(N)$; each estimate uses $T_i$ observations.
 
-> [!definition] Global model ^def-global-model
+^def-local-model
+
+> [!definition] Global model
 > A single $\Theta$ is estimated from all series:
 >
 > $$
@@ -63,8 +65,12 @@ This note collects what the two papers say about *when and why* globality helps,
 >
 > (DeepAR, Eq. 2). The forecast for series $i$ differs from that for series $j$ **only through the inputs** — its own lagged values, covariates, scale $\nu_i$, and optional item embedding — not through series-specific fitted dynamics. Parameter count is $O(1)$ in $N$; the estimate uses $\sum_iT_i$ observations.
 
-> [!definition] Pretrained (foundation) model ^def-pretrained-model
+^def-global-model
+
+> [!definition] Pretrained (foundation) model
 > A global model whose $\hat\Theta$ is estimated once on a corpus $\mathcal D_{\text{pre}}$ of many datasets and then applied to a series from an unseen dataset with **no parameter update** — "pretrained models which do not perform task-specific training, instead using a single model across all tasks" (Ansari et al., Sec. 5.3). All adaptation happens in-context, through the $C$ most recent observations.
+
+^def-pretrained-model
 
 ### Why pooling across series helps
 
@@ -76,8 +82,10 @@ This note collects what the two papers say about *when and why* globality helps,
 
 ### What makes pooling hard
 
-> [!warning] Scale heterogeneity ^warn-scale
+> [!warning] Scale heterogeneity
 > Amazon's item velocities follow an approximate **power law** (DeepAR Fig. 1). Consequences: (a) no grouping into velocity bands removes the skew (each band is again skewed); (b) group-based regularisation fails; (c) input standardisation and batch normalisation are "less effective"; (d) uniform sampling of training windows under-fits the rare high-volume series that matter most. Remedies: per-series scaling $\nu_i$ of inputs and likelihood parameters, scale-proportional sampling (DeepAR Sec. 3.3), and mean scaling before tokenisation (Chronos Sec. 3.1). The ablation `rnn-negbin` (no scaling, uniform sampling) loses most of DeepAR's gain on the power-law datasets: average relative risk 1.17 vs 0.77 on `ec-sub`.
+
+^warn-scale
 
 - **Heterogeneous dynamics → bias.** A single $\Theta$ must serve intermittent and fast-moving items, trending and stationary ones. Global models cope by being expressive and by conditioning on long contexts and embeddings; with few, idiosyncratic series a well-specified local model can still win — on simulated AR(1)/AR(2) data a correctly specified AR fit beats Chronos, though not for AR(3)/AR(4) (Ansari et al., Sec. 5.7).
 - **Likelihood mismatch.** One output family for all series: DeepAR's Gaussian head on count data is its worst ablation (`rnn-gaussian`: 1.19-1.21 on `parts`/`ec-sub`). Chronos sidesteps this with a categorical head that "imposes no restrictions on the structure of the output distribution."

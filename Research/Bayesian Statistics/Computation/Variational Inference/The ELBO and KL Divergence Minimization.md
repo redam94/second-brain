@@ -45,7 +45,7 @@ Every algorithm in the [[Variational Inference - Overview|VI cluster]] maximizes
 
 ## Main Content
 
-> [!definition] Kullback-Leibler divergence (reverse / exclusive form) ^def-reverse-kl
+> [!definition] Kullback-Leibler divergence (reverse / exclusive form)
 > With all expectations taken under $q(z)$,
 >
 > $$
@@ -60,14 +60,18 @@ Every algorithm in the [[Variational Inference - Overview|VI cluster]] maximizes
 >
 > which "reveals its dependence on $\log p(x)$" (Eq. 12), the very quantity that made inference hard.
 
-> [!definition] Evidence lower bound (ELBO) ^def-elbo
+^def-reverse-kl
+
+> [!definition] Evidence lower bound (ELBO)
 > $$
 > \mathrm{ELBO}(q) = \mathbb E_q[\log p(z,x)] - \mathbb E_q[\log q(z)] .
 > $$
 >
 > "The ELBO is the negative KL divergence of Equation (12) plus $\log p(x)$, which is a constant with respect to $q(z)$. Maximizing the ELBO is equivalent to minimizing the KL divergence" (Blei et al., Eq. 13).
 
-> [!theorem] Evidence decomposition and the bound ^thm-evidence-decomposition
+^def-elbo
+
+> [!theorem] Evidence decomposition and the bound
 > For any density $q(z)$,
 >
 > $$
@@ -75,6 +79,8 @@ Every algorithm in the [[Variational Inference - Overview|VI cluster]] maximizes
 > $$
 >
 > with equality iff $q(z) = p(z\mid x)$ (Blei et al., Eq. 14). The bound follows from $\mathrm{KL}\ge 0$; the original literature derived it from Jensen's inequality, $\log p(x) = \log\mathbb E_q[p(z,x)/q(z)] \ge \mathbb E_q[\log p(z,x)/q(z)]$ (Jordan et al. 1999).
+
+^thm-evidence-decomposition
 
 **Three readings of the same objective.**
 
@@ -88,17 +94,21 @@ $$
 "The first term is an expected likelihood; it encourages densities that place their mass on configurations of the latent variables that explain the observed data. The second term is the negative divergence between the variational density and the prior; it encourages densities close to the prior. Thus the variational objective mirrors the usual balance between likelihood and prior" (Blei et al., p. 7). This is the form the [[Reparameterization Trick and Variational Autoencoders|VAE]] optimizes: reconstruction error plus a KL regularizer.
 3. *Evidence minus gap.* $\mathrm{ELBO}(q) = \log p(x) - \mathrm{KL}(q\,\|\,p(\cdot\mid x))$: the bound is tight exactly to the extent the approximation is good.
 
-> [!theorem] Relation to EM ^thm-em-relation
+> [!theorem] Relation to EM
 > The first ELBO term $\mathbb E_q[\log p(z,x)]$ is the expected complete-data log likelihood optimized by EM. EM exploits that the ELBO *equals* $\log p(x)$ when $q(z) = p(z\mid x)$: the E-step sets $q$ to the exact conditional, the M-step maximizes over fixed parameters. "Unlike variational inference, EM assumes the expectation under $p(z\mid x)$ is computable... Unlike EM, variational inference does not estimate fixed model parameters" (Blei et al., p. 7). **Variational EM** is EM with a variational E-step, which is exactly what the VAE does: $\theta$ by (approximate) maximum likelihood, $z$ by VI. Compare [[EM and Gradient Optimization for the Delayed Feedback Model]] for a case where the exact E-step *is* available.
+
+^thm-em-relation
 
 ### What the direction of the KL does
 
-> [!theorem] Support constraint and zero-forcing ^thm-zero-forcing
+> [!theorem] Support constraint and zero-forcing
 > Reverse KL integrates $q\log(q/p)$. Wherever $q>0$ but $p=0$ the integrand is $+\infty$, so the optimization carries the implicit constraint $\operatorname{supp}(q)\subseteq\operatorname{supp}(p(\cdot\mid x))$ (Kucukelbir et al. 2017, Eq. 3 and fn. 3). More generally the objective "penalizes placing mass in $q(\cdot)$ on areas where $p(\cdot)$ has little mass, but penalizes less the reverse" (Blei et al., p. 9). Consequences:
 >
 > - **Variance underestimation.** A factorized $q$ fitted to a correlated target must shrink to stay inside the high-density region (Blei et al., Fig. 1). To match the marginal variances "the circular $q(\cdot)$ would have to expand into territory where $p(\cdot)$ has little mass."
 > - **Mode-seeking.** Against a multimodal target a unimodal $q$ locks onto one mode rather than straddling them.
 > - **Light tails.** Yao et al. (2018): the VI solution "has a lighter tail than $p(\theta\mid y)$ as a result of entropy penalization," giving importance ratios $p/q$ a heavy right tail, which is what the [[Diagnosing Variational Inference (PSIS k-hat and VSBC)|$\hat k$ diagnostic]] measures.
+
+^thm-zero-forcing
 
 The opposite direction, $\mathrm{KL}(p\,\|\,q)$, is mass-covering and moment-matching but requires expectations under the unknown posterior. Expectation propagation "is inspired by the KL divergence 'in the other direction'" (Blei et al., Sec. 5.4; see [[Approximation Methods]]). The $\alpha$- and Renyi-divergence family interpolates between the two; [[Variational Inference and Pathfinder]] summarizes the Bayesian Workflow book's view of these alternatives and of score-based divergences.
 
@@ -110,13 +120,15 @@ The opposite direction, $\mathrm{KL}(p\,\|\,q)$, is mass-covering and moment-mat
 
 ## Examples
 
-> [!example] Mode-seeking on a bimodal target ^ex-bimodal
+> [!example] Mode-seeking on a bimodal target
 > Yao et al. (Sec. 5.1) consider $p = 0.8\,\mathcal N(0, 0.2) + 0.2\,\mathcal N(3, 0.2)$ with well-separated modes. A Gaussian $q$ fitted by reverse KL "will converge to one of the modes," say $q\approx\mathcal N(0,0.2)$. On the support of $q$ the ratio $p/q$ is then essentially the constant $0.8$. Two lessons:
 >
 > 1. The KL at that optimum is about $\log(1/0.8)\approx 0.22$ nats, small, even though $q$ misses 20% of the posterior mass entirely. Reverse KL is a *local* measure.
 > 2. Any diagnostic built from samples of $q$ (including $\hat k$) is blind to the missing mode; it must be found by multiple dispersed initializations or by a prior-predictive check such as VSBC.
 
-> [!example] Monte Carlo ELBO for a Gaussian $q$ ^ex-mc-elbo
+^ex-bimodal
+
+> [!example] Monte Carlo ELBO for a Gaussian $q$
 > The energy-plus-entropy form gives a generic estimator requiring only an unnormalized log posterior:
 >
 > ```python
@@ -134,6 +146,8 @@ The opposite direction, $\mathrm{KL}(p\,\|\,q)$, is mass-covering and moment-mat
 > ```
 >
 > Writing $z = \mu + \sigma\odot\epsilon$ is already the [[Reparameterization Trick and Variational Autoencoders|reparameterization trick]]: differentiate through `z` and this estimator becomes the ADVI gradient. Note that adding a constant to `log_joint` shifts the ELBO by the same constant, the concrete face of Yao et al.'s "uninterpretable scale."
+
+^ex-mc-elbo
 
 ## Connections
 

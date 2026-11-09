@@ -54,10 +54,12 @@ The last row is the deepest connection to the existing ABM notes. In [[Heterogen
 
 ## Main Content
 
-> [!definition] LLM-empowered agent ^def-llm-agent
+> [!definition] LLM-empowered agent
 > An agent whose perception–decision–action loop is mediated by a large language model. The LLM receives a text rendering of (i) a **profile/persona**, (ii) retrieved **memory**, and (iii) the current **observation**, and emits text that is parsed into an action, utterance, plan or survey response. Gao et al. (Sec. 2.2) emphasise that such agents extend beyond a bare LLM by adding environment interfaces, memory, reflection and planning modules.
 
-> [!definition] Classical agent desiderata (Sec. 2.1) ^def-agent-desiderata
+^def-llm-agent
+
+> [!definition] Classical agent desiderata (Sec. 2.1)
 > - **Autonomy** — operate without direct human intervention.
 > - **Social ability** — interact with other agents (cooperatively or competitively) to model networks, opinion dynamics, markets.
 > - **Reactivity** — perceive and respond to environmental change, and learn from experience.
@@ -65,11 +67,15 @@ The last row is the deepest connection to the existing ABM notes. In [[Heterogen
 >
 > Gao et al. add that "like humans, agents cannot make perfectly rational choices due to limitations of knowledge and computational capacity" — the same bounded-rationality premise as [[Agent Decision Rules and Bounded Rationality]].
 
-> [!definition] Four challenges of LLM agent-based simulation (Sec. 4) ^def-four-challenges
+^def-agent-desiderata
+
+> [!definition] Four challenges of LLM agent-based simulation (Sec. 4)
 > 1. **Environment construction and interface** (4.1) — virtual/sandbox vs. real environments; text as the I/O channel; agent–agent communication either direct (dialogue) or indirect (through environment rules, e.g. a shared labour market).
 > 2. **Human alignment and personalisation** (4.2) — inject domain knowledge and "controllable heterogeneity" via **prompt engineering** (personas, rules, examples) or **tuning** (fine-tuning on domain/user data).
 > 3. **How to simulate actions** (4.3) — **planning** (task decomposition), **memory** (an external store with organise/update/retrieve operations because histories exceed the context window), and **reflection** (feedback loops that revise memory and strategy). See [[Generative Agents Architecture - Memory, Reflection and Planning]].
 > 4. **Evaluation** (4.4) — realness validation at **micro level** (does an individual agent's next action match a real individual's?) and **macro level** (does the population reproduce real regularities, e.g. opinion dynamics or Okun's law?); **explanations** elicited from the agents themselves; and **ethics** evaluation (bias, harmful output).
+
+^def-four-challenges
 
 The micro/macro split in (4) is the LLM-era restatement of the dilemma in [[ABM Validation Challenges]]: classical ABMs usually can only be validated at the macro level because micro rules are unobservable; LLM agents can additionally be validated at the micro level against individual survey or experimental responses, which is exactly what [[Silicon Samples and Algorithmic Fidelity]] and [[Opinion Alignment Metrics for Language Models]] do.
 

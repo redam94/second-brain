@@ -40,14 +40,16 @@ An RFM scoring model regresses period-2 behaviour on period-1 R, F and M. The pa
 
 ## Main Content
 
-> [!definition] RFM as sufficient statistics ^def-rfm-sufficient
+> [!definition] RFM as sufficient statistics
 > Notation $(X=x, t_x, T)$: $x$ = number of repeat transactions in $(0,T]$ (**frequency**), $t_x$ = time of the last one (**recency**; $t_x=0$ if $x=0$), $T$ = time since acquisition. With $m_x$ = average value of the $x$ transactions (**monetary value**):
 > - The Pareto/NBD individual likelihood depends on the purchase times only through $(x,t_x)$ ([[Pareto-NBD Model#^thm-pnbd-individual-likelihood|likelihood]]) because Poisson purchasing is memoryless.
 > - The gamma-gamma likelihood depends on the individual amounts only through $(m_x, x)$ because the gamma is closed under convolution.
 >
 > Hence "we formally link the observed measures to the latent traits and show that no other information about customer behavior is required in order to implement our model" (Sec. 1). Note that "recency" here is the *time of* the last purchase measured from acquisition — larger is more recent.
 
-> [!theorem] Discounted expected transactions under Pareto/NBD ^thm-det
+^def-rfm-sufficient
+
+> [!theorem] Discounted expected transactions under Pareto/NBD
 > A discrete-time sum $\sum_t [E(Y(t))-E(Y(t-1))]/(1+d)^t$ forces arbitrary choices of horizon and period length, and thresholding $P(\text{alive})$ to pick a horizon "goes against the spirit of the model." Instead, work in continuous time over an infinite horizon. Conditional on the traits, the present value of the transaction stream is (Eq. A3)
 >
 > $$
@@ -62,7 +64,9 @@ An RFM scoring model regresses period-2 behaviour on period-1 R, F and M. The pa
 >
 > where $\Psi$ is the confluent hypergeometric function of the second kind (Tricomi's $U$) and $L$ is the [[Pareto-NBD Model#^thm-pnbd-likelihood|Pareto/NBD likelihood]]. The continuously compounded rate for data in $k$ periods per year is $\delta=\ln(1+d)/k$; a 15% annual rate with weekly data gives $\delta=0.0027$. The authors call this "a new analytical result … central to our CLV estimation."
 
-> [!definition] CLV from RFM ^def-clv-from-rfm
+^thm-det
+
+> [!definition] CLV from RFM
 > Substituting DET and the gamma-gamma conditional expectation (Eq. 4) into Eq. 1:
 >
 > $$
@@ -71,12 +75,16 @@ An RFM scoring model regresses period-2 behaviour on period-1 R, F and M. The pa
 >
 > Seven population parameters $(r,\alpha,s,\beta;\,p,q,\gamma)$, a margin and a discount rate turn any $(R,F,M)$ triple into a lifetime value. An **iso-value curve** is a level set of this function in the $(t_x, x)$ plane for fixed $m_x$ and $T$.
 
+^def-clv-from-rfm
+
 Using the customer's raw $m_x$ instead of $E(M\mid m_x,x)$ "would ignore the 'regression-to-the-mean' phenomenon"; the shrunken value is the correct **DET multiplier**. For $x=0$ it equals the population mean (\$36 on the 78-week data).
 
-> [!theorem] The increasing frequency paradox ^thm-increasing-frequency-paradox
+> [!theorem] The increasing frequency paradox
 > Except at $x=0$, DET increases in recency, with a strong interaction: "for low frequency customers, there is an almost linear relationship between recency and DET", but it is "highly nonlinear for high frequency customers" (Sec. 4). In low-value regions the iso-value lines **bend backwards**: a customer with $x=7$, $t_x=35$ has DET $\approx2$, "the same as someone with a lower (i.e., worse) frequency of $x=1$ and recency of $t_x=30$. In general, for people with low recency, higher frequency seems to be a bad thing."
 >
 > *Explanation (Fig. 11).* If both customers were known to be alive, the frequent buyer would be worth more. But a long silence is far less likely under a high purchase rate, so the posterior puts most of its mass on "dead". In the paper's illustration, the sparse-but-steady customer A has DET 4.6 versus 1.9 for customer B, whose nine purchases all came early. Formally, $P(\text{alive}\mid\lambda,\mu)$ decays in $T-t_x$ at rate $\lambda+\mu$ ([[Pareto-NBD Model#^thm-pnbd-palive|P(alive)]]).
+
+^thm-increasing-frequency-paradox
 
 The authors draw the methodological moral: "The use of a regression-based specification, which is used in many scoring models, would likely miss this pattern and lead to faulty inferences for a large portion of the recency-frequency space." A linear-in-RFM score is monotone in frequency by construction.
 

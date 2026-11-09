@@ -45,17 +45,25 @@ The central tension this paper resolves: the FRT is purpose-built for sharp null
 
 ## Main Content
 
-> [!definition] Design-based (randomization) inference ^def-design-based
+> [!definition] Design-based (randomization) inference
 > Potential outcomes $\{Y_i(j)\}$ are fixed; the only randomness is the treatment assignment $W$, drawn from a known distribution determined by the experimental design. Means $\bar Y(j) = \sum_{i=1}^N Y_i(j)/N$ and covariances $S(j,k) = \sum_{i=1}^N \{Y_i(j)-\bar Y(j)\}\{Y_i(k)-\bar Y(k)\}/(N-1)$ are **fixed finite-population parameters**, not population expectations. Inference targets these finite-population quantities.
 
-> [!definition] Randomization distribution ^def-rand-dist
+^def-design-based
+
+> [!definition] Randomization distribution
 > Conditioning on the original data $\{W_i, Y_i^{\text{obs}}\}$, fill in all potential outcomes (via the sharp null used for imputation), then recompute the statistic $T_\pi$ for every permutation/re-assignment $\pi \in \Pi_N$. The collection $\{T_\pi : \pi \in \Pi_N\}$, denoted $T_\pi \mid W$, is the **randomization distribution** — the reference null distribution for the $p$-value.
 
-> [!definition] Conservative type I error control ^def-conservative
+^def-rand-dist
+
+> [!definition] Conservative type I error control
 > The FRT with statistic $T$ *conservatively* controls type I error at level $\alpha$ if $\mathbb P\{(N!)^{-1}\sum_{\pi}\mathbf 1(T_\pi \ge T) \le \alpha\} \le \alpha$. Wu & Ding's studentized test is **conservative** (not exact) for the weak null asymptotically, but **exact** for the sharp null in finite samples.
 
-> [!theorem] Why design-based asymptotics are needed ^thm-fp-asymptotics
+^def-conservative
+
+> [!theorem] Why design-based asymptotics are needed
 > The exact sampling distribution of a statistic $T$ under the weak null $H_{0\text N}(C,x)$ depends on **unknown** potential-outcome covariances $S(j,k)$, $j\ne k$, which have no unbiased estimator (potential outcomes $Y_i(j)$ and $Y_i(k)$ are never jointly observed). Wu & Ding therefore adopt **finite-population asymptotics** (Li & Ding 2017): under regularity (Assumption 1: $N_j/N \to p_j \in (0,1)$, convergent moments, negligible max term), $N^{1/2}(\hat{\bar Y} - \bar Y) \xrightarrow{d} \mathcal N(0_J, V)$ with a covariance $V = D - S \preceq D$ that is **conservatively** estimable by $\hat D = N\,\text{diag}\{\hat S(1,1)/N_1,\dots,\hat S(J,J)/N_J\}$.
+
+^thm-fp-asymptotics
 
 The remaining notes develop: the [[Fisher Randomization Test and the Sharp Null|FRT mechanics and the sharp-null exactness result]]; the [[Sharp vs Weak Null Hypotheses|sharp-vs-weak distinction (Fisher vs Neyman)]]; the [[Studentized Randomization Tests|studentized statistic $X^2$ that achieves dual validity]]; and the broader [[Permutation Tests and Exact Inference|permutation principle and its relation to the bootstrap]].
 

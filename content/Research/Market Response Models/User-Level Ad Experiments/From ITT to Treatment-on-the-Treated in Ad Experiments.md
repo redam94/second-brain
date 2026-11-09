@@ -60,12 +60,14 @@ Randomization neutralizes all three for the $Z$ contrast because the same bid-we
 
 ## Main Content
 
-> [!definition] Assumptions ^def-assumptions
+> [!definition] Assumptions
 > 1. **SUTVA** — one version of treatment; no interference between users. Supported on Facebook by single-user login (no accidental exposure of controls) and by users not knowing their arm; ad-sharing from test to control users would make estimates *conservative*.
 > 2. **Random assignment** — $Z_i\perp\{Y_i(z,w),W_i(z)\}$. Supports an ITT analysis on its own.
 > 3. **Exclusion restriction** — $Y_i(0,w)=Y_i(1,w)$ for $w\in\{0,1\}$: "assignment affects a user's outcome only through receipt of the treatment. Because users are unaware of their assignment status, only exposure should affect outcomes." Required only for the ATT.
 
-> [!definition] ITT and ATT ^def-itt-att
+^def-assumptions
+
+> [!definition] ITT and ATT
 > $$
 > \text{ITT}_Y=E[Y(1,W(1))-Y(0,W(0))],
 > $$
@@ -74,7 +76,9 @@ Randomization neutralizes all three for the $Z$ contrast because the same bid-we
 > $$
 > The ITT "should be interpreted as conditional on the platform's ad-optimization system" (fn. 10) — the "entire treatment" includes who the delivery engine chose to reach. The ATT "is inherently conditional on the set of users who end up being exposed", so it is not comparable across campaigns with different targeting.
 
-> [!theorem] ITT-to-ATT scaling under one-sided noncompliance (Gordon et al. 2019 eq. 5-7) ^thm-itt-att
+^def-itt-att
+
+> [!theorem] ITT-to-ATT scaling under one-sided noncompliance (Gordon et al. 2019 eq. 5-7)
 > Under assumptions 1-3,
 > $$
 > \tau\equiv\text{ATT}=\frac{\text{ITT}_Y}{\text{ITT}_W}=\frac{E[Y(1,W(1))]-E[Y(0,W(0))]}{E[W(1)]-E[W(0)]}=\frac{\text{ITT}_Y}{\pi_{co}},
@@ -87,22 +91,28 @@ Randomization neutralizes all three for the $Z$ contrast because the same bid-we
 > $$
 > For never-takers $W(1)=W(0)=0$, so by exclusion $\text{ITT}_{Y,nc}=E[Y(1,0)-Y(0,0)]=0$. Hence $\text{ITT}_{Y,co}=\text{ITT}_Y/\pi_{co}$. "Scaling $\text{ITT}_Y$ by the inverse of $\pi_{co}$ 'undilutes' the ITT effect." Imbens & Angrist call this quantity the LATE; "if the sample contains no 'always-takers' and no 'defiers,' which is true in our experimental design with one-sided non-compliance, the LATE is equal to the ATT."
 
+^thm-itt-att
+
 In practice the ATT and its standard error come from **two-stage least squares** of $Y$ on $W$ with $Z$ as the instrument (Gordon, Moakler & Zettelmeyer §4.1). Johnson, Lewis & Reiley call the same thing the *indirect TOT estimator* and note it "is numerically equivalent to computing a local average treatment effect by using the random assignment as an instrument for treatment" (fn. 2). The first stage is as strong as an instrument gets — $\pi_{co}$ is typically 0.3-0.8 and estimated from millions of users — so weak-instrument concerns do not arise; the difficulty is entirely the noisy reduced form.
 
-> [!definition] Lift ^def-lift
+> [!definition] Lift
 > $$
 > \tau_\ell=\frac{\tau}{E[Y\mid Z=1,W^{obs}=1]-\tau},
 > $$
 > the incremental conversion rate among treated users as a percentage of "the estimated conversion rate of the treated group if they had not actually been treated" (Gordon et al. 2019 eq. 8). The denominator is not the control mean: exposed users are selected, so their counterfactual baseline differs from the arm-wide control rate. Lift normalizes across advertisers and outcomes but "differences between methods can seem large when the treated group's baseline conversion rate is small". Confidence intervals are obtained by bootstrap because lift is a ratio.
 
+^def-lift
+
 ### What the scaling does and does not buy
 
-> [!theorem] Scaling does not improve precision; identifying the counterfactual treated does ^thm-precision
+> [!theorem] Scaling does not improve precision; identifying the counterfactual treated does
 > Since $\pi_{co}$ is estimated almost without error, $\widehat{\text{ATT}}\approx\widehat{\text{ITT}}/\pi_{co}$ and $\text{se}(\widehat{\text{ATT}})\approx\text{se}(\widehat{\text{ITT}})/\pi_{co}$: the $t$-statistic is unchanged. With $N$ users per arm and common outcome variance $\sigma^2$,
 > $$
 > \text{se}_{\text{indirect}}=\frac{\sigma}{\pi_{co}}\sqrt{\frac{2}{N}}\qquad\text{vs}\qquad\text{se}_{\text{direct}}=\sigma\sqrt{\frac{2}{\pi_{co}N}},
 > $$
 > where the *direct* estimator compares treated users with *identified* counterfactual-treated controls (placebo- or ghost-tagged). The variance ratio is $1/\pi_{co}$. For $\pi_{co}=0.554$ this predicts a 25.6% smaller standard error, matching the 25% Johnson, Lewis & Reiley measure; for the 3% exposure rates of on-the-fly ITT tests it is a 33-fold variance penalty. Johnson, Lewis & Nubbemeyer's empirical ITT-to-PGA variance ratios of 5.9-17.1 additionally reflect pruning of pre-exposure outcomes.
+
+^thm-precision
 
 So there are two distinct estimators of the same ATT:
 

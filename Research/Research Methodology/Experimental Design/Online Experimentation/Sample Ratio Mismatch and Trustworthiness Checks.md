@@ -39,7 +39,7 @@ Fabijan et al. open with an MSN experiment that increased a carousel from 12 to 
 
 ## Main Content
 
-> [!definition] Sample ratio mismatch ^def-srm
+> [!definition] Sample ratio mismatch
 > Let the design assign units to arms with probabilities $\theta_0 = (\theta_{0,1}, \dots, \theta_{0,d})$ and let $n_j$ be the number of units *appearing in the analysis* in arm $j$, $n = \sum_j n_j$. An SRM is a statistically significant departure of $(n_1, \dots, n_d)$ from $\text{Multinomial}(n, \theta_0)$, conventionally tested with
 >
 > $$
@@ -48,9 +48,11 @@ Fabijan et al. open with an MSN experiment that increased a carousel from 12 to 
 >
 > Because the check runs on every experiment and an alarm triggers a costly investigation, practitioners use a threshold far stricter than 0.05 ($p < 0.001$ is a common industry convention; Fabijan et al. do not prescribe a value).
 
+^def-srm
+
 Fabijan et al.'s example: 821,588 versus 815,482 users is a 50.2/49.8 split, which looks harmless, yet $\chi^2 \approx 22.8$ and the chance of so large a deviation is below 1 in 500,000.
 
-> [!theorem] Why an SRM invalidates the comparison ^thm-srm-selection
+> [!theorem] Why an SRM invalidates the comparison
 > Randomization makes assignment $W$ independent of potential outcomes, so $\mathbb E[Y \mid W = 1] - \mathbb E[Y \mid W = 0]$ is the ATE. Let $R \in \{0,1\}$ indicate that a unit survives into the analysis. The scorecard estimates
 >
 > $$
@@ -58,6 +60,8 @@ Fabijan et al.'s example: 821,588 versus 815,482 users is a 50.2/49.8 split, whi
 > $$
 >
 > which equals the ATE among survivors only if $R$ is unaffected by $W$. If treatment changes who is logged, $R$ is a post-treatment variable and conditioning on it opens a selection path. An SRM is *direct evidence* that $\mathbb P(R = 1 \mid W = 1) \ne \mathbb P(R = 1 \mid W = 0)$. The converse fails: equal counts do not prove equal composition, so SRM is a necessary-condition check, not a certificate.
+
+^thm-srm-selection
 
 This is the same logic as the post-treatment covariate warning in [[CUPED and Regression-Adjusted Variance Reduction#^warn-post-treatment]] and as [[Activity Bias in Advertising]], where who gets observed or exposed is itself correlated with the outcome.
 

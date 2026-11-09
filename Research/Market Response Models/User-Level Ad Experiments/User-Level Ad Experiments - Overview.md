@@ -59,8 +59,10 @@ The vault already covers *why* observational ad measurement fails ([[Activity Bi
 
 An ad experiment differs from a product A/B test in one structural way. In a product test the experimenter controls the treatment: every user assigned to B gets B. In an ad test, "whether a treatment user is treated depends on both the ad platform's ad delivery decisions and the user's browsing decisions" (Johnson, Lewis & Nubbemeyer §2). The platform's auction, pacing, targeting model and competing bidders decide whether the focal ad ever renders. Exposure is therefore a *post-assignment, endogenous* variable, and the comparison "exposed vs unexposed" is exactly the selection-contaminated comparison described in [[The Selection Problem]].
 
-> [!definition] The ideal ad experiment ^def-ideal-ad-experiment
+> [!definition] The ideal ad experiment
 > Users are randomly assigned to a **treatment (test) group** that is eligible to see the focal campaign and a **control (holdout) group** that is not. Within each arm there is a latent split into users who **would be exposed** if eligible and users who would not. Randomization makes the *distribution of types* identical across arms (the experiment's "symmetry"). The estimand of managerial interest is usually the **treatment-on-the-treated (TOT/ATT)**: the mean outcome of treated users minus the mean outcome of the control arm's *counterfactual treated* users (Johnson, Lewis & Nubbemeyer §2, Fig. 1). The practical problem is that the counterfactual treated are not observed in the control arm without extra machinery.
+
+^def-ideal-ad-experiment
 
 The cluster is organised around that problem:
 
@@ -79,22 +81,28 @@ The cluster is organised around that problem:
 
 ### The three structural facts
 
-> [!theorem] Fact 1 — every ad holdout is an encouragement design ^fact-noncompliance
+> [!theorem] Fact 1 — every ad holdout is an encouragement design
 > Let $Z_i\in\{0,1\}$ be random assignment and $W_i(Z_i)\in\{0,1\}$ exposure. A properly implemented holdout has $W_i(0)=0$ for all $i$ (control users never see the campaign) while $W_i(1)\in\{0,1\}$ is endogenous. This is **one-sided noncompliance**: there are no always-takers and no defiers, so the [[Local Average Treatment Effects|LATE]] equals the ATT and
 > $$
 > \text{ATT}=\frac{\text{ITT}_Y}{\pi_{co}},\qquad \pi_{co}=E[W(1)]
 > $$
 > (Gordon et al. 2019 eq. 5-7). Exposure shares are often modest — 37% in Gordon et al.'s Study 4, 55% in Johnson, Lewis & Reiley's Yahoo! retailer test, and as low as "3% or less" when eligibility is determined on the fly (Johnson, Lewis & Nubbemeyer §2.1) — which is why the choice between analysing everyone (ITT) and analysing only the would-be-exposed matters so much for precision. See [[From ITT to Treatment-on-the-Treated in Ad Experiments]].
 
-> [!theorem] Fact 2 — the signal-to-noise ratio is extraordinarily low ^fact-snr
+^fact-noncompliance
+
+> [!theorem] Fact 2 — the signal-to-noise ratio is extraordinarily low
 > In Lewis & Rao's 25 Yahoo! display experiments the standard deviation of individual sales is about **10 times the mean** over a campaign window, per-person spend is \$0.02-\$0.39, and a campaign that earns a healthy 25% ROI must shift mean sales by \$0.35 against a standard deviation of \$75. The implied regression $R^2$ of sales on exposure is
 > $$
 > R^2=\tfrac14\left(\frac{\$0.35}{\$75}\right)^2\approx 5.4\times10^{-6},
 > $$
 > and the median retailer experiment has a standard error on ROI of 26 percentage points — a 95% interval more than 100 points wide (Lewis & Rao §II.B, §III.B). See [[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise]].
 
-> [!theorem] Fact 3 — the same low signal makes observational methods fragile ^fact-obs-fragile
+^fact-snr
+
+> [!theorem] Fact 3 — the same low signal makes observational methods fragile
 > With an $R^2$ of order $10^{-6}$ for the true effect, "an omitted variable, misspecified functional form, or slight amount of intertemporal correlation between ad exposure and shopping generating $R^2$ on the order of 0.0001 is a full order of magnitude larger than the true treatment effect" (Lewis & Rao §II.B). Gordon et al. (2019, 2023) confirm this empirically against 15 and then 663 Facebook RCTs: neither propensity-score methods nor double machine learning with >5,000 features recover the experimental lift. See [[Experimental Benchmarks for Observational Ad Measurement]].
+
+^fact-obs-fragile
 
 ### A short history of the design space
 
@@ -113,8 +121,10 @@ For someone building [[Bayesian Media Mix Modeling - Overview|Bayesian media mix
 - **They discipline attribution and platform-reported numbers.** Gordon et al.'s naive exposed-vs-unexposed lifts of 100-4,000% against RCT lifts of 1-70% quantify how wrong last-touch or exposure-based attribution can be, which is the usual source of inflated priors.
 - **They define where geo tests are the better tool**: offline sales that cannot be joined to an ID, cross-device journeys, channels with no holdout product, and spillovers across users. See [[User-Level vs Geo-Level Experiments - When to Use Which]].
 
-> [!example] Source not ingested ^not-ingested
+> [!example] Source not ingested
 > Johnson, G. (2023), "Inferno: A Guide to Field Experiments in Online Display Advertising," *Journal of Economics & Management Strategy* 32, 469-490 (SSRN 3581396) is the natural survey companion to this cluster — its abstract lists statistical power, compliance, identity fragmentation, experimental spillovers and incrementality optimization as the core challenges. Neither the SSRN nor the Wiley copy could be downloaded at ingest time, so nothing in these notes is drawn from it beyond that abstract-level description; it is cited by Gordon, Moakler & Zettelmeyer (as "Johnson 2022") for the point that RCTs "can also be technically difficult or even impossible to implement on many ad platforms." Likewise Barajas & Bhamidipati (2021, WWW) on double-blind ghost-bidding designs was not available; only the authors' KDD-2021 tutorial outline is in `raw/`.
+
+^not-ingested
 
 ## Examples
 

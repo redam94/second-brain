@@ -51,8 +51,10 @@ estimated by the difference in group means $\hat\tau = \bar Y_1 - \bar Y_0$ and 
 
 ## Main Content
 
-> [!definition] Online controlled experiment (OCE) ^def-oce
+> [!definition] Online controlled experiment (OCE)
 > A randomized experiment conducted on live traffic of a digital product, in which arriving units are assigned in real time to one of $K$ variants by a deterministic hash of the unit identifier, responses are logged as telemetry, and analysis is automated by an experimentation platform. Synonyms in industry: A/B test, split test, flight (Microsoft), bucket test (Yahoo), weblab (Amazon), live traffic experiment (Google).
+
+^def-oce
 
 ### The four failure modes of the naive two-sample test
 
@@ -63,13 +65,15 @@ estimated by the difference in group means $\hat\tau = \bar Y_1 - \bar Y_0$ and 
 | The realised sample *is* the randomized sample | Telemetry loss, bot filters, redirects and triggering conditions differ by arm | [[Sample Ratio Mismatch and Trustworthiness Checks]] |
 | SUTVA: unit $i$'s outcome ignores others' assignments | Social networks, shared inventory, auctions, surge pricing | [[Interference and Marketplace Experiments]], [[Switchback Experiment Design and Analysis]] |
 
-> [!example] Why "big data" is still underpowered (Larsen et al. Sec. 2) ^ex-power
+> [!example] Why "big data" is still underpowered (Larsen et al. Sec. 2)
 > An e-commerce site converts 5% of visitors with a mean purchase of 25 USD and $\sigma = 6$ USD, so revenue per visitor is 1.25 USD. Using the rule of thumb $n_0 = n_1 = 16\sigma^2/\delta^2$ (80% power, 5% level; see [[Power Analysis and Sample Size]]):
 >
 > - To detect a **5%** change, $\delta = 1.25 \times 0.05$: $n = 16 \cdot 36 / 0.0625^2 = 147{,}456$ users per arm.
 > - To detect a **0.02%** change (a 10M USD swing for a 50B USD business), $\delta = 1.25 \times 0.0002$: $n \approx 9.2$ **billion** users per arm, more than the population of Earth.
 >
 > Deng et al. (2013) make the same point: sensitivity scales with the *square* of the effect, so detecting a $0.5\%$ delta needs $100\times$ the users of a $5\%$ delta. This is why halving the variance (which halves the required $n$) is worth as much as doubling traffic.
+
+^ex-power
 
 ### Sensitivity
 

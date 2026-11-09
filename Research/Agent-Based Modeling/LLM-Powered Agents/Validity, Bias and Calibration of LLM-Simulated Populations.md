@@ -51,7 +51,7 @@ plus explanation audits (ask the agent why) and ethics checks.
 
 ### A taxonomy of threats
 
-> [!definition] Threats to the validity of LLM-simulated populations ^def-threats
+> [!definition] Threats to the validity of LLM-simulated populations
 > | # | Threat | Evidence in sources |
 > |---|---|---|
 > | 1 | **Composition bias** — training text over-represents "humans creating public writing"; marginals $P(B)$ are skewed | Argyle Sec. 4; Horton 4.1 |
@@ -70,20 +70,24 @@ plus explanation audits (ask the agent why) and ethics checks.
 > | 14 | **Multi-agent amplification** — biases compound along transmission chains; conformity and homophily exploitable | Gao 6.4–6.5 |
 > | 15 | **Model drift and deprecation** — results tied to a model version | Horton Sec. 1: GPT-3 results relegated to an appendix |
 
+^def-threats
+
 Three of these deserve elaboration because they interact with methods elsewhere in the vault.
 
 **Threats 1–3 and poststratification.** Silicon sampling fixes threat 1 by averaging the model's conditionals over a representative covariate distribution — formally [[Poststratification]]. But poststratification is only as good as the cell-level model. Threat 2 is *bias* in the cell means; threat 3 is *under-dispersion* within cells. Reweighting repairs neither. In a multilevel-regression-and-poststratification workflow, cell estimates come with posterior uncertainty and are partially pooled toward data ([[Hierarchical Models]]); an LLM's cell "estimate" has no standard error and no data to pool toward unless the analyst supplies it.
 
 **Threat 4 and social-influence dynamics.** Over-agreeable agents bias exactly the parameters that WOM and opinion-leader models care about — persuasion probability, conformity, tie formation ([[Word of Mouth Mechanisms]], [[Opinion Leaders and Social Influence]], [[Imitation and Conditioning Processes]]). Park et al.'s network density rising from $0.167$ to $0.74$ in two days, and an agent whose interests drift toward whatever others suggest, should be read as an upper bound on sociability rather than an estimate of it.
 
-> [!theorem] Imputed-context confounding (Horton et al., Sec. 4.6) ^thm-imputation
+> [!theorem] Imputed-context confounding (Horton et al., Sec. 4.6)
 > Even with perfect randomisation of the prompt manipulation, "editing a prompt to change one factor may inadvertently cause other factors to change". If the scenario leaves a relevant variable $Z$ unspecified, the LLM imputes $Z$ from what *is* specified — including the treatment $T$. The contrast then estimates the effect of $T$ *together with* the induced change in imputed $Z$. In the minimum-wage simulation, omitting a reference wage let the model infer one from the applicants' wage asks (which the minimum wage alters); stating a \$12 reference wage changed the estimated effect on hired wage by nearly 50% and on experience from about one to about three months. The authors classify this as an **external-validity** problem shared with sparse lab vignettes given to humans, and recommend specifying context, robustness checks and additional simulations.
+
+^thm-imputation
 
 In [[Potential Outcomes Framework]] terms: the unit's response is $Y(t, z)$ but the experiment delivers $Y(t, Z(t))$ with $Z(t)$ the model's imputation. The randomised contrast is a valid *total* effect for that prompt; it is not the *controlled direct* effect $Y(1, z) - Y(0, z)$ the researcher usually has in mind.
 
 ### Remedies and what each does
 
-> [!algorithm] A validation-and-calibration protocol (synthesis of the sources) ^alg-protocol
+> [!algorithm] A validation-and-calibration protocol (synthesis of the sources)
 > 1. **Scope the claim.** Piloting, design stress-testing, power analysis and hypothesis generation tolerate low fidelity; using silicon responses *as estimates* does not (Horton Sec. 2.2).
 > 2. **Fix composition**: draw personas from a representative frame and weight them (Argyle; [[Poststratification]]).
 > 3. **Prefer theory-grounded instructions** to bare demographics where a mechanism is known (Horton 3.2), and **calibrate type shares** to human data ([[Persona Mixture Calibration of LLM Agents]]).
@@ -95,10 +99,14 @@ In [[Potential Outcomes Framework]] terms: the unit's response is $Y(t, z)$ but 
 > 9. **Anchor to human ground truth.** With a labelled human sample, use **prediction-powered inference**: LLM predictions on unlabelled inputs act "like additional observations that are corrected using the ground truth sample", giving estimators that "remain unbiased for the target parameter" with precision increasing in predictive accuracy (Horton 3.3).
 > 10. **Audit multi-agent runs** for hallucinated memories (trace claims to the memory stream, as Park et al. did) and for amplification along chains.
 
+^alg-protocol
+
 **Fine-tuning** on human data is an alternative to steps 3–4 (Gao 4.2; Horton fn. 14) but is heavier, risks catastrophic forgetting and sacrifices interpretability.
 
-> [!definition] The four outcomes of relying on a simulation (Horton et al., Fig. 7) ^def-four-outcomes
+> [!definition] The four outcomes of relying on a simulation (Horton et al., Fig. 7)
 > Treating simulation results as predictions about true propositions: **true positives** and **true negatives** help; **false positives** "introduce spurious results"; **false negatives** "fail to predict legitimate findings". "Without a correct causal model, no statistical procedure can, ex ante, guarantee performance in novel settings." A mitigating observation: the bar is human expert forecasting, which is itself "surprisingly poor".
+
+^def-four-outcomes
 
 ### Where the sources disagree
 

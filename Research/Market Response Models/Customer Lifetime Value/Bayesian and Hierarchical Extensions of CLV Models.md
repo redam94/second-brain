@@ -44,7 +44,7 @@ Three pressures push beyond the basic models. First, managers want to explain he
 
 ### 1. Time-invariant covariates (note 019)
 
-> [!theorem] Covariates rescale the mixing distributions ^thm-clv-covariates
+> [!theorem] Covariates rescale the mixing distributions
 > Let $z_1$ be covariates for the purchase process and $z_2$ for dropout (no intercepts). Under a proportional-hazards specification with exponential baseline, $h(t\mid\theta,\gamma,z)=\theta\exp(\gamma'z)$, write $\lambda=\lambda_0e^{\gamma_1'z_1}$ with $\lambda_0\sim\text{gamma}(r,\alpha_0)$. A change of variables shows $\lambda\sim\text{gamma}(r,\alpha_0e^{-\gamma_1'z_1})$. Hence (Fader & Hardie 2007, Secs. 1, 3–4):
 >
 > - **Pareto/NBD:** replace
@@ -64,6 +64,8 @@ Three pressures push beyond the basic models. First, managers want to explain he
 >
 > The likelihood, $E[X(t)]$, $P(\text{alive})$ and $E[Y(t)\mid x,t_x,T]$ are the basic-model expressions evaluated at these customer-specific parameters.
 
+^thm-clv-covariates
+
 Details worth remembering:
 
 - **Sign convention.** $\alpha$ is a *rate* parameter of the gamma, so mean purchase rate is $r/\alpha$; a positive $\gamma_1$ *raises* purchasing by *lowering* $\alpha$. The note flags "the addition of minus signs in the exponential terms as we go from multipliers of $\lambda_0,\mu_0$ to multipliers of $\alpha_0,\beta_0$."
@@ -81,9 +83,11 @@ For contractual data, Fader & Hardie (2007, Sec. 4.3) explicitly propose a third
 
 ### 3. Software: `lifetimes` and PyMC-Marketing
 
-> [!definition] What the packages implement ^def-clv-software
+> [!definition] What the packages implement
 > - **`lifetimes`** (Cameron Davidson-Pilon) exposes `BetaGeoFitter`, `ParetoNBDFitter`, `GammaGammaFitter`, `ModifiedBetaGeoFitter` and `BetaGeoBetaBinomFitter` — maximum-likelihood fitters. Its README states the codebase "has moved to 'archived-mode'" and names **PyMC-Marketing** as the successor.
 > - **PyMC-Marketing** (`pymc_marketing.clv`) provides `BetaGeoModel`, `ParetoNBDModel`, `GammaGammaModel` (plus an individual-level variant), `ShiftedBetaGeoModel`, a modified BG and a BG/beta-binomial model, with `rfm_summary()` to build $(x,t_x,T,\bar z)$ from a transaction log. The docstrings cite the same Fader–Hardie papers and notes summarized in this folder, and state that predictive methods were "adapted from the `BetaGeoFitter` class in the legacy `lifetimes` library."
+
+^def-clv-software
 
 What the PyMC-Marketing source shows (main branch, September 2026; check the installed version before relying on defaults):
 
@@ -97,7 +101,7 @@ What the PyMC-Marketing source shows (main branch, September 2026; check the ins
 
 Wang, Liu & Miao (2019) treat LTV prediction for **new** customers as supervised regression of total spend over a fixed horizon (1–3 years after the first purchase) on sign-up and first-purchase features. Two data problems break MSE: "many customers are one-time purchasers", producing a spike of zeros, and returning customers' LTV spans orders of magnitude.
 
-> [!definition] Zero-inflated lognormal loss ^def-ziln
+> [!definition] Zero-inflated lognormal loss
 > With $p$ the probability of returning and $(\mu,\sigma)$ the lognormal parameters for returning customers (Eqs. 1–4):
 >
 > $$
@@ -109,6 +113,8 @@ Wang, Liu & Miao (2019) treat LTV prediction for **new** customers as supervised
 > $$
 >
 > A network's last layer emits three logits mapped by sigmoid, identity and softplus to $(p,\mu,\sigma)$; the prediction is $p\cdot\exp(\mu+\sigma^2/2)$. One model replaces the usual two-stage (classifier then regressor) pipeline and yields a full predictive distribution.
+
+^def-ziln
 
 They recommend evaluating **discrimination** with the normalized Gini coefficient and **calibration** with decile charts, rather than MSE. On the Kaggle Acquire Valued Shoppers data, ZILN raises Spearman correlation over MSE "on average 23.9% higher for the linear model and 48.0% higher for DNN"; on KDD Cup 1998 donation data (50 repeat runs), ZILN versus MSE gives Spearman 0.027 vs 0.020, normalized Gini 0.190 vs 0.184, and decile-level MAPE 0.176 vs 0.210.
 

@@ -50,19 +50,23 @@ aliases:
 
 ## Main Content
 
-> [!definition] Causal tree and causal forest (eqs. 4–5) ^def-causal-tree
+> [!definition] Causal tree and causal forest (eqs. 4–5)
 > A regression tree predicts $\hat\mu(x)=|\{i:X_i\in L(x)\}|^{-1}\sum_{\{i:X_i\in L(x)\}}Y_i$, where $L(x)$ is the leaf containing $x$. A **causal tree** instead predicts
 > $$
 > \hat\tau(x)=\frac{1}{|\{i:W_i=1,X_i\in L\}|}\sum_{\{i:W_i=1,\,X_i\in L\}}Y_i\;-\;\frac{1}{|\{i:W_i=0,X_i\in L\}|}\sum_{\{i:W_i=0,\,X_i\in L\}}Y_i .
 > $$
 > A **causal forest** averages $B$ such trees, $\hat\tau(x)=B^{-1}\sum_{b=1}^B\hat\tau_b(x)$, each grown on a random subsample of size $s$ drawn *without replacement*, with $s/n\ll1$ (theory: $s\asymp n^\beta$, $\beta<1$).
 
+^def-causal-tree
+
 Trees are "nearest neighbor methods with an adaptive neighborhood metric": leaves are narrow along directions where the signal changes quickly and wide elsewhere, which is where forests gain power over $k$-NN matching in moderate dimension. Following Breiman, the forest uses *deep* trees (minimum leaf size $k$ as small as 1 per arm), so no within-leaf propensity correction is needed — in contrast to Athey & Imbens' (2016) single, larger-leaved causal tree, which reweights by propensity inside each leaf.
 
-> [!definition] Honesty (Definitions 2, 2b) ^def-honesty
+> [!definition] Honesty (Definitions 2, 2b)
 > A (causal) tree is **honest** if, for each training example $i$, it only uses the response $Y_i$ to estimate the within-leaf treatment effect $\tau$ *or* to decide where to place splits, but not both. Formally: (a) *standard case* — the tree does not use $Y_1,\dots,Y_s$ in choosing splits (it may use $X_i$ and $W_i$); or (b) *double-sample case* — the tree does not use the $\mathcal I$-sample responses for placing splits.
 
-> [!algorithm] Procedure 1 — Double-sample trees ^alg-double-sample
+^def-honesty
+
+> [!algorithm] Procedure 1 — Double-sample trees
 > **Input:** $n$ examples $(X_i,Y_i,W_i)$; minimum leaf size $k$.
 > 1. Draw a random subsample of size $s$ without replacement; divide it into disjoint halves $|\mathcal I|=\lfloor s/2\rfloor$, $|\mathcal J|=\lceil s/2\rceil$.
 > 2. Grow a tree by recursive partitioning. Splits may use any data from $\mathcal J$ and $X$- or $W$-observations from $\mathcal I$, but **not** $Y$-observations from $\mathcal I$.
@@ -70,12 +74,16 @@ Trees are "nearest neighbor methods with an adaptive neighborhood metric": leave
 >
 > Splits maximize the variance of $\hat\tau(X_i)$ over $i\in\mathcal J$ (Athey & Imbens 2016), subject to each leaf containing $\ge k$ $\mathcal I$-sample observations *of each treatment class*.
 
-> [!algorithm] Procedure 2 — Propensity trees ^alg-propensity-tree
+^alg-double-sample
+
+> [!algorithm] Procedure 2 — Propensity trees
 > 1. Draw a random subsample $\mathcal I$ of size $s$ without replacement.
 > 2. Train a **classification tree for $W_i$** on $(X_i,W_i)_{i\in\mathcal I}$ (e.g. Gini criterion), each leaf keeping $\ge k$ observations of each class.
 > 3. Estimate $\tau(x)$ with eq. (5) on the leaf containing $x$.
 >
 > Honest by construction (never looks at $Y$ when splitting). Leaves group units with similar treatment propensity — forest-based propensity matching — so this procedure is "particularly useful in observational studies, where we want to minimize bias due to variation in $e(x)$."
+
+^alg-propensity-tree
 
 **Why the variance-of-$\hat\tau$ splitting rule (Remark 1).** For a regression tree, because predictions are leaf means, $\sum_{i\in\mathcal J}(\hat\mu(X_i)-Y_i)^2=\sum_{i\in\mathcal J}Y_i^2-\sum_{i\in\mathcal J}\hat\mu(X_i)^2$, so minimizing squared error is *equivalent to maximizing the variance of the fitted values*. The treatment effect analogue cannot minimize $\sum(\hat\tau(X_i)-\tau_i)^2$ directly — $\tau_i$ is never observed — but it *can* maximize the variance of $\hat\tau(X_i)$. The tree therefore seeks splits that expose **heterogeneity in treatment effects**, not heterogeneity in outcome levels. (GRF later replaces this exact criterion with a gradient-based approximation; see [[Generalized Random Forests - Local Moment Equations]].)
 

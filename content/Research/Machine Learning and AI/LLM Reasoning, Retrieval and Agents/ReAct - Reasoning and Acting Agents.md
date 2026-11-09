@@ -39,33 +39,39 @@ ReAct's motivating analogy is human inner speech while cooking: between physical
 
 ## Main Content
 
-> [!definition] Agent–environment setup ^def-setup
+> [!definition] Agent–environment setup
 > At step $t$ an agent receives an observation $o_t \in \mathcal O$ and takes an action $a_t \in \mathcal A$ following a policy $\pi(a_t \mid c_t)$, where the **context** is the full history
 > $$
 > c_t = (o_1, a_1, \dots, o_{t-1}, a_{t-1}, o_t).
 > $$
 > Learning $\pi$ is hard when the map $c_t \mapsto a_t$ "is highly implicit and requires extensive computation" (Sec. 2).
 
-> [!definition] ReAct's augmented action space ^def-react
+^def-setup
+
+> [!definition] ReAct's augmented action space
 > ReAct sets $\hat{\mathcal A} = \mathcal A \cup \mathcal L$. An action $\hat a_t \in \mathcal L$ — a **thought** or reasoning trace — "does not affect the external environment, thus leading to no observation feedback". Its only effect is on the context:
 > $$
 > c_{t+1} = (c_t, \hat a_t).
 > $$
 > Because $\mathcal L$ is unbounded, learning in $\hat{\mathcal A}$ "requires strong language priors" — supplied here by a frozen LLM prompted with a few human-written trajectories of thoughts, actions and observations.
 
+^def-react
+
 **Kinds of useful thought (Sec. 2).** Decomposing the goal and creating a plan; injecting commonsense knowledge; extracting the important part of an observation; tracking progress and transitioning between sub-plans; handling exceptions and adjusting the plan.
 
 **Dense vs sparse thoughts.** For reasoning-heavy tasks, thoughts and actions strictly alternate, giving thought–action–observation steps. For long-horizon decision-making tasks, thoughts appear only "sparsely in the most relevant positions of a trajectory", and the model itself decides when to think.
 
-> [!definition] The Wikipedia action space (Sec. 3.1) ^def-wiki-actions
+> [!definition] The Wikipedia action space (Sec. 3.1)
 > 1. `search[entity]` — returns the first 5 sentences of the entity's wiki page, or else the top-5 similar entity names.
 > 2. `lookup[string]` — returns the next sentence on the current page containing the string (simulating Ctrl+F).
 > 3. `finish[answer]` — ends the episode with an answer.
 > This is deliberately "significantly weaker than state-of-the-art lexical or neural retrievers" such as the dense retriever in [[Retrieval-Augmented Generation (RAG)]]; the point is to force retrieval to be driven by explicit reasoning.
 
+^def-wiki-actions
+
 **Baselines by ablation (Sec. 3.2).** From each ReAct exemplar the authors delete components: *Standard* (no thoughts, actions, observations), *CoT* (thoughts only), *Act* (actions and observations only), plus *CoT-SC* — self-consistency, sampling 21 CoT trajectories at temperature 0.7 and taking the majority answer.
 
-> [!theorem] Empirical findings on HotpotQA and FEVER (Table 1, PaLM-540B) ^thm-results
+> [!theorem] Empirical findings on HotpotQA and FEVER (Table 1, PaLM-540B)
 >
 > | Method | HotpotQA (EM) | FEVER (Acc) |
 > |---|---|---|
@@ -80,10 +86,14 @@ ReAct's motivating analogy is human inner speech while cooking: between physical
 >
 > ReAct beats Act on both tasks (reasoning guides acting and synthesises the final answer). ReAct beats CoT on FEVER but trails it slightly on HotpotQA. All prompting methods remain far below supervised systems.
 
-> [!definition] Combining internal and external knowledge ^def-backoff
+^thm-results
+
+> [!definition] Combining internal and external knowledge
 > - **ReAct $\to$ CoT-SC**: if ReAct fails to return an answer within 7 (HotpotQA) or 5 (FEVER) steps, back off to CoT-SC.
 > - **CoT-SC $\to$ ReAct**: if the majority answer among $n$ CoT-SC samples occurs fewer than $n/2$ times — "internal knowledge might not support the task confidently" — back off to ReAct.
 > The hybrids reach the 21-sample CoT-SC score using only 3–5 samples (Fig. 2). The second rule is an uncertainty-triggered information-acquisition policy: pay for external evidence only when the model's own answers disagree.
+
+^def-backoff
 
 **Human error analysis (Table 2).** 50 correct and 50 incorrect trajectories per method on HotpotQA:
 

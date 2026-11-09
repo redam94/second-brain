@@ -49,7 +49,7 @@ After scaling by $\sqrt N$, the first-order term is $\sqrt N\times O(N^{-\varphi
 
 ## Main Content
 
-> [!definition] Pathwise derivative and Neyman orthogonality (Def. 2.1) ^def-neyman-orth
+> [!definition] Pathwise derivative and Neyman orthogonality (Def. 2.1)
 > Let $T$ be a convex nuisance space and $\mathcal T_N\subset T$ a *nuisance realization set* containing $\hat\eta_0$ with high probability (a shrinking neighborhood of $\eta_0$). Define
 > $$
 > D_r[\eta-\eta_0]:=\partial_r\,\mathbb E_P\big[\psi(W;\theta_0,\eta_0+r(\eta-\eta_0))\big],\qquad r\in[0,1),
@@ -59,8 +59,12 @@ After scaling by $\sqrt N$, the first-order term is $\sqrt N\times O(N^{-\varphi
 > \partial_\eta\mathbb E_P\psi(W;\theta_0,\eta_0)[\eta-\eta_0]=0\quad\text{for all }\eta\in\mathcal T_N .
 > $$
 
-> [!definition] Near-orthogonality (Def. 2.2) ^def-near-orth
+^def-neyman-orth
+
+> [!definition] Near-orthogonality (Def. 2.2)
 > $\psi$ is $\lambda_N$ **near-orthogonal** if $\|\partial_\eta\mathbb E_P\psi(W;\theta_0,\eta_0)[\eta-\eta_0]\|\le\lambda_N$ for all $\eta\in\mathcal T_N$, with $\lambda_N=o(N^{-1/2})$. This covers scores whose orthogonalizing parameter is itself regularized (e.g. a lasso-estimated $\mu_0$ satisfying $\|J_{\theta\beta}-\mu J_{\beta\beta}\|_q\le r_N$).
+
+^def-near-orth
 
 **Check on the PLR model.** For the naive score $\varphi=(Y-\theta D-g(X))D$, a perturbation $\delta_g=g-g_0$ gives $\partial_g\mathbb E\varphi[\delta_g]=-\mathbb E[\delta_g(X)D]=-\mathbb E[\delta_g(X)m_0(X)]\ne0$. For the DML score $\psi=(Y-D\theta-g(X))(D-m(X))$ with $\eta=(g,m)$,
 $$
@@ -70,12 +74,14 @@ because $\mathbb E[V\mid X]=0$ and $\mathbb E[U\mid X,D]=0$. The second derivati
 
 ### Constructing orthogonal scores (§2.2)
 
-> [!theorem] Neyman's construction for (quasi-)likelihood problems (Lemma 2.1) ^thm-neyman-construction
+> [!theorem] Neyman's construction for (quasi-)likelihood problems (Lemma 2.1)
 > Let $(\theta_0,\beta_0)$ maximize $\mathbb E_P[\ell(W;\theta,\beta)]$ with finite-dimensional nuisance $\beta$, and let $J=\partial_{(\theta',\beta')}\mathbb E_P[\partial_{(\theta',\beta')'}\ell]$ be partitioned into $J_{\theta\theta},J_{\theta\beta},J_{\beta\theta},J_{\beta\beta}$. The score
 > $$
 > \psi(W;\theta,\eta)=\partial_\theta\ell(W;\theta,\beta)-\mu\,\partial_\beta\ell(W;\theta,\beta),\qquad \eta=(\beta',\mathrm{vec}(\mu)')',
 > $$
 > with $\mu_0=J_{\theta\beta}J_{\beta\beta}^{-1}$ solving $J_{\theta\beta}-\mu J_{\beta\beta}=0$, is Neyman orthogonal at $(\theta_0,\eta_0)$ — with respect to both $\beta$ **and** $\mu$. When $\ell$ is the true log-likelihood, $\psi$ is also the *efficient score* (Remark 2.2).
+
+^thm-neyman-construction
 
 In words: project the $\theta$-score off the span of the nuisance scores. Applied to the high-dimensional linear model $Y=D\theta_0+X'\beta_0+U$, $D=X'\gamma_0+V$ (Example 2.1), one gets $J_{\theta\beta}=-\mathbb E[DX']$, $J_{\beta\beta}=-\mathbb E[XX']$, $\mu_0=\gamma_0'$ and
 $$
@@ -83,23 +89,27 @@ $$
 $$
 the "double lasso"/partialling-out score. The paper gives parallel constructions for GMM problems (Lemma 2.3: $\psi=\mu\,m(W;\theta,\beta)$ with $\mu$ chosen to annihilate the nuisance Jacobian $G_\beta$), for M-estimation with infinite-dimensional nuisance via **concentrating-out** (Lemma 2.5: profile $\beta_\theta=\arg\max_\beta\mathbb E\ell(W;\theta,\beta)$ and differentiate $\ell(W;\theta,\beta_\theta)$ totally in $\theta$), and for conditional moment restrictions (Lemma 2.6).
 
-> [!theorem] Orthogonal score = original score + influence-function adjustment (§2.2.5) ^thm-if-adjustment
+> [!theorem] Orthogonal score = original score + influence-function adjustment (§2.2.5)
 > If a first-step estimator $\hat\beta_0$ admits the expansion $\int\varphi(w;\theta_0,\hat\beta_0)\,dP(w)=\frac1n\sum_i\phi(W_i;\theta_0,\eta_0)+o_P(n^{-1/2})$ (Newey 1994), then
 > $$
 > \psi(W;\theta,\eta)=\varphi(W;\theta,\beta)+\phi(W;\theta,\eta)
 > $$
 > is Neyman orthogonal, and $\psi(W;\theta_0,\eta_0)$ is the influence function of the limit of $n^{-1}\sum_i\varphi(W_i;\theta_0,\hat\beta_0)$. For PLR: the derivative of $\varphi=D(Y-D\theta-g(X))$ in $g$ has conditional mean $-m_0(X)$; multiplying by the nonparametric residual gives $\phi=-m_0(X)\{Y-D\theta-g(X)\}$ and hence $\psi=\{D-m_0(X)\}\{Y-D\theta-g(X)\}$.
 
+^thm-if-adjustment
+
 This is why the AIPW/doubly-robust score is orthogonal ([[DML Estimators for ATE and the Interactive Model]]): it is the plug-in $g(1,X)-g(0,X)-\theta$ plus the influence-function correction for estimating $g$.
 
 ### What orthogonality buys (§3.2)
 
-> [!theorem] Rate requirements under orthogonality ^thm-rates
+> [!theorem] Rate requirements under orthogonality
 > For linear scores $\psi=\psi^a(W;\eta)\theta+\psi^b(W;\eta)$, Assumptions 3.1–3.2 require (near-)orthogonality with $\lambda_N\le\delta_NN^{-1/2}$, identification ($J_0=\mathbb E_P[\psi^a(W;\eta_0)]$ with singular values in $[c_0,c_1]$), and statistical rates
 > $$
 > r_N,\ r_N'\le\delta_N,\qquad \lambda_N':=\sup_{r\in(0,1),\eta\in\mathcal T_N}\big\|\partial_r^2\mathbb E_P[\psi(W;\theta_0,\eta_0+r(\eta-\eta_0))]\big\|\le\delta_N/\sqrt N .
 > $$
 > In smooth problems $r_N,r_N'\lesssim\varepsilon_N$ and $\lambda_N'\lesssim\varepsilon_N^2$ where $\|\hat\eta_0-\eta_0\|_{P,2}\lesssim\varepsilon_N$, so the **crude requirement** is $\varepsilon_N=o(N^{-1/4})$ (eq. 3.8). When the second derivative vanishes identically, $\lambda_N'=0$ — the optimal-instrument problem, PLR with known $m_0$, and treatment-effect problems with **known propensity score (RCTs)** — the requirement collapses to mere consistency, $\varepsilon_N=o(1)$.
+
+^thm-rates
 
 The $o(N^{-1/4})$ rate is attainable: $\ell_1$-penalized methods under approximate sparsity, $L_2$-boosting in sparse linear models, certain trees/forests (Wager & Walther 2016), and classes of neural nets (Chen & White 1999) — the paper's list on p. 26. Given these conditions, Theorem 3.1 delivers $\sqrt N\sigma^{-1}(\tilde\theta_0-\theta_0)=\frac1{\sqrt N}\sum_i\bar\psi(W_i)+O_P(\rho_N)\rightsquigarrow\mathcal N(0,I_d)$ **uniformly over** $P\in\mathcal P_N$, with influence function $\bar\psi=-\sigma^{-1}J_0^{-1}\psi(\cdot;\theta_0,\eta_0)$ and $\sigma^2=J_0^{-1}\mathbb E_P[\psi\psi'](J_0^{-1})'$. Uniformity — robustness to perturbations of $P$ along sequences — "can be shown to fail for methods not based on orthogonal scores."
 

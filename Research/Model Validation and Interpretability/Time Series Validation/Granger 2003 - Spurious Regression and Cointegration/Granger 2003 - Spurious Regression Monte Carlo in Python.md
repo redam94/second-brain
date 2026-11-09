@@ -181,7 +181,7 @@ if __name__ == "__main__":
 
 ### Experiment 1 — levels vs differences ($T = 50, 100, 500$; 5,000 reps; seed 0)
 
-> [!example] Independent random walks, OLS of $y$ on $x$ ^ex-sim-exp1
+> [!example] Independent random walks, OLS of $y$ on $x$
 > | $T$ | Regression | $\Pr(\lvert t\rvert>1.96)$ | median $\lvert t\rvert$ | mean $R^2$ | median DW | $\Pr(R^2>DW)$ |
 > |---|---|---|---|---|---|---|
 > | 50 | levels | 0.67 | 3.14 | 0.24 | 0.30 | 0.31 |
@@ -193,9 +193,11 @@ if __name__ == "__main__":
 >
 > **Interpretation:** matches Phillips' asymptotics ([[Granger 2003 - Spurious Regression from Yule to Granger-Newbold#^thm-phillips|theorem]]): size distortion grows with $T$; median $|t|$ scales like $\sqrt T$ (ratio 10.01/4.62 = 2.17 vs $\sqrt5 = 2.24$); $R^2$ converges to a non-degenerate distribution (mean $\approx 0.24$); DW $\to 0$; the $R^2>DW$ flag ([[Granger 2003 - Spurious Regression from Yule to Granger-Newbold#^thm-r2-dw|rule of thumb]]) catches more spurious fits as $T$ grows. Differenced regressions have correct size (0.04-0.06), median $|t| \approx 0.67$ (the $|N(0,1)|$ median is 0.674) and DW $= 2$.
 
+^ex-sim-exp1
+
 ### Experiment 2 — Granger-Newbold design with $k$ regressors ($T = 50$; 5,000 reps; seed 1)
 
-> [!example] One random walk on $k$ independent random walks; joint $F$-test of all slopes $= 0$ at 5% ^ex-sim-exp2
+> [!example] One random walk on $k$ independent random walks; joint $F$-test of all slopes $= 0$ at 5%
 > | $k$ regressors | rejection rate | mean $R^2$ | median DW |
 > |---|---|---|---|
 > | 1 | 0.67 | 0.25 | 0.30 |
@@ -206,9 +208,11 @@ if __name__ == "__main__":
 >
 > **Interpretation:** the qualitative Granger-Newbold (1974) finding — rejection of a true null in most replications with one regressor, approaching certainty with five — is reproduced; mean $R^2$ climbs to 0.65 from pure noise. DW rises with $k$ only because more regressors absorb more of the wandering; it stays far below 2 and the $R^2>DW$ pattern is typical.
 
+^ex-sim-exp2
+
 ### Experiment 3 — Yule's correlation shapes ($T = 10$; 20,000 reps; seed 2)
 
-> [!example] Sampling distribution of $r(x,y)$ for independent series of three integration orders ^ex-sim-exp3
+> [!example] Sampling distribution of $r(x,y)$ for independent series of three integration orders
 > | Series type | $T$ | $\Pr(\lvert r\rvert>0.5)$ | $\Pr(\lvert r\rvert>0.9)$ | SD of $r$ |
 > |---|---|---|---|---|
 > | white noise $I(0)$ | 10 | 0.14 | 0.00 | 0.33 |
@@ -217,9 +221,11 @@ if __name__ == "__main__":
 >
 > **Interpretation:** Yule's (1926) three cases (described in [[Granger 2003 - Spurious Regression from Yule to Granger-Newbold]]): concentrated around 0 for random series; spread over most of $(-1,1)$ once cumulated; U-shaped with half the mass beyond $|r|>0.9$ when cumulated twice. Yule's 0.95 church-marriage/mortality correlation is ordinary under the $I(2)$-like row.
 
+^ex-sim-exp3
+
 ### Experiment 4 — Engle-Granger test, spurious vs cointegrated ($T = 200$; 2,000 reps; seed 3)
 
-> [!example] Levels OLS plus ADF(1) test on residuals, 5% critical value $\approx -3.37$ ^ex-sim-exp4
+> [!example] Levels OLS plus ADF(1) test on residuals, 5% critical value $\approx -3.37$
 > *Critical value:* $-3.37$ is the finite-sample ($T \approx 200$) Engle-Granger/MacKinnon 5% value for two variables with a constant. The asymptotic value, about $-3.34$, is the one quoted in [[Granger 2003 - Cointegration and the Error-Correction Representation#^alg-engle-granger|the Engle-Granger algorithm]].
 >
 > | Pair | median $\hat\beta$ | SD of $\hat\beta$ | mean $R^2$ | median DW | EG rejects "no cointegration" |
@@ -229,9 +235,11 @@ if __name__ == "__main__":
 >
 > **Interpretation:** $\hat\beta$ in the spurious case is centred near 0 but with SD 0.62 that does **not** shrink with $T$ (Phillips); in the cointegrated case it is **superconsistent** (SD 0.03). The residual unit-root test, with Engle-Granger rather than Dickey-Fuller critical values (approximately the MacKinnon value for two variables with a constant), holds its size (0.04) and has full power here. DW alone would not separate them perfectly at small $T$, but the gap (0.07 vs 1.04) is large.
 
+^ex-sim-exp4
+
 ### Experiment 5 — two-step ECM on the cointegrated pair ($T = 200$; 2,000 reps; seed 4)
 
-> [!example] $\Delta y_t = \mu + \gamma \hat z_{t-1} + \delta \Delta x_t + \varepsilon_t$ with $\hat z_t = y_t - \hat\alpha - \hat\beta x_t$ ^ex-sim-exp5
+> [!example] $\Delta y_t = \mu + \gamma \hat z_{t-1} + \delta \Delta x_t + \varepsilon_t$ with $\hat z_t = y_t - \hat\alpha - \hat\beta x_t$
 > | Parameter | Mean estimate | SD |
 > |---|---|---|
 > | $\gamma$ (adjustment, true $-0.5$) | $-0.522$ | 0.063 |
@@ -239,6 +247,8 @@ if __name__ == "__main__":
 > | median $t(\hat\gamma)$ | $-8.25$ | — |
 >
 > **Interpretation:** the [[Granger 2003 - Cointegration and the Error-Correction Representation#^alg-engle-granger|Engle-Granger two-step]] recovers the error-correction dynamics with a small finite-sample bias in $\gamma$ (about $-0.02$, from using estimated $\hat z$). This is Granger's "Putting the analysis in the form of an error-correction model resolves many of the difficulties found with spurious regression" (p. 363) in numbers.
+
+^ex-sim-exp5
 
 ### Figures — what Granger chose not to draw
 
@@ -352,26 +362,34 @@ Fig3 T=400: median|t| levels=9.16 differences=0.67
 Fig3 T=800: median|t| levels=12.56 differences=0.69
 ```
 
-> [!example] Figure 1 — one spurious pair ^fig-sim-pair
+> [!example] Figure 1 — one spurious pair
 > ![[Granger 2003 - spurious pair.png]]
 > **Reading:** the first draw from seed 0, not a selected example. Two independent random walks of length 100 wander apart: $x$ drifts up and $y$ drifts down. The levels regression reports slope $-0.27$, $t = -6.8$ and $R^2 = 0.32$, a "highly significant" negative relationship between series that share nothing. The scatter shows the cause: consecutive points are joined in time, so the cloud is a few long excursions, not 100 independent observations. That is Granger's string of pearls (p. 360).
 
-> [!example] Figure 2 — Yule's three correlation shapes ($T = 10$, 20,000 pairs each) ^fig-sim-yule
+^fig-sim-pair
+
+> [!example] Figure 2 — Yule's three correlation shapes ($T = 10$, 20,000 pairs each)
 > ![[Granger 2003 - Yule correlation shapes.png]]
 > **Reading:** the histograms behind [[#^ex-sim-exp3|Experiment 3]]. White noise gives a hump centred on 0 (SD 0.33, close to $1/\sqrt{10-1}$). Random walks give an almost flat distribution over $(-1, 1)$ (SD 0.52). Twice-cumulated series give a U shape with half the mass beyond $|r| > 0.9$ (SD 0.82). These are the bell, flat and U shapes Yule (1926) reported for random series, conjunct series with random differences, and conjunct series with conjunct differences; his own SDs were about 0.32 and 0.51-0.55 for the first two ([[Granger 2003 - Spurious Regression from Yule to Granger-Newbold]]).
 
-> [!example] Figure 3 — the spurious $t$ grows like $\sqrt{T}$ (2,000 pairs per $T$, seed 5) ^fig-sim-tgrowth
+^fig-sim-yule
+
+> [!example] Figure 3 — the spurious $t$ grows like $\sqrt{T}$ (2,000 pairs per $T$, seed 5)
 > ![[Granger 2003 - t growth with T.png]]
 > **Reading:** on log-log axes the median levels $|t|$ follows the dashed $\sqrt{T}$ reference line from 2.2 at $T = 25$ to 12.6 at $T = 800$, as [[Granger 2003 - Spurious Regression from Yule to Granger-Newbold#^thm-phillips|Phillips (1986)]] predicts. The differenced regression stays flat near 0.67-0.70, the median of $|N(0,1)|$. More data makes the spurious finding *more* convincing, which is why a larger sample is no protection.
 
+^fig-sim-tgrowth
+
 ## Examples
 
-> [!example] Adapting the script as a persistence-matched null for a real analysis ^ex-sim-adapt
+> [!example] Adapting the script as a persistence-matched null for a real analysis
 > **Setup:** an MMM or driver regression of a weekly KPI ($T \approx 104$) on a candidate series returns $t = 5.1$ in levels.
 >
 > **Steps:** (1) fit an AR(1) or ARIMA(0,1,0) to the candidate series; (2) generate 2,000 surrogate candidates from that fitted process, independent of the KPI; (3) rerun the *same* regression (same controls, same transformations) with each surrogate; (4) report where 5.1 falls in the surrogate distribution of $|t|$. With random-walk-like candidates at $T \approx 100$, the median surrogate $|t|$ is about 4.6 (Exp. 1), so $t = 5.1$ is unremarkable — evidence comparable to a coin flip, not to $p < 10^{-6}$.
 >
 > **Why it works:** the null distribution inherits the persistence that invalidates the textbook $t$ distribution. The same logic (calibrate a procedure on data where the truth is known) underlies [[Designing Simulated-Data Experiments]] and [[Zhang Vaver 2017 - Aggregate Marketing System Simulator - Overview]].
+
+^ex-sim-adapt
 
 ## Connections
 

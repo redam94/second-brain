@@ -40,7 +40,7 @@ Yao et al. note that ReAct is, to their knowledge, "the first demonstration of c
 
 ## Main Content
 
-> [!definition] A ladder of tool integration ^def-ladder
+> [!definition] A ladder of tool integration
 > | Level | Who decides to call the tool? | When? | Source |
 > |---|---|---|---|
 > | 0. Post-hoc tool | The harness (every equation is re-evaluated with Python `eval`) | After generation | Wei et al., Appendix B: GSM8K 56.9 $\to$ 58.6 for PaLM 540B |
@@ -49,7 +49,9 @@ Yao et al. note that ReAct is, to their knowledge, "the first demonstration of c
 >
 > Moving down the ladder shifts control from the engineer to the model, which buys flexibility (multi-hop questions, query reformulation) at the cost of new failure modes (loops, derailment by a bad observation).
 
-> [!algorithm] The agent loop (after Yao et al., Sec. 2) ^alg-agent-loop
+^def-ladder
+
+> [!algorithm] The agent loop (after Yao et al., Sec. 2)
 > **Inputs:** task description; few-shot exemplar trajectories; action space $\mathcal A$ with an executor; step budget $T$.
 > 1. Initialise context $c_1 = (\text{exemplars}, \text{task}, o_1)$.
 > 2. For $t = 1, \dots, T$:
@@ -61,9 +63,11 @@ Yao et al. note that ReAct is, to their knowledge, "the first demonstration of c
 >
 > The "memory" of the agent is nothing but $c_t$: the policy is stationary and all state lives in the growing prompt. This is also the binding constraint the authors name in their conclusion — "complex tasks with large action spaces require more demonstrations to learn well, which unfortunately can easily go beyond the input length limit of in-context learning".
 
+^alg-agent-loop
+
 **Designing the action space.** The Wikipedia API (`search`, `lookup`, `finish`) is deliberately minimal; ALFWorld uses text commands (`go to coffeetable 1`, `take paper 2`, `use desklamp 1`); WebShop uses `search`, choose-product, choose-option and `buy`. In each case actions are short strings with a fixed grammar that the harness can parse, and observations are plain text.
 
-> [!theorem] Empirical findings on interactive decision making (Sec. 4, Tables 3–4) ^thm-decision
+> [!theorem] Empirical findings on interactive decision making (Sec. 4, Tables 3–4)
 > **ALFWorld** (134 unseen games, 6 task types, instances with 50+ locations needing 50+ expert steps; success rate %):
 >
 > | Method | All tasks |
@@ -86,12 +90,16 @@ Yao et al. note that ReAct is, to their knowledge, "the first demonstration of c
 > | IL + RL (+10,587 instructions) | 62.4 | 28.7 |
 > | Human expert | 82.1 | 59.6 |
 
+^thm-decision
+
 **What the thoughts are for.** Without thoughts, Act "fails to correctly decompose goals into smaller subgoals, or loses track of the current state of the environment". The ReAct-IM ablation restricts thoughts to restating the current goal and sub-goal (dense external-feedback style): it loses 18 points, because it lacks thoughts that decide *when a sub-goal is complete*, *what the next one is*, and that invoke commonsense priors about where objects are likely to be (Appendix B.2). On WebShop, thoughts bridge "the gap between noisy observations and actions" — e.g. recognising that option strings `39x18x18inch` and `blue` satisfy "space-saving ottoman bench".
 
 **Failure modes of the loop.** From the HotpotQA audit in [[ReAct - Reasoning and Acting Agents]]: (i) **looping** — regenerating the previous thought and action, attributed partly to greedy decoding; (ii) **derailment by uninformative observations** — 23% of failures follow an empty or useless search result; (iii) reduced reasoning flexibility relative to free-form CoT. From RAG: (iv) **retrieval collapse** — the retriever returns the same documents regardless of input and the generator learns to ignore them.
 
-> [!definition] Human-in-the-loop thought editing ^def-thought-edit
+> [!definition] Human-in-the-loop thought editing
 > Because the policy is conditioned on its own visible reasoning, a human can steer the agent by **editing a thought** rather than retraining or scripting actions. In Yao et al. Appendix A.3 (Fig. 5), removing one hallucinated sentence from Act 17 and adding a hint at Act 23 turns a failing ALFWorld trajectory into a success — "from typing tens of actions to only editing a couple of thoughts". This is impossible for Act-only or RL policies, where "a human cannot change the model parameters, and changing a few actions might not edit the rest of the model behavior".
+
+^def-thought-edit
 
 **Risk.** The ReAct ethics statement is explicit that "hooking up a large language model with an action space to interact with external environments ... has potential dangers, e.g. looking up inappropriate or private information, or taking harmful actions". Their mitigation is by construction: read-only websites and no irreversible actions (the agent "cannot really buy products"). Restricting the action space remains the primary safety lever for any deployed agent.
 

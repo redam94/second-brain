@@ -41,7 +41,7 @@ The name: "flow" is the trajectory samples follow through the chain $T = T_K\cir
 
 ## Main Content
 
-> [!definition] Flow-based model (Sec. 2.1, Eqs. 1-3) ^def-flow
+> [!definition] Flow-based model (Sec. 2.1, Eqs. 1-3)
 > Let $x\in\mathbb R^D$ and $x = T(u)$ with $u\sim p_u(u)$, where $T$ is a **diffeomorphism** (invertible, with $T$ and $T^{-1}$ differentiable; $u$ must also be $D$-dimensional). Then
 >
 > $$
@@ -50,7 +50,9 @@ The name: "flow" is the trajectory samples follow through the chain $T = T_K\cir
 >
 > $|\det J_T(u)|$ is the local volume change: where $T$ expands a neighbourhood the density falls, where it contracts the density rises.
 
-> [!theorem] Composition (Sec. 2.1, Eqs. 5-6) ^thm-composition
+^def-flow
+
+> [!theorem] Composition (Sec. 2.1, Eqs. 5-6)
 > Diffeomorphisms are closed under composition, with
 >
 > $$
@@ -59,14 +61,18 @@ The name: "flow" is the trajectory samples follow through the chain $T = T_K\cir
 >
 > So log-determinants *add* across layers, and a deep flow's log-density is a sum of cheap per-layer terms.
 
+^thm-composition
+
 **Two operations, two costs.** "Sampling from the model requires the ability to sample from $p_u(u)$ and to compute the forward transformation $T$. Evaluating the model's density requires computing the inverse transformation $T^{-1}$ and its Jacobian determinant." "The application will dictate which of these operations need to be implemented and how efficient they need to be."
 
-> [!theorem] Universality (Sec. 2.2) ^thm-universality
+> [!theorem] Universality (Sec. 2.2)
 > If $p_x(x)>0$ everywhere and the conditional CDFs $\Pr(x_i'\le x_i\mid x_{<i})$ are differentiable, the map $z_i = F_i(x_i, x_{<i}) = \Pr(x_i'\le x_i\mid x_{<i})$ is a diffeomorphism with triangular Jacobian taking $p_x$ to the uniform distribution on $(0,1)^D$. Composing one such map with the inverse of another shows that a flow can turn any well-behaved base into any well-behaved target. Autoregressive flows implement this construction directly, so they "are universal approximators ... provided the transformer and the conditioner are flexible enough"; the authors caution that this "is just a statement of representational power and makes no guarantees about the flow's behavior in practice."
+
+^thm-universality
 
 ### Training: forward KL is what SBI uses
 
-> [!definition] Forward KL = maximum likelihood (Sec. 2.3.1, Eqs. 13-14) ^def-forward-kl
+> [!definition] Forward KL = maximum likelihood (Sec. 2.3.1, Eqs. 13-14)
 > With samples $\{x_n\}$ from the target $p_x^*$ but no ability to evaluate it,
 >
 > $$
@@ -75,11 +81,13 @@ The name: "flow" is the trajectory samples follow through the chain $T = T_K\cir
 >
 > This needs only $T^{-1}$, its Jacobian determinant, and $p_u$: "we can train a flow model with maximum likelihood even if we are not able to compute $T$ or sample from $p_u$."
 
+^def-forward-kl
+
 The **reverse KL** $D_{\mathrm{KL}}[p_x(x;\theta)\Vert p_x^*(x)]$ (Sec. 2.3.2, Eqs. 17-19) is the mirror image: it needs an evaluable (possibly unnormalized) target and a sampleable flow, and is the objective of variational inference with flows. This is the cleanest statement of the difference between [[Variational Inference and Pathfinder|VI]] and neural SBI: VI has the density and lacks samples, so it uses reverse KL; SBI has samples $(\theta_n,x_n)$ from the joint and lacks the density, so it uses forward KL. (A standard observation that the review itself does not make: the forward KL penalizes missing mass and so tends to over-cover, whereas the reverse KL tends to lock onto one mode; for a posterior approximation, over-dispersion is usually the less harmful error.)
 
 ### Autoregressive flows: transformer plus conditioner
 
-> [!definition] Autoregressive flow (Sec. 3.1, Eqs. 29-32) ^def-ar-flow
+> [!definition] Autoregressive flow (Sec. 3.1, Eqs. 29-32)
 >
 > $$
 > z_i' = \tau(z_i; h_i), \qquad h_i = c_i(z_{<i}),
@@ -92,6 +100,8 @@ The **reverse KL** $D_{\mathrm{KL}}[p_x(x;\theta)\Vert p_x^*(x)]$ (Sec. 2.3.2, E
 > $$
 >
 > computable in $O(D)$.
+
+^def-ar-flow
 
 **Transformers.** *Affine*: $\tau(z_i;h_i) = \alpha_i z_i+\beta_i$ with $\alpha_i = \exp\tilde\alpha_i$, giving $\log|\det J| = \sum_i\tilde\alpha_i$ (Eqs. 33-34). Simple, but a single affine autoregressive layer applied to a Gaussian yields conditionals that "will necessarily be Gaussian", and "it's unknown whether affine autoregressive flows with multiple layers are universal approximators or not." *Monotonic splines*: $K$ segments with learned knots and slopes; rational-quadratic splines (Durkan et al. 2019, the **Neural Spline Flow**) "are as fast to invert as to evaluate, while maintaining exact analytical invertibility", located by $O(\log K)$ binary search and arbitrarily flexible as $K$ grows.
 

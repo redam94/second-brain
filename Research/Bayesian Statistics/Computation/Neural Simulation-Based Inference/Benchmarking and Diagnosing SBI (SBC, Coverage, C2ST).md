@@ -47,8 +47,10 @@ Tasks: Gaussian Linear and Gaussian Linear Uniform (10-d; trivial scaling and tr
 
 ### Which metric is usable depends on what you know
 
-> [!definition] Applicability of metrics (Lueckmann et al., Table 1) ^def-metric-applicability
+> [!definition] Applicability of metrics (Lueckmann et al., Table 1)
 > Access to ground truth is cumulative: (i) only $x_o$; (ii) the generating $\theta_o$; (iii) samples from the true posterior; (iv) its gradients; (v) its density. Correspondingly usable: 1 = posterior predictive checks, 2 = probability of $\theta_o$, 3 = two-sample tests (MMD, C2ST), 4 = one-sample tests (kernelized Stein discrepancy), 5 = $f$-divergences. What the algorithm returns also matters: ABC returns only samples; (S)NLE and (S)NRE return samples and an unnormalized density; only (S)NPE returns a normalized density that "can be evaluated and sampled directly, without MCMC."
+
+^def-metric-applicability
 
 **Two popular metrics the benchmark rejects.**
 
@@ -62,10 +64,12 @@ and the entropy term is common to all algorithms. But on a handful of pairs it m
 
 **Median distance of posterior predictive samples to $x_o$ (MEDDIST).** "PPCs should be considered a mere check rather than a metric": an algorithm with "a good MAP point estimate could perfectly pass this check even if the estimated posterior is poor."
 
-> [!definition] Classifier two-sample test (C2ST) ^def-c2st
+> [!definition] Classifier two-sample test (C2ST)
 > Train a classifier to discriminate samples of the approximate posterior from samples of the reference posterior and report held-out **accuracy**: 0.5 means indistinguishable, 1.0 means perfectly separable. Benchmark settings (Sec. 2.4): a multilayer perceptron with two hidden layers, "each with 10 times as many ReLU units as the dimensionality of the data", five-fold cross-validation. The scale is interpretable and, unlike **MMD** with the median-heuristic kernel, C2ST was not fooled by multimodality: on Two Moons "MMD had difficulty discerning markedly different posteriors." Kernelized Stein discrepancy "showed numerical problems on Two Moons."
 
-> [!theorem] The six findings (Lueckmann et al., Sec. 3) ^thm-benchmark-findings
+^def-c2st
+
+> [!theorem] The six findings (Lueckmann et al., Sec. 3)
 > 1. **Choice of performance metric is key.** C2ST, MMD and MEDDIST rank the same runs differently.
 > 2. **These are not solved problems.** "For several tasks, no algorithm could solve them with the specified budget (e.g., SLCP, Lotka-Volterra)."
 > 3. **Sequential estimation improves sample efficiency**, with diminishing returns at large budgets. See [[Amortized vs Sequential Inference]].
@@ -73,14 +77,18 @@ and the entropy term is common to all algorithms. But on a handful of pairs it m
 > 5. **No one algorithm to rule them all.** No consistent winner among SNLE, SNRE and SNPE.
 > 6. **The benchmark diagnoses implementation issues.** For (S)NLE and (S)NRE the MCMC step "can limit the performance": single slice-sampling chains started from the prior "frequently got stuck in single modes", and both methods "improved by transforming parameters to be unbounded." Also, "higher capacity density estimators were beneficial for posterior but not likelihood estimation."
 
+^thm-benchmark-findings
+
 ### Diagnosing without ground truth
 
 **Simulation-based calibration.** Draw $\theta\sim p(\theta)$, $x\sim p(x\mid\theta)$, $\theta'\sim q(\theta'\mid x)$. The benchmark's App. M.2 restates the [[Data-Averaged Posterior Self-Consistency|self-consistency identity]]: the marginal of $\theta'$ is $\pi(\theta') = \int p(x)\,q(\theta'\mid x)\,dx$, which equals the prior when $q$ is the true posterior. The [[The SBC Algorithm|SBC algorithm]] tests this through [[Rank Statistics and Uniformity|rank statistics]], and [[Interpreting SBC Histograms|histogram shapes]] indicate over- or under-dispersion and bias. The SNL paper used it with 200 joint draws and 9 near-independent posterior samples per draw.
 
 **Coverage.** Uniform SBC ranks imply that, for each scalar parameter, credible intervals of every level contain the generating value with their nominal frequency when averaged over the prior predictive; the vault's [[Simulation-Based Calibration - Overview]] puts it as "analogous to checking the coverage of a credible interval under the assumed model." Cranmer et al. (Sec. 3.C) describe the repair as well as the test: using "a parametric bootstrap approach" one can "calibrate the inference procedure to provide confidence sets and posteriors with proper coverage and credibility", although "such procedures may require a large number of simulations." An over-confident neural posterior (SBC histogram piled at the extremes, coverage below nominal) is the dangerous direction, because it produces false certainty about $\theta$. Dedicated expected-coverage tests for SBI are a later literature not among this cluster's sources.
 
-> [!warning] What SBC cannot see (App. M.2) ^warn-sbc-limits
+> [!warning] What SBC cannot see (App. M.2)
 > "SBC as described above is merely a consistency check. For example, if the approximate posterior were the prior, a calibration test as described above would not be able to detect this. This is a realistic failure mode in simulation-based inference. It could happen with rejection ABC in the limit $\epsilon\to\infty$, or when learned summary statistics have no information about $\theta$." Calibration is necessary, not sufficient: pair it with a measure of **sharpness** (posterior contraction relative to the prior) or with NLTP averaged over many draws, which does reward informativeness.
+
+^warn-sbc-limits
 
 **Cost.** Both SBC and averaged NLTP need "inference for hundreds of $x_o$ which is only feasible if inference is rapid (amortized)." This is why the benchmark itself did not rely on SBC, and why amortized NPE is the easiest method to validate.
 
@@ -91,8 +99,10 @@ and the entropy term is common to all algorithms. But on a handful of pairs it m
 - NRE: the [[Neural Ratio Estimation#^ex-roc-diagnostic|ROC / AUC test]] of the identity $p(x\mid\theta) = p(x)\,r(x\mid\theta)$.
 - All methods: [[Posterior Predictive Checking]] against $x_o$, remembering it is "a mere check."
 
-> [!warning] Misspecification is out of scope for every diagnostic here ^warn-misspecification
+> [!warning] Misspecification is out of scope for every diagnostic here
 > "None of these diagnostics address the issues encountered if the model is misspecified and the simulator is not an accurate description of the system being studied" (Cranmer et al., p. 8). SBC validates inference *under the simulator*. A real $x_o$ that lies outside the simulator's prior predictive sends a neural network into extrapolation with no warning. Always check where $x_o$ falls in the simulated distribution of the summaries or the embedding.
+
+^warn-misspecification
 
 ### Practitioner's questions (Box 1)
 

@@ -56,15 +56,19 @@ The cluster's storyline:
 
 ## Main Content
 
-> [!definition] The two target types ^def-two-targets
+> [!definition] The two target types
 > **Low-dimensional target** (DML): a finite-dimensional $\theta_0$ solving $\mathbb E_P[\psi(W;\theta_0,\eta_0)]=0$ with an infinite-dimensional nuisance $\eta_0$ (e.g. $\eta_0=(g_0,m_0)$). Goal: $\sqrt N(\tilde\theta_0-\theta_0)\rightsquigarrow\mathcal N(0,\sigma^2)$.
 > **Function-valued target** (forests, R-learner): $\theta(x)$ solving the *local* moment condition $\mathbb E[\psi_{\theta(x),\nu(x)}(O_i)\mid X_i=x]=0$ for every $x$. Goal: $(\hat\theta(x)-\theta(x))/\sigma_n(x)\Rightarrow\mathcal N(0,1)$ pointwise, with $\sigma_n^2(x)\asymp s/n$ up to logs — slower than $\sqrt n$, as any nonparametric rate must be.
 
-> [!theorem] The common recipe ^thm-common-recipe
+^def-two-targets
+
+> [!theorem] The common recipe
 > Every method in this cluster is an instance of three design rules:
 > 1. **Orthogonalize** — residualize both outcome and treatment on $X$ (Robinson 1988) or, equivalently, add the influence-function correction to the plug-in (AIPW).
 > 2. **Split** — never let the same observation both *choose* the model (nuisance fit, tree splits) and *evaluate* it (score, leaf estimate). DML does this across $K$ folds; honest forests do it within each subsample.
 > 3. **Re-use efficiently** — swap fold roles and average (cross-fitting), or re-randomize the split over thousands of subsampled trees, so no data are wasted asymptotically.
+
+^thm-common-recipe
 
 | | DML | Causal forest / GRF | R-learner |
 |---|---|---|---|

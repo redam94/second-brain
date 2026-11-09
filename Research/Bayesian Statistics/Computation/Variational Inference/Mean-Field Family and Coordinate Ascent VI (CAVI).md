@@ -40,14 +40,16 @@ Mean-field CAVI is the classical form of VI and the one to understand first, bec
 
 ## Main Content
 
-> [!definition] Mean-field variational family ^def-mean-field
+> [!definition] Mean-field variational family
 > $$
 > q(z) = \prod_{j=1}^m q_j(z_j).
 > $$
 >
 > "Each latent variable $z_j$ is governed by its own variational factor" (Blei et al., Eq. 15). The family is *not* a model of the data ($x$ does not appear); the ELBO connects $q$ to the data. The parametric form of each $q_j$ is not assumed in advance; for many models it is *determined* by the update below. Generalizations: **structured VI** adds dependencies between factors; **mixture** families add latent variables inside $q$. Both improve fidelity at the cost of a harder optimization (Sec. 2.3).
 
-> [!theorem] Optimal coordinate update ^thm-cavi-update
+^def-mean-field
+
+> [!theorem] Optimal coordinate update
 > Fix all factors $q_\ell$, $\ell\ne j$. The factor maximizing the ELBO is
 >
 > $$
@@ -62,7 +64,9 @@ Mean-field CAVI is the classical form of VI and the one to understand first, bec
 > $$
 > which is, up to a constant, $-\mathrm{KL}(q_j\,\|\,q_j^*)$. It is maximized by $q_j=q_j^*$. Because the right side of the update does not involve $q_j$, this is a valid coordinate step.
 
-> [!algorithm] CAVI (Blei et al., Algorithm 1) ^alg-cavi
+^thm-cavi-update
+
+> [!algorithm] CAVI (Blei et al., Algorithm 1)
 > **Input:** model $p(x,z)$, data $x$. **Output:** $q(z)=\prod_j q_j(z_j)$.
 > 1. Initialize the factors $q_j(z_j)$.
 > 2. **While** the ELBO has not converged:
@@ -72,9 +76,11 @@ Mean-field CAVI is the classical form of VI and the one to understand first, bec
 >
 > CAVI "goes uphill on the ELBO... eventually finding a local optimum."
 
+^alg-cavi
+
 **Relation to Gibbs sampling.** The [[MCMC Basics|Gibbs sampler]] "maintains a realization of the latent variables and iteratively samples from each variable's complete conditional." CAVI "uses the same complete conditional. It takes the expected log, and uses this quantity to iteratively set each variable's variational factor" (Sec. 2.4). Any model for which a Gibbs sampler is easy to write is one for which CAVI is easy to derive. CAVI can also be read as **variational message passing** on the graphical model: each variable's update depends only on the variational parameters of its Markov blanket, which is what enabled automated software for conjugate-exponential graphs.
 
-> [!theorem] Exponential-family complete conditionals ^thm-expfam
+> [!theorem] Exponential-family complete conditionals
 > Suppose each complete conditional is in an exponential family,
 > $$
 > p(z_j\mid z_{-j},x) = h(z_j)\exp\{\eta_j(z_{-j},x)^\top z_j - a(\eta_j(z_{-j},x))\}.
@@ -84,6 +90,8 @@ Mean-field CAVI is the classical form of VI and the one to understand first, bec
 > \nu_j = \mathbb E\big[\eta_j(z_{-j},x)\big]
 > $$
 > (Blei et al., Eqs. 36-40). For **conditionally conjugate** models with global variables $\beta$ and local variables $z_i$, $p(\beta,z,x)=p(\beta)\prod_i p(z_i,x_i\mid\beta)$, this gives the local update $\varphi_i=\mathbb E_\lambda[\eta(\beta,x_i)]$ and the global update $\lambda=[\alpha_1+\sum_i\mathbb E_{\varphi_i}[t(z_i,x_i)],\ \alpha_2+n]^\top$ (Eqs. 47-48). The class includes Bayesian mixtures of exponential families, matrix factorization, some hierarchical linear and probit regressions, stochastic block models and LDA (Sec. 4).
+
+^thm-expfam
 
 This is the structural reason the global/local split in [[Hierarchical Models]] matters computationally: CAVI alternates an "E-like" step over per-unit latents and an "M-like" step over shared parameters, and the global step is what [[Stochastic and Black-Box Variational Inference|SVI]] makes stochastic.
 
@@ -95,7 +103,7 @@ This is the structural reason the global/local split in [[Hierarchical Models]] 
 
 ### Accuracy
 
-> [!theorem] What is known about mean-field accuracy ^thm-mf-accuracy
+> [!theorem] What is known about mean-field accuracy
 > - The mean-field optimum for a correlated Gaussian "has the same mean as the original density" but "the marginal variances of the approximation under-represent those of the target density" (Sec. 2.3, Fig. 1).
 > - Wang & Titterington (2005, 2006), for Bayesian Gaussian mixtures: CAVI converges to a local optimum, the variational posterior mean is a consistent estimator approaching the MLE at rate $O(1/n)$, but the asymptotic variational posterior covariance is **"too small"**, differing from the inverse Fisher information by a positive-definite matrix (Sec. 5.2).
 > - You et al. (2014): mean-field posterior means are consistent for the Bayesian linear model with normal / inverse-gamma priors.
@@ -103,9 +111,11 @@ This is the structural reason the global/local split in [[Hierarchical Models]] 
 >
 > The pattern: **point estimates usually fine, uncertainty too narrow.**
 
+^thm-mf-accuracy
+
 ## Examples
 
-> [!example] Mean-field fit to a correlated Gaussian ^ex-mf-gaussian
+> [!example] Mean-field fit to a correlated Gaussian
 > Apply the update to a target $p(z)=\mathcal N(m,\Lambda^{-1})$ with precision matrix $\Lambda$ (the standard calculation from Bishop 2006, Sec. 10.1.2, which both Blei et al. and Kucukelbir et al. cite for this effect). Keeping terms in $z_j$,
 > $$
 > \mathbb E_{-j}[\log p(z)] = -\tfrac12\Lambda_{jj}z_j^2 + z_j\Big(\Lambda_{jj}m_j-\sum_{k\ne j}\Lambda_{jk}\big(\mathbb E[z_k]-m_k\big)\Big)+\text{const},
@@ -122,7 +132,9 @@ This is the structural reason the global/local split in [[Hierarchical Models]] 
 > $$
 > a ratio of $1-n\bar x^2/\sum_i x_i^2$. For $x$ spread uniformly over $[0,10]$ that ratio is $0.25$: the mean-field posterior standard deviation of the slope is **half** the truth. This is a sufficient mechanism for the slope miscalibration that [[SBC Case Studies]] reports for ADVI on a simple linear regression, and it disappears if the predictor is centered, a reparameterization that makes the posterior itself factorize.
 
-> [!example] CAVI for a Bayesian mixture of Gaussians (Blei et al., Sec. 3, Algorithm 2) ^ex-cavi-gmm
+^ex-mf-gaussian
+
+> [!example] CAVI for a Bayesian mixture of Gaussians (Blei et al., Sec. 3, Algorithm 2)
 > Model: $\mu_k\sim\mathcal N(0,\sigma^2)$, $c_i\sim\text{Cat}(1/K)$, $x_i\mid c_i,\mu\sim\mathcal N(c_i^\top\mu,1)$. Family: $q(\mu,c)=\prod_k\mathcal N(\mu_k;m_k,s_k^2)\prod_i\text{Cat}(c_i;\varphi_i)$, which turns out to be the optimal mean-field form. Updates (Eqs. 26, 34):
 > $$
 > \varphi_{ik}\propto\exp\big\{\mathbb E[\mu_k]x_i-\mathbb E[\mu_k^2]/2\big\},\qquad m_k=\frac{\sum_i\varphi_{ik}x_i}{1/\sigma^2+\sum_i\varphi_{ik}},\qquad s_k^2=\frac{1}{1/\sigma^2+\sum_i\varphi_{ik}} .
@@ -147,6 +159,8 @@ This is the structural reason the global/local split in [[Hierarchical Models]] 
 > ```
 >
 > On 10,000 image histograms (imageCLEF, 576 dimensions, $K=30$) CAVI reaches its held-out predictive plateau "in less than a minute," orders of magnitude faster than NUTS on the same model (Sec. 3.4, Fig. 6), with the authors' caveat that this "is not a definitive comparison" since a collapsed Gibbs sampler might do better.
+
+^ex-cavi-gmm
 
 ## Connections
 

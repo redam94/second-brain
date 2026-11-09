@@ -56,7 +56,7 @@ A fourth ingredient is orthogonal to model class: large collections of series us
 
 ## Main Content
 
-> [!definition] Probabilistic forecast ^def-probabilistic-forecast
+> [!definition] Probabilistic forecast
 > Given history $y_{1:T}$ (and covariates $x_{1:T+H}$ known into the future), a probabilistic forecast is a predictive distribution for the future path,
 >
 > $$
@@ -65,18 +65,26 @@ A fourth ingredient is orthogonal to model class: large collections of series us
 >
 > represented as a parametric density, a set of quantiles, or Monte Carlo sample paths. DeepAR (Sec. 3, p. 3) calls $[1, t_0-1]$ the **conditioning range** and $[t_0, T]$ the **prediction range**; Chronos (Sec. 3.1) calls them the **context** ($C$ steps) and **horizon** ($H$ steps).
 
-> [!definition] Calibration and sharpness ^def-calibration-sharpness
+^def-probabilistic-forecast
+
+> [!definition] Calibration and sharpness
 > **Calibration** is "the statistical consistency between the distributional forecasts and the observations"; **sharpness** is "the concentration of the predictive distributions and is a property of the forecasts only" (Gneiting & Raftery, Sec. 1, p. 359). The forecaster's goal is maximal sharpness subject to calibration. A climatological (unconditional) forecast is calibrated by construction but not sharp.
 
-> [!definition] Local, task-specific (global), and pretrained forecasters ^def-model-taxonomy
+^def-calibration-sharpness
+
+> [!definition] Local, task-specific (global), and pretrained forecasters
 > - **Local**: parameters estimated separately for each series (ARIMA, ETS, Theta, BSTS).
 > - **Global / task-specific**: one parameter vector $\Theta$ shared across all series of one dataset, learned from pooled training windows (DeepAR, TFT, N-BEATS, PatchTST).
 > - **Pretrained / foundation**: one model trained once on a large multi-domain corpus and applied to unseen datasets without gradient updates (Chronos, Lag-Llama, Moirai).
 >
 > Source: Ansari et al. 2024, Sec. 5.3, p. 10.
 
-> [!definition] Coherence ^def-coherence
+^def-model-taxonomy
+
+> [!definition] Coherence
 > For a collection of $m$ series with $n$ bottom-level series $b_t$ and summing matrix $S \in \mathbb{R}^{m\times n}$ such that $y_t = S b_t$, a forecast vector $\tilde y$ is **coherent** if it lies in the column space of $S$ — aggregates equal the sum of their children (Wickramasuriya et al., Sec. 2.1).
+
+^def-coherence
 
 ### How the pieces fit
 

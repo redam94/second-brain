@@ -45,21 +45,25 @@ The static DiD coefficient answers "what was the average effect over the post pe
 
 ## Main Content
 
-> [!definition] Dynamic TWFE / event-study specification ^def-event-study-spec
+> [!definition] Dynamic TWFE / event-study specification
 > Let $G_i$ be unit $i$'s first treated period ($G_i=\infty$ if never treated) and define relative time $R_{it} = t - G_i + 1$, so $R_{it}=1$ in the first treated period (Roth et al. eq. 7/16):
 > $$
 > Y_{it} = \alpha_i + \phi_t + \sum_{r\ne 0}\mathbf 1[R_{it}=r]\,\beta_r + \epsilon_{it}
 > $$
 > The omitted category ($r=0$ here, the last pre-period; equivalently "$\ell=-1$" when the first treated period is labelled $\ell=0$) is the **normalisation**: every $\beta_r$ is measured *relative to* that period. For a common treatment date this is $Y_{it} = \lambda_i + \phi_t + \sum_{s\ne0}\beta_s\,\mathbf 1[t=s]\,D_i + \epsilon_{it}$ (Rambachan & Roth eq. 2). $\hat\beta_{post} = (\hat\beta_1,\dots,\hat\beta_{\bar T})$ are the dynamic effects; $\hat\beta_{pre} = (\hat\beta_{-\underline T},\dots,\hat\beta_{-1})$ are the leads.
 
-> [!theorem] Non-staggered case: event-study coefficients are 2×2 DiDs ^thm-event-study-2x2
+^def-event-study-spec
+
+> [!theorem] Non-staggered case: event-study coefficients are 2×2 DiDs
 > With a balanced panel and a single treatment date, the OLS coefficients are numerically
 > $$
 > \hat\beta_s = (\bar Y_{s,1}-\bar Y_{s,0}) - (\bar Y_{0,1}-\bar Y_{0,0})
 > $$
 > where $\bar Y_{s,d}$ is the period-$s$ mean for group $D_i=d$ (Rambachan & Roth Example 1). In error form, $\hat\beta_s = \beta_s + \Delta\bar\epsilon_s - \Delta\bar\epsilon_0$ (Roth 2022, p. 316). Consequence: **every coefficient shares the reference-period noise $\Delta\bar\epsilon_0$**, so under homoskedasticity $\operatorname{Var}[\hat\beta_k]=\sigma^2$ and $\operatorname{Cov}(\hat\beta_k,\hat\beta_j)=\sigma^2/2$ — event-study coefficients are strongly positively correlated by construction. This correlation is what drives pre-test bias ([[Pre-Trend Testing and Its Pitfalls]]), and it means pointwise error bars overstate how "independently" each lead supports parallel trends.
 
-> [!definition] Causal decomposition $\beta = \tau + \delta$ ^def-event-study-decomposition
+^thm-event-study-2x2
+
+> [!definition] Causal decomposition $\beta = \tau + \delta$
 > Under **no anticipation** ($Y_{it}(1)=Y_{it}(0)$ for all pre-treatment $t$),
 > $$
 > \beta_s = \underbrace{\mathbb E[Y_{is}(1)-Y_{is}(0)\mid D_i=1]}_{\tau_{ATT,s}} + \underbrace{\mathbb E[Y_{is}(0)-Y_{i0}(0)\mid D_i=1] - \mathbb E[Y_{is}(0)-Y_{i0}(0)\mid D_i=0]}_{\delta_s\ \text{(differential trend)}}
@@ -70,6 +74,8 @@ The static DiD coefficient answers "what was the average effect over the post pe
 > $$
 > (Rambachan & Roth Assumption 1; Roth 2022 eq. 2). **Parallel trends** is $\delta_{post}=0$. The pre-period coefficients identify $\delta_{pre}$ — *not* $\delta_{post}$. Everything in the pre-trend debate is about what $\delta_{pre}$ licenses one to believe about $\delta_{post}$.
 
+^def-event-study-decomposition
+
 ### Reading the plot: the conventions
 
 - **Normalisation.** One pre-period is dropped; its coefficient is zero with no error bar. Papers that do not normalise to a pre-treatment period (3 of Roth's 70) cannot be read as DiD event studies.
@@ -78,7 +84,7 @@ The static DiD coefficient answers "what was the average effect over the post pe
 - **Endpoint binning.** Distant leads/lags are often pooled ("5+ years since treatment"). Roth et al. (fn. 8) flag that the clean interpretation of dynamic TWFE assumes *all* relative-time indicators are included and that "problems may arise if one 'bins' endpoints," citing Sun & Abraham, Baker–Larcker–Wang, and Schmidheiny & Siegloch. Binning imposes that effects are constant beyond the bin edge; if they are not, the misspecification leaks into other coefficients. (Schmidheiny & Siegloch also show the formal equivalence between binned event-study and distributed-lag specifications — compare [[Carryover Effects and Distributed Lags]]; that paper is not yet in the vault.)
 - **Bands.** Use **simultaneous** rather than pointwise confidence bands for the coefficient path (Roth et al. §4.6, citing Freyaldenhoven et al. 2021; Olea & Plagborg-Møller 2019; Callaway & Sant'Anna 2021) — implemented in [[Simultaneous Inference via Multiplier Bootstrap]].
 
-> [!theorem] Staggered adoption: dynamic TWFE is contaminated (Sun & Abraham 2021, as summarised by Roth et al. §3.2) ^thm-event-study-contamination
+> [!theorem] Staggered adoption: dynamic TWFE is contaminated (Sun & Abraham 2021, as summarised by Roth et al. §3.2)
 > Under staggered parallel trends (Assumption 4) and no anticipation (Assumption 5):
 > 1. If effects depend **only on time since treatment**, $\tau_{i,t}(g)=\sum_{s\ge0}\tau_s\mathbf 1[t-g=s]$, then $\beta_s=\tau_s$: dynamic TWFE is fine (unlike *static* TWFE, which already fails here).
 > 2. If dynamic effects are **heterogeneous across adoption cohorts**, then (a) $\beta_r$ may put **negative weight** on some units' lag-$r$ effects, and (b) $\beta_r$ puts non-zero weight on effects at other lags $r'\ne r$ — **cross-lag contamination**.
@@ -86,7 +92,9 @@ The static DiD coefficient answers "what was the average effect over the post pe
 >
 > The root cause is the same as for static TWFE: OLS uses "forbidden comparisons" in which already-treated units serve as controls.
 
-> [!definition] Heterogeneity-robust event study ^def-event-study-robust
+^thm-event-study-contamination
+
+> [!definition] Heterogeneity-robust event study
 > Estimate each cohort-period effect by a clean 2×2 DiD against not-yet- or never-treated units (Roth et al. eq. 8),
 > $$
 > \widehat{ATT}(g,t) = \frac{1}{N_g}\sum_{i:G_i=g}[Y_{it}-Y_{i,g-1}] - \frac{1}{N_{\mathcal G_{comp}}}\sum_{i:G_i\in\mathcal G_{comp}}[Y_{it}-Y_{i,g-1}]
@@ -96,6 +104,8 @@ The static DiD coefficient answers "what was the average effect over the post pe
 > ATT_l^w = \sum_g w_g\,ATT(g,g+l)
 > $$
 > Evaluating the same construction at $l<0$ gives **placebo** event-study coefficients. This is exactly the event-study aggregation in [[Aggregating Group-Time Effects#^event-study|Callaway & Sant'Anna]], where the compositional-change caveat and the "balanced" version are developed. Roth et al.'s recommendation (§4.6): with a common treatment date TWFE event studies are fine; "in contexts with staggered timing, we recommend plotting estimates of $ATT_l^w$."
+
+^def-event-study-robust
 
 ### A common framework
 

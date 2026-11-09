@@ -45,15 +45,19 @@ Although the connection was not immediately recognized, both were halves of one 
 
 ## Main Content
 
-> [!definition] Bayes rule and the marginal density ^bayes-marginal
+> [!definition] Bayes rule and the marginal density
 > An unknown parameter vector $\boldsymbol{\mu}$ with prior density $g(\boldsymbol{\mu})$ gives rise to observable data $\boldsymbol{z}$ via density $f_{\boldsymbol{\mu}}(\boldsymbol{z})$:
 > $$\boldsymbol{\mu} \sim g(\cdot) \quad \text{and} \quad \boldsymbol{z}\mid\boldsymbol{\mu} \sim f_{\boldsymbol{\mu}}(\boldsymbol{z}).$$
 > The posterior is $g(\boldsymbol{\mu}\mid\boldsymbol{z}) = g(\boldsymbol{\mu})\,f_{\boldsymbol{\mu}}(\boldsymbol{z})/f(\boldsymbol{z})$, where the **marginal distribution** of $\boldsymbol{z}$ is
 > $$f(\boldsymbol{z}) = \int g(\boldsymbol{\mu})\,f_{\boldsymbol{\mu}}(\boldsymbol{z})\,d\boldsymbol{\mu}.$$
 > **EB's central move:** the marginal $f(\boldsymbol{z})$ is observable from the data, so it can be used to recover features of the prior $g$ without that prior ever being specified.
 
-> [!definition] The empirical Bayes principle ^eb-principle
+^bayes-marginal
+
+> [!definition] The empirical Bayes principle
 > When $N$ structurally identical problems are under simultaneous consideration — $z_i \sim \mathcal{N}(\mu_i, 1)$ for $i = 1,\dots,N$ — the unknown prior (or its hyperparameters) can be **estimated from the marginal distribution of the pooled data**. Each individual estimate is then formed using a "prior" learned from all $N$ cases. This is only possible because we have many similar problems together; a single problem provides no leverage on the prior.
+
+^eb-principle
 
 The two-groups / marginal-density view underlies both branches: Robbins recovers the entire posterior-mean function from the empirical marginal frequencies (Poisson case), while James-Stein estimates a single hyperparameter (the prior variance $A$) from the marginal sum of squares. See [[Empirical Bayes Interpretation of Shrinkage]].
 

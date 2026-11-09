@@ -41,10 +41,12 @@ For ABM readers, the architecture is a replacement for the agent's *state vector
 
 ## Main Content
 
-> [!definition] Memory stream ^def-memory-stream
+> [!definition] Memory stream
 > A list of memory objects, each holding a natural-language description, a creation timestamp and a most-recent-access timestamp. The base element is an **observation** — an event directly perceived by the agent (its own actions, other agents' actions, object states). **Reflections** and **plans** are stored in the same stream and retrieved alongside observations (Sec. 4.1–4.3).
 
-> [!algorithm] Retrieval function (Sec. 4.1) ^alg-retrieval
+^def-memory-stream
+
+> [!algorithm] Retrieval function (Sec. 4.1)
 > Given the current situation as a query, score every memory $m$ by
 >
 > $$
@@ -58,24 +60,30 @@ For ABM readers, the architecture is a replacement for the agent's *state vector
 >
 > The top-ranked memories that fit the context window are inserted in the prompt.
 
-> [!algorithm] Reflection (Sec. 4.2) ^alg-reflection
+^alg-retrieval
+
+> [!algorithm] Reflection (Sec. 4.2)
 > 1. **Trigger**: reflect when the sum of importance scores of the latest perceived events exceeds a threshold ($150$ in the implementation; roughly two or three reflections per game day).
 > 2. **What to reflect on**: feed the 100 most recent memories to the LLM and ask, "Given only the information above, what are 3 most salient high-level questions we can answer about the subjects in the statements?"
 > 3. **Gather evidence**: use each question as a retrieval query (reflections are eligible evidence too).
 > 4. **Synthesize**: prompt "What 5 high-level insights can you infer from the above statements? (example format: insight (because of 1, 5, 3))".
 > 5. **Store** each insight as a reflection with pointers to the cited memories. Because reflections can cite reflections, the agent builds a **reflection tree** whose leaves are observations and whose upper nodes are increasingly abstract self- and other-knowledge (e.g. "Klaus Mueller is dedicated to his research on gentrification").
 
-> [!algorithm] Planning and reacting (Sec. 4.3) ^alg-planning
+^alg-reflection
+
+> [!algorithm] Planning and reacting (Sec. 4.3)
 > 1. **Top-down day plan**: prompt with the agent's summary description and a summary of yesterday; obtain 5–8 broad chunks. A plan entry has a location, a start time and a duration.
 > 2. **Recursive decomposition**: refine into hour-long chunks, then 5–15 minute actions. Plans are stored in the memory stream.
 > 3. **React**: each time step, perceived observations are stored, and the LLM is asked (given the agent summary, the observation and a retrieved context summary of the observer's relationship with the observed entity) "Should [agent] react to the observation, and if so, what would be an appropriate reaction?" If yes, the plan is regenerated from that moment.
 > 4. **Dialogue**: utterances are generated conditioned on each speaker's summarised memory of the other and the dialogue history, until one agent ends the conversation.
 
+^alg-planning
+
 **Grounding to the world (Sec. 5).** The sandbox is a tree of areas and objects rendered to text ("there is a stove in the kitchen"). Each agent carries its own, possibly stale, subtree — agents "are not omniscient". Action locations are chosen by recursively prompting down the tree; object state changes are also LLM-inferred. Agents are initialised from a semicolon-delimited paragraph whose clauses become seed memories.
 
 ### Evidence
 
-> [!theorem] Controlled evaluation — ablation result (Sec. 6) ^thm-ablation
+> [!theorem] Controlled evaluation — ablation result (Sec. 6)
 > Within-subjects design: 100 Prolific participants ranked, for the same agent, interview answers from five conditions across five question categories (self-knowledge, memory, plans, reactions, reflections). TrueSkill ratings ($\mu$; $\sigma \approx 0.7$):
 >
 > | Condition | $\mu$ |
@@ -88,11 +96,15 @@ For ABM readers, the architecture is a replacement for the agent's *state vector
 >
 > Kruskal–Wallis $H(4) = 150.29$, $p < 0.001$; all Dunn post-hoc pairwise differences significant at $p < 0.001$ (Holm–Bonferroni adjusted; cf. [[Multiple Testing Corrections]]) except crowdworker vs. fully ablated. Full vs. fully ablated: $d = 8.16$.
 
-> [!example] End-to-end emergent behaviour (Sec. 7.1) ^ex-emergence
+^thm-ablation
+
+> [!example] End-to-end emergent behaviour (Sec. 7.1)
 > 25 agents, two game days, two seeded facts each known to one agent:
 > - **Information diffusion**: Sam's mayoral candidacy $1 \to 8$ agents ($4\% \to 32\%$); Isabella's Valentine's party $1 \to 13$ agents ($4\% \to 52\%$). Every claimed awareness was traced to an actual dialogue in the memory stream — none hallucinated.
 > - **Relationship formation**: mutual-knowledge graph density $\eta = 2|E| / \big(|V|(|V|-1)\big)$ rose from $0.167$ to $0.74$; $1.3\%$ ($n = 6$ of 453) of awareness responses were hallucinated.
 > - **Coordination**: 12 agents were invited to the party; 5 attended. Of the 7 no-shows, 3 cited conflicts and 4 expressed interest but never planned to go.
+
+^ex-emergence
 
 This is [[Emergent Phenomena in ABM|emergence]] in the ABM sense: a population-level diffusion curve and a social network were not programmed but arose from pairwise conversations. It is the generative counterpart of the contagion rules in [[Word of Mouth Mechanisms]] and the endogenous tie formation of [[Social Network Formation in Consumer Markets]]. The intention–behaviour gap (4 interested non-attenders) is a familiar marketing phenomenon that rule-based WOM models have to add by hand.
 

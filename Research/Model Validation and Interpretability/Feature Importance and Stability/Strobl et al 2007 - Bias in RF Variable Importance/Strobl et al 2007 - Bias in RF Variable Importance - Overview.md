@@ -94,12 +94,14 @@ No theorems or proofs in the formal sense: the paper's "results" are simulation 
 
 ## Examples
 
-> [!example] Example: what the paper predicts for a typical marketing driver chart ^ex-driver-chart
+> [!example] Example: what the paper predicts for a typical marketing driver chart
 > **Setup.** A tree ensemble ranks drivers of a weekly KPI using continuous spend columns, a binary holiday flag, a 4-level promotion type and a 20-level region code, with default CART trees, bootstrap resampling and Gini ("gain") importance.
 >
 > **Prediction from the paper.** Gini importance will favour the 20-level code and the continuous spend columns even if they carry no signal (Results N2/P2), and the binary flag will be disadvantaged even if it is the true driver. Permutation importance removes the mean bias but its spread still grows with cardinality, so in a single run the region code can outrank the flag (Result P3; at an effect size like relevance 0.1, default `randomForest` ranks the true binary driver first in only 41.3% of runs, Table 3).
 >
 > **Remedy.** Unbiased (conditional inference) trees, subsampling without replacement, permutation importance repeated over several seeds ([[Strobl 2007 - Conclusions, Scope and Practical Guidance#^alg-checklist]]), plus a placebo run of the same pipeline ([[Strobl 2007 - Null and Power Case Simulation Design#^ex-placebo-design]]).
+
+^ex-driver-chart
 
 ## Connections
 

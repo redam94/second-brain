@@ -38,7 +38,7 @@ Variance-based methods rest on the assumption (Saltelli et al.) "that variance i
 
 ## Main Content
 
-> [!definition] ANOVA / Sobol variance decomposition ^anova-decomposition
+> [!definition] ANOVA / Sobol variance decomposition
 > For $Y=f(X_1,\dots,X_p)$ with independent inputs, the total variance decomposes into orthogonal terms of increasing order:
 > $$ V(Y) = \sum_{i=1}^{p} V_i \;+\; \sum_{1 \le i < j \le p} V_{ij} \;+\; \dots \;+\; V_{1,2,\dots,p} $$
 > where the **partial (first-order) variance** of factor $X_i$ is
@@ -47,19 +47,27 @@ Variance-based methods rest on the assumption (Saltelli et al.) "that variance i
 > $$ V_{ij} = V\big(\mathbb{E}(Y \mid X_i, X_j)\big) - V_i - V_j . $$
 > $V_i$ is the expected reduction in output variance if $X_i$ were fixed; $V_{ij}$ is the additional joint effect beyond the two main effects.
 
-> [!definition] First-order (main effect) Sobol index ^first-order-index
+^anova-decomposition
+
+> [!definition] First-order (main effect) Sobol index
 > $$ S_i = \frac{V_i}{V(Y)} = \frac{V\big(\mathbb{E}(Y\mid X_i)\big)}{V(Y)} $$
 > $S_i \in [0,1]$ is the **fraction of output variance caused by factor $X_i$ acting alone** (its main effect, averaged over all other factors). Used for **factor prioritization**: a large $S_i$ means determining $X_i$ more precisely most reduces output uncertainty. The analogous **second-order index** is $S_{ij} = V_{ij}/V(Y)$, the share due to the $X_i$–$X_j$ interaction.
 
-> [!definition] Total-effect (total-order) Sobol index ^total-effect-index
+^first-order-index
+
+> [!definition] Total-effect (total-order) Sobol index
 > $$ S_{Ti} = \sum_{k \in \#i} S_k $$
 > the sum over **all** index combinations $k$ that contain $i$ (its main effect plus every interaction it participates in). Equivalently $S_{Ti} = 1 - S_{\sim i}$, the share of variance left when *all factors except* $X_i$ are fixed. Used for **factor fixing**: $S_{Ti} \approx 0 \Rightarrow X_i$ can be frozen anywhere in its range with negligible effect on $Y$.
 
-> [!theorem] Interaction detection and budget identities ^interaction-identities
+^total-effect-index
+
+> [!theorem] Interaction detection and budget identities
 > Two diagnostic relations follow directly:
 > - $\sum_{i=1}^{p} S_i \le 1$, with **equality iff the model is purely additive** (no interactions). A deficit $1-\sum_i S_i$ measures total interaction strength.
 > - $S_{Ti} \ge S_i$ always; the gap $S_{Ti}-S_i$ is the portion of $X_i$'s effect mediated by **interactions** with other factors. $S_{Ti}=S_i$ means $X_i$ acts additively.
 > - $\sum_i S_{Ti} \ge 1$, with equality iff additive (interactions are counted once per participating factor, so they are double/multiply counted in the total-effect sum).
+
+^interaction-identities
 
 The paper notes Sobol "assesses the impact of each input parameter, both in isolation and in conjunction with other parameters," yielding first-, second-, total-, and higher-order indices. In the MNIST case study the **Sobol $S_T$** index was among the most reliable importance measures.
 

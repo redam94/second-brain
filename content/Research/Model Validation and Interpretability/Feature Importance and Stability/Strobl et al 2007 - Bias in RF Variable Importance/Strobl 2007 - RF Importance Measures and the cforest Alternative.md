@@ -63,7 +63,7 @@ The Background has **10 paragraphs**. Paragraphs 1-6 motivate the problem, parag
 
 ### Random forests (Methods intro)
 
-> [!definition] Random forest as used in the paper (Methods, intro paragraphs) ^def-random-forest
+> [!definition] Random forest as used in the paper (Methods, intro paragraphs)
 > Given a learning sample of size $n$ with predictors $X_1,\dots,X_p$ and categorical response $Y$:
 > 1. Draw $T$ resamples from the original sample (bootstrap samples in Breiman's original method).
 > 2. Fit an **unpruned** classification tree to each resample.
@@ -72,14 +72,18 @@ The Background has **10 paragraphs**. Paragraphs 1-6 motivate the problem, parag
 >
 > The ensemble improves on single trees because it averages away their instability under small changes in the learning sample. The cost is interpretability: in a single tree a variable's influence "directly corresponds to its position in the tree", in a forest it does not, so separate importance measures are needed.
 
+^def-random-forest
+
 The paper restricts attention to **classification** (Methods, para. 1); regression forests are not studied.
 
 ### The three importance measures (Methods §"Random forest variable importance measures")
 
-> [!definition] Selection frequency ^def-selection-frequency
+> [!definition] Selection frequency
 > The number of times variable $X_j$ is chosen as a splitting variable, counted over all splits of all trees in the ensemble. The paper calls it a "naive" measure and the most basic of the three.
 
-> [!definition] Gini importance ^def-gini-importance
+^def-selection-frequency
+
+> [!definition] Gini importance
 > A (weighted) mean, over trees, of the improvement in the splitting criterion produced by each variable; in classification forests the criterion is the **Gini gain**. With standard CART notation (not spelled out in the paper): for a node $\tau$ with class proportions $\hat p_k(\tau)$,
 > $$
 > G(\tau)=1-\sum_k \hat p_k(\tau)^2 \quad(\text{binary } Y:\ G(\tau)=2\hat p(\tau)\{1-\hat p(\tau)\}),
@@ -90,7 +94,9 @@ The paper restricts attention to **classification** (Methods, para. 1); regressi
 > $$
 > and the Gini importance of $X_j$ sums the (node-size-weighted) $\Delta G$ of every split on $X_j$, averaged over the $T$ trees. Because it re-uses the *same* criterion that chose the split, it inherits any bias of the split search ([[Strobl 2007 - Split-Selection Bias in CART Trees]]).
 
-> [!definition] Permutation (accuracy) importance ^def-permutation-importance
+^def-gini-importance
+
+> [!definition] Permutation (accuracy) importance
 > Rationale (Methods, verbatim): "By randomly permuting the predictor variable $X_j$, its original association with the response $Y$ is broken." If $X_j$ was associated with $Y$, prediction accuracy "decreases substantially" when the permuted $X_j$ and the unpermuted other predictors are used to predict. Importance is the **difference in prediction accuracy (number of observations classified correctly) before and after permuting $X_j$**.
 >
 > In the per-tree, out-of-bag form used by `randomForest` and `cforest` (formalised in the follow-up paper, see [[Strobl et al 2008 - Conditional Variable Importance - Overview]]), with $\bar{\mathcal B}^{(t)}$ the out-of-bag observations of tree $t$, $\hat y_i^{(t)}$ the tree's prediction and $\hat y^{(t)}_{i,\pi_j}$ its prediction after permuting $X_j$ within $\bar{\mathcal B}^{(t)}$:
@@ -102,14 +108,18 @@ The paper restricts attention to **classification** (Methods, para. 1); regressi
 >
 > General treatment of permute-and-predict importance and its extrapolation problem: [[Hooker Mentch Zhou 2021 - Permute-and-Predict Extrapolation - Overview]].
 
+^def-permutation-importance
+
 **Why permutation importance was considered the "most advanced" (Methods).** Unlike univariate screening (e.g. Fisher's exact test per marker), it captures a variable's effect "individually as well as in multivariate interactions with other predictor variables"; Lunetta et al. found interacting genetic markers are detected more efficiently this way.
 
-> [!note] Scaled importance depends on the number of trees (Results, null case) ^note-scaled-ntree
+> [!note] Scaled importance depends on the number of trees (Results, null case)
 > The paper reports (citing the supplementary material of Díaz-Uriarte & Alvarez de Andrés) that `randomForest`'s scaled importance depends on the number of trees grown, and that in `cforest` this is not the case, and therefore recommends **not interpreting its magnitude**. The mechanism follows from the definition above: the denominator $\hat\sigma_j/\sqrt T$ shrinks like $1/\sqrt T$, so $z_j$ grows roughly like $\sqrt T$ for any variable whose mean importance is not zero. (This derivation is a vault addition, not stated in the paper.)
+
+^note-scaled-ntree
 
 ### The alternative: `cforest` built from conditional inference trees
 
-> [!definition] Conditional inference tree (`ctree`) split selection (paper §"Variable selection bias in the individual classification trees"; framework of Hothorn, Hornik & Zeileis 2006, ref. [29]) ^def-ctree
+> [!definition] Conditional inference tree (`ctree`) split selection (paper §"Variable selection bias in the individual classification trees"; framework of Hothorn, Hornik & Zeileis 2006, ref. [29])
 > At each node:
 > 1. For each candidate $X_j$, test the global null hypothesis of independence between $X_j$ and $Y$ with a conditional (permutation) inference test — "comparable e.g. to the $\chi^2$ test, that incorporates the number of categories of each variable in the degrees of freedom" (verbatim, paper).
 > 2. Select the variable with the **minimum $p$-value**. Because a $p$-value is already calibrated for the number of categories (degrees of freedom), a variable with more categories or more cutpoints does not gain an advantage under the null.
@@ -118,25 +128,31 @@ The paper restricts attention to **classification** (Methods, para. 1); regressi
 >
 > *Framework detail (from ref. [29], not reproduced in this paper):* the test statistic is a linear statistic $\mathbf T_j=\mathrm{vec}\big(\sum_i g_j(X_{ji})h(Y_i)^\top\big)$, standardised by its conditional mean and covariance under permutations of $Y$, summarised as a quadratic form that is asymptotically $\chi^2$ with degrees of freedom equal to the rank of the covariance; $p$-values are multiplicity-adjusted across variables (e.g. Bonferroni) and splitting stops when the minimum adjusted $p$-value exceeds a threshold $\alpha$.
 
+^def-ctree
+
 The key design principle is **separating variable selection from cutpoint search**. CART does both at once by maximising $\Delta G$ over all (variable, cutpoint) pairs, which is a multiple-comparison problem whose size differs by variable. [[Honest Trees and Causal Forests]] uses a different separation — split selection vs. leaf estimation — aimed at valid inference on leaf effects rather than unbiased variable choice.
 
-> [!definition] `cforest` ^def-cforest
+> [!definition] `cforest`
 > A random forest (R package `party`, implemented by T. Hothorn — Authors' contributions) whose base learners are conditional inference trees rather than CART trees. It provides selection frequency and permutation importance (there is no Gini importance, since no Gini criterion is used; Methods §"Simulation studies", para. 3). The importance function is `varimp`.
+
+^def-cforest
 
 ### Two resampling schemes
 
-> [!definition] Bootstrap vs. 0.632 subsampling (Methods §"Simulation studies", paras 3-4) ^def-resampling-schemes
+> [!definition] Bootstrap vs. 0.632 subsampling (Methods §"Simulation studies", paras 3-4)
 > Every forest in the paper is grown in two ways:
 > - **Bootstrap sampling with replacement**: resamples of size $n$ drawn with replacement, as in Breiman's original method ("bagging" = bootstrap aggregating).
 > - **Subsampling without replacement**: subsamples of size $0.632\,n$, chosen because a bootstrap sample contains on average a fraction $1-(1-1/n)^n\to1-e^{-1}\approx0.632$ of the distinct original observations. Bühlmann & Yu call this "subagging" (subsample aggregating). Other fractions are possible (Friedman & Hall suggest 0.5), and Politis, Romano & Wolf show subsampling is valid under weaker assumptions than the bootstrap, including cases where the bootstrap fails.
 >
 > Crossing {`randomForest`, `cforest`} × {with, without replacement} gives the **four methods** compared throughout ([[Strobl 2007 - Null and Power Case Results]]).
 
+^def-resampling-schemes
+
 Subsampling without replacement is also the resampling scheme of [[Meinshausen Buhlmann 2010 - Stability Selection - Overview|stability selection]], though with a different fraction: subsamples of size $\lfloor n/2\rfloor$ rather than $0.632n$.
 
 ## Examples
 
-> [!example] Example: what each measure would report for a weekly media model ^ex-three-measures
+> [!example] Example: what each measure would report for a weekly media model
 > **Setup.** A random forest predicts whether a week is an above-median sales week ($n=156$ weeks) from TV spend (continuous), a holiday flag (binary), promotion type (4 levels) and DMA cluster (20 levels).
 >
 > **Reading the three measures.**
@@ -145,6 +161,8 @@ Subsampling without replacement is also the resampling scheme of [[Meinshausen B
 > 3. *Permutation importance* re-scores held-out weeks with one variable shuffled. It has no systematic upward bias for noise variables but a larger variance for the favoured ones ([[Strobl 2007 - Null and Power Case Results]]).
 >
 > **Interpretation.** The order of reliability in the paper is permutation > selection frequency > Gini, and even permutation importance needs unbiased trees and subsampling to be trustworthy.
+
+^ex-three-measures
 
 ## Connections
 

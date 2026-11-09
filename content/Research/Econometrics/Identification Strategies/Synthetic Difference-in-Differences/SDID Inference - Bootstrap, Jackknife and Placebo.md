@@ -42,7 +42,7 @@ Classical SC has no asymptotic theory — hence the permutation/RMSPE-ratio appr
 
 ## Main Content
 
-> [!definition] Assumptions 1-4 (§4.3) ^def-sdid-assumptions
+> [!definition] Assumptions 1-4 (§4.3)
 > 1. **Errors.** Rows $E_{i\cdot}$ are i.i.d. Gaussian with covariance $\Sigma\in\mathbb R^{T\times T}$ (homoskedastic across units, arbitrary across time) whose eigenvalues are bounded and bounded away from zero.
 > 2. **Sample sizes.** $N_{tr}T_{post}\to\infty$; $N_{co},T_{pre}\to\infty$ with $T_{pre}/N_{co}$ bounded above and below; and $N_{co}/\left(N_{tr}T_{post}\max(N_{tr},T_{post})\log^2 N_{co}\right)\to\infty$. One of $T_{post}$, $N_{tr}$ may stay fixed, **not both**. The treated block must be small relative to the control block.
 > 3. **Spectrum of $L$.** With $R = \lfloor\sqrt{\min(T_{pre},N_{co})}\rfloor$, $\sigma_R(L_{co,pre})/R = o\left(\min\{N_{tr}^{-1/2}\log^{-1/2}N_{co},\ T_{post}^{-1/2}\log^{-1/2}T_{pre}\}\right)$. Sufficient: $\operatorname{rank}(L) < \sqrt{\min(T_{pre},N_{co})}$. No lower bound on non-zero singular values.
@@ -50,7 +50,9 @@ Classical SC has no asymptotic theory — hence the permutation/RMSPE-ratio appr
 >
 > A correctly specified TWFE model with uncorrelated homoskedastic errors satisfies all four (fn. 10): $R=2$, $\tilde\omega_{co,i}=1/N_{co}$, $\tilde\lambda_{pre,t}=1/T_{pre}$, and additive $L$ makes (4.13) hold exactly.
 
-> [!theorem] Theorem 1 — asymptotic linearity and normality ^thm-sdid-asymptotic-normality
+^def-sdid-assumptions
+
+> [!theorem] Theorem 1 — asymptotic linearity and normality
 > Under model (4.1) with $L$, $W$ fixed, Assumptions 1-4, and $\zeta$ satisfying $(N_{tr}T_{post})^{1/2}\log N_{co} = o(\zeta^2)$:
 > $$
 > \hat\tau^{sdid}-\tau = \frac{1}{N_{tr}}\sum_{i=N_{co}+1}^{N}\left(\frac{1}{T_{post}}\sum_{t=T_{pre}+1}^{T}\varepsilon_{it} - E_{i,pre}\psi\right) + o_p\left((N_{tr}T_{post})^{-1/2}\right)
@@ -61,25 +63,35 @@ Classical SC has no asymptotic theory — hence the permutation/RMSPE-ratio appr
 > $$
 > with $N_{tr}T_{post}V_\tau$ bounded and bounded away from zero. Here $\psi = \Sigma_{pre,pre}^{-1}\Sigma_{pre,post}\lambda_{post}$. The variance is **optimal**: it equals what one would get knowing $L$ and $\Sigma$ and averaging $\tau_{it}$ plus *unpredictable* noise. Note that only the treated units' errors appear — the control block is large enough that its noise is second order.
 
-> [!algorithm] Algorithm 2 — (clustered) bootstrap ^alg-sdid-bootstrap
+^thm-sdid-asymptotic-normality
+
+> [!algorithm] Algorithm 2 — (clustered) bootstrap
 > For $b=1,\dots,B$: resample $N$ **rows** (units) of $(Y,W)$ with replacement; if the draw has no treated or no control units, discard and redraw; **re-run the full SDID algorithm** (weights included) to get $\hat\tau^{(b)}$. Set $\hat V_\tau^{cb} = \frac1B\sum_b\left(\hat\tau^{(b)}-\frac1B\sum_{b}\hat\tau^{(b)}\right)^2$. Unit-level resampling respects serial correlation (Bertrand et al. 2004). Downside: cost — every replication re-solves two constrained QPs.
 
-> [!algorithm] Algorithm 3 — fixed-weight jackknife ^alg-sdid-jackknife
+^alg-sdid-bootstrap
+
+> [!algorithm] Algorithm 3 — fixed-weight jackknife
 > Holding $\hat\omega,\hat\lambda$ **fixed**, for each unit $i$ compute $\hat\tau^{(-i)}$ from the weighted TWFE regression omitting unit $i$. Set
 > $$
 > \hat V_\tau^{jack} = \frac{N-1}{N}\sum_{i=1}^{N}\left(\hat\tau^{(-i)}-\hat\tau\right)^2
 > $$
 > Runs SDID's optimisation only once. Undefined for $N_{tr}=1$.
 
-> [!theorem] Theorem 2 — the jackknife is conservative ^thm-sdid-jackknife
+^alg-sdid-jackknife
+
+> [!theorem] Theorem 2 — the jackknife is conservative
 > If the elements of $L$ are bounded and Theorem 1's conditions hold, then for any $0<\alpha<1$,
 > $$
 > \liminf\ \mathbb P\left[\tau\in\hat\tau^{sdid}\pm z_{\alpha/2}\sqrt{\hat V_\tau^{jack}}\right]\ \ge\ 1-\alpha
 > $$
 > If moreover treatment effects are constant, $\tau_{it}=\tau$, and the time weights are predictive on the treated units, $T_{post}N_{tr}^{-1}\lVert\hat\lambda_0 + L_{tr,pre}\hat\lambda_{pre} - L_{tr,post}\hat\lambda_{post}\rVert_2^2\to_p 0$, coverage is **exact**. This relies on SDID's specific structure: the analogous jackknife for SC "would be severely biased upwards, and would not be exact even in the well-specified fixed effects model," so the authors do not recommend it for SC. (Under heterogeneous effects the jackknife implicitly treats the estimand as random, producing excess variance — fn. 11.)
 
-> [!algorithm] Algorithm 4 — placebo variance ^alg-sdid-placebo
+^thm-sdid-jackknife
+
+> [!algorithm] Algorithm 4 — placebo variance
 > Using **control units only**: for $b=1,\dots,B$, sample $N_{tr}$ of the $N_{co}$ controls without replacement to "receive the placebo"; build the placebo assignment $W^{(b)}_{co,\cdot}$; compute SDID $\hat\tau^{(b)}$ on $(Y_{co,\cdot},W^{(b)}_{co,\cdot})$. Set $\hat V_\tau^{placebo}$ = the sample variance of the $\hat\tau^{(b)}$. Plug into the Gaussian interval (5.1). Works with $N_{tr}=1$.
+
+^alg-sdid-placebo
 
 ### What the placebo method assumes
 

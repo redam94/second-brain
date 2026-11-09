@@ -45,20 +45,28 @@ Matching is **complementary to**, not in competition with, regression adjustment
 
 ## Main Content
 
-> [!definition] Design vs. analysis stages ^design-analysis
+> [!definition] Design vs. analysis stages
 > Any study estimating an effect has two stages: **(1) Design** — using only background information (covariates, treatment indicator), the nonexperimental study is structured to mimic a randomized experiment; **(2) Analysis** — comparing outcomes of the matched treated and controls. Stages 1-3 of matching are "design"; only step 4 is "analysis." The outcome values must not enter the design stage.
 
-> [!definition] The four steps of matching ^four-steps
+^design-analysis
+
+> [!definition] The four steps of matching
 > 1. **Defining "closeness"** — the distance measure used to decide whether one individual is a good match for another (which covariates to include + how to combine them).
 > 2. **Implementing a matching method** given that distance (nearest neighbor, subclassification, full matching, weighting).
 > 3. **Assessing balance** of the resulting matched samples; iterate steps 1-2 until well-matched samples result.
 > 4. **Analysis of the outcome** and estimation of the treatment effect, given the matching from step 3.
 
-> [!definition] Estimands: ATT and ATE ^estimands
+^four-steps
+
+> [!definition] Estimands: ATT and ATE
 > With response surfaces $R_1(x) = E(Y(1)\mid X=x)$ and $R_0(x) = E(Y(0)\mid X=x)$, the conditional effect is $\tau(x) = R_1(x) - R_0(x)$. The two common estimands are the **Average Treatment effect on the Treated (ATT)** — the effect for those in the treatment group — and the **Average Treatment Effect (ATE)** — the effect over all individuals. The choice drives both the distance measure (e.g., which $\Sigma$ for Mahalanobis) and the matching method, and depends on substantive interest and data availability (e.g., whether there is overlap to support the ATE).
 
-> [!definition] Four uses of the propensity score ^four-uses
+^estimands
+
+> [!definition] Four uses of the propensity score
 > Once estimated, the propensity score is used in four ways: **(1) matching** (nearest-neighbor / caliper); **(2) stratification / subclassification** (grouping by propensity-score quantiles); **(3) weighting** (inverse-probability-of-treatment weighting, IPTW, and weighting by the odds); **(4) covariate adjustment** (including the propensity score as a regressor). Weighting is the limiting case of subclassification as the number of subclasses goes to infinity, with full matching in between.
+
+^four-uses
 
 ## Examples
 

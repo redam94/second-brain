@@ -42,13 +42,15 @@ The approach depends on an empirical regularity reported in Sec. 2.2: persona-le
 
 ## Main Content
 
-> [!definition] Theory-grounded persona ^def-theory-grounded
+> [!definition] Theory-grounded persona
 > A persona "motivated by some theory that we generally understand, can clearly evaluate, and reasonably expect to predict the relevant human behavior". In the dictator-game application the three types mirror the Charness–Rabin social-preference model:
 > - **Efficient** — "You only care about the total payoff of both players"
 > - **Inequity-averse** — "You only care about fairness between players"
 > - **Self-interested** — "You only care about your own payoff"
 
-> [!algorithm] Persona mixture calibration (Sec. 2.2) ^alg-mixture
+^def-theory-grounded
+
+> [!algorithm] Persona mixture calibration (Sec. 2.2)
 > 1. **Choose types** $k = 1, \dots, K$ from theory and write each as an explicit instruction.
 > 2. **Characterise each type.** For each calibration task $g = 1,\dots,G$ run the persona many times (100 plays at temperature 1 in the paper) and record $p_{kg}$, the share choosing a reference option ("Left"). Type $k$ is the vector $v_k = (p_{k1}, \dots, p_{kG})$.
 > 3. **Human target.** $v_H = $ the human choice shares on the same tasks; for Charness–Rabin's six unilateral games, $v_{CR} = (.52, .67, .27, 1, .78, .68)$.
@@ -62,7 +64,9 @@ The approach depends on an empirical regularity reported in Sec. 2.2: persona-le
 > 5. **Sample a population**: draw $N$ agents (100 in the paper) with types $\sim \text{Categorical}(\hat w)$.
 > 6. **Validate out of sample** on tasks "plausibly governed by the same theory" but with different structure; compare with the persona-less baseline.
 
-> [!example] Reported weights and out-of-sample result ^ex-weights
+^alg-mixture
+
+> [!example] Reported weights and out-of-sample result
 > Optimal $(w_E, w_I, w_S)$ = (efficient, inequity-averse, self-interested):
 >
 > | Model | $w_E$ | $w_I$ | $w_S$ |
@@ -73,6 +77,8 @@ The approach depends on an empirical regularity reported in Sec. 2.2: persona-le
 > | DeepSeek | 0.44 | 0.00 | 0.56 |
 >
 > Out-of-sample test: Charness–Rabin **two-stage** games (Person A either accepts an allocation or passes the choice to Person B). Each of 100 sampled agents plays each game 5 times in each role; persona-less controls play 100 times. Across models the calibrated sample's MSE against human shares is $0.094$, "about half" of the persona-less $0.182$ (Fig. 4).
+
+^ex-weights
 
 Two points of interpretation the authors stress:
 

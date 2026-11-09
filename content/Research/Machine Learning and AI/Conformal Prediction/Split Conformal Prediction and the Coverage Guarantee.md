@@ -44,7 +44,7 @@ The cost is statistical: only part of the data trains the model and only part ca
 
 ## Main Content
 
-> [!algorithm] Split conformal prediction ^alg-split-conformal
+> [!algorithm] Split conformal prediction
 > **Input:** data $(X_i,Y_i)_{i=1}^{N}$, miscoverage level $\alpha$, learning algorithm $\mathcal A$, score function template $s$.
 > 1. Randomly split indices into a proper training set $\mathcal I_1$ and a calibration set $\mathcal I_2$ with $\lvert\mathcal I_2\rvert=n$.
 > 2. Fit $\hat f\leftarrow\mathcal A(\{(X_i,Y_i):i\in\mathcal I_1\})$. Any algorithm is allowed; unlike full conformal it need not treat data symmetrically (Romano et al., footnote 3).
@@ -54,9 +54,11 @@ The cost is statistical: only part of the data trains the model and only part ca
 >
 > For regression with $s(x,y)=\lvert y-\hat\mu(x)\rvert$ this is $\mathcal C(x)=[\hat\mu(x)-\hat q,\;\hat\mu(x)+\hat q]$ (Romano et al. Eq. 8), a band of **constant width** $2\hat q$.
 
+^alg-split-conformal
+
 An equivalent formulation (Tibshirani et al. Eq. 5, 9) replaces the inflated level by an augmented sample: $\hat q=\mathrm{Quantile}(1-\alpha;\,s_{1:n}\cup\{\infty\})$. Placing a point mass at $+\infty$ stands in for the unknown test score, and is the form that generalises to [[Conformal Prediction Under Covariate Shift|weighted conformal prediction]].
 
-> [!theorem] Quantile lemma (Tibshirani et al. 2019, Lemma 1) ^thm-quantile-lemma
+> [!theorem] Quantile lemma (Tibshirani et al. 2019, Lemma 1)
 > If $V_1,\dots,V_{n+1}$ are exchangeable random variables, then for any $\beta\in(0,1)$,
 >
 > $$
@@ -65,9 +67,11 @@ An equivalent formulation (Tibshirani et al. Eq. 5, 9) replaces the inflated lev
 >
 > If ties occur with probability zero, the probability is also at most $\beta+1/(n+1)$.
 
+^thm-quantile-lemma
+
 *Proof sketch.* Replacing $\infty$ by $V_{n+1}$ does not change whether $V_{n+1}$ is below the quantile, so the event equals "$V_{n+1}$ is among the $\lceil\beta(n+1)\rceil$ smallest of $V_1,\dots,V_{n+1}$". By exchangeability the rank of $V_{n+1}$ is uniform on $\{1,\dots,n+1\}$, so this has probability $\lceil\beta(n+1)\rceil/(n+1)\in[\beta,\beta+\tfrac{1}{n+1}]$ when there are no ties. Romano et al. (Appendix A, Lemma 2 "inflation of quantiles") state the same fact with the $(1-\alpha)(1+1/n)$ level.
 
-> [!theorem] Split conformal coverage (A&B Theorems D.1–D.2; Romano et al. Theorem 1) ^thm-split-coverage
+> [!theorem] Split conformal coverage (A&B Theorems D.1–D.2; Romano et al. Theorem 1)
 > If $(X_i,Y_i)$, $i\in\mathcal I_2$, and $(X_{\text{test}},Y_{\text{test}})$ are exchangeable, then
 >
 > $$
@@ -82,6 +86,8 @@ An equivalent formulation (Tibshirani et al. Eq. 5, 9) replaces the inflated lev
 >
 > The result holds conditionally on the proper training set.
 
+^thm-split-coverage
+
 The A&B proof (App. D) is three lines. Sort the calibration scores $s_1<\dots<s_n$. The events $\{Y_{\text{test}}\in\mathcal C(X_{\text{test}})\}$ and $\{s_{\text{test}}\le s_{\lceil(n+1)(1-\alpha)\rceil}\}$ coincide. By exchangeability $\mathbb P(s_{\text{test}}\le s_k)=k/(n+1)$ for every integer $k$, so coverage equals $\lceil(n+1)(1-\alpha)\rceil/(n+1)\ge1-\alpha$. When $\alpha<1/(n+1)$, $\hat q=\infty$ and $\mathcal C=\mathcal Y$ trivially covers.
 
 > [!important] What is and is not assumed
@@ -93,7 +99,7 @@ The A&B proof (App. D) is three lines. Sort the calibration scores $s_1<\dots<s_
 
 The guarantee averages over calibration draws. For one fixed calibration set the coverage over an infinite test set is random (Vovk 2012; A&B Sec. 3.2):
 
-> [!theorem] Beta law of realised coverage ^thm-beta-coverage
+> [!theorem] Beta law of realised coverage
 > With continuous scores,
 >
 > $$
@@ -101,6 +107,8 @@ The guarantee averages over calibration draws. For one fixed calibration set the
 > $$
 >
 > The distribution concentrates around $1-\alpha$ at rate $O(n^{-1/2})$.
+
+^thm-beta-coverage
 
 For $\alpha=0.1$ and $n=1000$ realised coverage is "typically between .88 and .92", the basis of A&B's rule of thumb that about 1000 calibration points suffice. Their Table 1 gives the $n$ needed so that coverage is within $1-\alpha\pm\epsilon$ with probability $1-\delta=0.9$ at $\alpha=0.1$:
 

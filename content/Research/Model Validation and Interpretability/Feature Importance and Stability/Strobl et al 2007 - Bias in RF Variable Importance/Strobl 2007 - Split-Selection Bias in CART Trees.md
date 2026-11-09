@@ -41,7 +41,7 @@ aliases:
 
 ### The mechanism
 
-> [!theorem] Mechanism 1: variable selection by maximal criterion is a multiple-comparison procedure ^thm-cutpoint-bias
+> [!theorem] Mechanism 1: variable selection by maximal criterion is a multiple-comparison procedure
 > **Setting.** At a node, CART computes a split criterion (e.g. Gini gain $\Delta G$) "for all possible cutpoints within the range of that variable"; the variable selected is "the one that produced the highest criterion value overall, i.e. in its best cutpoint."
 >
 > **Claim (verbatim).** "Obviously variables with more potential cutpoints are more likely to produce a good criterion value by chance, as in a multiple testing situation."
@@ -50,28 +50,36 @@ aliases:
 >
 > **Sketch of why (vault addition).** Under the null, the Gini gain $\Delta G_{j,c}$ at each cutpoint $c$ is a noisy non-negative statistic. Variable $X_j$ is scored by $M_j=\max_{c\in C_j}\Delta G_{j,c}$. For any family of identically distributed statistics, the expected maximum is non-decreasing in the size of the family, so $|C_j|$ — not the $X_j$–$Y$ relationship — drives $M_j$. Counts: an unordered $k$-level factor has $|C_j|=2^{k-1}-1$; a continuous variable has $|C_j|=(\#\text{distinct values})-1$; a binary flag has 1. A continuous variable therefore beats low-cardinality factors too (seen for $X_1$ in Figs 2 and 6).
 
+^thm-cutpoint-bias
+
 The paper refers readers to the tree-bias literature in its refs [24, 25, 28, 29, 33-35]. Ref. [29] is the conditional inference tree framework that `ctree` and `cforest` are built on. The saved full text omits the reference list, so the other entries are not identified here. (The CART book is ref. [18], cited separately as the basis of `randomForest`, and the paper's Methods section cites [18,24-28] for CART's known preference for many-category variables.)
 
 ### Consequences for each importance measure
 
-> [!theorem] Propagation from trees to forest importances ^thm-propagation
+> [!theorem] Propagation from trees to forest importances
 > 1. **Gini importance** is "directly derived from the Gini index split criterion used in the underlying individual classification trees" and therefore "carries forward the same bias" (Figs 2, 6).
 > 2. **Selection frequency** is "directly affected" by the per-tree selection bias.
 > 3. **Permutation importance** — "less obvious but just as severe". Favoured variables "are selected in more individual classification trees and tend to be situated closer to the root node in each tree." Permuting a variable used in many trees and near the root changes predictions for a large set of observations; permuting one used rarely and near the leaves affects small subsets. Hence "the range of possible changes in prediction accuracy in the random forest, i.e. the deviation of the variable importance measure, is higher for variables that are preferred by the individual trees due to variable selection bias."
 >
 > This explains the null-case pattern of a mean near zero but variance increasing with cardinality ([[Strobl 2007 - Null and Power Case Results#^res-null-perm|Result N3]]).
 
+^thm-propagation
+
 ### The fix: selection by $p$-value
 
-> [!theorem] Conditional inference trees are unbiased in variable selection ^thm-ctree-unbiased
+> [!theorem] Conditional inference trees are unbiased in variable selection
 > In `ctree` "the variable selection is conducted by minimizing the p value of a conditional inference independence test, comparable e.g. to the $\chi^2$ test, that incorporates the number of categories of each variable in the degrees of freedom." Under the null each variable's $p$-value is (approximately) uniform regardless of how many categories it has, so each variable is selected with (approximately) equal probability. Definition: [[Strobl 2007 - RF Importance Measures and the cforest Alternative#^def-ctree]].
 
-> [!example] Figure 10 — Variable selection bias in individual trees ^fig-10
+^thm-ctree-unbiased
+
+> [!example] Figure 10 — Variable selection bias in individual trees
 > **Setup.** Null-case design (all five predictors uninformative). Mean selection frequencies over 1000 simulation runs (the caption says "relative selection frequencies") for single trees: `rpart` (CART implementation, ref. [36]) on the left, `ctree` on the right.
 >
 > **Result.** "We find that the variable selection with the rpart function is highly biased, while for the ctree function it is unbiased." By the mechanism above, `rpart`'s bias runs toward variables with more cutpoints; `ctree` selects the uninformative variables with roughly equal frequency.
 
-> [!example] Example: root-split selection under the null (vault reproduction, not from the paper) ^ex-root-split-reproduction
+^fig-10
+
+> [!example] Example: root-split selection under the null (vault reproduction, not from the paper)
 > **Setup.** Paper's null design: $n=120$, $X_1\sim N(0,1)$, $X_2,\dots,X_5\sim M(2),M(4),M(10),M(20)$, $Y\sim B(0.5)$ independent. For each of 2000 replications, compute every variable's best root-node Gini gain (for factors, by Breiman's ordering of levels by $\bar y$, which finds the optimal binary partition for a binary response) and record which variable wins.
 >
 > **Result (Python, seed 2).**
@@ -85,10 +93,14 @@ The paper refers readers to the tree-bias literature in its refs [24, 25, 28, 29
 >
 > **Interpretation.** This is the Fig. 10 left panel at the root. Note that the continuous variable's best gain (119 cutpoints) beats the 4-level factor (7 partitions) but loses to the 10-level factor (511 partitions).
 
+^ex-root-split-reproduction
+
 ## Examples
 
-> [!example] Example: high-cardinality marketing features ^ex-high-cardinality
+> [!example] Example: high-cardinality marketing features
 > Creative IDs, DMA codes, store numbers, day-of-year or week-of-year factors, and binned spend variables with many bins are all high-cardinality predictors. In a per-segment tree model of a shared aggregate KPI, these will be split on early and often even if they carry no signal, and they will dominate Gini/"split gain" importance charts (the default in many gradient-boosting libraries, which also select splits by maximal gain). Their permutation importance will have inflated variance. Low-cardinality but genuinely causal flags (a holiday or price-promotion indicator) are disadvantaged.
+
+^ex-high-cardinality
 
 ## Connections
 

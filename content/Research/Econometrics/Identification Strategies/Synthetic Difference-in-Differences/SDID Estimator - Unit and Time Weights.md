@@ -48,7 +48,7 @@ SC uses $Y_{co,pre}$ to learn how to combine *rows* (units) to mimic the treated
 
 ## Main Content
 
-> [!definition] Unit weights (eq. 2.1) ^def-sdid-unit-weights
+> [!definition] Unit weights (eq. 2.1)
 > $$
 > (\hat\omega_0, \hat\omega^{sdid}) = \arg\min_{\omega_0\in\mathbb R,\ \omega\in\Omega}\ \sum_{t=1}^{T_{pre}} \left(\omega_0 + \sum_{i=1}^{N_{co}} \omega_i Y_{it} - \frac{1}{N_{tr}}\sum_{i=N_{co}+1}^{N} Y_{it}\right)^2 + \zeta^2\, T_{pre}\, \lVert\omega\rVert_2^2
 > $$
@@ -57,13 +57,17 @@ SC uses $Y_{co,pre}$ to learn how to combine *rows* (units) to mimic the treated
 > $$
 > Two differences from Abadie–Diamond–Hainmueller weights: (a) the **intercept $\omega_0$** — the weighted controls need only be *parallel* to the treated average, since $\alpha_i$ in the final regression absorbs constant gaps; (b) the **ridge penalty**, following Doudchenko & Imbens (2016), which disperses the weights and makes them unique. With $\omega_0 = 0$ and $\zeta = 0$, (2.1) is exactly an ADH weight choice for $N_{tr}=1$.
 
-> [!definition] Regularisation parameter (eq. 2.2) ^def-sdid-zeta
+^def-sdid-unit-weights
+
+> [!definition] Regularisation parameter (eq. 2.2)
 > $$
 > \zeta = (N_{tr}T_{post})^{1/4}\,\hat\sigma, \qquad \hat\sigma^2 = \frac{1}{N_{co}(T_{pre}-1)}\sum_{i=1}^{N_{co}}\sum_{t=1}^{T_{pre}-1}\left(\Delta_{it}-\bar\Delta\right)^2, \qquad \Delta_{it} = Y_{i(t+1)} - Y_{it}
 > $$
 > $\hat\sigma$ is the standard deviation of first differences among controls in the pre-period — "the size of a typical one-period outcome change" — and $(N_{tr}T_{post})^{1/4}$ is a theoretically motivated scaling (Theorem 1 requires $(N_{tr}T_{post})^{1/2}\log N_{co} = o(\zeta^2)$). No cross-validation is involved.
 
-> [!definition] Time weights (eq. 2.3) ^def-sdid-time-weights
+^def-sdid-zeta
+
+> [!definition] Time weights (eq. 2.3)
 > $$
 > (\hat\lambda_0, \hat\lambda^{sdid}) = \arg\min_{\lambda_0\in\mathbb R,\ \lambda\in\Lambda}\ \sum_{i=1}^{N_{co}} \left(\lambda_0 + \sum_{t=1}^{T_{pre}} \lambda_t Y_{it} - \frac{1}{T_{post}}\sum_{t=T_{pre}+1}^{T} Y_{it}\right)^2
 > $$
@@ -72,7 +76,9 @@ SC uses $Y_{co,pre}$ to learn how to combine *rows* (units) to mimic the treated
 > $$
 > **No ridge penalty** here (only a numerical $\zeta = 10^{-6}\hat\sigma$ for uniqueness, fn. 3). The asymmetry "reflects the fact we allow for correlated observations within time periods for the same unit, but not across units within a time period" beyond the factor structure (p. 7). Interpretation: the weighted average of a control unit's history should predict its post-period average *up to a constant* $\lambda_0$.
 
-> [!algorithm] Algorithm 1 — SDID ^alg-sdid
+^def-sdid-time-weights
+
+> [!algorithm] Algorithm 1 — SDID
 > **Input:** $Y$, $W$. **Output:** $\hat\tau^{sdid}$.
 > 1. Compute $\zeta$ via (2.2).
 > 2. Compute unit weights $\hat\omega^{sdid}$ via (2.1).
@@ -83,7 +89,9 @@ SC uses $Y_{co,pre}$ to learn how to combine *rows* (units) to mimic the treated
 > $$
 > **Covariates** (fn. 4): apply SDID to residuals $Y^{res}_{it} = Y_{it} - X_{it}\hat\beta$ from a regression of $Y_{it}$ on time-varying exogenous $X_{it}$.
 
-> [!theorem] Weighted double-differencing representation (eqs. 2.4-2.5, 4.3) ^thm-sdid-double-diff
+^alg-sdid
+
+> [!theorem] Weighted double-differencing representation (eqs. 2.4-2.5, 4.3)
 > For any $\omega\in\Omega$, $\lambda\in\Lambda$ define
 > $$
 > \hat\tau(\omega,\lambda) = \omega_{tr}^\top Y_{tr,post}\lambda_{post} - \omega_{co}^\top Y_{co,post}\lambda_{post} - \omega_{tr}^\top Y_{tr,pre}\lambda_{pre} + \omega_{co}^\top Y_{co,pre}\lambda_{pre}
@@ -99,6 +107,8 @@ SC uses $Y_{co,pre}$ to learn how to combine *rows* (units) to mimic the treated
 > \hat\delta_i^{sdid} = \frac{1}{T_{post}}\sum_{t>T_{pre}} Y_{it} - \sum_{t\le T_{pre}}\hat\lambda_t^{sdid} Y_{it}
 > $$
 > So the final regression never has to be run as a regression: SDID is four weighted block means.
+
+^thm-sdid-double-diff
 
 ### What the intercepts and fixed effects buy: invariance
 

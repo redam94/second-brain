@@ -40,7 +40,7 @@ The modern engineering usage of "RAG" — retrieve chunks, paste them into the p
 
 ## Main Content
 
-> [!definition] Components ^def-components
+> [!definition] Components
 > - **Retriever** $p_\eta(z \mid x)$: a DPR bi-encoder,
 > $$
 > p_\eta(z \mid x) \propto \exp\!\big(\mathbf d(z)^{\top} \mathbf q(x)\big), \qquad \mathbf d(z) = \mathrm{BERT}_d(z), \quad \mathbf q(x) = \mathrm{BERT}_q(x).
@@ -49,30 +49,40 @@ The modern engineering usage of "RAG" — retrieve chunks, paste them into the p
 > - **Generator** $p_\theta(y_i \mid x, z, y_{1:i-1})$: BART-large (400M parameters); $x$ and $z$ are simply concatenated.
 > - **Non-parametric memory**: the December 2018 Wikipedia dump split into disjoint 100-word chunks, 21M documents, each embedded as a 728-dimensional vector (Sec. 3; Appendix G).
 
-> [!definition] RAG-Sequence ^def-rag-sequence
+^def-components
+
+> [!definition] RAG-Sequence
 > One latent document is responsible for the whole output. The generator scores the full sequence under each retrieved document and the results are mixed with the retriever's weights:
 > $$
 > p_{\text{RAG-Sequence}}(y \mid x) \approx \sum_{z \in \text{top-}k(p(\cdot \mid x))} p_\eta(z \mid x) \prod_{i=1}^{N} p_\theta(y_i \mid x, z, y_{1:i-1}).
 > $$
 
-> [!definition] RAG-Token ^def-rag-token
+^def-rag-sequence
+
+> [!definition] RAG-Token
 > A different latent document may be drawn for every target token, so the answer can combine content from several passages:
 > $$
 > p_{\text{RAG-Token}}(y \mid x) \approx \prod_{i=1}^{N} \sum_{z \in \text{top-}k(p(\cdot \mid x))} p_\eta(z \mid x)\, p_\theta(y_i \mid x, z, y_{1:i-1}).
 > $$
 > For classification (target length one) the two models coincide.
 
+^def-rag-token
+
 Statistically both are **finite mixture models** with input-dependent mixing weights $p_\eta(z\mid x)$ and mixture components given by the generator conditioned on each passage — the same structure as the mixtures in [[Monsters and Mixtures]], with the sum-vs-product ordering deciding whether the mixture is over sequences or over tokens.
 
-> [!algorithm] Training (Sec. 2.4) ^alg-training
+> [!algorithm] Training (Sec. 2.4)
 > 1. Given pairs $(x_j, y_j)$, minimise the negative marginal log-likelihood $\sum_j -\log p(y_j \mid x_j)$ with Adam, retrieving $k \in \{5, 10\}$ documents per query.
 > 2. Gradients flow into the generator $\theta$ **and** the query encoder $\mathrm{BERT}_q$ through the mixing weights; no label says which document is correct.
 > 3. The document encoder $\mathrm{BERT}_d$ and the index are kept **frozen** — re-embedding 21M passages during training (as REALM does) was found unnecessary.
 > Total trainable parameters: 626M (Appendix G), versus 11B for the best closed-book model T5-11B.
 
-> [!algorithm] Decoding (Sec. 2.5) ^alg-decoding
+^alg-training
+
+> [!algorithm] Decoding (Sec. 2.5)
 > - **RAG-Token** is an ordinary autoregressive model with transition probability $p'_\theta(y_i \mid x, y_{1:i-1}) = \sum_{z} p_\eta(z \mid x)\, p_\theta(y_i \mid x, z, y_{1:i-1})$; plug it into standard beam search.
 > - **RAG-Sequence** does not factorise per token. Run beam search separately for each document $z$, pool the hypotheses into a set $Y$, then for each $y \in Y$ compute $\sum_z p_\eta(z\mid x)\,p_\theta(y \mid x, z)$. **Thorough decoding** runs extra forward passes for hypotheses missing from a document's beam; **fast decoding** approximates $p_\theta(y \mid x, z_i) \approx 0$ for those.
+
+^alg-decoding
 
 **Results (Sec. 4, Tables 1–2).**
 
@@ -88,8 +98,10 @@ Statistically both are **finite mixture models** with input-dependent mixing wei
 - *FEVER.* 72.5% (3-way) and 89.5% (2-way), within 4.3% and 2.7% of pipeline systems that use retrieval supervision RAG never sees. The top retrieved document comes from a gold evidence article in 71% of cases, and one is in the top 10 in 90%.
 - *Diversity.* Distinct-to-total tri-gram ratio on Jeopardy: BART 32.4%, RAG-Token 46.8%, RAG-Sequence 53.8%, gold 90.0% (Table 5).
 
-> [!theorem] Empirical finding — learned retrieval matters, and the index is swappable ^thm-ablations
+> [!theorem] Empirical finding — learned retrieval matters, and the index is swappable
 > (Table 6, dev set.) Replacing DPR with BM25 drops NQ from 44.0 to 31.8 EM (RAG-Sequence); freezing the query encoder drops it to 41.2. The exception is FEVER, where BM25 is *best* (75.1 vs 74.5), "perhaps since FEVER claims are heavily entity-centric". **Index hot-swapping** (Sec. 4.5): for 82 world leaders who changed between 2016 and 2018, RAG answers 70% correctly with the 2016 index on 2016 leaders and 68% with the 2018 index on 2018 leaders, but only 12% and 4% with mismatched indices — world knowledge lives in the index and is updated by replacing it.
+
+^thm-ablations
 
 **How the two memories cooperate (Sec. 4.3, Fig. 2).** For the input "Hemingway", the RAG-Token document posterior $p(z_i \mid x, y_i, y_{-i})$ spikes on the passage mentioning *The Sun Also Rises* when the token "Sun" is generated, then **flattens**: once the title is started, BART's parametric memory can finish it. Retrieval cues; parameters complete.
 

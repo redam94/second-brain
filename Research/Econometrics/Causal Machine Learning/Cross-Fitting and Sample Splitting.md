@@ -45,28 +45,36 @@ Figure 2 shows the resulting studentized $\check\theta$ shifted markedly left; 2
 
 ## Main Content
 
-> [!theorem] Why splitting works ^thm-split-chebyshev
+> [!theorem] Why splitting works
 > Let $\hat g_0$ be fit only on the auxiliary sample $I^c$. Conditional on $I^c$, and using independence across observations and $\mathbb E[V_i\mid X_i]=0$, the term
 > $$
 > \frac1{\sqrt n}\sum_{i\in I}V_i\big(\hat g_0(X_i)-g_0(X_i)\big)
 > $$
 > has mean zero and variance of order $\frac1n\sum_{i\in I}(\hat g_0(X_i)-g_0(X_i))^2\to_P0$, so it vanishes in probability by Chebyshev's inequality. Only $L_2$-**consistency** of $\hat g_0$ is used — no complexity restriction on the learner.
 
+^thm-split-chebyshev
+
 The classical alternative bounds the same term by an empirical-process supremum $\sup_{g\in\mathcal G_N}|\frac1{\sqrt n}\sum V_i(g(X_i)-g_0(X_i))|$ and requires $\mathcal G_N$ to be Donsker (bounded entropy integral). But even the linear class $\{x\mapsto x'\theta:\theta\in\mathbb R^{p_N},\|\theta\|\le1\}$ has log-covering number growing like $p_N$, so Donsker conditions "rule out even the simplest linear parametric model with high-dimensional regressors." Entropy-growth conditions can substitute, but at a price: in sparse IV, Belloni et al. (2012) need $s^2\ll n$ without splitting and only $s\ll n$ with it; in PLR/ATE the requirement improves from $(s_g)^2+(s_m)^2\ll N$ to $s_gs_m\ll N$.
 
-> [!algorithm] DML1 (Definition 3.1) ^alg-dml1
+> [!algorithm] DML1 (Definition 3.1)
 > 1. Take a $K$-fold random partition $(I_k)_{k=1}^K$ of $[N]$ with $|I_k|=n=N/K$; let $I_k^c=[N]\setminus I_k$.
 > 2. For each $k$, construct an ML estimator $\hat\eta_{0,k}=\hat\eta_0((W_i)_{i\in I_k^c})$.
 > 3. For each $k$, solve $\mathbb E_{n,k}[\psi(W;\check\theta_{0,k},\hat\eta_{0,k})]=0$, where $\mathbb E_{n,k}$ is the empirical mean over fold $I_k$ (or an $\epsilon_N$-approximate solution, $\epsilon_N=o(\delta_NN^{-1/2})$).
 > 4. Aggregate: $\tilde\theta_0=\frac1K\sum_{k=1}^K\check\theta_{0,k}$.
 
-> [!algorithm] DML2 (Definition 3.2) ^alg-dml2
+^alg-dml1
+
+> [!algorithm] DML2 (Definition 3.2)
 > Steps 1–2 as in DML1. Then
 > 3. Solve the single pooled equation $\frac1K\sum_{k=1}^K\mathbb E_{n,k}[\psi(W;\tilde\theta_0,\hat\eta_{0,k})]=0$.
 
-> [!theorem] Remark 3.1 — practical recommendations ^thm-dml-recommendations
+^alg-dml2
+
+> [!theorem] Remark 3.1 — practical recommendations
 > - The choice of $K$ has **no asymptotic impact**, but larger $K$ gives more data ($N(K-1)/K$) to the hard problem of learning $\eta_0$; "moderate values of $K$, such as 4 or 5, … work better than $K=2$."
 > - **DML2 is generally recommended**: the pooled empirical Jacobian in (3.4) is more stable than fold-specific Jacobians in (3.1). For scores where the Jacobian is constant (ATE in the interactive model, $\psi^a=-1$) the two coincide.
+
+^thm-dml-recommendations
 
 Under Assumptions 3.1–3.2 (see [[Neyman Orthogonality#^thm-rates|rate requirements]]), Theorem 3.1 gives the linear representation
 $$
@@ -74,19 +82,23 @@ $$
 $$
 for both DML1 and DML2 — the *full* sample size $N$ appears, so nothing is lost to splitting asymptotically ("the two estimators will be approximately independent, so simply averaging them offers an efficient procedure").
 
-> [!theorem] Cross-fit variance estimator and confidence intervals (Thm 3.2, Cor. 3.1) ^thm-dml-variance
+> [!theorem] Cross-fit variance estimator and confidence intervals (Thm 3.2, Cor. 3.1)
 > $$
 > \hat\sigma^2=\hat J_0^{-1}\,\frac1K\sum_{k=1}^K\mathbb E_{n,k}\big[\psi(W;\tilde\theta_0,\hat\eta_{0,k})\psi(W;\tilde\theta_0,\hat\eta_{0,k})'\big]\,(\hat J_0^{-1})',\qquad\hat J_0=\frac1K\sum_{k=1}^K\mathbb E_{n,k}[\psi^a(W;\hat\eta_{0,k})],
 > $$
 > satisfies $\hat\sigma^2=\sigma^2+O_P(\varrho_N)$, and $\mathrm{CI}=[\ell'\tilde\theta_0\pm\Phi^{-1}(1-\alpha/2)\sqrt{\ell'\hat\sigma^2\ell/N}]$ obeys $\sup_{P\in\mathcal P_N}|\mathbb P_P(\ell'\theta_0\in\mathrm{CI})-(1-\alpha)|\to0$.
 
-> [!algorithm] Accounting for the random partition (Definition 3.3) ^alg-median-splits
+^thm-dml-variance
+
+> [!algorithm] Accounting for the random partition (Definition 3.3)
 > Repeat the whole procedure for $S$ independent random partitions to obtain $(\tilde\theta_0^s,\hat\sigma_s^2)_{s=1}^S$, then report
 > $$
 > \tilde\theta_0^{\text{median}}=\mathrm{median}\{\tilde\theta_0^s\}_{s=1}^S,\qquad
 > \hat\sigma^{2,\text{median}}=\mathrm{median}\big\{\hat\sigma_s^2+(\tilde\theta_0^s-\tilde\theta_0^{\text{median}})(\tilde\theta_0^s-\tilde\theta_0^{\text{median}})'\big\}_{s=1}^S
 > $$
 > (or the mean analogues). The medians are recommended as "more robust to outliers." For fixed $S$ they are first-order equivalent to a single-split $\tilde\theta_0$ (Corollary 3.3); the added term inflates the variance by the across-split dispersion.
+
+^alg-median-splits
 
 **Lineage.** Sample splitting in semiparametrics goes back to Bickel (1982) and Schick (1986); the targeted-learning literature has cross-validated TMLE variants. The same idea reappears *inside* each tree of a causal forest as **honesty** ([[Honest Trees and Causal Forests]]) — splits are chosen on one half-sample, leaf effects estimated on the other — and the forest's subsampling plays the role that fold rotation plays here: every observation is used for both purposes in *some* tree, so no data are wasted. GRF's local centering uses leave-one-out (out-of-bag) forest predictions as a computationally cheap stand-in for $K$-fold cross-fitting, while noting that "a practitioner wanting to use results that are precisely covered by theory may prefer to use cross-fitting."
 

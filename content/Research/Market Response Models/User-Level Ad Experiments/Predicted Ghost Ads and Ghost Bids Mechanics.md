@@ -50,7 +50,7 @@ In each case the impression is back-filled with another ad. For treatment users 
 
 ## Main Content
 
-> [!algorithm] Predicted ghost ad two-stage auction (JLN §4, Fig. 6) ^alg-pga
+> [!algorithm] Predicted ghost ad two-stage auction (JLN §4, Fig. 6)
 > For every ad opportunity of every user in the experiment, *regardless of arm*:
 > 1. **Simulated auction.** Run the ad-selection auction with the focal (treatment) ad included in the candidate set. If the focal ad wins, write a **predicted ghost ad impression** to a log. This step is identical for treatment and control users, so $PGA_i$ is a function of pre-treatment information only.
 > 2. **Real auction.** Run the real auction. For treatment users the focal ad participates normally; for control users the focal ad is excluded, so the next-best ad is sent to the publisher.
@@ -59,19 +59,25 @@ In each case the impression is back-filled with another ad. For treatment users 
 >
 > "Whereas ghost ads only tag control users, predicted ghost ads tag both treatment and control users."
 
-> [!definition] PGA-LATE estimator (JLN eq. 1) ^def-pga-late
+^alg-pga
+
+> [!definition] PGA-LATE estimator (JLN eq. 1)
 > With $T$ the treatment-assignment indicator, $PGA$ predicted ghost ad exposure and $X$ actual exposure,
 > $$
 > \text{PGA LATE}=\frac{E[y\mid PGA=1,T=1]-E[y\mid PGA=1,T=0]}{\Pr[X=1\mid PGA=1,T=1]}.
 > $$
 > "The PGA LATE estimator rescales the experimental difference among predicted exposed users by the probability a user receives a treatment ad conditional on predicted exposure." With a continuous prediction $PGA\in[0,1]$ the same quantity can be estimated by an instrumental-variable regression (fn. 8).
 
+^def-pga-late
+
 This is the Wald / [[Local Average Treatment Effects|LATE]] estimator of [[From ITT to Treatment-on-the-Treated in Ad Experiments]] applied *within the stratum $PGA=1$*. Conditioning on $PGA$ is legitimate because it is determined before and independently of assignment; conditioning on actual exposure $X$ is not, because $X$ is only defined for the treatment arm. A common mistake (fn. 7) is to compare *exposed* treatment users with *predicted-exposed* control users: if the simulator over-predicts by 10% one ends up "comparing 1,000 treatment users to 1,100 control users" — a selection bias that a [[Sample Ratio Mismatch and Trustworthiness Checks|sample-ratio check]] would flag immediately.
 
-> [!theorem] When PGA LATE equals the TOT ^thm-pga-tot
+> [!theorem] When PGA LATE equals the TOT
 > Two kinds of prediction error matter differently.
 > - **Over-prediction** ($PGA=1$ but the focal ad does not render) only dilutes: it is handled by the denominator. In the application $\Pr[X=1\mid PGA=1,T=1]=99.9\%$.
 > - **Under-prediction** (the focal ad renders for a user never flagged) means some treated users lie outside the analysed stratum. "If no underprediction occurs, then the PGA LATE estimator captures the effect of the ads on all exposed users and provides an unbiased estimate of the average effect of treatment on the treated." In the application 3.2% of treated users were unpredicted, but they saw 1.5 ads on average versus 20.2 for predicted-exposed users, who received 99.8% of the campaign's impressions — so PGA LATE "well approximate[s] TOT".
+
+^thm-pga-tot
 
 ### Sources of under-prediction and the fixes
 
@@ -80,13 +86,15 @@ Under-prediction arose mainly from **overlapping PGA experiments**. If a user is
 - **Auction isolation** — run a *separate* simulated auction per overlapping PGA campaign, eliminating cross-campaign externalities while keeping full power.
 - **Ghost events** — fall back to a coarser symmetric flag that is *necessary but not sufficient* for exposure, in the spirit of "exposure logging" in Bakshy, Eckles & Bernstein (2014).
 
-> [!definition] Ghost events, ghost bids, ghost cookied ^def-ghost-events
+> [!definition] Ghost events, ghost bids, ghost cookied
 > A **ghost event** is any logged activity, recorded identically in both arms, that is a necessary condition for experimental exposure. Examples in decreasing order of power:
 > - *all predicted ghost ads* — the user received a PGA for **any** experiment in the system;
 > - **ghost bids** — "the advertiser bids in any of the user's auctions";
 > - **ghost cookied** — "all users for whom the advertiser has a cookie".
 >
 > The corresponding LATE estimators remain unbiased and symmetric but are "less powerful because [they include] more unexposed users": the exposure rate in the denominator falls and the $1/\pi$ variance penalty rises.
+
+^def-ghost-events
 
 Ghost bids are the version available to a buyer who does *not* run the exchange. A demand-side platform can decide, for a held-out user, to compute the bid it would have submitted, log it, and not submit it; it cannot know whether that bid would have won. Gordon, Moakler & Zettelmeyer (§2.2) note that Facebook's Conversion Lift "effectively corresponds to the Ghost Bids approach in Johnson et al. (2017a), except it is being implemented directly by the ad platform": the measured population is every targeted user for whom the focal ad *participated in at least one auction*, and the analysis is ITT on that set. See [[Conversion Lift Studies on Ad Platforms]]. Barajas, Bhamidipati & Shanahan's tutorial outline likewise files "ghost bidding as intention to treat experiment" under DSP practice and flags that placebo designs are "subject to targeting bias: not blind to serving engine", motivating *double-blind* designs in which the serving and scoring systems cannot condition on arm.
 

@@ -46,7 +46,7 @@ Why not average trees as in [[Honest Trees and Causal Forests]]? "Noisy solution
 
 ## Main Content
 
-> [!definition] Forest weights and the GRF estimator (eqs. 2–3) ^def-grf-weights
+> [!definition] Forest weights and the GRF estimator (eqs. 2–3)
 > Grow $B$ trees; let $L_b(x)$ be the set of training examples in the same leaf as $x$ in tree $b$. Define
 > $$
 > \alpha_{bi}(x)=\frac{\mathbf 1\{X_i\in L_b(x)\}}{|L_b(x)|},\qquad\alpha_i(x)=\frac1B\sum_{b=1}^B\alpha_{bi}(x),
@@ -57,16 +57,20 @@ Why not average trees as in [[Honest Trees and Causal Forests]]? "Noisy solution
 > $$
 > With $\psi_{\mu(x)}(Y_i)=Y_i-\mu(x)$ this gives $\hat\mu(x)=\frac1B\sum_b\hat\mu_b(x)$ — exactly Breiman's regression forest.
 
-> [!theorem] Proposition 1 — the $\Delta$ splitting criterion ^thm-delta-criterion
+^def-grf-weights
+
+> [!theorem] Proposition 1 — the $\Delta$ splitting criterion
 > For a parent node $P$ split into children $C_1,C_2$, let $\hat\theta_{C_j}$ solve the estimating equation within child $j$ and define
 > $$
 > \Delta(C_1,C_2):=\frac{n_{C_1}n_{C_2}}{n_P^2}\big(\hat\theta_{C_1}-\hat\theta_{C_2}\big)^2 .
 > $$
 > Under the Section 3 assumptions, if $P$ has radius $<r$ and $n_{C_1},n_{C_2}\gg r^{-2}$, then the target error $\mathrm{err}(C_1,C_2)=\sum_j\mathbb P[X\in C_j\mid X\in P]\,\mathbb E[(\hat\theta_{C_j}-\theta(X))^2\mid X\in C_j]$ satisfies $\mathrm{err}(C_1,C_2)=K(P)-\mathbb E[\Delta(C_1,C_2)]+o(r^2)$, where $K(P)$ does not depend on the split. Hence: **choose splits that maximize heterogeneity $\Delta$ in the child estimates.** (The Athey–Imbens causal-tree rule is a special case.)
 
+^thm-delta-criterion
+
 Optimizing $\Delta$ exactly would mean re-solving the moment equation in every candidate child. GRF linearizes instead.
 
-> [!algorithm] Gradient tree (Algorithm 2; eqs. 4, 6–9) ^alg-gradient-tree
+> [!algorithm] Gradient tree (Algorithm 2; eqs. 4, 6–9)
 > At each parent node $P$:
 > 1. **Solve once in the parent:** $(\hat\theta_P,\hat\nu_P)\in\arg\min\|\sum_{\{i:X_i\in P\}}\psi_{\theta,\nu}(O_i)\|_2$, and compute $A_P=\frac{1}{|\{i:X_i\in P\}|}\sum_{\{i:X_i\in P\}}\nabla\psi_{\hat\theta_P,\hat\nu_P}(O_i)$ (any consistent estimate of $\nabla\mathbb E[\psi\mid X_i\in P]$).
 > 2. **Labeling step:** pseudo-outcomes $\rho_i=-\xi^\top A_P^{-1}\psi_{\hat\theta_P,\hat\nu_P}(O_i)\in\mathbb R$, where $\xi$ picks the $\theta$-coordinate. ($\rho_i$ is observation $i$'s influence on $\hat\theta_P$.)
@@ -78,10 +82,14 @@ Optimizing $\Delta$ exactly would mean re-solving the moment equation in every c
 >
 > Proposition 2: if $A_P$ is consistent, $\tilde\Delta(C_1,C_2)=\Delta(C_1,C_2)+o_P(\max\{r^2,1/n_{C_1},1/n_{C_2}\})$. For least squares, $\rho_i=Y_i-\bar Y_P$ and step 3 is exactly Breiman's split. All candidate splits along a feature are evaluated in a single pass via cumulative sums, as in gradient boosting.
 
-> [!algorithm] Generalized random forest with honesty and subsampling (Algorithm 1) ^alg-grf
+^alg-gradient-tree
+
+> [!algorithm] Generalized random forest with honesty and subsampling (Algorithm 1)
 > For $b=1,\dots,B$: draw a subsample $\mathcal I$ of size $s$ without replacement; split it into halves $\mathcal J_1,\mathcal J_2$; grow a gradient tree on $\mathcal J_1$; find the $\mathcal J_2$-examples sharing a leaf with $x$, $\mathcal N$; add $1/|\mathcal N|$ to the weight of each $e\in\mathcal N$. Output $\hat\theta(x)$ solving the weighted moment equation with weights $\alpha/B$.
 >
 > *Specification 1* (theory): trees are symmetric, make balanced splits (each child gets $\ge$ a fraction $\omega$ of the parent), split on each feature with probability $\ge\pi$ (implemented by trying $\min\{\max\{\text{Poisson}(m),1\},p\}$ variables per split), and the forest is [[Honest Trees and Causal Forests#^def-honesty|honest]] with $s/n\to0$, $s\to\infty$.
+
+^alg-grf
 
 ### Application 1 — quantile forests (§5)
 
@@ -95,8 +103,10 @@ $$
 $$
 a forest-weighted regression of $Y$ on $W$. Pseudo-outcomes: $\rho_i=\xi^\top A_P^{-1}(W_i-\bar W_P)\big(Y_i-\bar Y_P-(W_i-\bar W_P)\hat\beta_P\big)$ with $A_P=|P|^{-1}\sum(W_i-\bar W_P)^{\otimes2}$. Continuous treatments (spend, price, dose) are covered as-is.
 
-> [!definition] Local centering (§6.1.1) ^def-local-centering
+> [!definition] Local centering (§6.1.1)
 > Before growing the forest, replace $Y_i,W_i$ by $\tilde Y_i=Y_i-\hat y^{(-i)}(X_i)$ and $\tilde W_i=W_i-\hat w^{(-i)}(X_i)$, where $\hat y^{(-i)},\hat w^{(-i)}$ are leave-one-out (out-of-bag) forest estimates of $\mathbb E[Y\mid X]$ and $\mathbb E[W\mid X]$. On any region $S$ where $\beta$ is constant, $\theta=\xi^\top\mathrm{Var}[W_i-\mathbb E[W_i\mid X_i]\mid X_i\in S]^{-1}\mathrm{Cov}[W_i-\mathbb E[W_i\mid X_i],\,Y_i-\mathbb E[Y_i\mid X_i]\mid X_i\in S]$ — Robinson's (1988) partialling-out moment — so the estimator is "robust to confounding effects even when the weights $\alpha_i(x)$ are not sharply concentrated around $x$."
+
+^def-local-centering
 
 Local centering is [[Neyman Orthogonality]] applied *inside* the forest: the residual-on-residual moment is insensitive to first-order errors in $\hat y,\hat w$, exactly as in [[Regularization Bias and the Partially Linear Model]]. Leave-one-out prediction is used because it is cheap for forests; $K$-fold [[Cross-Fitting and Sample Splitting|cross-fitting]] is the option "precisely covered by theory."
 

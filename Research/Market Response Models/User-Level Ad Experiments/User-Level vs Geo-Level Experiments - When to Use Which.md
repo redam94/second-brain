@@ -70,13 +70,15 @@ This note synthesises the rest of the cluster with the vault's geo material ([[G
 
 ### Six diagnostic questions
 
-> [!algorithm] Choosing the design ^alg-choose
+> [!algorithm] Choosing the design
 > 1. **Is there a user-level holdout at all?** If the medium is not addressable (linear TV, OOH, radio), if the platform offers no holdout product, or if RCTs are "technically difficult or even impossible to implement" there (Gordon, Moakler & Zettelmeyer §1) → **geo**. Do not substitute an observational user-level model: see [[Experimental Benchmarks for Observational Ad Measurement]].
 > 2. **Can the outcome be joined to the randomized identifier?** Online conversions on a logged-in platform: yes. In-store sales: only with a database match — Johnson, Lewis & Reiley needed a third party to match 3.1M Yahoo! users to retailer records, the retailer attributed "more than 90%" of purchases to an individual, and most of the measured effect was *in store*. If the join is weak or biased → **geo**.
 > 3. **Is identity stable across the purchase journey?** Logged-in walled garden: yes. Open-web cookies or device IDs with cross-device journeys: no — the bias is not even signed ([[Identity Fragmentation and the Privacy-Era Limits of User-Level Tests#^thm-bias-decomposition|Lin & Misra's decomposition]]). If fragmented: run user-level as **ITT only**, randomized symmetrically across fragment types and scaled by fragments per person, or aggregate → **geo**.
 > 4. **Is the question within one platform or across the media plan?** A lift study is "conditional on all market conditions" and does "not generalize to media being run on other channels" (Gordon et al. 2019 §2.2; 2023 §2.2). Creative, audience, bid strategy, frequency: **user-level** (multi-cell). Channel budget, cross-channel synergy, halo on brand search or retail partners: **geo**.
 > 5. **Do treatment effects spill across users?** Household sharing, word of mouth, marketplace or inventory effects that move control users' outcomes violate SUTVA at the user level; regions internalize most of it ([[Interference and Marketplace Experiments]]). If spillovers are plausible and material → **geo**, with attention to border leakage.
 > 6. **Is either design powered?** Run the numbers for both (next section) and pick the one with a usable interval. Often neither is for fine ROI distinctions, in which case combine evidence in a hierarchical or MMM framework instead of over-reading one test.
+
+^alg-choose
 
 ### Power, compared honestly
 
@@ -93,12 +95,14 @@ This note synthesises the rest of the cluster with the vault's geo material ([[G
 
 ### What each calibrates in an MMM
 
-> [!definition] Matching experiment estimands to MMM quantities ^def-mmm-calibration
+> [!definition] Matching experiment estimands to MMM quantities
 > A [[Bayesian Media Mix Modeling - Overview|Bayesian MMM]] channel coefficient represents the *total* effect of the channel's spend on *all* sales in a period, including [[Carryover (Adstock) Functional Forms|carryover]], at the observed spend level and mix.
 > - A **geo test** estimates incremental total sales per incremental dollar for a specific spend change over the test plus cooldown window: nearly the same object. It maps to a prior or likelihood term on the channel's marginal ROAS over that window, after adjusting for the fraction of carryover falling outside the window.
 > - A **user-level lift test** estimates incremental *tracked* conversions among the *targeted audience* within the *study window*, for *one campaign*, holding all other media fixed. Mapping it to the MMM requires (i) scaling tracked to total conversions, (ii) assuming untested campaigns on the platform perform similarly, (iii) a carryover extrapolation, and (iv) acknowledging that the ATT is an *average* over delivered impressions while budget decisions need the *marginal* effect (Lewis & Rao §III.D).
 >
 > Each step adds uncertainty that belongs in the prior's variance ([[Bayesian Estimation and Priors for MMM]]; [[Q - Using Experiment Results as Priors in a Bayesian MMM]]). When both exist for a channel they are complementary: the lift test pins the short-run tracked component tightly; the geo test bounds the total.
+
+^def-mmm-calibration
 
 ### Hybrid designs
 

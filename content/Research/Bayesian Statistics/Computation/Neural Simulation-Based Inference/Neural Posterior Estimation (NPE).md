@@ -48,7 +48,7 @@ Note that the paper makes "no distinction between raw data and summary statistic
 
 ## Main Content
 
-> [!definition] Neural posterior estimator ^def-npe
+> [!definition] Neural posterior estimator
 > A parametric family of conditional densities $q_\phi(\theta\mid x)$ whose parameters are the output of a neural network taking $x$ as input. In Lueckmann et al. (2021, App. A.5) notation, $q_\psi(\theta)$ with $\psi = F(x,\phi)$. The training loss is the negative log probability of the simulated parameters,
 >
 > $$
@@ -57,7 +57,9 @@ Note that the paper makes "no distinction between raw data and summary statistic
 >
 > In the infinite-data, infinite-capacity limit this recovers $p(\theta\mid x)$ for **every** $x$, not only for $x_o$. That global property is [[Amortized vs Sequential Inference|amortization]].
 
-> [!theorem] Proposition 1 (Papamakarios & Murray 2016, pp. 2-3) ^thm-proposal-prior
+^def-npe
+
+> [!theorem] Proposition 1 (Papamakarios & Murray 2016, pp. 2-3)
 > Let $N$ pairs be generated independently by $\theta_n\sim\tilde p(\theta)$ and $x_n\sim p(x\mid\theta_n)$, where $\tilde p$ is an arbitrary **proposal prior**. In the limit $N\to\infty$, $\prod_n q_\phi(\theta_n\mid x_n)$ is maximized with respect to $\phi$ if and only if
 >
 > $$
@@ -70,9 +72,11 @@ Note that the paper makes "no distinction between raw data and summary statistic
 > \hat p(\theta\mid x = x_o) \propto \frac{p(\theta)}{\tilde p(\theta)}\; q_\phi(\theta\mid x_o).
 > $$
 
+^thm-proposal-prior
+
 The intuition given in the paper: simulate from the prior and the estimator learns the posterior; simulate from anything else and "we need to 'importance reweight' the result." The quantity the network actually learns is the **proposal posterior** $\tilde p(\theta\mid x) = p(\theta\mid x)\,\tilde p(\theta)p(x) / \big(p(\theta)\tilde p(x)\big)$ with $\tilde p(x) = \int \tilde p(\theta)p(x\mid\theta)\,d\theta$ (Lueckmann et al. 2021, App. A.6).
 
-> [!algorithm] SNPE-A: learn a proposal, then the posterior (Algorithms 1-2) ^alg-snpe-a
+> [!algorithm] SNPE-A: learn a proposal, then the posterior (Algorithms 1-2)
 > **Algorithm 1 (proposal prior).** Initialize $q_\phi$ with one Gaussian component; set $\tilde p(\theta)\leftarrow p(\theta)$. Repeat until $\tilde p$ converges:
 > 1. sample $\theta_n\sim\tilde p(\theta)$ and $x_n\sim p(x\mid\theta_n)$ for $n=1..N$;
 > 2. *retrain* $q_\phi$ on $\{\theta_n, x_n\}$, warm-started from the previous round;
@@ -81,6 +85,8 @@ The intuition given in the paper: simulate from the prior and the estimator lear
 > **Algorithm 2 (posterior).** Initialize a $K$-component $q_\phi$ (replicating the one learned component $K$ times with small perturbations), draw $N$ more pairs from the converged $\tilde p$, train, and return $\hat p(\theta\mid x_o)\propto \frac{p(\theta)}{\tilde p(\theta)}q_\phi(\theta\mid x_o)$.
 >
 > "In our experiments typically 4-6 iterations of 200-500 samples each were sufficient" for Algorithm 1.
+
+^alg-snpe-a
 
 **Why a fixed point works.** "If we already knew the true posterior, we could use it to construct an efficient proposal prior for learning it." With $\tilde p = p$ the network must learn the posterior for all $x$, "grossly inefficient if we are only interested in the posterior for $x = x_o$"; with $\tilde p\approx p(\theta\mid x_o)$ nearly every simulation lands near $x_o$. A side benefit reported for Lotka-Volterra: a network trained with a good proposal "needs to learn only the local relationship between $x$ and $\theta$ near $x_o$", so a *smaller* network suffices.
 

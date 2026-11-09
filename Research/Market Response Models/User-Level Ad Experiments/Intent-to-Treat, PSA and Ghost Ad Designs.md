@@ -51,8 +51,10 @@ The paper's Figure 1 draws the ideal: both arms contain the same mix of user typ
 
 ### Design 1 — Intent-to-treat (holdout without control ads)
 
-> [!definition] ITT design ^def-itt-design
+> [!definition] ITT design
 > Compare mean outcomes of the *entire* treatment group with the *entire* control group, ignoring exposure. Requires only random assignment and SUTVA; needs no placebo inventory and no cooperation from the ad server beyond suppressing the campaign for held-out users.
+
+^def-itt-design
 
 Decompose the ITT contrast into (i) the experimental difference among would-be-treated users — the TOT — and (ii) the experimental difference among never-treated users. "Logically, the latter difference should be zero, but the empirical difference contributes noise that weakens precision" (§2.1). With equal outcome variance $\sigma^2$, $N$ users per arm and exposure share $\pi$, the TOT implied by ITT has standard error $\sigma\sqrt{2/N}/\pi$, against $\sigma\sqrt{2/(\pi N)}$ for a direct comparison of the $\pi N$ treated users in each arm: a variance penalty of $1/\pi$.
 
@@ -62,8 +64,10 @@ ITT is the design of necessity for search-ad "blackouts" and for geographic rand
 
 ### Design 2 — PSA / placebo control ads
 
-> [!definition] PSA design ^def-psa-design
+> [!definition] PSA design
 > Book a second campaign — a public service announcement, a blank ad, a house ad, or an unrelated advertiser's ad — with *identical* configuration (quantity, dates, targeting, bid, budget) and deliver it to the control group. A control user who receives a PSA impression is flagged as counterfactual treated. The TOT estimator compares focal-ad-exposed treatment users with PSA-exposed control users.
+
+^def-psa-design
 
 Two precision gains (§2.2):
 
@@ -79,8 +83,10 @@ Two drawbacks (§2.2):
 
 ### Design 3 — Ghost ads
 
-> [!definition] Ghost ad ^def-ghost-ad
+> [!definition] Ghost ad
 > A **ghost ad impression** is a log entry flagging an occasion on which the ad platform *would have served* the focal ad to a control-group user. The user instead sees "whatever ads the ad platform chooses to deliver when the treatment ad is absent". Ghost ads "make the experimental ads visible to the ad platform and experimenter but invisible to the control group users" (§1, §3).
+
+^def-ghost-ad
 
 Advantages over PSAs:
 
@@ -90,12 +96,14 @@ Advantages over PSAs:
 
 ### Why PSAs break: three generations of ad platform
 
-> [!theorem] Validity of control-ad approaches by platform generation (Johnson, Lewis & Nubbemeyer Table 1) ^thm-platform-generations
+> [!theorem] Validity of control-ad approaches by platform generation (Johnson, Lewis & Nubbemeyer Table 1)
 > | Generation | Platform | Buying model | PSA valid? | Ghost ad valid? |
 > |---|---|---|---|---|
 > | 1 | Reach-based | CPM | Yes | Yes |
 > | 2 | Action-optimized | CPC, CPA | **No** | Yes |
 > | 3 | User-optimized | Retargeting | **No** | Yes — **first ad only** |
+
+^thm-platform-generations
 
 - **Reach-based** (§3.1). Delivery ignores response feedback, so identically configured focal, PSA and ghost campaigns are delivered symmetrically. Treatment effects can still change later browsing (a click takes the user off the publisher), making *subsequent* exposure counts endogenous, but the authors find this negligible in practice and it cannot affect the *first* impression.
 - **Action-optimized** (§3.2). The platform weights bids by predicted click/conversion probability learned per creative. "People who are interested in Louboutin shoes are likely quite different from those interested in rescuing sea turtles": the system learns to send shoe ads to fashion-site visitors and turtle ads to nature-site visitors. PSA-exposed control users are then a *different population* from focal-exposed treatment users, and the TOT comparison "will conflate the causal ad effect with the user-type selection bias" (Fig. 3). This matters because two thirds of display spend used performance optimization (IAB 2014). Ghost ads are unaffected: the same model scores the same focal ad for both arms. Google's DCM workaround — tricking the optimizer into treating both creatives as one — restores symmetry but measures the effect on a blend of "shoe-lovers and nature-lovers" and keeps the PSA cost (fn. 5).

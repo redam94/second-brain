@@ -61,10 +61,12 @@ Granger introduces this passage as "a personal detour" taken "Before considering
 
 ### Economics as a decision science (p. 364)
 
-> [!definition] The decision-maker criterion (Granger 2003, p. 364) ^def-decision-criterion
+> [!definition] The decision-maker criterion (Granger 2003, p. 364)
 > Granger endorses a statement (author forgotten) that "economics is a decision science, concerned with decision makers, such as consumers, employers, investors, and policy makers, in various forms of government, institutions, and corporations", from which "it follows that the 'purpose of economics is to help decision makers make better decisions.'" He calls this useful "because it gives us a foundation with which we can compare and evaluate specific pieces of economic analysis. We can ask 'how will a decision maker find this result useful?'" (p. 364)
 >
 > **Validation reading:** the evaluation criterion for a model is decision value, not fit or statistical significance — the same stance as loss-function-based forecast evaluation and as the decision-focused framing of marketing-mix models.
+
+^def-decision-criterion
 
 ### What cointegration models are used for (p. 364)
 
@@ -83,7 +85,7 @@ Forecastability ranking (p. 364):
 
 ### The forecasting process (p. 364)
 
-> [!algorithm] Granger's stages of forecasting (p. 364) ^alg-forecast-stages
+> [!algorithm] Granger's stages of forecasting (p. 364)
 > 1. **Central forecast** — "getting the central forecast".
 > 2. **Uncertainty bounds** — "then uncertainty bounds around it to give some idea of the risks involved in using this forecast."
 > 3. **Gather and evaluate past forecasts** — "Finally, previous forecasts have to be gathered and evaluated."
@@ -91,6 +93,8 @@ Forecastability ranking (p. 364):
 > 5. **Combine** — "The process of forecast evaluation, plus the use of combinations of forecasts from different series, is an on-going research project at the University of California, San Diego."
 >
 > (All quotes p. 364.) Modern equivalents: probabilistic forecasts and calibration checks ([[Probabilistic Forecasting - Overview]], [[Visualizing High-Dimensional Inference|Checking a forecast distribution]]), rolling-origin backtesting and error diagnostics ([[Forecast Evaluation and Backtesting]]).
+
+^alg-forecast-stages
 
 **Panels (p. 364):** forecasts also come "from panels of data, which can be thought of as a group of series of a similar nature measured from different sources", e.g. "monthly inflation rates from each of the Scandinavian countries." "Once one is clear what is the purpose of the analysis, suitable techniques can be formulated." (p. 364) — the precursor of pooled / global forecasting across related series ([[Local vs Global Forecasting Models]]).
 
@@ -108,12 +112,14 @@ Granger lists his applications: "pricing experiments in real super markets", sto
 
 The motivation is a statistician's angle: "As a statistician I am intrigued by the pure magnitude of some of the major economies, although economists pay little attention to this aspect of the real world." (p. 365)
 
-> [!theorem] Aggregation conjecture (Granger 2003, p. 365; informal) ^thm-aggregation
+> [!theorem] Aggregation conjecture (Granger 2003, p. 365; informal)
 > "in the United States there are about one hundred million households, so total consumption is the sum of all these household's consumptions. The sum over such a large number of families should have very special statistical properties, given various well-known limit theorems. If these properties are not observed this also has important implications." (p. 365) He judges these and other aggregation topics "worth further study".
 >
 > **Formal reading:** if $C_t = \sum_{i=1}^{N} c_{it}$ with household components $c_{it} = \lambda_i F_t + e_{it}$ (common factor $F_t$ plus idiosyncratic $e_{it}$, weakly dependent across $i$), then $\operatorname{Var}(\sum_i e_{it}) = O(N)$ while $\operatorname{Var}(F_t\sum_i\lambda_i) = O(N^2)$; for $N \approx 10^8$ the aggregate is essentially the common factor. Observed aggregate behaviour that is *not* dominated by common factors would indicate strong cross-sectional dependence. Granger's own earlier work (Granger 1980, *Journal of Econometrics*; not cited in the lecture) also showed that aggregating many AR(1) components with heterogeneous coefficients can produce long memory in the aggregate.
 >
 > **Marketing reading:** national sales are a sum over millions of purchase decisions, so national-level models mostly see common drivers (season, macro, national media) and lose individual heterogeneity; aggregation also changes dynamics. See [[Aggregation of Relations]] (aggregation bias in marketing response models).
+
+^thm-aggregation
 
 ### Closing numbers (p. 366)
 
@@ -149,10 +155,12 @@ Two discrepancies between the text and the reference list:
 
 ## Examples
 
-> [!example] Applying the decision-maker criterion to a media-mix model ^ex-decision-mmm
+> [!example] Applying the decision-maker criterion to a media-mix model
 > **Setup:** two candidate MMMs for weekly data: model A has higher in-sample $R^2$ and many "significant" channel coefficients estimated in levels; model B models the baseline as a stochastic trend, has wider intervals, and was evaluated by a rolling-origin backtest of past forecasts.
 >
 > **Granger's yardstick:** ask "how will a decision maker find this result useful?" (p. 364). A budget decision needs channel effects that are not artefacts of shared trends ([[Granger 2003 - Spurious Regression from Yule to Granger-Newbold]]), uncertainty bounds that express risk (stage 2), and evidence from evaluating previous forecasts (stage 3). Model B satisfies the criterion; model A's fit is not evidence of decision value. See [[Chan Perry 2017 - Challenges in Media Mix Modeling - Overview]] and [[SR 11-7 - Model Risk Management Guidance - Overview]] for the governance version of the same idea.
+
+^ex-decision-mmm
 
 ## Connections
 

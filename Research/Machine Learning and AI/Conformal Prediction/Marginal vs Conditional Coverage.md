@@ -53,7 +53,7 @@ Four notions of coverage, differing in what is conditioned on, should be kept ap
 
 ## Main Content
 
-> [!definition] Conditional coverage (A&B Eq. 7) ^def-conditional-coverage
+> [!definition] Conditional coverage (A&B Eq. 7)
 > A set-valued predictor $\mathcal C$ has conditional coverage at level $1-\alpha$ if
 >
 > $$
@@ -62,28 +62,36 @@ Four notions of coverage, differing in what is conditioned on, should be kept ap
 >
 > The oracle quantile band $[q_{\alpha/2}(x),q_{1-\alpha/2}(x)]$ achieves it (Romano et al. Eq. 3), which is why quantile-based scores are a good starting point.
 
-> [!theorem] Impossibility of distribution-free conditional coverage ^thm-impossibility
+^def-conditional-coverage
+
+> [!theorem] Impossibility of distribution-free conditional coverage
 > (Vovk 2012; Lei & Wasserman 2014; as stated in Tibshirani et al. 2019, Sec. 4.) Any method satisfying $\mathbb P\{Y_{n+1}\in\hat C_n(x_0)\mid X_{n+1}=x_0\}\ge1-\alpha$ for almost all $x_0$ and **all** distributions $P$ must produce $\hat C_n(x_0)$ with **infinite expected length** at any non-atom point $x_0$, for any underlying $P$. Barber, Candès, Ramdas & Tibshirani (2019) show that most natural relaxations are likewise unachievable in a non-trivial way.
+
+^thm-impossibility
 
 Intuition: without smoothness assumptions, $P_{Y\mid X=x_0}$ can differ arbitrarily from $P_{Y\mid X=x}$ at neighbouring $x$, and a continuous $X$ never repeats $x_0$ in the sample, so finite data carry no distribution-free information about that specific conditional law.
 
 ### Diagnosing conditional coverage (A&B Sec. 3.1)
 
-> [!definition] Feature-stratified coverage (FSC) ^def-fsc
+> [!definition] Feature-stratified coverage (FSC)
 > Let a discrete (or binned) feature take values $g\in\{1,\dots,G\}$ and $\mathcal I_g$ be the validation indices in group $g$:
 >
 > $$
 > \mathrm{FSC}=\min_{g\in\{1,\dots,G\}}\frac{1}{\lvert\mathcal I_g\rvert}\sum_{i\in\mathcal I_g}\mathbf 1\big\{Y_i^{(\text{val})}\in\mathcal C(X_i^{(\text{val})})\big\}.
 > $$
 
-> [!definition] Size-stratified coverage (SSC; Angelopoulos et al. 2021) ^def-ssc
+^def-fsc
+
+> [!definition] Size-stratified coverage (SSC; Angelopoulos et al. 2021)
 > Bin the *set sizes* $\lvert\mathcal C(x)\rvert$ into $B_1,\dots,B_G$ (e.g. size 1, size 2, size $>2$) and let $\mathcal I_g$ index validation points in bin $g$; SSC is the same minimum-over-bins formula. It needs no pre-specified feature.
+
+^def-ssc
 
 Under conditional coverage both equal $1-\alpha$ (up to sampling noise); values well below indicate a violation. A&B also recommend histogramming set sizes: a large mean signals a weak score or model, and a narrow spread signals no adaptivity. They stress that the smallest-average-size procedure "is not necessarily the best", and that adaptivity "is not implied by conformal prediction's coverage guarantee, but it is non-negotiable in practical deployments".
 
 ### Exact coverage on finitely many groups
 
-> [!algorithm] Group-balanced conformal prediction (A&B Sec. 4.1, Proposition 1) ^alg-group-balanced
+> [!algorithm] Group-balanced conformal prediction (A&B Sec. 4.1, Proposition 1)
 > Suppose the first feature $X_{i,1}\in\{1,\dots,G\}$ labels groups.
 > 1. Stratify calibration scores by group: $s^{(g)}_1,\dots,s^{(g)}_{n^{(g)}}$.
 > 2. Within each group compute $\hat q^{(g)}$ as the $\lceil(n^{(g)}+1)(1-\alpha)\rceil/n^{(g)}$ quantile.
@@ -91,8 +99,12 @@ Under conditional coverage both equal $1-\alpha$ (up to sampling noise); values 
 >
 > For i.i.d. data, $\mathbb P(Y_{\text{test}}\in\mathcal C(X_{\text{test}})\mid X_{\text{test},1}=g)\ge1-\alpha$ for all $g$ (Vovk 2012). The group may be any post-processing of the features, e.g. binned age.
 
-> [!algorithm] Class-conditional conformal prediction (A&B Sec. 4.2, Proposition 2) ^alg-class-conditional
+^alg-group-balanced
+
+> [!algorithm] Class-conditional conformal prediction (A&B Sec. 4.2, Proposition 2)
 > Stratify calibration scores by **true class** $k$ and compute $\hat q^{(k)}$ within each. Since the class is unknown at test time, loop over candidate labels and use each label's own threshold: $\mathcal C(x)=\{y:s(x,y)\le\hat q^{(y)}\}$. Then $\mathbb P(Y_{\text{test}}\in\mathcal C(X_{\text{test}})\mid Y_{\text{test}}=y)\ge1-\alpha$ for every class $y$ — e.g. 95% coverage both when the truth is *cancer* and when it is *normal*.
+
+^alg-class-conditional
 
 The cost is sample size: each group is calibrated with $n^{(g)}$ points, so realised coverage in group $g$ fluctuates like $\mathrm{Beta}(n^{(g)}+1-l_g,\,l_g)$, and groups with $n^{(g)}<1/\alpha-1$ get trivial sets. The number of groups one can afford grows only linearly with $n$ — a finite-sample echo of the impossibility theorem.
 

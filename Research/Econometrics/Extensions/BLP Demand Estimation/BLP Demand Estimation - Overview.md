@@ -39,7 +39,7 @@ The paper organizes its contribution around the major tasks of the BLP estimator
 
 ## Main Content
 
-> [!definition] The BLP problem at a glance ^blp-pipeline
+> [!definition] The BLP problem at a glance
 > 1. **Demand utility** (random-coefficients logit): $U_{ijt} = \delta_{jt} + \mu_{ijt} + \epsilon_{ijt}$ — see [[Random Coefficients Logit Model]].
 > 2. **Share inversion**: invert observed shares to mean utilities, $\boldsymbol{\delta}_t \equiv D_t^{-1}(\boldsymbol{\mathcal{S}}_t, \widetilde{\theta}_2)$, via the [[The BLP Contraction Mapping|BLP contraction mapping]].
 > 3. **Linear index**: $\delta_{jt} = [x_{jt}, v_{jt}]\beta - \alpha p_{jt} + \xi_{jt}$, with structural error $\xi_{jt}$.
@@ -47,7 +47,9 @@ The paper organizes its contribution around the major tasks of the BLP estimator
 > 5. **Optional supply side**: Bertrand-Nash FOCs give markups, recover marginal cost $c_{jt} = p_{jt} - \eta_{jt}$, add supply moments $E[\omega_{jt} Z_{jt}^S]=0$ — see [[Supply Side and Markups]].
 > 6. **Estimation**: nested fixed-point (NFXP) GMM with numerical integration and gradient-based optimization — see [[Numerical Integration and Optimization in PyBLP]].
 
-> [!definition] Parameter partition ^theta-partition
+^blp-pipeline
+
+> [!definition] Parameter partition
 > The parameter vector $\theta$ is split into three parts:
 > - $\theta_1$ ($K_1 \times 1$): linear **demand parameters** $\beta$.
 > - $\theta_3$ ($K_3 \times 1$): linear **supply parameters** $\gamma$.
@@ -55,10 +57,14 @@ The paper organizes its contribution around the major tasks of the BLP estimator
 >
 > The NFXP algorithm concentrates out the linear $[\theta_1, \theta_3]$ and searches only over the $K_2$ nonlinear parameters $\theta_2$, so the Hessian is only $K_2 \times K_2$ and large numbers of (linear) fixed effects are "essentially free."
 
-> [!definition] What is novel in Conlon & Gortmaker (2020) ^novelty
+^theta-partition
+
+> [!definition] What is novel in Conlon & Gortmaker (2020)
 > - A **reformulation** of the BLP problem (placing $\alpha p_{jt}$ on the LHS of the linear system) that supports **simultaneous supply and demand** with **high-dimensional fixed effects** and **analytic gradients**.
 > - A characterization of the **feasible approximation to optimal instruments** (Amemiya 1977 / Chamberlain 1987) that makes **exclusion and cross-equation restrictions explicit**, paralleling Berry & Haile (2014).
 > - Concrete, benchmarked **best practices**: SQUAREM / Levenberg-Marquardt for the inner loop, Gauss-Hermite product rules (sparse grids / scrambled Halton in high dimensions) for integration, gradient-based optimization with box constraints and tight tolerances, and the log-sum-exp trick for numerical stability.
+
+^novelty
 
 ## Examples
 

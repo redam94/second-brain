@@ -53,14 +53,16 @@ Lin & Misra formalise what is lost, and show the "lower bound" reading is safe o
 
 ### Framework
 
-> [!definition] Fragmented data (Lin & Misra §3.1) ^def-fragmented
+> [!definition] Fragmented data (Lin & Misra §3.1)
 > True model at the person level, with two devices $j\in\{1,2\}$:
 > $$
 > y=\alpha+x'\beta+\epsilon,\qquad y=y_1+y_2,\quad x=x_1+x_2,\quad E[\epsilon\mid x_1,x_2]=0 .
 > $$
 > The analyst sees $2N$ "users": stacked outcomes $\tilde Y=(Y_1',Y_2')'$ and exposures $\tilde X$. A person buys on device 1 with indicator $s^{(i)}$ (on device 2 otherwise), so $\tilde Y=SY$ with $S=(\mathbf s',(I-\mathbf s)')'$, and $\Lambda_x=E[\mathbf s\mid X_1,X_2]$ is the device-preference matrix. Assumptions: $s\perp\epsilon\mid(x_1,x_2)$ and standard OLS conditions, so that any remaining bias is due to fragmentation alone.
 
-> [!theorem] Bias decomposition (Lin & Misra eq. 8) ^thm-bias-decomposition
+^def-fragmented
+
+> [!theorem] Bias decomposition (Lin & Misra eq. 8)
 > With $\vartheta$ the (positive-definite) lower-right block of $(\tilde X'\tilde X)^{-1}$,
 > $$
 > E[\hat\beta\mid X_1,X_2]-\beta=\vartheta\,(\Delta_3+\Delta_2+\Delta_1),
@@ -76,11 +78,13 @@ Lin & Misra formalise what is lost, and show the "lower bound" reading is safe o
 >
 > "The latter two bias components have arbitrary signs and magnitudes ... Moreover, this bias does not converge to zero in the limit." $\Delta_1+\Delta_2$ is bounded in $[-\beta,\beta]$, so only when the baseline $\alpha\approx0$ (e.g. new products) is $\hat\beta\in[0,2\beta]$ with the correct sign. "In most digital ad effect studies, $\alpha\gg\beta$" — the low signal-to-noise regime of [[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise]] — and $\Delta_3$ dominates.
 
+^thm-bias-decomposition
+
 Device-level [[Activity Bias in Advertising|activity bias]] is removable by estimating separate models per device ("unstacking"); cross-device substitution is not (§3.2). The results extend to device-specific coefficients, $J>2$ fragments, and mixtures of fragmented and complete identities (§3.4-3.5), and the sources of bias persist in GLMs such as logit and Poisson, where attenuation is if anything stronger (§6).
 
 ### Does randomization rescue the estimate?
 
-> [!theorem] Symmetric and independent exposures (SIE) (Lin & Misra §3.3, §4.2) ^thm-sie
+> [!theorem] Symmetric and independent exposures (SIE) (Lin & Misra §3.3, §4.2)
 > Suppose (1) $E[x_1]=E[x_2]$, $\text{Var}[x_1]=\text{Var}[x_2]$ and $x_1\perp x_2$, and (2) $E[\mathbf s\mid X_1,X_2]=\Lambda$ does not depend on exposures. Then with mean-centred covariates $E[\hat\beta]=\beta/2$; with $J$ fragments per user $E[\hat\beta]=\beta/J$, and $J\hat\beta$ is unbiased, with a confidence interval "at least $\sqrt J$ times" that of unfragmented data. Coey & Bailey's (2016) people-and-cookies correction is the special case of i.i.d. cookie exposures and equiprobable purchase cookies.
 >
 > **Both conditions are needed.** With randomized ($x_1\perp x_2$) but *asymmetric* treatment intensity — $E[x_1]=3$, $E[x_2]=1$, $E[x_1^2]=10$, $E[x_2^2]=2$, $\alpha=0$, constant device preference $\lambda$ — the bias is $(2\lambda-\tfrac74)\beta$:
@@ -88,6 +92,8 @@ Device-level [[Activity Bias in Advertising|activity bias]] is removable by esti
 > \lambda\in(\tfrac78,1]\Rightarrow\hat\beta>\beta;\qquad \lambda\in(\tfrac38,\tfrac78)\Rightarrow0<\hat\beta<\beta;\qquad \lambda\in[0,\tfrac38)\Rightarrow\hat\beta<0 .
 > $$
 > "Randomization by itself does not provide additional guarantees regarding the sign of the fragmentation bias."
+
+^thm-sie
 
 Implications for experiment design:
 

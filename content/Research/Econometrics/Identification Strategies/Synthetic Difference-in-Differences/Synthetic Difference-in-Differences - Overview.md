@@ -63,14 +63,16 @@ The second half of this cluster concerns what to do when you stay inside the DiD
 
 ## Main Content
 
-> [!definition] Setting and estimand ^def-sdid-setting
+> [!definition] Setting and estimand
 > Balanced panel, $N$ units, $T$ periods, outcome $Y_{it}$, binary treatment $W_{it}$. **Block assignment**: the first $N_{co}$ units are never treated; the last $N_{tr} = N - N_{co}$ units are treated in periods $t > T_{pre}$, so $W_{it} = \mathbf 1\{i > N_{co},\, t > T_{pre}\}$ and $T_{post} = T - T_{pre}$. The target is the average treatment effect on the treated cells,
 > $$
 > \tau = \frac{1}{N_{tr}T_{post}} \sum_{i=N_{co}+1}^{N}\ \sum_{t=T_{pre}+1}^{T} \tau_{it}
 > $$
 > (eq. 4.2). Staggered adoption is handled by applying SDID once per adoption date and averaging (Appendix §8).
 
-> [!definition] The three estimators as one regression family ^def-sdid-family
+^def-sdid-setting
+
+> [!definition] The three estimators as one regression family
 > | Estimator | Unit weights | Time weights | Unit FE $\alpha_i$ | Time FE $\beta_t$ |
 > |---|---|---|---|---|
 > | DiD (1.2) | uniform $1/N_{co}$ | uniform $1/T_{pre}$ | yes | yes |
@@ -80,10 +82,14 @@ The second half of this cluster concerns what to do when you stay inside the DiD
 >
 > DIFP is the Doudchenko–Imbens (2016) / Ferman–Pinto (2019) "demeaned SC"; the paper reports it to separate the gains from fixed effects from the gains from time weights.
 
-> [!theorem] Headline results of Arkhangelsky et al. (2021) ^thm-sdid-headline
+^def-sdid-family
+
+> [!theorem] Headline results of Arkhangelsky et al. (2021)
 > 1. **Double robustness** (§4.2): the bias term vanishes if *either* the unit weights balance the latent unit factors *or* the time weights balance the latent time factors — see [[SDID vs DiD vs Synthetic Control#^thm-sdid-double-robust|the bias decomposition]].
 > 2. **Asymptotic normality** (Theorem 1): under a latent factor model $Y = L + W\circ\tau + E$ with large $N_{co}$, $T_{pre}$ and a comparatively small treated block, $(\hat\tau^{sdid}-\tau)/V_\tau^{1/2} \Rightarrow \mathcal N(0,1)$ with $V_\tau$ of order $1/(N_{tr}T_{post})$ — see [[SDID Inference - Bootstrap, Jackknife and Placebo]].
 > 3. **Empirical dominance** (§3): in placebo simulations calibrated to CPS wage data and Penn World Table GDP, SDID has the lowest or near-lowest RMSE and bias among DiD, SC, DIFP and matrix completion in nearly every design.
+
+^thm-sdid-headline
 
 ### Map of the cluster
 

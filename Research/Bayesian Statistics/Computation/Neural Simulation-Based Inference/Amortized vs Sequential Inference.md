@@ -44,11 +44,15 @@ Neural surrogates sit wherever you put them. Trained on prior simulations they a
 
 ## Main Content
 
-> [!definition] Amortized inference ^def-amortized
+> [!definition] Amortized inference
 > An inference procedure whose expensive stage (simulation and training) does not depend on the observation. Formally, a surrogate is fitted to $(\theta_n,x_n)\sim p(\theta)\,p(x\mid\theta)$ so that it approximates the target conditional *globally*: $q_\phi(\theta\mid x)\approx p(\theta\mid x)$ for all $x$ in the prior predictive, or $q_\phi(x\mid\theta)$ / $\hat r(x,\theta)$ for all $\theta$ in the prior's support. Dyer et al. (2022, Sec. 3.1) describe these as "global posterior density estimators" in which "pointwise estimates of $p(\theta\mid y)$ can borrow strength from, and share information between, one another."
 
-> [!definition] Sequential (round-based) inference ^def-sequential
+^def-amortized
+
+> [!definition] Sequential (round-based) inference
 > Split a budget of $R$ simulations into rounds $N_1,N_2,\dots$ In round 1 draw $\theta\sim p(\theta)$; in round $i\ge2$ draw $\theta\sim\tilde p_i(\theta)$, where the **proposal** $\tilde p_i$ is the round-$(i-1)$ posterior estimate for the fixed observation $x_o$; retrain after each round. The estimator is "now non-amortised" (Dyer et al., Sec. 3.5). This is the simplest form of what Cranmer et al. (Sec. 2.B) call active learning: "run the simulator at parameter points that are expected to increase our knowledge the most."
+
+^def-sequential
 
 ### Why sequential training costs amortization: three mechanisms
 
@@ -66,11 +70,13 @@ Neural surrogates sit wherever you put them. Trained on prior simulations they a
 
 This is Box 1 of the benchmark: "To perform SBI separately for different data points (i.e. compute $p(\theta\mid x_1), p(\theta\mid x_2),\dots$), methods that allow 'amortization' (NPE) are likely preferable. While NLE and NRE allow amortisation of the neural network, MCMC sampling is required, which takes additional time. Conversely, if we want to run SBI conditioned on many i.i.d. data (e.g. $p(\theta\mid x_1,x_2,\dots)$) methods based on likelihood or ratio estimation (NLE, NRE), or NPE with exchangeable neural networks would be appropriate."
 
-> [!theorem] Empirical findings on the trade-off (Lueckmann et al. 2021, Sec. 3) ^thm-sequential-findings
+> [!theorem] Empirical findings on the trade-off (Lueckmann et al. 2021, Sec. 3)
 > - **Finding 3: "Sequential estimation improves sample efficiency."** "Sequential algorithms outperform non-sequential ones. The difference was small on simple tasks (i.e. linear Gaussian cases), yet pronounced on most others. However, we also found these methods to exhibit diminishing returns as the simulation budget grows."
 > - **Finding 5: "No one algorithm to rule them all."** "There was no clear-cut answer as to which sequential method (SNLE, SNRE, and SNPE) should be preferred."
 > - The benchmark split each budget (1k to 100k simulations) "equally ... across 10 rounds."
 > - Simulation count is not wall-clock time: "(S)ABC was much faster than approaches requiring network training. Overall, sequential neural algorithms exhibited longest runtimes" (Sec. 4, fourth limitation). A plausible reason, not stated in the paper, is that every round retrains the network and, for SNLE/SNRE, reruns MCMC to draw the next proposal.
+
+^thm-sequential-findings
 
 Earlier evidence points the same way. In Papamakarios & Murray's Bayesian linear regression "sequentially fitting a prior proposal was more than ten times cheaper than training with prior samples, and more accurate"; SNL reports that guiding simulations "reduces simulation cost by orders of magnitude" relative to single-round neural likelihood.
 

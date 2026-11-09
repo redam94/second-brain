@@ -41,7 +41,7 @@ Before 2017, attention was an add-on to recurrent encoder-decoder models: the de
 
 ## Main Content
 
-> [!definition] Scaled dot-product attention ^def-sdpa
+> [!definition] Scaled dot-product attention
 > Let $Q \in \mathbb R^{n_q \times d_k}$ hold queries, $K \in \mathbb R^{n_k \times d_k}$ keys and $V \in \mathbb R^{n_k \times d_v}$ values, one per row. Then (Eq. 1)
 >
 > $$
@@ -54,9 +54,11 @@ Before 2017, attention was an add-on to recurrent encoder-decoder models: the de
 > a_{ij} = \frac{\exp(q_i^{\mathsf T} k_j / \sqrt{d_k})}{\sum_{l} \exp(q_i^{\mathsf T} k_l / \sqrt{d_k})}, \qquad a_{ij} \ge 0, \quad \sum_j a_{ij} = 1 .
 > $$
 
+^def-sdpa
+
 The paper contrasts this with **additive attention**, which scores compatibility with a one-hidden-layer feed-forward network. The two have similar theoretical complexity, but dot-product attention "is much faster and more space-efficient in practice, since it can be implemented using highly optimized matrix multiplication code" (Sec. 3.2.1).
 
-> [!theorem] Why divide by $\sqrt{d_k}$ ^thm-scaling
+> [!theorem] Why divide by $\sqrt{d_k}$
 > Assume the components of $q$ and $k$ are independent with mean $0$ and variance $1$. Then
 >
 > $$
@@ -65,7 +67,9 @@ The paper contrasts this with **additive attention**, which scores compatibility
 >
 > (footnote 4). Unscaled logits therefore have standard deviation $\sqrt{d_k}$; for large $d_k$ they push the softmax "into regions where it has extremely small gradients". Dividing by $\sqrt{d_k}$ restores unit variance regardless of head dimension. The paper cites the observation that additive attention outperforms *unscaled* dot-product attention for large $d_k$, and introduces the scaling "to counteract this effect".
 
-> [!definition] Multi-head attention ^def-mha
+^thm-scaling
+
+> [!definition] Multi-head attention
 > With $h$ heads and learned projections $W_i^Q \in \mathbb R^{d_{\text{model}} \times d_k}$, $W_i^K \in \mathbb R^{d_{\text{model}} \times d_k}$, $W_i^V \in \mathbb R^{d_{\text{model}} \times d_v}$ and $W^O \in \mathbb R^{h d_v \times d_{\text{model}}}$,
 >
 > $$
@@ -76,13 +80,17 @@ The paper contrasts this with **additive attention**, which scores compatibility
 >
 > The base model uses $h = 8$ and $d_k = d_v = d_{\text{model}}/h = 64$. "Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality" (Sec. 3.2.2).
 
+^def-mha
+
 The motivation is that a single softmax-weighted average blurs: "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. With a single attention head, averaging inhibits this." The same averaging is why the Background section describes attention as having "reduced effective resolution".
 
-> [!definition] The three uses of attention in the Transformer ^def-three-uses
+> [!definition] The three uses of attention in the Transformer
 > (Sec. 3.2.3)
 > 1. **Encoder self-attention.** $Q$, $K$, $V$ all come from the previous encoder layer; every position attends to every position.
 > 2. **Encoder-decoder (cross) attention.** Queries come from the previous decoder layer; keys and values come from the encoder output, so each decoder position attends over the whole input.
 > 3. **Masked decoder self-attention.** Each position may attend only to positions up to and including itself. This is implemented "by masking out (setting to $-\infty$) all values in the input of the softmax which correspond to illegal connections", which preserves the autoregressive property used in [[Autoregressive Language Modeling and Pretraining]].
+
+^def-three-uses
 
 ### Ablation evidence
 

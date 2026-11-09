@@ -52,19 +52,25 @@ The cluster answers four questions in sequence.
 
 ## Main Content
 
-> [!definition] Transformer ^def-transformer
+> [!definition] Transformer
 > A sequence transduction model "based solely on attention mechanisms, dispensing with recurrence and convolutions entirely" (Vaswani et al., Abstract). Each layer applies multi-head attention and a position-wise feed-forward network, each wrapped as $\mathrm{LayerNorm}(x + \mathrm{Sublayer}(x))$. See [[Transformer Architecture and Positional Encoding]].
 
-> [!definition] Large language model (as used in these papers) ^def-llm
+^def-transformer
+
+> [!definition] Large language model (as used in these papers)
 > A Transformer (in Kaplan, Brown and Hoffmann: **decoder-only**) trained to "autoregressively model language", i.e. to minimize the cross-entropy of the next token given the preceding context, on hundreds of billions of tokens. The scale variables are $N$ (non-embedding parameters in Kaplan; all parameters in Hoffmann), $D$ (training tokens) and $C \approx 6ND$ (training FLOPs). See [[Autoregressive Language Modeling and Pretraining]].
 
-> [!theorem] The empirical regularities that organize the field ^thm-regularities
+^def-llm
+
+> [!theorem] The empirical regularities that organize the field
 > These are empirical laws, not theorems in the mathematical sense.
 > 1. **Scale over shape.** Loss "depends strongly on scale, weakly on model shape" (Kaplan, Sec. 1.1, Sec. 3.1).
 > 2. **Power laws.** Loss is a power law in each of $N$, $D$, $C$ "when not bottlenecked by the other two" (Kaplan, Eqs. 1.1-1.3).
 > 3. **Joint law and overfitting.** $L(N,D) = \left[(N_c/N)^{\alpha_N/\alpha_D} + D_c/D\right]^{\alpha_D}$ (Kaplan, Eq. 1.5), or in Hoffmann's additive form $\hat L(N,D) = E + A/N^{\alpha} + B/D^{\beta}$ (Eq. 2).
 > 4. **Compute-optimal allocation.** Minimizing $\hat L$ subject to $6ND = C$ gives $N_{\text{opt}} \propto C^{\beta/(\alpha+\beta)}$ and $D_{\text{opt}} \propto C^{\alpha/(\alpha+\beta)}$ (Hoffmann, Eq. 4); all three of Hoffmann's estimation approaches put both exponents near $0.5$.
 > 5. **In-context learning improves with scale.** Few-shot performance "increases more rapidly" with model size than zero-shot performance (Brown, Fig. 1.3).
+
+^thm-regularities
 
 ### Reading order
 

@@ -39,19 +39,27 @@ Matching methods implicitly assume substantial overlap of the propensity-score d
 
 ## Main Content
 
-> [!definition] Region of common support ^def-common-support
+> [!definition] Region of common support
 > The **region of common support** is the range of propensity-score values (or, more generally, the covariate region) represented in **both** the treated and control groups. Effects can be reliably estimated only within it; outside it, estimation requires extrapolation rather than interpolation. This is the empirical counterpart of the **positivity / overlap** assumption $0 < P(T=1\mid X) < 1$.
 
-> [!definition] Methods for assessing / enforcing common support ^def-trimming
+^def-common-support
+
+> [!definition] Methods for assessing / enforcing common support
 > 1. **Propensity-score trimming:** discard individuals with propensity-score values outside the range of the other group.
 > 2. **Convex hull (King and Zeng, 2006):** examine the multidimensional covariate space to identify where comparisons require interpolation vs. extrapolation.
 > Defining the discard rule using **one or two key covariates** (rather than the propensity score itself) aids interpretation of *who* is excluded. Calipers in nearest-neighbor matching enforce overlap implicitly.
 
-> [!warning] Common support constrains the estimand ^warn-estimand
+^def-trimming
+
+> [!warning] Common support constrains the estimand
 > Lack of overlap may make the **ATE** impossible to estimate reliably — e.g., if some controls lie outside the range of treated units, $Y(1)$ for those controls is unidentified without heavy extrapolation. For the **ATT**, discarding *controls* outside the treated range is fine (even beneficial), but discarding *treated* units changes the group to which the results apply (Crump et al., 2009). Examining common support thus informs the choice between ATT and ATE.
 
-> [!definition] Matching surfaces non-overlap that regression hides ^def-vs-regression
+^warn-estimand
+
+> [!definition] Matching surfaces non-overlap that regression hides
 > Traditional regression models do not examine the joint distribution of predictors (in particular treatment vs. covariates), so they extrapolate into regions with no support without warning. Matching makes it explicit when the treatment effect cannot be separated from other group differences — a well-specified, highly-interacted outcome regression would reveal the same imbalance, but such models are rarely fit in practice. Selection and regression models perform poorly under insufficient overlap precisely because they do not check it.
+
+^def-vs-regression
 
 ## Examples
 

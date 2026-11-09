@@ -38,14 +38,16 @@ The clue (§"Variable selection bias...", closing paras): split-selection bias i
 
 ## Main Content
 
-> [!example] Figure 11 — Effects induced by bootstrapping ^fig-11
+> [!example] Figure 11 — Effects induced by bootstrapping
 > **Setup.** Null design, categorical predictors $X_2,\dots,X_5$ only (2, 4, 10, 20 levels), binary $Y$, 1000 simulated data sets. In each run, a $\chi^2$ test of independence between each $X_j$ and $Y$ is computed (a) on the original sample, (b) on one bootstrap sample drawn with replacement from it.
 >
 > **Result.** (a) Left plots: boxplots of $p$-values "range from 0 to 1 with median 0.5 as expected", i.e. uniform. (b) Right plots: the distribution of $p$-values "is shifted towards zero".
 >
 > **Caption (paraphrased).** Distribution of the $p$ values of $\chi^2$ tests of each categorical variable and the binary response in the null case; left from the original sample, right from the bootstrap sample.
 
-> [!theorem] Mechanism 2: bootstrap resampling manufactures association, more so for many categories ^thm-bootstrap-association
+^fig-11
+
+> [!theorem] Mechanism 2: bootstrap resampling manufactures association, more so for many categories
 > 1. **Every finite sample deviates slightly from independence**, even when generated under it.
 > 2. **Bootstrap sampling with replacement aggravates the deviation**: "the cell counts in the contingency table are affected by observations that are either not included or are doubled or tripled in the bootstrap sample, and therefore the bootsrap sample deviates notably from the null hypothesis – even if the original sample was generated under the null hypothesis." (verbatim, typo in original)
 > 3. **More categories ⇒ bigger effect**: larger tables (e.g. $4\times2$ for $X_3$) have smaller absolute cell counts than smaller tables ($2\times2$ for $X_2$), and "excluding or duplicating an observation produces more severe variations from the null hypothesis."
@@ -54,12 +56,16 @@ The clue (§"Variable selection bias...", closing paras): split-selection bias i
 >
 > **Effect on importances.** The apparent association hits both measures available in `cforest`: selection frequency directly, and permutation importance because many-category variables are "selected more often and gain positions closer to the root node" (as in [[Strobl 2007 - Split-Selection Bias in CART Trees#^thm-propagation]]).
 
-> [!theorem] Relative size of the two mechanisms ^thm-relative-size
+^thm-bootstrap-association
+
+> [!theorem] Relative size of the two mechanisms
 > In `randomForest`, the bootstrap effect "is mostly superposed by the much stronger effect of variable selection bias" (Figs 1-9, top rows: with vs without replacement look alike). Only when `cforest` removes selection bias are the with/without-replacement differences obvious (bottom rows). **Conclusion** (verbatim): "in order to be able to reliably interpret the variable importance measures of a random forest, the forest must be built from unbiased classification trees, and sampling must be conducted without replacement."
+
+^thm-relative-size
 
 **Proof sketch (vault addition).** Write the Pearson statistic for $X_j$ (with $k$ levels) vs binary $Y$ as $X^2=\sum_{\text{cells}}(O-E)^2/E$, with $X^2\approx\chi^2_{k-1}$ on the original sample under the null. Conditionally on the original sample, bootstrap cell counts are multinomial around the original counts, so the bootstrap deviation $O^*-E^*$ is (original deviation) + (fresh resampling noise of the same order). Both pieces are $O(\sqrt n)$ per cell, so in expectation $X^{2*}\approx$ (original $\chi^2_{k-1}$) + (an independent $\chi^2_{k-1}$-sized term), roughly doubling the statistic while it is still referred to $\chi^2_{k-1}$. The doubling holds for every $n$ — hence no improvement with sample size — and its effect on the $p$-value grows with the degrees of freedom: $P(\chi^2_{d}>2d)=0.157,\;0.112,\;0.035,\;0.006$ for $d=1,3,9,19$. A subsample of size $m<n$ without replacement has finite-population-corrected noise and no duplicated observations, and its $p$-values stay approximately uniform.
 
-> [!example] Example: reproducing Figure 11 at two sample sizes (vault reproduction, not from the paper) ^ex-fig11-reproduction
+> [!example] Example: reproducing Figure 11 at two sample sizes (vault reproduction, not from the paper)
 > **Setup.** 1000 runs; $X_j\sim M(k)$ for $k\in\{2,4,10,20\}$, $Y\sim B(0.5)$ independent; Pearson $\chi^2$ test (no continuity correction) on the original sample, on one bootstrap sample of size $n$, and on one subsample of size $0.632n$ without replacement. Entries: median $p$-value / share of $p<0.05$.
 >
 > | $n$ | $k$ | original | bootstrap | subsample |
@@ -75,14 +81,18 @@ The clue (§"Variable selection bias...", closing paras): split-selection bias i
 >
 > **Interpretation.** A bootstrap sample makes a pure-noise 20-level factor look "significant" at 5% in about two thirds of runs; tenfold more data does not help. Subsampling without replacement keeps the null calibrated. This confirms all three claims of the mechanism: shift toward zero, gradient in $k$, and invariance to $n$.
 
+^ex-fig11-reproduction
+
 ## Examples
 
-> [!example] Example: bootstrapped feature screening in marketing pipelines ^ex-bootstrap-screening
+> [!example] Example: bootstrapped feature screening in marketing pipelines
 > **Setup.** An analyst bootstraps weekly data (156 rows) to get "stability" of a feature-screening step that keeps any feature whose association test with the KPI has $p<0.05$, then counts how often each feature is kept.
 >
 > **Problem.** The bootstrap inflates apparent association for every feature, most for high-cardinality ones (a 20-level region code has ~8 weeks per level). The "stability" count rewards cardinality.
 >
 > **Fix.** Use subsamples without replacement (e.g. $\lfloor n/2\rfloor$ as in stability selection), or test with a proper null (permute $Y$ within the resample). For time-ordered data, resample in blocks — and note that bootstrapping weekly time series has its own dependence problems ([[Bergmeir Hyndman Koo 2018 - CV for Time Series - Overview]]).
+
+^ex-bootstrap-screening
 
 ## Connections
 

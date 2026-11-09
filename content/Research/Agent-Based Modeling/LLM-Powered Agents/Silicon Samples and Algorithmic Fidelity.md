@@ -44,13 +44,17 @@ In ABM terms this is a recipe for [[Heterogeneity in Agent Models|agent heteroge
 
 ## Main Content
 
-> [!definition] Language model as conditional distribution (Sec. 2) ^def-lm-conditional
+> [!definition] Language model as conditional distribution (Sec. 2)
 > A language model is $p(x_n \mid x_1, \dots, x_{n-1})$ over tokens from a fixed vocabulary. The conditioning tokens are the **context**. Changing the context reweights outputs; because sampling is stochastic, one context yields a *distribution* of completions.
 
-> [!definition] Algorithmic fidelity (Sec. 3) ^def-algorithmic-fidelity
+^def-lm-conditional
+
+> [!definition] Algorithmic fidelity (Sec. 3)
 > "The degree to which the complex patterns of relationships between ideas, attitudes, and socio-cultural contexts within a model accurately mirror those within a range of human sub-populations." The core assumption is that generated texts are selected "not from a single overarching probability distribution, but from a combination of many distributions".
 
-> [!definition] Four criteria for algorithmic fidelity (Sec. 3) ^def-four-criteria
+^def-algorithmic-fidelity
+
+> [!definition] Four criteria for algorithmic fidelity (Sec. 3)
 > 1. **Social Science Turing Test** — generated responses are indistinguishable from parallel human texts.
 > 2. **Backward Continuity** — responses are consistent with the conditioning context, "such that humans viewing the responses can infer key elements of that input".
 > 3. **Forward Continuity** — responses "proceed naturally from the conditioning context", reflecting its form, tone and content.
@@ -58,7 +62,9 @@ In ABM terms this is a recipe for [[Heterogeneity in Agent Models|agent heteroge
 >
 > No numerical thresholds are proposed; "the best metric is repeated support for each criteria across multiple data sources, different measures, and across many groups." Fidelity must be established **per domain and per group** before use.
 
-> [!theorem] Silicon sampling corrects skewed marginals (Sec. 4) ^thm-silicon-sampling
+^def-four-criteria
+
+> [!theorem] Silicon sampling corrects skewed marginals (Sec. 4)
 > Let $V$ be an outcome (e.g. vote) and $B$ a backstory. The model represents
 >
 > $$
@@ -73,17 +79,21 @@ In ABM terms this is a recipe for [[Heterogeneity in Agent Models|agent heteroge
 >
 > "As long as GPT-3 models the conditional distribution $P(V \mid B)$ well, we can explore patterns in any designated population."
 
+^thm-silicon-sampling
+
 This is structurally identical to [[Poststratification]]: a model for the conditional response, averaged over the target population's covariate distribution. In MRP the conditional model is a multilevel regression fitted to a (non-representative) sample; in silicon sampling it is a pretrained LLM with **no fitted parameters and no uncertainty quantification**. The identifying assumption is the same — the conditional $P(V \mid B)$ transports from the "sample" (the training corpus) to the population — and fails in the same way: if the people who write about politics online differ from non-writers *within* a demographic cell, reweighting cells cannot fix it (selection on unobservables). The authors flag the analogy to Simpson's paradox: the aggregate completions of an unconditioned model can differ drastically from the patterns within sub-populations.
 
 ### Evidence
 
-> [!example] Study 1 — free-form partisan descriptors (Sec. 5) ^ex-study1
+> [!example] Study 1 — free-form partisan descriptors (Sec. 5)
 > Silicon replication of Rothschild et al.'s "Pigeonholing Partisans": each backstory is a first-person template ("Ideologically, I describe myself as conservative. Politically, I am a strong Republican. Racially, I am white. I am male. ... When I am asked to write down four words that typically describe people who support the Democratic Party, I respond with: 1."). 2,873 Lucid evaluators rated 7,675 human and GPT-3 lists (each list rated by three people).
 > - **Turing test**: $61.7\%$ of human lists and $61.2\%$ of GPT-3 lists were judged human (two-tailed $p = 0.44$).
 > - **Content**: similar shares rated as mentioning traits ($72.3\%$ human vs. $66.5\%$ GPT-3) and as extreme ($39.8\%$ vs. $41.0\%$).
 > - **Backward continuity**: raters inferred the writer's party well above the $33\%$ chance rate from both sources, but better from human lists ($60.1\%$ vs. $52.8\%$, $p < .001$) — silicon text carries *less* identifying signal.
 
-> [!example] Study 2 — vote prediction (Sec. 6, Table 1) ^ex-study2
+^ex-study1
+
+> [!example] Study 2 — vote prediction (Sec. 6, Table 1)
 > Backstories built from ten ANES variables (race/ethnicity, gender, age, ideology, party ID, political interest, church attendance, discussing politics, flag patriotism, state). The model's probability of completing "In [year], I voted for..." with the Republican candidate is recorded and dichotomised at $0.5$.
 >
 > | Year | GPT-3 mean $P(\text{Rep})$ | ANES share Rep | Tetrachoric corr. |
@@ -94,8 +104,12 @@ This is structurally identical to [[Poststratification]]: a model for the condit
 >
 > More than half of subgroup tetrachoric correlations are $\geq 0.90$ in every year. The exception is **pure independents**, especially in 2020. The 2020 election postdates GPT-3's 2019 training cutoff, yet correlation remained high — but note the **marginal** flipped from under- to over-predicting the Republican by 6 points.
 
-> [!example] Study 3 — association structure (Sec. 7) ^ex-study3
+^ex-study2
+
+> [!example] Study 3 — association structure (Sec. 7)
 > An interview-style template feeds eleven 2016 ANES answers and asks GPT-3 for the twelfth. Cramér's $V$ is computed for every item pair in the human data and between the conditioning values and the GPT-3 answer. The mean difference in $V$ is $-0.026$; weak human associations are weak in silicon and strong ones strong.
+
+^ex-study3
 
 ### Reading the evidence critically
 

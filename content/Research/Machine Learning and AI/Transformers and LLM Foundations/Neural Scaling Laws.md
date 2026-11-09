@@ -43,7 +43,7 @@ Two bookkeeping conventions make the trends clean:
 
 ## Main Content
 
-> [!theorem] Single-variable power laws ^thm-power-laws
+> [!theorem] Single-variable power laws
 > (Eqs. 1.1-1.3; fitted values from Appendix A, Table 5.)
 >
 > $$
@@ -64,9 +64,11 @@ Two bookkeeping conventions make the trends clean:
 >
 > for optimally allocated compute at small batch size. The exponents are the substantive content; the scale constants "depend on the vocabulary size and tokenization and hence do not have a fundamental meaning."
 
+^thm-power-laws
+
 The relations hold "across eight orders of magnitude in $C_{\min}$, six orders of magnitude in $N$, and over two orders of magnitude in $D$." The exponents are small: doubling $N$ multiplies loss by $2^{-0.076} \approx 0.95$.
 
-> [!theorem] Joint law $L(N,D)$ and the overfitting criterion ^thm-lnd
+> [!theorem] Joint law $L(N,D)$ and the overfitting criterion
 > (Eqs. 1.5, 4.1-4.4.)
 >
 > $$
@@ -85,9 +87,11 @@ The relations hold "across eight orders of magnitude in $C_{\min}$, six orders o
 > D \gtrsim (5 \times 10^{3})\, N^{0.74} \quad \text{tokens}.
 > $$
 
+^thm-lnd
+
 The functional form was chosen by three principles (Sec. 4.1): (1) it must permit rescaling under a change of tokenizer; (2) it must reduce to $L(N)$ as $D \to \infty$ and to $L(D)$ as $N \to \infty$; (3) it should be analytic in $1/D$ at $D = \infty$, because "overfitting should be related to the variance or the signal-to-noise ratio of the dataset, and this scales as $1/D$". The authors call the third "more speculative". The fit is excellent except at the smallest dataset ($\approx 2 \times 10^7$ tokens). The sub-linear rule means "every time we increase the model size 8x, we only need to increase the data by roughly 5x to avoid a penalty."
 
-> [!theorem] Learning-curve law $L(N,S)$ ^thm-lns
+> [!theorem] Learning-curve law $L(N,S)$
 > (Eqs. 1.6, 5.6; Table 3.) After an initial transient, in the infinite-data limit,
 >
 > $$
@@ -97,7 +101,9 @@ The functional form was chosen by three principles (Sec. 4.1): (1) it must permi
 >
 > where $S_{\min}$ is the number of steps that would have been needed at very large batch size.
 
-> [!definition] Critical batch size ^def-bcrit
+^thm-lns
+
+> [!definition] Critical batch size
 > Training to a fixed loss with $S$ steps and $E = BS$ examples satisfies $(S/S_{\min} - 1)(E/E_{\min} - 1) = 1$ (Eq. 5.1). The critical batch size is $B_{\text{crit}}(L) \equiv E_{\min}/S_{\min}$; training there costs $2 S_{\min}$ steps and $2 E_{\min}$ examples, a near-optimal time/compute compromise. Empirically
 >
 > $$
@@ -106,7 +112,9 @@ The functional form was chosen by three principles (Sec. 4.1): (1) it must permi
 >
 > independent of model size and roughly doubling for every 13% decrease in loss (Fig. 10). The adjustments $S_{\min} = S/(1 + B_{\text{crit}}/B)$ and $C_{\min} = C/(1 + B/B_{\text{crit}})$ (Eqs. 5.4-5.5) standardize runs made at a fixed batch size.
 
-> [!theorem] Compute-efficient allocation (Kaplan version) ^thm-kaplan-allocation
+^def-bcrit
+
+> [!theorem] Compute-efficient allocation (Kaplan version)
 > Substituting $S_{\min} = C_{\min}/(6NB)$ into $L(N,S_{\min})$ and minimizing over $N$ at fixed compute gives (Eqs. 1.7-1.8, 6.1-6.5, Appendix B):
 >
 > $$
@@ -117,6 +125,8 @@ The functional form was chosen by three principles (Sec. 4.1): (1) it must permi
 > $$
 >
 > The predicted $\alpha_C^{\min} \approx 0.054$ and $N \propto C_{\min}^{0.71}$ agree with the direct empirical fits $\alpha_C^{\min} \approx 0.050$, $N \propto C_{\min}^{0.73}$, $B \propto C_{\min}^{0.24}$, $S \propto C_{\min}^{0.03}$, and one-epoch data $D_{\text{opt}} \propto C_{\min}^{0.27}$ (Table 6). At the optimum one trains to a loss about $\alpha_N/\alpha_S \approx 10\%$ above the converged loss (Eq. B.5).
+
+^thm-kaplan-allocation
 
 Hence the headline advice: "we attain optimal performance by training very large models and stopping significantly short of convergence." Each 10x of compute should buy roughly 5x more parameters and 2x more data (Fig. 14). Relative to training to within 2% of convergence, compute-efficient training "uses 7.7x fewer parameter updates, 2.7x more parameters, and 65% less compute to reach the same loss" (Appendix B.3). The optimum is flat: models between 0.6x and 2.2x the optimal size cost only 20% more compute (Fig. 12).
 

@@ -43,7 +43,7 @@ The concept predates cointegration by over a decade (mid-1960s). It grew out of 
 > 1. The cause occurs before the effect; and
 > 2. The cause contains information about the effect that that is unique, and is in no other variable." (Granger 2003, p. 365; "that that" [sic])
 
-> [!definition] Granger causality (formalisation of the two components) ^def-granger-causality-2003
+> [!definition] Granger causality (formalisation of the two components)
 > Let $\Omega_t$ be **all** information in the universe up to time $t$, and $\Omega_t \setminus X_t$ that information with the past of $X$ removed. $X$ **Granger-causes** $Y$ if, for some set $A$,
 > $$\Pr(Y_{t+1} \in A \mid \Omega_t) \ne \Pr(Y_{t+1} \in A \mid \Omega_t \setminus X_t).$$
 > Component 1 (temporal precedence) is built in by conditioning only on the past; component 2 ("unique ... in no other variable") is the removal of $X$'s past from an otherwise complete information set.
@@ -52,10 +52,14 @@ The concept predates cointegration by over a decade (mid-1960s). It grew out of 
 > $$Y_t = c + \sum_{j=1}^{p} a_j Y_{t-j} + \sum_{j=1}^{p} b_j X_{t-j} + \sum_{j=1}^{p} \mathbf{c}_j' \mathbf{W}_{t-j} + \varepsilon_t,$$
 > tested by an $F$ or Wald test of $b_1=\dots=b_p=0$. See [[Empirical Causal Ordering#^def-granger|Granger causality in Empirical Causal Ordering]].
 
-> [!theorem] Forecasting consequence (Granger 2003, p. 365) ^thm-forecast-consequence
+^def-granger-causality-2003
+
+> [!theorem] Forecasting consequence (Granger 2003, p. 365)
 > "A consequence of these statements is that the causal variable can help forecast the effect variable after other data has first been used." (p. 365)
 >
 > I.e., if $X$ Granger-causes $Y$, the mean-squared forecast error of $Y_{t+1}$ given $\Omega_t$ is smaller than given $\Omega_t \setminus X_t$. Granger's complaint: "Unfortunately, many users concentrated on this forecasting implication rather than on the original definition." (p. 365) The implication runs one way; incremental forecast power in a small, incomplete information set does not establish component 2 (uniqueness with respect to *all* other variables).
+
+^thm-forecast-consequence
 
 ### Reception (p. 366)
 
@@ -65,7 +69,7 @@ The concept predates cointegration by over a decade (mid-1960s). It grew out of 
 
 ### Cointegration implies causality
 
-> [!theorem] Cointegration ⇒ Granger causality in at least one direction (Granger 2003, p. 366) ^thm-coint-causality
+> [!theorem] Cointegration ⇒ Granger causality in at least one direction (Granger 2003, p. 366)
 > "When the idea of cointegration was developed, over a decade later, it became clear immediately that if a pair of series was cointegrated then at least one of them must cause the other. There seems to be no special reason why there two quite different concepts should be related; it is just the way that the mathematics turned out." (p. 366, "there two" [sic])
 >
 > **Formal statement:** if $x_t, y_t \sim I(1)$ are cointegrated with $z_t = y_t - \beta x_t \sim I(0)$, then in the error-correction representation ([[Granger 2003 - Cointegration and the Error-Correction Representation#^thm-granger-representation|representation theorem]]) at least one adjustment coefficient $\gamma_i \ne 0$.
@@ -79,16 +83,20 @@ The concept predates cointegration by over a decade (mid-1960s). It grew out of 
 > 2. *Toda-Yamamoto (1995) lag-augmented levels VAR.* When integration orders or the cointegration rank are uncertain, fit a VAR in **levels** with $p + d_{\max}$ lags, where $p$ is the lag order chosen by an information criterion and $d_{\max}$ is the maximum suspected order of integration (1 for $I(1)$ data). Wald-test zero restrictions on only the first $p$ lags of $x$ in the $y$ equation, leaving the extra $d_{\max}$ lags unrestricted. The statistic is asymptotically $\chi^2_p$ whether or not the series are integrated or cointegrated. The price is a small loss of power from the extra lags. It avoids pre-test errors from unit-root and cointegration tests, which matters at the 52-156 weekly observations typical of marketing data.
 > 3. *What not to do.* A VAR in differences when the series are cointegrated (omits $z_{t-1}$), or standard Wald tests in an unaugmented levels VAR with $I(1)$ data (non-standard limit distributions, a cousin of the [[Granger 2003 - Spurious Regression from Yule to Granger-Newbold|spurious-regression]] problem).
 
+^thm-coint-causality
+
 ### Extensions (p. 366)
 
 "what I have been telling you about so far has mostly been for concepts using linear models. Everything can be generalized to the nonlinear situation and recently efforts have been pushing into using similar concepts in conditional distributions, which is a very general form. It appears that causality will play a basic role in the generalization of the error-correction model, but that is still a work-in-progress." (p. 366)
 
 ## Examples
 
-> [!example] Granger causality in a marketing VAR ^ex-gc-marketing
+> [!example] Granger causality in a marketing VAR
 > **Setup:** weekly log sales $S_t$, log paid-search clicks $C_t$ and log TV GRPs $G_t$, about 150 weeks.
 >
 > **Reading:** a test that lagged $G$ improves the forecast of $S$ beyond lagged $S$ and $C$ shows *incremental predictive information*, not that buying more TV would raise sales. It fails Granger's own component 2 if an omitted driver (seasonal planning, a promotion calendar, a budget rule that sets $G$ from forecast demand) explains both — the "unique ... in no other variable" condition is about **all** variables, not the three in the VAR. And it is invalid in a differences-only VAR if $S$ and $C$ are cointegrated ([[#^thm-coint-causality]]). Experimental ground truth ([[Blake Nosko Tadelis 2015 - Paid Search Effectiveness - Overview]]) is the stronger evidence for an effect of search on sales.
+
+^ex-gc-marketing
 
 ## Connections
 

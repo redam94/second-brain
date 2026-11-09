@@ -44,7 +44,7 @@ The [[The Peeking Problem and Optional Stopping|peeking problem]] arises because
 
 ### Always validity and its duality with sequential tests
 
-> [!definition] Always-valid p-value and confidence interval (Defs. 1-2) ^def-always-valid
+> [!definition] Always-valid p-value and confidence interval (Defs. 1-2)
 > A sequence of fixed-horizon $p$-values $(p_n)$ is an **always-valid $p$-value process** if for any (possibly infinite) stopping time $T$ with respect to $(\mathcal F_n)$,
 >
 > $$
@@ -53,18 +53,22 @@ The [[The Peeking Problem and Optional Stopping|peeking problem]] arises because
 >
 > A sequence $(\mathrm{CI}_n)$ is an **always-valid $(1-\alpha)$ confidence interval process** if $\mathbb P_\theta(\theta \in \mathrm{CI}_T) \ge 1 - \alpha$ for all $\theta$ and all stopping times $T$.
 
-> [!theorem] Duality with sequential tests (Theorem 1, Proposition 1) ^thm-duality
+^def-always-valid
+
+> [!theorem] Duality with sequential tests (Theorem 1, Proposition 1)
 > 1. If $(T(\alpha), \delta(\alpha))$ is a sequential test, then $p_n = \inf\{\alpha : T(\alpha) \le n,\ \delta(\alpha) = 1\}$ is an always-valid $p$-value process.
 > 2. Conversely, any always-valid $(p_n)$ yields a sequential test $\tilde T(\alpha) = \inf\{n : p_n \le \alpha\}$, $\tilde\delta(\alpha) = \mathbf 1\{\tilde T(\alpha) < \infty\}$.
 > 3. If $(p_n^{\tilde\theta})$ is always valid for $H_0: \theta = \tilde\theta$ for each $\tilde\theta$, then $\mathrm{CI}_n = \{\theta : p_n^\theta > \alpha\}$ is an always-valid confidence interval process.
 >
 > The proof of (1) is one line: nestedness gives $\{p_n \le s\} \subset \{\delta(s + \varepsilon) = 1\}$ for every $n$, so $\mathbb P_{\theta_0}(p_T \le s) \le \mathbb P_{\theta_0}(\cup_n \{p_n \le s\}) \le s + \varepsilon$.
 
+^thm-duality
+
 The $p$-value in (1) is monotone non-increasing in $n$ and is the a.s. smallest always-valid $p$-value attached to that test. Monotone always-valid $p$-values correspond one-to-one with sequential tests that "do not give up for failure" ($\delta = 0 \Rightarrow T = \infty$). Operationally: the user stops whenever she wants and thresholds $p_T$ at her own $\alpha$. If she waits for $p_n \le \alpha$ she recovers the underlying sequential test; if she quits earlier she gives up power but never validity. Howard et al. (Lemma 3) show the stopping-time definition is equivalent to the uniform statement $\mathbb P_{\theta_0}(\exists n : p_n \le \alpha) \le \alpha$; see [[Confidence Sequences]].
 
 ### The mSPRT
 
-> [!definition] Mixture sequential probability ratio test (Sec. 5.2, Eqs. 7-9) ^def-msprt
+> [!definition] Mixture sequential probability ratio test (Sec. 5.2, Eqs. 7-9)
 > Let data come from a one-parameter exponential family $f_\theta(x) = f_0(x)\exp(\theta x - \psi(\theta))$ and let $H$ be a mixing distribution on $\Theta$ with positive continuous density. With sample mean $s_n$, the **mixture likelihood ratio** is
 >
 > $$
@@ -72,6 +76,8 @@ The $p$-value in (1) is monotone non-increasing in $n$ and is the a.s. smallest 
 > $$
 >
 > and the mSPRT is $T^H(\alpha) = \inf\{n : \Lambda_n^H(S_n) \ge \alpha^{-1}\}$, $\delta^H(\alpha) = \mathbf 1\{T^H(\alpha) < \infty\}$. The associated always-valid $p$-value is $p_0 = 1$, $p_n = \min\{p_{n-1},\, 1/\Lambda_n^H\}$.
+
+^def-msprt
 
 **Why the threshold is $1/\alpha$.** Under $H_0$ each likelihood ratio $\prod_{i \le n} f_\theta(X_i)/f_{\theta_0}(X_i)$ is a non-negative martingale with mean one, and so is any mixture of them. Ville's maximal inequality gives $\mathbb P_{\theta_0}(\exists n : \Lambda_n^H \ge 1/\alpha) \le \alpha$ (the "standard martingale techniques" of Siegmund 1985 cited in the paper). Wald's SPRT uses a single $\theta_1$; mixing over alternatives is what makes the test consistent against *every* $\theta \ne \theta_0$:
 
@@ -97,12 +103,14 @@ $$
 
 the inverse Kullback–Leibler divergence. Three regimes follow (Sec. 5.3): **aggressive** users ($M \gg \log(1/\alpha)$) get $\rho \to 0$, $\nu \to 1$ (Prop. 2); **conservative** users ($M \ll \log(1/\alpha)$) get no power from *any* rule (Prop. 3); and for **Goldilocks** users ($M \sim \log(1/\alpha)$):
 
-> [!theorem] First-order efficiency (Theorem 2) ^thm-msprt-efficiency
+> [!theorem] First-order efficiency (Theorem 2)
 > Define the relative efficiency $\phi(M,\alpha) = \inf_{(T,\delta)} \inf_{\theta \ne \theta_0} \rho(\theta)/\rho(\theta;\alpha,M)$, the infimum over all feasible rules ($T \le M$, size $\le \alpha$) that are at least as powerful at every $\theta$. For any mixing distribution $H$, if $\alpha \to 0$ and $M \to \infty$ with $M = O(\log \alpha^{-1})$, then $\phi(M, \alpha) \to 1$.
+
+^thm-msprt-efficiency
 
 No competitor can be uniformly faster while being uniformly at least as powerful, and one statistic achieves this for all $M$ at once.
 
-> [!theorem] Choosing the mixing distribution (Theorem 3, Eq. 12) ^thm-mixing
+> [!theorem] Choosing the mixing distribution (Theorem 3, Eq. 12)
 > If true effects follow a prior $\theta \sim G$, the average relative run length is minimised to second order by $\gamma^* \in \arg\min_\gamma -\mathbb E_{\theta \sim G}\big[\mathbf 1_{A}\, I(\theta,\theta_0)^{-1} \log h_\gamma(\theta)\big]$, where $A = \{\theta : I(\theta, \theta_0) \ge \log(1/\alpha)/M\}$ is the set of detectable effects. For unit-variance normal data, $G = N(0, \tau^2)$ and $H_\gamma = N(0, \gamma^2)$,
 >
 > $$
@@ -110,6 +118,8 @@ No competitor can be uniformly faster while being uniformly at least as powerful
 > $$
 >
 > The mixing variance is the prior variance of effects, corrected for truncation at $M$: weight larger effects when samples are scarce and smaller effects when data are ample.
+
+^thm-mixing
 
 Simulations (Sec. 5.6.1) show robustness: misspecifying $\gamma$ by one order of magnitude costs less than 5% average power and at most 10% run length; two orders of magnitude cost about 20% power and 40% run length. A platform can therefore fit $\tau^2$ empirically from its archive of past experiments, which is an [[Empirical Bayes - Overview|empirical-Bayes]] step; the paper shrinks observed effects with [[James-Stein Estimator|James–Stein]] before fitting $G$.
 

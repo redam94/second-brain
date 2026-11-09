@@ -38,30 +38,38 @@ The general GSA paradigm has **two phases**:
 1. **Sampling** — generate samples of the inputs $X_i$ over their distributions/ranges.
 2. **Analysis** — run the model to produce $Y$, then assess each factor's impact.
 
-> [!definition] The four families of GSA methods ^gsa-families
+> [!definition] The four families of GSA methods
 > The review (Sec. 1) groups GSA methods into four categories:
 > - **Variance-based** — assume output variance fully characterizes output uncertainty (Saltelli et al.); decompose $V(Y)$ across factors. Includes **Sobol**, **FAST**, **RBD/FAST_RBD**. See [[Variance-Based Sensitivity and Sobol Indices]].
 > - **Derivative-based** — sensitivity from (averaged) partial derivatives $\left|\frac{\partial f}{\partial x_i}\right|$. Includes **Morris** elementary effects and **DGSM**. See [[Morris Elementary Effects Screening]].
 > - **Distribution / moment-independent** — examine the whole output PDF, not just its moments. Includes the **Delta** ($\delta_i$) index.
 > - **Feature-additive** methods.
 
-> [!definition] Screening vs. quantification ^screen-vs-quantify
+^gsa-families
+
+> [!definition] Screening vs. quantification
 > Two distinct goals drive method choice:
 > - **Screening** (factor fixing): cheaply rank factors and identify the non-influential ones that can be frozen. Best served by **Morris** ($\mu^*$, $\sigma$) at $O(r(p+1))$ runs.
 > - **Quantification**: produce accurate, decomposed importance shares (first-order $S_i$, total-effect $S_{Ti}$, interactions). Served by **Sobol/FAST**, which cost more model evaluations.
 > Typical practice: screen first with Morris, then quantify the survivors with Sobol. See [[Sampling and Estimation for Sobol Indices]].
 
+^screen-vs-quantify
+
 ## Main Content
 
-> [!definition] What a GSA answers ^gsa-questions
+> [!definition] What a GSA answers
 > - **Factor prioritization**: which inputs, if better determined, would most reduce output variance? → first-order $S_i$.
 > - **Factor fixing**: which inputs can be fixed anywhere in their range without affecting $Y$? → total-effect $S_{Ti} \approx 0$.
 > - **Interaction detection**: do factors act jointly rather than additively? → $S_{Ti} > S_i$, or Morris $\sigma$ large.
 
+^gsa-questions
+
 The paper's empirical takeaway (MNIST case study, Sec. Results): the **$S_T$ index of Sobol** and the **$\sigma$ and $\mu^*$ indices of Morris** "present superior results" in identifying the critical regions/factors, while DGSM's $v$ and FAST's $S_T$ showed "substantial inconsistency." Different global methods can yield "somewhat different rankings of feature importance" on the same model, so the authors stress careful, problem-specific method selection.
 
-> [!theorem] Cost scales with method and dimension ^cost-overview
+> [!theorem] Cost scales with method and dimension
 > Per the case-study sampling budgets (Table 1), relative cost ranking is roughly **Morris (cheapest screening) < FAST < Sobol < Delta ≈ DGSM**. For Sobol, the standard Saltelli estimator costs $N(p+2)$ model runs for first + total order indices (see [[Sampling and Estimation for Sobol Indices]]), so cost grows with both the base sample size $N$ and the number of factors $p$ — the central practical constraint for expensive ABMs.
+
+^cost-overview
 
 ## Examples
 

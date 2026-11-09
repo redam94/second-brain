@@ -42,17 +42,21 @@ The deep point (Rubin 1980; Kempthorne & Doerfler 1969): the validity comes from
 
 ## Main Content
 
-> [!definition] Sharp null hypothesis ^def-sharp-null
+> [!definition] Sharp null hypothesis
 > A null hypothesis is **sharp** if, combined with the observed data $\{W_i, Y_i^{\text{obs}}\}$, it determines all missing potential outcomes in the Science Table. Fisher's sharp null $H_{0\text F}: Y_i(1)=\cdots=Y_i(J)$ for all $i$ is the leading case. Under a sharp null, every test statistic $T$ has a **known** distribution over the randomization of $W$.
 
-> [!theorem] Finite-sample exactness of the FRT under the sharp null ^thm-frt-exact
+^def-sharp-null
+
+> [!theorem] Finite-sample exactness of the FRT under the sharp null
 > Under a sharp null hypothesis, for **any** test statistic $T$ and **any** data-generating process for the potential outcomes, the FRT $p$-value
 > $$
 > p \;=\; (N!)^{-1}\sum_{\pi \in \Pi_N} \mathbf 1\!\left(T_\pi \ge T\right)
 > $$
 > is **finite-sample exact**: $\mathbb P(p \le \alpha) \le \alpha$ for every level $\alpha$ (with equality up to the discreteness of the randomization distribution). The $p$-value is a right-tail probability — larger $T$ means greater deviation from the null.
 
-> [!definition] The FRT procedure (FRT-1 to FRT-4) ^def-frt-steps
+^thm-frt-exact
+
+> [!definition] The FRT procedure (FRT-1 to FRT-4)
 > Given a sharp null used to impute outcomes and a statistic $T$:
 > 1. **FRT-1.** Compute $T$ from the observed $\{W_i, Y_i^{\text{obs}}\}$.
 > 2. **FRT-2.** Impute the full potential-outcome vector $Y_i^*$ for each unit using the (compatible) sharp null. Under Fisher's $H_{0\text F}$ this is just $Y_i^*(j)=Y_i^{\text{obs}}$ for all $j$.
@@ -60,8 +64,12 @@ The deep point (Rubin 1980; Kempthorne & Doerfler 1969): the validity comes from
 > 4. **FRT-4.** Report $p = (N!)^{-1}\sum_\pi \mathbf 1(T_\pi \ge T)$.
 > When $N!$ is too large, draw i.i.d. permutations $\pi \sim \text{Unif}(\Pi_N)$ to approximate $p$ up to Monte Carlo error — the test remains valid.
 
-> [!theorem] FRT reduces to the classical permutation test under $H_{0\text F}$ ^thm-frt-permutation
+^def-frt-steps
+
+> [!theorem] FRT reduces to the classical permutation test under $H_{0\text F}$
 > Under Fisher's sharp null of no effect, all imputed potential outcomes equal $Y_i^{\text{obs}}$, so FRT-3 simply **permutes the treatment labels** $W$ while the outcomes stay fixed ($Y_{\pi,i}^{\text{obs}} = Y_i^{\text{obs}}$). In this case the FRT and the classical [[Permutation Tests and Exact Inference|permutation test]] are *numerically identical*. In general, the FRT admits a broader class of nulls and designs than the permutation test.
+
+^thm-frt-permutation
 
 A subtlety exploited later: the FRT can be aimed at a **weak** null by choosing an *artificial but compatible* sharp null for the imputation step (treatment-unit additivity, i.e. constant effects), then using a statistic that detects departures from the weak null. The imputed Science Table satisfies $Y_i^*(W_i) = Y_i^{\text{obs}}$, so it is consistent with the data. See [[Sharp vs Weak Null Hypotheses]] and [[Studentized Randomization Tests]].
 

@@ -48,7 +48,7 @@ Using only the observed $S(0),\dots,S(5)$ *truncates* these sums and understates
 
 ## Main Content
 
-> [!definition] sBG assumptions ^def-sbg-assumptions
+> [!definition] sBG assumptions
 > The story (Sec. 3): at the end of each period a customer flips a coin — heads, cancel; tails, renew; the coin's bias does not change over time for a given customer; and the bias varies across customers. Formally:
 > 1. Lifetime $T$ is (shifted) geometric given the churn probability $\theta$:
 >    $P(T=t\mid\theta)=\theta(1-\theta)^{t-1}$ and $S(t\mid\theta)=(1-\theta)^t$ for $t=1,2,\dots$
@@ -56,7 +56,9 @@ Using only the observed $S(0),\dots,S(5)$ *truncates* these sums and understates
 >
 > The authors stress this is a "paramorphic representation", not a claim that people flip coins, and that one should "only add supposed richer 'touches of reality' if the model does not 'work'."
 
-> [!theorem] sBG distribution, survivor function and retention rate ^thm-sbg-results
+^def-sbg-assumptions
+
+> [!theorem] sBG distribution, survivor function and retention rate
 > Taking expectations over the beta (Eqs. 5–6, 8):
 >
 > $$
@@ -74,12 +76,16 @@ Using only the observed $S(0),\dots,S(5)$ *truncates* these sums and understates
 > P(T=t)=\frac{\beta+t-2}{\alpha+\beta+t-1}\,P(T=t-1),\qquad t=2,3,\dots
 > $$
 
-> [!theorem] The ruse of heterogeneity ^thm-ruse-of-heterogeneity
+^thm-sbg-results
+
+> [!theorem] The ruse of heterogeneity
 > $r_t$ is strictly increasing in $t$ and tends to 1, although every individual's retention probability $1-\theta$ is constant. "There are no underlying time dynamics at the level of the individual customer; the observed phenomenon of retention rates increasing over time is simply due to heterogeneity (i.e., the high churn customers drop out early in the observation period, with the remaining customers having lower churn probabilities)." The term is Vaupel & Yashin's (1985). Equivalently, the posterior of $\theta$ for a customer who has survived $t$ renewals is $\text{beta}(\alpha,\beta+t)$ — the beta-binomial update of [[Single-Parameter Models]] — whose mean $\alpha/(\alpha+\beta+t)$ equals $1-r_{t+1}$.
+
+^thm-ruse-of-heterogeneity
 
 The shape of the beta is itself a diagnostic (Fig. 3): $\alpha,\beta<1$ gives a U-shaped, polarized base (many near-certain churners and many near-certain stayers); $\alpha,\beta>1$ gives a fairly homogeneous base; otherwise the density is J- or reverse-J-shaped.
 
-> [!algorithm] Maximum likelihood estimation from a cohort table ^alg-sbg-mle
+> [!algorithm] Maximum likelihood estimation from a cohort table
 > Observe a cohort of $n$ customers for $K$ periods, with $n_t$ lost in period $t$ (Appendix B, Eq. B3):
 >
 > $$
@@ -92,6 +98,8 @@ The shape of the beta is itself a diagnostic (Fig. 3): $\alpha,\beta<1$ gives a 
 > 4. Project $S(t)=\prod_{i\le t}r_i$ for $t>K$ and sum for tenure or CLV.
 >
 > The last term is a right-censoring contribution, exactly as in [[Survival Analysis]].
+
+^alg-sbg-mle
 
 ### Results
 

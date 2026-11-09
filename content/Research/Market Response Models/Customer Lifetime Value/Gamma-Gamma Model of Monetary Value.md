@@ -41,7 +41,7 @@ Schmittlein & Peterson (1994) used a normal-normal model. The note lists two pro
 
 ## Main Content
 
-> [!definition] Gamma-gamma assumptions ^def-gg-assumptions
+> [!definition] Gamma-gamma assumptions
 > General assumptions (Fader & Hardie 2013, Sec. 1):
 > 1. The monetary value of a customer's given transaction varies randomly around their average transaction value.
 > 2. Average transaction values vary across customers but **do not vary over time** for any given individual.
@@ -49,9 +49,11 @@ Schmittlein & Peterson (1994) used a normal-normal model. The note lists two pro
 >
 > Distributional form (Sec. 2): $z_i \sim \text{gamma}(p,\nu)$ with shape $p$ and rate $\nu$, so $E(Z_i\mid p,\nu)=\zeta=p/\nu$; and $\nu\sim\text{gamma}(q,\gamma)$ across customers. The shape $p$ is common to all customers, which "is equivalent to assuming that the individual-level coefficient of variation is the same for all customers ($CV = 1/\sqrt p$)" (2005, Sec. 2.1).
 
+^def-gg-assumptions
+
 By the convolution property total spend over $x$ transactions is $\text{gamma}(px,\nu)$, and by the scaling property $\bar z \sim \text{gamma}(px,\nu x)$.
 
-> [!theorem] Marginal distribution of average spend ^thm-gg-marginal
+> [!theorem] Marginal distribution of average spend
 > Integrating $\nu$ out (Eqs. 1a–1b):
 >
 > $$
@@ -61,7 +63,9 @@ By the convolution property total spend over $x$ transactions is $\text{gamma}(p
 >
 > This is a beta distribution of the second kind (B2). The second form is numerically safer for large $x$ and $\bar z$ because both bases are below one (note 025, fn. 1). The sample log-likelihood is $LL(p,q,\gamma)=\sum_i \ln f(\bar z_i\mid p,q,\gamma;x_i)$ over customers with $x_i\ge1$ (Eq. 6).
 
-> [!theorem] Distribution of the latent mean spend ^thm-gg-latent-mean
+^thm-gg-marginal
+
+> [!theorem] Distribution of the latent mean spend
 > Since $\zeta=p/\nu$ with $\nu\sim\text{gamma}(q,\gamma)$, a change of variables gives an **inverse-gamma** with shape $q$ and scale $p\gamma$ (Eqs. 2–4):
 >
 > $$
@@ -70,7 +74,9 @@ By the convolution property total spend over $x$ transactions is $\text{gamma}(p
 > \operatorname{var}(Z)=\frac{p^2\gamma^2}{(q-1)^2(q-2)}.
 > $$
 
-> [!theorem] Conditional expectation of mean spend (shrinkage form) ^thm-gg-conditional-expectation
+^thm-gg-latent-mean
+
+> [!theorem] Conditional expectation of mean spend (shrinkage form)
 > The posterior of $\nu$ given $(\bar z, x)$ is $\text{gamma}(px+q,\ \gamma+x\bar z)$, hence (Eq. 5)
 >
 > $$
@@ -79,6 +85,8 @@ By the convolution property total spend over $x$ transactions is $\text{gamma}(p
 > $$
 >
 > "This is the weighted average of the population mean, $E(Z)$, and the observed average transaction value, $\bar z$. As the number of observations ($x$) used to compute $\bar z$ increases, less weight is placed on the population mean."
+
+^thm-gg-conditional-expectation
 
 This is the same algebra as the normal-normal posterior mean in [[Hierarchical Models]] and the linear shrinkage rule in [[Empirical Bayes Interpretation of Shrinkage]], with $p x$ playing the role of the data's precision and $q-1$ the prior's. For a customer with no repeat transactions ($x=0$), $w=1$ and the forecast is the population mean.
 

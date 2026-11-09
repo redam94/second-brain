@@ -43,24 +43,34 @@ where $\bar Y = (\bar Y(1),\dots,\bar Y(J))^{\mathsf T}$, $C \in \mathbb R^{m\ti
 
 ## Main Content
 
-> [!definition] Sharp (Fisher) null ^def-sharp
+> [!definition] Sharp (Fisher) null
 > $H_{0\text F}: Y_i(1)=\cdots=Y_i(J)$ for all $i=1,\dots,N$. Constrains **every individual** potential outcome; together with the data it determines the full Science Table. No restriction is left for heterogeneity — there *is* no heterogeneity under it.
 
-> [!definition] Weak (Neyman) null ^def-weak
+^def-sharp
+
+> [!definition] Weak (Neyman) null
 > $H_{0\text N}(C,x): C\bar Y = x$. Constrains **only averages/contrasts of means**. The ATE special case is $H_{0\text N}: \bar Y(1)-\bar Y(2)=0$. It **permits arbitrary unit-level treatment-effect heterogeneity** and does not determine the missing potential outcomes.
 
-> [!theorem] Logical relationship: sharp ⟹ weak (strictly) ^thm-sharp-implies-weak
+^def-weak
+
+> [!theorem] Logical relationship: sharp ⟹ weak (strictly)
 > The sharp null $H_{0\text F}$ implies the weak null $H_{0\text N}$ (if every individual effect is zero, the average effect is zero), but **not conversely**: average effects can vanish while individual effects are large and offsetting. Hence the set of data-generating processes consistent with the weak null strictly contains those consistent with the sharp null. A test calibrated to the sharp null need not control type I error over the larger weak-null set.
 
-> [!theorem] Why the gap breaks the naive FRT — variance heterogeneity ^thm-frt-invalid
+^thm-sharp-implies-weak
+
+> [!theorem] Why the gap breaks the naive FRT — variance heterogeneity
 > To FRT a weak null one imputes the Science Table via a *compatible artificial sharp null* $H_{0\text F}(C,x,\tilde C,\tilde x)$ that imposes **treatment-unit additivity** (constant effects beyond the tested contrast):
 > $$
 > \begin{pmatrix} C \\ \tilde C \end{pmatrix} Y_i = \begin{pmatrix} x \\ \tilde x \end{pmatrix}\quad\text{for all } i,
 > $$
 > implying $Y_i^*(j) = Y_i^{\text{obs}} + z_j - z_{W_i}$. The catch: under the *true* weak null the potential outcomes may have **unequal variances** $S(1,1)\neq\cdots\neq S(J,J)$ (heteroscedasticity). A non-studentized statistic such as the difference in means $|\hat\tau|$ then has a randomization distribution that does **not** match its true sampling distribution — the FRT with $|\hat\tau|$ (or the classical $F$) **fails to control type I error**, even asymptotically, unless variances are equal or the design is balanced ($N_1=N_2$). This is the modern face of the Neyman–Fisher controversy (Neyman 1935; Ding & Dasgupta 2018). For $J>2$ even balanced designs do not rescue $F$ or $|\hat\tau|$.
 
-> [!definition] When non-studentized statistics happen to be valid ^def-special-valid
+^thm-frt-invalid
+
+> [!definition] When non-studentized statistics happen to be valid
 > The naive statistics are *proper* for the weak null only in special cases: (i) homoscedastic potential outcomes $S(1,1)=\cdots=S(J,J)$; (ii) $J=2$ with a **balanced** design $N_1=N_2$ (Corollary 3); or (iii) **binary outcomes** under the ANOVA-type null $\bar Y(1)=\cdots=\bar Y(J)$, since for binary data the mean determines the variance $S(j,j)=N\bar Y(j)\{1-\bar Y(j)\}/(N-1)$, so equal means force equal variances. For general weak nulls of binary outcomes ($C\bar Y=x$) variances still differ, so studentization is still recommended.
+
+^def-special-valid
 
 ## Examples
 

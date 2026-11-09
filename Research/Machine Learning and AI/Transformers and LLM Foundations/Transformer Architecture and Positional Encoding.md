@@ -40,14 +40,16 @@ The GPT family studied in the other notes of this cluster keeps only the decoder
 
 ## Main Content
 
-> [!definition] Encoder and decoder layers ^def-layers
+> [!definition] Encoder and decoder layers
 > (Sec. 3.1)
 > - **Encoder layer**: (1) multi-head self-attention; (2) position-wise feed-forward network.
 > - **Decoder layer**: (1) *masked* multi-head self-attention; (2) multi-head attention over the encoder output; (3) position-wise feed-forward network.
 > - Every sub-layer output is $\mathrm{LayerNorm}(x + \mathrm{Sublayer}(x))$. To make the residual additions possible, all sub-layers and the embedding layers output dimension $d_{\text{model}} = 512$.
 > - The decoder mask, "combined with fact that the output embeddings are offset by one position, ensures that the predictions for position $i$ can depend only on the known outputs at positions less than $i$."
 
-> [!definition] Position-wise feed-forward network ^def-ffn
+^def-layers
+
+> [!definition] Position-wise feed-forward network
 > Applied "to each position separately and identically" (Eq. 2):
 >
 > $$
@@ -56,12 +58,16 @@ The GPT family studied in the other notes of this cluster keeps only the decoder
 >
 > with input/output width $d_{\text{model}} = 512$ and inner width $d_{ff} = 2048$. Parameters are shared across positions but differ between layers; equivalently, two convolutions with kernel size 1.
 
+^def-ffn
+
 Attention mixes information *across* positions; the FFN transforms each position *in place*. Most parameters live in the FFN: per layer, attention has $4 d_{\text{model}}^2$ weights ($W^Q, W^K, W^V, W^O$) and the FFN has $2 d_{\text{model}} d_{ff} = 8 d_{\text{model}}^2$.
 
-> [!definition] Embeddings and output softmax ^def-embeddings
+> [!definition] Embeddings and output softmax
 > Learned embeddings map tokens to $\mathbb R^{d_{\text{model}}}$; a learned linear map followed by a softmax turns decoder outputs into next-token probabilities. The same weight matrix is shared between the two embedding layers and the pre-softmax linear transformation, and in the embedding layers the weights are multiplied by $\sqrt{d_{\text{model}}}$ (Sec. 3.4).
 
-> [!definition] Sinusoidal positional encoding ^def-positional-encoding
+^def-embeddings
+
+> [!definition] Sinusoidal positional encoding
 > Added to the input embeddings at the bottom of both stacks (Sec. 3.5):
 >
 > $$
@@ -71,7 +77,9 @@ Attention mixes information *across* positions; the FFN transforms each position
 >
 > Each dimension is a sinusoid; "the wavelengths form a geometric progression from $2\pi$ to $10000 \cdot 2\pi$."
 
-> [!theorem] Relative offsets are linear maps ^thm-pe-linear
+^def-positional-encoding
+
+> [!theorem] Relative offsets are linear maps
 > For any fixed offset $k$, $PE_{pos+k}$ is a linear function of $PE_{pos}$ (Sec. 3.5). Writing $\omega_i = 10000^{-2i/d_{\text{model}}}$, each sine-cosine pair is rotated by the angle $\omega_i k$:
 >
 > $$
@@ -82,6 +90,8 @@ Attention mixes information *across* positions; the FFN transforms each position
 > $$
 >
 > The rotation matrix does not depend on $pos$, so a single linear projection inside an attention head can implement "attend $k$ positions back". The authors hypothesized this "would allow the model to easily learn to attend by relative positions".
+
+^thm-pe-linear
 
 Learned positional embeddings gave "nearly identical results" (Table 3 row (E): 25.7 BLEU compared with 25.8 for the base model). The sinusoidal version was kept "because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training."
 
@@ -96,7 +106,7 @@ Learned positional embeddings gave "nearly identical results" (Table 3 row (E): 
 
 (Table 1; $n$ sequence length, $d$ representation dimension, $k$ kernel width.)
 
-> [!algorithm] Training recipe ^alg-training
+> [!algorithm] Training recipe
 > (Sec. 5)
 > 1. **Data.** WMT14 English-German, about 4.5M sentence pairs, byte-pair encoding with a shared vocabulary of about 37,000 tokens; English-French, 36M sentences, 32,000 word-pieces. Batches of roughly 25,000 source and 25,000 target tokens.
 > 2. **Optimizer.** Adam with $\beta_1 = 0.9$, $\beta_2 = 0.98$, $\epsilon = 10^{-9}$.
@@ -109,6 +119,8 @@ Learned positional embeddings gave "nearly identical results" (Table 3 row (E): 
 > 4. **Regularization.** Dropout $P_{drop} = 0.1$ on each sub-layer output before the residual addition and on the sum of embeddings and positional encodings; label smoothing $\epsilon_{ls} = 0.1$, which "hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score."
 > 5. **Hardware.** One machine with 8 P100 GPUs. Base model: 100,000 steps at 0.4 s/step (12 hours). Big model: 300,000 steps at 1.0 s/step (3.5 days).
 > 6. **Inference.** Average the last 5 (base) or 20 (big) checkpoints; beam search with beam size 4 and length penalty $\alpha = 0.6$.
+
+^alg-training
 
 ### Results
 

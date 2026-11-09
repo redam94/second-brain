@@ -41,14 +41,16 @@ The remedy parallels importance weighting and inverse-propensity weighting elsew
 
 ## Main Content
 
-> [!definition] Covariate shift model (Tibshirani et al. Eq. 6) ^def-covariate-shift
+> [!definition] Covariate shift model (Tibshirani et al. Eq. 6)
 > $$
 > (X_i,Y_i)\overset{\text{i.i.d.}}{\sim}P=P_X\times P_{Y\mid X},\quad i=1,\dots,n;\qquad (X_{n+1},Y_{n+1})\sim\tilde P=\tilde P_X\times P_{Y\mid X}\ \text{independently.}
 > $$
 >
 > The conditional distribution of $Y\mid X$ is identical in training and test; only the covariate marginal moves. $\tilde P_X$ must be absolutely continuous with respect to $P_X$ (overlap).
 
-> [!definition] Weighted conformal probabilities (Eq. 7) ^def-weights
+^def-covariate-shift
+
+> [!definition] Weighted conformal probabilities (Eq. 7)
 > With $w=d\tilde P_X/dP_X$,
 >
 > $$
@@ -57,7 +59,9 @@ The remedy parallels importance weighting and inverse-propensity weighting elsew
 >
 > The ordinary case $w\equiv1$ gives $p_i=1/(n+1)$. Only ratios matter, so $w$ need be known only **up to a normalising constant** (Remark 3).
 
-> [!theorem] Weighted conformal coverage under covariate shift (Corollary 1) ^thm-weighted-conformal
+^def-weights
+
+> [!theorem] Weighted conformal coverage under covariate shift (Corollary 1)
 > Under the model above, for any score function $S$ and any $\alpha\in(0,1)$ define
 >
 > $$
@@ -66,7 +70,9 @@ The remedy parallels importance weighting and inverse-propensity weighting elsew
 >
 > Then $\mathbb P\{Y_{n+1}\in\hat C_n(X_{n+1})\}\ge1-\alpha$.
 
-> [!algorithm] Weighted split conformal (Eq. 10) ^alg-weighted-split
+^thm-weighted-conformal
+
+> [!algorithm] Weighted split conformal (Eq. 10)
 > 1. Fit $\mu_0$ on a preliminary fold; compute calibration scores $V_i=\lvert Y_i-\mu_0(X_i)\rvert$.
 > 2. Obtain $w$ (known design, or estimated — below) and evaluate $w(X_i)$ and $w(x)$.
 > 3. Form $p_i^w(x)$ and $p^w_{n+1}(x)$; compute $\hat q(x)=\mathrm{Quantile}\big(1-\alpha;\sum_i p_i^w(x)\delta_{V_i}+p_{n+1}^w(x)\delta_\infty\big)$.
@@ -74,11 +80,13 @@ The remedy parallels importance weighting and inverse-propensity weighting elsew
 >
 > Differences from the unweighted case: the threshold $\hat q(x)$ now **depends on the test point** through $w(x)$, and a test point with very large $w(x)$ can push the $(1-\alpha)$ quantile onto the atom at $\infty$, yielding an infinite (honest) interval. Any score works — e.g. the CQR score, as in [[Conformal Inference for Counterfactuals and ITEs]].
 
+^alg-weighted-split
+
 ### Why it works: weighted exchangeability (Sec. 3)
 
 The authors re-prove the [[Split Conformal Prediction and the Coverage Guarantee#^thm-quantile-lemma|quantile lemma]] by conditioning on the unordered set of scores $E_v=\{\{V_1,\dots,V_{n+1}\}=\{v_1,\dots,v_{n+1}\}\}$ and asking which value $V_{n+1}$ took. Exchangeability gives $\mathbb P\{V_{n+1}=v_i\mid E_v\}=n!/(n+1)!=1/(n+1)$: uniform. This "isolates the role of exchangeability" and shows what must change otherwise.
 
-> [!definition] Weighted exchangeability (Definition 1) ^def-weighted-exch
+> [!definition] Weighted exchangeability (Definition 1)
 > $V_1,\dots,V_n$ are weighted exchangeable with weight functions $w_1,\dots,w_n$ if their joint density factorises as
 >
 > $$
@@ -87,7 +95,9 @@ The authors re-prove the [[Split Conformal Prediction and the Coverage Guarantee
 >
 > with $g$ invariant to permutations of its arguments. **Lemma 2:** independent draws $Z_i\sim P_i$ with $P_i\ll P_1$ are weighted exchangeable with $w_1\equiv1$, $w_i=dP_i/dP_1$.
 
-> [!theorem] Weighted quantile lemma and general theorem (Lemma 3, Theorem 2) ^thm-weighted-quantile
+^def-weighted-exch
+
+> [!theorem] Weighted quantile lemma and general theorem (Lemma 3, Theorem 2)
 > For weighted exchangeable $Z_1,\dots,Z_{n+1}$ and $V_i=S(Z_i,Z_{-i})$, define
 >
 > $$
@@ -95,6 +105,8 @@ The authors re-prove the [[Split Conformal Prediction and the Coverage Guarantee
 > $$
 >
 > Then $\mathbb P\big\{V_{n+1}\le\mathrm{Quantile}\big(\beta;\sum_{i=1}^n p_i^w\delta_{V_i}+p_{n+1}^w\delta_\infty\big)\big\}\ge\beta$, because $V_{n+1}\mid E_z\sim\sum_i p_i^w\delta_{v_i}$. The general weights are "combinatorially hard", but under covariate shift ($w_i\equiv1$ for $i\le n$, $w_{n+1}=w$) the sums over permutations collapse to $p_i^w=w(x_i)/\sum_{j=1}^{n+1}w(x_j)$.
+
+^thm-weighted-quantile
 
 No matching **upper** bound is available without conditions on the weights (Remark 5): the largest jump of the conditional CDF is $\max_i p_i^w$, which can be large, whereas it is always $1/(n+1)$ unweighted. Lei & Candès later supply one: with $(\mathbb E[w(X)^r])^{1/r}\le M_r$ coverage is at most $1-\alpha+c\,n^{1/r-1}$, and with *estimated* weights coverage is at least $1-\alpha-\Delta_w$ where $\Delta_w=\tfrac12\mathbb E_{X\sim P_X}\lvert\hat w(X)-w(X)\rvert$.
 

@@ -38,31 +38,43 @@ The fundamental problem of causal inference is that for each individual only one
 
 ## Main Content
 
-> [!definition] Propensity score ^def-propensity
+> [!definition] Propensity score
 > The propensity score for individual $i$ is the probability of receiving the treatment given the observed covariates:
 > $$ e_i(X_i) = P(T_i = 1 \mid X_i). $$
 > In practice the true score is unknown outside randomized experiments and must be **estimated**, most commonly by logistic regression, or by nonparametric methods such as boosted CART / generalized boosted models (gbm).
 
-> [!theorem] Strong ignorability of treatment assignment ^thm-ignorability
+^def-propensity
+
+> [!theorem] Strong ignorability of treatment assignment
 > Treatment assignment is **strongly ignorable** given covariates $X$ if:
 > 1. **Unconfoundedness / "no hidden bias":** $T \perp (Y(0), Y(1)) \mid X$, and
 > 2. **Positivity / overlap:** $0 < P(T=1\mid X) < 1$ for all $X$.
 >
 > The first component is also called "ignorable," "no hidden bias," or "unconfounded." It is more plausible than it first sounds: matching/controlling for the observed covariates also controls for unobserved covariates **insofar as they are correlated with observed ones**, so the only unobserved covariates of concern are those unrelated to the observed ones. Sensitivity analysis assesses departures (see [[Covariate Balance Diagnostics]]).
 
-> [!theorem] Balancing property of the propensity score (Rosenbaum-Rubin 1983) ^thm-balancing
+^thm-ignorability
+
+> [!theorem] Balancing property of the propensity score (Rosenbaum-Rubin 1983)
 > The propensity score is a **balancing score**: at each value of the propensity score, the distribution of the covariates $X$ that define it is the same in the treated and control groups,
 > $$ X \perp T \mid e(X). $$
 > Thus grouping individuals with similar propensity scores replicates a **mini-randomized experiment** with respect to the observed covariates.
 
-> [!theorem] Ignorability given the propensity score ^thm-ps-ignorability
+^thm-balancing
+
+> [!theorem] Ignorability given the propensity score
 > If treatment assignment is strongly ignorable given $X$, then it is **also ignorable given the propensity score** $e(X)$. Consequently, the difference in mean outcomes between treated and control individuals at a particular propensity-score value is an **unbiased estimate** of the treatment effect at that value. This justifies matching/conditioning on the scalar propensity score rather than on the full multivariate $X$.
 
-> [!definition] Variable selection for the propensity model ^def-variable-selection
+^thm-ps-ignorability
+
+> [!definition] Variable selection for the propensity model
 > Include **all variables related to both treatment assignment and the outcome**; researchers should be *liberal* in including potential confounders, since excluding a confounder is costly in bias while including an irrelevant variable costs only a small variance increase (in small samples, prioritize variables related to the outcome). The diagnostic target is **covariate balance**, not the logistic-regression coefficients — so standard model-fit statistics (c-statistic, stepwise selection, collinearity concerns) do **not** apply. **Never** include a variable that may have been affected by the treatment. Misestimating the propensity score matters less than misspecifying the outcome model, because the score is only a tool to obtain balance.
 
-> [!definition] Linear propensity score ^def-linear-ps
+^def-variable-selection
+
+> [!definition] Linear propensity score
 > Matching is often done on the **linear** (logit) propensity score $\text{logit}(e_i) = \log\!\big(e_i/(1-e_i)\big)$ rather than $e_i$ itself; Rosenbaum and Rubin (1985) and others found this particularly effective at reducing bias (the logit is closer to normally distributed, improving the affinely-invariant distance behavior).
+
+^def-linear-ps
 
 ## Examples
 

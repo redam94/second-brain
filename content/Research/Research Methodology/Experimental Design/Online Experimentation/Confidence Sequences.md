@@ -49,15 +49,19 @@ Fixed-sample CLT intervals satisfy none of P1-P3. The idea dates to Darling & Ro
 
 ## Main Content
 
-> [!definition] Confidence sequence (Eq. 1) ^def-confidence-sequence
+> [!definition] Confidence sequence (Eq. 1)
 > For $\alpha \in (0,1)$, a $(1-\alpha)$-confidence sequence for a (possibly time-varying) estimand $(\theta_t)$ is a sequence of sets $(\mathrm{CI}_t)_{t=1}^\infty$, typically intervals $(L_t, U_t)$, such that
 >
 > $$
 > \mathbb P\big(\forall t \ge 1 : \theta_t \in \mathrm{CI}_t\big) \ge 1 - \alpha .
 > $$
 
-> [!theorem] Equivalent forms of time-uniformity (Lemma 3) ^thm-equivalence
+^def-confidence-sequence
+
+> [!theorem] Equivalent forms of time-uniformity (Lemma 3)
 > For an adapted sequence of events $(A_t)$ the following are equivalent: (a) $\mathbb P(\bigcup_{t} A_t) \le \alpha$; (b) $\mathbb P(A_T) \le \alpha$ for all *random* times $T$, not necessarily stopping times; (c) $\mathbb P(A_\tau) \le \alpha$ for all stopping times $\tau$. Taking $A_t = \{\theta_t \notin \mathrm{CI}_t\}$ shows the definition above coincides with Johari et al.'s stopping-time definition; taking $A_t = \{p_t \le \alpha\}$ shows an always-valid $p$-value is equivalently one with $\mathbb P_0(\exists t: p_t \le \alpha) \le \alpha$.
+
+^thm-equivalence
 
 So confidence sequences, always-valid $p$-values and sequential tests are three views of one object: reject $H_0: \theta = \theta^\star$ the first time $\theta^\star \notin \mathrm{CI}_t$. Whenever the radius $u(V_t)/t \to 0$ this is a **test of power one**.
 
@@ -65,7 +69,7 @@ So confidence sequences, always-valid $p$-values and sequential tests are three 
 
 Let $\mu_t = t^{-1}\sum_{i \le t}\mathbb E_{i-1}X_i$ be the running average conditional mean and $S_t = \sum_{i \le t}(X_i - \mathbb E_{i-1}X_i)$. If $\mathbb P(\exists t: S_t \ge u_\alpha(V_t)) \le \alpha$ for some adapted **intrinsic time** $V_t$ (a variance process; $V_t = t$ in the simplest case), then $\bar X_t - u_\alpha(V_t)/t$ is a lower confidence sequence for $\mu_t$. Apply the same to $-S_t$ and take a union bound for two-sided sequences.
 
-> [!definition] Sub-$\psi$ process and uniform boundary (Definitions 1-2) ^def-sub-psi
+> [!definition] Sub-$\psi$ process and uniform boundary (Definitions 1-2)
 > $(S_t)$ is **sub-$\psi$ with variance process $(V_t)$** if for each $\lambda \in [0, \lambda_{\max})$ there is a supermartingale $L_t(\lambda)$ with $\mathbb E L_0 \le 1$ and
 >
 > $$
@@ -74,9 +78,11 @@ Let $\mu_t = t^{-1}\sum_{i \le t}\mathbb E_{i-1}X_i$ be the running average cond
 >
 > A function $u$ is a **sub-$\psi$ uniform boundary with crossing probability $\alpha$** if $\sup \mathbb P(\exists t \ge 1: S_t \ge u(V_t)) \le \alpha$ over all sub-$\psi$ pairs $(S_t, V_t)$.
 
+^def-sub-psi
+
 $\psi$ plays the role of a cumulant generating function. The catalogue is sub-Gaussian $\psi_N(\lambda) = \lambda^2/2$, sub-Bernoulli, sub-Poisson, sub-exponential, and **sub-gamma** $\psi_{G,c}(\lambda) = \lambda^2/(2(1-c\lambda))$. Any process with an MGF near zero is sub-gamma (Prop. 1), so a sub-gamma boundary is a universal fallback.
 
-> [!theorem] Linear boundary (Lemma 1) ^thm-linear-boundary
+> [!theorem] Linear boundary (Lemma 1)
 > For any $\lambda \in [0,\lambda_{\max})$,
 >
 > $$
@@ -84,6 +90,8 @@ $\psi$ plays the role of a cumulant generating function. The catalogue is sub-Ga
 > $$
 >
 > is a sub-$\psi$ uniform boundary with crossing probability $\alpha$.
+
+^thm-linear-boundary
 
 This is Ville's inequality applied to one exponential supermartingale; in the Gaussian case it is Wald's SPRT line. Because $u(v)/v \not\to 0$, the resulting interval never shrinks to zero (P4 fails): a single $\lambda$ is a single point alternative. Two ways to bend the line give the paper's main tools.
 
@@ -101,7 +109,7 @@ Corollary 1 recovers the classical upper LIL, $\limsup_t S_t/\sqrt{2V_t\log\log 
 
 Integrate the exponential supermartingale against a distribution $F$ on $\lambda$: $m(s,v) = \int \exp\{\lambda s - \psi(\lambda)v\}\,dF(\lambda)$ is again bounded by a supermartingale, and $\mathcal M_\alpha(v) = \sup\{s : m(s,v) < 1/\alpha\}$ is a uniform boundary. This is Robbins' **method of mixtures**, the same device as the mSPRT.
 
-> [!definition] Two-sided normal mixture boundary (Eq. 14) ^def-normal-mixture
+> [!definition] Two-sided normal mixture boundary (Eq. 14)
 > For a sub-Gaussian process, mixing over $\lambda \sim N(0, 1/\rho)$ gives the closed form
 >
 > $$
@@ -110,16 +118,20 @@ Integrate the exponential supermartingale against a distribution $F$ on $\lambda
 >
 > so for i.i.d. observations with variance (proxy) $\sigma^2$ the confidence sequence is $\bar X_t \pm \sigma\, u(t)/t$. The tuning parameter $\rho > 0$ sets *where* the boundary is tightest: $u(v)/\sqrt v$ is minimised at $v = m$ with $m/\rho = -W_{-1}(-\alpha^2/e) - 1$ (Prop. 3, $W_{-1}$ the lower Lambert branch).
 
+^def-normal-mixture
+
 Every mixture with a density positive at the origin grows like $\sqrt{v\log v}$ (Prop. 2), slightly faster than the LIL rate. The authors argue this is the better practical trade: linear boundaries degrade fastest away from their optimised time, mixtures much more slowly, stitched boundaries slowest, and mixtures are tighter over the range one actually cares about (Sec. 3.5, Fig. 4). In the sub-Gaussian case mixture boundaries are *unimprovable* (Sec. 3.6). Analogous beta-binomial, gamma-Poisson and gamma-exponential mixtures cover the other $\psi$ families. In a parametric exponential family, rejecting when the mixture sequence excludes $\mu^\star$ **is** the mSPRT (Sec. 6); confidence sequences are its nonparametric generalisation.
 
 ### Empirical-Bernstein sequence and the sequential ATE
 
-> [!theorem] Empirical-Bernstein confidence sequence (Theorem 4) ^thm-empirical-bernstein
+> [!theorem] Empirical-Bernstein confidence sequence (Theorem 4)
 > Suppose $X_t \in [a,b]$ a.s., let $(\hat X_t)$ be any $[a,b]$-valued *predictable* sequence, and let $u$ be a sub-exponential uniform boundary with scale $c = b - a$ and crossing probability $\alpha$. Then
 >
 > $$
 > \mathbb P\left(\forall t \ge 1: |\bar X_t - \mu_t| < \frac{u\big(\sum_{i \le t}(X_i - \hat X_i)^2\big)}{t}\right) \ge 1 - 2\alpha .
 > $$
+
+^thm-empirical-bernstein
 
 The intrinsic time is the *observed* sum of squared prediction errors, so the width adapts to the true variance (like a $t$-test) with no variance knowledge, no common mean and no independence. Better predictions $\hat X_i$ (trends, seasonality, regression on covariates, ML) shrink the interval, but coverage holds for *any* predictions. This is the sequential counterpart of [[CUPED and Regression-Adjusted Variance Reduction|CUPED]].
 

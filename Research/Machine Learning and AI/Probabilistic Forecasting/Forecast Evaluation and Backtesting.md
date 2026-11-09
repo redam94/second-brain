@@ -63,15 +63,19 @@ a sum of one-step-ahead out-of-sample log scores. A rolling-origin backtest is t
 
 ### 1. Splitting in time
 
-> [!definition] Fixed-origin holdout ^def-fixed-origin
+> [!definition] Fixed-origin holdout
 > Hold out the last $H$ observations of every series; fit on the rest; forecast once. Chronos: "we used the last $H\in\mathbb N^+$ observations of each time series as a held-out test set" with task-specific $H$ (Sec. 5.1). DeepAR: `parts` trains on the first 42 months and tests on the remaining 8. Cheap, but one origin per series — high variance and sensitive to what happened in that particular window; acceptable when there are thousands of series to average over.
 
-> [!algorithm] Rolling-origin (rolling-window) evaluation ^alg-rolling-origin
+^def-fixed-origin
+
+> [!algorithm] Rolling-origin (rolling-window) evaluation
 > 1. Choose the first origin $T_0$ (minimum training length), horizon $H$, step $\Delta$.
 > 2. For origins $T=T_0,T_0+\Delta,\dots$: fit (or just condition) on data up to $T$; forecast $T+1,\dots,T+H$; store forecasts by horizon $h$.
 > 3. Score each $(T,h)$ pair; average within horizon, then across series.
 >
 > Variants: **sliding window** (fixed training length — MinT uses the last 96 months each time) vs **expanding window** (all data up to $T$); **refit every origin** (MinT refits ARIMA/ETS at each origin) vs **fit once, re-condition** (DeepAR: "we do not retrain our model for each window, but use a single model trained on the data before the first prediction window").
+
+^alg-rolling-origin
 
 MinT's tourism study (Sec. 4) is the template: 555 monthly series, 1- to 12-step forecasts, origin rolled one month at a time through November 2016, giving "132 1-step-ahead, 131 2-step-ahead, down to 121 12-step-ahead forecasts for each of the 555 series," reported **by horizon** ($h=1,2,3,6,12$ and averages 1-6, 1-12) and **by aggregation level**. Its simulations (Sec. 3) add two useful habits: repeat the whole experiment (200-1,000 replications), and deliberately evaluate under **misspecification** (ETS fitted to ARIMA-generated data) "to emulate what happens in practice."
 
@@ -82,7 +86,7 @@ MinT's tourism study (Sec. 4) is the template: 555 monthly series, 1- to 12-step
 
 ### 2. Metrics
 
-> [!definition] MASE — mean absolute scaled error (Chronos App. D; Hyndman & Koehler 2006) ^def-mase
+> [!definition] MASE — mean absolute scaled error (Chronos App. D; Hyndman & Koehler 2006)
 > With context length $C$, horizon $H$ and seasonal period $S$,
 >
 > $$
@@ -91,7 +95,9 @@ MinT's tourism study (Sec. 4) is the template: 555 monthly series, 1- to 12-step
 >
 > i.e. out-of-sample MAE divided by the in-sample MAE of the seasonal-naive forecast. It is **scale-free** ("the denominator scales proportionally to $x_i$"), so it can be averaged across series; $\operatorname{MASE}<1$ means better than in-sample seasonal naive. Probabilistic forecasters are scored at their **median**, the optimal point forecast under absolute error.
 
-> [!definition] Quantile loss, $\rho$-risk and WQL ^def-wql
+^def-mase
+
+> [!definition] Quantile loss, $\rho$-risk and WQL
 > For level $\alpha$, predicted quantile $q$ and outcome $x$ the pinball loss is
 >
 > $$
@@ -108,22 +114,28 @@ MinT's tourism study (Sec. 4) is the template: 555 monthly series, 1- to 12-step
 >
 > WQL "approximates (a weighted average of) the continuous ranked probability score"; many papers use the names interchangeably. Unlike MASE it is **scale-dependent**: large series dominate.
 
+^def-wql
+
 Other metrics in the papers: **ND** $=\sum|z-\hat z|/\sum|z|$ and **NRMSE** (RMSE over mean absolute actual) for DeepAR's point accuracy; **RMSE** by level and horizon as % change relative to base forecasts for MinT; the **interval score** and **CRPS** of Gneiting & Raftery for intervals and full distributions.
 
-> [!definition] Coverage / calibration curve (DeepAR Sec. 4.2) ^def-coverage
+> [!definition] Coverage / calibration curve (DeepAR Sec. 4.2)
 > $\operatorname{Coverage}(p)$ is the fraction of series (or series-time pairs) whose true value lies below the predicted $p$-th percentile. Perfect calibration gives $\operatorname{Coverage}(p)=p$, the diagonal. It should be checked for **multi-step aggregates** as well as marginals: DeepAR's shuffled-sample experiment shows marginals can be perfectly calibrated while 9-step sums are not.
+
+^def-coverage
 
 Calibration curves diagnose *what* is wrong (over- or under-dispersion); proper scores rank forecasters. Report both — Gneiting & Raftery's bilinear-process example shows three intervals with ≈95% coverage but very different quality.
 
 ### 3. Aggregation
 
-> [!algorithm] Relative scores and geometric mean (Chronos Sec. 5.4) ^alg-geomean
+> [!algorithm] Relative scores and geometric mean (Chronos Sec. 5.4)
 > 1. For each dataset $d$ and model $m$, compute the metric $s_{m,d}$.
 > 2. Divide by a baseline's score: $r_{m,d}=s_{m,d}/s_{\text{SeasonalNaive},d}$.
 > 3. Aggregate with the **geometric mean**: $\bar r_m=\bigl(\prod_dr_{m,d}\bigr)^{1/D}$.
 > 4. Models that fail or time out on a dataset get $r=1$. All tasks are weighted equally.
 >
 > Rationale (Fleming & Wallace 1986): the arithmetic mean of normalised scores "can yield misleading conclusions," while the geometric mean is the only meaningful aggregate of ratios and its **model ordering is invariant to the choice of baseline**. Average rank is reported as a robustness check.
+
+^alg-geomean
 
 DeepAR likewise normalises each risk by the "strongest previously published method." Gneiting & Raftery add two cautions (Sec. 2.3): scores are "directly comparable [only] if they refer to exactly the same set of forecast situations," and ratio-type **skill scores** $(S^{\text{fcst}}-S^{\text{ref}})/(S^{\text{opt}}-S^{\text{ref}})$ are generally *improper* even when the underlying score is proper — fine for reporting, not as a training or selection objective on small samples.
 

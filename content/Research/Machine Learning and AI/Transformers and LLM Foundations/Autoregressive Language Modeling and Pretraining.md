@@ -40,7 +40,7 @@ The three LLM papers in this cluster share one setup. Kaplan et al. "optimize th
 
 ## Main Content
 
-> [!definition] Autoregressive language model ^def-ar-lm
+> [!definition] Autoregressive language model
 > Let $x_1, \dots, x_T$ be tokens from a finite vocabulary $\mathcal Y$. The model specifies
 >
 > $$
@@ -49,7 +49,9 @@ The three LLM papers in this cluster share one setup. Kaplan et al. "optimize th
 >
 > where each conditional is a softmax over $\mathcal Y$ computed from the Transformer's output at position $t-1$. The factorization is exact (chain rule); the modeling assumption lies entirely in the parametric form of the conditionals. In Hoffmann's notation a predictor $f: \mathcal X \to \mathcal D(\mathcal Y)$ maps a past of length $s \in [0, s_{\max}]$ to a distribution over the next token.
 
-> [!definition] Training loss and perplexity ^def-loss
+^def-ar-lm
+
+> [!definition] Training loss and perplexity
 > The loss is the average negative log-likelihood per token,
 >
 > $$
@@ -58,11 +60,17 @@ The three LLM papers in this cluster share one setup. Kaplan et al. "optimize th
 >
 > reported in **nats** by Kaplan et al. (Sec. 1.3: "the cross entropy loss in nats ... averaged over the tokens in a context"). **Perplexity** is $\exp(L)$. Hoffmann et al. also report bits-per-byte, which normalizes away the tokenizer. Minimizing expected $L$ is minimizing $\mathrm{KL}(p_{\text{data}} \,\Vert\, p_\theta)$ plus the entropy of the data, the same log-score logic as in [[Overfitting and Information Criteria]].
 
-> [!definition] Causal masking and the decoder-only Transformer ^def-causal
+^def-loss
+
+> [!definition] Causal masking and the decoder-only Transformer
 > Self-attention is masked so that position $i$ attends only to positions $\le i$ (Vaswani et al., Sec. 3.2.3: illegal connections are set to $-\infty$ before the softmax), and inputs are offset by one position so that "the predictions for position $i$ can depend only on the known outputs at positions less than $i$" (Sec. 3.1). A decoder-only model is the Transformer decoder with the encoder and cross-attention removed. Because the mask, not the order of computation, enforces causality, a single forward pass over a length-$T$ sequence yields all $T$ conditional distributions and therefore $T$ training signals. Generation is sequential: sample $x_t$, append, repeat.
 
-> [!definition] Pretraining ^def-pretraining
+^def-causal
+
+> [!definition] Pretraining
 > Fit $\theta$ once by minimizing $L$ on a large, broad corpus with no task labels ("unsupervised pre-training", Brown et al., Fig. 1.1). Downstream use is either **fine-tuning** (further gradient updates on a task dataset, "typically thousands to hundreds of thousands of labeled examples") or **in-context learning** (no weight updates). Brown et al. describe the pretraining stage as the outer loop of a meta-learning process in which the model "develops a broad set of skills and pattern recognition abilities".
+
+^def-pretraining
 
 ### Tokenization
 
@@ -89,7 +97,7 @@ Tokens are sub-word units. Vaswani et al. use byte-pair encoding with about 37,0
 
 (Table 2.2.) Common Crawl was reduced from 45TB of compressed plaintext to 570GB by quality filtering against reference corpora and fuzzy document-level deduplication. Sampling is deliberately *not* proportional to size: higher-quality sources are seen 2-3 times, which "accepts a small amount of overfitting in exchange for higher quality training data" (Sec. 2.2).
 
-> [!theorem] Risk decomposition of the pretraining loss ^thm-risk-decomposition
+> [!theorem] Risk decomposition of the pretraining loss
 > (Hoffmann et al., Appendix D.2, Eq. 9.) Let $f^\star$ be the Bayes predictor, $f_N$ the best Transformer with $N$ parameters under the *expected* risk, and $\bar f_{N,D}$ the model actually obtained by a single pass of gradient steps over $D$ tokens. Then
 >
 > $$
@@ -99,6 +107,8 @@ Tokens are sub-word units. Vaswani et al. use byte-pair encoding with about 37,0
 > $$
 >
 > This motivates the parametric form $\hat L(N,D) = E + A/N^{\alpha} + B/D^{\beta}$, fitted as $E = 1.69$, $\alpha = 0.34$, $\beta = 0.28$. The third term is not classical overfitting: in the sub-epoch regime every token is fresh, so the smoothed training loss is "an unbiased estimate of the test loss" (Hoffmann, footnote 2). It measures how far finitely many stochastic gradient steps remain from the optimum.
+
+^thm-risk-decomposition
 
 ### Properties established empirically
 

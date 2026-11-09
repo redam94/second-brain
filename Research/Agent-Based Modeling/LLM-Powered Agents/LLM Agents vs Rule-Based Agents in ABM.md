@@ -57,16 +57,20 @@ The existing ABM notes describe three families of decision rule ([[Agent Decisio
 
 ### What LLM agents add
 
-> [!definition] The four claimed advantages (Gao et al., Sec. 3) ^def-four-advantages
+> [!definition] The four claimed advantages (Gao et al., Sec. 3)
 > 1. **Perception** — text as universal interface to environment and other agents.
 > 2. **Reasoning and decision making** — act sensibly "with only limited guidance, regulations, and goals ... without the need for explicit programming or predefined rules".
 > 3. **Adaptive learning and evolution** — cope with environments that drift far from initial conditions (the survey's "Rip Van Winkle" point).
 > 4. **Heterogeneity and personalising** — "capturing complex internal characteristics with internal human-like cognitive complexity" and "specialized and customized characteristics with prompting, in-context learning, or fine-tuning".
 
-> [!theorem] Horton et al.'s defence against "it's just an ABM" (Sec. 4.4) ^thm-judge-and-jury
+^def-four-advantages
+
+> [!theorem] Horton et al.'s defence against "it's just an ABM" (Sec. 4.4)
 > "Economists generally take a dim view of simulation-based approaches because the researcher is both judge and jury: you program the agents and then see what they do." Schelling (1971) is "the exception that proves the rule" because the model was so simple "there was no card up his sleeve". By contrast, "*Homo silicus* is not under direct researcher control. We can influence [it] with endowments of beliefs, experiences, and so on ... But we remain constrained by the fact that what determines behavior is the underlying model, not our direct [programming]."
 >
 > **Lucas critique corollary.** Classical agents' behavioural rules are fixed parameters, yet they should be "endogenous responses shaped by the prevailing policy environment". LLM-based agents "mitigate this concern because they can engage in flexible reasoning about environmental changes rather than following" fixed rules. Footnote 19 adds that the Lucas critique "may help explain why agent-based models have had relatively little uptake in mainstream economics".
+
+^thm-judge-and-jury
 
 The Lucas-critique point matters for marketing ABMs: a consumer whose WOM sensitivity or promotion response is a fixed coefficient ([[Consumer Utility Function Components]]) cannot respond to a *regime change* — permanent price cuts teaching consumers to wait for deals, say. An LLM consumer can, in principle, reason about the new regime. Whether it reasons *like real consumers* is an empirical question.
 

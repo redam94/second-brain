@@ -46,7 +46,7 @@ The joint analysis of several integrated series "was missing an important featur
 
 > "For cointegration, a pair of integrated, or smooth series, must have the property that a linear combination of them is stationary. Most pairs of integrated series will not have the property, so that cointegration should be considered as a surprise when it occurs. In practice, many pairs of macroeconomic series seem to have the property, as is suggested by economic theory." (Granger 2003, p. 361)
 
-> [!definition] Cointegration (formal; Engle & Granger 1987 convention) ^def-cointegration-formal
+> [!definition] Cointegration (formal; Engle & Granger 1987 convention)
 > Let $\mathbf{x}_t = (x_{1t}, \dots, x_{nt})'$ have every component $I(1)$ ([[Granger 2003 - Econometrics, Integrated Series and the String-of-Pearls Picture#^def-integrated|integration]]). $\mathbf{x}_t$ is **cointegrated** if there exists a nonzero vector $\boldsymbol\beta$ (the **cointegrating vector**) such that
 > $$
 > z_t = \boldsymbol\beta' \mathbf{x}_t \sim I(0).
@@ -55,11 +55,13 @@ The joint analysis of several integrated series "was missing an important featur
 >
 > Granger's informal phrasing (p. 361): "two smooth series, properly scaled, can move and turn, but slowly, in similar but not identical fashions, but the distance between them can be stationary." "Properly scaled" is the cointegrating coefficient $\beta$.
 
+^def-cointegration-formal
+
 ### Consequences listed in the lecture
 
 Granger (p. 361): "Once we know that a pair of variables has the cointegration property it follows that they have a number of other interesting and useful properties." He lists:
 
-> [!theorem] Consequences of cointegration (Granger 2003, pp. 361-362, 366; formal versions from Engle & Granger 1987, citation only) ^thm-granger-representation
+> [!theorem] Consequences of cointegration (Granger 2003, pp. 361-362, 366; formal versions from Engle & Granger 1987, citation only)
 > Let $x_t, y_t \sim I(1)$ be cointegrated with $z_t = y_t - \beta x_t \sim I(0)$. Then:
 >
 > 1. **Common factor.** "they must both be cointegrated with the same hidden common factor" (p. 361). Formally (common-trends / Stock-Watson form): $x_t = a_1 W_t + \tilde x_t$, $y_t = a_2 W_t + \tilde y_t$ with $W_t \sim I(1)$ a single common stochastic trend and $\tilde x_t, \tilde y_t \sim I(0)$; then $\beta = a_2/a_1$ removes $W_t$.
@@ -77,11 +79,15 @@ Granger (p. 361): "Once we know that a pair of variables has the cointegration p
 >
 > **Proof sketch (2 ⇒ cointegration, the "converse").** Subtract $\beta \times$ (second equation) from the first: $\Delta z_t = (\mu_1 - \beta\mu_2) + (\gamma_1 - \beta\gamma_2) z_{t-1} + (\text{stationary lagged differences}) + (\varepsilon_{1t} - \beta\varepsilon_{2t})$. This is a stationary AR-type equation in $z_t$ whenever $-2 < \gamma_1 - \beta\gamma_2 < 0$ (in the no-extra-lags case), so $z_t \sim I(0)$ while $x_t, y_t$ each inherit a unit root from the common trend. **(Cointegration ⇒ ECM)** is the harder direction (Engle & Granger 1987, via the Wold representation of $\Delta\mathbf{x}_t$ and the reduced rank of its long-run matrix); the lecture states it without proof: Granger "proved the consequences such as the error-correction representation" (p. 363).
 
-> [!definition] Error-correction model (two-variable, single-equation form) ^def-ecm-granger
+^thm-granger-representation
+
+> [!definition] Error-correction model (two-variable, single-equation form)
 > $$
 > \Delta y_t = \mu + \gamma (y_{t-1} - \beta x_{t-1}) + \delta \Delta x_t + \sum_{j\ge1} (\cdots) + \varepsilon_t,\qquad \gamma < 0.
 > $$
 > $\beta$ = long-run (equilibrium) effect of $x$ on $y$; $\delta$ = short-run (impact) effect; $\gamma$ = speed of adjustment (fraction of last period's disequilibrium removed per period; half-life $\ln 0.5 / \ln(1+\gamma)$). Marketing-notation version and applications in [[Multivariate Persistence and Cointegration#^def-ecm|ECM in Multivariate Persistence and Cointegration]].
+
+^def-ecm-granger
 
 ### History and origins (pp. 362-363)
 
@@ -103,7 +109,7 @@ On equilibrium, Granger is careful: the constant-ratio long-run forecast is what
 
 The lecture names no test statistics. The standard procedures it alludes to:
 
-> [!algorithm] Engle-Granger two-step procedure ^alg-engle-granger
+> [!algorithm] Engle-Granger two-step procedure
 > 1. Pre-test each series for a unit root (ADF/KPSS); proceed only if both are $I(1)$.
 > 2. Estimate the static levels regression $y_t = \alpha + \beta x_t + z_t$ by OLS. If cointegrated, $\hat\beta$ is **superconsistent** (converges at rate $T$, not $\sqrt{T}$), but its $t$-statistic is non-standard.
 > 3. Test $\hat z_t$ for a unit root with an ADF regression $\Delta \hat z_t = \rho \hat z_{t-1} + \sum_j \phi_j \Delta \hat z_{t-j} + e_t$, using **Engle-Granger/MacKinnon** critical values (more negative than Dickey-Fuller ones, because $\hat\beta$ was chosen to make $\hat z$ look stationary; about $-3.34$ at 5% asymptotically for two variables with a constant. Finite-sample values are somewhat more negative. MacKinnon's response-surface value for $T \approx 200$ is about $-3.37$, which is the value used in [[Granger 2003 - Spurious Regression Monte Carlo in Python#^ex-sim-exp4|Experiment 4]]. The two figures do not conflict: $-3.34$ is the asymptotic value and $-3.37$ the finite-$T$ one).
@@ -112,9 +118,11 @@ The lecture names no test statistics. The standard procedures it alludes to:
 >
 > With $n > 2$ series or several cointegrating vectors, use Johansen's reduced-rank VECM likelihood-ratio (trace / max-eigenvalue) tests. Both procedures are run on simulated data in [[Granger 2003 - Spurious Regression Monte Carlo in Python]].
 
+^alg-engle-granger
+
 ## Examples
 
-> [!example] Simulated cointegrated pair and its ECM ^ex-ecm-sim
+> [!example] Simulated cointegrated pair and its ECM
 > **Setup:** $x_t$ a Gaussian random walk; $y_t = 1 + 2x_t + u_t$ with $u_t = 0.5u_{t-1} + \varepsilon_t$; $T = 200$; 2,000 replications (Experiments 4-5 in [[Granger 2003 - Spurious Regression Monte Carlo in Python]]).
 >
 > **Implied ECM:** $\Delta y_t = 2\Delta x_t + \Delta u_t$ and $\Delta u_t = -0.5u_{t-1} + \varepsilon_t = -0.5(y_{t-1} - 1 - 2x_{t-1}) + \varepsilon_t$, so $\gamma = -0.5$, $\delta = 2$, $\beta = 2$.
@@ -123,10 +131,14 @@ The lecture names no test statistics. The standard procedures it alludes to:
 >
 > **Interpretation:** when the magnets are real, the levels regression is meaningful and the ECM separates the long-run effect ($\beta$), the short-run effect ($\delta$) and the adjustment speed ($\gamma$); the gap's half-life is $\ln 0.5/\ln 0.5 = 1$ period.
 
-> [!example] Marketing reading: long-run brand equilibrium ^ex-ecm-marketing
+^ex-ecm-sim
+
+> [!example] Marketing reading: long-run brand equilibrium
 > **Setup:** weekly log sales $y_t$ and log category sales $x_t$ for a mature brand (about 150 weeks). Both drift with the category.
 >
 > **Reading:** if $y_t - \beta x_t$ (log market share when $\beta = 1$) is stationary, the brand is cointegrated with its category: share fluctuates but returns to an equilibrium — Granger's "constant ratio" in long-run forecasts. An ECM then lets a marketing variable (price, media) enter as a short-run $\Delta$ term or shift the equilibrium itself. If the share has a unit root (no cointegration), the brand's position is evolving and a levels model that ties sales to the category is spurious. Marketing applications (persistence modelling, long-run marketing effects) are in [[Multivariate Persistence and Cointegration]] and [[Empirical Causal Ordering]].
+
+^ex-ecm-marketing
 
 ## Connections
 

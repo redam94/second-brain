@@ -36,7 +36,7 @@ The variance terms behind $S_i$ and $S_{Ti}$ (see [[Variance-Based Sensitivity a
 
 ## Main Content
 
-> [!definition] Saltelli sampling scheme & cost ^saltelli-scheme
+> [!definition] Saltelli sampling scheme & cost
 > Draw two independent $(N \times p)$ quasi-random (Sobol-sequence) matrices $A$ and $B$. For each factor $i$, form $A_B^{(i)}$ = matrix $A$ with **only column $i$ replaced by column $i$ of $B$**. Running the model on $A$, $B$, and all $p$ matrices $A_B^{(i)}$ yields estimators
 > $$
 > V_i \approx \frac{1}{N}\sum_{j=1}^{N} f(B)_j\,\big(f(A_B^{(i)})_j - f(A)_j\big), \qquad
@@ -45,7 +45,9 @@ The variance terms behind $S_i$ and $S_{Ti}$ (see [[Variance-Based Sensitivity a
 > giving $S_i = V_i/V(Y)$ and $S_{Ti}=1-\dfrac{V(\mathbb{E}[Y\mid X_{\sim i}])}{V(Y)}$.
 > **Total model evaluations = $N(p+2)$** for first- + total-order; **$N(2p+2)$** if second-order $S_{ij}$ are also estimated. $N$ is the base sample size (often $N=2^m$, e.g. 1024).
 
-> [!definition] FAST — Fourier Amplitude Sensitivity Test ^fast
+^saltelli-scheme
+
+> [!definition] FAST — Fourier Amplitude Sensitivity Test
 > FAST "is based on periodic search sampling using a period search function and applies a decomposition of variance based on Fourier Transform." Each factor is driven along a search curve at a distinct **integer frequency** $\omega_i$:
 > $$
 > X_i(s_j) = G_i\!\big(\sin(\omega_i s_j)\big),\quad Y = f\big(X_1(s),\dots,X_k(s)\big)
@@ -60,14 +62,18 @@ The variance terms behind $S_i$ and $S_{Ti}$ (see [[Variance-Based Sensitivity a
 > $$
 > FAST "achieves a better estimate in terms of robustness and speed of convergence than Sobol" and handles nonlinear, non-monotonic models.
 
-> [!definition] RBD and FAST_RBD (HFR) ^rbd
+^fast
+
+> [!definition] RBD and FAST_RBD (HFR)
 > As $p$ grows, classic FAST suffers error and cost from resolving all higher-order harmonics. **RBD** uses a **single frequency $\omega$ for all parameters** (set to 1 for simplicity) with **random permutation** of the sample-point coordinates to restore stochasticity:
 > $$
 > X_i(s_j) = G_i\!\big(\sin(\omega s_{i_j})\big),\quad i=1,\dots,k.
 > $$
 > **Hybrid FAST_RBD (HFR)** groups the $k$ parameters into equal partitions, assigning one frequency per partition — "a balance between the accuracy of FAST and the computational efficiency of RBD."
 
-> [!theorem] Choosing a budget (case-study sampling sizes) ^budget-table
+^rbd
+
+> [!theorem] Choosing a budget (case-study sampling sizes)
 > Table 1 of the paper lists the sample sizes used (MNIST, 784 factors):
 > | Method | Samples |
 > |---|---|
@@ -80,8 +86,12 @@ The variance terms behind $S_i$ and $S_{Ti}$ (see [[Variance-Based Sensitivity a
 >
 > These were grid-searched "to strike a balance between optimizing performance and minimizing the number of samples required." General rule: **Morris screens cheapest; FAST/RBD are economical for first-order; full Sobol total-effect is the most expensive but most informative** ($N(p+2)$).
 
-> [!definition] SALib ^salib
+^budget-table
+
+> [!definition] SALib
 > The **Sensitivity Analysis Library (SALib)** in Python (https://salib.readthedocs.io) implements Morris, Sobol (Saltelli sampling), FAST, RBD-FAST, Delta (DMIM), and DGSM. Typical pattern: define a `problem` dict (names, bounds), call the method's `sample()` to generate the design, run the model on every row, then `analyze()` to obtain $S_i$, $S_{Ti}$ (Sobol) or $\mu^*$, $\sigma$ (Morris).
+
+^salib
 
 ## Examples
 

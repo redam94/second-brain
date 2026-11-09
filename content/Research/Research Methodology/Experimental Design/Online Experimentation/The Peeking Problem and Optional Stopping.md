@@ -43,10 +43,12 @@ The incentive to peek is rational. Long experiments carry opportunity cost; harm
 
 ## Main Content
 
-> [!definition] Decision rule, fixed-horizon test, sequential test (Johari et al. Sec. 3) ^def-decision-rule
+> [!definition] Decision rule, fixed-horizon test, sequential test (Johari et al. Sec. 3)
 > Let $(X_n)_{n \ge 1}$ be i.i.d. from $F_\theta$ with filtration $(\mathcal F_n)$, and test $H_0: \theta = \theta_0$. A **decision rule** is a pair $(T, \delta)$ with $T$ a (possibly infinite) stopping time for $(\mathcal F_n)$ and $\delta \in \{0,1\}$ an $\mathcal F_T$-measurable rejection indicator. It is **fixed-horizon** if $T = n$ is deterministic. A **sequential test** is a family $(T(\alpha), \delta(\alpha))_{\alpha \in (0,1)}$ that is nested ($T$ non-increasing and $\delta$ non-decreasing in $\alpha$) with $\mathbb P_{\theta_0}(\delta(\alpha) = 1) \le \alpha$.
 
-> [!definition] Fixed-horizon p-value ^def-fixed-pvalue
+^def-decision-rule
+
+> [!definition] Fixed-horizon p-value
 > For the UMP test with statistic $\tau_n$ and critical value $k(\alpha)$, $p_n = \inf\{\alpha : \tau_n \ge k(\alpha)\}$. All that type I error control needs is **super-uniformity at the chosen $n$**:
 >
 > $$
@@ -54,6 +56,8 @@ The incentive to peek is rational. Long experiments carry opportunity cost; harm
 > $$
 >
 > This is a statement about one pre-specified $n$. It says nothing about $p_T$ for a data-dependent $T$.
+
+^def-fixed-pvalue
 
 ### Why peeking inflates error
 
@@ -65,7 +69,7 @@ $$
 
 Each look has marginal error $\alpha$; the union is strictly larger, and although successive $z$-statistics are highly correlated the union keeps growing with the number of looks.
 
-> [!theorem] Sampling to a foregone conclusion ^thm-foregone
+> [!theorem] Sampling to a foregone conclusion
 > Let $S_n$ be a sum of i.i.d. mean-zero, unit-variance observations and $Z_n = S_n/\sqrt n$. By the law of the iterated logarithm, $\limsup_n S_n / \sqrt{2 n \log\log n} = 1$ almost surely, so for any fixed critical value $z_{\alpha/2}$
 >
 > $$
@@ -73,6 +77,8 @@ Each look has marginal error $\alpha$; the union is strictly larger, and althoug
 > $$
 >
 > A patient peeker rejects a true null with certainty. A boundary can only be valid uniformly in time if it grows at least like $\sqrt{n \log\log n}$; Howard et al.'s Corollary 1 is the matching nonasymptotic statement, and it is why the boundaries in [[Confidence Sequences]] have a $\log\log$ or $\log$ factor.
+
+^thm-foregone
 
 Howard et al.'s Figure 1 shows this for Rademacher data: the cumulative miscoverage of pointwise 95% CLT intervals keeps climbing over $10^5$ observations to many times the nominal 0.05 (10,000 replications), whereas a curved uniform boundary holds its miscoverage under 0.05 for all $t$ simultaneously.
 

@@ -44,7 +44,7 @@ The practical upshot is a layered design: cheap automatic metrics for iteration 
 
 ## Main Content
 
-> [!definition] Automatic metrics used across the cluster ^def-auto-metrics
+> [!definition] Automatic metrics used across the cluster
 > | Metric | What it scores | Used in |
 > |---|---|---|
 > | **Exact match (EM)** | Generated answer string equals a reference answer | Open-domain QA in RAG (NQ, TriviaQA, WQ, CT); HotpotQA in ReAct |
@@ -56,16 +56,20 @@ The practical upshot is a layered design: cheap automatic metrics for iteration 
 > | **Perspective API toxicity** | Classifier score on sampled continuations | RealToxicityPrompts in InstructGPT |
 > | **Entropy of paired-sentence probabilities** | Bias: an unbiased model is indifferent, hence maximum entropy | Winogender, CrowS-Pairs in InstructGPT |
 
+^def-auto-metrics
+
 **Known weaknesses surfaced by the papers themselves.** EM penalises correct-but-differently-worded answers: in ReAct's audit, 28–29% of "failures" for both CoT and ReAct are **label ambiguity** — "right prediction but did not match the label precisely" — and some HotpotQA labels are simply outdated (Appendix A.2). Reference-based metrics break when the reference needs information the system was not given: RAG's MS-MARCO setup withholds gold passages, so questions like "What is the weather in Volcano, CA?" cannot match the reference. And final-answer accuracy says nothing about the reasoning: Wei et al. found 2 of 50 correct GSM8K answers reached by a wrong chain, and Yao et al. found 14% of CoT's *correct* HotpotQA answers rested on hallucinated reasoning or facts (6% for ReAct).
 
-> [!definition] Human preference evaluation (Ouyang et al., Sec. 3.6) ^def-human-pref
+> [!definition] Human preference evaluation (Ouyang et al., Sec. 3.6)
 > - **Win rate against a fixed baseline.** For each model, "how often its outputs are preferred to a baseline policy" — the 175B SFT model, chosen because "its performance is near the middle of the pack". Error bars are 95% confidence intervals.
 > - **Likert 1–7** overall quality per response.
 > - **Binary metadata** per output (Table 3): fails to follow the instruction; inappropriate for a customer assistant; **hallucination**; satisfies explicit constraint; sexual / violent content; denigrates a protected class; gives harmful advice; expresses opinion or moral judgment.
 >
 > **Design safeguards.** Train / validation / test splits are **by user ID**, so test prompts come from customers never seen in training. A separate pool of **held-out labelers** who produced no training data checks that the model has not merely overfit to its raters. Because prompts written for InstructGPT may disadvantage GPT-3, results are repeated on prompts originally submitted to GPT-3 models. During training labelers prioritise helpfulness; in final evaluation they prioritise truthfulness and harmlessness.
 
-> [!definition] Pairwise comparative evaluation with four options (Lewis et al., Sec. 3.3) ^def-pairwise-four
+^def-human-pref
+
+> [!definition] Pairwise comparative evaluation with four options (Lewis et al., Sec. 3.3)
 > Evaluators see an input and two generations (BART vs RAG; which model appears as "A" or "B" is randomised per example "to avoid any biases for screen position", annotators may research the topic online, and gold-labeled check items screen out unreliable annotators — Appendix B) and choose: **A better / B better / both good / neither good**, separately for **factuality** — "whether a statement can be corroborated by trusted external sources" — and **specificity** — "high mutual dependence between the input and output". Over 452 pairs (Table 4):
 >
 > | | Factuality | Specificity |
@@ -78,15 +82,21 @@ The practical upshot is a layered design: cheap automatic metrics for iteration 
 >
 > The "both" options stop forced choices from manufacturing a difference, and the "no majority" row reports rater disagreement instead of hiding it.
 
-> [!definition] Hallucination — three operationalisations ^def-hallucination
+^def-pairwise-four
+
+> [!definition] Hallucination — three operationalisations
 > 1. **Closed-domain fabrication** (Ouyang et al.): on tasks where "the output should not contain information that is not present in the input" (summarisation, closed-domain QA), a labeler flags invented content. Rate: 41% for GPT-3 vs 21% for InstructGPT.
 > 2. **Uncorroborated statement** (Lewis et al.): a generation is non-factual if it cannot be "corroborated by trusted external sources"; measured by pairwise human comparison.
 > 3. **Hallucinated reasoning trace or fact** (Yao et al., Table 2): a human reads the full trajectory. Accounts for 56% of CoT's failures and 0% of ReAct's on HotpotQA.
 >
 > Ouyang et al. add a conceptual caution: *honesty* would require "comparing the model's actual output to its 'belief' about the correct output, and since the model is a big black box, we can't infer its beliefs" — so they measure **truthfulness** instead, via (1) and **TruthfulQA**. With an "Instruction+QA" prompt allowing "I have no comment", PPO models "err on the side of being truthful and uninformative rather than confidently saying a falsehood".
 
-> [!example] Error taxonomies as an evaluation instrument ^ex-taxonomy
+^def-hallucination
+
+> [!example] Error taxonomies as an evaluation instrument
 > Both prompting papers sample about 50 successes and 50 failures and hand-label them. Wei et al. classify wrong GSM8K chains by *the minimal edit needed to fix them* (calculator error 8%, symbol-mapping 16%, one step missing 22%, major semantic/coherence errors 54%). Yao et al. classify by *failure mechanism* (reasoning error, search-result error, hallucination, label ambiguity). Both taxonomies point directly at interventions — a calculator tool; better retrieval or a CoT fallback — which a scalar accuracy cannot.
+
+^ex-taxonomy
 
 **Harm-related probes (Ouyang et al., Sec. 4.2).** RealToxicityPrompts is run three ways (no instruction, "respectful" instruction, explicitly toxic instruction) with both Perspective API and human raters on 1,729 prompts; the conclusion depends on the condition (less toxic when asked to be respectful; no difference unprompted; *more* toxic when asked to be). Prompts were sampled uniformly over input toxicity, so "absolute toxicity numbers are inflated" — a reminder that the prompt-sampling design is part of the metric.
 

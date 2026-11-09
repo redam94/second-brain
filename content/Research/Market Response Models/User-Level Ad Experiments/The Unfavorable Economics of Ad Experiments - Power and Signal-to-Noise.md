@@ -55,7 +55,7 @@ Economic context: US firms spend about \$500 per person per year on advertising;
 
 ### The calibrated inference problem
 
-> [!definition] Set-up (Lewis & Rao §II) ^def-setup
+> [!definition] Set-up (Lewis & Rao §II)
 > A campaign costs $c$ per user and raises sales by $\beta(c)$, a concave function; gross margin is $m$. Then
 > $$
 > \text{ROI}=\frac{\beta(c)\,m-c}{c}.
@@ -65,12 +65,16 @@ Economic context: US firms spend about \$500 per person per year on advertising;
 > \Delta\bar y=\bar y_E-\bar y_U,\qquad \hat\sigma_{\Delta\bar y}=\sqrt{\tfrac{2}{N}}\,\hat\sigma .
 > $$
 
-> [!theorem] $R^2$ and $t$ as functions of the impact-to-standard-deviation ratio (eq. 6-7) ^thm-r2-t
+^def-setup
+
+> [!theorem] $R^2$ and $t$ as functions of the impact-to-standard-deviation ratio (eq. 6-7)
 > $$
 > R^2=\frac14\left(\frac{\Delta\bar y}{\hat\sigma}\right)^2,\qquad
 > t_{\Delta\bar y}=\sqrt{\frac N2}\left(\frac{\Delta\bar y}{\hat\sigma}\right).
 > $$
 > The ratio $\Delta\bar y/\hat\sigma$ is Cohen's $d$. With covariates the $R^2$ becomes the partial $R^2$ of the treatment.
+
+^thm-r2-t
 
 **Calibration** (a representative experiment, slightly larger than the median): cost \$0.14 per exposed user ("roughly 20-80 display ads or 7-10 TV commercials"), margin 50%, mean sales \$7, standard deviation \$75 over two weeks. A 25% ROI target implies $\beta=$\$0.35 — a 5% sales lift, large in percentage terms. Yet $d=0.35/75=0.0047$, "less than $\tfrac1{40}$ the 'small' effect size of 0.2 outlined in Cohen (1977)", and $R^2=5.4\times10^{-6}$.
 
@@ -94,7 +98,7 @@ Table II: using lagged sales, demographics and online behaviour as controls and 
 
 The s.e. of ROI is $m\cdot\text{s.e.}(\hat\beta)/c$: e.g. experiment 1.1 has s.e.$(\hat\beta)=$\$0.193, $m=0.5$, $c=$\$0.16, giving 61%. Figure II shows ROI uncertainty falling with per-capita spend: "the larger the dose, the better the power". The most intense campaign (\$0.39 per person, over 80 display ads, 3.5M-person control group, pre-period covariates) still had a 95% interval 60 points wide. Below \$0.05 per person the RCTs "offered uninformative estimates".
 
-> [!theorem] Experiment multipliers (Table III) ^thm-multipliers
+> [!theorem] Experiment multipliers (Table III)
 > Define adequate power as $E[t]=3$ (91% power, one-sided 5%). An experiment with expected statistic $E[t]$ must be scaled by $(3/E[t])^2$ in independent users. Medians over the 25 experiments:
 >
 > | Hypotheses | Retail median $E[t]$ | Retail multiplier | Finance multiplier |
@@ -106,12 +110,16 @@ The s.e. of ROI is $m\cdot\text{s.e.}(\hat\beta)/c$: e.g. experiment 1.1 has s.e
 >
 > Pooled, the median campaign must be 9 times larger to separate 0% from 50% ROI. Only 3 of 25 experiments had $E[t]>3$ for that comparison; every experiment is severely underpowered for a 10-point difference, and "the total U.S. population and the advertiser's annual advertising budget are binding constraints" for 5 points. A 5% two-week ROI annualizes to over 100%; targeting a 5% *annualized* ROI is $26^2=676$ times harder.
 
+^thm-multipliers
+
 **Marginal ROI is worse.** Optimizing spend needs $\beta(c_2)-\beta(c_1)$; the variance of marginal ROI has $\Delta c=c_2-c_1$ in the denominator, so it behaves like a very low-dose experiment, and concavity shrinks the signal further (§III.D). The same applies to creative comparisons: "determining if two 'creatives' are significantly different will only be possible when their performance differs by a relatively wide margin."
 
 ### What does and does not improve precision
 
-> [!theorem] Covariates help sub-linearly ^thm-covariates
+> [!theorem] Covariates help sub-linearly
 > Absorbing a share $R^2_{|W}$ of outcome variance reduces the treatment standard error by $1-\sqrt{1-R^2_{|W}}$. Lagged sales were the best predictor, cutting variance by up to 40% — a 23% reduction in standard errors. "To achieve an order-of-magnitude reduction in standard errors, one would have to predict sales with an $R^2_{|W}=0.99$" (§III.B, fn. 16).
+
+^thm-covariates
 
 Johnson, Lewis & Reiley confirm on a 3.1M-user test: 236 covariates including two years of purchase history gave $R^2=0.09$ and 5% better precision, whereas control-ad-based pruning gave 31%. This is the ad-measurement caveat to [[CUPED and Regression-Adjusted Variance Reduction]]: CUPED's gain depends on pre/post correlation, which is low for infrequent, lumpy retail purchases (better for frequently bought goods).
 
@@ -125,12 +133,14 @@ Levers, roughly in order of pay-off:
 6. **Targeted tests.** Restricting to the $M$ most responsive users raises $t$ only if the targeting effect decays slowly enough; otherwise it buys variance reduction at the cost of extrapolation bias (§IV.C).
 7. **Pre-experiment matching / blocking** on lagged sales can substantially raise power (Lewis, Rao & Reiley §8, citing Deng et al. 2013).
 
-> [!theorem] Longer outcome windows usually reduce power (Lewis, Rao & Reiley §6; Lewis & Rao §III.B) ^thm-windows
+> [!theorem] Longer outcome windows usually reduce power (Lewis, Rao & Reiley §6; Lewis & Rao §III.B)
 > With weekly effects $\Delta\bar y_t\ge0$, independent weeks and constant variance, the cumulative statistic over $T$ weeks is
 > $$
 > t_T=\sqrt{\frac N2}\,\frac{\sum_{t=1}^{T}\Delta\bar y_t}{\sqrt T\,\hat\sigma}.
 > $$
 > Adding week $T+1$ raises $t$ only if $\sum_{t\le T}\Delta\bar y_t/\sqrt T<\sum_{t\le T+1}\Delta\bar y_t/\sqrt{T+1}$, which to first order requires the new week's effect to exceed **about half the average effect of the preceding weeks**. Example: effects of 5% and 2% in weeks 1-2 require more than 1.75% in week 3. Because ad effects decay, "short windows are optimal from a power perspective", at the cost of downward bias in the total effect.
+
+^thm-windows
 
 This is the statistical reason lift studies report short-run effects and why long-run effects reach a [[Bayesian Media Mix Modeling - Overview|media mix model]] through [[Carryover (Adstock) Functional Forms|carryover assumptions]] rather than direct measurement.
 

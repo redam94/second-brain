@@ -45,7 +45,7 @@ SNL "avoids the bias introduced by the proposal, by opting to learn a model of t
 
 ## Main Content
 
-> [!theorem] The proposal does not bias the likelihood estimate (SNL, Sec. 3, p. 3) ^thm-no-proposal-bias
+> [!theorem] The proposal does not bias the likelihood estimate (SNL, Sec. 3, p. 3)
 > Let $\theta_n\sim\tilde p(\theta)$, $x_n\sim p(x\mid\theta_n)$, and $\tilde p(\theta,x) = p(x\mid\theta)\tilde p(\theta)$. For large $N$, maximizing $\sum_n\log q_\phi(x_n\mid\theta_n)$ is approximately maximizing
 >
 > $$
@@ -54,9 +54,11 @@ SNL "avoids the bias introduced by the proposal, by opting to learn a model of t
 >
 > This is maximized when the KL is zero on the support of $\tilde p$, i.e. when $q_\phi(x\mid\theta) = p(x\mid\theta)$ for all $\theta$ with $\tilde p(\theta)>0$. Hence "as long as we do not exclude parts of the parameter space, the way we propose parameters does not bias learning the likelihood asymptotically. Unlike when learning the posterior, no adjustment is necessary."
 
+^thm-no-proposal-bias
+
 In finite samples the proposal is not irrelevant; it "controls where $q_\phi(x\mid\theta)$ will be most accurate." That is the lever SNL pulls: put the training data where the posterior mass is.
 
-> [!algorithm] Sequential Neural Likelihood (Algorithm 1) ^alg-snl
+> [!algorithm] Sequential Neural Likelihood (Algorithm 1)
 > **Input:** observed data $x_o$, estimator $q_\phi(x\mid\theta)$, rounds $R$, simulations per round $N$.
 > 1. Set $\hat p_0(\theta\mid x_o) = p(\theta)$ and $\mathcal D = \{\}$.
 > 2. For $r = 1,\dots,R$:
@@ -65,6 +67,8 @@ In finite samples the proposal is not irrelevant; it "controls where $q_\phi(x\m
 > 3. Return $\hat p_R(\theta\mid x_o)$.
 >
 > After $r$ rounds the effective proposal is the mixture $\tilde p_r(\theta) = \frac1r\sum_{i=0}^{r-1}\hat p_i(\theta\mid x_o)$. Unlike SNPE, which trains only on the latest round, SNL "trains on all simulations obtained up to each round", which is legitimate precisely because of the theorem above.
+
+^alg-snl
 
 **Single-round NLE** is the $R=1$ case: train once on prior simulations, then MCMC. The SNL paper calls it "Neural Likelihood (NL)" and uses it as a control "to assess the benefit of SNL's guiding strategy"; Lueckmann et al. (2021) rename the pair NLE / SNLE.
 

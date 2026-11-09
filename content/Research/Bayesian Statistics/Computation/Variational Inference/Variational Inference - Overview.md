@@ -65,7 +65,7 @@ A fourth part, added by Yao, Vehtari, Simpson & Gelman (2018), is **verification
 
 ## Main Content
 
-> [!definition] The variational inference problem ^def-vi-problem
+> [!definition] The variational inference problem
 > Let $x = x_{1:n}$ be observations and $z = z_{1:m}$ latent variables (in a Bayesian model, *all* unknowns, including parameters) with joint density $p(z, x) = p(z)\,p(x\mid z)$. The posterior is $p(z\mid x) = p(z,x)/p(x)$ where the **evidence** $p(x) = \int p(z,x)\,dz$ is typically unavailable in closed form or exponential-time to compute (Blei et al., Eqs. 2-3). VI specifies a family $\mathcal Q$ of densities over $z$ and solves
 >
 > $$
@@ -74,7 +74,9 @@ A fourth part, added by Yao, Vehtari, Simpson & Gelman (2018), is **verification
 >
 > "The complexity of the family determines the complexity of this optimization" (Sec. 2.2).
 
-> [!example] Why the evidence is intractable: Bayesian mixture of Gaussians ^ex-gmm-evidence
+^def-vi-problem
+
+> [!example] Why the evidence is intractable: Bayesian mixture of Gaussians
 > With $K$ unit-variance components, $\mu_k\sim\mathcal N(0,\sigma^2)$, $c_i\sim\text{Categorical}(1/K,\dots,1/K)$ and $x_i\mid c_i,\mu\sim\mathcal N(c_i^\top\mu, 1)$, the evidence is
 >
 > $$
@@ -83,11 +85,15 @@ A fourth part, added by Yao, Vehtari, Simpson & Gelman (2018), is **verification
 >
 > Each $\mu_k$ appears in all $n$ factors, so the integral does not factor; rewriting it as a sum over assignment configurations gives $K^n$ conjugate integrals (Blei et al., Eqs. 7-9). Exponential in $n$, hence approximate inference.
 
-> [!definition] Four generations of VI ^def-generations
+^ex-gmm-evidence
+
+> [!definition] Four generations of VI
 > 1. **Model-specific mean-field VI** (1990s-2000s): hand-derived closed-form coordinate updates for conditionally conjugate exponential-family models. [[Mean-Field Family and Coordinate Ascent VI (CAVI)|CAVI]].
 > 2. **Stochastic VI** (Hoffman et al. 2013): noisy natural gradients from data subsamples; scales CAVI to millions of documents.
 > 3. **Black-box / automatic VI** (Ranganath et al. 2014; Kingma & Welling 2013; Kucukelbir et al. 2017): Monte Carlo gradients of the ELBO requiring only $\log p(x,z)$ (and its gradient). [[Automatic Differentiation Variational Inference (ADVI)|ADVI]] makes VI a button in Stan.
 > 4. **Amortized and flow-based VI**: a neural network outputs the variational parameters for each datum ([[Reparameterization Trick and Variational Autoencoders|VAE]]), and the family is enriched by [[Normalizing Flows for Variational Inference|normalizing flows]].
+
+^def-generations
 
 **What VI gets wrong, and why it matters to this vault.** [[SBC Case Studies]] documents ADVI "drastically underestimat[ing] the posterior for the slope $\beta$" on a simple linear regression. The mechanism is fully explained by two facts developed here: (i) the mean-field Gaussian family cannot represent posterior correlation (here between intercept and slope), and (ii) reverse KL penalizes $q$ for placing mass where $p$ has little, so the best factorized $q$ *shrinks* to fit inside the correlated posterior rather than covering it. For a Gaussian target with precision matrix $\Lambda$ the optimal mean-field variance is $1/\Lambda_{jj} \le (\Lambda^{-1})_{jj}$; see the worked example in [[Mean-Field Family and Coordinate Ascent VI (CAVI)#^ex-mf-gaussian|the mean-field note]]. Kucukelbir et al. measure exactly this: true marginal variances $0.28, 0.31$ versus mean-field ADVI $0.13, 0.14$ (their Fig. 4).
 
@@ -95,12 +101,14 @@ VI can also be **over-dispersed**. In the eight-schools hierarchical model, Yao 
 
 **Theory is thin.** Blei et al. Sec. 5.2 surveys what is known: results are model-by-model, mostly showing that VI posterior *means* are consistent point estimates (Bayesian linear model, Poisson mixed models, stochastic block models, Gaussian mixtures), while Wang & Titterington (2005) show the asymptotic variational posterior covariance is "too small", differing from the inverse Fisher information by a positive-definite matrix.
 
-> [!example] Relevance to marketing measurement and applied work ^ex-applied-relevance
+> [!example] Relevance to marketing measurement and applied work
 > - **Media mix models.** A [[Bayesian Media Mix Modeling - Overview|Bayesian MMM]] has strongly correlated posteriors: adstock decay vs. saturation parameters, channel coefficients for collinear spend, and baseline/trend vs. media effects. These are precisely the correlations a mean-field family deletes. ADVI (`pm.fit` in PyMC, `variational` in Stan) will return ROI intervals that look tight and are wrong. Use VI for fast iteration on model structure and for initializing [[HMC and Stan in Practice|NUTS]]; report intervals from MCMC, or from VI only after a passing $\hat k$ check.
 > - **Hierarchical geo models.** Geo-level effects with a shared scale $\tau$ produce the funnel geometry of [[Hierarchical Models]]; Yao et al. show ADVI fails the joint diagnostic ($\hat k = 1.00$) on the centered eight-schools model and only becomes usable ($\hat k = 0.64$) after non-centering.
 > - **Scale.** Where VI is genuinely the right tool: user-level or store-level models with millions of rows where minibatch ADVI/SVI is the only thing that fits in time, and the deliverable is a point prediction rather than a calibrated interval. Kucukelbir et al. recommend mean-field for prediction, full-rank when "posterior variances and covariances" are of interest (Sec. 3.1).
 > - **Bayesian experimental design.** The [[Variational BOED - Overview|variational EIG estimators]] reuse the same machinery (an amortized $q_\phi$ trained by stochastic gradients on a bound) to estimate expected information gain for geo-experiment design.
 > - **ABMs and simulators.** When the likelihood itself is unavailable, amortized VI ideas reappear as neural posterior estimation; see [[Neural Simulation-Based Inference - Overview]] and [[Simulation-Based and Amortized Inference]].
+
+^ex-applied-relevance
 
 ## Examples
 

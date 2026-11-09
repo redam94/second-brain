@@ -52,13 +52,15 @@ The argument for including $\alpha_i$ in a weighted regression is "twofold" (§1
 
 ## Main Content
 
-> [!definition] Latent factor (interactive fixed effects) model ^def-sdid-factor-model
+> [!definition] Latent factor (interactive fixed effects) model
 > $$
 > Y = L + W\circ\tau + E, \qquad L = \Gamma\Upsilon^\top, \qquad (W\circ\tau)_{it} = W_{it}\tau_{it}
 > $$
 > (eqs. 3.2, 4.1). $L$ is the **systematic component** ($\gamma_i$: latent unit factors, $\upsilon_t$: latent time factors, rank $R$); $E$ is the idiosyncratic error with $\mathbb E[E\mid W, L] = 0$, rows independent across units but **serially correlated within unit**. Assignment $W$ **may depend on $L$** (treatment is not randomised) but not on $E$. When $L_{it} = \alpha_i+\beta_t$, DiD is consistent; interactions in $L$ are how the model "discuss[es] inference in settings where DID is misspecified." This is the same model underlying [[Generalized Synthetic Control Method|GSC]] and [[Synthetic Control Bias Theory|Abadie's SC bias analysis]].
 
-> [!theorem] Error decomposition (eq. 4.4) ^thm-sdid-error-decomp
+^def-sdid-factor-model
+
+> [!theorem] Error decomposition (eq. 4.4)
 > For any $\omega\in\Omega,\ \lambda\in\Lambda$ (so $\omega_{tr}^\top\tau_{tr,post}\lambda_{post}=\tau$):
 > $$
 > \hat\tau(\omega,\lambda)-\tau = \underbrace{\omega_{tr}^\top L_{tr,post}\lambda_{post} - \omega_{co}^\top L_{co,post}\lambda_{post} - \omega_{tr}^\top L_{tr,pre}\lambda_{pre} + \omega_{co}^\top L_{co,pre}\lambda_{pre}}_{\text{bias } B(\omega,\lambda)} + \underbrace{(\text{same contrast applied to } E)}_{\text{noise } \varepsilon(\omega,\lambda)}
@@ -69,7 +71,9 @@ The argument for including $\alpha_i$ in a weighted regression is "twofold" (§1
 > $$
 > so concentrated weights inflate variance — the rationale for the ridge penalty on $\omega$.
 
-> [!theorem] Double robustness of the bias (§4.2, p. 23) ^thm-sdid-double-robust
+^thm-sdid-error-decomp
+
+> [!theorem] Double robustness of the bias (§4.2, p. 23)
 > The bias can be grouped two ways:
 > $$
 > B(\omega,\lambda) = \left(\omega_{tr}^\top L_{tr,post} - \omega_{co}^\top L_{co,post}\right)\lambda_{post} - \left(\omega_{tr}^\top L_{tr,pre} - \omega_{co}^\top L_{co,pre}\right)\lambda_{pre}
@@ -79,12 +83,16 @@ The argument for including $\alpha_i$ in a weighted regression is "twofold" (§1
 > $$
 > Hence $B\approx 0$ if **either** (a) the unit regression fits and generalises: $\tilde\omega_0 + \tilde\omega_{co}^\top L_{co,\cdot} \approx \tilde\omega_{tr}^\top L_{tr,\cdot}$ in both pre and post columns; **or** (b) the time regression fits and generalises: $\tilde\lambda_0 + L_{\cdot,pre}\tilde\lambda_{pre} \approx L_{\cdot,post}\tilde\lambda_{post}$ in both control and treated rows. "Even if neither model generalizes sufficiently well on its own, it suffices for one model to predict the generalization error of the other." The authors liken this to augmented inverse-probability weighting, where one trades off outcome-model and assignment-model accuracy.
 
-> [!definition] Oracle weights and the three-term error (eqs. 4.5-4.8) ^def-sdid-oracle
+^thm-sdid-double-robust
+
+> [!definition] Oracle weights and the three-term error (eqs. 4.5-4.8)
 > Oracle weights minimise the *expected* objectives: $(\tilde\omega_0,\tilde\omega) = \arg\min \mathbb E[\ell_{unit}]$, $(\tilde\lambda_0,\tilde\lambda)=\arg\min\mathbb E[\ell_{time}]$. They are deterministic functions of $L$ and $\Sigma$. Then
 > $$
 > \hat\tau^{sdid}-\tau = \underbrace{\varepsilon(\tilde\omega,\tilde\lambda)}_{\text{oracle noise}} + \underbrace{B(\tilde\omega,\tilde\lambda)}_{\text{oracle confounding bias}} + \underbrace{\hat\tau(\hat\omega,\hat\lambda)-\hat\tau(\tilde\omega,\tilde\lambda)}_{\text{deviation from oracle}}
 > $$
 > Theorem 1 gives conditions under which the first term dominates (see [[SDID Inference - Bootstrap, Jackknife and Placebo#^thm-sdid-asymptotic-normality|asymptotic normality]]).
+
+^def-sdid-oracle
 
 **An honest caveat the paper states plainly** (p. 23): poor fit of the oracle regressions will usually show up as poor fit on the observed control cells, but "the assumption that one of these regressions generalizes to exposed rows or columns is an identification assumption without clear testable implications. It is essentially an assumption of no unexplained confounding: any exceptional behavior of the exposed observations, whether due to exposure or not, can be ascribed to it." SDID relaxes parallel trends; it does not abolish untestable assumptions.
 

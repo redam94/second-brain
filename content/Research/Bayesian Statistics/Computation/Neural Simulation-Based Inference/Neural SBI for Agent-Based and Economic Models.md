@@ -40,7 +40,7 @@ aliases:
 
 An ABM takes $\theta$ and returns a stochastic time series $x$; its likelihood is "only implicitly defined by the software." The economics literature has calibrated such models mostly by **simulated minimum distance**, $\hat\theta = \arg\min_\theta f(y,\theta)$, which includes the [[Method of Simulated Moments]] with $f = (g(y)-\hat g_\theta)'W(g(y)-\hat g_\theta)$ and [[Indirect Inference]] (Sec. 1). Its "major drawback ... is that only parameter point estimates are produced." Bayesian alternatives exist but share a structural flaw.
 
-> [!definition] The common pattern of existing Bayesian ABM methods (Dyer et al., Sec. 2-3.1) ^def-generative-pattern
+> [!definition] The common pattern of existing Bayesian ABM methods (Dyer et al., Sec. 2-3.1)
 > "For a fixed parameter $\theta$, iid simulations $x^{(r)}\sim p(x\mid\theta)$, $r=1,\dots,R$, are sampled to produce a proxy likelihood $\hat p(x\mid\theta)$", and this is repeated at each of the $n$ states of an MCMC chain, so "at least $nR$ simulations from the ABM are required", with $n$ "often a few hundred thousand." The variants reviewed (after Grazzini et al. 2017) are:
 > - a **parametric likelihood** assuming the series fluctuates i.i.d. around a stationary level, "closely related to synthetic likelihood";
 > - a **KDE likelihood**, more flexible but cursed by dimensionality and still assuming independent observations;
@@ -49,6 +49,8 @@ An ABM takes $\theta$ and returns a stochastic time series $x$; its likelihood i
 > - a **mixture-density-network transition model** (Platt 2021) retrained at every $\theta$.
 >
 > Two defects recur: independence or stationarity assumptions that are "particularly poorly suited" to models "designed to produce non-equilibrium dynamics", and a simulation bill that scales with the length of the MCMC chain.
+
+^def-generative-pattern
 
 The vault's existing calibration notes cover the ABC branch ([[Approximate Bayesian Computation for ABMs]], [[HM-ABC Calibration Framework]]), the optimization branch ([[Genetic Algorithm Calibration for ABM]]) and the moment-matching branch ([[Q - Using SMM to Calibrate Agent Based Models]]). This note is the neural branch.
 
@@ -62,8 +64,10 @@ The vault's existing calibration notes cover the ABC branch ([[Approximate Bayes
 
 ### Learned summary statistics
 
-> [!definition] Embedding network (Sec. 3.6, p. 15) ^def-embedding-network
+> [!definition] Embedding network (Sec. 3.6, p. 15)
 > A network $s_\varphi$ with trainable parameters $\varphi$ placed in front of the density (ratio) estimator, "whose function is to consume the original high-dimensional dataset $x$ and express this as a lower-dimensional summary statistic vector $s_\varphi(x)$." Its parameters "and of the density (ratio) estimator may then be learned concurrently using the same loss function", so informative features are learned "in an end-to-end fashion", without a separate summary-selection stage. The architecture is where inductive bias enters: recurrent units for time series, exchangeable networks for i.i.d. sets.
+
+^def-embedding-network
 
 This replaces the step on which ABC, [[Synthetic Likelihood - Overview|synthetic likelihood]] and SMM all depend, the hand choice of moments. The standing caveat applies: low-dimensional sufficient statistics "for arbitrary probabilistic models are generally unobtainable" (their footnote on the Pitman-Koopman-Darmois result), so any summary, learned or not, may lose information; a learned one is at least optimized for the inference task.
 
@@ -79,7 +83,7 @@ This replaces the step on which ABC, [[Synthetic Likelihood - Overview|synthetic
 
 The authors criticise the ABM literature for judging Bayesian methods by point estimates, such as the distance from the posterior mean to the generating parameter. This is misleading because closeness is "not measured in the geometry of the target distribution", because a good mean can coexist with a badly wrong width, and because "finite datasets are not guaranteed to yield posterior densities" centred on the truth. They instead use models with a **tractable transition density**, obtain a ground-truth posterior by MCMC, and report the **Wasserstein distance** and **MMD** (Gaussian kernel, median heuristic) between sample sets. Compare the metric discussion in [[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]].
 
-> [!example] Results against ground truth (Tables 1-2) ^ex-dyer-results
+> [!example] Results against ground truth (Tables 1-2)
 > **Brock & Hommes heterogeneous-beliefs asset-pricing model**, $\theta=(g_2,b_2,g_3,b_3)$, $T=100$, uniform priors. An asterisk marks hand-crafted summaries (mean, variance, max, min, median, quartiles, autocorrelations at lags 1-3); no asterisk means summaries learned by the embedding network. Lower is better.
 >
 > | Parameter set | Metric | KDE | SNPE | SNPE* | SNRE | SNRE* |
@@ -99,6 +103,8 @@ The authors criticise the ABM literature for judging Bayesian methods by point e
 > | Simulation budget | $10^6$ | $10^3$ | $10^3$ |
 >
 > Reading: the neural methods with learned summaries beat KDE everywhere at a fraction of the budget. With hand-crafted summaries on parameter set 2 they are only level with KDE (SNPE* marginally worse at 0.306 vs 0.304, SNRE* marginally better at 0.291), which the authors describe as "comparable and slightly favourable." Learned summaries clearly win when the posterior is diffuse (set 2) and for SNRE throughout; on set 1 the hand-crafted summaries actually did better for SNPE (0.336 vs 0.477), so learned summaries are not a free lunch at $10^4$ simulations. On the GBM model the KDE posterior is "insufficiently diffuse and biased."
+
+^ex-dyer-results
 
 ### Validation that was previously unaffordable
 

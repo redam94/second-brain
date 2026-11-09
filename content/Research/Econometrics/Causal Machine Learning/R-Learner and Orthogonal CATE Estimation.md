@@ -44,7 +44,7 @@ The note also explains a limitation of the vault's existing [[Metalearners for C
 
 ## Main Content
 
-> [!definition] Robinson's transformation (eq. 1) ^def-robinson
+> [!definition] Robinson's transformation (eq. 1)
 > Under unconfoundedness $\{Y_i(0),Y_i(1)\}\perp W_i\mid X_i$, write $e^*(x)=\mathbb P(W=1\mid X=x)$, $\mu^*_{(w)}(x)=\mathbb E[Y(w)\mid X=x]$ and the **conditional mean outcome** $m^*(x)=\mathbb E[Y\mid X=x]=\mu^*_{(0)}(x)+e^*(x)\tau^*(x)$. Then with $\mathbb E[\varepsilon_i\mid X_i,W_i]=0$,
 > $$
 > Y_i-m^*(X_i)=\{W_i-e^*(X_i)\}\,\tau^*(X_i)+\varepsilon_i .
@@ -54,9 +54,11 @@ The note also explains a limitation of the vault's existing [[Metalearners for C
 > \tau^*(\cdot)=\arg\min_\tau\ \mathbb E\Big[\big(\{Y_i-m^*(X_i)\}-\{W_i-e^*(X_i)\}\tau(X_i)\big)^2\Big].
 > $$
 
+^def-robinson
+
 This is the PLR model of [[Regularization Bias and the Partially Linear Model]] with the scalar $\theta_0$ promoted to a function of $X$; note that $m^*$ here is Chernozhukov et al.'s $\ell_0(X)=\mathbb E[Y\mid X]$, and $e^*$ is their $m_0$.
 
-> [!algorithm] The R-learner (eqs. 3–4) ^alg-r-learner
+> [!algorithm] The R-learner (eqs. 3–4)
 > **Step 1.** Split the data into $Q$ folds (typically 5 or 10); let $q(i)$ be the fold of observation $i$. Fit $\hat m$ and $\hat e$ by cross-fitting, "via methods tuned for optimal predictive accuracy."
 > **Step 2.** With $\hat m^{(-q(i))}(X_i)$, $\hat e^{(-q(i))}(X_i)$ the predictions made without fold $q(i)$, solve
 > $$
@@ -65,13 +67,15 @@ This is the PLR model of [[Regularization Bias and the Partially Linear Model]] 
 > $$
 > where $\Lambda_n$ is an explicit or implicit regularizer. $\hat L_n$ is the **R-loss**.
 
+^alg-r-learner
+
 **Implementation trick.** The R-loss is a weighted least-squares problem: with residuals $\tilde Y_i=Y_i-\hat m^{(-q(i))}(X_i)$ and $\tilde W_i=W_i-\hat e^{(-q(i))}(X_i)$,
 $$
 \big(\tilde Y_i-\tilde W_i\tau(X_i)\big)^2=\tilde W_i^2\Big(\frac{\tilde Y_i}{\tilde W_i}-\tau(X_i)\Big)^2,
 $$
 so any regressor accepting sample weights can fit $\tau$ by regressing the pseudo-outcome $\tilde Y_i/\tilde W_i$ on $X_i$ with weights $\tilde W_i^2$. The **U-learner** regresses the same pseudo-outcome $U_i=(Y_i-m^*(X_i))/(W_i-e^*(X_i))$ *without* weights and "suffers from high variance and instability due to dividing by the propensity estimates"; the $\tilde W_i^2$ weights are precisely what down-weight observations with $\hat e(X_i)\approx W_i$.
 
-> [!theorem] Quasi-oracle error bound (Lemma 2, Theorem 3) ^thm-quasi-oracle
+> [!theorem] Quasi-oracle error bound (Lemma 2, Theorem 3)
 > Study $\|\cdot\|_{\mathcal H}$-penalized kernel regression over an RKHS $\mathcal H$ with kernel eigenvalues satisfying $\sup_jj^{1/p}\sigma_j<\infty$ for some $0<p<1$, uniformly bounded eigenfunctions, bounded outcomes $|Y_i|\le M$ (Assumption 2), and $\|T_K^\alpha\{\tau^*\}\|_{\mathcal H}<\infty$ for some $0<\alpha<1/2$ (Assumption 3: $\tau^*$ need only lie in $\mathcal H$ after smoothing). Suppose overlap $\eta<e^*(x)<1-\eta$; $\hat e$ is uniformly consistent; and
 > $$
 > \mathbb E[\{\hat m(X)-m^*(X)\}^2],\ \mathbb E[\{\hat e(X)-e^*(X)\}^2]=O(a_n^2),\qquad a_n=O(n^{-\kappa}),\ \kappa>\tfrac14 .
@@ -81,6 +85,8 @@ so any regressor accepting sample weights can fit $\tau$ by regressing the pseud
 > R(\hat\tau),\ R(\tilde\tau)=\tilde O_P\big(n^{-(1-2\alpha)/\{p+(1-2\alpha)\}}\big).
 > $$
 > As $\alpha,p\to0$ this recovers "the well-known result from the semiparametric inference literature that, in order to get $1/\sqrt n$-consistent inference for a single target parameter, we need 4-th root consistent nuisance parameter estimates."
+
+^thm-quasi-oracle
 
 The mechanism is the same second-order remainder as in DML: errors in $\hat m$ and $\hat e$ enter the excess R-loss only through products/squares, so an $o(n^{-1/4})$ nuisance rate contributes $o(n^{-1/2})$ — below the oracle's own error scale. The paper stresses that this "depends on a local robustness property of the R-loss function, and does not hold for general meta-learners." **Counterexample for the X-learner:** shift $\hat\mu_{(0)}\leftarrow\hat\mu_{(0)}-c/n^{0.25+\xi}$ and $\hat\mu_{(1)}\leftarrow\hat\mu_{(1)}+c/n^{0.25+\xi}$; the nuisances remain $o(n^{-1/4})$-consistent, yet the X-learner's $\hat\tau$ shifts by exactly $c/n^{0.25+\xi}$, which dominates the oracle rate. Künzel et al.'s own quasi-oracle result covers only the regime where controls vastly outnumber treated units — where $m^*\approx\mu^*_{(0)}$, $e^*\approx0$ and the two learners roughly coincide.
 

@@ -48,13 +48,15 @@ The vault's [[Frequentist Causal Estimation]] note presents three estimator fami
 
 ## Main Content
 
-> [!definition] Interactive regression model (eqs. 5.1–5.2) ^def-irm
+> [!definition] Interactive regression model (eqs. 5.1–5.2)
 > $$
 > Y=g_0(D,X)+U,\quad\mathbb E_P[U\mid X,D]=0;\qquad D=m_0(X)+V,\quad\mathbb E_P[V\mid X]=0,\quad D\in\{0,1\}.
 > $$
 > Targets: $\theta_0^{\text{ATE}}=\mathbb E_P[g_0(1,X)-g_0(0,X)]$ and $\theta_0^{\text{ATTE}}=\mathbb E_P[g_0(1,X)-g_0(0,X)\mid D=1]$. Here $m_0(X)=\mathbb P(D=1\mid X)$ is the propensity score.
 
-> [!definition] Orthogonal scores ^def-aipw-score
+^def-irm
+
+> [!definition] Orthogonal scores
 > **ATE (eq. 5.3)** — nuisance $\eta=(g,m)$ with $m:\mathrm{supp}(X)\to(\varepsilon,1-\varepsilon)$:
 > $$
 > \psi(W;\theta,\eta)=\big(g(1,X)-g(0,X)\big)+\frac{D\,(Y-g(1,X))}{m(X)}-\frac{(1-D)(Y-g(0,X))}{1-m(X)}-\theta .
@@ -65,6 +67,8 @@ The vault's [[Frequentist Causal Estimation]] note presents three estimator fami
 > $$
 > Estimating the ATTE does **not** require $g_0(1,X)$. Both scores satisfy $\mathbb E_P\psi(W;\theta_0,\eta_0)=0$ and $\partial_\eta\mathbb E_P\psi(W;\theta_0,\eta_0)[\eta-\eta_0]=0$.
 
+^def-aipw-score
+
 **Verifying orthogonality for the ATE score.** Perturb $g(1,\cdot)$ by $\delta_1$: the derivative is $\mathbb E[\delta_1(X)(1-D/m_0(X))]=0$ since $\mathbb E[D\mid X]=m_0(X)$. Perturb $m$ by $\delta_m$: the derivative is $-\mathbb E[D(Y-g_0(1,X))\delta_m/m_0^2]-\mathbb E[(1-D)(Y-g_0(0,X))\delta_m/(1-m_0)^2]=0$ since $\mathbb E[U\mid X,D]=0$. The second-order term is a cross-product $\delta_m\times\delta_g$, which is why a **product** of rates appears below — and why, when $m_0$ is known (an RCT), the second derivative vanishes and only consistency of $\hat g_0$ is needed.
 
 Both scores are linear, $\psi=\psi^a\theta+\psi^b$ with $\psi^a=-1$ (ATE) or $-D/p$ (ATTE), so DML2 has a closed form. For the ATE,
@@ -73,7 +77,7 @@ $$
 $$
 and DML1 $=$ DML2.
 
-> [!theorem] Theorem 5.1 — DML inference on ATE and ATTE ^thm-dml-ate
+> [!theorem] Theorem 5.1 — DML inference on ATE and ATTE
 > Suppose Assumption 5.1: (a) the interactive model holds; (b) $\|Y\|_{P,q}\le C$, $q>2$; (c) **overlap** $\mathbb P_P(\varepsilon\le m_0(X)\le1-\varepsilon)=1$; (d)–(e) $\|U\|_{P,2}\ge c$, $\|\mathbb E_P[U^2\mid X]\|_{P,\infty}\le C$; (f) the cross-fit nuisance estimators satisfy, with probability $\ge1-\Delta_N$, $\|\hat\eta_0-\eta_0\|_{P,q}\le C$, $\|\hat\eta_0-\eta_0\|_{P,2}\le\delta_N$, $\|\hat m_0-1/2\|_{P,\infty}\le1/2-\varepsilon$ (estimated propensities respect overlap), and
 > $$
 > \|\hat m_0-m_0\|_{P,2}\times\|\hat g_0-g_0\|_{P,2}\le\delta_NN^{-1/2}.
@@ -84,14 +88,18 @@ and DML1 $=$ DML2.
 > $$
 > uniformly over $P\in\mathcal P$; $\hat\sigma^2$ from Theorem 3.2 may replace $\sigma^2$; and $[\tilde\theta_0\pm\Phi^{-1}(1-\alpha/2)\hat\sigma/\sqrt N]$ has uniform asymptotic validity. "The scores $\psi$ in (5.3) and (5.4) are efficient, so both estimators are asymptotically efficient, reaching the semi-parametric efficiency bound of Hahn (1998)."
 
+^thm-dml-ate
+
 **Rate trade-off (Remark 5.2).** With sparse $g_0,m_0$ (indices $s_g,s_m$) and $\ell_1$-penalized estimators converging at $\sqrt{s_g/N},\sqrt{s_m/N}$, the product condition is $s_gs_m\ll N$, "much weaker than the condition $(s_g)^2+(s_m)^2\ll N$ required without sample splitting." A very sparse propensity allows a dense outcome regression ($s_g>\sqrt N$) and vice versa. This is the *rate* version of double robustness: classical DR says "consistent if either model is correctly specified"; DML says "$\sqrt N$-normal if the *product* of the two errors is $o(N^{-1/2})$." The paper notes the complementary result of Athey, Imbens & Wager (2016) — approximate residual balancing — which allows an inconsistently estimated propensity at the price of strong sparsity $s_g\ll\sqrt N$ in the outcome model.
 
-> [!definition] LATE score (§5.2) ^def-late-score
+> [!definition] LATE score (§5.2)
 > With binary instrument $Z$, define $\mu_0(Z,X)=\mathbb E[Y\mid Z,X]$, $m_0(Z,X)=\mathbb E[D\mid Z,X]$, $p_0(X)=\mathbb E[Z\mid X]$. The target $\theta_0=\dfrac{\mathbb E_P[\mu_0(1,X)]-\mathbb E_P[\mu_0(0,X)]}{\mathbb E_P[m_0(1,X)]-\mathbb E_P[m_0(0,X)]}$ is the LATE under the Imbens–Angrist (1994) / Frölich (2007) assumptions. The orthogonal score is a ratio of two AIPW scores (one for the reduced form, one for the first stage):
 > $$
 > \psi=\Big[\mu(1,X)-\mu(0,X)+\tfrac{Z(Y-\mu(1,X))}{p(X)}-\tfrac{(1-Z)(Y-\mu(0,X))}{1-p(X)}\Big]-\Big[m(1,X)-m(0,X)+\tfrac{Z(D-m(1,X))}{p(X)}-\tfrac{(1-Z)(D-m(0,X))}{1-p(X)}\Big]\theta .
 > $$
 > Theorem 5.2 gives the same $\sqrt N$-normality under product-rate conditions $\|\hat p_0-p_0\|_{P,2}\times(\|\hat\mu_0-\mu_0\|_{P,2}+\|\hat m_0-m_0\|_{P,2})\le\delta_NN^{-1/2}$.
+
+^def-late-score
 
 **Practical cautions.** (i) Overlap is an assumption, not a by-product: $1/\hat m$ and $1/(1-\hat m)$ enter the score, so extreme fitted propensities inflate $\sigma^2=\mathbb E[\psi^2]$ and the assumption $\|\hat m_0-1/2\|_{P,\infty}\le1/2-\varepsilon$ is effectively enforced in practice by trimming/clipping — see [[Common Support and Overlap]]. (ii) A highly predictive $\hat m$ is not "good": it signals limited overlap. (iii) All of this presumes no unmeasured confounding; ML on $X$ cannot fix a missing confounder ([[Sensitivity Analysis in Observational Studies]]).
 

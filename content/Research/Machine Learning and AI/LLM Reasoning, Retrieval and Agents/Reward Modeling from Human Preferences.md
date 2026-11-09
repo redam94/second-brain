@@ -45,7 +45,7 @@ Viewed from statistics, the RM is a **logistic paired-comparison (Bradley–Terr
 
 ## Main Content
 
-> [!definition] Reward model and its loss (Sec. 3.5, Eq. 1) ^def-rm-loss
+> [!definition] Reward model and its loss (Sec. 3.5, Eq. 1)
 > Let $r_\theta(x, y)$ be the scalar output for prompt $x$ and completion $y$. For a labeled pair in which $y_w$ is preferred to $y_l$,
 > $$
 > \text{loss}(\theta) = -\frac{1}{\binom K2}\, \mathbb E_{(x,\, y_w,\, y_l) \sim D}\Big[ \log \sigma\big( r_\theta(x, y_w) - r_\theta(x, y_l) \big) \Big],
@@ -56,26 +56,34 @@ Viewed from statistics, the RM is a **logistic paired-comparison (Bradley–Terr
 > $$
 > i.e. "the difference in rewards represents the log odds that one response will be preferred to the other by a human labeler". The loss is the negative Bernoulli log-likelihood — logistic regression ([[Generalized Linear Models]]) on the *difference* of two learned features.
 
+^def-rm-loss
+
 **Identifiability.** Only reward *differences* enter the likelihood, so $r_\theta$ is identified up to an additive constant (per prompt, in principle). The paper fixes the constant after training: "since the RM loss is invariant to shifts in reward, we normalize the reward model using a bias so that the labeler demonstrations achieve a mean score of 0 before doing RL".
 
-> [!algorithm] Data collection and batching ^alg-rm-training
+> [!algorithm] Data collection and batching
 > 1. For each prompt, sample $K \in \{4, \dots, 9\}$ responses from the current models (mostly SFT policies, some PPO).
 > 2. A labeler **ranks** all $K$; this yields up to $\binom K2$ pairwise comparisons (ties are dropped). Ranking $K$ at once is much faster per comparison than showing pairs.
 > 3. **Do not shuffle comparisons across prompts.** The $\binom K2$ comparisons from one prompt are highly correlated; each completion would otherwise appear in $K-1$ separate gradient updates, and "a single pass over the dataset caused the reward model to overfit".
 > 4. Instead, treat all $\binom K2$ comparisons from a prompt as **one batch element**. This needs only $K$ forward passes (one per completion) rather than $\binom K2$, and "because it no longer overfits, it achieves much improved validation accuracy and log loss".
 > 5. Train for a **single epoch** (lr $9\times10^{-6}$, cosine schedule, 64 prompts per batch, so up to $64 \times \binom 92 = 2{,}304$ comparisons per batch). Training is insensitive to learning rate but "quite sensitive to the number of epochs".
 
+^alg-rm-training
+
 The batching issue is a clustered-data problem in disguise: comparisons within a prompt share completions and a labeler, so treating them as i.i.d. overstates the effective sample size.
 
 **Size and initialisation.** RM training data: 33k prompts (6,623 labeler-written + 26,584 customer; Table 6). Only **6B** RMs are used, for every policy size: 175B RMs were unstable and "less suitable to be used as the value function during RL", and a 6B RM "led to equally strong PPO models". Architecturally the RM is an SFT-style model "with the final unembedding layer removed" and a scalar output. The final RM was actually initialised from a 6B GPT-3 fine-tuned on public NLP datasets (ARC, BoolQ, CoQA, DROP, MultiNLI and others) "mostly for historical reasons"; results were similar when initialising from GPT-3 or from the SFT model (Appendix C.2). In PPO the **value function is initialised from the RM**.
 
-> [!theorem] Empirical findings — how good is the reward signal? ^thm-rm-quality
+> [!theorem] Empirical findings — how good is the reward signal?
 > - **Label noise ceiling.** Training labelers agree with each other $72.6 \pm 1.5\%$ of the time; held-out labelers $77.3 \pm 1.3\%$ (Sec. 3.4). For comparison, researcher–researcher agreement in Stiennon et al. was $73 \pm 4\%$.
 > - **Generalisation across people.** In 5-fold cross-validation *over labeler groups* (train on 4 groups, test on the 5th), RMs predict held-out labelers' preferences with $69.6 \pm 0.9\%$ accuracy, versus $72.4 \pm 0.4\%$ on labelers in their training set (Sec. 4.1) — a small drop, so the RM is not merely memorising individual raters.
 > - **Most comparisons are labeled once**, "for cost reasons" (Sec. 5.3), so disagreement is not observed at the item level.
 
-> [!definition] Reward over-optimisation and the KL leash ^def-overoptimization
+^thm-rm-quality
+
+> [!definition] Reward over-optimisation and the KL leash
 > The RM is an imperfect proxy fitted on samples from SFT-like policies. A policy optimised hard against it drifts to regions where $r_\theta$ is extrapolating and scores rise while true quality falls. InstructGPT counters this with the per-token KL penalty $-\beta \log\big(\pi^{\mathrm{RL}}_\phi(y\mid x)/\pi^{\mathrm{SFT}}(y\mid x)\big)$ "to mitigate over-optimization of the reward model", and by iterating steps 2–3 so that new comparisons are collected on the current policy's outputs.
+
+^def-overoptimization
 
 **Whose utility? (Secs. 5.2–5.3).** The RM encodes the preferences of about 40 English-speaking contractors, filtered by a screening test and guided by researcher-written instructions. The authors flag that "aligning to the average labeler preference may not be desirable" — e.g. for text that disproportionately affects a minority group — and suggest labeling items multiple times to locate disagreement, or conditioning models on the preferences of particular groups.
 

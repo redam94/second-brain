@@ -48,12 +48,14 @@ Compared with the structural approach of Johari et al. in [[Interference and Mar
 
 Time is $t \in [T] = \{1,\dots,T\}$, the assignment path is $w_{1:T} \in \{0,1\}^T$ and potential outcomes are $Y_t(w_{1:T})$.
 
-> [!definition] Assumptions on the potential outcomes ^def-switchback-assumptions
+> [!definition] Assumptions on the potential outcomes
 > 1. **Non-anticipation**: $Y_t(w_{1:t}, w'_{t+1:T}) = Y_t(w_{1:t}, w''_{t+1:T})$; outcomes do not depend on future assignments. This is guaranteed by design, since the platform, not the units, controls future treatment.
 > 2. **$m$-carryover**: there is a fixed $m$ with $Y_t(w'_{1:t-m-1}, w_{t-m:T}) = Y_t(w''_{1:t-m-1}, w_{t-m:T})$; only the last $m+1$ assignments matter, so write $Y_t(w_{t-m:t})$. Example: the effect of surge pricing dissipates in one to two hours.
 > 3. **Bounded outcomes**: $|Y_t(\cdot)| \le B$ (used for the minimax problem and the variance bound).
 
-> [!definition] Lag-$p$ causal effect of consecutive treatments (Eq. 1) ^def-lag-p-effect
+^def-switchback-assumptions
+
+> [!definition] Lag-$p$ causal effect of consecutive treatments (Eq. 1)
 >
 > $$
 > \tau_p(\mathbb Y) = \frac{1}{T-p}\sum_{t=p+1}^{T}\big[Y_t(\mathbf 1_{p+1}) - Y_t(\mathbf 0_{p+1})\big].
@@ -61,12 +63,16 @@ Time is $t \in [T] = \{1,\dots,T\}$, the assignment path is $w_{1:T} \in \{0,1\}
 >
 > With $p = m$ this is the average effect of *permanently deploying* the policy versus never deploying it: the time-series version of the global treatment effect.
 
-> [!definition] Regular switchback experiment (Definition 1) ^def-regular-switchback
+^def-lag-p-effect
+
+> [!definition] Regular switchback experiment (Definition 1)
 > Choose randomization points $\mathbb T = \{t_0 = 1 < t_1 < \dots < t_K\}$ and probabilities $q_k$. At each $t_k$ flip a coin with $\Pr(W_{t_k} = 1) = q_k$ and hold that assignment through period $t_{k+1} - 1$. The design is the induced distribution $\eta_{\mathbb T, \mathbb Q}$ over the $2^{K+1}$ feasible paths.
+
+^def-regular-switchback
 
 ### Estimation
 
-> [!theorem] Horvitz–Thompson estimator is unbiased (Eq. 4, Proposition 1) ^thm-ht-unbiased
+> [!theorem] Horvitz–Thompson estimator is unbiased (Eq. 4, Proposition 1)
 >
 > $$
 > \hat\tau_p = \frac{1}{T-p}\sum_{t=p+1}^{T}\left\{ Y_t^{\text{obs}}\,\frac{\mathbf 1\{W_{t-p:t} = \mathbf 1_{p+1}\}}{\Pr(W_{t-p:t} = \mathbf 1_{p+1})} - Y_t^{\text{obs}}\,\frac{\mathbf 1\{W_{t-p:t} = \mathbf 0_{p+1}\}}{\Pr(W_{t-p:t} = \mathbf 0_{p+1})}\right\}.
@@ -74,13 +80,15 @@ Time is $t \in [T] = \{1,\dots,T\}$, the assignment path is $w_{1:T} \in \{0,1\}
 >
 > Under Assumptions 1-2 and any regular switchback with $p = m$, $\mathbb E[\hat\tau_p] = \tau_p$.
 
+^thm-ht-unbiased
+
 Only periods whose whole window $t-m, \dots, t$ is all-treated or all-control contribute: these are the observations that actually reveal $Y_t(\mathbf 1_{m+1})$ or $Y_t(\mathbf 0_{m+1})$. Periods just after a switch are contaminated by carryover and are discarded, a data-driven "washout". The inverse probabilities are known by design; under fair coins they are $2^{-j}$, where $j$ is the number of coin flips the window spans, which avoids the instability of extreme-weight Horvitz–Thompson estimators.
 
 ### Optimal design
 
 The criterion is minimax risk $\min_{\mathbb T, \mathbb Q}\max_{\mathbb Y} \mathbb E(\hat\tau_p - \tau_p)^2$ over bounded potential outcomes; because $\hat\tau_p$ is unbiased, risk equals variance.
 
-> [!theorem] Fair coins and optimal switching frequency (Theorems 1-2) ^thm-optimal-switchback
+> [!theorem] Fair coins and optimal switching frequency (Theorems 1-2)
 > Under Assumptions 1-3:
 >
 > 1. Any optimal design has $q_0 = q_1 = \dots = q_K = 1/2$.
@@ -95,6 +103,8 @@ The criterion is minimax risk $\min_{\mathbb T, \mathbb Q}\max_{\mathbb Y} \math
 > $$
 > \mathbb T^* = \{1,\ 2m+1,\ 3m+1,\ \dots,\ (n-2)m+1\}.
 > $$
+
+^thm-optimal-switchback
 
 The trade-off is direct. **Too many** switch points make long all-treated or all-control windows rare, so few periods are usable and their weights are large. **Too few** leave only a handful of independent coin flips. The optimum is to flip once per carryover length, with longer first and last blocks. For $T = 12$, $m = 2$: $\mathbb T^* = \{1, 5, 7, 9\}$, i.e. blocks of length 4, 2, 2, 4. Two practical corollaries:
 
@@ -111,7 +121,7 @@ $$
 \hat\sigma_U^2 = \frac{1}{(T-m)^2}\left\{ 8(\bar Y_0^{\text{obs}})^2 + \sum_{k=1}^{n-3} 32\,(\bar Y_k^{\text{obs}})^2\, \mathbf 1\{W_{km+1} = W_{(k+1)m+1}\} + 8(\bar Y_{n-2}^{\text{obs}})^2 \right\}.
 $$
 
-> [!theorem] Finite-population CLT (Theorem 3) ^thm-switchback-clt
+> [!theorem] Finite-population CLT (Theorem 3)
 > Fix $m$, let $T = nm$, use the optimal design, and assume $\operatorname{Var}(\hat\tau_m) \ge \Omega(n^{-1})$ (Assumption 4; implied by potential outcomes bounded away from zero). Then as $n \to \infty$,
 >
 > $$
@@ -119,6 +129,8 @@ $$
 > $$
 >
 > Replacing the variance by $\hat\sigma_U^2$ gives the conservative test $z = |\hat\tau_m|/\hat\sigma_U$, $\hat p_N = 2 - 2\Phi(z)$, and conservative confidence intervals.
+
+^thm-switchback-clt
 
 **Misspecified carryover (Sec. 4.3).** If $p > m$, then $\tau_p = \tau_m$ and everything remains valid, merely less efficient. If $p < m$, the exact test is still valid for the sharp null, but $\hat\tau_p$ is **biased** for $\tau_m$; asymptotic normality holds around $\mathbb E\hat\tau_p$ (Corollary 2). Err on the side of a larger $p$.
 

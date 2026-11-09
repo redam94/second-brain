@@ -43,16 +43,20 @@ Two ingredients should be distinguished. *Instruction tuning* in the narrow sens
 
 ## Main Content
 
-> [!algorithm] The three-step RLHF pipeline (Sec. 3.1, Fig. 2) ^alg-rlhf
+> [!algorithm] The three-step RLHF pipeline (Sec. 3.1, Fig. 2)
 > **Step 1 — SFT.** Labelers write demonstrations of desired behaviour for prompts sampled from the API and labeler-written prompts (about 13k training prompts). Fine-tune GPT-3 by supervised learning. (16 epochs, cosine decay, residual dropout 0.2; validation loss overfits after 1 epoch, yet more epochs improve both RM score and human preference. The checkpoint is selected by RM score.)
 > **Step 2 — Reward model.** For each of about 33k prompts, sample $K \in [4, 9]$ outputs and have a labeler rank them. Train a 6B model $r_\theta(x, y)$ to predict the preferred output — see [[Reward Modeling from Human Preferences]].
 > **Step 3 — PPO.** Initialise the policy from SFT and the value function from the RM. On about 31k unlabeled API prompts, sample a response, score it with $r_\theta$, and update with PPO (Schulman et al. 2017).
 > Steps 2 and 3 can be iterated: collect comparisons on the current best policy, retrain the RM, retrain the policy.
 
-> [!definition] The RL environment is a contextual bandit ^def-bandit-env
+^alg-rlhf
+
+> [!definition] The RL environment is a contextual bandit
 > "The environment is a bandit environment which presents a random customer prompt and expects a response to the prompt. Given the prompt and response, it produces a reward determined by the reward model and ends the episode" (Sec. 3.5). The prompt $x$ is the context, the whole response $y$ is the arm, $r_\theta(x, y)$ is the reward; there is no state transition across episodes. Compare [[Contextual and Linear Bandits]] — but here the action space is all token sequences, and the policy is optimised by policy gradient rather than by posterior sampling or UCB.
 
-> [!definition] The PPO-ptx objective (Eq. 2) ^def-objective
+^def-bandit-env
+
+> [!definition] The PPO-ptx objective (Eq. 2)
 > $$
 > \text{objective}(\phi) = \mathbb E_{(x,y) \sim D_{\pi_\phi^{\mathrm{RL}}}}\!\left[ r_\theta(x, y) - \beta \log \frac{\pi_\phi^{\mathrm{RL}}(y \mid x)}{\pi^{\mathrm{SFT}}(y \mid x)} \right] + \gamma\, \mathbb E_{x \sim D_{\text{pretrain}}}\!\left[ \log \pi_\phi^{\mathrm{RL}}(x) \right]
 > $$
@@ -62,17 +66,23 @@ Two ingredients should be distinguished. *Instruction tuning* in the narrow sens
 >
 > Training: 256k episodes, batch 512 in 8 minibatches, one inner epoch, PPO clip ratio 0.2, no discounting, rollout temperature 1.
 
+^def-objective
+
 The expectation of the KL term is $\beta\,\mathrm{KL}\big(\pi_\phi^{\mathrm{RL}}(\cdot \mid x)\,\|\,\pi^{\mathrm{SFT}}(\cdot \mid x)\big)$, so the first bracket is a **KL-regularised reward maximisation**. Its population optimum has the familiar Gibbs form $\pi^{\star}(y\mid x) \propto \pi^{\mathrm{SFT}}(y \mid x)\exp\{r_\theta(x,y)/\beta\}$ — the SFT policy acts as a prior that is exponentially tilted by reward, which is why a learned, imperfect reward cannot drag the policy arbitrarily far. (This closed form is a standard consequence of the objective, not a statement made in the paper.)
 
-> [!theorem] Empirical findings (Secs. 1, 4.1–4.2) ^thm-results
+> [!theorem] Empirical findings (Secs. 1, 4.1–4.2)
 > - **Preference.** 175B InstructGPT outputs are preferred to 175B GPT-3 outputs $85 \pm 3\%$ of the time and to few-shot-prompted GPT-3 $71 \pm 4\%$ of the time. The 1.3B PPO-ptx model is preferred to the 175B GPT-3.
 > - **Generalisation to held-out labelers.** Labelers who produced no training data prefer InstructGPT at about the same rate as training labelers.
 > - **Truthfulness.** On TruthfulQA, InstructGPT gives truthful-and-informative answers about twice as often as GPT-3; on closed-domain API tasks the hallucination rate falls from 41% to 21%.
 > - **Toxicity and bias.** About 25% fewer toxic outputs than GPT-3 *when prompted to be respectful*; no advantage without that prompt, and **more** toxic than GPT-3 when explicitly asked to be toxic. No significant improvement on Winogender or CrowS-Pairs.
 > - **vs instruction tuning on public data.** 175B InstructGPT is preferred over the same model fine-tuned on FLAN $78 \pm 4\%$ and on T0 $79 \pm 4\%$ of the time. Reason given: classification and QA are only about 18% of real API use, whereas open-ended generation and brainstorming are about 57%.
 
-> [!definition] Alignment tax and its mitigation ^def-alignment-tax
+^thm-results
+
+> [!definition] Alignment tax and its mitigation
 > Plain PPO causes regressions on public NLP benchmarks (SQuADv2, DROP, HellaSwag, WMT 2015 Fr$\to$En) — "an example of an 'alignment tax' since our alignment procedure comes at the cost of lower performance on certain tasks". Mixing in pre-training gradients (PPO-ptx) removes most of it and even surpasses GPT-3 on HellaSwag; simply increasing $\beta$ does **not** work — even at $\beta = 2.0$ (100$\times$ default) the regressions on DROP and SQuAD never fully recover while validation reward falls sharply (Sec. 4.2, Figs. 33–34).
+
+^def-alignment-tax
 
 **Cost (Sec. 5.1).** 175B SFT requires 4.9 petaflop/s-days and 175B PPO-ptx 60, against 3,640 for GPT-3 pre-training. The authors' conclusion: RLHF is "more so than a 100x model size increase" effective at making models helpful, so "increasing investments in alignment of existing language models is more cost-effective than training larger models" for this task distribution.
 

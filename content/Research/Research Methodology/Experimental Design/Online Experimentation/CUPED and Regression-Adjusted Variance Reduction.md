@@ -54,7 +54,7 @@ so stratification removes the **between-strata** variance. Online, users cannot 
 
 ### Control variates
 
-> [!definition] Control variate estimator ^def-control-variate
+> [!definition] Control variate estimator
 > Given i.i.d. pairs $(Y_i, X_i)$ with $\mathbb E X$ known, define for any constant $\theta$
 >
 > $$
@@ -67,7 +67,9 @@ so stratification removes the **between-strata** variance. Online, users cannot 
 > \operatorname{var}(\hat Y_{cv}) = \tfrac{1}{n}\big(\operatorname{var}(Y) + \theta^2 \operatorname{var}(X) - 2\theta \operatorname{cov}(Y,X)\big).
 > $$
 
-> [!theorem] Optimal coefficient and variance reduction (Deng et al. Eqs. 4-5) ^thm-cuped-variance
+^def-control-variate
+
+> [!theorem] Optimal coefficient and variance reduction (Deng et al. Eqs. 4-5)
 > The variance of $\hat Y_{cv}$ is minimised at
 >
 > $$
@@ -82,11 +84,13 @@ so stratification removes the **between-strata** variance. Online, users cannot 
 >
 > With several covariates $1-\rho^2$ becomes $1 - R^2$ from the regression of $Y$ on $X$. More generally, among adjustments $\bar Y - \overline{f(X)} + \mathbb E f(X)$ the optimal $f$ is the regression function $\mathbb E(Y \mid X)$.
 
+^thm-cuped-variance
+
 ### The CUPED observation
 
 In simulation, the hard part of a control variate is knowing $\mathbb E X$. In an experiment we do not need it:
 
-> [!theorem] CUPED delta is unbiased (Deng et al. Sec. 3.2.2, Eq. 7) ^thm-cuped-unbiased
+> [!theorem] CUPED delta is unbiased (Deng et al. Sec. 3.2.2, Eq. 7)
 > If $X$ is constructed only from information that precedes treatment, randomization implies $\mathbb E X^{(t)} = \mathbb E X^{(c)}$. Then
 >
 > $$
@@ -101,6 +105,8 @@ In simulation, the hard part of a control variate is knowing $\mathbb E X$. In a
 >
 > The **same** $\theta$ must be used in both arms; the simplest estimate is from the pooled treatment-plus-control sample.
 
+^thm-cuped-unbiased
+
 Read the formula as: *the in-experiment difference, corrected by the chance pre-experiment imbalance between the arms*. If the treatment group happened to draw heavier users, $\bar X^{(t)} - \bar X^{(c)} > 0$ and the raw delta is pulled down accordingly.
 
 **Stratification is a special case.** With a categorical $X$, using the indicators $\mathbf 1\{X = k\}$ as control variates (whose means are the weights $w_k$) reproduces $\hat Y_{\text{strat}}$ exactly; the fitted coefficients are $\hat\theta_k = \bar Y_k - \bar Y_0$ (Appendix A). Control variates therefore generalise stratification to continuous covariates and avoid having to estimate $w_k$.
@@ -114,8 +120,10 @@ Read the formula as: *the in-experiment difference, corrected by the chance pre-
 - **Non-user metrics.** For page-level metrics such as CTR = clicks / page views with user-level randomization, combine CUPED with the delta method: linearise both ratios and compute $\theta = \beta_1^\top \Sigma \beta_2 / \beta_2^\top \Sigma \beta_2$ from the user-level covariance $\Sigma$ of (clicks, views, pre-clicks, pre-views) (Appendix B). Compare [[Standard Errors and Clustering]].
 - **Where it fails.** Revenue-per-user gained less than 5% because pre- and in-experiment revenue are weakly correlated. CUPED works best for metrics with stable heavy/light-user heterogeneity.
 
-> [!warning] Post-treatment covariates bias the estimate (Sec. 5.3) ^warn-post-treatment
+> [!warning] Post-treatment covariates bias the estimate (Sec. 5.3)
 > In an experiment known to *increase* queries-per-user, the in-experiment metric Distinct-Queries-per-user is an almost perfect correlate and shrinks the interval dramatically. But the treatment also raised DQ, so $\mathbb E X^{(t)} \ne \mathbb E X^{(c)}$ and the "corrected" delta came out **significantly negative**: a narrow interval around the wrong sign. This is the experimental version of conditioning on a mediator or collider; see [[Logic of Regression Adjustment]].
+
+^warn-post-treatment
 
 ### Relation to regression adjustment
 

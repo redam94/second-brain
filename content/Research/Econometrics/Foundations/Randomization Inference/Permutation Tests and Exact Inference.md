@@ -42,17 +42,25 @@ Wu & Ding stress the conceptual difference from the FRT. The classical permutati
 
 ## Main Content
 
-> [!definition] Permutation test ^def-permutation
+> [!definition] Permutation test
 > Given a statistic $T$ and an exchangeability hypothesis, the permutation $p$-value is $p = (N!)^{-1}\sum_{\pi\in\Pi_N}\mathbf 1(T_\pi \ge T)$, where $T_\pi$ recomputes $T$ after applying label permutation $\pi$ to the (fixed) data. Approximated by random sampling of permutations when full enumeration is infeasible.
 
-> [!theorem] Exact vs asymptotic validity ^thm-exact-vs-asymptotic
+^def-permutation
+
+> [!theorem] Exact vs asymptotic validity
 > Under the **sharp null**, the permutation/randomization $p$-value is **finite-sample exact**: $\mathbb P(p\le\alpha)\le\alpha$ for all $N$, any statistic, any data-generating process — no large-sample approximation. Under a **weak null** the statistic's randomization distribution generally differs from its true sampling distribution, so validity holds only **asymptotically and only for a proper (studentized) statistic** (see [[Studentized Randomization Tests]], Theorem 1). Many classical parametric/non-parametric tests (Eden–Yates, Pitman, Kempthorne, Box–Andersen, Bradley, Lehmann) are *approximations* to the exact permutation/randomization test.
 
-> [!definition] Studentization rescues permutation tests under heteroscedasticity ^def-student-permutation
+^thm-exact-vs-asymptotic
+
+> [!definition] Studentization rescues permutation tests under heteroscedasticity
 > The need to studentize permutation statistics is classical (Neuhaus 1993; Janssen 1997, 1999; Chung & Romano 2013): in the two-sample Behrens–Fisher problem an **unstudentized** statistic gives an invalid permutation test under unequal variances, while a **studentized** one is asymptotically valid because it is asymptotically **pivotal**. Wu & Ding's twist: in the *finite-population* design-based setting the studentized $X^2$ is **not** asymptotically pivotal — instead its sampling distribution is **stochastically dominated** by the (pivotal $\chi^2_m$) randomization distribution, giving a **conservative** rather than exact asymptotic test.
 
-> [!theorem] Permutation/FRT vs the bootstrap ^thm-vs-bootstrap
+^def-student-permutation
+
+> [!theorem] Permutation/FRT vs the bootstrap
 > The **bootstrap** is the other resampling method for weak nulls (Babu & Singh 1983; Hall 1988 use studentization for second-order accuracy; Imbens & Menzel 2018 fuse the bootstrap with finite-population causal inference). Relative to the bootstrap, the FRT/permutation test's distinctive advantage is being **finite-sample exact under the sharp null**. Both can target weak nulls asymptotically; the FRT additionally inherits exactness whenever a compatible sharp null is used for imputation. Studentization aids **first-order** accuracy (type I control) for the FRT, whereas in the bootstrap it is traditionally used for **second-order** accuracy.
+
+^thm-vs-bootstrap
 
 ## Examples
 

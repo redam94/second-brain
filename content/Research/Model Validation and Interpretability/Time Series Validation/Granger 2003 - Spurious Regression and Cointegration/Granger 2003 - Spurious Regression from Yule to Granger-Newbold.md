@@ -51,7 +51,7 @@ Spurious regression is the time-series version of the [[Garden of Forking Paths]
 
 ### The phenomenon
 
-> [!definition] Spurious (nonsense) regression ^def-spurious-regression
+> [!definition] Spurious (nonsense) regression
 > Let $x_t$ and $y_t$ be **independent** integrated processes of order one, $I(1)$, e.g. two driftless random walks
 > $$
 > x_t = x_{t-1} + u_t,\qquad y_t = y_{t-1} + v_t,\qquad u_t \perp v_s\ \ \forall\, t,s,
@@ -61,6 +61,8 @@ Spurious regression is the time-series version of the [[Garden of Forking Paths]
 > y_t = \alpha + \beta x_t + e_t,\qquad t = 1,\dots,T,
 > $$
 > in which the true $\beta = 0$, yet the usual OLS output (large $R^2$, $|t_{\hat\beta}| \gg 2$) suggests a strong relationship. Under the null the error $e_t = y_t - \alpha$ is itself $I(1)$, so every classical assumption behind the $t$-test (stationary, weakly dependent errors with finite variance) fails: the residual variance grows with $T$ and the usual standard error formula, which assumes independent errors, drastically understates the true sampling variability of $\hat\beta$.
+
+^def-spurious-regression
 
 Granger's summary of the 1974 finding (p. 363):
 
@@ -129,7 +131,7 @@ Granger & Newbold, "Spurious Regressions in Econometrics" (*Journal of Econometr
 3. ARIMA(0,1,1) series, built as a random walk plus independent $N(0,1)$ white noise (levels);
 4. changes of the ARIMA(0,1,1) series, i.e. first-order moving averages.
 
-> [!example] Granger & Newbold (1974) Table 2, all four cases (values as printed; citation-only source, described) ^ex-gn-table2
+> [!example] Granger & Newbold (1974) Table 2, all four cases (values as printed; citation-only source, described)
 > $R^2$ here is the **corrected** (adjusted) $R^2$. "% $R^2 > 0.7$" is the share of the 100 replications with corrected $R^2$ above 0.7. That column is printed blank for random-walk changes and as 0 for ARIMA changes.
 >
 > | Case | $m$ | % $H_0$ rejected | average $d$ (DW) | average corrected $R^2$ | % $R^2 > 0.7$ |
@@ -157,7 +159,9 @@ Granger & Newbold, "Spurious Regressions in Econometrics" (*Journal of Econometr
 >
 > **Reading.** With random walks in levels, acceptance of the true null becomes rare once $m \ge 3$. Average $R^2$ and average $d$ both rise with $m$, and the ARIMA(0,1,1) levels behave the same way, a little less extremely. In the white-noise control, classical regression works: rejections scatter around the nominal 5% (2-10% with 100 replications), $d \approx 2$ and $R^2 \approx 0$. Differenced ARIMA(0,1,1) series are MA(1) processes, so their errors are still autocorrelated (negatively, $d \approx 2.5$). There the null is rejected about **twice as often as it should be** (7-13% against a nominal 5%). Differencing removes the gross spurious-regression problem but does not guarantee correct size when the differenced errors are themselves autocorrelated.
 
-> [!example] Granger & Newbold (1974) random-walk results vs the vault's Experiment 2 ^ex-gn-vs-exp2
+^ex-gn-table2
+
+> [!example] Granger & Newbold (1974) random-walk results vs the vault's Experiment 2
 > Independent random walks, $T = 50$, test of all slopes = 0 at 5%. The G&N columns are transcribed from their Table 2 (above). The vault columns are from [[Granger 2003 - Spurious Regression Monte Carlo in Python#^ex-sim-exp2|Experiment 2]] (5,000 replications, exact $F$ critical values, seed 1).
 >
 > | $m$ regressors | G&N % rejecting (100 reps) | vault rejection rate | G&N average corrected $R^2$ | vault mean $R^2$ | G&N average DW | vault median DW |
@@ -170,6 +174,8 @@ Granger & Newbold, "Spurious Regressions in Econometrics" (*Journal of Econometr
 >
 > **Reading.** The two agree on everything that matters. With one regressor most replications reject (about three-quarters for G&N, two-thirds here), and with five rejection is close to certain. Average $R^2$ rises with $m$ from about a quarter to about 0.6, and DW stays far below 2 while drifting up with $m$. The differences fit 100-replication Monte Carlo error (SE up to about 0.05) plus small design differences: G&N report *corrected* $R^2$ and mean DW, while the vault reports unadjusted $R^2$ and median DW. The non-monotone step from $m=1$ to $m=2$ in G&N's column (76% to 78%), compared with 0.67 to 0.85 here, is the kind of wobble expected from 100 replications.
 
+^ex-gn-vs-exp2
+
 **Conclusions and recommendations (Section 5, described).**
 
 - Strongly autocorrelated residuals (a low $d$) mean the equation is **mis-specified**, whatever its $R^2$. A high $R^2$ together with a low $d$ is no indication of a true relationship.
@@ -179,7 +185,7 @@ Granger & Newbold, "Spurious Regressions in Econometrics" (*Journal of Econometr
 - **Worked example they cite (Sheppard 1971).** UK consumption regressed on autonomous expenditure and mid-year money stock, 1947-1962: in levels, corrected $R^2 = 0.99$ and $d = 0.59$; in changes, corrected $R^2 = -0.03$ and $d = 2.21$.
 - **Response to a referee.** Structural models grounded in economic theory are less exposed to the problem in principle, but in practice theory rarely specifies lag structure or residual time-series properties. A very high $R^2$ also leaves no room to test added variables, whereas models in changes, with lower $R^2$, allow more testing.
 
-> [!theorem] Rule of thumb: $R^2 > DW$ (the folk condensation of Granger & Newbold 1974) ^thm-r2-dw
+> [!theorem] Rule of thumb: $R^2 > DW$ (the folk condensation of Granger & Newbold 1974)
 > If a levels regression of one time series on others yields a coefficient of determination larger than its Durbin-Watson statistic,
 > $$
 > R^2 > d = \frac{\sum_{t=2}^{T}(\hat e_t - \hat e_{t-1})^2}{\sum_{t=1}^{T}\hat e_t^2} \approx 2(1-\hat\rho_1),
@@ -190,13 +196,15 @@ Granger & Newbold, "Spurious Regressions in Econometrics" (*Journal of Econometr
 >
 > **Conditions/caveats:** a heuristic, not a test. It flags the symptom (near-unit-root residuals, $d \approx 0$); it does not tell a spurious relationship from a genuine **cointegrating** one (where $R^2$ is also high but residuals are stationary, $d$ bounded away from 0). Its hit rate rises with $T$ (in the simulation: 31% of spurious fits flagged at $T=50$, 80% at $T=500$). The DW statistic and its interpretation are in [[Model Testing and Specification]].
 
+^thm-r2-dw
+
 Their recommended remedy was to work with **differenced** data alongside levels (or, more generally, to model the dynamics and the error autocorrelation explicitly; see the Section 5 bullets above). Granger's 2003 lecture adds the cointegration-era refinement: the error-correction model, which keeps the long-run levels information that blanket differencing throws away (p. 363).
 
 ### Phillips (1986): why it happens (citation only)
 
 Phillips, "Understanding Spurious Regressions in Econometrics" (*Journal of Econometrics* 33(3), 1986), supplied the asymptotic theory using functional central limit theory (scaled random walks converge to Brownian motions). For independent driftless $I(1)$ series:
 
-> [!theorem] Asymptotics of spurious regression (Phillips 1986, stated from the literature) ^thm-phillips
+> [!theorem] Asymptotics of spurious regression (Phillips 1986, stated from the literature)
 > Assume $x_t, y_t$ independent $I(1)$ with weakly dependent, finite-variance innovations; OLS of $y_t$ on a constant and $x_t$. As $T \to \infty$:
 > 1. $\hat\beta$ does **not** converge to $0$; it converges in distribution to a non-degenerate random variable (a ratio of functionals of two independent Brownian motions).
 > 2. $\hat\alpha$ diverges at rate $\sqrt{T}$.
@@ -207,6 +215,8 @@ Phillips, "Understanding Spurious Regressions in Econometrics" (*Journal of Econ
 > **Proof idea:** scale $x_{\lfloor rT \rfloor}/\sqrt{T} \Rightarrow \sigma W_1(r)$ and $y_{\lfloor rT \rfloor}/\sqrt{T} \Rightarrow \sigma W_2(r)$; sample moments $T^{-2}\sum x_t^2$, $T^{-2}\sum x_t y_t$ converge to integrals of Brownian functionals, so $\hat\beta$ converges to a random ratio of integrals rather than to a constant. The residual variance estimate $s^2$ grows like $T$, while $\sum (x_t - \bar x)^2$ grows like $T^2$, so the standard error shrinks like $T^{-1/2}$ while $\hat\beta$ does not shrink — hence $t = O_p(\sqrt{T})$.
 >
 > **Significance:** more data makes the false discovery *more* certain. This is the formal reason the $R^2 > DW$ heuristic works, and the reason differencing (which makes all terms $I(0)$) restores standard inference.
+
+^thm-phillips
 
 ### Cointegration: when a levels regression is *not* spurious
 
@@ -221,7 +231,7 @@ Granger presents cointegration as the "missing piece in our approach to modeling
 
 ### Practical diagnostics
 
-> [!algorithm] Spurious-regression screen for levels regressions of trending series ^alg-spurious-screen
+> [!algorithm] Spurious-regression screen for levels regressions of trending series
 > 1. **Plot and test persistence first.** ACF decaying slowly from near 1; unit-root tests (ADF, KPSS) — see [[Single Marketing Time Series]].
 > 2. **Compare $R^2$ with DW** on any levels regression of trending series ([[#^thm-r2-dw]]).
 > 3. **Refit in differences.** A genuine relationship between levels usually leaves a trace in changes (possibly at lags); a spurious one collapses to $R^2 \approx 0$.
@@ -229,9 +239,11 @@ Granger presents cointegration as the "missing piece in our approach to modeling
 > 5. **Use a persistence-matched null.** Re-run the whole pipeline with surrogate regressors of the same persistence (independent random walks or fitted AR processes) and compare the real fit with that null distribution — a simulation-based check in the spirit of [[Designing Simulated-Data Experiments]].
 > 6. **Validate out of sample in time order.** Spurious levels fits often look good under shuffled cross-validation but lose to a naive last-value forecast in a rolling-origin backtest ([[Forecast Evaluation and Backtesting]], [[Bergmeir Hyndman Koo 2018 - CV for Time Series - Overview]]).
 
+^alg-spurious-screen
+
 ## Examples
 
-> [!example] Simulation summary: independent random walks (full code and all experiments in [[Granger 2003 - Spurious Regression Monte Carlo in Python]]) ^ex-spurious-sim-summary
+> [!example] Simulation summary: independent random walks (full code and all experiments in [[Granger 2003 - Spurious Regression Monte Carlo in Python]])
 > **Setup:** 5,000 pairs of independent Gaussian random walks per $T$; OLS of $y$ on $x$ in levels and in first differences.
 >
 > | $T$ | Regression | $\Pr(\lvert t\rvert>1.96)$ | median $\lvert t\rvert$ | mean $R^2$ | median DW | $\Pr(R^2>DW)$ |
@@ -245,15 +257,21 @@ Granger presents cointegration as the "missing piece in our approach to modeling
 >
 > **Interpretation:** every prediction of [[#^thm-phillips]] is visible — rejection rates of 67-90% for a nominal 5% test, rising with $T$; median $|t|$ growing roughly like $\sqrt{T}$ ($10.01/4.62 \approx 2.17$ vs $\sqrt{5}\approx 2.24$); $R^2$ stuck near 0.24; DW collapsing toward 0. Differencing restores correct size and $R^2 \approx 0$. The $T=50$ levels row is the Granger-Newbold design; 67% here vs their roughly three-quarters from 100 replications is within Monte Carlo and design (critical value $\approx 2$ vs 1.96) noise.
 
-> [!example] A trending KPI against trending media (applied reading) ^ex-kpi-media
+^ex-spurious-sim-summary
+
+> [!example] A trending KPI against trending media (applied reading)
 > **Setup:** an analyst has ~150 weeks of a brand KPI that drifted upward and a digital channel whose spend was ramped steadily over the same period. A levels regression of KPI on spend gives $R^2 = 0.6$, $t = 9$, DW $= 0.4$.
 >
 > **Reading:** $R^2 > DW$ and DW is far below 2 — the [[#^thm-r2-dw|warning sign]] fires. Before interpreting the coefficient as a media effect: (i) check both series for unit roots; (ii) refit in weekly changes (with adstock-transformed spend, see [[Carryover (Adstock) Functional Forms|Adstock]]) and see whether any effect survives; (iii) if both are $I(1)$, test the levels residuals for stationarity — only if they are stationary is there a cointegrating (long-run) relationship to model with an ECM; (iv) in an MMM, give the baseline its own stochastic trend so the media coefficient is not asked to explain the drift (compare the local-level/trend components in [[Bayesian Structural Time-Series Model]] and [[Bayesian Media Mix Modeling - Overview]]; practitioner discussion in [[Chan Perry 2017 - Challenges in Media Mix Modeling - Overview]]). A shared trend is also the classic setting in which a shuffled-row cross-validation looks excellent while a time-ordered backtest does not.
 
-> [!example] Searching many trending drivers ^ex-driver-search
+^ex-kpi-media
+
+> [!example] Searching many trending drivers
 > **Setup:** a "driver analysis" screens 40 candidate weekly series (macro indicators, category search terms, competitor activity) against a trending KPI, keeping those with $|t| > 2$ in levels.
 >
 > **Reading:** with independent $I(1)$ candidates and $T \approx 100$, each has about a 76% chance of passing (row $T=100$ above), so roughly 30 of 40 pure-noise candidates "pass". Multiple-testing corrections do not help, because each individual test is invalid, not merely multiplied. Screening in differences (or against persistence-matched surrogates) is the minimum fix; see [[Researcher Degrees of Freedom]] and [[Simmons Nelson Simonsohn 2011 - False-Positive Psychology - Overview]] for the general flexibility problem.
+
+^ex-driver-search
 
 ## Connections
 

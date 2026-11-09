@@ -49,7 +49,7 @@ Kingma & Welling design for the case where everything classical fails at once (S
 
 ## Main Content
 
-> [!definition] Per-datapoint variational bound ^def-vae-bound
+> [!definition] Per-datapoint variational bound
 > $$
 > \log p_\theta(x^{(i)})=D_{KL}\big(q_\phi(z\mid x^{(i)})\,\|\,p_\theta(z\mid x^{(i)})\big)+\mathcal L(\theta,\phi;x^{(i)}),
 > $$
@@ -58,9 +58,11 @@ Kingma & Welling design for the case where everything classical fails at once (S
 > $$
 > (Eqs. 1-3). $q_\phi(z\mid x)$ is the **probabilistic encoder** ("given a datapoint $x$ it produces a distribution... over the possible values of the code $z$"); $p_\theta(x\mid z)$ is the **probabilistic decoder**. Unlike mean-field VI, $q_\phi$ "is not necessarily factorial and its parameters $\phi$ are not computed from some closed-form expectation."
 
+^def-vae-bound
+
 The difficulty is $\nabla_\phi$: the expectation is taken under a distribution that depends on $\phi$. The generic fix is the score-function estimator, $\nabla_\phi\mathbb E_{q_\phi}[f(z)]=\mathbb E_{q_\phi}[f(z)\nabla_\phi\log q_\phi(z)]$, which "exhibits very high variance... and is impractical for our purposes" (Sec. 2.2; see [[Stochastic and Black-Box Variational Inference]]).
 
-> [!theorem] The reparameterization trick ^thm-reparameterization
+> [!theorem] The reparameterization trick
 > Let $z=g_\phi(\epsilon,x)$ with $\epsilon\sim p(\epsilon)$ independent of $\phi$ and $g_\phi$ differentiable, such that $z\sim q_\phi(z\mid x)$. Since $q_\phi(z\mid x)\prod_i dz_i=p(\epsilon)\prod_i d\epsilon_i$,
 > $$
 > \int q_\phi(z\mid x)f(z)\,dz=\int p(\epsilon)\,f\big(g_\phi(\epsilon,x)\big)\,d\epsilon\ \simeq\ \frac1L\sum_{l=1}^Lf\big(g_\phi(\epsilon^{(l)},x)\big),\qquad\epsilon^{(l)}\sim p(\epsilon),
@@ -74,7 +76,9 @@ The difficulty is $\nabla_\phi$: the expectation is taken under a distribution t
 >
 > Not available for discrete $z$, which is the niche left to score-function methods.
 
-> [!definition] SGVB estimators ^def-sgvb
+^thm-reparameterization
+
+> [!definition] SGVB estimators
 > Applying the trick to the bound with $z^{(i,l)}=g_\phi(\epsilon^{(i,l)},x^{(i)})$:
 > $$
 > \tilde{\mathcal L}^A(\theta,\phi;x^{(i)})=\frac1L\sum_{l=1}^L\Big[\log p_\theta(x^{(i)},z^{(i,l)})-\log q_\phi(z^{(i,l)}\mid x^{(i)})\Big],
@@ -84,7 +88,9 @@ The difficulty is $\nabla_\phi$: the expectation is taken under a distribution t
 > $$
 > (Eqs. 6-7). Version B integrates the KL analytically and "typically has less variance." For a minibatch $X^M$ of size $M$ from $N$ points, $\mathcal L(\theta,\phi;X)\simeq\frac NM\sum_{i=1}^M\tilde{\mathcal L}(\theta,\phi;x^{(i)})$ (Eq. 8).
 
-> [!algorithm] Auto-Encoding Variational Bayes (Kingma & Welling, Algorithm 1) ^alg-aevb
+^def-sgvb
+
+> [!algorithm] Auto-Encoding Variational Bayes (Kingma & Welling, Algorithm 1)
 > 1. Initialize $\theta,\phi$.
 > 2. **Repeat** until convergence:
 >    - $X^M\leftarrow$ random minibatch of $M$ data points;
@@ -94,14 +100,18 @@ The difficulty is $\nabla_\phi$: the expectation is taken under a distribution t
 >
 > "The number of samples $L$ per datapoint can be set to 1 as long as the minibatch size $M$ was large enough, e.g. $M=100$."
 
+^alg-aevb
+
 ### The variational autoencoder
 
-> [!definition] VAE with Gaussian encoder ^def-vae
+> [!definition] VAE with Gaussian encoder
 > Prior $p(z)=\mathcal N(0,I)$. Decoder $p_\theta(x\mid z)$: Gaussian (real data) or Bernoulli (binary data) with parameters output by an MLP. Encoder $q_\phi(z\mid x^{(i)})=\mathcal N(z;\mu^{(i)},\sigma^{2(i)}I)$ with $\mu^{(i)},\sigma^{(i)}$ output by an MLP of $x^{(i)}$. Sampling: $z^{(i,l)}=\mu^{(i)}+\sigma^{(i)}\odot\epsilon^{(l)}$. With $J=\dim z$, Appendix B gives the closed-form KL, and the estimator is
 > $$
 > \mathcal L(\theta,\phi;x^{(i)})\simeq\frac12\sum_{j=1}^J\Big(1+\log(\sigma_j^{(i)})^2-(\mu_j^{(i)})^2-(\sigma_j^{(i)})^2\Big)+\frac1L\sum_{l=1}^L\log p_\theta(x^{(i)}\mid z^{(i,l)})
 > $$
 > (Eq. 10). The diagonal covariance is "just a (simplifying) choice, and not a limitation of our method."
+
+^def-vae
 
 **Why "autoencoder."** The second term is a negative reconstruction error: encode $x$ to a noisy code $z$, decode, score $x$. The first term "acts as a regularizer," pulling every per-datum posterior toward the prior. Classical autoencoders need ad hoc regularizers (denoising, contractive, sparse) to learn useful codes; here the regularizer is "dictated by the variational bound... lacking the usual nuisance regularization hyperparameter" (Sec. 4).
 
@@ -125,7 +135,7 @@ On MNIST and Frey Face, AEVB was compared with the wake-sleep algorithm using th
 
 ## Examples
 
-> [!example] A VAE in PyTorch ^ex-vae-code
+> [!example] A VAE in PyTorch
 > ```python
 > import torch, torch.nn as nn, torch.nn.functional as F
 >
@@ -147,10 +157,14 @@ On MNIST and Frey Face, AEVB was compared with the wake-sleep algorithm using th
 > ```
 > Without the `torch.randn_like` line written as a function of `mu` and `logvar`, no gradient would reach the encoder; that one line is the whole trick.
 
-> [!example] Where the same trick appears in applied Bayesian work ^ex-reparam-elsewhere
+^ex-vae-code
+
+> [!example] Where the same trick appears in applied Bayesian work
 > - **ADVI** standardizes its Gaussian, $\zeta=\mu+L\eta$, for exactly this reason; Kucukelbir et al. list "re-parameterization trick" as a synonym for their elliptical standardization.
 > - **Non-centered parameterization** of [[Hierarchical Models|hierarchical models]], $\theta_j=\mu+\tau\tilde\theta_j$ with $\tilde\theta_j\sim\mathcal N(0,1)$, is the same location-scale identity used for a different purpose: improving posterior geometry for HMC (see [[Efficient MCMC]]) and, per Yao et al. (2018), for ADVI.
 > - **Synthetic data and embeddings for marketing.** A VAE over customer or creative features gives a generative model plus a low-dimensional representation with an explicit prior, a nonlinear counterpart to factor-analytic summaries of correlated media or survey variables.
+
+^ex-reparam-elsewhere
 
 ## Connections
 

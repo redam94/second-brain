@@ -44,25 +44,33 @@ Both readings describe the same shrinkage. The EB reading is the bridge to moder
 
 ## Main Content
 
-> [!definition] Parametric empirical Bayes: estimate the hyperparameter ^parametric-eb
+> [!definition] Parametric empirical Bayes: estimate the hyperparameter
 > Under $\mu_i \sim \mathcal{N}(M,A)$, $z_i\mid\mu_i \sim \mathcal{N}(\mu_i,\sigma_0^2)$, the Bayes posterior mean (eqs. 1.32-1.34) is
 > $$\hat\mu_i^{(Bayes)} = M + B(z_i - M), \qquad B = \frac{A}{A+\sigma_0^2}.$$
 > The hyperparameters $(M, A)$ are unknown, so we **estimate them from the marginal** $z_i \sim \mathcal{N}(M, A+\sigma_0^2)$: $\hat M = \bar z$ and the shrinkage factor from $E\{(N-3)\sigma_0^2/S\} = 1 - B$. Plugging in gives the EB estimator (eq. 1.35)
 > $$\hat\mu_i^{(JS)} = \bar z + \left(1 - \frac{(N-3)\sigma_0^2}{S}\right)(z_i - \bar z).$$
 > The shrinkage factor is **learned**, not specified — this is the essence of parametric EB.
 
-> [!definition] Shrinkage toward a regression line (borrowing strength via covariates) ^reg-shrinkage
+^parametric-eb
+
+> [!definition] Shrinkage toward a regression line (borrowing strength via covariates)
 > The prior mean can itself depend on covariates: $\mu_i \overset{ind}{\sim} \mathcal{N}(M_0 + M_1\cdot\text{age}_i,\, A)$ (eq. 1.38). The EB estimate (eq. 1.39) then shrinks toward the **fitted regression line** $\hat\mu_i^{(reg)} = \hat M_0 + \hat M_1\cdot\text{age}_i$:
 > $$\hat\mu_i^{(JS)} = \hat\mu_i^{(reg)} + \left(1 - \frac{(N-4)\sigma_0^2}{S}\right)(z_i - \hat\mu_i^{(reg)}), \qquad S = \sum(z_i - \hat\mu_i^{(reg)})^2.$$
 > Tukey's phrase **"borrowing strength"** captures this: each case is improved by the experience of all the others, here channeled through a regression fit. This is the conceptual ancestor of random-effects regression.
 
-> [!definition] Link to hierarchical Bayes and regularization ^hierarchical-link
+^reg-shrinkage
+
+> [!definition] Link to hierarchical Bayes and regularization
 > - **Hierarchical Bayes:** instead of *plugging in* point estimates $(\hat M, \hat A)$, place a hyperprior on $(M, A)$ and integrate. EB is the "plug-in" approximation to a fully Bayesian [[Hierarchical Models|hierarchical model]]; it ignores uncertainty in the estimated prior (which EB confidence intervals must later correct for).
 > - **Regularization:** the shrinkage factor $B < 1$ is mathematically a **ridge/penalty** pulling estimates toward a center; minimizing $\sum(z_i-\mu_i)^2 + \lambda\sum(\mu_i-\bar z)^2$ reproduces shrinkage, with $\lambda$ the EB-estimated penalty. Shrinkage trades a little bias for a large variance reduction — the bias-variance tradeoff underlying [[Overfitting and Information Criteria]].
 > - **Robbins (nonparametric EB):** the same "estimate the prior from the marginal" idea, but recovering the *entire* posterior-mean curve rather than one hyperparameter (see [[Robbins Formula and Poisson Empirical Bayes]]).
 
-> [!definition] Schematic: case 1 learning from the others (Efron Fig. 1.1) ^learning-from-others
+^hierarchical-link
+
+> [!definition] Schematic: case 1 learning from the others (Efron Fig. 1.1)
 > The $N-1$ "other" cases are observed first, yielding estimates $(\hat M, \hat A)$ of the prior parameters. The estimated prior $\mathcal{N}(\hat M, \hat A)$ then **supplements the direct evidence** $z_1 \sim \mathcal{N}(\mu_1, 1)$ for estimating $\mu_1$. (In practice $\hat\mu_1^{(JS)}$ uses $z_1$ along with the others, which improves accuracy.) "Which others?" is the central design question — with thousands of parallel cases the borrowed experience is vast.
+
+^learning-from-others
 
 ## Examples
 

@@ -35,14 +35,16 @@ Since matching only equates the *observed* covariates, balance is the in-sample 
 
 ## Main Content
 
-> [!definition] Standardized difference in means (standardized bias) ^def-smd
+> [!definition] Standardized difference in means (standardized bias)
 > For each covariate, the **standardized difference in means** is
 > $$
 > \text{SMD} = \frac{\bar X_t - \bar X_c}{\sigma_t},
 > $$
 > where $\sigma_t$ is the standard deviation in the **full treated group** (the *same* standardization is used before and after matching so the comparison is meaningful). It is like an effect size and is compared before vs. after matching. Compute it for each covariate **and for two-way interactions and squares**. For binary covariates, use the same formula or a simple difference in proportions.
 
-> [!definition] Rubin (2001)'s three balance measures ^def-rubin-three
+^def-smd
+
+> [!definition] Rubin (2001)'s three balance measures
 > A comprehensive view of balance:
 > 1. The **standardized difference of means of the propensity score**.
 > 2. The **ratio of the variances of the propensity score** in the treated and control groups.
@@ -50,16 +52,22 @@ Since matching only equates the *observed* covariates, balance is the in-sample 
 >
 > Rules of thumb for regression adjustment to be trustworthy: absolute standardized differences of means **< 0.25**, and **variance ratios between 0.5 and 2**.
 
-> [!warning] Do not use hypothesis tests / p-values as balance measures ^warn-balance-test
+^def-rubin-three
+
+> [!warning] Do not use hypothesis tests / p-values as balance measures
 > Hypothesis tests and p-values that incorporate sample size (e.g., t-tests) **should not** be used to assess balance, for two reasons:
 > 1. **Balance is an in-sample property** of the matched data — it makes no reference to a super-population, so a hypothesis test about a population is conceptually inappropriate.
 > 2. **Tests conflate balance with power.** As matching discards controls, sample size (and power) falls, so a balance test's p-value can rise — *appearing* to show improved balance simply because of reduced power. A test should not be used in a stopping rule when matched samples have varying sizes.
 > Report standardized differences and variance ratios instead.
 
-> [!definition] Graphical diagnostics ^def-graphical
+^warn-balance-test
+
+> [!definition] Graphical diagnostics
 > - **Distribution of propensity scores** across unmatched/matched treated and control units — also assesses common support; for weighting/subclassification, plot dot sizes proportional to weights.
 > - **Quantile-quantile (QQ) plots** for continuous covariates — compare the quantiles of a variable in treated vs. control; identical distributions fall on the 45-degree line. Can also be done for squares and interactions (second moments).
 > - **Before/after standardized-difference plot** (one line per covariate) — a quick overview of whether balance improved on each covariate.
+
+^def-graphical
 
 ## Examples
 

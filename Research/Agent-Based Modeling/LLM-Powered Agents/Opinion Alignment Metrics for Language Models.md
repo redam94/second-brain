@@ -41,7 +41,7 @@ Key design choice: compare **whole distributions**, not modal answers. Earlier w
 
 ## Main Content
 
-> [!definition] Human and model opinion distributions (Secs. 2.2, 3.1) ^def-opinion-dist
+> [!definition] Human and model opinion distributions (Secs. 2.2, 3.1)
 > For question $q$ with answer set $A(q)$ and respondent $h$'s answer $F(h,q)$, the human distribution over a respondent set $H$ is
 >
 > $$
@@ -50,7 +50,9 @@ Key design choice: compare **whole distributions**, not modal answers. Earlier w
 >
 > using Pew's survey weights "to correct sampling biases". $D_O$ is for all respondents, $D_G$ for demographic group $G$. The model distribution $D_m(q)$ is obtained by prompting with the question in multiple-choice format, reading the **next-token log-probabilities** of the answer letters, and exponentiating and normalising over non-refusal options. Refusal probability is tracked separately.
 
-> [!definition] Opinion alignment (Eq. 1) ^def-alignment
+^def-opinion-dist
+
+> [!definition] Opinion alignment (Eq. 1)
 > Map the $N$ ordinal options to integers $1,\dots,N$ (a trailing hedge such as "Neither" goes to the mean) and let $\mathcal{WD}$ be the 1-Wasserstein distance. Then
 >
 > $$
@@ -59,14 +61,18 @@ Key design choice: compare **whole distributions**, not modal answers. Earlier w
 >
 > Wasserstein is used because KL or total variation ignore ordinal structure: if all humans answer "A great deal", a model answering "A fair amount" and one answering "Not at all" would be judged equally wrong.
 
-> [!definition] Three metrics ^def-three-metrics
+^def-alignment
+
+> [!definition] Three metrics
 > - **Representativeness** (Eq. 2): $\mathcal R^O_m(Q) = \mathcal A(D_m, D_O, Q)$ for the overall population; $\mathcal R^G_m(Q) = \mathcal A(D_m, D_G, Q)$ for group $G$. No prompt context. Cannot equal 1 for all groups at once, since groups disagree.
 > - **Steerability**: $\mathcal S^G_m(Q) = \frac{1}{|Q|}\sum_{q} \max_{c_G \in \{\text{QA},\,\text{BIO},\,\text{PORTRAY}\}} \mathcal A\big(D_m(q; c_G), D_G(q)\big)$ — alignment to $G$ when the prompt carries group context $c_G$, taking the best of three styles: **QA** (group given as the answer to a prior survey question), **BIO** (free-text self-description, "akin to Argyle et al."), **PORTRAY** ("pretend you are a Democrat").
 > - **Consistency**: with $G^{\text{best}}_m = \arg\max_G \frac{1}{T}\sum_{T'} \mathcal R^G_m(Q_{T'})$, define $\mathcal C_m = \frac{1}{T}\sum_{T} \mathbf 1\big[\arg\max_G \mathcal R^G_m(Q_T) = G^{\text{best}}_m\big]$ — the fraction of topics on which the model's best-aligned group equals its overall best-aligned group.
 
+^def-three-metrics
+
 ### Findings
 
-> [!theorem] Empirical results (Sec. 4) ^thm-findings
+> [!theorem] Empirical results (Sec. 4)
 > **Representativeness (4.1).**
 > - "None of the models are perfectly representative of the general populace"; human-feedback-tuned models "are actually worse" (text-davinci-003 vs. davinci).
 > - **Every one of the 60 human demographic groups is more representative of the overall population than any LM** considered.
@@ -78,6 +84,8 @@ Key design choice: compare **whole distributions**, not modal answers. Earlier w
 > **Steerability (4.2).** Steering toward 22 groups on 500 contentious questions: "Most LMs (with the exception of ada) do become somewhat more representative of a sub-population post-steering. However, none of the disparities in group opinion alignment of an LM disappear after steering." Typically alignment improves "by a constant factor" for all groups, preserving the ranking of who is served well.
 >
 > **Consistency (4.3).** Scores are "fairly low — indicating that they are expressing a patchwork of disparate opinions"; even generally liberal text-davinci-002/003 align with conservatives on religion.
+
+^thm-findings
 
 **Robustness.** Results were replicated under different prompt templates and permuted answer order. **Limitations** acknowledged: U.S.-only and WEIRD; ATP social-desirability issues; and multiple-choice probing may not transfer to open-ended generation.
 

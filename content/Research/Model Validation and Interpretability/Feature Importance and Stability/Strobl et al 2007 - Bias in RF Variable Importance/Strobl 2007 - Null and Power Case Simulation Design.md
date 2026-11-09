@@ -52,15 +52,17 @@ Monte Carlo standard errors are given for rates (Table 3 caption: $se=\sqrt{r(1-
 
 ### What a sensible measure must do in each case (Methods, §Simulation studies)
 
-> [!definition] Success criteria for an importance measure in the two studies ^def-success-criteria
+> [!definition] Success criteria for an importance measure in the two studies
 > - **Null case:** all predictors and the response are sampled independently, so "a sensible variable importance measure should not prefer any one predictor variable over any other."
 > - **Power case:** a sensible measure "should be able to distinguish the informative predictor variable from its uninformative competitors, **and even more so with increasing degree of dependence**." Separation of $X_2$ from the noise variables should therefore **increase monotonically** with the *relevance* parameter.
 >
 > The results confirm this monotonicity for the correct-identification rate: it "increases with the degree of dependence between $X_2$ and the response" (Results, power case), for every method in Table 3 ([[Strobl 2007 - Null and Power Case Results#^tab-3]]). What differs between methods is the *level* of the curve, not its direction.
 
+^def-success-criteria
+
 ### Table 1 — predictor variables
 
-> [!definition] Predictor distributions (Table 1) ^def-predictors
+> [!definition] Predictor distributions (Table 1)
 > Predictors are sampled **independently**:
 >
 > | Variable | Distribution | Scale | Distinct binary splits (CART) |
@@ -75,16 +77,22 @@ Monte Carlo standard errors are given for rates (Table 3 caption: $se=\sqrt{r(1-
 >
 > The last column is a vault addition: an unordered $k$-level factor admits $2^{k-1}-1$ binary partitions; the paper itself only states that a four-category variable "provides seven cutpoints" and that the count "grows exponentially" with the number of categories.
 
+^def-predictors
+
 ### Table 2 — response variable
 
-> [!definition] Response distributions (Table 2) ^def-response
+> [!definition] Response distributions (Table 2)
 > - **Null case:** $Y\sim B(0.5)$, independent of all predictors.
 > - **Power case:** $Y\mid X_2=1\sim B(0.5-\textit{relevance})$, $\;Y\mid X_2=2\sim B(0.5+\textit{relevance})$, with $\textit{relevance}\in\{0.05,\,0.1,\,0.15,\,0.2\}$.
 >
 > (The table writes the two levels of $X_2$ as 1 and 2, whereas Table 1 codes $M(2)$ on $\{0,1\}$; the intent — one level lowers, the other raises $P(Y=1)$ — is unambiguous.)
 
-> [!example] Example: effect size implied by the relevance parameter ^ex-effect-size
+^def-response
+
+> [!example] Example: effect size implied by the relevance parameter
 > At relevance $0.2$, $P(Y=1)$ is $0.3$ in one group and $0.7$ in the other, a 40-point difference. With $n=120$ and $X_2$ balanced (~60 per group), the Bayes error is $0.5\cdot0.3+0.5\cdot0.3=0.30$. At relevance $0.05$ the difference is 10 points and the Bayes error $0.45$. The misclassification rates in [[Strobl 2007 - Null and Power Case Results|Table 4]] (0.40 to 0.49) sit above these floors, as expected for forests that also split on four noise variables. (Bayes-error calculation is a vault addition.)
+
+^ex-effect-size
 
 ### Protocol details
 
@@ -98,12 +106,14 @@ Monte Carlo standard errors are given for rates (Table 3 caption: $se=\sqrt{r(1-
 
 ## Examples
 
-> [!example] Example: porting the design to a marketing-feature audit ^ex-placebo-design
+> [!example] Example: porting the design to a marketing-feature audit
 > **Setup.** Before trusting a driver ranking from a tree model of a weekly KPI (52-156 rows), simulate a placebo: keep the real feature matrix (spend columns, holiday flag, promotion type, region code) but replace the KPI by an independent draw (the null case), then by a KPI that depends only on the binary holiday flag at a chosen effect size (the power case).
 >
 > **Procedure.** Refit the exact production pipeline 200-1000 times; record each feature's importance and how often the holiday flag ranks first.
 >
 > **Interpretation.** If the placebo run ranks the region code first most of the time, the production ranking says more about the region code's cardinality than about its effect. This is the paper's design, applied to the analyst's real covariate structure rather than to independent synthetic predictors.
+
+^ex-placebo-design
 
 ## Connections
 

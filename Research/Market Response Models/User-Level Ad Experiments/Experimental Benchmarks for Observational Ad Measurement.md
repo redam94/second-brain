@@ -91,12 +91,14 @@ A structural caveat (2019 §4.3): as targeting becomes more deterministic, "the 
 
 **Selection to overcome — Study 4** (Table 5): exposed users are older (29.3 vs 26.4), more female (96% vs 88%), more often married (19% vs 8%) and more mobile-heavy. Conversion rates of exposed vs unexposed users imply a lift of **316%** against an RCT lift of **73%**. Stratification gets to 99%; with all covariates STRATREG reaches 74% — a success. But Study 4 is the friendly case.
 
-> [!theorem] Headline findings (2019 §7.3, Fig. 10) ^thm-g19
+> [!theorem] Headline findings (2019 §7.3, Fig. 10)
 > 1. Observational methods "mostly overestimate the RCT lift, although in some cases, they can significantly underestimate" it (Studies 7, 10, 13, 15 flip sign or fall below the RCT).
 > 2. "The point estimates in seven of the 14 studies with a checkout-conversion outcome are consistently off by more than a factor of three."
 > 3. Registration and page-view outcomes are approximated better than purchases: unexposed users rarely reach campaign-specific pages, so there is little baseline to be selected on.
 > 4. More covariates help, but "adding census data and activity variables helps less than the Facebook match variable."
 > 5. "We do not find that one method consistently dominates."
+
+^thm-g19
 
 Selected rows of Fig. 10 (checkout outcome, lift in %):
 
@@ -110,11 +112,13 @@ Selected rows of Fig. 10 (checkout outcome, lift in %):
 | 12 | 1.2 | 233 | 129 | 82 | 82 |
 | 15 | 2.4 | 126 | 26 | -13 | -14 |
 
-> [!definition] Bias-reduction ratio and the unobservable thought experiment (2019 §8) ^def-brr
+> [!definition] Bias-reduction ratio and the unobservable thought experiment (2019 §8)
 > $$
 > brr=\frac{|\text{STRAT lift}-\text{RCT lift}|}{|\text{EU lift}-\text{RCT lift}|}
 > $$
 > is the share of the selection effect *remaining* after stratification; across the 14 checkout outcomes it ranges from 0.4% (Study 11) to 63% (Study 5), with a median of about 16% (Table 6). Following Rosenbaum & Rubin (1983) and Ichino et al. (2008), the authors simulate an unobservable $U$ that would restore unconfoundedness and express its strength relative to all observed covariates, $R^2_{Y,rel}=[R^2_Y(X,U)-R^2_Y(X)]/R^2_Y(X)$ and likewise for $W$. Study 4 needs a $U$ only as strong as the Census block; Study 1 needs one as strong as the match score; Study 9 needs "between 5 and 10 times as much explanatory power as the observables in our data." Activity and match-score variables explain *exposure* far more than *outcomes* — they are good predictors of treatment but weak deconfounders.
+
+^def-brr
 
 ### Study 2 — 663 experiments, deep nets and DML (2023)
 
@@ -129,7 +133,7 @@ with cross-fitting ($N_1$ is the treated share; this is the standard ATT score �
 
 Propensity-model AUCs range from 0.6 to 0.95, median 0.76.
 
-> [!theorem] Headline findings (2023 §5.3-5.4, Tables 3-6) ^thm-g23
+> [!theorem] Headline findings (2023 §5.3-5.4, Tables 3-6)
 > | | Upper funnel | Mid funnel | Lower funnel |
 > |---|---|---|---|
 > | Median RCT lift | 29% | 18% | 5% |
@@ -141,6 +145,8 @@ Propensity-model AUCs range from 0.6 to 0.95, median 0.76.
 > - Equality with the RCT lift is rejected for 91% (SPSM) and 75% (DML) of RCTs with significant lifts, and for 82% / 77% of those with insignificant lifts.
 > - Both methods usually *reduce* the exposed-unexposed bias — the remaining-percentage-bias distribution, $RPB=[1-(APE_{e\text{-}u}-APE_m)/APE_{e\text{-}u}]\times100$, sits mostly below 100% — but of SPSM the paper says it "does not manage to reduce the bias enough to come close to the RCT estimates". DML more often than SPSM makes things *worse* than the naive comparison.
 > - Errors are multiplicatively largest where true lifts are smallest (first-decile APEs above 5,000%); absolute errors grow with the true lift.
+
+^thm-g23
 
 **When do they do better?** (§6, random-forest on APE with partial-dependence plots): prospecting rather than remarketing campaigns ("remarketing introduces additional endogeneity"); **low control-group conversion rates** ("if untreated users do not convert, no selection effect needs to be corrected"); more users; upper-funnel outcomes; **lower exposure rates** (a larger pool of unexposed comparison users); for SPSM, a better-fitting propensity model. "Even in these settings, the average percentage error of both observational methods remains high."
 

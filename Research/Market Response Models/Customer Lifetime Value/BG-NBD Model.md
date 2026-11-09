@@ -39,7 +39,7 @@ The authors "have no misgivings about the [Pareto/NBD] model whatsoever, besides
 
 ## Main Content
 
-> [!definition] BG/NBD assumptions ^def-bgnbd-assumptions
+> [!definition] BG/NBD assumptions
 > (Sec. 3)
 > 1. While active, transactions follow a Poisson process with rate $\lambda$ (exponential interpurchase times).
 > 2. $\lambda \sim \text{gamma}(r,\alpha)$ across customers (Eq. 1).
@@ -49,7 +49,9 @@ The authors "have no misgivings about the [Pareto/NBD] model whatsoever, besides
 >
 > As in SMC, all customers are assumed active at the start of the observation period.
 
-> [!theorem] Individual-level likelihood ^thm-bgnbd-individual-likelihood
+^def-bgnbd-assumptions
+
+> [!theorem] Individual-level likelihood
 > Multiply the exponential density of each interpurchase time by the survival probability $(1-p)$ at each preceding purchase; after the last purchase at $t_x$, either the customer died (probability $p$) or stayed alive and bought nothing in $(t_x,T]$ (probability $(1-p)e^{-\lambda(T-t_x)}$). Collecting terms (Eq. 3):
 >
 > $$
@@ -58,7 +60,9 @@ The authors "have no misgivings about the [Pareto/NBD] model whatsoever, besides
 >
 > with $\delta_{x>0}=1$ if $x>0$ and $0$ otherwise. As with the Pareto/NBD, "information on the timing of the $x$ transactions is not required; a sufficient summary of the customer's purchase history is $(X=x, t_x, T)$."
 
-> [!theorem] Likelihood for a randomly chosen customer ^thm-bgnbd-likelihood
+^thm-bgnbd-individual-likelihood
+
+> [!theorem] Likelihood for a randomly chosen customer
 > Integrating over the gamma and beta (Eq. 6):
 >
 > $$
@@ -76,9 +80,11 @@ The authors "have no misgivings about the [Pareto/NBD] model whatsoever, besides
 >
 > Only `GAMMALN`, `LN` and `EXP` are needed; the sample log-likelihood (Eq. 7) is maximized with Solver.
 
+^thm-bgnbd-likelihood
+
 **Dropout in calendar time.** Conditional on $(\lambda,p)$, $P(\tau>t) = \sum_j (1-p)^j (\lambda t)^j e^{-\lambda t}/j! = e^{-\lambda p t}$, so the lifetime is exponential with rate $\lambda p$ (Sec. 4.3). Unlike the Pareto/NBD, the dropout process is explicitly tied to the purchase rate: heavy buyers face more dropout opportunities per unit time.
 
-> [!theorem] Expected purchases for a new customer ^thm-bgnbd-expected
+> [!theorem] Expected purchases for a new customer
 > Individual level (Eq. 5): $E[X(t)\mid\lambda,p] = \frac{1}{p}-\frac{1}{p}e^{-\lambda p t}$. Randomly chosen customer (Eq. 9):
 >
 > $$
@@ -87,7 +93,9 @@ The authors "have no misgivings about the [Pareto/NBD] model whatsoever, besides
 >
 > This needs a *single* ${}_2F_1$ evaluation, and only after estimation — "this expectation is only used after the likelihood function has been maximized."
 
-> [!theorem] Conditional expectation and probability alive ^thm-bgnbd-conditional-expectation
+^thm-bgnbd-expected
+
+> [!theorem] Conditional expectation and probability alive
 > For a customer with history $(x,t_x,T)$, the expected number of purchases in $(T,T+t]$ is (Eq. 10, derived in the Appendix via Eqs. A1–A8):
 >
 > $$
@@ -101,6 +109,8 @@ The authors "have no misgivings about the [Pareto/NBD] model whatsoever, besides
 > $$
 >
 > which is exactly the reciprocal of the denominator of Eq. 10 (the paper does not display this population-level expression separately; it follows directly from Eqs. 6 and A2). The numerator of Eq. 10 is Eq. 9 with updated parameters $r+x$, $\alpha+T$, $b+x$.
+
+^thm-bgnbd-conditional-expectation
 
 ### Simulation: when does BG/NBD fail to mimic Pareto/NBD?
 

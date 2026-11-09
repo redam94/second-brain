@@ -61,7 +61,9 @@ truth is known, or an experiment.
 
 ### Part 1 — Eight failure mechanisms
 
-#### 1. Too few rows for too many candidate features ^fail-rows
+#### 1. Too few rows for too many candidate features
+
+^fail-rows
 
 Weekly business data are short. Chan & Perry note that "three years of national weekly data is only 156 data points"
 against 20+ media channels at 3-4 parameters each, while their rule of thumb is 7-10 points per parameter
@@ -79,7 +81,9 @@ known-truth simulation shows what happens below the budget. With two years of we
 curves were underestimated by about 18-40%, and the bias came from the priors, not the data
 ([[Jin 2017 MMM - Sample Size vs Bias Study (Two vs Sixty Years)]]).
 
-#### 2. Best-of-many selection ^fail-best-of-many
+#### 2. Best-of-many selection
+
+^fail-best-of-many
 
 If $M$ candidate specifications, feature sets or hyperparameter settings are scored on the same data and the best is
 reported, the reported score is optimistic by roughly the expected maximum of $M$ noise draws: about
@@ -96,7 +100,9 @@ model-space version: many models fit about equally well and tell different stori
 all with $R^2$ = 0.98-0.99, whose sales predictions differ by up to 50%
 ([[Chan Perry 2017 - Five Plausible MMMs (Model Selection and Model Uncertainty)]]).
 
-#### 3. Choosing fits by importance mass instead of held-out accuracy ^fail-importance-mass
+#### 3. Choosing fits by importance mass instead of held-out accuracy
+
+^fail-importance-mass
 
 A tempting selection rule is to keep the model whose explanations look strongest or most plausible, for example the
 one that puts the most SHAP or importance mass on the drivers the client cares about. Kumar et al. show that Shapley
@@ -107,7 +113,9 @@ noise ([[Manheim Garrabrant - Regressional Goodhart and Tails Coming Apart]]). T
 as an explicit anti-pattern ([[NIST AI RMF - Applying the Framework to Marketing Analytics Models]]). Only held-out
 predictive accuracy is a selection criterion the model could fail.
 
-#### 4. Chance correlation in autocorrelated weekly series ^fail-spurious
+#### 4. Chance correlation in autocorrelated weekly series
+
+^fail-spurious
 
 Two independent random walks regressed on each other in levels give "significant" slopes most of the time, and the
 problem gets *worse* with more data, not better
@@ -119,7 +127,9 @@ the future into training and rewards the wrong model
 ([[Bergmeir 2018 - Theorem 1 Validity of K-Fold CV for Autoregressive Models]],
 [[Out-of-Sample Validation for Time-Series Models]]).
 
-#### 5. Tree and SHAP importance that credits proxies and is unstable ^fail-importance
+#### 5. Tree and SHAP importance that credits proxies and is unstable
+
+^fail-importance
 
 - **Split-selection bias.** Gini importance, and permutation importance from bootstrap forests, favour continuous and
   many-category predictors even when they are pure noise
@@ -135,7 +145,9 @@ the future into training and rewards the wrong model
   resampling: in Meinshausen & Bühlmann's Fig. 7 the CV-tuned Lasso picks 11-75 false variables, against about 0-4
   for stability selection ([[Stability Selection Simulation Study - Designs A-G and Results]]).
 
-#### 6. Importance is not the effect of intervening ^fail-causal
+#### 6. Importance is not the effect of intervening
+
+^fail-causal
 
 Interventional SHAP is causal *for the model*: it says how the model's output responds when an input is set
 ([[Janzing 2020 - Inputs as Causes - Interventional Equals Marginal Expectation]]). It says nothing about how the
@@ -147,7 +159,9 @@ is zero. Double ML recovers effects under observed confounding but is confidentl
 (true regression function, ignorability, positivity) under which a permutation-importance measure maps to an
 average treatment effect ([[Model Reliance, Causal Effects and Conditional Model Reliance]]).
 
-#### 7. Goodhart pressure on the metric ^fail-goodhart
+#### 7. Goodhart pressure on the metric
+
+^fail-goodhart
 
 Once a score or ranking is used to allocate budgets or judge teams, it becomes a target. Manheim & Garrabrant separate
 four mechanisms: regressional (selection on noise), extremal (optimizing into regions where the relationship breaks,
@@ -156,7 +170,9 @@ adversarial (agents gaming the metric)
 ([[Manheim Garrabrant 2018 - Variants of Goodhart's Law - Overview]],
 [[Manheim Garrabrant - Goodhart Variants in Marketing Measurement and Model Validation]]).
 
-#### 8. Plausible observational ad measurement wrong by large factors ^fail-observational
+#### 8. Plausible observational ad measurement wrong by large factors
+
+^fail-observational
 
 The strongest evidence that plausibility is not validity comes from ad experiments run next to observational
 estimators on the same campaigns.
@@ -173,7 +189,9 @@ estimators on the same campaigns.
 
 ### Part 2 — Six remedies
 
-#### R1. Forward-in-time validation with untouched outer windows ^rem-forward
+#### R1. Forward-in-time validation with untouched outer windows
+
+^rem-forward
 
 Use rolling-origin evaluation: fit on data up to $t$, score on $t+1,\dots,t+h$, then move the origin forward. All
 selection (features, hyperparameters, specification) happens in **inner** windows. The **outer** windows are scored
@@ -182,7 +200,9 @@ once, after everything is frozen, so the reported score is free of best-of-$M$ o
 training and test blocks when there is carryover. SR 11-7 adds that back-testing must use periods outside development
 and horizons matched to how the model is used ([[SR 11-7 - Outcomes Analysis and Back-Testing]]).
 
-#### R2. Null and random-ranking baselines ^rem-null
+#### R2. Null and random-ranking baselines
+
+^rem-null
 
 Every claimed skill needs a baseline it must beat: the naive or seasonal-naive forecast, a model fitted on
 *phantom* (permuted or simulated-noise) regressors, and, for driver rankings, a **random-ranking permutation null**
@@ -191,7 +211,9 @@ Every claimed skill needs a baseline it must beat: the naive or seasonal-naive f
 selection's PFER bound turns the same idea into a guarantee on expected false selections
 ([[Stability Selection PFER Bound (Theorem 1) and Its Proof]]).
 
-#### R3. Retest stability ^rem-stability
+#### R3. Retest stability
+
+^rem-stability
 
 Re-run the whole pipeline on subsamples (blocked, for time series), adjacent windows and alternative near-optimal fits,
 and report how much the rankings move. Use selection frequencies
@@ -200,7 +222,9 @@ and report how much the rankings move. Use selection frequencies
 ([[Conditional Permutation Importance (Strobl 2008 Algorithm)]],
 [[Hooker Mentch Zhou 2021 - Conditional and Relearning Importance Measures]]).
 
-#### R4. Known-truth simulation (ADEMP, AMSS) ^rem-simulation
+#### R4. Known-truth simulation (ADEMP, AMSS)
+
+^rem-simulation
 
 Simulate data where the right answer is known, run the full method many times, and score bias, coverage and ranking
 accuracy with Monte Carlo standard errors. Plan it with ADEMP: Aims, Data-generating mechanisms, Estimands, Methods,
@@ -211,7 +235,9 @@ supplies a data-generating mechanism with counterfactual ROAS ground truth
 from leaving carryover out of the model ([[AMSS MMM Evaluation - Simple Scenario and Lagged-Effects Study]]). See
 [[Morris et al 2019 - Applying ADEMP to Marketing-Model Validation]] and [[Designing Simulated-Data Experiments]].
 
-#### R5. Experiments as ground truth ^rem-experiments
+#### R5. Experiments as ground truth
+
+^rem-experiments
 
 Where decisions hinge on causal effects, calibrate or check the model against randomized evidence: user-level RCTs,
 geo experiments, or switch-off tests ([[Experimental Benchmarks for Observational Ad Measurement]],
@@ -220,7 +246,9 @@ geo experiments, or switch-off tests ([[Experimental Benchmarks for Observationa
 ([[The Unfavorable Economics of Ad Experiments - Power and Signal-to-Noise]]) and feed the results in as priors
 ([[Q - Using Experiment Results as Priors in a Bayesian MMM]]).
 
-#### R6. Independent validation gate (SR 11-7, NIST AI RMF) ^rem-gate
+#### R6. Independent validation gate (SR 11-7, NIST AI RMF)
+
+^rem-gate
 
 SR 11-7 requires **effective challenge** by staff who are independent of development, competent, and able to stop the
 model ([[SR 11-7 - Model Definition, Model Risk and Effective Challenge]],

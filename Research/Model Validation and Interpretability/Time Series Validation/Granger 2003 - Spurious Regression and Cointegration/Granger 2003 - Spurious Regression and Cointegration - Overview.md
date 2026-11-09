@@ -108,10 +108,12 @@ The lecture has no numbered sections, theorems, tables or figures; the map is by
 
 ## Examples
 
-> [!example] Using this note set to vet a trending-series regression ^ex-overview-workflow
+> [!example] Using this note set to vet a trending-series regression
 > **Setup:** a weekly KPI and a media series both drift upward over about 100 weeks; a levels regression gives $t \approx 5$ and $R^2 = 0.6$ with DW $= 0.4$.
 >
 > **Route through the notes:** (1) classify each series as $I(0)$ or $I(1)$ ([[Granger 2003 - Econometrics, Integrated Series and the String-of-Pearls Picture#^def-integrated|integration]]); (2) the $R^2 > DW$ flag fires ([[Granger 2003 - Spurious Regression from Yule to Granger-Newbold#^thm-r2-dw|rule of thumb]]); (3) at $T = 100$ independent random walks give a median $|t|$ of about 4.6 ([[Granger 2003 - Spurious Regression Monte Carlo in Python#^ex-sim-exp1|Experiment 1]]), so $t \approx 5$ is no evidence by itself; (4) run the [[Granger 2003 - Cointegration and the Error-Correction Representation#^alg-engle-granger|Engle-Granger test]] and fit an ECM only if the residuals are stationary; (5) judge the final model by Granger's decision-maker criterion and by evaluating its past forecasts ([[Granger 2003 - Forecasting, Decision Science and Aggregation#^alg-forecast-stages|forecast stages]]).
+
+^ex-overview-workflow
 
 ## Connections
 

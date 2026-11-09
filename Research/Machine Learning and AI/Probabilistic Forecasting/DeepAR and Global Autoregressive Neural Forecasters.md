@@ -44,7 +44,7 @@ The paper lists four advantages (p. 2): (i) seasonality and covariate effects ar
 
 ## Main Content
 
-> [!definition] Model ^def-deepar-model
+> [!definition] Model
 > For series $i$ with values $z_{i,t}$, covariates $x_{i,t}$ known over the whole range, conditioning range $[1,t_0-1]$ and prediction range $[t_0,T]$, the model distribution factorises autoregressively:
 >
 > $$
@@ -55,7 +55,9 @@ The paper lists four advantages (p. 2): (i) seasonality and covariate effects ar
 >
 > where $h$ is a multi-layer LSTM (Eq. 1). It is *autoregressive* (consumes $z_{i,t-1}$) and *recurrent* (consumes $h_{i,t-1}$). Encoder (conditioning range) and decoder (prediction range) share architecture **and weights**; $h_{i,0}$ and $z_{i,0}$ are zero.
 
-> [!definition] Likelihood heads (Sec. 3.1) ^def-deepar-likelihoods
+^def-deepar-model
+
+> [!definition] Likelihood heads (Sec. 3.1)
 > **Gaussian**, $\theta=(\mu,\sigma)$:
 >
 > $$
@@ -70,7 +72,9 @@ The paper lists four advantages (p. 2): (i) seasonality and covariate effects ar
 >
 > both obtained through softplus layers, so that $\operatorname{Var}[z]=\mu+\mu^2\alpha$. Beta, Bernoulli or mixture likelihoods drop in the same way.
 
-> [!algorithm] Training (Sec. 3.2) ^alg-deepar-training
+^def-deepar-likelihoods
+
+> [!algorithm] Training (Sec. 3.2)
 > 1. For each series generate many training windows of fixed total length $T$ by sliding the start point; windows may begin *before* the series starts (zero-padded) so the model learns the behaviour of "new" series. Absolute time reaches the model only through covariates.
 > 2. Sample windows with probability proportional to the series scale $\nu_i$ (Sec. 3.3).
 > 3. Maximise
@@ -83,13 +87,19 @@ The paper lists four advantages (p. 2): (i) seasonality and covariate effects ar
 >
 > Teacher forcing creates a train/predict mismatch (true $z_{i,t-1}$ vs sampled $\tilde z_{i,t-1}$); the authors "have not observed adverse effects" and scheduled sampling did not help.
 
-> [!algorithm] Prediction by ancestral sampling (Sec. 3) ^alg-deepar-sampling
+^alg-deepar-training
+
+> [!algorithm] Prediction by ancestral sampling (Sec. 3)
 > 1. Run the network over the conditioning range to obtain $h_{i,t_0-1}$.
 > 2. For $t=t_0,\dots,T$: compute $\tilde h_{i,t}=h(\tilde h_{i,t-1},\tilde z_{i,t-1},x_{i,t},\Theta)$, draw $\tilde z_{i,t}\sim\ell(\cdot\mid\theta(\tilde h_{i,t},\Theta))$, feed it back.
 > 3. Repeat (200 traces in the experiments). The traces are samples from the **joint** predictive distribution, so quantiles of sums over any span $[L,L+S)$ are obtained by summing within each trace first.
 
-> [!definition] Scale handling (Sec. 3.3) ^def-deepar-scale
+^alg-deepar-sampling
+
+> [!definition] Scale handling (Sec. 3.3)
 > Amazon item velocities follow an approximate **power law** (Fig. 1), so no velocity-band grouping removes the skew, and input standardisation or batch-norm are ineffective. DeepAR (a) divides autoregressive inputs by $\nu_i=1+\frac{1}{t_0}\sum_{t=1}^{t_0}z_{i,t}$ and rescales the outputs — for the negative binomial $\mu=\nu_i\log(1+e^{o_\mu})$, $\alpha=\log(1+e^{o_\alpha})/\sqrt{\nu_i}$ (count data cannot be rescaled in preprocessing); and (b) samples training windows with probability $\propto\nu_i$, so rare high-velocity items are not under-fitted.
+
+^def-deepar-scale
 
 **Features (Sec. 3.4).** An "age" feature (distance to first observation), calendar features as increasing numeric values (hour-of-day, day-of-week, week-of-year, month-of-year by frequency), and one learned categorical embedding (product category for retail; item identity in small datasets). Covariates such as price or promotion are admissible "as long as the features' values are available also in the prediction range." All covariates are standardised.
 

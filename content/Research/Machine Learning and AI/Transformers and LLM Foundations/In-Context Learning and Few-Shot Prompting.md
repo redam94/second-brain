@@ -46,16 +46,18 @@ The proposed alternative is framed as **meta-learning** (Fig. 1.1). The *outer l
 
 ## Main Content
 
-> [!definition] The four settings ^def-settings
+> [!definition] The four settings
 > (Sec. 2, Fig. 2.1.)
 > - **Fine-tuning (FT).** Update the weights on a supervised task dataset. Strong benchmark performance; needs a new large dataset per task, with risk of poor out-of-distribution generalization. Not used for GPT-3 in this paper.
 > - **Few-shot (FS).** Give $K$ demonstrations (context and completion) plus one final context; "no weight updates are allowed." $K$ is typically 10 to 100, bounded by the context window $n_{\text{ctx}} = 2048$.
 > - **One-shot (1S).** $K = 1$ plus a natural-language task description; this "most closely matches the way in which some tasks are communicated to humans."
 > - **Zero-shot (0S).** Task description only. Most convenient and most robust to spurious correlations, but sometimes "unfairly hard" because the format of the task may be ambiguous without an example.
 
+^def-settings
+
 Footnote 1 of the paper is careful about terminology. "Zero-shot" refers to zero gradient updates, and the terms "remain agnostic on the question of whether the model learns new tasks from scratch at inference time or simply recognizes patterns seen during training."
 
-> [!algorithm] Few-shot evaluation protocol ^alg-protocol
+> [!algorithm] Few-shot evaluation protocol
 > (Sec. 2.4.)
 > 1. For each test example, draw $K$ demonstrations at random from the task's **training set** (from the development set for LAMBADA and StoryCloze, which have no training set), delimited by 1 or 2 newlines.
 > 2. Choose $K$ on the development set when one exists: "Larger values of $K$ are usually but not always better."
@@ -69,12 +71,16 @@ Footnote 1 of the paper is careful about terminology. "Zero-shot" refers to zero
 > 4. **Binary classification.** Give the classes meaningful names ("True"/"False") and treat the task as multiple choice.
 > 5. **Free-form completion.** Beam search with width 4 and length penalty $\alpha = 0.6$; score by F1, BLEU or exact match.
 
-> [!theorem] Empirical findings on in-context learning ^thm-icl-findings
+^alg-protocol
+
+> [!theorem] Empirical findings on in-context learning
 > These are empirical results, not theorems.
 > 1. **ICL improves with scale faster than zero-shot does.** Across 42 accuracy benchmarks, "while zero-shot performance improves steadily with model size, few-shot performance increases more rapidly" (Fig. 1.3). "The gap between zero-, one-, and few-shot performance often grows with model capacity, perhaps suggesting that larger models are more proficient meta-learners."
 > 2. **In-context learning curves.** On a symbol-removal task, accuracy rises with the number of examples $K$ and with a task description, and the curves are steeper for larger models (Fig. 1.2).
 > 3. **Demonstrations specify format as well as content.** On LAMBADA, a fill-in-the-blank framing lets the model "infer from examples that a completion of exactly one word is desired": zero-shot 76.2%, few-shot 86.4% (previous state of the art 68.0%). The same framing *hurts* the smallest model by almost 20%, and one-shot is worse than zero-shot, "perhaps ... because all models still require several examples to recognize the pattern."
 > 4. **Loss keeps following the power law.** Validation loss follows the [[Neural Scaling Laws|Kaplan et al.]] compute trend for two further orders of magnitude "with only small deviations" (Fig. 3.1), and these loss gains "lead to consistent performance gains across a broad spectrum of natural language tasks."
+
+^thm-icl-findings
 
 ### Selected results for GPT-3 175B
 

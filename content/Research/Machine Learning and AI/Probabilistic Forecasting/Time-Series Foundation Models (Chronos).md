@@ -48,7 +48,7 @@ The key conceptual point (Sec. 2-3): a language model predicts a categorical dis
 
 ## Main Content
 
-> [!definition] Tokenisation: scaling then quantisation (Sec. 3.1) ^def-chronos-tokenisation
+> [!definition] Tokenisation: scaling then quantisation (Sec. 3.1)
 > Given context $x_{1:C}$ and horizon $x_{C+1:C+H}$:
 >
 > **Mean scaling.** $\tilde x_i=x_i/s$ with $s=\frac1C\sum_{i=1}^{C}|x_i|$ (the affine map $(x_i-m)/s$ with $m=0$). It preserves zeros, which are "often semantically meaningful, such as zero sales."
@@ -62,7 +62,9 @@ The key conceptual point (Sec. 2-3): a language model predicts a categorical dis
 >
 > Chronos uses **uniform** binning (centres equally spaced on $[c_1,c_B]=[-15,15]$, $b_i=(c_i+c_{i+1})/2$) rather than quantile binning, because downstream data distributions differ from training. The vocabulary $\mathcal V_{\text{ts}}$ has 4096 entries: 4094 bins plus `PAD` (padding *and missing values*) and `EOS`.
 
-> [!definition] Objective (Sec. 3.2) ^def-chronos-objective
+^def-chronos-tokenisation
+
+> [!definition] Objective (Sec. 3.2)
 > With $z_{1:C+H}$ the token sequence, the model outputs a categorical $p_\theta(z_{C+h+1}\mid z_{1:C+h})$ over $\mathcal V_{\text{ts}}$ and minimises
 >
 > $$
@@ -71,13 +73,17 @@ The key conceptual point (Sec. 2-3): a language model predicts a categorical dis
 >
 > This loss is **not distance-aware**: it does not know bin $i$ is closer to $i+1$ than to $i+2$; the model must learn bin topology from data. In scoring-rule terms it is the [[Proper Scoring Rules (CRPS, Log Score, Pinball Loss)#^def-log-score|log score]] on the discretised outcome.
 
-> [!algorithm] Zero-shot forecasting (Sec. 3.3) ^alg-chronos-forecast
+^def-chronos-objective
+
+> [!algorithm] Zero-shot forecasting (Sec. 3.3)
 > 1. Take the last $C\le 512$ observations; compute $s$; scale and quantise.
 > 2. Autoregressively sample $H$ tokens from $p_\theta$; repeat for $K$ sample paths (20 in the paper's evaluation).
 > 3. Dequantise $d(\cdot)$ and multiply by $s$.
 > 4. Summarise: median for a point forecast; empirical quantiles for intervals.
 
-> [!algorithm] TSMixup (Sec. 4.1, Alg. 1) ^alg-tsmixup
+^alg-chronos-forecast
+
+> [!algorithm] TSMixup (Sec. 4.1, Alg. 1)
 > Draw $k\sim\mathcal U\{1,K\}$ ($K=3$) and length $l\sim\mathcal U\{128,2048\}$; sample $k$ series of length $l$ from random training datasets; mean-scale each; draw weights $[\lambda_1,\dots,\lambda_k]\sim\operatorname{Dir}(\alpha=1.5)$; return
 >
 > $$
@@ -86,8 +92,12 @@ The key conceptual point (Sec. 2-3): a language model predicts a categorical dis
 >
 > Original series appear with probability $1/3$ ($k=1$).
 
-> [!algorithm] KernelSynth (Sec. 4.2, Alg. 2) ^alg-kernelsynth
+^alg-tsmixup
+
+> [!algorithm] KernelSynth (Sec. 4.2, Alg. 2)
 > From a **kernel bank** $\mathcal K$ (constant, white noise, linear for trend, RBF for smooth local variation, rational quadratic, periodic kernels at typical seasonal periods) draw $j\sim\mathcal U\{1,5\}$ kernels with replacement; combine them left to right with random binary operators in $\{+,\times\}$ into $\tilde\kappa$; sample $x_{1:1024}\sim\mathcal{GP}(0,\tilde\kappa)$. This inverts the Automatic Statistician: instead of searching kernel compositions to *explain* a series, random compositions *generate* series.
+
+^alg-kernelsynth
 
 **Training setup (Sec. 5.2).** T5 Mini (20M), Small (46M), Base (200M), Large (710M) and GPT-2 (90M); 10M TSMixup augmentations plus 1M KernelSynth series sampled 9:1; context 512, prediction length 64; 200K steps of AdamW, learning rate $10^{-3}$ linearly annealed, batch 256; 8×A100. Training cost ranges from 7.7 h (\$252, Mini) to 63 h (\$2,066, Large) (Table 6).
 
@@ -113,12 +123,14 @@ Metrics are **WQL** on quantiles $0.1,\dots,0.9$ (probabilistic) and **MASE** (p
 - **TSMixup** leaves in-domain performance unchanged but improves zero-shot; **KernelSynth** helps both, best at ≈10% synthetic data, degrading beyond. A model trained on synthetic data *only* is still better than ForecastPFN and several baselines.
 - **Context** helps up to 1024; **vocabulary** size trades discretisation error against sparsely populated bins (MASE improves with more bins; WQL is non-monotone).
 
-> [!warning] Limitations (Sec. 5.7, 6.1) ^chronos-limitations
+> [!warning] Limitations (Sec. 5.7, 6.1)
 > - **Bounded range**: representable values lie in $[-15s,15s]$. Sparse spiky series (small $s$) overflow; strong or **exponential trends** are under-predicted (suggested fix: log-transform first). Short contexts lead to underestimated trend.
 > - **Precision**: token spacing is $30s/(B-1)$; a large-mean, small-variance signal collapses into a few tokens (suggested fix: standardise instead of mean-scale).
 > - **Univariate, no covariates**: prices, promotions, media or holidays cannot be injected. The authors suggest task-specific adaptors or stacking Chronos with a covariate model such as LightGBM.
 > - **Inference cost**: slower than task-specific deep models, comparable to some local statistical models.
 > - **Leakage**: with public benchmark corpora, a truly clean zero-shot split requires test data *after* the pretraining data ends (footnote 5).
+
+^chronos-limitations
 
 ## Examples
 

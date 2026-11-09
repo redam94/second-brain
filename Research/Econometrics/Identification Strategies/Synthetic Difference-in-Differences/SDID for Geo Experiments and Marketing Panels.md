@@ -53,27 +53,35 @@ SDID contributes two things the TBR/SC family lacks: **time weights** (which pre
 
 ## Main Content
 
-> [!definition] A geo test as an SDID panel ^def-sdid-geo-panel
+> [!definition] A geo test as an SDID panel
 > Rows $i$ = geos (DMAs, regions, stores); columns $t$ = weeks (or days); $Y_{it}$ = response (sales, conversions, site visits — often per-capita or logged); $W_{it}=1$ for treated geos during the campaign window. $N_{co}$ = untreated geos, $T_{pre}$ = pretest weeks, $T_{post}$ = test (+ cooldown) weeks. The estimand $\tau$ (eq. 4.2) is the average per-geo-week lift over the treated cells; total incremental response is $\tau\cdot N_{tr}T_{post}$ (after undoing any per-capita scaling), and
 > $$
 > \text{iROAS} = \frac{\hat\tau\cdot N_{tr}T_{post}}{\text{incremental spend}}
 > $$
 > Theorem 1's regime — $N_{co},T_{pre}$ large, treated block small — describes "a few test markets, 100+ control DMAs, a year of weekly history, 4–8 test weeks" well.
 
-> [!example] Lesson 1 — non-random market selection biases DiD (CPS study) ^ex-sdid-geo-selection
+^def-sdid-geo-panel
+
+> [!example] Lesson 1 — non-random market selection biases DiD (CPS study)
 > In the CPS design, $N=50$ states, $T=40$, and placebo treatment is assigned with probability depending on each state's fixed effect $\alpha_i$ and interactive loading $M_i$ (fit to real minimum-wage adoption; $R^2$ of 15–30%). True effect is zero. Result (Table 2): DiD RMSE 0.049 with bias 0.021; SDID RMSE 0.028 with bias 0.010. Figure 2's left panel shows the DiD error distribution "visibly off-center."
 >
 > **Marketing reading.** Pilot markets are usually picked for a reason — high penetration, a strong sales team, a retailer partnership, recent growth. Those reasons are precisely "latent unit factors correlated with assignment." A TWFE lift read in that setting inherits a first-order bias that no clustering of standard errors will fix.
 
-> [!example] Lesson 2 — randomisation does not make DiD efficient ^ex-sdid-geo-precision
+^ex-sdid-geo-selection
+
+> [!example] Lesson 2 — randomisation does not make DiD efficient
 > Under *completely random* assignment in the same CPS design all estimators are unbiased, yet RMSE is 0.024 for SDID versus 0.044 for DiD (Table 2, "Random" row); on Penn World Table data 0.037 vs 0.129 (Table 3). The authors: DiD's noise "can be substantially reduced by using an estimator like SDID that can exploit predictable variation by matching on pre-exposure trends."
 >
 > **Marketing reading.** In a properly randomised geo experiment the choice of *analysis* estimator is a power decision. Halving RMSE is equivalent to roughly quadrupling the number of treated geo-weeks — or to detecting a lift half the size at the same spend. This is the same motivation as GBR's pre-period covariate and TBR's regression on the control series, pursued more aggressively.
 
-> [!example] Lesson 3 — the single-test-market case (Prop 99) ^ex-sdid-geo-single
+^ex-sdid-geo-precision
+
+> [!example] Lesson 3 — the single-test-market case (Prop 99)
 > California vs 38 donor states, 19 pre-years, 12 post-years: DiD $-27.3\ (17.7)$, SC $-19.6\ (9.9)$, SDID $-15.6\ (8.4)$. SC's counterfactual is essentially five states (Utah 0.396, Montana 0.232, Nevada 0.204, Connecticut 0.104, New Hampshire 0.045); SDID spreads weight over about 30 states and its time weights use only 1986–88. In the simulations with $N_{tr}=1$, RMSE is 0.063 (SDID) vs 0.072 (SC) vs 0.126 (DiD).
 >
 > **Marketing reading.** A "matched-market test" with one treated DMA is an SC problem. SDID's more dispersed donor weights reduce dependence on any single control market (a control DMA hit by a competitor promotion, a weather event, a stock-out) — Figure 1 shows no state with high influence under SDID, while New Hampshire is highly influential under both DiD and SC. The time weights' focus on the most recent pre-period is sensible when the market has drifted (new distribution, pricing changes) and older history is a poor baseline.
+
+^ex-sdid-geo-single
 
 ### Practical checklist
 

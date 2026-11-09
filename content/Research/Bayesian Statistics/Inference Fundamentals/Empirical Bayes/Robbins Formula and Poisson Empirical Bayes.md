@@ -36,26 +36,32 @@ The setup: many independent units, unit $i$ has an unknown Poisson rate $\theta_
 
 ## Main Content
 
-> [!definition] Poisson marginal density ^poisson-marginal
+> [!definition] Poisson marginal density
 > With prior $g(\theta)$ and likelihood $f_\theta(x) = e^{-\theta}\theta^x/x!$, the **marginal probability** of observing count $x$ is
 > $$
 > f(x) = \int_0^\infty e^{-\theta}\frac{\theta^x}{x!}\,g(\theta)\,d\theta.
 > $$
 > Crucially, $f(x)$ is **directly estimable** from the data as the observed fraction of units having count $x$.
 
-> [!theorem] Robbins' formula (Poisson empirical Bayes) ^robbins-formula
+^poisson-marginal
+
+> [!theorem] Robbins' formula (Poisson empirical Bayes)
 > The Bayes posterior mean of $\theta$ given an observed count $x$ depends on the prior $g$ **only through the marginal $f$**:
 > $$
 > E[\theta \mid x] = (x+1)\,\frac{f(x+1)}{f(x)}.
 > $$
 > **Proof idea.** Using $\theta \cdot e^{-\theta}\theta^x/x! = (x+1)\, e^{-\theta}\theta^{x+1}/(x+1)!$, the numerator of the posterior mean $\int \theta\, f_\theta(x)\,g(\theta)\,d\theta$ equals $(x+1)\,f(x+1)$, while the denominator is $f(x)$. The prior $g$ cancels out entirely.
 
-> [!definition] Empirical Bayes estimator ^robbins-eb-estimator
+^robbins-formula
+
+> [!definition] Empirical Bayes estimator
 > Replace the unknown marginal $f$ by the empirical frequencies $\hat{f}(x) = (\#\{i : x_i = x\})/N$ across the $N$ parallel units:
 > $$
 > \hat{E}[\theta \mid x] = (x+1)\,\frac{\hat{f}(x+1)}{\hat{f}(x)} = (x+1)\,\frac{\#\{i : x_i = x+1\}}{\#\{i : x_i = x\}}.
 > $$
 > No parametric form for the prior is ever assumed — the "prior may exist only as a motivational device." This is the purest realization of the empirical Bayes principle (see [[Empirical Bayes - Overview]]).
+
+^robbins-eb-estimator
 
 The same marginal-density logic powers the parametric (Gaussian) branch: there the marginal $\boldsymbol{z} \sim \mathcal{N}(0,(A+1)I)$ lets one estimate $1/(A+1)$ via $(N-2)/S$, giving the [[James-Stein Estimator]]. Robbins' version is more general because it estimates the **whole** posterior-mean curve rather than a single hyperparameter.
 

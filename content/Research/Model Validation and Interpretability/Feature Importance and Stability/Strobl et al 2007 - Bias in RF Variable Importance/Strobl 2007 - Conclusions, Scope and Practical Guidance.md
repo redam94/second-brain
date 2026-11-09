@@ -48,17 +48,21 @@ The second feature is the one the paper puts in question. The popularity argumen
 
 ### Principle
 
-> [!definition] What a variable-importance measure must satisfy for selection (Conclusion) ^def-vi-requirement
+> [!definition] What a variable-importance measure must satisfy for selection (Conclusion)
 > "when a method is used for variable selection, rather than prediction only, it is particularly important that the value and interpretation of the variable importance measure actually depict the importance of the variable, and are not affected by any other characteristics." Number of categories and scale of measurement "are no direct indicators of the true importance of the variable", so they must not influence the score — "otherwise the results of a study could easily be distorted when an irrelevant variable with many categories is included in the study design."
+
+^def-vi-requirement
 
 ### Scope
 
-> [!theorem] Scope statement: when the bias does and does not arise (Conclusion) ^thm-scope
+> [!theorem] Scope statement: when the bias does and does not arise (Conclusion)
 > **Not affected:** "As long as, e.g., only continuous predictor variables, as in most gene expression studies, or only variables with the same number of categories are considered in the sample, variable selection with random forest variable importance measures is not affected by our findings."
 >
 > **Affected:** continuous variables combined with categorical ones (e.g. folding energy with neighbouring nucleotides), or categorical predictors whose number of categories *present in the sample* differs (e.g. amino-acid sequence data). There "variable selection with random forest variable importance measures is unreliable and may even be misleading."
 >
 > **A common real-world trigger:** "informations on clinical and environmental variables are often gathered by means of questionnaires, where the number of categories can vary between questions." Neither the designed number of categories nor the number actually observed in a sample indicates relevance.
+
+^thm-scope
 
 Two practical qualifications (vault additions):
 1. The number of categories *present in the sample* can differ even for same-type variables (rare levels absent in small samples), so "same number of categories" must be checked on the data, not the codebook.
@@ -66,13 +70,15 @@ Two practical qualifications (vault additions):
 
 ### Recommendations
 
-> [!algorithm] Strobl et al. (2007) checklist for reliable random-forest importance ^alg-checklist
+> [!algorithm] Strobl et al. (2007) checklist for reliable random-forest importance
 > 1. **Use unbiased trees.** Build the forest from conditional inference trees (`cforest`), not CART/Gini trees, whenever predictors differ in scale or cardinality ([[Strobl 2007 - Split-Selection Bias in CART Trees]]).
 > 2. **Sample without replacement.** Grow trees on subsamples (the paper uses $0.632n$) rather than bootstrap samples ([[Strobl 2007 - Bootstrap-Induced Association]]). Verbatim: "in order to be able to reliably interpret the variable importance measures of a random forest, the forest must be built from unbiased classification trees, and sampling must be conducted without replacement."
 > 3. **Do not use Gini importance** for selection with mixed predictors — it is the most strongly biased measure and failed to find the informative variable ([[Strobl 2007 - Null and Power Case Results]]).
 > 4. **Do not interpret the magnitude of `randomForest`'s scaled importance**, which depends on the number of trees ("we suggest not to interpret the magnitude of the scaled variable importance of the randomForest function").
 > 5. **Repeat with several random seeds** before interpreting permutation importances ([[Strobl 2007 - C-to-U RNA Editing Application]]).
 > 6. **Avoid `randomForest`** when predictors vary in scale or cardinality: "the randomForest function should not be used when the potential predictor variables vary in their scale of measurement or their number of categories."
+
+^alg-checklist
 
 ### Cost
 
@@ -108,7 +114,7 @@ The aim was "to explore the limits of the empirical measures of variable importa
 
 ## Examples
 
-> [!example] Example: applying the checklist to a driver-importance report ^ex-driver-report-audit
+> [!example] Example: applying the checklist to a driver-importance report
 > **Setup.** A team reports "top drivers of weekly sales" from a gradient-boosted model's default gain importance, using 104 weeks, continuous spend by channel, a holiday flag, a 5-level promotion factor and a 52-level week-of-year factor.
 >
 > **Audit.**
@@ -119,6 +125,8 @@ The aim was "to explore the limits of the empirical measures of variable importa
 > 5. Do not read the result causally; for budget decisions use experiments or a structural model.
 >
 > **Interpretation.** Choosing among model fits or features by total importance mass, rather than by held-out accuracy and placebo checks, rewards exactly the artefacts this paper identifies.
+
+^ex-driver-report-audit
 
 ## Connections
 

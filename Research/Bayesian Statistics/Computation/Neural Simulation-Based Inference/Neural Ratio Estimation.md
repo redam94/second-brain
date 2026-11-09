@@ -49,7 +49,7 @@ in which the evidence $p(x)$ cancels and the intractable likelihood enters only 
 
 ## Main Content
 
-> [!theorem] The likelihood ratio trick (Hermans et al., Sec. 2.2) ^thm-lr-trick
+> [!theorem] The likelihood ratio trick (Hermans et al., Sec. 2.2)
 > Train a classifier $d(x)$ to separate $x\sim p(x\mid\theta_0)$ (label 1) from $x\sim p(x\mid\theta_1)$ (label 0). The optimal decision function is
 >
 > $$
@@ -58,9 +58,11 @@ in which the evidence $p(x)$ cancels and the intractable likelihood enters only 
 >
 > Parameterizing the classifier by $\theta$ and fixing a reference hypothesis $\theta_{\text{ref}}$ gives a likelihood-to-reference ratio $r(x\mid\theta) = d^*(x,\theta)/(1-d^*(x,\theta))$, from which any pairwise ratio follows as $r(x\mid\theta_0,\theta_1) = r(x\mid\theta_0)/r(x\mid\theta_1)$.
 
+^thm-lr-trick
+
 **Why the reference hypothesis fails.** Hermans et al. (Sec. 3.1) report that "simply relying on the amortized likelihood-to-reference ratio estimator $\hat r$ does not yield satisfactory results, even when considering simple toy problems." If an observation has negligible density under both $p(x\mid\theta)$ and $p(x\mid\theta_{\text{ref}})$ there is no training data there, so "the ratio $\hat r(x\mid\theta)$ can take on an arbitrary value": many decision functions minimize the loss equally well (their Fig. 2). $\theta_{\text{ref}}$ becomes "a sensitive hyper-parameter which requires careful tuning."
 
-> [!definition] Likelihood-to-evidence ratio estimator (Hermans et al., Sec. 3.1) ^def-lte-ratio
+> [!definition] Likelihood-to-evidence ratio estimator (Hermans et al., Sec. 3.1)
 > Train $d_\phi(x,\theta)$ to distinguish dependent pairs $(x,\theta)\sim p(x,\theta)$ with label $y=1$ from independent pairs $(x,\theta)\sim p(x)p(\theta)$ with label $y=0$. The optimal classifier and the induced ratio are
 >
 > $$
@@ -69,7 +71,9 @@ in which the evidence $p(x)$ cancels and the intractable likelihood enters only 
 >
 > The ratio "will always be defined everywhere it needs to be evaluated, as the joint $p(x,\theta)$ is consistently supported by the product of marginals." The posterior density follows directly: $\hat p(\theta\mid x) = p(\theta)\,\hat r(x\mid\theta)$.
 
-> [!algorithm] Training $d_\phi(x,\theta)$ (Hermans et al., Algorithm 1) ^alg-nre
+^def-lte-ratio
+
+> [!algorithm] Training $d_\phi(x,\theta)$ (Hermans et al., Algorithm 1)
 > Repeat until converged, with batch size $M$ and criterion $\ell$ (binary cross-entropy):
 > 1. sample $\theta\leftarrow\{\theta_m\sim p(\theta)\}_{m=1}^M$;
 > 2. sample $\theta'\leftarrow\{\theta'_m\sim p(\theta)\}_{m=1}^M$;
@@ -78,6 +82,8 @@ in which the evidence $p(x)$ cancels and the intractable likelihood enters only 
 > 5. $\phi\leftarrow\text{OPTIMIZER}(\phi,\nabla_\phi\mathcal L)$.
 >
 > The "independent" class costs no extra simulations: it is the same $x$ re-paired with a fresh (or shuffled) $\theta'$.
+
+^alg-nre
 
 **Numerical stability.** In the saturating regime where the classifier separates the classes almost perfectly, $d/(1-d)$ is unstable. The fix is to take "$\log\hat r(x\mid\theta)$ from the neural network before applying the sigmoidal projection in the output layer, since $\log\hat r(x\mid\theta)$ is the logit of $d(x,\theta)$", which also prevents vanishing gradients when computing $\nabla_\theta\log\hat r$.
 
@@ -88,8 +94,10 @@ in which the evidence $p(x)$ cancels and the intractable likelihood enters only 
 
 The method is **amortized**: "once the likelihood ratio estimator is trained, it is possible to run MCMC for any $x\sim p(x)$" (Lueckmann et al. 2021, App. A.7). Since $p(x_o)$ is constant in $\theta$, $\hat r(x_o\mid\theta)$ is proportional to the likelihood, so a different prior $p'(\theta)$ can be applied at inference time as $p'(\theta)\,\hat r(x_o\mid\theta)$ without retraining; the practical limit is that the classifier is only trustworthy where the training prior put mass.
 
-> [!example] ROC diagnostic (Hermans et al., Sec. 3.2) ^ex-roc-diagnostic
+> [!example] ROC diagnostic (Hermans et al., Sec. 3.2)
 > An exact ratio satisfies the identity $p(x\mid\theta) = p(x)\,r(x\mid\theta)$. So draw $x\sim p(x)$, reweight by $\hat r(x\mid\theta)$, and train a *second* classifier to distinguish the reweighted marginal from fresh simulations at $\theta$. "A diagonal ROC (AUC = 0.5) curve indicates that a classifier is insensitive and $\hat r(x\mid\theta) = r(x\mid\theta)$"; with the caveat that the same result arises "if the classifier is not powerful enough to extract any predictive features." The paper reports AUC = 0.58 on the tractable SLCP-style problem, 0.5 on detector calibration and M/G/1, and 0.55 on Lotka-Volterra. This is a classifier two-sample test applied to the surrogate, cousin of the C2ST metric in [[Benchmarking and Diagnosing SBI (SBC, Coverage, C2ST)]].
+
+^ex-roc-diagnostic
 
 ### Multi-class generalization and SNRE
 

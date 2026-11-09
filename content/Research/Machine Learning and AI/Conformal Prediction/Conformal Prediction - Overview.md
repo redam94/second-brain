@@ -55,7 +55,7 @@ When test covariates come from a different distribution than the calibration cov
 
 ## Main Content
 
-> [!definition] Prediction set and marginal coverage ^def-marginal-coverage
+> [!definition] Prediction set and marginal coverage
 > Given calibration data $(X_1,Y_1),\dots,(X_n,Y_n)$ and a fresh test point $(X_{\text{test}},Y_{\text{test}})$ from the same distribution, a set-valued function $\mathcal C$ is **valid** at level $\alpha$ if
 >
 > $$
@@ -64,15 +64,21 @@ When test covariates come from a different distribution than the calibration cov
 >
 > The probability is over the randomness in *both* the calibration points and the test point (A&B Eq. 1). The upper bound requires continuous scores (no ties).
 
-> [!definition] Distribution-free ^def-distribution-free
+^def-marginal-coverage
+
+> [!definition] Distribution-free
 > In the sense of A&B Sec. 7, a method is distribution-free if it is (1) agnostic to the model, (2) agnostic to the data distribution, and (3) valid in finite samples. Permutation tests, quantile regression, rank tests and the bootstrap have a claim to the term only in weaker or asymptotic senses.
 
-> [!theorem] Conformal coverage guarantee (Vovk, Gammerman & Saunders; A&B Theorem 1) ^thm-conformal-coverage
+^def-distribution-free
+
+> [!theorem] Conformal coverage guarantee (Vovk, Gammerman & Saunders; A&B Theorem 1)
 > Suppose $(X_i,Y_i)_{i=1,\dots,n}$ and $(X_{\text{test}},Y_{\text{test}})$ are i.i.d. (exchangeable suffices). With $\hat q$ and $\mathcal C$ defined as in steps 3–4 above,
 >
 > $$
 > \mathbb P\big(Y_{\text{test}} \in \mathcal C(X_{\text{test}})\big) \ge 1-\alpha .
 > $$
+
+^thm-conformal-coverage
 
 ### The family of conformal methods
 
@@ -83,7 +89,7 @@ When test covariates come from a different distribution than the calibration cov
 | Cross-conformal, CV+, jackknife+ | $K$ or $n$ | all data, intermediate cost | A&B Sec. 6.2 (pointer only) |
 | Weighted conformal | 1 (split) | calibration scores reweighted by $d\tilde P_X/dP_X$ | [[Conformal Prediction Under Covariate Shift]] |
 
-> [!definition] Full conformal prediction ^def-full-conformal
+> [!definition] Full conformal prediction
 > For exchangeable $(X_1,Y_1),\dots,(X_{n+1},Y_{n+1})$ and each candidate $y\in\mathcal Y$: fit a **permutation-invariant** model $\hat f^{\,y}$ on the augmented data $(X_1,Y_1),\dots,(X_n,Y_n),(X_{n+1},y)$; compute $s_i^y = s(X_i,Y_i,\hat f^{\,y})$ and $s_{n+1}^y = s(X_{n+1},y,\hat f^{\,y})$; let $\hat q^{\,y}$ be the $\lceil(n+1)(1-\alpha)\rceil/n$ quantile of $s^y_1,\dots,s^y_n$. Then
 >
 > $$
@@ -91,6 +97,8 @@ When test covariates come from a different distribution than the calibration cov
 > $$
 >
 > satisfies $\mathbb P(Y_{n+1}\in\mathcal C(X_{n+1}))\ge 1-\alpha$ (A&B Theorem 5). Historically this came first; split conformal was later recognised as a special case in which the model is frozen.
+
+^def-full-conformal
 
 **Conformal prediction is a permutation test, inverted.** A&B (Sec. 6.1, p. 28) note that $s^y_{n+1}\le\hat q^{\,y}$ is exactly the acceptance region of a level-$\alpha$ permutation test of exchangeability between the hypothesised point $(X_{n+1},y)$ and the data. The prediction set is the set of $y$ values the test fails to reject. This is the same logical move as inverting a [[Fisher Randomization Test and the Sharp Null|Fisher randomization test]] to obtain a confidence set, and explains why exchangeability — the working assumption of [[Permutation Tests and Exact Inference]] — is the *only* assumption needed.
 
@@ -102,7 +110,7 @@ When test covariates come from a different distribution than the calibration cov
 - **Covariate shift** (Sec. 4.5) → [[Conformal Prediction Under Covariate Shift]].
 - **Distribution drift** (Sec. 4.6): down-weight old calibration scores; see the theorem below.
 
-> [!theorem] Coverage under distribution drift (Barber et al.; A&B Theorem 4) ^thm-drift
+> [!theorem] Coverage under distribution drift (Barber et al.; A&B Theorem 4)
 > Let the calibration points be drawn independently from possibly different distributions, fix weights $w_i\in[0,1]$, normalise $\tilde w_i=w_i/(w_1+\dots+w_n+1)$, take $\hat q=\inf\{q:\sum_i\tilde w_i\mathbf 1\{s_i\le q\}\ge1-\alpha\}$, and let $\epsilon_i=d_{\mathrm{TV}}\big((X_i,Y_i),(X_{\text{test}},Y_{\text{test}})\big)$. Then
 >
 > $$
@@ -110,6 +118,8 @@ When test covariates come from a different distribution than the calibration cov
 > $$
 >
 > Practical schedules: a rolling window $w_i=\mathbf 1\{i\ge n-K\}$ or exponential decay $w_i=0.99^{\,n-i+1}$. With $\epsilon_i=0$ there is no coverage loss for any weights. The price is a smaller effective sample size and hence more variable realised coverage. This is the honest route for time-series data, where exchangeability is false.
+
+^thm-drift
 
 > [!note] Relevance to marketing measurement and applied work
 > - **Black-box response models.** Any ML demand or conversion model (boosted trees, neural nets) can be given valid predictive intervals with a held-out calibration fold and ~10 lines of code, without trusting the model's own variance estimates.

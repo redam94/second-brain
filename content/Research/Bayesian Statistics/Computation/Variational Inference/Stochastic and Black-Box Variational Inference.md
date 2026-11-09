@@ -42,12 +42,14 @@ aliases:
 
 Both costs are removed by the same idea: replace exact gradients of the [[The ELBO and KL Divergence Minimization|ELBO]] with **noisy unbiased gradients** and use stochastic approximation.
 
-> [!theorem] Robbins-Monro conditions ^thm-robbins-monro
+> [!theorem] Robbins-Monro conditions
 > Stochastic gradient ascent $\lambda_{t+1}=\lambda_t+\rho_t\,\hat g_t$ with $\mathbb E[\hat g_t]=\nabla f(\lambda_t)$ converges to a (local) optimum when the step sizes satisfy
 > $$
 > \sum_t\rho_t=\infty,\qquad\sum_t\rho_t^2<\infty,
 > $$
 > e.g. $\rho_t=t^{-\kappa}$ with $\kappa\in(0.5,1]$ (Blei et al., Eq. 58; Ranganath et al., Sec. 2). In practice both papers use adaptive per-coordinate rates (AdaGrad, $\rho_t=\eta\,\mathrm{diag}(G_t)^{-1/2}$ with $G_t$ the running sum of gradient outer products), which shrink the step where gradient variance is large.
+
+^thm-robbins-monro
 
 ## Main Content
 
@@ -55,12 +57,14 @@ Both costs are removed by the same idea: replace exact gradients of the [[The EL
 
 Setting: the conditionally conjugate model of [[Mean-Field Family and Coordinate Ascent VI (CAVI)#^thm-expfam|the CAVI note]] with global variational parameter $\lambda$, local parameters $\varphi_i$, and conjugate-prior natural parameter $\alpha$.
 
-> [!theorem] Natural gradient of the ELBO ^thm-natural-gradient
+> [!theorem] Natural gradient of the ELBO
 > The Euclidean gradient is $\nabla_\lambda\mathrm{ELBO}=a''(\lambda)\big(\mathbb E_\varphi[\hat\alpha]-\lambda\big)$, where $\mathbb E_\varphi[\hat\alpha]$ is the CAVI global update. The **natural gradient** premultiplies by the inverse Fisher information $a''(\lambda)^{-1}$ (the inverse covariance of the sufficient statistic), giving
 > $$
 > g(\lambda)=\mathbb E_\varphi[\hat\alpha]-\lambda
 > $$
 > (Blei et al., Eqs. 51-52). Natural gradients "warp the parameter space in a sensible way, so that moving the same distance in different directions amounts to equal change in symmetrized KL divergence." A step of size $\varepsilon_t$ is a convex combination: $\lambda_t=(1-\varepsilon_t)\lambda_{t-1}+\varepsilon_t\,\mathbb E_\varphi[\hat\alpha]$ (Eq. 54).
+
+^thm-natural-gradient
 
 Since $\mathbb E_\varphi[\hat\alpha]=\alpha+[\sum_i\mathbb E_{\varphi_i^*}[t(z_i,x_i)],\,n]^\top$ is a sum over data, sample one index $t\sim\text{Unif}(1,\dots,n)$ and rescale:
 $$
@@ -68,7 +72,7 @@ $$
 $$
 (Eqs. 56-57).
 
-> [!algorithm] SVI for conditionally conjugate models (Blei et al., Algorithm 3) ^alg-svi
+> [!algorithm] SVI for conditionally conjugate models (Blei et al., Algorithm 3)
 > Initialize $\lambda_0$; choose step sizes $\varepsilon_t$ satisfying Robbins-Monro. Repeat:
 > 1. Sample a data point $t\sim\text{Unif}(1,\dots,n)$ (or a minibatch).
 > 2. Optimize its local parameters, $\varphi_t^*=\mathbb E_\lambda[\eta(\beta,x_t)]$.
@@ -77,30 +81,38 @@ $$
 >
 > "SVI requires no new derivation beyond what is needed for CAVI. Any implementation of CAVI can be immediately scaled up to a stochastic algorithm."
 
+^alg-svi
+
 The showcase is latent Dirichlet allocation on **1.8M New York Times articles** (Blei et al., Fig. 7), where CAVI-era topic models handled only thousands to tens of thousands of documents.
 
 ### Black-box VI: sampling the latent variables
 
-> [!theorem] Score-function gradient of the ELBO ^thm-score-gradient
+> [!theorem] Score-function gradient of the ELBO
 > For a variational family $q(z\mid\lambda)$,
 > $$
 > \nabla_\lambda\mathcal L=\mathbb E_{q}\Big[\nabla_\lambda\log q(z\mid\lambda)\,\big(\log p(x,z)-\log q(z\mid\lambda)\big)\Big],
 > $$
 > with Monte Carlo estimate $\frac1S\sum_{s=1}^S\nabla_\lambda\log q(z_s\mid\lambda)\big(\log p(x,z_s)-\log q(z_s\mid\lambda)\big)$, $z_s\sim q(\cdot\mid\lambda)$ (Ranganath et al., Eqs. 2-3). The derivation uses $\nabla_\lambda q=q\,\nabla_\lambda\log q$ (the log-derivative identity) and the fact that the **score** has mean zero, $\mathbb E_q[\nabla_\lambda\log q(z\mid\lambda)]=0$.
 
+^thm-score-gradient
+
 Why "black box": "the score function and sampling algorithms depend only on the variational distribution, not the underlying model." The practitioner supplies a function returning $\log p(x,z)$; nothing else about the model is used, not even its gradient. Discrete latent variables are therefore allowed, which the reparameterization approach cannot handle.
 
 The catch is variance. Kingma & Welling (2013, Sec. 2.2) call this "naive" estimator one that "exhibits very high variance... and is impractical for our purposes." Ranganath et al. agree that the raw estimator's variance "can be too large to be useful" and add two model-agnostic variance reductions.
 
-> [!definition] Rao-Blackwellization ^def-rao-blackwell
+> [!definition] Rao-Blackwellization
 > Replace a function by its conditional expectation: $\hat J(X)=\mathbb E[J(X,Y)\mid X]$ has the same mean and variance reduced by $\mathbb E[(J-\hat J)^2]$. For a mean-field family $q(z\mid\lambda)=\prod_i q(z_i\mid\lambda_i)$, integrating out everything outside the Markov blanket of $z_i$ gives
 > $$
 > \nabla_{\lambda_i}\mathcal L=\mathbb E_{q_{(i)}}\Big[\nabla_{\lambda_i}\log q(z_i\mid\lambda_i)\big(\log p_i(x,z_{(i)})-\log q(z_i\mid\lambda_i)\big)\Big],
 > $$
 > where $p_i$ collects only the factors of the joint that involve $z_i$ (Ranganath et al., Eq. 5). No model-specific integral is needed: one simply drops the irrelevant terms of $\log p$.
 
-> [!definition] Control variates ^def-control-variate
+^def-rao-blackwell
+
+> [!definition] Control variates
 > For any $h$ with known mean, $\hat f(z)=f(z)-a\,(h(z)-\mathbb E[h(z)])$ has $\mathbb E[\hat f]=\mathbb E[f]$ and $\operatorname{Var}(\hat f)=\operatorname{Var}(f)+a^2\operatorname{Var}(h)-2a\operatorname{Cov}(f,h)$, minimized at $a^*=\operatorname{Cov}(f,h)/\operatorname{Var}(h)$ (Ranganath et al., Eq. 7). BBVI uses the score itself, $h=\nabla_\lambda\log q(z\mid\lambda)$, whose mean is exactly zero for every family; $a^*$ is estimated from the same samples. Algorithm 2 of the paper combines both reductions with AdaGrad and data subsampling ("doubly stochastic").
+
+^def-control-variate
 
 ### Score-function versus reparameterization gradients
 
@@ -115,7 +127,7 @@ Kucukelbir et al. (2017, Sec. 3.2, Fig. 8) compare the two on a univariate model
 
 ## Examples
 
-> [!example] BBVI in a dozen lines ^ex-bbvi-code
+> [!example] BBVI in a dozen lines
 > Mean-field Gaussian $q$, score-function gradient with the score as control variate (per-coordinate $a^*$):
 >
 > ```python
@@ -136,6 +148,8 @@ Kucukelbir et al. (2017, Sec. 3.2, Fig. 8) compare the two on a univariate model
 > ```
 >
 > `log_joint` is never differentiated. Swap the Gaussian for a Gamma or a categorical and only `logq`, `score` and the sampler change, which is the sense in which the method is a reusable library.
+
+^ex-bbvi-code
 
 **Applied reading.** Ranganath et al. fit several Gamma and Gamma-Normal time-series factor models to longitudinal lab data from 976 chronic kidney disease patients (33K visits, 17 lab measurements), using 1,000 samples and batch size 25. Against Metropolis-Hastings-within-Gibbs on a 20-hour budget, BBVI reached better held-out predictive likelihood faster (their Fig. 1). The variance study (Sec. 5.4, Fig. 2) found that Rao-Blackwellization "reduces the variance by several orders of magnitude," control variates reduce it further, and the plain estimator of Algorithm 1 "failed to make noticeable progress" in the time allotted. The broader point of that study is *workflow*: models "generally outside the realm of variational methods" could be proposed, fitted and compared by predictive likelihood without new derivations. This is the same iterate-quickly argument the [[Approximate Algorithms and Approximate Models|Bayesian Workflow]] literature makes for approximate computation in early model building.
 

@@ -50,20 +50,28 @@ A useful organising device is to ask, for each method, **what is changed** and *
 
 ## Main Content
 
-> [!definition] Parametric vs non-parametric memory ^def-memory
+> [!definition] Parametric vs non-parametric memory
 > Lewis et al. call the generator's weights the **parametric memory** and the retrievable document index the **non-parametric memory**. Parametric knowledge is fast and fluent but cannot be inspected, attributed or updated without training; non-parametric knowledge is "human-readable" and "human-writable". RAG, ReAct's Wikipedia API and any tool call are all ways of moving a computation or a fact out of the parametric memory.
 
-> [!definition] Reasoning trace ^def-trace
+^def-memory
+
+> [!definition] Reasoning trace
 > Generated text that is not the answer and has no external effect, but conditions later generation: a **chain of thought** (Wei et al.) or a **thought** $\hat a_t \in \mathcal L$ (Yao et al.). Because decoding is autoregressive, the trace functions as working memory — Wei et al.'s ablation shows a trace placed *after* the answer gives no benefit.
 
-> [!definition] Alignment (operational) ^def-alignment
+^def-trace
+
+> [!definition] Alignment (operational)
 > Ouyang et al., following Askell et al.: a model is aligned if it is **helpful** (follows instructions and infers intent), **honest** (measured in practice as truthfulness) and **harmless**. RLHF aligns to "the stated preferences of a specific group of people (mostly our labelers and researchers), rather than any broader notion of 'human values'".
 
-> [!theorem] Four recurring empirical regularities ^thm-regularities
+^def-alignment
+
+> [!theorem] Four recurring empirical regularities
 > 1. **Standard prompting is a lower bound on capability** (Wei et al., Sec. 6). The same frozen model solves three times as many GSM8K problems when shown how to reason; the same GPT-3 is dispreferred to a 100$\times$ smaller fine-tuned sibling.
 > 2. **Internal reasoning hallucinates; external grounding constrains reasoning.** CoT is "more accurate in formulating reasoning structure but can easily suffer from hallucinated facts"; ReAct is grounded but less flexible (47% reasoning errors vs 16%). The best prompting results combine them, switching on a confidence signal (Yao et al., Sec. 3.2–3.3).
 > 3. **Scale gates prompting; fine-tuning removes the gate.** CoT is harmful below about 100B parameters; prompted ReAct is the *worst* method at 8B/62B — but after fine-tuning on 3,000 trajectories ReAct-8B beats every prompted 62B method. A small amount of targeted training data substitutes for orders of magnitude of scale, the same conclusion InstructGPT reaches for instruction following.
 > 4. **What is easy to measure is not what matters.** Benchmark gains and human preference can move in opposite directions (the alignment tax), and up to 29% of benchmark "failures" are label artefacts.
+
+^thm-regularities
 
 **A composite system.** A deployed assistant typically stacks all four: an RLHF-tuned model (so it follows the system prompt), prompted or trained to reason step by step, running inside an agent loop whose tools include a retriever over private documents, and monitored with human-preference and hallucination metrics. The papers supply the evidence for each layer separately; none evaluates the full stack.
 

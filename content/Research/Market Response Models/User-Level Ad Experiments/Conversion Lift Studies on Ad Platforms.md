@@ -52,7 +52,7 @@ This note documents how a platform lift study is wired, what population it measu
 
 ### Mechanics of Conversion Lift
 
-> [!algorithm] Facebook Conversion Lift (Gordon et al. 2019 §2.2; Gordon, Moakler & Zettelmeyer §2.2) ^alg-conversion-lift
+> [!algorithm] Facebook Conversion Lift (Gordon et al. 2019 §2.2; Gordon, Moakler & Zettelmeyer §2.2)
 > 1. **Audience.** The advertiser defines targeting rules (e.g. women 18-54). These "define the relevant set of users in the study."
 > 2. **Randomization.** Each targeted user is assigned to test or control "based on a proportion selected by the advertiser, in consultation with Facebook." Assignment is tied to the logged-in user, not a cookie.
 > 3. **Auction participation in both arms.** The focal ad enters auctions for test *and* control users; delivery-optimization bid weights are "applied equally to users in the test and control group."
@@ -61,14 +61,18 @@ This note documents how a platform lift study is wired, what population it measu
 > 6. **Outcomes.** Conversion pixels on the advertiser's pages (checkout, registration, key page view) fire for users in both arms; no click is required.
 > 7. **Estimation.** ITT $=$ test conversion rate $-$ control conversion rate; ATT $=$ ITT / share of test users exposed (2SLS with assignment as instrument); **lift** $=$ ATT over the exposed users' counterfactual conversion rate.
 
+^alg-conversion-lift
+
 **The counterfactual.** Control users see "the full distribution of ads they would have seen if the advertiser's campaign had not run" — the same baseline as [[Intent-to-Treat, PSA and Ghost Ad Designs#^def-ghost-ad|ghost ads]], not a single placebo. This "relies on the auction mechanism's stability to the removal of the focal ad": other advertisers' strategies are assumed fixed in the short run, reasonable because campaigns are unannounced, short, and small relative to the platform (2019 §2.2). It is the auction-level version of the no-interference assumption examined in [[Interference and Marketplace Experiments]].
 
 **Cost.** Free to the advertiser; the platform bears "the difference between what Facebook charges for the highest and second-highest ranked ads for auctions in the control group", small because the bidder pool is deep (2023 §2.2).
 
 **Why optimization does not break it.** As the delivery system learns who converts, some users become more likely to be shown the ad. "The same process occurs for users in the control group: the focal ad will receive more weight in the auction for these users and might win the auction more frequently — except that ... the focal ad is replaced 'at the last moment'" (2019 §2.3). Symmetry is preserved for the *assignment* contrast, which is all ITT needs.
 
-> [!definition] Conversion Lift vs predicted ghost ads ^def-cl-vs-pga
+> [!definition] Conversion Lift vs predicted ghost ads
 > "While Facebook implements the same counterfactual as Google's Ghost Ads system, the measurement sample used in the two approaches differs." Google restricts to test users who saw the ad and control users *predicted* to have been exposed through a simulated auction, yielding a LATE on predicted-exposed users. Facebook "measures advertising effects using an Intent-to-Treat (ITT) approach ... [and] can convert this effect into an ATT by scaling the ITT estimate by the share of exposed users." Facebook's design "effectively corresponds to the Ghost Bids approach in Johnson et al. (2017a), except it is being implemented directly by the ad platform" (2023 §2.2).
+
+^def-cl-vs-pga
 
 The practical consequence ([[From ITT to Treatment-on-the-Treated in Ad Experiments#^thm-precision|precision theorem]]): an ITT-over-opportunity-set design carries a $1/\pi$ variance penalty relative to a first-impression-tagged design. It is affordable on Meta because exposure rates within the opportunity set are high — a median of 77% in the 2023 sample — and populations are huge (median 7.4M users).
 
@@ -105,8 +109,10 @@ The median lift of 9% matches Johnson, Lewis & Nubbemeyer's companion meta-study
 
 ### What the number means — and does not
 
-> [!definition] Estimand of a platform lift study ^def-estimand
+> [!definition] Estimand of a platform lift study
 > "As with any experiment, this one yields an estimate of the campaign's average treatment effect, conditional on all market conditions — such as marketing activities the advertiser conducts in other channels (e.g., search, TV) and its competitors' activities. ... If advertising effects are nonlinear across media, the experiment measures something akin to the average net effect of the campaign given the distribution of non-Facebook advertising exposures across the sample" (2019 §2.2). The results "do not generalize to media being run on other channels and are not a measure of future ad effects at a different point in time" (2023 §2.2).
+
+^def-estimand
 
 Reading checklist:
 

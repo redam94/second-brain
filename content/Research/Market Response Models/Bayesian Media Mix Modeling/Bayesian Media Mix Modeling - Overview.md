@@ -96,10 +96,10 @@ Because these transformations make the model **nonlinear in the parameters**, or
 | Source location | Content | Note |
 |---|---|---|
 | Abstract, Sec. 1 (pp. 1-2) | MMM definition, 4Ps, causation-from-correlation caveat, carryover and shape motivation, paper roadmap | this note; scope limits in [[Jin 2017 MMM - Conclusions, Limitations and Extensions#^scope-limits]] |
-| Sec. 2 intro (p. 2) | data forms per Chan & Perry (daily/weekly, national/geo; weekly national most common), notation $x_{t,m}$, $z_{t,c}$, controls not selected | this note ^combined-model |
+| Sec. 2 intro (p. 2) | data forms per Chan & Perry (daily/weekly, national/geo; weekly national most common), notation $x_{t,m}$, $z_{t,c}$, controls not selected | [[#^combined-model\|this note]] |
 | Sec. 2.1, Eqs. 1-3, Fig. 1 (pp. 3-4) | adstock, geometric decay, delayed adstock, choosing $L$ (common vs per-medium, a properly chosen $L$ helps, large $L$ approximates infinity), $L=13$ | [[Carryover (Adstock) Functional Forms]] (choosing $L$ ^choosing-L; Fig. 1 weights table ^figure1; delayed does not nest geometric ^not-nested) |
 | Sec. 2.2, Eqs. 4-6, Fig. 2, footnotes 1-2 (pp. 3-5) | Hill, $\beta$Hill, reach transform, identifiability examples, reach/GRP definitions | [[Shape (Saturation) Effects]] |
-| Sec. 2.3, Eq. 7 (pp. 5-6) | adstock-then-shape order, additive model | this note ^combined-model; [[Jin 2017 MMM - Conclusions, Limitations and Extensions#^ordering]] |
+| Sec. 2.3, Eq. 7 (pp. 5-6) | adstock-then-shape order, additive model | [[#^combined-model\|this note]]; [[Jin 2017 MMM - Conclusions, Limitations and Extensions#^ordering]] |
 | Sec. 3, Eqs. 8-9, footnote 3 (pp. 6-7) | MLE vs posterior, Gibbs/slice vs Stan/HMC, prior rationale, support, Sec. 3 citation map | [[Bayesian Estimation and Priors for MMM]]; [[Jin 2017 MMM - STAN Sampler Code and MCMC Implementation]] |
 | Sec. 4.1, Eqs. 10-11, Fig. 3 (pp. 7-9) | ROAS, mROAS, change/pre/post periods, why restrict the window (^window-rationale), perturbation-spread caveat, MLE plug-in, posterior plug-in rule | [[ROAS, mROAS, and Optimal Media Mix]]; Fig. 3 in [[Jin 2017 MMM - Simulated ROAS, mROAS and Optimization Results#^attribution-windows]] |
 | Sec. 4.2, Eqs. 12-16 (pp. 9-10) | constrained optimal mix, flight pattern ($M$ free parameters; multiplicative alternative), two Bayesian approaches, extension to >2 channels | [[ROAS, mROAS, and Optimal Media Mix#^optimal-mix]]; algorithm in [[Jin 2017 MMM - Simulated ROAS, mROAS and Optimization Results#^alg-opt]] |

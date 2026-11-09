@@ -40,7 +40,7 @@ Flows attack the problem from the direction [[Automatic Differentiation Variatio
 
 ## Main Content
 
-> [!definition] Normalizing flow ^def-normalizing-flow
+> [!definition] Normalizing flow
 > For an invertible smooth $f:\mathbb R^d\to\mathbb R^d$ and $z'=f(z)$ with $z\sim q(z)$,
 > $$
 > q(z')=q(z)\left|\det\frac{\partial f^{-1}}{\partial z'}\right|=q(z)\left|\det\frac{\partial f}{\partial z}\right|^{-1}
@@ -51,15 +51,19 @@ Flows attack the problem from the direction [[Automatic Differentiation Variatio
 > $$
 > (Eqs. 6-7). "The path traversed by the random variables $z_k=f_k(z_{k-1})$... is called the flow and the path formed by the successive distributions $q_k$ is a normalizing flow." Each map acts as a local **expansion** (lowering density) or **contraction** (raising it).
 
-> [!theorem] Law of the unconscious statistician for flows ^thm-lotus
+^def-normalizing-flow
+
+> [!theorem] Law of the unconscious statistician for flows
 > $$
 > \mathbb E_{q_K}[h(z)]=\mathbb E_{q_0}\big[h(f_K\circ\dots\circ f_1(z_0))\big]
 > $$
 > (Eq. 8), with no Jacobian needed when $h$ does not depend on $q_K$. A flow is therefore *automatically reparameterized*: sample $z_0$ from the base (itself $\mu+\sigma\odot\epsilon$), push it through differentiable maps, and backpropagate. It is the [[Reparameterization Trick and Variational Autoencoders#^thm-reparameterization|reparameterization trick]] with a deeper $g_\phi$.
 
+^thm-lotus
+
 The obstacle is cost: a generic invertible network layer has an $O(D^3)$ Jacobian determinant. The paper's contribution is two map families whose determinant is $O(D)$.
 
-> [!definition] Planar and radial flows ^def-planar-radial
+> [!definition] Planar and radial flows
 > **Planar:** $f(z)=z+u\,h(w^\top z+b)$ with $\lambda=\{w,u\in\mathbb R^D,\,b\in\mathbb R\}$ and smooth elementwise $h$ (e.g. $\tanh$). With $\psi(z)=h'(w^\top z+b)\,w$, the matrix determinant lemma gives
 > $$
 > \left|\det\frac{\partial f}{\partial z}\right|=\big|1+u^\top\psi(z)\big|,\qquad\ln q_K(z_K)=\ln q_0(z)-\sum_{k=1}^K\ln\big|1+u_k^\top\psi_k(z_{k-1})\big|
@@ -72,12 +76,16 @@ The obstacle is cost: a generic invertible network layer has an $O(D^3)$ Jacobia
 > (Eq. 14): contraction or expansion around a reference point $z_0$.
 > Two successive transformations already turn a spherical Gaussian into a bimodal density (Fig. 1).
 
-> [!theorem] Flow-based free energy bound ^thm-flow-bound
+^def-planar-radial
+
+> [!theorem] Flow-based free energy bound
 > With $q_\phi(z\mid x):=q_K(z_K)$, the negative ELBO is
 > $$
 > \mathcal F(x)=\mathbb E_{q_0(z_0)}[\ln q_0(z_0)]-\mathbb E_{q_0(z_0)}[\log p(x,z_K)]-\mathbb E_{q_0(z_0)}\Big[\sum_{k=1}^K\ln\big|1+u_k^\top\psi_k(z_{k-1})\big|\Big]
 > $$
 > (Eq. 15). In the amortized setting an inference network maps $x$ to the base parameters $(\mu,\sigma)$ *and* to the flow parameters $\lambda$. Cost is $O(LN^2)+O(KD)$ for $L$ deterministic layers of width $N$, flow length $K$ and latent dimension $D$ (Sec. 4.3). Training (Algorithm 1) is [[Reparameterization Trick and Variational Autoencoders#^alg-aevb|AEVB]] with one extra line: $z_K\leftarrow f_K\circ\dots\circ f_1(z_0)$.
+
+^thm-flow-bound
 
 **Infinitesimal flows and the asymptotic claim (Sec. 3.2).** Letting the flow length go to infinity gives a density evolving under a PDE. For the **Langevin flow** $dz=-\nabla_z\mathcal L(z)\,dt+\sqrt2\,d\xi$ with $\mathcal L$ the negative unnormalized log posterior, the Fokker-Planck stationary solution is $q_\infty(z)\propto e^{-\mathcal L(z)}$, "i.e. the true posterior." **Hamiltonian flow** on an augmented space $(z,\omega)$ is the dynamics of [[Efficient MCMC|HMC]]. This yields a unifying view (Sec. 5): NICE (Dinh et al. 2014) is a *finite volume-preserving* flow with coupling layers $f(z)=(z_A,\,z_B+h_\lambda(z_A))$ and unit Jacobian; Hamiltonian variational inference (Salimans et al. 2015) is an *infinitesimal volume-preserving* flow that converges to the posterior but needs likelihood gradients at every step, at both training and test time.
 
@@ -90,7 +98,7 @@ The obstacle is cost: a generic invertible network layer has an $O(D^3)$ Jacobia
 
 ## Examples
 
-> [!example] A planar flow layer ^ex-planar-code
+> [!example] A planar flow layer
 > ```python
 > import torch, torch.nn as nn, torch.nn.functional as F
 >
@@ -118,6 +126,8 @@ The obstacle is cost: a generic invertible network layer has an $O(D^3)$ Jacobia
 >     return (logq - log_joint(z)).mean()           # Eq. 15
 > ```
 > Used on a fixed-dimensional Bayesian posterior (no encoder), this is "ADVI with a learned transform." Banana-shaped or funnel-shaped posteriors, the kind produced by multiplicative saturation-times-coefficient terms in a media mix model or by hierarchical scales, are the natural targets.
+
+^ex-planar-code
 
 **Practical caveats.** A more flexible $\mathcal Q$ makes the ELBO surface harder (the annealing above; the [[Variational Inference and Pathfinder|Bayesian Workflow book]]: "the richer the family of approximations, the more challenging the optimization"). Reverse KL remains mode-seeking, so a flow *can* represent several modes but is not guaranteed to find them. Planar flows are weak per layer in high dimension, which is why later architectures (coupling, autoregressive and spline flows; see [[Normalizing Flows as Conditional Density Estimators]]) dominate in practice. And a flow posterior still needs the same verification as any other: [[Diagnosing Variational Inference (PSIS k-hat and VSBC)|$\hat k$]] works unchanged because $q_K$ has a computable density.
 

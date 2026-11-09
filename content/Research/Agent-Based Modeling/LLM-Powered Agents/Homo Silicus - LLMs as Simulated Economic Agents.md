@@ -48,27 +48,39 @@ Why might it work? LLMs (i) are trained to respond as humans would and (ii) hold
 
 ## Main Content
 
-> [!definition] Homo silicus ^def-homo-silicus
+> [!definition] Homo silicus
 > An LLM treated as an implicit computational model of a human decision maker. The researcher **endows** it — by prepending persona text to the prompt — with preferences, beliefs, information or resources, places it in a scenario described in natural language, and samples its responses (typically at temperature 1) across many replicates and models. "Unlike the one *Homo economicus* that is rational, there are many *Homo silici*" (Sec. 4.6).
+
+^def-homo-silicus
 
 ### The five recapitulations (Sec. 2)
 
 The authors write "recapitulate" rather than "replicate": the aim is to see "how simulations behave in empirical scenarios where we already understand the analogous human behavior".
 
-> [!example] 2.1 Fairness and price gouging (Kahneman, Knetsch & Thaler 1986) ^ex-gouging
+> [!example] 2.1 Fairness and price gouging (Kahneman, Knetsch & Thaler 1986)
 > Vignette: a hardware store raises snow-shovel prices from \$15 to \$20 after a storm; ~82% of original human subjects called it unfair. GPT-4 agents endowed with political personas ("You are a socialist" … "You are a libertarian") rate increases to \$16, \$20, \$40, \$100; 100 draws per cell, 2,400 observations. Results: a **dose–response** in the size of the hike and a **monotone political gradient** (right-leaning agents "more sanguine about gouging"). Across dozens of prompt permutations (temperature, adversarial rewording, round-trip translation) the authors "were unable to invert the relationship".
 
-> [!example] 2.2 Social preferences (Charness & Rabin 2002) ^ex-dictator
+^ex-gouging
+
+> [!example] 2.2 Social preferences (Charness & Rabin 2002)
 > Unilateral dictator games with GPT-4o, Claude-Sonnet-3.5, Llama-3-70B and DeepSeek. **Persona-less models differ from humans and from each other** (Llama more selfish; others efficiency-minded) even though the original paper "is almost certainly included in the training data". Agents told "You only care about fairness between players" / "...the total payoff of both players" / "...your own payoff" follow the instruction almost perfectly. This obedience is then exploited to build a calibrated mixture — see [[Persona Mixture Calibration of LLM Agents]].
 
-> [!example] 2.3 Status quo bias (Samuelson & Zeckhauser 1988) ^ex-status-quo
+^ex-dictator
+
+> [!example] 2.3 Status quo bias (Samuelson & Zeckhauser 1988)
 > 24 agents (12 beliefs about car vs. highway safety × car-owner or not) choose among four budget splits under four status-quo framings, across five models. Choices are analysed with a **conditional logit** over the four alternatives (Table 1) with model-specific coefficients on the auto share, a status-quo indicator, and distance from the status quo. All models show "considerable status quo bias", GPT-4o least. The within-subject design is possible only because "AI agents have no memory unless we explicitly provide them with information about their previous decisions".
 
-> [!example] 2.4 Fourfold pattern without risk (Oprea 2024) ^ex-oprea
+^ex-status-quo
+
+> [!example] 2.4 Fourfold pattern without risk (Oprea 2024)
 > Certainty equivalents for box lotteries at $p \in \{0.05, \dots, 0.95\}$ in a risky **lottery** condition and a deterministic **mirror** condition (payoff equals the expected value), for personas "very bad at math" / "average at math" / "mathematical genius" / none, on five models; $4 \times 2 \times 2 \times 19 \times 5 \times 10 = 15{,}200$ observations. Lottery and mirror conditions "move in lockstep"; weaker models and low-math personas show the prospect-theory X-shape, capable models with high ability return expected values. The authors read this as "suggestive evidence in support of Oprea's complexity-driven interpretation" while conceding that "real human data are necessary".
 
-> [!example] 2.5 Minimum wage and labour–labour substitution (Horton 2025) ^ex-minwage
+^ex-oprea
+
+> [!example] 2.5 Minimum wage and labour–labour substitution (Horton 2025)
 > An AI employer must hire one of two dishwasher applicants (experienced asking \$12–\$17, inexperienced asking \$13), with or without a \$15 minimum that forces bids up; 24 scenarios × 43 models × 5 runs. Regressions with model fixed effects and model-clustered errors: the minimum wage raises the hired wage by about \$1.3/hour and hired experience by about one month — and by ~50% more / ~3 months when a \$12 reference wage is stated. Direction matches the field experiment.
+
+^ex-minwage
 
 ### Theory in executable form (Sec. 3.2)
 
@@ -82,11 +94,15 @@ with $r = \mathbf 1[\pi_B \ge \pi_A]$ and $s = \mathbf 1[\pi_B \le \pi_A]$, cann
 
 The recommended discipline is to make theory the *instruction*: "Economic theory maps naturally into such instructions: it declares state variables and constraints, specifies an objective, and implies decision rules." Explicit instructions "require far less from the LLM's underlying world model", are checkable in simple test cases, and reveal where extrapolation fails. Supporting evidence: theory-based personas improve out-of-sample fit while "atheoretical or scientifically meaningless traits" (hobbies, favourite TV shows) do not (Manning & Horton 2025, as cited).
 
-> [!theorem] The confusion-matrix view of AI simulation (Sec. 3.3, Fig. 7) ^thm-confusion
+> [!theorem] The confusion-matrix view of AI simulation (Sec. 3.3, Fig. 7)
 > Relative to true propositions about the social world, simulation results fall in four regions: **AI true positives**, **true negatives**, **false positives** (spurious results the simulation supports) and **false negatives** (true findings it fails to predict). "Without a correct causal model, no statistical procedure can, ex ante, guarantee performance in novel settings"; to draw "unequivocal inferences" one needs "some sort of ground truth or gold standard dataset". When a human sample exists, **prediction-powered inference** combines it with LLM predictions on unlabelled inputs to give estimators that "remain unbiased for the target parameter", with precision increasing in the predictor's accuracy.
 
-> [!definition] When simulations are most informative (Sec. 5) ^def-when-informative
+^thm-confusion
+
+> [!definition] When simulations are most informative (Sec. 5)
 > "AI simulations are most informative when mechanisms can be written as clear instructions, the domain is well represented in digital text, and researchers can benchmark on related tasks with human data when possible." The authors note that large demonstrations of out-of-sample predictive power are in text-rich domains: psychology lab experiments and **digital marketing experiments** (Hewitt et al. 2024, as cited).
+
+^def-when-informative
 
 ## Examples
 

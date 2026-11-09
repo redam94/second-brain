@@ -48,7 +48,7 @@ With $A=1$ this shrinks the MLE **halfway** toward $\mathbf{0}$. But if $A$ is u
 
 ## Main Content
 
-> [!definition] Estimating the shrinkage factor from the marginal ^marginal-estimate
+> [!definition] Estimating the shrinkage factor from the marginal
 > Integrating the prior out, the marginal distribution of $\boldsymbol{z}$ (eq. 1.20) is
 > $$
 > \boldsymbol{z} \sim \mathcal{N}_N(\mathbf{0}, (A+1)I).
@@ -59,33 +59,43 @@ With $A=1$ this shrinks the MLE **halfway** toward $\mathbf{0}$. But if $A$ is u
 > $$
 > The unknown Bayes quantity $1/(A+1)$ is thus estimable directly from the pooled data — see [[Robbins Formula and Poisson Empirical Bayes]] for the analogous nonparametric move.
 
-> [!theorem] James-Stein estimator (shrink toward 0) ^js-estimator
+^marginal-estimate
+
+> [!theorem] James-Stein estimator (shrink toward 0)
 > Substituting the unbiased estimate $(N-2)/S$ for $1/(A+1)$ in the Bayes rule gives the **James-Stein estimator** (Efron eq. 1.23):
 > $$
 > \hat{\boldsymbol{\mu}}^{(JS)} = \left(1 - \frac{N-2}{S}\right)\boldsymbol{z}, \qquad S = \|\boldsymbol{z}\|^2 = \sum_{i=1}^N z_i^2.
 > $$
 > The name "empirical Bayes" is apt: the Bayes estimator (1.16) is itself **empirically estimated from the data**. This is only possible because $N$ similar problems $z_i \sim \mathcal{N}(\mu_i,1)$ are under simultaneous consideration.
 
-> [!theorem] James-Stein estimator (shrink toward the grand mean) ^js-grand-mean
+^js-estimator
+
+> [!theorem] James-Stein estimator (shrink toward the grand mean)
 > We need not shrink toward $0$. Starting from the more general prior $\mu_i \overset{ind}{\sim} \mathcal{N}(M, A)$, $z_i \mid \mu_i \overset{ind}{\sim} \mathcal{N}(\mu_i, \sigma_0^2)$ (eq. 1.32), the Bayes rule $\hat\mu_i^{(Bayes)} = M + B(z_i - M)$ with $B = A/(A+\sigma_0^2)$ has empirical Bayes form (eq. 1.35):
 > $$
 > \hat\mu_i^{(JS)} = \bar z + \left(1 - \frac{(N-3)\sigma_0^2}{S}\right)(z_i - \bar z),
 > $$
 > with $\bar z = \sum z_i / N$ and $S = \sum (z_i - \bar z)^2$. Each $z_i$ is **pulled toward the grand mean $\bar z$** by a data-estimated factor; the risk-dominance theorem holds now for $N \geq 4$ (one degree of freedom is spent estimating $\bar z$).
 
-> [!definition] Overall Bayes risk and the modest EB penalty ^js-risk
+^js-grand-mean
+
+> [!definition] Overall Bayes risk and the modest EB penalty
 > The overall Bayes risk of $\hat{\boldsymbol{\mu}}^{(Bayes)}$ is $R_A^{(Bayes)} = N\,A/(A+1)$, versus $R_A^{(MLE)} = N$. The James-Stein estimator pays only a small penalty for not knowing $A$ (eqs. 1.24-1.25):
 > $$
 > R_A^{(JS)} = N\frac{A}{A+1} + \frac{2}{A+1}, \qquad \frac{R_A^{(JS)}}{R_A^{(Bayes)}} = 1 + \frac{2}{N\cdot A}.
 > $$
 > For $N = 10$, $A = 1$, $R_A^{(JS)}$ is only **20% greater** than the true Bayes risk — almost all the Bayesian savings are recovered without knowing the prior.
 
-> [!definition] Limited-translation compromise ^limited-translation
+^js-risk
+
+> [!definition] Limited-translation compromise
 > To protect genuinely unusual cases from being over-shrunk, Efron's **limited-translation estimator** $\hat\mu_i^{(D)}$ (eq. 1.37) follows the JS estimate but never deviates more than $D\sigma_0$ from $z_i$:
 > $$
 > \hat\mu_i^{(D)} = \begin{cases} \max\!\left(\hat\mu_i^{(JS)},\ \hat\mu_i^{(MLE)} - D\sigma_0\right) & \text{for } z_i > \bar z,\\[4pt] \min\!\left(\hat\mu_i^{(JS)},\ \hat\mu_i^{(MLE)} + D\sigma_0\right) & \text{for } z_i \leq \bar z. \end{cases}
 > $$
 > Taking $D=1$ in the baseball data costs only ~10% of the overall JS advantage while sharply limiting damage to outliers like Clemente.
+
+^limited-translation
 
 ## Examples
 

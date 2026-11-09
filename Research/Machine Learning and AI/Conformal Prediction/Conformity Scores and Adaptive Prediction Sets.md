@@ -42,10 +42,12 @@ Convention: larger score = worse agreement between $x$ and $y$ (a *nonconformity
 
 ### Classification
 
-> [!definition] Softmax-threshold score (A&B Sec. 1) ^def-softmax-score
+> [!definition] Softmax-threshold score (A&B Sec. 1)
 > $s(x,y)=1-\hat f(x)_y$, one minus the softmax output of the true class. The set is $\mathcal C(x)=\{y:\hat f(x)_y\ge1-\hat q\}$. This procedure yields the **smallest average set size** among conformal classifiers (Sadinle et al.), but "tends to undercover hard subgroups and overcover easy ones" (A&B p. 6): a single global probability threshold ignores how the remaining mass is spread.
 
-> [!definition] Adaptive prediction sets, APS (Romano, Sesia & Candès; Angelopoulos et al.; A&B Sec. 2.1) ^def-aps
+^def-softmax-score
+
+> [!definition] Adaptive prediction sets, APS (Romano, Sesia & Candès; Angelopoulos et al.; A&B Sec. 2.1)
 > Let $\pi(x)$ be the permutation of $\{1,\dots,K\}$ sorting $\hat f(x)$ from most to least likely. Define
 >
 > $$
@@ -58,11 +60,13 @@ Convention: larger score = worse agreement between $x$ and $y$ (a *nonconformity
 > \mathcal C(x)=\{\pi_1(x),\dots,\pi_k(x)\},\qquad k=\sup\Big\{k':\sum_{j=1}^{k'}\hat f(x)_{\pi_j(x)}<\hat q\Big\}+1 .
 > $$
 
+^def-aps
+
 APS is motivated by an **oracle**: if $\hat f(x)$ were the true conditional distribution of $Y\mid X=x$, greedily including top classes until their mass exceeds $1-\alpha$ would give exact *conditional* coverage. Since $\hat f$ is only heuristic, conformal calibration replaces $1-\alpha$ by $\hat q$. Unlike the softmax-threshold score, APS uses the softmax outputs of *all* classes, not just the true one. The trade-off is larger average sets in exchange for better approximate [[Marginal vs Conditional Coverage|conditional coverage]]; A&B point to Angelopoulos, Bates, Malik & Jordan (2021) for "significant practical improvements" on set size.
 
 ### Regression with a scalar uncertainty estimate
 
-> [!definition] Scaled-residual score (A&B Sec. 2.3) ^def-scaled-residual
+> [!definition] Scaled-residual score (A&B Sec. 2.3)
 > Given a point predictor $\hat f(x)$ and any uncertainty scalar $u(x)>0$ that is large when the model is unsure,
 >
 > $$
@@ -70,6 +74,8 @@ APS is motivated by an **oracle**: if $\hat f(x)$ were the true conditional dist
 > $$
 >
 > $\hat q$ is a **multiplicative correction factor** for the heuristic uncertainty: $\mathbb P[\lvert Y_{\text{test}}-\hat f(X_{\text{test}})\rvert\le u(X_{\text{test}})\hat q]\ge1-\alpha$.
+
+^def-scaled-residual
 
 Choices of $u(x)$ listed by A&B: a Gaussian-likelihood network's $\hat\sigma(x)$ (e.g. trained with `GaussianNLLLoss`); a second model $\hat r(x)$ fit to $\lvert y-\hat f(x)\rvert$; variance of $\hat f(x)$ across an **ensemble**; variance under **MC dropout**; variance under small input perturbations; variance over noise samples of a generative model; sensitivity to adversarial perturbation. All are treated identically. With $u\equiv1$ this reduces to the absolute-residual score and a constant-width band.
 
@@ -82,7 +88,7 @@ Both caveats point to [[Conformalized Quantile Regression]], whose score $\max\{
 
 ### Conformalizing Bayes
 
-> [!definition] Posterior-predictive density score (A&B Sec. 2.4) ^def-conformal-bayes
+> [!definition] Posterior-predictive density score (A&B Sec. 2.4)
 > For a Bayesian model with posterior predictive density $\hat f(y\mid x)$, set
 >
 > $$
@@ -90,6 +96,8 @@ Both caveats point to [[Conformalized Quantile Regression]], whose score $\max\{
 > $$
 >
 > The set is a **super-level set of the posterior predictive density** — the shape of a highest-density region, with the cut-off chosen by conformal calibration rather than by integrating the density to $1-\alpha$.
+
+^def-conformal-bayes
 
 A Bayesian who believed the model would use $S(x)=\{y:\hat f(y\mid x)>t\}$ with $\int_{S(x)}\hat f(y\mid x)\,dy=1-\alpha$. That relies on "a correctly specified model and asymptotically large $n$". The conformal version is valid without those assumptions, and under the technical conditions of Hoff (A&B ref. [11]) it has the smallest average size (Bayes risk) among conformal procedures with $1-\alpha$ coverage — an argument A&B liken to the Neyman–Pearson lemma. Multi-modal predictive densities naturally produce unions of intervals.
 

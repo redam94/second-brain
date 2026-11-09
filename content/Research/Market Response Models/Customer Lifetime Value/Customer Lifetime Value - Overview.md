@@ -45,7 +45,7 @@ Fader, Hardie & Lee (2005, Sec. 1) motivate a formal model by listing what is wr
 
 ## Main Content
 
-> [!definition] The CLV decomposition ^def-clv-decomposition
+> [!definition] The CLV decomposition
 > Assuming monetary value is independent of the transaction process, Fader, Hardie & Lee (2005, Eq. 1) factor lifetime value as
 >
 > $$
@@ -54,7 +54,9 @@ Fader, Hardie & Lee (2005, Sec. 1) motivate a formal model by listing what is wr
 >
 > where **DET** is the number of *discounted expected transactions*: the present value of the customer's expected future transaction stream. A transaction-flow model ([[Pareto-NBD Model]], [[BG-NBD Model]]) supplies DET; a spend model ([[Gamma-Gamma Model of Monetary Value]]) supplies expected revenue per transaction; margin is an accounting input (30% is assumed for CDNOW).
 
-> [!definition] Contractual CLV via the survivor function ^def-contractual-clv
+^def-clv-decomposition
+
+> [!definition] Contractual CLV via the survivor function
 > In a contractual setting churn is observed and the retention rate $r_t$ is well defined. With survivor function $S(t) = \prod_{i=1}^t r_i$, net cash flow $m$ per period and discount rate $d$ (Fader & Hardie 2007, Sec. 1),
 >
 > $$
@@ -64,13 +66,17 @@ Fader, Hardie & Lee (2005, Sec. 1) motivate a formal model by listing what is wr
 >
 > The practical obstacle is that $S(t)$ is observed only over a short window and must be *projected* — the job of the [[Shifted-Beta-Geometric Model for Contractual Retention]].
 
-> [!definition] The two-by-two classification of customer bases ^def-two-by-two
+^def-contractual-clv
+
+> [!definition] The two-by-two classification of customer bases
 > Fader & Hardie (2007, Sec. 4.1) classify business settings on two dimensions: **type of relationship** (contractual — departure is observed; noncontractual — departure is latent and must be inferred from a lengthening silence) and **opportunities for transactions** (continuous vs discrete time). Each cell has a canonical model:
 >
 > | | Noncontractual | Contractual |
 > |---|---|---|
 > | **Continuous time** | Pareto/NBD, BG/NBD | exponential-gamma (Lomax / Pareto II) |
 > | **Discrete time** | BG/BB | shifted-beta-geometric (sBG) |
+
+^def-two-by-two
 
 All of these models share one template, often nicknamed "buy till you die":
 
@@ -79,8 +85,10 @@ All of these models share one template, often nicknamed "buy till you die":
 3. **Marginalization** to obtain a likelihood for a randomly chosen customer that depends only on a handful of population parameters (four for Pareto/NBD and BG/NBD, three for gamma-gamma, two for sBG), estimated by maximum likelihood — often in a spreadsheet.
 4. **Conditional expectations** by Bayes' theorem: $P(\text{alive} \mid \text{history})$, $E[\text{future transactions} \mid \text{history}]$, $E[\text{mean spend} \mid \text{history}]$. Because population parameters are estimated from the data and then used as the prior for each customer, this is parametric [[Empirical Bayes - Overview|empirical Bayes]]; every conditional expectation is a shrinkage estimator ([[Empirical Bayes Interpretation of Shrinkage]]).
 
-> [!theorem] Validation standard for CLV models ^thm-validation-standard
+> [!theorem] Validation standard for CLV models
 > Fader, Hardie & Lee insist on three holdout diagnostics (2005 JMR Sec. 3 and Sec. 5; 2005 Marketing Science Sec. 7): (a) the fitted vs actual **frequency histogram** of repeat transactions in calibration; (b) the **tracking plot** of cumulative repeat transactions through calibration *and* holdout; (c) **conditional expectations** — mean holdout transactions grouped by calibration frequency. "Given the individual-level nature of CLV, it is not enough to use tracking plots or other purely aggregate summaries to judge the performance of the model." Performance in the **zero class** (customers with no repeat purchase) is singled out as critical because that group is typically the largest.
+
+^thm-validation-standard
 
 **Reading map.** Start with the [[Pareto-NBD Model]] (assumptions, likelihood, $P(\text{alive})$, conditional expectation), then the [[BG-NBD Model]] (same data, simpler maths), then the [[Gamma-Gamma Model of Monetary Value]]. [[RFM Sufficient Statistics and Iso-Value Curves]] assembles them into CLV and explains the "increasing frequency paradox". The [[Shifted-Beta-Geometric Model for Contractual Retention]] covers subscription businesses. [[Bayesian and Hierarchical Extensions of CLV Models]] covers covariates, full-Bayes estimation, the PyMC-Marketing / `lifetimes` implementations and the machine-learning alternative.
 

@@ -45,7 +45,7 @@ There are two strategies (Larsen Sec. 6): **design** the interference away, by a
 
 ## Main Content
 
-> [!definition] SUTVA, interference, and the global treatment effect ^def-gte
+> [!definition] SUTVA, interference, and the global treatment effect
 > With assignment vector $\mathbf W = (W_1,\dots,W_n)$, unit $i$'s potential outcome is in general $Y_i(\mathbf W)$. **SUTVA** asserts $Y_i(\mathbf W) = Y_i(W_i)$. **Interference** (spillover, leakage) is any violation. The decision-relevant estimand is the **global treatment effect**
 >
 > $$
@@ -53,6 +53,8 @@ There are two strategies (Larsen Sec. 6): **design** the interference away, by a
 > $$
 >
 > the difference in the (steady-state) outcome rate between a fully treated and a fully controlled market. Under SUTVA this equals the usual ATE; under interference a 50/50 experiment observes *neither* world.
+
+^def-gte
 
 ### The market model (Johari et al. Secs. 3-4)
 
@@ -78,12 +80,14 @@ $$
 
 which reduces to CR as $a_L \to 1$ and to LR as $a_C \to 1$. A multiple-randomization design of this kind was proposed independently by Bajari et al. (2019).
 
-> [!theorem] Bias depends on market balance (Theorems 3-4, Proposition 4) ^thm-market-balance
+> [!theorem] Bias depends on market balance (Theorems 3-4, Proposition 4)
 > In the mean-field steady state:
 >
 > 1. **Demand-constrained**, $\lambda/\tau \to 0$: $\widehat{\mathrm{GTE}}^{CR}/\lambda - \mathrm{GTE}/\lambda \to 0$ for all $a_C \in (0,1)$, whereas generically $\lim \widehat{\mathrm{GTE}}^{LR}/\lambda - \mathrm{GTE}/\lambda \ne 0$.
 > 2. **Supply-constrained**, $\lambda/\tau \to \infty$: $\mathrm{GTE}/\tau \to 0$ and $\widehat{\mathrm{GTE}}^{LR}/\tau - \mathrm{GTE}/\tau \to 0$, whereas generically the CR estimator stays biased.
 > 3. For a **positive** treatment ($\tilde\alpha\tilde v > \alpha v$ everywhere) the biases in (1) and (2) are strictly **positive**: the naive estimators *overestimate* the GTE.
+
+^thm-market-balance
 
 **Intuition.** When inventory replenishes between arrivals, customers never compete, so CR has no interference; but under LR each customer compares treated with control listings side by side, and the treated listings *cannibalise* bookings from control listings, so the contrast is inflated. When supply is scarce, every available listing gets booked anyway, so listings do not compete and LR is clean; but under CR treated customers book inventory that control customers would otherwise have found. In each biased case, "individuals in the treatment group face less competition than they would in the global treatment setting, whereas the individuals in the control group face more competition than in the global control setting". In the supply-constrained limit the GTE itself vanishes (inventory, not demand, binds), so the LR *relative* bias need not vanish even though its absolute bias does.
 
