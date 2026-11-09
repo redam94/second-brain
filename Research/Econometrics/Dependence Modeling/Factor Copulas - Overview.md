@@ -18,6 +18,7 @@ used_by:
   - "[[Multi-Factor and Block Dependence Structures]]"
   - "[[SMM Estimation of Factor Copulas]]"
   - "[[Factor Copula Application - S&P 100 and Systemic Risk]]"
+  - "[[Vine Copulas - Overview]]"
 aliases:
   - Oh Patton 2012
   - Modelling Dependence in High Dimensions with Factor Copulas
