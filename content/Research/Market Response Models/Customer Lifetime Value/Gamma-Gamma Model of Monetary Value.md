@@ -35,7 +35,7 @@ aliases:
 
 ## Overview
 
-Why model spend at all, when the customer's average $\bar z$ is observed? Because $\bar z$ is computed from very few transactions. Fader, Hardie & Lee's example: the mean spend across all customers is \$35, but customer A has made one repeat purchase of \$100. "Should we assume that $E(M) = m_1 = \$100$ or should we 'debias' our estimate down towards the population mean?" (2005, Sec. 2.1). The observed mean converges to the true mean as $x\to\infty$, "but this could be a slow process."
+Why model spend at all, when the customer's average $\bar z$ is observed? Because $\bar z$ is computed from very few transactions. Fader, Hardie & Lee's example: the mean spend across all customers is \$35, but customer A has made one repeat purchase of \$100. "Should we assume that $E(M) = m_1 =$ \$100 or should we 'debias' our estimate down towards the population mean?" (2005, Sec. 2.1). The observed mean converges to the true mean as $x\to\infty$, "but this could be a slow process."
 
 Schmittlein & Peterson (1994) used a normal-normal model. The note lists two problems: the normal "is not bounded from below by 0" and "results in a symmetric spend distribution", while real spend data are right-skewed (CDNOW: mean \$35, median \$27, mode \$15, skewness 4, kurtosis 17). A lognormal would fit but "there is no closed-form expression for the convolution of lognormals", so the distribution of $\bar z$ is intractable. The gamma has "similar properties to those of the lognormal (albeit with a slightly thinner tail)" and is closed under convolution and scaling.
 
@@ -91,7 +91,7 @@ A subtle consequence (2005, Sec. 5): even with true independence, regression to 
 ### Empirical results (CDNOW)
 
 - MLEs: $\hat p=6.25$, $\hat q=3.74$, $\hat\gamma=15.44$ (constraints: all $\ge 0.0001$; Excel Solver).
-- Implied population mean $p\gamma/(q-1)=\$35.2$; the paper reports the theoretical mean differs from the observed mean of customer averages (\$35.08) "by a mere nine cents".
+- Implied population mean $p\gamma/(q-1)=$\$35.2; the paper reports the theoretical mean differs from the observed mean of customer averages (\$35.08) "by a mere nine cents".
 - Model fit is judged by mixing $f(\bar z\mid x)$ over the empirical distribution of $x$ and comparing with a kernel density of observed $\bar z$. "The fit is reasonable. However, the theoretical mode of \$19 is greater than the observed mode of \$15, which corresponds to the typical price of a CD" — the model knows nothing about price points.
 - Stability: parameters estimated on all 78 weeks give a 39-week log-likelihood of $-4661$ versus the 39-week optimum of $-4659$, "strong support for our assumption that the sub-model governing monetary value is stable over time" (2005, Sec. 4).
 - Do **not** compare the inverse-gamma $f(\zeta)$ with the histogram of $\bar z$: the former is "effectively the distribution where the means have been computed across $x\to\infty$ transactions" (note 025, Sec. 3).
@@ -100,7 +100,7 @@ A subtle consequence (2005, Sec. 5): even with true independence, regression to 
 
 **How fast does shrinkage fade?** With CDNOW parameters the prior weight is $w(x)=2.74/(6.25x+2.74)$.
 
-| $x$ | $w(x)$ | $E(Z\mid\bar z=\$100)$ | $E(Z\mid\bar z=\$20)$ |
+| $x$ | $w(x)$ | $E(Z\mid\bar z=$\$100$)$ | $E(Z\mid\bar z=$\$20$)$ |
 |---|---|---|---|
 | 0 | 1.000 | 35.22 | 35.22 |
 | 1 | 0.305 | 80.26 | 24.64 |

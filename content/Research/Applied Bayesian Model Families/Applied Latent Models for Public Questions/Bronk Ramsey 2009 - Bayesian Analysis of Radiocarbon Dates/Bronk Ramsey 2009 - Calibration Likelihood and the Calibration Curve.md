@@ -33,7 +33,11 @@ The paper's framework: **events** are points on a continuous (floating-point) ti
 ## Main Content
 
 > [!definition] Bayes' theorem for chronologies (Eq. 1)
-> $$p(\mathbf t\mid\mathbf y)\propto p(\mathbf y\mid\mathbf t)\,p(\mathbf t),$$ where $\mathbf t$ are event dates, $\mathbf y$ measurements, $p(\mathbf t)$ the prior (relative information) and $p(\mathbf y\mid\mathbf t)$ the likelihood (calendar information). The *null prior* $p_0(\mathbf t)\propto\text{const}$ (Eq. 2) is "quite inappropriate" when there are many dates.
+> $$
+> p(\mathbf t\mid\mathbf y)\propto p(\mathbf y\mid\mathbf t)\,p(\mathbf t),
+> $$
+>
+> where $\mathbf t$ are event dates, $\mathbf y$ measurements, $p(\mathbf t)$ the prior (relative information) and $p(\mathbf y\mid\mathbf t)$ the likelihood (calendar information). The *null prior* $p_0(\mathbf t)\propto\text{const}$ (Eq. 2) is "quite inappropriate" when there are many dates.
 ^def-bayes-chron
 
 > [!definition] Non-14C likelihoods (Eqs. 3-4)

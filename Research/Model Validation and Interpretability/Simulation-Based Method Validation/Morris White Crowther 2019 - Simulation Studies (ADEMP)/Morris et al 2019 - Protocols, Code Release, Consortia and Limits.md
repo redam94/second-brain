@@ -83,7 +83,7 @@ Acknowledged for discussion and input: Alessandro Gasparini, Tra Pham, Brennan K
 ## Examples
 
 > [!example] Seed-shopping and DGM-shopping, made concrete (illustrative, not from the paper)
-> A team compares two estimators over a 3 × 3 DGM grid with $n_{	ext{sim}}=500$. Run under 20 different starting seeds, the estimated coverage of the new method in one DGM ranges over roughly ±2 MCSE ($\sqrt{0.95	imes0.05/500}pprox1.0$ pp), so picking the best seed can turn 93.5% into 95.5%. Dropping the three DGMs where the new method looks worst then makes it "dominate". A protocol that fixes the seed, the full grid and the headline measures before coding (§8.1, p.26) removes both choices, and publishing the code lets a reader rerun the omitted DGMs.
+> A team compares two estimators over a 3 × 3 DGM grid with $n_{\text{sim}}=500$. Run under 20 different starting seeds, the estimated coverage of the new method in one DGM ranges over roughly ±2 MCSE ($\sqrt{0.95\times0.05/500}\approx1.0$ pp), so picking the best seed can turn 93.5% into 95.5%. Dropping the three DGMs where the new method looks worst then makes it "dominate". A protocol that fixes the seed, the full grid and the headline measures before coding (§8.1, p.26) removes both choices, and publishing the code lets a reader rerun the omitted DGMs.
 ^ex-seed-shopping
 
 > [!example] A late-phase consortium for marketing models (illustrative, not from the paper)

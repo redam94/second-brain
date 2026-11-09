@@ -54,7 +54,11 @@ Not testable. Explore how conclusions change under assumed violations, using sen
 - Inspect IO weight distribution for extreme values.
 
 > [!definition] Positivity / weight diagnostic
-> $$\Big(\sum_{i=1}^n(1-S_i)\Big)^{-1}\sum_{i=1}^n S_i\,\frac{1-p(X_i;\hat\beta)}{p(X_i;\hat\beta)}\;\approx\;1.$$ In words: the summed inverse odds of participation over trial participants should reproduce the number of non-participants (the paper phrases it as the sample proportion of non-participants divided by the average inverse odds). Rationale: $E\big[S\cdot\Pr[S=0\mid X]/\Pr[S=1\mid X]\big]=\Pr[S=0]$. Values far from 1 suggest positivity violations or misspecification of the participation model. ^def-positivity-diagnostic
+> $$
+> \Big(\sum_{i=1}^n(1-S_i)\Big)^{-1}\sum_{i=1}^n S_i\,\frac{1-p(X_i;\hat\beta)}{p(X_i;\hat\beta)}\;\approx\;1.
+> $$
+>
+> In words: the summed inverse odds of participation over trial participants should reproduce the number of non-participants (the paper phrases it as the sample proportion of non-participants divided by the average inverse odds). Rationale: $E\big[S\cdot\Pr[S=0\mid X]/\Pr[S=1\mid X]\big]=\Pr[S=0]$. Values far from 1 suggest positivity violations or misspecification of the participation model. ^def-positivity-diagnostic
 
 Trimming or truncating extreme weights may help but "shift the causal estimand", often undesirable; better to fix modelling choices and the target sample.
 

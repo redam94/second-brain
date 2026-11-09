@@ -62,8 +62,12 @@ with $H_0 \in \mathbb{R}^{d\times D}$ extracting the solution and $H \in \mathbb
 > $$
 > p(\vec{x}(t)) = \mathcal{N}\big(\vec{x}(t);\, A(t) m_0,\, A(t) P_0 A(t)^\top + Q(t)\big),
 > $$
-> $$ A(t) := \exp(tF), \qquad Q(t) := \int_0^t e^{F\tau} L L^\top e^{F^\top\tau}\, d\tau. $$ ^def-ssm-cont
+> $$
+> A(t) := \exp(tF), \qquad Q(t) := \int_0^t e^{F\tau} L L^\top e^{F^\top\tau}\, d\tau.
+> $$
 > Here $A(t)$ is the **transition (discretisation) matrix** and $Q(t)$ the **process-noise covariance**.
+
+^def-ssm-cont
 
 ### Conditioning on the ODE: the observation process
 
@@ -84,8 +88,12 @@ On a grid $0 = t_0 < \dots < t_N = T$ with steps $h_n := t_n - t_{n-1}$, writing
 > $$
 > p(x_{n+1}\mid x_n) = \mathcal{N}\big(x_{n+1};\, A(h_{n+1}) x_n,\, Q(h_{n+1})\big),
 > $$
-> $$ p(z_n\mid x_n) = \delta\big(z_n - g(x_n)\big), \qquad \text{with data } z_n = 0. $$ ^def-ssm-disc
+> $$
+> p(z_n\mid x_n) = \delta\big(z_n - g(x_n)\big), \qquad \text{with data } z_n = 0.
+> $$
 > This resembles the linear-Gaussian SSM of [[Bayesian Filtering and Smoothing]], except the measurement map $H_n x_n = g(x_n)$ is now nonlinear (and $R_n = 0$). It is complete and rigorous, so **any** Bayesian filter/smoother applies. Note the data $z_n=0$ carry information *through the likelihood*: conditioning on $g(x_n)=0$ imposes $x'(t_n) \stackrel{!}{=} f(x(t_n))$ — the analogue of Eq. (37.7).
+
+^def-ssm-disc
 
 ### Choice of prior: the integrated Wiener process (IWP)
 

@@ -117,7 +117,7 @@ Recency discriminates most and monetary value least, "consistent with the widely
 | $(7,\ 70)$ | 14.07 | frequent and recent |
 | $(14,\ 77)$ | 29.19 | back corner of the surface |
 
-With $m_x=\$50$ and $x=7$, $E(M\mid m_x,x)=\$49.1$, so the $(7,70)$ customer is worth $0.30\times49.1\times14.07\approx\$207$, while the $(7,35)$ customer is worth about \$13.
+With $m_x=$\$50 and $x=7$, $E(M\mid m_x,x)=$\$49.1, so the $(7,70)$ customer is worth $0.30\times49.1\times14.07\approx$\$207, while the $(7,35)$ customer is worth about \$13.
 
 ```python
 import numpy as np

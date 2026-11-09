@@ -72,7 +72,7 @@ Economic context: US firms spend about \$500 per person per year on advertising;
 > $$
 > The ratio $\Delta\bar y/\hat\sigma$ is Cohen's $d$. With covariates the $R^2$ becomes the partial $R^2$ of the treatment.
 
-**Calibration** (a representative experiment, slightly larger than the median): cost \$0.14 per exposed user ("roughly 20-80 display ads or 7-10 TV commercials"), margin 50%, mean sales \$7, standard deviation \$75 over two weeks. A 25% ROI target implies $\beta=\$0.35$ — a 5% sales lift, large in percentage terms. Yet $d=0.35/75=0.0047$, "less than $\tfrac1{40}$ the 'small' effect size of 0.2 outlined in Cohen (1977)", and $R^2=5.4\times10^{-6}$.
+**Calibration** (a representative experiment, slightly larger than the median): cost \$0.14 per exposed user ("roughly 20-80 display ads or 7-10 TV commercials"), margin 50%, mean sales \$7, standard deviation \$75 over two weeks. A 25% ROI target implies $\beta=$\$0.35 — a 5% sales lift, large in percentage terms. Yet $d=0.35/75=0.0047$, "less than $\tfrac1{40}$ the 'small' effect size of 0.2 outlined in Cohen (1977)", and $R^2=5.4\times10^{-6}$.
 
 - 2,000,000 users split evenly: $E[t]=3.30$ against the null of zero effect (ROI $=-100\%$), about 95% power for a one-sided 5% test.
 - 200,000 users: $E[t]=1.04$ — "hopelessly underpowered"; a truly profitable campaign fails to reject zero effect 74% of the time.
@@ -92,7 +92,7 @@ Table II: using lagged sales, demographics and online behaviour as controls and 
 | Median 95% CI half-width, % of sales | 4.4% | 10.7% |
 | Median s.e. of ROI | **26%** | **115%** |
 
-The s.e. of ROI is $m\cdot\text{s.e.}(\hat\beta)/c$: e.g. experiment 1.1 has s.e.$(\hat\beta)=\$0.193$, $m=0.5$, $c=\$0.16$, giving 61%. Figure II shows ROI uncertainty falling with per-capita spend: "the larger the dose, the better the power". The most intense campaign (\$0.39 per person, over 80 display ads, 3.5M-person control group, pre-period covariates) still had a 95% interval 60 points wide. Below \$0.05 per person the RCTs "offered uninformative estimates".
+The s.e. of ROI is $m\cdot\text{s.e.}(\hat\beta)/c$: e.g. experiment 1.1 has s.e.$(\hat\beta)=$\$0.193, $m=0.5$, $c=$\$0.16, giving 61%. Figure II shows ROI uncertainty falling with per-capita spend: "the larger the dose, the better the power". The most intense campaign (\$0.39 per person, over 80 display ads, 3.5M-person control group, pre-period covariates) still had a 95% interval 60 points wide. Below \$0.05 per person the RCTs "offered uninformative estimates".
 
 > [!theorem] Experiment multipliers (Table III) ^thm-multipliers
 > Define adequate power as $E[t]=3$ (91% power, one-sided 5%). An experiment with expected statistic $E[t]$ must be scaled by $(3/E[t])^2$ in independent users. Medians over the 25 experiments:

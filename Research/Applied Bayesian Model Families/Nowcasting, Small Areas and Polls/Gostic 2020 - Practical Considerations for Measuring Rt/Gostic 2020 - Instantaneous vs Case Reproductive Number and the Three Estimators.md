@@ -32,7 +32,11 @@ Synthetic data came from a deterministic or stochastic SEIR model with $R_0=2.0$
 
 > [!definition] Instantaneous reproductive number
 > The expected number of new infections at $t$ divided by the total infectiousness of the infected population at $t$. For a renewal process with incidence $I_t$ and intrinsic generation interval $w_s$ (probability that $s$ days separate infection of an index case and its secondary case):
-> $$\mathbb E[I_t]=R_t\,\Lambda_t,\qquad \Lambda_t=\sum_{s\ge1} w_s I_{t-s}.$$ ^def-rinst
+> $$
+> \mathbb E[I_t]=R_t\,\Lambda_t,\qquad \Lambda_t=\sum_{s\ge1} w_s I_{t-s}.
+> $$
+
+^def-rinst
 
 > [!definition] Case (cohort) reproductive number
 > The expected number of secondary infections that an individual infected (or symptomatic) at $t$ will *eventually* cause. It is a convolution of the instantaneous number with the generation interval: $R^{\text{case}}_t=\sum_s w_s R^{\text{inst}}_{t+s}$, so it depends on the future. ^def-rcase

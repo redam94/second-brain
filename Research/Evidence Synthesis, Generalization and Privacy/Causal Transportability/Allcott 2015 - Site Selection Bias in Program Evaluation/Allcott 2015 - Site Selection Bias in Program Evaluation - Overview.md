@@ -37,10 +37,10 @@ aliases:
 4. Decomposition of the selection into within-utility (targeting heavy users) and between-utility (population preferences, ownership) mechanisms.
 
 **Key results.**
-- Predicted nationwide first-year effect from the 10-site microdata: about **1.7%** of electricity use (21 TWh, $\$2.3$ billion).
-- Test on 101 later sites: predictions are too high by **0.64** (linear) and **0.40** (reweighted) percentage points; about 0.5 pp (6.3 TWh, $\$690$ million), $p<0.0001$.
+- Predicted nationwide first-year effect from the 10-site microdata: about **1.7%** of electricity use (21 TWh, \$2.3 billion).
+- Test on 101 later sites: predictions are too high by **0.64** (linear) and **0.40** (reweighted) percentage points; about 0.5 pp (6.3 TWh, \$690 million), $p<0.0001$.
 - Efficacy declines by **0.173** pp per year of site start date (Table 6); site-level observables explain just under one third.
-- Even all 111 sites are positively selected on observables vs. the national population: sample-mean extrapolation overpredicts by $\$350$ million (percent ATE) to $\$710$ million (kWh/day).
+- Even all 111 sites are positively selected on observables vs. the national population: sample-mean extrapolation overpredicts by \$350 million (percent ATE) to \$710 million (kWh/day).
 
 ## Main Content
 

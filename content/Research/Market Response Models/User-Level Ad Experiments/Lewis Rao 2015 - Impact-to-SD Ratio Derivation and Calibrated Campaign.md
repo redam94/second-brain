@@ -83,9 +83,9 @@ Individual sales volatility has three components: (i) purchase probability, (ii)
 ### The representative campaign (pp. 1950-1951)
 
 > [!example] Example: Calibrated campaign (slightly larger than the median experiment)
-> - Cost per exposed user $c=\$0.14$ (roughly 20-80 display ads or 7-10 TV commercials); gross margin $m=50\%$.
+> - Cost per exposed user $c=$\$0.14 (roughly 20-80 display ads or 7-10 TV commercials); gross margin $m=50\%$.
 > - Mean sales over the period \$7, s.d. \$75.
-> - ROI target 25% ⇒ $\beta=(1.25)(0.14)/0.5=\$0.35$ per person, a **5% sales lift** over the two weeks, large in percentage terms.
+> - ROI target 25% ⇒ $\beta=(1.25)(0.14)/0.5=$\$0.35 per person, a **5% sales lift** over the two weeks, large in percentage terms.
 > - $d=0.35/75=0.0047$, "less than 1/40 the 'small' effect size of 0.2" in Cohen (1977) (fn. 10).
 > - $$(8)\quad R^2=\frac14\left(\frac{\$0.35}{\$75}\right)^2=0.0000054.$$
 > This is less than 1/10,000 of the $R^2\approx6\%$ in the low-powered aggregate store-level examples of Sawyer & Ball (1981) (fn. 11).

@@ -35,9 +35,9 @@ Mapping (our reading): study sample = markets in the geo test (with randomized t
 
 ### Data-generating process
 
-- Study: $n_s=3000$ units, $X\sim N(1,1)$, $A\sim	ext{Bernoulli}(0.5)$ randomized.
+- Study: $n_s=3000$ units, $X\sim N(1,1)$, $A\sim\text{Bernoulli}(0.5)$ randomized.
 - Target: $n_t=6000$ units, $X\sim N(-0.5,1)$, outcomes unobserved.
-- Outcome: $Y=1+0.5X+A(1+0.8X)+arepsilon$, $arepsilon\sim N(0,1)$. Effect $	au(x)=1+0.8x$.
+- Outcome: $Y=1+0.5X+A(1+0.8X)+\varepsilon$, $\varepsilon\sim N(0,1)$. Effect $\tau(x)=1+0.8x$.
 - Truth: SATE $=1+0.8(1)=1.8$; **PATE (target) $=1+0.8(-0.5)=0.6$**.
 
 ### Code
@@ -125,7 +125,7 @@ OR with wrong model : 0.0 | A-IPPW with wrong OR, right weights: 0.66
 
 Interpretation:
 1. **Heterogeneity plus a selection imbalance create the bias.** Both ingredients are needed ([[Degtiar 2023 - Populations, Estimands and External Validity Bias]]). Setting the interaction coefficient to zero removes the bias for any selection imbalance.
-2. **No free lunch on overlap.** The target mean is 1.5 sd below the study mean: on this design about 45% of target units fall outside the study's 5th-95th percentile selection-score range ([[Degtiar 2023 - Assessing Dissimilarity Between Study and Target]]). The linear outcome model extrapolates well only because the truth is linear; with a nonlinear $	au(x)$ the OR estimate would be biased while IPPW's weights would blow up, which is the empirical-positivity warning of Sec. 5.1.
+2. **No free lunch on overlap.** The target mean is 1.5 sd below the study mean: on this design about 45% of target units fall outside the study's 5th-95th percentile selection-score range ([[Degtiar 2023 - Assessing Dissimilarity Between Study and Target]]). The linear outcome model extrapolates well only because the truth is linear; with a nonlinear $\tau(x)$ the OR estimate would be biased while IPPW's weights would blow up, which is the empirical-positivity warning of Sec. 5.1.
 3. **Variance ranking is design dependent.** OR is best when correct; A-IPPW trades a little variance for protection against model misspecification; IPPW needs no outcome model but pays in variance.
 
 ### Practical checklist derived from the run

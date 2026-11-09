@@ -59,7 +59,7 @@ aliases:
 **Motivation.** Designed for situations where adding noise directly to the computed quantity "can completely destroy its value", for example setting a price in an auction.
 
 > [!example] Example 3.5 - Pumpkins (p. 37)
-> **Setup.** An abundant supply of pumpkins and four bidders A, F, I, K; A, F, I each bid $\$1.00$ and K bids $\$3.01$. "What is the optimal price?" The text states: at $\$3.01$ revenue is $\$3.01$; at $\$3.00$ and at $\$1.00$ revenue is $\$3.00$; at $\$3.02$ the revenue is zero. **Lesson.** Adding a small amount of positive noise to the optimal price can drive revenue to zero, so noise must be added to the *choice* via a utility function, not to the optimal value. *Arithmetic caveat (own check):* revenue at a price $p$ is $p\times\#\{\text{bids}\ge p\}$; at $\$1.00$ all four bidders buy, giving $\$4.00$, which is the true revenue maximiser; the text's "$\$3.00$ at $\$1.00$" appears to be a slip. The fragility at $\$3.02$ (zero revenue) is unaffected.
+> **Setup.** An abundant supply of pumpkins and four bidders A, F, I, K; A, F, I each bid \$1.00 and K bids \$3.01. "What is the optimal price?" The text states: at \$3.01 revenue is \$3.01; at \$3.00 and at \$1.00 revenue is \$3.00; at \$3.02 the revenue is zero. **Lesson.** Adding a small amount of positive noise to the optimal price can drive revenue to zero, so noise must be added to the *choice* via a utility function, not to the optimal value. *Arithmetic caveat (own check):* revenue at a price $p$ is $p\times\#\{\text{bids}\ge p\}$; at \$1.00 all four bidders buy, giving \$4.00, which is the true revenue maximiser; the text's "\$3.00 at \$1.00" appears to be a slip. The fragility at \$3.02 (zero revenue) is unaffected.
 ^ex-pumpkins
 
 > [!definition] Definition 3.4 - Exponential mechanism (pp. 37-38)
@@ -105,9 +105,9 @@ aliases:
 
 ## Examples
 
-**Pumpkin pricing by the exponential mechanism (own simulation).** Price grid $\{0.00,0.01,\dots,5.00\}$ (data independent), utility = revenue, $\Delta u=5$ (the maximum price: adding one bidder can add at most the price). The true optimum is revenue $\$4.00$ at price $\$1.00$.
+**Pumpkin pricing by the exponential mechanism (own simulation).** Price grid $\{0.00,0.01,\dots,5.00\}$ (data independent), utility = revenue, $\Delta u=5$ (the maximum price: adding one bidder can add at most the price). The true optimum is revenue \$4.00 at price \$1.00.
 
-| $\varepsilon$ | mean revenue of sampled price | $P(\text{price}>\$3.01)$ (revenue zero) |
+| $\varepsilon$ | mean revenue of sampled price | $P(\text{price}>$\$3.01$)$ (revenue zero) |
 |---|---|---|
 | 0.5 | 1.27 | 0.37 |
 | 2 | 1.49 | 0.30 |

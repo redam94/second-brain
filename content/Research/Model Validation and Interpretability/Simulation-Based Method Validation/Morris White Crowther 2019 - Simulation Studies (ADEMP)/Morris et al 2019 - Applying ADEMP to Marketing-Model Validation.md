@@ -92,7 +92,7 @@ aliases:
 ## Examples
 
 > [!example] Reading a Protocol 1 result with its Monte Carlo SE (illustrative)
-> With $n_{	ext{sim}}=400$ in one DGM ($T=52$, correlation 0.9, confounder on), suppose the 90% intervals for the zero-effect channel cover 0 in 340 of 400 repetitions: coverage 85.0%, MCSE $=\sqrt{0.85	imes0.15/400}=1.8$ pp. Nominal 90% is about 2.8 MCSE away, so the shortfall is unlikely to be Monte Carlo noise. The next checks are bias-eliminated coverage and posterior SD vs empirical SE, to separate bias from intervals that are too narrow ([[Morris et al 2019 - Performance Measures and Monte Carlo Standard Errors#^def-bias-eliminated-coverage|§5.2]]).
+> With $n_{\text{sim}}=400$ in one DGM ($T=52$, correlation 0.9, confounder on), suppose the 90% intervals for the zero-effect channel cover 0 in 340 of 400 repetitions: coverage 85.0%, MCSE $=\sqrt{0.85\times0.15/400}=1.8$ pp. Nominal 90% is about 2.8 MCSE away, so the shortfall is unlikely to be Monte Carlo noise. The next checks are bias-eliminated coverage and posterior SD vs empirical SE, to separate bias from intervals that are too narrow ([[Morris et al 2019 - Performance Measures and Monte Carlo Standard Errors#^def-bias-eliminated-coverage|§5.2]]).
 ^ex-protocol1-readout
 
 ## Connections

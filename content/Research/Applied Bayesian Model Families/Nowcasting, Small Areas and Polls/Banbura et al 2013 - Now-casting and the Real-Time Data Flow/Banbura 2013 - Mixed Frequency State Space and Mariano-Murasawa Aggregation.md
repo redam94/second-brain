@@ -37,7 +37,11 @@ Notation: $y_t^k$ is the counterpart of $y_t$ defined over an observation interv
 
 > [!definition] Mariano-Murasawa approximation (log-differenced flows)
 > If $y_t=\Delta\log z_t$ and $y_t^k=\log z_t^k-\log z_{t-k}^k$, the approximation $\log\sum_{i=0}^{k-1}z_{t-i}\approx\sum_{i=0}^{k-1}\log z_{t-i}$ (suitably centred) gives the same linear weights $\omega_i^{k,f}$, so the observational constraint stays linear. For quarterly GDP growth in a monthly model:
-> $$y_t^3=y_t+2y_{t-1}+3y_{t-2}+2y_{t-3}+y_{t-4},\quad t=3,6,\dots$$ ^def-mm
+> $$
+> y_t^3=y_t+2y_{t-1}+3y_{t-2}+2y_{t-3}+y_{t-4},\quad t=3,6,\dots
+> $$
+
+^def-mm
 
 > [!definition] General state-space form
 > $Y_t^{K_Y}=\mu+\zeta(\theta)X_t+G_t,\ G_t\sim N(0,\Sigma_G)$; $X_t=\phi(\theta)X_{t-1}+H_t,\ H_t\sim N(0,\Sigma_H)$. Given $\theta$, the Kalman filter and smoother yield $X_{t|\Omega_v}$ and $P_{t|\Omega_v}$ and handle missing observations directly; nowcasts and forecasts of any variable come from the same pass. $\zeta P\zeta^\top$ is the "filter uncertainty" (signal extraction part of the uncertainty). Mixed frequency and ragged edges are missing-data problems. ^def-ss

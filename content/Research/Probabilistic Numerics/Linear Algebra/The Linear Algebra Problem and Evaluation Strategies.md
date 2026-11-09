@@ -102,7 +102,7 @@ After each step the solver holds a posterior $p(A\mid D_i,Z_i)$, used both to fo
 
 The crucial policy question: **how should the solver choose the next action $d_{i+1}$?**
 
-**Direct methods** choose $d_{i+1}$ a priori, independent of observations (e.g. random directions, or unit vectors $d_i=e_i$ giving sparse cheap projections $z_i=A_{:i}$ in linear time). Nyström approximation, inducing-point and spectral methods, and Gaussian/LU/Cholesky decompositions all fall here. Cost of $M$ steps is $\mathcal{O}(NM^2)$. Downside: they cannot adapt to the matrix's structure, so a badly calibrated prior gives a bad estimate.
+**Direct methods** choose $d_{i+1}$ a priori, independent of observations (e.g. random directions, or unit vectors $d_i=e_i$ giving sparse cheap projections $z_i=A_{\,:i}$ in linear time). Nyström approximation, inducing-point and spectral methods, and Gaussian/LU/Cholesky decompositions all fall here. Cost of $M$ steps is $\mathcal{O}(NM^2)$. Downside: they cannot adapt to the matrix's structure, so a badly calibrated prior gives a bad estimate.
 
 **Iterative methods** (the focus) use collected directions to converge to the *exact* solution; each step costs $\mathcal{O}(N^2)$ (one generic matrix-vector product), so $M$ steps cost $\mathcal{O}(N^2 M)$.
 

@@ -58,9 +58,13 @@ Model this unknown error by a random variable and add it after every step:
 > Suppose Assumptions 40.1, 40.2 hold, fix $x_0$; assume the flow map is globally Lipschitz with $\text{Lip}(\Phi_t)\le 1 + Ct$ (Assumption 40.4, holds if $f$ globally Lipschitz), $\Psi_t(Y)\in L^2$. With $h := \max_n h_n$ there is $C>0$ (independent of $h$) such that
 > $$ \mathbb{E}\Big(\max_{n=0,\dots,N}\|\hat X_n - x(t_n)\|^2\Big) \le C\, h^{2\min(p,q)}, $$
 > and hence the expected global error is of rate $\min(p,q)$:
-> $$ \mathbb{E}\Big(\max_{n=0,\dots,N}\|\hat X_n - x(t_n)\|\Big) \le C\, h^{\min(p,q)}. $$ ^thm-conv
+> $$
+> \mathbb{E}\Big(\max_{n=0,\dots,N}\|\hat X_n - x(t_n)\|\Big) \le C\, h^{\min(p,q)}.
+> $$
 >
 > *Proof sketch.* See Lie, Stuart & Sullivan (2019, Thm. 3.4) — a simplified version of their general result; also holds for non-Gaussian perturbations (their Assumption 3.3). $\square$
+
+^thm-conv
 
 **Interpretation.** Perturbing local error $\mathcal{O}(h^{q+1})$ by slightly larger noise $\mathcal{O}(h^{q+1/2})$ (i.e. $p\ge q$) does *not* reduce the convergence rate: the random output is "no worse" in expectation than the deterministic estimate. If the added noise is too large ($p<q$), the rate degrades to $\mathcal{O}(h^p)$. Hence Conrad et al. recommend $p := q$: the maximum admissible stochasticity that preserves the underlying integrator's accuracy.
 

@@ -92,11 +92,11 @@ All of these models share one template, often nicknamed "buy till you die":
 
 ## Examples
 
-**One customer, end to end (CDNOW parameters).** A customer acquired 38.86 weeks ago has made $x = 2$ repeat purchases, the last at week $t_x = 30.43$, averaging $\bar z = \$100$.
+**One customer, end to end (CDNOW parameters).** A customer acquired 38.86 weeks ago has made $x = 2$ repeat purchases, the last at week $t_x = 30.43$, averaging $\bar z =$ \$100.
 
 1. *Transactions.* With the Pareto/NBD estimates $(r,\alpha,s,\beta) = (0.553, 10.578, 0.606, 11.669)$, $P(\text{alive}) \approx 0.87$ and the expected number of purchases over the next 39 weeks is $\approx 1.46$. With weekly discounting at $\delta = \ln(1.15)/52 = 0.0027$, $\text{DET} \approx 6.5$ (computed from the formulas in [[Pareto-NBD Model]] and [[RFM Sufficient Statistics and Iso-Value Curves]]).
-2. *Spend.* With gamma-gamma estimates $(p,q,\gamma) = (6.25, 3.74, 15.44)$ the population mean spend is $\$35.2$; two observations at $\$100$ shrink to $E(Z \mid \bar z, x) \approx \$88.4$ ([[Gamma-Gamma Model of Monetary Value]]).
-3. *CLV.* $0.30 \times 88.4 \times 6.5 \approx \$172$.
+2. *Spend.* With gamma-gamma estimates $(p,q,\gamma) = (6.25, 3.74, 15.44)$ the population mean spend is \$35.2; two observations at \$100 shrink to $E(Z \mid \bar z, x) \approx$ \$88.4 ([[Gamma-Gamma Model of Monetary Value]]).
+3. *CLV.* $0.30 \times 88.4 \times 6.5 \approx$ \$172.
 
 The three numbers $(x, t_x, \bar z)$ — frequency, recency, monetary value — plus the customer's age $T$ are all the customer-level data used.
 

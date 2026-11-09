@@ -127,7 +127,7 @@ Randomization was by DMA, but outcomes can be measured by zip code. A zip-level 
 ## Examples
 
 > [!example] The arithmetic of why the average is negative
-> Stylised numbers in the spirit of Fig. 4-5. Suppose 80% of paid-search spend goes on frequent buyers (causal effect 0) and 20% on new or infrequent users with a revenue lift worth \$2 per \$1 spent. The blended return is $0.8\times0+0.2\times2=\$0.40$ per \$1, an ROI of −60%. Moving the whole budget to the responsive segment (if it could be targeted without decay) would give +100%. The headline null hides a profitable niche, but the platform's click-pricing sends budget to the unprofitable segment.
+> Stylised numbers in the spirit of Fig. 4-5. Suppose 80% of paid-search spend goes on frequent buyers (causal effect 0) and 20% on new or infrequent users with a revenue lift worth \$2 per \$1 spent. The blended return is $0.8\times0+0.2\times2=$\$0.40 per \$1, an ROI of −60%. Moving the whole budget to the responsive segment (if it could be targeted without decay) would give +100%. The headline null hides a profitable niche, but the platform's click-pricing sends budget to the unprofitable segment.
 ^het-ex-2
 
 > [!example] Multiple comparisons sanity check (§4.3)

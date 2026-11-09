@@ -127,13 +127,13 @@ behind post-promotion dips.
 ^ex-amss-sales-parameters-simple-scenario
 
 > [!example] Worked competition arithmetic (illustrative)
-> **Setup.** A switcher segment with $\alpha_s=0.6$, $\beta_s=0.01$, $p=\$20$, so $r^{(y^*)}=0.4$. $\gamma=0.5$,
+> **Setup.** A switcher segment with $\alpha_s=0.6$, $\beta_s=0.01$, $p=$\$20, so $r^{(y^*)}=0.4$. $\gamma=0.5$,
 > $\omega=0.5$.
 >
 > **Solution.** $r^{(z)}=0.5-0.5\cdot0.4=0.3$. $r^{(y)}=\max(0.4,0.5)-0.3=0.2$. No purchase: $1-0.2-0.3=0.5$.
 >
 > **Interpretation.** Category purchase is 0.5. The advertiser keeps half of its competition-free 0.4. A price cut to
-> $p=\$0$ gives $r^{(y^*)}=0.6$, $r^{(z)}=0.2$ and $r^{(y)}=0.4$: some sales are stolen from the competitor and the
+> $p=$\$0 gives $r^{(y^*)}=0.6$, $r^{(z)}=0.2$ and $r^{(y)}=0.4$: some sales are stolen from the competitor and the
 > category grows to 0.6.
 ^ex-amss-worked-competition-arithmetic
 

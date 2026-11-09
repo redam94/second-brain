@@ -31,10 +31,18 @@ Under consistency the unknown $Y^a$ for target individuals is a **missing outcom
 ## Main Content
 
 > [!definition] Outcome model-based (OM) estimator (eq. 1)
-> $$\hat\mu_{OM}(a)=\Big(\sum_{i=1}^n(1-S_i)\Big)^{-1}\sum_{i=1}^n(1-S_i)\,g_a(X_i;\hat\theta).$$ Fit the outcome regression in trial participants (separately by arm, i.e., all treatment-by-covariate interactions) and average predictions over target covariates. Consistent when the outcome model is correct. ^def-om-estimator
+> $$
+> \hat\mu_{OM}(a)=\Big(\sum_{i=1}^n(1-S_i)\Big)^{-1}\sum_{i=1}^n(1-S_i)\,g_a(X_i;\hat\theta).
+> $$
+>
+> Fit the outcome regression in trial participants (separately by arm, i.e., all treatment-by-covariate interactions) and average predictions over target covariates. Consistent when the outcome model is correct. ^def-om-estimator
 
 > [!definition] Inverse-odds weights
-> $$\hat w_a(X_i,S_i,A_i)=\frac{1-p(X_i;\hat\beta)}{p(X_i;\hat\beta)\,e_a(X_i;\hat\gamma)}\;I(S_i=1,A_i=a).$$ The factor $(1-p)/p$ is the **inverse of the odds of participation**. Interpretation: treat the trial as a survey sample from the target with covariate-dependent, estimated sampling probabilities. ^def-io-weights
+> $$
+> \hat w_a(X_i,S_i,A_i)=\frac{1-p(X_i;\hat\beta)}{p(X_i;\hat\beta)\,e_a(X_i;\hat\gamma)}\;I(S_i=1,A_i=a).
+> $$
+>
+> The factor $(1-p)/p$ is the **inverse of the odds of participation**. Interpretation: treat the trial as a survey sample from the target with covariate-dependent, estimated sampling probabilities. ^def-io-weights
 
 > [!definition] IOW estimators (eqs. 2-3)
 > Unnormalized: $\hat\mu_{IOW1}(a)=\big(\sum_i(1-S_i)\big)^{-1}\sum_i \hat w_a(X_i,S_i,A_i)Y_i$.
@@ -42,12 +50,22 @@ Under consistency the unknown $Y^a$ for target individuals is a **missing outcom
 > IOW2 equals the intercept (and intercept + treatment coefficient) of a saturated weighted least squares regression of $Y$ on $A$. It always lies in the support of $Y$ (e.g., within $[0,1]$ for binary $Y$), giving much better finite-sample behaviour with variable weights. Both are consistent if the participation model is right. ^def-iow-estimators
 
 > [!theorem] Why the IO weighting estimator targets $\mu(a)$
-> Since $E[I(S=1,A=a)Y\mid X]=p(X)e_a(X)\,g_a(X)$, $$E\Big[\frac{1-p}{p\,e_a}I(S=1,A=a)Y\Big]=E[(1-p(X))g_a(X)]=E[(1-S)g_a(X)],$$ so dividing by $\Pr[S=0]$ gives $E[g_a(X)\mid S=0]=\mu(a)$. (Derived here from the definitions; it is the expectation behind eq. 2.) ^thm-iow-unbiased
+> Since $E[I(S=1,A=a)Y\mid X]=p(X)e_a(X)\,g_a(X)$,
+>
+> $$
+> E\Big[\frac{1-p}{p\,e_a}I(S=1,A=a)Y\Big]=E[(1-p(X))g_a(X)]=E[(1-S)g_a(X)],
+> $$
+>
+> so dividing by $\Pr[S=0]$ gives $E[g_a(X)\mid S=0]=\mu(a)$. (Derived here from the definitions; it is the expectation behind eq. 2.) ^thm-iow-unbiased
 
 > [!definition] Doubly robust estimators (eqs. 4-6)
 > $$\hat\mu_{DR1}(a)=\Big(\sum_i(1-S_i)\Big)^{-1}\sum_i\Big\{\hat w_a\big(Y_i-g_a(X_i;\hat\theta)\big)+(1-S_i)g_a(X_i;\hat\theta)\Big\}$$
 > $$\hat\mu_{DR2}(a)=\Big(\sum_i\hat w_a\Big)^{-1}\sum_i\hat w_a\big(Y_i-g_a(X_i;\hat\theta)\big)+\Big(\sum_i(1-S_i)\Big)^{-1}\sum_i(1-S_i)g_a(X_i;\hat\theta)$$
-> $$\hat\mu_{DR3}(a)=\Big(\sum_i(1-S_i)\Big)^{-1}\sum_i(1-S_i)\,g_a(X_i;\hat\theta_w)$$ where $\hat\theta_w$ comes from the outcome regression among trial participants **weighted** by $\hat w_a$. DR3 is doubly robust when the outcome is modelled with a linear exponential family quasi-likelihood and canonical link. ^def-dr-estimators
+> $$
+> \hat\mu_{DR3}(a)=\Big(\sum_i(1-S_i)\Big)^{-1}\sum_i(1-S_i)\,g_a(X_i;\hat\theta_w)
+> $$
+>
+> where $\hat\theta_w$ comes from the outcome regression among trial participants **weighted** by $\hat w_a$. DR3 is doubly robust when the outcome is modelled with a linear exponential family quasi-likelihood and canonical link. ^def-dr-estimators
 
 > [!theorem] Double robustness
 > DR estimators are consistent for $\mu(a)$ and asymptotically normal when **either** the participation model or the outcome model is correctly specified (formal result in the Appendix, absent from the PDF; refs [36],[40]). In practice DR estimators are usually more precise than IOW and nearly as precise as OM. Caveat: with a misspecified outcome model *and* highly variable weights, DR can do worse than non-DR estimators using the same misspecified outcome model (refs [41],[34]). ^thm-double-robustness

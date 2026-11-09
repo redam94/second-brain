@@ -55,7 +55,19 @@ Conditions (1)-(3) are expected from well-run (marginally or conditionally) rand
 ### Identification
 
 > [!theorem] Identification of the target potential outcome mean
-> Under (1)-(5), for each treatment $a$, $$E[Y^a\mid S=0]=E\big[\,E[Y\mid X,S=1,A=a]\;\big|\;S=0\,\big],$$ and the target ATE is $$E[Y^a-Y^{a'}\mid S=0]=E\big[E[Y\mid X,S=1,A=a]\mid S=0\big]-E\big[E[Y\mid X,S=1,A=a']\mid S=0\big].$$ ^thm-identification
+> Under (1)-(5), for each treatment $a$,
+>
+> $$
+> E[Y^a\mid S=0]=E\big[\,E[Y\mid X,S=1,A=a]\;\big|\;S=0\,\big],
+> $$
+>
+> and the target ATE is
+>
+> $$
+> E[Y^a-Y^{a'}\mid S=0]=E\big[E[Y\mid X,S=1,A=a]\mid S=0\big]-E\big[E[Y\mid X,S=1,A=a']\mid S=0\big].
+> $$
+
+^thm-identification
 
 **Proof sketch** (the paper's formal proof is in its Appendix, absent from the PDF; this chain follows from the stated conditions):
 1. Law of iterated expectations: $E[Y^a\mid S=0]=E\{E[Y^a\mid X,S=0]\mid S=0\}$.

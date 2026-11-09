@@ -39,7 +39,13 @@ Rubin causal model: $T_i\in\{0,1\}$ treatment; potential outcomes $Y_i(1),Y_i(0)
 > 4. **External overlap**: $0<\Pr(D_i=1\mid X_i=x)<1$. ^def-assumptions-1-4
 
 > [!theorem] Transport of the ATE
-> If Assumptions 1-4 hold on the support of $X$ in the target population, $$E[\tau_i\mid D_i=0]=E\big[\,E[Y_i\mid T_i=1,D_i=1,X_i]-E[Y_i\mid T_i=0,D_i=1,X_i]\;\big|\;D_i=0\big].\tag{1}$$ ^thm-transport-ate
+> If Assumptions 1-4 hold on the support of $X$ in the target population,
+>
+> $$
+> E[\tau_i\mid D_i=0]=E\big[\,E[Y_i\mid T_i=1,D_i=1,X_i]-E[Y_i\mid T_i=0,D_i=1,X_i]\;\big|\;D_i=0\big].\tag{1}
+> $$
+
+^thm-transport-ate
 
 **Proof sketch** (footnote 5; follows Hotz-Imbens-Mortimer Lemma 1): the two unconfoundedness assumptions imply for each $x$: $E[\tau_i\mid D_i=0,X_i=x]=E[\tau_i\mid D_i=1,X_i=x]=E[Y_i\mid D_i=1,T_i=1,X_i=x]-E[Y_i\mid D_i=1,T_i=0,X_i=x]$. The overlap assumptions make it feasible to average over the target distribution of $X$.
 

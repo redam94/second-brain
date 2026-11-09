@@ -140,9 +140,9 @@ be adjusted for like a pre-treatment confounder. See [[Q - Covariate Adjustment 
 
 > [!example] Funnel bias in numbers (vault illustration, not from the paper)
 > Each extra \$1k of weekly TV spend raises related queries by $\pi=40$, and each query (through the search ads it
-> triggers) brings $\beta_S=\$50$ of incremental sales. The indirect effect of TV is $40\times\$50=\$2{,}000$ per \$1k,
-> i.e. \$2 per TV dollar. TV's direct effect is $\beta_{TV}=\$1$ per dollar. True TV ROAS is $\$3$. A single-equation MMM with both TV and search
-> volume estimates TV ROAS near $\$1$ and moves $\$2$ per TV dollar onto search. A budget optimizer would then cut TV,
+> triggers) brings $\beta_S=$\$50 of incremental sales. The indirect effect of TV is $40\times$\$50$=$\$2,000 per \$1k,
+> i.e. \$2 per TV dollar. TV's direct effect is $\beta_{TV}=$\$1 per dollar. True TV ROAS is \$3. A single-equation MMM with both TV and search
+> volume estimates TV ROAS near \$1 and moves \$2 per TV dollar onto search. A budget optimizer would then cut TV,
 > which also shrinks the search volume it is crediting.
 ^ex-cp-funnel-numbers
 

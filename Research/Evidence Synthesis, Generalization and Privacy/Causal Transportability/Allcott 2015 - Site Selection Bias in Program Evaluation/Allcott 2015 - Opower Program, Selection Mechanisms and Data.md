@@ -94,7 +94,7 @@ Opower differs from academic programmes in being for-profit (early successes ben
 ### Dispersion of site effects (Sec. 5.3.1)
 - Percent ATEs (first year): mean 1.31% (0.47 kWh/day); range 0.50-2.63% (0.10-1.47 kWh/day); SD 0.45 pp vs mean SE 0.18 pp; **Cochran's Q rejects homogeneity, p<0.001**.
 - Percent ATEs are better for prediction: control group usage strongly predicts kWh/day ATEs ($t=11.35$, $R^2=0.54$ across 111 sites); coefficient of variation is 55% higher in kWh/day.
-- Figure 1: if each site's percent ATE were extrapolated nationwide, first-year savings would range from $\$695$ million to $\$3.62$ billion (factor 5.2), SD $\$618$ million. Hence Assumption 3A fails when not conditioning on $X$.
+- Figure 1: if each site's percent ATE were extrapolated nationwide, first-year savings would range from \$695 million to \$3.62 billion (factor 5.2), SD \$618 million. Hence Assumption 3A fails when not conditioning on $X$.
 
 ## Examples
 - Early academic proof-of-concept (Schultz et al. 2007; Nolan et al. 2008): door-hangers to about 300 homes in a wealthy California suburb gave effects 3-6 times larger than even the first ten Opower programmes — "strikingly consistent with site selection bias".

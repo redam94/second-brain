@@ -35,7 +35,11 @@ For one country, $m_{at}$ is log mortality in age group $a=1..A$ and year $t=1..
 ## Main Content
 
 > [!definition] Lee-Carter model (Eqs. 1-3)
-> $$m_{at}=\alpha_a+\beta_a\gamma_t+\epsilon_{at}.$$ Non-unique: invariant to $\beta\to c\beta,\ \gamma\to\gamma/c$ and $\alpha_a\to\alpha_a-\beta_a c,\ \gamma_t\to\gamma_t+c$. Constraints $\sum_t\gamma_t=0$ and $\sum_a\beta_a^2=1$ imply $\alpha_a=\bar m_a$ (time average). Centred model $\tilde m_{at}=m_{at}-\bar m_a\sim N(\beta_a\gamma_t,\sigma^2)$ uses $A+T$ parameters for $A\times T$ cells. Interpretation: $\beta_a$ is the sensitivity of age group $a$ to the index; independence assumption = no age$\times$time interaction (the age shape $\beta$ is constant over time).
+> $$
+> m_{at}=\alpha_a+\beta_a\gamma_t+\epsilon_{at}.
+> $$
+>
+> Non-unique: invariant to $\beta\to c\beta,\ \gamma\to\gamma/c$ and $\alpha_a\to\alpha_a-\beta_a c,\ \gamma_t\to\gamma_t+c$. Constraints $\sum_t\gamma_t=0$ and $\sum_a\beta_a^2=1$ imply $\alpha_a=\bar m_a$ (time average). Centred model $\tilde m_{at}=m_{at}-\bar m_a\sim N(\beta_a\gamma_t,\sigma^2)$ uses $A+T$ parameters for $A\times T$ cells. Interpretation: $\beta_a$ is the sensitivity of age group $a$ to the index; independence assumption = no age$\times$time interaction (the age shape $\beta$ is constant over time).
 ^def-lee-carter
 
 > [!definition] Estimation by SVD (Sec. 1.2)

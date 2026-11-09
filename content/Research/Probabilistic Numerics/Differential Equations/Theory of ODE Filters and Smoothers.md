@@ -87,13 +87,17 @@ vanishes at grid points, $\mathcal{Z}[X](t_i) = 0$. The MAP is then a scattered-
 
 > [!theorem] Uniform error of the MAP estimate (Corollary 39.7)
 > If Assumption 39.5 holds and $f$ is globally $L$-Lipschitz, then for any prior of smoothness $q$ there is $C(T)>0$ with
-> $$ \sup_{t\in[0,T]} \|x^*(t) - x(t)\| \le C(T)\, h^q. $$ ^cor-map-uniform
+> $$
+> \sup_{t\in[0,T]} \|x^*(t) - x(t)\| \le C(T)\, h^q.
+> $$
 >
 > *Proof sketch.* By the fundamental theorem of calculus (with $x^*(0)=x(0)=x_0$), the triangle inequality, and Eq. (39.1):
 > $$
 > \|x^*(t)-x(t)\| = \Big\|\int_0^t \tfrac{d}{ds}x^*(s) - f(x(s))\,ds\Big\| \le \underbrace{\Big\|\int_0^t\mathcal{Z}[x^*(s)]ds\Big\|}_{\le C(T)h^q \text{ (Thm. 39.6)}} + \underbrace{\Big\|\int_0^t f(x^*)-f(x)\,ds\Big\|}_{\le \int_0^t L\|x^*-x\|ds}.
 > $$
 > Grönwall's inequality (integral form) then closes the bound. $\square$
+
+^cor-map-uniform
 
 **Discussion.** Cor. 39.7 applies to *any* prior with $q$ derivatives (vs Thm. 39.3's $q=1$ IWP), but bounds only the **MAP estimate** $x^*$, which standard EKF/EKS do not exactly compute for nonlinear $f$ (the IEKS converges to a *local* MAP minimum, possibly not the global one). So strictly it does not certify any *particular* algorithm — but experiments show EKS0/EKS1/IEKS all attain the $h^q$ MAP rate. Compared to classical methods, $h^q$ is optimal and on par with Runge–Kutta *as a single-step method*; because an ODE filter stores information from previous steps in its derivatives, it is really more like a **multistep method** that can achieve even higher rates in some settings (§39.3).
 
@@ -134,17 +138,25 @@ whose entries span $2q$ orders of magnitude ($\mathcal{O}(h^{2q+1})$ to $\mathca
 
 > [!theorem] EKF0 = explicit trapezoidal rule (Proposition 39.11, Schober–Särkkä–Hennig 2018)
 > The **EKF0 with 1-times IWP prior and $R=0$ is equivalent to the explicit trapezoidal rule (Heun's method).** Its filtering means $\hat x_n := H_0 m_n$ follow
-> $$ \hat x_{n+1} = \hat x_n + \tfrac{h}{2}\big(f(\hat x_n) + f(\tilde x_{n+1})\big), \qquad \tilde x_{n+1} := \hat x_n + h f(\hat x_n). $$ ^thm-trapezoid
+> $$
+> \hat x_{n+1} = \hat x_n + \tfrac{h}{2}\big(f(\hat x_n) + f(\tilde x_{n+1})\big), \qquad \tilde x_{n+1} := \hat x_n + h f(\hat x_n).
+> $$
 >
 > *Proof sketch.* For the 1-times IWP with $R=0$ the Kalman gains reach a constant steady state $K_\infty$ for all $n$; the mean recursion is then $n$-independent and reduces to the P(EC)$^1$ implementation of the trapezoidal rule (Schober, Särkkä & Hennig 2019, Prop. 1). $\square$
 
+^thm-trapezoid
+
 > [!theorem] EKF0 = third-order Nordsieck method (Theorem 39.13, Schober–Särkkä–Hennig 2018)
 > The **EKF0 with 2-times IWP prior and $R=0$, in its steady state $K_\infty$, is a Nordsieck method of order 3.** Initialised in steady state,
-> $$ \|m(T) - x(T)\| \le C(T)\, h^3. $$ ^thm-nordsieck
+> $$
+> \|m(T) - x(T)\| \le C(T)\, h^3.
+> $$
 >
 > *Proof sketch.* Derive the steady-state gain $K_\infty = [\tfrac{3+\sqrt 3}{12}, 1, \tfrac{3-\sqrt 3}{2}]^\top$; insert it as the Nordsieck weight vector $l$ into Skeel (1979, Thm. 4.2), which gives global rate $h^3$. $\square$
 >
 > **Remark.** For $q=2$ this steady-state rate is $h^{q+1}$, *better* than the $h^q$ of Thms. 39.3/39.7 — but only in steady state, reflecting the multistep-like information sharing between adjacent steps.
+
+^thm-nordsieck
 
 The **Nordsieck vector** is $\vec{x}_{\text{Nord}}(t) = [x, hx', \tfrac{h^2}{2}x'', \dots, \tfrac{h^q}{q!}x^{(q)}]^\top = T_{\text{Nord}}^{-1}\vec x(t)$ with $T_{\text{Nord}} := \text{diag}(1, \tfrac{1}{h}, \tfrac{2!}{h^2}, \dots, \tfrac{q!}{h^q})$ — the first $q$ Taylor summands of $x(t+h)=\Phi_h(x(t))$. In these coordinates $\tilde A$ is the Pascal upper-triangle matrix $[\tilde A]_{ij} = \mathbb{1}(j\ge i)\binom{j-1}{i-1}$, and the EKF0 mean recursion (39.16) has the structural form of a Nordsieck method (39.17) $\hat{\vec x}(t+h) = [I - l\tilde H]\tilde A\hat{\vec x}(t) + hlf(H_0\tilde A\hat{\vec x}(t))$, with the Kalman gain $K_{n+1}$ in the role of the weight vector $l$ (but data-dependent, unlike the fixed classical $l$).
 

@@ -65,7 +65,13 @@ Variables: baseline covariates $X$; assigned treatment $A$; outcome $Y$; partici
 
 ### Causal quantities
 > [!definition] Target-population average treatment effect
-> For treatment values $a,a'$: $$\Delta_{S=0}=E[Y^a-Y^{a'}\mid S=0].$$ Under standard assumptions the trial identifies $E[Y^a-Y^{a'}\mid S=1]$. The two differ "when the effect of treatment varies over baseline covariates that are differentially distributed between trial participants and non-participants", i.e., when the distribution of effect modifiers *on the additive scale* differs. ^def-target-ate
+> For treatment values $a,a'$:
+>
+> $$
+> \Delta_{S=0}=E[Y^a-Y^{a'}\mid S=0].
+> $$
+>
+> Under standard assumptions the trial identifies $E[Y^a-Y^{a'}\mid S=1]$. The two differ "when the effect of treatment varies over baseline covariates that are differentially distributed between trial participants and non-participants", i.e., when the distribution of effect modifiers *on the additive scale* differs. ^def-target-ate
 
 For nested designs the cohort-wide effect $E[Y^a-Y^{a'}]$ is also of interest (previous work, ref. [16]), but **in non-nested designs it is not identifiable** without information on the sampling of the target population, since the data are a "mixture" of trial and target with arbitrary mixing proportions. The tutorial therefore focuses on the components $E[Y^a\mid S=0]$.
 

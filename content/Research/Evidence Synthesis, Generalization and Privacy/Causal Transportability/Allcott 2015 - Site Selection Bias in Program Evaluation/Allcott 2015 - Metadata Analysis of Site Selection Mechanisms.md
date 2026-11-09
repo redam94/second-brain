@@ -23,7 +23,7 @@ aliases:
 # Allcott 2015 - Metadata Analysis of Site Selection Mechanisms
 
 > [!summary]
-> With effect estimates from all 111 sites, Allcott shows efficacy falls 0.173 pp per year of site start date, separates a within-utility decline (heavy-user targeting, then expansion) from a between-utility decline (environmentalist, high-income, non-IOU utilities adopt early), and shows the 111-site sample is *still* positively selected from the national population: naive extrapolation overpredicts by $\$350$-$710$ million. Site-level observables explain only just under a third of the early-late gap.
+> With effect estimates from all 111 sites, Allcott shows efficacy falls 0.173 pp per year of site start date, separates a within-utility decline (heavy-user targeting, then expansion) from a between-utility decline (environmentalist, high-income, non-IOU utilities adopt early), and shows the 111-site sample is *still* positively selected from the national population: naive extrapolation overpredicts by \$350-$710$ million. Site-level observables explain only just under a third of the early-late gap.
 
 ## Overview
 Two questions: (i) why were the first ten sites positively selected from all 111, and (ii) is the 111-site sample positively or negatively selected from the nationwide population? Method: metadata regressions plus selection (probit) and outcome (OLS) equations at utility level; a variable that moderates both selection and the treatment effect identifies a selection mechanism.
@@ -33,13 +33,27 @@ Two questions: (i) why were the first ten sites positively selected from all 111
 ### Empirical strategy
 
 > [!definition] Cohort trend (eq. 5)
-> $$\tilde\tau_s=\eta M_s+\kappa+\epsilon_s,$$ $M_s$ = program start date in years, $\tilde\tau_s$ = frequency-adjusted ATE (percent or kWh/day); variant $\tilde\tau_s\mid X=\tilde\tau_s+\hat\alpha(\bar X-X_s)$ also adjusts for individual-level observables. $\eta<0$ means earlier sites are positively selected. Observations weighted by $1/\widehat{\mathrm{Var}}(\tilde\tau_s)$; random-effects meta-regression as robustness. ^def-cohort-trend
+> $$
+> \tilde\tau_s=\eta M_s+\kappa+\epsilon_s,
+> $$
+>
+> $M_s$ = program start date in years, $\tilde\tau_s$ = frequency-adjusted ATE (percent or kWh/day); variant $\tilde\tau_s\mid X=\tilde\tau_s+\hat\alpha(\bar X-X_s)$ also adjusts for individual-level observables. $\eta<0$ means earlier sites are positively selected. Observations weighted by $1/\widehat{\mathrm{Var}}(\tilde\tau_s)$; random-effects meta-regression as robustness. ^def-cohort-trend
 
 > [!definition] Within-utility trend (eq. 6)
-> $$\tilde\tau_{su}=\lambda L_{su}+\omega_u+\epsilon_{su},$$ $L_{su}$ = order of site $s$ within utility $u$; $\omega_u$ = 58 utility fixed effects. $\lambda<0$ means a utility's later sites do worse. If heavy-user targeting dominates, adding control mean usage $C_s$ should attenuate $\lambda$. Caveat: expansion is endogenous, so $\lambda$ is biased toward zero relative to the case in which all utilities expanded. ^def-within-utility-trend
+> $$
+> \tilde\tau_{su}=\lambda L_{su}+\omega_u+\epsilon_{su},
+> $$
+>
+> $L_{su}$ = order of site $s$ within utility $u$; $\omega_u$ = 58 utility fixed effects. $\lambda<0$ means a utility's later sites do worse. If heavy-user targeting dominates, adding control mean usage $C_s$ should attenuate $\lambda$. Caveat: expansion is endogenous, so $\lambda$ is biased toward zero relative to the case in which all utilities expanded. ^def-within-utility-trend
 
 > [!definition] Utility selection and outcome equations (eqs. 7-8)
-> Selection: $D_u=1(\rho Z_u+\upsilon_u\ge0)$ (probit), run (a) early partner (first ten utilities, $D=1$) vs. the other 48 partners, and (b) current partner (58) vs. all 882 utilities. Outcome: $$\tilde\tau_{su}=\theta Z_u+\lambda L_{su}+\zeta C_s+\kappa+\xi_{su}$$ over all 111 sites, standard errors clustered by utility. If $\rho$ and $\theta$ share a sign for a variable, that mechanism creates **positive selection**; opposite signs, negative. ^def-selection-outcome-equations
+> Selection: $D_u=1(\rho Z_u+\upsilon_u\ge0)$ (probit), run (a) early partner (first ten utilities, $D=1$) vs. the other 48 partners, and (b) current partner (58) vs. all 882 utilities. Outcome:
+>
+> $$
+> \tilde\tau_{su}=\theta Z_u+\lambda L_{su}+\zeta C_s+\kappa+\xi_{su}
+> $$
+>
+> over all 111 sites, standard errors clustered by utility. If $\rho$ and $\theta$ share a sign for a variable, that mechanism creates **positive selection**; opposite signs, negative. ^def-selection-outcome-equations
 
 ### Cohort and within/between-utility results
 

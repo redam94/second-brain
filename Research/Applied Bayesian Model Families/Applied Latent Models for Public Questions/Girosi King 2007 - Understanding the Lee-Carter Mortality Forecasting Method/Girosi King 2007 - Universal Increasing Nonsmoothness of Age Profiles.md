@@ -30,12 +30,20 @@ aliases:
 ## Main Content
 
 > [!definition] Nonsmoothness measure (Eq. 21)
-> $$\text{Nonsmoothness}(\mu_t)=\frac1{A-1}\sum_{a=2}^A(\mu_{at}-\mu_{a-1,t})^2.$$ Related to the variance of the profile. Second differences are indifferent to level and slope shifts ("swoosh rotation"). Generalisation: any quadratic form $\tilde\mu_t'W\tilde\mu_t$ with $W\succeq0$; for first differences $W$ is the tridiagonal matrix with ones on the diagonal (ends handled) and $-1$ on the adjacent bands.
+> $$
+> \text{Nonsmoothness}(\mu_t)=\frac1{A-1}\sum_{a=2}^A(\mu_{at}-\mu_{a-1,t})^2.
+> $$
+>
+> Related to the variance of the profile. Second differences are indifferent to level and slope shifts ("swoosh rotation"). Generalisation: any quadratic form $\tilde\mu_t'W\tilde\mu_t$ with $W\succeq0$; for first differences $W$ is the tridiagonal matrix with ones on the diagonal (ends handled) and $-1$ on the adjacent bands.
 ^def-nonsmooth
 
 > [!theorem] Universal increasing nonsmoothness (Eqs. 20-24)
 > Let $\mu_{at}-\mu_{at_0}=(\gamma_t-\gamma_{t_0})\beta_a$ (Eq. 20) and $\tilde\mu_t=\gamma_t\beta$ the mean-adjusted profile. Then
-> $$\text{Nonsmoothness}(\tilde\mu_t)=\tilde\mu_t'W\tilde\mu_t=\gamma_t^2\,\beta'W\beta\ \propto\ \gamma_t^2.$$ If $\gamma_t$ is monotone in $t$, nonsmoothness decreases until $\gamma_t=0$ and thereafter increases for ever; "no feature of the data or forecasting method for projecting the $\gamma_t$'s can make it stop". Because $\|\beta\|=1$, Rayleigh's characterisation gives the lower bound $\beta'W\beta\ge\lambda_1$ (first non-zero eigenvalue of $W$), so $\text{Nonsmoothness}\ge\lambda_1\gamma_t^2$ independent of the shape of $\beta$.
+> $$
+> \text{Nonsmoothness}(\tilde\mu_t)=\tilde\mu_t'W\tilde\mu_t=\gamma_t^2\,\beta'W\beta\ \propto\ \gamma_t^2.
+> $$
+>
+> If $\gamma_t$ is monotone in $t$, nonsmoothness decreases until $\gamma_t=0$ and thereafter increases for ever; "no feature of the data or forecasting method for projecting the $\gamma_t$'s can make it stop". Because $\|\beta\|=1$, Rayleigh's characterisation gives the lower bound $\beta'W\beta\ge\lambda_1$ (first non-zero eigenvalue of $W$), so $\text{Nonsmoothness}\ge\lambda_1\gamma_t^2$ independent of the shape of $\beta$.
 >
 > *Proof sketch.* Quadratic form is homogeneous of degree 2 in the scalar $\gamma_t$; monotone $\gamma_t$ crosses zero at most once and $|\gamma_t|\to\infty$ along the linear forecast. $\square$
 ^thm-nonsmooth

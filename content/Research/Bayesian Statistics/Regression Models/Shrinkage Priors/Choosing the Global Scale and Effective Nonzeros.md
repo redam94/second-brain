@@ -47,7 +47,11 @@ For a fixed $\tau$, the implied sparsity depends on the dimension $D$, the noise
 > \mathrm{E}(m_\text{eff}\mid\tau,\sigma) = \sum_{j=1}^{D}\frac{a_j}{1+a_j}, \qquad \mathrm{Var}(m_\text{eff}\mid\tau,\sigma) = \sum_{j=1}^{D}\frac{a_j}{2(1+a_j)^2}.
 > $$
 > For standardized predictors ($s_j^2=1$) these simplify to
-> $$\mathrm{E}(m_\text{eff}\mid\tau,\sigma) = \frac{\tau\sigma^{-1}\sqrt n}{1+\tau\sigma^{-1}\sqrt n}\,D, \qquad \mathrm{Var}(m_\text{eff}\mid\tau,\sigma) = \frac{\tau\sigma^{-1}\sqrt n}{2(1+\tau\sigma^{-1}\sqrt n)^2}\,D.$$ ^meff-moments
+> $$
+> \mathrm{E}(m_\text{eff}\mid\tau,\sigma) = \frac{\tau\sigma^{-1}\sqrt n}{1+\tau\sigma^{-1}\sqrt n}\,D, \qquad \mathrm{Var}(m_\text{eff}\mid\tau,\sigma) = \frac{\tau\sigma^{-1}\sqrt n}{2(1+\tau\sigma^{-1}\sqrt n)^2}\,D.
+> $$
+
+^meff-moments
 
 > [!theorem] Prior-guess formula for the global scale
 > Solving $\mathrm{E}(m_\text{eff}\mid\tau,\sigma)=p_0$ for standardized predictors gives the scale that places most prior mass for $m_\text{eff}$ near a prior guess $p_0$:

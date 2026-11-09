@@ -123,7 +123,7 @@ Reading checklist:
 **From a lift report to an MMM calibration input.** Suppose a four-week study reports: 5.0M users in the opportunity set, 90/10 split, control conversion rate 1.20%, test 1.26%, 77% of test users exposed, spend \$400,000.
 
 - ITT $=0.06$ pp; ATT $=0.06/0.77=0.078$ pp; exposed users' observed rate, say 1.45%, gives lift $=0.078/(1.45-0.078)\approx5.7\%$ — a typical lower-funnel result.
-- Incremental conversions in test $=0.0006\times4.5\text{M}=2{,}700$; cost per incremental conversion $\approx\$148$.
+- Incremental conversions in test $=0.0006\times4.5\text{M}=2{,}700$; cost per incremental conversion $\approx$\$148.
 - Standard error of ITT $\approx\sqrt{0.0126(0.9874)/4.5\text{M}+0.012(0.988)/0.5\text{M}}\approx0.0163$ pp, so $t\approx3.7$ and a 95% interval of roughly 1,260 to 4,140 incremental conversions. The 10% holdout dominates the variance: moving to 70/30 at the same total size would cut the standard error by about a third.
 - For a [[Bayesian Media Mix Modeling - Overview|Bayesian MMM]], encode "incremental conversions per dollar over these four weeks $\sim\mathcal N(0.00675,\,0.0018^2)$" as a constraint on the channel's contribution in that window ([[Bayesian Estimation and Priors for MMM]], [[Q - Using Experiment Results as Priors in a Bayesian MMM]]), remembering that the MMM coefficient also includes carryover and conversions the pixel cannot see.
 
