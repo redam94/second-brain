@@ -41,7 +41,10 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      // the vault is large: tag nodes add ~8k links and the radial force fights the layout
+      globalGraph: { showTags: false, enableRadial: false },
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

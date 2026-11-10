@@ -43,14 +43,22 @@ type LinkData = {
   target: NodeData
 } & SimulationLinkDatum<NodeData>
 
-type LinkRenderData = GraphicsInfo & {
+type LinkRenderData = {
   simulationData: LinkData
+  active: boolean
 }
 
 type NodeRenderData = GraphicsInfo & {
   simulationData: NodeData
-  label: Text
+  // created lazily: a text texture per node is too expensive for large graphs
+  label: Text | null
 }
+
+// graphs above this size pre-run the layout and use cheaper rendering settings
+const LARGE_GRAPH_NODES = 500
+const PRERUN_BUDGET_MS = 700
+const LINKS_PER_BATCH = 2000
+const LABELS_PER_FRAME = 40
 
 const localStorageKey = "graph-visited"
 function getVisited(): Set<SimpleSlug> {
@@ -151,28 +159,49 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       tags: data.get(url)?.tags ?? [],
     }
   })
+  const nodeById = new Map<SimpleSlug, NodeData>(nodes.map((n) => [n.id, n]))
   const graphData: { nodes: NodeData[]; links: LinkData[] } = {
     nodes,
     links: links
       .filter((l) => neighbourhood.has(l.source) && neighbourhood.has(l.target))
       .map((l) => ({
-        source: nodes.find((n) => n.id === l.source)!,
-        target: nodes.find((n) => n.id === l.target)!,
+        source: nodeById.get(l.source)!,
+        target: nodeById.get(l.target)!,
       })),
+  }
+
+  const degree = new Map<SimpleSlug, number>()
+  for (const l of graphData.links) {
+    degree.set(l.source.id, (degree.get(l.source.id) ?? 0) + 1)
+    if (l.target.id !== l.source.id) {
+      degree.set(l.target.id, (degree.get(l.target.id) ?? 0) + 1)
+    }
   }
 
   const width = graph.offsetWidth
   const height = Math.max(graph.offsetHeight, 250)
+  const isLarge = graphData.nodes.length > LARGE_GRAPH_NODES
 
   // we virtualize the simulation and use pixi to actually render it
   const simulation: Simulation<NodeData, LinkData> = forceSimulation<NodeData>(graphData.nodes)
     .force("charge", forceManyBody().strength(-100 * repelForce))
     .force("center", forceCenter().strength(centerForce))
     .force("link", forceLink(graphData.links).distance(linkDistance))
-    .force("collide", forceCollide<NodeData>((n) => nodeRadius(n)).iterations(3))
+    .force("collide", forceCollide<NodeData>((n) => nodeRadius(n)).iterations(isLarge ? 1 : 3))
 
   const radius = (Math.min(width, height) / 2) * 0.8
   if (enableRadial) simulation.force("radial", forceRadial(radius).strength(0.2))
+
+  if (isLarge) {
+    // settle most of the layout off-screen so the first frame is not a tangle that takes
+    // hundreds of rendered ticks to unfold; whatever is left animates as usual
+    simulation.stop()
+    const deadline = performance.now() + PRERUN_BUDGET_MS
+    while (simulation.alpha() > simulation.alphaMin() && performance.now() < deadline) {
+      simulation.tick()
+    }
+    simulation.restart()
+  }
 
   // precompute style prop strings as pixi doesn't support css variables
   const cssVars = [
@@ -206,10 +235,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   }
 
   function nodeRadius(d: NodeData) {
-    const numLinks = graphData.links.filter(
-      (l) => l.source.id === d.id || l.target.id === d.id,
-    ).length
-    return 2 + Math.sqrt(numLinks)
+    return 2 + Math.sqrt(degree.get(d.id) ?? 0)
   }
 
   let hoveredNodeId: string | null = null
@@ -249,22 +275,22 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   let dragStartTime = 0
   let dragging = false
 
+  // render-on-demand state: the loop only does work when one of these is set
+  let positionsDirty = true
+  let labelsDirty = false
+  let needsRender = true
+  let animateUntil = 0
+  let zoomLabelAlpha = 0
+
   function renderLinks() {
     tweens.get("link")?.stop()
     const tweenGroup = new TweenGroup()
 
-    for (const l of linkRenderData) {
-      let alpha = 1
-
-      // if we are hovering over a node, we want to highlight the immediate neighbours
-      // with full alpha and the rest with default alpha
-      if (hoveredNodeId) {
-        alpha = l.active ? 1 : 0.2
-      }
-
-      l.color = l.active ? computedStyleMap["--gray"] : computedStyleMap["--lightgray"]
-      tweenGroup.add(new Tweened<LinkRenderData>(l).to({ alpha }, 200))
-    }
+    // if we are hovering over a node, we want to highlight the immediate neighbours
+    // with full alpha and the rest with default alpha: all links live in one dimmable
+    // layer and the hovered node's links are redrawn on top of it
+    drawActiveLinks()
+    tweenGroup.add(new Tweened<Container>(baseLinks).to({ alpha: hoveredNodeId ? 0.2 : 1 }, 200))
 
     tweenGroup.getAll().forEach((tw) => tw.start())
     tweens.set("link", {
@@ -286,7 +312,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
       if (hoveredNodeId === nodeId) {
         tweenGroup.add(
-          new Tweened<Text>(n.label).to(
+          new Tweened<Text>(ensureLabel(n)).to(
             {
               alpha: 1,
               scale: { x: activeScale, y: activeScale },
@@ -294,7 +320,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
             100,
           ),
         )
-      } else {
+      } else if (n.label && n.label.scale.x !== defaultScale) {
         tweenGroup.add(
           new Tweened<Text>(n.label).to(
             {
@@ -328,7 +354,9 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
         alpha = n.active ? 1 : 0.2
       }
 
-      tweenGroup.add(new Tweened<Graphics>(n.gfx, tweenGroup).to({ alpha }, 200))
+      if (n.gfx.alpha !== alpha) {
+        tweenGroup.add(new Tweened<Graphics>(n.gfx, tweenGroup).to({ alpha }, 200))
+      }
     }
 
     tweenGroup.getAll().forEach((tw) => tw.start())
@@ -344,6 +372,9 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     renderNodes()
     renderLinks()
     renderLabels()
+    // keep the loop rendering until the tweens above (at most 200ms) have finished
+    animateUntil = performance.now() + 300
+    needsRender = true
   }
 
   tweens.forEach((tween) => tween.stop())
@@ -366,18 +397,26 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   const stage = app.stage
   stage.interactive = false
 
-  const labelsContainer = new Container<Text>({ zIndex: 3, isRenderGroup: true })
-  const nodesContainer = new Container<Graphics>({ zIndex: 2, isRenderGroup: true })
-  const linkContainer = new Container<Graphics>({ zIndex: 1, isRenderGroup: true })
+  const labelsContainer = new Container<Text>({
+    zIndex: 3,
+    isRenderGroup: true,
+  })
+  const nodesContainer = new Container<Graphics>({
+    zIndex: 2,
+    isRenderGroup: true,
+  })
+  const linkContainer = new Container({ zIndex: 1, isRenderGroup: true })
   stage.addChild(nodesContainer, labelsContainer, linkContainer)
 
-  for (const n of graphData.nodes) {
-    const nodeId = n.id
-
+  const labelResolution = isLarge
+    ? Math.min(window.devicePixelRatio, 2) * 2
+    : window.devicePixelRatio * 4
+  function ensureLabel(n: NodeRenderData): Text {
+    if (n.label) return n.label
     const label = new Text({
       interactive: false,
       eventMode: "none",
-      text: n.text,
+      text: n.simulationData.text,
       alpha: 0,
       anchor: { x: 0.5, y: 1.2 },
       style: {
@@ -385,11 +424,84 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
         fill: computedStyleMap["--dark"],
         fontFamily: computedStyleMap["--bodyFont"],
       },
-      resolution: window.devicePixelRatio * 4,
+      resolution: labelResolution,
     })
     label.scale.set(1 / scale)
+    label.position.set(
+      (n.simulationData.x ?? 0) + width / 2,
+      (n.simulationData.y ?? 0) + height / 2,
+    )
+    labelsContainer.addChild(label)
+    n.label = label
+    return label
+  }
 
-    let oldLabelOpacity = 0
+  // zoom-driven labels are only created for nodes on screen, a few per frame
+  function updateZoomLabels() {
+    const { k, x: tx, y: ty } = currentTransform
+    let created = 0
+    let pending = false
+    for (const n of nodeRenderData) {
+      if (n.active || n.simulationData.id === hoveredNodeId) continue
+      if (n.label) {
+        n.label.alpha = zoomLabelAlpha
+        continue
+      }
+
+      if (zoomLabelAlpha <= 0) continue
+      const sx = ((n.simulationData.x ?? 0) + width / 2) * k + tx
+      const sy = ((n.simulationData.y ?? 0) + height / 2) * k + ty
+      if (sx < -100 || sx > width + 100 || sy < -50 || sy > height + 50) continue
+      if (created >= LABELS_PER_FRAME) {
+        pending = true
+        continue
+      }
+
+      ensureLabel(n).alpha = zoomLabelAlpha
+      created++
+    }
+
+    labelsDirty = pending
+  }
+
+  // one path per batch instead of one Graphics per link
+  const baseLinks = new Container<Graphics>()
+  const activeLinks = new Graphics({ interactive: false, eventMode: "none" })
+  linkContainer.addChild(baseLinks, activeLinks)
+
+  function drawBaseLinks() {
+    for (let i = 0; i < baseLinks.children.length; i++) {
+      const gfx = baseLinks.children[i]
+      const batch = linkRenderData.slice(i * LINKS_PER_BATCH, (i + 1) * LINKS_PER_BATCH)
+      gfx.clear()
+      for (const l of batch) {
+        const { source, target } = l.simulationData
+        gfx
+          .moveTo(source.x! + width / 2, source.y! + height / 2)
+          .lineTo(target.x! + width / 2, target.y! + height / 2)
+      }
+
+      gfx.stroke({ width: 1, color: computedStyleMap["--lightgray"] })
+    }
+  }
+
+  function drawActiveLinks() {
+    activeLinks.clear()
+    let any = false
+    for (const l of linkRenderData) {
+      if (!l.active) continue
+      const { source, target } = l.simulationData
+      activeLinks
+        .moveTo(source.x! + width / 2, source.y! + height / 2)
+        .lineTo(target.x! + width / 2, target.y! + height / 2)
+      any = true
+    }
+
+    if (any) activeLinks.stroke({ width: 1, color: computedStyleMap["--gray"] })
+  }
+
+  for (const n of graphData.nodes) {
+    const nodeId = n.id
     const isTagNode = nodeId.startsWith("tags/")
     const gfx = new Graphics({
       interactive: true,
@@ -402,14 +514,13 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       .fill({ color: isTagNode ? computedStyleMap["--light"] : color(n) })
       .on("pointerover", (e) => {
         updateHoverInfo(e.target.label)
-        oldLabelOpacity = label.alpha
         if (!dragging) {
           renderPixiFromD3()
         }
       })
       .on("pointerleave", () => {
         updateHoverInfo(null)
-        label.alpha = oldLabelOpacity
+        if (nodeRenderDatum.label) nodeRenderDatum.label.alpha = zoomLabelAlpha
         if (!dragging) {
           renderPixiFromD3()
         }
@@ -420,12 +531,11 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     }
 
     nodesContainer.addChild(gfx)
-    labelsContainer.addChild(label)
 
     const nodeRenderDatum: NodeRenderData = {
       simulationData: n,
       gfx,
-      label,
+      label: null,
       color: color(n),
       alpha: 1,
       active: false,
@@ -435,18 +545,11 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   }
 
   for (const l of graphData.links) {
-    const gfx = new Graphics({ interactive: false, eventMode: "none" })
-    linkContainer.addChild(gfx)
+    linkRenderData.push({ simulationData: l, active: false })
+  }
 
-    const linkRenderDatum: LinkRenderData = {
-      simulationData: l,
-      gfx,
-      color: computedStyleMap["--lightgray"],
-      alpha: 1,
-      active: false,
-    }
-
-    linkRenderData.push(linkRenderDatum)
+  for (let i = 0; i < linkRenderData.length; i += LINKS_PER_BATCH) {
+    baseLinks.addChild(new Graphics({ interactive: false, eventMode: "none" }))
   }
 
   let currentTransform = zoomIdentity
@@ -497,13 +600,40 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   }
 
   if (enableZoom) {
+    // large graphs open zoomed out far enough to show the whole (pre-settled) layout
+    let fit = zoomIdentity
+    if (isLarge) {
+      let minX = Infinity
+      let maxX = -Infinity
+      let minY = Infinity
+      let maxY = -Infinity
+      for (const n of graphData.nodes) {
+        const x = (n.x ?? 0) + width / 2
+        const y = (n.y ?? 0) + height / 2
+        minX = Math.min(minX, x)
+        maxX = Math.max(maxX, x)
+        minY = Math.min(minY, y)
+        maxY = Math.max(maxY, y)
+      }
+
+      const k = Math.min(
+        1,
+        (0.92 * width) / (maxX - minX || 1),
+        (0.92 * height) / (maxY - minY || 1),
+      )
+      fit = zoomIdentity
+        .translate(width / 2 - (k * (minX + maxX)) / 2, height / 2 - (k * (minY + maxY)) / 2)
+        .scale(k)
+    }
+
+    const zoomBehaviour = zoom<HTMLCanvasElement, NodeData>()
     select<HTMLCanvasElement, NodeData>(app.canvas).call(
-      zoom<HTMLCanvasElement, NodeData>()
+      zoomBehaviour
         .extent([
           [0, 0],
           [width, height],
         ])
-        .scaleExtent([0.25, 4])
+        .scaleExtent([Math.min(0.25, fit.k), 4])
         .on("zoom", ({ transform }) => {
           currentTransform = transform
           stage.scale.set(transform.k, transform.k)
@@ -511,47 +641,63 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
           // zoom adjusts opacity of labels too
           const scale = transform.k * opacityScale
-          let scaleOpacity = Math.max((scale - 1) / 3.75, 0)
-          const activeNodes = nodeRenderData.filter((n) => n.active).flatMap((n) => n.label)
-
-          for (const label of labelsContainer.children) {
-            if (!activeNodes.includes(label)) {
-              label.alpha = scaleOpacity
-            }
-          }
+          zoomLabelAlpha = Math.max((scale - 1) / 3.75, 0)
+          labelsDirty = true
+          needsRender = true
         }),
     )
+    if (fit !== zoomIdentity) {
+      select<HTMLCanvasElement, NodeData>(app.canvas).call(zoomBehaviour.transform, fit)
+    }
   }
+
+  simulation.on("tick", () => {
+    positionsDirty = true
+  })
 
   let stopAnimation = false
   function animate(time: number) {
     if (stopAnimation) return
-    for (const n of nodeRenderData) {
-      const { x, y } = n.simulationData
-      if (!x || !y) continue
-      n.gfx.position.set(x + width / 2, y + height / 2)
-      if (n.label) {
-        n.label.position.set(x + width / 2, y + height / 2)
+    if (positionsDirty) {
+      positionsDirty = false
+      for (const n of nodeRenderData) {
+        const { x, y } = n.simulationData
+        if (!x || !y) continue
+        n.gfx.position.set(x + width / 2, y + height / 2)
+        if (n.label) {
+          n.label.position.set(x + width / 2, y + height / 2)
+        }
       }
+
+      drawBaseLinks()
+      drawActiveLinks()
+      if (zoomLabelAlpha > 0) labelsDirty = true
+      needsRender = true
     }
 
-    for (const l of linkRenderData) {
-      const linkData = l.simulationData
-      l.gfx.clear()
-      l.gfx.moveTo(linkData.source.x! + width / 2, linkData.source.y! + height / 2)
-      l.gfx
-        .lineTo(linkData.target.x! + width / 2, linkData.target.y! + height / 2)
-        .stroke({ alpha: l.alpha, width: 1, color: l.color })
+    if (labelsDirty) {
+      updateZoomLabels()
+      needsRender = true
     }
 
-    tweens.forEach((t) => t.update(time))
-    app.renderer.render(stage)
+    if (performance.now() < animateUntil) {
+      tweens.forEach((t) => t.update(time))
+      needsRender = true
+    }
+
+    // once the layout has settled and nothing is animating, frames cost nothing
+    if (needsRender) {
+      needsRender = false
+      app.renderer.render(stage)
+    }
+
     requestAnimationFrame(animate)
   }
 
   requestAnimationFrame(animate)
   return () => {
     stopAnimation = true
+    simulation.stop()
     app.destroy()
   }
 }
