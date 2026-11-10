@@ -25,8 +25,6 @@ self.onmessage = async ({ data }) => {
       if (!graph.nodes.length) throw new Error('The content index contains no notes.');
       byId = new Map(graph.nodes.map(n => [n.id, n]));
       self.postMessage({ type: 'graph', graph });
-      const started = performance.now();
-      self.postMessage({ type: 'insights', insights: GraphData.analyze(graph.nodes, graph.links), elapsed: performance.now() - started });
       searchIndex = new MiniSearch({ fields: ['title', 'tags', 'section', 'content'],
         searchOptions: { boost: { title: 8, tags: 3, section: 2 }, prefix: true, fuzzy: term => term.length >= 5 ? 0.2 : false,
           // Well-connected notes are better entry points, so they win close calls.
@@ -34,6 +32,13 @@ self.onmessage = async ({ data }) => {
       searchIndex.addAll(graph.nodes.map(n => ({ id: n.id, title: n.title, section: n.group.replaceAll('-', ' '),
         tags: n.tags.join(' '), content: clean(content[n.id].content) })));
       self.postMessage({ type: 'ready' });
+      const started = performance.now();
+      self.postMessage({ type: 'insights', insights: GraphData.analyze(graph.nodes, graph.links), elapsed: performance.now() - started });
+    } else if (data.type === 'analyze') {
+      // Insights for one sub-graph: the notes currently in view.
+      const started = performance.now();
+      self.postMessage({ type: 'subinsights', requestId: data.requestId,
+        insights: GraphData.analyze(graph.nodes, graph.links, { subset: new Set(data.ids) }), elapsed: performance.now() - started });
     } else if (data.type === 'search') {
       if (!searchIndex) return;
       const started = performance.now();

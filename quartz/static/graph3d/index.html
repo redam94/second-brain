@@ -42,6 +42,8 @@
       <div class="search-wrap"><input id="search" type="search" placeholder="Try causal inference or #bayesian…" autocomplete="off" disabled><span aria-hidden="true">⌕</span></div>
       <label for="topic">Section</label><select id="topic" disabled><option value="">All sections</option></select>
       <label for="tag">Tag</label><select id="tag" disabled><option value="">Any tag</option></select>
+      <label for="color-by">Color by</label><select id="color-by" disabled><option value="section">Section</option><option value="cluster">Detected cluster</option></select>
+      <p id="subset" class="subset" hidden><span id="subset-label"></span><button id="clear-subset">Clear ×</button></p>
       <div class="options">
         <label class="check"><input id="hubs" type="checkbox"> Show index notes</label>
         <label class="check"><input id="show-links" type="checkbox" checked> Show connections</label>
@@ -58,14 +60,14 @@
       <div class="graph-bottom"><span>Drag to orbit · Scroll to zoom · Right-drag to pan</span><span id="view-status">Connections appear when you select a note.</span></div>
     </section>
     <aside id="insights" class="detail insights" aria-label="Graph insights" hidden>
-      <div class="detail-top"><span class="eyebrow">GRAPH INSIGHTS</span><button id="close-insights" aria-label="Close insights">×</button></div>
-      <h2>How the notes connect</h2>
+      <div class="detail-top"><span class="eyebrow">GRAPH INSIGHTS</span><span class="detail-buttons"><button id="expand-insights" class="text-button" aria-pressed="false">Full page ⤢</button><button id="close-insights" aria-label="Close insights">×</button></span></div>
+      <div class="insight-head">
+        <h2>How the notes connect</h2>
+        <div class="scope-tabs" role="group" aria-label="What the insights describe"><button id="scope-all" aria-pressed="true">Whole vault</button><button id="scope-view" aria-pressed="false" disabled>This view</button></div>
+        <p id="insight-scope" class="hint"></p>
+      </div>
       <div id="insight-stats" class="stat-grid"></div>
-      <section><h3>Sections</h3><p class="hint">Share of each section's links that reach another section. Islands have none.</p><div id="insight-sections" class="section-bars"></div></section>
-      <section><h3>Most central</h3><p class="hint">PageRank: notes that well-linked notes point to.</p><div id="insight-pagerank"></div></section>
-      <section><h3>Bridges</h3><p class="hint">Notes on the most shortest paths between other notes. Remove one and areas drift apart.</p><div id="insight-bridges"></div></section>
-      <section><h3>Surprising connections</h3><p class="hint">Links across sections that rarely meet, where the two notes share almost no other neighbours.</p><div id="insight-surprising"></div></section>
-      <section><h3>Likely missing links</h3><p class="hint">Unlinked notes with many specific neighbours in common (Adamic–Adar).</p><div id="insight-missing"></div></section>
+      <div id="insight-body" class="insight-grid"></div>
       <p id="insight-note" class="quiet"></p>
     </aside>
     <aside id="detail" class="detail" aria-label="Selected note" hidden>
@@ -76,6 +78,7 @@
       <a id="open-note" class="primary" target="_blank" rel="noopener">Read full note ↗</a>
       <label for="scope">Explore around this note</label>
       <select id="scope"><option value="0">Full graph</option><option value="1" selected>Direct connections</option><option value="2">Within two links</option></select>
+      <button id="detail-insights" class="secondary" disabled>Insights for this neighborhood ◈</button>
       <div class="relation-tabs"><button id="incoming" class="active">Backlinks</button><button id="outgoing">Links from this note</button></div>
       <div id="neighbors" class="neighbors"></div>
       <p class="quiet">Lines represent note references. Spatial distance is a layout choice, not a similarity score.</p>
