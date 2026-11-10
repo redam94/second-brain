@@ -84,7 +84,7 @@ const config: QuartzConfig = {
       }),
       Plugin.LLMs({
         description:
-          "A structured knowledge base covering Bayesian statistics, econometrics, causal inference, market response modeling, Bayesian experimental design, and agent-based modeling.",
+          "A structured knowledge base covering Bayesian statistics and applied Bayesian model families, econometrics, causal inference and causal discovery, market response modeling, Bayesian experimental design, evidence synthesis and privacy, model validation and interpretability, machine learning and AI, probabilistic numerics, and agent-based modeling.",
       }),
       Plugin.Assets(),
       Plugin.Static(),

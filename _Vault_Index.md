@@ -10,7 +10,7 @@ concept_count: 748
 # Vault Index
 
 > [!abstract] Routing Summary
-> A second brain for research, clippings, and knowledge management. Contains 130+ ingested notes organized by topic.
+> A second brain for research, clippings, and knowledge management. Contains 1,600+ ingested notes organized by topic.
 > - Need Bayesian statistics (BDA3, Statistical Rethinking, Workflow)? -> [[Research/Bayesian Statistics/_Index|Bayesian Statistics]]
 > - Need econometrics and causal inference (MHE)? -> [[Research/Econometrics/_Index|Econometrics]]
 > - Need research methodology (forking paths, power analysis, longitudinal causal inference)? -> [[Research/Research Methodology/_Index|Research Methodology]]

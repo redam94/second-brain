@@ -8,7 +8,7 @@ tags:
 # Second Brain
 
 > [!abstract] About
-> A structured knowledge base covering Bayesian statistics, econometrics, causal inference, and agent-based modeling. Notes are cross-linked by topic — use the graph view or search bar to explore connections across the collection.
+> A structured knowledge base covering Bayesian statistics and applied Bayesian model families, econometrics, causal inference and causal discovery, market response modeling, Bayesian experimental design, evidence synthesis and privacy, model validation and interpretability, machine learning and AI, probabilistic numerics, and agent-based modeling. Notes are cross-linked by topic — use the graph view or search bar to explore connections across the collection.
 
 > [!info] For AI assistants
 > Reading this site with a language model? Start at [llms.txt](https://redam94.github.io/second-brain/llms.txt) — a routed index of every note. Any page is also available as raw markdown by appending `.md` to its URL.
