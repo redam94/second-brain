@@ -12,6 +12,8 @@ folder: "Causal Discovery"
 doc_type: paper
 depends_on:
   - "[[NOTEARS Algorithm]]"
+  - "[[PC Algorithm]]"
+  - "[[GES Algorithm]]"
 used_by: []
 aliases:
   - "NOTEARS results"
