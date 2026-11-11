@@ -86,7 +86,7 @@ $$ m_{g,t,\delta}^{nev}(X) = \mathbb{E}[Y_t - Y_{g-\delta-1}\mid X, C=1], \qquad
 - Identifies the target of [[Group-Time Average Treatment Effects]] under [[Identifying Assumptions for Staggered DiD]].
 - DR estimators feed the asymptotics in [[Simultaneous Inference via Multiplier Bootstrap]].
 - Aggregated into summaries in [[Aggregating Group-Time Effects]].
-- Generalizes the regression-adjustment logic in [[Mostly Harmless Econometrics]].
+- Generalizes the regression-adjustment logic in [[Mostly Harmless Econometrics - Overview]].
 
 ## See Also
 

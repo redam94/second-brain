@@ -9,10 +9,20 @@ source: "[[raw/1612.09375v2.pdf]]"
 source_location: "Full text, pp. 1–173"
 date_ingested: 2026-05-08
 folder: "Category Theory"
-doc_type: textbook
+doc_type: overview
 aliases:
   - Leinster Category Theory
   - BCT Overview
+depends_on: []
+used_by:
+  - "[[Categories]]"
+  - "[[Functors]]"
+  - "[[Natural Transformations]]"
+  - "[[Adjoint Functors]]"
+  - "[[Products and Equalizers]]"
+  - "[[Representable Functors]]"
+  - "[[Yoneda Lemma]]"
+  - "[[Universal Properties - Introduction]]"
 ---
 
 # Basic Category Theory — Overview

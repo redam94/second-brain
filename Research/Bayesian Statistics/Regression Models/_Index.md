@@ -5,7 +5,7 @@ tags:
   - source/ingested
 parent: "[[Bayesian Statistics/_Index|Bayesian Statistics]]"
 date_updated: 2026-04-09
-concept_count: 9
+concept_count: 10
 ---
 
 # Regression Models
@@ -42,6 +42,7 @@ concept_count: 9
 - [[Missing Data - Statistical Rethinking]] — CONTAINS: DAG-based missing data analysis, MCAR/MAR/MNAR through causal graphs, imputation via DAGs
 - [[Linear Models in Statistical Rethinking]] — CONTAINS: Gaussian models, MAP estimation, prior predictive simulation, prediction intervals
 - [[Spurious Association and Confounds]] — CONTAINS: Multivariate regression, Waffle House divorce example, post-treatment bias, masked relationships, DAGs
+- [[Horseshoe and Regularized Horseshoe Priors]] — STUB: global-local shrinkage priors; horseshoe and regularized horseshoe for sparse high-dimensional regression
 
 ## Sources
 
