@@ -2,31 +2,43 @@
 title: "Index: Dependence Modeling"
 tags: [type/index, source/ingested]
 parent: "[[../_Index|Econometrics]]"
-date_updated: 2026-06-17
-concept_count: 6
+date_updated: 2026-11-12
+concept_count: 10
 ---
 
 # Dependence Modeling
 
 > [!abstract] Routing Summary
-> High-dimensional dependence (copula) modelling for economic/financial variables, from Oh & Patton (2012) "Modelling Dependence in High Dimensions with Factor Copulas". Covers the factor-copula construction, its tail-dependence theory via EVT, multi-factor/block extensions, SMM estimation, and the S&P 100 / systemic-risk application.
-> - Need the motivation, contribution, and big picture? -> [[Factor Copulas - Overview]]
-> - Need the latent factor model defining the copula? -> [[Factor Copula Construction]]
-> - Need analytical tail-dependence coefficients (correlated crashes/booms)? -> [[Tail Dependence in Factor Copulas]]
-> - Need multiple factors, heterogeneous or industry-block dependence? -> [[Multi-Factor and Block Dependence Structures]]
-> - Need the estimation method (no closed-form likelihood, rank-based SMM)? -> [[SMM Estimation of Factor Copulas]]
-> - Need the empirical results, asymmetric dependence, or systemic risk? -> [[Factor Copula Application - S&P 100 and Systemic Risk]]
+> High-dimensional dependence (copula) modelling for economic/financial variables. Covers two complementary paradigms: **factor copulas** (Oh & Patton 2012 — latent factor structure, SMM estimation, applied to S&P 100) and **vine copulas** (Aas et al. 2009; Bedford & Cooke 2002 — pair-copula constructions, C-/D-/R-vine structures, sequential MLE).
+>
+> **Factor copulas:**
+> - Need the motivation, contribution, and big picture? → [[Factor Copulas - Overview]]
+> - Need the latent factor model defining the copula? → [[Factor Copula Construction]]
+> - Need analytical tail-dependence coefficients (correlated crashes/booms)? → [[Tail Dependence in Factor Copulas]]
+> - Need multiple factors, heterogeneous or industry-block dependence? → [[Multi-Factor and Block Dependence Structures]]
+> - Need the estimation method (no closed-form likelihood, rank-based SMM)? → [[SMM Estimation of Factor Copulas]]
+> - Need the empirical results, asymmetric dependence, or systemic risk? → [[Factor Copula Application - S&P 100 and Systemic Risk]]
+>
+> **Vine copulas:**
+> - Need the high-level overview and comparison with factor copulas? → [[Vine Copulas - Overview]]
+> - Need the density factorisation theorem (h-functions, simplifying assumption)? → [[Pair-Copula Decomposition Theorem]]
+> - Need the graphical structures (D-vine path, C-vine star, R-vine)? → [[C-Vine and D-Vine Structures]]
+> - Need estimation (sequential MLE, structure selection, software)? → [[Vine Copula Estimation]]
 
 ## Concept Map
 
 | Concept | Note | Type | Depends On | Key Result |
 |---|---|---|---|---|
-| Motivation & contribution | [[Factor Copulas - Overview]] | overview | — | High-dim copula class for 50+ vars; fat-tailed/asymmetric common factor captures correlated crashes |
+| **Factor copula** motivation & contribution | [[Factor Copulas - Overview]] | overview | — | High-dim copula class for 50+ vars; fat-tailed/asymmetric common factor captures correlated crashes |
 | Latent factor model | [[Factor Copula Construction]] | definition | Overview | $X_i=\beta_i Z+\varepsilon_i$; copula of $\mathbf{X}$ used, marginals discarded; closed form only if all-Gaussian (equicorrelation) |
 | Tail dependence (EVT) | [[Tail Dependence in Factor Copulas]] | theorem | Construction | Props 1-3: regularly-varying tails → non-zero tail dependence; skew factor → $\tau^U\neq\tau^L$ |
 | Multi-factor & block | [[Multi-Factor and Block Dependence Structures]] | concept | Construction | $K$-factor + block equidependence (market + 7 SIC industry factors, 16 params) → heterogeneous dependence |
 | SMM estimation | [[SMM Estimation of Factor Copulas]] | theorem | Construction, Multi-Factor | Match rank correlation + quantile dependence; consistent & asym. normal ($S/T\to\infty$); GMM sandwich, bootstrap + numerical-derivative covariance |
 | S&P 100 & systemic risk | [[Factor Copula Application - S&P 100 and Systemic Risk]] | example | SMM, Tail Dependence, Multi-Factor | Skew $t$-$t$ block copula fits best; crashes more correlated than booms; superior MES/$kES$ estimates |
+| **Vine copula** overview & architecture comparison | [[Vine Copulas - Overview]] | overview | Factor Copulas - Overview | D-vine/C-vine/R-vine vs factor copulas; $O(N^2)$ params; best for $N\le 20$ heterogeneous dependence |
+| Pair-copula decomposition theorem | [[Pair-Copula Decomposition Theorem]] | theorem | Vine Overview | Joint density = product of $n(n-1)/2$ bivariate copula densities; h-function recursion; simplifying assumption |
+| C-vine and D-vine structures | [[C-Vine and D-Vine Structures]] | definition | Decomposition Theorem | D-vine = path trees; C-vine = star trees with root node; R-vine = general spanning trees |
+| Vine estimation & model selection | [[Vine Copula Estimation]] | concept | C-Vine/D-Vine, Decomposition | Sequential MLE tree-by-tree; maximum spanning tree structure selection; VineCopula/pyvinecopulib |
 
 ## Notes
 
@@ -36,10 +48,15 @@ concept_count: 6
 - [[Multi-Factor and Block Dependence Structures]] — CONTAINS: $K$-factor model, conditional-independence/frailty interpretation, flexible weights, empirical 8-factor block model (16 params), block dependence-matrix averaging.
 - [[SMM Estimation of Factor Copulas]] — CONTAINS: semiparametric DGP, SMM objective $Q_{T,S}$, rank-correlation & quantile-dependence moments, moment-count reduction, consistency/normality theorem, bootstrap + numerical-derivative covariance and step-size condition, $J$-test, MLE/GMM/SMM efficiency comparison.
 - [[Factor Copula Application - S&P 100 and Systemic Risk]] — CONTAINS: Monte Carlo design & results (Tables 1-5), AR(1)-GJR-GARCH marginals, equidependence & block estimates (Tables 8-10), asymmetric/fat-tail findings, MES & $kES$ systemic-risk measures (Table 11).
+- [[Vine Copulas - Overview]] — CONTAINS: pair-copula construction concept, three vine architectures (D-vine/C-vine/R-vine), comparison table (factor vs vine), bivariate family table, position in literature (Bedford & Cooke 2002, Aas et al. 2009).
+- [[Pair-Copula Decomposition Theorem]] — CONTAINS: 3- and 4-variable D-vine density factorisation, h-function definition (closed form for Gaussian), general n-variable PCC theorem, simplifying assumption definition, h-function recursion theorem, worked example (3-variable log-likelihood).
+- [[C-Vine and D-Vine Structures]] — CONTAINS: regular vine (R-vine) definition with proximity condition, D-vine definition (path trees, 4- and 5-variable examples), C-vine definition (star trees, root selection), comparison table (D/C/R-vine), Dissmann structure-selection heuristic (maximum spanning tree), worked financial-data example.
+- [[Vine Copula Estimation]] — CONTAINS: sequential MLE algorithm (D-vine), full joint MLE, truncated vine copulas, pair copula family selection (AIC/BIC, Kendall $\tau$ screening, Vuong test), VineCopula (R) and pyvinecopulib (Python) reference, worked structure-selection example, AIC comparison vs factor copula.
 
 ## Sources
 
 - [[raw/Oh-Patton-2012-Factor-Copulas.pdf]] — Oh & Patton (2012), "Modelling Dependence in High Dimensions with Factor Copulas", Duke University. 51 pp. JEL C31, C32, C51.
+- [[raw/Vine-Copulas-Sources.md]] — Source reference stub for vine copula notes (Aas et al. 2009, Bedford & Cooke 2001/2002, Czado 2010, Czado & Nagler 2022, Brechmann & Schepsmeier 2013). PDFs were not downloadable in this session (network policy). URLs documented in stub.
 
 ## See Also
 
